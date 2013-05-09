@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-04-09 23:46+0000\n"
-"PO-Revision-Date: 2013-04-27 20:55+0200\n"
+"PO-Revision-Date: 2013-05-08 21:05+0200\n"
 "Last-Translator: Suha <suhaaktan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
@@ -52,15 +52,14 @@ msgstr "Maalesef bu epostaya kayıtlı bir hesap yok"
 #: base_comments/templatetags/scratch_text_filters.py:103
 msgid "day"
 msgid_plural "days"
-msgstr[0] ""
+msgstr[0] "gün"
 
 # 84%
 #: base_comments/templatetags/scratch_text_filters.py:109
-#, python-format
-#, fuzzy, python-format
+#, python-format, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
-msgstr[0] "0 dakika önce"
+msgstr[0] "%(minutes)d dakika önce"
 
 #: base_comments/templatetags/scratch_text_filters.py:113
 msgid "just now"
@@ -70,7 +69,7 @@ msgstr "şimdi"
 #, python-format
 msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
-msgstr[0] ""
+msgstr[0] "%(minutes)d saat önce"
 
 #: base_comments/templatetags/scratch_text_filters.py:119
 #, python-format
@@ -85,7 +84,7 @@ msgstr "%s"
 #: base_comments/templatetags/scratch_text_filters.py:130
 #, python-format
 msgid "%(number)d %(type)s ago"
-msgstr ""
+msgstr "%(number)d %(type)s önce"
 
 #: lib/haystack-static-pages/haystack_static_pages/models.py:8
 msgid "title"
@@ -117,7 +116,7 @@ msgstr "statik sayfalar"
 
 #: templates/404.html:11
 msgid "404. Oh noes! Our server is Scratch'ing its head"
-msgstr "404. Ufff yok! Sunucumuz tırmalıyor!"
+msgstr "404. Böyle bir sayfam yok! Sunucum kafasını kaşıyor"
 
 #: templates/404.html:14
 msgid ""
@@ -296,9 +295,8 @@ msgstr "Keşfet -  Scratch"
 
 # 93%
 #: templates/accounts/base.html:24 templates/registration/base.html:24
-#, fuzzy
 msgid "Account Settings"
-msgstr "Hesap ayarları"
+msgstr "Hesap Ayarları"
 
 #: templates/accounts/password_change_form.html:8
 msgid "Change password "
@@ -397,7 +395,7 @@ msgstr "İptal"
 
 #: templates/comments/comment.html:13
 msgid "Report"
-msgstr "Raporla"
+msgstr "Bildir"
 
 #: templates/comments/comment.html:33
 #: templates/comments/comment_module.html:29
@@ -420,17 +418,17 @@ msgstr "Yorumu uygunsuz olarak rapor et"
 #: templates/comments/list.html:19
 #, python-format
 msgid "See all %(len)s replies"
-msgstr ""
+msgstr "%(len)s cevabın tümünü gör"
 
 #: templates/comments/list.html:27
 #: templates/includes/backbone-templates.html:64
 msgid "Load more"
-msgstr ""
+msgstr "Dahasını yükle"
 
 #: templates/comments/includes/comment.html:26
 #, python-format
 msgid "%(comment.datetime_created|timesince)s ago"
-msgstr ""
+msgstr "%(comment.datetime_created|timesince)s önce"
 
 #: templates/explore/base.html:32 templates/studio/base.html:29
 msgid "Example tab"
@@ -450,11 +448,11 @@ msgstr "Karıştır"
 
 #: templates/explore/projects.html:4
 msgid "Explore Projects"
-msgstr ""
+msgstr "Projelere Gözat"
 
 #: templates/explore/projects.html:13 templates/explore/studios.html:13
 msgid "Featured"
-msgstr ""
+msgstr "Özellikli"
 
 #: templates/explore/projects.html:14 templates/explore/studios.html:14
 #: templates/studio/includes/project_action_bar.html:14
@@ -464,21 +462,21 @@ msgstr "Tümü"
 
 #: templates/explore/projects.html:17 templates/explore/studios.html:17
 msgid "Animations"
-msgstr ""
+msgstr "Canlandırmalar"
 
 #: templates/explore/projects.html:18 templates/explore/studios.html:18
 msgid "Art"
-msgstr ""
+msgstr "Sanat"
 
 #: templates/explore/projects.html:19 templates/explore/studios.html:19
 #: templates/info/help/studio/tips/home.html:43
 msgid "Games"
-msgstr ""
+msgstr "Oyunlar"
 
 #: templates/explore/projects.html:20 templates/explore/studios.html:20
 #: templates/info/help/studio/tips/home.html:62
 msgid "Music"
-msgstr ""
+msgstr "Müzik"
 
 #: templates/explore/projects.html:21 templates/explore/studios.html:21
 #: templates/info/help/studio/tips/home.html:51
@@ -571,14 +569,13 @@ msgstr "Sahibi"
 
 # 82%
 #: templates/galleries/gallery.html:21
-#, python-format
-#, fuzzy, python-format
+#, python-format, python-format
 msgid "Updated %(tDate)s"
-msgstr "%(tDate)s tarihinde oluşturuldu"
+msgstr "%(tDate)s tarihinde güncellendi"
 
 #: templates/galleries/gallery.html:25
 msgid "Read more &raquo;"
-msgstr "Daha fazla oku &raquo;"
+msgstr "Dahasını oku &raquo;"
 
 #: templates/galleries/gallery.html:42
 #, python-format
@@ -598,7 +595,7 @@ msgstr "Yorumlar ( <span data-count=\"comments\">%(tCount)s</span> )"
 #: templates/galleries/gallery.html:57
 #, python-format
 msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
-msgstr "Küratörler ( <span data-count=\"curators\">%(tCount)s</span> )"
+msgstr "İdareciler ( <span data-count=\"curators\">%(tCount)s</span> )"
 
 #: templates/galleries/gallery.html:60
 msgid "More info"
@@ -607,11 +604,11 @@ msgstr "Daha fazla bilgi"
 #: templates/galleries/gallery_list.html:4
 #, python-format
 msgid "%(username)s Studio (%(tGCount)s)"
-msgstr ""
+msgstr "%(username)s Stüdyo (%(tGCount)s)"
 
 #: templates/galleries/includes/curator_action_bar.html:7
 msgid "Add curators"
-msgstr ""
+msgstr "İdareci ekle"
 
 #: templates/galleries/includes/curator_action_bar.html:12
 msgid "Add"
@@ -646,7 +643,6 @@ msgstr "Beni Takip Eden Scratch'çılar"
 # 91%
 #: templates/galleries/includes/explore-bar.html:6
 #: templates/galleries/includes/explore-bar.html:10
-#, fuzzy
 msgid "Add Projects"
 msgstr "Projelere ekle"
 
@@ -704,8 +700,9 @@ msgid "it's free"
 msgstr "ücretsiz"
 
 #: templates/homepage/index.html:109
+#, fuzzy
 msgid "A creative learning community with"
-msgstr ""
+msgstr "Yaratıcı öğrenme topluluğu"
 
 #: templates/homepage/index.html:109
 msgid "projects shared"
@@ -757,7 +754,7 @@ msgstr "Millet Neleri Seviyor"
 
 #: templates/includes/backbone-templates.html:54
 msgid "You have <span id=\\"
-msgstr ""
+msgstr "Sahip olduğun <span id=\\"
 
 #: templates/includes/backbone-templates.html:79
 msgid "See all replies"
@@ -795,14 +792,13 @@ msgstr "Son değiştirilme"
 # 80%
 #: templates/includes/sort-projects-dropdown.html:10
 #: templates/studio/includes/sort-projects-dropdown.html:10
-#, fuzzy
 msgid "Views"
-msgstr "bakışlar"
+msgstr "Bakışlar"
 
 #: templates/includes/sort-projects-dropdown.html:11
 #: templates/studio/includes/sort-projects-dropdown.html:11
 msgid "Loves"
-msgstr ""
+msgstr "Sevdiklerim"
 
 #: templates/includes/sort-projects-dropdown.html:12
 #: templates/projects/base.html:220
@@ -868,12 +864,17 @@ msgid ""
 "your own interactive stories, games, and animations -- and share your "
 "creations with others around the world."
 msgstr ""
+"Scratch bir programlama dilidir. Scratch'ı kullanarak etkileşimli hikayeler, "
+"oyunlar ve çizgi filmler yapabilirsin ve bunları dünyadaki arkadaşlarınla "
+"paylaşabilirsin."
 
 #: templates/info/about.html:18
 msgid ""
 "In the process of designing and programming Scratch projects, young people "
 "learn to think creatively, reason systematically, and work collaboratively."
 msgstr ""
+"Scratch projelerinin tasarımı ve programlanması sürecinde, gençler yaratıcı "
+"düşünmeyi, sebep-sonuç ilişkisi kurmayı ve takım çalışmasını öğrenirler."
 
 #: templates/info/about.html:27
 msgid "Who is Scratch for?"
@@ -889,7 +890,7 @@ msgstr "Anne-Babalar için"
 
 #: templates/info/about.html:37
 msgid "Research"
-msgstr ""
+msgstr "Araştırma"
 
 # 75%
 #: templates/info/about.html:42
@@ -908,7 +909,7 @@ msgstr ""
 
 #: templates/info/about.html:47
 msgid "Support Scratch"
-msgstr "Scratch'ı Destekleyin"
+msgstr "Scratch'ı Destekle"
 
 #: templates/info/about.html:49
 msgid ""
@@ -939,27 +940,27 @@ msgstr "Sık Sorulan Sorular"
 
 #: templates/info/about.html:65 templates/info/help/index.html:92
 msgid "Or visit the discussion forums:"
-msgstr "Veya tartışma forumlarına göz atın:"
+msgstr "Veya tartışma forumlarına göz at:"
 
 #: templates/info/about.html:66 templates/info/help/index.html:93
 msgid "Questions about Scratch"
-msgstr ""
+msgstr "Scratch hakkında sorular"
 
 #: templates/info/about.html:67 templates/info/help/index.html:94
 msgid "Help with Scripts"
-msgstr ""
+msgstr "Komutlarla İlgili Yardım"
 
 #: templates/info/about.html:70
 msgid "Scratch in the News"
-msgstr ""
+msgstr "Medyada Scratch"
 
 #: templates/info/about.html:79
 msgid "Scratch Events"
-msgstr ""
+msgstr "Scratch Faaliyetleri"
 
 #: templates/info/about.html:88
 msgid "Scratch Products"
-msgstr ""
+msgstr "Scratch Ürünleri"
 
 #: templates/info/about.html:99
 msgid ""
@@ -972,13 +973,16 @@ msgstr ""
 
 #: templates/info/community_guidelines.html:14
 msgid "Scratch Community Guidelines"
-msgstr ""
+msgstr "Scratch Topluluk Kuralları"
 
 #: templates/info/community_guidelines.html:18
 msgid ""
 "We need everyone’s help to keep Scratch a friendly and creative community – "
 "where people from all around the world feel welcome."
 msgstr ""
+"Scratch severlerin, arkadaş canlısı ve yaratıcı bir topluluk olması için "
+"herkesin yardımına ihtiyacımız var; ki dünyanın her köşesinden aramıza "
+"katılanlar 'hoş bulsun'."
 
 #: templates/info/community_guidelines.html:21
 msgid ""
@@ -986,12 +990,16 @@ msgid ""
 "that people of many different ages and backgrounds will see what you’ve "
 "shared."
 msgstr ""
+"<b>Saygılı ol.</b> Projerlerini paylaşırken veya yorum yazarken, unutma ki "
+"bunları hemen her yaştan ve tecrübeden kişiler görecek."
 
 #: templates/info/community_guidelines.html:22
 msgid ""
 "<b>Be constructive.</b> When commenting on other’s projects, say something "
 "you like about it and offer suggestions."
 msgstr ""
+"<b>Yapıcı ol.</b> Başkalarının projelerine yorum yazarken, beğendiğin "
+"yönlerini vurgula ve öneri getir."
 
 #: templates/info/community_guidelines.html:23
 msgid ""
@@ -999,12 +1007,17 @@ msgid ""
 "else you find on Scratch – and anyone can use anything that you share. Be "
 "sure to give credit when you remix."
 msgstr ""
+"<b>Paylaş.</b> Başkalarının projelerine, fikirlerine, görsellerine vs. "
+"ekleme yapmakta özgürsün - başkaları da senin yapıp paylaştıklarına ekleme "
+"yapabilirler. Ekleme yaptığın eserlerin asıl sahibini belirtmeyi unutma."
 
 #: templates/info/community_guidelines.html:24
 msgid ""
 "<b>Keep personal info private.</b> For safety reasons, don't use real names "
 "or post contact info like phone numbers or addresses."
 msgstr ""
+"<b>Şahsi bilgilerini paylaşma.</b> Güvenliğin gereği, gerçek adını, telefon "
+"numaralarını ve adresini kimseyle paylaşma."
 
 #: templates/info/community_guidelines.html:25
 msgid ""
@@ -1012,14 +1025,17 @@ msgid ""
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
 "let us know about it."
 msgstr ""
+"<b>Sitemizi temiz tutmamıza yardım et.</b> Eğer bir projenin veya yorumun "
+"adi, onur kırıcı, tehditkar veya uygunsuz olduğunu düşünüyorsan, \"Bildir\" "
+"düğmesini tıklayarak bizi haberdar et."
 
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
-msgstr ""
+msgstr "2.0'da Yeni Ne Var? - Scratch"
 
 #: templates/info/overview.html:16
 msgid "What's New in Scratch 2.0?"
-msgstr ""
+msgstr "Scratch 2.0'da Yeni Ne Var?"
 
 #: templates/info/overview.html:18
 msgid ""
@@ -1027,6 +1043,9 @@ msgid ""
 "types of projects, work together in new ways, and learn new things in the "
 "process."
 msgstr ""
+"Yeni nesil Scratch'a hoşgeldin! Scratch 2.0 ile, yeni türde projeler "
+"yaratabilir, yeni yöntemlerle ortak çalışabilir ve programlarken yeni şeyler "
+"öğrenebilirsin."
 
 #: templates/info/overview.html:20
 msgid ""
@@ -1034,35 +1053,44 @@ msgid ""
 "web browser. (You no longer have to download or upload projects or install "
 "any software.)"
 msgstr ""
+"Scratch 2.0 projelerini doğrudan internet tarayıcında oluşturmanı, "
+"düzenlemeni ve oynatmanı sağlar. (Yani artık proje indirip, yüklemene ve "
+"bilgisayarına programlar yüklemene ihtiyaç kalmadı.)"
 
 #: templates/info/overview.html:22
 msgid "Here are some of the new features in Scratch 2.0."
-msgstr ""
+msgstr "İşte Scratch 2.0'ın bazı yeni özellikleri."
 
 #: templates/info/overview.html:26
 msgid "Project Editor"
-msgstr ""
+msgstr "Proje Editörü"
 
 #: templates/info/overview.html:29
 msgid "Click <b>Create</b> to make a new project."
-msgstr ""
+msgstr "Yeni proje oluşturmak için <b>Oluştur</b> düğmesine bas."
 
 #: templates/info/overview.html:32
 msgid ""
 "Your project will automatically save as you work on it (if you're logged in)."
 msgstr ""
+"Üzerinde çalışırken projen kendiliğinden kaydedilir (eğer giriş yapmışsan "
+"tabii)."
 
 #: templates/info/overview.html:33
 msgid ""
 "When you create a project, you are the only one who can see it. After you "
 "share it, anyone can see and remix it."
 msgstr ""
+"Bir proje yarattığında, onu sadece sen görebilirsin. Paylaşırsan, herkes "
+"görebilir ve eklemeler yapabilir."
 
 #: templates/info/overview.html:35
 msgid ""
 "The new paint editor uses <b>vector graphics</b> so that images can scale to "
 "different sizes without getting jagged."
 msgstr ""
+"Yeni resim editörü <b>çizgisel grafikler</b> de kullanır, bu sayede "
+"resimlerin ebadı değişse de kırıklıklar oluşmaz."
 
 #: templates/info/overview.html:38
 msgid ""
@@ -1070,6 +1098,9 @@ msgid ""
 "and scripts from any project to another. If you're logged in, you can open "
 "your Backpack inside any project (it's at the bottom of the screen)."
 msgstr ""
+"<b>Sırt çantan</b>, projerlerin arasında kuklaları, kılıkları, dekorları ve "
+"dizileri taşımanı sağlar. Eğer giriş yapmışsan, herhangi bir proje "
+"içindeyken sırt çantanı açabilirsin (ekranın en altında yer alır)."
 
 #: templates/info/overview.html:40
 msgid ""
@@ -1079,11 +1110,12 @@ msgstr ""
 
 #: templates/info/overview.html:43
 msgid "You can now make your own programming blocks."
-msgstr ""
+msgstr "Artık kendi komut taşlarını yapabilirsin."
 
 #: templates/info/overview.html:45
 msgid "Use clone blocks in your scripts to make copies of sprites."
 msgstr ""
+"İkiz yaratma taşlarını kullanarak kuklaların kopyalarını oluşturabilirsin."
 
 #: templates/info/overview.html:48
 msgid ""
@@ -1149,6 +1181,8 @@ msgid ""
 "Galleries are now called <b>Studios</b>, and can be curated by you and "
 "others you invite."
 msgstr ""
+"Galerilere artık <b>Stüdyo</b> diyoruz. Stüdyoları sen ve davet ettiklerin "
+"idare edebilirler."
 
 #: templates/info/overview.html:73
 msgid "The Search features lets you find and preview projects more easily."
@@ -1191,7 +1225,7 @@ msgstr ""
 
 #: templates/info/parents.html:8
 msgid "Scratch - For Parents"
-msgstr ""
+msgstr "Scratch - Anne-babalar İçin"
 
 #: templates/info/parents.html:15
 msgid ""
@@ -1202,16 +1236,25 @@ msgid ""
 "with Scratch, they learn to think creatively, work collaboratively, and "
 "reason systematically."
 msgstr ""
+"Scratch bir programlama dili ve internet topluluğudur. Bununla çocuklar "
+"etkileşimli hikayeler, oyunlar, çizgi filmler programlayabilir ve bunları "
+"dünyanın her köşesinden kişilerle paylaşabilirler. Scratch, MIT üniversitesi "
+"Medya Lab.'ında yer alan Lifelong Kindergarten grubu tarafından tasarlanıp "
+"geliştirilmektedir. Scratch ile çalışan çocuklar; yaratıcı düşünmeyi, ekip "
+"çalışmasını ve sebep-sonuç ilişkisi kurmayı öğrenirler."
 
 #: templates/info/parents.html:21
 msgid "What is the age range for Scratch?"
-msgstr ""
+msgstr "Scratch için öngörülen yaş aralığı nedir?"
 
 #: templates/info/parents.html:23
 msgid ""
 "While Scratch is primarily designed for 8 to 16 year olds, it is also used "
 "by people of all ages, including younger children with their parents."
 msgstr ""
+"Scratch, 8 ila 16 yaş aralığındaki gençler düşünülerek tasarlanmış olmakla "
+"beraber, anne babalarının gözetiminde, daha küçük çocuklar da "
+"faydalanabilir."
 
 #: templates/info/parents.html:26
 msgid "What resources are available for learning Scratch?"
@@ -2116,132 +2159,132 @@ msgstr ""
 
 #: templates/info/help/index.html:113
 msgid "Scratch Media"
-msgstr ""
+msgstr "Scratch Medya"
 
 #: templates/info/help/index.html:115
 msgid "Access the Scratch logo and other media files."
-msgstr ""
+msgstr "Scratch logo'suna ve diğer medya dosyalarına eriş."
 
 #: templates/info/help/index.html:117
 msgid "Scratch Store"
-msgstr ""
+msgstr "Scratch Dükkanı"
 
 #: templates/info/help/index.html:119
 msgid "Find books and other materials about Scratch."
-msgstr ""
+msgstr "Scratch ile ilgili kitap ve diğer malzemeler aran."
 
 #: templates/info/help/studio/tips/home.html:4
 msgid "Getting Started"
-msgstr ""
+msgstr "Başlarken"
 
 #: templates/info/help/studio/tips/home.html:5
 #: templates/info/help/studio/tips/howto/get-started-1.html:5
 msgid "Step-by-Step Intro"
-msgstr ""
+msgstr "Adım-adım Başlangıç"
 
 #: templates/info/help/studio/tips/home.html:8
 msgid "Map of Project Editor"
-msgstr ""
+msgstr "Proje Editörünün Krokisi"
 
 #: templates/info/help/studio/tips/home.html:11
 msgid "Paint Editor Tips"
-msgstr ""
+msgstr "Boyama Editörü İpuçları"
 
 #: templates/info/help/studio/tips/home.html:28
 msgid "How To"
-msgstr ""
+msgstr "Nasıl Yapılır"
 
 #: templates/info/help/studio/tips/home.html:29
 msgid "Effects"
-msgstr ""
+msgstr "Efektler"
 
 #: templates/info/help/studio/tips/home.html:31
 msgid "Play with effects"
-msgstr ""
+msgstr "Efektlerle oyna"
 
 #: templates/info/help/studio/tips/home.html:32
 msgid "Create interactive effects"
-msgstr ""
+msgstr "Etkileşimli efektler yarat"
 
 #: templates/info/help/studio/tips/home.html:33
 msgid "Interact with a microphone"
-msgstr ""
+msgstr "Mikrofonla etkileş"
 
 #: templates/info/help/studio/tips/home.html:36
 msgid "Animation"
-msgstr ""
+msgstr "Canlandırma"
 
 #: templates/info/help/studio/tips/home.html:38
 msgid "Switch from happy to sad"
-msgstr ""
+msgstr "Mutludan üzgüne dön"
 
 #: templates/info/help/studio/tips/home.html:39
 msgid "Make a sprite talk"
-msgstr ""
+msgstr "Kuklayı konuşabilir yap"
 
 #: templates/info/help/studio/tips/home.html:40
 msgid "Make a sprite walk"
-msgstr ""
+msgstr "Kuklayı yürüyebilir yap"
 
 #: templates/info/help/studio/tips/home.html:45
 msgid "Use arrow keys to move"
-msgstr ""
+msgstr "Ok tuşlarıyla hareket ver"
 
 #: templates/info/help/studio/tips/home.html:46
 msgid "Bounce around"
-msgstr ""
+msgstr "Çepeçevre sek"
 
 #: templates/info/help/studio/tips/home.html:47
 msgid "Collide"
-msgstr ""
+msgstr "Çarpış"
 
 #: templates/info/help/studio/tips/home.html:48
 msgid "Keep score"
-msgstr ""
+msgstr "Skoru aklında tut"
 
 #: templates/info/help/studio/tips/home.html:53
 msgid "Talk to each other"
-msgstr ""
+msgstr "Birbiriyle konuştur"
 
 #: templates/info/help/studio/tips/home.html:54
 msgid "Glide off the stage"
-msgstr ""
+msgstr "Kayarak sahneden çık"
 
 #: templates/info/help/studio/tips/home.html:81
 msgid "Blocks"
-msgstr ""
+msgstr "Taşlar"
 
 #: templates/info/help/studio/tips/home.html:82
 msgid "Motions"
-msgstr ""
+msgstr "Hareketler"
 
 #: templates/info/help/studio/tips/home.html:84
 msgid "move _ steps"
-msgstr ""
+msgstr "_ adım yürü"
 
 #: templates/info/help/studio/tips/home.html:85
 msgid "turn right"
-msgstr ""
+msgstr "sağa dön"
 
 #: templates/info/help/studio/tips/home.html:86
 msgid "turn left"
-msgstr ""
+msgstr "sola dön"
 
 #: templates/info/help/studio/tips/home.html:87
 msgid "point in direction"
-msgstr ""
+msgstr "belli bir yöne dön"
 
 #: templates/info/help/studio/tips/home.html:88
 msgid "point towards"
-msgstr ""
+msgstr "bir yere doğru dön"
 
 #: templates/info/help/studio/tips/home.html:89
 msgid "go to x: y:"
-msgstr ""
+msgstr "x: y: 'ye git"
 
 #: templates/info/help/studio/tips/home.html:90
 msgid "go to"
-msgstr ""
+msgstr "git"
 
 #: templates/info/help/studio/tips/home.html:91
 msgid "glide _ secs to x: y:"
@@ -2341,7 +2384,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/home.html:117
 msgid "go to front"
-msgstr ""
+msgstr "üste çık"
 
 #: templates/info/help/studio/tips/home.html:118
 msgid "go back _ layers"
@@ -2361,31 +2404,31 @@ msgstr ""
 
 #: templates/info/help/studio/tips/home.html:123
 msgid "Sound"
-msgstr ""
+msgstr "Ses"
 
 #: templates/info/help/studio/tips/home.html:125
 msgid "Pen"
-msgstr ""
+msgstr "Kalem"
 
 #: templates/info/help/studio/tips/home.html:127
 msgid "Data"
-msgstr ""
+msgstr "Veri"
 
 #: templates/info/help/studio/tips/home.html:129
 msgid "Events"
-msgstr ""
+msgstr "Olaylar"
 
 #: templates/info/help/studio/tips/home.html:131
 msgid "Control"
-msgstr ""
+msgstr "Kontrol"
 
 #: templates/info/help/studio/tips/home.html:133
 msgid "Sensing"
-msgstr ""
+msgstr "Algılama"
 
 #: templates/info/help/studio/tips/home.html:135
 msgid "Operators"
-msgstr ""
+msgstr "İşlemler"
 
 #: templates/info/help/studio/tips/home.html:137
 msgid "More Blocks"
@@ -2393,27 +2436,29 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:7
 msgid "Want to make a project in Scratch? Try these 10 steps."
-msgstr ""
+msgstr "Scratch'da bir proje yapmak ister misin? Şu 10 adımı dene."
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:8
 msgid "First, click New to start a new project."
-msgstr ""
+msgstr "Önce, Yeni'ye tıklayarak yeni bir proje başlat"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:13
 msgid "Drag a <span class=movecolor>MOVE</span> block into the Scripts area."
 msgstr ""
+"Bir <span class=movecolor>HAREKET</span>taşını sürükleyerek Diziler alanına "
+"bırak"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:17
 msgid "Then, click on that block to make the cat move:"
-msgstr ""
+msgstr "Sonra, o taşa çift tıkla ve kedi yürüsün:"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:21
 msgid "1 of 10"
-msgstr ""
+msgstr "1/10"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:8
 msgid "2 Add a Sound"
-msgstr ""
+msgstr "2 Bir Ses Ekle"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:10
 msgid ""
@@ -2424,19 +2469,19 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:15
 msgid "Click and listen."
-msgstr ""
+msgstr "Tıkla ve dinle."
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:17
 msgid "(Make sure your computer's speakers are on.)"
-msgstr ""
+msgstr "(Bilgisayarının sesinin açık olduğuna emin ol.)"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:21
 msgid "2 of 10"
-msgstr ""
+msgstr "2/10"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:6
 msgid "3 Start a Dance"
-msgstr ""
+msgstr "3 Dansa Başla"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:8
 msgid ""
@@ -2512,7 +2557,7 @@ msgstr ""
 
 #: templates/notifications/includes/user-feed.html:48
 msgid "is now following the gallery"
-msgstr ""
+msgstr "artık galeriyi takip ediyor"
 
 #: templates/profiles/profile_detail.html:55
 #: templates/scratch_admin/admin_profile_view.html:42
@@ -2526,12 +2571,12 @@ msgstr "Hakkımda"
 
 #: templates/profiles/profile_detail.html:77
 msgid "Add a bit about yourself"
-msgstr ""
+msgstr "Kendinden biraz bahset"
 
 #: templates/profiles/profile_detail.html:78
 #: templates/profiles/profile_detail.html:105
 msgid "<span id=\\"
-msgstr ""
+msgstr "<span id=\\"
 
 #: templates/profiles/profile_detail.html:100
 msgid "What I'm working on"
@@ -2539,7 +2584,7 @@ msgstr "Üzerinde çalıştığım"
 
 #: templates/profiles/profile_detail.html:104
 msgid "Describe what you're working on"
-msgstr ""
+msgstr "Şu an yaptığın işi kısaca anlat"
 
 #: templates/profiles/profile_detail.html:134
 msgid "FEATURED:"
@@ -2567,11 +2612,11 @@ msgstr "Gözde Projelerim"
 
 #: templates/profiles/profile_detail.html:174
 msgid "Studios I'm Following"
-msgstr ""
+msgstr "Takip Ettiğim Stüdyolar"
 
 #: templates/profiles/profile_detail.html:189
 msgid "Studios I Curate"
-msgstr ""
+msgstr "Yönettiğim Stüdyolar"
 
 #: templates/profiles/profile_detail.html:206
 msgid "Following"
@@ -2595,12 +2640,13 @@ msgid "remixed"
 msgstr "ekleme"
 
 #: templates/projects/base.html:86
+#, fuzzy
 msgid "scripts"
-msgstr ""
+msgstr "diziler"
 
 #: templates/projects/base.html:87
 msgid "sprites"
-msgstr ""
+msgstr "kuklalar"
 
 #: templates/projects/base.html:91 templates/studio/studio.html:96
 #: templates/studio/studio.html.py:133 templates/studio/studio.html:154
@@ -2609,11 +2655,11 @@ msgstr "İçine bak"
 
 #: templates/projects/base.html:127
 msgid "Based on:"
-msgstr ""
+msgstr "Temel proje:"
 
 #: templates/projects/base.html:137
 msgid "Original project:"
-msgstr ""
+msgstr "Orjinal proje:"
 
 #: templates/projects/base.html:152
 msgid "not shared"
@@ -2641,28 +2687,27 @@ msgstr "bakışlar"
 
 #: templates/projects/project_list.html:10
 msgid "Newest Projects"
-msgstr ""
+msgstr "En Yeni Projeler"
 
 #: templates/projects/project_list.html:13
 msgid "Projects selected by"
-msgstr ""
+msgstr "Seçtiği projeler, şunun:"
 
 # 75%
 #: templates/projects/project_list.html:20
 #: templates/projects/project_list.html:24
 #: templates/projects/project_list.html:28
-#, fuzzy
 msgid "What the Community is"
-msgstr "Millet Neleri Seviyor"
+msgstr "Millet Neleri"
 
 #: templates/projects/project_list.html:35
 msgid "Favorites"
-msgstr ""
+msgstr "En beğendiklerim"
 
 #: templates/projects/shared-other.html:20
 #: templates/projects/includes/owner/editable-wip.html:4
 msgid "Draft"
-msgstr ""
+msgstr "Eskiz"
 
 #: templates/projects/shared-other.html:29
 #: templates/projects/includes/owner/editable-instructions.html:3
@@ -2711,9 +2756,8 @@ msgstr ""
 
 # 83%
 #: templates/projects/unshared-owner.html:21 templates/studio/studio.html:137
-#, fuzzy
 msgid "Share"
-msgstr "Paylaşılan"
+msgstr "Paylaş"
 
 #: templates/projects/unshared-owner.html:30
 msgid "Note: This project is in the trash folder"
@@ -2729,23 +2773,21 @@ msgstr "Paylaşılmadı"
 
 #: templates/projects/includes/explore-bar.html:6
 msgid "More projects by"
-msgstr ""
+msgstr "Bu kişinin yaptığı diğer projeler"
 
 # 76%
 #: templates/projects/includes/explore-bar.html:13
-#, fuzzy
 msgid "Related Projects"
-msgstr "Özellikli Projeler"
+msgstr "İlgili Projeler"
 
 #: templates/projects/includes/explore-bar.html:16
 msgid "Creator"
-msgstr ""
+msgstr "Başlatan"
 
 # 85%
 #: templates/projects/includes/explore-bar.html:22
-#, fuzzy
 msgid "Studio"
-msgstr "Stüdyolar"
+msgstr "Stüdyo"
 
 #: templates/projects/includes/project_list.html:10
 #, python-format
@@ -2755,6 +2797,7 @@ msgstr "%(tDate)s önce"
 #: templates/projects/includes/owner/editable-instructions.html:5
 msgid "Tell people how to use your project</br>(such as which keys to press)."
 msgstr ""
+"Projenin nasıl kullanacağını anlat</br>(örneğin hangi tuşlara basılmalı)."
 
 #: templates/projects/includes/owner/editable-notes.html:7
 msgid ""
