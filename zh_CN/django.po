@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 23:46+0000\n"
+"POT-Creation-Date: 2013-05-09 16:09+0000\n"
 "PO-Revision-Date: 2013-05-08 03:52+0200\n"
 "Last-Translator: alanmao <alanmao222@yahoo.com.cn>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr "不能用'password'作为您的密码。"
 msgid "Your password cannot be the same as your username."
 msgstr "密码与用户名不能相同。"
 
-#: authentication/forms.py:59
+#: authentication/forms.py:59 templates/modal-registration.html:66
 msgid "Email"
 msgstr "电子邮件"
 
@@ -56,6 +56,7 @@ msgstr[0] "日"
 
 # 84%
 #: base_comments/templatetags/scratch_text_filters.py:109
+#, python-format
 #, python-format, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
@@ -114,6 +115,10 @@ msgstr "静态页"
 msgid "static pages"
 msgstr "静态页"
 
+#: projects/views.py:410
+msgid "This tag has too many projects to load"
+msgstr ""
+
 #: templates/404.html:11
 msgid "404. Oh noes! Our server is Scratch'ing its head"
 msgstr "404. 哦,不！我们的服务器正在挠头呢"
@@ -128,6 +133,10 @@ msgstr "网页未找到，请检查网址是否输入正确。"
 msgid "You can try searching for what you're looking for here:"
 msgstr "你可以尝试在这里搜索你需要查找的内容:"
 
+#: templates/404.html:17 templates/base.html:92 templates/contact-us.html:42
+msgid "Search"
+msgstr ""
+
 #: templates/500.html:11
 msgid "500. Uh Oh. Our servers are having some trouble"
 msgstr "500. 啊~噢~,我们的服务器好象碰到了点问题"
@@ -140,105 +149,131 @@ msgstr "对不起！请稍后重试。"
 msgid "Account Settings -  Scratch"
 msgstr "账户设置 -  Scratch"
 
-#: templates/account_settings.html:12 templates/under-construction.html:12
+#: templates/account_settings.html:12
 msgid "Coming Soon..."
 msgstr "即将登场..."
 
-#: templates/base.html:10
+#: templates/base.html:12
 msgid "Scratch"
 msgstr "Scratch"
 
-#: templates/base.html:10
+#: templates/base.html:12
 msgid "Imagine, Program, Share"
 msgstr "想象，编程，分享"
 
-#: templates/base.html:130
+#: templates/base.html:74
 msgid "Create"
 msgstr "创建"
 
-#: templates/base.html:131 templates/explore/explore2.html:40
+#: templates/base.html:75 templates/explore/explore2.html:40
 #: templates/explore/projects.html:25 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "探索"
 
-#: templates/base.html:132
+#: templates/base.html:76
 msgid "Discuss"
 msgstr "讨论"
 
-#: templates/base.html:133
+#: templates/base.html:77
 msgid "Help"
 msgstr "帮助"
 
-#: templates/base.html:156
+#: templates/base.html:101
 msgid "messages - updates and notices"
 msgstr "消息 - 更新和通知"
 
-#: templates/base.html:157
+#: templates/base.html:102
 msgid "my stuff - manage projects and studios"
 msgstr "我的项目中心 - 管理项目和工作室"
 
-#: templates/base.html:164
+#: templates/base.html:109
 msgid "Profile"
 msgstr "个人中心"
 
-#: templates/base.html:165 templates/explore/base.html:24
+#: templates/base.html:110 templates/explore/base.html:19
 #: templates/studio/base.html:21
 msgid "My Stuff"
 msgstr "我的项目中心"
 
-#: templates/base.html:166
+#: templates/base.html:111
 msgid "Account settings"
 msgstr "账户设置"
 
-#: templates/base.html:167
-msgid "Log out"
-msgstr "退出登录"
+#: templates/base.html:112
+msgid "Sign out"
+msgstr "退出"
 
-#: templates/base.html:184 templates/modal-login.html:15
-msgid "Username"
-msgstr "用户名"
+# 83%
+#: templates/base.html:122 templates/modal-registration.html:7
+#, fuzzy
+msgid "Join Scratch"
+msgstr "正在Scratch"
 
-#: templates/base.html:186 templates/modal-login.html:22
-msgid "Password"
-msgstr "密码"
-
-#: templates/base.html:188 templates/modal-login.html:32
+#: templates/base.html:125 templates/base.html.py:136
+#: templates/modal-login.html:10 templates/modal-login.html.py:34
 msgid "Sign in"
 msgstr "注册"
 
-#: templates/base.html:189
+#: templates/base.html:131 templates/modal-login.html:16
+#: templates/includes/backbone-templates.html:17
+msgid "Username"
+msgstr "用户名"
+
+#: templates/base.html:133 templates/modal-login.html:23
+#: templates/includes/backbone-templates.html:24
+msgid "Password"
+msgstr "密码"
+
+#: templates/base.html:137
 msgid "Forgot password?"
 msgstr "忘记密码？"
 
-#: templates/base.html:314
+#: templates/base.html:192
 msgid "About"
 msgstr "关于"
 
-#: templates/base.html:315
+#: templates/base.html:193
 msgid "Educators"
 msgstr "教师"
 
-#: templates/base.html:316
+#: templates/base.html:194
 msgid "Parents"
 msgstr "家长"
 
-#: templates/base.html:317
+#: templates/base.html:195
 msgid "Community Guidelines"
 msgstr "社区指南"
 
-#: templates/base.html:318 templates/info/DMCA.html:10
+#: templates/base.html:196 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
 # 90%
-#: templates/base.html:319
+#: templates/base.html:197
 msgid "Contact Us"
 msgstr "联系我们"
 
-#: templates/base.html:332
+#: templates/base.html:211
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr "Scratch由MIT媒体实验室终生幼儿园团队设计并制作"
+
+#: templates/coming-soon.html:6
+msgid "Coming Soon-  Scratch"
+msgstr ""
+
+#: templates/coming-soon.html:12
+msgid "Coming Very Soon..."
+msgstr ""
+
+#: templates/contact-us.html:12 templates/accounts/banned-response.html:12
+#: templates/info/scratch_1.4.html:12
+msgid "Account Blocked"
+msgstr ""
+
+#: templates/contact-us.html:58 templates/accounts/banned-response.html:81
+msgid "Send"
+msgstr ""
 
 #: templates/list_all.html:28 templates/galleries/gallery_list.html:8
 #: templates/projects/project_list.html:43
@@ -279,17 +314,264 @@ msgstr "最多收藏"
 msgid "Most remixed"
 msgstr "再创作次数最多"
 
-#: templates/modal-login.html:10 templates/registration/login.html:29
-msgid "Login"
-msgstr "登录"
+#: templates/modal-registration.html:11
+msgid "It's easy (and free!) to sign up for a Scratch account."
+msgstr ""
+
+#: templates/modal-registration.html:19
+msgid "Choose a Scratch Username"
+msgstr ""
+
+#: templates/modal-registration.html:22
+msgid "Don't use your real name"
+msgstr ""
+
+#: templates/modal-registration.html:30
+msgid "Choose a Password"
+msgstr ""
+
+#: templates/modal-registration.html:33
+msgid "Remember it - don't tell anyone else"
+msgstr ""
+
+#: templates/modal-registration.html:41
+#: templates/registration/password_reset_confirm.html:26
+msgid "Confirm Password"
+msgstr "确认密码"
+
+#: templates/modal-registration.html:43
+msgid "Retype your password"
+msgstr ""
+
+#: templates/modal-registration.html:55
+msgid "Your responses to these questions will be kept private."
+msgstr ""
+
+#: templates/modal-registration.html:56
+msgid "Why do we ask for this info"
+msgstr ""
+
+#: templates/modal-registration.html:58 templates/modal-registration.html:74
+msgid "Birth Month and Year"
+msgstr ""
+
+#: templates/modal-registration.html:60
+msgid ""
+"We use this information to calculate the age range of people who use "
+"Scratch, and to confirm that you are the owner of the account if you contact "
+"us.  Your birth month and year will not be made public."
+msgstr ""
+
+# 83%
+#: templates/modal-registration.html:62 templates/modal-registration.html:100
+#, fuzzy
+msgid "Gender"
+msgstr "性别"
+
+#: templates/modal-registration.html:64
+msgid ""
+"This helps the Scratch design team understand who is using Scratch, and "
+"provides information that helps us broaden participation.  This information "
+"is not visible on your account, and is only used to describe overall "
+"participation."
+msgstr ""
+
+#: templates/modal-registration.html:68
+msgid ""
+"We use this only in case you need to reset your password.  We won't share it "
+"with anyone."
+msgstr ""
+
+#: templates/modal-registration.html:76
+msgid "Month"
+msgstr ""
+
+#: templates/modal-registration.html:77
+msgid "January"
+msgstr ""
+
+#: templates/modal-registration.html:78
+msgid "February"
+msgstr ""
+
+#: templates/modal-registration.html:79
+msgid "March"
+msgstr ""
+
+#: templates/modal-registration.html:80
+msgid "April"
+msgstr ""
+
+#: templates/modal-registration.html:81
+msgid "May"
+msgstr ""
+
+#: templates/modal-registration.html:82
+msgid "June"
+msgstr ""
+
+#: templates/modal-registration.html:83
+msgid "July"
+msgstr ""
+
+#: templates/modal-registration.html:84
+msgid "August"
+msgstr ""
+
+#: templates/modal-registration.html:85
+msgid "September"
+msgstr ""
+
+#: templates/modal-registration.html:86
+msgid "October"
+msgstr ""
+
+#: templates/modal-registration.html:87
+msgid "November"
+msgstr ""
+
+#: templates/modal-registration.html:88
+msgid "December"
+msgstr ""
+
+#: templates/modal-registration.html:91
+msgid "Year"
+msgstr ""
+
+#: templates/modal-registration.html:101
+msgid "Male"
+msgstr ""
+
+#: templates/modal-registration.html:102
+msgid "Female"
+msgstr ""
+
+# 85%
+#: templates/modal-registration.html:112 templates/modal-registration.html:114
+#, fuzzy
+msgid "Country"
+msgstr "国籍"
+
+#: templates/modal-registration.html:126
+msgid "Email address"
+msgstr ""
+
+#: templates/modal-registration.html:127
+msgid "Parent or guardian email address"
+msgstr ""
+
+#: templates/modal-registration.html:141
+msgid "Thanks for joining Scratch!"
+msgstr ""
+
+#: templates/modal-registration.html:142
+msgid "You're now logged in."
+msgstr ""
+
+#: templates/modal-registration.html:143
+msgid ""
+"Scratch is a community of all ages, from all over the world. Make sure your "
+"projects and comments are <a target=\"_blank\" href=\"/community_guidelines"
+"\">respectful and friendly</a>."
+msgstr ""
+
+#: templates/modal-registration.html:145
+msgid "Would you like to:"
+msgstr ""
+
+#: templates/modal-registration.html:147
+msgid "Learn how to make a project"
+msgstr ""
+
+#: templates/modal-registration.html:148
+msgid "Choose a starter project"
+msgstr ""
+
+#: templates/modal-registration.html:149
+msgid "Connect with a Scratcher"
+msgstr ""
+
+#: templates/modal-registration.html:159
+msgid "Next"
+msgstr ""
+
+#: templates/modal-registration.html:161
+msgid "OK Lets Go!"
+msgstr ""
+
+#: templates/modal-registration.html:170
+msgid "Your username must be between 3 and 20 characters"
+msgstr ""
+
+#: templates/modal-registration.html:171
+msgid "Sorry, that username already exists"
+msgstr ""
+
+#: templates/modal-registration.html:172
+msgid "Invalid username"
+msgstr ""
+
+#: templates/modal-registration.html:173
+msgid "You must enter a username"
+msgstr ""
+
+#: templates/modal-registration.html:174
+msgid "Your username may only contain letters, numbers, - and _"
+msgstr ""
+
+#: templates/modal-registration.html:175
+msgid "Your password cannot be \\"
+msgstr ""
+
+# 87%
+#: templates/modal-registration.html:176
+#, fuzzy
+msgid "Your password must be at least 6 characters"
+msgstr "密码长度至少为6个字符。"
+
+#: templates/modal-registration.html:177
+msgid "Your must enter a password"
+msgstr ""
+
+#: templates/modal-registration.html:178
+msgid "Your passowrds do not match"
+msgstr ""
+
+#: templates/modal-registration.html:179
+msgid "Your password cannot match your username"
+msgstr ""
+
+#: templates/modal-registration.html:180
+msgid "Your must select a birth month and year"
+msgstr ""
+
+#: templates/modal-registration.html:181
+msgid "You must specify a gender"
+msgstr ""
+
+#: templates/modal-registration.html:182
+msgid "Your must select a country"
+msgstr ""
+
+#: templates/modal-registration.html:183
+msgid "Your must provide an email address"
+msgstr ""
+
+#: templates/modal-registration.html:184
+msgid "Your must provide valid email address"
+msgstr ""
 
 #: templates/password_required_login.html:31
 msgid "Enter"
 msgstr "输入"
 
-#: templates/under-construction.html:6 templates/explore/explore2.html:6
-msgid "Explore -  Scratch"
-msgstr "探索 -  Scratch"
+#: templates/accounts/banned-response.html:32
+msgid "The Scratch Team decided to block the account:"
+msgstr ""
+
+#: templates/accounts/banned-response.html:34
+msgid "Date:"
+msgstr ""
 
 # 93%
 #: templates/accounts/base.html:24 templates/registration/base.html:24
@@ -314,10 +596,14 @@ msgstr "修改密码"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
-#: templates/carousel/carousel.html:18 templates/homepage/index.html:46
-#: templates/profiles/profile_detail.html:210
-#: templates/profiles/profile_detail.html:228 templates/projects/base.html:221
-#: templates/projects/base.html.py:247 templates/search/search.html:57
+#: templates/carousel/carousel.html:18 templates/homepage/index.html:78
+#: templates/profiles/profile_detail.html:180
+#: templates/profiles/profile_detail.html:214
+#: templates/profiles/profile_detail.html:249
+#: templates/profiles/profile_detail.html:267
+#: templates/profiles/profile_detail.html:286
+#: templates/profiles/profile_detail.html:321 templates/projects/base.html:272
+#: templates/projects/base.html.py:300 templates/search/search.html:57
 #: templates/search/search.html.py:87 templates/search/search.html:95
 msgid "View all"
 msgstr "查看全部"
@@ -326,7 +612,12 @@ msgstr "查看全部"
 msgid "No items"
 msgstr "没有项目"
 
-#: templates/carousel/includes/project-thumb.html:12
+#: templates/carousel/includes/project-thumb.html:14
+msgid "in"
+msgstr ""
+
+#: templates/carousel/includes/project-thumb.html:17
+#: templates/carousel/includes/project-thumb.html:19
 #: templates/explore/explore2.html:54
 #: templates/explore/includes/project_list.html:9
 #: templates/explore/includes/related_projects.html:17
@@ -334,9 +625,8 @@ msgstr "没有项目"
 #: templates/explore/includes/related_projects.html:46
 #: templates/explore/includes/related_projects.html:75
 #: templates/explore/includes/related_projects2.html:8
-#: templates/galleries/includes/backbone-templates.html:22
-#: templates/galleries/includes/project_list.html:16
-#: templates/projects/base.html:79 templates/projects/base.html.py:232
+#: templates/galleries/includes/project-list.html:13
+#: templates/projects/base.html:81 templates/projects/base.html.py:283
 #: templates/projects/includes/project_list.html:11
 msgid "by"
 msgstr "作者"
@@ -369,33 +659,41 @@ msgstr "数据值"
 msgid "Time"
 msgstr "时间"
 
-#: templates/comments/comment-module.html:9
+#: templates/comments/comment-module.html:10
 #: templates/comments/comment_module.html:10
 #: templates/includes/backbone-templates.html:52
 msgid "Leave a comment"
 msgstr "发表评论"
 
-#: templates/comments/comment-module.html:11
-msgid "You have <span id=\\\"chars-left\\\">500</span> characters left."
+# 96%
+#: templates/comments/comment-module.html:12
+#, fuzzy
+msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr "还可以输入<span id=\\\"chars-left\\\">500</span>个字符。"
 
-#: templates/comments/comment-module.html:14
+#: templates/comments/comment-module.html:15
 #: templates/comments/comment_module.html:15
 #: templates/comments/comment_module.html:64
+#: templates/includes/backbone-templates.html:127
 msgid "Post"
 msgstr "发表"
 
-#: templates/comments/comment-module.html:15
+#: templates/comments/comment-module.html:16
 #: templates/comments/comment_module.html:18
 #: templates/comments/comment_module.html:67
+#: templates/includes/backbone-templates.html:128
 msgid "Cancel"
 msgstr "取消"
 
-#: templates/comments/comment.html:13
+#: templates/comments/comment-module.html:26
+msgid "Comments loading..."
+msgstr ""
+
+#: templates/comments/comment.html:15
 msgid "Report"
 msgstr "举报"
 
-#: templates/comments/comment.html:33
+#: templates/comments/comment.html:36
 #: templates/comments/comment_module.html:29
 #: templates/comments/comment_module.html:46
 #: templates/comments/includes/comment.html:11
@@ -428,13 +726,17 @@ msgstr "载入更多"
 msgid "%(comment.datetime_created|timesince)s ago"
 msgstr "%(comment.datetime_created|timesince)s 之前"
 
-#: templates/explore/base.html:32 templates/studio/base.html:29
+#: templates/explore/base.html:27 templates/studio/base.html:29
 msgid "Example tab"
 msgstr "举例标签"
 
-#: templates/explore/base.html:51 templates/galleries/base.html:48
+#: templates/explore/base.html:46
 msgid "Enter content here"
 msgstr "在这里输入内容"
+
+#: templates/explore/explore2.html:6
+msgid "Explore -  Scratch"
+msgstr "探索 -  Scratch"
 
 #: templates/explore/explore2.html:42
 msgid "Jump"
@@ -467,16 +769,18 @@ msgid "Art"
 msgstr "艺术"
 
 #: templates/explore/projects.html:19 templates/explore/studios.html:19
+#: templates/info/starter_projects.html:50
 #: templates/info/help/studio/tips/home.html:43
 msgid "Games"
 msgstr "游戏"
 
 #: templates/explore/projects.html:20 templates/explore/studios.html:20
-#: templates/info/help/studio/tips/home.html:62
+#: templates/info/help/studio/tips/home.html:58
 msgid "Music"
 msgstr "音乐"
 
 #: templates/explore/projects.html:21 templates/explore/studios.html:21
+#: templates/info/starter_projects.html:133
 #: templates/info/help/studio/tips/home.html:51
 msgid "Stories"
 msgstr "故事"
@@ -511,7 +815,7 @@ msgid "Projects"
 msgstr "项目"
 
 #: templates/explore/projects.html:83 templates/explore/studios.html:77
-#: templates/projects/base.html:246
+#: templates/projects/base.html:299
 msgid "Studios"
 msgstr "工作室"
 
@@ -543,61 +847,65 @@ msgid "Studio:"
 msgstr "工作室："
 
 #: templates/explore/includes/studio_list.html:29
-#: templates/projects/base.html:154
+#: templates/projects/base.html:159
 #, python-format
 msgid "Last modified: %(tDate)s"
 msgstr "最后修改日期: %(tDate)s"
 
-#: templates/galleries/base.html:4
+#: templates/galleries/base.html:8
 msgid "Scratch Studio"
 msgstr "Scratch工作室"
 
-#: templates/galleries/base.html:32
-msgid "Studio description"
-msgstr "工作室说明"
-
-#: templates/galleries/gallery.html:12
+#: templates/galleries/base.html:46
 msgid "Change"
 msgstr "修改"
 
-#: templates/galleries/gallery.html:18
-#: templates/galleries/includes/curator_list.html:3
+#: templates/galleries/base.html:52
 msgid "Owner"
 msgstr "作者"
 
 # 82%
-#: templates/galleries/gallery.html:21
+#: templates/galleries/base.html:55
+#, python-format
 #, python-format, python-format
 msgid "Updated %(tDate)s"
 msgstr "更新于 %(tDate)s"
 
-#: templates/galleries/gallery.html:25
-msgid "Read more &raquo;"
-msgstr "查看更多 &raquo;"
+#: templates/galleries/base.html:59
+msgid "Describe what this studio is about."
+msgstr ""
 
-#: templates/galleries/gallery.html:42
+#: templates/galleries/base.html:92
 #, python-format
 msgid "Follower%(tPlural)s )"
 msgstr "关注 %(tPlural)s )"
 
-#: templates/galleries/gallery.html:51
+#: templates/galleries/base.html:102
 #, python-format
 msgid "Projects ( <span data-count=\"projects\">%(tCount)s</span> )"
 msgstr "项目 ( <span data-count=\"projects\">%(tCount)s</span> )"
 
-#: templates/galleries/gallery.html:54
+#: templates/galleries/base.html:105
 #, python-format
 msgid "Comments ( <span data-count=\"comments\">%(tCount)s</span> )"
 msgstr "评论 ( <span data-count=\"comments\">%(tCount)s</span> )"
 
-#: templates/galleries/gallery.html:57
+#: templates/galleries/base.html:108
 #, python-format
 msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
 msgstr "管理员 ( <span data-count=\"curators\">%(tCount)s</span> )"
 
-#: templates/galleries/gallery.html:60
-msgid "More info"
-msgstr "更多信息"
+#: templates/galleries/comments.html:28
+#: templates/includes/backbone-templates.html:124
+#, python-format
+msgid ""
+"You have <span id=\"chars-left-<%%= comment_id %%>\">500</span> characters "
+"left."
+msgstr "您还可以输入 <span id=\"chars-left-<%%= comment_id %%>\">500</span> 个字符。"
+
+#: templates/galleries/curators.html:14
+msgid "Congratulations! You are now a curator of this studio."
+msgstr ""
 
 #: templates/galleries/gallery_list.html:4
 #, python-format
@@ -605,24 +913,18 @@ msgid "%(username)s Studio (%(tGCount)s)"
 msgstr "%(username)s 工作室 (%(tGCount)s)"
 
 #: templates/galleries/includes/curator_action_bar.html:7
-msgid "Add curators"
-msgstr "添加管理员"
+msgid "Invite curators"
+msgstr ""
 
-#: templates/galleries/includes/curator_action_bar.html:12
+#: templates/galleries/includes/curator_action_bar.html:13
 msgid "Add"
 msgstr "添加"
 
-#: templates/galleries/includes/curator_action_bar.html:14
-msgid "Add curators by username or drag from the explore bar below!"
+# 81%
+#: templates/galleries/includes/curator_action_bar.html:16
+#, fuzzy
+msgid "Invite curators by username or select from the explore bar below!"
 msgstr "通过用户名或直接从下面的发现栏上拖动添加管理员"
-
-#: templates/galleries/includes/curator_list.html:15
-msgid "Curators"
-msgstr "管理员"
-
-#: templates/galleries/includes/curator_list.html:33
-msgid "There are no curators for this gallery"
-msgstr "本馆尚无管理员"
 
 #: templates/galleries/includes/explore-bar-users.html:4
 msgid "Add Curators"
@@ -637,8 +939,8 @@ msgid "Scratchers Following Me"
 msgstr "粉丝"
 
 # 91%
-#: templates/galleries/includes/explore-bar.html:6
-#: templates/galleries/includes/explore-bar.html:10
+#: templates/galleries/includes/explore-bar.html:5
+#: templates/galleries/includes/explore-bar.html:9
 msgid "Add Projects"
 msgstr "新建项目"
 
@@ -659,91 +961,105 @@ msgstr "最近查看的项目"
 msgid "Add projects"
 msgstr "新建项目"
 
-#: templates/galleries/includes/project_action_bar.html:14
-msgid "Drag projects from the explore bar below!"
-msgstr "从下面的发现栏中拖动项目"
+#: templates/galleries/includes/project_action_bar.html:27
+msgid "Add by url"
+msgstr ""
 
-#: templates/homepage/index.html:30
+#: templates/galleries/includes/project_action_bar.html:33
+msgid "Add by tag"
+msgstr ""
+
+#: templates/galleries/includes/project_action_bar.html:37
+msgid "You can select projects from the bar below or add by url or tag above."
+msgstr ""
+
+#: templates/homepage/index.html:32
+msgid "Welcome to Scratch!"
+msgstr ""
+
+#: templates/homepage/index.html:59
 msgid "What's Happening?"
 msgstr "正在发生的事？"
 
-#: templates/homepage/index.html:45
+#: templates/homepage/index.html:77
 msgid "Scratch News"
 msgstr "Scratch新闻"
 
-#: templates/homepage/index.html:89
+#: templates/homepage/index.html:121
 msgid "Create stories, games, and animations"
 msgstr "创建故事，游戏和动画"
 
-#: templates/homepage/index.html:89
+#: templates/homepage/index.html:121
 msgid "Share with others around the world"
 msgstr "与世界上的其他人分享"
 
-#: templates/homepage/index.html:94
+#: templates/homepage/index.html:126
 msgid "TRY IT OUT"
 msgstr "快试试看吧"
 
-#: templates/homepage/index.html:100
+#: templates/homepage/index.html:132
 msgid "VIEW PROJECTS"
 msgstr "查看项目"
 
-#: templates/homepage/index.html:106
+#: templates/homepage/index.html:138
 msgid "JOIN SCRATCH"
 msgstr "加入Scratch"
 
-#: templates/homepage/index.html:107
+#: templates/homepage/index.html:139
 msgid "it's free"
 msgstr "它是免费的"
 
-#: templates/homepage/index.html:109
-msgid "A creative learning community with"
+# 77%
+#: templates/homepage/index.html:143
+#, fuzzy
+msgid "A creative learning community with more than"
 msgstr "一个创造性的学习社区"
 
-#: templates/homepage/index.html:109
+#: templates/homepage/index.html:143
 msgid "projects shared"
 msgstr "项目已分享"
 
-#: templates/homepage/index.html:111
+#: templates/homepage/index.html:145
 msgid "ABOUT SCRATCH"
 msgstr "关于Scratch"
 
-#: templates/homepage/index.html:112
+#: templates/homepage/index.html:146
 msgid "FOR EDUCATORS"
 msgstr "给教育者的话"
 
-#: templates/homepage/index.html:113
+#: templates/homepage/index.html:147
 msgid "FOR PARENTS"
 msgstr "给家长的话"
 
-#: templates/homepage/index.html:129 templates/projects/project_list.html:16
+#: templates/homepage/index.html:163 templates/projects/project_list.html:16
 msgid "Featured Projects"
 msgstr "精选作品"
 
-#: templates/homepage/index.html:145
+#: templates/homepage/index.html:179
 msgid "Featured Studios"
 msgstr "特色工作室"
 
-#: templates/homepage/index.html:160
+#: templates/homepage/index.html:205
 msgid "Projects by Scratchers I'm Following"
 msgstr "关注者的项目"
 
-#: templates/homepage/index.html:162
+#: templates/homepage/index.html:210
 msgid "Projects Loved by Scratchers I'm Following"
 msgstr "关注者赞过的项目"
 
-#: templates/homepage/index.html:164
+#: templates/homepage/index.html:217
 msgid "Projects in Studios I'm Following"
 msgstr "关注的工作室的项目"
 
-#: templates/homepage/index.html:182
+#: templates/homepage/index.html:245
 msgid "What the Community is Sharing"
 msgstr "社区正在分享的项目"
 
-#: templates/homepage/index.html:197
+#: templates/homepage/index.html:260
 msgid "What the Community is Remixing"
 msgstr "社区正在再创作的项目"
 
-#: templates/homepage/index.html:201
+#: templates/homepage/index.html:264
 msgid "What the Community is Loving"
 msgstr "社区正在被赞的项目"
 
@@ -754,13 +1070,6 @@ msgstr "您有 <span id=\\"
 #: templates/includes/backbone-templates.html:79
 msgid "See all replies"
 msgstr "查看所有回复"
-
-#: templates/includes/backbone-templates.html:124
-#, python-format
-msgid ""
-"You have <span id=\"chars-left-<%%= comment_id %%>\">500</span> characters "
-"left."
-msgstr "您还可以输入 <span id=\"chars-left-<%%= comment_id %%>\">500</span> 个字符。"
 
 #: templates/includes/follow-button.html:4
 msgid "Follow"
@@ -796,7 +1105,8 @@ msgid "Loves"
 msgstr "赞"
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:220
+#: templates/projects/base.html:271 templates/projects/remixes.html:3
+#: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
 msgid "Remixes"
@@ -856,116 +1166,135 @@ msgstr ""
 "如果您决定要进行侵犯版权的投诉，请注意，我们可能会在lingeffects.org等信息搜集网站张贴您的通知，并且会有个人识别信息出现。另外，如果您对于"
 "侵权的材料进行伪造，则需要对造成的损失负责（如律师费等）。"
 
-#: templates/info/about.html:16
+#: templates/info/about.html:17
 msgid ""
-"Scratch is a programming language and online community where you can create "
-"your own interactive stories, games, and animations -- and share your "
-"creations with others around the world."
-msgstr "Scratch是一门程序设计语言，也是一个在线社区。您可以创建自己的互动故事，游戏和动画，也可以与世界各地的人一起分享您的创作成果。"
+"With Scratch, you can program your own interactive stories, games, and "
+"animations &mdash; and share your creations with others in the online "
+"community."
+msgstr ""
 
-#: templates/info/about.html:18
+#: templates/info/about.html:20
 msgid ""
-"In the process of designing and programming Scratch projects, young people "
-"learn to think creatively, reason systematically, and work collaboratively."
-msgstr "在Scratch项目的设计与编程过程中，年轻人可以学会创造性思考，系统化的推理以及如何协同工作。"
+"Scratch helps young people learn to think creatively, reason systematically, "
+"and work collaboratively &mdash; essential skills for life in the 21st "
+"century."
+msgstr ""
 
-#: templates/info/about.html:27
-msgid "Who is Scratch for?"
-msgstr "哪些人群适合使用Scratch?"
+#: templates/info/about.html:23
+msgid ""
+"Scratch is a project of the Lifelong Kindergarten Group at the MIT Media "
+"Lab. It is provided free of charge."
+msgstr ""
 
-#: templates/info/about.html:29
-msgid "Scratch is for ages 8 and up!"
-msgstr "Scratch适用于所有8岁或以上的人群！"
-
-#: templates/info/about.html:32 templates/info/parents.html:12
-msgid "For Parents"
-msgstr "给父母的话"
+#: templates/info/about.html:26
+msgid ""
+"<a href=\"/parents\">INFO FOR PARENTS</a> | <a href=\"/educators\">INFO FOR "
+"EDUCATORS</a>"
+msgstr ""
 
 #: templates/info/about.html:37
+msgid "Who Uses Scratch?"
+msgstr ""
+
+#: templates/info/about.html:40
+msgid ""
+"Scratch is designed especially for ages 8 to 16, but is used by people of "
+"all ages. Millions of people are creating Scratch projects in a wide variety "
+"of settings, including homes, schools, museums, libraries, and community "
+"centers."
+msgstr ""
+
+#: templates/info/about.html:42
+msgid "Around the World"
+msgstr ""
+
+#: templates/info/about.html:45
+msgid ""
+"Scratch is used in more than 150 different countries and available in more "
+"than 40 languages. To change languages, click the menu at the bottom of the "
+"page. Or, in the Project Editor, click the globe at the top of the page. To "
+"add or improve a translation, \n"
+"  see the <a href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scratch"
+"\">translation</a> page."
+msgstr ""
+
+#: templates/info/about.html:48
+msgid "Quotes"
+msgstr ""
+
+#: templates/info/about.html:50
+msgid ""
+"The Scratch Team has received many emails from youth, parents, and educators "
+"expressing thanks for Scratch. Want to see what people are saying? You can "
+"read a collection of the <a href=\"/info/quotes\">quotes</a> we've received. "
+msgstr ""
+
+#: templates/info/about.html:52
+msgid "Learn More About Scratch"
+msgstr ""
+
+#: templates/info/about.html:55
+msgid ""
+"\n"
+"    <li><a href=\"../help/faq/\">Frequently Asked Questions</a></li>\n"
+"    <li><a href=\"../parents/\">Information for Parents</a></li>\n"
+"    <li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
+"in the News</a></li>\n"
+"    "
+msgstr ""
+
+#: templates/info/about.html:71
+msgid "Learn to Code, Code to Learn"
+msgstr ""
+
+#: templates/info/about.html:74
+msgid ""
+"\n"
+"  The ability to code computer programs is an important part of literacy in "
+"today’s society. When people learn to code in Scratch, they learn important "
+"strategies for solving problems, designing projects, and communicating "
+"ideas.\n"
+msgstr ""
+
+#: templates/info/about.html:78
+msgid "Scratch in Schools"
+msgstr ""
+
+#: templates/info/about.html:81
+msgid ""
+"\n"
+"  Students are learning with Scratch at all levels (from elementary school "
+"to college) and across disciplines (such as math, computer science, language "
+"arts, social studies). Educators share stories, exchange resources, ask "
+"questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+"\">ScratchEd website</a>.\n"
+msgstr ""
+
+#: templates/info/about.html:85
 msgid "Research"
 msgstr "相关研究"
 
-# 75%
-#: templates/info/about.html:42
-msgid "Scratch Team"
-msgstr "Scratch团队"
-
-#: templates/info/about.html:44
-msgid ""
-"Scratch is developed by the Lifelong Kindergarten Group at the MIT Media "
-"Lab, with financial support from the National Science Foundation, Microsoft, "
-"Intel Foundation, MacArthur Foundation, Google, Iomega and MIT Media Lab "
-"research consortia.Read Papers and presentations about Scratch. See the <a "
-"href=\"#\">Credits page</a> for a list of people who worked together to "
-"create Scratch."
-msgstr ""
-"Scratch由MIT媒体实验室终生幼儿园研究小组研发。国家科学基金会、微软、英特尔基金会、麦克阿瑟基金会、谷歌、艾美加以及MIT媒体实验室研究联盟为其"
-"提供资金支持。阅读关于Scratch的论文或演示文稿。点击 <a href=\"#\">致谢页</a> 查看携手努力创造Scratch的人员名单。"
-
-#: templates/info/about.html:47
-msgid "Support Scratch"
-msgstr "支持Scratch"
-
-#: templates/info/about.html:49
-msgid ""
-"We are pleased to provide Scratch free of charge. If you enjoy using "
-"Scratch, please consider making a donation to support Scratch. Donations of "
-"any size are appreciated."
-msgstr "我们愿意无偿的提供Scratch。如果您喜欢使用Scratch，请考虑通过捐款来支持Scratch。任何数额的捐款都值得感激。"
-
-#: templates/info/about.html:52
-msgid ""
-"Your donation goes into our ScratchLabs fund, used to support future "
-"development of Scratch software and the Scratch website. On the <a href=\"#"
-"\">donation form</a>, just fill in the amount of your donation and select "
-"\"New gift\" in the pull-down menu for the gift type. Thanks for supporting "
-"Scratch!"
-msgstr ""
-"您的捐款会被纳入我们的Scratch实验室基金，用于支持未来Scratch软件和网站的研发。在 <a "
-"href=\"#\">捐款表格</a>中填写您要捐赠的数额并在下拉菜单中选择“新礼品”。感谢您支持Scratch！"
-
-#: templates/info/about.html:61
-msgid "Questions?"
-msgstr "问题?"
-
-#: templates/info/about.html:63 templates/info/help/index.html:90
-msgid "Frequently Asked Questions"
-msgstr "常见问题"
-
-#: templates/info/about.html:65 templates/info/help/index.html:92
-msgid "Or visit the discussion forums:"
-msgstr "或者访问讨论版块:"
-
-#: templates/info/about.html:66 templates/info/help/index.html:93
-msgid "Questions about Scratch"
-msgstr "关于Scratch的问题"
-
-#: templates/info/about.html:67 templates/info/help/index.html:94
-msgid "Help with Scripts"
-msgstr "关于脚本的帮助"
-
-#: templates/info/about.html:70
-msgid "Scratch in the News"
-msgstr "Scratch相关新闻"
-
-#: templates/info/about.html:79
-msgid "Scratch Events"
-msgstr "Scratch相关事件"
-
 #: templates/info/about.html:88
-msgid "Scratch Products"
-msgstr "Scratch产品"
-
-#: templates/info/about.html:99
 msgid ""
-"The Scratch project is based upon research supported by the National Science "
-"Foundation under grant number 0325828. Any opinions, findings, and "
-"conclusions or recommendations expressed on this site are those of the "
-"authors and do not necessarily reflect the views of the National Science "
-"Foundation."
+"\n"
+"  The MIT Scratch Team and collaborators are researching how people use and "
+"learn with Scratch (for an introduction, see <a href=\"http://web.media.mit."
+"edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). "
+"Find out more about <a href=\"/info/research\">Scratch research</a>.\n"
 msgstr ""
-"Scratch是基于国家科学基金会的支持，授权号为0325828研发的项目。本站上的任何意见、发现、结论或建议谨代表其作者，不能代表国家科学基金会的观点"
-"。"
+
+#: templates/info/about.html:92
+msgid "Support and Funding"
+msgstr ""
+
+#: templates/info/about.html:94
+msgid ""
+"\n"
+"  The Scratch project, initiated in 2003, has received generous support from "
+"the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
+"Intel Foundation, Microsoft, MacArthur Foundation, Google, Dell, Inversoft, "
+"and MIT Media Lab research consortia.\n"
+msgstr ""
 
 #: templates/info/community_guidelines.html:14
 msgid "Scratch Community Guidelines"
@@ -1012,6 +1341,26 @@ msgid ""
 "let us know about it."
 msgstr "<b>帮助保持站点的友好性。</b> 如果您认为某项目或评论低劣、无礼、暴力或其他不恰当时，点击“举报”让我们知晓。"
 
+#: templates/info/educators.html:8
+msgid "Scratch - For Educators"
+msgstr ""
+
+#: templates/info/educators.html:12
+msgid "For Educators"
+msgstr ""
+
+#: templates/info/educators.html:15
+msgid ""
+"Scratch is designed with learning and education in mind. A wide variety of "
+"educators have been supporting Scratch creators since 2007, in both formal "
+"and informal learning environments &ndash; K-12 classroom teachers, "
+"educational and computer science researchers, librarians, museum educators, "
+"and parents.<br/><br/>\n"
+"Want to learn more about learning with Scratch?<br/>Check out the <a href="
+"\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+"    "
+msgstr ""
+
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
 msgstr "Scratch 2.0有哪些新功能?"
@@ -1038,45 +1387,45 @@ msgstr "Scratch 2.0允许您直接在Web浏览器里创建、编辑和查看项�
 msgid "Here are some of the new features in Scratch 2.0."
 msgstr "下面介绍了Scratch 2.0中的一些新功能。"
 
-#: templates/info/overview.html:26
+#: templates/info/overview.html:25
 msgid "Project Editor"
 msgstr "项目编辑器"
 
-#: templates/info/overview.html:29
+#: templates/info/overview.html:28
 msgid "Click <b>Create</b> to make a new project."
 msgstr "点击<b>创建</b>新建一个项目。"
 
-#: templates/info/overview.html:32
+#: templates/info/overview.html:31
 msgid ""
 "Your project will automatically save as you work on it (if you're logged in)."
 msgstr "项目在您设计的同时会自动保存(前提是您已登录)。"
 
-#: templates/info/overview.html:33
+#: templates/info/overview.html:32
 msgid ""
 "When you create a project, you are the only one who can see it. After you "
 "share it, anyone can see and remix it."
 msgstr "项目刚创建时，只有您自己能看到它。在您将它分享后，其它所有人都可以看到并对它进行再创作。"
 
-#: templates/info/overview.html:35
+#: templates/info/overview.html:34
 msgid ""
-"The new paint editor uses <b>vector graphics</b> so that images can scale to "
-"different sizes without getting jagged."
-msgstr "新的绘图编辑器包含了<b>矢量</b>绘图功能, 这样图像可缩放到不同尺寸而不会产生锯齿效果。"
+"The new paint editor includes <b>vector graphics</b> so that images can "
+"scale to different sizes without getting jagged."
+msgstr ""
 
-#: templates/info/overview.html:38
+#: templates/info/overview.html:37
 msgid ""
 "Your <b>Backpack</b> lets you copy and move sprites, costumes, backdrops, "
 "and scripts from any project to another. If you're logged in, you can open "
 "your Backpack inside any project (it's at the bottom of the screen)."
 msgstr "您的<b>书包</b>可以让您在不同的项目中间复制和移动精灵，造型，背景，和脚本。登录后，您可以在任意项目中打开书包（书包在屏幕的底部）。"
 
-#: templates/info/overview.html:40
+#: templates/info/overview.html:39
 msgid ""
 "You can use the webcam on your computer to interact with projects by moving "
 "your hands or body."
 msgstr "可以通过在您计算机上的摄像头前移动手或身体来与项目进行互动。"
 
-#: templates/info/overview.html:43
+#: templates/info/overview.html:42
 msgid "You can now make your own programming blocks."
 msgstr "现在您可以创建自己的程序模块了。"
 
@@ -1085,13 +1434,17 @@ msgid "Use clone blocks in your scripts to make copies of sprites."
 msgstr "在脚本中利用克隆功能来建立角色的副本。"
 
 #: templates/info/overview.html:48
+msgid "Store numbers in cloud variables to create surveys and other projects."
+msgstr ""
+
+#: templates/info/overview.html:51
 msgid ""
 "Find out more about the <a href=\"http://info.scratch.mit.edu/prototype"
 "\">new Scratch blocks</a>."
 msgstr ""
 "更多信息请参考<a href=\"http://info.scratch.mit.edu/prototype\">Scratch新的功能块</a>。"
 
-#: templates/info/overview.html:50
+#: templates/info/overview.html:53
 #, python-format
 msgid ""
 "You can see and manage all your projects in <b>My Stuff</b> <img src="
@@ -1100,17 +1453,17 @@ msgstr ""
 "您可以在 <b>我的项目中心</b> <img src=\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" "
 "/>中查看和管理您的所有项目。"
 
-#: templates/info/overview.html:53
+#: templates/info/overview.html:56
 msgid "Community Features"
 msgstr "社区特色"
 
-#: templates/info/overview.html:56
+#: templates/info/overview.html:59
 msgid ""
 "On the home page, you can see what others have shared recently and scroll to "
 "see many more projects."
 msgstr "在社区首页，您可以看到其它人最近分享的项目，滚动滚动条可以看到更多的项目。"
 
-#: templates/info/overview.html:59
+#: templates/info/overview.html:62
 #, python-format
 msgid ""
 "When viewing a project, click <img src=\"%(STATIC_URL)s/images/help/see-"
@@ -1119,7 +1472,7 @@ msgstr ""
 "查看项目时，点击 <img src=\"%(STATIC_URL)s/images/help/see-inside-small.png\" /> "
 "可以进入项目编辑界面，在此您可以查看其代码，研究它是如何实现的。"
 
-#: templates/info/overview.html:61
+#: templates/info/overview.html:64
 #, python-format
 msgid ""
 "Inside any project, click <img src=\"%(STATIC_URL)s/images/help/remix-button."
@@ -1130,13 +1483,13 @@ msgstr ""
 "在任意项目中，点击 <img src=\"%(STATIC_URL)s/images/help/remix-button.png\" /> "
 "，您就可以保存您自己的项目副本和对它进行修改。在您将它分享后，在项目页面中将会高亮显示原作者信息并链接到原项目的页面。"
 
-#: templates/info/overview.html:63
+#: templates/info/overview.html:66
 msgid ""
 "Discover interesting projects by clicking on the Related Projects bar at the "
 "bottom of any project page."
 msgstr "点击任意项目页面底部的相关项目栏，您可以发现其它有趣的项目。"
 
-#: templates/info/overview.html:66
+#: templates/info/overview.html:69
 msgid ""
 "Click your username or icon to go to your <b>Profile</b> page, \n"
 "where you can feature one of your projects and tell others what you're "
@@ -1145,7 +1498,7 @@ msgstr ""
 "点击您的用户名或图像，会进到您的<b>个人资料</b>页面，\n"
 "在这里，您可以重点推荐一个您的项目，也可以告诉一下别人您当前正在做些什么。"
 
-#: templates/info/overview.html:69
+#: templates/info/overview.html:72
 #, python-format
 msgid ""
 "People can post comments on your Profile page and <img src=\"%(STATIC_URL)s/"
@@ -1154,96 +1507,81 @@ msgstr ""
 "其它人可以在您的个人资料页面留言评论，关注<img src=\"%(STATIC_URL)s/images/help/follow-button.png\" "
 "/>您的Scratch帐号来获得您更新通知。"
 
-#: templates/info/overview.html:71
+#: templates/info/overview.html:74
 msgid ""
 "Galleries are now called <b>Studios</b>, and can be curated by you and "
 "others you invite."
 msgstr "原展示区现在改名叫<b>工作室</b>，您在这里可以展示一些您推荐的项目，您也可以邀请他人与你一起参与项目推荐。"
 
-#: templates/info/overview.html:73
+#: templates/info/overview.html:76
 msgid "The Search features lets you find and preview projects more easily."
 msgstr "搜索功能让查找或预览项目更容易。"
 
-#: templates/info/overview.html:77
-msgid "Features Planned for 2013"
-msgstr "2013年计划新增的功能"
-
-#: templates/info/overview.html:79
-msgid ""
-"Download a stand-alone version of the Scratch project editor to use off-line"
-msgstr "提供独立的Scratch项目编辑器下载，以便离线使用。"
-
 #: templates/info/overview.html:80
-msgid ""
-"Store “persistent data” in the cloud to create online surveys, high-score "
-"lists, and more"
-msgstr "将“永久数据”保存在云中，使创建在线调查，高分列表等类似的应用成为可能"
-
-#: templates/info/overview.html:81
-msgid "Export your Scratch projects as YouTube videos or SWF files"
-msgstr "将Scratch项目输出到YouTube视频或SWF文件"
+msgid "Planned for Summer 2013"
+msgstr ""
 
 #: templates/info/overview.html:82
-msgid "Create side-scrolling games, stories, and tours with scrolling blocks"
-msgstr "使用滚动功能块创建滚动的游戏、故事和教程等。"
+msgid ""
+"Download an off-line version of the Scratch project editor to use without an "
+"Internet connection"
+msgstr ""
 
 #: templates/info/overview.html:83
 msgid ""
-"Connect to external devices, web services, and outside databases with new "
-"Scratch extensions (including LEGO WeDo and the ScratchBoard)"
-msgstr "使用新的Scratch扩展(包括LEGO WeDo和ScratchBoard)连接外部设备，Web服务和外部数据库"
-
-#: templates/info/overview.html:84
-msgid ""
-"Select from a wider range of sprites and images in a community-curated "
-"sprite collection"
-msgstr "从社区推荐的角色集合选择更广泛的角色造型和图像"
+"Connect to external devices with new Scratch extensions (including LEGO WeDo "
+"and the ScratchBoard)"
+msgstr ""
 
 #: templates/info/parents.html:8
 msgid "Scratch - For Parents"
 msgstr "Scratch - 给家长的话"
 
+#: templates/info/parents.html:12
+msgid "For Parents"
+msgstr "给父母的话"
+
 #: templates/info/parents.html:15
 msgid ""
 "Scratch is a programming language and an online community where children can "
 "program and share interactive media such as stories, games, and animation "
-"with people from all over the world. Scratch is designed and maintained by "
-"the Lifelong Kindergarten group at the MIT Media Lab. As children create "
-"with Scratch, they learn to think creatively, work collaboratively, and "
-"reason systematically."
+"with people from all over the world. As children create with Scratch, they "
+"learn to think creatively, work collaboratively, and reason systematically. "
+"Scratch is designed and maintained by the Lifelong Kindergarten group at the "
+"MIT Media Lab. "
 msgstr ""
-"Scratch既是一款编程语言，也是一个在线社区。孩子们可以用它制作互动媒体，比如故事、游戏和动画等，并与世界各地的人分享。Scratch是由MIT媒体"
-"工作室终生幼儿园小组设计并维护。当孩子们用Scratch创作时，他们会学会创意思考、协同合作以及推理。"
 
-#: templates/info/parents.html:21
+#: templates/info/parents.html:24
 msgid "What is the age range for Scratch?"
 msgstr "Scratch适合哪个年龄段的人群使用?"
 
-#: templates/info/parents.html:23
+#: templates/info/parents.html:26
 msgid ""
 "While Scratch is primarily designed for 8 to 16 year olds, it is also used "
 "by people of all ages, including younger children with their parents."
 msgstr "Scratch的设计初衷是为8至16岁年龄的孩子使用，但现在的使用者涵盖了各个年龄段的人群，包括年龄更小的孩子和他们的父母。"
 
-#: templates/info/parents.html:26
+#: templates/info/parents.html:29
 msgid "What resources are available for learning Scratch?"
 msgstr "都有哪些辅助学习Scratch的资料?"
 
-#: templates/info/parents.html:28
-msgid ""
-"If you’re just getting started, there’s a step-by-step guide available "
-"inside Scratch, or you can download the Getting Started guide (PDF). The "
-"Scratch Cards provide a fun way to learn more. For an overview of Scratch "
-"resources, see Scratch Help."
-msgstr ""
-"如果您刚入门，在Scratch上就带有按步骤的指南，或者下载入门指南（PDF)。Scratch卡提供了一种有趣的方法，可使您了解更多。查看Scratch"
-"帮助，获得Scratch资源预览。"
-
 #: templates/info/parents.html:31
+#, python-format
+msgid ""
+"If you’re just getting started, there’s a <a href=\"/projects/editor/?"
+"tip_bar=getStarted\">step-by-step guide</a> available inside Scratch, or you "
+"can download the <a href=\"%(STATIC_URL)s/pdfs/help/"
+"ScratchGetStarted_beta_draft_Jan2013.pdf\">Getting Started guide (PDF)</a>. "
+"The <a href=\"/help/cards/\">Scratch Cards</a> provide a fun way to learn "
+"more. For an overview of Scratch resources, see <a href=\"/help/\">Scratch "
+"Help</a>."
+msgstr ""
+
+#: templates/info/parents.html:34
 msgid "What is the Scratch online community?"
 msgstr "Scratch在线社区是什么?"
 
-#: templates/info/parents.html:33
+#: templates/info/parents.html:36
 msgid ""
 "When participating in the Scratch online community, members can explore and "
 "experiment in an open learning community with other Scratch members from all "
@@ -1253,26 +1591,28 @@ msgstr ""
 "加入Scratch在线社区的会员可以在一个开放式的学习环境中，与不同背景、不同年龄和不同兴趣的人一起探索并试验。会员们可以分享自己的作品，获得反馈，并且"
 "互相学习。"
 
-#: templates/info/parents.html:35
+#: templates/info/parents.html:38
 msgid "What are the guidelines for participating?"
 msgstr "会员需要遵守哪些行为规范?"
 
-#: templates/info/parents.html:37
+#: templates/info/parents.html:40
 msgid ""
 "The MIT Scratch Team works with the community to maintain a friendly and "
-"respectful environment. For example, members are asked to be constructive "
-"when giving comments and help keep the website friendly by reporting any "
-"inappropriate content. You can help your child learn how to participate by "
-"reviewing the community guidelines together."
+"respectful environment. Members are asked to be constructive when giving "
+"comments and to help keep the website friendly by reporting any "
+"inappropriate content. The Scratch Team includes a group of moderators who "
+"work each day to manage activity on the site and respond to reports, with "
+"the help of tools such as <a href=\"http://www.inversoft.com/cleanspeak/"
+"\">Cleanspeak</a>. You can help your child learn how to participate in the "
+"Scratch community by reviewing the <a href=\"/community_guidelines"
+"\">community guidelines</a> together."
 msgstr ""
-"MIT的Scratch团队将与会员们一起维护站点友好和互相尊重的环境。比如，当会员发表评论时要有建设性，并且可以举报不适宜的内容。您可以与您的孩子一起阅"
-"读社区行为规范，帮助他更好的学习和参与。"
 
-#: templates/info/parents.html:40
+#: templates/info/parents.html:43
 msgid "What is your privacy policy?"
 msgstr "隐私政策是什么？"
 
-#: templates/info/parents.html:41
+#: templates/info/parents.html:44
 msgid ""
 "To protect children's online privacy, we limit what we collect during the "
 "signup process, and what we make public on the website. We don't sell or "
@@ -1283,29 +1623,265 @@ msgstr ""
 "为保护孩子的在线隐私，我们会对注册信息和网站公布信息进行限制。绝不对外销售和租赁账户信息。 点击 <a "
 "href=\"/help/faq/#privacy\">常见问题页</a>可以了解更多关于隐私政策的信息。"
 
-#: templates/info/parents.html:44
+#: templates/info/parents.html:47
 msgid "What are parents saying about Scratch?"
 msgstr "家长们如何评论Scratch？"
 
-#: templates/info/parents.html:45
+#: templates/info/parents.html:48
 msgid ""
-"\"My two children were immediately hooked. Scratch allows kids to program by "
-"'stacking' commands like LEGO blocks. Instead of reactively playing video "
-"games -- now they can create them! The boys learned about random number "
-"generators and they learned about XY axes. If I sat them down to go over "
-"these concepts, there would have been eye-rolling and moaning. But if it "
-"helps them make their game work better -- it takes a minute to explain and "
-"off they go using their newly-learned concepts.\""
+"We often receive emails from parents thanking us for Scratch. Here are some "
+"examples: "
 msgstr ""
-"\"我的两个孩子很快就入迷了。Scratch帮助孩子像搭建乐高积木一样编程。他们不再玩电子游戏，而是能自己制作游戏了！孩子们学习了随机数发生器以及XY坐标"
-"轴。如果我帮助他们学习这些知识，他们一定会翻白眼并且不耐烦。但如果这些概念能帮助他们把自己的游戏做得更好，只需花一分钟时间和他们解释，他们就可以使用这些"
-"新学的概念了。\""
 
-#: templates/info/parents.html:46
+#: templates/info/parents.html:49
 msgid ""
-"\"I was looking for something for my 8 year-old to start programming with "
-"and this is just perfect.\""
-msgstr "“我想找到一种工具帮助我8岁的孩子开始学习编程，Scratch就很完美。”"
+"\"<b>I just want to thank you all for making Scratch, and for providing it "
+"for free.</b> My kids are doing amazing things that they see as fun yet I "
+"know is educational, valuable, and worthwhile. Thank you so much!!!\""
+msgstr ""
+
+#: templates/info/parents.html:50
+msgid ""
+"<b>\"My very shy but technical minded daughter has found this to be a "
+"fantastic, safe outlet for her creativity.</b> She spends her free time "
+"creating ever more difficult animations and sharing them with the scratch "
+"community. The forums provide her with a group of like-minded individuals "
+"with which she can hold on a conversation... She now feels that computers, "
+"graphic design and animation are something she would like to pursue in the "
+"future. Your program has opened a whole new world to her in so many ways, "
+"and I thank you wholeheartedly. \n"
+"\""
+msgstr ""
+
+#: templates/info/parents.html:52
+msgid ""
+"\"<b>My son is learning more than I can imagine from your tool.</b> He is "
+"not a natural logical thinker but loves LEGO. Your LEGO-like building block "
+"structure has moved him forward by light-years in his logical thinking "
+"skills...He can snap things together and begin to see the logic reinforced "
+"by immediate feedback. Of course we work on some things together--instant "
+"father and son time. This is just incredible. Just a big thanks to you and "
+"MIT.\""
+msgstr ""
+
+#: templates/info/parents.html:57
+msgid "Learning"
+msgstr ""
+
+#: templates/info/parents.html:59
+msgid ""
+"For a one-page overview of what young people learn with Scratch, see <a href="
+"\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Learning with "
+"Scratch</a>."
+msgstr ""
+
+#: templates/info/parents.html:60
+msgid ""
+"Read an article on the <a href=\"http://www.edutopia.org/kindergarten-"
+"creativity-collaboration-lifelong-learning\">creative learning approach</a>."
+msgstr ""
+
+#: templates/info/parents.html:66
+msgid "Community"
+msgstr ""
+
+#: templates/info/parents.html:68
+msgid ""
+"We ask all participants on the site to follow the <a href=\"/"
+"community_guidelines\">Community Guidelines</a>."
+msgstr ""
+
+#: templates/info/parents.html:69
+msgid ""
+"We do not make private account information available to anyone. For more "
+"information, please see the <a href=\"/help/faq/#privacy\">Privacy Policy</"
+"a>."
+msgstr ""
+
+#: templates/info/parents.html:75 templates/info/help/index.html:88
+msgid "Questions?"
+msgstr "问题?"
+
+#: templates/info/parents.html:77
+msgid ""
+"To find out more about Scratch, please see <a href=\"/help/faq/\">Frequently "
+"Asked Questions</a>."
+msgstr ""
+
+#: templates/info/parents.html:78
+msgid ""
+"You can also ask questions in the <a href=\"/discuss/\">discussion forums</"
+"a>."
+msgstr ""
+
+#: templates/info/parents.html:80
+#, python-format
+msgid ""
+"If you need to contact our staff team directly, click <a href="
+"\"%(contact_us_url)s\">Contact Us</a> at the bottom of any page."
+msgstr ""
+
+#: templates/info/quotes.html:4
+msgid "Quotes - Scratch"
+msgstr ""
+
+#: templates/info/quotes.html:16
+msgid "What <b>Youth</b> are Saying about Scratch"
+msgstr ""
+
+#: templates/info/quotes.html:19
+msgid ""
+"I like Scratch better than blogs or social networking sites like Facebook "
+"because \n"
+"\twe’re creating interesting games and projects that are fun to play, watch, "
+"and download. \n"
+"\tI don’t like to just talk to other people online, I like to talk about "
+"something creative and new.<span class=\"quotes\">&rdquo;</span> - 13-year-"
+"old </p>\n"
+msgstr ""
+
+#: templates/info/quotes.html:26
+msgid ""
+"<span class=\"quotes\">&ldquo;</span>My 8-year-old brother and I have been "
+"active participants of the Scratch Online Community for over a year. \n"
+"I enjoy designing and programming games and animations with other kids, "
+"because different people have different skills, \n"
+"and when you work together, you can build a much better project than you can "
+"alone.<span class=\"quotes\">&rdquo;</span> - 13-year-old"
+msgstr ""
+
+#: templates/info/quotes.html:30
+msgid ""
+"<span class=\"quotes\">&ldquo;</span>Making games is something I've always "
+"thought would be fun,\n"
+" but I didn't want a really complex programming language. In the beginning, "
+"even Scratch seemed complex, but after sticking with it for a while, I've "
+"been able to make some amazing games. And the fact that you can share "
+"projects so easily makes it even better. Scratch is awesome!<span class="
+"\"quotes\">&rdquo;</span>\n"
+"  - 17-year-old "
+msgstr ""
+
+#: templates/info/quotes.html:36
+msgid ""
+"<span class=\"quotes\">&ldquo;</span>Using a set of about 100 commands that "
+"can be snapped together visually, you can create just about anything and "
+"learn the fundamentals of more advanced languages. In addition, there's a "
+"whole community of people online who will give you feedback on our projects, "
+"and gladly help you with your questions.<span class=\"quotes\">&rdquo;</"
+"span> - 14-year-old"
+msgstr ""
+
+#: templates/info/starter_projects.html:4
+msgid "Scratch - Starter Projects"
+msgstr ""
+
+# 81%
+#: templates/info/starter_projects.html:12
+#, fuzzy
+msgid "Starter Projects"
+msgstr "分享的项目"
+
+#: templates/info/starter_projects.html:16
+msgid "Here are example projects that you can play with and change."
+msgstr ""
+
+#: templates/info/starter_projects.html:23
+#: templates/info/help/studio/tips/home.html:36
+msgid "Animation"
+msgstr "动画"
+
+#: templates/info/starter_projects.html:31
+msgid "Dance Party"
+msgstr ""
+
+#: templates/info/starter_projects.html:36
+msgid "Animate the Crab"
+msgstr ""
+
+#: templates/info/starter_projects.html:42
+msgid "The Pico Show: Intro"
+msgstr ""
+
+#: templates/info/starter_projects.html:57
+msgid "Pong Starter"
+msgstr ""
+
+#: templates/info/starter_projects.html:62
+msgid "Maze Starter"
+msgstr ""
+
+#: templates/info/starter_projects.html:69
+msgid "Hide and Seek"
+msgstr ""
+
+# 76%
+#: templates/info/starter_projects.html:78
+#, fuzzy
+msgid "Interactive Art"
+msgstr "交互式扭曲效果"
+
+#: templates/info/starter_projects.html:86
+msgid "Paint with Gobo<"
+msgstr ""
+
+#: templates/info/starter_projects.html:92
+msgid "Chimes"
+msgstr ""
+
+#: templates/info/starter_projects.html:97
+msgid "Soundflower"
+msgstr ""
+
+#: templates/info/starter_projects.html:105
+msgid "Music and Dance"
+msgstr ""
+
+#: templates/info/starter_projects.html:113
+msgid "Remix this dance"
+msgstr ""
+
+#: templates/info/starter_projects.html:119
+msgid "Piano"
+msgstr ""
+
+#: templates/info/starter_projects.html:125
+msgid "Starfish Choir"
+msgstr ""
+
+#: templates/info/starter_projects.html:140
+msgid "5 Random Facts about Me"
+msgstr ""
+
+#: templates/info/starter_projects.html:145
+msgid "Introducing Howler! Remix"
+msgstr ""
+
+#: templates/info/starter_projects.html:150
+msgid "Teens at the Castle"
+msgstr ""
+
+#: templates/info/starter_projects.html:158
+msgid "Video Sensing"
+msgstr ""
+
+#: templates/info/starter_projects.html:166
+msgid "Musical Buttons"
+msgstr ""
+
+#: templates/info/starter_projects.html:172
+msgid "Bubbles with Video Sensing"
+msgstr ""
+
+#: templates/info/starter_projects.html:179
+msgid "Save the Minifigs"
+msgstr ""
+
+# 75%
+#: templates/info/help/base.html:4 templates/info/help/help_layout.html:7
+#, fuzzy
+msgid "Scratch Help"
+msgstr "Scratch新闻"
 
 #: templates/info/help/cards.html:9 templates/info/help/index.html:69
 msgid "Scratch Cards"
@@ -1380,27 +1956,27 @@ msgstr "保存成绩"
 msgid "General Questions"
 msgstr "常见问题"
 
-#: templates/info/help/faq.html:12 templates/info/help/faq.html.py:61
+#: templates/info/help/faq.html:12 templates/info/help/faq.html.py:60
 msgid "Privacy Policy"
 msgstr "隐私政策"
 
-#: templates/info/help/faq.html:15 templates/info/help/faq.html.py:85
+#: templates/info/help/faq.html:15 templates/info/help/faq.html.py:88
 msgid "Remixing and Copying"
 msgstr "再创作和复制"
 
-#: templates/info/help/faq.html:16 templates/info/help/faq.html.py:102
+#: templates/info/help/faq.html:16 templates/info/help/faq.html.py:105
 msgid "Accounts"
 msgstr "帐户"
 
-#: templates/info/help/faq.html:19 templates/info/help/faq.html.py:129
+#: templates/info/help/faq.html:19 templates/info/help/faq.html.py:132
 msgid "Licensing and Permissions"
 msgstr "版权和许可"
 
-#: templates/info/help/faq.html:20 templates/info/help/faq.html.py:157
+#: templates/info/help/faq.html:20 templates/info/help/faq.html.py:160
 msgid "Inappropriate Content"
 msgstr "不适宜的内容"
 
-#: templates/info/help/faq.html:23 templates/info/help/faq.html.py:179
+#: templates/info/help/faq.html:23 templates/info/help/faq.html.py:182
 msgid "Cloud Data"
 msgstr "云数据"
 
@@ -1447,15 +2023,9 @@ msgid ""
 "or later installed. Scratch 2.0 is designed to support screen sizes 1024 x "
 "768 or larger. If your computer doesn’t meet these requirements, you can try "
 "<a href=\"http://info.scratch.mit.edu/Scratch_1.4_Download\">downloading</a> "
-"and installing Scratch 1.4, which you can still use to share projects to the "
-"Scratch 2.0 website."
+"and installing <a href =\"/scratch_1.4\">Scratch 1.4</a>, which you can "
+"still use to share projects to the Scratch 2.0 website."
 msgstr ""
-"要运行Scratch 2.0，你需要相对较新的浏览器 (<a href=\"http://google.com/chrome/\">Chrome</a> 7 "
-"或更新, <a href=\"http://www.mozilla.org/en-US/firefox/new/\">Firefox</a> "
-"4或更新,或者Internet Explorer 7或更新)，并安装<a href=\"\">Adobe Flash Player</a> "
-"10.2版更新。Scratch 2.0支持1024 x 768或更大的分辨率。如果您的计算机不满足这些条件，您可以尝试下载 <a "
-"href=\"http://info.scratch.mit.edu/Scratch_1.4_Download\">downloading</a> "
-"并安装Scratch1.4，同样可以在Scratch 2.0网站分享你的作品。"
 
 #: templates/info/help/faq.html:42
 msgid "How much does Scratch cost? Do I need a license?"
@@ -1484,22 +2054,27 @@ msgstr ""
 "Scratch是 <a href=\"http://www.media.mit.edu/\">MIT媒体实验室</a> 的 <a "
 "href=\"http://llk.media.mit.edu/\"> 终生幼儿园小组</a> 研发和维护的。"
 
-#: templates/info/help/faq.html:52
+#: templates/info/help/faq.html:50
+msgid ""
+"Can I still upload projects created with older versions of Scratch to the "
+"website?"
+msgstr ""
+
+#: templates/info/help/faq.html:51
 msgid ""
 "Yes - you can upload projects made with earlier versions of Scratch, and "
 "they will be visible / playable. However, you can’t download projects made "
 "with or edited in later versions of Scratch and open them in earlier "
-"versions. For example, you can’t open a Scratch 2.0 project in Scratch 1.4, "
-"because Scratch 1.4 doesn’t know how to read the .sb2 project file format."
+"versions. For example, you can’t open a Scratch 2.0 project in <a href =\"/"
+"scratch_1.4\">Scratch 1.4</a>, because <a href =\"/scratch_1.4\">Scratch "
+"1.4</a> doesn’t know how to read the .sb2 project file format."
 msgstr ""
-"是的。您可以上传用旧版本Scratch制作的项目，这些项目是可见和可用的。但是，您不能下载新版本制作或编辑的项目并用旧版本打开。比如，您不能用Scrat"
-"ch 1.4打开一个用Scratch 2.0制作的项目，因为Scratch 1.4不能阅读.sb2的格式文件。"
 
-#: templates/info/help/faq.html:55
+#: templates/info/help/faq.html:54
 msgid "Can I make a video with Scratch and upload it to YouTube?"
 msgstr "我可以用Scratch来制作一段视频并上传到YouTube上吗?"
 
-#: templates/info/help/faq.html:56
+#: templates/info/help/faq.html:55
 msgid ""
 "To make a video of your Scratch project, you can use screen capture software "
 "like <a href=\"http://camstudio.org/\">CamStudio</a>. But keep in mind, some "
@@ -1513,46 +2088,46 @@ msgstr ""
 "但要记住，Scratch项目是具有互动性的，会根据观看者的行为表现出不同的反应（比如：视频游戏要通过按键来反应）。视频不具有互动性，每次播放都是相同的效"
 "果。所以，您可以制作视频，但是视频和项目是不同的。"
 
-#: templates/info/help/faq.html:62
+#: templates/info/help/faq.html:61
 msgid "What information do you ask for during account registration?"
 msgstr "在帐户注册过程中需要提供哪些信息?"
 
-#: templates/info/help/faq.html:63
+#: templates/info/help/faq.html:62
 msgid ""
 "To protect the privacy of our community members, we limit what we collect "
 "and what we publish on the website. During the registration process, we ask "
 "for the following information:"
 msgstr "为保护会员的隐私，我们会对采集和公布的信息进行限制。在注册时，我们会要求以下信息："
 
-#: templates/info/help/faq.html:65
+#: templates/info/help/faq.html:64
 msgid ""
 "username - We ask that users avoid using their real names or other "
 "identifying information."
 msgstr "用户名：要求用户避免使用自己的真实姓名或其他可识别的信息。"
 
-#: templates/info/help/faq.html:66
+#: templates/info/help/faq.html:65
 msgid "country"
 msgstr "国籍"
 
-#: templates/info/help/faq.html:67
+#: templates/info/help/faq.html:66
 msgid ""
 "birth month and year - We use this to confirm ownership of the account if "
 "the owner loses the password and email, or writes to ask us to close the "
 "account closed."
 msgstr "生日年月：当忘记密码、注册邮件，或者让我们关闭账户时，我们会用生日信息来确认用户的所属。"
 
-#: templates/info/help/faq.html:68
+#: templates/info/help/faq.html:67
 msgid "gender"
 msgstr "性别"
 
-#: templates/info/help/faq.html:69
+#: templates/info/help/faq.html:68
 msgid ""
 "contact email address - If the account holder is younger than 13, we ask for "
 "the email address of their parent or guardian. We do not send email to this "
 "address except when someone requests to have the account password reset."
 msgstr "联系邮件地址：如果用户小于13岁，我们会要求提供其家长或监护人的邮件地址。除非用户要求重置账户密码，否则我们不会向此地址发送邮件。"
 
-#: templates/info/help/faq.html:71
+#: templates/info/help/faq.html:70
 msgid ""
 "The username and country of the account holder are displayed publicly on "
 "their profile page. The birth month / year, email address, and gender "
@@ -1564,11 +2139,11 @@ msgstr ""
 "用户的用户名和国籍会在个人资料页显示。生日、邮件地址及性别则不会公开显示。我们采集这些信息就可以知道用户的年龄和性别，从而用于进一步研究。我们绝不对外销"
 "售或租赁用户的信息。"
 
-#: templates/info/help/faq.html:73
+#: templates/info/help/faq.html:72
 msgid "What data is collected from people while they use the website?"
 msgstr "当人们使用网站时，被采集的数据有哪些？"
 
-#: templates/info/help/faq.html:74
+#: templates/info/help/faq.html:73
 msgid ""
 "When a user logs in, the Scratch website asks their browser to put an <a "
 "href=\"http://en.wikipedia.org/wiki/HTTP_cookie\">http cookie</a> on their "
@@ -1581,32 +2156,44 @@ msgstr ""
 "href=\"http://en.wikipedia.org/wiki/HTTP_cookie\">http cookie</a>从而在他们浏览其他网页时，"
 "计算机能记住他们的登录状态。我们也使用谷歌分析器采集用户的点击和访问。该“点击数据”可以帮助我们如何改善网站服务。"
 
-#: templates/info/help/faq.html:76
+#: templates/info/help/faq.html:75
 msgid ""
 "Some of the information and data collected on the Scratch website are used "
 "in research studies intended to improve our understanding of how people "
 "learn with Scratch. The results of this research are shared with educators "
 "and researchers through conferences, journals, and other publications. You "
-"can find out more on our Research page."
+"can find out more on our <a href=\"/info/research\">Research page</a>."
 msgstr ""
-"一些在Scratch网站上被采集的信息和数据被用于研究学习，从而提高我们对人们如何学习Scratch的认识。这些研究的结果将在会议、期刊和其他方式与教育"
-"者和研究者一起分享。登录研究页面可以查看更多。"
 
-#: templates/info/help/faq.html:78
+#: templates/info/help/faq.html:77
 msgid ""
 "Does the Scratch Team sell or rent information about users of Scratch to "
 "anyone?"
 msgstr "Scratch团队会不会向其他人出售或租赁用户个人信息?"
 
-#: templates/info/help/faq.html:79
+#: templates/info/help/faq.html:78
 msgid "No."
 msgstr "不会。"
 
-#: templates/info/help/faq.html:86
+#: templates/info/help/faq.html:80
+msgid "Can the Scratch Team view unshared projects on my 'My Stuff' page?"
+msgstr ""
+
+#: templates/info/help/faq.html:81
+msgid ""
+"Since the Scratch Team is responsible for moderation, we have access to all "
+"content stored on the Scratch website - including unshared projects. If you "
+"prefer to work on projects in complete privacy, you can use <a href =\"/"
+"scratch_1.4\">Scratch 1.4</a>. (An offline editor for Scratch 2.0 will be "
+"available by the end of June 2013.)\n"
+"  "
+msgstr ""
+
+#: templates/info/help/faq.html:89
 msgid "What is a remix?"
 msgstr "什么是再创作？"
 
-#: templates/info/help/faq.html:87
+#: templates/info/help/faq.html:90
 msgid ""
 "When a Scratcher makes a copy of someone else’s project and modifies it to "
 "add their own ideas (for example, by changing scripts or costumes), the "
@@ -1618,11 +2205,11 @@ msgstr ""
 "当一个Scratch用户复制其他人地作品并增加自己的建议（比如修改脚本或造型）得出的作品就是“再创作”的作品。每一个分享的项目都可以被再创作。任何一处细"
 "微的修改都是值得认可的，只要向原作者以及为再创作付出很多的人表示感谢即可。"
 
-#: templates/info/help/faq.html:89
+#: templates/info/help/faq.html:92
 msgid "Why does the Scratch Team require that all projects be “remixable”?"
 msgstr "为什么Scratch团队要求所有的项目都是可“再创作”的?"
 
-#: templates/info/help/faq.html:90
+#: templates/info/help/faq.html:93
 msgid ""
 "We believe that viewing and remixing interesting projects is a great way to "
 "learn to program, and leads to cool new ideas. That’s why the source code is "
@@ -1630,11 +2217,11 @@ msgid ""
 msgstr ""
 "我们相信查看和再创作有趣的项目是学习编程的好方法，并可登出出色的新想法。这就是为什么在Scratch网站上分享的每个项目的源代码都是可视的原因。"
 
-#: templates/info/help/faq.html:92
+#: templates/info/help/faq.html:95
 msgid "What if I don’t want others to remix my projects?"
 msgstr "如果我不希望其他人对我的项目再创作时怎么办?"
 
-#: templates/info/help/faq.html:93
+#: templates/info/help/faq.html:96
 msgid ""
 "By publishing your project on the Scratch website, you agree to license it "
 "under a <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative "
@@ -1644,11 +2231,11 @@ msgstr ""
 "在Scratch上公布项目时，需要您同意 <a href=\"http://creativecommons.org/licenses/by-"
 "sa/3.0/\">知识共享</a> 的协议。如果您不希望他人查看或再创作您的作品，则不要在Scratch网站上分享。"
 
-#: templates/info/help/faq.html:95
+#: templates/info/help/faq.html:98
 msgid "Can I use images / sounds / media from the internet in my projects?"
 msgstr "我可以在我的项目中使用网络上下载的图像/声音/媒体资源吗?"
 
-#: templates/info/help/faq.html:96
+#: templates/info/help/faq.html:99
 msgid ""
 "It's important to respect the original creator’s wishes regarding remixing. "
 "If you choose to integrate someone else’s work into your own, be sure to "
@@ -1660,11 +2247,11 @@ msgstr ""
 "再创作时要尊重原作者的意愿十分重要。如果您选择将他人的作品整合成自己的作品时，确保在“致谢”栏表示感谢，并添加原作品的链接。查找已经同意再创作的作品，点"
 "击 <a href=\"http://search.creativecommons.org/\">知识共享查询页面</a>。"
 
-#: templates/info/help/faq.html:103
+#: templates/info/help/faq.html:106
 msgid "I forgot my password, how can I reset it?"
 msgstr "忘记密码后，如何重置？"
 
-#: templates/info/help/faq.html:105
+#: templates/info/help/faq.html:108
 msgid ""
 "Enter your account name on the <a href=\"/accounts/password_reset/"
 "\">password reset page</a>. The website will send an email to the address "
@@ -1674,55 +2261,55 @@ msgstr ""
 "在<a href=\"/accounts/password_reset/\">密码重置页面</a> "
 "输入您的账户名称。网站会将密码重置链接发送到与账户关联的邮件地址。"
 
-#: templates/info/help/faq.html:107
+#: templates/info/help/faq.html:110
 msgid "How do I change my password?"
 msgstr "怎样改变自己的密码?"
 
-#: templates/info/help/faq.html:108
+#: templates/info/help/faq.html:111
 msgid ""
 "Go to the Scratch website, login, and then click your username in the upper "
 "right corner of the window. Choose \"account settings\", and click the link "
 "to change your password."
 msgstr "打开Scratch网站并登陆，点击页面右上角的用户名。选择“账户设置”，点击链接并修改您的密码。"
 
-#: templates/info/help/faq.html:110
+#: templates/info/help/faq.html:113
 msgid "Can I have more than one account?"
 msgstr "我可以注册多个帐号吗？"
 
-#: templates/info/help/faq.html:111
+#: templates/info/help/faq.html:114
 msgid ""
 "It's fine to have a few accounts on the Scratch website, as long as none of "
 "them are used to break the Community Guidelines. In that case, all related "
 "accounts may be blocked or deleted."
 msgstr "Scratch网站允许一个人有多个账号，前提是不破坏社区行为准则。否则所有的账户将被禁用或删除。"
 
-#: templates/info/help/faq.html:113
+#: templates/info/help/faq.html:116
 msgid "Is it ok to have more than one person logged into an account?"
 msgstr "一个帐号可以允许多个人同时登录吗?"
 
-#: templates/info/help/faq.html:114
+#: templates/info/help/faq.html:117
 msgid ""
 "This is discouraged, because the website and project editor can easily get "
 "confused when more than one person is logged into the same account."
 msgstr "不鼓励这么做，因为当多个人同时用同一账号登陆时，网站和项目编辑器很容易混淆。"
 
-#: templates/info/help/faq.html:116
+#: templates/info/help/faq.html:119
 msgid "Can I change my username?"
 msgstr "可以改变用户名吗？"
 
-#: templates/info/help/faq.html:117
+#: templates/info/help/faq.html:120
 msgid ""
 "The structure of the Scratch website depends on having a consistent account "
 "name, so it’s not possible to change your username. If you really need to, "
-"you can make a new account - but you'll have copy your projects over on your "
-"own."
-msgstr "Scratch网站的结构依靠一致的用户名，因此不能修改用户名。如果非要修改，可以注册一个新账户，但不能复制之前制作的项目。"
+"you can make a new account - but you'll have to copy your projects over on "
+"your own."
+msgstr ""
 
-#: templates/info/help/faq.html:119
+#: templates/info/help/faq.html:122
 msgid "What information can I share on / with my account?"
 msgstr "我可以在帐号中分享哪些信息?"
 
-#: templates/info/help/faq.html:120
+#: templates/info/help/faq.html:123
 msgid ""
 "Please don’t share personal contact information, such as your physical "
 "address, email, phone number, or anything else that can be used to make "
@@ -1733,22 +2320,22 @@ msgstr ""
 "请不要分享个人联系信息，比如地址、邮箱、电话或其他可以在Scratch之外连接的信息。发现此类信息的项目、评论或帖子请举报，Scratch团队可将其删除"
 "，并提醒作者我们的隐私政策。"
 
-#: templates/info/help/faq.html:122
+#: templates/info/help/faq.html:125
 msgid "How do I delete my account?"
 msgstr "怎样删除自己的帐号？"
 
-#: templates/info/help/faq.html:123
+#: templates/info/help/faq.html:126
 msgid ""
 "The account settings page has a link you can use to delete your account. "
 "When logged in, click your username in the upper right cornder, and select "
 "\"account settings.\""
 msgstr "账户设置页面有一个链接，可以用于删除账号。登陆后，点击页面右上角的用户名，选择“账户设置”。"
 
-#: templates/info/help/faq.html:131
+#: templates/info/help/faq.html:134
 msgid "Is Scratch free?"
 msgstr "Scratch是免费的吗？"
 
-#: templates/info/help/faq.html:132
+#: templates/info/help/faq.html:135
 msgid ""
 "Yes! You can download, copy, and use Scratch software free of charge. You "
 "can install it in your school, and you can teach a course about it (even a "
@@ -1757,12 +2344,12 @@ msgstr ""
 "是的，您可以免费下载、复制和使用Scratch软件。可以在学校电脑安装，也可以进行Scratch培训（收费的培训也可以）。不需要购买许可证，因为它是免费"
 "的。"
 
-#: templates/info/help/faq.html:134
+#: templates/info/help/faq.html:137
 msgid ""
 "Can I use Scratch and / or screenshots of Scratch in a textbook or a CD?"
 msgstr "我可以在教材或CD中使用Scratch软件或其相关屏幕截图吗?"
 
-#: templates/info/help/faq.html:135
+#: templates/info/help/faq.html:138
 msgid ""
 "Yes, you can even write a book or chapter about Scratch. You may also use "
 "the Scratch logo when referring to Scratch. You may create screenshots / "
@@ -1778,13 +2365,13 @@ msgstr ""
 "Attribution-ShareAlike 3.0 Unported license</a>，它们都是受过许可的。但是我们要求您在书上/CD等其他地方"
 "标明“Scratch由MIT媒体实验室终生幼儿园小组研发。详情请点击http://scratch.mit.edu”。"
 
-#: templates/info/help/faq.html:137
+#: templates/info/help/faq.html:140
 msgid ""
 "Can I include a description of Scratch and the Scratch logo in brochures or "
 "other materials?"
 msgstr "我可以在宣传小册子或其他材料中使用Scratch的说明或Scratch的标识吗?"
 
-#: templates/info/help/faq.html:138
+#: templates/info/help/faq.html:141
 msgid ""
 "Sure! We recommend the following description: \"Scratch is a programming "
 "language and online community where you can create your own interactive "
@@ -1799,23 +2386,23 @@ msgstr ""
 "cratch是由MIT媒体工作室终生幼儿园小组设计并维护。当孩子们用Scratch创作时，他们会学会创意思考、协同合作以及推理。Scratch是MIT媒"
 "体实验室终生幼儿园小组研发的项目。详情请点击http://scratch.mit.edu”"
 
-#: templates/info/help/faq.html:140
+#: templates/info/help/faq.html:143
 msgid "Can I present Scratch at a conference?"
 msgstr "我可以在会议演示中使用Scratch吗?"
 
-#: templates/info/help/faq.html:141
+#: templates/info/help/faq.html:144
 msgid ""
 "Please feel free to make presentations about Scratch to educators or other "
 "groups. We grant our permission to make presentations."
 msgstr "可以向教育者和其他团体介绍Scratch。我们允许对Scratch进行展示。"
 
-#: templates/info/help/faq.html:143
+#: templates/info/help/faq.html:146
 msgid ""
 "May I use / remix Scratch support materials, sprites, images, sounds or "
 "sample projects I’ve found on the website?"
 msgstr "我可以使用在本网站中的有关Scratch支持材料、角色、图像、声音或示例程序或对其进行再创作吗?"
 
-#: templates/info/help/faq.html:144
+#: templates/info/help/faq.html:147
 msgid ""
 "Yes - Scratch support materials made available on the Scratch website by the "
 "Scratch Team are available under the <a href=\"http://creativecommons.org/"
@@ -1827,11 +2414,11 @@ msgstr ""
 "Commons Attribution-ShareAlike 3.0 Unported license</a>，Scratch团队发布于网站上的资料都可"
 "供您使用，除了Scratch的标志，Scratch小猫和Gobo（Scratch的商标）。"
 
-#: templates/info/help/faq.html:146
+#: templates/info/help/faq.html:149
 msgid "Can I sell my Scratch projects?"
 msgstr "我可以出售我的Scratch项目吗?"
 
-#: templates/info/help/faq.html:147
+#: templates/info/help/faq.html:150
 msgid ""
 "Certainly - your project is your creation. Keep in mind that once you share "
 "your project on Scratch, everyone is free to download, remix, and reuse it "
@@ -1843,28 +2430,25 @@ msgstr ""
 "/\">CC-BY-SA 3.0 "
 "license</a>的条款，一旦您在网站上分享了您的项目，所有人都可以自由下载、修改和使用。所以，如果您想出售您的项目，请取消分享。"
 
-#: templates/info/help/faq.html:149
+#: templates/info/help/faq.html:152
 msgid "Where can I find the source code for Scratch?"
 msgstr "在哪里可以找到Scratch的源代码?"
 
-#: templates/info/help/faq.html:150
+#: templates/info/help/faq.html:153
 msgid ""
 "The source code for Scratch 2.0 (website and editor) is not yet available. "
-"The source code for Scratch 1.4, written in Squeak, is available <a href="
-"\"https://github.com/LLK/Scratch_1.4\">on github</a>. The source code for "
-"the first version of the Scratch website - ScratchR - is available <a href="
-"\"http://svn.assembla.com/svn/scratchr/\">on Assembla</a>."
+"The source code for <a href =\"/scratch_1.4\">Scratch 1.4</a>, written in "
+"Squeak, is available <a href=\"https://github.com/LLK/Scratch_1.4\">on "
+"github</a>. The source code for the first version of the Scratch website - "
+"ScratchR - is available <a href=\"http://svn.assembla.com/svn/scratchr/\">on "
+"Assembla</a>."
 msgstr ""
-"Scratch 2.0（软件和网站）的源代码目前还不能使用。Scratch 1.4的源代码用Squeak编写，可以获得<a "
-"href=\"https://github.com/LLK/Scratch_1.4\">on "
-"github</a>。Scratch网站第一版-ScratchR的源代码也可以获得<a "
-"href=\"http://svn.assembla.com/svn/scratchr/\">on Assembla</a>。"
 
-#: templates/info/help/faq.html:158
+#: templates/info/help/faq.html:161
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
 msgstr "我怎样才能知道哪些可以在Scratch网站上分享而哪些不可以呢?"
 
-#: templates/info/help/faq.html:159
+#: templates/info/help/faq.html:162
 msgid ""
 "Check out the <a href=\"/community_guidelines\">Scratch community "
 "guidelines</a> - they’re brief and don’t include a lot of legal stuff. "
@@ -1873,11 +2457,11 @@ msgstr ""
 "查看 <a href=\"/community_guidelines\">Scratch 社区指南</a> - "
 "指南很精简，不包括繁多的法律内容。在Scratch网站页面的底部均有链接。"
 
-#: templates/info/help/faq.html:161
+#: templates/info/help/faq.html:164
 msgid "What do I do if I see something that’s inappropriate?"
 msgstr "如果看到不适宜的内容该怎么办?"
 
-#: templates/info/help/faq.html:162
+#: templates/info/help/faq.html:165
 msgid ""
 "You can click the link that says “report” on any project, comment, "
 "discussion post, or user page where you think something isn't ok for "
@@ -1888,11 +2472,11 @@ msgstr ""
 "对于您觉得不适宜的内容，您都可以点击“举报”。在任何项目、评论、讨论贴或用户页面上均有该按钮。如果情况复杂，您可以点击“联系我们”进行解释。确保提供足够"
 "充分的细节和相关页面的链接。"
 
-#: templates/info/help/faq.html:164
+#: templates/info/help/faq.html:167
 msgid "What do I do if I see someone being mean or disrespectful?"
 msgstr "如果看到有人很无礼，我能做什么？"
 
-#: templates/info/help/faq.html:165
+#: templates/info/help/faq.html:168
 msgid ""
 "Don’t add to the flames! Responding to mean comments with more mean comments "
 "just makes things worse, and could result in your account being blocked. "
@@ -1903,11 +2487,11 @@ msgstr ""
 "不要助长气焰！用更加无礼的评论回复无礼的评论只会让事情更糟，并可能导致您的账号被封锁。只要简单的举报即可，我们会与当事人跟进。我们每天都会多次查看举报，"
 "所以请放心，我们会有解决办法。"
 
-#: templates/info/help/faq.html:167
+#: templates/info/help/faq.html:170
 msgid "What does the Scratch team do when something is reported or flagged?"
 msgstr "收到举报时Scratch团队会做些什么?"
 
-#: templates/info/help/faq.html:168
+#: templates/info/help/faq.html:171
 msgid ""
 "The Scratch Team reviews reported comments and projects every day. If "
 "something breaks the Scratch community guidelines, we may remove it and send "
@@ -1918,11 +2502,11 @@ msgstr ""
 "Scratch团队每天都会查看举报的评论和项目。如果有破坏社区准则的事情发生，我们会将其删除并发送警告信。根据严重程度（或如果曾经已经警告过的账号），我"
 "们也会将账号封锁或对分享的网站进行屏蔽。"
 
-#: templates/info/help/faq.html:170
+#: templates/info/help/faq.html:173
 msgid "What happens when an account is blocked?"
 msgstr "帐号被封锁后会怎样?"
 
-#: templates/info/help/faq.html:171
+#: templates/info/help/faq.html:174
 msgid ""
 "When an account is blocked, the owner can no longer access it, or use it to "
 "create projects or comments. When they login, they see a page that explains "
@@ -1937,13 +2521,13 @@ msgstr ""
 "账号被封锁后，持有人就不能用它登陆、创建项目或进行评论。登录时，他们会看到一个页面说明被封锁的原因，并申请解封。如果持有人明白账号被封锁的原因并承诺遵守"
 "社区准则，Scratch团队则会进行检查。只有当持有人值得信任时，才能解封他们的账号。否则，账号（以及该用户其他账号）都可能被永久的封锁。"
 
-#: templates/info/help/faq.html:173
+#: templates/info/help/faq.html:176
 msgid ""
 "My mean brother / Kaj / some other bad guy stole my account and got it "
 "banned, what do I do?"
 msgstr "如果坏人偷取了我的帐户并导致它被查封，我该怎么办?"
 
-#: templates/info/help/faq.html:174
+#: templates/info/help/faq.html:177
 msgid ""
 "You are responsible for keeping your password secure. If someone in real "
 "life takes control of your account and does bad stuff, tell the adults in "
@@ -1956,51 +2540,49 @@ msgstr ""
 "您有义务保证密码的安全。如果现实中有人盗取您的密码并做坏事，那么要告诉其家长。如果您认为您不认识的人登陆您的账户并修改密码，您可以通过“联系我们”说明情"
 "况。如果因为您的原因而导致账户被封，请不要告诉我们您的账户被盗。如果我们不相信，就不会解封您的账号。"
 
-#: templates/info/help/faq.html:181
+#: templates/info/help/faq.html:184
 msgid "What is cloud data?"
 msgstr "什么是云数据?"
 
-#: templates/info/help/faq.html:182
+#: templates/info/help/faq.html:185
 msgid ""
 "Cloud data is a feature in Scratch 2.0 that allows for data from a project "
 "to be saved and shared online. You can use cloud data to make surveys and "
 "other projects that store numbers over time."
 msgstr "云数据是Scratch 2.0的一个新特征，可以在线保存和分享项目的数据。"
 
-#: templates/info/help/faq.html:184
+#: templates/info/help/faq.html:187
 msgid "Who can see the data stored in cloud data?"
 msgstr "谁可以看到云中存放的数据?"
 
-#: templates/info/help/faq.html:185
+#: templates/info/help/faq.html:188
 msgid ""
 "When you interact with a project using cloud data blocks, your information "
 "can be stored along with your username, and others can view it. Each project "
 "keeps a log of who interacted with it and any data they shared."
 msgstr "当您使用云数据模块与一个项目进行互动时，您的信息与用户名都会被存储，其他人都可以看到。每个项目都会记录下互动的历史以及互动人的信息。"
 
-#: templates/info/help/faq.html:187
+#: templates/info/help/faq.html:190
 msgid ""
 "Why is cloud data currently limited to only numbers -- with no strings or "
 "lists? "
 msgstr "为什么现在云数据仅限于保存数字类型的数据，而不能保存字符串或链表?"
 
-#: templates/info/help/faq.html:188
+#: templates/info/help/faq.html:191
 msgid ""
-"The current beta site is limited to numbers in variables as an initial step "
-"to work out any issues with their use on the site. We plan to roll out cloud "
+"The current site is limited to numbers in variables as an initial step to "
+"work out any issues with their use on the site. We plan to roll out cloud "
 "data features incrementally. If the infrastructure is working well, we plan "
 "to add other features (cloud lists, support for strings, etc.)."
 msgstr ""
-"目前的试用版仅限于数字变量作为起步，以便发现和解决在网络上使用会遇到的问题。我们计划逐渐的发展云数据功能。如果该模块运行良好，则会增加更多功能，如云链表"
-"，支持字符串等。"
 
-#: templates/info/help/faq.html:190
+#: templates/info/help/faq.html:193
 msgid ""
 "If I see someone post inappropriate content using cloud data, how do I "
 "report it?"
 msgstr "如果我看到有人使用云数据来发布不适宜的内容，应该如何举报?"
 
-#: templates/info/help/faq.html:191
+#: templates/info/help/faq.html:194
 msgid ""
 "Click the \"Report this\" button (under on the project player) to report "
 "inappropriate content in cloud data. The report form includes a link to a "
@@ -2011,11 +2593,11 @@ msgstr ""
 "点击“举报”按钮（在项目播放下方）即可举报云数据中的不适宜内容。举报形式包括连接项目所有云数据的链接以及保存人，发送举报前并仔细浏览。确保在说明举报原因"
 "时要提到“云数据”。"
 
-#: templates/info/help/faq.html:193
+#: templates/info/help/faq.html:196
 msgid "Can I make chat rooms with cloud data?"
 msgstr "我可以使用云数据来建立聊天室应用吗?"
 
-#: templates/info/help/faq.html:194
+#: templates/info/help/faq.html:197
 msgid ""
 "While it is technically possible to create chat rooms with cloud data, they "
 "are not currently allowed. We will reconsider this policy once we have a "
@@ -2023,45 +2605,45 @@ msgid ""
 "data."
 msgstr "虽然技术上允许使用云数据建立聊天室，但是目前仍不允许。当我们对云数据的管理能力逐步完善时，会重新考虑这一规定。"
 
-#: templates/info/help/faq.html:196
+#: templates/info/help/faq.html:199
 msgid "How do I add a cloud variable when I'm making a project?"
 msgstr "在项目制作过程中，如何添加云变量?"
 
-#: templates/info/help/faq.html:197
+#: templates/info/help/faq.html:200
 msgid ""
 "When you make a variable, you can check the box that says \"Cloud variable."
 "\" Any data you store will be saved on the server and visible to others."
 msgstr "当添加变量时，您可以勾选“云变量”框。您存放的任何数据都会被存储在服务器中，并且他人可见。"
 
-#: templates/info/help/faq.html:199
+#: templates/info/help/faq.html:202
 msgid "Who can change the information in a cloud variable?"
 msgstr "谁可以改变云变量的内容?"
 
-#: templates/info/help/faq.html:200
+#: templates/info/help/faq.html:203
 msgid ""
 "Only your project can store data in its cloud variable. If people change or "
 "remix your code, it creates a different variable in their project with the "
 "same name."
 msgstr "只有您的项目能在它的云变量中存储数据。如果别人改变了重做了您的代码，就会创造一个不同的变量，在他们的项目中用相同的名字储存一个不同的变量。"
 
-#: templates/info/help/faq.html:202
+#: templates/info/help/faq.html:205
 msgid ""
 "I am logged in, but I still cannot use projects with cloud data. What is "
 "going on?"
 msgstr "我已经登录了，但仍不能使用那些需要云数据的项目，这是怎么回事?"
 
-#: templates/info/help/faq.html:203
+#: templates/info/help/faq.html:206
 msgid ""
 "You need to have become a \"Scratcher\" on the website to have access to "
 "cloud data. You can become a Scratcher through actively participating on the "
 "website."
 msgstr "首先您要在成为网站的一名Scratch用户，才能使用云数据。通过积极登陆网站就可以成为一名Scratch用户。"
 
-#: templates/info/help/faq.html:205
+#: templates/info/help/faq.html:208
 msgid "Is it possible to make multiplayer games with cloud data?"
 msgstr "可以使用云数据来创建多人模式的游戏吗?"
 
-#: templates/info/help/faq.html:206
+#: templates/info/help/faq.html:209
 msgid ""
 "It is difficult to use cloud data to make real-time multiplayer games (due "
 "to network speed and synchronization issues). However, you can make turn-by-"
@@ -2072,11 +2654,11 @@ msgstr ""
 "使用云数据制作多人模式的游戏较难，因为网络速度和同步性等问题。但是，您可以制作轮流模式的游戏。我们计划在Scratch "
 "2.0发布，并确定现有的云数据系统能够运行良好后，再使其更加容易。"
 
-#: templates/info/help/faq.html:208
+#: templates/info/help/faq.html:211
 msgid "How long does it take for cloud data to reach another Scratcher?"
 msgstr "云数据传送到另一个Scratch用户需要多长时间?"
 
-#: templates/info/help/faq.html:209
+#: templates/info/help/faq.html:212
 msgid ""
 "It depends. If both Scratchers have a reasonably fast Internet connection "
 "(DSL/Cable), and there are no restrictive firewalls on the computers/"
@@ -2093,21 +2675,9 @@ msgstr ""
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "常见问题(FAQ)"
 
-#: templates/info/help/faq_layout.html:12
-msgid "Search This Page"
-msgstr "查找本页"
-
-#: templates/info/help/faq_layout.html:14
-msgid "\"Type a topic\""
-msgstr "“输入主题”"
-
-#: templates/info/help/faq_layout.html:17
-msgid ""
-"or try searching the <a href=\"/forums\">discussion forums</a> or the <a "
-"href=\"http://wiki.scratch.mit.edu\">Scratch wiki</a>"
+#: templates/info/help/help_layout.html:12
+msgid "Sign in to Scratch"
 msgstr ""
-"或尝试搜索<a href=\"/forums\">讨论区</a> 或 <a "
-"href=\"http://wiki.scratch.mit.edu\">Scratch wiki</a>"
 
 #: templates/info/help/help_layout.html:15
 msgid ""
@@ -2115,10 +2685,16 @@ msgid ""
 "with others in the Scratch community."
 msgstr "有了Scratch账号后，您就可以在线保存您的项目，并与Scratch社区的其他人分享你的项目。"
 
+# 92%
 #: templates/info/help/help_layout.html:15
+#, fuzzy
 msgid ""
-"<a href=\"/accounts/login/\">Login</a> or <a href=\"#\">Join Scratch</a>."
+"<a href=\"/accounts/login/\">Sign in</a> or <a href=\"#\">Join Scratch</a>."
 msgstr "<a href=\"/accounts/login/\">登陆</a> 或 <a href=\"#\">加入Scratch</a>。"
+
+#: templates/info/help/index.html:8
+msgid "Make a Scratch Project"
+msgstr ""
 
 #: templates/info/help/index.html:15
 msgid "Get started</br> step-by-step"
@@ -2128,9 +2704,15 @@ msgstr "开始创建</br>按步骤创建"
 msgid "Try out these</br> starter projects"
 msgstr "尝试这些</br> 入门级项目"
 
+# 96%
 #: templates/info/help/index.html:33
-msgid "How do I use the new blocks?"
-msgstr "我如何使用新模块？"
+#, fuzzy
+msgid "What's new in Scratch 2.0?"
+msgstr "Scratch 2.0有哪些新功能?"
+
+#: templates/info/help/index.html:40
+msgid "Explore the Scratch Community"
+msgstr ""
 
 #: templates/info/help/index.html:43
 msgid ""
@@ -2142,12 +2724,8 @@ msgid "Search for projects about:"
 msgstr "搜索项目关于："
 
 #: templates/info/help/index.html:49
-msgid ""
-"<a href=\"http://scratch.mit.edu/forums/viewforum.php?id=31\">Introduce</a> "
-"yourself in the Scratch forums"
+msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
 msgstr ""
-"在Scratch论坛<a "
-"href=\"http://scratch.mit.edu/forums/viewforum.php?id=31\">介绍</a>自己"
 
 #: templates/info/help/index.html:50
 #, python-format
@@ -2157,6 +2735,10 @@ msgid ""
 msgstr ""
 "点击 <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> "
 "任意个人中心或工作室接收更新"
+
+#: templates/info/help/index.html:56
+msgid "Scratch Guides"
+msgstr ""
 
 #: templates/info/help/index.html:58
 msgid "Here are some guides to help you learn Scratch:"
@@ -2174,6 +2756,10 @@ msgstr "一份简单的分步骤操作指南(PDF)"
 msgid "A set of 12 cards that show how to make things in Scratch."
 msgstr "一组12张教你如何使用Scratch的卡片。"
 
+#: templates/info/help/index.html:80
+msgid "What is Scratch?"
+msgstr ""
+
 #: templates/info/help/index.html:84
 msgid ""
 "Find out more <a href=\"/about\">about Scratch</a>, or check out our pages "
@@ -2182,6 +2768,24 @@ msgid ""
 msgstr ""
 "查看更多 <a href=\"/about\">关于Scratch</a>，或查看家长页面 <a href=\"/parents\">parents</a> "
 "及教育者页面 <a href=\"/educators\">educators</a>。"
+
+#: templates/info/help/index.html:90
+msgid ""
+"Browse for answers on: </br><a href=\"/help/faq\">Frequently Asked "
+"Questions</a>"
+msgstr ""
+
+#: templates/info/help/index.html:92
+msgid "Or visit the discussion forums:"
+msgstr "或者访问讨论版块:"
+
+#: templates/info/help/index.html:93
+msgid "Questions about Scratch"
+msgstr "关于Scratch的问题"
+
+#: templates/info/help/index.html:94
+msgid "Help with Scripts"
+msgstr "关于脚本的帮助"
 
 #: templates/info/help/index.html:97
 msgid "Resources"
@@ -2204,30 +2808,34 @@ msgid ""
 msgstr "Scratch维基百科包含了由Scratch用户编写的大量文章，包括高级的主题和学习指南。"
 
 #: templates/info/help/index.html:108
-msgid "Scratch and the Physical World"
-msgstr "Scrtach和真实世界"
+msgid ""
+"<a href=\"http://wiki.scratch.mit.edu/wiki/"
+"How_to_connect_to_the_physical_world\">Scratch and the Physical World</a>"
+msgstr ""
 
 #: templates/info/help/index.html:110
 msgid ""
-"Connect your Scratch projects to the physical world with MaKey MaKey, LEGO "
-"WeDo, or ScratchBoard."
-msgstr "通过MaKey MaKey、LEGO WeDo或ScratchBoard将您的Scratch项目与真实世界相连。"
+"Connect your Scratch projects to the physical world with <a href = \"http://"
+"www.makeymakey.com/\">MaKey MaKey</a>, <a href=\"http://info.scratch.mit.edu/"
+"WeDo\">LEGO WeDo</a>, or <a href=\"https://www.sparkfun.com/"
+"products/10311\">PicoBoard</a>."
+msgstr ""
 
 #: templates/info/help/index.html:113
-msgid "Scratch Media"
-msgstr "Scratch媒体"
+msgid "Scratch Logo"
+msgstr ""
 
 #: templates/info/help/index.html:115
 msgid "Access the Scratch logo and other media files."
 msgstr "访问Scratch标志和其它媒体文件。"
 
 #: templates/info/help/index.html:117
-msgid "Scratch Store"
-msgstr "Scratch商店"
+msgid "Scratch 1.4"
+msgstr ""
 
 #: templates/info/help/index.html:119
-msgid "Find books and other materials about Scratch."
-msgstr "查找关于Scratch的书籍和其它材料。"
+msgid "Links and information on the previous version of Scratch."
+msgstr ""
 
 #: templates/info/help/studio/tips/home.html:4
 msgid "Getting Started"
@@ -2242,9 +2850,11 @@ msgstr "分步介绍"
 msgid "Map of Project Editor"
 msgstr "项目编辑器全景"
 
+# 76%
 #: templates/info/help/studio/tips/home.html:11
-msgid "Paint Editor Tips"
-msgstr "图形编辑器贴士"
+#, fuzzy
+msgid "Map of Paint Editor"
+msgstr "项目编辑器全景"
 
 #: templates/info/help/studio/tips/home.html:28
 msgid "How To"
@@ -2265,10 +2875,6 @@ msgstr "创建互动式特效"
 #: templates/info/help/studio/tips/home.html:33
 msgid "Interact with a microphone"
 msgstr "与麦克风互动"
-
-#: templates/info/help/studio/tips/home.html:36
-msgid "Animation"
-msgstr "动画"
 
 #: templates/info/help/studio/tips/home.html:38
 msgid "Switch from happy to sad"
@@ -2306,189 +2912,529 @@ msgstr "互相交谈"
 msgid "Glide off the stage"
 msgstr "滑出舞台"
 
-#: templates/info/help/studio/tips/home.html:81
+# 77%
+#: templates/info/help/studio/tips/home.html:55
+#: templates/info/help/studio/tips/howto/switch-backdrop.html:6
+#, fuzzy
+msgid "Switch backdrops"
+msgstr "将背景切换为"
+
+#: templates/info/help/studio/tips/home.html:60
+#: templates/info/help/studio/tips/howto/play-instrument.html:6
+msgid "Play an instrument"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:61
+#: templates/info/help/studio/tips/howto/play-music.html:6
+msgid "Play background music"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:62
+#: templates/info/help/studio/tips/howto/import-music.html:7
+msgid "Import your music"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:63
+#: templates/info/help/studio/tips/howto/record-sounds.html:7
+msgid "Record sounds"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:64
+#: templates/info/help/studio/tips/howto/edit-sounds.html:7
+msgid "Edit sounds"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:77
 msgid "Blocks"
 msgstr "功能块"
 
-#: templates/info/help/studio/tips/home.html:82
-msgid "Motions"
+# 85%
+#: templates/info/help/studio/tips/home.html:78
+#, fuzzy
+msgid "Motion"
 msgstr "运动"
 
-#: templates/info/help/studio/tips/home.html:84
+#: templates/info/help/studio/tips/home.html:80
 msgid "move _ steps"
 msgstr "移动_步"
 
-#: templates/info/help/studio/tips/home.html:85
+#: templates/info/help/studio/tips/home.html:81
 msgid "turn right"
 msgstr "右转"
 
-#: templates/info/help/studio/tips/home.html:86
+#: templates/info/help/studio/tips/home.html:82
 msgid "turn left"
 msgstr "左转"
 
-#: templates/info/help/studio/tips/home.html:87
+#: templates/info/help/studio/tips/home.html:83
 msgid "point in direction"
 msgstr "指向"
 
-#: templates/info/help/studio/tips/home.html:88
+#: templates/info/help/studio/tips/home.html:84
 msgid "point towards"
 msgstr "指向"
 
-#: templates/info/help/studio/tips/home.html:89
+#: templates/info/help/studio/tips/home.html:85
 msgid "go to x: y:"
 msgstr "移动到 x: y:"
 
-#: templates/info/help/studio/tips/home.html:90
+#: templates/info/help/studio/tips/home.html:86
 msgid "go to"
 msgstr "移到"
 
-#: templates/info/help/studio/tips/home.html:91
+#: templates/info/help/studio/tips/home.html:87
 msgid "glide _ secs to x: y:"
 msgstr "滑行 _ 秒到 x: y:"
 
-#: templates/info/help/studio/tips/home.html:92
+#: templates/info/help/studio/tips/home.html:88
 msgid "change x by"
 msgstr "将x坐标改变"
 
-#: templates/info/help/studio/tips/home.html:93
+#: templates/info/help/studio/tips/home.html:89
 msgid "set x to"
 msgstr "将x坐标设为"
 
-#: templates/info/help/studio/tips/home.html:94
+#: templates/info/help/studio/tips/home.html:90
 msgid "change y by"
 msgstr "将y坐标改变"
 
-#: templates/info/help/studio/tips/home.html:95
+#: templates/info/help/studio/tips/home.html:91
 msgid "set y to"
 msgstr "将y坐标设为"
 
-#: templates/info/help/studio/tips/home.html:96
+#: templates/info/help/studio/tips/home.html:92
 msgid "if on edge, bounce"
 msgstr "如果碰到边缘就反弹"
 
-#: templates/info/help/studio/tips/home.html:97
+#: templates/info/help/studio/tips/home.html:93
 msgid "x position"
 msgstr "x坐标"
 
-#: templates/info/help/studio/tips/home.html:98
+#: templates/info/help/studio/tips/home.html:94
 msgid "y position"
 msgstr "y坐标"
 
-#: templates/info/help/studio/tips/home.html:99
+#: templates/info/help/studio/tips/home.html:95
 msgid "direction"
 msgstr "方向"
 
-#: templates/info/help/studio/tips/home.html:101
+#: templates/info/help/studio/tips/home.html:97
 msgid "Looks"
 msgstr "外观"
 
-#: templates/info/help/studio/tips/home.html:103
+#: templates/info/help/studio/tips/home.html:99
 msgid "say for _ secs"
 msgstr "说 _ 秒"
 
-#: templates/info/help/studio/tips/home.html:104
+#: templates/info/help/studio/tips/home.html:100
 msgid "say"
 msgstr "说"
 
-#: templates/info/help/studio/tips/home.html:105
+#: templates/info/help/studio/tips/home.html:101
 msgid "think for _ secs"
 msgstr "思考 _ 秒"
 
-#: templates/info/help/studio/tips/home.html:106
+#: templates/info/help/studio/tips/home.html:102
 msgid "think"
 msgstr "思考"
 
-#: templates/info/help/studio/tips/home.html:107
+#: templates/info/help/studio/tips/home.html:103
 msgid "show"
 msgstr "显示"
 
-#: templates/info/help/studio/tips/home.html:108
+#: templates/info/help/studio/tips/home.html:104
 msgid "hide"
 msgstr "隐藏"
 
-#: templates/info/help/studio/tips/home.html:109
+#: templates/info/help/studio/tips/home.html:105
 msgid "switch costume to"
 msgstr "将造型切换为"
 
-#: templates/info/help/studio/tips/home.html:110
+#: templates/info/help/studio/tips/home.html:106
 msgid "next costume"
 msgstr "下一个造型"
 
-#: templates/info/help/studio/tips/home.html:111
+#: templates/info/help/studio/tips/home.html:107
 msgid "switch backdrop to"
 msgstr "将背景切换为"
 
-#: templates/info/help/studio/tips/home.html:112
+#: templates/info/help/studio/tips/home.html:108
 msgid "change _ effect to"
 msgstr "改变 _ 特效为"
 
-#: templates/info/help/studio/tips/home.html:113
+#: templates/info/help/studio/tips/home.html:109
 msgid "set _ effect to"
 msgstr "设置 _ 特效为"
 
-#: templates/info/help/studio/tips/home.html:114
+#: templates/info/help/studio/tips/home.html:110
 msgid "clear graphic effects"
 msgstr "清除图形特效"
 
-#: templates/info/help/studio/tips/home.html:115
+#: templates/info/help/studio/tips/home.html:111
 msgid "change size by"
 msgstr "将大小改变"
 
-#: templates/info/help/studio/tips/home.html:116
+#: templates/info/help/studio/tips/home.html:112
 msgid "set size to"
 msgstr "将大小设为"
 
-#: templates/info/help/studio/tips/home.html:117
+#: templates/info/help/studio/tips/home.html:113
 msgid "go to front"
 msgstr "移到首层"
 
-#: templates/info/help/studio/tips/home.html:118
+#: templates/info/help/studio/tips/home.html:114
 msgid "go back _ layers"
 msgstr "下移 _ 层"
 
-#: templates/info/help/studio/tips/home.html:119
+#: templates/info/help/studio/tips/home.html:115
 msgid "costume #"
 msgstr "造型 #"
 
-#: templates/info/help/studio/tips/home.html:120
+#: templates/info/help/studio/tips/home.html:116
 msgid "backdrop name"
 msgstr "背景名称"
 
-#: templates/info/help/studio/tips/home.html:121
+#: templates/info/help/studio/tips/home.html:117
 msgid "size"
 msgstr "大小"
 
-#: templates/info/help/studio/tips/home.html:123
+#: templates/info/help/studio/tips/home.html:119
 msgid "Sound"
 msgstr "声音"
 
-#: templates/info/help/studio/tips/home.html:125
+#: templates/info/help/studio/tips/home.html:121
 msgid "Pen"
 msgstr "画笔"
 
-#: templates/info/help/studio/tips/home.html:127
+#: templates/info/help/studio/tips/home.html:123
 msgid "Data"
 msgstr "数据"
 
-#: templates/info/help/studio/tips/home.html:129
+#: templates/info/help/studio/tips/home.html:125
 msgid "Events"
 msgstr "事件"
 
-#: templates/info/help/studio/tips/home.html:131
+#: templates/info/help/studio/tips/home.html:127
 msgid "Control"
 msgstr "控制"
 
-#: templates/info/help/studio/tips/home.html:133
+#: templates/info/help/studio/tips/home.html:129
 msgid "Sensing"
 msgstr "侦测"
 
-#: templates/info/help/studio/tips/home.html:135
+#: templates/info/help/studio/tips/home.html:131
 msgid "Operators"
 msgstr "数字和逻辑运算"
 
-#: templates/info/help/studio/tips/home.html:137
+#: templates/info/help/studio/tips/home.html:133
 msgid "More Blocks"
 msgstr "更多功能块"
+
+#: templates/info/help/studio/tips/blocks/change-x.html:6
+msgid "Change the x position by this amount"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/change-x.html:13
+msgid "A positive number shifts the sprite to the <b>right</b>."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/change-x.html:14
+msgid "A negative number shifts the sprite to the <b>left</b>."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/change-y.html:7
+msgid "Changes sprite’s y-position by specified amount."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/change-y.html:15
+msgid ""
+"Change y by a <b>positive</b> number to move the sprite <b>up</b>. Change y "
+"by a <b>negative</b> number to move the sprite <b>down</b>."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/direction.html:6
+msgid "Reports the current direction of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/direction.html:15
+#, python-format
+msgid ""
+"<b>direction</b> tells which way the sprite is heading.</p>\n"
+"To see a sprite's direction, click <img src=\"%(STATIC_URL)s/images/help/"
+"info.gif\">:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/direction.html:18
+msgid "You can drag the blue line to change direction."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/direction.html:21
+msgid ""
+"To display a sprite's direction on the Stage, click the checkbox in the "
+"palette:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/glide.html:7
+msgid "Glide over time to this <b>x y</b> position"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/glide.html:12
+msgid "The sprite starts at one point, and then glides to the other points."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/glide.html:16
+msgid ""
+"Use <b>glide</b> to move a sprite smoothly to an <b>x y</b> position on the "
+"Stage."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/glide.html:18
+msgid ""
+"You can see <b>x</b> and <b>y</b> update in the Motion blocks palette when "
+"you drag a sprite to another point."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to-xy.html:7
+msgid "Go to this position on the Stage"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to-xy.html:16
+msgid ""
+"Type in a number for <b>x</b> and <b>y</b> to tell the sprite where to go to "
+"on the Stage."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to-xy.html:19
+msgid "Here are the <b>x y</b> coordinates of the Stage:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to.html:7
+msgid "Go to the location of the mouse-pointer or of another sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to.html:19
+msgid "Choose from the menu:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to.html:21
+msgid "Then, click the block."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to.html:22
+msgid ""
+"The current sprite will jump to the <b>x y</b> location of the mouse-pointer "
+"or of the sprite you choose."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/hide.html:8
+msgid "Makes sprite disappear from the Stage"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/hide.html:16
+msgid ""
+"Note: When a sprite is hidden, other sprites cannot detect it with touching? "
+"blocks."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/if-on-edge-bounce.html:7
+msgid "If touching the edge of the stage, then bounce away"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/if-on-edge-bounce.html:15
+msgid ""
+"The sprite will bounce at an angle if it is touching the <b>side</b>, "
+"<b>top</b>, or <b>bottom</b> of the stage."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/move-steps.html:7
+msgid "Move a certain number of steps"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/move-steps.html:16
+msgid ""
+"The sprite will move in the current direction. Type in how far you want it "
+"to move.</p>\n"
+"If you type in a negative number (such as -10), the sprite will go\n"
+"in the opposite direction.</p>\n"
+"<p>A <b>step</b> is a very short distance. The Scratch stage is 480 steps "
+"wide and \n"
+"360 steps tall:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-direction.html:7
+msgid "Set the direction of the current sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-direction.html:15
+msgid "Click to choose from the menu:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-direction.html:18
+msgid "Or, type in a number:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-direction.html:22
+#, python-format
+msgid ""
+"To see a sprite's current direction, click the <img src=\"%(STATIC_URL)s/"
+"images/help/info.gif\"/>"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-towards.html:7
+msgid "Points sprite towards mouse-pointer or another sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-towards.html:15
+msgid "<b>point towards</b> changes the direction of the current sprite."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-towards.html:16
+msgid "You can choose from the menu:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-towards.html:18
+msgid "The menu includes any other sprites in the project."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-for-seconds.html:8
+msgid "Say words in a speech bubble for a number of seconds"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-for-seconds.html:16
+msgid "You can type in any words to say."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-for-seconds.html:17
+msgid ""
+"The number of seconds tells the speech bubble how long to show. The script "
+"waits that long before continuing."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-text.html:7
+#: templates/info/help/studio/tips/blocks/say.html:8
+msgid "Say words in a speech bubble"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-text.html:15
+#: templates/info/help/studio/tips/blocks/say.html:16
+#: templates/info/help/studio/tips/blocks/think.html:18
+msgid "You can type in any text. The words will appear in a speech bubble."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-text.html:17
+#, python-format
+msgid ""
+"To remove the speech bubble, delete the text and click <img src="
+"\"%(STATIC_URL)s/images/help/say.png\" />."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say.html:18
+msgid "To remove the speech bubble, click an empty say block:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/set-x.html:7
+msgid "Set the x position of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/set-x.html:14
+msgid "<b>Set x</b> places a sprite across the Stage (horizontal position)."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/set-y.html:7
+msgid "Set the <b>y</b> position of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/set-y.html:14
+msgid "<b>Set y</b> places a sprite up or down (vertical position)."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/show.html:8
+msgid "Makes sprite appear on the Stage"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/switch-costume.html:19
+msgid ""
+"You can make new costumes in several ways. Choose from the library, paint an "
+"image, choose an image file, or take a photo with a webcam."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/switch-costume.html:23
+msgid "You can also refer to a costume by name or by number. For example:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/think-for-seconds.html:8
+msgid "Displays words in a thought bubble for a number of seconds"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/think-for-seconds.html:16
+msgid ""
+"The number of seconds tells the thought bubble how long to show. The script "
+"waits that long before continuing."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/think.html:9
+msgid "Displays words in a thought bubble"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/think.html:20
+#, python-format
+msgid ""
+"To remove the speech bubble, use a blank block: <img src=\"%(STATIC_URL)s/"
+"images/help/think-blank.png\" />."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/turn-left.html:7
+msgid "Turn to the left"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/turn-left.html:15
+#: templates/info/help/studio/tips/blocks/turn-right.html:15
+msgid "Type in the number of degrees you want the sprite to rotate."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/turn-left.html:16
+#: templates/info/help/studio/tips/blocks/turn-right.html:16
+msgid ""
+"(If you type in a negative number, the sprite will go in the opposite "
+"direction.)"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/turn-right.html:7
+msgid "Turn to the right"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/x-position.html:7
+msgid "Reports the <b>x</b> position of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/x-position.html:14
+msgid ""
+"To display the sprite's <b>x</b> position on the Stage, click the checkbox "
+"next to the block:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/y-position.html:7
+msgid "Reports the <b>y</b> position of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/y-position.html:16
+msgid ""
+"To see the sprite's <b>y</b> position on the stage, click the checkbox next "
+"to the block:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/edit-sounds.html:12
+#, python-format
+msgid ""
+" If you want to edit a sound, select a section of the sound: </br>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound.png\"></br>\n"
+"Then choose from the Edit menu:</br>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\">\n"
+" <p>Or, choose Effects:</br>\n"
+"  <img src=\"%(STATIC_URL)s/images/help/effects-menu.png\">\n"
+"\n"
+"</div>\n"
+msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:7
 msgid "Want to make a project in Scratch? Try these 10 steps."
@@ -2507,8 +3453,8 @@ msgid "Then, click on that block to make the cat move:"
 msgstr "然后，点击这个指令块让猫开始移动:"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:21
-msgid "1 of 10"
-msgstr "第1步，共10步"
+msgid "1"
+msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:8
 msgid "2 Add a Sound"
@@ -2531,9 +3477,9 @@ msgstr "点击并倾听。"
 msgid "(Make sure your computer's speakers are on.)"
 msgstr "(确认您计算机上的麦克风已开启。)"
 
-#: templates/info/help/studio/tips/howto/get-started-2.html:21
-msgid "2 of 10"
-msgstr "第2步，共10步"
+#: templates/info/help/studio/tips/howto/get-started-2.html:22
+msgid "2"
+msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:6
 msgid "3 Start a Dance"
@@ -2556,8 +3502,301 @@ msgid "Click on any of the blocks to run the stack:"
 msgstr "点击任意模块运行此指令序列："
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:21
-msgid "3 of 13"
-msgstr "第3步，共13步"
+msgid "3"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-4.html:6
+msgid "4 Again and Again"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-4.html:8
+msgid ""
+"<p>Drag out a <span class=controlcolor>REPEAT</span> block and drop it on "
+"top of the stack. \n"
+"(You want the \"mouth\" of the <span class=controlcolor>REPEAT</span> to "
+"wrap around the other blocks.)</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-4.html:13
+msgid "Click to run the stack:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-4.html:18
+msgid "4"
+msgstr ""
+
+# 86%
+#: templates/info/help/studio/tips/howto/get-started-5.html:6
+#, fuzzy
+msgid "5 Say Something"
+msgstr "说点什么"
+
+#: templates/info/help/studio/tips/howto/get-started-5.html:9
+#, python-format
+msgid ""
+"<p>Click <span class=lookscolor>LOOKS</span> and drag out a <span "
+"class=lookscolor>SAY</span> block.</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/5a-say.png\"></p>\n"
+"Type in the block to change the words:</br>\n"
+"<img src = \"%(STATIC_URL)s/images/help/5b-say-new.png\"></br>\n"
+"Then <b>snap</b> it on top of the stack.</p>\n"
+"<img src = \"%(STATIC_URL)s/images/help/5c-say-new.png\">\n"
+"<p>Click to run.</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-5.html:21
+msgid "5"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-6.html:6
+msgid "6 Green Flag"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-6.html:8
+#, python-format
+msgid ""
+"\n"
+"<p>Drag out a <img src = \"%(STATIC_URL)s/images/help/6a-green-flag.png\"> "
+"block and snap it on top.</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/6b-green-flag.png\"></p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-6.html:15
+#, python-format
+msgid ""
+"\n"
+"<p>Whenever you click the green flag, your script will start.</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/6c-green-flag.png\"></p>\n"
+"<p>To stop, click the stop button.</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-6.html:22
+msgid "6"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/get-started-7.html:5
+#, fuzzy
+msgid "7 Change Color"
+msgstr "改变颜色"
+
+#: templates/info/help/studio/tips/howto/get-started-7.html:7
+#, python-format
+msgid ""
+"\n"
+"<p>Now to try something different...</p>\n"
+"<p>Drag out a <span class=lookscolor>CHANGE EFFECT</span> block.</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/7a-color.png\"></p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-7.html:15
+msgid ""
+"\n"
+"<p>Click to see what it does.</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-7.html:23
+msgid "7"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-8.html:18
+msgid "8"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-9.html:18
+msgid "9"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:11
+msgid "Select the Sounds tab"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:12
+#, python-format
+msgid ""
+"Upload <img src=\"%(STATIC_URL)s/images/help/upload-icon.png\">\n"
+"   a sound file from your computer (mp3, wav or aif format)."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:17
+msgid "Try these scripts:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:19
+msgid "Click the green flag to run at the same time."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:23
+#, python-format
+msgid ""
+" If you want to edit the song, select a section: \n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound.png\"></br>\n"
+"Then choose from the Edit menu:</br>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\"> </div>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-instrument.html:10
+msgid "To play notes, choose an instrument and note:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-instrument.html:13
+msgid "You can choose another instrument from the menu:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-instrument.html:16
+msgid "Try this script. Click the sprite to play:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-instrument.html:20
+msgid "Add note blocks to play a short scale:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-music.html:10
+#, python-format
+msgid ""
+"Select the Sounds tab <img src=\"%(STATIC_URL)s/images/help/sounds-tab.png"
+"\">. Choose music from the library <img src=\"%(STATIC_URL)s/images/help/"
+"speaker-icon.png\"> or upload a file <img src=\"%(STATIC_URL)s/images/help/"
+"upload-icon.png\">."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-music.html:13
+msgid "This script will keep playing music in the background:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-music.html:17
+msgid ""
+"Does your music get interrupted? Make sure to use the block that plays sound "
+"until done:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-music.html:20
+msgid ""
+"Want the music to stop at the end of your program? Add this block to the "
+"last script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/record-sounds.html:11
+#, python-format
+msgid ""
+"To record a sound, click <img src=\"%(STATIC_URL)s/images/help/sounds-tab.png"
+"\"></br>\n"
+"and the microphone <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png"
+"\">. Then, click the record button:\n"
+"</br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/record-sound-button.png\">\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/record-sounds.html:19
+#, python-format
+msgid ""
+"  \n"
+" Type in a name of your sound:</br>\n"
+" <img src=\"%(STATIC_URL)s/images/help/sound-title.png\"><p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/record-sounds.html:26
+#, python-format
+msgid ""
+"  \n"
+"Then, click <img src=\"%(STATIC_URL)s/images/help/scripts-tab.png\"> and use "
+"this block:</br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"></"
+"br>\n"
+"Choose the sound name from the drop-down menu.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/switch-backdrop.html:9
+msgid "You can change backdrops using "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/switch-backdrop.html:12
+msgid "Here's an example:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/switch-backdrop.html:18
+#, python-format
+msgid ""
+"First, choose the backdrops you want <img src=\"%(STATIC_URL)s/images/help/"
+"choose-backdrop-icon.png\">. \n"
+"Then, select each backdrop name from the drop-down menu: "
+msgstr ""
+
+# 80%
+#: templates/info/help/studio/tips/howto/talking-sprite.html:7
+#, fuzzy
+msgid "Make your sprite talk"
+msgstr "让角色说话"
+
+#: templates/info/help/studio/tips/howto/talking-sprite.html:13
+msgid "Pick a sprite with costumes showing an open and closed mouth, such as:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/talking-sprite.html:18
+msgid "Try this script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/talking-sprite.html:23
+#, python-format
+msgid ""
+"To add your voice, click <img src=\"%(STATIC_URL)s/images/help/sounds-tab.png"
+"\"></br>\n"
+"and the microphone <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png"
+"\"> to record the words.</p>\n"
+"Add this to your script:</br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"></br>\n"
+"just below the green flag block."
+msgstr ""
+
+# 77%
+#: templates/info/help/studio/tips/ui/editor-map.html:5
+#, fuzzy
+msgid "Project Editor Map"
+msgstr "项目编辑器"
+
+#: templates/info/help/studio/tips/ui/editor-map.html:6
+msgid "Here are the main areas in the project editor:"
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/editor-map.html:11
+msgid "Stage Area"
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/editor-map.html:17
+msgid "Cursor Tools"
+msgstr ""
+
+#: templates/notifications/notifications.html:9
+msgid "Messages"
+msgstr ""
+
+#: templates/notifications/notifications.html:15
+msgid "All Messages"
+msgstr ""
+
+#: templates/notifications/notifications.html:16
+#: templates/profiles/profile_detail.html:338 templates/projects/base.html:255
+#: templates/studio/includes/sort-galleries-dropdown.html:26
+msgid "Comments"
+msgstr "评论"
+
+#: templates/notifications/notifications.html:22
+msgid "Alerts"
+msgstr ""
+
+#: templates/notifications/notifications.html:31
+#: templates/notifications/notifications.html:70
+msgid "Older messages"
+msgstr ""
+
+#: templates/notifications/notifications.html:35
+#: templates/notifications/notifications.html:74
+msgid "Newer messages"
+msgstr ""
+
+#: templates/notifications/notifications.html:42
+msgid "Admin notifications"
+msgstr ""
 
 #: templates/notifications/includes/friend-feed.html:12
 msgid "shared the project"
@@ -2585,7 +3824,7 @@ msgstr "到工作室"
 
 #: templates/notifications/includes/friend-feed.html:42
 #: templates/notifications/includes/friend-feed.html:56
-#: templates/notifications/includes/user-feed.html:37
+#: templates/notifications/includes/user-feed.html:47
 msgid "is now following"
 msgstr "正在关注"
 
@@ -2599,148 +3838,189 @@ msgstr ""
 "\t<a href=\"%(remixSourceUrl)s\">%(displayName)s</a>为"
 
 #: templates/notifications/includes/friend-feed.html:87
-#: templates/notifications/includes/user-feed.html:74
-#: templates/notifications/includes/user-feed.html:85
+#: templates/notifications/includes/user-feed.html:84
+#: templates/notifications/includes/user-feed.html:95
 msgid "favorited"
 msgstr "已收藏"
 
 #: templates/notifications/includes/friend-feed.html:101
-#: templates/notifications/includes/user-feed.html:97
+#: templates/notifications/includes/user-feed.html:107
 msgid "loved"
 msgstr "赞"
 
+#: templates/notifications/includes/notification_list.html:11
+msgid "Sent Today"
+msgstr ""
+
+#: templates/notifications/includes/notification_list.html:14
+msgid "Sent"
+msgstr ""
+
 #: templates/notifications/includes/user-feed.html:12
+msgid "joined the Scratch community"
+msgstr ""
+
+#: templates/notifications/includes/user-feed.html:22
 msgid "shared the project "
 msgstr "项目已分享"
 
-#: templates/notifications/includes/user-feed.html:48
+#: templates/notifications/includes/user-feed.html:58
 msgid "is now following the gallery"
 msgstr "正在关注"
 
-#: templates/profiles/profile_detail.html:55
-#: templates/scratch_admin/admin_profile_view.html:42
-#, python-format
-msgid "Joined %(tDate)s ago / "
+# 75%
+#: templates/profiles/profile_detail.html:59
+msgid "Scratch Team"
+msgstr "Scratch团队"
+
+# 77%
+#: templates/profiles/profile_detail.html:59
+#, fuzzy
+msgid "Scratcher"
+msgstr "Scratch"
+
+#: templates/profiles/profile_detail.html:59
+msgid "New Scratcher"
+msgstr ""
+
+# 81%
+#: templates/profiles/profile_detail.html:61
+#, fuzzy, python-format
+msgid ""
+"Joined %(tDate)s ago\n"
+"      "
 msgstr "在 %(tDate)s之前/加入"
 
-#: templates/profiles/profile_detail.html:73
+#: templates/profiles/profile_detail.html:80
 msgid "About me"
 msgstr "关于我"
 
-#: templates/profiles/profile_detail.html:77
+#: templates/profiles/profile_detail.html:84
 msgid "Add a bit about yourself"
 msgstr "简单介绍你自己"
 
-#: templates/profiles/profile_detail.html:78
-#: templates/profiles/profile_detail.html:105
+#: templates/profiles/profile_detail.html:85
+#: templates/profiles/profile_detail.html:112
 msgid "<span id=\\"
 msgstr "<span id=\\"
 
-#: templates/profiles/profile_detail.html:100
+#: templates/profiles/profile_detail.html:107
 msgid "What I'm working on"
 msgstr "我正在做什么"
 
-#: templates/profiles/profile_detail.html:104
+#: templates/profiles/profile_detail.html:111
 msgid "Describe what you're working on"
 msgstr "描述一下您正在做什么"
 
-#: templates/profiles/profile_detail.html:134
+#: templates/profiles/profile_detail.html:150
 msgid "FEATURED:"
 msgstr "特色:"
 
-#: templates/profiles/profile_detail.html:139
+#: templates/profiles/profile_detail.html:155
 msgid "Change featured project"
 msgstr "修改特色项目"
 
-#: templates/profiles/profile_detail.html:144
+#: templates/profiles/profile_detail.html:160
 msgid "What I've been doing"
 msgstr "我做过什么"
 
-#: templates/profiles/profile_detail.html:153
+#: templates/profiles/profile_detail.html:169
 msgid "Report this user"
 msgstr "举报该用户"
 
-#: templates/profiles/profile_detail.html:161
+#: templates/profiles/profile_detail.html:179
+#: templates/profiles/includes/shared_projects_list.html:4
 msgid "Shared Projects"
 msgstr "分享的项目"
 
-#: templates/profiles/profile_detail.html:163
+#: templates/profiles/profile_detail.html:213
 msgid "Favorite Projects"
 msgstr "收藏的项目"
 
-#: templates/profiles/profile_detail.html:174
+#: templates/profiles/profile_detail.html:248
 msgid "Studios I'm Following"
 msgstr "关注的工作室"
 
-#: templates/profiles/profile_detail.html:189
+#: templates/profiles/profile_detail.html:266
+#: templates/profiles/includes/studios_list.html:4
 msgid "Studios I Curate"
 msgstr "我管理的工作室"
 
-#: templates/profiles/profile_detail.html:206
+#: templates/profiles/profile_detail.html:282
+#: templates/profiles/includes/following_list.html:4
 msgid "Following"
 msgstr "关注"
 
-#: templates/profiles/profile_detail.html:224
+#: templates/profiles/profile_detail.html:317
+#: templates/profiles/includes/followers_list.html:4
 msgid "Followers"
 msgstr "粉丝"
 
-#: templates/profiles/profile_detail.html:244 templates/projects/base.html:208
-#: templates/studio/includes/sort-galleries-dropdown.html:26
-msgid "Comments"
-msgstr "评论"
+#: templates/profiles/includes/favorite_projects_list.html:4
+#: templates/projects/project_list.html:35
+msgid "Favorites"
+msgstr "收藏夹"
 
-#: templates/projects/base.html:4
+# 76%
+#: templates/profiles/includes/studios_following_list.html:4
+#, fuzzy
+msgid "Studios I Follow"
+msgstr "关注的工作室"
+
+#: templates/projects/base.html:5
 msgid "on Scratch"
 msgstr "正在Scratch"
 
-#: templates/projects/base.html:79
+#: templates/projects/base.html:81
 msgid "remixed"
 msgstr "再创作"
 
-#: templates/projects/base.html:86
+#: templates/projects/base.html:88
 msgid "scripts"
 msgstr "脚本"
 
-#: templates/projects/base.html:87
+#: templates/projects/base.html:89
 msgid "sprites"
 msgstr "角色"
 
-#: templates/projects/base.html:91 templates/studio/studio.html:96
+#: templates/projects/base.html:93 templates/studio/studio.html:96
 #: templates/studio/studio.html.py:133 templates/studio/studio.html:154
 msgid "See inside"
 msgstr "转到设计页"
 
-#: templates/projects/base.html:127
+#: templates/projects/base.html:129
 msgid "Based on:"
 msgstr "基于:"
 
-#: templates/projects/base.html:137
+#: templates/projects/base.html:141
 msgid "Original project:"
 msgstr "原项目:"
 
-#: templates/projects/base.html:152
+#: templates/projects/base.html:157
 msgid "not shared"
 msgstr "非共享的"
 
-#: templates/projects/base.html:165
+#: templates/projects/base.html:170
 msgid "Favorite this project"
 msgstr "收藏"
 
-#: templates/projects/base.html:172
+#: templates/projects/base.html:177
 msgid "Love this project"
 msgstr "赞"
 
-#: templates/projects/base.html:181
+#: templates/projects/base.html:186
 msgid "Total views"
 msgstr "浏览次数"
 
-#: templates/projects/base.html:185
-msgid "Total remixes"
-msgstr "再创作次数"
+#: templates/projects/base.html:190
+msgid "View the remix tree"
+msgstr ""
 
-#: templates/projects/base.html:233
-msgid "views"
-msgstr "浏览"
+# 85%
+#: templates/projects/base.html:285
+#, fuzzy
+msgid "remixes"
+msgstr "再创作"
 
 #: templates/projects/project_list.html:10
 msgid "Newest Projects"
@@ -2757,9 +4037,14 @@ msgstr "项目选择者"
 msgid "What the Community is"
 msgstr "社区介绍"
 
-#: templates/projects/project_list.html:35
-msgid "Favorites"
-msgstr "收藏夹"
+#: templates/projects/remixtree.html:4 templates/projects/remixtree.html:68
+#, python-format
+msgid "Remix tree for \"%(projectTitle)s\""
+msgstr ""
+
+#: templates/projects/remixtree.html:70
+msgid "Remix tree"
+msgstr ""
 
 #: templates/projects/shared-other.html:20
 #: templates/projects/includes/owner/editable-wip.html:4
@@ -2892,6 +4177,10 @@ msgstr "举报"
 msgid "View Cloud Data activity for this project."
 msgstr "查看本项目的云数据活动。"
 
+#: templates/registration/login.html:29
+msgid "Login"
+msgstr "登录"
+
 #: templates/registration/login.html:30
 msgid "Forgot username or password?"
 msgstr "忘记用户名或密码?"
@@ -2904,10 +4193,6 @@ msgstr "密码重置确认信息"
 #: templates/registration/password_reset_confirm.html:21
 msgid "New Password"
 msgstr "新密码"
-
-#: templates/registration/password_reset_confirm.html:26
-msgid "Confirm Password"
-msgstr "确认密码"
 
 #: templates/registration/password_reset_confirm.html:30
 msgid "Change my password"
@@ -2932,6 +4217,11 @@ msgstr "您注册的电子邮件地址"
 #: templates/registration/password_reset_form.html:29
 msgid "Send me a password reset link!"
 msgstr "发送密码重置链接给我！"
+
+#: templates/scratch_admin/admin_profile_view.html:43
+#, python-format
+msgid "Joined %(tDate)s ago / "
+msgstr "在 %(tDate)s之前/加入"
 
 #: templates/search/search.html:4
 msgid "Search - Scratch"
@@ -3040,13 +4330,319 @@ msgstr "我创建的"
 msgid "Curated by me"
 msgstr "我管理的"
 
-# 75%
-#, fuzzy
-#~ msgid "Scratch Help"
-#~ msgstr "Scratch新闻"
+#~ msgid "Log out"
+#~ msgstr "退出登录"
 
-#~ msgid "Sign out"
-#~ msgstr "退出"
+#~ msgid "You have <span id=\\\"chars-left\\\">500</span> characters left."
+#~ msgstr "还可以输入<span id=\\\"chars-left\\\">500</span>个字符。"
+
+#~ msgid "Studio description"
+#~ msgstr "工作室说明"
+
+#~ msgid "Read more &raquo;"
+#~ msgstr "查看更多 &raquo;"
+
+#~ msgid "More info"
+#~ msgstr "更多信息"
+
+#~ msgid "Add curators"
+#~ msgstr "添加管理员"
+
+#~ msgid "Add curators by username or drag from the explore bar below!"
+#~ msgstr "通过用户名或直接从下面的发现栏上拖动添加管理员"
+
+#~ msgid "Curators"
+#~ msgstr "管理员"
+
+#~ msgid "There are no curators for this gallery"
+#~ msgstr "本馆尚无管理员"
+
+#~ msgid "Drag projects from the explore bar below!"
+#~ msgstr "从下面的发现栏中拖动项目"
+
+#~ msgid "A creative learning community with"
+#~ msgstr "一个创造性的学习社区"
+
+#~ msgid ""
+#~ "Scratch is a programming language and online community where you can create "
+#~ "your own interactive stories, games, and animations -- and share your "
+#~ "creations with others around the world."
+#~ msgstr "Scratch是一门程序设计语言，也是一个在线社区。您可以创建自己的互动故事，游戏和动画，也可以与世界各地的人一起分享您的创作成果。"
+
+#~ msgid ""
+#~ "In the process of designing and programming Scratch projects, young people "
+#~ "learn to think creatively, reason systematically, and work collaboratively."
+#~ msgstr "在Scratch项目的设计与编程过程中，年轻人可以学会创造性思考，系统化的推理以及如何协同工作。"
+
+#~ msgid "Who is Scratch for?"
+#~ msgstr "哪些人群适合使用Scratch?"
+
+#~ msgid "Scratch is for ages 8 and up!"
+#~ msgstr "Scratch适用于所有8岁或以上的人群！"
+
+#~ msgid ""
+#~ "Scratch is developed by the Lifelong Kindergarten Group at the MIT Media "
+#~ "Lab, with financial support from the National Science Foundation, Microsoft, "
+#~ "Intel Foundation, MacArthur Foundation, Google, Iomega and MIT Media Lab "
+#~ "research consortia.Read Papers and presentations about Scratch. See the <a "
+#~ "href=\"#\">Credits page</a> for a list of people who worked together to "
+#~ "create Scratch."
+#~ msgstr ""
+#~ "Scratch由MIT媒体实验室终生幼儿园研究小组研发。国家科学基金会、微软、英特尔基金会、麦克阿瑟基金会、谷歌、艾美加以及MIT媒体实验室研究联盟为其"
+#~ "提供资金支持。阅读关于Scratch的论文或演示文稿。点击 <a href=\"#\">致谢页</a> 查看携手努力创造Scratch的人员名单。"
+
+#~ msgid "Support Scratch"
+#~ msgstr "支持Scratch"
+
+#~ msgid ""
+#~ "We are pleased to provide Scratch free of charge. If you enjoy using "
+#~ "Scratch, please consider making a donation to support Scratch. Donations of "
+#~ "any size are appreciated."
+#~ msgstr "我们愿意无偿的提供Scratch。如果您喜欢使用Scratch，请考虑通过捐款来支持Scratch。任何数额的捐款都值得感激。"
+
+#~ msgid ""
+#~ "Your donation goes into our ScratchLabs fund, used to support future "
+#~ "development of Scratch software and the Scratch website. On the <a href=\"#"
+#~ "\">donation form</a>, just fill in the amount of your donation and select "
+#~ "\"New gift\" in the pull-down menu for the gift type. Thanks for supporting "
+#~ "Scratch!"
+#~ msgstr ""
+#~ "您的捐款会被纳入我们的Scratch实验室基金，用于支持未来Scratch软件和网站的研发。在 <a "
+#~ "href=\"#\">捐款表格</a>中填写您要捐赠的数额并在下拉菜单中选择“新礼品”。感谢您支持Scratch！"
+
+#~ msgid "Frequently Asked Questions"
+#~ msgstr "常见问题"
+
+#~ msgid "Scratch in the News"
+#~ msgstr "Scratch相关新闻"
+
+#~ msgid "Scratch Events"
+#~ msgstr "Scratch相关事件"
+
+#~ msgid "Scratch Products"
+#~ msgstr "Scratch产品"
+
+#~ msgid ""
+#~ "The Scratch project is based upon research supported by the National Science "
+#~ "Foundation under grant number 0325828. Any opinions, findings, and "
+#~ "conclusions or recommendations expressed on this site are those of the "
+#~ "authors and do not necessarily reflect the views of the National Science "
+#~ "Foundation."
+#~ msgstr ""
+#~ "Scratch是基于国家科学基金会的支持，授权号为0325828研发的项目。本站上的任何意见、发现、结论或建议谨代表其作者，不能代表国家科学基金会的观点"
+#~ "。"
+
+#~ msgid ""
+#~ "The new paint editor uses <b>vector graphics</b> so that images can scale to "
+#~ "different sizes without getting jagged."
+#~ msgstr "新的绘图编辑器包含了<b>矢量</b>绘图功能, 这样图像可缩放到不同尺寸而不会产生锯齿效果。"
+
+#~ msgid "Features Planned for 2013"
+#~ msgstr "2013年计划新增的功能"
+
+#~ msgid ""
+#~ "Download a stand-alone version of the Scratch project editor to use off-line"
+#~ msgstr "提供独立的Scratch项目编辑器下载，以便离线使用。"
+
+#~ msgid ""
+#~ "Store “persistent data” in the cloud to create online surveys, high-score "
+#~ "lists, and more"
+#~ msgstr "将“永久数据”保存在云中，使创建在线调查，高分列表等类似的应用成为可能"
+
+#~ msgid "Export your Scratch projects as YouTube videos or SWF files"
+#~ msgstr "将Scratch项目输出到YouTube视频或SWF文件"
+
+#~ msgid "Create side-scrolling games, stories, and tours with scrolling blocks"
+#~ msgstr "使用滚动功能块创建滚动的游戏、故事和教程等。"
+
+#~ msgid ""
+#~ "Connect to external devices, web services, and outside databases with new "
+#~ "Scratch extensions (including LEGO WeDo and the ScratchBoard)"
+#~ msgstr "使用新的Scratch扩展(包括LEGO WeDo和ScratchBoard)连接外部设备，Web服务和外部数据库"
+
+#~ msgid ""
+#~ "Select from a wider range of sprites and images in a community-curated "
+#~ "sprite collection"
+#~ msgstr "从社区推荐的角色集合选择更广泛的角色造型和图像"
+
+#~ msgid ""
+#~ "Scratch is a programming language and an online community where children can "
+#~ "program and share interactive media such as stories, games, and animation "
+#~ "with people from all over the world. Scratch is designed and maintained by "
+#~ "the Lifelong Kindergarten group at the MIT Media Lab. As children create "
+#~ "with Scratch, they learn to think creatively, work collaboratively, and "
+#~ "reason systematically."
+#~ msgstr ""
+#~ "Scratch既是一款编程语言，也是一个在线社区。孩子们可以用它制作互动媒体，比如故事、游戏和动画等，并与世界各地的人分享。Scratch是由MIT媒体"
+#~ "工作室终生幼儿园小组设计并维护。当孩子们用Scratch创作时，他们会学会创意思考、协同合作以及推理。"
+
+#~ msgid ""
+#~ "If you’re just getting started, there’s a step-by-step guide available "
+#~ "inside Scratch, or you can download the Getting Started guide (PDF). The "
+#~ "Scratch Cards provide a fun way to learn more. For an overview of Scratch "
+#~ "resources, see Scratch Help."
+#~ msgstr ""
+#~ "如果您刚入门，在Scratch上就带有按步骤的指南，或者下载入门指南（PDF)。Scratch卡提供了一种有趣的方法，可使您了解更多。查看Scratch"
+#~ "帮助，获得Scratch资源预览。"
+
+#~ msgid ""
+#~ "The MIT Scratch Team works with the community to maintain a friendly and "
+#~ "respectful environment. For example, members are asked to be constructive "
+#~ "when giving comments and help keep the website friendly by reporting any "
+#~ "inappropriate content. You can help your child learn how to participate by "
+#~ "reviewing the community guidelines together."
+#~ msgstr ""
+#~ "MIT的Scratch团队将与会员们一起维护站点友好和互相尊重的环境。比如，当会员发表评论时要有建设性，并且可以举报不适宜的内容。您可以与您的孩子一起阅"
+#~ "读社区行为规范，帮助他更好的学习和参与。"
+
+#~ msgid ""
+#~ "\"My two children were immediately hooked. Scratch allows kids to program by "
+#~ "'stacking' commands like LEGO blocks. Instead of reactively playing video "
+#~ "games -- now they can create them! The boys learned about random number "
+#~ "generators and they learned about XY axes. If I sat them down to go over "
+#~ "these concepts, there would have been eye-rolling and moaning. But if it "
+#~ "helps them make their game work better -- it takes a minute to explain and "
+#~ "off they go using their newly-learned concepts.\""
+#~ msgstr ""
+#~ "\"我的两个孩子很快就入迷了。Scratch帮助孩子像搭建乐高积木一样编程。他们不再玩电子游戏，而是能自己制作游戏了！孩子们学习了随机数发生器以及XY坐标"
+#~ "轴。如果我帮助他们学习这些知识，他们一定会翻白眼并且不耐烦。但如果这些概念能帮助他们把自己的游戏做得更好，只需花一分钟时间和他们解释，他们就可以使用这些"
+#~ "新学的概念了。\""
+
+#~ msgid ""
+#~ "\"I was looking for something for my 8 year-old to start programming with "
+#~ "and this is just perfect.\""
+#~ msgstr "“我想找到一种工具帮助我8岁的孩子开始学习编程，Scratch就很完美。”"
+
+#~ msgid ""
+#~ "To run Scratch 2.0, you need a relatively recent web browser (<a href="
+#~ "\"http://google.com/chrome/\">Chrome</a> 7 or later, <a href=\"http://www."
+#~ "mozilla.org/en-US/firefox/new/\">Firefox</a> 4 or later, or Internet "
+#~ "Explorer 7 or later) with <a href=\"\">Adobe Flash Player</a> version 10.2 "
+#~ "or later installed. Scratch 2.0 is designed to support screen sizes 1024 x "
+#~ "768 or larger. If your computer doesn’t meet these requirements, you can try "
+#~ "<a href=\"http://info.scratch.mit.edu/Scratch_1.4_Download\">downloading</a> "
+#~ "and installing Scratch 1.4, which you can still use to share projects to the "
+#~ "Scratch 2.0 website."
+#~ msgstr ""
+#~ "要运行Scratch 2.0，你需要相对较新的浏览器 (<a href=\"http://google.com/chrome/\">Chrome</a> 7 "
+#~ "或更新, <a href=\"http://www.mozilla.org/en-US/firefox/new/\">Firefox</a> "
+#~ "4或更新,或者Internet Explorer 7或更新)，并安装<a href=\"\">Adobe Flash Player</a> "
+#~ "10.2版更新。Scratch 2.0支持1024 x 768或更大的分辨率。如果您的计算机不满足这些条件，您可以尝试下载 <a "
+#~ "href=\"http://info.scratch.mit.edu/Scratch_1.4_Download\">downloading</a> "
+#~ "并安装Scratch1.4，同样可以在Scratch 2.0网站分享你的作品。"
+
+#~ msgid ""
+#~ "Yes - you can upload projects made with earlier versions of Scratch, and "
+#~ "they will be visible / playable. However, you can’t download projects made "
+#~ "with or edited in later versions of Scratch and open them in earlier "
+#~ "versions. For example, you can’t open a Scratch 2.0 project in Scratch 1.4, "
+#~ "because Scratch 1.4 doesn’t know how to read the .sb2 project file format."
+#~ msgstr ""
+#~ "是的。您可以上传用旧版本Scratch制作的项目，这些项目是可见和可用的。但是，您不能下载新版本制作或编辑的项目并用旧版本打开。比如，您不能用Scrat"
+#~ "ch 1.4打开一个用Scratch 2.0制作的项目，因为Scratch 1.4不能阅读.sb2的格式文件。"
+
+#~ msgid ""
+#~ "Some of the information and data collected on the Scratch website are used "
+#~ "in research studies intended to improve our understanding of how people "
+#~ "learn with Scratch. The results of this research are shared with educators "
+#~ "and researchers through conferences, journals, and other publications. You "
+#~ "can find out more on our Research page."
+#~ msgstr ""
+#~ "一些在Scratch网站上被采集的信息和数据被用于研究学习，从而提高我们对人们如何学习Scratch的认识。这些研究的结果将在会议、期刊和其他方式与教育"
+#~ "者和研究者一起分享。登录研究页面可以查看更多。"
+
+#~ msgid ""
+#~ "The structure of the Scratch website depends on having a consistent account "
+#~ "name, so it’s not possible to change your username. If you really need to, "
+#~ "you can make a new account - but you'll have copy your projects over on your "
+#~ "own."
+#~ msgstr "Scratch网站的结构依靠一致的用户名，因此不能修改用户名。如果非要修改，可以注册一个新账户，但不能复制之前制作的项目。"
+
+#~ msgid ""
+#~ "The source code for Scratch 2.0 (website and editor) is not yet available. "
+#~ "The source code for Scratch 1.4, written in Squeak, is available <a href="
+#~ "\"https://github.com/LLK/Scratch_1.4\">on github</a>. The source code for "
+#~ "the first version of the Scratch website - ScratchR - is available <a href="
+#~ "\"http://svn.assembla.com/svn/scratchr/\">on Assembla</a>."
+#~ msgstr ""
+#~ "Scratch 2.0（软件和网站）的源代码目前还不能使用。Scratch 1.4的源代码用Squeak编写，可以获得<a "
+#~ "href=\"https://github.com/LLK/Scratch_1.4\">on "
+#~ "github</a>。Scratch网站第一版-ScratchR的源代码也可以获得<a "
+#~ "href=\"http://svn.assembla.com/svn/scratchr/\">on Assembla</a>。"
+
+#~ msgid ""
+#~ "The current beta site is limited to numbers in variables as an initial step "
+#~ "to work out any issues with their use on the site. We plan to roll out cloud "
+#~ "data features incrementally. If the infrastructure is working well, we plan "
+#~ "to add other features (cloud lists, support for strings, etc.)."
+#~ msgstr ""
+#~ "目前的试用版仅限于数字变量作为起步，以便发现和解决在网络上使用会遇到的问题。我们计划逐渐的发展云数据功能。如果该模块运行良好，则会增加更多功能，如云链表"
+#~ "，支持字符串等。"
+
+#~ msgid "Search This Page"
+#~ msgstr "查找本页"
+
+#~ msgid "\"Type a topic\""
+#~ msgstr "“输入主题”"
+
+#~ msgid ""
+#~ "or try searching the <a href=\"/forums\">discussion forums</a> or the <a "
+#~ "href=\"http://wiki.scratch.mit.edu\">Scratch wiki</a>"
+#~ msgstr ""
+#~ "或尝试搜索<a href=\"/forums\">讨论区</a> 或 <a "
+#~ "href=\"http://wiki.scratch.mit.edu\">Scratch wiki</a>"
+
+#~ msgid ""
+#~ "<a href=\"/accounts/login/\">Login</a> or <a href=\"#\">Join Scratch</a>."
+#~ msgstr "<a href=\"/accounts/login/\">登陆</a> 或 <a href=\"#\">加入Scratch</a>。"
+
+#~ msgid "How do I use the new blocks?"
+#~ msgstr "我如何使用新模块？"
+
+#~ msgid ""
+#~ "<a href=\"http://scratch.mit.edu/forums/viewforum.php?id=31\">Introduce</a> "
+#~ "yourself in the Scratch forums"
+#~ msgstr ""
+#~ "在Scratch论坛<a "
+#~ "href=\"http://scratch.mit.edu/forums/viewforum.php?id=31\">介绍</a>自己"
+
+#~ msgid "Scratch and the Physical World"
+#~ msgstr "Scrtach和真实世界"
+
+#~ msgid ""
+#~ "Connect your Scratch projects to the physical world with MaKey MaKey, LEGO "
+#~ "WeDo, or ScratchBoard."
+#~ msgstr "通过MaKey MaKey、LEGO WeDo或ScratchBoard将您的Scratch项目与真实世界相连。"
+
+#~ msgid "Scratch Media"
+#~ msgstr "Scratch媒体"
+
+#~ msgid "Scratch Store"
+#~ msgstr "Scratch商店"
+
+#~ msgid "Find books and other materials about Scratch."
+#~ msgstr "查找关于Scratch的书籍和其它材料。"
+
+#~ msgid "Paint Editor Tips"
+#~ msgstr "图形编辑器贴士"
+
+#~ msgid "Motions"
+#~ msgstr "运动"
+
+#~ msgid "1 of 10"
+#~ msgstr "第1步，共10步"
+
+#~ msgid "2 of 10"
+#~ msgstr "第2步，共10步"
+
+#~ msgid "3 of 13"
+#~ msgstr "第3步，共13步"
+
+#~ msgid "Total remixes"
+#~ msgstr "再创作次数"
+
+#~ msgid "views"
+#~ msgstr "浏览"
 
 #~ msgid "Contact us"
 #~ msgstr "联系我们"

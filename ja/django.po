@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-09 23:46+0000\n"
+"POT-Creation-Date: 2013-05-09 16:09+0000\n"
 "PO-Revision-Date: 2013-05-04 16:01+0200\n"
 "Last-Translator: Kazuhiro <abee@squeakland.jp>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr "パスワードに'password'は使えません。"
 msgid "Your password cannot be the same as your username."
 msgstr "パスワードはユーザー名と同じではいけません。"
 
-#: authentication/forms.py:59
+#: authentication/forms.py:59 templates/modal-registration.html:66
 msgid "Email"
 msgstr "Eメールアドレス"
 
@@ -114,6 +114,10 @@ msgstr "静的ページ"
 msgid "static pages"
 msgstr "静的ページ"
 
+#: projects/views.py:410
+msgid "This tag has too many projects to load"
+msgstr ""
+
 #: templates/404.html:11
 msgid "404. Oh noes! Our server is Scratch'ing its head"
 msgstr "404エラー。あらまぁ、サーバーが頭を掻きむしっています。"
@@ -122,12 +126,15 @@ msgstr "404エラー。あらまぁ、サーバーが頭を掻きむしってい
 msgid ""
 "We couldn't find the page you're looking for. Check to make sure you've "
 "typed the url correctly."
-msgstr ""
-"あなたのお探しのページは見つかりません。入力したurlを確認してください。"
+msgstr "あなたのお探しのページは見つかりません。入力したurlを確認してください。"
 
 #: templates/404.html:15
 msgid "You can try searching for what you're looking for here:"
 msgstr "ここから探しているページを検索できます："
+
+#: templates/404.html:17 templates/base.html:92 templates/contact-us.html:42
+msgid "Search"
+msgstr ""
 
 #: templates/500.html:11
 msgid "500. Uh Oh. Our servers are having some trouble"
@@ -141,107 +148,131 @@ msgstr "すみません。もう少しあとでもういちどためしてくだ
 msgid "Account Settings -  Scratch"
 msgstr "アカウント設定 - Scratch"
 
-#: templates/account_settings.html:12 templates/under-construction.html:12
+#: templates/account_settings.html:12
 msgid "Coming Soon..."
 msgstr "近日公開..."
 
-#: templates/base.html:10
+#: templates/base.html:12
 msgid "Scratch"
 msgstr "Scratch"
 
-#: templates/base.html:10
+#: templates/base.html:12
 msgid "Imagine, Program, Share"
 msgstr "想像、プログラム、共有"
 
-#: templates/base.html:130
+#: templates/base.html:74
 msgid "Create"
 msgstr "作る"
 
-#: templates/base.html:131 templates/explore/explore2.html:40
+#: templates/base.html:75 templates/explore/explore2.html:40
 #: templates/explore/projects.html:25 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "見る"
 
-#: templates/base.html:132
+#: templates/base.html:76
 msgid "Discuss"
 msgstr "話す"
 
-#: templates/base.html:133
+#: templates/base.html:77
 msgid "Help"
 msgstr "ヘルプ"
 
-#: templates/base.html:156
+#: templates/base.html:101
 msgid "messages - updates and notices"
 msgstr "メッセージ - 更新情報とお知らせ"
 
-#: templates/base.html:157
+#: templates/base.html:102
 msgid "my stuff - manage projects and studios"
 msgstr "私の作品 - 作品の管理と制作の場所"
 
-#: templates/base.html:164
+#: templates/base.html:109
 msgid "Profile"
 msgstr "プロフィール"
 
-#: templates/base.html:165 templates/explore/base.html:24
+#: templates/base.html:110 templates/explore/base.html:19
 #: templates/studio/base.html:21
 msgid "My Stuff"
 msgstr "私の作品"
 
-#: templates/base.html:166
+#: templates/base.html:111
 msgid "Account settings"
 msgstr "アカウント設定"
 
-#: templates/base.html:167
-msgid "Log out"
-msgstr "ログアウト"
+#: templates/base.html:112
+msgid "Sign out"
+msgstr "サインアウト"
 
-#: templates/base.html:184 templates/modal-login.html:15
-msgid "Username"
-msgstr "ユーザー名"
+# 83%
+#: templates/base.html:122 templates/modal-registration.html:7
+#, fuzzy
+msgid "Join Scratch"
+msgstr "Scratchで作成"
 
-#: templates/base.html:186 templates/modal-login.html:22
-msgid "Password"
-msgstr "パスワード"
-
-#: templates/base.html:188 templates/modal-login.html:32
+#: templates/base.html:125 templates/base.html.py:136
+#: templates/modal-login.html:10 templates/modal-login.html.py:34
 msgid "Sign in"
 msgstr "サインイン"
 
-#: templates/base.html:189
+#: templates/base.html:131 templates/modal-login.html:16
+#: templates/includes/backbone-templates.html:17
+msgid "Username"
+msgstr "ユーザー名"
+
+#: templates/base.html:133 templates/modal-login.html:23
+#: templates/includes/backbone-templates.html:24
+msgid "Password"
+msgstr "パスワード"
+
+#: templates/base.html:137
 msgid "Forgot password?"
 msgstr "パスワードを忘れた場合。"
 
-#: templates/base.html:314
+#: templates/base.html:192
 msgid "About"
 msgstr "Scratchについて"
 
-#: templates/base.html:315
+#: templates/base.html:193
 msgid "Educators"
 msgstr "教育者"
 
-#: templates/base.html:316
+#: templates/base.html:194
 msgid "Parents"
 msgstr "保護者"
 
-#: templates/base.html:317
+#: templates/base.html:195
 msgid "Community Guidelines"
 msgstr "コミュニティーガイドライン"
 
-#: templates/base.html:318 templates/info/DMCA.html:10
+#: templates/base.html:196 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "デジタルミレニアム著作権法"
 
 # 90%
-#: templates/base.html:319
+#: templates/base.html:197
 msgid "Contact Us"
 msgstr "連絡先"
 
-#: templates/base.html:332
+#: templates/base.html:211
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
+msgstr "ScratchはMITメディアラボ ライフロングキンダーガーテングループのプロジェクトです。"
+
+#: templates/coming-soon.html:6
+msgid "Coming Soon-  Scratch"
 msgstr ""
-"ScratchはMITメディアラボ ライフロングキンダーガーテングループのプロジェクトで"
-"す。"
+
+#: templates/coming-soon.html:12
+msgid "Coming Very Soon..."
+msgstr ""
+
+#: templates/contact-us.html:12 templates/accounts/banned-response.html:12
+#: templates/info/scratch_1.4.html:12
+msgid "Account Blocked"
+msgstr ""
+
+#: templates/contact-us.html:58 templates/accounts/banned-response.html:81
+msgid "Send"
+msgstr ""
 
 #: templates/list_all.html:28 templates/galleries/gallery_list.html:8
 #: templates/projects/project_list.html:43
@@ -282,17 +313,264 @@ msgstr "最もお気に入りになった作品"
 msgid "Most remixed"
 msgstr "最もリミックスされた作品"
 
-#: templates/modal-login.html:10 templates/registration/login.html:29
-msgid "Login"
-msgstr "ログイン"
+#: templates/modal-registration.html:11
+msgid "It's easy (and free!) to sign up for a Scratch account."
+msgstr ""
+
+#: templates/modal-registration.html:19
+msgid "Choose a Scratch Username"
+msgstr ""
+
+#: templates/modal-registration.html:22
+msgid "Don't use your real name"
+msgstr ""
+
+#: templates/modal-registration.html:30
+msgid "Choose a Password"
+msgstr ""
+
+#: templates/modal-registration.html:33
+msgid "Remember it - don't tell anyone else"
+msgstr ""
+
+#: templates/modal-registration.html:41
+#: templates/registration/password_reset_confirm.html:26
+msgid "Confirm Password"
+msgstr "新しいパスワード(確認用)"
+
+#: templates/modal-registration.html:43
+msgid "Retype your password"
+msgstr ""
+
+#: templates/modal-registration.html:55
+msgid "Your responses to these questions will be kept private."
+msgstr ""
+
+#: templates/modal-registration.html:56
+msgid "Why do we ask for this info"
+msgstr ""
+
+#: templates/modal-registration.html:58 templates/modal-registration.html:74
+msgid "Birth Month and Year"
+msgstr ""
+
+#: templates/modal-registration.html:60
+msgid ""
+"We use this information to calculate the age range of people who use "
+"Scratch, and to confirm that you are the owner of the account if you contact "
+"us.  Your birth month and year will not be made public."
+msgstr ""
+
+# 83%
+#: templates/modal-registration.html:62 templates/modal-registration.html:100
+#, fuzzy
+msgid "Gender"
+msgstr "性別"
+
+#: templates/modal-registration.html:64
+msgid ""
+"This helps the Scratch design team understand who is using Scratch, and "
+"provides information that helps us broaden participation.  This information "
+"is not visible on your account, and is only used to describe overall "
+"participation."
+msgstr ""
+
+#: templates/modal-registration.html:68
+msgid ""
+"We use this only in case you need to reset your password.  We won't share it "
+"with anyone."
+msgstr ""
+
+#: templates/modal-registration.html:76
+msgid "Month"
+msgstr ""
+
+#: templates/modal-registration.html:77
+msgid "January"
+msgstr ""
+
+#: templates/modal-registration.html:78
+msgid "February"
+msgstr ""
+
+#: templates/modal-registration.html:79
+msgid "March"
+msgstr ""
+
+#: templates/modal-registration.html:80
+msgid "April"
+msgstr ""
+
+#: templates/modal-registration.html:81
+msgid "May"
+msgstr ""
+
+#: templates/modal-registration.html:82
+msgid "June"
+msgstr ""
+
+#: templates/modal-registration.html:83
+msgid "July"
+msgstr ""
+
+#: templates/modal-registration.html:84
+msgid "August"
+msgstr ""
+
+#: templates/modal-registration.html:85
+msgid "September"
+msgstr ""
+
+#: templates/modal-registration.html:86
+msgid "October"
+msgstr ""
+
+#: templates/modal-registration.html:87
+msgid "November"
+msgstr ""
+
+#: templates/modal-registration.html:88
+msgid "December"
+msgstr ""
+
+#: templates/modal-registration.html:91
+msgid "Year"
+msgstr ""
+
+#: templates/modal-registration.html:101
+msgid "Male"
+msgstr ""
+
+#: templates/modal-registration.html:102
+msgid "Female"
+msgstr ""
+
+# 85%
+#: templates/modal-registration.html:112 templates/modal-registration.html:114
+#, fuzzy
+msgid "Country"
+msgstr "国"
+
+#: templates/modal-registration.html:126
+msgid "Email address"
+msgstr ""
+
+#: templates/modal-registration.html:127
+msgid "Parent or guardian email address"
+msgstr ""
+
+#: templates/modal-registration.html:141
+msgid "Thanks for joining Scratch!"
+msgstr ""
+
+#: templates/modal-registration.html:142
+msgid "You're now logged in."
+msgstr ""
+
+#: templates/modal-registration.html:143
+msgid ""
+"Scratch is a community of all ages, from all over the world. Make sure your "
+"projects and comments are <a target=\"_blank\" href=\"/community_guidelines"
+"\">respectful and friendly</a>."
+msgstr ""
+
+#: templates/modal-registration.html:145
+msgid "Would you like to:"
+msgstr ""
+
+#: templates/modal-registration.html:147
+msgid "Learn how to make a project"
+msgstr ""
+
+#: templates/modal-registration.html:148
+msgid "Choose a starter project"
+msgstr ""
+
+#: templates/modal-registration.html:149
+msgid "Connect with a Scratcher"
+msgstr ""
+
+#: templates/modal-registration.html:159
+msgid "Next"
+msgstr ""
+
+#: templates/modal-registration.html:161
+msgid "OK Lets Go!"
+msgstr ""
+
+#: templates/modal-registration.html:170
+msgid "Your username must be between 3 and 20 characters"
+msgstr ""
+
+#: templates/modal-registration.html:171
+msgid "Sorry, that username already exists"
+msgstr ""
+
+#: templates/modal-registration.html:172
+msgid "Invalid username"
+msgstr ""
+
+#: templates/modal-registration.html:173
+msgid "You must enter a username"
+msgstr ""
+
+#: templates/modal-registration.html:174
+msgid "Your username may only contain letters, numbers, - and _"
+msgstr ""
+
+#: templates/modal-registration.html:175
+msgid "Your password cannot be \\"
+msgstr ""
+
+# 87%
+#: templates/modal-registration.html:176
+#, fuzzy
+msgid "Your password must be at least 6 characters"
+msgstr "パスワードは６文字以上にしてください。"
+
+#: templates/modal-registration.html:177
+msgid "Your must enter a password"
+msgstr ""
+
+#: templates/modal-registration.html:178
+msgid "Your passowrds do not match"
+msgstr ""
+
+#: templates/modal-registration.html:179
+msgid "Your password cannot match your username"
+msgstr ""
+
+#: templates/modal-registration.html:180
+msgid "Your must select a birth month and year"
+msgstr ""
+
+#: templates/modal-registration.html:181
+msgid "You must specify a gender"
+msgstr ""
+
+#: templates/modal-registration.html:182
+msgid "Your must select a country"
+msgstr ""
+
+#: templates/modal-registration.html:183
+msgid "Your must provide an email address"
+msgstr ""
+
+#: templates/modal-registration.html:184
+msgid "Your must provide valid email address"
+msgstr ""
 
 #: templates/password_required_login.html:31
 msgid "Enter"
 msgstr "入口"
 
-#: templates/under-construction.html:6 templates/explore/explore2.html:6
-msgid "Explore -  Scratch"
-msgstr "探す -  Scratch"
+#: templates/accounts/banned-response.html:32
+msgid "The Scratch Team decided to block the account:"
+msgstr ""
+
+#: templates/accounts/banned-response.html:34
+msgid "Date:"
+msgstr ""
 
 # 93%
 #: templates/accounts/base.html:24 templates/registration/base.html:24
@@ -317,10 +595,14 @@ msgstr "パスワードの変更"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
-#: templates/carousel/carousel.html:18 templates/homepage/index.html:46
-#: templates/profiles/profile_detail.html:210
-#: templates/profiles/profile_detail.html:228 templates/projects/base.html:221
-#: templates/projects/base.html.py:247 templates/search/search.html:57
+#: templates/carousel/carousel.html:18 templates/homepage/index.html:78
+#: templates/profiles/profile_detail.html:180
+#: templates/profiles/profile_detail.html:214
+#: templates/profiles/profile_detail.html:249
+#: templates/profiles/profile_detail.html:267
+#: templates/profiles/profile_detail.html:286
+#: templates/profiles/profile_detail.html:321 templates/projects/base.html:272
+#: templates/projects/base.html.py:300 templates/search/search.html:57
 #: templates/search/search.html.py:87 templates/search/search.html:95
 msgid "View all"
 msgstr "すべてを見る"
@@ -329,7 +611,12 @@ msgstr "すべてを見る"
 msgid "No items"
 msgstr "アイテムがありません"
 
-#: templates/carousel/includes/project-thumb.html:12
+#: templates/carousel/includes/project-thumb.html:14
+msgid "in"
+msgstr ""
+
+#: templates/carousel/includes/project-thumb.html:17
+#: templates/carousel/includes/project-thumb.html:19
 #: templates/explore/explore2.html:54
 #: templates/explore/includes/project_list.html:9
 #: templates/explore/includes/related_projects.html:17
@@ -337,9 +624,8 @@ msgstr "アイテムがありません"
 #: templates/explore/includes/related_projects.html:46
 #: templates/explore/includes/related_projects.html:75
 #: templates/explore/includes/related_projects2.html:8
-#: templates/galleries/includes/backbone-templates.html:22
-#: templates/galleries/includes/project_list.html:16
-#: templates/projects/base.html:79 templates/projects/base.html.py:232
+#: templates/galleries/includes/project-list.html:13
+#: templates/projects/base.html:81 templates/projects/base.html.py:283
 #: templates/projects/includes/project_list.html:11
 msgid "by"
 msgstr "作者"
@@ -372,33 +658,41 @@ msgstr "データの値"
 msgid "Time"
 msgstr "時間"
 
-#: templates/comments/comment-module.html:9
+#: templates/comments/comment-module.html:10
 #: templates/comments/comment_module.html:10
 #: templates/includes/backbone-templates.html:52
 msgid "Leave a comment"
 msgstr "コメントを書く"
 
-#: templates/comments/comment-module.html:11
-msgid "You have <span id=\\\"chars-left\\\">500</span> characters left."
+# 96%
+#: templates/comments/comment-module.html:12
+#, fuzzy
+msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr "残り、あと <span id=\\\"chars-left\\\">500</span> 文字。"
 
-#: templates/comments/comment-module.html:14
+#: templates/comments/comment-module.html:15
 #: templates/comments/comment_module.html:15
 #: templates/comments/comment_module.html:64
+#: templates/includes/backbone-templates.html:127
 msgid "Post"
 msgstr "投稿"
 
-#: templates/comments/comment-module.html:15
+#: templates/comments/comment-module.html:16
 #: templates/comments/comment_module.html:18
 #: templates/comments/comment_module.html:67
+#: templates/includes/backbone-templates.html:128
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: templates/comments/comment.html:13
+#: templates/comments/comment-module.html:26
+msgid "Comments loading..."
+msgstr ""
+
+#: templates/comments/comment.html:15
 msgid "Report"
 msgstr "報告"
 
-#: templates/comments/comment.html:33
+#: templates/comments/comment.html:36
 #: templates/comments/comment_module.html:29
 #: templates/comments/comment_module.html:46
 #: templates/comments/includes/comment.html:11
@@ -431,13 +725,17 @@ msgstr "もっと読み込む"
 msgid "%(comment.datetime_created|timesince)s ago"
 msgstr "%(comment.datetime_created|timesince)s 前"
 
-#: templates/explore/base.html:32 templates/studio/base.html:29
+#: templates/explore/base.html:27 templates/studio/base.html:29
 msgid "Example tab"
 msgstr "例のタブ"
 
-#: templates/explore/base.html:51 templates/galleries/base.html:48
+#: templates/explore/base.html:46
 msgid "Enter content here"
 msgstr "内容をここに入力"
+
+#: templates/explore/explore2.html:6
+msgid "Explore -  Scratch"
+msgstr "探す -  Scratch"
 
 #: templates/explore/explore2.html:42
 msgid "Jump"
@@ -470,16 +768,18 @@ msgid "Art"
 msgstr "アート"
 
 #: templates/explore/projects.html:19 templates/explore/studios.html:19
+#: templates/info/starter_projects.html:50
 #: templates/info/help/studio/tips/home.html:43
 msgid "Games"
 msgstr "ゲーム"
 
 #: templates/explore/projects.html:20 templates/explore/studios.html:20
-#: templates/info/help/studio/tips/home.html:62
+#: templates/info/help/studio/tips/home.html:58
 msgid "Music"
 msgstr "音楽"
 
 #: templates/explore/projects.html:21 templates/explore/studios.html:21
+#: templates/info/starter_projects.html:133
 #: templates/info/help/studio/tips/home.html:51
 msgid "Stories"
 msgstr "物語"
@@ -514,7 +814,7 @@ msgid "Projects"
 msgstr "作品"
 
 #: templates/explore/projects.html:83 templates/explore/studios.html:77
-#: templates/projects/base.html:246
+#: templates/projects/base.html:299
 msgid "Studios"
 msgstr "スタジオ"
 
@@ -546,61 +846,64 @@ msgid "Studio:"
 msgstr "スタジオ:"
 
 #: templates/explore/includes/studio_list.html:29
-#: templates/projects/base.html:154
+#: templates/projects/base.html:159
 #, python-format
 msgid "Last modified: %(tDate)s"
 msgstr "最終更新日： %(tDate)s"
 
-#: templates/galleries/base.html:4
+#: templates/galleries/base.html:8
 msgid "Scratch Studio"
 msgstr "Scratchスタジオ"
 
-#: templates/galleries/base.html:32
-msgid "Studio description"
-msgstr "スタジオの説明"
-
-#: templates/galleries/gallery.html:12
+#: templates/galleries/base.html:46
 msgid "Change"
 msgstr "変更"
 
-#: templates/galleries/gallery.html:18
-#: templates/galleries/includes/curator_list.html:3
+#: templates/galleries/base.html:52
 msgid "Owner"
 msgstr "所有者"
 
 # 82%
-#: templates/galleries/gallery.html:21
+#: templates/galleries/base.html:55
 #, python-format
 msgid "Updated %(tDate)s"
 msgstr "作成日 %(tDate)s"
 
-#: templates/galleries/gallery.html:25
-msgid "Read more &raquo;"
-msgstr "もっと読む &raquo;"
+#: templates/galleries/base.html:59
+msgid "Describe what this studio is about."
+msgstr ""
 
-#: templates/galleries/gallery.html:42
+#: templates/galleries/base.html:92
 #, python-format
 msgid "Follower%(tPlural)s )"
 msgstr "フォロワー%(tPlural))"
 
-#: templates/galleries/gallery.html:51
+#: templates/galleries/base.html:102
 #, python-format
 msgid "Projects ( <span data-count=\"projects\">%(tCount)s</span> )"
 msgstr "プロジェクト ( <span data-count=\"プロジェクト\">%(tCount)s</span> )"
 
-#: templates/galleries/gallery.html:54
+#: templates/galleries/base.html:105
 #, python-format
 msgid "Comments ( <span data-count=\"comments\">%(tCount)s</span> )"
 msgstr "コメント ( <span data-count=\"コメント\">%(tCount)s</span> )"
 
-#: templates/galleries/gallery.html:57
+#: templates/galleries/base.html:108
 #, python-format
 msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
 msgstr "管理人 ( <span data-count=\"curators\">%(tCount)s</span> )"
 
-#: templates/galleries/gallery.html:60
-msgid "More info"
-msgstr "詳細情報"
+#: templates/galleries/comments.html:28
+#: templates/includes/backbone-templates.html:124
+#, python-format
+msgid ""
+"You have <span id=\"chars-left-<%%= comment_id %%>\">500</span> characters "
+"left."
+msgstr "残り <span id=\"chars-left-<%%= comment_id %%>\">500</span> 文字"
+
+#: templates/galleries/curators.html:14
+msgid "Congratulations! You are now a curator of this studio."
+msgstr ""
 
 #: templates/galleries/gallery_list.html:4
 #, python-format
@@ -608,24 +911,18 @@ msgid "%(username)s Studio (%(tGCount)s)"
 msgstr "%(username)s の スタジオ (%(tGCount)s)"
 
 #: templates/galleries/includes/curator_action_bar.html:7
-msgid "Add curators"
-msgstr "管理人を追加"
+msgid "Invite curators"
+msgstr ""
 
-#: templates/galleries/includes/curator_action_bar.html:12
+#: templates/galleries/includes/curator_action_bar.html:13
 msgid "Add"
 msgstr "追加"
 
-#: templates/galleries/includes/curator_action_bar.html:14
-msgid "Add curators by username or drag from the explore bar below!"
+# 81%
+#: templates/galleries/includes/curator_action_bar.html:16
+#, fuzzy
+msgid "Invite curators by username or select from the explore bar below!"
 msgstr "ユーザー名か下の一覧からドラッグして、管理人を追加"
-
-#: templates/galleries/includes/curator_list.html:15
-msgid "Curators"
-msgstr "管理人"
-
-#: templates/galleries/includes/curator_list.html:33
-msgid "There are no curators for this gallery"
-msgstr "このギャラリーには管理人がいません"
 
 #: templates/galleries/includes/explore-bar-users.html:4
 msgid "Add Curators"
@@ -640,8 +937,8 @@ msgid "Scratchers Following Me"
 msgstr "自分をフォローしているスクラッチャー"
 
 # 91%
-#: templates/galleries/includes/explore-bar.html:6
-#: templates/galleries/includes/explore-bar.html:10
+#: templates/galleries/includes/explore-bar.html:5
+#: templates/galleries/includes/explore-bar.html:9
 msgid "Add Projects"
 msgstr "プロジェクトを追加"
 
@@ -662,91 +959,105 @@ msgstr "最近見たもの"
 msgid "Add projects"
 msgstr "全プロジェクト"
 
-#: templates/galleries/includes/project_action_bar.html:14
-msgid "Drag projects from the explore bar below!"
-msgstr "下の一覧から作品をドラッグ"
+#: templates/galleries/includes/project_action_bar.html:27
+msgid "Add by url"
+msgstr ""
 
-#: templates/homepage/index.html:30
+#: templates/galleries/includes/project_action_bar.html:33
+msgid "Add by tag"
+msgstr ""
+
+#: templates/galleries/includes/project_action_bar.html:37
+msgid "You can select projects from the bar below or add by url or tag above."
+msgstr ""
+
+#: templates/homepage/index.html:32
+msgid "Welcome to Scratch!"
+msgstr ""
+
+#: templates/homepage/index.html:59
 msgid "What's Happening?"
 msgstr "最新の情報"
 
-#: templates/homepage/index.html:45
+#: templates/homepage/index.html:77
 msgid "Scratch News"
 msgstr "Scratchニュース"
 
-#: templates/homepage/index.html:89
+#: templates/homepage/index.html:121
 msgid "Create stories, games, and animations"
 msgstr "物語や、ゲーム、アニメーションを作ろう"
 
-#: templates/homepage/index.html:89
+#: templates/homepage/index.html:121
 msgid "Share with others around the world"
 msgstr "世界中のみんなと共有しよう"
 
-#: templates/homepage/index.html:94
+#: templates/homepage/index.html:126
 msgid "TRY IT OUT"
 msgstr "やってみる"
 
-#: templates/homepage/index.html:100
+#: templates/homepage/index.html:132
 msgid "VIEW PROJECTS"
 msgstr "作品を見る"
 
-#: templates/homepage/index.html:106
+#: templates/homepage/index.html:138
 msgid "JOIN SCRATCH"
 msgstr "Scratchに参加"
 
-#: templates/homepage/index.html:107
+#: templates/homepage/index.html:139
 msgid "it's free"
 msgstr "無料です"
 
-#: templates/homepage/index.html:109
-msgid "A creative learning community with"
+# 77%
+#: templates/homepage/index.html:143
+#, fuzzy
+msgid "A creative learning community with more than"
 msgstr "クリエイティブな学習コミュニティー"
 
-#: templates/homepage/index.html:109
+#: templates/homepage/index.html:143
 msgid "projects shared"
 msgstr "共有されている作品"
 
-#: templates/homepage/index.html:111
+#: templates/homepage/index.html:145
 msgid "ABOUT SCRATCH"
 msgstr "Scratchについて"
 
-#: templates/homepage/index.html:112
+#: templates/homepage/index.html:146
 msgid "FOR EDUCATORS"
 msgstr "先生方へ"
 
-#: templates/homepage/index.html:113
+#: templates/homepage/index.html:147
 msgid "FOR PARENTS"
 msgstr "保護者の方へ"
 
-#: templates/homepage/index.html:129 templates/projects/project_list.html:16
+#: templates/homepage/index.html:163 templates/projects/project_list.html:16
 msgid "Featured Projects"
 msgstr "注目のプロジェクト"
 
-#: templates/homepage/index.html:145
+#: templates/homepage/index.html:179
 msgid "Featured Studios"
 msgstr "注目のスタジオ"
 
-#: templates/homepage/index.html:160
+#: templates/homepage/index.html:205
 msgid "Projects by Scratchers I'm Following"
 msgstr "フォローしているスクラッチャーの作品"
 
-#: templates/homepage/index.html:162
+#: templates/homepage/index.html:210
 msgid "Projects Loved by Scratchers I'm Following"
 msgstr "フォローしているスクラッチャーのお気に入り"
 
-#: templates/homepage/index.html:164
+#: templates/homepage/index.html:217
 msgid "Projects in Studios I'm Following"
 msgstr "フォローしているスタジオの作品"
 
-#: templates/homepage/index.html:182
+#: templates/homepage/index.html:245
 msgid "What the Community is Sharing"
 msgstr "コミュニティが共有しているもの"
 
-#: templates/homepage/index.html:197
+#: templates/homepage/index.html:260
 msgid "What the Community is Remixing"
 msgstr "コミュニティがリミックスしているもの"
 
-#: templates/homepage/index.html:201
+#: templates/homepage/index.html:264
 msgid "What the Community is Loving"
 msgstr "コミュニティが「好き」なもの"
 
@@ -757,13 +1068,6 @@ msgstr "あなたの <span id=\\"
 #: templates/includes/backbone-templates.html:79
 msgid "See all replies"
 msgstr "全ての返信を見る"
-
-#: templates/includes/backbone-templates.html:124
-#, python-format
-msgid ""
-"You have <span id=\"chars-left-<%%= comment_id %%>\">500</span> characters "
-"left."
-msgstr "残り <span id=\"chars-left-<%%= comment_id %%>\">500</span> 文字"
 
 #: templates/includes/follow-button.html:4
 msgid "Follow"
@@ -799,7 +1103,8 @@ msgid "Loves"
 msgstr "好き"
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:220
+#: templates/projects/base.html:271 templates/projects/remixes.html:3
+#: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
 msgid "Remixes"
@@ -812,10 +1117,9 @@ msgid ""
 "copied in a way that constitutes copyright infringement, please email "
 "copyright@scratch.mit.edu, or mail your complaint to the following:"
 msgstr ""
-"「Lifelong Kindergarten research group」は、知的財産権、皆さんの財産を、私た"
-"ちのユーザー同様に尊重します。もし、あなたの作品が著作権侵害を受けるような方"
-"法でコピーされていると思われる場合は、copyright@scratch.mit.edu までメールで"
-"知らせるか、以下からご連絡ください。"
+"「Lifelong Kindergarten research group」は、知的財産権、皆さんの財産を、私たちのユーザー同様に尊重します。もし、あな"
+"たの作品が著作権侵害を受けるような方法でコピーされていると思われる場合は、copyright@scratch.mit.edu "
+"までメールで知らせるか、以下からご連絡ください。"
 
 #: templates/info/DMCA.html:22
 msgid ""
@@ -828,11 +1132,9 @@ msgid ""
 "infringers of third-party copyrights are subject to termination in "
 "appropriate circumstances."
 msgstr ""
-"「Lifelong Kindergarten Group」は権利侵害の疑いの報告を迅速に処理・調査し、"
-"DMCA（デジタル・ミレニアム著作権法）と他の適用できる知的所有権法のもとに適切"
-"な措置をとります。「Lifelong Kindergarten Group」は報告を受け取るもしくは、"
-"DMCAに従って、早急に権利侵害の疑いを主張された資料へのアクセスを停止・抑制し"
-"ます。第三者の著作権侵害を繰り返すユーザーは、適切に排除されます。"
+"「Lifelong Kindergarten Group」は権利侵害の疑いの報告を迅速に処理・調査し、DMCA（デジタル・ミレニアム著作権法）と他の適用"
+"できる知的所有権法のもとに適切な措置をとります。「Lifelong Kindergarten Group」は報告を受け取るもしくは、DMCAに従って、早"
+"急に権利侵害の疑いを主張された資料へのアクセスを停止・抑制します。第三者の著作権侵害を繰り返すユーザーは、適切に排除されます。"
 
 #: templates/info/DMCA.html:23
 msgid ""
@@ -843,10 +1145,9 @@ msgid ""
 "keep in mind the “Fair Use” doctrine incorporated into the Copyright Act of "
 "1976, 17 U.S.C. § 107."
 msgstr ""
-"Scratchのユーザーが著作権を侵害したかどうかを判断するにあたり、Scratchは学習"
-"用、デジタル技術を使った表現ツールを提供し、子どもたちの学習支援をするため"
-"の、教育目的で非営利の先進的取り組みであること、そして「Copyright Act of "
-"1976, 17 U.S.C. § 107」にある「公正使用」も心に留めておいてください。"
+"Scratchのユーザーが著作権を侵害したかどうかを判断するにあたり、Scratchは学習用、デジタル技術を使った表現ツールを提供し、子どもたちの学習支"
+"援をするための、教育目的で非営利の先進的取り組みであること、そして「Copyright Act of 1976, 17 U.S.C. § "
+"107」にある「公正使用」も心に留めておいてください。"
 
 #: templates/info/DMCA.html:24
 msgid ""
@@ -854,9 +1155,8 @@ msgid ""
 "creations/website but also as an opportunity to do something good for "
 "children’s education."
 msgstr ""
-"私たちは、あなたがScratchを自分の作品やウェブサイトを披露する場だけでなく、子"
-"供たちの教育のために何か良いことをする機会とも捉えてもらいたいと考えていま"
-"す。"
+"私たちは、あなたがScratchを自分の作品やウェブサイトを披露する場だけでなく、子供たちの教育のために何か良いことをする機会とも捉えてもらいたいと考え"
+"ています。"
 
 #: templates/info/DMCA.html:25
 msgid ""
@@ -866,138 +1166,139 @@ msgid ""
 "that you may be liable for damages (including costs and attorneys’ fees) if "
 "you materially misrepresent that an activity is infringing your copyright."
 msgstr ""
-"もしあなたが、著作権の侵害を主張する場合、私たちは、あなたの通知文から個人情"
-"報を取り除き、「chillingeffects.org」のような情報センターに投稿するかもしれな"
-"いことに注意してください。また、ある活動に対する著作権侵害の報告が事実と異な"
-"る場合、弁護士費用などかかった経費を含む損害賠償責任を負うことがあることにも"
-"注意してください。"
+"もしあなたが、著作権の侵害を主張する場合、私たちは、あなたの通知文から個人情報を取り除き、「chillingeffects.org」のような情報センター"
+"に投稿するかもしれないことに注意してください。また、ある活動に対する著作権侵害の報告が事実と異なる場合、弁護士費用などかかった経費を含む損害賠償責任を負"
+"うことがあることにも注意してください。"
 
-#: templates/info/about.html:16
+#: templates/info/about.html:17
 msgid ""
-"Scratch is a programming language and online community where you can create "
-"your own interactive stories, games, and animations -- and share your "
-"creations with others around the world."
+"With Scratch, you can program your own interactive stories, games, and "
+"animations &mdash; and share your creations with others in the online "
+"community."
 msgstr ""
-"Scratchはプログラミング言語であり、自分自身のインタラクティブな物語や、ゲー"
-"ム、アニメーションなどを創造できるオンラインコミュニティです。そしてそれらの"
-"作品は、世界中の人々と共有することができます。"
 
-#: templates/info/about.html:18
+#: templates/info/about.html:20
 msgid ""
-"In the process of designing and programming Scratch projects, young people "
-"learn to think creatively, reason systematically, and work collaboratively."
+"Scratch helps young people learn to think creatively, reason systematically, "
+"and work collaboratively &mdash; essential skills for life in the 21st "
+"century."
 msgstr ""
-"Scratch作品のデザイン、プログラミングの制作プロセスで、若者は、創造的思考、体"
-"系的論理、共同作業などを学習します。"
 
-#: templates/info/about.html:27
-msgid "Who is Scratch for?"
-msgstr "Scratchは誰のためのもの？"
+#: templates/info/about.html:23
+msgid ""
+"Scratch is a project of the Lifelong Kindergarten Group at the MIT Media "
+"Lab. It is provided free of charge."
+msgstr ""
 
-#: templates/info/about.html:29
-msgid "Scratch is for ages 8 and up!"
-msgstr "Scratchは8歳以上向けです！"
-
-#: templates/info/about.html:32 templates/info/parents.html:12
-msgid "For Parents"
-msgstr "保護者のための"
+#: templates/info/about.html:26
+msgid ""
+"<a href=\"/parents\">INFO FOR PARENTS</a> | <a href=\"/educators\">INFO FOR "
+"EDUCATORS</a>"
+msgstr ""
 
 #: templates/info/about.html:37
+msgid "Who Uses Scratch?"
+msgstr ""
+
+#: templates/info/about.html:40
+msgid ""
+"Scratch is designed especially for ages 8 to 16, but is used by people of "
+"all ages. Millions of people are creating Scratch projects in a wide variety "
+"of settings, including homes, schools, museums, libraries, and community "
+"centers."
+msgstr ""
+
+#: templates/info/about.html:42
+msgid "Around the World"
+msgstr ""
+
+#: templates/info/about.html:45
+msgid ""
+"Scratch is used in more than 150 different countries and available in more "
+"than 40 languages. To change languages, click the menu at the bottom of the "
+"page. Or, in the Project Editor, click the globe at the top of the page. To "
+"add or improve a translation, \n"
+"  see the <a href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scratch"
+"\">translation</a> page."
+msgstr ""
+
+#: templates/info/about.html:48
+msgid "Quotes"
+msgstr ""
+
+#: templates/info/about.html:50
+msgid ""
+"The Scratch Team has received many emails from youth, parents, and educators "
+"expressing thanks for Scratch. Want to see what people are saying? You can "
+"read a collection of the <a href=\"/info/quotes\">quotes</a> we've received. "
+msgstr ""
+
+#: templates/info/about.html:52
+msgid "Learn More About Scratch"
+msgstr ""
+
+#: templates/info/about.html:55
+msgid ""
+"\n"
+"    <li><a href=\"../help/faq/\">Frequently Asked Questions</a></li>\n"
+"    <li><a href=\"../parents/\">Information for Parents</a></li>\n"
+"    <li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
+"in the News</a></li>\n"
+"    "
+msgstr ""
+
+#: templates/info/about.html:71
+msgid "Learn to Code, Code to Learn"
+msgstr ""
+
+#: templates/info/about.html:74
+msgid ""
+"\n"
+"  The ability to code computer programs is an important part of literacy in "
+"today’s society. When people learn to code in Scratch, they learn important "
+"strategies for solving problems, designing projects, and communicating "
+"ideas.\n"
+msgstr ""
+
+#: templates/info/about.html:78
+msgid "Scratch in Schools"
+msgstr ""
+
+#: templates/info/about.html:81
+msgid ""
+"\n"
+"  Students are learning with Scratch at all levels (from elementary school "
+"to college) and across disciplines (such as math, computer science, language "
+"arts, social studies). Educators share stories, exchange resources, ask "
+"questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+"\">ScratchEd website</a>.\n"
+msgstr ""
+
+#: templates/info/about.html:85
 msgid "Research"
 msgstr "研究"
 
-# 75%
-#: templates/info/about.html:42
-msgid "Scratch Team"
-msgstr "Scratchチーム"
-
-#: templates/info/about.html:44
-msgid ""
-"Scratch is developed by the Lifelong Kindergarten Group at the MIT Media "
-"Lab, with financial support from the National Science Foundation, Microsoft, "
-"Intel Foundation, MacArthur Foundation, Google, Iomega and MIT Media Lab "
-"research consortia.Read Papers and presentations about Scratch. See the <a "
-"href=\"#\">Credits page</a> for a list of people who worked together to "
-"create Scratch."
-msgstr ""
-"Scratchは「National Science Foundation」、 「Microsoft」、「Intel "
-"Foundation」、「MacArthur Foundation」、「Google」、「Iomega and 」、「MIT "
-"Media Lab research consortia」の資金協力を得て、「MIT Media Lab」の"
-"「Lifelong Kindergarten Group」によって開発されています。スクラッチに関する文"
-"書、プレゼンテーションをご覧下さい。<a href=\"#\">クレジットのページ</a>では"
-"Scratch をつくることに協力した人々の一覧を見ることができます。"
-
-#: templates/info/about.html:47
-msgid "Support Scratch"
-msgstr "Scratchを支援する"
-
-#: templates/info/about.html:49
-msgid ""
-"We are pleased to provide Scratch free of charge. If you enjoy using "
-"Scratch, please consider making a donation to support Scratch. Donations of "
-"any size are appreciated."
-msgstr ""
-"私たちは、Scratchを無償で提供できることを嬉しく思います。もしScratchをお楽し"
-"みいただけたら、Scratchの支援のためのご寄付をご検討ください。どのような規模の"
-"寄付でも歓迎いたします。"
-
-#: templates/info/about.html:52
-msgid ""
-"Your donation goes into our ScratchLabs fund, used to support future "
-"development of Scratch software and the Scratch website. On the <a href=\"#"
-"\">donation form</a>, just fill in the amount of your donation and select "
-"\"New gift\" in the pull-down menu for the gift type. Thanks for supporting "
-"Scratch!"
-msgstr ""
-"あなたの寄付は「ScratchLabs 基金」となり、将来のScratchソフトウェアやScratch"
-"のウェブサイトの開発を支えます。<a href=\"#\">寄付申請のフォーム</a>から金額"
-"を入力して「新規の寄付」を寄付の種類のプルダウンメニューから選んでください。"
-"Scratchへのご支援に感謝します。"
-
-#: templates/info/about.html:61
-msgid "Questions?"
-msgstr "質問はこちら"
-
-#: templates/info/about.html:63 templates/info/help/index.html:90
-msgid "Frequently Asked Questions"
-msgstr "よくある質問（FAQ）"
-
-#: templates/info/about.html:65 templates/info/help/index.html:92
-msgid "Or visit the discussion forums:"
-msgstr "または、ディスカッション・フォーラムに行く："
-
-#: templates/info/about.html:66 templates/info/help/index.html:93
-msgid "Questions about Scratch"
-msgstr "Scratchについての質問"
-
-#: templates/info/about.html:67 templates/info/help/index.html:94
-msgid "Help with Scripts"
-msgstr "スクリプトのヘルプ"
-
-#: templates/info/about.html:70
-msgid "Scratch in the News"
-msgstr "Scratchに関するニュース"
-
-#: templates/info/about.html:79
-msgid "Scratch Events"
-msgstr "Scratchに関するイベント"
-
 #: templates/info/about.html:88
-msgid "Scratch Products"
-msgstr "Scratchに関する製品"
-
-#: templates/info/about.html:99
 msgid ""
-"The Scratch project is based upon research supported by the National Science "
-"Foundation under grant number 0325828. Any opinions, findings, and "
-"conclusions or recommendations expressed on this site are those of the "
-"authors and do not necessarily reflect the views of the National Science "
-"Foundation."
+"\n"
+"  The MIT Scratch Team and collaborators are researching how people use and "
+"learn with Scratch (for an introduction, see <a href=\"http://web.media.mit."
+"edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). "
+"Find out more about <a href=\"/info/research\">Scratch research</a>.\n"
 msgstr ""
-"「Scratch project」は「National Science Foundation」の「under grant number "
-"0325828」での承認に基づく研究です。このサイト上での、いかなる発言、調査結果、"
-"結論または勧告などは著者自らのもので、必ずしも「National Science Foundation」"
-"の意見を反映したものではありません。"
+
+#: templates/info/about.html:92
+msgid "Support and Funding"
+msgstr ""
+
+#: templates/info/about.html:94
+msgid ""
+"\n"
+"  The Scratch project, initiated in 2003, has received generous support from "
+"the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
+"Intel Foundation, Microsoft, MacArthur Foundation, Google, Dell, Inversoft, "
+"and MIT Media Lab research consortia.\n"
+msgstr ""
 
 #: templates/info/community_guidelines.html:14
 msgid "Scratch Community Guidelines"
@@ -1007,9 +1308,7 @@ msgstr "Scratchコミュニティーのガイドライン"
 msgid ""
 "We need everyone’s help to keep Scratch a friendly and creative community – "
 "where people from all around the world feel welcome."
-msgstr ""
-"スクラッチを、世界中の人々が歓迎されていると感じるような、親しみやすく創造的"
-"なコミュニティにするために、皆さんの協力が必要です。"
+msgstr "スクラッチを、世界中の人々が歓迎されていると感じるような、親しみやすく創造的なコミュニティにするために、皆さんの協力が必要です。"
 
 #: templates/info/community_guidelines.html:21
 msgid ""
@@ -1017,16 +1316,13 @@ msgid ""
 "that people of many different ages and backgrounds will see what you’ve "
 "shared."
 msgstr ""
-"<b>尊重する</b> プロジェクトを共有、コメントを投稿するとき、様々な年齢、異な"
-"る文化背景の人々が、それを見ることになることを忘れないでください。"
+"<b>尊重する</b> プロジェクトを共有、コメントを投稿するとき、様々な年齢、異なる文化背景の人々が、それを見ることになることを忘れないでください。"
 
 #: templates/info/community_guidelines.html:22
 msgid ""
 "<b>Be constructive.</b> When commenting on other’s projects, say something "
 "you like about it and offer suggestions."
-msgstr ""
-"<b>建設的に議論する</b> 誰かの作品にコメントするとき、あなたがその作品が好き"
-"ということを伝え、自分の意見を提示してください。"
+msgstr "<b>建設的に議論する</b> 誰かの作品にコメントするとき、あなたがその作品が好きということを伝え、自分の意見を提示してください。"
 
 #: templates/info/community_guidelines.html:23
 msgid ""
@@ -1034,17 +1330,14 @@ msgid ""
 "else you find on Scratch – and anyone can use anything that you share. Be "
 "sure to give credit when you remix."
 msgstr ""
-"<b>共有する</b> あなたはScratchで見つけた作品、アイディア、画像など全てのもの"
-"を自由にリミックスできます。それはだれでも、あなたが共有したものを使うことが"
-"できるということです。リミックスするとき必ずクレジットを残してください。"
+"<b>共有する</b> あなたはScratchで見つけた作品、アイディア、画像など全てのものを自由にリミックスできます。それはだれでも、あなたが共有した"
+"ものを使うことができるということです。リミックスするとき必ずクレジットを残してください。"
 
 #: templates/info/community_guidelines.html:24
 msgid ""
 "<b>Keep personal info private.</b> For safety reasons, don't use real names "
 "or post contact info like phone numbers or addresses."
-msgstr ""
-"<b>個人情報に気をつける</b> 安全上の理由から、絶対に、本名、電話番号や住所な"
-"ど連絡先の情報を投稿しないようにしましょう。"
+msgstr "<b>個人情報に気をつける</b> 安全上の理由から、絶対に、本名、電話番号や住所など連絡先の情報を投稿しないようにしましょう。"
 
 #: templates/info/community_guidelines.html:25
 msgid ""
@@ -1052,9 +1345,28 @@ msgid ""
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
 "let us know about it."
 msgstr ""
-"<b>サイトが親しみやすいものであるように協力する</b> もし、作品やコメントが、"
-"卑劣であったり、侮辱的、暴力的、もしくは不適当であると感じたら、「レポート」"
-"をクリックして私たちに知らせてください。"
+"<b>サイトが親しみやすいものであるように協力する</b> "
+"もし、作品やコメントが、卑劣であったり、侮辱的、暴力的、もしくは不適当であると感じたら、「レポート」をクリックして私たちに知らせてください。"
+
+#: templates/info/educators.html:8
+msgid "Scratch - For Educators"
+msgstr ""
+
+#: templates/info/educators.html:12
+msgid "For Educators"
+msgstr ""
+
+#: templates/info/educators.html:15
+msgid ""
+"Scratch is designed with learning and education in mind. A wide variety of "
+"educators have been supporting Scratch creators since 2007, in both formal "
+"and informal learning environments &ndash; K-12 classroom teachers, "
+"educational and computer science researchers, librarians, museum educators, "
+"and parents.<br/><br/>\n"
+"Want to learn more about learning with Scratch?<br/>Check out the <a href="
+"\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+"    "
+msgstr ""
 
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
@@ -1070,9 +1382,8 @@ msgid ""
 "types of projects, work together in new ways, and learn new things in the "
 "process."
 msgstr ""
-"新世代のScratchにようこそ！ Scratch2.0を使うと、新しい形式の作品をつくるこ"
-"と、新しい方法で共同作業をすることができ、そのなかで新しいことを学ぶことがで"
-"きます。"
+"新世代のScratchにようこそ！ "
+"Scratch2.0を使うと、新しい形式の作品をつくること、新しい方法で共同作業をすることができ、そのなかで新しいことを学ぶことができます。"
 
 #: templates/info/overview.html:20
 msgid ""
@@ -1080,112 +1391,102 @@ msgid ""
 "web browser. (You no longer have to download or upload projects or install "
 "any software.)"
 msgstr ""
-"Scratch 2.0 は作品を作る、編集する、見ることも直接ウェブブラウザからできま"
-"す。（あなたは何かをダウンロードしたりインストールする必要がありません。）"
+"Scratch 2.0 "
+"は作品を作る、編集する、見ることも直接ウェブブラウザからできます。（あなたは何かをダウンロードしたりインストールする必要がありません。）"
 
 #: templates/info/overview.html:22
 msgid "Here are some of the new features in Scratch 2.0."
 msgstr "これらが Scratch 2.0 の新機能の一部です。"
 
-#: templates/info/overview.html:26
+#: templates/info/overview.html:25
 msgid "Project Editor"
 msgstr "プロジェクトエディター"
 
-#: templates/info/overview.html:29
+#: templates/info/overview.html:28
 msgid "Click <b>Create</b> to make a new project."
 msgstr "<b>作る</b>をクリックすると新しいプロジェクト（作品）が作成されます。"
 
-#: templates/info/overview.html:32
+#: templates/info/overview.html:31
 msgid ""
 "Your project will automatically save as you work on it (if you're logged in)."
-msgstr ""
-"プロジェクトは、あなたの作業中に自動的に保存されます。（ログインをしている場"
-"合）"
+msgstr "プロジェクトは、あなたの作業中に自動的に保存されます。（ログインをしている場合）"
 
-#: templates/info/overview.html:33
+#: templates/info/overview.html:32
 msgid ""
 "When you create a project, you are the only one who can see it. After you "
 "share it, anyone can see and remix it."
 msgstr ""
-"プロジェクトを作ったとき、それを見ることができるのはあなた一人だけです。あな"
-"たがそれを共有したあとは、誰でもそれを見ることができ、リミックスできます。"
+"プロジェクトを作ったとき、それを見ることができるのはあなた一人だけです。あなたがそれを共有したあとは、誰でもそれを見ることができ、リミックスできます。"
 
-#: templates/info/overview.html:35
+#: templates/info/overview.html:34
 msgid ""
-"The new paint editor uses <b>vector graphics</b> so that images can scale to "
-"different sizes without getting jagged."
+"The new paint editor includes <b>vector graphics</b> so that images can "
+"scale to different sizes without getting jagged."
 msgstr ""
-"新しいペイントエディターは<b>ベクター画像</b>を使うことで、画像の大きさを変え"
-"てもギザギザしません。"
 
-#: templates/info/overview.html:38
+#: templates/info/overview.html:37
 msgid ""
 "Your <b>Backpack</b> lets you copy and move sprites, costumes, backdrops, "
 "and scripts from any project to another. If you're logged in, you can open "
 "your Backpack inside any project (it's at the bottom of the screen)."
 msgstr ""
-"<b>バックパック</b>はプロジェクトからプロジェクトへ、スプライト、コスチューム"
-"背景やスクリプトをコピーして移動できます。ログインしていれば、どのプロジェク"
-"トでも、バックパックを開くことができます。（バックパックは画面の下のほうにあ"
-"ります）"
+"<b>バックパック</b>はプロジェクトからプロジェクトへ、スプライト、コスチューム背景やスクリプトをコピーして移動できます。ログインしていれば、どのプ"
+"ロジェクトでも、バックパックを開くことができます。（バックパックは画面の下のほうにあります）"
 
-#: templates/info/overview.html:40
+#: templates/info/overview.html:39
 msgid ""
 "You can use the webcam on your computer to interact with projects by moving "
 "your hands or body."
-msgstr ""
-"パソコンについているウェブカメラを使えば、手や体の動きに反応する作品も作れま"
-"す。"
+msgstr "パソコンについているウェブカメラを使えば、手や体の動きに反応する作品も作れます。"
 
-#: templates/info/overview.html:43
+#: templates/info/overview.html:42
 msgid "You can now make your own programming blocks."
 msgstr "あなた独自のプログラミング・ブロックも作れます。"
 
 #: templates/info/overview.html:45
 msgid "Use clone blocks in your scripts to make copies of sprites."
-msgstr ""
-"「クローン」ブロックを使うと、スクリプトによってスプライトの複製を作れます。"
+msgstr "「クローン」ブロックを使うと、スクリプトによってスプライトの複製を作れます。"
 
 #: templates/info/overview.html:48
+msgid "Store numbers in cloud variables to create surveys and other projects."
+msgstr ""
+
+#: templates/info/overview.html:51
 msgid ""
 "Find out more about the <a href=\"http://info.scratch.mit.edu/prototype"
 "\">new Scratch blocks</a>."
 msgstr ""
-"<a href=\"http://info.scratch.mit.edu/prototype\">新しいScratchのブロック</a>"
-"をもっと知ろう。"
+"<a href=\"http://info.scratch.mit.edu/prototype\">新しいScratchのブロック</a>をもっと知ろう。"
 
-#: templates/info/overview.html:50
+#: templates/info/overview.html:53
 #, python-format
 msgid ""
 "You can see and manage all your projects in <b>My Stuff</b> <img src="
 "\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
 msgstr ""
-"全ての作品は <b>私の作品</b><img src=\"%(STATIC_URL)s/images/help/mystuff-"
-"thumb.png\" />から見たり、管理することができます。"
+"全ての作品は <b>私の作品</b><img src=\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" "
+"/>から見たり、管理することができます。"
 
-#: templates/info/overview.html:53
+#: templates/info/overview.html:56
 msgid "Community Features"
 msgstr "共有機能"
 
-#: templates/info/overview.html:56
+#: templates/info/overview.html:59
 msgid ""
 "On the home page, you can see what others have shared recently and scroll to "
 "see many more projects."
-msgstr ""
-"ホームページでは、他の人が最近共有（シェア）した作品を見ることができます。ま"
-"た、スクロールしてさらに多くのプロジェクトも見られます。"
+msgstr "ホームページでは、他の人が最近共有（シェア）した作品を見ることができます。また、スクロールしてさらに多くのプロジェクトも見られます。"
 
-#: templates/info/overview.html:59
+#: templates/info/overview.html:62
 #, python-format
 msgid ""
 "When viewing a project, click <img src=\"%(STATIC_URL)s/images/help/see-"
 "inside-small.png\" /> to see how it works and experiment with the code."
 msgstr ""
-"作品を見ているときに、<img src=\"%(STATIC_URL)s/images/help/see-inside-small."
-"png\" />をクリックすると、その作品がどのように作られ、動いているのかそのコー"
-"ド（スクリプト）を見る事ができます。"
+"作品を見ているときに、<img src=\"%(STATIC_URL)s/images/help/see-inside-small.png\" "
+"/>をクリックすると、その作品がどのように作られ、動いているのかそのコード（スクリプト）を見る事ができます。"
 
-#: templates/info/overview.html:61
+#: templates/info/overview.html:64
 #, python-format
 msgid ""
 "Inside any project, click <img src=\"%(STATIC_URL)s/images/help/remix-button."
@@ -1193,184 +1494,142 @@ msgid ""
 "project page will highlight the original creators and links to their "
 "projects."
 msgstr ""
-"どの作品でも、中のコードを見ているときに<img src=\"%(STATIC_URL)s/images/"
-"help/remix-button.png\" />をクリックすると、あなたのバージョンとして作品は保"
-"存され、改造をする事ができます。その作品をシェアすると、作品のページには元の"
-"作者が表示され、元の作品へのりんくが作成されます。"
+"どの作品でも、中のコードを見ているときに<img src=\"%(STATIC_URL)s/images/help/remix-button.png\" /"
+">をクリックすると、あなたのバージョンとして作品は保存され、改造をする事ができます。その作品をシェアすると、作品のページには元の作者が表示され、元の作品"
+"へのりんくが作成されます。"
 
-#: templates/info/overview.html:63
+#: templates/info/overview.html:66
 msgid ""
 "Discover interesting projects by clicking on the Related Projects bar at the "
 "bottom of any project page."
-msgstr ""
-"作品のページの下部にある、関連作品一覧をクリックすると、面白い作品を発見する"
-"事ができます。"
+msgstr "作品のページの下部にある、関連作品一覧をクリックすると、面白い作品を発見する事ができます。"
 
-#: templates/info/overview.html:66
+#: templates/info/overview.html:69
 msgid ""
 "Click your username or icon to go to your <b>Profile</b> page, \n"
 "where you can feature one of your projects and tell others what you're "
 "working on."
 msgstr ""
-"あなたのアイコンやユーザー名をクリックすると <b>プロフィール</b> ページを表示"
-"します。 そこに表示する作品を一つ選んで、あなたが今なにに取り組んでいるのか、"
-"他の人に知らせる事ができます。"
+"あなたのアイコンやユーザー名をクリックすると <b>プロフィール</b> ページを表示します。 "
+"そこに表示する作品を一つ選んで、あなたが今なにに取り組んでいるのか、他の人に知らせる事ができます。"
 
-#: templates/info/overview.html:69
+#: templates/info/overview.html:72
 #, python-format
 msgid ""
 "People can post comments on your Profile page and <img src=\"%(STATIC_URL)s/"
 "images/help/follow-button.png\" /> your Scratch account to see updates."
 msgstr ""
-"他の人はあなたのプロフィールページにコメントをしたり、<img src="
-"\"%(STATIC_URL)s/images/help/follow-button.png\" />を押してフォローして、あな"
-"たのアカウントの最新情報を見ることができます。"
+"他の人はあなたのプロフィールページにコメントをしたり、<img src=\"%(STATIC_URL)s/images/help/follow-"
+"button.png\" />を押してフォローして、あなたのアカウントの最新情報を見ることができます。"
 
-#: templates/info/overview.html:71
+#: templates/info/overview.html:74
 msgid ""
 "Galleries are now called <b>Studios</b>, and can be curated by you and "
 "others you invite."
 msgstr ""
-"ギャラリーは<b>スタジオ</b>と呼び方が変わります。そしてあなたや、あなたが招待"
-"した人が管理できます。管理する人はキュレーターと呼ばれます。"
+"ギャラリーは<b>スタジオ</b>と呼び方が変わります。そしてあなたや、あなたが招待した人が管理できます。管理する人はキュレーターと呼ばれます。"
 
-#: templates/info/overview.html:73
+#: templates/info/overview.html:76
 msgid "The Search features lets you find and preview projects more easily."
-msgstr ""
-"検索機能はより簡単にあなたが作品を探したり、見つけたりできるようになるでしょ"
-"う。"
-
-#: templates/info/overview.html:77
-msgid "Features Planned for 2013"
-msgstr "2013年の間に予定されている機能追加"
-
-#: templates/info/overview.html:79
-msgid ""
-"Download a stand-alone version of the Scratch project editor to use off-line"
-msgstr ""
-"オフラインでも使えるスタンドアローン版のScratch プロジェクトエディタがダウン"
-"ロードできるようになります。"
+msgstr "検索機能はより簡単にあなたが作品を探したり、見つけたりできるようになるでしょう。"
 
 #: templates/info/overview.html:80
-msgid ""
-"Store “persistent data” in the cloud to create online surveys, high-score "
-"lists, and more"
+msgid "Planned for Summer 2013"
 msgstr ""
-"オンラインアンケートや、ハイスコアリストなどに使える、\"永続的なデータ\"をク"
-"ラウドに保存できるようになります。"
-
-#: templates/info/overview.html:81
-msgid "Export your Scratch projects as YouTube videos or SWF files"
-msgstr ""
-"スクラッチの作品をYouTubeや、Flash(SWFファイル)に書き出せるようになります。"
 
 #: templates/info/overview.html:82
-msgid "Create side-scrolling games, stories, and tours with scrolling blocks"
+msgid ""
+"Download an off-line version of the Scratch project editor to use without an "
+"Internet connection"
 msgstr ""
-"横スクロールのゲームや物語をスクロールブロックで作る事ができるようになりま"
-"す。"
 
 #: templates/info/overview.html:83
 msgid ""
-"Connect to external devices, web services, and outside databases with new "
-"Scratch extensions (including LEGO WeDo and the ScratchBoard)"
+"Connect to external devices with new Scratch extensions (including LEGO WeDo "
+"and the ScratchBoard)"
 msgstr ""
-"外部デバイス（LEGO WeDo と Scratchボードを含む）、Webサービス、外部データベー"
-"スに新しいScratch拡張機能で接続できるようになります。"
-
-#: templates/info/overview.html:84
-msgid ""
-"Select from a wider range of sprites and images in a community-curated "
-"sprite collection"
-msgstr ""
-"コミュニティー・キュレーテッド・スプライト・コレクションでよりたくさんのスプ"
-"ライトや画像を選べるようになります。"
 
 #: templates/info/parents.html:8
 msgid "Scratch - For Parents"
 msgstr "Scratch - 保護者の皆さまへ"
 
+#: templates/info/parents.html:12
+msgid "For Parents"
+msgstr "保護者のための"
+
 #: templates/info/parents.html:15
 msgid ""
 "Scratch is a programming language and an online community where children can "
 "program and share interactive media such as stories, games, and animation "
-"with people from all over the world. Scratch is designed and maintained by "
-"the Lifelong Kindergarten group at the MIT Media Lab. As children create "
-"with Scratch, they learn to think creatively, work collaboratively, and "
-"reason systematically."
+"with people from all over the world. As children create with Scratch, they "
+"learn to think creatively, work collaboratively, and reason systematically. "
+"Scratch is designed and maintained by the Lifelong Kindergarten group at the "
+"MIT Media Lab. "
 msgstr ""
-"Scratchはプログラミング言語であるとともに、子供たちがプログラミングをして、世"
-"界中の人々と物語やゲームインタラクティブな作品を共有できるオンラインコミュニ"
-"ティです。Scratchは「MIT Media Lab」にある「Lifelong Kindergarten group」に"
-"よって、企画運営されています。子供たちはScratchで創造する事によって、創造的思"
-"考、共同作業、体系的判断力を学習します。"
 
-#: templates/info/parents.html:21
+#: templates/info/parents.html:24
 msgid "What is the age range for Scratch?"
 msgstr "Scratchの対象年齢は？"
 
-#: templates/info/parents.html:23
+#: templates/info/parents.html:26
 msgid ""
 "While Scratch is primarily designed for 8 to 16 year olds, it is also used "
 "by people of all ages, including younger children with their parents."
 msgstr ""
-"Scratchはもともと8歳から16歳の子供向けにデザインされていましたが、それより小"
-"さい子供や、その保護者など、全ての年齢の方に使われています。"
+"Scratchはもともと8歳から16歳の子供向けにデザインされていましたが、それより小さい子供や、その保護者など、全ての年齢の方に使われています。"
 
-#: templates/info/parents.html:26
+#: templates/info/parents.html:29
 msgid "What resources are available for learning Scratch?"
 msgstr "Scratchを学ぶにはどのような教材がありますか？"
 
-#: templates/info/parents.html:28
-msgid ""
-"If you’re just getting started, there’s a step-by-step guide available "
-"inside Scratch, or you can download the Getting Started guide (PDF). The "
-"Scratch Cards provide a fun way to learn more. For an overview of Scratch "
-"resources, see Scratch Help."
-msgstr ""
-"もし始めたばかりならば、Scratchに含まれる「ステップバイステップガイド」もしく"
-"は「始め方ガイド(PDF)」をダウンロードできます。Scratchカードはより楽しく学習"
-"できるでしょう。Scratchの概要をご覧頂くには 「Scratchヘルプ」をご覧下さい。"
-
 #: templates/info/parents.html:31
+#, python-format
+msgid ""
+"If you’re just getting started, there’s a <a href=\"/projects/editor/?"
+"tip_bar=getStarted\">step-by-step guide</a> available inside Scratch, or you "
+"can download the <a href=\"%(STATIC_URL)s/pdfs/help/"
+"ScratchGetStarted_beta_draft_Jan2013.pdf\">Getting Started guide (PDF)</a>. "
+"The <a href=\"/help/cards/\">Scratch Cards</a> provide a fun way to learn "
+"more. For an overview of Scratch resources, see <a href=\"/help/\">Scratch "
+"Help</a>."
+msgstr ""
+
+#: templates/info/parents.html:34
 msgid "What is the Scratch online community?"
 msgstr "Scratchオンライン・コミュニティとは何ですか？"
 
-#: templates/info/parents.html:33
+#: templates/info/parents.html:36
 msgid ""
 "When participating in the Scratch online community, members can explore and "
 "experiment in an open learning community with other Scratch members from all "
 "backgrounds, ages, and interests. Members can share their work, get "
 "feedback, and learn from each other."
 msgstr ""
-"Scratchオンライン・コミュニティに参加すると、その人の背景や年齢，関心などか"
-"ら、他のユーザーやその作品を探す事ができる、オープンな学習コミュニティを体験"
-"できます。メンバーは自分の作品を共有して、フィードバックを得ながらお互いに学"
-"習ができます。"
+"Scratchオンライン・コミュニティに参加すると、その人の背景や年齢，関心などから、他のユーザーやその作品を探す事ができる、オープンな学習コミュニティ"
+"を体験できます。メンバーは自分の作品を共有して、フィードバックを得ながらお互いに学習ができます。"
 
-#: templates/info/parents.html:35
+#: templates/info/parents.html:38
 msgid "What are the guidelines for participating?"
 msgstr "参加するのにガイドラインはありますか？"
 
-#: templates/info/parents.html:37
+#: templates/info/parents.html:40
 msgid ""
 "The MIT Scratch Team works with the community to maintain a friendly and "
-"respectful environment. For example, members are asked to be constructive "
-"when giving comments and help keep the website friendly by reporting any "
-"inappropriate content. You can help your child learn how to participate by "
-"reviewing the community guidelines together."
+"respectful environment. Members are asked to be constructive when giving "
+"comments and to help keep the website friendly by reporting any "
+"inappropriate content. The Scratch Team includes a group of moderators who "
+"work each day to manage activity on the site and respond to reports, with "
+"the help of tools such as <a href=\"http://www.inversoft.com/cleanspeak/"
+"\">Cleanspeak</a>. You can help your child learn how to participate in the "
+"Scratch community by reviewing the <a href=\"/community_guidelines"
+"\">community guidelines</a> together."
 msgstr ""
-"「MIT Scratch Team」はScratchオンライン・コミュニティを親しみやすくお互いを尊"
-"重できる場所として参加者の皆さんとメンテナンスしています。例え参加者はコメン"
-"トをするときに建設的な意見か問われますし、不適切なコンテンツを報告する事で、"
-"ウェブサイトの安全維持に協力できます。そのようにガイドラインを一緒に見直すこ"
-"とで、子供たちを参加させ、学習するための手助けができます。"
 
-#: templates/info/parents.html:40
+#: templates/info/parents.html:43
 msgid "What is your privacy policy?"
 msgstr "どのようなプライバシーポリシーで運営されていますか？"
 
-#: templates/info/parents.html:41
+#: templates/info/parents.html:44
 msgid ""
 "To protect children's online privacy, we limit what we collect during the "
 "signup process, and what we make public on the website. We don't sell or "
@@ -1378,39 +1637,268 @@ msgid ""
 "policy on our <a href=\"/help/faq/#privacy\">frequently asked questions "
 "page</a>."
 msgstr ""
-"子供たちのオンライン・プライバシーを保護するために、私たちはサインアップに使"
-"われる情報や、このウェブサイトで公開される情報に制限を設けています。私たちは"
-"それらの情報を、第三者に譲渡・売買をしません。私たちのプライバシー・ポリシー"
-"について<a href=\"/help/faq/#privacy\">よくある質問（FAQ）のページ</a>からよ"
-"り多くの情報を得られます。"
+"子供たちのオンライン・プライバシーを保護するために、私たちはサインアップに使われる情報や、このウェブサイトで公開される情報に制限を設けています。私たちは"
+"それらの情報を、第三者に譲渡・売買をしません。私たちのプライバシー・ポリシーについて<a "
+"href=\"/help/faq/#privacy\">よくある質問（FAQ）のページ</a>からより多くの情報を得られます。"
 
-#: templates/info/parents.html:44
+#: templates/info/parents.html:47
 msgid "What are parents saying about Scratch?"
 msgstr "Scratchについて保護者の声は？"
 
-#: templates/info/parents.html:45
+#: templates/info/parents.html:48
 msgid ""
-"\"My two children were immediately hooked. Scratch allows kids to program by "
-"'stacking' commands like LEGO blocks. Instead of reactively playing video "
-"games -- now they can create them! The boys learned about random number "
-"generators and they learned about XY axes. If I sat them down to go over "
-"these concepts, there would have been eye-rolling and moaning. But if it "
-"helps them make their game work better -- it takes a minute to explain and "
-"off they go using their newly-learned concepts.\""
+"We often receive emails from parents thanking us for Scratch. Here are some "
+"examples: "
 msgstr ""
-"「私の二人の子供はすぐに夢中になりました。Scratchは子供でもレゴブロックのよう"
-"に簡単にプログラムを\"組み立てる\"ことができ、ゲームをするどころか、今や自分"
-"たちでゲームを作っています。子供たちは乱数生成機、X,Y座標を学んだ。それらを机"
-"で勉強した場合、目を回して音を上げるでしょう。しかしそれらは彼らのゲームをよ"
-"り良くするので、短時間でそのコンセプトを学び活用していきます。」"
 
-#: templates/info/parents.html:46
+#: templates/info/parents.html:49
 msgid ""
-"\"I was looking for something for my 8 year-old to start programming with "
-"and this is just perfect.\""
+"\"<b>I just want to thank you all for making Scratch, and for providing it "
+"for free.</b> My kids are doing amazing things that they see as fun yet I "
+"know is educational, valuable, and worthwhile. Thank you so much!!!\""
 msgstr ""
-"「私は８歳の子供がプログラミングを始める方法を探していたが、これは完璧なもの"
-"だった。」"
+
+#: templates/info/parents.html:50
+msgid ""
+"<b>\"My very shy but technical minded daughter has found this to be a "
+"fantastic, safe outlet for her creativity.</b> She spends her free time "
+"creating ever more difficult animations and sharing them with the scratch "
+"community. The forums provide her with a group of like-minded individuals "
+"with which she can hold on a conversation... She now feels that computers, "
+"graphic design and animation are something she would like to pursue in the "
+"future. Your program has opened a whole new world to her in so many ways, "
+"and I thank you wholeheartedly. \n"
+"\""
+msgstr ""
+
+#: templates/info/parents.html:52
+msgid ""
+"\"<b>My son is learning more than I can imagine from your tool.</b> He is "
+"not a natural logical thinker but loves LEGO. Your LEGO-like building block "
+"structure has moved him forward by light-years in his logical thinking "
+"skills...He can snap things together and begin to see the logic reinforced "
+"by immediate feedback. Of course we work on some things together--instant "
+"father and son time. This is just incredible. Just a big thanks to you and "
+"MIT.\""
+msgstr ""
+
+#: templates/info/parents.html:57
+msgid "Learning"
+msgstr ""
+
+#: templates/info/parents.html:59
+msgid ""
+"For a one-page overview of what young people learn with Scratch, see <a href="
+"\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Learning with "
+"Scratch</a>."
+msgstr ""
+
+#: templates/info/parents.html:60
+msgid ""
+"Read an article on the <a href=\"http://www.edutopia.org/kindergarten-"
+"creativity-collaboration-lifelong-learning\">creative learning approach</a>."
+msgstr ""
+
+#: templates/info/parents.html:66
+msgid "Community"
+msgstr ""
+
+#: templates/info/parents.html:68
+msgid ""
+"We ask all participants on the site to follow the <a href=\"/"
+"community_guidelines\">Community Guidelines</a>."
+msgstr ""
+
+#: templates/info/parents.html:69
+msgid ""
+"We do not make private account information available to anyone. For more "
+"information, please see the <a href=\"/help/faq/#privacy\">Privacy Policy</"
+"a>."
+msgstr ""
+
+#: templates/info/parents.html:75 templates/info/help/index.html:88
+msgid "Questions?"
+msgstr "質問はこちら"
+
+#: templates/info/parents.html:77
+msgid ""
+"To find out more about Scratch, please see <a href=\"/help/faq/\">Frequently "
+"Asked Questions</a>."
+msgstr ""
+
+#: templates/info/parents.html:78
+msgid ""
+"You can also ask questions in the <a href=\"/discuss/\">discussion forums</"
+"a>."
+msgstr ""
+
+#: templates/info/parents.html:80
+#, python-format
+msgid ""
+"If you need to contact our staff team directly, click <a href="
+"\"%(contact_us_url)s\">Contact Us</a> at the bottom of any page."
+msgstr ""
+
+#: templates/info/quotes.html:4
+msgid "Quotes - Scratch"
+msgstr ""
+
+#: templates/info/quotes.html:16
+msgid "What <b>Youth</b> are Saying about Scratch"
+msgstr ""
+
+#: templates/info/quotes.html:19
+msgid ""
+"I like Scratch better than blogs or social networking sites like Facebook "
+"because \n"
+"\twe’re creating interesting games and projects that are fun to play, watch, "
+"and download. \n"
+"\tI don’t like to just talk to other people online, I like to talk about "
+"something creative and new.<span class=\"quotes\">&rdquo;</span> - 13-year-"
+"old </p>\n"
+msgstr ""
+
+#: templates/info/quotes.html:26
+msgid ""
+"<span class=\"quotes\">&ldquo;</span>My 8-year-old brother and I have been "
+"active participants of the Scratch Online Community for over a year. \n"
+"I enjoy designing and programming games and animations with other kids, "
+"because different people have different skills, \n"
+"and when you work together, you can build a much better project than you can "
+"alone.<span class=\"quotes\">&rdquo;</span> - 13-year-old"
+msgstr ""
+
+#: templates/info/quotes.html:30
+msgid ""
+"<span class=\"quotes\">&ldquo;</span>Making games is something I've always "
+"thought would be fun,\n"
+" but I didn't want a really complex programming language. In the beginning, "
+"even Scratch seemed complex, but after sticking with it for a while, I've "
+"been able to make some amazing games. And the fact that you can share "
+"projects so easily makes it even better. Scratch is awesome!<span class="
+"\"quotes\">&rdquo;</span>\n"
+"  - 17-year-old "
+msgstr ""
+
+#: templates/info/quotes.html:36
+msgid ""
+"<span class=\"quotes\">&ldquo;</span>Using a set of about 100 commands that "
+"can be snapped together visually, you can create just about anything and "
+"learn the fundamentals of more advanced languages. In addition, there's a "
+"whole community of people online who will give you feedback on our projects, "
+"and gladly help you with your questions.<span class=\"quotes\">&rdquo;</"
+"span> - 14-year-old"
+msgstr ""
+
+#: templates/info/starter_projects.html:4
+msgid "Scratch - Starter Projects"
+msgstr ""
+
+# 81%
+#: templates/info/starter_projects.html:12
+#, fuzzy
+msgid "Starter Projects"
+msgstr "共有したプロジェクト"
+
+#: templates/info/starter_projects.html:16
+msgid "Here are example projects that you can play with and change."
+msgstr ""
+
+#: templates/info/starter_projects.html:23
+#: templates/info/help/studio/tips/home.html:36
+msgid "Animation"
+msgstr "アニメーション"
+
+#: templates/info/starter_projects.html:31
+msgid "Dance Party"
+msgstr ""
+
+#: templates/info/starter_projects.html:36
+msgid "Animate the Crab"
+msgstr ""
+
+#: templates/info/starter_projects.html:42
+msgid "The Pico Show: Intro"
+msgstr ""
+
+#: templates/info/starter_projects.html:57
+msgid "Pong Starter"
+msgstr ""
+
+#: templates/info/starter_projects.html:62
+msgid "Maze Starter"
+msgstr ""
+
+#: templates/info/starter_projects.html:69
+msgid "Hide and Seek"
+msgstr ""
+
+# 76%
+#: templates/info/starter_projects.html:78
+#, fuzzy
+msgid "Interactive Art"
+msgstr "操作にあわせてぐるぐる回す"
+
+#: templates/info/starter_projects.html:86
+msgid "Paint with Gobo<"
+msgstr ""
+
+#: templates/info/starter_projects.html:92
+msgid "Chimes"
+msgstr ""
+
+#: templates/info/starter_projects.html:97
+msgid "Soundflower"
+msgstr ""
+
+#: templates/info/starter_projects.html:105
+msgid "Music and Dance"
+msgstr ""
+
+#: templates/info/starter_projects.html:113
+msgid "Remix this dance"
+msgstr ""
+
+#: templates/info/starter_projects.html:119
+msgid "Piano"
+msgstr ""
+
+#: templates/info/starter_projects.html:125
+msgid "Starfish Choir"
+msgstr ""
+
+#: templates/info/starter_projects.html:140
+msgid "5 Random Facts about Me"
+msgstr ""
+
+#: templates/info/starter_projects.html:145
+msgid "Introducing Howler! Remix"
+msgstr ""
+
+#: templates/info/starter_projects.html:150
+msgid "Teens at the Castle"
+msgstr ""
+
+#: templates/info/starter_projects.html:158
+msgid "Video Sensing"
+msgstr ""
+
+#: templates/info/starter_projects.html:166
+msgid "Musical Buttons"
+msgstr ""
+
+#: templates/info/starter_projects.html:172
+msgid "Bubbles with Video Sensing"
+msgstr ""
+
+#: templates/info/starter_projects.html:179
+msgid "Save the Minifigs"
+msgstr ""
+
+# 75%
+#: templates/info/help/base.html:4 templates/info/help/help_layout.html:7
+msgid "Scratch Help"
+msgstr "Scratchニュース"
 
 #: templates/info/help/cards.html:9 templates/info/help/index.html:69
 msgid "Scratch Cards"
@@ -1418,9 +1906,7 @@ msgstr "Scratchカード"
 
 #: templates/info/help/cards.html:12
 msgid "Scratch cards provide a quick way to learn new Scratch code."
-msgstr ""
-"Scratchカードを使うと、新しいスクラッチのプログラムを簡単に学ぶことができま"
-"す。"
+msgstr "Scratchカードを使うと、新しいスクラッチのプログラムを簡単に学ぶことができます。"
 
 #: templates/info/help/cards.html:14
 msgid "Get all the Cards"
@@ -1487,27 +1973,27 @@ msgstr "点数を記録する"
 msgid "General Questions"
 msgstr "一般的な質問"
 
-#: templates/info/help/faq.html:12 templates/info/help/faq.html.py:61
+#: templates/info/help/faq.html:12 templates/info/help/faq.html.py:60
 msgid "Privacy Policy"
 msgstr "プライバシー・ポリシー"
 
-#: templates/info/help/faq.html:15 templates/info/help/faq.html.py:85
+#: templates/info/help/faq.html:15 templates/info/help/faq.html.py:88
 msgid "Remixing and Copying"
 msgstr "リミックスとコピー"
 
-#: templates/info/help/faq.html:16 templates/info/help/faq.html.py:102
+#: templates/info/help/faq.html:16 templates/info/help/faq.html.py:105
 msgid "Accounts"
 msgstr "アカウント"
 
-#: templates/info/help/faq.html:19 templates/info/help/faq.html.py:129
+#: templates/info/help/faq.html:19 templates/info/help/faq.html.py:132
 msgid "Licensing and Permissions"
 msgstr "ライセンスと権限"
 
-#: templates/info/help/faq.html:20 templates/info/help/faq.html.py:157
+#: templates/info/help/faq.html:20 templates/info/help/faq.html.py:160
 msgid "Inappropriate Content"
 msgstr "不適切なコンテンツ"
 
-#: templates/info/help/faq.html:23 templates/info/help/faq.html.py:179
+#: templates/info/help/faq.html:23 templates/info/help/faq.html.py:182
 msgid "Cloud Data"
 msgstr "クラウドデータ"
 
@@ -1524,11 +2010,9 @@ msgid ""
 "systematically, and work collaboratively.To learn more about Scratch, check "
 "out the <a href=\"/about\">About Scratch</a> page."
 msgstr ""
-"Scratchはプログラミング言語であるとともに、子供たちがプログラミングをして、世"
-"界中の人々と物語やゲームインタラクティブな作品を共有できるオンラインコミュニ"
-"ティです。Scratchは「MIT Media Lab」にある「Lifelong Kindergarten group」に"
-"よって、企画運営されています。子供たちはScratchで創造する事によって、創造的思"
-"考、共同作業、体系的判断力を学習します。Scratchについてもっと学ぶには、<a "
+"Scratchはプログラミング言語であるとともに、子供たちがプログラミングをして、世界中の人々と物語やゲームインタラクティブな作品を共有できるオンライン"
+"コミュニティです。Scratchは「MIT Media Lab」にある「Lifelong Kindergarten group」によって、企画運営されて"
+"います。子供たちはScratchで創造する事によって、創造的思考、共同作業、体系的判断力を学習します。Scratchについてもっと学ぶには、<a "
 "href=\"/about\">Scratchについて</a>のページをご覧下さい。"
 
 #: templates/info/help/faq.html:36
@@ -1541,9 +2025,8 @@ msgid ""
 "started with Scratch. Or just <a href=\"/projects/editor/?tip_bar=getStarted"
 "\">dive in</a> to the project editor."
 msgstr ""
-"Scratchの始め方は<a href=\"/help\">ヘルプ・ページ</a> をご覧下さい。 もしくは"
-"今すぐプロジェクト・エディターに<a href=\"/projects/editor/?"
-"tip_bar=getStarted\">飛び込もう</a>！"
+"Scratchの始め方は<a href=\"/help\">ヘルプ・ページ</a> をご覧下さい。 もしくは今すぐプロジェクト・エディターに<a "
+"href=\"/projects/editor/?tip_bar=getStarted\">飛び込もう</a>！"
 
 #: templates/info/help/faq.html:39
 msgid "What are the system requirements for Scratch?"
@@ -1558,23 +2041,13 @@ msgid ""
 "or later installed. Scratch 2.0 is designed to support screen sizes 1024 x "
 "768 or larger. If your computer doesn’t meet these requirements, you can try "
 "<a href=\"http://info.scratch.mit.edu/Scratch_1.4_Download\">downloading</a> "
-"and installing Scratch 1.4, which you can still use to share projects to the "
-"Scratch 2.0 website."
+"and installing <a href =\"/scratch_1.4\">Scratch 1.4</a>, which you can "
+"still use to share projects to the Scratch 2.0 website."
 msgstr ""
-"Scratch 2.0を使うには、できるだけ新しいブラウザ(<a href=\"http://google.com/"
-"chrome/\">Chrome</a> 7またはそれ以降、<a href=\"http://www.mozilla.org/en-US/"
-"firefox/new/\">Firefox</a> 4またはそれ以降、あるいはInternet Explorer 7かそれ"
-"以降) に加えて、 <a href=\"\">Adobe Flash Player</a> version 10.2 またはそれ"
-"以降がインストールされている必要があります。Scratch 2.0は、1024 x 768以上の画"
-"面解像度に対応するよう作られています。これらの動作条件を満たさない場合、"
-"Scratch 1.4を <a href=\"http://info.scratch.mit.edu/Scratch_1.4_Download\">ダ"
-"ウンロード</a> してインストールすれば、Scratch 2.0のウェブサイトでプロジェク"
-"トを共有することができます。"
 
 #: templates/info/help/faq.html:42
 msgid "How much does Scratch cost? Do I need a license?"
-msgstr ""
-"Scratchを利用するのにいくらかかりますか?利用するためのライセンスは必要ですか?"
+msgstr "Scratchを利用するのにいくらかかりますか?利用するためのライセンスは必要ですか?"
 
 #: templates/info/help/faq.html:43
 msgid ""
@@ -1583,10 +2056,8 @@ msgid ""
 "Scratch is paid for by grants and donations. If you’d like to contribute to "
 "Scratch, check out our <a href=\"#\">Donate page</a>."
 msgstr ""
-"Scratchはいつもフリー(自由)です。Scratchを、学校や家庭その他どこで使う場合で"
-"もライセンスは不要です。Scratchは助成金と寄付金によっての開発と維持が行われて"
-"います。Scratchに貢献したいなら、 <a href=\"#\">寄付のページ</a>を参照してく"
-"ださい。"
+"Scratchはいつもフリー(自由)です。Scratchを、学校や家庭その他どこで使う場合でもライセンスは不要です。Scratchは助成金と寄付金によっ"
+"ての開発と維持が行われています。Scratchに貢献したいなら、 <a href=\"#\">寄付のページ</a>を参照してください。"
 
 #: templates/info/help/faq.html:45
 msgid "Who created Scratch?"
@@ -1599,29 +2070,29 @@ msgid ""
 "\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 msgstr ""
 "Scratchは、 <a href=\"http://www.media.mit.edu/\">MITメディアラボ</a>の<a "
-"href=\"http://llk.media.mit.edu/\">ライフロングキンダーガーテングループ</a>に"
-"よって開発および維持が行われています。"
+"href=\"http://llk.media.mit.edu/\">ライフロングキンダーガーテングループ</a>によって開発および維持が行われています。"
 
-#: templates/info/help/faq.html:52
+#: templates/info/help/faq.html:50
+msgid ""
+"Can I still upload projects created with older versions of Scratch to the "
+"website?"
+msgstr ""
+
+#: templates/info/help/faq.html:51
 msgid ""
 "Yes - you can upload projects made with earlier versions of Scratch, and "
 "they will be visible / playable. However, you can’t download projects made "
 "with or edited in later versions of Scratch and open them in earlier "
-"versions. For example, you can’t open a Scratch 2.0 project in Scratch 1.4, "
-"because Scratch 1.4 doesn’t know how to read the .sb2 project file format."
+"versions. For example, you can’t open a Scratch 2.0 project in <a href =\"/"
+"scratch_1.4\">Scratch 1.4</a>, because <a href =\"/scratch_1.4\">Scratch "
+"1.4</a> doesn’t know how to read the .sb2 project file format."
 msgstr ""
-"はい。Scratchの以前のバージョンで作られたプロジェクトを公開できますし、参照し"
-"たり／遊んだりできます。でも、Scratchの後のバージョンで作られたり編集されたり"
-"したプロジェクトをダウンロードしても、以前のバージョンのScratchで開くことはで"
-"きません。例えば、Scratch 1.4は.sb2プロジェクトファイルを読み込む方法を知らな"
-"いので、Scratch 2.0で作られたプロジェクトをScratch 1.4で開くことはできませ"
-"ん。"
 
-#: templates/info/help/faq.html:55
+#: templates/info/help/faq.html:54
 msgid "Can I make a video with Scratch and upload it to YouTube?"
 msgstr "Scratchを使ってビデオを作成したものをYouTubeで公開できますか?"
 
-#: templates/info/help/faq.html:56
+#: templates/info/help/faq.html:55
 msgid ""
 "To make a video of your Scratch project, you can use screen capture software "
 "like <a href=\"http://camstudio.org/\">CamStudio</a>. But keep in mind, some "
@@ -1631,60 +2102,53 @@ msgid ""
 "play them. So you can definitely make a video of your Scratch project, just "
 "keep in mind that videos and projects aren’t the same."
 msgstr ""
-"Scratchプロジェクトでビデオを作るのに<a href=\"http://camstudio.org/"
-"\">CamStudio</a>のような画面キャプチャソフトウェアを使うことができます。でも"
-"覚えておいてほしいのは、Scratchプロジェクトの多くは対話的であり、操作に応じて"
-"動きが変わります(例えばキー入力で動くゲームとか)。ビデオは対話的ではなく何度"
-"動かしても常に同じ内容が流れます。たしかにScratchプロジェクトのビデオを作れま"
-"すが、ビデオとプロジェクトが同じではないことを覚えておいてください。"
+"Scratchプロジェクトでビデオを作るのに<a href=\"http://camstudio.org/\">CamStudio</a>のような画面キャプ"
+"チャソフトウェアを使うことができます。でも覚えておいてほしいのは、Scratchプロジェクトの多くは対話的であり、操作に応じて動きが変わります(例えばキ"
+"ー入力で動くゲームとか)。ビデオは対話的ではなく何度動かしても常に同じ内容が流れます。たしかにScratchプロジェクトのビデオを作れますが、ビデオとプ"
+"ロジェクトが同じではないことを覚えておいてください。"
 
-#: templates/info/help/faq.html:62
+#: templates/info/help/faq.html:61
 msgid "What information do you ask for during account registration?"
 msgstr "アカウント登録の際に求められる情報は何ですか?"
 
-#: templates/info/help/faq.html:63
+#: templates/info/help/faq.html:62
 msgid ""
 "To protect the privacy of our community members, we limit what we collect "
 "and what we publish on the website. During the registration process, we ask "
 "for the following information:"
-msgstr ""
-"コミュニティメンバーのプライバシーを守るため、ウェブサイト上で集めたり公開す"
-"る情報を制限しています。アカウント登録時には以下の情報を求めます。"
+msgstr "コミュニティメンバーのプライバシーを守るため、ウェブサイト上で集めたり公開する情報を制限しています。アカウント登録時には以下の情報を求めます。"
 
-#: templates/info/help/faq.html:65
+#: templates/info/help/faq.html:64
 msgid ""
 "username - We ask that users avoid using their real names or other "
 "identifying information."
 msgstr "ユーザー名 - 本名など個人を特定する情報は避けてください。"
 
-#: templates/info/help/faq.html:66
+#: templates/info/help/faq.html:65
 msgid "country"
 msgstr "国"
 
-#: templates/info/help/faq.html:67
+#: templates/info/help/faq.html:66
 msgid ""
 "birth month and year - We use this to confirm ownership of the account if "
 "the owner loses the password and email, or writes to ask us to close the "
 "account closed."
-msgstr ""
-"誕生日の年と月 - パスワードやメールアドレスを忘れたときやアカウントを削除する"
-"ときに本人確認のために使います。"
+msgstr "誕生日の年と月 - パスワードやメールアドレスを忘れたときやアカウントを削除するときに本人確認のために使います。"
 
-#: templates/info/help/faq.html:68
+#: templates/info/help/faq.html:67
 msgid "gender"
 msgstr "性別"
 
-#: templates/info/help/faq.html:69
+#: templates/info/help/faq.html:68
 msgid ""
 "contact email address - If the account holder is younger than 13, we ask for "
 "the email address of their parent or guardian. We do not send email to this "
 "address except when someone requests to have the account password reset."
 msgstr ""
-"連絡先のメールアドレス - 13歳未満の場合は親や保護者のメールアドレスを要求しま"
-"す。パスワードのリセットを求められた場合を除き、このメールアドレスへメールが"
-"送られることはありません。"
+"連絡先のメールアドレス - 13歳未満の場合は親や保護者のメールアドレスを要求します。パスワードのリセットを求められた場合を除き、このメールアドレスへメ"
+"ールが送られることはありません。"
 
-#: templates/info/help/faq.html:71
+#: templates/info/help/faq.html:70
 msgid ""
 "The username and country of the account holder are displayed publicly on "
 "their profile page. The birth month / year, email address, and gender "
@@ -1693,16 +2157,14 @@ msgid ""
 "research purposes. We do not sell or rent information about our users to "
 "anyone."
 msgstr ""
-"ユーザー名と国の情報はプロフィールページで公開されます。誕生日の年と月、メー"
-"ルアドレスや性別は公開されません。これらの情報は利用者全体の年齢や性別を調べ"
-"たり研究のために集められます。いかなる相手に対しても利用者に関する情報を売却"
-"したり貸与することはありません。"
+"ユーザー名と国の情報はプロフィールページで公開されます。誕生日の年と月、メールアドレスや性別は公開されません。これらの情報は利用者全体の年齢や性別を調べ"
+"たり研究のために集められます。いかなる相手に対しても利用者に関する情報を売却したり貸与することはありません。"
 
-#: templates/info/help/faq.html:73
+#: templates/info/help/faq.html:72
 msgid "What data is collected from people while they use the website?"
 msgstr "ウェブサイトの利用者からどのようなデータを集めていますか?"
 
-#: templates/info/help/faq.html:74
+#: templates/info/help/faq.html:73
 msgid ""
 "When a user logs in, the Scratch website asks their browser to put an <a "
 "href=\"http://en.wikipedia.org/wiki/HTTP_cookie\">http cookie</a> on their "
@@ -1711,40 +2173,48 @@ msgid ""
 "of the site they visit using Google Analytics. This \"click data\" helps us "
 "figure out ways to improve the website."
 msgstr ""
-"ログインすると、利用者が他のページへ移動してもログインしたままにするために、"
-"Scratchウェブサイトはブラウザへ<a href=\"http://en.wikipedia.org/wiki/"
-"HTTP_cookie\">httpクッキー</a>を要求します。利用者のクリックした位置やウェブ"
-"サイト内で閲覧したページについて、Google Analyticsを用いて収集しています。"
-"「クリックに関するデータ」はウェブサイトの改善に役立たせています。"
+"ログインすると、利用者が他のページへ移動してもログインしたままにするために、Scratchウェブサイトはブラウザへ<a href=\"http://en."
+"wikipedia.org/wiki/HTTP_cookie\">httpクッキー</a>を要求します。利用者のクリックした位置やウェブサイト内で閲覧した"
+"ページについて、Google Analyticsを用いて収集しています。「クリックに関するデータ」はウェブサイトの改善に役立たせています。"
 
-#: templates/info/help/faq.html:76
+#: templates/info/help/faq.html:75
 msgid ""
 "Some of the information and data collected on the Scratch website are used "
 "in research studies intended to improve our understanding of how people "
 "learn with Scratch. The results of this research are shared with educators "
 "and researchers through conferences, journals, and other publications. You "
-"can find out more on our Research page."
+"can find out more on our <a href=\"/info/research\">Research page</a>."
 msgstr ""
-"Scratchウェブサイトで集められた情報のいくつかは、Scratchを用いて人々がどのよ"
-"うに学ぶかということに関する理解を改善しようとする研究で用いられます。研究の"
-"成果はカンファレンスや雑誌、その他の刊行物を通じて、教育者や研究者で共有され"
-"ます。研究ページにはより多くの情報があります。"
 
-#: templates/info/help/faq.html:78
+#: templates/info/help/faq.html:77
 msgid ""
 "Does the Scratch Team sell or rent information about users of Scratch to "
 "anyone?"
 msgstr "ScratchチームはScratchの利用者に関する情報を売ったり貸したりしますか?"
 
-#: templates/info/help/faq.html:79
+#: templates/info/help/faq.html:78
 msgid "No."
 msgstr "いいえ。"
 
-#: templates/info/help/faq.html:86
+#: templates/info/help/faq.html:80
+msgid "Can the Scratch Team view unshared projects on my 'My Stuff' page?"
+msgstr ""
+
+#: templates/info/help/faq.html:81
+msgid ""
+"Since the Scratch Team is responsible for moderation, we have access to all "
+"content stored on the Scratch website - including unshared projects. If you "
+"prefer to work on projects in complete privacy, you can use <a href =\"/"
+"scratch_1.4\">Scratch 1.4</a>. (An offline editor for Scratch 2.0 will be "
+"available by the end of June 2013.)\n"
+"  "
+msgstr ""
+
+#: templates/info/help/faq.html:89
 msgid "What is a remix?"
 msgstr "リミックスとは何ですか?"
 
-#: templates/info/help/faq.html:87
+#: templates/info/help/faq.html:90
 msgid ""
 "When a Scratcher makes a copy of someone else’s project and modifies it to "
 "add their own ideas (for example, by changing scripts or costumes), the "
@@ -1753,52 +2223,43 @@ msgid ""
 "as long as credit is given to the original project creator and others who "
 "made significant contributions to the remix."
 msgstr ""
-"Scratcherが誰かのプロジェクトをコピーして自分のアイデアを加えたら(例えばスク"
-"リプトやコスチュームを変えるとか)、結果としてできたプロジェクトは「リミック"
-"ス」と呼ばれます。Scratchのウェブサイトで共有されたプロジェクトはどれもリミッ"
-"クスできます。ちょっとした変更でもリミックスと見なされ、オリジナルのプロジェ"
-"クトの作者やリミックスに対して重要な貢献を行った人が正当に評価されます。"
+"Scratcherが誰かのプロジェクトをコピーして自分のアイデアを加えたら(例えばスクリプトやコスチュームを変えるとか)、結果としてできたプロジェクトは"
+"「リミックス」と呼ばれます。Scratchのウェブサイトで共有されたプロジェクトはどれもリミックスできます。ちょっとした変更でもリミックスと見なされ、オ"
+"リジナルのプロジェクトの作者やリミックスに対して重要な貢献を行った人が正当に評価されます。"
 
-#: templates/info/help/faq.html:89
+#: templates/info/help/faq.html:92
 msgid "Why does the Scratch Team require that all projects be “remixable”?"
-msgstr ""
-"なぜScratchチームは全てのプロジェクトがリミックスできることを求めているのです"
-"か?"
+msgstr "なぜScratchチームは全てのプロジェクトがリミックスできることを求めているのですか?"
 
-#: templates/info/help/faq.html:90
+#: templates/info/help/faq.html:93
 msgid ""
 "We believe that viewing and remixing interesting projects is a great way to "
 "learn to program, and leads to cool new ideas. That’s why the source code is "
 "visible for every project shared to the Scratch website."
 msgstr ""
-"面白いプロジェクトを見たりリミックスできたりすることが、プログラムを学ぶすば"
-"らしい方法であるとともに、クールな新しいアイデアへ導くと考えているからです。"
-"Scratchのウェブサイトでシェアされているどんなプロジェクトも閲覧できるのはそれ"
-"が理由です。"
+"面白いプロジェクトを見たりリミックスできたりすることが、プログラムを学ぶすばらしい方法であるとともに、クールな新しいアイデアへ導くと考えているからです。"
+"Scratchのウェブサイトでシェアされているどんなプロジェクトも閲覧できるのはそれが理由です。"
 
-#: templates/info/help/faq.html:92
+#: templates/info/help/faq.html:95
 msgid "What if I don’t want others to remix my projects?"
 msgstr "自分のプロジェクトを誰にもリミックスして欲しくないとしたら?"
 
-#: templates/info/help/faq.html:93
+#: templates/info/help/faq.html:96
 msgid ""
 "By publishing your project on the Scratch website, you agree to license it "
 "under a <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative "
 "Commons Share Alike</a> license. If you don’t want others to view and remix "
 "your creations, don’t share them on the Scratch website."
 msgstr ""
-"Scratchウェブサイトにプロジェクトを公開することで、<a href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/\">クリエイティブ・コモンズ 表示-継承"
-"</a>ライセンスに合意したことになります。作ったものを誰にも見てほしくなかった"
-"りリミックスしてほしくなければScratchウェブサイトに公開しないでください。"
+"Scratchウェブサイトにプロジェクトを公開することで、<a href=\"http://creativecommons.org/licenses"
+"/by-sa/3.0/\">クリエイティブ・コモンズ 表示-継承</a>ライセンスに合意したことになります。作ったものを誰にも見てほしくなかったりリミック"
+"スしてほしくなければScratchウェブサイトに公開しないでください。"
 
-#: templates/info/help/faq.html:95
+#: templates/info/help/faq.html:98
 msgid "Can I use images / sounds / media from the internet in my projects?"
-msgstr ""
-"インターネットからダウンロードした画像や音声などのメディアをプロジェクトに"
-"使ってもいいですか?"
+msgstr "インターネットからダウンロードした画像や音声などのメディアをプロジェクトに使ってもいいですか?"
 
-#: templates/info/help/faq.html:96
+#: templates/info/help/faq.html:99
 msgid ""
 "It's important to respect the original creator’s wishes regarding remixing. "
 "If you choose to integrate someone else’s work into your own, be sure to "
@@ -1807,89 +2268,80 @@ msgid ""
 "remixing, check out the <a href=\"http://search.creativecommons.org/"
 "\">Creative Commons search page</a>."
 msgstr ""
-"リミックスにおいてはオリジナルの作者の意向に敬意を払うのが重要です。他の誰か"
-"の成果を自分のプロジェクトに統合したいのなら、プロジェクトの「クレジット」に"
-"そのことを明示し、オリジナルへ戻るリンクを含めてください。リミックスが許可さ"
-"れている画像や音声を見つけるには、<a href=\"http://search.creativecommons."
-"org/\">Creative Commons search page</a>を調べてください。"
+"リミックスにおいてはオリジナルの作者の意向に敬意を払うのが重要です。他の誰かの成果を自分のプロジェクトに統合したいのなら、プロジェクトの「クレジット」に"
+"そのことを明示し、オリジナルへ戻るリンクを含めてください。リミックスが許可されている画像や音声を見つけるには、<a "
+"href=\"http://search.creativecommons.org/\">Creative Commons search "
+"page</a>を調べてください。"
 
-#: templates/info/help/faq.html:103
+#: templates/info/help/faq.html:106
 msgid "I forgot my password, how can I reset it?"
 msgstr "パスワードを忘れてしまいました。どうやってリセットできますか?"
 
-#: templates/info/help/faq.html:105
+#: templates/info/help/faq.html:108
 msgid ""
 "Enter your account name on the <a href=\"/accounts/password_reset/"
 "\">password reset page</a>. The website will send an email to the address "
 "associated with the account containing a link you can use to reset your "
 "password."
 msgstr ""
-"<a href=\"/accounts/password_reset/\">パスワードリセットページ</a>でユーザー"
-"名を入力してください。Scratchウェブサイトがアカウントに結びつけられたメールア"
-"ドレスへ、パスワードをリセットするためのリンクを含むメールを送ります。"
+"<a href=\"/accounts/password_reset/\">パスワードリセットページ</a>でユーザー名を入力してください。Scratchウ"
+"ェブサイトがアカウントに結びつけられたメールアドレスへ、パスワードをリセットするためのリンクを含むメールを送ります。"
 
-#: templates/info/help/faq.html:107
+#: templates/info/help/faq.html:110
 msgid "How do I change my password?"
 msgstr "パスワードはどのように変更しますか?"
 
-#: templates/info/help/faq.html:108
+#: templates/info/help/faq.html:111
 msgid ""
 "Go to the Scratch website, login, and then click your username in the upper "
 "right corner of the window. Choose \"account settings\", and click the link "
 "to change your password."
 msgstr ""
-"Scratchウェブサイトを開いてログインし、ウィンドウの右上端のユーザー名をクリッ"
-"クします。「アカウント設定」を選んでパスワードを変えるリンクをクリックしてく"
-"ださい。"
+"Scratchウェブサイトを開いてログインし、ウィンドウの右上端のユーザー名をクリックします。「アカウント設定」を選んでパスワードを変えるリンクをクリッ"
+"クしてください。"
 
-#: templates/info/help/faq.html:110
+#: templates/info/help/faq.html:113
 msgid "Can I have more than one account?"
 msgstr "複数のアカウントを所有することはできますか?"
 
-#: templates/info/help/faq.html:111
+#: templates/info/help/faq.html:114
 msgid ""
 "It's fine to have a few accounts on the Scratch website, as long as none of "
 "them are used to break the Community Guidelines. In that case, all related "
 "accounts may be blocked or deleted."
 msgstr ""
-"コミュニティガイドラインを侵害しない限り、Scratchウェブサイトで２～３個のアカ"
-"ウントを持つことは良いことです。侵害した場合には、関連する全てのアカウントが"
-"ブロックされたり削除されるでしょう。"
+"コミュニティガイドラインを侵害しない限り、Scratchウェブサイトで２～３個のアカウントを持つことは良いことです。侵害した場合には、関連する全てのアカ"
+"ウントがブロックされたり削除されるでしょう。"
 
-#: templates/info/help/faq.html:113
+#: templates/info/help/faq.html:116
 msgid "Is it ok to have more than one person logged into an account?"
 msgstr "複数の人が１つのアカウントを共有しても良いですか?"
 
-#: templates/info/help/faq.html:114
+#: templates/info/help/faq.html:117
 msgid ""
 "This is discouraged, because the website and project editor can easily get "
 "confused when more than one person is logged into the same account."
 msgstr ""
-"それはお勧めしません。なぜならば、同じアカウントに複数の人がログインしている"
-"と、Scratchウェブサイトやプロジェクトエディターが混乱する可能性があるからで"
-"す。"
+"それはお勧めしません。なぜならば、同じアカウントに複数の人がログインしていると、Scratchウェブサイトやプロジェクトエディターが混乱する可能性がある"
+"からです。"
 
-#: templates/info/help/faq.html:116
+#: templates/info/help/faq.html:119
 msgid "Can I change my username?"
 msgstr "ユーザー名を変えることはできますか?"
 
-#: templates/info/help/faq.html:117
+#: templates/info/help/faq.html:120
 msgid ""
 "The structure of the Scratch website depends on having a consistent account "
 "name, so it’s not possible to change your username. If you really need to, "
-"you can make a new account - but you'll have copy your projects over on your "
-"own."
+"you can make a new account - but you'll have to copy your projects over on "
+"your own."
 msgstr ""
-"Scratchウェブサイトの構造はユーザー名の一貫性に依存しているため、ユーザー名を"
-"変更することはできません。本当に変更を望んでいるなら新しいアカウントを作るこ"
-"とができますが、元のプロジェクトを新しいアカウントにコピーすることはできませ"
-"ん。"
 
-#: templates/info/help/faq.html:119
+#: templates/info/help/faq.html:122
 msgid "What information can I share on / with my account?"
 msgstr "自分のアカウントでどんな情報を共有できますか?"
 
-#: templates/info/help/faq.html:120
+#: templates/info/help/faq.html:123
 msgid ""
 "Please don’t share personal contact information, such as your physical "
 "address, email, phone number, or anything else that can be used to make "
@@ -1897,44 +2349,40 @@ msgid ""
 "forum posts that contain this kind of information so the Scratch team can "
 "remove it, and remind the author of our policy."
 msgstr ""
-"住所や電子メール、電話番号などScratchウェブサイト外でコンタクト可能となる個人"
-"的な連絡先の情報を共有しないでください。そのような情報を含んだプロジェクトや"
-"コメント、フォーラムへの投稿を見かけたら報告してください。Scratchチームが削除"
-"してポリシーを作者へ伝えます。"
+"住所や電子メール、電話番号などScratchウェブサイト外でコンタクト可能となる個人的な連絡先の情報を共有しないでください。そのような情報を含んだプロジ"
+"ェクトやコメント、フォーラムへの投稿を見かけたら報告してください。Scratchチームが削除してポリシーを作者へ伝えます。"
 
-#: templates/info/help/faq.html:122
+#: templates/info/help/faq.html:125
 msgid "How do I delete my account?"
 msgstr "アカウントを削除するにはどうしますか?"
 
-#: templates/info/help/faq.html:123
+#: templates/info/help/faq.html:126
 msgid ""
 "The account settings page has a link you can use to delete your account. "
 "When logged in, click your username in the upper right cornder, and select "
 "\"account settings.\""
 msgstr ""
-"アカウント設定のページにアカウントを削除するためのリンクがあります。ログイン"
-"して右上端のユーザー名をクリックし、「アカウント設定」を選んでください。"
+"アカウント設定のページにアカウントを削除するためのリンクがあります。ログインして右上端のユーザー名をクリックし、「アカウント設定」を選んでください。"
 
-#: templates/info/help/faq.html:131
+#: templates/info/help/faq.html:134
 msgid "Is Scratch free?"
 msgstr "Scratchは無料ですか?"
 
-#: templates/info/help/faq.html:132
+#: templates/info/help/faq.html:135
 msgid ""
 "Yes! You can download, copy, and use Scratch software free of charge. You "
 "can install it in your school, and you can teach a course about it (even a "
 "course that costs money). You don't need to buy a license - it's free."
 msgstr ""
-"はい。無料でScratchをダウンロードしてコピーし、使うことができます。学校でイン"
-"ストールしても構いませんし、Scratchに関する授業を教えても構いません(授業料を"
-"とることもできます)。ライセンスを購入する必要はありません。無料です。"
+"はい。無料でScratchをダウンロードしてコピーし、使うことができます。学校でインストールしても構いませんし、Scratchに関する授業を教えても構い"
+"ません(授業料をとることもできます)。ライセンスを購入する必要はありません。無料です。"
 
-#: templates/info/help/faq.html:134
+#: templates/info/help/faq.html:137
 msgid ""
 "Can I use Scratch and / or screenshots of Scratch in a textbook or a CD?"
 msgstr "書籍やCDでScratchやScratchの画面イメージを使うことはできますか?"
 
-#: templates/info/help/faq.html:135
+#: templates/info/help/faq.html:138
 msgid ""
 "Yes, you can even write a book or chapter about Scratch. You may also use "
 "the Scratch logo when referring to Scratch. You may create screenshots / "
@@ -1945,24 +2393,19 @@ msgid ""
 "\"Scratch is developed by the Lifelong Kindergarten Group at the MIT Media "
 "Lab. See http://scratch.mit.edu\"."
 msgstr ""
-"はい。Scratchに関する本を書いて、Scratchに言及する際にScratchのロゴを使うこと"
-"ができます。Scratchアプリケーションやウェブサイトのスクリーンショットや画像を"
-"作り、<a href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative "
-"Commons Attribution-ShareAlike 3.0 Unported license</a>のもとでライセンスされ"
-"たものと見なすことができます。その場合は、作成した書籍やCDなどに「Scratchは"
-"MITメディアラボのライフロングキンダーガーテングループで開発されました。"
-"http://scratch.mit.edu を参照してください。」との文言を含むようにしてくださ"
-"い。"
+"はい。Scratchに関する本を書いて、Scratchに言及する際にScratchのロゴを使うことができます。Scratchアプリケーションやウェブサイ"
+"トのスクリーンショットや画像を作り、<a href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Creative Commons Attribution-ShareAlike 3.0 Unported license</a>のもと"
+"でライセンスされたものと見なすことができます。その場合は、作成した書籍やCDなどに「ScratchはMITメディアラボのライフロングキンダーガーテングル"
+"ープで開発されました。http://scratch.mit.edu を参照してください。」との文言を含むようにしてください。"
 
-#: templates/info/help/faq.html:137
+#: templates/info/help/faq.html:140
 msgid ""
 "Can I include a description of Scratch and the Scratch logo in brochures or "
 "other materials?"
-msgstr ""
-"宣伝用のパンフレットや他の媒体にScratchの記述やScratchロゴを含めても良いです"
-"か?"
+msgstr "宣伝用のパンフレットや他の媒体にScratchの記述やScratchロゴを含めても良いですか?"
 
-#: templates/info/help/faq.html:138
+#: templates/info/help/faq.html:141
 msgid ""
 "Sure! We recommend the following description: \"Scratch is a programming "
 "language and online community where you can create your own interactive "
@@ -1973,35 +2416,29 @@ msgid ""
 "group at the MIT Media Lab. It is available for free download from http://"
 "scratch.mit.edu\""
 msgstr ""
-"もちろんです！以下の記述を推奨します。「Scratchはプログラミング言語であるとと"
-"もに、自分自身の対話的な物語やゲーム、アニメーションを作成して世界中の人々と"
-"共有することのできるオンラインコミュニティです。Scratchプロジェクトを設計しプ"
-"ログラミングする過程において、若者は創造的な思考や体系的な判断、そして恊働す"
-"ることを学びます。Scratchは、MITメディアラボのライフロングキンダーガーテング"
-"ループのプロジェクトで、http://scratch.mit.edu から無料でダウンロードできま"
-"す。」"
+"もちろんです！以下の記述を推奨します。「Scratchはプログラミング言語であるとともに、自分自身の対話的な物語やゲーム、アニメーションを作成して世界中"
+"の人々と共有することのできるオンラインコミュニティです。Scratchプロジェクトを設計しプログラミングする過程において、若者は創造的な思考や体系的な判"
+"断、そして恊働することを学びます。Scratchは、MITメディアラボのライフロングキンダーガーテングループのプロジェクトで、http://scratc"
+"h.mit.edu から無料でダウンロードできます。」"
 
-#: templates/info/help/faq.html:140
+#: templates/info/help/faq.html:143
 msgid "Can I present Scratch at a conference?"
 msgstr "カンファレンスでScratchをプレゼンしても良いですか?"
 
-#: templates/info/help/faq.html:141
+#: templates/info/help/faq.html:144
 msgid ""
 "Please feel free to make presentations about Scratch to educators or other "
 "groups. We grant our permission to make presentations."
-msgstr ""
-"教育者やその他のグループに対してScratchに関するプレゼンテーションを自由に行っ"
-"てください。プレゼンテーションのための許可を与えます。"
+msgstr "教育者やその他のグループに対してScratchに関するプレゼンテーションを自由に行ってください。プレゼンテーションのための許可を与えます。"
 
-#: templates/info/help/faq.html:143
+#: templates/info/help/faq.html:146
 msgid ""
 "May I use / remix Scratch support materials, sprites, images, sounds or "
 "sample projects I’ve found on the website?"
 msgstr ""
-"Scratchウェブサイトにある、Scratchサポートの材料、スプライト、画像、音声やサ"
-"ンプルプロジェクトを使ったりリミックスしても良いですか?"
+"Scratchウェブサイトにある、Scratchサポートの材料、スプライト、画像、音声やサンプルプロジェクトを使ったりリミックスしても良いですか?"
 
-#: templates/info/help/faq.html:144
+#: templates/info/help/faq.html:147
 msgid ""
 "Yes - Scratch support materials made available on the Scratch website by the "
 "Scratch Team are available under the <a href=\"http://creativecommons.org/"
@@ -2009,17 +2446,16 @@ msgid ""
 "license</a>, with the exception of the Scratch Logo, Scratch Cat, and Gobo "
 "(Scratch trademarks)."
 msgstr ""
-"はい。Scratchサポートの材料は、Scratchチームにより<a href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Attribution-"
-"ShareAlike 3.0 Unported license</a>のもとでScratchウェブサイトで利用できま"
-"す。ただし、Scratchのロゴ、ScratchキャットおよびScratchの登録商標であるGoboは"
-"除きます。"
+"はい。Scratchサポートの材料は、Scratchチームにより<a href=\"http://creativecommons.org/licenses"
+"/by-sa/3.0/\">Creative Commons Attribution-ShareAlike 3.0 Unported license</a"
+">のもとでScratchウェブサイトで利用できます。ただし、Scratchのロゴ、ScratchキャットおよびScratchの登録商標であるGoboは除"
+"きます。"
 
-#: templates/info/help/faq.html:146
+#: templates/info/help/faq.html:149
 msgid "Can I sell my Scratch projects?"
 msgstr "Scratchのプロジェクトを売ることはできますか?"
 
-#: templates/info/help/faq.html:147
+#: templates/info/help/faq.html:150
 msgid ""
 "Certainly - your project is your creation. Keep in mind that once you share "
 "your project on Scratch, everyone is free to download, remix, and reuse it "
@@ -2027,50 +2463,43 @@ msgid ""
 "sa/3.0/\">CC-BY-SA 3.0 license</a>. So if you intend to sell your project, "
 "you may want to un-share it from Scratch."
 msgstr ""
-"おそらく。あなたのプロジェクトはあなたの創造物です。いったんScratchでプロジェ"
-"クトを公開したら、誰もが<a href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">CC-BY-SA 3.0 ライセンス</a>のもとで自由にダウンロードし、リミックス"
-"し、再利用することができることを覚えておいてください。プロジェクトを売りたい"
-"と考えるなら、Scratchで共有しないほうが良いでしょう。"
+"おそらく。あなたのプロジェクトはあなたの創造物です。いったんScratchでプロジェクトを公開したら、誰もが<a "
+"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">CC-BY-SA 3.0 ライセンス</a>"
+"のもとで自由にダウンロードし、リミックスし、再利用することができることを覚えておいてください。プロジェクトを売りたいと考えるなら、Scratchで共有し"
+"ないほうが良いでしょう。"
 
-#: templates/info/help/faq.html:149
+#: templates/info/help/faq.html:152
 msgid "Where can I find the source code for Scratch?"
 msgstr "Scratchのソースコードはどこにありますか?"
 
-#: templates/info/help/faq.html:150
+#: templates/info/help/faq.html:153
 msgid ""
 "The source code for Scratch 2.0 (website and editor) is not yet available. "
-"The source code for Scratch 1.4, written in Squeak, is available <a href="
-"\"https://github.com/LLK/Scratch_1.4\">on github</a>. The source code for "
-"the first version of the Scratch website - ScratchR - is available <a href="
-"\"http://svn.assembla.com/svn/scratchr/\">on Assembla</a>."
+"The source code for <a href =\"/scratch_1.4\">Scratch 1.4</a>, written in "
+"Squeak, is available <a href=\"https://github.com/LLK/Scratch_1.4\">on "
+"github</a>. The source code for the first version of the Scratch website - "
+"ScratchR - is available <a href=\"http://svn.assembla.com/svn/scratchr/\">on "
+"Assembla</a>."
 msgstr ""
-"Scratch 2.0(ウェブサイトやエディター)のソースコードはまだ利用できません。"
-"Squeakで書かれたScratch 1.4のソースコードは、<a href=\"https://github.com/"
-"LLK/Scratch_1.4\">github上で</a>利用可能です。最初のScratchウェブサイト"
-"(ScratchR)のソースコードは、<a href=\"http://svn.assembla.com/svn/scratchr/"
-"\">Assembla上</a>で利用可能です。"
 
-#: templates/info/help/faq.html:158
+#: templates/info/help/faq.html:161
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
-msgstr ""
-"Scratchウェブサイトで共有して良いものと悪いものについて教えてください。"
+msgstr "Scratchウェブサイトで共有して良いものと悪いものについて教えてください。"
 
-#: templates/info/help/faq.html:159
+#: templates/info/help/faq.html:162
 msgid ""
 "Check out the <a href=\"/community_guidelines\">Scratch community "
 "guidelines</a> - they’re brief and don’t include a lot of legal stuff. "
 "There’s a link at the bottom of every page on Scratch."
 msgstr ""
-"<a href=\"/community_guidelines\">Scratchコミュニティガイドライン</a>を参照し"
-"てください。ただし、それらは要約であって法的なものを多くは含んでいません。"
-"Scratchサイトの全ページの下部にあるリンクも参照してください。"
+"<a href=\"/community_guidelines\">Scratchコミュニティガイドライン</a>を参照してください。ただし、それらは要約で"
+"あって法的なものを多くは含んでいません。Scratchサイトの全ページの下部にあるリンクも参照してください。"
 
-#: templates/info/help/faq.html:161
+#: templates/info/help/faq.html:164
 msgid "What do I do if I see something that’s inappropriate?"
 msgstr "不適切と思われるものを見つけた場合、どうすれば良いですか?"
 
-#: templates/info/help/faq.html:162
+#: templates/info/help/faq.html:165
 msgid ""
 "You can click the link that says “report” on any project, comment, "
 "discussion post, or user page where you think something isn't ok for "
@@ -2078,16 +2507,15 @@ msgid ""
 "explain. Be sure to include as much detail as you can, with links to "
 "relevant pages."
 msgstr ""
-"Scratchのために不適切と思われる、いかなるプロジェクト、コメント、ディスカッ"
-"ションやユーザーページについても「これを報告」のリンクをクリックして報告でき"
-"ます。状況が複雑な場合は「お問合せ」リンクから報告することもできますが、その"
-"場合には該当ページへのリンクに加えて、できる限り詳細に説明してください。"
+"Scratchのために不適切と思われる、いかなるプロジェクト、コメント、ディスカッションやユーザーページについても「これを報告」のリンクをクリックして報"
+"告できます。状況が複雑な場合は「お問合せ」リンクから報告することもできますが、その場合には該当ページへのリンクに加えて、できる限り詳細に説明してください"
+"。"
 
-#: templates/info/help/faq.html:164
+#: templates/info/help/faq.html:167
 msgid "What do I do if I see someone being mean or disrespectful?"
 msgstr "誰かが意地悪をしたり無礼に振る舞っていた場合、どうすれば良いですか?"
 
-#: templates/info/help/faq.html:165
+#: templates/info/help/faq.html:168
 msgid ""
 "Don’t add to the flames! Responding to mean comments with more mean comments "
 "just makes things worse, and could result in your account being blocked. "
@@ -2095,18 +2523,15 @@ msgid ""
 "we’ll follow up with the author. We check reports every day, multiple times "
 "per day - so rest assured, we'll sort things out."
 msgstr ""
-"どうか炎上させないでください。意地悪なコメントに意地悪なコメントで応酬すると"
-"事態がより悪化して、あなたのアカウントまでブロックされるかもしれません。その"
-"代わり、無礼だったり非建設的だったことを報告してください。私たちが書き込んだ"
-"人を調べます。私たちは報告を毎日・毎時チェックして適切に処置しますので安心し"
+"どうか炎上させないでください。意地悪なコメントに意地悪なコメントで応酬すると事態がより悪化して、あなたのアカウントまでブロックされるかもしれません。その"
+"代わり、無礼だったり非建設的だったことを報告してください。私たちが書き込んだ人を調べます。私たちは報告を毎日・毎時チェックして適切に処置しますので安心し"
 "てください。"
 
-#: templates/info/help/faq.html:167
+#: templates/info/help/faq.html:170
 msgid "What does the Scratch team do when something is reported or flagged?"
-msgstr ""
-"何かが報告されたりフラグを立てられたとき、Scratchチームは何をするのですか?"
+msgstr "何かが報告されたりフラグを立てられたとき、Scratchチームは何をするのですか?"
 
-#: templates/info/help/faq.html:168
+#: templates/info/help/faq.html:171
 msgid ""
 "The Scratch Team reviews reported comments and projects every day. If "
 "something breaks the Scratch community guidelines, we may remove it and send "
@@ -2114,17 +2539,15 @@ msgid ""
 "warned the account), we may also block the accounts or networks that were "
 "used to share it."
 msgstr ""
-"Scratchチームは報告されたコメントやプロジェクトを毎日チェックしています。"
-"Scratchコミュニティガイドラインが侵害された場合は、その原因を取り除いてアカウ"
-"ントに警告します。悪質さに応じて(または過去に警告されたアカウントなど)、アカ"
-"ウントや作品を共有するのに使われたネットワークがブロックされる場合がありま"
-"す。"
+"Scratchチームは報告されたコメントやプロジェクトを毎日チェックしています。Scratchコミュニティガイドラインが侵害された場合は、その原因を取り"
+"除いてアカウントに警告します。悪質さに応じて(または過去に警告されたアカウントなど)、アカウントや作品を共有するのに使われたネットワークがブロックされる"
+"場合があります。"
 
-#: templates/info/help/faq.html:170
+#: templates/info/help/faq.html:173
 msgid "What happens when an account is blocked?"
 msgstr "アカウントがブロックされると何が起きるのですか?"
 
-#: templates/info/help/faq.html:171
+#: templates/info/help/faq.html:174
 msgid ""
 "When an account is blocked, the owner can no longer access it, or use it to "
 "create projects or comments. When they login, they see a page that explains "
@@ -2136,24 +2559,18 @@ msgid ""
 "(and most likely other accounts owned or created by that person) may be "
 "blocked permanently."
 msgstr ""
-"アカウントがブロックされると、所有者がアカウントにアクセスできなくなり、プロ"
-"ジェクトやコメントを作れなくなります。ログインすると、アカウントがブロックさ"
-"れた理由とブロックを解除を申請するフォームがが表示されます。所有者がブロック"
-"された理由を理解して、将来にわたってコミュニティガイドラインを遵守することを"
-"約束するなら、Scratchチームにより再検討されるでしょう。所有者の言葉が信頼でき"
-"るとみなされた場合にのみアカウントのブロックが解除されます。さもなければ、そ"
-"のアカウント(やその所有者によって作られた他のアカウント)は永久にブロックされ"
-"ます。"
+"アカウントがブロックされると、所有者がアカウントにアクセスできなくなり、プロジェクトやコメントを作れなくなります。ログインすると、アカウントがブロックさ"
+"れた理由とブロックを解除を申請するフォームがが表示されます。所有者がブロックされた理由を理解して、将来にわたってコミュニティガイドラインを遵守することを"
+"約束するなら、Scratchチームにより再検討されるでしょう。所有者の言葉が信頼できるとみなされた場合にのみアカウントのブロックが解除されます。さもなけ"
+"れば、そのアカウント(やその所有者によって作られた他のアカウント)は永久にブロックされます。"
 
-#: templates/info/help/faq.html:173
+#: templates/info/help/faq.html:176
 msgid ""
 "My mean brother / Kaj / some other bad guy stole my account and got it "
 "banned, what do I do?"
-msgstr ""
-"意地悪な兄や悪い奴らがボクのアカウントを盗んでブロックされちゃった。どうした"
-"らいい?"
+msgstr "意地悪な兄や悪い奴らがボクのアカウントを盗んでブロックされちゃった。どうしたらいい?"
 
-#: templates/info/help/faq.html:174
+#: templates/info/help/faq.html:177
 msgid ""
 "You are responsible for keeping your password secure. If someone in real "
 "life takes control of your account and does bad stuff, tell the adults in "
@@ -2163,70 +2580,58 @@ msgid ""
 "community guidelines, don't just say you got hacked. If we can't trust you, "
 "we won't unblock you."
 msgstr ""
-"あなたはパスワードを安全に保管する責任があります。実生活における誰かにアカウ"
-"ントを盗まれて悪いことをされたなら、そのコンピュータを管理する大人に伝えてく"
-"ださい。誰か知らない人がアカウントしたと思うなら、パスワードを変更するか、お"
-"問合せのリンクを使ってその状況を私たちに説明してください。コミュニティガイド"
-"ラインの侵害によってあなたのアカウントがブロックされたとき、単に「ハックされ"
-"た」と言わないでください。あなたを信頼できなければブロックが解除されることは"
+"あなたはパスワードを安全に保管する責任があります。実生活における誰かにアカウントを盗まれて悪いことをされたなら、そのコンピュータを管理する大人に伝えてく"
+"ださい。誰か知らない人がアカウントしたと思うなら、パスワードを変更するか、お問合せのリンクを使ってその状況を私たちに説明してください。コミュニティガイド"
+"ラインの侵害によってあなたのアカウントがブロックされたとき、単に「ハックされた」と言わないでください。あなたを信頼できなければブロックが解除されることは"
 "ありません。"
 
-#: templates/info/help/faq.html:181
+#: templates/info/help/faq.html:184
 msgid "What is cloud data?"
 msgstr "クラウドデータとは何ですか?"
 
-#: templates/info/help/faq.html:182
+#: templates/info/help/faq.html:185
 msgid ""
 "Cloud data is a feature in Scratch 2.0 that allows for data from a project "
 "to be saved and shared online. You can use cloud data to make surveys and "
 "other projects that store numbers over time."
 msgstr ""
-"クラウドデータは Scratch 2.0の機能で、プロジェクトのデータをオンライン上で共"
-"有するためのものです。クラウドデータは分析のために使ったり、長期間数値を保存"
-"するのに使うことができます。"
+"クラウドデータは Scratch 2.0の機能で、プロジェクトのデータをオンライン上で共有するためのものです。クラウドデータは分析のために使ったり、長期"
+"間数値を保存するのに使うことができます。"
 
-#: templates/info/help/faq.html:184
+#: templates/info/help/faq.html:187
 msgid "Who can see the data stored in cloud data?"
 msgstr "クラウドデータに格納されたデータを誰が見ることができますか?"
 
-#: templates/info/help/faq.html:185
+#: templates/info/help/faq.html:188
 msgid ""
 "When you interact with a project using cloud data blocks, your information "
 "can be stored along with your username, and others can view it. Each project "
 "keeps a log of who interacted with it and any data they shared."
 msgstr ""
-"クラウドデータブロックを用いてプロジェクトとやり取りすると、ユーザー名ととも"
-"にあなたの情報が格納され、他のユーザーから見られるようになります。どのプロ"
-"ジェクトもデータをやり取りした相手や共有したデータについて記録しています。"
-
-#: templates/info/help/faq.html:187
-msgid ""
-"Why is cloud data currently limited to only numbers -- with no strings or "
-"lists? "
-msgstr ""
-"なぜクラウドデータが数値のみに限定されていて文字列やリストが使えないのですか?"
-
-#: templates/info/help/faq.html:188
-msgid ""
-"The current beta site is limited to numbers in variables as an initial step "
-"to work out any issues with their use on the site. We plan to roll out cloud "
-"data features incrementally. If the infrastructure is working well, we plan "
-"to add other features (cloud lists, support for strings, etc.)."
-msgstr ""
-"現在のベータ版サイトでは、サイト上でのクラウドデータの使用による問題を解決す"
-"るために、初期段階として変数内の数値のみに制限しています。私たちは徐々にクラ"
-"ウドデータ機能を展開していく予定です。クラウドデータの基盤がうまく動くように"
-"なれば、他の機能(クラウドリストや文字列のサポート等)も加える予定です。"
+"クラウドデータブロックを用いてプロジェクトとやり取りすると、ユーザー名とともにあなたの情報が格納され、他のユーザーから見られるようになります。どのプロジ"
+"ェクトもデータをやり取りした相手や共有したデータについて記録しています。"
 
 #: templates/info/help/faq.html:190
 msgid ""
-"If I see someone post inappropriate content using cloud data, how do I "
-"report it?"
-msgstr ""
-"誰かがクラウドデータを使って不適切なオブジェクトを公開していたら、どのように"
-"報告すれば良いですか?"
+"Why is cloud data currently limited to only numbers -- with no strings or "
+"lists? "
+msgstr "なぜクラウドデータが数値のみに限定されていて文字列やリストが使えないのですか?"
 
 #: templates/info/help/faq.html:191
+msgid ""
+"The current site is limited to numbers in variables as an initial step to "
+"work out any issues with their use on the site. We plan to roll out cloud "
+"data features incrementally. If the infrastructure is working well, we plan "
+"to add other features (cloud lists, support for strings, etc.)."
+msgstr ""
+
+#: templates/info/help/faq.html:193
+msgid ""
+"If I see someone post inappropriate content using cloud data, how do I "
+"report it?"
+msgstr "誰かがクラウドデータを使って不適切なオブジェクトを公開していたら、どのように報告すれば良いですか?"
+
+#: templates/info/help/faq.html:194
 msgid ""
 "Click the \"Report this\" button (under on the project player) to report "
 "inappropriate content in cloud data. The report form includes a link to a "
@@ -2234,75 +2639,68 @@ msgid ""
 "look at it before sending your report. Make sure that you mention \"cloud "
 "data\" when you type your reason in the report."
 msgstr ""
-"(プロジェクトプレイヤーの下にある)「これを報告」ボタンをクリックすると、クラ"
-"ウドデータにある不適切なコンテンツを報告できます。入力フォームには、そのプロ"
-"ジェクトの全てのクラウドデータのログに対するリンクと誰がそれを残したのかが含"
-"まれるので、報告する前に内容を確認することができます。報告において理由を説明"
-"する際には必ず「クラウドデータ」に言及してください。"
+"(プロジェクトプレイヤーの下にある)「これを報告」ボタンをクリックすると、クラウドデータにある不適切なコンテンツを報告できます。入力フォームには、そのプ"
+"ロジェクトの全てのクラウドデータのログに対するリンクと誰がそれを残したのかが含まれるので、報告する前に内容を確認することができます。報告において理由を説"
+"明する際には必ず「クラウドデータ」に言及してください。"
 
-#: templates/info/help/faq.html:193
+#: templates/info/help/faq.html:196
 msgid "Can I make chat rooms with cloud data?"
 msgstr "クラウドデータでチャットルームを作っても良いですか?"
 
-#: templates/info/help/faq.html:194
+#: templates/info/help/faq.html:197
 msgid ""
 "While it is technically possible to create chat rooms with cloud data, they "
 "are not currently allowed. We will reconsider this policy once we have a "
 "better sense of our capability for moderating and managing reports on cloud "
 "data."
 msgstr ""
-"技術的にはクラウドデータを用いてチャットルームを作ることは可能ですが、現在そ"
-"れらは許されていません。クラウドデータの監督と報告の管理に対して十分な能力を"
+"技術的にはクラウドデータを用いてチャットルームを作ることは可能ですが、現在それらは許されていません。クラウドデータの監督と報告の管理に対して十分な能力を"
 "持ったところで再検討するでしょう。"
 
-#: templates/info/help/faq.html:196
+#: templates/info/help/faq.html:199
 msgid "How do I add a cloud variable when I'm making a project?"
 msgstr "プロジェクトを作るとき、どのようにクラウド変数を加えますか?"
 
-#: templates/info/help/faq.html:197
+#: templates/info/help/faq.html:200
 msgid ""
 "When you make a variable, you can check the box that says \"Cloud variable."
 "\" Any data you store will be saved on the server and visible to others."
 msgstr ""
-"変数を作る際に、「クラウド変数」というチェックボックスをオンにします。格納す"
-"る全てのデータはサーバーに保存され、他の人が見られるようになります。"
+"変数を作る際に、「クラウド変数」というチェックボックスをオンにします。格納する全てのデータはサーバーに保存され、他の人が見られるようになります。"
 
-#: templates/info/help/faq.html:199
+#: templates/info/help/faq.html:202
 msgid "Who can change the information in a cloud variable?"
 msgstr "誰がクラウド変数の情報を変えることができますか?"
 
-#: templates/info/help/faq.html:200
+#: templates/info/help/faq.html:203
 msgid ""
 "Only your project can store data in its cloud variable. If people change or "
 "remix your code, it creates a different variable in their project with the "
 "same name."
 msgstr ""
-"そのクラウド変数にデータを格納できるのは、あなたのプロジェクトだけです。あな"
-"たのコードを変えたりリミックスした場合、同じ名前ですが異なる変数がプロジェク"
+"そのクラウド変数にデータを格納できるのは、あなたのプロジェクトだけです。あなたのコードを変えたりリミックスした場合、同じ名前ですが異なる変数がプロジェク"
 "トごとに作られます。"
 
-#: templates/info/help/faq.html:202
+#: templates/info/help/faq.html:205
 msgid ""
 "I am logged in, but I still cannot use projects with cloud data. What is "
 "going on?"
-msgstr ""
-"ログインしましたが、まだプロジェクトでクラウドデータが使えません。どうすれば"
-"良いですか?"
+msgstr "ログインしましたが、まだプロジェクトでクラウドデータが使えません。どうすれば良いですか?"
 
-#: templates/info/help/faq.html:203
+#: templates/info/help/faq.html:206
 msgid ""
 "You need to have become a \"Scratcher\" on the website to have access to "
 "cloud data. You can become a Scratcher through actively participating on the "
 "website."
 msgstr ""
-"クラウドデータへアクセスするには、あなたが「Scratcher」になる必要があります。"
-"ウェブサイトで積極的に関わることでScratcherになることができます。"
+"クラウドデータへアクセスするには、あなたが「Scratcher」になる必要があります。ウェブサイトで積極的に関わることでScratcherになることがで"
+"きます。"
 
-#: templates/info/help/faq.html:205
+#: templates/info/help/faq.html:208
 msgid "Is it possible to make multiplayer games with cloud data?"
 msgstr "クラウドデータでマルチプレイヤーゲームを作れますか?"
 
-#: templates/info/help/faq.html:206
+#: templates/info/help/faq.html:209
 msgid ""
 "It is difficult to use cloud data to make real-time multiplayer games (due "
 "to network speed and synchronization issues). However, you can make turn-by-"
@@ -2310,17 +2708,15 @@ msgid ""
 "released, and after we have made sure that the existing cloud data system "
 "works well."
 msgstr ""
-"(ネットワークのスピードや同期の問題から)クラウドデータを使ってリアルタイムな"
-"マルチプレイヤーゲームを作ることは難しいですが、ターンバイターンのゲームを作"
-"ることは可能です。Scratch 2.0をリリースし、クラウドデータシステムがうまく動作"
-"することがわかった後で、そのようなゲーム作りを容易にするような計画を持ってい"
-"ます。"
+"(ネットワークのスピードや同期の問題から)クラウドデータを使ってリアルタイムなマルチプレイヤーゲームを作ることは難しいですが、ターンバイターンのゲームを"
+"作ることは可能です。Scratch "
+"2.0をリリースし、クラウドデータシステムがうまく動作することがわかった後で、そのようなゲーム作りを容易にするような計画を持っています。"
 
-#: templates/info/help/faq.html:208
+#: templates/info/help/faq.html:211
 msgid "How long does it take for cloud data to reach another Scratcher?"
 msgstr "クラウドデータが他のScratcherに届くのにかかる時間はどの位ですか?"
 
-#: templates/info/help/faq.html:209
+#: templates/info/help/faq.html:212
 msgid ""
 "It depends. If both Scratchers have a reasonably fast Internet connection "
 "(DSL/Cable), and there are no restrictive firewalls on the computers/"
@@ -2330,47 +2726,34 @@ msgid ""
 "time-lag becomes one-second. We are currently trying to figure out ways in "
 "which we can work around this limitation."
 msgstr ""
-"場合によりけりです。互いのScratcherがかなり高速なインターネット接続(DSL/ケー"
-"ブル)を使っており、コンピュータやネットワーク上に制限的なファイアウォールがな"
-"ければ、データの更新はミリ秒の単位で行われるはずです。しかし、多くのコン"
-"ピュータはファイアウォールソフトウェアを持っており、TCPポートの531番や843番に"
-"対する外向きの接続をブロックするなら、1秒程度のタイムラグが発生します。私たち"
-"はこの制限を回避する方法を見つけ出そうとしています。"
+"場合によりけりです。互いのScratcherがかなり高速なインターネット接続(DSL/ケーブル)を使っており、コンピュータやネットワーク上に制限的なファ"
+"イアウォールがなければ、データの更新はミリ秒の単位で行われるはずです。しかし、多くのコンピュータはファイアウォールソフトウェアを持っており、TCPポート"
+"の531番や843番に対する外向きの接続をブロックするなら、1秒程度のタイムラグが発生します。私たちはこの制限を回避する方法を見つけ出そうとしています。"
 
 #: templates/info/help/faq_layout.html:6
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "よくある質問と答え(FAQ)"
 
-#: templates/info/help/faq_layout.html:12
-msgid "Search This Page"
-msgstr "このページを検索する。"
-
-#: templates/info/help/faq_layout.html:14
-msgid "\"Type a topic\""
-msgstr "「調べたいことを入力してください」"
-
-#: templates/info/help/faq_layout.html:17
-msgid ""
-"or try searching the <a href=\"/forums\">discussion forums</a> or the <a "
-"href=\"http://wiki.scratch.mit.edu\">Scratch wiki</a>"
+#: templates/info/help/help_layout.html:12
+msgid "Sign in to Scratch"
 msgstr ""
-"または<a href=\"/forums\">ディスカッションフォーラム</a>や<a href=\"http://"
-"wiki.scratch.mit.edu\">Scratch wiki</a>を調べてみましょう。"
 
 #: templates/info/help/help_layout.html:15
 msgid ""
 "With a Scratch account, you can save your projects online, and share them "
 "with others in the Scratch community."
-msgstr ""
-"Scratchアカウントによって、プロジェクトをオンラインに保存したり、Scratchコ"
-"ミュニティの人たちと共有することができます。"
+msgstr "Scratchアカウントによって、プロジェクトをオンラインに保存したり、Scratchコミュニティの人たちと共有することができます。"
 
+# 92%
 #: templates/info/help/help_layout.html:15
+#, fuzzy
 msgid ""
-"<a href=\"/accounts/login/\">Login</a> or <a href=\"#\">Join Scratch</a>."
+"<a href=\"/accounts/login/\">Sign in</a> or <a href=\"#\">Join Scratch</a>."
+msgstr "<a href=\"/accounts/login/\">ログイン</a> または <a href=\"#\">Scratchに参加する</a>。"
+
+#: templates/info/help/index.html:8
+msgid "Make a Scratch Project"
 msgstr ""
-"<a href=\"/accounts/login/\">ログイン</a> または <a href=\"#\">Scratchに参加"
-"する</a>。"
 
 #: templates/info/help/index.html:15
 msgid "Get started</br> step-by-step"
@@ -2380,28 +2763,28 @@ msgstr "ステップバイステップ方式での</br> スタートアップガ
 msgid "Try out these</br> starter projects"
 msgstr "スタータープロジェクト</br> を試してみましょう。"
 
+# 96%
 #: templates/info/help/index.html:33
-msgid "How do I use the new blocks?"
-msgstr "どのように新しいブロックを使いますか?"
+#, fuzzy
+msgid "What's new in Scratch 2.0?"
+msgstr "Scratch 2.0の新機能"
+
+#: templates/info/help/index.html:40
+msgid "Explore the Scratch Community"
+msgstr ""
 
 #: templates/info/help/index.html:43
 msgid ""
 "<a href=\"../explore\">Explore</a> projects and studios Scratchers are making"
-msgstr ""
-"Scratcherが作っているプロジェクトやスタジオを<a href=\"../explore\">探す</"
-"a>。"
+msgstr "Scratcherが作っているプロジェクトやスタジオを<a href=\"../explore\">探す</a>。"
 
 #: templates/info/help/index.html:44
 msgid "Search for projects about:"
 msgstr "以下に関するプロジェクトがないか調べる:"
 
 #: templates/info/help/index.html:49
-msgid ""
-"<a href=\"http://scratch.mit.edu/forums/viewforum.php?id=31\">Introduce</a> "
-"yourself in the Scratch forums"
+msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
 msgstr ""
-"Scratchフォーラムで<a href=\"http://scratch.mit.edu/forums/viewforum.php?"
-"id=31\">自己紹介する</a>。"
 
 #: templates/info/help/index.html:50
 #, python-format
@@ -2409,9 +2792,12 @@ msgid ""
 "Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
 "any profile or studio to receive updates"
 msgstr ""
-"更新情報を受け取るためにプロフィールやスタジオにある<img src="
-"\"%(STATIC_URL)s/images/help/follow-button-small.png\"/>をクリックしてくださ"
-"い。"
+"更新情報を受け取るためにプロフィールやスタジオにある<img src=\"%(STATIC_URL)s/images/help/follow-"
+"button-small.png\"/>をクリックしてください。"
+
+#: templates/info/help/index.html:56
+msgid "Scratch Guides"
+msgstr ""
 
 #: templates/info/help/index.html:58
 msgid "Here are some guides to help you learn Scratch:"
@@ -2429,14 +2815,36 @@ msgstr "ステップバイステップの簡単なガイド(PDF)"
 msgid "A set of 12 cards that show how to make things in Scratch."
 msgstr "12枚のカードを使ってScratchでの作り方について説明します。"
 
+#: templates/info/help/index.html:80
+msgid "What is Scratch?"
+msgstr ""
+
 #: templates/info/help/index.html:84
 msgid ""
 "Find out more <a href=\"/about\">about Scratch</a>, or check out our pages "
 "for <a href=\"/parents\">parents</a> and <a href=\"/educators\">educators</"
 "a>."
 msgstr ""
-"<a href=\"/about\">Scratchについて</a>を探したり、<a href=\"/parents\">保護者"
-"</a>や<a href=\"/educators\">教育者</a>の私たちのページも参考にしてください。"
+"<a href=\"/about\">Scratchについて</a>を探したり、<a href=\"/parents\">保護者</a>や<a "
+"href=\"/educators\">教育者</a>の私たちのページも参考にしてください。"
+
+#: templates/info/help/index.html:90
+msgid ""
+"Browse for answers on: </br><a href=\"/help/faq\">Frequently Asked "
+"Questions</a>"
+msgstr ""
+
+#: templates/info/help/index.html:92
+msgid "Or visit the discussion forums:"
+msgstr "または、ディスカッション・フォーラムに行く："
+
+#: templates/info/help/index.html:93
+msgid "Questions about Scratch"
+msgstr "Scratchについての質問"
+
+#: templates/info/help/index.html:94
+msgid "Help with Scripts"
+msgstr "スクリプトのヘルプ"
 
 #: templates/info/help/index.html:97
 msgid "Resources"
@@ -2446,9 +2854,7 @@ msgstr "教材"
 msgid ""
 "An online community for educators using Scratch, with stories, discussions, "
 "and resources, such as the Scratch curriculum guide."
-msgstr ""
-"Scratchを使った教育者のためのオンラインコミュニティです。論文や討議の場に加え"
-"てScratchカリキュラムガイドのような教材があります。"
+msgstr "Scratchを使った教育者のためのオンラインコミュニティです。論文や討議の場に加えてScratchカリキュラムガイドのような教材があります。"
 
 #: templates/info/help/index.html:103
 msgid "Scratch Wiki"
@@ -2459,36 +2865,37 @@ msgid ""
 "The Scratch Wiki contains a wide variety of articles by Scratchers for "
 "Scratchers, including advanced topics and tutorials."
 msgstr ""
-"Scratch Wikiには、Scratcherによる、Scratcherのための多種多様な記事があり、高"
-"度な話題やチュートリアルを含んでいます。"
+"Scratch Wikiには、Scratcherによる、Scratcherのための多種多様な記事があり、高度な話題やチュートリアルを含んでいます。"
 
 #: templates/info/help/index.html:108
-msgid "Scratch and the Physical World"
-msgstr "Scratchと実世界"
+msgid ""
+"<a href=\"http://wiki.scratch.mit.edu/wiki/"
+"How_to_connect_to_the_physical_world\">Scratch and the Physical World</a>"
+msgstr ""
 
 #: templates/info/help/index.html:110
 msgid ""
-"Connect your Scratch projects to the physical world with MaKey MaKey, LEGO "
-"WeDo, or ScratchBoard."
+"Connect your Scratch projects to the physical world with <a href = \"http://"
+"www.makeymakey.com/\">MaKey MaKey</a>, <a href=\"http://info.scratch.mit.edu/"
+"WeDo\">LEGO WeDo</a>, or <a href=\"https://www.sparkfun.com/"
+"products/10311\">PicoBoard</a>."
 msgstr ""
-"Makey MakeyやLEGO WeDo、ScratchBoardを使って、Scratchプロジェクトと実世界をつ"
-"なげてみよう。"
 
 #: templates/info/help/index.html:113
-msgid "Scratch Media"
-msgstr "Scratchメディア"
+msgid "Scratch Logo"
+msgstr ""
 
 #: templates/info/help/index.html:115
 msgid "Access the Scratch logo and other media files."
 msgstr "Scratchロゴや他のメディアファイルを入手できます。"
 
 #: templates/info/help/index.html:117
-msgid "Scratch Store"
-msgstr "Scratchストア"
+msgid "Scratch 1.4"
+msgstr ""
 
 #: templates/info/help/index.html:119
-msgid "Find books and other materials about Scratch."
-msgstr "Scratchに関する本や教材などを探せます。"
+msgid "Links and information on the previous version of Scratch."
+msgstr ""
 
 #: templates/info/help/studio/tips/home.html:4
 msgid "Getting Started"
@@ -2503,9 +2910,11 @@ msgstr "ステップバイステップ方式の紹介"
 msgid "Map of Project Editor"
 msgstr "プロジェクトエディタのマップ"
 
+# 76%
 #: templates/info/help/studio/tips/home.html:11
-msgid "Paint Editor Tips"
-msgstr "ペイントエディタのヒント"
+#, fuzzy
+msgid "Map of Paint Editor"
+msgstr "プロジェクトエディタのマップ"
 
 #: templates/info/help/studio/tips/home.html:28
 msgid "How To"
@@ -2526,10 +2935,6 @@ msgstr "対話的な効果を作る"
 #: templates/info/help/studio/tips/home.html:33
 msgid "Interact with a microphone"
 msgstr "マイクを使って対話する"
-
-#: templates/info/help/studio/tips/home.html:36
-msgid "Animation"
-msgstr "アニメーション"
 
 #: templates/info/help/studio/tips/home.html:38
 msgid "Switch from happy to sad"
@@ -2567,195 +2972,533 @@ msgstr "互いに話す"
 msgid "Glide off the stage"
 msgstr "ステージを滑空する"
 
-#: templates/info/help/studio/tips/home.html:81
+# 77%
+#: templates/info/help/studio/tips/home.html:55
+#: templates/info/help/studio/tips/howto/switch-backdrop.html:6
+#, fuzzy
+msgid "Switch backdrops"
+msgstr "背景を～にする"
+
+#: templates/info/help/studio/tips/home.html:60
+#: templates/info/help/studio/tips/howto/play-instrument.html:6
+msgid "Play an instrument"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:61
+#: templates/info/help/studio/tips/howto/play-music.html:6
+msgid "Play background music"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:62
+#: templates/info/help/studio/tips/howto/import-music.html:7
+msgid "Import your music"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:63
+#: templates/info/help/studio/tips/howto/record-sounds.html:7
+msgid "Record sounds"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:64
+#: templates/info/help/studio/tips/howto/edit-sounds.html:7
+msgid "Edit sounds"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:77
 msgid "Blocks"
 msgstr "ブロック"
 
-#: templates/info/help/studio/tips/home.html:82
-msgid "Motions"
+# 85%
+#: templates/info/help/studio/tips/home.html:78
+#, fuzzy
+msgid "Motion"
 msgstr "動き"
 
-#: templates/info/help/studio/tips/home.html:84
+#: templates/info/help/studio/tips/home.html:80
 msgid "move _ steps"
 msgstr "_ 歩動かす"
 
-#: templates/info/help/studio/tips/home.html:85
+#: templates/info/help/studio/tips/home.html:81
 msgid "turn right"
 msgstr "右に回す"
 
-#: templates/info/help/studio/tips/home.html:86
+#: templates/info/help/studio/tips/home.html:82
 msgid "turn left"
 msgstr "左に回す"
 
-#: templates/info/help/studio/tips/home.html:87
+#: templates/info/help/studio/tips/home.html:83
 msgid "point in direction"
 msgstr "度に向ける"
 
-#: templates/info/help/studio/tips/home.html:88
+#: templates/info/help/studio/tips/home.html:84
 msgid "point towards"
 msgstr "へ向ける"
 
-#: templates/info/help/studio/tips/home.html:89
+#: templates/info/help/studio/tips/home.html:85
 msgid "go to x: y:"
 msgstr "xy座標に移動する"
 
-#: templates/info/help/studio/tips/home.html:90
+#: templates/info/help/studio/tips/home.html:86
 msgid "go to"
 msgstr "行く"
 
-#: templates/info/help/studio/tips/home.html:91
+#: templates/info/help/studio/tips/home.html:87
 msgid "glide _ secs to x: y:"
 msgstr "_ 秒でx座標を～に、y座標を～に変える"
 
-#: templates/info/help/studio/tips/home.html:92
+#: templates/info/help/studio/tips/home.html:88
 msgid "change x by"
 msgstr "x座標を～ずつ変える"
 
-#: templates/info/help/studio/tips/home.html:93
+#: templates/info/help/studio/tips/home.html:89
 msgid "set x to"
 msgstr "x座標を～にする"
 
-#: templates/info/help/studio/tips/home.html:94
+#: templates/info/help/studio/tips/home.html:90
 msgid "change y by"
 msgstr "y座標を～ずつ変える"
 
-#: templates/info/help/studio/tips/home.html:95
+#: templates/info/help/studio/tips/home.html:91
 msgid "set y to"
 msgstr "y座標を～にする"
 
-#: templates/info/help/studio/tips/home.html:96
+#: templates/info/help/studio/tips/home.html:92
 msgid "if on edge, bounce"
 msgstr "もし端に着いたら、跳ね返る"
 
-#: templates/info/help/studio/tips/home.html:97
+#: templates/info/help/studio/tips/home.html:93
 msgid "x position"
 msgstr "x座標"
 
-#: templates/info/help/studio/tips/home.html:98
+#: templates/info/help/studio/tips/home.html:94
 msgid "y position"
 msgstr "y座標"
 
-#: templates/info/help/studio/tips/home.html:99
+#: templates/info/help/studio/tips/home.html:95
 msgid "direction"
 msgstr "向き"
 
-#: templates/info/help/studio/tips/home.html:101
+#: templates/info/help/studio/tips/home.html:97
 msgid "Looks"
 msgstr "見た目"
 
-#: templates/info/help/studio/tips/home.html:103
+#: templates/info/help/studio/tips/home.html:99
 msgid "say for _ secs"
 msgstr "～と _ 秒言う"
 
-#: templates/info/help/studio/tips/home.html:104
+#: templates/info/help/studio/tips/home.html:100
 msgid "say"
 msgstr "～と言う"
 
-#: templates/info/help/studio/tips/home.html:105
+#: templates/info/help/studio/tips/home.html:101
 msgid "think for _ secs"
 msgstr "～と _ 秒考える"
 
-#: templates/info/help/studio/tips/home.html:106
+#: templates/info/help/studio/tips/home.html:102
 msgid "think"
 msgstr "～と考える"
 
-#: templates/info/help/studio/tips/home.html:107
+#: templates/info/help/studio/tips/home.html:103
 msgid "show"
 msgstr "表示する"
 
-#: templates/info/help/studio/tips/home.html:108
+#: templates/info/help/studio/tips/home.html:104
 msgid "hide"
 msgstr "隠す"
 
-#: templates/info/help/studio/tips/home.html:109
+#: templates/info/help/studio/tips/home.html:105
 msgid "switch costume to"
 msgstr "コスチュームを～にする"
 
-#: templates/info/help/studio/tips/home.html:110
+#: templates/info/help/studio/tips/home.html:106
 msgid "next costume"
 msgstr "次のコスチュームにする"
 
-#: templates/info/help/studio/tips/home.html:111
+#: templates/info/help/studio/tips/home.html:107
 msgid "switch backdrop to"
 msgstr "背景を～にする"
 
-#: templates/info/help/studio/tips/home.html:112
+#: templates/info/help/studio/tips/home.html:108
 msgid "change _ effect to"
 msgstr "～の効果を _ ずつ変える"
 
-#: templates/info/help/studio/tips/home.html:113
+#: templates/info/help/studio/tips/home.html:109
 msgid "set _ effect to"
 msgstr "～の効果を _ にする"
 
-#: templates/info/help/studio/tips/home.html:114
+#: templates/info/help/studio/tips/home.html:110
 msgid "clear graphic effects"
 msgstr "画像効果をなくす"
 
-#: templates/info/help/studio/tips/home.html:115
+#: templates/info/help/studio/tips/home.html:111
 msgid "change size by"
 msgstr "大きさを～ずつ変える"
 
-#: templates/info/help/studio/tips/home.html:116
+#: templates/info/help/studio/tips/home.html:112
 msgid "set size to"
 msgstr "大きさを～にする"
 
-#: templates/info/help/studio/tips/home.html:117
+#: templates/info/help/studio/tips/home.html:113
 msgid "go to front"
 msgstr "前に出す"
 
-#: templates/info/help/studio/tips/home.html:118
+#: templates/info/help/studio/tips/home.html:114
 msgid "go back _ layers"
 msgstr "_ 層下げる"
 
-#: templates/info/help/studio/tips/home.html:119
+#: templates/info/help/studio/tips/home.html:115
 msgid "costume #"
 msgstr "コスチュームの番号"
 
-#: templates/info/help/studio/tips/home.html:120
+#: templates/info/help/studio/tips/home.html:116
 msgid "backdrop name"
 msgstr "背景の名前"
 
-#: templates/info/help/studio/tips/home.html:121
+#: templates/info/help/studio/tips/home.html:117
 msgid "size"
 msgstr "大きさ"
 
-#: templates/info/help/studio/tips/home.html:123
+#: templates/info/help/studio/tips/home.html:119
 msgid "Sound"
 msgstr "音"
 
-#: templates/info/help/studio/tips/home.html:125
+#: templates/info/help/studio/tips/home.html:121
 msgid "Pen"
 msgstr "ペン"
 
-#: templates/info/help/studio/tips/home.html:127
+#: templates/info/help/studio/tips/home.html:123
 msgid "Data"
 msgstr "データ"
 
-#: templates/info/help/studio/tips/home.html:129
+#: templates/info/help/studio/tips/home.html:125
 msgid "Events"
 msgstr "イベント"
 
-#: templates/info/help/studio/tips/home.html:131
+#: templates/info/help/studio/tips/home.html:127
 msgid "Control"
 msgstr "制御"
 
-#: templates/info/help/studio/tips/home.html:133
+#: templates/info/help/studio/tips/home.html:129
 msgid "Sensing"
 msgstr "調べる"
 
-#: templates/info/help/studio/tips/home.html:135
+#: templates/info/help/studio/tips/home.html:131
 msgid "Operators"
 msgstr "演算"
 
-#: templates/info/help/studio/tips/home.html:137
+#: templates/info/help/studio/tips/home.html:133
 msgid "More Blocks"
 msgstr "その他"
 
+#: templates/info/help/studio/tips/blocks/change-x.html:6
+msgid "Change the x position by this amount"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/change-x.html:13
+msgid "A positive number shifts the sprite to the <b>right</b>."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/change-x.html:14
+msgid "A negative number shifts the sprite to the <b>left</b>."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/change-y.html:7
+msgid "Changes sprite’s y-position by specified amount."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/change-y.html:15
+msgid ""
+"Change y by a <b>positive</b> number to move the sprite <b>up</b>. Change y "
+"by a <b>negative</b> number to move the sprite <b>down</b>."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/direction.html:6
+msgid "Reports the current direction of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/direction.html:15
+#, python-format
+msgid ""
+"<b>direction</b> tells which way the sprite is heading.</p>\n"
+"To see a sprite's direction, click <img src=\"%(STATIC_URL)s/images/help/"
+"info.gif\">:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/direction.html:18
+msgid "You can drag the blue line to change direction."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/direction.html:21
+msgid ""
+"To display a sprite's direction on the Stage, click the checkbox in the "
+"palette:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/glide.html:7
+msgid "Glide over time to this <b>x y</b> position"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/glide.html:12
+msgid "The sprite starts at one point, and then glides to the other points."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/glide.html:16
+msgid ""
+"Use <b>glide</b> to move a sprite smoothly to an <b>x y</b> position on the "
+"Stage."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/glide.html:18
+msgid ""
+"You can see <b>x</b> and <b>y</b> update in the Motion blocks palette when "
+"you drag a sprite to another point."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to-xy.html:7
+msgid "Go to this position on the Stage"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to-xy.html:16
+msgid ""
+"Type in a number for <b>x</b> and <b>y</b> to tell the sprite where to go to "
+"on the Stage."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to-xy.html:19
+msgid "Here are the <b>x y</b> coordinates of the Stage:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to.html:7
+msgid "Go to the location of the mouse-pointer or of another sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to.html:19
+msgid "Choose from the menu:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to.html:21
+msgid "Then, click the block."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/go-to.html:22
+msgid ""
+"The current sprite will jump to the <b>x y</b> location of the mouse-pointer "
+"or of the sprite you choose."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/hide.html:8
+msgid "Makes sprite disappear from the Stage"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/hide.html:16
+msgid ""
+"Note: When a sprite is hidden, other sprites cannot detect it with touching? "
+"blocks."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/if-on-edge-bounce.html:7
+msgid "If touching the edge of the stage, then bounce away"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/if-on-edge-bounce.html:15
+msgid ""
+"The sprite will bounce at an angle if it is touching the <b>side</b>, "
+"<b>top</b>, or <b>bottom</b> of the stage."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/move-steps.html:7
+msgid "Move a certain number of steps"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/move-steps.html:16
+msgid ""
+"The sprite will move in the current direction. Type in how far you want it "
+"to move.</p>\n"
+"If you type in a negative number (such as -10), the sprite will go\n"
+"in the opposite direction.</p>\n"
+"<p>A <b>step</b> is a very short distance. The Scratch stage is 480 steps "
+"wide and \n"
+"360 steps tall:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-direction.html:7
+msgid "Set the direction of the current sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-direction.html:15
+msgid "Click to choose from the menu:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-direction.html:18
+msgid "Or, type in a number:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-direction.html:22
+#, python-format
+msgid ""
+"To see a sprite's current direction, click the <img src=\"%(STATIC_URL)s/"
+"images/help/info.gif\"/>"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-towards.html:7
+msgid "Points sprite towards mouse-pointer or another sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-towards.html:15
+msgid "<b>point towards</b> changes the direction of the current sprite."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-towards.html:16
+msgid "You can choose from the menu:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/point-towards.html:18
+msgid "The menu includes any other sprites in the project."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-for-seconds.html:8
+msgid "Say words in a speech bubble for a number of seconds"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-for-seconds.html:16
+msgid "You can type in any words to say."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-for-seconds.html:17
+msgid ""
+"The number of seconds tells the speech bubble how long to show. The script "
+"waits that long before continuing."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-text.html:7
+#: templates/info/help/studio/tips/blocks/say.html:8
+msgid "Say words in a speech bubble"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-text.html:15
+#: templates/info/help/studio/tips/blocks/say.html:16
+#: templates/info/help/studio/tips/blocks/think.html:18
+msgid "You can type in any text. The words will appear in a speech bubble."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say-text.html:17
+#, python-format
+msgid ""
+"To remove the speech bubble, delete the text and click <img src="
+"\"%(STATIC_URL)s/images/help/say.png\" />."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/say.html:18
+msgid "To remove the speech bubble, click an empty say block:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/set-x.html:7
+msgid "Set the x position of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/set-x.html:14
+msgid "<b>Set x</b> places a sprite across the Stage (horizontal position)."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/set-y.html:7
+msgid "Set the <b>y</b> position of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/set-y.html:14
+msgid "<b>Set y</b> places a sprite up or down (vertical position)."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/show.html:8
+msgid "Makes sprite appear on the Stage"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/switch-costume.html:19
+msgid ""
+"You can make new costumes in several ways. Choose from the library, paint an "
+"image, choose an image file, or take a photo with a webcam."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/switch-costume.html:23
+msgid "You can also refer to a costume by name or by number. For example:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/think-for-seconds.html:8
+msgid "Displays words in a thought bubble for a number of seconds"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/think-for-seconds.html:16
+msgid ""
+"The number of seconds tells the thought bubble how long to show. The script "
+"waits that long before continuing."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/think.html:9
+msgid "Displays words in a thought bubble"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/think.html:20
+#, python-format
+msgid ""
+"To remove the speech bubble, use a blank block: <img src=\"%(STATIC_URL)s/"
+"images/help/think-blank.png\" />."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/turn-left.html:7
+msgid "Turn to the left"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/turn-left.html:15
+#: templates/info/help/studio/tips/blocks/turn-right.html:15
+msgid "Type in the number of degrees you want the sprite to rotate."
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/turn-left.html:16
+#: templates/info/help/studio/tips/blocks/turn-right.html:16
+msgid ""
+"(If you type in a negative number, the sprite will go in the opposite "
+"direction.)"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/turn-right.html:7
+msgid "Turn to the right"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/x-position.html:7
+msgid "Reports the <b>x</b> position of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/x-position.html:14
+msgid ""
+"To display the sprite's <b>x</b> position on the Stage, click the checkbox "
+"next to the block:"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/y-position.html:7
+msgid "Reports the <b>y</b> position of a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/blocks/y-position.html:16
+msgid ""
+"To see the sprite's <b>y</b> position on the stage, click the checkbox next "
+"to the block:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/edit-sounds.html:12
+#, python-format
+msgid ""
+" If you want to edit a sound, select a section of the sound: </br>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound.png\"></br>\n"
+"Then choose from the Edit menu:</br>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\">\n"
+" <p>Or, choose Effects:</br>\n"
+"  <img src=\"%(STATIC_URL)s/images/help/effects-menu.png\">\n"
+"\n"
+"</div>\n"
+msgstr ""
+
 #: templates/info/help/studio/tips/howto/get-started-1.html:7
 msgid "Want to make a project in Scratch? Try these 10 steps."
-msgstr ""
-"Scratchでプロジェクトを作ってみたいですか?では以下の10ステップを試してみてく"
-"ださい。"
+msgstr "Scratchでプロジェクトを作ってみたいですか?では以下の10ステップを試してみてください。"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:8
 msgid "First, click New to start a new project."
@@ -2763,17 +3506,15 @@ msgstr "最初に新規をクリックして新しいプロジェクトを初め
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:13
 msgid "Drag a <span class=movecolor>MOVE</span> block into the Scripts area."
-msgstr ""
-"<span class=movecolor>動かす</span>のブロックをスクリプトエリアへドラッグして"
-"ください。"
+msgstr "<span class=movecolor>動かす</span>のブロックをスクリプトエリアへドラッグしてください。"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:17
 msgid "Then, click on that block to make the cat move:"
 msgstr "それから、そのブロックをクリックして猫を動かしてください。"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:21
-msgid "1 of 10"
-msgstr "10ステップ中の1"
+msgid "1"
+msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:8
 msgid "2 Add a Sound"
@@ -2785,9 +3526,9 @@ msgid ""
 "class=soundcolor>Sound</span>) and snap it onto the <span "
 "class=movecolor>MOVE</span> block."
 msgstr ""
-"(<span class=soundcolor>音</span>から)<span class=soundcolor>ドラムを鳴らす</"
-"span>のブロックをドラッグし、<span class=movecolor>動かす</span>にはめ込んで"
-"ください。"
+"(<span class=soundcolor>音</span>から)<span "
+"class=soundcolor>ドラムを鳴らす</span>のブロックをドラッグし、<span "
+"class=movecolor>動かす</span>にはめ込んでください。"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:15
 msgid "Click and listen."
@@ -2797,9 +3538,9 @@ msgstr "クリックして音を聞いてください。"
 msgid "(Make sure your computer's speakers are on.)"
 msgstr "(コンピュータのスピーカーがオンになっていることを確認してください。)"
 
-#: templates/info/help/studio/tips/howto/get-started-2.html:21
-msgid "2 of 10"
-msgstr "10ステップ中の2"
+#: templates/info/help/studio/tips/howto/get-started-2.html:22
+msgid "2"
+msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:6
 msgid "3 Start a Dance"
@@ -2810,24 +3551,315 @@ msgid ""
 "Add another <span class=movecolor>MOVE</span> block. Click inside the block "
 "and type in a minus sign."
 msgstr ""
-"別の <span class=movecolor>動かす</span> ブロックを加えたら、ブロックの内側を"
-"クリックしてマイナス記号を入力してください。"
+"別の <span class=movecolor>動かす</span> ブロックを加えたら、ブロックの内側をクリックしてマイナス記号を入力してください。"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:11
 msgid ""
 "Add another <span class=soundcolor>PLAY DRUM</span> block, then choose a "
 "drum from the pull-down menu."
 msgstr ""
-"別の <span class=soundcolor>ドラムを鳴らす</span> ブロックを加え、プルダウン"
-"メニューからドラムを選んでください。"
+"別の <span class=soundcolor>ドラムを鳴らす</span> ブロックを加え、プルダウンメニューからドラムを選んでください。"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:14
 msgid "Click on any of the blocks to run the stack:"
 msgstr "ブロックのどこかをクリックしてスタックを動かしてください:"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:21
-msgid "3 of 13"
-msgstr "13ステップ中の3"
+msgid "3"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-4.html:6
+msgid "4 Again and Again"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-4.html:8
+msgid ""
+"<p>Drag out a <span class=controlcolor>REPEAT</span> block and drop it on "
+"top of the stack. \n"
+"(You want the \"mouth\" of the <span class=controlcolor>REPEAT</span> to "
+"wrap around the other blocks.)</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-4.html:13
+msgid "Click to run the stack:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-4.html:18
+msgid "4"
+msgstr ""
+
+# 86%
+#: templates/info/help/studio/tips/howto/get-started-5.html:6
+#, fuzzy
+msgid "5 Say Something"
+msgstr "なにか言わせる"
+
+#: templates/info/help/studio/tips/howto/get-started-5.html:9
+#, python-format
+msgid ""
+"<p>Click <span class=lookscolor>LOOKS</span> and drag out a <span "
+"class=lookscolor>SAY</span> block.</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/5a-say.png\"></p>\n"
+"Type in the block to change the words:</br>\n"
+"<img src = \"%(STATIC_URL)s/images/help/5b-say-new.png\"></br>\n"
+"Then <b>snap</b> it on top of the stack.</p>\n"
+"<img src = \"%(STATIC_URL)s/images/help/5c-say-new.png\">\n"
+"<p>Click to run.</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-5.html:21
+msgid "5"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-6.html:6
+msgid "6 Green Flag"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-6.html:8
+#, python-format
+msgid ""
+"\n"
+"<p>Drag out a <img src = \"%(STATIC_URL)s/images/help/6a-green-flag.png\"> "
+"block and snap it on top.</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/6b-green-flag.png\"></p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-6.html:15
+#, python-format
+msgid ""
+"\n"
+"<p>Whenever you click the green flag, your script will start.</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/6c-green-flag.png\"></p>\n"
+"<p>To stop, click the stop button.</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-6.html:22
+msgid "6"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/get-started-7.html:5
+#, fuzzy
+msgid "7 Change Color"
+msgstr "色を変える"
+
+#: templates/info/help/studio/tips/howto/get-started-7.html:7
+#, python-format
+msgid ""
+"\n"
+"<p>Now to try something different...</p>\n"
+"<p>Drag out a <span class=lookscolor>CHANGE EFFECT</span> block.</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/7a-color.png\"></p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-7.html:15
+msgid ""
+"\n"
+"<p>Click to see what it does.</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-7.html:23
+msgid "7"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-8.html:18
+msgid "8"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/get-started-9.html:18
+msgid "9"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:11
+msgid "Select the Sounds tab"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:12
+#, python-format
+msgid ""
+"Upload <img src=\"%(STATIC_URL)s/images/help/upload-icon.png\">\n"
+"   a sound file from your computer (mp3, wav or aif format)."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:17
+msgid "Try these scripts:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:19
+msgid "Click the green flag to run at the same time."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/import-music.html:23
+#, python-format
+msgid ""
+" If you want to edit the song, select a section: \n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound.png\"></br>\n"
+"Then choose from the Edit menu:</br>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\"> </div>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-instrument.html:10
+msgid "To play notes, choose an instrument and note:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-instrument.html:13
+msgid "You can choose another instrument from the menu:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-instrument.html:16
+msgid "Try this script. Click the sprite to play:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-instrument.html:20
+msgid "Add note blocks to play a short scale:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-music.html:10
+#, python-format
+msgid ""
+"Select the Sounds tab <img src=\"%(STATIC_URL)s/images/help/sounds-tab.png"
+"\">. Choose music from the library <img src=\"%(STATIC_URL)s/images/help/"
+"speaker-icon.png\"> or upload a file <img src=\"%(STATIC_URL)s/images/help/"
+"upload-icon.png\">."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-music.html:13
+msgid "This script will keep playing music in the background:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-music.html:17
+msgid ""
+"Does your music get interrupted? Make sure to use the block that plays sound "
+"until done:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/play-music.html:20
+msgid ""
+"Want the music to stop at the end of your program? Add this block to the "
+"last script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/record-sounds.html:11
+#, python-format
+msgid ""
+"To record a sound, click <img src=\"%(STATIC_URL)s/images/help/sounds-tab.png"
+"\"></br>\n"
+"and the microphone <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png"
+"\">. Then, click the record button:\n"
+"</br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/record-sound-button.png\">\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/record-sounds.html:19
+#, python-format
+msgid ""
+"  \n"
+" Type in a name of your sound:</br>\n"
+" <img src=\"%(STATIC_URL)s/images/help/sound-title.png\"><p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/record-sounds.html:26
+#, python-format
+msgid ""
+"  \n"
+"Then, click <img src=\"%(STATIC_URL)s/images/help/scripts-tab.png\"> and use "
+"this block:</br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"></"
+"br>\n"
+"Choose the sound name from the drop-down menu.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/switch-backdrop.html:9
+msgid "You can change backdrops using "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/switch-backdrop.html:12
+msgid "Here's an example:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/switch-backdrop.html:18
+#, python-format
+msgid ""
+"First, choose the backdrops you want <img src=\"%(STATIC_URL)s/images/help/"
+"choose-backdrop-icon.png\">. \n"
+"Then, select each backdrop name from the drop-down menu: "
+msgstr ""
+
+# 80%
+#: templates/info/help/studio/tips/howto/talking-sprite.html:7
+#, fuzzy
+msgid "Make your sprite talk"
+msgstr "スプライトに話させる"
+
+#: templates/info/help/studio/tips/howto/talking-sprite.html:13
+msgid "Pick a sprite with costumes showing an open and closed mouth, such as:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/talking-sprite.html:18
+msgid "Try this script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/talking-sprite.html:23
+#, python-format
+msgid ""
+"To add your voice, click <img src=\"%(STATIC_URL)s/images/help/sounds-tab.png"
+"\"></br>\n"
+"and the microphone <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png"
+"\"> to record the words.</p>\n"
+"Add this to your script:</br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"></br>\n"
+"just below the green flag block."
+msgstr ""
+
+# 77%
+#: templates/info/help/studio/tips/ui/editor-map.html:5
+#, fuzzy
+msgid "Project Editor Map"
+msgstr "プロジェクトエディター"
+
+#: templates/info/help/studio/tips/ui/editor-map.html:6
+msgid "Here are the main areas in the project editor:"
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/editor-map.html:11
+msgid "Stage Area"
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/editor-map.html:17
+msgid "Cursor Tools"
+msgstr ""
+
+#: templates/notifications/notifications.html:9
+msgid "Messages"
+msgstr ""
+
+#: templates/notifications/notifications.html:15
+msgid "All Messages"
+msgstr ""
+
+#: templates/notifications/notifications.html:16
+#: templates/profiles/profile_detail.html:338 templates/projects/base.html:255
+#: templates/studio/includes/sort-galleries-dropdown.html:26
+msgid "Comments"
+msgstr "コメント"
+
+#: templates/notifications/notifications.html:22
+msgid "Alerts"
+msgstr ""
+
+#: templates/notifications/notifications.html:31
+#: templates/notifications/notifications.html:70
+msgid "Older messages"
+msgstr ""
+
+#: templates/notifications/notifications.html:35
+#: templates/notifications/notifications.html:74
+msgid "Newer messages"
+msgstr ""
+
+#: templates/notifications/notifications.html:42
+msgid "Admin notifications"
+msgstr ""
 
 #: templates/notifications/includes/friend-feed.html:12
 msgid "shared the project"
@@ -2855,7 +3887,7 @@ msgstr "スタジオに"
 
 #: templates/notifications/includes/friend-feed.html:42
 #: templates/notifications/includes/friend-feed.html:56
-#: templates/notifications/includes/user-feed.html:37
+#: templates/notifications/includes/user-feed.html:47
 msgid "is now following"
 msgstr "フォローしている"
 
@@ -2869,148 +3901,189 @@ msgstr ""
 "\t<a href=\"%(remixSourceUrl)s\">%(displayName)s</a> をリミックスされた"
 
 #: templates/notifications/includes/friend-feed.html:87
-#: templates/notifications/includes/user-feed.html:74
-#: templates/notifications/includes/user-feed.html:85
+#: templates/notifications/includes/user-feed.html:84
+#: templates/notifications/includes/user-feed.html:95
 msgid "favorited"
 msgstr "お気に入り"
 
 #: templates/notifications/includes/friend-feed.html:101
-#: templates/notifications/includes/user-feed.html:97
+#: templates/notifications/includes/user-feed.html:107
 msgid "loved"
 msgstr "好き"
 
+#: templates/notifications/includes/notification_list.html:11
+msgid "Sent Today"
+msgstr ""
+
+#: templates/notifications/includes/notification_list.html:14
+msgid "Sent"
+msgstr ""
+
 #: templates/notifications/includes/user-feed.html:12
+msgid "joined the Scratch community"
+msgstr ""
+
+#: templates/notifications/includes/user-feed.html:22
 msgid "shared the project "
 msgstr "共有されたプロジェクト"
 
-#: templates/notifications/includes/user-feed.html:48
+#: templates/notifications/includes/user-feed.html:58
 msgid "is now following the gallery"
 msgstr "ギャラリーをフォローしている"
 
-#: templates/profiles/profile_detail.html:55
-#: templates/scratch_admin/admin_profile_view.html:42
-#, python-format
-msgid "Joined %(tDate)s ago / "
+# 75%
+#: templates/profiles/profile_detail.html:59
+msgid "Scratch Team"
+msgstr "Scratchチーム"
+
+# 77%
+#: templates/profiles/profile_detail.html:59
+#, fuzzy
+msgid "Scratcher"
+msgstr "Scratch"
+
+#: templates/profiles/profile_detail.html:59
+msgid "New Scratcher"
+msgstr ""
+
+# 81%
+#: templates/profiles/profile_detail.html:61
+#, fuzzy, python-format
+msgid ""
+"Joined %(tDate)s ago\n"
+"      "
 msgstr "%(tDate)s 日前に参加 / "
 
-#: templates/profiles/profile_detail.html:73
+#: templates/profiles/profile_detail.html:80
 msgid "About me"
 msgstr "私について"
 
-#: templates/profiles/profile_detail.html:77
+#: templates/profiles/profile_detail.html:84
 msgid "Add a bit about yourself"
 msgstr "簡単に自己紹介してください。"
 
-#: templates/profiles/profile_detail.html:78
-#: templates/profiles/profile_detail.html:105
+#: templates/profiles/profile_detail.html:85
+#: templates/profiles/profile_detail.html:112
 msgid "<span id=\\"
 msgstr "<span id=\\"
 
-#: templates/profiles/profile_detail.html:100
+#: templates/profiles/profile_detail.html:107
 msgid "What I'm working on"
 msgstr "私が取り組んでいること"
 
-#: templates/profiles/profile_detail.html:104
+#: templates/profiles/profile_detail.html:111
 msgid "Describe what you're working on"
 msgstr "あなたが取り組んでいることを説明してください。"
 
-#: templates/profiles/profile_detail.html:134
+#: templates/profiles/profile_detail.html:150
 msgid "FEATURED:"
 msgstr "注目の作品:"
 
-#: templates/profiles/profile_detail.html:139
+#: templates/profiles/profile_detail.html:155
 msgid "Change featured project"
 msgstr "注目のプロジェクトを変更する"
 
-#: templates/profiles/profile_detail.html:144
+#: templates/profiles/profile_detail.html:160
 msgid "What I've been doing"
 msgstr "私が行ったこと"
 
-#: templates/profiles/profile_detail.html:153
+#: templates/profiles/profile_detail.html:169
 msgid "Report this user"
 msgstr "このユーザーを報告"
 
-#: templates/profiles/profile_detail.html:161
+#: templates/profiles/profile_detail.html:179
+#: templates/profiles/includes/shared_projects_list.html:4
 msgid "Shared Projects"
 msgstr "共有したプロジェクト"
 
-#: templates/profiles/profile_detail.html:163
+#: templates/profiles/profile_detail.html:213
 msgid "Favorite Projects"
 msgstr "お気に入りのプロジェクト"
 
-#: templates/profiles/profile_detail.html:174
+#: templates/profiles/profile_detail.html:248
 msgid "Studios I'm Following"
 msgstr "私がフォローしているスタジオ"
 
-#: templates/profiles/profile_detail.html:189
+#: templates/profiles/profile_detail.html:266
+#: templates/profiles/includes/studios_list.html:4
 msgid "Studios I Curate"
 msgstr "私がキュレーションしたスタジオ"
 
-#: templates/profiles/profile_detail.html:206
+#: templates/profiles/profile_detail.html:282
+#: templates/profiles/includes/following_list.html:4
 msgid "Following"
 msgstr "フォロー"
 
-#: templates/profiles/profile_detail.html:224
+#: templates/profiles/profile_detail.html:317
+#: templates/profiles/includes/followers_list.html:4
 msgid "Followers"
 msgstr "フォロワー"
 
-#: templates/profiles/profile_detail.html:244 templates/projects/base.html:208
-#: templates/studio/includes/sort-galleries-dropdown.html:26
-msgid "Comments"
-msgstr "コメント"
+#: templates/profiles/includes/favorite_projects_list.html:4
+#: templates/projects/project_list.html:35
+msgid "Favorites"
+msgstr "お気に入り"
 
-#: templates/projects/base.html:4
+# 76%
+#: templates/profiles/includes/studios_following_list.html:4
+#, fuzzy
+msgid "Studios I Follow"
+msgstr "私がフォローしているスタジオ"
+
+#: templates/projects/base.html:5
 msgid "on Scratch"
 msgstr "Scratchで作成"
 
-#: templates/projects/base.html:79
+#: templates/projects/base.html:81
 msgid "remixed"
 msgstr "リミックス"
 
-#: templates/projects/base.html:86
+#: templates/projects/base.html:88
 msgid "scripts"
 msgstr "スクリプト"
 
-#: templates/projects/base.html:87
+#: templates/projects/base.html:89
 msgid "sprites"
 msgstr "スプライト"
 
-#: templates/projects/base.html:91 templates/studio/studio.html:96
+#: templates/projects/base.html:93 templates/studio/studio.html:96
 #: templates/studio/studio.html.py:133 templates/studio/studio.html:154
 msgid "See inside"
 msgstr "中を見る"
 
-#: templates/projects/base.html:127
+#: templates/projects/base.html:129
 msgid "Based on:"
 msgstr "以下に基づいている:"
 
-#: templates/projects/base.html:137
+#: templates/projects/base.html:141
 msgid "Original project:"
 msgstr "オリジナルのプロジェクト:"
 
-#: templates/projects/base.html:152
+#: templates/projects/base.html:157
 msgid "not shared"
 msgstr "共有されていないもの"
 
-#: templates/projects/base.html:165
+#: templates/projects/base.html:170
 msgid "Favorite this project"
 msgstr "このプロジェクトをお気に入りにする"
 
-#: templates/projects/base.html:172
+#: templates/projects/base.html:177
 msgid "Love this project"
 msgstr "このプロジェクトが好き"
 
-#: templates/projects/base.html:181
+#: templates/projects/base.html:186
 msgid "Total views"
 msgstr "全参照数"
 
-#: templates/projects/base.html:185
-msgid "Total remixes"
-msgstr "全リミックス"
+#: templates/projects/base.html:190
+msgid "View the remix tree"
+msgstr ""
 
-#: templates/projects/base.html:233
-msgid "views"
-msgstr "ビュー"
+# 85%
+#: templates/projects/base.html:285
+#, fuzzy
+msgid "remixes"
+msgstr "リミックス"
 
 #: templates/projects/project_list.html:10
 msgid "Newest Projects"
@@ -3027,9 +4100,14 @@ msgstr "次の人が選んだプロジェクト:"
 msgid "What the Community is"
 msgstr "コミュニティが好きなもの"
 
-#: templates/projects/project_list.html:35
-msgid "Favorites"
-msgstr "お気に入り"
+#: templates/projects/remixtree.html:4 templates/projects/remixtree.html:68
+#, python-format
+msgid "Remix tree for \"%(projectTitle)s\""
+msgstr ""
+
+#: templates/projects/remixtree.html:70
+msgid "Remix tree"
+msgstr ""
 
 #: templates/projects/shared-other.html:20
 #: templates/projects/includes/owner/editable-wip.html:4
@@ -3065,9 +4143,7 @@ msgstr "プロジェクトは共有されています。"
 msgid ""
 "Congratulations on sharing your project! Other people can now try it out, "
 "give comments, and remix it."
-msgstr ""
-"おめでとうございます！プロジェクトが共有されました。誰でも試したり、コメント"
-"したり、リミックスできるようになりました。"
+msgstr "おめでとうございます！プロジェクトが共有されました。誰でも試したり、コメントしたり、リミックスできるようになりました。"
 
 #: templates/projects/unshared-other.html:8
 msgid "Sorry this project is not shared"
@@ -3077,9 +4153,7 @@ msgstr "このプロジェクトは共有されていません。"
 msgid ""
 "This project is not shared -- so only you can see it. Click share to let "
 "everyone see it!"
-msgstr ""
-"このプロジェクトは共有されていません。あなただけが見ることができます。共有を"
-"クリックして誰でも見れるようにしましょう。"
+msgstr "このプロジェクトは共有されていません。あなただけが見ることができます。共有をクリックして誰でも見れるようにしましょう。"
 
 # 83%
 #: templates/projects/unshared-owner.html:21 templates/studio/studio.html:137
@@ -3129,17 +4203,13 @@ msgstr "プロジェクトの使い方を説明しましょう。</br>(どのキ
 msgid ""
 "What did you change or add in this remix?  Say thanks to the Scratchers "
 "whose projects you remixed."
-msgstr ""
-"このリミックスで何を加えたり変えたりしましたか?元のプロジェクトを作った"
-"Scratcherにお礼を言いましょう。"
+msgstr "このリミックスで何を加えたり変えたりしましたか?元のプロジェクトを作ったScratcherにお礼を言いましょう。"
 
 #: templates/projects/includes/owner/editable-notes.html:9
 msgid ""
 "How did you make the project?</br>Did you use ideas, scripts, or artwork "
 "from other people? Thank them here."
-msgstr ""
-"どうやってプロジェクトを作りましたか?</br>他の人のアイデアやスクリプト、アー"
-"トワークを使っていたら、ここで皆にお礼を言いましょう。"
+msgstr "どうやってプロジェクトを作りましたか?</br>他の人のアイデアやスクリプト、アートワークを使っていたら、ここで皆にお礼を言いましょう。"
 
 #: templates/projects/includes/shared/shared-project-actions.html:3
 msgid "Share project on other websites"
@@ -3170,6 +4240,10 @@ msgstr "これを報告"
 msgid "View Cloud Data activity for this project."
 msgstr "このプロジェクトのクラウドデータを見る。"
 
+#: templates/registration/login.html:29
+msgid "Login"
+msgstr "ログイン"
+
 #: templates/registration/login.html:30
 msgid "Forgot username or password?"
 msgstr "ユーザー名やパスワードを忘れましたか?"
@@ -3182,10 +4256,6 @@ msgstr "パスワードリセットの確認"
 #: templates/registration/password_reset_confirm.html:21
 msgid "New Password"
 msgstr "新しいパスワード"
-
-#: templates/registration/password_reset_confirm.html:26
-msgid "Confirm Password"
-msgstr "新しいパスワード(確認用)"
 
 #: templates/registration/password_reset_confirm.html:30
 msgid "Change my password"
@@ -3211,6 +4281,11 @@ msgstr "登録しているメールアドレスを入力してください。"
 msgid "Send me a password reset link!"
 msgstr "パスワードリセットのためのメールを送る!"
 
+#: templates/scratch_admin/admin_profile_view.html:43
+#, python-format
+msgid "Joined %(tDate)s ago / "
+msgstr "%(tDate)s 日前に参加 / "
+
 #: templates/search/search.html:4
 msgid "Search - Scratch"
 msgstr "検索する - Scratch"
@@ -3219,33 +4294,26 @@ msgstr "検索する - Scratch"
 #, python-format
 msgid ""
 "All Projects (<span data-content=\"project-count\">%(projects_count)s</span>)"
-msgstr ""
-"全プロジェクト (<span data-content=\"プロジェクト数\">%(projects_count)s</"
-"span>)"
+msgstr "全プロジェクト (<span data-content=\"プロジェクト数\">%(projects_count)s</span>)"
 
 #: templates/studio/studio.html:7
 #, python-format
 msgid ""
 "Shared Projects (<span data-content=\"shared-count\">%(shared_count)s</span>)"
-msgstr ""
-"共有されたプロジェクト (<span data-content=\"共有数\">%(shared_count)s</"
-"span>)"
+msgstr "共有されたプロジェクト (<span data-content=\"共有数\">%(shared_count)s</span>)"
 
 #: templates/studio/studio.html:8
 #, python-format
 msgid ""
 "Unshared Projects (<span data-content=\"unshared-count\">"
 "%(notshared_count)s</span>)"
-msgstr ""
-"共有されていないプロジェクト (<span data-content=\"非共有数\">"
-"%(notshared_count)s</span>)"
+msgstr "共有されていないプロジェクト (<span data-content=\"非共有数\">%(notshared_count)s</span>)"
 
 #: templates/studio/studio.html:9
 #, python-format
 msgid ""
 "My Studios (<span data-content=\"gallery-count\">%(gallery_count)s</span>)"
-msgstr ""
-"私のスタジオ (<span data-content=\"ギャラリー数\">%(gallery_count)s</span>)"
+msgstr "私のスタジオ (<span data-content=\"ギャラリー数\">%(gallery_count)s</span>)"
 
 #: templates/studio/studio.html:10
 #, python-format
@@ -3325,13 +4393,379 @@ msgstr "私が所有している"
 msgid "Curated by me"
 msgstr "私が管理している"
 
-# 75%
-#, fuzzy
-#~ msgid "Scratch Help"
-#~ msgstr "Scratchニュース"
+#~ msgid "Log out"
+#~ msgstr "ログアウト"
 
-#~ msgid "Sign out"
-#~ msgstr "サインアウト"
+#~ msgid "You have <span id=\\\"chars-left\\\">500</span> characters left."
+#~ msgstr "残り、あと <span id=\\\"chars-left\\\">500</span> 文字。"
+
+#~ msgid "Studio description"
+#~ msgstr "スタジオの説明"
+
+#~ msgid "Read more &raquo;"
+#~ msgstr "もっと読む &raquo;"
+
+#~ msgid "More info"
+#~ msgstr "詳細情報"
+
+#~ msgid "Add curators"
+#~ msgstr "管理人を追加"
+
+#~ msgid "Add curators by username or drag from the explore bar below!"
+#~ msgstr "ユーザー名か下の一覧からドラッグして、管理人を追加"
+
+#~ msgid "Curators"
+#~ msgstr "管理人"
+
+#~ msgid "There are no curators for this gallery"
+#~ msgstr "このギャラリーには管理人がいません"
+
+#~ msgid "Drag projects from the explore bar below!"
+#~ msgstr "下の一覧から作品をドラッグ"
+
+#~ msgid "A creative learning community with"
+#~ msgstr "クリエイティブな学習コミュニティー"
+
+#~ msgid ""
+#~ "Scratch is a programming language and online community where you can create "
+#~ "your own interactive stories, games, and animations -- and share your "
+#~ "creations with others around the world."
+#~ msgstr ""
+#~ "Scratchはプログラミング言語であり、自分自身のインタラクティブな物語や、ゲー"
+#~ "ム、アニメーションなどを創造できるオンラインコミュニティです。そしてそれらの"
+#~ "作品は、世界中の人々と共有することができます。"
+
+#~ msgid ""
+#~ "In the process of designing and programming Scratch projects, young people "
+#~ "learn to think creatively, reason systematically, and work collaboratively."
+#~ msgstr ""
+#~ "Scratch作品のデザイン、プログラミングの制作プロセスで、若者は、創造的思考、体"
+#~ "系的論理、共同作業などを学習します。"
+
+#~ msgid "Who is Scratch for?"
+#~ msgstr "Scratchは誰のためのもの？"
+
+#~ msgid "Scratch is for ages 8 and up!"
+#~ msgstr "Scratchは8歳以上向けです！"
+
+#~ msgid ""
+#~ "Scratch is developed by the Lifelong Kindergarten Group at the MIT Media "
+#~ "Lab, with financial support from the National Science Foundation, Microsoft, "
+#~ "Intel Foundation, MacArthur Foundation, Google, Iomega and MIT Media Lab "
+#~ "research consortia.Read Papers and presentations about Scratch. See the <a "
+#~ "href=\"#\">Credits page</a> for a list of people who worked together to "
+#~ "create Scratch."
+#~ msgstr ""
+#~ "Scratchは「National Science Foundation」、 「Microsoft」、「Intel "
+#~ "Foundation」、「MacArthur Foundation」、「Google」、「Iomega and 」、「MIT "
+#~ "Media Lab research consortia」の資金協力を得て、「MIT Media Lab」の"
+#~ "「Lifelong Kindergarten Group」によって開発されています。スクラッチに関する文"
+#~ "書、プレゼンテーションをご覧下さい。<a href=\"#\">クレジットのページ</a>では"
+#~ "Scratch をつくることに協力した人々の一覧を見ることができます。"
+
+#~ msgid "Support Scratch"
+#~ msgstr "Scratchを支援する"
+
+#~ msgid ""
+#~ "We are pleased to provide Scratch free of charge. If you enjoy using "
+#~ "Scratch, please consider making a donation to support Scratch. Donations of "
+#~ "any size are appreciated."
+#~ msgstr ""
+#~ "私たちは、Scratchを無償で提供できることを嬉しく思います。もしScratchをお楽し"
+#~ "みいただけたら、Scratchの支援のためのご寄付をご検討ください。どのような規模の"
+#~ "寄付でも歓迎いたします。"
+
+#~ msgid ""
+#~ "Your donation goes into our ScratchLabs fund, used to support future "
+#~ "development of Scratch software and the Scratch website. On the <a href=\"#"
+#~ "\">donation form</a>, just fill in the amount of your donation and select "
+#~ "\"New gift\" in the pull-down menu for the gift type. Thanks for supporting "
+#~ "Scratch!"
+#~ msgstr ""
+#~ "あなたの寄付は「ScratchLabs 基金」となり、将来のScratchソフトウェアやScratch"
+#~ "のウェブサイトの開発を支えます。<a href=\"#\">寄付申請のフォーム</a>から金額"
+#~ "を入力して「新規の寄付」を寄付の種類のプルダウンメニューから選んでください。"
+#~ "Scratchへのご支援に感謝します。"
+
+#~ msgid "Frequently Asked Questions"
+#~ msgstr "よくある質問（FAQ）"
+
+#~ msgid "Scratch in the News"
+#~ msgstr "Scratchに関するニュース"
+
+#~ msgid "Scratch Events"
+#~ msgstr "Scratchに関するイベント"
+
+#~ msgid "Scratch Products"
+#~ msgstr "Scratchに関する製品"
+
+#~ msgid ""
+#~ "The Scratch project is based upon research supported by the National Science "
+#~ "Foundation under grant number 0325828. Any opinions, findings, and "
+#~ "conclusions or recommendations expressed on this site are those of the "
+#~ "authors and do not necessarily reflect the views of the National Science "
+#~ "Foundation."
+#~ msgstr ""
+#~ "「Scratch project」は「National Science Foundation」の「under grant number "
+#~ "0325828」での承認に基づく研究です。このサイト上での、いかなる発言、調査結果、"
+#~ "結論または勧告などは著者自らのもので、必ずしも「National Science Foundation」"
+#~ "の意見を反映したものではありません。"
+
+#~ msgid ""
+#~ "The new paint editor uses <b>vector graphics</b> so that images can scale to "
+#~ "different sizes without getting jagged."
+#~ msgstr ""
+#~ "新しいペイントエディターは<b>ベクター画像</b>を使うことで、画像の大きさを変え"
+#~ "てもギザギザしません。"
+
+#~ msgid "Features Planned for 2013"
+#~ msgstr "2013年の間に予定されている機能追加"
+
+#~ msgid ""
+#~ "Download a stand-alone version of the Scratch project editor to use off-line"
+#~ msgstr ""
+#~ "オフラインでも使えるスタンドアローン版のScratch プロジェクトエディタがダウン"
+#~ "ロードできるようになります。"
+
+#~ msgid ""
+#~ "Store “persistent data” in the cloud to create online surveys, high-score "
+#~ "lists, and more"
+#~ msgstr ""
+#~ "オンラインアンケートや、ハイスコアリストなどに使える、\"永続的なデータ\"をク"
+#~ "ラウドに保存できるようになります。"
+
+#~ msgid "Export your Scratch projects as YouTube videos or SWF files"
+#~ msgstr ""
+#~ "スクラッチの作品をYouTubeや、Flash(SWFファイル)に書き出せるようになります。"
+
+#~ msgid "Create side-scrolling games, stories, and tours with scrolling blocks"
+#~ msgstr ""
+#~ "横スクロールのゲームや物語をスクロールブロックで作る事ができるようになりま"
+#~ "す。"
+
+#~ msgid ""
+#~ "Connect to external devices, web services, and outside databases with new "
+#~ "Scratch extensions (including LEGO WeDo and the ScratchBoard)"
+#~ msgstr ""
+#~ "外部デバイス（LEGO WeDo と Scratchボードを含む）、Webサービス、外部データベー"
+#~ "スに新しいScratch拡張機能で接続できるようになります。"
+
+#~ msgid ""
+#~ "Select from a wider range of sprites and images in a community-curated "
+#~ "sprite collection"
+#~ msgstr ""
+#~ "コミュニティー・キュレーテッド・スプライト・コレクションでよりたくさんのスプ"
+#~ "ライトや画像を選べるようになります。"
+
+#~ msgid ""
+#~ "Scratch is a programming language and an online community where children can "
+#~ "program and share interactive media such as stories, games, and animation "
+#~ "with people from all over the world. Scratch is designed and maintained by "
+#~ "the Lifelong Kindergarten group at the MIT Media Lab. As children create "
+#~ "with Scratch, they learn to think creatively, work collaboratively, and "
+#~ "reason systematically."
+#~ msgstr ""
+#~ "Scratchはプログラミング言語であるとともに、子供たちがプログラミングをして、世"
+#~ "界中の人々と物語やゲームインタラクティブな作品を共有できるオンラインコミュニ"
+#~ "ティです。Scratchは「MIT Media Lab」にある「Lifelong Kindergarten group」に"
+#~ "よって、企画運営されています。子供たちはScratchで創造する事によって、創造的思"
+#~ "考、共同作業、体系的判断力を学習します。"
+
+#~ msgid ""
+#~ "If you’re just getting started, there’s a step-by-step guide available "
+#~ "inside Scratch, or you can download the Getting Started guide (PDF). The "
+#~ "Scratch Cards provide a fun way to learn more. For an overview of Scratch "
+#~ "resources, see Scratch Help."
+#~ msgstr ""
+#~ "もし始めたばかりならば、Scratchに含まれる「ステップバイステップガイド」もしく"
+#~ "は「始め方ガイド(PDF)」をダウンロードできます。Scratchカードはより楽しく学習"
+#~ "できるでしょう。Scratchの概要をご覧頂くには 「Scratchヘルプ」をご覧下さい。"
+
+#~ msgid ""
+#~ "The MIT Scratch Team works with the community to maintain a friendly and "
+#~ "respectful environment. For example, members are asked to be constructive "
+#~ "when giving comments and help keep the website friendly by reporting any "
+#~ "inappropriate content. You can help your child learn how to participate by "
+#~ "reviewing the community guidelines together."
+#~ msgstr ""
+#~ "「MIT Scratch Team」はScratchオンライン・コミュニティを親しみやすくお互いを尊"
+#~ "重できる場所として参加者の皆さんとメンテナンスしています。例え参加者はコメン"
+#~ "トをするときに建設的な意見か問われますし、不適切なコンテンツを報告する事で、"
+#~ "ウェブサイトの安全維持に協力できます。そのようにガイドラインを一緒に見直すこ"
+#~ "とで、子供たちを参加させ、学習するための手助けができます。"
+
+#~ msgid ""
+#~ "\"My two children were immediately hooked. Scratch allows kids to program by "
+#~ "'stacking' commands like LEGO blocks. Instead of reactively playing video "
+#~ "games -- now they can create them! The boys learned about random number "
+#~ "generators and they learned about XY axes. If I sat them down to go over "
+#~ "these concepts, there would have been eye-rolling and moaning. But if it "
+#~ "helps them make their game work better -- it takes a minute to explain and "
+#~ "off they go using their newly-learned concepts.\""
+#~ msgstr ""
+#~ "「私の二人の子供はすぐに夢中になりました。Scratchは子供でもレゴブロックのよう"
+#~ "に簡単にプログラムを\"組み立てる\"ことができ、ゲームをするどころか、今や自分"
+#~ "たちでゲームを作っています。子供たちは乱数生成機、X,Y座標を学んだ。それらを机"
+#~ "で勉強した場合、目を回して音を上げるでしょう。しかしそれらは彼らのゲームをよ"
+#~ "り良くするので、短時間でそのコンセプトを学び活用していきます。」"
+
+#~ msgid ""
+#~ "\"I was looking for something for my 8 year-old to start programming with "
+#~ "and this is just perfect.\""
+#~ msgstr ""
+#~ "「私は８歳の子供がプログラミングを始める方法を探していたが、これは完璧なもの"
+#~ "だった。」"
+
+#~ msgid ""
+#~ "To run Scratch 2.0, you need a relatively recent web browser (<a href="
+#~ "\"http://google.com/chrome/\">Chrome</a> 7 or later, <a href=\"http://www."
+#~ "mozilla.org/en-US/firefox/new/\">Firefox</a> 4 or later, or Internet "
+#~ "Explorer 7 or later) with <a href=\"\">Adobe Flash Player</a> version 10.2 "
+#~ "or later installed. Scratch 2.0 is designed to support screen sizes 1024 x "
+#~ "768 or larger. If your computer doesn’t meet these requirements, you can try "
+#~ "<a href=\"http://info.scratch.mit.edu/Scratch_1.4_Download\">downloading</a> "
+#~ "and installing Scratch 1.4, which you can still use to share projects to the "
+#~ "Scratch 2.0 website."
+#~ msgstr ""
+#~ "Scratch 2.0を使うには、できるだけ新しいブラウザ(<a href=\"http://google.com/"
+#~ "chrome/\">Chrome</a> 7またはそれ以降、<a href=\"http://www.mozilla.org/en-US/"
+#~ "firefox/new/\">Firefox</a> 4またはそれ以降、あるいはInternet Explorer 7かそれ"
+#~ "以降) に加えて、 <a href=\"\">Adobe Flash Player</a> version 10.2 またはそれ"
+#~ "以降がインストールされている必要があります。Scratch 2.0は、1024 x 768以上の画"
+#~ "面解像度に対応するよう作られています。これらの動作条件を満たさない場合、"
+#~ "Scratch 1.4を <a href=\"http://info.scratch.mit.edu/Scratch_1.4_Download\">ダ"
+#~ "ウンロード</a> してインストールすれば、Scratch 2.0のウェブサイトでプロジェク"
+#~ "トを共有することができます。"
+
+#~ msgid ""
+#~ "Yes - you can upload projects made with earlier versions of Scratch, and "
+#~ "they will be visible / playable. However, you can’t download projects made "
+#~ "with or edited in later versions of Scratch and open them in earlier "
+#~ "versions. For example, you can’t open a Scratch 2.0 project in Scratch 1.4, "
+#~ "because Scratch 1.4 doesn’t know how to read the .sb2 project file format."
+#~ msgstr ""
+#~ "はい。Scratchの以前のバージョンで作られたプロジェクトを公開できますし、参照し"
+#~ "たり／遊んだりできます。でも、Scratchの後のバージョンで作られたり編集されたり"
+#~ "したプロジェクトをダウンロードしても、以前のバージョンのScratchで開くことはで"
+#~ "きません。例えば、Scratch 1.4は.sb2プロジェクトファイルを読み込む方法を知らな"
+#~ "いので、Scratch 2.0で作られたプロジェクトをScratch 1.4で開くことはできませ"
+#~ "ん。"
+
+#~ msgid ""
+#~ "Some of the information and data collected on the Scratch website are used "
+#~ "in research studies intended to improve our understanding of how people "
+#~ "learn with Scratch. The results of this research are shared with educators "
+#~ "and researchers through conferences, journals, and other publications. You "
+#~ "can find out more on our Research page."
+#~ msgstr ""
+#~ "Scratchウェブサイトで集められた情報のいくつかは、Scratchを用いて人々がどのよ"
+#~ "うに学ぶかということに関する理解を改善しようとする研究で用いられます。研究の"
+#~ "成果はカンファレンスや雑誌、その他の刊行物を通じて、教育者や研究者で共有され"
+#~ "ます。研究ページにはより多くの情報があります。"
+
+#~ msgid ""
+#~ "The structure of the Scratch website depends on having a consistent account "
+#~ "name, so it’s not possible to change your username. If you really need to, "
+#~ "you can make a new account - but you'll have copy your projects over on your "
+#~ "own."
+#~ msgstr ""
+#~ "Scratchウェブサイトの構造はユーザー名の一貫性に依存しているため、ユーザー名を"
+#~ "変更することはできません。本当に変更を望んでいるなら新しいアカウントを作るこ"
+#~ "とができますが、元のプロジェクトを新しいアカウントにコピーすることはできませ"
+#~ "ん。"
+
+#~ msgid ""
+#~ "The source code for Scratch 2.0 (website and editor) is not yet available. "
+#~ "The source code for Scratch 1.4, written in Squeak, is available <a href="
+#~ "\"https://github.com/LLK/Scratch_1.4\">on github</a>. The source code for "
+#~ "the first version of the Scratch website - ScratchR - is available <a href="
+#~ "\"http://svn.assembla.com/svn/scratchr/\">on Assembla</a>."
+#~ msgstr ""
+#~ "Scratch 2.0(ウェブサイトやエディター)のソースコードはまだ利用できません。"
+#~ "Squeakで書かれたScratch 1.4のソースコードは、<a href=\"https://github.com/"
+#~ "LLK/Scratch_1.4\">github上で</a>利用可能です。最初のScratchウェブサイト"
+#~ "(ScratchR)のソースコードは、<a href=\"http://svn.assembla.com/svn/scratchr/"
+#~ "\">Assembla上</a>で利用可能です。"
+
+#~ msgid ""
+#~ "The current beta site is limited to numbers in variables as an initial step "
+#~ "to work out any issues with their use on the site. We plan to roll out cloud "
+#~ "data features incrementally. If the infrastructure is working well, we plan "
+#~ "to add other features (cloud lists, support for strings, etc.)."
+#~ msgstr ""
+#~ "現在のベータ版サイトでは、サイト上でのクラウドデータの使用による問題を解決す"
+#~ "るために、初期段階として変数内の数値のみに制限しています。私たちは徐々にクラ"
+#~ "ウドデータ機能を展開していく予定です。クラウドデータの基盤がうまく動くように"
+#~ "なれば、他の機能(クラウドリストや文字列のサポート等)も加える予定です。"
+
+#~ msgid "Search This Page"
+#~ msgstr "このページを検索する。"
+
+#~ msgid "\"Type a topic\""
+#~ msgstr "「調べたいことを入力してください」"
+
+#~ msgid ""
+#~ "or try searching the <a href=\"/forums\">discussion forums</a> or the <a "
+#~ "href=\"http://wiki.scratch.mit.edu\">Scratch wiki</a>"
+#~ msgstr ""
+#~ "または<a href=\"/forums\">ディスカッションフォーラム</a>や<a href=\"http://"
+#~ "wiki.scratch.mit.edu\">Scratch wiki</a>を調べてみましょう。"
+
+#~ msgid ""
+#~ "<a href=\"/accounts/login/\">Login</a> or <a href=\"#\">Join Scratch</a>."
+#~ msgstr ""
+#~ "<a href=\"/accounts/login/\">ログイン</a> または <a href=\"#\">Scratchに参加"
+#~ "する</a>。"
+
+#~ msgid "How do I use the new blocks?"
+#~ msgstr "どのように新しいブロックを使いますか?"
+
+#~ msgid ""
+#~ "<a href=\"http://scratch.mit.edu/forums/viewforum.php?id=31\">Introduce</a> "
+#~ "yourself in the Scratch forums"
+#~ msgstr ""
+#~ "Scratchフォーラムで<a href=\"http://scratch.mit.edu/forums/viewforum.php?"
+#~ "id=31\">自己紹介する</a>。"
+
+#~ msgid "Scratch and the Physical World"
+#~ msgstr "Scratchと実世界"
+
+#~ msgid ""
+#~ "Connect your Scratch projects to the physical world with MaKey MaKey, LEGO "
+#~ "WeDo, or ScratchBoard."
+#~ msgstr ""
+#~ "Makey MakeyやLEGO WeDo、ScratchBoardを使って、Scratchプロジェクトと実世界をつ"
+#~ "なげてみよう。"
+
+#~ msgid "Scratch Media"
+#~ msgstr "Scratchメディア"
+
+#~ msgid "Scratch Store"
+#~ msgstr "Scratchストア"
+
+#~ msgid "Find books and other materials about Scratch."
+#~ msgstr "Scratchに関する本や教材などを探せます。"
+
+#~ msgid "Paint Editor Tips"
+#~ msgstr "ペイントエディタのヒント"
+
+#~ msgid "Motions"
+#~ msgstr "動き"
+
+#~ msgid "1 of 10"
+#~ msgstr "10ステップ中の1"
+
+#~ msgid "2 of 10"
+#~ msgstr "10ステップ中の2"
+
+#~ msgid "3 of 13"
+#~ msgstr "13ステップ中の3"
+
+#~ msgid "Total remixes"
+#~ msgstr "全リミックス"
+
+#~ msgid "views"
+#~ msgstr "ビュー"
 
 #~ msgid "Contact us"
 #~ msgstr "連絡先"
