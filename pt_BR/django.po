@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-09 16:09+0000\n"
-"PO-Revision-Date: 2013-05-05 17:09+0200\n"
+"PO-Revision-Date: 2013-05-15 19:28+0200\n"
 "Last-Translator: ehermann <everton.hermann@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -25,6 +25,7 @@ msgstr "As senhas não correspondem."
 msgid "Your password must be at least 6 characters long."
 msgstr "Senha deve ter pelo menos 6 caracteres."
 
+# the password is tested against the word "password" and not "senha"
 #: authentication/forms.py:16 authentication/forms.py:37
 msgid "Your password cannot be 'password'."
 msgstr "A senha não pode ser 'password'"
@@ -60,8 +61,8 @@ msgstr[1] "dias"
 #, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
-msgstr[0] "%(minutes)d atrás"
-msgstr[1] ""
+msgstr[0] "1 minuto atrás"
+msgstr[1] "%(minutes)d minutos atrás"
 
 #: base_comments/templatetags/scratch_text_filters.py:113
 msgid "just now"
@@ -119,7 +120,7 @@ msgstr "páginas estáticas"
 
 #: projects/views.py:410
 msgid "This tag has too many projects to load"
-msgstr ""
+msgstr "Esta tag tem muitos projetos para carregar"
 
 #: templates/404.html:11
 msgid "404. Oh noes! Our server is Scratch'ing its head"
@@ -209,9 +210,8 @@ msgstr "Sair"
 
 # 83%
 #: templates/base.html:122 templates/modal-registration.html:7
-#, fuzzy
 msgid "Join Scratch"
-msgstr "no Scratch"
+msgstr "Cadastre-se"
 
 #: templates/base.html:125 templates/base.html.py:136
 #: templates/modal-login.html:10 templates/modal-login.html.py:34
@@ -264,20 +264,20 @@ msgstr "O Scratch é um projeto do Grupo Lifelong Kindergarten do MIT Media Lab"
 
 #: templates/coming-soon.html:6
 msgid "Coming Soon-  Scratch"
-msgstr ""
+msgstr "Em breve- Scratch"
 
 #: templates/coming-soon.html:12
 msgid "Coming Very Soon..."
-msgstr ""
+msgstr "Em breve..."
 
 #: templates/contact-us.html:12 templates/accounts/banned-response.html:12
 #: templates/info/scratch_1.4.html:12
 msgid "Account Blocked"
-msgstr ""
+msgstr "Conta Bloqueada"
 
 #: templates/contact-us.html:58 templates/accounts/banned-response.html:81
 msgid "Send"
-msgstr ""
+msgstr "Enviar"
 
 #: templates/list_all.html:28 templates/galleries/gallery_list.html:8
 #: templates/projects/project_list.html:43
@@ -320,23 +320,23 @@ msgstr "Mais remixados"
 
 #: templates/modal-registration.html:11
 msgid "It's easy (and free!) to sign up for a Scratch account."
-msgstr ""
+msgstr "É fácil (e grátis!) cadastrar-se no Scratch."
 
 #: templates/modal-registration.html:19
 msgid "Choose a Scratch Username"
-msgstr ""
+msgstr "Escolha um nome de usuário Scratch"
 
 #: templates/modal-registration.html:22
 msgid "Don't use your real name"
-msgstr ""
+msgstr "Não utilize seu nome verdadeiro"
 
 #: templates/modal-registration.html:30
 msgid "Choose a Password"
-msgstr ""
+msgstr "Escolha uma senha"
 
 #: templates/modal-registration.html:33
 msgid "Remember it - don't tell anyone else"
-msgstr ""
+msgstr "Lembre-se - não conte a ninguém"
 
 #: templates/modal-registration.html:41
 #: templates/registration/password_reset_confirm.html:26
@@ -345,19 +345,19 @@ msgstr "Confirmar senha"
 
 #: templates/modal-registration.html:43
 msgid "Retype your password"
-msgstr ""
+msgstr "Redigite sua senha"
 
 #: templates/modal-registration.html:55
 msgid "Your responses to these questions will be kept private."
-msgstr ""
+msgstr "Suas respostas à essas questões serão mantidas em sigilo."
 
 #: templates/modal-registration.html:56
 msgid "Why do we ask for this info"
-msgstr ""
+msgstr "Por que pedimos esta informação"
 
 #: templates/modal-registration.html:58 templates/modal-registration.html:74
 msgid "Birth Month and Year"
-msgstr ""
+msgstr "Mês e Ano de Nascimento"
 
 #: templates/modal-registration.html:60
 msgid ""
@@ -365,12 +365,14 @@ msgid ""
 "Scratch, and to confirm that you are the owner of the account if you contact "
 "us.  Your birth month and year will not be made public."
 msgstr ""
+"Nós usamos esta informação para calcular a média de idade das pessoas que "
+"usam Scratch, e parar confirmar que você é o dono da contat se nos contatar. "
+"Sua data de nascimento não serão mostradas em público."
 
 # 83%
 #: templates/modal-registration.html:62 templates/modal-registration.html:100
-#, fuzzy
 msgid "Gender"
-msgstr "gênero"
+msgstr "Sexo"
 
 #: templates/modal-registration.html:64
 msgid ""
@@ -379,98 +381,103 @@ msgid ""
 "is not visible on your account, and is only used to describe overall "
 "participation."
 msgstr ""
+"Isto ajuda a equipe de design do Scratch a entender quem está usando o "
+"Scratch, e fornece infomações que nos ajudam a expandir a participação. Esta "
+"informação não é visível na sua conta, e é usada apenas para descrever a "
+"participação total."
 
 #: templates/modal-registration.html:68
 msgid ""
 "We use this only in case you need to reset your password.  We won't share it "
 "with anyone."
 msgstr ""
+"Nós usamos isto apenas no caso de precisar resetar sua senha. Nâo "
+"comparatilhamos com ninguém."
 
 #: templates/modal-registration.html:76
 msgid "Month"
-msgstr ""
+msgstr "Mês"
 
 #: templates/modal-registration.html:77
 msgid "January"
-msgstr ""
+msgstr "Janeiro"
 
 #: templates/modal-registration.html:78
 msgid "February"
-msgstr ""
+msgstr "Fevereiro"
 
 #: templates/modal-registration.html:79
 msgid "March"
-msgstr ""
+msgstr "Março"
 
 #: templates/modal-registration.html:80
 msgid "April"
-msgstr ""
+msgstr "Abril"
 
 #: templates/modal-registration.html:81
 msgid "May"
-msgstr ""
+msgstr "Maio"
 
 #: templates/modal-registration.html:82
 msgid "June"
-msgstr ""
+msgstr "Junho"
 
 #: templates/modal-registration.html:83
 msgid "July"
-msgstr ""
+msgstr "Julho"
 
 #: templates/modal-registration.html:84
 msgid "August"
-msgstr ""
+msgstr "Agosto"
 
 #: templates/modal-registration.html:85
 msgid "September"
-msgstr ""
+msgstr "Setembro"
 
 #: templates/modal-registration.html:86
 msgid "October"
-msgstr ""
+msgstr "Outubro"
 
 #: templates/modal-registration.html:87
 msgid "November"
-msgstr ""
+msgstr "Novembro"
 
 #: templates/modal-registration.html:88
 msgid "December"
-msgstr ""
+msgstr "Dezembro"
 
 #: templates/modal-registration.html:91
 msgid "Year"
-msgstr ""
+msgstr "Ano"
 
 #: templates/modal-registration.html:101
 msgid "Male"
-msgstr ""
+msgstr "Masculino"
 
 #: templates/modal-registration.html:102
 msgid "Female"
-msgstr ""
+msgstr "Feminino"
 
 # 85%
 #: templates/modal-registration.html:112 templates/modal-registration.html:114
-#, fuzzy
 msgid "Country"
-msgstr "país"
+msgstr "País"
 
 #: templates/modal-registration.html:126
 msgid "Email address"
-msgstr ""
+msgstr "Email"
 
 #: templates/modal-registration.html:127
 msgid "Parent or guardian email address"
-msgstr ""
+msgstr "Email dos pais ou responsável"
 
 #: templates/modal-registration.html:141
 msgid "Thanks for joining Scratch!"
-msgstr ""
+msgstr "Obrigado por cadastrar-se no Scratch!"
 
 #: templates/modal-registration.html:142
 msgid "You're now logged in."
-msgstr ""
+msgstr "Você está logado."
 
 #: templates/modal-registration.html:143
 msgid ""
@@ -478,92 +485,93 @@ msgid ""
 "projects and comments are <a target=\"_blank\" href=\"/community_guidelines"
 "\">respectful and friendly</a>."
 msgstr ""
+"Scratch é uma comunidade de todas as idades, de todo o mundo. Certifique-se "
+"que seus projetos e comentários são respeitosos e amigáveis."
 
 #: templates/modal-registration.html:145
 msgid "Would you like to:"
-msgstr ""
+msgstr "Você gostaria de:"
 
 #: templates/modal-registration.html:147
 msgid "Learn how to make a project"
-msgstr ""
+msgstr "Aprenda a criar um projeto"
 
 #: templates/modal-registration.html:148
 msgid "Choose a starter project"
-msgstr ""
+msgstr "Escolha um projeto inicial"
 
 #: templates/modal-registration.html:149
 msgid "Connect with a Scratcher"
-msgstr ""
+msgstr "Conecte-se com um Scratcher"
 
 #: templates/modal-registration.html:159
 msgid "Next"
-msgstr ""
+msgstr "Próximo"
 
 #: templates/modal-registration.html:161
 msgid "OK Lets Go!"
-msgstr ""
+msgstr "OK Vamos lá!"
 
 #: templates/modal-registration.html:170
 msgid "Your username must be between 3 and 20 characters"
-msgstr ""
+msgstr "O seu nome de usuário deve conter de 3 a 20 caracteres."
 
 #: templates/modal-registration.html:171
 msgid "Sorry, that username already exists"
-msgstr ""
+msgstr "Desculpe, esse nome de usuário já existe"
 
 #: templates/modal-registration.html:172
 msgid "Invalid username"
-msgstr ""
+msgstr "Nome de usuário inválido."
 
 #: templates/modal-registration.html:173
 msgid "You must enter a username"
-msgstr ""
+msgstr "Você deve inserir um nome de usuário"
 
 #: templates/modal-registration.html:174
 msgid "Your username may only contain letters, numbers, - and _"
-msgstr ""
+msgstr "Seu nome de usuário deve conter apenas letras, números, - e _"
 
 #: templates/modal-registration.html:175
 msgid "Your password cannot be \\"
-msgstr ""
+msgstr "Sua senha não apode ser \\"
 
 # 87%
 #: templates/modal-registration.html:176
-#, fuzzy
 msgid "Your password must be at least 6 characters"
-msgstr "Senha deve ter pelo menos 6 caracteres."
+msgstr "Sua senha deve ter pelo menos 6 caracteres."
 
 #: templates/modal-registration.html:177
 msgid "Your must enter a password"
-msgstr ""
+msgstr "Você deve inserir uma senha."
 
 #: templates/modal-registration.html:178
 msgid "Your passowrds do not match"
-msgstr ""
+msgstr "Suas senhas não são iguais."
 
 #: templates/modal-registration.html:179
 msgid "Your password cannot match your username"
-msgstr ""
+msgstr "Sua senha não pode ser igual ao seu nome de usuário."
 
 #: templates/modal-registration.html:180
 msgid "Your must select a birth month and year"
-msgstr ""
+msgstr "Você deve selecionar um mês e ano de nascimento"
 
 #: templates/modal-registration.html:181
 msgid "You must specify a gender"
-msgstr ""
+msgstr "Você deve especificar um sexo"
 
 #: templates/modal-registration.html:182
 msgid "Your must select a country"
-msgstr ""
+msgstr "Você deve selecionar seu país"
 
 #: templates/modal-registration.html:183
 msgid "Your must provide an email address"
-msgstr ""
+msgstr "Você precisa fornecer um email"
 
 #: templates/modal-registration.html:184
 msgid "Your must provide valid email address"
-msgstr ""
+msgstr "Você precisa fornecer um email válido"
 
 #: templates/password_required_login.html:31
 msgid "Enter"
@@ -571,11 +579,11 @@ msgstr "Entrar"
 
 #: templates/accounts/banned-response.html:32
 msgid "The Scratch Team decided to block the account:"
-msgstr ""
+msgstr "A Equipe Scratch decidiu bloquear a conta:"
 
 #: templates/accounts/banned-response.html:34
 msgid "Date:"
-msgstr ""
+msgstr "Data:"
 
 # 93%
 #: templates/accounts/base.html:24 templates/registration/base.html:24
@@ -618,7 +626,7 @@ msgstr "Nenhum item"
 
 #: templates/carousel/includes/project-thumb.html:14
 msgid "in"
-msgstr ""
+msgstr "em"
 
 #: templates/carousel/includes/project-thumb.html:17
 #: templates/carousel/includes/project-thumb.html:19
@@ -671,9 +679,8 @@ msgstr "Deixar um comentário"
 
 # 96%
 #: templates/comments/comment-module.html:12
-#, fuzzy
 msgid "You have <span id=\"chars-left\">500</span> characters left."
-msgstr "Você tem mais <span id=\\\"chars-left\\\">500</span> caracteres."
+msgstr "Você tem<span id=\"chars-left\">500</span> caracteres restantes."
 
 #: templates/comments/comment-module.html:15
 #: templates/comments/comment_module.html:15
@@ -691,7 +698,7 @@ msgstr "Cancelar"
 
 #: templates/comments/comment-module.html:26
 msgid "Comments loading..."
-msgstr ""
+msgstr "Carregando comentários..."
 
 #: templates/comments/comment.html:15
 msgid "Report"
@@ -787,7 +794,7 @@ msgstr "Música"
 #: templates/info/starter_projects.html:133
 #: templates/info/help/studio/tips/home.html:51
 msgid "Stories"
-msgstr "Estórias"
+msgstr "Histórias"
 
 #: templates/explore/projects.html:29 templates/projects/project_list.html:32
 #: templates/studio/includes/project_action_bar.html:15
@@ -875,7 +882,7 @@ msgstr "criado %(tDate)s"
 
 #: templates/galleries/base.html:59
 msgid "Describe what this studio is about."
-msgstr ""
+msgstr "Descreva sobre esse estúdio."
 
 #: templates/galleries/base.html:92
 #, python-format
@@ -895,7 +902,7 @@ msgstr "Comentários ( <span data-count=\"comments\">%(tCount)s</span> )"
 #: templates/galleries/base.html:108
 #, python-format
 msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
-msgstr "Curadores ( <span data-count=\"curators\">%(tCount)s</span> )"
+msgstr "Tutores ( <span data-count=\"curators\">%(tCount)s</span> )"
 
 #: templates/galleries/comments.html:28
 #: templates/includes/backbone-templates.html:124
@@ -909,7 +916,7 @@ msgstr ""
 
 #: templates/galleries/curators.html:14
 msgid "Congratulations! You are now a curator of this studio."
-msgstr ""
+msgstr "Parabéns! Agora você é um tutor deste estúdio."
 
 #: templates/galleries/gallery_list.html:4
 #, python-format
@@ -918,7 +925,7 @@ msgstr "%(username)s Studio (%(tGCount)s)"
 
 #: templates/galleries/includes/curator_action_bar.html:7
 msgid "Invite curators"
-msgstr ""
+msgstr "Convidar tutores"
 
 #: templates/galleries/includes/curator_action_bar.html:13
 msgid "Add"
@@ -926,10 +933,9 @@ msgstr "Adicionar"
 
 # 81%
 #: templates/galleries/includes/curator_action_bar.html:16
-#, fuzzy
 msgid "Invite curators by username or select from the explore bar below!"
 msgstr ""
-"Adicionar curadores por nome de usuário ou arraste a partir da barra abaixo!"
+"Convide tutores por nome de usuário ou arraste a partir da barra abaixo!"
 
 #: templates/galleries/includes/explore-bar-users.html:4
 msgid "Add Curators"
@@ -966,19 +972,21 @@ msgstr "Adicionar projetos"
 
 #: templates/galleries/includes/project_action_bar.html:27
 msgid "Add by url"
-msgstr ""
+msgstr "Adicionar por url"
 
 #: templates/galleries/includes/project_action_bar.html:33
 msgid "Add by tag"
-msgstr ""
+msgstr "Adicionar por tag"
 
 #: templates/galleries/includes/project_action_bar.html:37
 msgid "You can select projects from the bar below or add by url or tag above."
 msgstr ""
+"Você pode selecionar projetos da barra abaixo ou adicionar pela url ou tag "
+"acima."
 
 #: templates/homepage/index.html:32
 msgid "Welcome to Scratch!"
-msgstr ""
+msgstr "Bem-vindo ao Scratch!"
 
 #: templates/homepage/index.html:59
 msgid "What's Happening?"
@@ -990,33 +998,32 @@ msgstr "Novidades do Scratch"
 
 #: templates/homepage/index.html:121
 msgid "Create stories, games, and animations"
-msgstr "Criar estórias, jogos e animações"
+msgstr "Crie histórias, jogos e animações"
 
 #: templates/homepage/index.html:121
 msgid "Share with others around the world"
-msgstr "Compartilhar na internet"
+msgstr "Compartilhe na internet"
 
 #: templates/homepage/index.html:126
 msgid "TRY IT OUT"
-msgstr "Experimente!"
+msgstr "EXPERIMENTE"
 
 #: templates/homepage/index.html:132
 msgid "VIEW PROJECTS"
-msgstr "VER PROJETOS"
+msgstr "VEJA OS PROJETOS"
 
 #: templates/homepage/index.html:138
 msgid "JOIN SCRATCH"
-msgstr "INSCREVER-SE"
+msgstr "INSCREVA-SE"
 
 #: templates/homepage/index.html:139
 msgid "it's free"
-msgstr "é gratuíto"
+msgstr "é grátis"
 
 # 77%
 #: templates/homepage/index.html:143
-#, fuzzy
 msgid "A creative learning community with more than"
-msgstr "Uma comunidade criativa de aprendizado com"
+msgstr "Uma comunidade criativa de aprendizado com mais de"
 
 #: templates/homepage/index.html:143
 msgid "projects shared"
@@ -1336,17 +1343,17 @@ msgid ""
 "that people of many different ages and backgrounds will see what you’ve "
 "shared."
 msgstr ""
-"<b> Seja respeitoso. </ b> Ao compartilhar projetos ou postar comentários, "
-"lembre-se que pessoas de diversas idades e origens diferentes vai ver o que "
-"você compartilhou."
+"<b> Respeite os outros. </ b> Ao compartilhar projetos ou postar "
+"comentários, lembre-se que pessoas de diversas idades e origens irão ver o "
+"que você compartilhou."
 
 #: templates/info/community_guidelines.html:22
 msgid ""
 "<b>Be constructive.</b> When commenting on other’s projects, say something "
 "you like about it and offer suggestions."
 msgstr ""
-"<b> Seja construtivo. </ b> Ao comentar sobre os projetos de outros, dizer "
-"algo que você gosta sobre o assunto e oferecer sugestões."
+"<b> Seja construtivo. </ b> Ao comentar sobre os projetos de outros, falar "
+"sobre algo que gostou e fazer sugestões."
 
 #: templates/info/community_guidelines.html:23
 msgid ""
@@ -1354,18 +1361,17 @@ msgid ""
 "else you find on Scratch – and anyone can use anything that you share. Be "
 "sure to give credit when you remix."
 msgstr ""
-"<b> Compartilhar </ b> Você é livre para projetos de remix, ideias, imagens, "
-"ou qualquer outra coisa que você encontrar no Scratch -. e qualquer um pode "
-"usar qualquer coisa que você compartilha. Certifique-se de dar crédito "
-"quando você remix."
+"<b> Compartilhar </ b> Você é livre para remixar projetos, ideias, imagens, "
+"ou qualquer outra coisa que você encontrar no Scratch - e qualquer um pode "
+"usar qualquer coisa que você compartilha.  Dê crédito quando remixar."
 
 #: templates/info/community_guidelines.html:24
 msgid ""
 "<b>Keep personal info private.</b> For safety reasons, don't use real names "
 "or post contact info like phone numbers or addresses."
 msgstr ""
-"<b> Manter informações pessoais privadas. </ b> Por razões de segurança, não "
-"use nomes verdadeiros ou informações de contato pós como números de "
+"<b> Mantenha informações pessoais em segredo. </ b> Por razões de segurança, "
+"não use nomes verdadeiros ou poste informações de contato como números de "
 "telefone ou endereços."
 
 #: templates/info/community_guidelines.html:25
@@ -1374,9 +1380,9 @@ msgid ""
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
 "let us know about it."
 msgstr ""
-"<b> Ajude a manter o site amigável. </ b> Se você acha que um projeto ou "
-"comentário é média, insultante, muito violento, ou inapropriada, clique em "
-"\"Relatório\" para nos informar sobre isso."
+"<b> Ajude a manter o site amigável. </ b> Se acha que um projeto ou "
+"comentário é maldoso, insultante, muito violento, ou inapropriada, clique em "
+"\"Reportar\" para nos informar sobre isso."
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
@@ -3653,11 +3659,11 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:7
 msgid "Want to make a project in Scratch? Try these 10 steps."
-msgstr "Quer criar um projeto usando o Scratch? Siga  estes 10 passos."
+msgstr "Vamos um projeto Scratch? Siga  estes 10 passos."
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:8
 msgid "First, click New to start a new project."
-msgstr "Primeiro, clique em Arquivo->Novo para iniciar um novo projeto."
+msgstr "Clique em Arquivo->Novo para criar um projeto."
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:13
 msgid "Drag a <span class=movecolor>MOVE</span> block into the Scripts area."
@@ -3683,8 +3689,8 @@ msgid ""
 "class=soundcolor>Sound</span>) and snap it onto the <span "
 "class=movecolor>MOVE</span> block."
 msgstr ""
-"Arraste um bloco <span class=soundcolor> TOQUE A PERCUSSÃO</ span>  (a "
-"partir de <span class=soundcolor> Som </ span>) e encaixe no bloco <span "
+"Arraste um bloco <span class=soundcolor> TOQUE A TAMBOR</ span>  (a partir "
+"de <span class=soundcolor> Som </ span>) e encaixe no bloco <span "
 "class=movecolor> MOVER </ span>."
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:15
@@ -3716,7 +3722,7 @@ msgid ""
 "Add another <span class=soundcolor>PLAY DRUM</span> block, then choose a "
 "drum from the pull-down menu."
 msgstr ""
-"Adicione outro bloco <span class=soundcolor> TOCAR PERCUSSÃO </ span>, e "
+"Adicione outro bloco <span class=soundcolor> TOQUE O TAMBOR </ span>, e "
 "escolha um tambor a partir do menu."
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:14
