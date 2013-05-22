@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-05-09 16:09+0000\n"
-"PO-Revision-Date: 2013-05-16 00:28+0200\n"
+"PO-Revision-Date: 2013-05-19 00:46+0200\n"
 "Last-Translator: Markus <m.slg@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -383,17 +383,18 @@ msgid ""
 "participation."
 msgstr ""
 "Das hilft dem Scratch-Team nachzuvollziehen, wer Scratch benutzt, und "
-"liefert uns Informationen, die dazu beiträgt, den Teilnehmerkreis "
+"liefert uns Informationen, die dazu beitragen, den Teilnehmerkreis "
 "auszuweiten.  Diese Information ist nicht in deinem Konto zu sehen und wird "
 "nur benutzt, die Beteiligung insgesamt zu beschreiben."
 
+# es geht um die email-Adresse
 #: templates/modal-registration.html:68
 msgid ""
 "We use this only in case you need to reset your password.  We won't share it "
 "with anyone."
 msgstr ""
-"Wir benutzen das nur für den Fall, dass du dein Kennwort zurücksetzen musst. "
-" Wir teilen es mit niemandem."
+"Wir benutzen sie nur für den Fall, dass du dein Kennwort zurücksetzen musst. "
+" Wir teilen sie niemandem mit."
 
 #: templates/modal-registration.html:76
 msgid "Month"
@@ -503,9 +504,8 @@ msgid "Choose a starter project"
 msgstr "Ein Starter-Projekt auswählen"
 
 #: templates/modal-registration.html:149
-#, fuzzy
 msgid "Connect with a Scratcher"
-msgstr "Dich mit einem Scratcher verbinden"
+msgstr "Einen Scratcher kontaktieren"
 
 #: templates/modal-registration.html:159
 msgid "Next"
@@ -513,7 +513,7 @@ msgstr "Weiter"
 
 #: templates/modal-registration.html:161
 msgid "OK Lets Go!"
-msgstr "Gut - Auf geht's!"
+msgstr "Gut - Los geht's!"
 
 #: templates/modal-registration.html:170
 msgid "Your username must be between 3 and 20 characters"
@@ -576,7 +576,7 @@ msgstr "Du musst eine E-Mail-Adresse angeben"
 
 #: templates/modal-registration.html:184
 msgid "Your must provide valid email address"
-msgstr "Du musste eine gültige E-Mail-Adresse angeben"
+msgstr "Du musst eine gültige E-Mail-Adresse angeben"
 
 #: templates/password_required_login.html:31
 #, fuzzy
@@ -686,9 +686,8 @@ msgstr "Schreibe einen Kommentar"
 
 # 96%
 #: templates/comments/comment-module.html:12
-#, fuzzy
 msgid "You have <span id=\"chars-left\">500</span> characters left."
-msgstr "Dir bleiben <span id=\\\"chars-left\\\">500</span> Zeichen."
+msgstr "Dir bleiben <span id=\"chars-left\">500</span> Zeichen."
 
 #: templates/comments/comment-module.html:15
 #: templates/comments/comment_module.html:15
@@ -895,10 +894,11 @@ msgstr "Aktualisiert am %(tDate)s"
 msgid "Describe what this studio is about."
 msgstr "Beschreibe, worum es in diesem Studio geht."
 
+# bitte kein %(tPlural)s ) am Ende; deutscher Plural ohne s.
 #: templates/galleries/base.html:92
 #, python-format
 msgid "Follower%(tPlural)s )"
-msgstr "Anhänger%(tPlural)s )"
+msgstr "Anhänger"
 
 #: templates/galleries/base.html:102
 #, python-format
@@ -1371,10 +1371,16 @@ msgid ""
 "edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). "
 "Find out more about <a href=\"/info/research\">Scratch research</a>.\n"
 msgstr ""
+"\n"
+"  Das MIT-Scratch-Team und andere Mitarbeiter forschen darüber, wie Leute "
+"Scratch benutzen und damit lernen (eine Einführung findet sich hier: <a "
+"href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: "
+"Programmieren für alle</a>). Erfahre mehr über die <a href=\"/info/research"
+"\">Scratch-Forschung</a>.\n"
 
 #: templates/info/about.html:92
 msgid "Support and Funding"
-msgstr ""
+msgstr "Unterstützung und Förderung"
 
 #: templates/info/about.html:94
 msgid ""
@@ -1384,6 +1390,11 @@ msgid ""
 "Intel Foundation, Microsoft, MacArthur Foundation, Google, Dell, Inversoft, "
 "and MIT Media Lab research consortia.\n"
 msgstr ""
+"\n"
+"  Das Scratch-Projekt, das 2003 startete, wurde großzügig gefördert von der "
+"National-Science-Foundation (grants 0325828, 1002713, 1027848, 1019396), der "
+"Intel-Foundation, von Microsoft, der MacArthur-Foundation, von Google, "
+"Dell, Inversoft und dem MIT-Media-Lab-Forschungskonsortium.\n"
 
 #: templates/info/community_guidelines.html:14
 msgid "Scratch Community Guidelines"
@@ -1449,11 +1460,11 @@ msgstr ""
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
-msgstr ""
+msgstr "Scratch - Für Lehrpersonen"
 
 #: templates/info/educators.html:12
 msgid "For Educators"
-msgstr ""
+msgstr "Für Lehrpersonen"
 
 #: templates/info/educators.html:15
 msgid ""
@@ -1466,6 +1477,15 @@ msgid ""
 "\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
 "    "
 msgstr ""
+"Scratch ist für das Lernen und die Erziehen konzipiert. Eine Vielzahl von "
+"Erziehern haben die Scratch-Macher seit 2007 unterstützt, sowohl in "
+"formellen wie informellen Lernumgebungen &ndash; Lehrer in Grund- und "
+"weiterführenden Schulen, Wissenschaftler aus der Pädagogik und Informatik, "
+"Bibliothekare, Museumspädagogen und Eltern.<br/><br/>\n"
+"Willst Du mehr über das Lernen mit Scratch erfahren?<br/>Dann wirf einen "
+"Blick in die<a href=\"http://scratch-ed.org\" target=\"_blank\">ScratchEd-"
+"Online- Community</a>.\n"
+"    "
 
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
@@ -1527,6 +1547,8 @@ msgid ""
 "The new paint editor includes <b>vector graphics</b> so that images can "
 "scale to different sizes without getting jagged."
 msgstr ""
+"Das neue Malwerkzeug bietet auch <b>Vektorgrafiken</b>, so dass Bilder "
+"verschiedene Größen annehmen können, ohne zu verpixeln."
 
 #: templates/info/overview.html:37
 msgid ""
@@ -1559,6 +1581,8 @@ msgstr ""
 #: templates/info/overview.html:48
 msgid "Store numbers in cloud variables to create surveys and other projects."
 msgstr ""
+"Speichere Zahlen in Cloud-Variablen, um Umfragen und andere Projekte zu "
+"erstellen."
 
 #: templates/info/overview.html:51
 msgid ""
@@ -1656,19 +1680,23 @@ msgstr "Die Suchfunktionen lassen dich Projekte einfacher finden und anschauen."
 
 #: templates/info/overview.html:80
 msgid "Planned for Summer 2013"
-msgstr ""
+msgstr "Geplant für Sommer 2013"
 
 #: templates/info/overview.html:82
 msgid ""
 "Download an off-line version of the Scratch project editor to use without an "
 "Internet connection"
 msgstr ""
+"Lade eine Offlineversion des Scratch-Projekteditors zur Benutzung ohne "
+"Internet-Verbindung herunter"
 
 #: templates/info/overview.html:83
 msgid ""
 "Connect to external devices with new Scratch extensions (including LEGO WeDo "
 "and the ScratchBoard)"
 msgstr ""
+"Binde externe Geräte mit neuen Scratch-Erweiterungen ein (einschließlich "
+"LEGO WeDo und dem ScratchBoard)"
 
 #: templates/info/parents.html:8
 msgid "Scratch - For Parents"
@@ -1687,6 +1715,13 @@ msgid ""
 "Scratch is designed and maintained by the Lifelong Kindergarten group at the "
 "MIT Media Lab. "
 msgstr ""
+"Scratch ist eine Programmiersprache und eine Online-Gemeinschaft, in der "
+"Kinder interaktive Medien wie Geschichten, Spiele und Animationen  "
+"programmieren und weltweit mit anderen teilen können. Indem Kinder ihre "
+"Ideen mit Scratch umsetzen, lernen sie kreativ zu denken, mit anderen "
+"zusammenzuarbeiten und systematisch vorzugehen. Scratch wurde von der "
+"Lifelong-Kindergarten-Gruppe am Media-Lab des MIT geschaffen und wird von "
+"ihr gepflegt und ständig weiterentwickelt. "
 
 #: templates/info/parents.html:24
 msgid "What is the age range for Scratch?"
@@ -1706,7 +1741,7 @@ msgid "What resources are available for learning Scratch?"
 msgstr "Welche Hilfen stehen für das Lernen von Scratch zur Verfügung?"
 
 #: templates/info/parents.html:31
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "If you’re just getting started, there’s a <a href=\"/projects/editor/?"
 "tip_bar=getStarted\">step-by-step guide</a> available inside Scratch, or you "
@@ -1716,6 +1751,14 @@ msgid ""
 "more. For an overview of Scratch resources, see <a href=\"/help/\">Scratch "
 "Help</a>."
 msgstr ""
+"Für den Einstieg ist in Scratch eine <a "
+"href=\"/projects/editor/?tip_bar=getStarted\">Schritt-für-Schritt-"
+"Anleitung</a> enthalten. Außerdem gibt es <a href=\"%"
+"(STATIC_URL)s/pdfs/help/ScratchGetStarted_beta_draft_Jan2013.pdf\">Erste "
+"Schritte in Scratch (PDF)</a> zum Herunterladen.  Die <a href=\"/help/cards"
+"/\">Scratch-Karten</a> bieten eine tolle Möglichkeit, mehr zu lernen. Ein "
+"Überblick über verfügbare Scratch-Materialien findet sich in der <a "
+"href=\"/help/\">Scratch-Hilfe</a>."
 
 #: templates/info/parents.html:34
 msgid "What is the Scratch online community?"
@@ -1750,6 +1793,16 @@ msgid ""
 "Scratch community by reviewing the <a href=\"/community_guidelines"
 "\">community guidelines</a> together."
 msgstr ""
+"Das MIT-Scratch-Team arbeitet mit der Gemeinschaft daran, eine freundliches "
+"und respektvolles Umfeld bereitzustellen. Die Mitglieder werden angehalten, "
+"nur konstruktive Kommentare abzugeben und die Webseite durch Meldung "
+"unangebrachter Inhalte freundlich zu erhalten. Zum Scratch-Team gehört eine "
+"Gruppe von Moderatoren, die tagtäglich die Aktivitäten auf der Seite "
+"betreuen und unter Verwendung von Werkzeugen wie <a "
+"href=\"http://www.inversoft.com/cleanspeak/\">Cleanspeak</a> auf Meldungen "
+"antworten. Sie können ihrem Kind dabei helfen, die Beteiligung an der "
+"Scratch-Gemeinschaft zu erlernen, indem sie miteinander die <a "
+"href=\"/community_guidelines\">Verhaltensregeln</a> durchgehen."
 
 #: templates/info/parents.html:43
 msgid "What is your privacy policy?"
@@ -1778,6 +1831,8 @@ msgid ""
 "We often receive emails from parents thanking us for Scratch. Here are some "
 "examples: "
 msgstr ""
+"Wir erhalten häufig E-Mails von Eltern, die uns für Scratch danken. Hier "
+"sind einige Beispiele: "
 
 #: templates/info/parents.html:49
 msgid ""
@@ -1812,7 +1867,7 @@ msgstr ""
 
 #: templates/info/parents.html:57
 msgid "Learning"
-msgstr ""
+msgstr "Lernen"
 
 #: templates/info/parents.html:59
 msgid ""
@@ -1820,22 +1875,30 @@ msgid ""
 "\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Learning with "
 "Scratch</a>."
 msgstr ""
+"Ein kurzer Überblick darüber, was junge Leute mit Scratch lernen, findet "
+"sich unter <a href=\"http://llk.media.mit.edu/scratch/Learning-with-"
+"Scratch.pdf\">Lernen mit Scratch</a>."
 
 #: templates/info/parents.html:60
 msgid ""
 "Read an article on the <a href=\"http://www.edutopia.org/kindergarten-"
 "creativity-collaboration-lifelong-learning\">creative learning approach</a>."
 msgstr ""
+"Aufschlussreich ist der Artikel über die <a href=\"http://www.edutopia.org"
+"/kindergarten-creativity-collaboration-lifelong-learning\">Methode kreativen "
+"Lernens</a>."
 
 #: templates/info/parents.html:66
 msgid "Community"
-msgstr ""
+msgstr "Gemeinschaft"
 
 #: templates/info/parents.html:68
 msgid ""
 "We ask all participants on the site to follow the <a href=\"/"
 "community_guidelines\">Community Guidelines</a>."
 msgstr ""
+"Wir fordern alle Teilnehmer auf der Seite auf, die <a "
+"href=\"/community_guidelines\">Regeln für Scratcher</a> zu befolgen."
 
 #: templates/info/parents.html:69
 msgid ""
