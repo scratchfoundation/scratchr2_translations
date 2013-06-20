@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-03 20:35+0000\n"
-"PO-Revision-Date: 2013-06-10 23:16+0200\n"
+"PO-Revision-Date: 2013-06-14 22:18+0200\n"
 "Last-Translator: Markus <m.slg@gmx.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -600,7 +600,7 @@ msgstr "Das Scratch-Team hat sich entschieden, diesen Account zu sperren:"
 
 #: templates/accounts/banned-response.html:34
 msgid "Date:"
-msgstr "Datum:"
+msgstr "Zeitpunkt:"
 
 #: templates/accounts/banned-response.html:60
 #: templates/info/community_guidelines.html:21
@@ -958,7 +958,7 @@ msgstr "Beschreibe, worum es in diesem Studio geht."
 #: templates/galleries/base.html:92
 #, python-format
 msgid "Follower%(tPlural)s )"
-msgstr "Anhänger%(tPlural)s )"
+msgstr "Anhänger"
 
 #: templates/galleries/base.html:102
 #, python-format
@@ -3165,6 +3165,10 @@ msgid ""
 "synchronization issues. However, some Scratchers are coming up with creative "
 "ways to use the cloud data for turn-by-turn and other games."
 msgstr ""
+"Spiele mit mehreren Spielern mögen wegen der Übertragungsgeschwindigkeit im "
+"Netz und Synchronisationsproblemen schwer zu entwickeln sein. Trotzdem haben "
+"Scratcher kreative Möglichkeiten gefunden, Cloud-Daten für rundenbasierte "
+"und andere Spiele zu nutzen. "
 
 #: templates/info/help/faq.html:216
 msgid "How long does it take for cloud data to reach another Scratcher?"
@@ -3349,7 +3353,7 @@ msgstr ""
 
 #: templates/info/help/index.html:120
 msgid "Scratch 1.4 Download"
-msgstr ""
+msgstr "Scratch 1.4 herunterladen"
 
 #: templates/info/help/index.html:122
 msgid "Links and information on the previous version of Scratch."
@@ -3583,15 +3587,13 @@ msgstr "wechsle zu Bühnenbild"
 
 # 94%
 #: templates/info/help/studio/tips/home.html:108
-#, fuzzy
 msgid "change  effect to"
-msgstr "ändere _ -Effekt um"
+msgstr "ändere Effekt um"
 
 # 86%
 #: templates/info/help/studio/tips/home.html:109
-#, fuzzy
 msgid "set effect to"
-msgstr "setze _ -Effekt auf"
+msgstr "setze Effekt auf"
 
 #: templates/info/help/studio/tips/home.html:110
 msgid "clear graphic effects"
@@ -3659,7 +3661,7 @@ msgstr "Weitere Blöcke"
 
 #: templates/info/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite."
-msgstr ""
+msgstr "Ändere den Grafikeffekt bei einer Figur"
 
 #: templates/info/help/studio/tips/blocks/change-effect.html:18
 #, python-format
@@ -3670,6 +3672,11 @@ msgid ""
 "Try these effects with numbers such as 10, 35, or 100. Or try negative "
 "numbers, such as -50.</p>\n"
 msgstr ""
+" \n"
+"Klicke, um einen Effekt aus dem Menü auszuwählen:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/change-effect-ex2.png\"/><br>\n"
+"Probiere diese Effekte mit Zahlen wie 10, 35 oder 100 aus. Versuche auch "
+"negative Werte, wie -50.</p>\n"
 
 #: templates/info/help/studio/tips/blocks/change-effect.html:26
 #, python-format
@@ -3679,12 +3686,15 @@ msgid ""
 "all graphic effects. Or, use <img src=\"%(STATIC_URL)s/images/help/clear-"
 "graphic-effects.png\"/>\n"
 msgstr ""
+" \n"
+"Klicke Stopp <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/>, um alle "
+"Grafikeffekte zurückzusetzen. Oder benutze <img src=\"%"
+"(STATIC_URL)s/images/help/clear-graphic-effects.png\"/>\n"
 
 # 83%
 #: templates/info/help/studio/tips/blocks/change-size.html:8
-#, fuzzy
 msgid "Changes sprite’s size by specified amount."
-msgstr "Ändere die y-Position um den angegebenen Wert"
+msgstr "Ändere die größe einer Figur um den angegebenen Wert"
 
 #: templates/info/help/studio/tips/blocks/change-x.html:6
 msgid "Change the x position by this amount"
@@ -3713,7 +3723,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/blocks/clear-graphic-effects.html:14
 msgid "Clears all graphic effects for a sprite."
-msgstr ""
+msgstr "Schalte alle Grafikeffekte bei einer Figur aus"
 
 #: templates/info/help/studio/tips/blocks/clear-graphic-effects.html:37
 #, python-format
@@ -3727,6 +3737,14 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"<p>\n"
+"\n"
+"<img src=\"%(STATIC_URL)s/images/help/clear-graphic-effects.png\" />setzt alle "
+"Grafikeffekte dieser Figur zurück.</p>\n"
+"\n"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
@@ -3783,7 +3801,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/blocks/go-to-front.html:14
 msgid "Moves sprite in front of all other sprites."
-msgstr ""
+msgstr "Bringe eine Figur vor alle anderen in den Vordergrund"
 
 #: templates/info/help/studio/tips/blocks/go-to-front.html:22
 #, python-format
@@ -3797,6 +3815,14 @@ msgid ""
 "\n"
 "\n"
 msgstr ""
+"\n"
+"\n"
+"<img src=\"%(STATIC_URL)s/images/help/go-to-front-ex.png\" />\n"
+"\n"
+"<br>Damit es so aussieht, als würde der Junge den Ball halten, sage dem Ball "
+"<img src=\"%(STATIC_URL)s/images/help/go-to-front.png\" />\n"
+"\n"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/go-to-xy.html:7
 msgid "Go to this position on the Stage"
@@ -3885,6 +3911,8 @@ msgid ""
 "\n"
 "  <h3>Switches to the next costume in the sprite's costume list.</h3></p>\n"
 msgstr ""
+"\n"
+"  <h3>Wechsle zu dem nächsten Kostüm in der Kostümliste der Figur.</h3></p>\n"
 
 #: templates/info/help/studio/tips/blocks/next-costume.html:19
 #, python-format
@@ -3895,6 +3923,11 @@ msgid ""
 "<p> You can rearrange the order of the costumes in the list by dragging and "
 "dropping.\n"
 msgstr ""
+"\n"
+"Um alle Kostüme einer Figur zu sehen, klicke auf <img src=\"%"
+"(STATIC_URL)s/images/help/costumes-tab.png\"/>.</p>\n"
+"<p>Du kannst die Reihenfolge der Kostüme in der Liste durch Ziehen und "
+"Ablegen umordnen.\n"
 
 #: templates/info/help/studio/tips/blocks/next-costume.html:26
 #, python-format
@@ -3903,6 +3936,10 @@ msgid ""
 "<p>When <img src=\"%(STATIC_URL)s/images/help/next-costume-block.png\" /> "
 "gets to the end of the list, it goes back to the top.</p>\n"
 msgstr ""
+"\n"
+"<p>Nach dem letzten Köstum in der Liste beginnt <img src=\"%"
+"(STATIC_URL)s/images/help/next-costume-block.png\" /> wieder von vorne mit "
+"dem ersten Kostüm.</p>\n"
 
 #: templates/info/help/studio/tips/blocks/point-direction.html:7
 msgid "Set the direction of the current sprite"
@@ -3939,7 +3976,7 @@ msgstr "Du kannst aus dem Menü wählen:"
 
 #: templates/info/help/studio/tips/blocks/point-towards.html:18
 msgid "The menu includes any other sprites in the project."
-msgstr "Das Menü enthält alle anderen Objekte des Projektes."
+msgstr "Das Menü enthält alle anderen Figuren des Projektes."
 
 #: templates/info/help/studio/tips/blocks/say-for-seconds.html:8
 msgid "Say words in a speech bubble for a number of seconds"
@@ -3985,7 +4022,7 @@ msgstr "Klicke auf einen leeren sage-Block, um die Sprechblase zu entfernen:"
 
 #: templates/info/help/studio/tips/blocks/set-effect.html:9
 msgid "Sets the graphic effect of a sprite to a specific number."
-msgstr ""
+msgstr "Setze einen Grafikeffekt einer Figur auf einen bestimmten Wert"
 
 #: templates/info/help/studio/tips/blocks/set-effect.html:13
 #, python-format
@@ -3999,6 +4036,14 @@ msgid ""
 "\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/set-effect-ex.png\" /></br></p>\n"
 msgstr ""
+"\n"
+"Um einen Effekt aus dem Menü auszuwählen, klicke auf:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/set-effect-menu.png\" /></br>\n"
+"<p>Probiere als Werte verschiedene Zahlen zwischen -100 und 100. (Manche "
+"Effekte reichen nur von 0 bis 100.)\n"
+"\n"
+"\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/set-effect-ex.png\" /></br></p>\n"
 
 #: templates/info/help/studio/tips/blocks/set-x.html:7
 msgid "Set the x position of a sprite"
@@ -4022,7 +4067,7 @@ msgstr "Lasse eine Figur auf der Bühne erscheinen"
 
 #: templates/info/help/studio/tips/blocks/switch-backdrop.html:7
 msgid "Switch to the specified backdrop"
-msgstr ""
+msgstr "Wechsle zum angegebenen Bühnenbild"
 
 #: templates/info/help/studio/tips/blocks/switch-backdrop.html:14
 #, python-format
@@ -4196,7 +4241,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:26
 msgid "10"
-msgstr ""
+msgstr "10"
 
 # 77%
 #: templates/info/help/studio/tips/howto/get-started-11.html:7
@@ -4237,7 +4282,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-11.html:29
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:6
 msgid " Share!"
@@ -4268,11 +4313,11 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:27
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:6
 msgid "Now What?"
-msgstr ""
+msgstr "Was nun?"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:8
 #, python-format
@@ -4299,7 +4344,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:23
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:8
 msgid "2 Add a Sound"
@@ -4703,7 +4748,6 @@ msgstr "Kommentare"
 
 #: templates/notifications/notifications.html:22
 #: templates/notifications/notifications.html:42
-#, fuzzy
 msgid "Alerts"
 msgstr "Warnungen"
 
@@ -4765,7 +4809,7 @@ msgstr "favorisierte"
 #: templates/notifications/includes/friend-feed.html:103
 #: templates/notifications/includes/user-feed.html:107
 msgid "loved"
-msgstr "mochte"
+msgstr "mag"
 
 #: templates/notifications/includes/notification_list.html:11
 msgid "Sent Today"
@@ -4830,7 +4874,7 @@ msgstr "Woran ich gerade arbeite"
 
 #: templates/profiles/profile_detail.html:112
 msgid "Describe what you're working on"
-msgstr "Beschreibe an woran du gerade arbeitest"
+msgstr "Beschreibe, woran du gerade arbeitest"
 
 #: templates/profiles/profile_detail.html:151
 msgid "FEATURED:"
