@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Scratch Website\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-07-03 17:07+0000\n"
-"PO-Revision-Date: 2013-09-05 00:12+0200\n"
+"PO-Revision-Date: 2013-09-17 23:25+0200\n"
 "Last-Translator: Markus <m.slg@gmx.de>\n"
 "Language-Team: Deutsche OLPC-Lokalisierung\n"
 "Language: de\n"
@@ -2481,7 +2481,7 @@ msgstr "ÜBER SCRATCH"
 
 #: templates/homepage/index.html:146
 msgid "FOR EDUCATORS"
-msgstr "FÜR LEHRPERSONEN"
+msgstr "FÜR LEHRKRÄFTE"
 
 #: templates/homepage/index.html:147
 msgid "FOR PARENTS"
@@ -4614,9 +4614,8 @@ msgid "Make a Block"
 msgstr "Neuer Block"
 
 #: templates/info/help/studio/tips/home.html:241
-#, fuzzy
 msgid "Define Block"
-msgstr "Definitionsblock"
+msgstr "Definiere-Block"
 
 #: templates/info/help/studio/tips/home.html:242
 msgid "Using Custom Blocks"
@@ -4643,16 +4642,18 @@ msgstr ""
 
 #: templates/info/help/studio/tips/blocks/add.html:7
 msgid "Adds two numbers"
-msgstr ""
+msgstr "Addiert zwei Zahlen"
 
 #: templates/info/help/studio/tips/blocks/and.html:7
 msgid "Reports true if both conditions are true"
-msgstr ""
+msgstr "Gibt wahr zurück, wenn beide Bedingungen erfüllt sind"
 
 #: templates/info/help/studio/tips/blocks/answer.html:7
 #, python-format
 msgid "Reports keyboard input from the most recent use of <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\"/>"
 msgstr ""
+"Gibt die Tastatureingaben der letzten Benutzung von <img src=\"%"
+"(STATIC_URL)s/images/help/ask-and-wait.png\"/> zurück"
 
 #: templates/info/help/studio/tips/blocks/answer.html:15
 #, python-format
@@ -4667,15 +4668,34 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/answer-checkbox.png\" />\n"
 "</p>"
 msgstr ""
+"\n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> stellt eine "
+"Frage und speichert die Tastatureingabe in  <img src=\"%"
+"(STATIC_URL)s/images/help/answer.png\" />. Die Antwort steht allen Figuren "
+"zur Verfügung. </p>\n"
+"<p>Wenn du die aktuelle Antwort speichern willst, kannst du sie in einer "
+"Variablen oder Liste abspeichern. Zum Beispiel so: <img src=\"%"
+"(STATIC_URL)s/images/help/answer-ex2.png\"/> \n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Klicke auf das Kästchen neben dem Antwort-Block, damit der Wert der Antwort "
+"angezeigt wird.<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/answer-checkbox.png\" />\n"
+"</p>"
 
 #: templates/info/help/studio/tips/blocks/ask-and-wait.html:7
 #, python-format
 msgid "Asks a question on the screen and stores keyboard input in the <img src=\"%(STATIC_URL)s/images/help/answer.png\" />"
 msgstr ""
+"Stellt auf dem Bildschirm eine Frage und speichert die über die Tastatur "
+"eingegebene Antwort in <img src=\"%(STATIC_URL)s/images/help/answer.png\" />"
 
 #: templates/info/help/studio/tips/blocks/ask-and-wait.html:11
 msgid "After receiving an answer, causes the program to wait until the Enter key is pressed or check mark is clicked."
 msgstr ""
+"Nach der Eingabe der Antwort wartet das Programm, bis die Eingabetaste "
+"gedrückt oder das Häkchen angeklickt wird."
 
 #: templates/info/help/studio/tips/blocks/ask-and-wait.html:18
 #, python-format
@@ -4684,10 +4704,18 @@ msgid ""
 "<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> asks a question and stores the keyboard input in  <img src=\"%(STATIC_URL)s/images/help/answer.png\" />. The question appears in a voice balloon on the screen. The program waits as the user types in a response, until the Enter key is pressed or the check mark is clicked. \n"
 "</p>"
 msgstr ""
+"\n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> stellt eine "
+"Frage und speichert die Tastatureingabe in <img src=\"%"
+"(STATIC_URL)s/images/help/answer.png\" />. Die Frage erscheint in einer "
+"Sprechblase auf dem Bildschirm. Während der Benutzer eine Antwort eingibt "
+"wartet das Programm, bis die Eingabetaste gdrückt oder das Häkchen "
+"angeklickt wird.\n"
+"</p>"
 
 #: templates/info/help/studio/tips/blocks/backdrop-name.html:7
 msgid "Reports Stage’s current backdrop name"
-msgstr ""
+msgstr "Gibt den Namen des aktuellen Bühnenbildes zurück"
 
 #: templates/info/help/studio/tips/blocks/backdrop-name.html:16
 #, python-format
@@ -4695,6 +4723,9 @@ msgid ""
 "The title next to the backdrop in the list is the <img src=\"%(STATIC_URL)s/images/help/backdrop-name.png\" />\n"
 "  "
 msgstr ""
+"Der Titel unter dem Bühnenbild in der Liste ist der <img src=\"%"
+"(STATIC_URL)s/images/help/backdrop-name.png\" />\n"
+"  "
 
 #: templates/info/help/studio/tips/blocks/backdrop-number.html:16
 #, python-format
@@ -4702,16 +4733,23 @@ msgid ""
 "The number next to the backdrop in the list is the <img src=\"%(STATIC_URL)s/images/help/backdrop-number.png\" />\n"
 "  "
 msgstr ""
+"Die Nummer über dem Bühnenbild in der Liste ist die <img src=\"%"
+"(STATIC_URL)s/images/help/backdrop-number.png\" />\n"
+"  "
 
 #: templates/info/help/studio/tips/blocks/broadcast-wait.html:7
 msgid "Sends a message to all sprites and waits"
-msgstr ""
+msgstr "Sendet eine Nachricht an alle Figuren und wartet"
 
 #: templates/info/help/studio/tips/blocks/broadcast-wait.html:11
 msgid ""
 "\n"
 "After sending the message and triggering other scripts, this script waits until the others all finish before continuing with next block.\n"
 msgstr ""
+"\n"
+"Nach dem Senden der Nachricht und dem Starten anderer Skripte wartet dieses "
+"Skript darauf, dass alle anderen Skripte beendet worden sind, bevor esmit "
+"dem nächsten Block fortfährt.\n"
 
 #: templates/info/help/studio/tips/blocks/broadcast-wait.html:20
 #, python-format
@@ -4727,14 +4765,30 @@ msgid ""
 "  </p>\n"
 "  "
 msgstr ""
+"\n"
+"  <p>\n"
+"  Du kannst <img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait.png\" /> "
+"benutzen, um eine Nachricht an alle Figuren zu senden, damit sie etwas tun, "
+"und dann zu warten, bis sie alle damit fertig sind, ehe es weitergeht. \n"
+"  </p>\n"
+"  \n"
+"  <p>\n"
+"  <br><img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait-ex2.png\" "
+"/></br>\n"
+"  <br>Wähle mit einem Klick aus, welche Nachricht gesendet werden soll, oder "
+"klicke auf \"neue Nachricht...\", um deine eigene Nachricht einzugeben. </br>\n"
+"  </p>\n"
+"  "
 
 #: templates/info/help/studio/tips/blocks/broadcast.html:7
 msgid "Sends a message to all sprites"
-msgstr ""
+msgstr "Sendet eine Nachricht an alle Figuren"
 
 #: templates/info/help/studio/tips/blocks/broadcast.html:11
 msgid "After sending the message, continues with the next block without waiting for the triggered scripts."
 msgstr ""
+"Nach dem Senden der Nachricht fährt es mit den folgenden Blöcken fort, ohne "
+"auf die ausgelösten Skripte zu warten."
 
 #: templates/info/help/studio/tips/blocks/broadcast.html:18
 #, python-format
@@ -4743,6 +4797,12 @@ msgid ""
 " <p> <img src=\"%(STATIC_URL)s/images/help/broadcast.png\"/> sends a message to all the sprites (and the background). This is useful if you want to tell other sprites when to do something.</p> \n"
 " <p> What do you want them to do when they receive the message? See <img src=\"%(STATIC_URL)s/images/help/when-i-receive.png\"/></p>\n"
 msgstr ""
+"\n"
+" <p> <img src=\"%(STATIC_URL)s/images/help/broadcast.png\"/> sendet eine "
+"Nachricht an alle Figuren (und die Bühne). Das ermöglicht es dir, anderen "
+"Figuren mitzuteilen, dass sie etwas tun sollen.</p> \n"
+" <p> Was sie tun sollen, wenn sie die Nachricht erhalten, steht hier: <img "
+"src=\"%(STATIC_URL)s/images/help/when-i-receive.png\"/></p>\n"
 
 # 97%
 #: templates/info/help/studio/tips/blocks/change-effect.html:8
@@ -4757,6 +4817,11 @@ msgid ""
 "<br><img src=\"%(STATIC_URL)s/images/help/change-effect-ex2.png\"/><br>\n"
 "Try these effects with numbers such as 10, 35, or 100. Or try negative numbers, such as -50.\n"
 msgstr ""
+" \n"
+"Klicke, um einen Effekt aus dem Menü zu wählen:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/change-effect-ex2.png\"/><br>\n"
+"Probiere diese Effekte mit Zahlen wie 10, 35 oder 100. Versuche auch "
+"negativer Zahlen, etwa -50.\n"
 
 #: templates/info/help/studio/tips/blocks/change-effect.html:23
 #, python-format
@@ -4819,6 +4884,16 @@ msgid ""
 "You can set the volume level for each sprite. To play two sounds at once with different volumes, use two sprites.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Die Lautstärke ist von 0 bis 100 regelbar, wobei der Standardwert 100 "
+"beträgt.\n"
+"</p>\n"
+"<p>\n"
+"Du kannst die Lautstärke für jede Figur einzeln festlegen. Willst du zwei "
+"Klänge gleichzeitig in verschiedenen Lautstärken wiedergeben, musst du zwei "
+"Figuren verwenden.\n"
+"</p>\n"
 
 #: templates/info/help/studio/tips/blocks/change-x.html:6
 msgid "Change the x position by this amount"
@@ -4864,6 +4939,14 @@ msgid ""
 "<p>\n"
 "<b>Note: If the pen shade is 0, then the pen color will be close to black. If the pen shade is 100, the pen color will be close to white.</b>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Die Farbstärke liegt zwischen 0 und 100. Der Standardwert ist 50.\n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/changeshadeex2.png\" /> \n"
+"<p>\n"
+"<b>Beachte: Bei einer Farbstärke von 0 ist die Stiftfarbe annähernd schwarz, "
+"bei einer Farbstärke von 100 nahezu weiß. </b>\n"
 
 # 97%
 #: templates/info/help/studio/tips/blocks/clear-graphic-effects.html:7
