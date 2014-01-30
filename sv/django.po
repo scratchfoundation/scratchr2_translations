@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-15 14:27+0000\n"
-"PO-Revision-Date: 2013-12-09 19:43+0200\n"
+"PO-Revision-Date: 2014-01-29 21:26+0200\n"
 "Last-Translator: Anders <anders.berggren@smedjebacken.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
@@ -23,7 +23,7 @@ msgstr "Det ser ut som om det är ett ogiltigt e-postformat"
 
 #: authentication/forms.py:28
 msgid "The two password fields didn't match."
-msgstr "De två lösenordsfälten är inte lika."
+msgstr "De två lösenordsfälten innehöll inte samma lösenord."
 
 #: authentication/forms.py:29 authentication/forms.py:50
 msgid "Your password must be at least 6 characters long."
@@ -31,7 +31,7 @@ msgstr "Ditt lösenord måste vara minst 6 tecken långt."
 
 #: authentication/forms.py:30 authentication/forms.py:51
 msgid "Your password cannot be 'password'."
-msgstr "Ditt lösenord får inte vara 'password'."
+msgstr "Ditt lösenord får inte vara 'lösenord'."
 
 #: authentication/forms.py:31 authentication/forms.py:52
 msgid "Your password cannot be the same as your username."
@@ -70,7 +70,7 @@ msgstr[1] "%(minutes)d minuter sedan"
 
 #: base_comments/templatetags/scratch_text_filters.py:115
 msgid "just now"
-msgstr "just nu"
+msgstr "nyss"
 
 #: base_comments/templatetags/scratch_text_filters.py:117
 #, python-format
@@ -142,25 +142,25 @@ msgstr "Senaste ämnena i forumet"
 
 #: s2forums/djangobb_forum/feeds.py:75 s2forums/djangobb_forum/feeds.py:100
 #: s2forums/djangobb_forum/feeds.py:125
-#, fuzzy, python-format
+#, python-format
 msgid "Latest posts on %s"
-msgstr "Senaste inlägget i %s"
+msgstr "Senaste inläggen i %s"
 
 # Kolla om det är pluralis posts - inläggen?
 #: s2forums/djangobb_forum/feeds.py:83
 #, python-format
 msgid "Latest posts on the topic \"%s\""
-msgstr "Senaste inlägget i ämnet \"%s\""
+msgstr "Senaste inläggen i ämnet \"%s\""
 
 #: s2forums/djangobb_forum/feeds.py:108
-#, fuzzy, python-format
+#, python-format
 msgid "Latest posts on the forum \"%s\""
-msgstr "Senaste inlägget i forumet \"%s\""
+msgstr "Senaste inläggen i forumet \"%s\""
 
 #: s2forums/djangobb_forum/feeds.py:128
 #, python-format
 msgid "Latest posts on the category \"%s\""
-msgstr "Senaste inlägget i kategorin \"%s\""
+msgstr "Senaste inläggen i kategorin \"%s\""
 
 #: s2forums/djangobb_forum/forms.py:23 s2forums/djangobb_forum/forms.py:216
 #: s2forums/djangobb_forum/forms.py:353 templates/base.html:138
@@ -178,11 +178,11 @@ msgstr "Antal inlägg"
 
 #: s2forums/djangobb_forum/forms.py:29
 msgid "Post time"
-msgstr ""
+msgstr "Inlägg skapat"
 
 #: s2forums/djangobb_forum/forms.py:30
 msgid "Author"
-msgstr ""
+msgstr "Författare"
 
 #: s2forums/djangobb_forum/forms.py:31 s2forums/djangobb_forum/forms.py:54
 #: s2forums/djangobb_forum/forms.py:175 s2forums/djangobb_forum/forms.py:446
@@ -190,96 +190,98 @@ msgstr ""
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:29
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
 msgid "Subject"
-msgstr ""
+msgstr "Ämne"
 
 #: s2forums/djangobb_forum/forms.py:32 s2forums/djangobb_forum/forms.py:389
 #: s2forums/djangobb_forum/models.py:113 s2forums/djangobb_forum/models.py:132
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:55
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:26
 msgid "Forum"
-msgstr ""
+msgstr "Forum"
 
 #: s2forums/djangobb_forum/forms.py:36
 msgid "Ascending"
-msgstr ""
+msgstr "Stigande"
 
 #: s2forums/djangobb_forum/forms.py:37
 msgid "Descending"
-msgstr ""
+msgstr "Fallande"
 
 #: s2forums/djangobb_forum/forms.py:41 s2forums/djangobb_forum/models.py:148
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:56
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
 msgid "Topics"
-msgstr ""
+msgstr "Ämnen"
 
 # 80%
 #: s2forums/djangobb_forum/forms.py:42 s2forums/djangobb_forum/models.py:233
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:57
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
-#, fuzzy
 msgid "Posts"
-msgstr "Skicka"
+msgstr "Inlägg"
 
 #: s2forums/djangobb_forum/forms.py:46
 msgid "Message text and topic subject"
-msgstr ""
+msgstr "Meddelandetext och ämnesrubrik"
 
 #: s2forums/djangobb_forum/forms.py:47
 msgid "Message text only"
-msgstr ""
+msgstr "Bara meddelandetext"
 
 #: s2forums/djangobb_forum/forms.py:48
+#, fuzzy
 msgid "Topic subject only"
-msgstr ""
+msgstr "Endast ämnesrubrik"
 
 #: s2forums/djangobb_forum/forms.py:56
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
 msgid "Attachment"
-msgstr ""
+msgstr "Bilaga"
 
 #: s2forums/djangobb_forum/forms.py:57
 msgid "Subscribe"
-msgstr ""
+msgstr "Prenumerera"
 
 #: s2forums/djangobb_forum/forms.py:57
 msgid "Subscribe to this topic."
-msgstr ""
+msgstr "Prenumerera på detta ämne."
 
 #: s2forums/djangobb_forum/forms.py:85
 msgid "Can't be empty nor contain only whitespace characters"
-msgstr ""
+msgstr "Kan varken vara tomt eller bara innehålla blanksteg"
 
 #: s2forums/djangobb_forum/forms.py:95
 msgid ""
 "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
 "Scratch, so your account has been muted for the rest of the day. :/"
 msgstr ""
+"Hmm, filterroboten är ganska säker på att dina senaste kommentarer inte var "
+"ok för Scratch, så ditt konto har stängts av för resten av dagen. :/"
 
 #: s2forums/djangobb_forum/forms.py:123 s2forums/djangobb_forum/forms.py:127
 #, python-format
 msgid "Sorry, you have to wait %d seconds between posts."
-msgstr ""
+msgstr "Tyvärr, du måste vänta %d sekunder mellan inläggen."
 
 #: s2forums/djangobb_forum/forms.py:136
 msgid "Attachment is too big"
-msgstr ""
+msgstr "Bilagan är för stor"
 
 #: s2forums/djangobb_forum/forms.py:177
+#, fuzzy
 msgid "Silent edit?"
-msgstr ""
+msgstr "Tyst redigering?"
 
 # 83%
 #: s2forums/djangobb_forum/forms.py:217
-#, fuzzy
 msgid "E-mail"
 msgstr "E-post"
 
 #: s2forums/djangobb_forum/forms.py:248
 msgid "Real name"
-msgstr ""
+msgstr "Riktigt namn"
 
 #: s2forums/djangobb_forum/forms.py:355 s2forums/djangobb_forum/forms.py:391
 #: templates/includes/sort-projects-dropdown.html:4
@@ -290,143 +292,143 @@ msgstr "Sortera efter"
 
 #: s2forums/djangobb_forum/forms.py:356 s2forums/djangobb_forum/forms.py:392
 msgid "Sort order"
-msgstr ""
+msgstr "Sorteringsordning"
 
 #: s2forums/djangobb_forum/forms.py:385
 msgid "Keyword search"
-msgstr ""
+msgstr "Nyckelordssökning"
 
 #: s2forums/djangobb_forum/forms.py:387
 msgid "Author search"
-msgstr ""
+msgstr "Författarsökning"
 
 #: s2forums/djangobb_forum/forms.py:390
 msgid "Search in"
-msgstr ""
+msgstr "Sök i"
 
 #: s2forums/djangobb_forum/forms.py:393
 msgid "Show results as"
-msgstr ""
+msgstr "Visa resultat som"
 
 #: s2forums/djangobb_forum/forms.py:418
 #, python-format
 msgid "User \"%s\" does not exist"
-msgstr ""
+msgstr "Användare \"%s \" finns inte"
 
 #: s2forums/djangobb_forum/forms.py:428
 msgid "You already voted for this post"
-msgstr ""
+msgstr "Du har redan röstat på inlägget"
 
 #: s2forums/djangobb_forum/forms.py:432
 msgid "This post does't belong to that user"
-msgstr ""
+msgstr "Detta inlägg tillhör inte den användaren"
 
 # 87%
 #: s2forums/djangobb_forum/forms.py:448 s2forums/djangobb_forum/models.py:224
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:34
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
-#, fuzzy
 msgid "Message"
-msgstr "Meddelanden"
+msgstr "Meddelande"
 
 #: s2forums/djangobb_forum/forms.py:501
 #, python-format
 msgid "You have selected too many choices. You may only select %i."
-msgstr ""
+msgstr "Du har gjort för många val. Du får bara välja %i."
 
 #: s2forums/djangobb_forum/forms.py:508
 msgid "Write each answer on a new line."
-msgstr ""
+msgstr "Skriv varje svar på en ny rad"
 
 #: s2forums/djangobb_forum/forms.py:511
 msgid ""
 "Number of days for this poll to run. Leave empty for an indefinite poll."
-msgstr ""
+msgstr "Antal dagar för omröstningen. Lämna tomt för obestämd tid."
 
 #: s2forums/djangobb_forum/forms.py:528
 msgid "There is no valid answer."
-msgstr ""
+msgstr "Det finns inget giltigt svar."
 
 #: s2forums/djangobb_forum/forms.py:534
 msgid "One of the answers is too long."
-msgstr ""
+msgstr "Ett av svaren är för långt."
 
 #: s2forums/djangobb_forum/models.py:43
 msgid "Display your e-mail address."
-msgstr ""
+msgstr "Visa din e-postadress."
 
 #: s2forums/djangobb_forum/models.py:44
 msgid "Hide your e-mail address but allow form e-mail."
-msgstr ""
+msgstr "Dölj din e-postadress men tillåt e-post via formulär."
 
 #: s2forums/djangobb_forum/models.py:45
 msgid "Hide your e-mail address and disallow form e-mail."
-msgstr ""
+msgstr "Dölj din e-postadress och tillåt inte e-post via formulär."
 
 #: s2forums/djangobb_forum/models.py:64 s2forums/djangobb_forum/models.py:102
 #: s2forums/djangobb_forum/models.py:426
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 #: s2forums/djangobb_forum/models.py:65
 msgid "Groups"
-msgstr ""
+msgstr "Grupper"
 
 #: s2forums/djangobb_forum/models.py:65
 msgid "Only users from these groups can see this category"
-msgstr ""
+msgstr "Endast användare från dessa grupper kan se kategorin"
 
 #: s2forums/djangobb_forum/models.py:66 s2forums/djangobb_forum/models.py:103
 msgid "Position"
-msgstr ""
+msgstr "Position"
 
 #: s2forums/djangobb_forum/models.py:70 s2forums/djangobb_forum/models.py:100
 msgid "Category"
-msgstr ""
+msgstr "Kategori"
 
 #: s2forums/djangobb_forum/models.py:71
 msgid "Categories"
-msgstr ""
+msgstr "Kategorier"
 
 #: s2forums/djangobb_forum/models.py:101
 msgid "New topics by moderators only"
-msgstr ""
+msgstr "Nya ämnen enbart genom moderatorer"
 
 # 90%
 #: s2forums/djangobb_forum/models.py:104
-#, fuzzy
 msgid "Description"
-msgstr "beskrivning"
+msgstr "Beskrivning"
 
 #: s2forums/djangobb_forum/models.py:105
 msgid "Moderators"
-msgstr ""
+msgstr "Moderatorer"
 
 #: s2forums/djangobb_forum/models.py:106 s2forums/djangobb_forum/models.py:135
 #: s2forums/djangobb_forum/models.py:221
 msgid "Updated"
-msgstr ""
+msgstr "Uppdaterad"
 
+# Post ska ev. vara inlägg, kolla upp detta så att det blir enhetligt.
 #: s2forums/djangobb_forum/models.py:107 s2forums/djangobb_forum/models.py:141
 #: s2forums/djangobb_forum/models.py:350
 msgid "Post count"
-msgstr ""
+msgstr "Antal inlägg"
 
+# ämne eller ämnen?
 #: s2forums/djangobb_forum/models.py:108
 msgid "Topic count"
-msgstr ""
+msgstr "Antal ämnen"
 
+# Fora är möjligt, men är det för svårt för yngre barn? Forum funkar också i pluralis?
 #: s2forums/djangobb_forum/models.py:114
 #: templates/search/includes/tabs.html:20
 msgid "Forums"
-msgstr ""
+msgstr "Forum"
 
 # 87%
 #: s2forums/djangobb_forum/models.py:134 s2forums/djangobb_forum/models.py:220
 #: s2forums/djangobb_forum/models.py:387
-#, fuzzy
 msgid "Created"
-msgstr "Skapat:"
+msgstr "Skapad"
 
 #: s2forums/djangobb_forum/models.py:136 s2forums/djangobb_forum/models.py:219
 #: s2forums/djangobb_forum/models.py:329
@@ -436,11 +438,13 @@ msgstr "Användare"
 
 #: s2forums/djangobb_forum/models.py:137
 msgid "Views count"
-msgstr ""
+msgstr "Antal visningar"
 
+# Inlägg som är kvar först. I Facebook kallas det fastnålade inlägg. Kolla upp mer.
 #: s2forums/djangobb_forum/models.py:138
+#, fuzzy
 msgid "Sticky"
-msgstr ""
+msgstr "Fastnålat"
 
 # 83%
 #: s2forums/djangobb_forum/models.py:139
@@ -462,17 +466,20 @@ msgstr "Ämne"
 msgid "Updated by"
 msgstr "Uppdaterad av"
 
+# I vilket sammanhang finns ordet? Kolla upp och ändra.
 #: s2forums/djangobb_forum/models.py:223
 msgid "Markup"
-msgstr ""
+msgstr "Markera"
 
 #: s2forums/djangobb_forum/models.py:225
 msgid "HTML version"
-msgstr ""
+msgstr "HTML-version"
 
+# Blir ev. för lång. Kanske Användar-IP?
 #: s2forums/djangobb_forum/models.py:226
+#, fuzzy
 msgid "User IP"
-msgstr ""
+msgstr "Användarens IP-adress"
 
 #: s2forums/djangobb_forum/models.py:232 s2forums/djangobb_forum/models.py:302
 #: s2forums/djangobb_forum/models.py:384 s2forums/djangobb_forum/models.py:422
@@ -485,121 +492,122 @@ msgstr "Skicka"
 
 #: s2forums/djangobb_forum/models.py:300
 msgid "From"
-msgstr ""
+msgstr "Från"
 
 #: s2forums/djangobb_forum/models.py:301
 msgid "To"
-msgstr ""
+msgstr "Till"
 
 #: s2forums/djangobb_forum/models.py:303
 #: templates/cloudmonitor/monitor.html:71
 msgid "Time"
 msgstr "Tid"
 
+# Vilket sammanhang?
 #: s2forums/djangobb_forum/models.py:304
 msgid "Sign"
-msgstr ""
+msgstr "Underskrift"
 
 #: s2forums/djangobb_forum/models.py:305 s2forums/djangobb_forum/models.py:388
 #: s2forums/djangobb_forum/models.py:401
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:29
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:25
 msgid "Reason"
-msgstr ""
+msgstr "Anledning"
 
 #: s2forums/djangobb_forum/models.py:308
 msgid "Reputation"
-msgstr ""
+msgstr "Omdöme"
 
 #: s2forums/djangobb_forum/models.py:309
 msgid "Reputations"
-msgstr ""
+msgstr "Ömdömen"
 
 #: s2forums/djangobb_forum/models.py:330
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 # 75%
 #: s2forums/djangobb_forum/models.py:331
-#, fuzzy
 msgid "Site"
-msgstr "storlek"
+msgstr "Sajt"
 
 #: s2forums/djangobb_forum/models.py:332
 msgid "Jabber"
-msgstr ""
+msgstr "Jabber"
 
 #: s2forums/djangobb_forum/models.py:333
 msgid "ICQ"
-msgstr ""
+msgstr "ICQ"
 
 #: s2forums/djangobb_forum/models.py:334
 msgid "MSN"
-msgstr ""
+msgstr "MSN"
 
 #: s2forums/djangobb_forum/models.py:335
 msgid "AIM"
-msgstr ""
+msgstr "AIM"
 
 #: s2forums/djangobb_forum/models.py:336
 msgid "Yahoo"
-msgstr ""
+msgstr "Yahoo"
 
 #: s2forums/djangobb_forum/models.py:337
 msgid "Location"
-msgstr ""
+msgstr "Plats"
 
 #: s2forums/djangobb_forum/models.py:338 s2forums/djangobb_forum/models.py:339
 #: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:19
 msgid "Signature"
-msgstr ""
+msgstr "Underskrift"
 
 #: s2forums/djangobb_forum/models.py:340
 msgid "Time zone"
-msgstr ""
+msgstr "Tidszon"
 
 # 87%
 #: s2forums/djangobb_forum/models.py:341
-#, fuzzy
 msgid "Language"
-msgstr "språk"
+msgstr "Språk"
 
 #: s2forums/djangobb_forum/models.py:342
 msgid "Avatar"
-msgstr ""
+msgstr "Avatar"
 
 #: s2forums/djangobb_forum/models.py:343
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: s2forums/djangobb_forum/models.py:344
 msgid "Show avatar"
-msgstr ""
+msgstr "Visa avatar"
 
 #: s2forums/djangobb_forum/models.py:345
 msgid "Show signatures"
-msgstr ""
+msgstr "Visa underskrifter"
 
 #: s2forums/djangobb_forum/models.py:346
 msgid "Show smilies"
-msgstr ""
+msgstr "Visa smileys"
 
+# I vilket sammanhang?
 #: s2forums/djangobb_forum/models.py:347
 msgid "Privacy permission"
-msgstr ""
+msgstr "Integritet"
 
 #: s2forums/djangobb_forum/models.py:348
 msgid "Auto subscribe"
-msgstr ""
+msgstr "Prenumerera automatiskt"
 
 #: s2forums/djangobb_forum/models.py:348
 msgid "Auto subscribe all topics you have created or reply."
-msgstr ""
+msgstr "Prenumerera på alla ämnen som du skapat eller svarat på."
 
+# Kolla upp Markup
 #: s2forums/djangobb_forum/models.py:349
 msgid "Default markup"
-msgstr ""
+msgstr "Standardmärkning"
 
 #: s2forums/djangobb_forum/models.py:355 templates/base.html:116
 msgid "Profile"
@@ -612,87 +620,93 @@ msgstr "Profiler"
 
 #: s2forums/djangobb_forum/models.py:376 s2forums/djangobb_forum/models.py:377
 msgid "Post tracking"
-msgstr ""
+msgstr "Spåra inlägg"
 
 #: s2forums/djangobb_forum/models.py:383
 msgid "Reported by"
-msgstr ""
+msgstr "Rapporterat av"
 
+# Osäkert vilken betydelse. Kolla upp
 #: s2forums/djangobb_forum/models.py:385
+#, fuzzy
 msgid "Zapped"
-msgstr ""
+msgstr "Attackerad"
 
 #: s2forums/djangobb_forum/models.py:386
+#, fuzzy
 msgid "Zapped by"
-msgstr ""
+msgstr "Attackerad av"
 
 #: s2forums/djangobb_forum/models.py:391
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:153
 #: templates/comments/comment.html:21
 msgid "Report"
-msgstr "Rapportera"
+msgstr "Rapport"
 
 # 85%
 #: s2forums/djangobb_forum/models.py:392
 #: s2forums/djangobb_forum/templates/djangobb_forum/header.html:28
 #: s2forums/djangobb_forum/templates/djangobb_forum/reports.html:6
-#, fuzzy
 msgid "Reports"
-msgstr "Rapportera"
+msgstr "Rapporter"
 
+# Bättre ord?
 #: s2forums/djangobb_forum/models.py:398
+#, fuzzy
 msgid "Banned user"
-msgstr ""
+msgstr "Avstängd användare"
 
 #: s2forums/djangobb_forum/models.py:399
 msgid "Ban start"
-msgstr ""
+msgstr "Avstängning startar"
 
 #: s2forums/djangobb_forum/models.py:400
 msgid "Ban end"
-msgstr ""
+msgstr "Avstängning slutar"
 
 #: s2forums/djangobb_forum/models.py:404
 msgid "Ban"
-msgstr ""
+msgstr "Avstängning"
 
 #: s2forums/djangobb_forum/models.py:405
 msgid "Bans"
-msgstr ""
+msgstr "Avstängningar"
 
 # 75%
 #: s2forums/djangobb_forum/models.py:423
-#, fuzzy
 msgid "Size"
-msgstr "storlek"
+msgstr "Storlek"
 
 #: s2forums/djangobb_forum/models.py:424
 msgid "Content type"
-msgstr ""
+msgstr "Typ av innehåll"
 
+# I vilket sammanhang?
 #: s2forums/djangobb_forum/models.py:425
+#, fuzzy
 msgid "Path"
-msgstr ""
+msgstr "Stig"
 
 #: s2forums/djangobb_forum/models.py:427
 msgid "Hash"
-msgstr ""
+msgstr "Hash"
 
 #: s2forums/djangobb_forum/models.py:454
 msgid "How many choices are allowed simultaneously."
-msgstr ""
+msgstr "Hur många val är tillåtna samtidigt."
 
 #: s2forums/djangobb_forum/models.py:457
 msgid "Can users vote to this poll or just see the result?"
-msgstr ""
+msgstr "Kan användarna rösta eller bara se resultatet?"
 
+# Kolla upp detta!
 #: s2forums/djangobb_forum/models.py:460
 msgid "Point of time after this poll would be automatic deactivated"
-msgstr ""
+msgstr "Tidpunkt efter att den här omröstningen stängs av automatiskt"
 
 #: s2forums/djangobb_forum/models.py:463
 msgid "Users who has voted this poll."
-msgstr ""
+msgstr "Användare som har röstat."
 
 #: s2forums/djangobb_forum/util.py:270
 #, python-format
@@ -701,153 +715,158 @@ msgid ""
 "Please update your image links or remove all BB code [img] tags. Bad image "
 "url: %s"
 msgstr ""
+"Tyvärr, du måste spara dina bilder på en tjänst som imageshack.com. "
+"Uppdatera dina bildlänkar eller ta bort alla BB-kod [img] taggar. Felaktig "
+"bild URL: %s"
 
 #: s2forums/djangobb_forum/views.py:102
 msgid "Topics deleted."
-msgstr ""
+msgstr "Ämnet borttaget."
 
 #: s2forums/djangobb_forum/views.py:107
 msgid "Topics opened."
-msgstr ""
+msgstr "Ämnet öppnat."
 
 #: s2forums/djangobb_forum/views.py:112
 msgid "Topics closed."
-msgstr ""
+msgstr "Ämnet avslutat."
 
+# Meddelande eller inlägg?
 #: s2forums/djangobb_forum/views.py:302
 #, python-format
 msgid "Found %i posts."
-msgstr ""
+msgstr "Hittade %i inlägg."
 
 #: s2forums/djangobb_forum/views.py:306
 #, python-format
 msgid "Found %i topics."
-msgstr ""
+msgstr "Hittade %i ämnen."
 
 #: s2forums/djangobb_forum/views.py:320
 msgid "Marked all topics as read."
-msgstr ""
+msgstr "Markerade alla ämnen som lästa."
 
 #: s2forums/djangobb_forum/views.py:330
 msgid "Post reported."
-msgstr ""
+msgstr "Inlägget rapporterat."
 
 #: s2forums/djangobb_forum/views.py:347
 msgid "Email sent."
-msgstr ""
+msgstr "E-post skickad."
 
 #: s2forums/djangobb_forum/views.py:349
 msgid "Email could not be sent."
-msgstr ""
+msgstr "E-post kunde inte skickas."
 
 #: s2forums/djangobb_forum/views.py:441 s2forums/djangobb_forum/views.py:1082
 msgid "Reply saved."
-msgstr ""
+msgstr "Svar sparat."
 
 #: s2forums/djangobb_forum/views.py:487
 msgid "This poll is not active."
-msgstr ""
+msgstr "Omröstningen är inte aktiv."
 
 #: s2forums/djangobb_forum/views.py:490
 msgid "You already voted on this poll."
-msgstr ""
+msgstr "Du har redan röstat."
 
 #: s2forums/djangobb_forum/views.py:499
 msgid "Vote saved."
-msgstr ""
+msgstr "Omröstning är sparad."
 
 #: s2forums/djangobb_forum/views.py:595
 msgid "Topic with poll saved."
-msgstr ""
+msgstr "Ämnet med omröstning är sparad."
 
 #: s2forums/djangobb_forum/views.py:597
 msgid "Topic saved."
-msgstr ""
+msgstr "Ämnet är sparat."
 
 #: s2forums/djangobb_forum/views.py:632
 msgid "Avatar uploaded."
-msgstr ""
+msgstr "Avatar uppladdad."
 
 #: s2forums/djangobb_forum/views.py:641
 msgid "Please sign in."
-msgstr ""
+msgstr "Logga in."
 
 #: s2forums/djangobb_forum/views.py:655
 msgid "Profile saved."
-msgstr ""
+msgstr "Profil sparad."
 
 #: s2forums/djangobb_forum/views.py:690
 msgid "Reputation deleted."
-msgstr ""
+msgstr "Omdöme borttaget."
 
 #: s2forums/djangobb_forum/views.py:696
 msgid "Reputation saved."
-msgstr ""
+msgstr "Omdöme sparat."
 
 #: s2forums/djangobb_forum/views.py:737
 msgid "You don't have permission to edit this post."
-msgstr ""
+msgstr "Du har inte tillåtelse att redigera inlägget."
 
 # 76%
 #: s2forums/djangobb_forum/views.py:747
-#, fuzzy
 msgid "Post updated."
-msgstr "Senast uppdaterad"
+msgstr "Inlägget uppdaterat."
 
 #: s2forums/djangobb_forum/views.py:770 s2forums/djangobb_forum/views.py:965
 msgid "Post deleted."
-msgstr ""
+msgstr "Inlägget borttaget."
 
 #: s2forums/djangobb_forum/views.py:814
 msgid "The topic ID must be an integer."
-msgstr ""
+msgstr "Ämnets ID måste vara ett heltal."
 
 #: s2forums/djangobb_forum/views.py:820
 msgid "That thread doesn't exist."
-msgstr ""
+msgstr "Tråden finns inte."
 
+# Se över om det ska vara meddelande eller inlägg. Relaterat till ett forum!
 #: s2forums/djangobb_forum/views.py:861
+#, fuzzy
 msgid "Posts moved."
-msgstr ""
+msgstr "Inlägg har flyttats."
 
 #: s2forums/djangobb_forum/views.py:925
 msgid "Topic moved."
-msgstr ""
+msgstr "Ämnet flyttat."
 
 #: s2forums/djangobb_forum/views.py:941
 msgid "Topic stickied."
-msgstr ""
+msgstr "Ämnet fastnålat."
 
 #: s2forums/djangobb_forum/views.py:943
 msgid "Topic unstickied."
-msgstr ""
+msgstr "Ämnet inte fastnålat."
 
 #: s2forums/djangobb_forum/views.py:961
 msgid "You don't have permission to delete this post."
-msgstr ""
+msgstr "Du har inte tillåtelse att ta bort inlägget."
 
 #: s2forums/djangobb_forum/views.py:979
 msgid "Topic closed."
-msgstr ""
+msgstr "Ämnet stängt."
 
 #: s2forums/djangobb_forum/views.py:982
 msgid "Topic opened."
-msgstr ""
+msgstr "Ämnet öppnat."
 
 #: s2forums/djangobb_forum/views.py:1004
 msgid "Unsubscribed from topic."
-msgstr ""
+msgstr "Prenumerationen avbruten."
 
 #: s2forums/djangobb_forum/views.py:1016
 msgid "Subscribed to topic."
-msgstr ""
+msgstr "Prenumererar på ämnet."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:13
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:10
 msgid "New Topic"
-msgstr ""
+msgstr "Nytt ämne"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:11
 #: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:15
@@ -863,41 +882,41 @@ msgstr ""
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:27
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:177
 msgid "Discussion Forums"
-msgstr ""
+msgstr "Diskussionsforum"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/base.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:6
 msgid "Discuss Scratch"
-msgstr ""
+msgstr "Diskutera Scratch"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/base.html:78
 #: s2forums/djangobb_forum/templates/djangobb_forum/header.html:40
 msgid "Notice"
-msgstr ""
+msgstr "Notifiering"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:7
 #, python-format
 msgid "Delete Posts - %(name)s"
-msgstr ""
+msgstr "Ta bort inlägg - %(name)s"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:18
 #: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:68
 msgid "Delete Posts"
-msgstr ""
+msgstr "Ta bort inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:46
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:48
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:124
 #, python-format
 msgid "Last edited by %(user)s (%(time)s)"
-msgstr ""
+msgstr "Senast redigerad av %(user)s (%(time)s)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:51
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:35
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:52
 msgid "Select"
-msgstr ""
+msgstr "Välj"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:72
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:85
@@ -920,43 +939,45 @@ msgstr "Radera"
 #: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:65
 msgid "Go back"
-msgstr ""
+msgstr "Tillbaka"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:5
 #, python-format
 msgid "Edit Post - %(name)s"
-msgstr ""
+msgstr "Redigerat inlägg - %(name)s"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:14
 msgid "Edit Post"
-msgstr ""
+msgstr "Redigera inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:22
 msgid "Edit post"
-msgstr ""
+msgstr "Redigera inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:41
 msgid "Silent edit (don't display 'Edited by ...' in topic view)"
-msgstr ""
+msgstr "Osynlig redigering (visa inte 'Redigerad av...' i ämnesvyn)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:45
 msgid "Save"
-msgstr ""
+msgstr "Spara"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:24
 msgid ""
 "Can't find an answer to your question? Click here to ask it in a new thread."
 msgstr ""
+"Kan inte hitta ett svar på din fråga? Klicka här för att ställa frågan i en "
+"ny tråd."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:24
 msgid "New topic"
-msgstr ""
+msgstr "Nytt ämne"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:36
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:32
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:27
 msgid "Replies"
-msgstr ""
+msgstr "Svar"
 
 # 80%
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:37
@@ -971,12 +992,12 @@ msgstr "Visningar"
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:34
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:28
 msgid "Last Post"
-msgstr ""
+msgstr "Senaste inlägget"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:53
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:47
 msgid "Sticky:"
-msgstr ""
+msgstr "Fastnålat:"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:56
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:63
@@ -1002,24 +1023,24 @@ msgstr "av"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:57
 msgid "(New Posts)"
-msgstr ""
+msgstr "(Nya inlägg)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:67
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:61
 msgid "Forum is empty."
-msgstr ""
+msgstr "Forumet är tomt."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:107
 msgid "Moderate forum"
-msgstr ""
+msgstr "Modererat forum"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/header.html:15
 msgid "Show new posts since last visit"
-msgstr ""
+msgstr "Visa nya inlägg sedan ditt senaste besök"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/header.html:20
 msgid "Discussion Home"
-msgstr ""
+msgstr "Diskussion Hem"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:5
@@ -1033,62 +1054,63 @@ msgstr "Sök"
 #: s2forums/djangobb_forum/templates/djangobb_forum/header.html:26
 #, python-format
 msgid "Reports (%(report_count)s)"
-msgstr ""
+msgstr "Rapporter (%(report_count)s)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
 msgid "Show your"
-msgstr ""
+msgstr "Visa din"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
 msgid "topics"
-msgstr ""
+msgstr "ämnen"
 
 # 80%
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-#, fuzzy
 msgid "posts"
-msgstr "Skicka"
+msgstr "meddelanden"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:78
 msgid "Change your signature"
-msgstr ""
+msgstr "Ändra din signatur"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:82
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:43
 msgid "Show recent posts"
-msgstr ""
+msgstr "Visa senaste inläggen"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:83
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:44
 msgid "Show unanswered posts"
-msgstr ""
+msgstr "Visa obesvarade inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:85
 msgid "Mark all topics as read"
-msgstr ""
+msgstr "Markera alla ämnen som lästa"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:89
 #, python-format
 msgid "Online (%(count)s):"
-msgstr ""
+msgstr "Online (%(count)s):"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:94
 msgid "…and more."
-msgstr ""
+msgstr "...och mer."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:7
 msgid "Send e-mail to"
-msgstr ""
+msgstr "Skicka e-post till"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:13
 msgid "Write and submit your e-mail message"
-msgstr ""
+msgstr "Skriv och skicka ditt e-postmeddelande"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:19
 msgid ""
 "Please note that by using this form, your e-mail address will be disclosed "
 "to the recipient."
 msgstr ""
+"Observera, när du använder formuläret kommer din e-postadress att visas för "
+"mottagaren."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:23
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:34
@@ -1099,28 +1121,28 @@ msgstr ""
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/post_form.html:16
 #: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:31
 msgid "Submit"
-msgstr ""
+msgstr "Skicka"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:7
 #, python-format
 msgid "Moderate - %(name)s"
-msgstr ""
+msgstr "Moderera - %(name)s"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:16
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:74
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:80
 msgid "Moderate Forum"
-msgstr ""
+msgstr "Modererat Forum"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:84
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:89
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:40
 msgid "Move"
-msgstr ""
+msgstr "Flytta"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:86
 msgid "Open"
-msgstr ""
+msgstr "Öppna"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:87
 #: templates/modal-registration.html:187
@@ -1129,104 +1151,103 @@ msgstr "Stäng"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderators.html:3
 msgid "Moderated by"
-msgstr ""
+msgstr "Modererat av"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:7
 #, python-format
 msgid "Move Posts - %(name)s"
-msgstr ""
+msgstr "Flytta meddelanden - %(name)s"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:22
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:68
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:74
 msgid "Move Posts"
-msgstr ""
+msgstr "Flytta meddelanden"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:82
 msgid "All posts (original topic will be deleted)"
-msgstr ""
+msgstr "Alla inlägg (originalämnet kommer att tas bort)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:85
 msgid "Topic ID or URL"
-msgstr ""
+msgstr "Ämnes ID eller URL"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:11
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:17
 msgid "Move Topic"
-msgstr ""
+msgstr "Flytta ämnet"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:26
 msgid "Move to"
-msgstr ""
+msgstr "Flytta till"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/pagination.html:3
 msgid "Pages"
-msgstr ""
+msgstr "Sidor"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:22
 msgid "Report Post"
-msgstr ""
+msgstr "Flagga post"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:32
 msgid "Please enter a short reason why you are reporting this post."
-msgstr ""
+msgstr "Ange en kort anledning till varför du rapporterar detta inlägg."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:17
 msgid "Reputation of the user"
-msgstr ""
+msgstr "Omdöme om användaren"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:23
 msgid "From user"
-msgstr ""
+msgstr "Från användare"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:24
 msgid "For post in topic"
-msgstr ""
+msgstr "För inlägg i ämnet"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:26
 msgid "Estimation"
-msgstr ""
+msgstr "Uppskattning"
 
 # 80%
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:27
-#, fuzzy
 msgid "Date"
-msgstr "Datum:"
+msgstr "Datum"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:64
 msgid "Are you sure"
-msgstr ""
+msgstr "Är du säker"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:7
 msgid "Please, fill the form"
-msgstr ""
+msgstr "Fyll i formuläret"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:17
 msgid "Your name:"
-msgstr ""
+msgstr "Ditt namn:"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:21
 msgid "To whom we change a reputation:"
-msgstr ""
+msgstr "För vem vi ändrar omdömet:"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:29
 msgid "Method:"
-msgstr ""
+msgstr "Metod:"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:32
 msgid "Add of a reputation"
-msgstr ""
+msgstr "Lägg till omdöme"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:34
 msgid "Reduction of a reputation"
-msgstr ""
+msgstr "Ta bort ett omdöme"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:32
 msgid "(Dustbin all posts and topics)"
-msgstr ""
+msgstr "(Papperskorg alla inlägg och ämnen)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:37
 msgid ""
@@ -1234,21 +1255,26 @@ msgid ""
 "with spaces. To search by author enter the username of the author whose "
 "posts you wish to search for."
 msgstr ""
+"För att söka efter ord, ange ett eller flera sökord. Separata villkor med "
+"mellanslag. För att söka efter författare ange användarnamnet på författaren "
+"vars inlägg du vill söka efter."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:42
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:30
 msgid "All forums"
-msgstr ""
+msgstr "Alla forum"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:56
 msgid ""
 "Choose in which forum you would like to search and if you want to search in "
 "topic subjects, message text or both."
 msgstr ""
+"Välj i vilket forum du vill söka och om du vill söka i ämnesrubrik, "
+"meddelandetext eller båda."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:70
 msgid "You can choose how you wish to sort and show your results."
-msgstr ""
+msgstr "Du kan välja hur du vill sortera och visa dina resultat"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:6
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:7
@@ -1256,194 +1282,192 @@ msgstr ""
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:10
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:10
 msgid "Search Results"
-msgstr ""
+msgstr "Sökresultat"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:12
 msgid "Show results as topic list."
-msgstr ""
+msgstr "Visa resultat som ämneslista."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:26
 msgid "Info"
-msgstr ""
+msgstr "Information"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:29
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:49
 msgid "Your search returned no hits."
-msgstr ""
+msgstr "Din sökning gav inga träffar."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:42
 msgid "Search links"
-msgstr ""
+msgstr "Söklänkar"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:46
 msgid "Show your subscribed topics"
-msgstr ""
+msgstr "Visa ämnen som du prenumererar på"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:47
 msgid "Show your topics"
-msgstr ""
+msgstr "Visa din ämnen"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:13
 msgid "Show results as post list."
-msgstr ""
+msgstr "Visa resultat som inläggslista"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:16
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:186
 msgid "loading..."
-msgstr ""
+msgstr "laddar..."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:17
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:187
 msgid "There was an error :( Try again?"
-msgstr ""
+msgstr "Det blev ett fel :( Försök igen?"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:18
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:188
 msgid "Follow this discussion to get a message when there's a new post"
 msgstr ""
+"Följ denna diskussionen för att få ett meddelande när nytt inlägg skickas"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:18
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:188
 msgid "Follow Discussion"
-msgstr ""
+msgstr "Följ diskussionen"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:19
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:189
 msgid "Stop getting messages about new posts to this discussion"
-msgstr ""
+msgstr "Stoppa meddelanden om nya inlägg i den här diskussionen"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:19
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:189
 msgid "Unfollow Discussion"
-msgstr ""
+msgstr "Följ inte diskussionen"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:35
 msgid "Poll"
-msgstr ""
+msgstr "Omröstning"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:43
 #, python-format
 msgid "(%(count)s answers allows.)"
-msgstr ""
+msgstr "(%(count)s svar tillåtna.)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:46
 msgid "Vote"
-msgstr ""
+msgstr "Rösta"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:97
 msgid "1000+ posts"
-msgstr ""
+msgstr "1000+ inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:99
 msgid "500+ posts"
-msgstr ""
+msgstr "500+ inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:101
 msgid "100+ posts"
-msgstr ""
+msgstr "100+ inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:103
 msgid "1 post"
-msgstr ""
+msgstr "1 inlägg"
 
 # 80%
 # 80%
 # 83%
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:105
-#, fuzzy
 msgid " posts"
-msgstr "Skicka"
+msgstr " inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:111
 msgid "From:"
-msgstr ""
+msgstr "Från:"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:113
 msgid "Registered:"
-msgstr ""
+msgstr "Registrerad:"
 
 # 80%
 # 83%
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:114
-#, fuzzy
 msgid "Posts:"
-msgstr "Skicka"
+msgstr "Inlägg:"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:115
 msgid "IP:"
-msgstr ""
+msgstr "IP-adress:"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:131
 msgid "(Edit Signature)"
-msgstr ""
+msgstr "(Redigera signatur)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:156
 msgid "Are you sure you want to delete this post?"
-msgstr ""
+msgstr "Är du säker på att du vill ta bort detta inlägg?"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:160
 msgid "Edit"
-msgstr ""
+msgstr "Redigera"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:163
 msgid "Insert a quotation of this post in your reply."
-msgstr ""
+msgstr "Infoga ett citat från inlägget i ditt svar."
 
 # 83%
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:163
-#, fuzzy
 msgid "Quote"
 msgstr "Citat"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:208
 msgid "Jump to"
-msgstr ""
+msgstr "Hoppa till"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:219
 msgid "Go"
-msgstr ""
+msgstr "Gå"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:224
 msgid "Moderator control"
-msgstr ""
+msgstr "Moderatkontroll"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:225
 msgid "Delete multiple posts"
-msgstr ""
+msgstr "Ta bort flera inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:226
 msgid "Move multiple posts"
-msgstr ""
+msgstr "Flytta flera inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:227
 msgid "Move topic"
-msgstr ""
+msgstr "Flytta ämne"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:229
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:240
 msgid "Open topic"
-msgstr ""
+msgstr "Öppna ämnet"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:231
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:242
 msgid "Close topic"
-msgstr ""
+msgstr "Stäng ämnet"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:234
 msgid "Unstick topic"
-msgstr ""
+msgstr "Nåla inte fast ämnet"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:236
 msgid "Stick topic"
-msgstr ""
+msgstr "Nåla fast inlägget"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:7
 msgid "Upload avatar"
-msgstr ""
+msgstr "Ladda upp avatar"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:13
 msgid "Enter an avatar file to upload"
-msgstr ""
+msgstr "Skriv in en avatar-fil att ladda upp"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:19
 #, python-format
@@ -1452,40 +1476,44 @@ msgid ""
 "your posts. It must not be any bigger than %(avatar_width)s x "
 "%(avatar_height)s pixels "
 msgstr ""
+"En avatar är en liten bild som visas under ditt användarnamn i dina inlägg. "
+"Den får inte vara större än % (avatar_width)s x % (avatar_height)s pixlar "
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
 msgid "Upload"
-msgstr ""
+msgstr "Ladda upp"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:5
 msgid "YouTube Video"
-msgstr ""
+msgstr "Youtube video"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:22
 msgid "Video Not Found"
-msgstr ""
+msgstr "Videon hittas inte"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:33
 msgid "Why do I see this page?"
-msgstr ""
+msgstr "Varför ser jag denna sidan?"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:36
 msgid ""
 "Links to YouTube videos on the forums are automatically converted to links "
 "to this page, to hide comments and other content."
 msgstr ""
+"Länkar till YouTube-videor på forumet konverteras automatiskt till länkar "
+"till denna sidan, för att dölja kommentarer och annat innehåll."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
 msgid "New Reply"
-msgstr ""
+msgstr "Nytt svar"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:22
 msgid "Create a poll"
-msgstr ""
+msgstr "Skapa en omröstning"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_in_search_page.html:14
 msgid "Replies:"
-msgstr ""
+msgstr "Svar:"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:8
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/forum.html:9
@@ -1503,13 +1531,12 @@ msgstr "Diskutera"
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:23
 #, python-format
 msgid "Signed in as <strong>%(user)s</strong>"
-msgstr ""
+msgstr "Inloggad som <strong>%(user)s</strong>"
 
 # 85%
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:25
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:7
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:25
-#, fuzzy
 msgid "Sign In"
 msgstr "Logga in"
 
@@ -1517,8 +1544,8 @@ msgstr "Logga in"
 #, python-format
 msgid "%(posts)s post"
 msgid_plural "%(posts)s posts"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(posts)s inlägg"
+msgstr[1] "%(posts)s inlägg"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/reply.html:11
 #: templates/comments/comment.html:42
@@ -1530,23 +1557,23 @@ msgstr "Svara"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:22
 msgid "No posts."
-msgstr ""
+msgstr "Inga inlägg."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:7
 #, python-format
 msgid "%(replies)s reply"
 msgid_plural "%(replies)s replies"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(replies)s svar"
+msgstr[1] "%(replies)s svar"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:10
 msgid "No topics."
-msgstr ""
+msgstr "Inga ämnen."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:12
 #, python-format
 msgid "Settings (%(name)s)"
-msgstr ""
+msgstr "Inställningar (%(name)s)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:22
 msgid ""
@@ -1557,14 +1584,21 @@ msgid ""
 "the features that are allowed/enabled listed below whenever you edit your "
 "signature."
 msgstr ""
+"En signatur är en kort text som är kopplad till dina inlägg. I den kan du "
+"skriva precis vad som helst som du vill. Kanske vill du ange ditt "
+"favoritcitat eller ditt stjärntecken. Det är upp till dig! I din signatur "
+"kan du använda BBCode om det är tillåtet i det forumet. Du kan se vilka "
+"funktioner som är tillåtna/aktiverade när du redigerar din signatur."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:27
 msgid "No signature currently stored in profile."
-msgstr ""
+msgstr "Ingen signatur är sparad i din profil."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:32
 msgid "When you update your profile, you will be redirected back to this page."
 msgstr ""
+"När du uppdaterar din profil kommer du att bli omdirigerad tillbaka till "
+"denna sidan."
 
 #: templates/404.html:11
 msgid "404. Oh noes! Our server is Scratch'ing its head"
@@ -1603,7 +1637,7 @@ msgstr "Scratch"
 
 #: templates/base.html:16
 msgid "Imagine, Program, Share"
-msgstr "Föreställ dig, Programmera, Dela"
+msgstr "Tänk, Programmera, Dela"
 
 #: templates/base.html:81
 msgid "Create"
@@ -1685,7 +1719,7 @@ msgstr "Kontakta oss"
 
 #: templates/base.html:207
 msgid "Donate"
-msgstr ""
+msgstr "Donera"
 
 #: templates/base.html:219
 msgid ""
@@ -1713,22 +1747,29 @@ msgid ""
 "find answers to most questions about Scratch on our  <a href=\"/help/faq/"
 "\">Frequently Asked Questions</a> page."
 msgstr ""
+"Scratchteamet får ett stort antal meddelanden varje dag. Tyvärr har vi inte "
+"tid att svara på alla. Lyckligtvis kan du hitta svar på de flesta frågor om "
+"Scratch på sidan för <a href=\"/help/faq/\">Vanliga frågor</a>."
 
 #: templates/contact-us.html:41
 msgid ""
 "You can also try searching the Scratch <a href=\"/discuss\">Discussion "
 "forums</a>:"
 msgstr ""
+"Du kan också prova att söka på Scratch <a "
+"href=\"/discuss\">Diskussionsforum</a>:"
 
 #: templates/contact-us.html:54
 msgid ""
 "If you can't find an answer, post a new topic on the <a href=\"/discuss"
 "\">Discussion forums.</a> There are many experienced Scratchers who can help!"
 msgstr ""
+"Om du inte kan hitta ett svar, posta ett nytt ämne på <a href=\"/discuss\"> "
+"Diskussionsforum. </a> Det finns många erfarna Scratchare som kan hjälpa "
+"till!"
 
 # 95%
 #: templates/contact-us.html:57
-#, fuzzy
 msgid "Questions About Scratch"
 msgstr "Frågor om Scratch"
 
@@ -1738,29 +1779,31 @@ msgstr "Hjälp med Script"
 
 #: templates/contact-us.html:59
 msgid "Bugs and Glitches"
-msgstr ""
+msgstr "Buggar och tekniska fel"
 
 #: templates/contact-us.html:62
 msgid ""
 "If you need to contact us, please choose from one of the options below. We "
 "get a lot of mail, so we may not be able to respond to your message."
 msgstr ""
+"Om du behöver kontakta oss, välj ett av alternativen nedan. Vi får en hel "
+"del meddelanden, så kan kanske inte svara på ditt meddelande."
 
 #: templates/contact-us.html:67
 msgid "Select a topic"
-msgstr ""
+msgstr "Välj ett ämne"
 
 #: templates/contact-us.html:68
 msgid "Report something inappropriate..."
-msgstr ""
+msgstr "Rapportera något olämpligt..."
 
 #: templates/contact-us.html:69
 msgid "Report a problem with the website..."
-msgstr ""
+msgstr "Rapportera ett problem med webbsajten..."
 
 #: templates/contact-us.html:70
 msgid "Other..."
-msgstr ""
+msgstr "Annat..."
 
 #: templates/contact-us.html:80 templates/accounts/banned-response.html:80
 msgid "Send"
@@ -1811,9 +1854,8 @@ msgstr "Mest remixade"
 # 83%
 # 80%
 #: templates/modal-login.html:36
-#, fuzzy
 msgid "Or Join Scratch"
-msgstr "Gå med Scratch"
+msgstr "Eller gå med i Scratch"
 
 #: templates/modal-registration.html:12
 msgid "Uh oh"
@@ -1892,8 +1934,8 @@ msgid ""
 "We use this only in case you need to reset your password.  We won't share it "
 "with anyone."
 msgstr ""
-"Vi kommer bara att använda det här ifall du behöver ersätta ditt lösenord. "
-"Vi kommer inte ge ut det till någon."
+"Vi kommer bara att använda det här om du behöver återställa ditt lösenord. "
+"Vi kommer inte dela det med någon."
 
 #: templates/modal-registration.html:89
 msgid "Month"
@@ -1996,15 +2038,16 @@ msgstr "Skulle du vilja:"
 
 #: templates/modal-registration.html:162
 msgid "Learn how to make a project"
-msgstr "Lär hur man gör ett projekt"
+msgstr "Lära dig hur man gör ett projekt"
 
 #: templates/modal-registration.html:163
 msgid "Choose a starter project"
-msgstr "Välj ett förberett projekt"
+msgstr "Välj ett startprojekt"
 
+# Skapa kontakt?
 #: templates/modal-registration.html:164
 msgid "Connect with a Scratcher"
-msgstr "Anslut med en Scratch:are"
+msgstr "Kontakt med en Scratchare"
 
 #: templates/modal-registration.html:178
 #: templates/profiles/scratcher_promotion_modal.html:65
@@ -2013,7 +2056,7 @@ msgstr "Nästa"
 
 #: templates/modal-registration.html:183
 msgid "OK Lets Go!"
-msgstr "OK Då kör vi!"
+msgstr "OK, då kör vi!"
 
 #: templates/modal-registration.html:200
 msgid "Your username must be between 3 and 20 characters"
@@ -2043,9 +2086,8 @@ msgstr ""
 
 # 82%
 #: templates/modal-registration.html:206
-#, fuzzy
 msgid "Your password cannot be \\\\\\'password\\\\\\'"
-msgstr "Ditt lösenord får inte vara 'password'."
+msgstr "Ditt lösenord får inte vara \\\\\\'password\\\\\\'"
 
 # 87%
 #: templates/modal-registration.html:207
@@ -2078,7 +2120,7 @@ msgstr "Du måste ange ett kön"
 # 96%
 #: templates/modal-registration.html:213
 msgid "You must select a country"
-msgstr "Du måste ange ett land"
+msgstr "Du måste välja ett land"
 
 # 97%
 #: templates/modal-registration.html:214
@@ -2092,12 +2134,13 @@ msgstr "Du måste ange en giltig e-postadress"
 
 # Lite luddigt. I vilket sammanhang
 #: templates/password_required_login.html:31
+#, fuzzy
 msgid "Enter"
-msgstr "Enter"
+msgstr "Ok"
 
 #: templates/accounts/banned-response.html:32
 msgid "The Scratch Team decided to block the account:"
-msgstr "Scratchgruppen beslöt sig för att blockera det här kontot:"
+msgstr "Scratchteamet beslöt sig för att blockera det här kontot:"
 
 #: templates/accounts/banned-response.html:34
 msgid "Date:"
@@ -2141,7 +2184,7 @@ msgid ""
 "<b>Keep personal info private.</b> For safety reasons, don't use real names "
 "or post contact info like phone numbers or addresses."
 msgstr ""
-"<b>Håll personlig information privat.</b> Av säkerhetsskäl borde du inte "
+"<b>Håll personlig information privat.</b> Av säkerhetsskäl bör du inte "
 "använda riktiga namn eller dela ut kontaktinformation, som telefonnummer "
 "eller adresser."
 
@@ -2152,9 +2195,9 @@ msgid ""
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
 "let us know about it."
 msgstr ""
-"<b>Hjälp till att hålla sajten vänlig.</b> Om du tycker att ett projekt "
+"<b>Hjälp till att hålla sajten vänskaplig.</b> Om du tycker att ett projekt "
 "eller en kommentar är elak, förolämpande, för våldsam eller olämplig, klicka "
-"på \"Report\", så att vi får reda på det."
+"på \"Rapportera\", så att vi får reda på det."
 
 # 93%
 #: templates/accounts/base.html:24 templates/registration/base.html:24
@@ -2163,22 +2206,21 @@ msgstr "Kontoinställningar"
 
 # 93%
 #: templates/accounts/email_change.html:8
-#, fuzzy
 msgid "Change password"
-msgstr "Ändra lösenord"
+msgstr "Byt lösenord"
 
 #: templates/accounts/email_change.html:9
 #: templates/accounts/password_change_form.html:9
 msgid "Change email"
-msgstr ""
+msgstr "Byt e-postadress"
 
 #: templates/accounts/email_change.html:35
 msgid "Change Email"
-msgstr ""
+msgstr "Byt e-postadress"
 
 #: templates/accounts/password_change_form.html:8
 msgid "Change password "
-msgstr "Ändra lösenord"
+msgstr "Byt lösenord "
 
 #: templates/accounts/password_change_form.html:15
 msgid "After changing your password, you will be prompted to log back in."
@@ -2186,7 +2228,7 @@ msgstr "När du har ändrat ditt lösenord blir du ombedd att logga in igen."
 
 #: templates/accounts/password_change_form.html:24
 msgid "Change Password"
-msgstr "Ändra lösenord"
+msgstr "Byt lösenord"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
@@ -2242,6 +2284,9 @@ msgid ""
 "                            Make sure your comments are friendly and "
 "respectful."
 msgstr ""
+"Kom ihåg att projektet kan ha gjorts av någon nybörjare i programmering.\n"
+"                                                                             "
+"                  Kom ihåg att kommentera vänligt och respektfullt."
 
 # 96%
 #: templates/comments/comment-module.html:35
@@ -2258,16 +2303,18 @@ msgstr "Avbryt"
 #: templates/comments/comment-module.html:43
 #, python-format
 msgid "Sorry, comment posting has been turned off for this %(type)s."
-msgstr ""
+msgstr "Tyvärr, kommentering av inlägg är avslaget för detta %(type)s."
 
 #: templates/comments/comment-module.html:45
 msgid ""
 "Sorry comment posting is not available right now. It should be back soon!"
 msgstr ""
+"Tyvärr, kommentering av inlägg är inte tillgängligt just nu. Försök igen "
+"senare!"
 
 #: templates/comments/comment-module.html:51
 msgid "Comments loading..."
-msgstr "Kommentarerna laddas..."
+msgstr "Kommentarer laddas..."
 
 #: templates/comments/comment_module.html:36
 #: templates/comments/comment_module.html:54
@@ -2474,7 +2521,7 @@ msgstr "Administratörer ( <span data-count=\"curators\">%(tCount)s</span> )"
 
 #: templates/galleries/base.html:112
 msgid "Activity"
-msgstr ""
+msgstr "Aktivitet"
 
 #: templates/galleries/comments.html:31
 #: templates/includes/backbone-templates.html:59
@@ -2497,42 +2544,41 @@ msgstr "%(username)s Studio (%(tGCount)s)"
 #: templates/galleries/includes/activity_list.html:35
 #: templates/notifications/includes/notification_list.html:34
 msgid "Today"
-msgstr ""
+msgstr "I dag"
 
 #: templates/galleries/includes/activity_list.html:37
 #: templates/notifications/includes/notification_list.html:36
 msgid "On"
-msgstr ""
+msgstr "På"
 
 #: templates/galleries/includes/activity_list.html:45
 msgid "made edits to title or description of this studio"
-msgstr ""
+msgstr "har gjort förändringar av titeln eller beskrivningen i denna studio"
 
 # 77%
 #: templates/galleries/includes/activity_list.html:54
-#, fuzzy
 msgid "added the project"
-msgstr "delade projektet"
+msgstr "lade till projektet"
 
 #: templates/galleries/includes/activity_list.html:66
 msgid "left a"
-msgstr ""
+msgstr "lämnade en"
 
 #: templates/galleries/includes/activity_list.html:76
 msgid "accepted an invitation"
-msgstr ""
+msgstr "accepterade en inbjudan"
 
 #: templates/galleries/includes/activity_list.html:80
 msgid "from"
-msgstr ""
+msgstr "från"
 
 #: templates/galleries/includes/activity_list.html:84
 msgid "to curate this studio"
-msgstr ""
+msgstr "att administrera denna studio"
 
 #: templates/galleries/includes/activity_list.html:93
 msgid "removed the project"
-msgstr ""
+msgstr "tog bort projektet"
 
 #: templates/galleries/includes/curator_action_bar.html:7
 msgid "Invite curators"
@@ -2590,10 +2636,9 @@ msgstr "Lägg till med url"
 
 # 90%
 #: templates/galleries/includes/project_action_bar.html:40
-#, fuzzy
 msgid "You can select projects from the bar below or add by url above."
 msgstr ""
-"Du kan välja projekt från fältet nedan eller lägga till via url eller tagg."
+"Du kan välja projekt från fältet nedan eller lägga till via url:en ovan."
 
 #: templates/homepage/index.html:32
 msgid "Welcome to Scratch!"
@@ -2601,17 +2646,16 @@ msgstr "Välkommen till Scratch!"
 
 #: templates/homepage/index.html:38
 msgid "Learn how to make a project in Scratch"
-msgstr ""
+msgstr "Lär dig hur man gör ett projekt i Scratch"
 
 #: templates/homepage/index.html:44
 msgid "Try out starter projects"
-msgstr ""
+msgstr "Testa vårt nybörjarprojekt"
 
 # 79%
 #: templates/homepage/index.html:50
-#, fuzzy
 msgid "Connect with other Scratchers"
-msgstr "Anslut med en Scratch:are"
+msgstr "Kontakt med en Scratchare"
 
 #: templates/homepage/index.html:59
 msgid "What's Happening?"
@@ -2619,11 +2663,11 @@ msgstr "Vad Händer?"
 
 #: templates/homepage/index.html:63
 msgid "This is where you will see updates from Scratchers you follow"
-msgstr ""
+msgstr "Här ser du uppdateringar från Scratchers som du följer"
 
 #: templates/homepage/index.html:64
 msgid "Check out some Scratchers</a> you might like to follow"
-msgstr ""
+msgstr "Kolla in några Scratchers</a> som du kanske vill följa"
 
 #: templates/homepage/index.html:77
 msgid "Scratch News"
@@ -2643,7 +2687,7 @@ msgstr "TESTA"
 
 #: templates/homepage/index.html:132
 msgid "SEE EXAMPLES"
-msgstr ""
+msgstr "SE EXEMPEL"
 
 #: templates/homepage/index.html:138
 msgid "JOIN SCRATCH"
@@ -2659,6 +2703,8 @@ msgid ""
 "A creative learning community with <span class=\"projcount\">"
 "%(project_count)s</span> projects shared"
 msgstr ""
+"En kreativ, lärande community med <span class=\"projcount\">%"
+"(project_count)s</span> delade projekt"
 
 #: templates/homepage/index.html:143
 msgid "ABOUT SCRATCH"
@@ -2687,11 +2733,11 @@ msgstr "Projekt administrerade av"
 
 #: templates/homepage/index.html:210
 msgid "Visit the studio"
-msgstr ""
+msgstr "Besök studion"
 
 #: templates/homepage/index.html:211
 msgid "Scratch Design Studio"
-msgstr ""
+msgstr "Scratch design-studio"
 
 #: templates/homepage/index.html:229
 msgid "Recently Shared Projects"
@@ -2787,12 +2833,12 @@ msgid ""
 "keep in mind the “Fair Use” doctrine incorporated into the Copyright Act of "
 "1976, 17 U.S.C. § 107."
 msgstr ""
-"Vid bedömningen av huruvida en Scratchanvändaren har brutit mot din "
-"upphovsrätt, tänk på att Scratch är ett pedagogisk och ett icke-"
-"vinstdrivande initiativ, som syftar till att underlätta barns lärande genom "
-"att tillhandahålla verktyg för dem att lära och uttrycka sig med hjälp av "
-"digital teknik. Kom också ihåg att \"Fair Use\" doktrinen införlivades i "
-"upphovsrättslagen från 1976, 17 USC § 107."
+"Vid bedömningen av om en Scratchanvändaren har brutit mot din upphovsrätt, "
+"tänk på att Scratch är ett pedagogisk och ett icke-vinstdrivande initiativ, "
+"som syftar till att underlätta barns lärande genom att tillhandahålla "
+"verktyg för dem att lära och uttrycka sig med hjälp av digital teknik. Kom "
+"också ihåg att \"Fair Use\" doktrinen införlivades i upphovsrättslagen från "
+"1976, 17 USC § 107."
 
 #: templates/info/DMCA.html:24
 msgid ""
@@ -2814,10 +2860,9 @@ msgid ""
 msgstr ""
 "Om du väljer att göra en anmälan om upphovsrättsintrång, observera då att vi "
 "kan skicka din anmälan, med personligt identifierbar information "
-"censurerat, till ett \"clearinghouse\" som chillingeffects.org. Observera "
-"också att du kan bli skadeståndsskyldig (inklusive kostnader och "
-"advokatarvoden) om du på missvisande sätt anmäler att en aktivitet kränker "
-"din upphovsrätt."
+"censurerat, till ett clearinghouse som chillingeffects.org. Observera också "
+"att du kan bli skadeståndsskyldig (inklusive kostnader och advokatarvoden) "
+"om du på missvisande sätt anmäler att en aktivitet kränker din upphovsrätt."
 
 #: templates/info/about.html:17
 msgid ""
@@ -2874,6 +2919,7 @@ msgstr ""
 msgid "Around the World"
 msgstr "Runt om i världen"
 
+# Ingen större förändring? Avvaktar lite
 #: templates/info/about.html:45
 msgid ""
 "Scratch is used in more than 150 different countries and available in more "
@@ -2885,10 +2931,11 @@ msgid ""
 msgstr ""
 "Scratch används i mer än 150 olika länder och finns på fler än 40 språk. För "
 "att ändra språk, klicka på menyn längst ner på sidan. Eller, i projektet, "
-"klickar du på jorden längst upp på sidan. För att lägga till eller förbättra "
-"en översättning, \\ nse sidan om <a "
+"klickar du på jordklotet längst upp på sidan. För att lägga till eller "
+"förbättra en översättning, \n"
+" se sidan om <a "
 "href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scratch\"> "
-"översättning </ a>."
+"översättning </a>."
 
 #: templates/info/about.html:48
 msgid "Quotes"
@@ -2900,9 +2947,9 @@ msgid ""
 "expressing thanks for Scratch. Want to see what people are saying? You can "
 "read a collection of the <a href=\"/info/quotes\">quotes</a> we've received. "
 msgstr ""
-"Scratchteamet har fått många mail från ungdomar, föräldrar och lärare som "
-"uttrycker ett tack för Scratch. Vill du se vad folk säger? Du kan läsa en "
-"samling av de <a href=\"/info/quotes\"> citat </ a>  vi har fått."
+"Scratchteamet har fått många mejl från ungdomar, föräldrar och lärare som "
+"tackar oss för Scratch. Vill du se vad folk säger? Du kan läsa en samling av "
+"de <a href=\"/info/quotes\"> citat </a> vi har fått."
 
 #: templates/info/about.html:52
 msgid "Learn More About Scratch"
@@ -2939,7 +2986,7 @@ msgstr ""
 "\n"
 "Förmågan att koda datorprogram är en viktig del av läskunnigheten i dagens "
 "samhälle. När människor lär sig att koda i Scratch, lär de sig också viktiga "
-"strategier för att lösa problem, utforma projekt och kommunicera idéer. \n"
+"strategier för att lösa problem, utforma projekt och kommunicera idéer.\n"
 
 #: templates/info/about.html:78
 msgid "Scratch in Schools"
@@ -2958,8 +3005,8 @@ msgstr ""
 "Eleverna lär sig med Scratch på alla nivåer (från grundskolan till "
 "högskolan) och mellan ämnesområden (t.ex. matematik, datavetenskap, språk, "
 "konst, samhällskunskap). Lärare delar med sig av sina berättelser, utbyter "
-"resurser, ställer frågor och hittar andra intresserade på <a skrapat "
-"href=\"http://scratched.media.mit.edu/\"> ScratchEd:s hemsida </ a>.\n"
+"resurser, ställer frågor och hittar andra intresserade på <a "
+"href=\"http://scratched.media.mit.edu/\"> ScratchEd:s hemsida</a>.\n"
 
 #: templates/info/about.html:85
 msgid "Research"
@@ -2974,6 +3021,13 @@ msgid ""
 "Find out more about <a href=\"/info/research\">Scratch research</a> and <a "
 "href=\"/statistics\">statistics about Scratch</a>.\n"
 msgstr ""
+"\n"
+"MITs Scratch Team och deras samarbetspartners forskar om hur människor "
+"använder och lär med Scratch (klicka här för att se en instruktion: <a "
+"href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: "
+"Programmering för alla</a>). Ta reda på mer om <a "
+"href=\"/info/research\">forskning om Scratch</a> och <a "
+"href=\"/statistics\">statistik om Scratch</a>.\n"
 
 #: templates/info/about.html:92
 msgid "Support and Funding"
@@ -2989,6 +3043,14 @@ msgid ""
 "research consortia. If you'd like to support Scratch, please see our <a href="
 "\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
 msgstr ""
+"\n"
+"Scratch-projektet som startades 2003, har på ett generöst sätt stötts av the "
+"National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
+"Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
+"Learn Foundation, Google, Dell, Fastly, Inversoft, och MIT Media Lab "
+"research consortia. Om du vill stödja Scratch, gå till vår <a "
+"href=\"/info/donate\">sponsrings-sida</a>, eller kontakta oss "
+"donate@scratch.mit.edu.\n"
 
 #: templates/info/community_guidelines.html:14
 msgid "Scratch Community Guidelines"
@@ -3004,9 +3066,8 @@ msgstr ""
 
 # 75%
 #: templates/info/credits.html:9
-#, fuzzy
 msgid "Scratch Credits"
-msgstr "Scratch Produkter"
+msgstr "Scratch erkännanden"
 
 # 75%
 #: templates/info/credits.html:13 templates/profiles/profile_detail.html:62
@@ -3038,10 +3099,27 @@ msgid ""
 "        </ul>\n"
 "        "
 msgstr ""
+"\n"
+"<ul><li>Mitchel Resnick, John Maloney, Natalie Rusk, Karen Brennan, \n"
+"Andr&eacute;s Monroy-Hernandez, Ricarose Roque, Sayamindu Dasgupta, \n"
+"Amos Blanton, Champika Fernando, Jay Silver, Eric Rosenbaum, \n"
+"Michelle Chung, Gaia Carini, Tony Hwang, Abdulrahman Idbli \n"
+"and Amon Millner in the <a title=\"http://llk.media.mit.edu/\" "
+"class=\"external\" href=\"http://llk.media.mit.edu\">Lifelong Kindergarten "
+"group</a>\n"
+"på <a title=\"http://www.media.mit.edu/\" class=\"external\" "
+"href=\"http://www.media.mit.edu\">MIT Media Lab</a>. \n"
+"Gruppen arbetar på ett interaktivt, iterativt och lättrörligt sätt där varje "
+"gruppmedlem bidrar med många olika delar av projektet.</li>\n"
+"<li>Brian Silverman och Paula Bonta of the Playful Invention Company, som "
+"bidrar med design, utveckling och utforskande av nya domäner.</li>\n"
+"<li>Yasmin Kafai och hennes forskningsgrupp på University of Pennsylvania "
+"som genomför forskningsstudier med Scratch.</li>\n"
+"</ul>\n"
 
 #: templates/info/credits.html:34
 msgid "Special Thanks"
-msgstr ""
+msgstr "Ett speciellt tack"
 
 #: templates/info/credits.html:38
 msgid ""
@@ -3094,6 +3172,46 @@ msgid ""
 "sharing code and expertise, and providing feedback and encouragement.</li>\n"
 "        "
 msgstr ""
+"\n"
+"<ul><li>Andra från  Lifelong Kindergarten gruppen som har bidragit till "
+"Scratchprojektet, \n"
+"inklusive: Evelyn Eastmond, Tammy Stern, Dave Feinberg, Margarita Dekoli, "
+"Han Xu, Leo Burd, \n"
+"Lis Sylvan, Oren Zuckerman, Claudia Urrea, Ioana Fineberg, Rachel Garber, "
+"Chris Garrity, och\n"
+"många MIT-studenter och praktikanter, inklusive Nick Bushak, Paul Medlock-"
+"Walton, Chinua Shaw, Ubong Ukoh, Christine Kim, Daniel Strimpel, med "
+"flera.</li>\n"
+"<li>Evan Karatzas för den grafiska designen av Scratchanvändargränssnitt, "
+"och Kemie Guaida för den grafiska designen av Scratch webbsajt.</li>\n"
+"<li>Lauren Bessen, Kate Nazemi, och Big Blue Dot för design av Scratch's "
+"trycksaker.</li>\n"
+"<li>Ed Shems för dussintals illustrationer i Scratch bildbank, \n"
+"och till Wing Ngan, Mark Loughridge, Xing Xing, Tracy Ho, Mike Lee, och "
+"360KID för deras bidrag till bildbanken.</li>\n"
+"<li>Wayne Marshall, Danny Lutz, Tracy Hof, och Jeff Lieberman för deras ljud "
+"och musik till Scratch ljudbank.</li>\n"
+"<li>Robbie Berg för hjälp med utvecklingen av Scratch sensorboard "
+"(Picoboard).</li>\n"
+"<li>Jodi Finch ochCassy Gibbs för deras bidra till Scratchvideor.</li>\n"
+"<li>Personalen på Vision Education för deras bidrag till Scratch "
+"referensmaterial och workshops.</li>\n"
+"<li>John McIntosh för teknisk hjälp med versionen till Macintosh.</li>\n"
+"<li>Mängder<a title=\"Scratch Credits/Translators\" "
+"href=\"http://info.scratch.mit.edu/Scratch_Credits/Translators\">av "
+"översättare</a> runt om i världen.</li>\n"
+"<li>Personal, mentorer och medlemmar av Computer Clubhouses runt om i "
+"världen (speciellt vid YOU Clubhouse i Los Angeles och Charlestown, Chelsea, "
+"och Museum of Science Clubhouses i Boston) \n"
+"för test av tidiga versioner av Scratch med feedback och förslag.</li>\n"
+"<li>Community of Scratch beta testare, speciellt Susan Abend, Keith "
+"Braadfladt, \n"
+"Roland Hebert, David Malan, Ximena Miranda, Liddy Nevile, Karen Randall \n"
+"(och hennes studenter vid EXPO Elementary School i St. Paul), Kilmer Sweazy, "
+"John Henry Thompson, och the IDEAS Fellows för deras tankeväckande och "
+"grundliga feedback.</li>\n"
+"<li>Alan Kay och Squeak team för inspiration med Etoys, dela kod och "
+"expertis, och bidrag med feedback and uppmuntran.</li>\n"
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
@@ -3117,9 +3235,9 @@ msgstr ""
 "Scratch är utformad med lärande och utbildning i åtanke. Ett brett utbud av "
 "lärare har stöttat skaparna av Scratch sedan 2007, i både formella och "
 "informella lärmiljöer &ndash; K-12 klasslärare, utbildnings- och "
-"datorforskare, bibliotekarier, museers pedagoger, och föräldrar <br/> \n"
+"datorforskare, bibliotekarier, museers pedagoger, och föräldrar <br/><br/>\n"
 "Vill du lära dig mer om att lära med Scratch? <br/>Kolla in <a href=\"http"
-"://scratch-ed.org\" target=\"_blank\">ScratchEd:s community</ a>.\n"
+"://scratch-ed.org\" target=\"_blank\">ScratchEd:s online community</a>.\n"
 "    "
 
 #: templates/info/educators.html:26
@@ -3136,6 +3254,17 @@ msgid ""
 "ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
 "\t      "
 msgstr ""
+"\n"
+"<h3>Vad är ScratchEd?</h3>\n"
+"\t<p>Startad i juli 2009, <a href=\"http://scratch-ed.org\" "
+"target=\"_blank\">ScratchEd</a>är en online-coomunity där Scratch-pedagoger "
+"delar berättelser, utbyter erfarenhet, ställer frågor och nätverkar.</p>\n"
+"\t<p>Sedan starten har mer än 7500 pedagoger från hela världen anslutit sig "
+"till communityn, delat hundratal resurser och engagerat sig i tusentals "
+"diksussioner.</p>\n"
+"\t<p>Gå med i ScratchEd-communityn gratis här <a href=\"http://scratch-ed.org\" "
+"target=\"_blank\">scratch-ed.org</a>.<p>\n"
+"\t"
 
 #: templates/info/educators.html:32
 msgid ""
@@ -3164,36 +3293,59 @@ msgid ""
 "\">quarterly newsletter</a>.<p>\n"
 "\t      "
 msgstr ""
+"\n"
+"\t <h3>Hur kan jag lära mig mer om vad pedagoger gör med Scratch &ndash; och "
+"hur jag kan använda det?</h3>\n"
+"\t <p>Inte säker vad som är möjligt med Scratch?</p>\n"
+"\t <p><a href=\"http://scratched.media.mit.edu/stories\" target=\"_blank\">Läs en "
+"berättelse</a> om hur pedagoger har inkluderat  Scratchaktiviteter i ett "
+"brett spektrum av lärandemöjligheter.</a></p>\n"
+"\t <p>Eller <a href=\"http://scratched.media.mit.edu/resources/all\" "
+"target=\"_blank\">utforska källor</a> över åldrar, discipliner och "
+"inställningar. <a href=\"http://scratched.media.mit.edu/resources/new-"
+"scratch\" target=\"_blank\">Delta i webinar</a> och dokument med genomgång som "
+"<a href=\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-"
+"draft\" target=\"_blank\">Scratch kursplaner (eng)</a>.</p>\n"
+"\t <p>Förutom att utforska <a href=\"http://scratch-ed.org\" "
+"target=\"_blank\">ScratchEd</a> online community och dess resurser, kan du "
+"följa teamet för ScratchEd och andra Scratchpedagoger via <a "
+"href=\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a "
+"href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
+"<a href=\"http://www.edmodo.com/publisher/scratcheducation\" "
+"target=\"_blank>\">Edmodo</a>, <a "
+"href=\"http://scratched.media.mit.edu/discussions/scratched-weekly-roundup\" "
+"target=\"_blank>\">veckovisa sammanfattningar</a>, och våra <a "
+"href=\"http://scratched.media.mit.edu/events\" target=\"_blank>\">kvartalsvisa "
+"nyhetsbrev</a>.<p>\n"
 
 # 83%
 #: templates/info/educators.html:44
-#, fuzzy
 msgid "Connect with ScratchEd"
-msgstr "Anslut med en Scratch:are"
+msgstr "Kontakt med ScratchEd"
 
 #: templates/info/educators.html:46
 msgid "Online Community"
-msgstr ""
+msgstr "Online Community"
 
 #: templates/info/educators.html:47
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: templates/info/educators.html:48
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: templates/info/educators.html:49
 msgid "Edmodo"
-msgstr ""
+msgstr "Edmondo"
 
 #: templates/info/educators.html:50
 msgid "Weekly Roundups"
-msgstr ""
+msgstr "Veckovis sammanfattningar"
 
 #: templates/info/educators.html:51
 msgid "Quarterly Newsletter"
-msgstr ""
+msgstr "Kvartalsvis nyhetsbrev"
 
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
@@ -3354,9 +3506,10 @@ msgid ""
 "where you can feature one of your projects and tell others what you're "
 "working on."
 msgstr ""
-"Klicka på ditt användarnamn eller ikonen för att gå till din <b>Profilsida</ "
-"b>, \\ ndär du kan ha göra reklam för dina projekt och berätta för andra vad "
-"du arbetar med."
+"Klicka på ditt användarnamn eller ikonen för att gå till din "
+"<b>Profilsida</b>, \n"
+" där du kan ha göra reklam för dina projekt och berätta för andra vad du "
+"arbetar med."
 
 #: templates/info/overview.html:76
 #, python-format
@@ -3449,6 +3602,13 @@ msgid ""
 "\">Scratch Cards</a> provide a fun way to learn more. For an overview of "
 "Scratch resources, see <a href=\"/help/\">Scratch Help</a>."
 msgstr ""
+"Om du precis har kommit igång finns en <a "
+"href=\"/projects/editor/?tip_bar=getStarted\">steg-för-stegguide</a> "
+"tillgänglig i Scratch, eller så kan du ladda ned <a href=\"%"
+"(STATIC_URL)s/pdfs/help/Getting-Started-Guide-Scratch2.pdf\">Kom-igång-guiden "
+"(PDF)</a>.  <a href=\"/help/cards/\">Scratchkorten</a> ger ett kul sätt att "
+"lära mer. För en översikt av Scratchresurser, se <a "
+"href=\"/help/\">Scratchhjälpen</a>."
 
 #: templates/info/parents.html:34
 msgid "What is the Scratch online community?"
@@ -3482,6 +3642,16 @@ msgid ""
 "learn how to participate in the Scratch community by reviewing the <a href="
 "\"/community_guidelines\">community guidelines</a> together."
 msgstr ""
+"MIT Scratchteamet arbetar med communitiet för att upprätthålla en vänlig och "
+"respektfull miljö. Medlemmarna uppmanas att vara konstruktiva när de lämnar "
+"kommentarer och hjälpa till att hålla en vänlig ton på webbplatsen genom "
+"att rapportera olämpligt innehåll.  Scratchteamet omfattar en grupp av "
+"moderatorer som arbetar varje dag för att hantera aktiviteter på sajten och "
+"svara på rapporter, med hjälp av verktyg som <a href = "
+"\"http://www.inversoft.com/features/profanity- filter/ \">CleanSpeak</a> "
+"svordomsfilter. Du kan hjälpa ditt barn lära sig att delta i "
+"Scratchgemenskapen genom att granska <a href=\"/community_guidelines\"> "
+"gemenskapens riktlinjer </a> tillsammans."
 
 #: templates/info/parents.html:43
 msgid "What is your privacy policy?"
@@ -3495,11 +3665,11 @@ msgid ""
 "policy on our <a href=\"/help/faq/#privacy\">frequently asked questions "
 "page</a>."
 msgstr ""
-"För att skydda barns integritet online, begränsar vi vad vi samlar in under "
-"registreringsprocessen, och vad vi gör offentligt på webbplatsen. Vi säljer "
-"inte eller hyr kontoinformation till någon. Du kan läsa mer om vår "
+"För att skydda barns integritet online, begränsar vi det vi samlar in under "
+"registreringsprocessen, och vad vi offentliggör på webbplatsen. Vi säljer "
+"inte eller hyr ut kontoinformation till någon. Du kan läsa mer om vår "
 "integritetspolicy på sidan för <a href=\"/help/faq/#privacy\"> vanliga "
-"frågor</ a>."
+"frågor</a>."
 
 #: templates/info/parents.html:47
 msgid "What are parents saying about Scratch?"
@@ -3582,7 +3752,7 @@ msgid ""
 "creativity-collaboration-lifelong-learning\">creative learning approach</a>."
 msgstr ""
 "Läs en artikel om <a href=\"http://www.edutopia.org/kindergarten-creativity-"
-"collaboration-lifelong-learning\">kreativt lärande</ a>."
+"collaboration-lifelong-learning\">kreativt lärande</a>."
 
 #: templates/info/parents.html:66
 msgid "Community"
@@ -3685,13 +3855,13 @@ msgid ""
 "\"quotes\">&rdquo;</span>\n"
 "  - 17-year-old "
 msgstr ""
-"<span class=\"quotes\">&ldquo;</ span>Att göra spel är något jag alltid trott "
+"<span class=\"quotes\">&ldquo;</span>Att göra spel är något jag alltid trott "
 "skulle vara kul, \n"
 "men jag ville inte ha ett riktigt komplicerat programmeringsspråk. I början, "
-"verkade även Scratch komplicerat, men efter att hållit på med det ett tag, "
+"verkade även Scratch komplicerat, men efter att hållt på med det ett tag, "
 "har jag kunnat göra några fantastiska spel. Och det faktum att du kan dela "
 "projekt så lätt gör det ännu bättre. Scratch är fantastisk! <span "
-"class=\"quotes\">&rdquo;</ span> \n"
+"class=\"quotes\">&rdquo;</span>\n"
 "- 17-åring"
 
 #: templates/info/quotes.html:36
@@ -3712,11 +3882,11 @@ msgstr ""
 
 #: templates/info/scratch2download.html:19
 msgid "Scratch Offline Editor Beta"
-msgstr ""
+msgstr "Scratch Offlineredigerare Beta"
 
 #: templates/info/scratch2download.html:24
 msgid "Scratch 2 Offline Editor (Beta Version)"
-msgstr ""
+msgstr "Scratch 2 Offline Redigerare (Beta version)"
 
 #: templates/info/scratch2download.html:28
 msgid ""
@@ -3744,6 +3914,28 @@ msgid ""
 "<strong>Optional Download</strong>, below.\n"
 "            "
 msgstr ""
+"\n"
+"<p>Scratchteamet är glada att meddela att betaversionen av Scratch 2 "
+"Offlineredigeraren nu är tillgänglig. Versionen fungerar på Mac, Windows och "
+"några versioner av Linux (32 bit).</p>\n"
+"\n"
+"<p><h4>Installationsinstruktioner</h4></p>\n"
+"<p>Klicka<strong>Installera nu - INSTALL NOW</strong> (nedan) och följ "
+"anvisningarna.\n"
+"Adobe AIR runtime system  kommer att installeras om du behöver det, sedan "
+"installeras Scratch 2 applikationen.</p>\n"
+"<p>Vid installationen, klicka<strong>\"Ja\" eller \"Tillåt\"</strong> när "
+"webbläsaren frågar om tillåtelse.\n"
+"(I <strong>Chrome</strong>, leta efter frågan i <strong>toppen</strong> av "
+"webbläsarfönstret.)\n"
+"Klicka <strong>\"Öppna\"</strong> när du tillfrågas om du vill spara eller "
+"öppna .air-filen.\n"
+"</p>\n"
+"<p>Filen är stor (23MB), så ha <strong>tålamod</strong> medan filen laddas "
+"ned, speciellt vid långsam anslutning.</p>\n"
+"<p>* Om du får ett felmeddelande när du installerar, ta bort alla tidigare "
+"Scratch 2 Offline appar och försök igen. Eller, se <strong>Annan "
+"nedladdning</strong>, nedan.\n"
 
 #: templates/info/scratch2download.html:112
 #, python-format
@@ -3801,6 +3993,56 @@ msgid ""
 "    \n"
 "       "
 msgstr ""
+"\n"
+"<p><h4>Annan nedladdning</h4></p>\n"
+"<p>Om du föredrar att ladda ned installeraren lokalt:</br>\n"
+"(1) Om du inte har Adobe Air, hämta och installera senaste <a "
+"href=\"http://get.adobe.com/air/\">Adobe AIR 3.x</a>. För Linux, använd <a hre"
+"f=\"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin\">"
+"AIR 2.6.0 for Linux</a> (15MB).</br>\n"
+"&nbsp;&nbsp;&nbsp; OBS! För äldre Mac OSx 10.5 eller äldre, använd: <a "
+"href=\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.dmg\">Adobe "
+"AIR 2.6.0 Mac </a>(18MB).</br>\n"
+"(2) Hämta och installera <a href=\"http://cdn.scratch.mit.edu/scratchr2/stati"
+"c/sa/Scratch.air\">Scratchinstalleraren</a>.</p>\n"
+"\n"
+"\n"
+"<h4>Kända problem som kommer att fixas:</h4>\n"
+"<p><ul>\n"
+"<li>Grafikeffektblocken (i \"Utseende\") kan slöa ned projekt beroende på en "
+"känd Flash bugg. En buggfix kommer att bli tillgänglig i framtida "
+"uppdateringar.</li>\n"
+"<li><strong>Ryggsäcken</strong> är inte tillgänglig ännu.</li>\n"
+"</ul></p>\n"
+"\n"
+"<p><h4>Uppdateringar</h4></p>\n"
+"<p>Offlineappen kan updatera sig själv (med tillåtelse från användaren). \n"
+"Den kollar efter uppdateringar vid uppstarten eller så kan du använda \"Leta "
+"efter uppdatering\" kommandot i Arkivmenyn. </p> \n"
+"<p>Uppdatering v370 - September 10, 2013: Fixar ett problem med projekt som "
+"sparas som ibland inte kunde öppnas. Nu också öppnar och reparerar projekt "
+"som sparades felaktigt av tidigare versioner av Offline Editorappen.</p>\n"
+"<p>Uppdatering v366 - August 29, 2013: Kan ladda upp och dela på webbsajten; "
+"Kompilerad med Adobe Air 2.6 så det fungerar på några versioner av Linux "
+"och äldre Mac OSX; Kortare appnamn; Musik MP3 uppladdning fixad; Överst-till "
+"höger text fixad; Tips stänger i presentationsläge.</p>\n"
+"\n"
+"\t\n"
+"\n"
+"<p><h4>Startprojekt och Supportmaterial</h4></p>\n"
+"<p>Scratch 2 startprojekt är tillgängliga för nedladdning i denna <a href=\"%"
+"(STATIC_URL)ssa/Scratch2StarterProjects.zip\">Startprojektfil (zip)</a>.</p>\n"
+"<p>Du kan också ladda ned <a href=\"%(STATIC_URL)spdfs/help/Getting-Started-"
+"Guide-Scratch2.pdf\">Komigång-Guiden (PDF)</a> och <a href=\"%"
+"(STATIC_URL)spdfs/help/Scratch2Cards_Jan2013.pdf\">Scratchkort (PDF)</a>. \n"
+"\n"
+"<p><h4>Feedback</h4></p>\n"
+"<p>Var snäll att skicka feedback och buggar i <a "
+"href=\"http://scratch.mit.edu/discuss/topic/14690/\">Scratch "
+"diskussionsforum</a>.\n"
+"</p>\n"
+"\n"
+"\n"
 
 #: templates/info/starter_projects.html:4
 msgid "Scratch - Starter Projects"
@@ -3811,6 +4053,8 @@ msgid ""
 "Try out these starter projects from the Scratch Team. Look inside to make "
 "changes and add your ideas."
 msgstr ""
+"Prova dessa nybörjarprojekt från Scratch-teamet. Öppna för att ändra och "
+"lägga till egna idéer."
 
 # 90%
 #: templates/info/starter_projects.html:20
@@ -3849,7 +4093,7 @@ msgstr "Picoshow: Intro"
 
 #: templates/info/starter_projects.html:51
 msgid "Greeting Card"
-msgstr ""
+msgstr "Gratulationskort"
 
 #: templates/info/starter_projects.html:66
 msgid "Pong Starter"
@@ -3865,17 +4109,16 @@ msgstr "Kurragömma"
 
 #: templates/info/starter_projects.html:78
 msgid "Dress Up Tera"
-msgstr ""
+msgstr "Klä på Tera"
 
 # 93%
 #: templates/info/starter_projects.html:93
-#, fuzzy
 msgid "Paint with Gobo"
-msgstr "Måla med Gobo<"
+msgstr "Måla med Gobo"
 
 #: templates/info/starter_projects.html:97
 msgid "Wizard Spells"
-msgstr ""
+msgstr "Trollkarlens trollformler"
 
 #: templates/info/starter_projects.html:101
 msgid "Soundflower"
@@ -3883,7 +4126,7 @@ msgstr "Ljudblomma"
 
 #: templates/info/starter_projects.html:105
 msgid "Spiral Maker"
-msgstr ""
+msgstr "Spiralskaparen"
 
 #: templates/info/starter_projects.html:120
 msgid "Remix this dance"
@@ -3899,7 +4142,7 @@ msgstr "Sjöstjärna Kör"
 
 #: templates/info/starter_projects.html:132
 msgid "DJ Scratch Cat"
-msgstr ""
+msgstr "DJ Scratch Cat"
 
 #: templates/info/starter_projects.html:147
 msgid "5 Random Facts about Me"
@@ -3915,7 +4158,7 @@ msgstr "Tonåringar på Slottet"
 
 #: templates/info/starter_projects.html:159
 msgid "Virtual Tour"
-msgstr ""
+msgstr "Virtuell tur"
 
 #: templates/info/starter_projects.html:174
 msgid "Musical Buttons"
@@ -3932,7 +4175,7 @@ msgstr "Rädda Mini-Figsen!"
 
 #: templates/info/starter_projects.html:186
 msgid "Pizza Chef"
-msgstr ""
+msgstr "Pizzabagaren"
 
 # 75%
 #: templates/info/help/base.html:4 templates/info/help/help_layout.html:7
@@ -4051,10 +4294,10 @@ msgid ""
 msgstr ""
 "Scratch är ett programmeringsspråk och online-community, där du kan skapa "
 "dina egna interaktiva berättelser, spel och animationer - och dela dina "
-"skapelser med andra runt om i världen. I processen att designa och "
-"programmera Scratchprojekt,  lär sig ungdomar att tänka kreativt, resonera "
-"systematiskt och att samarbeta. För att lära sig mer om Scratch kan man "
-"kolla in sidan <a href=\"/about\"> Om Scratch</ a>."
+"projekt med andra runt om i världen. I processen att designa och programmera "
+"Scratchprojekt,  lär sig ungdomar att tänka kreativt, resonera systematiskt "
+"och att samarbeta. För att lära sig mer om Scratch kan man kolla in sidan "
+"<a href=\"/about\"> Om Scratch</a>."
 
 #: templates/info/help/faq.html:36
 msgid "How do I make a game or animation with Scratch?"
@@ -4066,9 +4309,9 @@ msgid ""
 "started with Scratch. Or just <a href=\"/projects/editor/?tip_bar=getStarted"
 "\">dive in</a> to the project editor."
 msgstr ""
-"Kolla in <a  href=\"/help\"> Hjälpsidan </ a> för att se massor av sätt att "
+"Kolla in <a href=\"/help\"> Hjälpsidan </a> för att se massor av sätt att "
 "komma igång med Scratch. Eller <a "
-"href=\"/projects/editor/?tip_bar=getStarted\"> gå direkt </ a> till "
+"href=\"/projects/editor/?tip_bar=getStarted\"> gå direkt </a> till "
 "projektredigeraren."
 
 #: templates/info/help/faq.html:39
@@ -4087,6 +4330,15 @@ msgid ""
 "\t\">downloading</a> and installing <a href =\"/scratch_1.4\">Scratch 1.4</"
 "a>, which you can still use to share projects to the Scratch 2 website."
 msgstr ""
+"För att köra Scratch 2, behöver du en relativt modern webbläsare (<a "
+"href=\"http://google.com/chrome/\">Chrome</a> 7 eller senare, <a "
+"href=\"http://www.mozilla.org/en-US/firefox/new/\">Firefox</a> 4 eller senare, "
+"eller Internet Explorer 7 eller senare) med <a href=\"\">Adobe Flash "
+"Player</a> version 10.2 eller senare installerad. Scratch 2 är designad för "
+"skärmupplösning 1024 x 768 eller större. Om din dator inte klarar dessa "
+"krav, kan du prova att <a href=\"http://info.scratch.mit.edu/Scratch_1.4_ "
+"\">ladda ned</a> och installera <a href =\"/scratch_1.4\">Scratch 1.4</a>, som "
+"kan användas för att dela projekt på Scratch 2 webbsajten."
 
 #: templates/info/help/faq.html:43
 msgid ""
@@ -4102,6 +4354,9 @@ msgid ""
 "scratch_1.4\">Scratch 1.4</a>. Note: You can have both Scratch 1.4 and 2 on "
 "your computer."
 msgstr ""
+"<a href=\"\\scratch2download\\\">Scratch 2 offline appen (beta version)</a> är "
+"nu tillgänglig. Du kan fortfarande använda <a href =\"/scratch_1.4\">Scratch "
+"1.4</a>. OBS! Du kan ha både Scratch 1.4 och 2 på din dator."
 
 #: templates/info/help/faq.html:47
 msgid ""
@@ -4120,6 +4375,13 @@ msgid ""
 "=\"/scratch_1.4\">Scratch 1.4</a>, because <a href =\"/scratch_1.4\">Scratch "
 "1.4</a> doesn’t know how to read the .sb2 project file format.)"
 msgstr ""
+"Ja - du kan dela och ladda upp projekt gjorda av tidigare versioner av "
+"Scratch, och de kommer att vara synliga och körbara. (Men, du kan inte ladda "
+"ned projekt gjorda med eller redigerade i senare versioner av Scratch och "
+"öppna dem med tidigare versioner av Scratch. Som exempel, kan du inte öppna "
+"ett Scratch 2 projekt i <a href =\"/scratch_1.4\">Scratch 1.4</a>, därför <a "
+"href =\"/scratch_1.4\">Scratch 1.4</a> inte vet hur man öppnar och läser "
+"formatet för .sb2 projektfiler.)"
 
 #: templates/info/help/faq.html:51
 msgid "Can I make a video with Scratch and upload it to YouTube?"
@@ -4136,8 +4398,8 @@ msgid ""
 "keep in mind that videos and projects aren’t the same."
 msgstr ""
 "För att göra en video av ditt Scratchprojekt, kan du använda "
-"skärminspelningsprogram som <a href=\"http://camstudio.org/\"> CamStudio </ "
-"a>. Men kom ihåg, vissa Scratch projekt är interaktiva: de gör olika saker "
+"skärminspelningsprogram som <a href=\"http://camstudio.org/\"> CamStudio </a>. "
+"Men kom ihåg, vissa Scratch projekt är interaktiva: de gör olika saker "
 "beroende på vad betraktaren gör (till exempel: ett spel som reagerar på "
 "knapptryckningar). Videor är inte interaktiva - de visar exakt samma sak "
 "varje gång du spelar upp dem. Så du kan definitivt göra en video av ditt "
@@ -4157,7 +4419,7 @@ msgstr ""
 "Scratch är och kommer alltid att vara gratis. Du behöver inte en licens för "
 "att använda Scratch i din skola, hemma, eller någon annanstans. Utveckling "
 "och underhåll av Scratch betalas genom bidrag och donationer. Om du vill "
-"bidra till Scratch, ta en titt på <a href=\"#\"> Donerasidan </ a>."
+"bidra till Scratch, ta en titt på <a href=\"#\"> Donerasidan </a>."
 
 #: templates/info/help/faq.html:57
 msgid "Who created Scratch?"
@@ -4170,8 +4432,8 @@ msgid ""
 "\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 msgstr ""
 "Scratch är utvecklat och underhålls av Scratchteamet på <a "
-"href=\"http://llk.media.mit.edu/\"> Lifelong Kindergarten group </ a> på <a "
-"href = \"http://www.media . mit.edu / \"> MIT Media Lab </ a>."
+"href=\"http://llk.media.mit.edu/\"> Lifelong Kindergarten group </a> på <a "
+"href=\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 
 #: templates/info/help/faq.html:66
 msgid "What information do you ask for during account registration?"
@@ -4252,9 +4514,9 @@ msgid ""
 "figure out ways to improve the website."
 msgstr ""
 "När en användare loggar in, frågar Scratch hemsida webbläsaren att skapa en "
-"<a href=\"http://en.wikipedia.org/wiki/HTTP_cookie\"> http-cookie </ a> på din "
-"dator för att komma ihåg att du är inloggad när du surfar på olika sidor. "
-"Vi samlar in vissa uppgifter när användarna klickar och vilka delar av "
+"<a href=\"http://en.wikipedia.org/wiki/HTTP_cookie\"> http-cookie </a> på din "
+"dator för att komma ihåg att du är inloggad när du surfar på olika sidor. Vi "
+"samlar in vissa uppgifter när användarna klickar och vilka delar av "
 "webbplatsen de besöker med hjälp av Google Analytics. Dessa \"klickuppgifter\" "
 "hjälper oss att fundera ut olika sätt att förbättra webbplatsen."
 
@@ -4286,7 +4548,7 @@ msgstr "Nej."
 
 #: templates/info/help/faq.html:85
 msgid "Can the Scratch Team view unshared projects on my 'My Stuff' page?"
-msgstr "Kan Scratchteamet se odelade projekt på sidan för \"Mina grejor\"?"
+msgstr "Kan Scratchteamet se odelade projekt på sidan för 'Mina grejor'?"
 
 #: templates/info/help/faq.html:86
 msgid ""
@@ -4296,7 +4558,11 @@ msgid ""
 "href=\"/scratch2download\">Scratch 2 offline editor (beta)</a> or <a href ="
 "\"/scratch_1.4\">Scratch 1.4</a>.\n"
 "  "
-msgstr ""
+msgstr "Eftersom Scratchteamet är ansvariga för att moderera webbplatsen, har vi "
+"tillgång till allt som är sparat på Scratchsajten - inklusive ej delade "
+"projekt. Om du föredrar att arbeta med projekt helt utan insyn, kan du "
+"använda antingen <a href=\"/scratch2download\">Scratch 2 offlineredigeraren "
+"(beta)</a> eller <a href =\"/scratch_1.4\">Scratch 1.4</a>.\n"
 
 #: templates/info/help/faq.html:94
 msgid "What is a remix?"
@@ -4346,8 +4612,8 @@ msgid ""
 msgstr ""
 "Genom att publicera ditt projekt på Scratch webbplats samtycker du till att "
 "licensiera det under en <a href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\"> Creative Commons Share Alike </ a> licens. Om du inte vill att "
-"andra ska se och remix dina skapelser, dela dem då inte på Scratch "
+"sa/3.0/\"> Creative Commons Share Alike </a> licens. Om du inte vill att "
+"andra ska se och kunna remixa dina projekt, dela då inte ut dem på Scratch "
 "webbplats."
 
 #: templates/info/help/faq.html:103
@@ -4368,7 +4634,7 @@ msgstr ""
 "att ge dem kredit för projektet på \"kredit\" sektionen, och inkludera en "
 "länk tillbaka till orginalet. För att hitta bilder / ljud som redan är "
 "licensierade för mixning, kan du kolla in <a "
-"href=\"http://search.creativecommons.org/\"> Creative Commons söksida </ a>."
+"href=\"http://search.creativecommons.org/\"> Creative Commons söksida </a>."
 
 #: templates/info/help/faq.html:111
 msgid "I forgot my password, how can I reset it?"
@@ -4382,8 +4648,8 @@ msgid ""
 "password."
 msgstr ""
 "Ange ditt kontonamn på sidan för <a href=\"/accounts/password_reset/\"> "
-"återställning av lösenord </ a>. Webbplatsen kommer att skicka ett mail, "
-"till den adress som är kopplad till kontot, som innehåller en länk du kan "
+"återställning av lösenord </a>. Webbplatsen kommer att skicka ett mail, till "
+"den adress som är kopplat till kontot, som innehåller en länk du kan "
 "använda för att återställa ditt lösenord."
 
 #: templates/info/help/faq.html:115
@@ -4416,9 +4682,8 @@ msgstr ""
 
 # 96%
 #: templates/info/help/faq.html:121
-#, fuzzy
 msgid "Is it OK to have more than one person logged into an account?"
-msgstr "Är det ok att ha mer än en person inloggad på ett konto?"
+msgstr "Är det OK att ha mer än en person inloggad på ett konto?"
 
 #: templates/info/help/faq.html:122
 msgid ""
@@ -4477,6 +4742,12 @@ msgid ""
 "account</li>\n"
 "    <li>The email address associated with the account "
 msgstr ""
+"Först, ladda ned de projekt du vill ha kvar. \n"
+"När kontot är raderat, kommer dina projekt inte att bli tillgängliga. Använd "
+"formuläret på sidan <a href=\"http://scratch.mit.edu/contact-us/\">Kontakta "
+"Oss</a> och lägg till följande information:\n"
+"<ul><li>Födelsemånad och år som du skrev in när du skapade kontot</li>\n"
+"<li>E-postadressen som är kopplad till ditt konto"
 
 #: templates/info/help/faq.html:142
 msgid "Is Scratch free?"
@@ -4514,8 +4785,8 @@ msgstr ""
 "också använda Scratch logotype när du refererar till Scratch. Du kan skapa "
 "skärmdumpar / bilder på Scratchprogrammet och webbplatsen, och anse dem vara "
 "licensierade under <a href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\"> Creative Commons Attribution-ShareAlike 3.0 Unported license </ "
-"a>. Vi ber dig att inkludera en referens i din lärobok / CD / eller vad du "
+"sa/3.0/\"> Creative Commons Attribution-ShareAlike 3.0 Unported license </a>. "
+"Vi ber dig att inkludera en referens i din lärobok / CD / eller vad du "
 "skapat med  \"Scratch är utvecklat av Lifelong Kindergarten Group vid MIT "
 "Media Lab. Se http://scratch.mit.edu\"."
 
@@ -4576,8 +4847,8 @@ msgid ""
 msgstr ""
 "Ja - Scratch supportmaterial är tillgängligt på Scratch webbplats av "
 "Scratchteamet under <a href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\"> Creative Commons Attribution-ShareAlike 3.0 Unported License </ "
-"a>, med undantag för Scratch logotypen, Scratchkatten, och Gobo (Scratch "
+"sa/3.0/\"> Creative Commons Attribution-ShareAlike 3.0 Unported License </a>, "
+"med undantag för Scratch logotypen, Scratchkatten, och Gobo (Scratch "
 "varumärken)."
 
 #: templates/info/help/faq.html:157
@@ -4594,8 +4865,8 @@ msgid ""
 msgstr ""
 "Visst - ditt projekt är din skapelse. Tänk på att när du delar ditt projekt "
 "på Scratch, kan alla är ladda ned det gratis, remixa, och återanvända det "
-"enligt villkoren i <a href = \"http://creativecommons.org/licenses/by-sa/3.0/ "
-"\"> CC-BY-SA 3.0 licens </ a>. Så om du tänker sälja ditt projekt, ska du "
+"enligt villkoren i <a href=\"http://creativecommons.org/licenses/by-sa/3.0/ "
+"\"> CC-BY-SA 3.0 licens </a>. Så om du tänker sälja ditt projekt, ska du "
 "kanske inte dela det på Scratch webbplats."
 
 #: templates/info/help/faq.html:160
@@ -4611,6 +4882,12 @@ msgid ""
 "ScratchR - is available <a href=\"http://svn.assembla.com/svn/scratchr/\">on "
 "Assembla</a>."
 msgstr ""
+"Källkoden för Scratch 2 (webbsajt och redigerare) är inte tillgänglig ännu. "
+"Källkoden för <a href =\"/scratch_1.4\">Scratch 1.4</a>, programmerad i "
+"Squeak, är tillgänglig <a href=\"https://github.com/LLK/Scratch_1.4\">på "
+"github</a>. Källkoden för den första versionen av Scratch webbplats  - "
+"ScratchR - är tillgänglig <a href=\"http://svn.assembla.com/svn/scratchr/\">på "
+"Assembla</a>."
 
 #: templates/info/help/faq.html:169
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
@@ -4623,8 +4900,8 @@ msgid ""
 "There’s a link at the bottom of every page on Scratch."
 msgstr ""
 "Kolla in <a href=\"/community_guidelines\"> riktlinjer för Scratchgemenskapen "
-"</ a> - de är korta och innehåller inte en massa juridiska grejer. Det finns "
-"en länk längst ned på varje sida på webbplatsen för Scratch ."
+"</a> - de är korta och innehåller inte en massa juridiska grejer. Det finns "
+"en länk längst ned på varje sida på webbplatsen för Scratch."
 
 #: templates/info/help/faq.html:172
 msgid "What do I do if I see something that’s inappropriate?"
@@ -4711,8 +4988,8 @@ msgid ""
 "My mean brother / Kaj / some other bad guy stole my account and got it "
 "banned, what do I do?"
 msgstr ""
-"Min elake bror / \"Kaj\" / eller någon annan elaking stal mitt konto och "
-"gjorde så att det låstes, vad ska jag göra?"
+"Min elake bror / Kaj / eller någon annan elaking stal mitt konto och gjorde "
+"så att det låstes, vad ska jag göra?"
 
 #: templates/info/help/faq.html:185
 msgid ""
@@ -4743,6 +5020,9 @@ msgid ""
 "be saved and shared online. You can use cloud data to make surveys and other "
 "projects that store numbers over time."
 msgstr ""
+"Molndata är en möjlighet i Scratch 2 som tillåter data från ett projekt att "
+"sparas och delas online. Du kan använda molndata till enkäter och andra "
+"projekt där siffror kan sparas."
 
 #: templates/info/help/faq.html:195
 msgid "Who can see the data stored in cloud data?"
@@ -4841,7 +5121,7 @@ msgid ""
 msgstr ""
 "Bara ditt projekt kan lagra data i sin molnvariabel. Om någon annan "
 "förändrar eller remixar din kod, skapas det en annan variabel med samma namn "
-"i deras projekt ."
+"i deras projekt."
 
 #: templates/info/help/faq.html:213
 msgid ""
@@ -4904,21 +5184,20 @@ msgstr "Ofta Förekommande Frågor (FAQ)"
 
 #: templates/info/help/index.html:8
 msgid "Get Started with Scratch"
-msgstr ""
+msgstr "Kom igång med Scratch"
 
 #: templates/info/help/index.html:15
 msgid "Try out the</br> step-by-step intro"
-msgstr ""
+msgstr "Prova</br> steg-för-steg introduktionen"
 
 # 82%
 #: templates/info/help/index.html:24
-#, fuzzy
 msgid "Explore these</br> starter projects"
-msgstr "Prova dessa</br> startprojekt"
+msgstr "Utforska dessa</br> startprojekt"
 
 #: templates/info/help/index.html:33
 msgid "Watch video </br>tutorials"
-msgstr ""
+msgstr "Kolla in video </br>handledningar"
 
 #: templates/info/help/index.html:38
 msgid "Scratch Guides"
@@ -4945,6 +5224,8 @@ msgid ""
 "Learn about what's changed in Scratch 2.0, the new browser-based generation "
 "of Scratch."
 msgstr ""
+"Lär dig vad som är förändrat i Scratch 2.0, den nya webbläsarbaserade "
+"generationen av Scratch."
 
 #: templates/info/help/index.html:64 templates/info/help/videos.html:19
 msgid "Video Tutorials"
@@ -4955,6 +5236,8 @@ msgid ""
 "These videos include tips on using the paint editor, and introduce how to "
 "program games and animations in Scratch."
 msgstr ""
+"Dessa videor innehåller tips om hur man använder bildredigeraren, och "
+"introducerar hur man programmerar spel och animationer i Scratch."
 
 #: templates/info/help/index.html:71
 msgid "Explore the Scratch Community"
@@ -4990,39 +5273,37 @@ msgstr "Vad är Scratch?"
 
 #: templates/info/help/index.html:90
 msgid "About Scratch"
-msgstr ""
+msgstr "Om Scratch"
 
 #: templates/info/help/index.html:91
 msgid "For <a href=\"/parents\">Parents</a>"
-msgstr ""
+msgstr "För <a href=\"/parents\">Föräldrar</a>"
 
 #: templates/info/help/index.html:92
 msgid "For <a href=\"/educators\">Educators</a>"
-msgstr ""
+msgstr "För <a href=\"/educators\">Pedagoger</a>"
 
 #: templates/info/help/index.html:97
 msgid ""
 "Browse for answers on: </br><a href=\"/help/faq\">Frequently Asked "
 "Questions</a>"
 msgstr ""
-"Leta efter ett svar på:  </br><a href=\"/help/faq\">Ofta Förekommande Frågor "
-"(FAQ)</a>"
+"Leta efter ett svar på:  </br><a href=\"/help/faq\">Ofta Förekommande Frågor - "
+"FAQ</a>"
 
 #: templates/info/help/index.html:99
 msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
-msgstr ""
+msgstr "Eller besök <a href=\"/discuss\">diskussionforum</a>:"
 
 # 92%
 #: templates/info/help/index.html:100
-#, fuzzy
 msgid "- Questions about Scratch"
-msgstr "Frågor om Scratch"
+msgstr "- Frågor om Scratch"
 
 # 89%
 #: templates/info/help/index.html:101
-#, fuzzy
 msgid "- Help with Scripts"
-msgstr "Hjälp med Script"
+msgstr "- Hjälp med Script"
 
 #: templates/info/help/index.html:104
 msgid "Resources"
@@ -5050,11 +5331,11 @@ msgstr ""
 
 #: templates/info/help/index.html:116
 msgid "Scratch 2 Offline Editor (Beta)"
-msgstr ""
+msgstr "Scratch 2 Offlineredigeraren (Beta)"
 
 #: templates/info/help/index.html:118
 msgid "Download the Scratch 2 offline editor (beta version)"
-msgstr ""
+msgstr "Ladda ned Scratch 2 offlineredigeraren (beta version)"
 
 #: templates/info/help/index.html:120
 msgid "Scratch 1.4 Download"
@@ -5081,8 +5362,8 @@ msgid ""
 msgstr ""
 "Anslut ditt Scratchprojekt till den fysiska världen med <a href = "
 "\"http://www.makeymakey.com/\"> Makey Makey </a>, <a href = "
-"\"http://info.scratch.mit.edu/ WEDO \"> LEGO WEDO </a> eller <a "
-"href=\"https://www.sparkfun.com/products/10311\"> PicoBoard </a>."
+"\"http://info.scratch.mit.edu/ WEDO\"> LEGO WEDO </a> eller <a "
+"href=\"https://www.sparkfun.com/products/10311\"> PicoBoard</a>."
 
 #: templates/info/help/index.html:130
 msgid "Scratch Logo"
@@ -5094,17 +5375,17 @@ msgstr "Gå till Scratch logotyp och andra mediefiler."
 
 # 75%
 #: templates/info/help/videos.html:4
-#, fuzzy
 msgid "Scratch - Videos"
-msgstr "Scratch Guider"
+msgstr "Scratch - Videor"
 
 #: templates/info/help/videos.html:23
 msgid "Here are some videos for learning to use Scratch."
-msgstr ""
+msgstr "Här är några videor som lär dig använda Scratch."
 
+# Inte bra...
 #: templates/info/help/videos.html:25 templates/info/help/videos.html.py:36
 msgid "Introductory Tutorials"
-msgstr ""
+msgstr "Introduktionshandledning"
 
 #: templates/info/help/videos.html:26 templates/info/help/videos.html:107
 msgid "Paint Editor Tips"
@@ -5112,95 +5393,92 @@ msgstr "Bildredigeraren Tips"
 
 #: templates/info/help/videos.html:44
 msgid "Make your sprite move forward"
-msgstr ""
+msgstr "Gör så att din sprite går framåt"
 
 # 80%
 #: templates/info/help/videos.html:49
-#, fuzzy
 msgid "Make your sprite spin"
-msgstr "Gör så att din sprite pratar"
+msgstr "Gör så att din sprite snurrar"
 
 #: templates/info/help/videos.html:54
 msgid "Make your sprite change color"
-msgstr ""
+msgstr "Gör så att din sprite ändrar färg"
 
 # 80%
 # 81%
 #: templates/info/help/videos.html:61
-#, fuzzy
 msgid "Make your sprite dance"
-msgstr "Gör så att din sprite pratar"
+msgstr "Gör så att din sprite dansar"
 
 #: templates/info/help/videos.html:66
 msgid "Make your sprite follow the mouse"
-msgstr ""
+msgstr "Gör så att din sprite följer musen"
 
 # 80%
 # 77%
 #: templates/info/help/videos.html:71
-#, fuzzy
 msgid "Make your sprite glide"
-msgstr "Gör så att din sprite pratar"
+msgstr "Gör så att din sprite glider"
 
 #: templates/info/help/videos.html:78
 msgid "Make your sprite jump when you clap"
-msgstr ""
+msgstr "Gör så att din sprite hoppar när du klappar"
 
 #: templates/info/help/videos.html:83
 msgid "Make your sprite spin when you say something"
-msgstr ""
+msgstr "Gör så att din sprite snurrar när du säger någonting"
 
 #: templates/info/help/videos.html:88
 msgid "Make a simple game"
-msgstr ""
+msgstr "Gör ett enkelt spel"
 
 #: templates/info/help/videos.html:95
 msgid "Make a story"
-msgstr ""
+msgstr "Gör en berättelse"
 
 #: templates/info/help/videos.html:116
 msgid "Change the cat or other characters"
-msgstr ""
+msgstr "Ändra katten eller andra figurer"
 
 #: templates/info/help/videos.html:121
 msgid "Differences between vector and bitmap"
-msgstr ""
+msgstr "Skillnader mellan vektor och bitmapp"
 
 #: templates/info/help/videos.html:126
 msgid "Switching between vector and bitmap"
-msgstr ""
+msgstr "Växla mellan vektor och bitmapp"
 
 #: templates/info/help/videos.html:135
 msgid "Fill a vector shape"
-msgstr ""
+msgstr "Fyll en vektorform"
 
 #: templates/info/help/videos.html:140
 msgid "Erasing in vector mode"
-msgstr ""
+msgstr "Radera i vektorläget"
 
 #: templates/info/help/videos.html:145
 msgid "Drawing with reshape"
-msgstr ""
+msgstr "Rita med omforma"
 
 #: templates/info/help/videos.html:154
 msgid "Smoothing"
-msgstr ""
+msgstr "Jämna till"
 
 #: templates/info/help/videos.html:159
 msgid "Grouping"
-msgstr ""
+msgstr "Gruppera"
 
 #: templates/info/help/videos.html:164
 msgid "Layers"
-msgstr ""
+msgstr "Lager"
 
 #: templates/info/help/videos.html:173
 msgid "Backdrop into Sprite"
-msgstr ""
+msgstr "Bakgrund till sprite"
 
 #: templates/info/help/videos.html:178
 msgid "Center of Costume"
-msgstr ""
+msgstr "Centrum av klädsel"
 
 #: templates/info/help/studio/tips/home.html:4
 msgid "Getting Started"
@@ -5370,7 +5648,7 @@ msgstr "om vid kanten, studsa"
 
 #: templates/info/help/studio/tips/home.html:90
 msgid "set rotation style"
-msgstr ""
+msgstr "sätt rotationsstil"
 
 #: templates/info/help/studio/tips/home.html:91
 msgid "x position"
@@ -5422,7 +5700,7 @@ msgstr "nästa klädsel"
 
 #: templates/info/help/studio/tips/home.html:105
 msgid "next backdrop (Stage only)"
-msgstr ""
+msgstr "nästa klädsel (enbart scenen)"
 
 #: templates/info/help/studio/tips/home.html:106
 msgid "switch backdrop to"
@@ -5430,7 +5708,7 @@ msgstr "växla bakgrund till"
 
 #: templates/info/help/studio/tips/home.html:107
 msgid "switch backdrop and wait (Stage only)"
-msgstr ""
+msgstr "Ändra bakgrund och vänta (enbart scenen)"
 
 # 94%
 #: templates/info/help/studio/tips/home.html:108
@@ -5472,7 +5750,7 @@ msgstr "bakgrundens namn"
 
 #: templates/info/help/studio/tips/home.html:117
 msgid "backdrop # (Stage only)"
-msgstr ""
+msgstr "backgrund # (Scen enbart)"
 
 #: templates/info/help/studio/tips/home.html:118
 msgid "size"
@@ -5484,56 +5762,56 @@ msgstr "Ljud"
 
 #: templates/info/help/studio/tips/home.html:122
 msgid "play sound _"
-msgstr ""
+msgstr "spela ljud_"
 
 #: templates/info/help/studio/tips/home.html:123
 msgid "play sound _ until done"
-msgstr ""
+msgstr "spela ljud_tills färdigt"
 
 #: templates/info/help/studio/tips/home.html:124
 msgid "stop all sounds"
-msgstr ""
+msgstr "stoppa alla ljud"
 
 #: templates/info/help/studio/tips/home.html:125
 msgid "play drum _ for _ beats"
-msgstr ""
+msgstr "spela trumma _ i _ taktslag"
 
 #: templates/info/help/studio/tips/home.html:126
 msgid "rest for _ beats"
-msgstr ""
+msgstr "paus i_taktslag"
 
 #: templates/info/help/studio/tips/home.html:127
 msgid "play note _ for _ beats"
-msgstr ""
+msgstr "spela tonen_i_taktslag"
 
 #: templates/info/help/studio/tips/home.html:128
 msgid "set instrument to _"
-msgstr ""
+msgstr "sätt instrument till _"
 
 #: templates/info/help/studio/tips/home.html:129
 msgid "change volume by _"
-msgstr ""
+msgstr "ändra volym med _"
 
 #: templates/info/help/studio/tips/home.html:130
 #, python-format
 msgid "set volume to _%%"
-msgstr ""
+msgstr "sätt volym till _%%"
 
 #: templates/info/help/studio/tips/home.html:131
 msgid "change tempo by _"
-msgstr ""
+msgstr "ändra tempo med _"
 
 #: templates/info/help/studio/tips/home.html:132
 msgid "set tempo to _ bpm"
-msgstr ""
+msgstr "sätt tempo till _ bmp"
 
 #: templates/info/help/studio/tips/home.html:133
 msgid "tempo"
-msgstr ""
+msgstr "tempo"
 
 #: templates/info/help/studio/tips/home.html:134
 msgid "volume"
-msgstr ""
+msgstr "volym"
 
 #: templates/info/help/studio/tips/home.html:137
 msgid "Pen"
@@ -5541,47 +5819,48 @@ msgstr "Penna"
 
 #: templates/info/help/studio/tips/home.html:139
 msgid "clear"
-msgstr ""
+msgstr "radera"
 
 #: templates/info/help/studio/tips/home.html:140
 msgid "stamp"
-msgstr ""
+msgstr "stämpla"
 
 #: templates/info/help/studio/tips/home.html:141
 msgid "pen down"
-msgstr ""
+msgstr "penna ned"
 
 #: templates/info/help/studio/tips/home.html:142
 msgid "pen up"
-msgstr ""
+msgstr "penna upp"
 
 #: templates/info/help/studio/tips/home.html:143
 msgid "set pen color to [color]"
-msgstr ""
+msgstr "sätt pennans färg till [färg]"
 
 #: templates/info/help/studio/tips/home.html:144
 msgid "change pen color by _"
-msgstr ""
+msgstr "ändra pennans färg med _"
 
+# Kolla upp om [number] ska översättas!!
 #: templates/info/help/studio/tips/home.html:145
 msgid "set pen color to [number]"
-msgstr ""
+msgstr "sätt pennans färg till [number]"
 
 #: templates/info/help/studio/tips/home.html:146
 msgid "change pen shade by _"
-msgstr ""
+msgstr "ändra pennans nyans med _"
 
 #: templates/info/help/studio/tips/home.html:147
 msgid "set pen shade to _"
-msgstr ""
+msgstr "sätt pennans nyans till _"
 
 #: templates/info/help/studio/tips/home.html:148
 msgid "change pen size by _"
-msgstr ""
+msgstr "ändra pennans storlek med _"
 
 #: templates/info/help/studio/tips/home.html:149
 msgid "set pen size to _"
-msgstr ""
+msgstr "sätt pennans storlek till _"
 
 #: templates/info/help/studio/tips/home.html:151
 msgid "Data"
@@ -5589,76 +5868,74 @@ msgstr "Data"
 
 #: templates/info/help/studio/tips/home.html:153
 msgid "Make a Variable"
-msgstr ""
+msgstr "Gör en variabel"
 
 #: templates/info/help/studio/tips/home.html:154
 msgid "Variable"
-msgstr ""
+msgstr "Variabel"
 
 # 87%
 #: templates/info/help/studio/tips/home.html:155
-#, fuzzy
 msgid "set _ to"
-msgstr "sätt x till"
+msgstr "sätt _ till"
 
 # 90%
 #: templates/info/help/studio/tips/home.html:156
-#, fuzzy
 msgid "change _ by"
-msgstr "ändra x med"
+msgstr "ändra _ med"
 
 #: templates/info/help/studio/tips/home.html:157
 msgid "show variable"
-msgstr ""
+msgstr "visa variabel"
 
 #: templates/info/help/studio/tips/home.html:158
 msgid "hide variable"
-msgstr ""
+msgstr "göm variabel"
 
 #: templates/info/help/studio/tips/home.html:159
 msgid "Make a List"
-msgstr ""
+msgstr "Gör en lista"
 
 #: templates/info/help/studio/tips/home.html:160
 msgid "List"
-msgstr ""
+msgstr "Lista"
 
 #: templates/info/help/studio/tips/home.html:161
 msgid "add _ to"
-msgstr ""
+msgstr "lägg _ till"
 
 #: templates/info/help/studio/tips/home.html:162
 msgid "delete _ of"
-msgstr ""
+msgstr "ta bort _ of"
 
 #: templates/info/help/studio/tips/home.html:163
 msgid "insert _ at _ of"
-msgstr ""
+msgstr "infoga _ vid _ i"
 
 #: templates/info/help/studio/tips/home.html:164
 msgid "replace item _ of _ with"
-msgstr ""
+msgstr "ersätt posten _ i _ med"
 
 #: templates/info/help/studio/tips/home.html:165
 msgid "item _ of"
-msgstr ""
+msgstr "post _ i"
 
 #: templates/info/help/studio/tips/home.html:166
 #: templates/info/help/studio/tips/home.html:234
 msgid "length of"
-msgstr ""
+msgstr "längden på"
 
 #: templates/info/help/studio/tips/home.html:167
 msgid "_ contains"
-msgstr ""
+msgstr "_ innehåller"
 
 #: templates/info/help/studio/tips/home.html:168
 msgid "show list"
-msgstr ""
+msgstr "visa lista"
 
 #: templates/info/help/studio/tips/home.html:169
 msgid "hide list"
-msgstr ""
+msgstr "göm lista"
 
 #: templates/info/help/studio/tips/home.html:171
 msgid "Events"
@@ -5666,35 +5943,35 @@ msgstr "Händelser"
 
 #: templates/info/help/studio/tips/home.html:173
 msgid "when green flag clicked"
-msgstr ""
+msgstr "när gröna flaggan klickas på"
 
 #: templates/info/help/studio/tips/home.html:174
 msgid "when _ key pressed"
-msgstr ""
+msgstr "när _ tangent trycks ned"
 
 #: templates/info/help/studio/tips/home.html:175
 msgid "when this sprite clicked"
-msgstr ""
+msgstr "när denna sprite klickas på"
 
 #: templates/info/help/studio/tips/home.html:176
 msgid "when backdrop switches to"
-msgstr ""
+msgstr "när bakgrunden växlar till"
 
 #: templates/info/help/studio/tips/home.html:177
 msgid "when _ > _"
-msgstr ""
+msgstr "när _ > _"
 
 #: templates/info/help/studio/tips/home.html:178
 msgid "when I receive"
-msgstr ""
+msgstr "när jag tar emot"
 
 #: templates/info/help/studio/tips/home.html:179
 msgid "broadcast "
-msgstr ""
+msgstr "skicka "
 
 #: templates/info/help/studio/tips/home.html:180
 msgid "broadcast _ and wait"
-msgstr ""
+msgstr "skicka _ och vänta"
 
 #: templates/info/help/studio/tips/home.html:182
 msgid "Control"
@@ -5702,47 +5979,47 @@ msgstr "Kontroll"
 
 #: templates/info/help/studio/tips/home.html:184
 msgid "wait _ secs"
-msgstr ""
+msgstr "vänta _ sekunder"
 
 #: templates/info/help/studio/tips/home.html:185
 msgid "repeat"
-msgstr ""
+msgstr "repetera"
 
 #: templates/info/help/studio/tips/home.html:186
 msgid "forever"
-msgstr ""
+msgstr "för alltid"
 
 #: templates/info/help/studio/tips/home.html:187
 msgid "if _ then"
-msgstr ""
+msgstr "om _ då"
 
 #: templates/info/help/studio/tips/home.html:188
 msgid "if _ then else"
-msgstr ""
+msgstr "om _ då annars"
 
 #: templates/info/help/studio/tips/home.html:189
 msgid "wait until"
-msgstr ""
+msgstr "vänta tills"
 
 #: templates/info/help/studio/tips/home.html:190
 msgid "repeat until"
-msgstr ""
+msgstr "repetera tills"
 
 #: templates/info/help/studio/tips/home.html:191
 msgid "stop"
-msgstr ""
+msgstr "stoppa"
 
 #: templates/info/help/studio/tips/home.html:192
 msgid "when I start as a clone"
-msgstr ""
+msgstr "när jag startar som klon"
 
 #: templates/info/help/studio/tips/home.html:193
 msgid "create clone of"
-msgstr ""
+msgstr "skapa klon av"
 
 #: templates/info/help/studio/tips/home.html:194
 msgid "delete this clone"
-msgstr ""
+msgstr "radera klonen"
 
 #: templates/info/help/studio/tips/home.html:196
 msgid "Sensing"
@@ -5750,86 +6027,85 @@ msgstr "Känna av"
 
 #: templates/info/help/studio/tips/home.html:198
 msgid "touching"
-msgstr ""
+msgstr "rör"
 
 #: templates/info/help/studio/tips/home.html:199
 msgid "touching color"
-msgstr ""
+msgstr "rör färgen"
 
 #: templates/info/help/studio/tips/home.html:200
 msgid "color is touching"
-msgstr ""
+msgstr "rör färgen"
 
 #: templates/info/help/studio/tips/home.html:201
 msgid "distance to"
-msgstr ""
+msgstr "avstånd till"
 
 #: templates/info/help/studio/tips/home.html:202
 msgid "ask _ and wait"
-msgstr ""
+msgstr "fråga _ och vänta"
 
 #: templates/info/help/studio/tips/home.html:203
 msgid "answer"
-msgstr ""
+msgstr "svar"
 
 #: templates/info/help/studio/tips/home.html:204
 msgid "key _ pressed?"
-msgstr ""
+msgstr "tangent _ nedtryckt?"
 
 #: templates/info/help/studio/tips/home.html:205
 msgid "mouse down?"
-msgstr ""
+msgstr "musknappen?"
 
 #: templates/info/help/studio/tips/home.html:206
 msgid "mouse x"
-msgstr ""
+msgstr "mus x"
 
 #: templates/info/help/studio/tips/home.html:207
 msgid "mouse y"
-msgstr ""
+msgstr "mus y"
 
 #: templates/info/help/studio/tips/home.html:208
 msgid "loudness"
-msgstr ""
+msgstr "ljudstyrka"
 
 #: templates/info/help/studio/tips/home.html:209
 msgid "video _ on _"
-msgstr ""
+msgstr "video _ på _"
 
 #: templates/info/help/studio/tips/home.html:210
 msgid "turn video"
-msgstr ""
+msgstr "vänd video"
 
 #: templates/info/help/studio/tips/home.html:211
 msgid "set video transparency to"
-msgstr ""
+msgstr "sätt video genomskinlighet till"
 
 #: templates/info/help/studio/tips/home.html:212
 msgid "timer"
-msgstr ""
+msgstr "timer"
 
 #: templates/info/help/studio/tips/home.html:213
 msgid "reset timer"
-msgstr ""
+msgstr "nollställ timer"
 
 #: templates/info/help/studio/tips/home.html:214
 #: templates/info/help/studio/tips/home.html:237
 msgid "_ of _"
-msgstr ""
+msgstr "_ av _"
 
 #: templates/info/help/studio/tips/home.html:215
 msgid "current _"
-msgstr ""
+msgstr "aktuell _"
 
 #: templates/info/help/studio/tips/home.html:216
 msgid "days since 2000"
-msgstr ""
+msgstr "dagar sedan 2000"
 
 # 87%
 #: templates/info/help/studio/tips/home.html:217
-#, fuzzy
 msgid "username"
-msgstr "Användarnamn"
+msgstr "användarnamn"
 
 #: templates/info/help/studio/tips/home.html:219
 msgid "Operators"
@@ -5837,65 +6113,64 @@ msgstr "Operatorer"
 
 #: templates/info/help/studio/tips/home.html:221
 msgid "+"
-msgstr ""
+msgstr "+"
 
 #: templates/info/help/studio/tips/home.html:222
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: templates/info/help/studio/tips/home.html:223
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #: templates/info/help/studio/tips/home.html:224
 msgid "/"
-msgstr ""
+msgstr "/"
 
 #: templates/info/help/studio/tips/home.html:225
 msgid "pick random _ to _"
-msgstr ""
+msgstr "slumptal _ till _"
 
 #: templates/info/help/studio/tips/home.html:226
 msgid "&lt;"
-msgstr ""
+msgstr "&lt;"
 
 #: templates/info/help/studio/tips/home.html:227
 msgid "="
-msgstr ""
+msgstr "="
 
 #: templates/info/help/studio/tips/home.html:228
 msgid "&gt;"
-msgstr ""
+msgstr "&gt;"
 
 #: templates/info/help/studio/tips/home.html:229
 msgid "and "
-msgstr ""
+msgstr "och "
 
 #: templates/info/help/studio/tips/home.html:230
 msgid "or"
-msgstr ""
+msgstr "eller"
 
 #: templates/info/help/studio/tips/home.html:231
 msgid "not"
-msgstr ""
+msgstr "inte"
 
 #: templates/info/help/studio/tips/home.html:232
 msgid "join"
-msgstr ""
+msgstr "förena"
 
 #: templates/info/help/studio/tips/home.html:233
 msgid "letter _ of "
-msgstr ""
+msgstr "bokstav _ i "
 
 #: templates/info/help/studio/tips/home.html:235
 msgid "mod"
-msgstr ""
+msgstr "mod"
 
 # 80%
 #: templates/info/help/studio/tips/home.html:236
-#, fuzzy
 msgid "round"
-msgstr "Ljud"
+msgstr "runda av"
 
 #: templates/info/help/studio/tips/home.html:239
 msgid "More Blocks"
@@ -5903,12 +6178,12 @@ msgstr "Fler Block"
 
 #: templates/info/help/studio/tips/home.html:241
 msgid "Make a Block"
-msgstr ""
+msgstr "Skapa ett Block"
 
 #: templates/info/help/studio/tips/blocks/add-to-list.html:6
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/add-to-list.png\" />"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/add-to-list.png\" />"
 
 #: templates/info/help/studio/tips/blocks/add-to-list.html:7
 msgid "Adds the specified item to the end of the list"
@@ -5917,12 +6192,13 @@ msgstr ""
 #: templates/info/help/studio/tips/blocks/add-to-list.html:11
 msgid "The item can be a number or a string of letters and other characters."
 msgstr ""
+"Objektet kan innehålla siffror eller en sträng av bokstäver och andra tecken"
 
 #: templates/info/help/studio/tips/blocks/add-to-list.html:15
 #: templates/info/help/studio/tips/blocks/list.html:14
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/list-ex.png\" />"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/list-ex.png\" />"
 
 #: templates/info/help/studio/tips/blocks/add-to-list.html:19
 #, python-format
@@ -5930,6 +6206,8 @@ msgid ""
 "Use this block if you want to add an item to the end of a list.\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/add-to-list-ex2.png\" /><br/>"
 msgstr ""
+"Använd detta block om du vill lägga till objekt i slutet på listan.\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/add-to-list-ex2.png\" /><br/>"
 
 #: templates/info/help/studio/tips/blocks/add-to-list.html:24
 #, python-format
@@ -5937,34 +6215,36 @@ msgid ""
 "Can't find the list blocks? You need to first make a list:\n"
 "<img src=\"%(STATIC_URL)s/images/help/make-a-list.png\" />"
 msgstr ""
+"Hittar du inte listblocken? Du måste skapa en lista först:\n"
+"<img src=\"%(STATIC_URL)s/images/help/make-a-list.png\" />"
 
 #: templates/info/help/studio/tips/blocks/add.html:6
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/add.png\" />"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/add.png\" />"
 
 #: templates/info/help/studio/tips/blocks/add.html:7
 msgid "Adds two numbers"
-msgstr ""
+msgstr "Adderar två tal"
 
 #: templates/info/help/studio/tips/blocks/add.html:11
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/add-ex.png\" />"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/add-ex.png\" />"
 
 #: templates/info/help/studio/tips/blocks/and.html:6
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/and.png\" />"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/and.png\" />"
 
 #: templates/info/help/studio/tips/blocks/and.html:7
 msgid "Reports true if both conditions are true"
-msgstr ""
+msgstr "Returnerar sant om båda villkoren är sanna"
 
 #: templates/info/help/studio/tips/blocks/and.html:11
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/and-ex.png\" />"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/and-ex.png\" />"
 
 #: templates/info/help/studio/tips/blocks/answer.html:6
 #, python-format
@@ -5973,11 +6253,14 @@ msgid ""
 "  <h3>Reports keyboard input from the most recent use of <img src="
 "\"%(STATIC_URL)s/images/help/ask-and-wait.png\"/></h3>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/answer.png\" />\n"
+"  <h3>Ger input från tangentbordet från den senaste användningen av <img "
+"src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\"/></h3>"
 
 #: templates/info/help/studio/tips/blocks/answer.html:12
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/answer-ex.png\"/>"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/answer-ex.png\"/>"
 
 #: templates/info/help/studio/tips/blocks/answer.html:15
 #, python-format
@@ -5997,11 +6280,25 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/answer-checkbox.png\" />\n"
 "</p>"
 msgstr ""
+"\n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> ställer en "
+"fråga och sparar input från tangentbordet i <img src=\"%"
+"(STATIC_URL)s/images/help/answer.png\" />. Svaret delas med alla sprites. "
+"</p>\n"
+"<p>Om du vill spara aktuellt svar, kan du spara det i en variabel eller "
+"lista. Till exempel, <img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/> \n"
+"</p>\n"
+"\n"
+"<p>\n"
+"För att visa värdet av svaret bockar du i  kryssrutan vid sidan om "
+"svarsblocket.<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/answer-checkbox.png\" />\n"
+"</p>"
 
 #: templates/info/help/studio/tips/blocks/ask-and-wait.html:6
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />"
 
 #: templates/info/help/studio/tips/blocks/ask-and-wait.html:7
 #, python-format
@@ -6844,7 +7141,7 @@ msgid ""
 "You can see <b>x</b> and <b>y</b> update in the Motion blocks palette when "
 "you drag a sprite to another point."
 msgstr ""
-"Du kan se <b>x</ b> och <b>y</ b> uppdateras i paletten för Rörelseblock när "
+"Du kan se <b>x</b> och <b>y</b> uppdateras i paletten för Rörelseblock när "
 "du drar en sprite till en annan punkt."
 
 #: templates/info/help/studio/tips/blocks/go-back-layer.html:6
@@ -6881,9 +7178,8 @@ msgstr ""
 
 # 97%
 #: templates/info/help/studio/tips/blocks/go-to-front.html:7
-#, fuzzy
 msgid "Moves sprite in front of all other sprites"
-msgstr "Flyttar figuren (sprite) framför alla andra figurer."
+msgstr "Flyttar figuren (sprite) framför alla andra figurer"
 
 #: templates/info/help/studio/tips/blocks/go-to-front.html:11
 #, python-format
@@ -6911,8 +7207,8 @@ msgid ""
 "Type in a number for <b>x</b> and <b>y</b> to tell the sprite where to go to "
 "on the Stage."
 msgstr ""
-"Skriv in ett tal för <b>x</ b> och <b>y</ b> för att berätta för figuren "
-"vart den ska gå på scenen."
+"Skriv in ett tal för <b>x</b> och <b>y</b> för att berätta för figuren vart "
+"den ska gå på scenen."
 
 #: templates/info/help/studio/tips/blocks/go-to-xy.html:19
 #, python-format
@@ -7060,7 +7356,7 @@ msgid ""
 "The sprite will bounce at an angle if it is touching the <b>side</b>, "
 "<b>top</b>, or <b>bottom</b> of the stage."
 msgstr ""
-"Figuren (sprite) studsar med en vinkel om den rör scenens <b>sida</b>, "
+"Figuren (sprite) studsar i en vinkel om den rör scenens <b>sida</b>, "
 "<b>topp</b>, eller <b>botten</b>."
 
 #: templates/info/help/studio/tips/blocks/if.html:6
@@ -9170,7 +9466,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/blocks/wait-until.html:7
 msgid "Waits until condition is true, then runs the blocks below"
-msgstr ""
+msgstr "Vänta till villkoret är sant, kör sedan blocken nedan"
 
 #: templates/info/help/studio/tips/blocks/wait-until.html:10
 #, python-format
@@ -9311,12 +9607,12 @@ msgstr ""
 #: templates/info/help/studio/tips/blocks/when-this-sprite-clicked.html:11
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/when-sprite-clicked-ex.png\"/>"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/when-sprite-clicked-ex.png\"/>"
 
 #: templates/info/help/studio/tips/blocks/x-position-sprite.html:6
 #, python-format
 msgid "<img src=\"%(STATIC_URL)s/images/help/x-position-sprite.png\" />"
-msgstr ""
+msgstr "<img src=\"%(STATIC_URL)s/images/help/x-position-sprite.png\" />"
 
 #: templates/info/help/studio/tips/blocks/x-position-sprite.html:7
 msgid "Reports a property or variable of another sprite"
@@ -9444,11 +9740,11 @@ msgstr "Vill du göra ett projekt i Scratch? Prova de här 10 stegen."
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:10
 msgid "1 Start Moving"
-msgstr ""
+msgstr "1 Börja rörelse"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:12
 msgid "Drag a <span class=movecolor>MOVE</span> block into the Scripts area."
-msgstr "Dra ett <span class=movecolor>RÖRELSE</span> block in till Scriptytan."
+msgstr "Dra ett <span class=movecolor>RÖRELSE</span>-block in till Scriptytan."
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:16
 msgid "Then, click on that block to make the cat move:"
@@ -9512,7 +9808,7 @@ msgstr "10"
 # 77%
 #: templates/info/help/studio/tips/howto/get-started-11.html:7
 msgid " Explore!"
-msgstr "  Utforska!"
+msgstr " Utforska!"
 
 #: templates/info/help/studio/tips/howto/get-started-11.html:9
 msgid "You can add sound and animation to your new sprite."
@@ -9575,7 +9871,7 @@ msgstr "11"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:6
 msgid " Share!"
-msgstr "  Dela!"
+msgstr " Dela!"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:8
 msgid ""
@@ -9743,6 +10039,14 @@ msgid ""
 "<img src = \"%(STATIC_URL)s/images/help/5c-say-new.png\">\n"
 "<p>Click on the stack to run.</p>\n"
 msgstr ""
+"<p>Klicka på <span class=lookscolor>LOOKS</span> och dra ut ett <span "
+"class=lookscolor>SAY</span>-block.</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/5a-say.png\"></p>\n"
+"Skriv i blocket för att ändra orden:<br/>\n"
+"<img src = \"%(STATIC_URL)s/images/help/5b-say-new.png\"><br/>\n"
+"<b>Lägg</b> den sedan på toppen av stacken.</p>\n"
+"<img src = \"%(STATIC_URL)s/images/help/5c-say-new.png\">\n"
+"<p>Klicka på stacken för att köra.</p>\n"
 
 #: templates/info/help/studio/tips/howto/get-started-5.html:21
 msgid "5"
@@ -9818,7 +10122,7 @@ msgstr "7"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:6
 msgid "8 Key Press"
-msgstr ""
+msgstr "8 Tangent Nedtryckt"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:8
 #, python-format
@@ -9827,7 +10131,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:10
 msgid "Now press the space bar on your keyboard and watch what happens."
-msgstr ""
+msgstr "Tryck nu på mellanslagstangenten och se vad som händer."
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:12
 msgid "You can choose a different key from the menu:"
@@ -9839,7 +10143,7 @@ msgstr "8"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:5
 msgid " 9 Add a Backdrop"
-msgstr "  9 Lägg till en bakgrund"
+msgstr " 9 Lägg till en bakgrund"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:7
 #, python-format
@@ -9876,7 +10180,7 @@ msgstr "Prova de här skripten:"
 
 #: templates/info/help/studio/tips/howto/import-music.html:19
 msgid "Click the green flag to run at the same time."
-msgstr "Klicka på gröna flaggan för att köra samtidigt."
+msgstr "Klicka på den gröna flaggan för att köra samtidigt."
 
 #: templates/info/help/studio/tips/howto/import-music.html:23
 #, python-format
@@ -9886,6 +10190,10 @@ msgid ""
 "Then choose from the Edit menu:<br/>\n"
 " <img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\"> </div>\n"
 msgstr ""
+"Om du vill redigera låten, välj en sektion: \n"
+"<img src=\"%(STATIC_URL)s/images/help/edit-sound.png\"><br/>\n"
+"Välj sedan från Redigera-menyn:<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\"> </div>\n"
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:10
 msgid "To play notes, choose an instrument and note:"
@@ -9946,6 +10254,12 @@ msgid ""
 "<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/record-sound-button.png\">\n"
 msgstr ""
+"För att spela in ett ljud, klicka på <img src=\"%(STATIC_URL)s/images/help"
+"/sounds-tab.png\"><br/>\n"
+"och mikrofonen <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\">. "
+"Klicka sedan på inspelningsknappen:\n"
+"<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/record-sound-button.png\">\n"
 
 #: templates/info/help/studio/tips/howto/record-sounds.html:19
 #, python-format
@@ -9954,6 +10268,9 @@ msgid ""
 " Type in a name of your sound:<br/>\n"
 " <img src=\"%(STATIC_URL)s/images/help/sound-title.png\"><p>\n"
 msgstr ""
+"  \n"
+" Skriv in namnet på ditt ljud:<br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/sound-title.png\"><p>\n"
 
 #: templates/info/help/studio/tips/howto/record-sounds.html:26
 #, python-format
@@ -9965,6 +10282,11 @@ msgid ""
 ">\n"
 "Choose the sound name from the drop-down menu.\n"
 msgstr ""
+"  \n"
+"Klicka sedan på <img src=\"%(STATIC_URL)s/images/help/scripts-tab.png\"> och "
+"använd detta block:<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>\n"
+"Välj namnet på ljudet från drop-down-menyn.\n"
 
 #: templates/info/help/studio/tips/howto/switch-backdrop.html:9
 msgid "You can change backdrops using "
@@ -9993,7 +10315,7 @@ msgstr "Gör så att din sprite pratar"
 #: templates/info/help/studio/tips/howto/talking-sprite.html:13
 msgid "Pick a sprite with costumes showing an open and closed mouth, such as:"
 msgstr ""
-"Välj en sprite med dräkter som visar en öppen och stängd mun, till exempel:"
+"Välj en sprite med klädslar som visar en öppen och stängd mun, till exempel:"
 
 #: templates/info/help/studio/tips/howto/talking-sprite.html:18
 msgid "Try this script:"
@@ -10010,6 +10332,13 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"><br/>\n"
 "just below the green flag block."
 msgstr ""
+"För att lägga till din röst, klicka på <img src=\"%(STATIC_URL)s/images/help"
+"/sounds-tab.png\"><br/>\n"
+"och mikrofonen <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\"> "
+"för att spela in orden.</p>\n"
+"Lägg till detta till ditt script:<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"><br/>\n"
+"precis nedanför blocket med gröna flaggan."
 
 # 77%
 #: templates/info/help/studio/tips/ui/editor-map.html:5
@@ -10085,7 +10414,7 @@ msgstr "remixade"
 #: templates/notifications/includes/notification_list.html:151
 #: templates/notifications/includes/user-feed.html:71
 msgid "as"
-msgstr ""
+msgstr "som"
 
 #: templates/notifications/includes/friend-feed.html:62
 #: templates/notifications/includes/user-feed.html:83
@@ -10107,7 +10436,7 @@ msgstr "följer nu"
 #: templates/notifications/includes/friend-feed.html:155
 #: templates/notifications/includes/user-feed.html:121
 msgid "added"
-msgstr "lagd till"
+msgstr "lagt till"
 
 #: templates/notifications/includes/friend-feed.html:156
 #: templates/notifications/includes/user-feed.html:122
@@ -10117,71 +10446,68 @@ msgstr "till studion"
 #: templates/notifications/includes/friend-feed.html:170
 #: templates/notifications/includes/user-feed.html:107
 msgid "became a curator of "
-msgstr ""
+msgstr "bli en administratör av "
 
 # 80%
 #: templates/notifications/includes/notification_list.html:43
-#, fuzzy
 msgid "is now following you"
-msgstr "följer nu"
+msgstr "följer dig nu"
 
 #: templates/notifications/includes/notification_list.html:52
 msgid "loved your project"
-msgstr ""
+msgstr "gillade ditt projekt"
 
 #: templates/notifications/includes/notification_list.html:63
 msgid "favorited your project"
-msgstr ""
+msgstr "favoritmarkerade ditt projekt"
 
 #: templates/notifications/includes/notification_list.html:77
 #: templates/notifications/includes/notification_list.html:99
 msgid "replied to your comment on"
-msgstr ""
+msgstr "svarade på din kommentar på"
 
 #: templates/notifications/includes/notification_list.html:86
 msgid "commented on your project"
-msgstr ""
+msgstr "kommenterade ditt projekt"
 
 #: templates/notifications/includes/notification_list.html:112
 msgid "commented on "
-msgstr ""
+msgstr "kommenterade på"
 
 #: templates/notifications/includes/notification_list.html:125
 msgid "replied to your comment in"
-msgstr ""
+msgstr "svarade på din kommentar i"
 
 #: templates/notifications/includes/notification_list.html:137
 msgid "invited you to curate the studio"
-msgstr ""
+msgstr "bjöd in dig att administrera studion"
 
 #: templates/notifications/includes/notification_list.html:149
 msgid "remixed your project"
-msgstr ""
+msgstr "remixade ditt projekt"
 
 #: templates/notifications/includes/notification_list.html:160
 msgid "There was new activity in"
-msgstr ""
+msgstr "Det fanns nya aktiviteter i"
 
 #: templates/notifications/includes/notification_list.html:162
 msgid "today"
-msgstr ""
+msgstr "idag"
 
 #: templates/notifications/includes/notification_list.html:184
 msgid "There are new posts in the forum thread:"
-msgstr ""
+msgstr "Det finns nya inlägg i forumets trådar:"
 
 # 75%
 #: templates/notifications/includes/user-feed.html:46
-#, fuzzy
 msgid "is now following the studio"
-msgstr "följer nu galleriet"
+msgstr "följer nu studion"
 
 # 83%
 # 78%
 #: templates/notifications/includes/user-feed.html:134
-#, fuzzy
 msgid "joined Scratch"
-msgstr "Gå med Scratch"
+msgstr "gick med i Scratch"
 
 # 77%
 #: templates/profiles/profile_detail.html:62
@@ -10217,7 +10543,7 @@ msgstr "<span id=\\"
 
 #: templates/profiles/profile_detail.html:113
 msgid "What I'm working on"
-msgstr "Vad jag håller på med"
+msgstr "Vad jag håller på med just nu"
 
 #: templates/profiles/profile_detail.html:117
 msgid "Describe what you're working on"
@@ -10265,7 +10591,7 @@ msgstr "Följare"
 
 #: templates/profiles/scratcher_promotion_modal.html:5
 msgid "Become a Scratcher..."
-msgstr ""
+msgstr "Bli en Scratchare..."
 
 #: templates/profiles/scratcher_promotion_modal.html:10
 msgid ""
@@ -10273,20 +10599,25 @@ msgid ""
 "ready to become a Scratcher. The next few pages describe what that means. On "
 "the last page, you can choose to officially become a Scratcher."
 msgstr ""
+"Nu när du har lärt känna Scratch och Scratchgemenskapen, är du välkommen att "
+"bli en Scratchare. De följande sidorna beskriver vad det innebär. På sista "
+"sidan kan du officiellt välja att bli en Scratchare."
 
 #: templates/profiles/scratcher_promotion_modal.html:16
 msgid "Scratchers are respectful."
-msgstr ""
+msgstr "Scratchare respekterar varandra."
 
 #: templates/profiles/scratcher_promotion_modal.html:17
 msgid ""
 "Everyone should feel welcome on Scratch, so we’re careful to be respectful "
 "to everyone."
 msgstr ""
+"Alla ska känna sig välkomna till Scratch. Vi är noga med att vara "
+"respektfulla mot alla."
 
 #: templates/profiles/scratcher_promotion_modal.html:23
 msgid "We’re constructive."
-msgstr ""
+msgstr "Vi är konstruktiva."
 
 #: templates/profiles/scratcher_promotion_modal.html:24
 msgid ""
@@ -10294,34 +10625,42 @@ msgid ""
 "other’s projects, we say something we like about it, and suggest ways to "
 "make it better."
 msgstr ""
+"Många projekt har gjorts av barn för vilka Scratch är nytt. När vi "
+"kommenterar andras projekt, så säger vi någonting vi gillar med det och "
+"föreslår förbättringar."
 
 #: templates/profiles/scratcher_promotion_modal.html:30
+#, fuzzy
 msgid "We give credit."
-msgstr ""
+msgstr "Vi ger erkännanden."
 
 #: templates/profiles/scratcher_promotion_modal.html:31
 msgid ""
 "Anything shared on Scratch can be remixed by everyone. When we remix, we "
 "give credit to the original creator."
 msgstr ""
+"Allt som delas på Scratch kan remixas av alla. När vi remixar, ger vi "
+"erkännande till den som skapat originalet."
 
 #: templates/profiles/scratcher_promotion_modal.html:37
 msgid "We help keep the site friendly."
-msgstr ""
+msgstr "Vi hjälps åt att hålla sajten vänlig."
 
 #: templates/profiles/scratcher_promotion_modal.html:38
 msgid ""
 "Scratch is a fun and friendly place because Scratchers make it that way. If "
 "you see a project or comment that’s mean, click Report. "
 msgstr ""
+"Scratch är en kul och vänskaplig plats därför att Scratchare gör den så. Om "
+"du ser ett projekt eller kommentar som är elak, klicka på Rapportera."
 
 #: templates/profiles/scratcher_promotion_modal.html:45
 msgid "We invite you to become a Scratcher."
-msgstr ""
+msgstr "Vi bjuder in dig att bli en Scratchare."
 
 #: templates/profiles/scratcher_promotion_modal.html:46
 msgid "You get to decide if you want to become a Scratcher."
-msgstr ""
+msgstr "Du får välja om du vill bli en Scratchare."
 
 #: templates/profiles/scratcher_promotion_modal.html:48
 msgid ""
@@ -10329,34 +10668,42 @@ msgid ""
 "strong>, <strong>give credit</strong>, and <strong>help keep the site "
 "friendly</strong>, click \"I agree!\""
 msgstr ""
+"Om går med på <strong>att vara respektfull</strong>, "
+"<strong>konstruktiv</strong>, <strong>ge erkännanden</strong>, och "
+"<strong>hjälpa till att göra sajten vänskaplig</strong>, klicka click \"Jag "
+"godkänner!\""
 
 #: templates/profiles/scratcher_promotion_modal.html:50
 msgid ""
 "If you don’t wish to become a Scratcher, just close this page. (If you "
 "change your mind later, you can always come back)."
 msgstr ""
+"Om du inte vill bli en Scratchare, stänger du bara sidan. (Om du ändrar dig "
+"senare, kan du alltid komma tillbaka)."
 
 #: templates/profiles/scratcher_promotion_modal.html:55
 msgid "Congratulations on becoming a Scratcher!"
-msgstr ""
+msgstr "Gratulerar, nu är du en Scratchare!"
 
 #: templates/profiles/scratcher_promotion_modal.html:57
 msgid ""
 "Congratulations! You’ll notice that the word \"Scratcher\" now appears on "
 "your profile page, and under your user icon on forum posts. "
 msgstr ""
+"Gratulerar! Du märker att ordet \"Scratchare\" nu visas på din profilsida, och "
+"under din användarikon vid dina foruminlägg."
 
 #: templates/profiles/scratcher_promotion_modal.html:61
 msgid "Back"
-msgstr ""
+msgstr "Tillbaka"
 
 #: templates/profiles/scratcher_promotion_modal.html:66
 msgid "I agree!"
-msgstr ""
+msgstr "Jag godkänner!"
 
 #: templates/profiles/scratcher_promotion_modal.html:67
 msgid "OK!"
-msgstr ""
+msgstr "OK!"
 
 #: templates/profiles/includes/favorite_projects_list.html:4
 #: templates/projects/project_list.html:35
@@ -10366,7 +10713,7 @@ msgstr "Favoriter"
 # 76%
 #: templates/profiles/includes/studios_following_list.html:4
 msgid "Studios I Follow"
-msgstr "Studios som jag följer"
+msgstr "Studior som jag följer"
 
 #: templates/projects/base.html:6
 msgid "on Scratch"
@@ -10410,7 +10757,7 @@ msgstr "Favoritmarkera projektet"
 
 #: templates/projects/base.html:188
 msgid "Love this project"
-msgstr "Gillar projektet"
+msgstr "Gilla projektet"
 
 #: templates/projects/base.html:204
 msgid "Total views"
@@ -10422,28 +10769,28 @@ msgstr "Se remix-trädet"
 
 #: templates/projects/base.html:227
 msgid "Add this project to studios you curate"
-msgstr ""
+msgstr "Lägg till projektet till studior som du administrerar"
 
 #: templates/projects/base.html:228
 msgid "Just check the studio you wish to add to from the list below"
-msgstr ""
+msgstr "Markera studion från nedanstående lista om du vill lägga till den"
 
 #: templates/projects/base.html:240
 msgid "Download this project file"
-msgstr ""
+msgstr "Ladda ned denna projektfil"
 
 #: templates/projects/base.html:263
 msgid "Embed"
-msgstr ""
+msgstr "Bädda in"
 
 #: templates/projects/base.html:268
 msgid "Copy and paste the embed code above."
-msgstr ""
+msgstr "Kopiera och klistra in ovanstående kod för att bäddade in den."
 
 #: templates/projects/base.html:272
 #: templates/projects/includes/shared/shared-project-actions.html:4
 msgid "Share to"
-msgstr "Dela på"
+msgstr "Dela till"
 
 # 85%
 #: templates/projects/base.html:327
@@ -10452,7 +10799,7 @@ msgstr "remixningar"
 
 #: templates/projects/base.html:379
 msgid "Tips"
-msgstr ""
+msgstr "Tips"
 
 # 83%
 #: templates/projects/censored.html:10
@@ -10473,7 +10820,7 @@ msgstr "Projekt valda av"
 #: templates/projects/project_list.html:24
 #: templates/projects/project_list.html:28
 msgid "What the Community is"
-msgstr "Vad användarna "
+msgstr "Vad användarna"
 
 # 94%
 #: templates/projects/remixtree.html:6
@@ -10512,8 +10859,7 @@ msgstr "inlagd av"
 # 85%
 #: templates/projects/shared-other.html:70
 #: templates/projects/shared-owner.html:45
-#, python-format
-#, fuzzy, python-format
+#, python-format, python-format
 msgid "Shared: %(tDate)s"
 msgstr "Delad: %(tDate)s"
 
@@ -10531,11 +10877,11 @@ msgstr ""
 
 #: templates/projects/test_new_player.html:4
 msgid "Test new Scratch Player"
-msgstr ""
+msgstr "Testa den nya Scratchspelaren"
 
 #: templates/projects/test_new_player.html:68
 msgid "Try it!"
-msgstr ""
+msgstr "Prova den!"
 
 #: templates/projects/unshared-other.html:8
 msgid "Sorry this project is not shared"
@@ -10555,9 +10901,8 @@ msgstr "Notera: Projektet är i skräpmappen"
 
 # 78%
 #: templates/projects/unshared-owner.html:32
-#, fuzzy
 msgid "Note: this project is not visible, it was "
-msgstr "Notera: projektet är inte synligt"
+msgstr "Notera: projektet är inte synligt, det har"
 
 #: templates/projects/unshared-owner.html:59
 msgid "Unshared"
@@ -10569,6 +10914,9 @@ msgid ""
 "decide whether or not it should stay on the site based on the <a href='/"
 "community_guidelines'>Scratch Community Guidelines</a>."
 msgstr ""
+"Vi har fått din rapport. Scratchteamet kommer att granska projektet, och "
+"besluta om det ska finnas kvar på sajten utifrån<a "
+"href='/community_guidelines'>Scratch Gemenskapens riktlinjer</a>."
 
 #: templates/projects/includes/explore-bar.html:6
 msgid "More projects by"
@@ -10702,47 +11050,47 @@ msgstr "Användare"
 
 #: templates/search/search.html:68
 msgid "Support Pages"
-msgstr ""
+msgstr "Supportsidor"
 
 #: templates/search/includes/tabs.html:5
 msgid "All Results"
-msgstr ""
+msgstr "Alla resultat"
 
 #: templates/search/includes/tabs.html:17
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 #: templates/search/includes/projects/filters.html:8
 msgid "Most recent"
-msgstr ""
+msgstr "Senaste"
 
 #: templates/search/includes/projects/filters.html:11
 msgid "Most relevant"
-msgstr ""
+msgstr "Mest relevanta"
 
 #: templates/stats/index.html:58
 msgid "Monthly Activity Trends"
-msgstr ""
+msgstr "Månadens aktivitetstrender"
 
 #: templates/stats/index.html:77
 msgid "Monthly Active Users"
-msgstr ""
+msgstr "Månadens aktiva användare"
 
 #: templates/stats/index.html:96
 msgid "Age Distribution of New Scratchers"
-msgstr ""
+msgstr "Åldersfördelning på nya Scratchare"
 
 #: templates/stats/index.html:115
 msgid "Scratchers Worldwide"
-msgstr ""
+msgstr "Scratchare världen runt"
 
 #: templates/stats/index.html:134
 msgid "Monthly Project Shares"
-msgstr ""
+msgstr "Antal delade projekt per månad"
 
 #: templates/stats/index.html:153
 msgid "Monthly Comment Activity"
-msgstr ""
+msgstr "Kommentarer per månad"
 
 #: templates/studio/studio.html:6
 #, python-format
