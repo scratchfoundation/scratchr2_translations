@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-03 11:59+0000\n"
-"PO-Revision-Date: 2014-02-14 17:41+0200\n"
+"PO-Revision-Date: 2014-03-05 02:55+0200\n"
 "Last-Translator: Jüri <juri.vilipold@ttu.ee>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: et\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: authentication/forms.py:17
 msgid "Looks like that isn't a valid email format"
-msgstr "Paistab, et see ei ole korrektne e-posti formaat"
+msgstr "Paistab, et see ei ole korrektne e-postituse formaat"
 
 #: authentication/forms.py:29
 msgid "The two password fields didn't match."
@@ -27,7 +27,7 @@ msgstr "Parooli väljad ei ole vastavuses."
 
 #: authentication/forms.py:30 authentication/forms.py:51
 msgid "Your password must be at least 6 characters long."
-msgstr "Parool peab sisaldama vähemalt 6 märki."
+msgstr "Paroolis peab olema vähemalt 6 märki."
 
 #: authentication/forms.py:31 authentication/forms.py:52
 msgid "Your password cannot be 'password'."
@@ -35,7 +35,7 @@ msgstr "Sinu parool ei saa olla 'password'."
 
 #: authentication/forms.py:32 authentication/forms.py:53
 msgid "Your password cannot be the same as your username."
-msgstr "Parool ei saa olla sama nagu kasutajanimi."
+msgstr "Parool ja kasutajanimi ei tohi olla samad."
 
 #: authentication/forms.py:73 templates/modal-registration.html:79
 #: templates/info/educators.html:52
@@ -134,12 +134,12 @@ msgstr "abonendid"
 #: s2forums/djangobb_forum/feeds.py:27 s2forums/djangobb_forum/feeds.py:28
 #: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
 msgid "Latest posts on forum"
-msgstr "Viimased postitused foorumis"
+msgstr "Foorumi viimased postitused"
 
 #: s2forums/djangobb_forum/feeds.py:46 s2forums/djangobb_forum/feeds.py:47
 #: s2forums/djangobb_forum/templates/djangobb_forum/base.html:16
 msgid "Latest topics on forum"
-msgstr "Viimased teemad foorumis"
+msgstr "Foorumi viimased teemad"
 
 #: s2forums/djangobb_forum/feeds.py:75 s2forums/djangobb_forum/feeds.py:100
 #: s2forums/djangobb_forum/feeds.py:125
@@ -271,12 +271,12 @@ msgstr "Manus on liiga suur"
 
 #: s2forums/djangobb_forum/forms.py:177
 msgid "Silent edit?"
-msgstr "Nähtamatu muutmine?"
+msgstr "Vaiklik muutmine?"
 
 # 83%
 #: s2forums/djangobb_forum/forms.py:217
 msgid "E-mail"
-msgstr "Meil"
+msgstr "E-post"
 
 #: s2forums/djangobb_forum/forms.py:248
 msgid "Real name"
@@ -316,11 +316,11 @@ msgstr "Kasutajat \"%s\" ei ole olemas"
 
 #: s2forums/djangobb_forum/forms.py:428
 msgid "You already voted for this post"
-msgstr "Sa juba pakkusid seda postitust"
+msgstr "Sa juba hääletasid selles postituses"
 
 #: s2forums/djangobb_forum/forms.py:432
 msgid "This post does't belong to that user"
-msgstr "See postitus ei kuulu sellele kasutajale"
+msgstr "Postitus ei kuulu sellele kasutajale"
 
 # 87%
 #: s2forums/djangobb_forum/forms.py:448 s2forums/djangobb_forum/models.py:224
@@ -362,7 +362,7 @@ msgstr "Peida oma e-posti aadress, kuid võimalda luua meil."
 
 #: s2forums/djangobb_forum/models.py:45
 msgid "Hide your e-mail address and disallow form e-mail."
-msgstr "Peida oma e-posti aadress ja ära võimalda luua meili."
+msgstr "Peida oma e-posti aadress ja ära luba luua meili."
 
 #: s2forums/djangobb_forum/models.py:64 s2forums/djangobb_forum/models.py:102
 #: s2forums/djangobb_forum/models.py:426
@@ -391,7 +391,7 @@ msgstr "Kategooriad"
 
 #: s2forums/djangobb_forum/models.py:101
 msgid "New topics by moderators only"
-msgstr "Uus teema ainult moderaatorite poolt"
+msgstr "Uus teema ainult moderaatoritelt"
 
 # 90%
 #: s2forums/djangobb_forum/models.py:104
@@ -8365,7 +8365,7 @@ msgstr ""
 "\n"
 "<p>Et näha spraidi kostüüme, klõpsa <img src=\"%(STATIC_URL)s/images/help"
 "/costumes-tab.png\"/>.</p>\n"
-"<p> Saab muuta kostüümide järjekorda lohistamisega.</p>\n"
+"<p>Hiirega lohistades saab muuta kostüümide järjekorda.</p>\n"
 
 #: templates/info/help/studio/tips/blocks/next-costume.html:25
 #, python-format
@@ -8396,9 +8396,9 @@ msgid ""
 "dropping.</p>\n"
 msgstr ""
 "\n"
-"<p>Et näha lava taustu, klõpsa<img src=\"%(STATIC_URL)s/images/help/backdrop-"
-"tab.png\"/>.</p>\n"
-"<p> Saad muuta lava taustade  järjekorda lohistamisega nende loetelus.</p>\n"
+"<p>Et näha lava taustu, klõpsa <img src=\"%(STATIC_URL)s/images/help"
+"/backdrop-tab.png\"/>.</p>\n"
+"<p>Lohistades saad muuta lava taustade järjekorda loetelus.</p>\n"
 
 #: templates/info/help/studio/tips/blocks/nextbackdrop.html:21
 #, python-format
@@ -8448,7 +8448,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/pendown.png\"/>"
 # 84%
 #: templates/info/help/studio/tips/blocks/pendown.html:9
 msgid "Puts down sprite's pen, so the sprite will draw as it moves"
-msgstr "Laseb pliiatsi alla, nii et see joonistab, kui liigub"
+msgstr "Laseb pliiatsi alla, nii et see joonistab, kui sprait liigub"
 
 #: templates/info/help/studio/tips/blocks/pendown.html:12
 #, python-format
@@ -8479,7 +8479,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/penup.png\"/>"
 # 96%
 #: templates/info/help/studio/tips/blocks/penup.html:9
 msgid "Pulls up sprite's pen, so it won't draw as it moves"
-msgstr "Tõstab pliiatsi ülesse, nii et see ei joonista, kui liigub"
+msgstr "Tõstab pliiatsi üles, nii et see ei joonista, kui sprait liigub"
 
 #: templates/info/help/studio/tips/blocks/penup.html:12
 #, python-format
@@ -8522,7 +8522,7 @@ msgid ""
 msgstr ""
 "\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/pick-random-ex2.png\" /> tekitab "
-"juhusliu arvu 1 kuni 10.<br/>\n"
+"juhusliku arvu 1 kuni 10.<br/>\n"
 "\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/pick-random-ex3.png\" /><br/>\n"
 "<br>Klõpsa, et sprait ütleks juhusliku arvu. Klõpsa uuesti, et saada teine "
@@ -8608,11 +8608,11 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-" Tipi arv  0 kuni 127 (60 on keskmine)\n"
+"Tipi arv 0 kuni 127 (60 on keskmine)\n"
 "<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/playnote_highlighted.png\" /> \n"
 "<br>\n"
-" Kasuta suuremat arvu kõrgema noodi\n"
+" Kasuta suuremat arvu kõrgema heli saamiseks.\n"
 "</p>"
 
 #: templates/info/help/studio/tips/blocks/playnote.html:28
@@ -8624,7 +8624,8 @@ msgid ""
 "</p>\n"
 msgstr ""
 "<p>\n"
-" Pikkus saab valida<img src=\"%(STATIC_URL)s/images/help/set_tempo.png\" />.\n"
+"Löögi pikkust saab valida<img src=\"%(STATIC_URL)s/images/help/set_tempo.png\" "
+"/>.\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/playsound.html:7
@@ -8663,12 +8664,12 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-" Vali helind menüüst:\n"
+"Vali helind menüüst:\n"
 "<img src=\"%(STATIC_URL)s/images/help/soundmenu.png\" />\n"
 "</p>\n"
 "\n"
 "<p>\n"
-" Heli lisamiseks, klõpsa gruppi Helind:\n"
+"Heli lisamiseks, klõpsa gruppi Helid:\n"
 "<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/sounds.png\" /> \n"
 "</p>\n"
@@ -8722,7 +8723,7 @@ msgid ""
 "block."
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
-"ootab, kuni helind on  mängitud enne kui jätkata järgmise plokga."
+"ootab, kuni helind on mängitud, siis jätkab järgmise plokga."
 
 #: templates/info/help/studio/tips/blocks/point-direction.html:6
 #, python-format
@@ -8753,14 +8754,14 @@ msgid ""
 "images/help/info.gif\"/><br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 msgstr ""
-"Klõpsa valimiseks menüüst:\n"
+"Klõpsa, et valida menüüst:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\"/><br/>\n"
 "\n"
 "<p>või sisesta arv:<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/point-in-direction-45.png\"/></p>\n"
 "\n"
 "\n"
-"<p>Et näha spraidi jooksvat suunda, klõpsa<img src=\"%"
+"<p>Et näha spraidi jooksvat suunda, klõpsa <img src=\"%"
 "(STATIC_URL)s/images/help/info.gif\"/><br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 
@@ -8771,7 +8772,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/point-towards.png\">"
 
 #: templates/info/help/studio/tips/blocks/point-towards.html:7
 msgid "Points sprite towards mouse-pointer or another sprite"
-msgstr "Pöörab spraidi hiire kursori või teise spridi suunas"
+msgstr "Pöörab spraidi hiire kursori või teise spraidi suunas"
 
 #: templates/info/help/studio/tips/blocks/point-towards.html:11
 #, python-format
@@ -8793,7 +8794,7 @@ msgstr ""
 "<p><b>Osuta suunas</ b> muudab spraidi suunda.</p>\n"
 "<p>Saad valida menüüst:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/point-towards-menu.png\">.<br/>\n"
-" Menüü sisaldab teisi projeki spraite ."
+" Menüü sisaldab kõiki teisi projekti spraite."
 
 #: templates/info/help/studio/tips/blocks/repeat-until.html:6
 #, python-format
@@ -8802,7 +8803,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/repeat-until.png\" />"
 
 #: templates/info/help/studio/tips/blocks/repeat-until.html:7
 msgid "Repeat blocks that follow until condition is true"
-msgstr "Korrdab sisemiste plokide täitmist seni kuni tingimus saab tõeseks"
+msgstr "Kordab sisemiste plokide täitmist kuni tingimus saab tõeseks"
 
 #: templates/info/help/studio/tips/blocks/repeat-until.html:11
 msgid ""
@@ -8810,8 +8811,8 @@ msgid ""
 "condition again. If condition is true, \n"
 "goes on to the blocks that follow."
 msgstr ""
-"Kontrollib, kas tingimus on väär ning kui see on nii, siis täidab sisemised "
-"plokid ja kontrollib tingimust uuesti. Kui tingimus on tõene \n"
+"Kui tingimus on väär, täidab sisemised plokid ja kontrollib tingimust "
+"uuesti. Kui tingimus on tõene \n"
 "läheb edasi järgnevate plokide juurde."
 
 #: templates/info/help/studio/tips/blocks/repeat-until.html:16
@@ -8850,9 +8851,9 @@ msgid ""
 "The length \n"
 "  of the list does not change."
 msgstr ""
-"Saad määrata mis element asendada valides rippmenüüst või \\ n   kirjutada "
-"numbri. Valik \"juhuslik\" asendab juhusliku elemendi loendis..Loendi pikkus \n"
-"   ei muutu."
+"Saad määrata, mis element asendada, valides väärtuse rippmenüüst või "
+"kirjutades numbri.  \n"
+"Valik \"juhuslik\" asendab juhusliku elemendi loendis.Loendi pikkus ei muutu."
 
 #: templates/info/help/studio/tips/blocks/replace-list.html:17
 #, python-format
@@ -8875,7 +8876,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/reset-timer.png\" />"
 
 #: templates/info/help/studio/tips/blocks/reset-timer.html:7
 msgid "Sets the timer to zero"
-msgstr "Paneb taimeri nulli"
+msgstr "Taimeri nullimine"
 
 #: templates/info/help/studio/tips/blocks/reset-timer.html:11
 #, python-format
@@ -8903,7 +8904,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/round.png\" />"
 
 #: templates/info/help/studio/tips/blocks/round.html:7
 msgid "Reports closest integer to a number"
-msgstr "Tagastab lähima täisarvu antud arvule"
+msgstr "Tagastab antud arvule lähima täisarvu"
 
 #: templates/info/help/studio/tips/blocks/round.html:11
 #, python-format
@@ -8935,7 +8936,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/say-for-seconds.png\" />"
 
 #: templates/info/help/studio/tips/blocks/say-for-seconds.html:8
 msgid "Say words in a speech bubble for a number of seconds"
-msgstr "Kuvab teksti kõneballoonis antud aja jooksul"
+msgstr "Kuvab kõneballoonis teksti etteantud sekundite jooksul"
 
 #: templates/info/help/studio/tips/blocks/say-for-seconds.html:12
 #, python-format
@@ -8948,15 +8949,15 @@ msgstr ""
 
 #: templates/info/help/studio/tips/blocks/say-for-seconds.html:16
 msgid "You can type in any words to say."
-msgstr "Võid kirjutada mis tahes teksti kuvamiseks."
+msgstr "Võid kuvamiseks kirjutada mistahes teksti."
 
 #: templates/info/help/studio/tips/blocks/say-for-seconds.html:17
 msgid ""
 "The number of seconds tells the speech bubble how long to show. The script "
 "waits that long before continuing."
 msgstr ""
-"Sekundite arv näitab kui kaua kuvatakse kõneballooni tekstiga. Script seni "
-"kaua ootab."
+"Sekundite arv näitab, kui kaua kuvatakse jutumulli tekstiga. Selle aja "
+"jooksul skript ootab."
 
 #: templates/info/help/studio/tips/blocks/say-text.html:6
 #: templates/info/help/studio/tips/blocks/say.html:7
@@ -8967,7 +8968,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/say.png\" />"
 #: templates/info/help/studio/tips/blocks/say-text.html:7
 #: templates/info/help/studio/tips/blocks/say.html:8
 msgid "Say words in a speech bubble"
-msgstr "Kuva tekst kõneballoonis"
+msgstr "Kuva tekst jutumullis"
 
 #: templates/info/help/studio/tips/blocks/say-text.html:11
 #: templates/info/help/studio/tips/blocks/say.html:12
@@ -8983,15 +8984,15 @@ msgid ""
 "To remove the speech bubble, delete the text and click <img src="
 "\"%(STATIC_URL)s/images/help/say.png\" />."
 msgstr ""
-"<p>Võid sisestada suvalise teksti.Sõnad ilmuvad kõnebaloonis.</p>\n"
+"<p>Võid sisestada suvalise teksti.Sõnad ilmuvad jutumullis.</p>\n"
 "\n"
-"Kõnebalooni eemaldamiseks klõpsa<img src=\"%"
-"(STATIC_URL)s/images/help/say.png\" />."
+"Jutumulli eemaldamiseks klõpsa <img src=\"%(STATIC_URL)s/images/help/say.png\" "
+"/>."
 
 #: templates/info/help/studio/tips/blocks/say.html:16
 #: templates/info/help/studio/tips/blocks/think.html:18
 msgid "You can type in any text. The words will appear in a speech bubble."
-msgstr "Võid kirjutada mis tahes teksti. Sõnad ilmuvad kõneballoonis."
+msgstr "Võid kirjutada suvalise teksti. Sõnad ilmuvad jutumullis."
 
 #: templates/info/help/studio/tips/blocks/say.html:18
 #, python-format
@@ -8999,7 +9000,7 @@ msgid ""
 "To remove the speech bubble, click an empty say block: <img src="
 "\"%(STATIC_URL)s/images/help/say.png\" />."
 msgstr ""
-"Kõnebalooni eemaldamiseks klõpsa tühja ploki ütle: <img src=\"%"
+"Jutumulli eemaldamiseks klõpsa tühja ütle-ploki: <img src=\"%"
 "(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/info/help/studio/tips/blocks/scratch-days.html:6
@@ -9009,7 +9010,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/scratch-days.png\" />"
 
 #: templates/info/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
-msgstr "Tagastab päevade arvu Scratchi käivitamisest (15. mai 2007)"
+msgstr "Tagastab päevade arvu Scratchi startimisest (15. mai 2007)"
 
 #: templates/info/help/studio/tips/blocks/scratch-days.html:11
 #, python-format
@@ -9039,11 +9040,10 @@ msgid ""
 "<br><img src=\"%(STATIC_URL)s/images/help/set-effect-ex.png\" /><br/></p>\n"
 msgstr ""
 "\n"
-"Klõpsa valimaks efekti menüüst:\n"
+"Klõpsa, et valida efekt menüüst:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/set-effect-menu.png\" /><br/>\n"
-"<p>Proovi kasutada erinevaid arve vahemikus -100 kuni 100. (Mõned mõjud on "
-"vahemikus 0-100)\n"
-"\n"
+"<p>Proovi kasutada erinevaid arve vahemikus -100 kuni 100. (Mõne efekti "
+"väärtused on vahemikus 0-100)\n"
 "\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/set-effect-ex.png\" /><br/></p>\n"
 
@@ -9054,7 +9054,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/set-size.png\" />"
 
 # 98%
 #: templates/info/help/studio/tips/blocks/set-size.html:7
-#, fuzzy, python-format
+#, python-format
 msgid "Sets sprite's size to specified %% of original size"
 msgstr "Võtab spraidi suuruseks antud %% originaalsuurusest"
 
@@ -9075,8 +9075,8 @@ msgid ""
 "Experiment with different numbers to see how small or big you can make it.</"
 "b>"
 msgstr ""
-"<b>Märkus: On piirid, kui väike või kui suur saab olla sprait. Proovi "
-"erinevaid numbreid et näha, kui väikseks või suureks saad seda teha.</b>"
+"<b>Märkus: Spraidi suurusel on piirid. Proovi erinevaid arve, et näha, kui "
+"väikeseks või suureks saad seda teha.</b>"
 
 #: templates/info/help/studio/tips/blocks/set-tempo.html:7
 #, python-format
@@ -9086,7 +9086,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/set_tempo.png\"/>"
 # 98%
 #: templates/info/help/studio/tips/blocks/set-tempo.html:9
 msgid "Sets sprite's tempo to specified value in beats per minute"
-msgstr "Võtab spraidi tempoks kindlaksmääratud väärtuse lööke minutis"
+msgstr "Võtab spraidi tempoks määratud väärtuse (lööke minutis)"
 
 #: templates/info/help/studio/tips/blocks/set-tempo.html:12
 #, python-format
@@ -9099,8 +9099,8 @@ msgid ""
 "Tempo is the speed (bpm = beats per minute) at which Scratch notes and drums "
 "play. The larger the tempo value, the faster the notes and drums will play."
 msgstr ""
-"Tempo on kiirus (bpm = lööki minutis), millega Scratch noote ja trumme "
-"mängib. Mida suurem on tempo väärtus, seda kiiremini noote ja trumme "
+"Tempo on kiirus (bpm = lööki minutis), millega Scratch mängib noote ja "
+"trumme. Mida suurem on tempo väärtus, seda kiiremini noote ja trumme "
 "mängitakse."
 
 #: templates/info/help/studio/tips/blocks/set-tempo.html:20
@@ -9132,8 +9132,7 @@ msgid ""
 "(lighter), while lower numbers make it less transparent (darker)"
 msgstr ""
 "Sisesta arv vahemikus 0-100. Suuremad arvud teevad video läbipaistvamaks "
-"(heledamaks), samas kui väiksem arv muudab vähem läbipaistvamaks "
-"(tumedamaks)"
+"(heledamaks), väiksemad vähem läbipaistvamaks (tumedamaks)"
 
 #: templates/info/help/studio/tips/blocks/set-video-transparency.html:12
 #, python-format
@@ -9155,7 +9154,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/set-volume.png\"/>"
 # 97%
 #: templates/info/help/studio/tips/blocks/set-volume.html:9
 msgid "Sets sprite's sound volume to specified value"
-msgstr "Määrab spraidi helitugevuse jaoks antud väärtuse"
+msgstr "Määrab antud väärtuse spraidi helitugevuseks"
 
 #: templates/info/help/studio/tips/blocks/set-volume.html:15
 msgid ""
@@ -9180,7 +9179,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/set-x.png\">"
 
 #: templates/info/help/studio/tips/blocks/set-x.html:7
 msgid "Set the x position of a sprite"
-msgstr "Määra spraidi x koordinaat"
+msgstr "Määra spraidi <b>x</b>-koordinaat"
 
 #: templates/info/help/studio/tips/blocks/set-x.html:11
 #, python-format
@@ -9194,7 +9193,7 @@ msgid ""
 "<p></p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/set-x-diagram.png\">"
 msgstr ""
-"<p><b>Pane x</b> määrab spraidi asukoha laval (horisontalses suunas).p>\n"
+"<p><b>Pane x</b> määrab spraidi asukoha laval (horisontaalsuunas).p>\n"
 "<p></p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/set-x-diagram.png\">"
 
@@ -9205,7 +9204,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/set-y.png\">"
 
 #: templates/info/help/studio/tips/blocks/set-y.html:7
 msgid "Set the <b>y</b> position of a sprite"
-msgstr "Määra spraidi <b>y</b> koordinaat"
+msgstr "Määra spraidi <b>y</b>-koordinaat"
 
 #: templates/info/help/studio/tips/blocks/set-y.html:11
 #, python-format
@@ -9219,8 +9218,7 @@ msgid ""
 "<p></p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/y-position-diagram.png\">"
 msgstr ""
-"<p><b>Pane y</b> teisaldab spraidi ülesse või alla (vertikaalne "
-"positioon).</p>\n"
+"<p><b>Pane y</b> määrab spraidi asukoha laval (vertikaalsihis).</p>\n"
 "<p></p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/y-position-diagram.png\">"
 
@@ -9232,7 +9230,7 @@ msgid ""
 "<b>play note</b> blocks</h3></div>\n"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/set_instrument.png\"/>\n"
-"<h3>Määrab instrumendi tüüpi, mida sprait kasutab\n"
+"<h3>Määrab instrumendi, mida sprait kasutab\n"
 "<b>play note</b> blocks</h3></div>\n"
 
 #: templates/info/help/studio/tips/blocks/setinstrument.html:13
@@ -9268,9 +9266,9 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/setcolor.png\"/>"
 
 # 98%
 #: templates/info/help/studio/tips/blocks/setpencolor.html:8
-#, fuzzy
 msgid "Sets pen's color, based on choice from color picker"
-msgstr "Määrab pliiatsi värvi, mis põhineb valikul värvivalijast"
+msgstr ""
+"Määrab pliiatsi värvi, mis valitakse klõpsates sobival värvil Scratchi aknas"
 
 #: templates/info/help/studio/tips/blocks/setpencolor.html:11
 #, python-format
@@ -9281,7 +9279,7 @@ msgid ""
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/setcolorex.png\" /> \n"
 "<p>\n"
-"<img src=\"%(STATIC_URL)s/images/help/setcolorex1.png\"/> "
+"<img src=\"%(STATIC_URL)s/images/help/setcolorex1.png\"/>"
 
 #: templates/info/help/studio/tips/blocks/setpencolor.html:16
 #, python-format
@@ -9300,8 +9298,8 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"Värvi valimiseks värvipaletist klõpsa ruudukest. Kasuta värvipipeti soovitud "
-"värvi valimiseks. Värv ilmub ruudukesse.\n"
+"Värvi valimiseks värvipaletist klõpsa ruudukest. Kasuta värvipipetti "
+"soovitud värvi valimiseks. Värv ilmub ruudukesse.\n"
 "\n"
 "</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/setcolorex2.png\"/> <br/>\n"
@@ -9316,7 +9314,6 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/setcolorto.png\"/>     "
 
 # 97%
 #: templates/info/help/studio/tips/blocks/setpencolorto.html:7
-#, fuzzy
 msgid "Sets pen's color to specified value"
 msgstr "Paneb pliiasi värviks antud väärtuse"
 
@@ -9345,11 +9342,11 @@ msgstr ""
 "<p>\n"
 "Võid määrata pliiatsi värvi muutuja abil, nagu <img src=\"%"
 "(STATIC_URL)s/images/help/y-position.png\" /> või arvuna. Näiteks arv 0 on "
-"<font color = red> punane </font>, arv 70 on <font color = green> roheline "
-"</font>, nr 130 on <font color = blue> sinine </font> ja 170 on <font color "
-"= magenta> magenta </font>.\n"
+"<font color = red>punane</font>, arv 70 on <font color = "
+"green>roheline</font>, arv 130 on <font color = blue>sinine</font> ja 170 on "
+"<font color = magenta> magenta </font>.\n"
 "<p>\n"
-"Pliiatsi_värv = 0 vikerkaare punane ots, pliiatsi_värv = 100 on sinine. "
+"Pliiatsi_värv = 0 vikerkaare punases otsas, pliiatsi_värv = 100 on sinine. "
 "Värvid on vahemikus 0 kuni 200.\n"
 "</div>\n"
 
@@ -9361,7 +9358,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/setpensize.png\"/>"
 # 95%
 #: templates/info/help/studio/tips/blocks/setpensize.html:9
 msgid "Sets pen's thickness"
-msgstr "Määrab pliiatsi suuruse: joone paksuse"
+msgstr "Määrab pliiatsi suuruse (joone paksuse)"
 
 #: templates/info/help/studio/tips/blocks/setpensize.html:12
 #, python-format
@@ -9401,15 +9398,15 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-" Vali rippmenüüst \"parem-vasak lubades spraiti pöörduda ainult "
-"horisontaalselt.\n"
+"Vali rippmenüüst \"parem-vasak\" lubades spraiti pöörduda ainult "
+"horisontaalsihis.\n"
 "</p>\n"
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/setrotation-ex.png\" /><br/> \n"
 "</p>\n"
 "\n"
 "<p>\n"
-" Vali rippmenüüst \"suvalne\" lubades spraidil pöörduda suvaliselt.\n"
+" Vali rippmenüüst \"suvaline\" lubamaks spraidil pöörduda suvaliselt.\n"
 "</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/setrotate-around.gif\"/> <br/>\n"
 "\n"
@@ -9448,12 +9445,12 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-" Pliiatsi varjundi on vahemikus 0-100. Vaikimisi on see 50.\n"
+"Pliiatsi varjundi väärtus on vahemikus 0-100. Vaikimisi on see 50.\n"
 "<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/changeshadeex2.png\" />\n"
 "<p>\n"
-"Kui pliiatsi varjund on 0,siis pliiats värv on lähedane mustale. Kui "
-"pliiatsi varjund on 100, on pliiatsi värv on lähedal valgele.\n"
+"Kui pliiatsi varjund on 0, siis pliiatsi värv on lähedane mustale. Kui "
+"pliiatsi varjund on 100, on pliiatsi värv valge.\n"
 "\n"
 
 #: templates/info/help/studio/tips/blocks/show-list.html:6
@@ -9492,19 +9489,19 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/show.png\" />"
 
 #: templates/info/help/studio/tips/blocks/show.html:8
 msgid "Makes sprite appear on the Stage"
-msgstr "Teeb spraidi nähtavaks laval"
+msgstr "Teeb spraidi laval nähtavaks"
 
 #: templates/info/help/studio/tips/blocks/size.html:6
 #, python-format
 msgid " <img src=\"%(STATIC_URL)s/images/help/size.png\" />"
-msgstr "     <img src=\"%(STATIC_URL)s/images/help/show.png\" />"
+msgstr "<img src=\"%(STATIC_URL)s/images/help/show.png\" />"
 
 # 97%
 #: templates/info/help/studio/tips/blocks/size.html:7
 #, python-format
 #, python-format, python-format
 msgid "Reports sprite's size, as %% of original size"
-msgstr "Määrab spraidi suuruse %% originaalsuurusest"
+msgstr "Näitab spraidi suurust %% originaalsuurusest"
 
 #: templates/info/help/studio/tips/blocks/size.html:11
 #, python-format
@@ -9599,10 +9596,10 @@ msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/stampex1.png\" /> </p>\n"
 "<p>\n"
 "Jäljend on ainult spraidi ajutine pilt, mis on joonistatud lavale. Selle "
-"saab joonistada üle või kustutada kasutades<img src=\"%"
-"(STATIC_URL)s/images/help/clear.png\" /> ploki.\n"
+"saab üle joonistada või kustutada kasutades <img src=\"%"
+"(STATIC_URL)s/images/help/clear.png\" /> plokki.\n"
 "<p>\n"
-"Jäljend ei liigu ja ei saa hoida skriptie \n"
+"Jäljend ei liigu ja sellel ei ole skripte.\n"
 
 #: templates/info/help/studio/tips/blocks/stop.html:6
 #, python-format
@@ -9620,7 +9617,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/stop-ex.png\" />"
 
 #: templates/info/help/studio/tips/blocks/stop.html:15
 msgid "Same as clicking the stop button at the top of the screen."
-msgstr "Sama, mis klõpsata stopp nuppu ekraani  ülaosas."
+msgstr "Sama, mis klõpsata stopp nuppu ekraani ülaosas."
 
 #: templates/info/help/studio/tips/blocks/stopsound.html:7
 #, python-format
@@ -9684,9 +9681,9 @@ msgid ""
 " "
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/switch-backdrop-to-backdrop1-and-"
-"wait.png\" /> ootab kõikide skriptide töö lõppu, mis stardivad<img src=\"%"
+"wait.png\" /> ootab kõikide skriptide töö lõppu, mis stardivad <img src=\"%"
 "(STATIC_URL)s/images/help/when-backdrop-switches-to-backdrop1.png\" /> enne "
-"kui läheb järgmise ploki juurde  . \n"
+"kui läheb järgmise ploki juurde. \n"
 " "
 
 #: templates/info/help/studio/tips/blocks/switch-backdrop.html:6
@@ -9747,11 +9744,11 @@ msgid ""
 msgstr ""
 "Et näha spraidi kostüüme, klõpsa <img src=\"%(STATIC_URL)s/images/help"
 "/costumes-tab.png\" /> </p>\n"
-"Vali kostüümi nime rippmenüüst."
+"Vali kostüümi nimi rippmenüüst."
 
 #: templates/info/help/studio/tips/blocks/tempo.html:8
 msgid "Reports sprite's tempo in beats per minute"
-msgstr "Määrab muusika tempo looki minutis"
+msgstr "Määrab muusika tempo (lööki minutis)"
 
 #: templates/info/help/studio/tips/blocks/think-for-seconds.html:7
 #, python-format
@@ -9760,7 +9757,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/think-sec.png\" />"
 
 #: templates/info/help/studio/tips/blocks/think-for-seconds.html:8
 msgid "Displays words in a thought bubble for a number of seconds"
-msgstr "Näitab teksti kõneballoonis antud aja jooksul"
+msgstr "Näitab jutumullis teksti antud aja jooksul"
 
 #: templates/info/help/studio/tips/blocks/think-for-seconds.html:12
 #, python-format
@@ -9775,7 +9772,7 @@ msgstr ""
 msgid ""
 "The number of seconds tells the thought bubble how long to show. The script "
 "waits that long before continuing."
-msgstr "Sekundite arv ütleb kui kaua näidatakse teksti. Skript seni ootab."
+msgstr "Sekundite arv määrab, kui kaua näidatakse teksti. Skript seni ootab."
 
 #: templates/info/help/studio/tips/blocks/think.html:8
 #, python-format
@@ -9784,7 +9781,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/think.png\" />"
 
 #: templates/info/help/studio/tips/blocks/think.html:9
 msgid "Displays words in a thought bubble"
-msgstr "Näitab teksti kõneballonis"
+msgstr "Näitab teksti jutumullis"
 
 #: templates/info/help/studio/tips/blocks/think.html:13
 #, python-format
@@ -9865,8 +9862,8 @@ msgid ""
 "</p>"
 msgstr ""
 "\n"
-"Värvi valimiseks klõpsa pipetiga värvi ruutu. Kasuta värvipipeti soovitud "
-"värvi valimiseks värviboksist.Värv ilmub ruudukesse.\n"
+"Värvi valimiseks klõpsa värviruutu. Kasuta värvipipetti soovitud värvi "
+"valimiseks. Värv ilmub ruudukesse.\n"
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/touching-color-picker.png\"/> \n"
 "</p>"
@@ -9880,7 +9877,8 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/touching.png\" />"
 msgid ""
 "Reports true if sprite is touching specified sprite, edge, or mouse-pointer"
 msgstr ""
-"Tagastab tõene, kui sprait puudutab antud spraiti, serva või hiire kursorit"
+"Tagastab <b>tõene</b>, kui sprait puudutab antud spraiti, serva või "
+"hiirekursorit"
 
 #: templates/info/help/studio/tips/blocks/touching.html:11
 #, python-format
@@ -9915,7 +9913,7 @@ msgid ""
 "  <h3>Turn to the left</h3>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/turn-left-block.png\">\n"
-" <h3>Pööra vasakule</h3>"
+"<h3>Pööra vasakule</h3>"
 
 #: templates/info/help/studio/tips/blocks/turn-left.html:11
 #, python-format
@@ -9934,8 +9932,8 @@ msgid ""
 "direction.)</p>"
 msgstr ""
 "\n"
-"<p>Sisesta mitu kraadi soovid sprait pöörata.</p>\n"
-"<p>(Kui kirjutad negatiivse arvu, läheb sprait vastupidises suunas)</p>"
+"<p>Sisesta, mitu kraadi soovid sprait pöörata.</p>\n"
+"<p>(Kui kirjutad negatiivse arvu, pöördub sprait vastupidises suunas)</p>"
 
 #: templates/info/help/studio/tips/blocks/turn-right.html:6
 #, python-format
@@ -9953,7 +9951,7 @@ msgid ""
 " <p> <img src=\"%(STATIC_URL)s/images/help/turn-30-right.png\"></p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/turn-clockwise-example.png\">\n"
-"     <p> <img src=\"%(STATIC_URL)s/images/help/turn-30-right.png\"></p>"
+"<p><img src=\"%(STATIC_URL)s/images/help/turn-30-right.png\"></p>"
 
 #: templates/info/help/studio/tips/blocks/turn-right.html:15
 msgid "Type in the number of degrees you want the sprite to rotate."
@@ -9963,7 +9961,7 @@ msgstr "Sisesta kraadide arv, mille võrra tahad pöörata spraiti."
 msgid ""
 "(If you type in a negative number, the sprite will go in the opposite "
 "direction.)"
-msgstr "(Kui sa kirjutad negatiivse arvu, pöörab sprait vastupidises suunas.)"
+msgstr "(Kui sa kirjutad negatiivse arvu, pöördub sprait vastupidises suunas.)"
 
 #: templates/info/help/studio/tips/blocks/turn-video.html:6
 #, python-format
@@ -10020,28 +10018,29 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-" The custom block runs by calling the <strong>define</strong> script that "
-"matches the name on the block.\n"
+"Kasutaja plokk käivitab <strong>varemdefineeritud</strong> skripti, mis "
+"vastab kasutajaploki nimele.\n"
 "</p>\n"
-"<p>Custom blocks can make your scripts more organized and modular:\n"
+"<p>Kasutajaplokid teevad skriptid paremini organiseerituks ja modulaarseks:\n"
 "</p>\n"
 "\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/usedefineex.png\" /> </p>\n"
 "\n"
-" If your block has an input, you can type in it:\n"
+"Kui kasutajaplokis on sisendväljas, võib nendesse paigutada parameetrite "
+"väärtused:\n"
 "</p>\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/usedefineex1.png\"/></p>\n"
 "\n"
 "</div>\n"
 "\n"
 "<div class=\"example\">\n"
-" Ploki redigeerimiseks paremklõps (Ctrl+click on Mac) plokil ja vali "
-"\"redigeeri\" menüüst.\n"
+"Ploki redigeerimiseks tee paremklõps (Ctrl+klõps Mac'is) plokil ja vali "
+"menüüst \"redigeeri\".\n"
 "</div>\n"
 "\n"
 "<div class=\"example\">\n"
-" Vaata ka: <a href=\"../make-a-block/\">Tee plokk</a> and <a "
-"href=\"../define/\">Define Block</a> \n"
+"Vaata ka: <a href=\"../make-a-block/\">Loo plokk</a> ja <a "
+"href=\"../define/\">Defineeri plokk</a> \n"
 "</div>\n"
 "\n"
 
@@ -10052,7 +10051,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/username.png\" />"
 
 #: templates/info/help/studio/tips/blocks/username.html:7
 msgid "Reports username of the viewer"
-msgstr "Tagastab kasutajanime"
+msgstr "Tagastab vaataja kasutajanime"
 
 #: templates/info/help/studio/tips/blocks/username.html:11
 #, python-format
@@ -10072,11 +10071,11 @@ msgid ""
 "</p> "
 msgstr ""
 "\n"
-"<p>Plokk näitab kasutajanime, kes parajasti vaatab projekti. </p> \n"
+"<p>Plokk näitab kasutajanime, kes parajasti vaatab seda projekti.</p>\n"
 "\n"
-"<p> Kui soovid säilitada kasutajanime, võid selle salvestada muutujas võil "
-"oendis. Näiteks \n"
-"<img src=\"%(STATIC_URL)s/images/help/username-ex2.png\"/> \n"
+"<p>Kui soovid, võid salvestada vaataja kasutajanime muutujas võil loendis. "
+"Näiteks\n"
+"<img src=\"%(STATIC_URL)s/images/help/username-ex2.png\"/>\n"
 "</p>"
 
 #: templates/info/help/studio/tips/blocks/variable.html:6
@@ -10086,7 +10085,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/variable.png\" />"
 
 #: templates/info/help/studio/tips/blocks/variable.html:7
 msgid "Reports value of the variable"
-msgstr "Tagastab muutuja väärtuse"
+msgstr "Esitab muutuja väärtuse"
 
 #: templates/info/help/studio/tips/blocks/variable.html:11
 #, python-format
@@ -10112,16 +10111,16 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-" Et näha muutuja väärtus, klõpsa märkeruutu ploki ees.\n"
+"Et näha laval muutuja väärtust, klõpsa märkeruutu muutujaploki ees.\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/check-variable.png\" /><br/>\n"
 "\n"
 "<p>\n"
-" Paremklõps monitoril võimaldab muuta :selle kuju\n"
+"Paremklõps monitoril võimaldab valida selle erinevaid vaateid\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/variable-menu.png\" <br/>\n"
 "\n"
 "<p>\n"
-" Muutuja kustutamiseks või ümbernimetamiseks tee paremklõps muutujal.\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/delete-variable.png\" <br/>\n"
+"Muutuja kustutamiseks või ümbernimetamiseks tee paremklõps muutujal.\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/delete-variable.png\"<br/>\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/video-motion.html:6
@@ -10132,7 +10131,8 @@ msgid ""
 "video image</h3>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/video-motion-this-sprite.png\" />\n"
-" <h3>Näitab palju <b> liigub </ b> või <b> pöördub </ b> videopilt</h3>"
+"<h3>Näitab, kui palju <b>liikumist</ b> või <b>suunamist</ b> on "
+"videopildis</h3>"
 
 #: templates/info/help/studio/tips/blocks/video-motion.html:11
 #, python-format
@@ -10159,20 +10159,21 @@ msgid ""
 msgstr ""
 "<b>Kuidas kasutada seda:</b>\n"
 "<ul>\n"
-" <li>Nõutav veebikamera.</li>\n"
-" <li> Kasuta <img src=\"%(STATIC_URL)s/images/help/video-motion-this-"
-"sprite.png\" /> valimiseks video liikumise suurust jooksval spraidil.</li>\n"
-" <li> Kasuta <img src=\"%(STATIC_URL)s/images/help/video-motion-stage.png\" /> "
-"valimiseks video kogu liikumise suurust .</li>\n"
-" <li> Kasuta <img src=\"%(STATIC_URL)s/images/help/video-direction-this-"
-"sprite.png\" />määramaks video liikuise suunda spraidil</li>\n"
-" <li> Kasuta <img src=\"%(STATIC_URL)s/images/help/video-direction-stage.png\" "
-"/>  valimiseks liikumise suunda.</li>\n"
+" <li>Nõutav on veebikamera.</li>\n"
+" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-motion-this-"
+"sprite.png\" /> kontrollimaks videopildi  liikumise suurust jooksva spraidi "
+"all.</li>\n"
+" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-motion-stage.png\" /> "
+"kontrollimaks videopildi kogu liikumise suurust.</li>\n"
+" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-direction-this-"
+"sprite.png\" /> määramaks video liikumise suunda jooksva spraidi all.</li>\n"
+" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-direction-stage.png\" "
+"/> määramaks videopildi liikumise suunda.</li>\n"
 "</ul>\n"
 "\n"
 "<p>\n"
-"<b>Sample Script:</b>\n"
-"<br> <img src=\"%(STATIC_URL)s/images/help/video-motion-ex.png\" /> <br/>\n"
+"<b>Näiteskript:</b>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/video-motion-ex.png\" /><br/>\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/video-motion.html:27
@@ -10191,24 +10192,23 @@ msgstr ""
 "\n"
 "<b>Probleemid:</b>\n"
 "<ul>\n"
-" <li>Veendu, et videokaamera on.sees</li>\n"
-" <li>Reguleeri %% liikumist või suunda, et sada enam-vähem.normaalne "
-"kuva</li>\n"
+" <li>Veendu, et videokaamera on sees</li>\n"
+" <li>Korrigeeri %% liikumist või suunda, et saada erinevaid väärtusi.</li>\n"
 " <li>Klõpsa märkeruutu, et näha jooksvat väärtust:</li>\n"
 "<br> <img src=\"%(STATIC_URL)s/images/help/say-video-motion.png\" /><br/>\n"
 "</ul>"
 
 #: templates/info/help/studio/tips/blocks/volume.html:9
 msgid "Reports sprite's sound volume"
-msgstr "Määrab spraidi helitugevuse"
+msgstr "Näitab spraidi helitugevust"
 
 #: templates/info/help/studio/tips/blocks/volume.html:16
 msgid ""
 "You can set the volume level for each sprite. To play two sounds at once "
 "with different volumes, use two sprites."
 msgstr ""
-"Saad seada helitugevuse eraldi iga spraidi jaoks. Mängimiseks kahte helindit "
-"korraga erinevate tugevustega, kasuta kahte spraiti."
+"Saad määrata helitugevuse eraldi iga spraidi jaoks. Mängimaks korraga kahte "
+"erineva tugevusega helindit, kasuta kahte spraiti."
 
 #: templates/info/help/studio/tips/blocks/wait-secs.html:6
 #, python-format
@@ -10217,7 +10217,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/wait-secs.png\" />"
 
 #: templates/info/help/studio/tips/blocks/wait-secs.html:7
 msgid "Waits specified number of seconds, then continues with next block"
-msgstr "Teeb pausi antud sekundit ja siis jätkab järgmises plokist"
+msgstr "Teeb pausi antud arv sekundeid ja siis jätkab järgmise plokiga"
 
 #: templates/info/help/studio/tips/blocks/wait-secs.html:11
 #, python-format
@@ -10231,7 +10231,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/wait-until.png\" />"
 
 #: templates/info/help/studio/tips/blocks/wait-until.html:7
 msgid "Waits until condition is true, then runs the blocks below"
-msgstr "Ootab kuni tingimus saab tõesaks ja siis jätkab järgmisest plokist"
+msgstr "Ootab kuni tingimus saab tõeseks, siis jätkab järgmisest plokist"
 
 #: templates/info/help/studio/tips/blocks/wait-until.html:10
 #, python-format
@@ -10249,7 +10249,7 @@ msgid ""
 msgstr ""
 "<p>\n"
 "Kogu pinu täidetakse korra. Kui soovid <img src=\"%(STATIC_URL)s/images/help"
-"/wait-until.png\" /> hoida kontrolli, pane pinu plokki korda lõputult.\n"
+"/wait-until.png\" /> jätkata kontrollimist, pane pinu plokki korda lõputult.\n"
 "</p>"
 
 #: templates/info/help/studio/tips/blocks/when-backdrop-switches.html:6
@@ -10259,7 +10259,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches.png\" />"
 
 #: templates/info/help/studio/tips/blocks/when-backdrop-switches.html:7
 msgid "Runs a script when backdrop switches to a certain background"
-msgstr "Skript käivitub, kui  aktiveeritakse antud taust"
+msgstr "Skript käivitub, kui aktiveeritakse antud taust"
 
 #: templates/info/help/studio/tips/blocks/when-backdrop-switches.html:11
 #, python-format
@@ -10272,7 +10272,7 @@ msgid ""
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex.png\"/>\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex2.png\"/>\n"
-"<br><p>Kui taustaks võetakse köök,sprait ütlevad: \"Nüüd ma olen köögis!</p>"
+"<br><p>Kui taustaks võetakse köök, ütleb sprait: \"Nüüd ma olen köögis!\"</p>"
 
 #: templates/info/help/studio/tips/blocks/when-flag-clicked.html:6
 #, python-format
@@ -10322,7 +10322,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/when-key-pressed.png\" />"
 
 #: templates/info/help/studio/tips/blocks/when-key-pressed.html:7
 msgid "Runs a script when a specified key is pressed"
-msgstr "Skripti käivitub, kui vajutakse määratud klahvi"
+msgstr "Skripti käivitub, kui vajutatakse määratud klahvi"
 
 #: templates/info/help/studio/tips/blocks/when-key-pressed.html:11
 #, python-format
@@ -10331,7 +10331,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/when-key-pressed-ex.png\"/>"
 
 #: templates/info/help/studio/tips/blocks/when-key-pressed.html:12
 msgid "Once the specified key is pressed, the script will run."
-msgstr "Kui vajutakse nimetatud klahvi, käivitatakse skript."
+msgstr "Kui vajutatakse nimetatud klahvi, käivitatakse skript."
 
 #: templates/info/help/studio/tips/blocks/when-loudness.html:6
 #, python-format
@@ -10343,8 +10343,8 @@ msgid ""
 "Runs a script when the selected attribute (loudness, timer, video motion) is "
 "greater than a specified value"
 msgstr ""
-"Skript käivitub, kui valitud atribuut (valjus, taimer, videoklipp) on suurem "
-"kui määratud väärtus"
+"Skript käivitub, kui valitud atribuut (helitugevus, taimer, video liikumine) "
+"on suurem kui määratud väärtus"
 
 #: templates/info/help/studio/tips/blocks/when-loudness.html:11
 #, python-format
@@ -10356,7 +10356,7 @@ msgid ""
 msgstr ""
 "\n"
 "<img src=\"%(STATIC_URL)s/images/help/when-loudness-dropdown.png\"/>\n"
-"<br>Võit valida ükskõik millise omaduse rippmenüüst.<br/>\n"
+"<br>Võid rippmenüüst valida ükskõik millise omaduse.<br/>\n"
 "<p>"
 
 #: templates/info/help/studio/tips/blocks/when-loudness.html:18
@@ -10369,7 +10369,7 @@ msgid ""
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/when_timer.png\"/>\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/when_timer2.png\"/><br/>\n"
-"<br>Pärast 10 sekundit,  skript käivitub.<br/>\n"
+"<br>Kui taimeri väärtus ületab 10 sekundit, skript käivitub.<br/>\n"
 "<p>"
 
 #: templates/info/help/studio/tips/blocks/when-loudness.html:25
@@ -10382,7 +10382,7 @@ msgid ""
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/when-videomotion.png\"/>\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/when-videomotion2.png\"/><br/>\n"
-"<br>Kui video liikumine spraidil läheb üle 10, skript käivitub. <br/>\n"
+"<br>Kui video liikumine spraidi all läheb üle 10, skript käivitub.<br/>\n"
 
 #: templates/info/help/studio/tips/blocks/when-this-sprite-clicked.html:6
 #, python-format
@@ -10422,7 +10422,7 @@ msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex.png\"/> \n"
 "\n"
 " <p>\n"
-" Kummituse x koordinaat  pannakse võrdseks Gobo x koordinaadiga.\n"
+" Kummituse x-koordinaat  pannakse võrdseks Gobo x-koordinaadiga.\n"
 " <br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\"/><br/>\n"
 " </p>\n"
 "  "
@@ -10446,7 +10446,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/x-position.png\">"
 
 #: templates/info/help/studio/tips/blocks/x-position.html:7
 msgid "Reports the <b>x</b> position of a sprite"
-msgstr "Viitab spraidi <b>x</b> koordinaadile"
+msgstr "Spraidi <b>x</b>-koordinaat"
 
 #: templates/info/help/studio/tips/blocks/x-position.html:11
 #, python-format
@@ -10460,8 +10460,8 @@ msgid ""
 "checkbox next to the block:<br/>\n"
 "  <img src=\"%(STATIC_URL)s/images/help/x-position-display.png\">"
 msgstr ""
-"<p>Kuvamiseks spraidi <b> x </b> koordinaati laval, klõpsa märkeruutu "
-"ploki:ees<br/>\n"
+"<p>Kuvamaks spraidi <b>x</b>-koordinaati laval, klõpsa märkeruutu ploki "
+"ees<br/>\n"
 "        <img src=\"%(STATIC_URL)s/images/help/x-position-display.png\">"
 
 #: templates/info/help/studio/tips/blocks/y-position.html:6
@@ -10471,7 +10471,7 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/y-position.png\">"
 
 #: templates/info/help/studio/tips/blocks/y-position.html:7
 msgid "Reports the <b>y</b> position of a sprite"
-msgstr "Viitab spraidi <b>y</b> koordinaadile"
+msgstr "Spraidi <b>y</b>-koordinaat"
 
 #: templates/info/help/studio/tips/blocks/y-position.html:11
 #, python-format
@@ -10491,8 +10491,8 @@ msgid ""
 "next to the block:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/y-position-display.png\"></p>"
 msgstr ""
-"<p>Et näha spraidi <b> y </ b> koordinaatit ekraanil, klõpsa märkeruutu "
-"ploki ees:<br/>\n"
+"<p>Et näha spraidi <b>y</ b>-koordinaati laval, klõpsa märkeruutu ploki "
+"ees:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/y-position-display.png\"></p>"
 
 #: templates/info/help/studio/tips/ext/wedo.html:6
@@ -10505,7 +10505,7 @@ msgid ""
 "<p>This extension works with the LEGO WeDo kit.</p>\n"
 " <img src=\"%(STATIC_URL)s/images/help/wedo-hub.jpg\" />\n"
 msgstr ""
-"<p>See laiendus töötabLEGO WeDo komplektida.</p>\n"
+"<p>See laiendus töötab LEGO WeDo komplektiga.</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/wedo-hub.jpg\" />\n"
 
 #: templates/info/help/studio/tips/ext/wedo.html:16
@@ -10517,10 +10517,10 @@ msgid ""
 " 3. <br>\n"
 msgstr ""
 "<p>Et seda kasutada, tuleb esmalt installida vastav plug-in. Siin on "
-"sammud:</p>\n"
+"vajalikud sammud:</p>\n"
 "1.<br>\n"
 "2.<br>\n"
-"3. <br>\n"
+"3.<br>\n"
 
 #: templates/info/help/studio/tips/ext/wedo.html:24
 msgid "<p>Here are the blocks:</p>\n"
@@ -10536,7 +10536,7 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"Täiendava info saamiseks,vaata LEGO WeDo lehte Scratchi wiki-s.\n"
+"Täiendava info saamiseks vaata LEGO WeDo lehte Scratchi wiki-s.\n"
 " </p> \n"
 " \n"
 "\n"
@@ -10554,12 +10554,12 @@ msgid ""
 "\n"
 "</div>\n"
 msgstr ""
-"Kui te soovid redigeerida heli, vali jaotis helind: <br/>\n"
+"Kui soovid redigeerida heli, vali jaotis helind:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/edit-sound.png\"><br/>\n"
-" Siis vali menüüst Redigeeri:<br/>\n"
+"Siis vali Redigeeri (<i>Edit</i>):<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\">\n"
-"<p>või vali Efektid:<br/>\n"
-" <img src=\"%(STATIC_URL)s/images/help/effects-menu.png\">\n"
+"<p>või Efektid:<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/effects-menu.png\">\n"
 "\n"
 "</div>\n"
 
@@ -10577,7 +10577,7 @@ msgstr "Lohista <span class=movecolor>MOVE</span> plokk skriptide alasse."
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:17
 msgid "Then, click on that block to make the cat move:"
-msgstr "Siis klõpsa seda plokki, pannes kassi liikuma:"
+msgstr "Siis klõpsa seda plokki, et panna kass liikuma:"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:24
 msgid "1"
@@ -10619,16 +10619,16 @@ msgstr ""
 "<p> <img src = \"%(STATIC_URL)s/images/help/10b-sprite.png\"> Vali sprait "
 "teegist</p>\n"
 "<p> <img src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> Uue spraidi "
-"joonistamine </p>\n"
+"joonistamine</p>\n"
 "<p> <img src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> Spraidi "
 "laadimine failist </p>\n"
 "<p> <img src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> Uus sprait "
-"kaameraga </p>\n"
+"pildist (veebikaameraga) </p>\n"
 "\n"
 "<p> Et lisada see sprait klõpsa <img src = \"%(STATIC_URL)s/images/help/10b-"
 "sprite.png\"> seejärel  vali \"Cassy Dancing\": </p>\n"
 "<img src = \"%(STATIC_URL)s/images/help/10-cassy-sprite.png\"> </p>\n"
-"<p> Lohista kujundid kuhu soovite laval. </p>\n"
+"<p> Lohista kujund laval sobivasse kohta. </p>\n"
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:26
 msgid "10"
@@ -10637,11 +10637,11 @@ msgstr "10"
 # 77%
 #: templates/info/help/studio/tips/howto/get-started-11.html:7
 msgid " Explore!"
-msgstr " Uuri!"
+msgstr "Uuri!"
 
 #: templates/info/help/studio/tips/howto/get-started-11.html:9
 msgid "You can add sound and animation to your new sprite."
-msgstr "Saad lisada heli ja animatsiooni oma spraidile."
+msgstr "Saad oma uuele spraidile lisada heli ja animatsiooni."
 
 #: templates/info/help/studio/tips/howto/get-started-11.html:11
 #, python-format
@@ -10671,7 +10671,7 @@ msgid ""
 msgstr ""
 "\n"
 "<b>Helindi lisamine</b> \n"
-"<p> Klõpsa gruppi Helind <img src = \"%(STATIC_URL)s/images/help/sounds-"
+"<p> Klõpsa gruppi Helid <img src = \"%(STATIC_URL)s/images/help/sounds-"
 "tab.png\">. \n"
 "Saad valida heli <img src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">, "
 "lindistada oma helindi <img src = \"%(STATIC_URL)s/images/help/ mikrofoni-"
@@ -10685,7 +10685,7 @@ msgstr ""
 "\n"
 "<b>Animeerimine</b>\n"
 "<p>Klõpsa <img src = \"%(STATIC_URL)s/images/help/costumes-tab.png\"> et näha "
-"spraidi kostüüme. Muutes kostüüme saad tekitada animatsioni. </p>\n"
+"spraidi kostüüme. Kostüüme vahetades saad tekitada animatsioni. </p>\n"
 "<p> Klõpsa <img src = \"%(STATIC_URL)s/images/help/scripts-tab.png\"> ja tee "
 "skript, mis vahetab kostüüme: </p>\n"
 "<img src = \"%(STATIC_URL)s/images/help/11-animate-script.png\">\n"
@@ -10707,8 +10707,8 @@ msgid ""
 "<p>Type a title for your project.</p>\n"
 msgstr ""
 "\n"
-"<p><b>Jaga oma projekti </b></p>\n"
-"<p> Sisesta oma projekti pealkiri. </p>\n"
+"<p><b>Jaga oma projekti</b></p>\n"
+"<p>Sisesta oma projekti pealkiri.</p>\n"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:15
 msgid "Click "
@@ -10719,7 +10719,8 @@ msgid ""
 "Type in notes to explain how to use your project. Give credit to anyone who "
 "helped."
 msgstr ""
-"Kirjuta märkused, et selgitada, kuidas kasutada projekti. Anna abi kõigile."
+"Kirjuta märkused, et selgitada projekti kasutamist. Tunnusta kõiki, kes Sind "
+"aitasid."
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:21
 msgid ""
@@ -10750,9 +10751,9 @@ msgid ""
 "p>\n"
 msgstr ""
 "\n"
-"<p>Scratchiga saab luua erinevaid projekte. Vaata näiteid, klõpsa <img src = "
-"\"%(STATIC_URL)s/images/help/scratch-logo-small.png\"> üleval vasakul, et "
-"uurida projekte kodulehel. </p>\n"
+"<p>Scratchiga saab luua erinevaid projekte. Vaata näiteid, klõpsates <img "
+"src = \"%(STATIC_URL)s/images/help/scratch-logo-small.png\"> üleval vasakul, "
+"et uurida projekte kodulehel. </p>\n"
 "<p> <img src = \"%(STATIC_URL)s/images/help/gobo-friends.png\"> </p>\n"
 "<p> Kui näed projekti, mis sulle meeldib, klõpsa <img src = \"%"
 "(STATIC_URL)s/images/help/see-inside-smaller.png\"> ja seejärel nuppu <img "
@@ -10767,7 +10768,7 @@ msgid ""
 "\">Tips</a></b>.\n"
 msgstr ""
 "\n"
-"<p>Täiendavalt võid vaadata<a href=\"../../home/\"><img src = \"%"
+"<p>Täiendavalt võid vaadata <a href=\"../../home/\"><img src = \"%"
 "(STATIC_URL)s/images/help/house-icon.png\"></a> <a "
 "href=\"../../home/\">Selgitused</a></b>.\n"
 
@@ -10787,7 +10788,7 @@ msgid ""
 msgstr ""
 "Lohista <span class=soundcolor>PLAY DRUM</span> plokk (from <span "
 "class=soundcolor>Sound</span>) ja ühenda see <span "
-"class=movecolor>MOVE</span>antud  plokiga."
+"class=movecolor>MOVE</span> antud  plokiga."
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:15
 msgid "Click and listen."
@@ -10803,7 +10804,7 @@ msgstr "2"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:6
 msgid "3 Start a Dance"
-msgstr "3 Alusta tantsuga"
+msgstr "3 Alusta tantsu"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:8
 msgid ""
@@ -10823,7 +10824,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:14
 msgid "Click on any of the blocks to run the stack:"
-msgstr "Klõpsa suvalist plokki skripti käivitamiseks:"
+msgstr "Klõpsa skripti suvalist plokki skripti käivitamiseks:"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:21
 msgid "3"
@@ -10841,15 +10842,15 @@ msgid ""
 "wrap around the other blocks.)</p>\n"
 "    "
 msgstr ""
-"<p>Lohista välja<span class=controlcolor>REPEAT</span>plokk ja paiguta see "
+"<p>Lohista välja <span class=controlcolor>REPEAT</span> plokk ja paiguta see "
 "pinu päisesse. \n"
-"   (U-kujulise ploki <span class=controlcolor>REPEAT</span> võid panna "
-"teiste plokide ümber.)</p>\n"
+"   (U-kujulise ploki <span class=controlcolor>REPEAT</span> saad panna "
+"teiste plokkide ümber.)</p>\n"
 "    "
 
 #: templates/info/help/studio/tips/howto/get-started-4.html:13
 msgid "Click to run the stack:"
-msgstr "Klõpsa käivitamiseks pinut:"
+msgstr "Käivitamiseks klõpsa pinu:"
 
 #: templates/info/help/studio/tips/howto/get-started-4.html:19
 msgid "4"
@@ -10875,11 +10876,11 @@ msgstr ""
 "<p>Klõpsa <span class=lookscolor>LOOKS</span> ja lohista <span "
 "class=lookscolor>Ütle</span> plokk.</p>\n"
 "<p><img src = \"%(STATIC_URL)s/images/help/5a-say.png\"></p>\n"
-" Sisesta plokki vajalik tekst:<br/>\n"
+"Sisesta plokki vajalik tekst:<br/>\n"
 "<img src = \"%(STATIC_URL)s/images/help/5b-say-new.png\"><br/>\n"
-"Siis <b>snap</b> kui see on pinu tipus.</p>\n"
+"Siis paiguta see pinu tippu.</p>\n"
 "<img src = \"%(STATIC_URL)s/images/help/5c-say-new.png\">\n"
-"<p>Klõpsa pinut käivitamisks.</p>\n"
+"<p>Käivitamisks klõpsa pinu.</p>\n"
 
 #: templates/info/help/studio/tips/howto/get-started-5.html:21
 msgid "5"
@@ -10898,7 +10899,7 @@ msgid ""
 "<p><img src = \"%(STATIC_URL)s/images/help/6b-green-flag.png\"></p>\n"
 msgstr ""
 "\n"
-"<p>Lohissta välja <img src = \"%(STATIC_URL)s/images/help/6a-green-flag.png\"> "
+"<p>Lohista välja <img src = \"%(STATIC_URL)s/images/help/6a-green-flag.png\"> "
 "plokk ja pane pinu algusesse.</p>\n"
 "<p><img src = \"%(STATIC_URL)s/images/help/6b-green-flag.png\"></p>\n"
 
@@ -10913,11 +10914,11 @@ msgid ""
 "stop-sign-small.png\"></p>\n"
 msgstr ""
 "\n"
-"<p> Sinu skript hakkab tööle, kui klõpsad rohelis lippu: <img src = \"%"
+"<p>Sinu skript hakkab tööle, kui klõpsad rohelist lippu: <img src = \"%"
 "(STATIC_URL)s/images/help/green-flag.png\"> </p>\n"
 "<p> <img src = \"%(STATIC_URL)s/images/help/6c-green-flag.png\"> </p>\n"
-"<p> peatamiseks klõpsa punast nuppu: <img src = \"%(STATIC_URL)s/images/help"
-"/stop-sign-small.png\"> </p>\n"
+"<p>Tegevuse peatamiseks klõpsa punast nuppu: <img src = \"%"
+"(STATIC_URL)s/images/help/stop-sign-small.png\"> </p>\n"
 
 #: templates/info/help/studio/tips/howto/get-started-6.html:22
 msgid "6"
@@ -10937,8 +10938,8 @@ msgid ""
 "<p><img src = \"%(STATIC_URL)s/images/help/7a-color.png\"></p>\n"
 msgstr ""
 "\n"
-"<p>Nüüd proovi midagi muud ... </p>\n"
-"<p> Lohista <span class=lookscolor> Muuda efekti </span> plokk. </p>\n"
+"<p>Nüüd proovi midagi uut ... </p>\n"
+"<p>Lohista välja <span class=lookscolor> Muuda efekti </span> plokk. </p>\n"
 "<p> <img src = \"%(STATIC_URL)s/images/help/7a-color.png\"> </p>\n"
 
 #: templates/info/help/studio/tips/howto/get-started-7.html:15
@@ -10955,16 +10956,16 @@ msgstr "7"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:6
 msgid "8 Key Press"
-msgstr "8 Vajuta Klahvi"
+msgstr "8 Vajuta klahvi"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:8
 #, python-format
 msgid "Snap on a <img src = \"%(STATIC_URL)s/images/help/8a-key-press.png\">"
-msgstr "Sidumine <img src = \"%(STATIC_URL)s/images/help/8a-key-press.png\">"
+msgstr "Klõpsa <img src = \"%(STATIC_URL)s/images/help/8a-key-press.png\">"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:10
 msgid "Now press the space bar on your keyboard and watch what happens."
-msgstr "Nüüd vajuta tühikuklahvi klaviatuuril ja vaadata, mis juhtub."
+msgstr "Nüüd vajuta tühikuklahvi ja vaata mis juhtub."
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:12
 msgid "You can choose a different key from the menu:"
@@ -10976,7 +10977,7 @@ msgstr "8"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:5
 msgid " 9 Add a Backdrop"
-msgstr "  9 Lisa taust"
+msgstr " 9 Lisa taust"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:7
 #, python-format
@@ -10990,7 +10991,7 @@ msgid ""
 "<p>Click OK.</p>\n"
 msgstr ""
 "\n"
-"<p>Saad lisada uusi taustu lavale.</p>\n"
+"<p>Saad lisada lavale uusi taustu.</p>\n"
 "<img src = \"%(STATIC_URL)s/images/help/9-new-backdrop.png\"><br/>\n"
 "<p> Klõpsa <img src = \"%(STATIC_URL)s/images/help/landscape-icon.png\"> "
 "valimaks uut tausta teegist (näiteks \"Spotlight-Stage\"):</p>\n"
@@ -11003,7 +11004,7 @@ msgstr "9"
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:6
 msgid "Explore ideas for your card"
-msgstr ""
+msgstr "Leia ideid oma kaardi jaoks"
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:13
 msgid ""
@@ -11015,12 +11016,21 @@ msgid ""
 "\"http://scratch.mit.edu/studios/279432/\" target=\"_blank\">holiday card "
 "studio</a>.)</p>\n"
 msgstr ""
+"\n"
+"<p>Esimese Scratchi kogemuse saamiseks lood Sa interaktiivse "
+"pühadekaardi.</p>\n"
+"<p>Mõtle oma lemmikpühadele. Milised pildid ja helid meenuvad? (Kui vajad "
+"lisainspiratsiooni, vaata projekte stuudios <a "
+"href=\"http://scratch.mit.edu/studios/279432/\" target=\"_blank\"><i>holiday "
+"card studio</i></a>.)</p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:21
 msgid ""
 "<p>Have some ideas for your card?</p>\n"
 "<a href=\"../hoc-2/\">Let's start by deleting the cat.</a></p>\n"
 msgstr ""
+"<p>Vajad ideid oma kaardi jaoks?</p>\n"
+"<a href=\"../hoc-2/\">Alustame kassi kustutamisest.</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:28
 #: templates/info/help/studio/tips/howto/hoc-2.html:28
@@ -11042,7 +11052,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/hoc-2.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:18
 msgid "Delete the cat"
-msgstr ""
+msgstr "Kustuta kass"
 
 #: templates/info/help/studio/tips/howto/hoc-2.html:12
 msgid ""
@@ -11051,6 +11061,10 @@ msgid ""
 "<p>You can delete a sprite by clicking on the scissors and then clicking on "
 "the sprite.</p>\n"
 msgstr ""
+"\n"
+"<p>Scratchis nimetatakse tegelasi ja objekte spraitideks.</p>\n"
+"<p>Spraidi kustutamseks klõpsa esmalt kääridel ja seejärel kustutataval "
+"spraidil.</p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-2.html:18
 msgid ""
@@ -11060,11 +11074,15 @@ msgid ""
 "<p><a href=\"../hoc-3/\">Next, let's add some holiday sprites to your card.</"
 "a></p>\n"
 msgstr ""
+"\n"
+"<p>Oskad Sa leida veel võimalusi spraidi kustutamiseks?</p>\n"
+"<p></p>\n"
+"<p><a href=\"../hoc-3/\">Nüüd leia pühadekaardile sobivaid spraite.</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-3.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:19
 msgid "Add sprites"
-msgstr ""
+msgstr "Lisa spraite"
 
 #: templates/info/help/studio/tips/howto/hoc-3.html:11
 #, python-format
@@ -11074,6 +11092,9 @@ msgid ""
 "one of these buttons:</p>\n"
 "<p><img src = \"%(STATIC_URL)s/images/help/hoc-3-add-sprite.png\"></p>\n"
 msgstr ""
+"\n"
+"<p>Spraidi lisamiseks on 4 võimalust. Klõpsa ühte neist nuppudest:</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/hoc-3-add-sprite.png\"></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-3.html:17
 #, python-format
@@ -11097,6 +11118,21 @@ msgid ""
 "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Take a picture (if you have a webcam)"
 "<br/>\n"
 msgstr ""
+"\n"
+"Nupud teevad järgmist:<br/>\n"
+"<img src = \"%(STATIC_URL)s/images/help/hoc-3a-add-sprite-library.png\"> "
+"Teek:<br/>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vali sprait teegist<br/>\n"
+"<img src = \"%(STATIC_URL)s/images/help/hoc-3b-add-sprite-paint.png\"> "
+"Joonista:<br/>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Joonista sprait "
+"joonistamisredaktoriga<br/>\n"
+"<img src = \"%(STATIC_URL)s/images/help/hoc-3c-add-sprite-upload.png\"> "
+"Arvuti:<br/>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lae fail oma arvutist<br/>\n"
+"<img src = \"%(STATIC_URL)s/images/help/hoc-3d-add-sprite-camera.png\"> "
+"Kaamera:<br/>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pildista (kui on veebikaamera)<br/>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-3.html:31
 msgid ""
@@ -11104,11 +11140,14 @@ msgid ""
 "<p></p>\n"
 "<p><a href=\"../hoc-4/\">Next, let's make your sprites interactive.</a></p>\n"
 msgstr ""
+"\n"
+"<p></p>\n"
+"<p><a href=\"../hoc-4/\">Nüüd tee sprait interaktiivseks.</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:20
 msgid "Make the sprites interactive"
-msgstr ""
+msgstr "Tee sprait interaktiivseks"
 
 #: templates/info/help/studio/tips/howto/hoc-4.html:12
 msgid ""
@@ -11360,11 +11399,14 @@ msgid ""
 "<p></p>\n"
 "<p><a href=\"../hoc-8/\">Next, let's share your holiday card.</a></p>\n"
 msgstr ""
+"\n"
+"<p></p>\n"
+"<p><a href=\"../hoc-8/\">Järgmiseks jaga oma pühadekaarti.</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:30
 msgid "Share your project"
-msgstr ""
+msgstr "Jaga oma projekti"
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:11
 msgid ""
@@ -11391,6 +11433,28 @@ msgid ""
 "<p>Now you can send a link to your holiday card to family, friends, and "
 "others!</p>\n"
 msgstr ""
+"\n"
+"<p>Kui oled valmis oma projekti teistega jagama, klõpsa nuppu “Jaga” ekraani "
+"ülaservas.</p>\n"
+"\n"
+"<p>(Kui Sa pole seda juba teinud, peaksid Sa <a id=\"tips-join-scratch\">looma "
+"Scratchi kasutajakonto</a> et jagada oma projekti online.)</p>\n"
+"<script>\n"
+" $(document).ready(function() {\n"
+"   $('#tips-join-scratch').on('click', function() {\n"
+"     parent.postMessage('registration-modal', '*');\n"
+"     console.log('postMessage to parent');\n"
+"   });\n"
+" });\n"
+"</script>\n"
+"<p>Siin lood interaktiivse pühadekaardi, mida saad jagada oma pere ja "
+"sõpradega.</p>\n"
+"\n"
+"<p>Kui projekt on jagatud, saad projektilehel lisada sellele pealkirja, "
+"juhised ja muud märkused.</p>\n"
+"\n"
+"<p>Nüüd saad saata oma pühadekaardi lingi oma perele, sõpradele ja "
+"teistele!</p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:32
 msgid ""
@@ -11399,11 +11463,15 @@ msgid ""
 "<p>Finally, let's <a href=\"../hoc-9/\">finish the Hour of Code by adding "
 "your project to the big collection of holiday cards.</a></p>\n"
 msgstr ""
+"\n"
+"<p></p>\n"
+"<p>Lõpuks <a href=\"../hoc-9/\">lõpeta Hour of Code lisades oma projekt "
+"pühadekaartide suurde kollektsiooni.</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:31
 msgid "Add your project to the Hour of Code studio"
-msgstr ""
+msgstr "Lisa oma projekt stuudiole <i>Hour of Code studio</i>"
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:11
 #, python-format
@@ -11423,6 +11491,20 @@ msgid ""
 "\" target=\"_blank\">you completed the Hour of Code Scratch activity!</a></"
 "p>\n"
 msgstr ""
+"\n"
+"<p> Jaga oma pühadekaarti kõigiga üle maailma lisades selle stuudiole "
+"<i>Hour of Code studio</i>.</p>\n"
+"\n"
+"<p>Kõigepealt mine <a href=\"http://scratch.mit.edu/studios/279432/\" "
+"target=\"_blank\">Hour of Code studio</a>. \n"
+"Siis klõpsa nuppu “Add Projects” lehe ülaservas, et lisada stuudiole oma "
+"pühadekaart.</p>\n"
+"\n"
+"<p>Aitähh, et kujundasid, programmeerisid ja jagasid oma pühadekaarti "
+"Scratchiga -- <a href=\"http://www.google.com/url?q=http%%3A%%2F%%2Fcode.org%"
+"%2Fapi%%2Fhour%%2Ffinish&sa=D&sntz=1&usg=AFQjCNHVv1dbiUd4Qt7PzlQfXFPXN8uFpg\" "
+"target=\"_blank\"> sa lõpetasid tegevuse stuudioga Hour of Code "
+"Scratch!</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:22
 #, python-format
@@ -11433,6 +11515,12 @@ msgid ""
 "<p>Click <a href=\"../../home/\"><img src = \"%(STATIC_URL)s/images/help/"
 "house-icon.png\"></a> <a href=\"../../home/\">Tips</a> for more ideas!\n"
 msgstr ""
+"\n"
+"<p></p>\n"
+"<p>Mida sa lood järgmisena?</p>\n"
+"<p>Klõpsa<a href=\"../../home/\"><img src = \"%(STATIC_URL)s/images/help/house-"
+"icon.png\"></a> <a href=\"../../home/\">Tips (nõuanded)</a> uute ideede "
+"saamiseks!\n"
 
 #: templates/info/help/studio/tips/howto/hoc.html:7
 msgid ""
@@ -11444,6 +11532,13 @@ msgid ""
 "portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
 "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
 msgstr ""
+"\n"
+"<p>Siin lood interaktiivse pühadekaarti, mida saad jagad oma pere ja "
+"sõpradega.</p>\n"
+"<p>Alustamiseks vaata seda tutvustavat videot:</p>\n"
+"<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&byline=0&portrait="
+"0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
+"mozallowfullscreen allowfullscreen></iframe></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc.html:14
 msgid "Get more help by following these steps:"
@@ -11451,19 +11546,19 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc.html:15
 msgid "Imagine your holiday card"
-msgstr ""
+msgstr "Kujunda oma pühadekaart"
 
 #: templates/info/help/studio/tips/howto/hoc.html:17
 msgid "Program your holiday card"
-msgstr ""
+msgstr "Programmeeri oma pühadekaart"
 
 #: templates/info/help/studio/tips/howto/hoc.html:29
 msgid "Share your holiday card"
-msgstr ""
+msgstr "Jaga oma pühadekaarti"
 
 #: templates/info/help/studio/tips/howto/hoc.html:42
 msgid "Let's code!"
-msgstr ""
+msgstr "Programmeerime!"
 
 #: templates/info/help/studio/tips/howto/import-music.html:11
 msgid "Select the Sounds tab"
@@ -11476,7 +11571,7 @@ msgid ""
 "   a sound file from your computer (mp3, wav or aif format)."
 msgstr ""
 "Lae üles <img src=\"%(STATIC_URL)s/images/help/upload-icon.png\"> \n"
-"     helifail oma arvutist (mp3, wav või aif formaadis)."
+" helifail oma arvutist (mp3, wav või aif formaadis)."
 
 #: templates/info/help/studio/tips/howto/import-music.html:17
 msgid "Try these scripts:"
@@ -11484,7 +11579,7 @@ msgstr "Proovi neid skripte"
 
 #: templates/info/help/studio/tips/howto/import-music.html:19
 msgid "Click the green flag to run at the same time."
-msgstr "Klõpsa rohelist lippu samaaegseks täitmiseks."
+msgstr "Klõpsa rohelist lippu samaaegseks käivitamiseks."
 
 #: templates/info/help/studio/tips/howto/import-music.html:23
 #, python-format
@@ -11494,9 +11589,9 @@ msgid ""
 "Then choose from the Edit menu:<br/>\n"
 " <img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\"> </div>\n"
 msgstr ""
-"Kui te soovid muuta helindit vali: \n"
+"Kui te soovid muuta helindit, vali sektsioon: \n"
 "<img src=\"%(STATIC_URL)s/images/help/edit-sound.png\"><br/>\n"
-" Siis vali menüüst Redigeeri:<br/>\n"
+"Siis vali Redigeeri-menüüst :<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\"> </div>\n"
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:10
@@ -11505,7 +11600,7 @@ msgstr "Et mängida noote, vali instrument ja noot:"
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:13
 msgid "You can choose another instrument from the menu:"
-msgstr "Võid valida mõne muu instrumendi menüüst:"
+msgstr "Võid valida menüüst mõne muu instrumendi:"
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:16
 msgid "Try this script. Click the sprite to play:"
@@ -11513,7 +11608,7 @@ msgstr "Proovi seda skripti. Klõpsa käivitamiseks spraiti:"
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:20
 msgid "Add note blocks to play a short scale:"
-msgstr "Lisa nootide plokk mängimiseks:"
+msgstr "Lisa nootide plokid mängimiseks...:"
 
 #: templates/info/help/studio/tips/howto/play-music.html:10
 #, python-format
@@ -11555,7 +11650,7 @@ msgid ""
 "<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/record-sound-button.png\">\n"
 msgstr ""
-"Helini lindistamiseks klõpsa <img src=\"%(STATIC_URL)s/images/help/sounds-"
+"Helindi lindistamiseks klõpsa <img src=\"%(STATIC_URL)s/images/help/sounds-"
 "tab.png\"><br/>\n"
 "ja mikrofoni <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\">. "
 "Siis klõpsa nuppu Lindista:\n"
@@ -11570,7 +11665,7 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/sound-title.png\"><p>\n"
 msgstr ""
 "    \n"
-"    Sisesta oma helindi nimi:<br/>\n"
+"    Sisesta oma helindi nimi: <br/>\n"
 "    <img src=\"%(STATIC_URL)s/images/help/sound-title.png\"><p>\n"
 
 #: templates/info/help/studio/tips/howto/record-sounds.html:26
@@ -11585,7 +11680,7 @@ msgid ""
 msgstr ""
 "   \n"
 " Siis klõpsa <img src=\"%(STATIC_URL)s/images/help/scripts-tab.png\"> ja "
-"kasuta ploki:<br/>\n"
+"kasuta plokki:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>\n"
 " Vali helindi nimi menüüst.\n"
 
@@ -11604,8 +11699,8 @@ msgid ""
 "choose-backdrop-icon.png\">. \n"
 "Then, select each backdrop name from the drop-down menu: "
 msgstr ""
-"Esmalt vali taust<img src=\"%(STATIC_URL)s/images/help/choose-backdrop-"
-"icon.png\">.\n"
+"Esmalt vali sobivad taustad <img src=\"%(STATIC_URL)s/images/help/choose-"
+"backdrop-icon.png\">.\n"
 "Seejärel vali iga tausta nimi rippmenüüst:"
 
 # 80%
@@ -11632,18 +11727,18 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"><br/>\n"
 "just below the green flag block."
 msgstr ""
-"Oma hääle liamiseks klõpsa <img src=\"%(STATIC_URL)s/images/help/sounds-"
+"Oma hääle lisamiseks klõpsa <img src=\"%(STATIC_URL)s/images/help/sounds-"
 "tab.png\"><br/>\n"
 "ja mikrofoni <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\"> "
 "lindistamiseks juttu.</p>\n"
-"ja lisamaks selle skriptile:<br/>\n"
+"Selle lisamiseks skripti:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"><br/>\n"
-"just below the green flag block."
+"rohelise lipuga ploki all."
 
 # 77%
 #: templates/info/help/studio/tips/ui/editor-map.html:5
 msgid "Project Editor Map"
-msgstr "Projekti redaktori mapp"
+msgstr "Projektiredaktori plaan"
 
 #: templates/info/help/studio/tips/ui/editor-map.html:6
 msgid "Here are the main areas in the project editor:"
@@ -11669,17 +11764,17 @@ msgstr "Kõik teated"
 #: templates/profiles/profile_detail.html:340 templates/projects/base.html:300
 #: templates/studio/includes/sort-galleries-dropdown.html:26
 msgid "Comments"
-msgstr "Kommentarid"
+msgstr "Kommentaarid"
 
 #: templates/notifications/notifications.html:22
 #: templates/notifications/notifications.html:42
 msgid "Alerts"
-msgstr "Signaalid"
+msgstr "Alarmid"
 
 #: templates/notifications/includes/friend-feed.html:33
 #: templates/notifications/includes/user-feed.html:58
 msgid "shared the project"
-msgstr "jaga projekt"
+msgstr "jagas projekti"
 
 # 76%
 #: templates/notifications/includes/friend-feed.html:35
@@ -11704,7 +11799,7 @@ msgstr "jaga projekt"
 #: templates/notifications/includes/user-feed.html:147
 #, python-format
 msgid "%(time)s ago"
-msgstr "%(time)s tagasi"
+msgstr "%(time) tagasi"
 
 #: templates/notifications/includes/friend-feed.html:47
 #: templates/notifications/includes/user-feed.html:70
@@ -11721,7 +11816,7 @@ msgstr "kui"
 #: templates/notifications/includes/friend-feed.html:62
 #: templates/notifications/includes/user-feed.html:83
 msgid "favorited"
-msgstr "lemmikuna"
+msgstr "eelistatud"
 
 #: templates/notifications/includes/friend-feed.html:76
 #: templates/notifications/includes/user-feed.html:95
@@ -11733,7 +11828,7 @@ msgstr "armastatud"
 #: templates/notifications/includes/friend-feed.html:120
 #: templates/notifications/includes/user-feed.html:34
 msgid "is now following"
-msgstr "nüüd järgneb"
+msgstr "jälgib nüüd"
 
 #: templates/notifications/includes/friend-feed.html:155
 #: templates/notifications/includes/user-feed.html:133
@@ -11748,21 +11843,21 @@ msgstr "stuudiosse"
 #: templates/notifications/includes/friend-feed.html:170
 #: templates/notifications/includes/user-feed.html:107
 msgid "became a curator of "
-msgstr "sai kuraatoriks "
+msgstr "sai kuraatoriks"
 
 #: templates/notifications/includes/friend-feed.html:183
 #: templates/notifications/includes/user-feed.html:119
 msgid "was promoted to manager of "
-msgstr ""
+msgstr "määrati haldama"
 
 # 80%
 #: templates/notifications/includes/notification_list.html:45
 msgid "is now following you"
-msgstr "nüüd järgib sind"
+msgstr "jälgib sind"
 
 #: templates/notifications/includes/notification_list.html:54
 msgid "loved your project"
-msgstr "armastab sinu projekte"
+msgstr "armastab sinu projekti"
 
 #: templates/notifications/includes/notification_list.html:65
 msgid "favorited your project"
@@ -11779,7 +11874,7 @@ msgstr "kommenteeris sinu projekti"
 
 #: templates/notifications/includes/notification_list.html:114
 msgid "commented on "
-msgstr "kommenteeris   "
+msgstr "kommenteeris"
 
 #: templates/notifications/includes/notification_list.html:127
 msgid "replied to your comment in"
@@ -11791,15 +11886,15 @@ msgstr "kutsus sind kureerima stuudiot"
 
 #: templates/notifications/includes/notification_list.html:150
 msgid "promoted you to manager for the studio"
-msgstr ""
+msgstr "kutsus Sind haldama stuudiot"
 
 #: templates/notifications/includes/notification_list.html:160
 msgid "remixed your project"
-msgstr "remixed sinu projekti"
+msgstr "remiksis sinu projekti"
 
 #: templates/notifications/includes/notification_list.html:171
 msgid "There was new activity in"
-msgstr "Oli uus tegevus"
+msgstr "Toimus uusi tegevusi"
 
 # 80%
 #: templates/notifications/includes/notification_list.html:173
@@ -11842,7 +11937,7 @@ msgid ""
 "Joined %(tDate)s ago\n"
 "      "
 msgstr ""
-"Liitunud %(tDate)s tagasi\n"
+"Liitunud %(tDate) tagasi\n"
 "      "
 
 #: templates/profiles/profile_detail.html:91
@@ -11851,7 +11946,7 @@ msgstr "Minust"
 
 #: templates/profiles/profile_detail.html:95
 msgid "Add a bit about yourself"
-msgstr "Lisa veidi endast"
+msgstr "Kirjuta midagi endast"
 
 #: templates/profiles/profile_detail.html:96
 #: templates/profiles/profile_detail.html:123
@@ -11868,7 +11963,7 @@ msgstr "Kirjelda, mida sa teed"
 
 #: templates/profiles/profile_detail.html:151
 msgid "Change featured project"
-msgstr "Muuda märgistaud projekti"
+msgstr "Muuda märgistatud projekti"
 
 #: templates/profiles/profile_detail.html:163
 msgid "What I've been doing"
@@ -11885,11 +11980,11 @@ msgstr "Jagatud projektid"
 
 #: templates/profiles/profile_detail.html:216
 msgid "Favorite Projects"
-msgstr "Eelistatud projekid"
+msgstr "Eelistatud projektid"
 
 #: templates/profiles/profile_detail.html:251
 msgid "Studios I'm Following"
-msgstr "Stuudiot, millele ma järgnen"
+msgstr "Stuudiod, mida ma jälgin"
 
 #: templates/profiles/profile_detail.html:269
 #: templates/profiles/includes/studios_list.html:4
@@ -11904,7 +11999,7 @@ msgstr "Järgnevad"
 #: templates/profiles/profile_detail.html:320
 #: templates/profiles/includes/followers_list.html:4
 msgid "Followers"
-msgstr "Järgijaid"
+msgstr "Jälgijaid"
 
 #: templates/profiles/scratcher_promotion_modal.html:5
 msgid "Become a Scratcher..."
@@ -11930,12 +12025,12 @@ msgid ""
 "Everyone should feel welcome on Scratch, so we’re careful to be respectful "
 "to everyone."
 msgstr ""
-"Igaüks peaks tundma end teretulnuna Scratchi, nii et me oleme viisakad ja "
-"lugupidavad kõkidega."
+"Igaüks peaks tundma end Scratchis teretulnuna, seega oleme kõikide vastu "
+"lugupidavad."
 
 #: templates/profiles/scratcher_promotion_modal.html:23
 msgid "We’re constructive."
-msgstr "Me oleme konstruktiivsed"
+msgstr "Me oleme konstruktiivsed."
 
 #: templates/profiles/scratcher_promotion_modal.html:24
 msgid ""
@@ -11943,41 +12038,41 @@ msgid ""
 "other’s projects, we say something we like about it, and suggest ways to "
 "make it better."
 msgstr ""
-"Paljud projektid on tehtud laste poolt, kes on algajad. Kui me kommenteerime "
-"teiste projektide, me ütleme neile midagi meeldivat ja soovitae, kuidas "
-"teha seda paremini."
+"Paljud projektid on tehtud laste poolt, kes on Scratchis algajad. Teiste "
+"projekte kommenteerides me ütleme neile midagi meeldivat ja soovitame, "
+"kuidas teha seda paremini."
 
 #: templates/profiles/scratcher_promotion_modal.html:30
 msgid "We give credit."
-msgstr "Me anname krediiti"
+msgstr "Me tunnustame"
 
 #: templates/profiles/scratcher_promotion_modal.html:31
 msgid ""
 "Anything shared on Scratch can be remixed by everyone. When we remix, we "
 "give credit to the original creator."
 msgstr ""
-"Kõike, mida on jagatud Scratchis, saab remiksida igaüks. Kui me remiksime, "
-"anname anname algsele loojale."
+"Kõiki jagatud Scratchi projekte saab remiksida igaüks.Remiksides tunnustame "
+"originaalprojekti loojat."
 
 #: templates/profiles/scratcher_promotion_modal.html:37
 msgid "We help keep the site friendly."
-msgstr "Aitame hoida saidi sõbralikust."
+msgstr "Aitame hoida saidi sõbralikuna."
 
 #: templates/profiles/scratcher_promotion_modal.html:38
 msgid ""
 "Scratch is a fun and friendly place because Scratchers make it that way. If "
 "you see a project or comment that’s mean, click Report. "
 msgstr ""
-"Scratch on lõbus ja sõbralik koht, sest Scratchijad teevad seda. Kui näed "
-"projekt või kommentaari, klõpsake Report."
+"Scratch on lõbus ja sõbralik koht, sest Scratchijad hoiavad seda sellisena. "
+"Kui näed ebasündsat projekt või õelat kommentaari, klõpsa Report (teata)."
 
 #: templates/profiles/scratcher_promotion_modal.html:45
 msgid "We invite you to become a Scratcher."
-msgstr "Me kutsume Sind hakkama Scratchijaks."
+msgstr "Me kutsume Sind Scratchijaks."
 
 #: templates/profiles/scratcher_promotion_modal.html:46
 msgid "You get to decide if you want to become a Scratcher."
-msgstr "Sa saad otsustada, kas sa tahad saada Skratchijaks."
+msgstr "Otsusta, kas sa tahad saada Skratchijaks."
 
 #: templates/profiles/scratcher_promotion_modal.html:48
 msgid ""
@@ -11985,9 +12080,9 @@ msgid ""
 "strong>, <strong>give credit</strong>, and <strong>help keep the site "
 "friendly</strong>, click \"I agree!\""
 msgstr ""
-"Kui oled nõus, et <strong>olema lugupidav</strong>, <strong> konstruktiivne "
-"</strong>, <strong>anda au</strong> ja <strong> aidata hoida saidi "
-"sõbralikust </strong>, klõpsa \"Ma olen nõus! \""
+"Kui nõustud olema <strong>lugupidav</strong>, "
+"<strong>konstruktiivne</strong>, <strong>jagama tunnustust</strong> ja "
+"<strong> aidama hoida saiti sõbralikuna </strong>, klõpsa \"Ma olen nõus!\""
 
 #: templates/profiles/scratcher_promotion_modal.html:50
 msgid ""
@@ -11995,7 +12090,7 @@ msgid ""
 "change your mind later, you can always come back)."
 msgstr ""
 "Kui Sa ei soovi saada Scratchijaks, lihtsalt sulgege see leht. (Kui sa "
-"muudad oma meelt hiljem, võid alati tagasi tulla)."
+"muudad hiljem oma meelt, võid alati tagasi tulla)."
 
 #: templates/profiles/scratcher_promotion_modal.html:55
 msgid "Congratulations on becoming a Scratcher!"
@@ -12029,7 +12124,7 @@ msgstr "Lemmikud"
 # 76%
 #: templates/profiles/includes/studios_following_list.html:4
 msgid "Studios I Follow"
-msgstr "Stuudiot, millele ma järgnen"
+msgstr "Stuudiod, mida ma jälgin"
 
 #: templates/projects/base.html:6
 msgid "on Scratch"
@@ -12037,16 +12132,16 @@ msgstr "Scratch'i"
 
 #: templates/projects/base.html:99
 msgid "scripts"
-msgstr "skriptid"
+msgstr "skripti"
 
 #: templates/projects/base.html:100
 msgid "sprites"
-msgstr "spraidid"
+msgstr "spraiti"
 
 #: templates/projects/base.html:104 templates/studio/studio.html:96
 #: templates/studio/studio.html.py:133 templates/studio/studio.html:154
 msgid "See inside"
-msgstr "Vaata seest"
+msgstr "Vaata seestpoolt"
 
 #: templates/projects/base.html:140
 msgid "Based on:"
@@ -12054,7 +12149,7 @@ msgstr "Põhineb:"
 
 #: templates/projects/base.html:152
 msgid "Original project:"
-msgstr "Originaal projekt:"
+msgstr "Originaalprojekt:"
 
 #: templates/projects/base.html:168
 msgid "not shared"
@@ -12064,7 +12159,7 @@ msgstr "ei ole jagatud"
 #: templates/projects/base.html:170
 #, python-format
 msgid "Modified: %(tDate)s"
-msgstr "Viimati muudetud: %(tDate)s"
+msgstr "Viimati muudetud: %(tDate)"
 
 #: templates/projects/base.html:181
 msgid "Favorite this project"
@@ -12076,27 +12171,27 @@ msgstr "Armasta seda projekti"
 
 #: templates/projects/base.html:204
 msgid "Total views"
-msgstr "Kokku vaatamisi"
+msgstr "Vaatamisi kokku"
 
 #: templates/projects/base.html:208
 msgid "View the remix tree"
-msgstr "Vaata remiksimise puud"
+msgstr "Vaata remiksimiste puud"
 
 #: templates/projects/base.html:230
 msgid "Add this project to studios you curate"
-msgstr "Lisa see projekt sinu  kureeritud stuudiosse"
+msgstr "Lisa see projekt sinu kureeritud stuudiosse"
 
 #: templates/projects/base.html:231
 msgid "Just check the studio you wish to add to from the list below"
-msgstr "Vaadata stuudiot, mida soovid lisada allpool olevast nimekirjast"
+msgstr "Vali lisatav stuudio allolevast nimekirjast"
 
 #: templates/projects/base.html:243
 msgid "Download this project file"
-msgstr "Lae alla see projekti faili"
+msgstr "Lae alla projekti fail"
 
 #: templates/projects/base.html:266
 msgid "Embed"
-msgstr "Hõlmatud"
+msgstr "Hõlma (sängita)"
 
 #: templates/projects/base.html:271
 msgid "Copy and paste the embed code above."
@@ -12110,7 +12205,7 @@ msgstr "Jaga"
 # 85%
 #: templates/projects/base.html:330
 msgid "remixes"
-msgstr "Remiksid"
+msgstr "remiksid"
 
 #: templates/projects/base.html:382
 msgid "Tips"
@@ -12128,14 +12223,14 @@ msgstr "Uusimad projektid"
 
 #: templates/projects/project_list.html:13
 msgid "Projects selected by"
-msgstr "Valitud projektid autori poolt"
+msgstr "Projektid valis"
 
 # 75%
 #: templates/projects/project_list.html:20
 #: templates/projects/project_list.html:24
 #: templates/projects/project_list.html:28
 msgid "What the Community is"
-msgstr "Mida kogukond armastab"
+msgstr "Mida kogukond "
 
 # 94%
 #: templates/projects/remixtree.html:6
@@ -12145,11 +12240,11 @@ msgid ""
 "Remix tree for \"%(projectTitle)s\"\n"
 msgstr ""
 "\n"
-"Remiksimise puu \"%(projectTitle)s\"\n"
+"\"%(projectTitle)\" remiksimisete puu\n"
 
 #: templates/projects/remixtree.html:55
 msgid "Remix tree"
-msgstr "Remiksimise tee"
+msgstr "Remiksimiste puu"
 
 #: templates/projects/shared-other.html:17
 #: templates/projects/includes/owner/editable-wip.html:4
@@ -12169,7 +12264,7 @@ msgstr "Märkused ja Autorid"
 #: templates/projects/shared-other.html:42
 #: templates/projects/includes/owner/editable-notes.html:4
 msgid "added by"
-msgstr "lisatud poolt"
+msgstr "lisanud "
 
 # 85%
 #: templates/projects/shared-other.html:67
@@ -12207,8 +12302,8 @@ msgid ""
 "This project is not shared -- so only you can see it. Click share to let "
 "everyone see it!"
 msgstr ""
-"See projekt ei ole jagatud - nii et ainult sina näed seda. Klõpsa jaga "
-"lasteks igaühel näha seda!"
+"See projekt ei ole jagatud, ainult sina näed seda. Klõpsa Jaga, et kõik "
+"saaksid seda näha!"
 
 #: templates/projects/unshared-owner.html:31
 msgid "Note: This project is in the trash folder"
@@ -12229,8 +12324,8 @@ msgid ""
 "decide whether or not it should stay on the site based on the <a href='/"
 "community_guidelines'>Scratch Community Guidelines</a>."
 msgstr ""
-"Saime sinu teate. .Scratchi meeskond vaatab projekti ja otsustab, kas Sa "
-"peaks külastama <a href='/community_guidelines'> Scratch Community "
+"Saime sinu teate. Scratchi meeskond vaatab projekti üle ja otsustab, kas see "
+"võib olla lehel <a href='/community_guidelines'> Scratch Community "
 "Guidelines</a>."
 
 #: templates/projects/includes/explore-bar.html:7
@@ -12243,25 +12338,23 @@ msgstr "Looja"
 
 #: templates/projects/includes/explore-bar.html:39
 msgid "More projects (temporarily disabled)"
-msgstr ""
+msgstr "Enam projekte (ajutiselt mitte kasutatav)"
 
 #: templates/projects/includes/project_list.html:10
 #, python-format
 msgid "%(tDate)s ago"
-msgstr "%(tDate)s tagasi"
+msgstr "%(tDate) tagasi"
 
 #: templates/projects/includes/owner/editable-instructions.html:5
 msgid "Tell people how to use your project</br>(such as which keys to press)."
-msgstr ""
-"Ütle inimestele, kuidas kasutada sinu projekt </br> (nagu mis klahve "
-"vajutada jmt)."
+msgstr "Selgita, kuidas kasutada sinu projekti </br> (mis klahve vajutada jmt)."
 
 #: templates/projects/includes/owner/editable-notes.html:7
 msgid ""
 "What did you change or add in this remix?  Say thanks to the Scratchers "
 "whose projects you remixed."
 msgstr ""
-"Mida sa muutsid või lisasid selles remiksis? Ütle tänu scratcherile, kelle "
+"Mida sa muutsid või lisasid selles remiksis? Täna scratchereid, kelle "
 "projekte sa remiksisid."
 
 #: templates/projects/includes/owner/editable-notes.html:9
@@ -12269,8 +12362,8 @@ msgid ""
 "How did you make the project?</br>Did you use ideas, scripts, or artwork "
 "from other people? Thank them here."
 msgstr ""
-"Kuidas sa tegid projekti?</br>Kas sa kasutad ideid, skripte või kunstitööd "
-"teistelt inimestelt? Täna neid siin."
+"Kuidas sa tegid selle projekti?</br>Kas sa kasutad teiste ideid, skripte vm? "
+"Täna neid siin."
 
 #: templates/projects/includes/shared/shared-project-actions.html:3
 msgid "Share project on other websites"
@@ -12295,7 +12388,7 @@ msgstr "Teavita sellest"
 
 #: templates/projects/includes/shared/shared-project-actions.html:20
 msgid "View Cloud Data activity for this project."
-msgstr "Vaata pilveandmete tegevusi selle projekti jaoks."
+msgstr "Vaata selle projekti pilveandmete muutuseid."
 
 #: templates/projects/includes/shared/shared-project-actions.html:27
 msgid "Report a bug in the beta player"
@@ -12303,7 +12396,7 @@ msgstr ""
 
 #: templates/projects/includes/shared/shared-project-actions.html:28
 msgid "Beta bug?"
-msgstr ""
+msgstr "Beta viga?"
 
 #: templates/registration/login.html:29
 msgid "Login"
@@ -12316,7 +12409,7 @@ msgstr "Unustasid kasutajanime või parooli?"
 #: templates/registration/password_reset_complete.html:8
 #: templates/registration/password_reset_confirm.html:8
 msgid "Password reset confirmation"
-msgstr "Parooli tagasivõtu kinnitus"
+msgstr "Parooli lähtestamise kinnitus"
 
 #: templates/registration/password_reset_confirm.html:21
 msgid "New Password"
@@ -12328,11 +12421,11 @@ msgstr "Muuda minu parooli"
 
 #: templates/registration/password_reset_done.html:8
 msgid "Password reset email sent..."
-msgstr "Parooli taastus saadetud meiliga..."
+msgstr "Parooli lähtestusmeil saadetud ..."
 
 #: templates/registration/password_reset_form.html:8
 msgid "Reset Password"
-msgstr "Taasta parool"
+msgstr "Lähtesta parool"
 
 #: templates/registration/password_reset_form.html:19
 msgid "Enter Username"
@@ -12340,7 +12433,7 @@ msgstr "Sisesta kasutajanimi"
 
 #: templates/registration/password_reset_form.html:25
 msgid "Email address you registered with"
-msgstr "Email aadress registreeritud"
+msgstr "Sinu registreeritud Emaili aadress "
 
 #: templates/registration/password_reset_form.html:29
 msgid "Send me a password reset link!"
@@ -12349,7 +12442,7 @@ msgstr "Saada mulle parooli taastamise link!"
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format
 msgid "Joined %(tDate)s ago / "
-msgstr "Liitunud %(tDate)s tagasi/"
+msgstr "Liitunud %(tDate) tagasi/"
 
 #: templates/search/results.html:22
 msgid "No results found."
@@ -12371,7 +12464,7 @@ msgstr "Toetusleheküljed"
 
 #: templates/search/includes/tabs.html:5
 msgid "All Results"
-msgstr "Kõik Tulemused"
+msgstr "Kõik tulemused"
 
 #: templates/search/includes/tabs.html:17
 msgid "Support"
@@ -12383,7 +12476,7 @@ msgstr "Viimased"
 
 #: templates/search/includes/projects/filters.html:11
 msgid "Most relevant"
-msgstr "Kõige olulisemad"
+msgstr "Olulisimad"
 
 #: templates/stats/index.html:58
 msgid "Monthly Activity Trends"
@@ -12403,7 +12496,7 @@ msgstr "Scratcherid maailmas"
 
 #: templates/stats/index.html:134
 msgid "Monthly Project Shares"
-msgstr "Jagatud projektid kuus"
+msgstr "Kuu jooksul jagatud projektid"
 
 #: templates/stats/index.html:153
 msgid "Monthly Comment Activity"
@@ -12431,7 +12524,7 @@ msgid ""
 "Unshared Projects (<span data-content=\"unshared-count\">"
 "%(notshared_count)s</span>)"
 msgstr ""
-"Jagmata prjektid (<span data-content=\"unshared-count\">%"
+"Jagmata projektid (<span data-content=\"unshared-count\">%"
 "(notshared_count)s</span>)"
 
 #: templates/studio/studio.html:9
@@ -12468,7 +12561,7 @@ msgstr "Viimati muudetud:"
 # 87%
 #: templates/studio/studio.html:117
 msgid "Unshare"
-msgstr "Jagamata"
+msgstr "Ära jaga"
 
 #: templates/studio/includes/galleries_action_bar.html:8
 msgid "View:"
@@ -12476,7 +12569,7 @@ msgstr "Vaade:"
 
 #: templates/studio/includes/galleries_action_bar.html:17
 msgid "Most Projects"
-msgstr "Enamik projektidest"
+msgstr "Enamik projekte"
 
 #: templates/studio/includes/galleries_action_bar.html:18
 msgid "Last updated"
@@ -12484,7 +12577,7 @@ msgstr "Viimati uuendatud"
 
 #: templates/studio/includes/galleries_list.html:26
 msgid "You do not own any galleries. <a href=>Create one!</a>"
-msgstr "Sinul ei ole ühtegi galeriid. <a href=>Loo!</a>"
+msgstr "Sul ei ole ühtegi galeriid. <a href=>Loo!</a>"
 
 #: templates/studio/includes/gallery_list.html:19
 #, python-format
@@ -12497,7 +12590,7 @@ msgstr "Sinul ei ole ühtegi galeriid"
 
 #: templates/studio/includes/project_action_bar.html:16
 msgid "Not shared"
-msgstr "Ei ole jagatud"
+msgstr "Jagamata"
 
 #: templates/studio/includes/project_action_bar.html:37
 msgid "+ New Project"
@@ -12505,7 +12598,7 @@ msgstr "+ Uus projekt"
 
 #: templates/studio/includes/project_list.html:20
 msgid "Created:"
-msgstr "Lodud:"
+msgstr "Loodud:"
 
 #: templates/studio/includes/sort-galleries-dropdown.html:12
 msgid "Owned by me"
@@ -12521,7 +12614,7 @@ msgstr "Kontakteeru meiega"
 
 #: templates/comments/list.html:20
 msgid "View previous comments"
-msgstr "Vaata eelmist kommentaari"
+msgstr "Vaata eelmisi kommentaare"
 
 #: templates/comments/includes/comment.html:26
 msgid "ago"
@@ -12538,7 +12631,7 @@ msgstr "Stuudio kirjeldus"
 #: templates/galleries/gallery.html:21
 #, python-format
 msgid "created %(tDate)s"
-msgstr "loodud %(tDate)s"
+msgstr "loodud %(tDate)"
 
 #: templates/galleries/gallery.html:25
 msgid "Read more &raquo;"
@@ -12551,7 +12644,7 @@ msgstr "Veel infot"
 #: templates/galleries/gallery_list.html:4
 #, python-format
 msgid "%(username)s Studio (%(galleries.count)s)"
-msgstr "%(username)s Stuudio (%(galleries.count)s)"
+msgstr "%(username) Stuudio (%(galleries.count)s)"
 
 #: templates/homepage/index.html:55
 msgid "Welcome, Scratchers!"
@@ -12562,8 +12655,8 @@ msgid ""
 "Thanks for helping us find and fix glitches in Scratch 2.0! Found a bug? Let "
 "us know!"
 msgstr ""
-"Täname abi eest tõrgete leidmisel ja fikseerimisel Scratch 2.0s! Leidsid "
-"vea? Anna meile teada!"
+"Täname abi eest Scratch 2.0 tõrgete leidmisel ja parandamisel! Leidsid vea? "
+"Anna meile teada!"
 
 #: templates/homepage/index.html:57
 msgid "Report bugs here &raquo;"
@@ -12575,7 +12668,7 @@ msgstr "Proovi uusi võimalusi"
 
 #: templates/homepage/index.html:65
 msgid "Here’s a description of what’s new in Scratch 2.0."
-msgstr "Siin on kirjeldus sellest, mida uut on Scratch 2.0."
+msgstr "Siin on kirjeldus Scratch 2.0 uuenduste kohta"
 
 #: templates/homepage/index.html:66
 msgid "Check it out! &raquo;"
@@ -12583,11 +12676,11 @@ msgstr "Kontrolli seda! &raquo;"
 
 #: templates/homepage/index.html:81
 msgid "Scratch 2.0 Beta"
-msgstr "Scratch 29 beta"
+msgstr "Scratch 2.0 beta"
 
 #: templates/homepage/index.html:83
 msgid "Welcome to the Scratch 2.0 Beta website!"
-msgstr "Tere tulemast Scratch 2.0 beta veebilehele!"
+msgstr "Tere tulemast Scratch 2.0 Beta veebilehele!"
 
 #: templates/homepage/index.html:86
 msgid ""
@@ -12595,7 +12688,7 @@ msgid ""
 "Check out the <b>Featured Projects</b> and <b>Featured Studios</b> below.  "
 "Click <a href=\"/help\">Help</a> to learn more."
 msgstr ""
-"Palun uurii ja katseta seda uue Scratch eelvaate versiooni . Tutvu <b> "
+"Palun uurii ja katseta seda uue Scratch eelvaate versiooni. Tutvu <b> "
 "Eelistatud projektidega </ b> ja <b> Eelistatud stuudiotega </ b>. Klõpsa <a "
 "href=\"/help\"> Abi </ a>, et saada lisateavet."
 
@@ -12604,8 +12697,8 @@ msgid ""
 "The Scratch 2.0 Beta is open to everyone. But you can only log in if you "
 "created your Scratch account before January 26th."
 msgstr ""
-"Scratch 2.0 beta on avatud kõigile. Sisse saad logida ainult siis, kui oled "
-"loonud oma Scratchi konto enne 26. jaanuarit."
+"Scratch 2.0 Beta on avatud kõigile. Sisse saad logida ainult siis, kui oled "
+"loonud oma Scratchi konto enne 26. jaanuari."
 
 #: templates/homepage/index.html:92
 msgid ""
@@ -12613,14 +12706,14 @@ msgid ""
 "help us by <a href=\"/forums/3/\">reporting bugs and glitches</a>. The sooner "
 "we find and fix them, the sooner we can officially release Scratch 2.0."
 msgstr ""
-"Meil on veel lisada mõned võimalused jafikseerida mitmeid tõrkeid! Te saate "
-"aidata meid <a href=\"/forums/3/\"> vigadeead ja tõrgete teated </ a>. Mida "
+"Meil on veel lisada mõned võimalused ja parandada mitmeid vigu! Te saate "
+"meid aidata: <a href=\"/forums/3/\"> vigade ja tõrgete teated </ a>. Mida "
 "varem me leiame ja parandadame need, seda kiiremini saame ametlikult "
-"vüljastada Scratch 2.0."
+"väljastada Scratch 2.0."
 
 #: templates/homepage/index.html:95
 msgid "Find out more about"
-msgstr "Loe lähemalt sellest"
+msgstr "Loe sellest lähemalt"
 
 #: templates/homepage/index.html:95
 msgid "the move to Scratch 2.0"
@@ -12632,11 +12725,11 @@ msgstr "Mida kogukond jagab"
 
 #: templates/projects/base.html:148
 msgid "Total remixes"
-msgstr "Kokku remiksimisi"
+msgstr "Remikse kokku"
 
 #: templates/projects/base.html:195
 msgid "views"
-msgstr "vaatamised"
+msgstr "vaatamisi"
 
 #: templates/projects/shared-other.html:66
 #: templates/projects/shared-owner.html:30
