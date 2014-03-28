@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-26 20:55+0000\n"
-"PO-Revision-Date: 2014-03-25 02:31+0200\n"
+"PO-Revision-Date: 2014-03-27 19:44+0200\n"
 "Last-Translator: Jüri <juri.vilipold@ttu.ee>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: et\n"
@@ -824,9 +824,11 @@ msgstr "Teema lahtikleebitud."
 msgid "You don't have permission to delete this post."
 msgstr "Sul ei ole õigust seda postitust kustutada."
 
+# 90%
 #: s2forums/djangobb_forum/views.py:996 s2forums/djangobb_forum/views.py:1028
+#, fuzzy
 msgid "You don't have permission to mark this post."
-msgstr ""
+msgstr "Sul ei ole õigust muuta seda postitust."
 
 #: s2forums/djangobb_forum/views.py:1000 s2forums/djangobb_forum/views.py:1032
 msgid "There was not enough data collected to mark this post."
@@ -959,7 +961,7 @@ msgstr "Redigeeri postitust"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:41
 msgid "Silent edit (don't display 'Edited by ...' in topic view)"
-msgstr "Vaikne muutmine (ei näidata 'Muudetud ... poolt...' teema vaates)"
+msgstr "Vaikne muutmine (ei näidata 'Muutis ... ' teemade vaates)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:45
 msgid "Save"
@@ -1070,7 +1072,7 @@ msgstr "teemad"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
 msgid "posts"
-msgstr "postitused"
+msgstr "postitust"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:78
 msgid "Change your signature"
@@ -2805,9 +2807,11 @@ msgstr "Valitud projektid"
 msgid "Featured Studios"
 msgstr "Valitud stuudiod"
 
+# 90%
 #: templates/homepage/index.html:198
+#, fuzzy
 msgid "Learn more"
-msgstr ""
+msgstr "Loe lähemalt"
 
 # 75%
 #: templates/homepage/index.html:199
@@ -2885,7 +2889,7 @@ msgstr ""
 "The Lifelong Kindergarten uurimisgrupp respekteerib teiste intellektuaalset "
 "omandit, ka meie kasutajate oma. Kui sa arvad, et su töö on kopeeritud "
 "viisil, mis kujutab endast autoriõiguste rikkumist, palun saada meil "
-"copyright@scratch.mit.edu või saada oma kaebus:"
+"copyright@scratch.mit.edu või esita oma kaebus:"
 
 #: templates/info/DMCA.html:22
 msgid ""
@@ -3938,7 +3942,6 @@ msgid "Scratch 2 Offline Editor"
 msgstr "Scratch 2 offline-redaktor (beta)"
 
 #: templates/info/scratch2download.html:28
-#, fuzzy
 msgid ""
 "\n"
 "            <p>The Scratch Team is pleased to announce that the Scratch 2 "
@@ -3972,23 +3975,22 @@ msgstr ""
 "bit).</p>\n"
 "           \n"
 "            <p><h4>Installeerimisjuhend</h4></p>\n"
-"            <p>Click <strong>INSTALL NOW</strong> (below) and follow the "
-"directions.\n"
-"            It will install the Adobe AIR runtime system if you need it, "
-"then install the Scratch 2 application. </p>\n"
-"            <p>When installing, click <strong>\"Yes\" or \"Allow\"</strong> when "
-"the browser asks for permission. \n"
-"            (In <strong>Chrome</strong>, look for the question at the "
-"<strong>top</strong> of the browser window.)\n"
-"            Click <strong>\"Open\"</strong> when asked if you want to save or "
-"open the .air file. \n"
+"            <p>Click <strong>INSTALLEERI NÜÜD</strong> (allpool) ja järgi "
+"juhiseid.\n"
+"            See installeerib kõigepealt Adobe AIR runtime-versiooni (kui "
+"vaja) ja seejärel Scratch 2 rakenduse. </p>\n"
+"            <p>Installeerimisel vali <strong>\"Yes\" (jah) või \"Allow\" "
+"(luban)</strong>, kui brauser küsib. \n"
+"            (In <strong>Chrome</strong>, vaata küsimust brauseriakna "
+"<strong>ülaservas</strong>.)\n"
+"            Klõpsa <strong>\"Open\" (ava)</strong>, kui küsitakse, et "
+"salvestada või avada faili .air . \n"
 "            </p>\n"
-"            <p>The file is large (23MB), so please be "
-"<strong>patient</strong> while it downloads, especially on slow "
-"connections.</p>\n"
-"            <p>* If you get an error message when installing, delete any "
-"previous Scratch 2 Offline Editor app and try again. Or, see "
-"<strong>Optional Download</strong>, below.\n"
+"            <p>Fail on üsna suur (23MB), seepärast varu allalaadimiseks "
+"<strong>kannatlikkust</strong>, eriti aeglase võrguühenduse puhul.</p>\n"
+"            <p>* Kui saad installeerimisel veateate, kustuta kõik Scratch 2 "
+"Offline-editor app'id ja proovi uuesti. Või vaata <strong>Optional Download "
+"(valikuline allalaadimine)</strong> allpool.\n"
 "            "
 
 #: templates/info/scratch2download.html:113
@@ -4048,54 +4050,56 @@ msgid ""
 "       "
 msgstr ""
 " \n"
-"<p><h4>Optional Download</h4></p>\n"
-"<p>If you prefer to download the installers to your local drive: </br>\n"
-"(1) If you don't have it, download and install the latest <a "
-"href=\"http://get.adobe.com/air/\">Adobe AIR 3.x</a>. For Linux, use <a href=\""
-"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin\">AIR "
-"2.6.0 for Linux</a> (15MB).</br>\n"
-"&nbsp;&nbsp;&nbsp; Note: For older Mac OSx 10.5 or below, use: <a "
+"<p><h4>Valikuline allalaadimine</h4></p>\n"
+"<p>Kui eelistad installifailid laadida oma arvuti kettale: </br>\n"
+"(1) Kui sul seda veel pole, lae alla ja installeeri <a "
+"href=\"http://get.adobe.com/air/\">Adobe AIR 3.x</a> viimane versioon. Linuxi "
+"jaoks kasuta <a href=\"http://airdownload.adobe.com/air/lin/download/2.6/Adob"
+"eAIRInstaller.bin\">AIR 2.6.0 for Linux</a> (15MB).</br>\n"
+"&nbsp;&nbsp;&nbsp; Märkus: Vanema Mac OSx 10.5 või varasema korral kasuta: "
+"<a "
 "href=\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.dmg\">Adobe "
 "AIR 2.6.0 Mac </a>(18MB).</br>\n"
-"(2) And then download and install the <a "
+"(2) Siis lae alla ja installeeri <a "
 "href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch.air\">Scratch "
 "installer</a>.</p>\n"
 "\n"
 "\n"
-"<h4>Known issues to be fixed later:</h4>\n"
+"<h4>Teadaolevad probleemid, mis parandatakse hiljem:</h4>\n"
 "<p><ul>\n"
-"<li>Graphic effects blocks (in \"Looks\") may slow down projects due to a "
-"known Flash bug. A fix will be available in a future update.</li>\n"
-"<li>The <strong>backpack</strong> is not yet available.</li>\n"
+"<li>Graafikaefektide plokk (grupis \"välimus\") võib teha projekti aeglaseks "
+"(teadaolev Flash bug). Kuulub parandamisele järgmistes versioonides.</li>\n"
+"<li><strong>Seljakott</strong> ei ole veel kasutatav.</li>\n"
 "</ul></p>\n"
 "\n"
-"<p><h4>Updates</h4></p>\n"
-"<p>The Offline Editor can update itself (with user permission). \n"
-"It will check for updates at startup or you can use the \"Check for updates\" "
-"command in the file menu. </p> \n"
-"<p>Update v370 - September 10, 2013: Fixes a problem with project saving "
-"that sometimes prevented the saved project from being opened. Also now opens "
-"and repairs projects that were saved incorrectly by earlier versions of the "
-"Offline Editor.</p>\n"
-"<p>Update v366 - August 29, 2013: Can upload and share to website; Compiled "
-"with Adobe Air 2.6 so it can work on some versions of Linux and older Mac "
-"OSX; Shorter app name; Music MP3 upload fixed; Top-right text fixed; Tips "
-"closes in presentation mode.</p>\n"
+"<p><h4>Uuendused <i>(Updates)</i></h4></p>\n"
+"<p>Offline-editor uuendub ise (kui kasutaja lubab). \n"
+"Käivitamisel kontrollitakse uuenduste olemasolu. Võid kasutada ka korraldust "
+"\"Check for updates\" (otsi uuendusi) file-menüüs. </p> \n"
+"<p>Update v370 - September 10, 2013: Parandatud on projekti salvestamisel "
+"vahel ilmnenud probleem, mis sulges faili pärast salvestamist. Samuti "
+"avatatakse ja parandatakse nüüd eelmistes Offline-editori versioonides "
+"vigaselt salvestatud projektid.</p>\n"
+"<p>Update v366 - August 29, 2013: Saab üles laadida ja jagada veebilehel; "
+"kompileeritud Adobe Air 2.6 -ga, seega töötab ka mõnedes Linuxi versioonides "
+"ja vanemas Mac OSX; lühemad app nimed; MP3 üleslaadimine parandatud; Top-"
+"right text parandatud; esitamisrežiimis sulgub vihjete aken.</p>\n"
 "\n"
 "\t\n"
 "\n"
-"<p><h4>Starter Projects and Support Materials</h4></p>\n"
-"<p>The Scratch 2 Starter Projects are available for download in this <a "
-"href=\"%(STATIC_URL)ssa/Scratch2StarterProjects.zip\">Starter Projects file "
+"<p><h4>Stardiprojektid ja abimaterjalid</h4></p>\n"
+"<p>Scratch 2 stardiprojektid allalaadimiseks on <a href=\"%"
+"(STATIC_URL)ssa/Scratch2StarterProjects.zip\">Starter Projects file "
 "(zip)</a>.</p>\n"
-"<p>You can also download the <a href=\"%(STATIC_URL)spdfs/help/Getting-"
-"Started-Guide-Scratch2.pdf\">Getting Started Guide (PDF)</a> and <a href=\"%"
-"(STATIC_URL)spdfs/help/Scratch2Cards_Jan2013.pdf\">Scratch Cards (PDF)</a>. \n"
+"<p>Alla laadida saab ka <a href=\"%(STATIC_URL)spdfs/help/Getting-Started-"
+"Guide-Scratch2.pdf\">Alustusjuhend (PDF)</a> ja <a href=\"%"
+"(STATIC_URL)spdfs/help/Scratch2Cards_Jan2013.pdf\">Scratchi Kaardid "
+"(PDF)</a>. \n"
 "\n"
-"<p><h4>Feedback</h4></p>\n"
-"<p>Please report feedback and bugs on the <a "
-"href=\"http://scratch.mit.edu/discuss/topic/14690/\">Scratch discussion "
-"forums</a>.\n"
+"<p><h4>Tagasiside</h4></p>\n"
+"<p>Tagasiside ja teated vigade kohta saada <a "
+"href=\"http://scratch.mit.edu/discuss/topic/14690/\">Scratch arutelu "
+"foorumitesse</a>.\n"
 "</p>\n"
 "\n"
 "\n"
@@ -4107,54 +4111,62 @@ msgid ""
 "download. You can still share projects from 1.4 to the Scratch website. "
 "(However, projects created in Scratch 2.0 cannot be opened in 1.4.)"
 msgstr ""
+"Scratchi eelmine versioon 1.4 on endiselt kättesaadav. Ka Scratch 1.4 "
+"projekte saab jagada Scratchi veebilehel. (Kuigi Scratch 2.0 projektid "
+"versioonis 1.4 ei avane.)"
 
 #: templates/info/scratch_1.4.html:31
 msgid "Scratch 1.4 For Mac OS X"
-msgstr ""
+msgstr "Scratch 1.4 Mac OS X jaoks"
 
 #: templates/info/scratch_1.4.html:32
 msgid "Compatible with Mac OSX 10.4 or later"
-msgstr ""
+msgstr "Ühilduv alates Mac OSX 10.4"
 
 #: templates/info/scratch_1.4.html:41
 msgid "Scratch 1.4 for Windows"
-msgstr ""
+msgstr "Scratch 1.4 Windows' jaoks"
 
 #: templates/info/scratch_1.4.html:42
 msgid "Compatible with Windows 2000, XP, Vista, 7, and 8"
-msgstr ""
+msgstr "Ühilduv Windows versioonidega 2000, XP, Vista, 7 ja 8"
 
 #: templates/info/scratch_1.4.html:44
 msgid ""
 "For network deployments, use the <a href=\"http://download.scratch.mit.edu/"
 "Scratch1.4.msi.installer.zip\">Scratch1.4.msi.installer.zip</a>"
 msgstr ""
+"Võrguversioonides kasuta <a href=\"http://download.scratch.mit.edu/Scratch1.4"
+".msi.installer.zip\">Scratch1.4.msi.installer.zip</a>"
 
 #: templates/info/scratch_1.4.html:52
 msgid "Scratch 1.4 for Debian / Ubuntu"
-msgstr ""
+msgstr "Scratch 1.4 Debian / Ubuntu jaoks"
 
 #: templates/info/scratch_1.4.html:53
 msgid "Compatible with Ubuntu 12.04 or later"
-msgstr ""
+msgstr "Ühilduv Ubuntu 12.04 või hilisematega"
 
 #: templates/info/scratch_1.4.html:54
 msgid "Install Scratch with Software Center"
-msgstr ""
+msgstr "Installeeri Scratch tarkvarakeskuse (<i>Software Center</i>) kaudu"
 
 #: templates/info/scratch_1.4.html:55
 msgid ""
 "or <a href=\"http://ubuntu.media.mit.edu/ubuntu//pool/universe/s/scratch/"
 "scratch_1.4.0.6~dfsg1-2~ubuntu12.04.1_all.deb\">download here</a>"
 msgstr ""
+"või <a href=\"http://ubuntu.media.mit.edu/ubuntu//pool/universe/s/scratch/scr"
+"atch_1.4.0.6~dfsg1-2~ubuntu12.04.1_all.deb\">lae alla siin</a>"
 
 #: templates/info/scratch_1.4.html:61
 msgid "Frequently Asked Questions about Scratch 1.4"
-msgstr ""
+msgstr "Korduma kippuvad küsimused Scratch 1.4 kohta"
 
 #: templates/info/scratch_1.4.html:63
+#, fuzzy
 msgid "What resources are available to help me learn how to use Scratch 1.4?"
-msgstr ""
+msgstr "Millised on võimalused Scratch 1.4 kasutama õppimiseks?"
 
 #: templates/info/scratch_1.4.html:64
 msgid ""
@@ -4170,9 +4182,8 @@ msgstr ""
 
 # 91%
 #: templates/info/scratch_1.4.html:66
-#, fuzzy
 msgid "What are the system requirements for Scratch 1.4?"
-msgstr "Millised on Scratchi nõuded süsteemile?"
+msgstr "Millised on Scratch 1.4 nõuded süsteemile?"
 
 #: templates/info/scratch_1.4.html:67
 msgid ""
@@ -4189,6 +4200,17 @@ msgid ""
 "microphones built in. Scratch 1.4 can use a USB or built-in camera "
 "(optional).</br></p>"
 msgstr ""
+"<p>Displei: 800 x 480 või suurem, värv 16-bitti või rohkem\n"
+"\t\t</br>Operatsioonisüsteem:  Windows 2000 või hilisem, Mac OS X 10.4 või "
+"hilisem, Ubuntu Linux 9.04 või hilisem (teiste Linux versioonide kohta vaata "
+"Linuxi installeerimise lehte)\n"
+"\t\t</br>Ketas:vähemalt 120 MB vaba ruumi Scratchi installeerimiseks.\n"
+"\t\t</br>CPU ja mälu: enamikul arvutitel on piisavalt mälu Scratch 1.4 jaoks, "
+"aga väga vanadel arvutitel võib Scratch olla aeglane.\n"
+"\t\t</br>Sound / Video: muusika kuulamiseks on vaja kõlareid (või "
+"kõrvaklappe), lindistamiseks on vajalik mikrofon. Paljudel sülearvutitel on "
+"kõlarid ja mikrofon sisse ehitatud. Scratch 1.4 oskab kasutada ka USB või "
+"sisseehitatud kaamerat (valikuline).</br></p>"
 
 #: templates/info/scratch_1.4.html:73
 msgid ""
@@ -4281,7 +4303,7 @@ msgstr "Riieta Tera't"
 # 93%
 #: templates/info/starter_projects.html:93
 msgid "Paint with Gobo"
-msgstr "Joonistamine Goboga"
+msgstr "Joonista Goboga"
 
 #: templates/info/starter_projects.html:97
 msgid "Wizard Spells"
@@ -4702,7 +4724,7 @@ msgid ""
 "and researchers through conferences, journals, and other publications. You "
 "can find out more on our <a href=\"/info/research\">Research page</a>."
 msgstr ""
-"Osa Scratchi kodulehel kogutavast infost kasutatakse uuringuteks, et "
+"Osa Scratchi kodulehel kogutavast infost kasutatakse uuringutes, et "
 "täiendada meie teadmisi sellest, kuidas inimesed Scratchi abil õpivad. Nende "
 "uuringute tulemusi on avaldatud konverentsidel, ajakirjades jm. Rohkem "
 "infot selle kohta leidad meie <a href=\"/info/research\">uuringute lehel</a>."
@@ -4712,7 +4734,7 @@ msgid ""
 "Does the Scratch Team sell or rent information about users of Scratch to "
 "anyone?"
 msgstr ""
-"Kas Scratchi tiim müüb või rendib kellelegile informatsiooni Scratch "
+"Kas Scratchi tiim müüb või rendib kellelegi informatsiooni Scratch "
 "kasutajate kohta?"
 
 #: templates/info/help/faq.html:82
@@ -5051,9 +5073,9 @@ msgid ""
 "Assembla</a>."
 msgstr ""
 "Scratch 2 lähtekood (veebileht ja redaktor) ei ole veel kättesaadavad. <a "
-"href =\"/scratch_1.4\"> Scratch 1.4 </a> lähtekood, mis on kirjutatud "
-"Squeak'is on saadaval <a href=\"https://github.com/LLK/Scratch_1.4\">on github "
-"</a>. Scratchi esimese versiooni - ScratchR - lähtekood on saadaval <a "
+"href =\"/scratch_1.4\"> Scratch 1.4 </a> Squeak'is kirjutatud lähtekoodi leiad "
+"<a href=\"https://github.com/LLK/Scratch_1.4\">on github </a>. Scratchi "
+"esimese versiooni - ScratchR - lähtekood on saadaval <a "
 "href=\"http://svn.assembla.com/svn/scratchr/\">on Assembla</a>."
 
 #: templates/info/help/faq.html:168
@@ -5310,7 +5332,7 @@ msgstr ""
 
 #: templates/info/help/faq.html:218
 msgid "How long does it take for cloud data to reach another Scratcher?"
-msgstr "Kui kaua võtab aega pilveandmetel jõudmiseks teise kasutajani?"
+msgstr "Kui kaua läheb pilveandmetel aega teise kasutajani jõudmiseks?"
 
 #: templates/info/help/faq.html:219
 msgid ""
@@ -5329,7 +5351,7 @@ msgstr "Korduma Kippuvad Küsimused (KKK)"
 
 #: templates/info/help/faq_layout.html:24
 msgid "Browse FAQ"
-msgstr ""
+msgstr "Sirvi KKK"
 
 #: templates/info/help/index.html:10
 msgid "Get Started with Scratch"
@@ -5346,7 +5368,7 @@ msgstr "Proovige neid </br> stardiprojekte"
 
 #: templates/info/help/index.html:32
 msgid "Watch the Getting Started video"
-msgstr ""
+msgstr "Vaata alustamise videot (<i>Getting Started</i>)"
 
 #: templates/info/help/index.html:37
 msgid "Scratch Guides"
@@ -5475,7 +5497,7 @@ msgstr ""
 
 #: templates/info/help/index.html:125
 msgid "Scratch 2 Offline Editor (Beta)"
-msgstr "Scratch 2 Offline redaktor (Beta)"
+msgstr "Scratch 2 offline-editor (Beta)"
 
 #: templates/info/help/index.html:127
 msgid "Download the Scratch 2 offline editor (beta version)"
@@ -5487,15 +5509,15 @@ msgstr "Scratch 1.4 allalaadimine"
 
 #: templates/info/help/index.html:131
 msgid "Links and information on the previous version of Scratch."
-msgstr "Lingid ja teabe eelmise Scratchi versiooni kohta."
+msgstr "Lingid ja teave Scratchi eelmise versiooni kohta."
 
 #: templates/info/help/index.html:134
 msgid "Scratch Statistics"
-msgstr ""
+msgstr "Scratchi statistika"
 
 #: templates/info/help/index.html:136
 msgid "Explore up-to-date statistics about the Scratch online community."
-msgstr ""
+msgstr "Uuem statistika Scratchi online-kogukonna kohta "
 
 #: templates/info/help/index.html:139
 msgid ""
@@ -5512,7 +5534,7 @@ msgid ""
 "WeDo\">LEGO WeDo</a>, or <a href=\"https://www.sparkfun.com/"
 "products/10311\">PicoBoard</a>."
 msgstr ""
-"Ühenda oma Scratch projekti füüsilise maailmaga <a href = "
+"Ühenda oma Scratch projekt füüsilise maailmaga <a href = "
 "\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
 "href=\"http://info.scratch.mit.edu/WeDo\">LEGO WeDo</a>, or <a "
 "href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
@@ -5532,7 +5554,6 @@ msgstr "Scratch - Videod"
 
 # 85%
 #: templates/info/help/videos.html:26
-#, fuzzy
 msgid "Getting Started with Scratch"
 msgstr "Alustame Scratchiga"
 
@@ -5550,7 +5571,7 @@ msgstr "Sissejuhatavad juhendid"
 
 #: templates/info/help/videos.html:47
 msgid "Make your sprite move forward"
-msgstr "Pane sprait liikuma"
+msgstr "Liiguta spraiti edasi"
 
 # 80%
 #: templates/info/help/videos.html:52
@@ -5570,7 +5591,7 @@ msgstr "Pane spraidid tantsima"
 
 #: templates/info/help/videos.html:69
 msgid "Make your sprite follow the mouse"
-msgstr "Pane  sprait järgnema hiirele"
+msgstr "Pane sprait järgnema hiirekursorile"
 
 # 80%
 # 77%
@@ -5580,7 +5601,7 @@ msgstr "Pane sprait liuglema"
 
 #: templates/info/help/videos.html:81
 msgid "Make your sprite jump when you clap"
-msgstr "Pane sprait hüpama, kui plaksutad"
+msgstr "Pane sprait hüppama, kui plaksutad"
 
 #: templates/info/help/videos.html:86
 msgid "Make your sprite spin when you say something"
@@ -5592,15 +5613,15 @@ msgstr "Tee lihtne mäng"
 
 #: templates/info/help/videos.html:98
 msgid "Make a story"
-msgstr "Tee lugu"
+msgstr "Tee oma lugu"
 
 #: templates/info/help/videos.html:110
 msgid "Paint Editor Tips"
-msgstr "Joonistusredaktori tutvustus"
+msgstr "Joonistusredaktori nõuanded"
 
 #: templates/info/help/videos.html:119
 msgid "Change the cat or other characters"
-msgstr "Muutke kassi või muid sümboleid"
+msgstr "Muuda kassi või teisi tegelasi"
 
 #: templates/info/help/videos.html:124
 msgid "Differences between vector and bitmap"
@@ -5612,11 +5633,11 @@ msgstr "Vektor- ja rastergraafika vahetamine"
 
 #: templates/info/help/videos.html:138
 msgid "Fill a vector shape"
-msgstr "Vektorgraafika kujundi täitmine"
+msgstr "Kujundi täitmine vektorgraafikas"
 
 #: templates/info/help/videos.html:143
 msgid "Erasing in vector mode"
-msgstr "Kustutamine vektorolekus"
+msgstr "Kustutamine vektorgraafikas"
 
 #: templates/info/help/videos.html:148
 msgid "Drawing with reshape"
@@ -10716,13 +10737,17 @@ msgstr ""
 "\n"
 "  "
 
+# 98%
 #: templates/info/help/studio/tips/howto/arrowkeys.html:7
+#, fuzzy
 msgid "Points sprite towards mouse-pointer or another sprite."
-msgstr ""
+msgstr "Pöörab spraidi hiire kursori või teise spraidi suunas"
 
+# 84%
 #: templates/info/help/studio/tips/howto/arrowkeys.html:18
+#, fuzzy
 msgid "changes the direction of the current sprite."
-msgstr ""
+msgstr "Määrab spraidi suuna"
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:11
 msgid "To make a sprite bounce around the Stage, try this script:"
@@ -10811,9 +10836,11 @@ msgstr "Siis klõpsa seda plokki, et panna kass liikuma:"
 msgid "Now, <a href=\"../get-started-2/\">add a sound</a>."
 msgstr ""
 
+# 85%
 #: templates/info/help/studio/tips/howto/get-started-1.html:26
+#, fuzzy
 msgid "1 of 13"
-msgstr ""
+msgstr "1 10-st"
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:6
 msgid " 10 Add a Sprite"
@@ -10862,9 +10889,11 @@ msgstr ""
 "<img src = \"%(STATIC_URL)s/images/help/10-cassy-sprite.png\"> </p>\n"
 "<p> Lohista kujund laval sobivasse kohta. </p>\n"
 
+# 75%
 #: templates/info/help/studio/tips/howto/get-started-10.html:26
+#, fuzzy
 msgid "10 of 13"
-msgstr ""
+msgstr "1 10-st"
 
 # 77%
 #: templates/info/help/studio/tips/howto/get-started-11.html:7
@@ -10924,9 +10953,11 @@ msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/cassy-dance-animation.gif\" />\n"
 "</div> \n"
 
+# 75%
 #: templates/info/help/studio/tips/howto/get-started-11.html:29
+#, fuzzy
 msgid "11 of 13"
-msgstr ""
+msgstr "1 10-st"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:6
 msgid " Share!"
@@ -10961,9 +10992,11 @@ msgid ""
 msgstr ""
 "Kui oled valmis, et teised näevad sinu projekti, klõpsa nuppu<b>Jaga</b>."
 
+# 75%
 #: templates/info/help/studio/tips/howto/get-started-12.html:27
+#, fuzzy
 msgid "12 of 13"
-msgstr ""
+msgstr "1 10-st"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:6
 msgid "Now What?"
@@ -11004,9 +11037,11 @@ msgstr ""
 "(STATIC_URL)s/images/help/house-icon.png\"></a> <a "
 "href=\"../../home/\">Selgitused</a></b>.\n"
 
+# 87%
 #: templates/info/help/studio/tips/howto/get-started-13.html:23
+#, fuzzy
 msgid "13 of 13"
-msgstr ""
+msgstr "3. 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:8
 msgid "2 Add a Sound"
@@ -11030,9 +11065,11 @@ msgstr "Klõpsa ja kuula."
 msgid "(Make sure your computer's speakers are on.)"
 msgstr "(Veendu, et sinu arvuti kõlarid on sisse lülitatud.)"
 
+# 85%
 #: templates/info/help/studio/tips/howto/get-started-2.html:26
+#, fuzzy
 msgid "2 of 13"
-msgstr ""
+msgstr "2. 10-st"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:6
 msgid "3 Start a Dance"
@@ -11058,9 +11095,8 @@ msgstr ""
 msgid "Click on any of the blocks to run the stack:"
 msgstr "Klõpsa skripti suvalist plokki skripti käivitamiseks:"
 
-#: templates/info/help/studio/tips/howto/get-started-3.html:21
-msgid "3 of 13"
-msgstr "3. 13-st"
+#~ msgid "3 of 13"
+#~ msgstr "3. 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-4.html:6
 msgid "4 Again and Again"
@@ -11084,9 +11120,11 @@ msgstr ""
 msgid "Click to run the stack:"
 msgstr "Käivitamiseks klõpsa pinu:"
 
+# 85%
 #: templates/info/help/studio/tips/howto/get-started-4.html:19
+#, fuzzy
 msgid "4 of 13"
-msgstr ""
+msgstr "3. 13-st"
 
 # 86%
 #: templates/info/help/studio/tips/howto/get-started-5.html:6
@@ -11114,9 +11152,11 @@ msgstr ""
 "<img src = \"%(STATIC_URL)s/images/help/5c-say-new.png\">\n"
 "<p>Käivitamisks klõpsa pinu.</p>\n"
 
+# 85%
 #: templates/info/help/studio/tips/howto/get-started-5.html:21
+#, fuzzy
 msgid "5 of 13"
-msgstr ""
+msgstr "3. 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-6.html:6
 msgid "6 Green Flag"
@@ -11152,9 +11192,11 @@ msgstr ""
 "<p>Tegevuse peatamiseks klõpsa punast nuppu: <img src = \"%"
 "(STATIC_URL)s/images/help/stop-sign-small.png\"> </p>\n"
 
+# 85%
 #: templates/info/help/studio/tips/howto/get-started-6.html:22
+#, fuzzy
 msgid "6 of 13"
-msgstr ""
+msgstr "3. 13-st"
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-7.html:5
@@ -11182,9 +11224,11 @@ msgstr ""
 "\n"
 "<p>Klõpsa, et näha, mis toimub.</p>\n"
 
+# 85%
 #: templates/info/help/studio/tips/howto/get-started-7.html:23
+#, fuzzy
 msgid "7 of 13"
-msgstr ""
+msgstr "3. 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:6
 msgid "8 Key Press"
@@ -11203,9 +11247,11 @@ msgstr "Nüüd vajuta tühikuklahvi ja vaata mis juhtub."
 msgid "You can choose a different key from the menu:"
 msgstr "Saad valida erinevaid klahve menüüst:"
 
+# 85%
 #: templates/info/help/studio/tips/howto/get-started-8.html:18
+#, fuzzy
 msgid "8 of 13"
-msgstr ""
+msgstr "3. 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:5
 msgid " 9 Add a Backdrop"
@@ -11230,9 +11276,11 @@ msgstr ""
 "<img src = \"%(STATIC_URL)s/images/help/9-spotlight-stage.png\"><br/>\n"
 "<p>Klõpsa OK.</p>\n"
 
+# 85%
 #: templates/info/help/studio/tips/howto/get-started-9.html:18
+#, fuzzy
 msgid "9 of 13"
-msgstr ""
+msgstr "3. 13-st"
 
 #: templates/info/help/studio/tips/howto/glide-stage.html:11
 #, python-format
@@ -12602,7 +12650,7 @@ msgstr "Projektid valis"
 #: templates/projects/project_list.html:24
 #: templates/projects/project_list.html:28
 msgid "What the Community is"
-msgstr "Mida kogukond "
+msgstr "Mida kogukond"
 
 # 94%
 #: templates/projects/remixtree.html:6
@@ -12612,7 +12660,7 @@ msgid ""
 "Remix tree for \"%(projectTitle)s\"\n"
 msgstr ""
 "\n"
-"\"%(projectTitle)s\" remiksimisete puu\n"
+"\"%(projectTitle)s\" remiksimiste puu\n"
 
 #: templates/projects/remixtree.html:55
 msgid "Remix tree"
@@ -12729,13 +12777,17 @@ msgstr ""
 "Kuidas sa tegid selle projekti?</br>Kas sa kasutad teiste ideid, skripte vm? "
 "Täna neid siin."
 
+# 95%
 #: templates/projects/includes/shared/shared-project-actions.html:4
+#, fuzzy
 msgid "Add project to studios"
-msgstr ""
+msgstr "Lisa projekt stuudiosse"
 
+# 83%
 #: templates/projects/includes/shared/shared-project-actions.html:9
+#, fuzzy
 msgid "Embed project on other websites"
-msgstr ""
+msgstr "Jaga projekti teistel veebisaitidel"
 
 #: templates/projects/includes/shared/shared-project-actions.html:14
 msgid "Report project as inappropriate"
@@ -12932,7 +12984,7 @@ msgstr "Viimati uuendatud"
 
 #: templates/studio/includes/galleries_list.html:26
 msgid "You do not own any galleries. <a href=>Create one!</a>"
-msgstr "Sul ei ole ühtegi galeriid. <a href=>Loo!</a>"
+msgstr "Sul pole ühtegi galeriid. <a href=>Loo üks!</a>"
 
 #: templates/studio/includes/gallery_list.html:19
 #, python-format
@@ -12941,7 +12993,7 @@ msgstr "Lodud: %(gallery.datetime_created|date:\"F d Y fa\")s"
 
 #: templates/studio/includes/gallery_list.html:37
 msgid "You do not have any galleries"
-msgstr "Sinul ei ole ühtegi galeriid"
+msgstr "Sul pole ühtegi galeriid"
 
 #: templates/studio/includes/project_action_bar.html:16
 msgid "Not shared"
