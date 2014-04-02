@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-28 05:52+0000\n"
-"PO-Revision-Date: 2014-03-28 19:21+0200\n"
+"PO-Revision-Date: 2014-04-03 01:04+0200\n"
 "Last-Translator: Jüri <juri.vilipold@ttu.ee>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: et\n"
@@ -638,7 +638,7 @@ msgstr "Teated"
 
 #: s2forums/djangobb_forum/models.py:461
 msgid "Banned user"
-msgstr "Keelustatud kasutaja"
+msgstr "Keelatud kasutaja"
 
 #: s2forums/djangobb_forum/models.py:462
 msgid "Ban start"
@@ -826,12 +826,10 @@ msgstr "Sul ei ole õigust seda postitust kustutada."
 
 # 90%
 #: s2forums/djangobb_forum/views.py:996 s2forums/djangobb_forum/views.py:1028
-#, fuzzy
 msgid "You don't have permission to mark this post."
 msgstr "Sul ei ole õigust märgistada seda postitust."
 
 #: s2forums/djangobb_forum/views.py:1000 s2forums/djangobb_forum/views.py:1032
-#, fuzzy
 msgid "There was not enough data collected to mark this post."
 msgstr "Selle postituse märkimiseks pole kogutud piisavalt andmeid."
 
@@ -840,9 +838,8 @@ msgid "Post marked as spam."
 msgstr "Postitus on märgitud spämmiks."
 
 #: s2forums/djangobb_forum/views.py:1007
-#, fuzzy
 msgid "This post is not in the right state to be marked as spam."
-msgstr "See postitus pole sobivas seisus, et seda märkida spämmiks."
+msgstr "See postitus pole sobivas seisus, et seda saaks märkida spämmiks."
 
 #: s2forums/djangobb_forum/views.py:1037
 msgid "Post un-marked as spam."
@@ -3305,7 +3302,7 @@ msgid "Scratch Extensions Browser Plugin"
 msgstr ""
 
 #: templates/info/ext_download.html:28
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "           \n"
@@ -3343,6 +3340,41 @@ msgid ""
 "           Please check back on this page for future updates!\n"
 "                 "
 msgstr ""
+"\n"
+"           \n"
+"           <p>\n"
+"'Scratch Extensions Browser Plugin' võimaldab koos Scratch 2 on-line "
+"versiooniga kasutada LEGO WeDo robootikakomplekti. (Selle järgmistes "
+"versioonides on võimalik ka  PicoBoard toetus.)\n"
+"</p><p>\n"
+"<b>NOTE:</b> This preliminary version of the browser plugin is for beta "
+"testing. It currently works only on Mac OS X and Windows.\n"
+"</p><p>\n"
+"To try it out, download the installer for <a href=\"%"
+"(STATIC_URL)sext/ScratchDevicePlugin.dmg\">Mac</a> or <a href=\"%"
+"(STATIC_URL)sext/ScratchDevicePlugin.msi\">Windows</a>.\n"
+"</p><p>\n"
+"To use the WeDo blocks, restart your browser. In the Scratch Editor, click "
+"on the \"More Blocks\" category <strong>while holding down the Shift "
+"key</strong>. Then click on the \"Add an Extension\" button. The Extensions "
+"library dialog will open.\n"
+"</p><p>\n"
+"Select the \"WeDo\" extension and click OK. The WeDo blocks will appear in the "
+"\"More Blocks\" palette.\n"
+"</p><p>\n"
+"If the Scratch browser plugin was correctly installed, you should see a "
+"green or yellow status indicator to the right of the \"WeDo\" title.\n"
+"</p><p>If you plug a WeDo hub into the USB port on your computer, the status "
+"light should turn green. \n"
+"You should now be able to use the motor blocks (if there is a motor "
+"connected to the hub) and see sensor values (if a sensor is connected to the "
+"hub).\n"
+"</p><p>\n"
+" Yellow means that there's a problem. Move your cursor over the status "
+"indicator to find out what's wrong. \n"
+"           </p><p>\n"
+"           Please check back on this page for future updates!\n"
+"                 "
 
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
@@ -3819,8 +3851,8 @@ msgstr ""
 "sest \n"
 "\t me loome huvitavaid mänge ja projekte, mida on vahva mängida, vaadata ning "
 "alla laadida. \n"
-"\t Mulle ei meeldi inimestega internetis lihtsalt niisama rääkida, mulle "
-"tahan nendega rääkida milleski uuest ja loomingulisest.<span "
+"\t Mulle ei meeldi inimestega internetis lihtsalt niisama rääkida, ma tahan "
+"nendega rääkida milleski uuest ja loomingulisest.<span "
 "class=\"quotes\">&rdquo;</span> - 13-aastane </p>\n"
 
 #: templates/info/quotes.html:26
@@ -3870,8 +3902,8 @@ msgid ""
 msgstr ""
 "<span class=\"quotes\">&ldquo;</span>Umbkaudu 100 visuaalselt kokkupandava "
 "käsuploki abil saab luua peaaegu kõike ja omandada keerulisemate "
-"programmeerimiskeelte hitõed. Lisaboonuseks on online-kogukond, kes annab "
-"tagasisidet sinu projektide kohta ja vastab meelsasti sinu küsimustele.<span "
+"programmeerimiskeelte põhitõed. Lisaboonuseks on online-kogukond, mis annab "
+"tagasisidet projektide kohta ja vastab meelsasti sinu küsimustele.<span "
 "class=\"quotes\">&rdquo;</span> - 14-aastane"
 
 #: templates/info/research.html:4 templates/info/research.html.py:15
@@ -4382,7 +4414,6 @@ msgstr "Videoandurtega mullid "
 
 # 84%
 #: templates/info/starter_projects.html:182
-#, fuzzy
 msgid "Save the Mini-Figs!"
 msgstr "Salvesta minikujundid"
 
@@ -10776,25 +10807,23 @@ msgstr ""
 
 # 98%
 #: templates/info/help/studio/tips/howto/arrowkeys.html:7
-#, fuzzy
 msgid "Points sprite towards mouse-pointer or another sprite."
-msgstr "Pöörab spraidi hiire kursori või teise spraidi suunas"
+msgstr "Pöörab spraidi hiirekursori või teise spraidi suunas."
 
 # 84%
 #: templates/info/help/studio/tips/howto/arrowkeys.html:18
-#, fuzzy
 msgid "changes the direction of the current sprite."
-msgstr "Määrab spraidi suuna"
+msgstr "Muudab spraidi suunda."
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:11
 msgid "To make a sprite bounce around the Stage, try this script:"
-msgstr ""
+msgstr "Et sprait liiguks laval ringi, proovi seda sktipti:"
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:13
 msgid ""
 "The sprite points at an angle, and then keeps moving and bouncing off the "
 "edge."
-msgstr ""
+msgstr "Sprait hakkab liikuma määratud suunas ja põrkub lava servadelt."
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:19
 #, python-format
@@ -10802,18 +10831,22 @@ msgid ""
 "If your sprite looks upside-down, click <img src=\"%(STATIC_URL)s/images/"
 "help/info.gif\"> and set its rotation style to left-right:"
 msgstr ""
+"Kui sprait on pea alaspidi, klõpsa <img src=\"%"
+"(STATIC_URL)s/images/help/info.gif\"> ja vali pööramisstiiliks parem-vasak:"
 
 #: templates/info/help/studio/tips/howto/collide.html:7
 msgid "Make sprites react when they collide"
-msgstr ""
+msgstr "Tee nii, et spraidid reageeriksid kokkupõrgetele"
 
 #: templates/info/help/studio/tips/howto/collide.html:11
+#, fuzzy
 msgid "Make two sprites, such as a ball and a paddle:"
-msgstr ""
+msgstr "Tee kaks spraiti, näiteks pall ja aer:"
 
 #: templates/info/help/studio/tips/howto/collide.html:15
+#, fuzzy
 msgid "This script tells the ball what to do when it hits the paddle:"
-msgstr ""
+msgstr "See skript määrab palli tegevused, kui see puudutab aeru."
 
 #: templates/info/help/studio/tips/howto/conversation.html:10
 msgid ""
@@ -10821,16 +10854,21 @@ msgid ""
 "<p>Have two sprites take turns saying something.</p>\n"
 "Try this code in one sprite:"
 msgstr ""
+"Soovid teha vestlust või rääkida naljakat lugu?<br/>\n"
+"<p>Loo kaks spraiti, mis kordamööda midagi ütlevad.</p>\n"
+"Ühe spraidi skript võiks olla selline:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:14
 msgid "And this in another sprite:"
-msgstr ""
+msgstr "Ja selline võiks olla teine skript:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:20
 msgid ""
 "Broadcast a message to tell another sprite when to talk. When it receives "
 "the message, it can respond."
 msgstr ""
+"Kasuta teateplokki, et öelda teisele spraidile, millal on tema kord rääkida. "
+"Teate saamisel võib see vastata."
 
 #: templates/info/help/studio/tips/howto/edit-sounds.html:12
 #, python-format
@@ -10855,7 +10893,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:7
 msgid "Want to get started with Scratch? Try this!"
-msgstr ""
+msgstr "Soovid alustada Scratchi kasutamist? proovi seda!"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:9
 msgid "1 Start Moving"
@@ -10871,13 +10909,12 @@ msgstr "Siis klõpsa seda plokki, et panna kass liikuma:"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:20
 msgid "Now, <a href=\"../get-started-2/\">add a sound</a>."
-msgstr ""
+msgstr "Nüüd <a href=\"../get-started-2/\">lisa helid</a>."
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-1.html:26
-#, fuzzy
 msgid "1 of 13"
-msgstr "1 10-st"
+msgstr "1 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:6
 msgid " 10 Add a Sprite"
@@ -10928,9 +10965,8 @@ msgstr ""
 
 # 75%
 #: templates/info/help/studio/tips/howto/get-started-10.html:26
-#, fuzzy
 msgid "10 of 13"
-msgstr "1 10-st"
+msgstr "10 13-st"
 
 # 77%
 #: templates/info/help/studio/tips/howto/get-started-11.html:7
@@ -10992,9 +11028,8 @@ msgstr ""
 
 # 75%
 #: templates/info/help/studio/tips/howto/get-started-11.html:29
-#, fuzzy
 msgid "11 of 13"
-msgstr "1 10-st"
+msgstr "11 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:6
 msgid " Share!"
@@ -11031,9 +11066,8 @@ msgstr ""
 
 # 75%
 #: templates/info/help/studio/tips/howto/get-started-12.html:27
-#, fuzzy
 msgid "12 of 13"
-msgstr "1 10-st"
+msgstr "12 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:6
 msgid "Now What?"
@@ -11076,9 +11110,8 @@ msgstr ""
 
 # 87%
 #: templates/info/help/studio/tips/howto/get-started-13.html:23
-#, fuzzy
 msgid "13 of 13"
-msgstr "3. 13-st"
+msgstr "13 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:8
 msgid "2 Add a Sound"
@@ -11104,9 +11137,8 @@ msgstr "(Veendu, et sinu arvuti kõlarid on sisse lülitatud.)"
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-2.html:26
-#, fuzzy
 msgid "2 of 13"
-msgstr "2. 10-st"
+msgstr "2 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:6
 msgid "3 Start a Dance"
@@ -11160,9 +11192,8 @@ msgstr "Käivitamiseks klõpsa pinu:"
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-4.html:19
-#, fuzzy
 msgid "4 of 13"
-msgstr "3. 13-st"
+msgstr "4 13-st"
 
 # 86%
 #: templates/info/help/studio/tips/howto/get-started-5.html:6
@@ -11192,9 +11223,8 @@ msgstr ""
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-5.html:21
-#, fuzzy
 msgid "5 of 13"
-msgstr "3. 13-st"
+msgstr "5 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-6.html:6
 msgid "6 Green Flag"
@@ -11232,9 +11262,8 @@ msgstr ""
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-6.html:22
-#, fuzzy
 msgid "6 of 13"
-msgstr "3. 13-st"
+msgstr "6 13-st"
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-7.html:5
@@ -11264,9 +11293,8 @@ msgstr ""
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-7.html:23
-#, fuzzy
 msgid "7 of 13"
-msgstr "3. 13-st"
+msgstr "7 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:6
 msgid "8 Key Press"
@@ -11287,9 +11315,8 @@ msgstr "Saad valida erinevaid klahve menüüst:"
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-8.html:18
-#, fuzzy
 msgid "8 of 13"
-msgstr "3. 13-st"
+msgstr "8 13-st"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:5
 msgid " 9 Add a Backdrop"
@@ -11316,9 +11343,8 @@ msgstr ""
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-9.html:18
-#, fuzzy
 msgid "9 of 13"
-msgstr "3. 13-st"
+msgstr "9 13-st"
 
 #: templates/info/help/studio/tips/howto/glide-stage.html:11
 #, python-format
@@ -11330,6 +11356,12 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/glide-off-stage-script.png\"><br/>\n"
 " <p>After the sprite glides, it then hides.</p>"
 msgstr ""
+"\n"
+"<p>Kui soovid, et sprait läheks nagu lavalt välja, lase tal liuelda üle lava "
+"ja peida siis.</p>\n"
+"Näieks proovi sellist skripti:<br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/glide-off-stage-script.png\"><br/>\n"
+" <p>Pärast liuglemist üle lava peidetakse sprait.</p>"
 
 #: templates/info/help/studio/tips/howto/glide-stage.html:20
 #, python-format
@@ -11337,6 +11369,8 @@ msgid ""
 "Can't see your sprite? Use <img src=\"%(STATIC_URL)s/images/help/show.png\"> "
 "to make it appear."
 msgstr ""
+"Sa ei näe spraiti? Spraidi nähtavaks tegemiseks kasuta <img src=\"%"
+"(STATIC_URL)s/images/help/show.png\">."
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:16
@@ -11494,6 +11528,11 @@ msgid ""
 "<p>With Scratch, your sprites can dance, sing, jump, talk, fly, and much "
 "more.</p>\n"
 msgstr ""
+"\n"
+"<p>Ärata oma spraidid ellu lisades juhiseid (a.k.a. arvutiprogramm), mis "
+"ütleks spraitidele, mida teha.</p>\n"
+"<p>Scratchis saad panna spradid tantsima, laulma, hüppama, rääkima, lendama "
+"ja veel palju muud.</p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4.html:18
 msgid ""
@@ -11506,6 +11545,14 @@ msgid ""
 "&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4d/\">Change color</a><br/>\n"
 "&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4e/\">Change costume</a><br/>\n"
 msgstr ""
+"\n"
+"Mängi plokkidega erinevatest gruppidest. Või proovi mõnda järgmistest "
+"ideedest ja pane oma sprait:<br/>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4a/\">Liikuma</a><br/>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4b/\">Midagi ütlema</a><br/>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4c/\">Häälitsema</a><br/>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4d/\">Värvi muutma</a><br/>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4e/\">Kostüüme vahetama</a><br/>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4.html:29
 msgid ""
@@ -11514,6 +11561,9 @@ msgid ""
 "<p><a href=\"../hoc-5/\">Next, let's add a background image to your holiday "
 "card.</a></p>\n"
 msgstr ""
+"\n"
+"<p></p>\n"
+"<p><a href=\"../hoc-5/\">Nüüd lisa oma pühadekaardile taustapilt.</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4a.html:11
 #, python-format
@@ -11527,6 +11577,15 @@ msgid ""
 "<p>What other ways can you get your sprites moving?</p>\n"
 "\n"
 msgstr ""
+"\n"
+"<p>Spraite saab liikuma panna plokkidega grupist “Liikumine”.</p>\n"
+"Proovi lisada selline skript, et üks spraitidest hakkaks tantsima tagasi ja "
+"edasi:<br/>\n"
+"</p><img src = \"%"
+"(STATIC_URL)s/images/help/hoc-4-interactive-a-move.png\"></p>\n"
+"\n"
+"<p>Kuidas oleks veel võimalik spraite liikuma panna?</p>\n"
+"\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4a.html:21
 msgid ""
@@ -11535,11 +11594,13 @@ msgid ""
 "<p><a href=\"../hoc-4/\">Let's explore other types of interactivity...</a></"
 "p>\n"
 msgstr ""
+"\n"
+"<p></p>\n"
+"<p><a href=\"../hoc-4/\">Uurime veel interaktiivsuse võimalusi ...</a></p>\n"
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-4b.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:22
-#, fuzzy
 msgid "Say something"
 msgstr "Ütle midagi"
 
@@ -11556,6 +11617,12 @@ msgid ""
 "p>\n"
 "\n"
 msgstr ""
+"\n"
+"<p>Lase oma spraitidel midagi öelda grupi “Välimus” plokkide abil.</p>\n"
+"\n"
+"<p>Proovi lisada selline kood, et üks sprait ütleks õnnitlussõnad:</p>\n"
+"<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-b-say.png\"></p>\n"
+"\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4b.html:21
 msgid ""
@@ -11564,11 +11631,14 @@ msgid ""
 "<p><a href=\"../hoc-4/\">Let's explore other types of interactivity...</a></"
 "p>\n"
 msgstr ""
+"\n"
+"<p>Milliseid pühadesoove võiksid spraiid veel edastada?</p>\n"
+"<p><a href=\"../hoc-4/\">Uurime veel interaktiivsuse võimalusi ...</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4c.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:23
 msgid "Make a sound"
-msgstr ""
+msgstr "Helide tekitamine"
 
 #: templates/info/help/studio/tips/howto/hoc-4c.html:12
 #, python-format
@@ -11582,6 +11652,14 @@ msgid ""
 "<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-c-sound.png\"></"
 "p>\n"
 msgstr ""
+"\n"
+"<p>Uuri oma pühadekaardile helide lisamise võimalusi, kasutades helindeid "
+"Scratchi teegist, laadides üles helifaile oma arvutist, või salvestades "
+"helisid mikrofoniga.</p>\n"
+"Eksperimenteeri helidega seotud käsuplokkidega ja lisa oma spraidile heli "
+"või taustamuusika.<br/>\n"
+"<p><img src = \"%"
+"(STATIC_URL)s/images/help/hoc-4-interactive-c-sound.png\"></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4c.html:19
 msgid ""
@@ -11590,16 +11668,19 @@ msgid ""
 "<p><a href=\"../hoc-4/\">Let's explore other types of interactivity...</a></"
 "p>\n"
 msgstr ""
+"\n"
+"<p>Milliseid huvitavaid pühadega seotud helisid võiksid veel oma kaardile "
+"lisada?</p>\n"
+"<p><a href=\"../hoc-4/\">Uuri veel interaktiivsuse võimalusi ...</a></p>\n"
 
 # 91%
 #: templates/info/help/studio/tips/howto/hoc-4d.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:24
-#, fuzzy
 msgid "Change color"
-msgstr "Muuda värvi"
+msgstr "Muuda värve"
 
 #: templates/info/help/studio/tips/howto/hoc-4d.html:12
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "<p>Play with the images in your holiday card by using the graphic effects "
@@ -11613,6 +11694,17 @@ msgid ""
 "\n"
 "<p>What cool image effects will you add to your card?</p>\n"
 msgstr ""
+"\n"
+"<p>Mängi graafiliste kujunditega oma pühadekaardil kasutades "
+"graafikaefektide plokke:</p>\n"
+"<p><img src = \"%"
+"(STATIC_URL)s/images/help/hoc-4-interactive-d-effects.png\"></p>\n"
+"\n"
+"<p>Try adding this code to add a colorful effect to a dancing sprite:</p>\n"
+"<p><img src = \"%"
+"(STATIC_URL)s/images/help/hoc-4-interactive-d-color.png\"></p>\n"
+"\n"
+"<p>What cool image effects will you add to your card?</p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4d.html:23
 #: templates/info/help/studio/tips/howto/hoc-4e.html:26
@@ -11621,11 +11713,13 @@ msgid ""
 "<p><a href=\"../hoc-4/\">Let's explore other types of interactivity...</a></"
 "p>\n"
 msgstr ""
+"\n"
+"<p><a href=\"../hoc-4/\">Uuri veel interaktiivsuse võimalusi ...</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4e.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:25
 msgid "Change costume"
-msgstr ""
+msgstr "Muuda kostüüme"
 
 #: templates/info/help/studio/tips/howto/hoc-4e.html:12
 #, python-format
@@ -11649,7 +11743,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/hoc-5.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:26
 msgid "Add a background image"
-msgstr ""
+msgstr "Lisa taustapilt"
 
 #: templates/info/help/studio/tips/howto/hoc-5.html:11
 #, python-format
@@ -11684,11 +11778,15 @@ msgid ""
 "<p><a href=\"../hoc-6/\">Next, let's add some background music to your "
 "holiday card.</a></p>\n"
 msgstr ""
+"\n"
+"<p></p>\n"
+"<p><a href=\"../hoc-6/\">Nüüd lisame sinu pühadekaardile "
+"taustamuusika.</a></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-6.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:27
 msgid "Add background sound"
-msgstr ""
+msgstr "Lisa taustaheli"
 
 #: templates/info/help/studio/tips/howto/hoc-6.html:11
 msgid ""
@@ -11841,7 +11939,7 @@ msgid ""
 "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
 msgstr ""
 "\n"
-"<p>Siin lood interaktiivse pühadekaarti, mida saad jagad oma pere ja "
+"<p>Siin lood interaktiivse pühadekaardi, mida saad jagada oma pere ja "
 "sõpradega.</p>\n"
 "<p>Alustamiseks vaata seda tutvustavat videot:</p>\n"
 "<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&byline=0&portrait="
@@ -11917,10 +12015,12 @@ msgid ""
 "Have a microphone? You can use <img src=\"%(STATIC_URL)s/images/help/"
 "loudness-small.png\">"
 msgstr ""
+"Sul on mikrofon? Saad kasutada <img src=\"%(STATIC_URL)s/images/help"
+"/loudness-small.png\">"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:15
 msgid "Make noise so your sprite will jump!"
-msgstr ""
+msgstr "Tekita lärmi, et sprait hüppaks!"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:16
 msgid "For a larger effect, multiply by a number:"
@@ -11932,7 +12032,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:30
 msgid "Click the checkbox to see how loud it is:"
-msgstr ""
+msgstr "Klõpsa märkeruutu, et näha helitugevust:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:32
 #, python-format
@@ -11940,6 +12040,8 @@ msgid ""
 "The monitor will show on the Stage: <img src=\"%(STATIC_URL)s/images/help/"
 "loudness-monitor.png\">."
 msgstr ""
+"Näidik väärtusega on näha laval: <img src=\"%(STATIC_URL)s/images/help"
+"/loudness-monitor.png\">."
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:12
 #, python-format
@@ -11948,45 +12050,53 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
 "\t Use this code to whirl as you move the mouse:"
 msgstr ""
+"<p>Insert <img src=\"%(STATIC_URL)s/images/help/mouse-x.png\"> into <img src=\""
+"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
+"\t Kasuta seda skripti, et hiire liikumise peale pöörelda:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:19
 msgid "Try different effects by choosing the menu:"
-msgstr ""
+msgstr "Erinevaid efekte saab valida menüüst:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:25
 #: templates/info/help/studio/tips/howto/play-with-effects.html:26
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"> to clear "
 "all effects."
 msgstr ""
+"Klõpsa <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\">, et tühistada "
+"kõik efektid."
 
 #: templates/info/help/studio/tips/howto/keep-score.html:10
 msgid "Make a variable to keep track of score."
-msgstr ""
+msgstr "Loo muutuja, et meeles pidada mängu tulemus."
 
 #: templates/info/help/studio/tips/howto/keep-score.html:11
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Choose <img src=\"%(STATIC_URL)s/images/help/data-palette.png\"> and then "
 "<img src=\"%(STATIC_URL)s/images/help/make-variable-button.png\"></p>\n"
 "\t Type in the name \"Score\" and then click OK:"
 msgstr ""
+"Vali grupp <img src=\"%(STATIC_URL)s/images/help/data-palette.png\"> ja siis "
+"<img src=\"%(STATIC_URL)s/images/help/make-variable-button.png\"></p>\n"
+"\t Tipi nimi \"skoor\" ja klõpsa OK:"
 
 #: templates/info/help/studio/tips/howto/keep-score.html:16
 msgid "New blocks will appear and the variable Score will show on the Stage:"
-msgstr ""
+msgstr "Tekivad uued käsuplokid ja lavale ilmub muutuja näidik."
 
 #: templates/info/help/studio/tips/howto/keep-score.html:20
 msgid "Here's an example script for keeping score:"
-msgstr ""
+msgstr "Siin on näiteskript mängu tulemuse arvestamiseks:"
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:7
 msgid "Move your sprite with arrow keys"
-msgstr ""
+msgstr "Liiguta spraiti nooleklahvidega"
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:12
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Try this code:<br/>\n"
 " <img src=\"%(STATIC_URL)s/images/help/move-with-arrow-all.png\"> <br/>\n"
@@ -11995,10 +12105,18 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\"%(STATIC_URL)s/"
 "images/help/right-arrow-key.png\"> to trigger."
 msgstr ""
+"Proovi sellist skripti:<br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/move-with-arrow-all.png\"> <br/>\n"
+" Vajuta nooleklahve <img src=\"%(STATIC_URL)s/images/help/up-arrow-key.png\"> "
+"<img src=\"%(STATIC_URL)s/images/help/down-arrow-key.png\"> <img src=\"%"
+"(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\"%"
+"(STATIC_URL)s/images/help/right-arrow-key.png\"> liikumaks teises suunas."
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:18
 msgid "To copy a stack of blocks, click at the top with the duplicate tool:"
 msgstr ""
+"Plokkide pinust koopia saamiseks võib klõpsata koopia tegemise vahendil lava "
+"kohal."
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:22
 #, python-format
@@ -12006,10 +12124,13 @@ msgid ""
 "If your sprite turns upside-down, click <img src=\"%(STATIC_URL)s/images/"
 "help/info.png\"> and set its rotation style to left-right:"
 msgstr ""
+"Kui sprait liigub pea alaspidi, klõpsa <img src=\"%"
+"(STATIC_URL)s/images/help/info.png\"> ja määra pööramise stiiliks parem-"
+"vasak:"
 
 #: templates/info/help/studio/tips/howto/move.html:6
 msgid "Move a sprite"
-msgstr ""
+msgstr "Spraidi liigutamine"
 
 #: templates/info/help/studio/tips/howto/move.html:13
 #, python-format
@@ -12018,10 +12139,13 @@ msgid ""
 "help/move-1-step.png\"> to move a tiny bit or a bigger number to move "
 "further."
 msgstr ""
+"Proovi erinevaid arve, näiteks <img src=\"%"
+"(STATIC_URL)s/images/help/move-1-step.png\">, et liikuda natuke või suuremaid "
+"väärtusi, et liikuda rohkem."
 
 #: templates/info/help/studio/tips/howto/move.html:17
 msgid "If you type in a <b>negative</b> number, the sprite will move backward:"
-msgstr ""
+msgstr "Kui sisestada <b>negatiivne</b> arv, liigub sprait tagurpidi:"
 
 #: templates/info/help/studio/tips/howto/move.html:25
 msgid ""
@@ -12030,6 +12154,10 @@ msgid ""
 "<p>To go to a certain spot on the screen, use “go to x y”</p>\n"
 "<p>To glide smoothly, use “glide to x y”</p>"
 msgstr ""
+"<p>Suuva muutmiseks kasuta plokki [osuta suunas ...].<br/>\n"
+"Võid suunda muuta ka käsitsi.</p>\n"
+"<p>Liikumaks laval kindlasse punkti kasuta plokki [mine x y] </p>\n"
+"<p>Sujuvaks liikumiseks kasuta plokki [liugle ... x y]</p>"
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:10
 msgid "To play notes, choose an instrument and note:"
@@ -12041,11 +12169,11 @@ msgstr "Võid valida menüüst mõne muu instrumendi:"
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:16
 msgid "Try this script. Click the sprite to play:"
-msgstr "Proovi seda skripti. Klõpsa käivitamiseks spraiti:"
+msgstr "Proovi seda skripti. Käivitamiseks klõpsa spraiti:"
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:20
 msgid "Add note blocks to play a short scale:"
-msgstr "Lisa nootide plokid mängimiseks...:"
+msgstr "Lisa nootide plokid helide mängimiseks:"
 
 #: templates/info/help/studio/tips/howto/play-music.html:10
 #, python-format

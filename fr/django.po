@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-28 05:52+0000\n"
-"PO-Revision-Date: 2014-03-03 11:53+0200\n"
+"PO-Revision-Date: 2014-03-30 23:40+0200\n"
 "Last-Translator: Jean-Jacques <i.scool@mac.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -827,29 +827,28 @@ msgstr "Vous n'avez pas la permission d'effacer ce message."
 
 # 90%
 #: s2forums/djangobb_forum/views.py:996 s2forums/djangobb_forum/views.py:1028
-#, fuzzy
 msgid "You don't have permission to mark this post."
-msgstr "Vous n'avez pas la permission d'éditer ce message."
+msgstr "Vous n'avez pas la permission de corriger ce message."
 
 #: s2forums/djangobb_forum/views.py:1000 s2forums/djangobb_forum/views.py:1032
 msgid "There was not enough data collected to mark this post."
-msgstr ""
+msgstr "Il n'y avait pas suffisamment de données pour marquer ce message."
 
 #: s2forums/djangobb_forum/views.py:1005
 msgid "Post marked as spam."
-msgstr ""
+msgstr "Message marqué comme spam."
 
 #: s2forums/djangobb_forum/views.py:1007
 msgid "This post is not in the right state to be marked as spam."
-msgstr ""
+msgstr "Ce message n'est pas dans l'état pour être marqué comme spam."
 
 #: s2forums/djangobb_forum/views.py:1037
 msgid "Post un-marked as spam."
-msgstr ""
+msgstr "Message non marqué comme spam."
 
 #: s2forums/djangobb_forum/views.py:1039
 msgid "This post is not in the right state to be un-marked as spam."
-msgstr ""
+msgstr "Ce message n'est pas dans l'état pour n'être pas marqué comme spam."
 
 #: s2forums/djangobb_forum/views.py:1052
 msgid "Topic closed."
@@ -1409,6 +1408,8 @@ msgstr "Adresse IP:"
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:120
 msgid "Really delete all posts, and ban user? This is hard to reverse."
 msgstr ""
+"Vous vraiment supprimer tous les messages, et interdire utilisateur? Cela "
+"est difficile, ensuite, à revenir en arrière."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:137
 msgid "(Edit Signature)"
@@ -1416,19 +1417,19 @@ msgstr "(Editer la signature)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
 msgid "Are you sure you want to mark this as spam?"
-msgstr ""
+msgstr "Etes-vous sûr que vous voulez marquer cela comme spam?"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
 msgid "Mark as Spam"
-msgstr ""
+msgstr "Marque comme spam"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
 msgid "Are you sure you want to unmark this as spam?"
-msgstr ""
+msgstr "Etes-vous sûr de ne pas vouloir marquer cela comme du spam?"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
 msgid "Un-mark as Spam"
-msgstr ""
+msgstr "Ne marque pas comme du spam"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:168
 msgid "Are you sure you want to delete this post?"
@@ -1728,7 +1729,7 @@ msgstr "Mot de passe oublié ?"
 
 #: templates/base.html:269
 msgid "About"
-msgstr "A propos de Scratch"
+msgstr "A propos"
 
 #: templates/base.html:270
 msgid "Educators"
@@ -2816,7 +2817,7 @@ msgstr ""
 
 #: templates/homepage/index.html:148
 msgid "ABOUT SCRATCH"
-msgstr "A PROPOS DE SCRATCH"
+msgstr "A PROPOS SCRATCH"
 
 #: templates/homepage/index.html:149
 msgid "FOR EDUCATORS"
@@ -2836,7 +2837,6 @@ msgstr "Les studios à l'affiche"
 
 # 90%
 #: templates/homepage/index.html:198
-#, fuzzy
 msgid "Learn more"
 msgstr "En savoir plus"
 
@@ -3149,7 +3149,12 @@ msgid ""
 "edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). "
 "Find out more about <a href=\"/info/research\">Scratch research</a> and <a "
 "href=\"/statistics\">statistics about Scratch</a>.\n"
-msgstr ""
+msgstr "L'équipe Scratch du MIT et leurs collaborateurs font des recherches sur la "
+"façon dont les gens utilisent et apprennent avec Scratch (pour une "
+"introduction, voir <a href=\"http://web.media.mit.edu/~mres/papers/Scratch-"
+"CACM-final.pdf\">Scratch: Programmation pour tous</a>). En savoir plus sur la "
+"recherche <a href=\"/info/research\">Scratch research</a> et <a "
+"href=\"/statistics\">Statistiques sur Scratch</a>.\n"
 
 #: templates/info/about.html:90
 msgid "Support and Funding"
@@ -3342,7 +3347,7 @@ msgstr "Bulletin trimestriel"
 
 #: templates/info/ext_download.html:19 templates/info/ext_download.html:24
 msgid "Scratch Extensions Browser Plugin"
-msgstr ""
+msgstr "Plugging navigateur pour les extensions de Scratch"
 
 #: templates/info/ext_download.html:28
 #, python-format
@@ -3383,6 +3388,42 @@ msgid ""
 "           Please check back on this page for future updates!\n"
 "                 "
 msgstr ""
+"\n"
+"\n"
+"<p>\n"
+"Ce plugin navigateur pour les extensions de Scratch vous permet d'utiliser "
+"le kit robotique LEGO WeDo avec la version en ligne de Scratch 2 . ( Une "
+"future version de ce plugin navigateur gèrera également la PicoBoard . )\n"
+"</p><p>\n"
+"<b>NOTE:</b>Cette version préliminaire du plugin navigateur est en bêta "
+"test. Il fonctionne seulement sur ​​Mac OS X et Windows.\n"
+"</p><p>\n"
+"Pour l'essayer, téléchargez le programme d'installation pour <a href=\"%"
+"(STATIC_URL)sext/ScratchDevicePlugin.dmg\">Mac</a> or <a href=\"%"
+"(STATIC_URL)sext/ScratchDevicePlugin.msi\">Windows</a>.\n"
+"</p><p>\n"
+"Pour utiliser les blocs WeDo , redémarrez votre navigateur. Dans l'éditeur "
+"de Scratch , cliquez sur la catégorie  \" Ajouter Blocs\"<strong> tout en "
+"maintenant la touche Maj enfoncée</strong>. Puis cliquez sur le bouton "
+"\"Ajouter une extension \" . La boîte de dialogue bibliothèque d'extensions "
+"s'ouvre.\n"
+"</p><p>\n"
+"Sélectionnez l'extension \" WeDo \" et cliquez sur OK . Les blocs WeDo "
+"apparaissent dans la palette \"Ajouter Blocs\" ..\n"
+"</p><p>\n"
+"Si le plugin du navigateur de Scratch a été correctement installé, vous "
+"devriez voir un indicateur d'état vert ou jaune à la droite du titre \" WeDo "
+"\" . .\n"
+"</p><p>Si vous branchez un hub WeDo dans le port USB de votre ordinateur , "
+"le voyant d'état devrait devenir verte. \n"
+"Vous devriez maintenant être en mesure d'utiliser les blocs-moteurs ( s'il y "
+"a un moteur relié au hub ) et voir les valeurs des capteurs ( si un capteur "
+"est connecté au hub ) .\n"
+"</p><p>\n"
+"Jaune signifie qu'il ya un problème . Déplacez votre curseur sur "
+"l'indicateur d'état pour savoir ce qui ne va pas. \n"
+"</p><p>\n"
+"S'il vous plaît revenez sur cette page pour les futures mises à jour ! \n"
 
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
@@ -4300,12 +4341,27 @@ msgid ""
 "microphones built in. Scratch 1.4 can use a USB or built-in camera "
 "(optional).</br></p>"
 msgstr ""
+"<p>Affichage: 800 x 480 ou plus, milliers ou millions de couleurs ( 16-bit "
+"couleurs ou plus)\n"
+"\t\t</br>Système d'exploitation : Windows 2000 ou ultérieur, Mac OS X 10.4 ou "
+"plus récent, Linux Ubuntu 9.04 ou une version ultérieure (pour les autres "
+"versions de Linux, voir la page Linux Installer)\n"
+"\t\t</br>Disque : au moins 120 Mo d'espace libre pour installer Scratch.\n"
+"\t\t</br>CPU et mémoire: La plupart des ordinateurs ont assez de mémoire pour "
+"exécuter Scratch 1.4, mais de très vieux ordinateurs peuvent faire "
+"fonctionner Scratch, mais lentement\n"
+"\t\t</br>Son / Vidéo: La lecture audio nécessite des haut-parleurs (ou un "
+"casque), et l'enregistrement nécessite un microphone. De nombreux "
+"ordinateurs portables ont des haut-parleurs et microphones intégrés. Scratch "
+"1.4 peut utiliser une webcam USB ou intégré (en option).</br></p>"
 
 #: templates/info/scratch_1.4.html:73
 msgid ""
 "What if I get an error when I try to upload or share my project to the "
 "Scratch website?"
 msgstr ""
+"Que faire si je reçois une erreur lorsque je tente de télécharger ou de "
+"partager mon projet pour le site web de Scratch?"
 
 #: templates/info/scratch_1.4.html:74
 msgid ""
@@ -4322,6 +4378,20 @@ msgid ""
 "\t\t</br>4. Wrong username and password. Try logging into Scratch website to "
 "make sure username and password are correct."
 msgstr ""
+"1. Fichier trop grand. La limite du fichier est de 10 Mo. Pour réduire la "
+"taille de votre projet de Scratch, cliquez sur le menu Edition : "
+"sélectionner compresser des sons, ou compresser les images. Si vous avez "
+"compressé vos sons et que votre projet ne veut toujours pas se charger, "
+"essayez de supprimer certains des sons pour le rendre plus petit. \n"
+"\t\t</br>2. Connexion Internet trop lente ou ayant expiré. Essayez de réduire "
+"la taille du fichier. Si cela ne fonctionne pas, essayez de vous connecter à "
+"partir d'un ordinateur, d'une connexion ou d'un navigateur Web différents.\n"
+"\t\t</br>3. Le serveur proxy inopérant. Essayez une connexion Internet qui ne "
+"passe pas par un serveur proxy, ou configurer Scratch pour utiliser votre "
+"serveur proxy. \n"
+"\t\t</br>4. Nom d'utilisateur et mot de passe incorrect. Essayez de vous "
+"connecter sur le site Web de Scratch pour s'assurer que le nom d'utilisateur "
+"et mot de passe sont corrects"
 
 #: templates/info/starter_projects.html:4
 msgid "Scratch - Starter Projects"
@@ -4478,7 +4548,7 @@ msgstr "Obtiens toutes les cartes"
 #: templates/info/help/cards.html:20 templates/info/help/cards.html.py:22
 #: templates/info/help/index.html:52
 msgid "English"
-msgstr ""
+msgstr "Anglais"
 
 #: templates/info/help/cards.html:23
 msgid ""
@@ -4631,6 +4701,16 @@ msgid ""
 "downloading and installing <a href =\"/scratch_1.4\">Scratch 1.4</a>, which "
 "you can still use to share projects to the Scratch 2 website."
 msgstr ""
+"Pour exécuter Scratch 2, vous devez utiliser un navigateur web relativement "
+"récent (<a href=\"http://google.com/chrome/\">Chrome</a> 7 ou version "
+"ultérieure, <a href=\"http://www.mozilla.org/en-US/firefox/new/\">Firefox</a> "
+"4 version ultérieure, ou Internet Explorer 7 version ultérieure)avec <a "
+"href=\"\">Adobe Flash Player</a> version 10.2 ou version ultérieure installée. "
+"Scratch 2 est conçu pour supporter des tailles d'écran de 1024 x 768 ou "
+"plus grande. Si votre ordinateur ne répond pas à ces exigences, vous pouvez "
+"essayer de télécharger et d'installer <a href =\"/scratch_1.4\">Scratch "
+"1.4</a>, que vous pouvez toujours utiliser pour partager des projets sur le "
+"site de Scratch"
 
 #: templates/info/help/faq.html:42
 msgid ""
@@ -5534,7 +5614,7 @@ msgstr "Foire Aux Questions"
 
 #: templates/info/help/faq_layout.html:24
 msgid "Browse FAQ"
-msgstr ""
+msgstr "Parcourir la Foire Aux Questions"
 
 #: templates/info/help/index.html:10
 msgid "Get Started with Scratch"
@@ -5551,7 +5631,7 @@ msgstr "Essayez ces</br> projets de démarrage"
 
 #: templates/info/help/index.html:32
 msgid "Watch the Getting Started video"
-msgstr ""
+msgstr "Regardez la vidéo de démarage"
 
 #: templates/info/help/index.html:37
 msgid "Scratch Guides"
@@ -5576,6 +5656,8 @@ msgid ""
 "Download the <a href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-"
 "Scratch2.pdf\">English version.</a>"
 msgstr ""
+"Télécharger la <a href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-"
+"Scratch2.pdf\">version anglaise.</a>"
 
 #: templates/info/help/index.html:68
 msgid "Each of these cards shows something you can do in Scratch."
@@ -5701,11 +5783,11 @@ msgstr "Liens et informations vers la version précédente de Scratch."
 
 #: templates/info/help/index.html:134
 msgid "Scratch Statistics"
-msgstr ""
+msgstr "Statistiques de Scratch"
 
 #: templates/info/help/index.html:136
 msgid "Explore up-to-date statistics about the Scratch online community."
-msgstr ""
+msgstr "Parcourir les dernières statistiques sur la communauté Scratch"
 
 #: templates/info/help/index.html:139
 msgid ""
@@ -5742,9 +5824,8 @@ msgstr "Scratch - Videos"
 
 # 85%
 #: templates/info/help/videos.html:26
-#, fuzzy
 msgid "Getting Started with Scratch"
-msgstr "Démarrer avec Scratch"
+msgstr "Prise en main de Scratch"
 
 #: templates/info/help/videos.html:29
 msgid ""
@@ -5752,7 +5833,9 @@ msgid ""
 "Tutorials\">Introductory Tutorials</a> or <a href=\"#Paint Editor Tips"
 "\">Paint Editor Tips</a>.\n"
 "        "
-msgstr ""
+msgstr "Après <strong>la prise en main</strong>, choisissez entre <a "
+"href=\"#Introductory Tutorials\">Tutoriaux d'introduction</a> or <a "
+"href=\"#Paint Editor Tips\">Trucs et astuces de l'éditeur d'images</a>.\n"
 
 #: templates/info/help/videos.html:39
 msgid "Introductory Tutorials"
@@ -5859,7 +5942,7 @@ msgstr "Introduction pas à pas"
 #: templates/info/help/studio/tips/home.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:5
 msgid "Holiday Card Tutorial"
-msgstr ""
+msgstr "Tutorial carte de vacances"
 
 #: templates/info/help/studio/tips/home.html:7
 msgid "Map of Project Editor"
@@ -8001,6 +8084,13 @@ msgid ""
 "increases by 1.\n"
 "  "
 msgstr ""
+"\n"
+"Vous pouvez indiquer où insérer l'élément en choisissant dans le menu "
+"déroulant ou \n"
+"typing in a number. Choisir \"au hasard\" >insère un élément à une place "
+"aléatoire dans la liste. Choisir \n"
+"\"dernier\" ajoute l'élément à la fin de la liste. La longueur de la liste "
+"augmente de 1.\n"
 
 #: templates/info/help/studio/tips/blocks/insert-list.html:18
 #, python-format
@@ -9510,11 +9600,10 @@ msgstr "<img src=\"%(STATIC_URL)s/images/help/set-size.png\" />"
 
 # 98%
 #: templates/info/help/studio/tips/blocks/set-size.html:7
-#, python-format
-#, fuzzy, python-format
+#, python-format, python-format
 msgid "Sets sprite's size to specified %% of original size"
 msgstr ""
-"Définit la taille du lutin par un pourcentage spécifié de la taille "
+"Définit la taille du lutin par un pourcentage spécifié %% de la taille "
 "originale"
 
 #: templates/info/help/studio/tips/blocks/set-size.html:11
@@ -11044,27 +11133,28 @@ msgstr ""
 
 # 98%
 #: templates/info/help/studio/tips/howto/arrowkeys.html:7
-#, fuzzy
 msgid "Points sprite towards mouse-pointer or another sprite."
 msgstr ""
-"Oriente le lutin sélectionné vers le pointeur de la souris ou vers un autre "
+"Dirige le lutin sélectionné vers le pointeur de la souris ou vers un autre "
 "lutin"
 
 # 84%
 #: templates/info/help/studio/tips/howto/arrowkeys.html:18
-#, fuzzy
 msgid "changes the direction of the current sprite."
-msgstr "Définit la direction du lutin sélectionné"
+msgstr "modifie la direction du lutin sélectionné"
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:11
 msgid "To make a sprite bounce around the Stage, try this script:"
 msgstr ""
+"Pour faire rebondir le lutin tout autour de la scène, essayez ce script:"
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:13
 msgid ""
 "The sprite points at an angle, and then keeps moving and bouncing off the "
 "edge."
 msgstr ""
+"Le lutin se dirige suivant un angle, puis continue à se déplacer et à "
+"rebondir sur le bord."
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:19
 #, python-format
@@ -11072,18 +11162,23 @@ msgid ""
 "If your sprite looks upside-down, click <img src=\"%(STATIC_URL)s/images/"
 "help/info.gif\"> and set its rotation style to left-right:"
 msgstr ""
+"Si ton lutin se retrouve à l'envers , clique sur<img src=\"%"
+"(STATIC_URL)s/images/help/info.gif\"> et définit son style de rotation "
+"\"position à gauche ou à droite\":"
 
 #: templates/info/help/studio/tips/howto/collide.html:7
 msgid "Make sprites react when they collide"
-msgstr ""
+msgstr "Faire réagir les lutins quand ils entrent en collision"
 
 #: templates/info/help/studio/tips/howto/collide.html:11
 msgid "Make two sprites, such as a ball and a paddle:"
-msgstr ""
+msgstr "Crée deux lutins, par exemple une balle et une pagaie :"
 
 #: templates/info/help/studio/tips/howto/collide.html:15
 msgid "This script tells the ball what to do when it hits the paddle:"
 msgstr ""
+"Ce texte commande à la balle ce qu'elle doit faire quand elle frappe la "
+"palette:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:10
 msgid ""
@@ -11091,16 +11186,22 @@ msgid ""
 "<p>Have two sprites take turns saying something.</p>\n"
 "Try this code in one sprite:"
 msgstr ""
+"Tu veux entreprendre une conversation ou raconter une blague?<br/>\n"
+"<p>tu veux faire en sorte que deux lutins se relaient pour sire quelque "
+"chose.</p>\n"
+"Essaie ce code dans un lutin:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:14
 msgid "And this in another sprite:"
-msgstr ""
+msgstr "Et cela dans un autre lutin:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:20
 msgid ""
 "Broadcast a message to tell another sprite when to talk. When it receives "
 "the message, it can respond."
 msgstr ""
+"Envoie un message à un autre sprite  pour dire quand parler. Quand il reçoit "
+"le message, il peut répondre."
 
 #: templates/info/help/studio/tips/howto/edit-sounds.html:12
 #, python-format
@@ -11125,7 +11226,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:7
 msgid "Want to get started with Scratch? Try this!"
-msgstr ""
+msgstr "Tu veux commencer avec Scratch? Essaie cela!"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:9
 msgid "1 Start Moving"
@@ -11143,11 +11244,11 @@ msgstr "Ensuite, clique sur ce bloc pour faire avancer le chat :"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:20
 msgid "Now, <a href=\"../get-started-2/\">add a sound</a>."
-msgstr ""
+msgstr "Maintenant, <a href=\"../get-started-2/\">ajoute un son</a>."
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:26
 msgid "1 of 13"
-msgstr ""
+msgstr "1 de 13"
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:6
 msgid " 10 Add a Sprite"
@@ -11199,7 +11300,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:26
 msgid "10 of 13"
-msgstr ""
+msgstr "10 de 13"
 
 # 77%
 #: templates/info/help/studio/tips/howto/get-started-11.html:7
@@ -11263,7 +11364,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-11.html:29
 msgid "11 of 13"
-msgstr ""
+msgstr "11 de 13"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:6
 msgid " Share!"
@@ -11281,7 +11382,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:15
 msgid "Click "
-msgstr "<b>Clique</b> sur"
+msgstr "<b>Un clic sur</b>"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:18
 msgid ""
@@ -11301,7 +11402,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:27
 msgid "12 of 13"
-msgstr ""
+msgstr "12 de 13"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:6
 msgid "Now What?"
@@ -11346,7 +11447,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:23
 msgid "13 of 13"
-msgstr ""
+msgstr "13 de 13"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:8
 msgid "2 Add a Sound"
@@ -11372,7 +11473,7 @@ msgstr "(Assure-toi que les haut-parleurs de ton ordinateur sont allumés.)"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:26
 msgid "2 of 13"
-msgstr ""
+msgstr "2 de 13"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:6
 msgid "3 Start a Dance"
@@ -11400,7 +11501,7 @@ msgstr "Clique sur l'un des blocs pour exécuter la pile:"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:21
 msgid "3 of 13"
-msgstr ""
+msgstr "3 de 13"
 
 #: templates/info/help/studio/tips/howto/get-started-4.html:6
 msgid "4 Again and Again"
@@ -11426,7 +11527,7 @@ msgstr "Clique pour <b>exécuter</b> la pile:"
 
 #: templates/info/help/studio/tips/howto/get-started-4.html:19
 msgid "4 of 13"
-msgstr ""
+msgstr "4 de 13"
 
 # 86%
 #: templates/info/help/studio/tips/howto/get-started-5.html:6
@@ -11456,7 +11557,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-5.html:21
 msgid "5 of 13"
-msgstr ""
+msgstr "5 de 13"
 
 #: templates/info/help/studio/tips/howto/get-started-6.html:6
 msgid "6 Green Flag"
@@ -11494,7 +11595,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-6.html:22
 msgid "6 of 13"
-msgstr ""
+msgstr "6 de 13"
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-7.html:5
@@ -11525,7 +11626,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-7.html:23
 msgid "7 of 13"
-msgstr ""
+msgstr "7 de 13"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:6
 msgid "8 Key Press"
@@ -11549,7 +11650,7 @@ msgstr "Tu peux choisir une touche différente dans le menu:"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:18
 msgid "8 of 13"
-msgstr ""
+msgstr "8 de 13"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:5
 msgid " 9 Add a Backdrop"
@@ -11577,7 +11678,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:18
 msgid "9 of 13"
-msgstr ""
+msgstr "9 de 13"
 
 #: templates/info/help/studio/tips/howto/glide-stage.html:11
 #, python-format
@@ -11589,6 +11690,12 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/glide-off-stage-script.png\"><br/>\n"
 " <p>After the sprite glides, it then hides.</p>"
 msgstr ""
+"\n"
+"<p>Pour faire semblant de faire sortir le lutin de la scène, fais le glisser "
+"vers le bord , et ensuite fais le disparaître.</p>\n"
+"Par exemple, essaie ce script:<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/glide-off-stage-script.png\"><br/>\n"
+"<p>Après que le sprite ait  glissé, alors il se cache.</p>"
 
 #: templates/info/help/studio/tips/howto/glide-stage.html:20
 #, python-format
@@ -11596,6 +11703,8 @@ msgid ""
 "Can't see your sprite? Use <img src=\"%(STATIC_URL)s/images/help/show.png\"> "
 "to make it appear."
 msgstr ""
+"Tu ne peux pas voir ton lutin? Utilise <img src=\"%"
+"(STATIC_URL)s/images/help/show.png\"> pour le faire apparaître."
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:16
@@ -12141,7 +12250,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/hoc-8.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:30
 msgid "Share your project"
-msgstr ""
+msgstr "Partage ton projet"
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:11
 msgid ""
@@ -12166,6 +12275,27 @@ msgid ""
 "<p>Now you can send a link to your holiday card to family, friends, and "
 "others!</p>\n"
 msgstr ""
+"\n"
+"<p>Lorsque vous êtes prêt à partager votre projet avec d'autres, cliquez sur "
+"le bouton \"Partager\" en haut de l'écran..</p>\n"
+"\n"
+"<p>(Si vous ne l'avez pas déjà fait, vous aurez besoin de <a id=\"tips-join-"
+"scratch\">créer un compte Scratch</a> pour partager votre projet en "
+"ligne.)</p>\n"
+"<script>\n"
+"$(document).ready(function() {\n"
+"$('#tips-join-scratch').on('click', function() {\n"
+"parent.postMessage('registration-modal', '*');\n"
+"console.log('postMessage to parent');\n"
+"});\n"
+"});\n"
+"</script>\n"
+"\n"
+"<p>Après avoir partagé le projet, vous pouvez aller à la page du projet pour "
+"ajouter un titre, des instructions et d'autres notes.</p>\n"
+"\n"
+"<p>Maintenant, vous pouvez envoyer un lien de votre carte de vacances à "
+"votre famille, vos amis, et les autres!</p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:32
 #, python-format
@@ -12174,6 +12304,9 @@ msgid ""
 "<p>Click <a href=\"../../home/\"><img src = \"%(STATIC_URL)s/images/help/"
 "house-icon.png\"></a> <a href=\"../../home/\">Tips</a> for more ideas!\n"
 msgstr ""
+"\n"
+"<p>Un clic sur <a href=\"../../home/\"><img src = \"%(STATIC_URL)s/images/help"
+"/house-icon.png\"></a> <a href=\"../../home/\">Conseils</a>pour plus d'idées!\n"
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:6
 msgid "Add your project to the Hour of Code studio"
@@ -12270,6 +12403,11 @@ msgid ""
 "introduce millions of students to one hour of computer science and computer "
 "programming."
 msgstr ""
+"Ce tutoriel a été créé pour Hour of Code, une initiative à l'échelle "
+"nationale par  <a href=\"http://csedweek.org\" target=\"_blank\">La semaine de "
+"l'Education en Informatique</a> and <a href=\"http://code.org\" "
+"target=\"_blank\">Code.org</a> pourprésenter une heure de l'informatique et de "
+"la programmation informatique à des millions d'étudiants."
 
 #: templates/info/help/studio/tips/howto/hoc.html:41
 msgid "Let's code!"
@@ -12315,22 +12453,26 @@ msgid ""
 "Have a microphone? You can use <img src=\"%(STATIC_URL)s/images/help/"
 "loudness-small.png\">"
 msgstr ""
+"Vous avez un microphone? Vous pouvez utiliser <img src=\"%"
+"(STATIC_URL)s/images/help/loudness-small.png\">"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:15
 msgid "Make noise so your sprite will jump!"
-msgstr ""
+msgstr "Faites du bruit de telle sorte que votre lutin saute!"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:16
 msgid "For a larger effect, multiply by a number:"
-msgstr ""
+msgstr "Pour un effet plus important, multiplie par un nombre:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:22
 msgid "If you see this pop up, click <b>Allow</b> to access the microphone:"
 msgstr ""
+"Si tu vois cette fenêtre, un clic sur <b>Allow</b> pour accéder au "
+"microphone:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:30
 msgid "Click the checkbox to see how loud it is:"
-msgstr ""
+msgstr "Un clic sur la case à cocher pour voir combien c'est fort:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:32
 #, python-format
@@ -12338,6 +12480,8 @@ msgid ""
 "The monitor will show on the Stage: <img src=\"%(STATIC_URL)s/images/help/"
 "loudness-monitor.png\">."
 msgstr ""
+"Le contrôleur s'affiche sur la scène: <img src=\"%(STATIC_URL)s/images/help"
+"/loudness-monitor.png\">."
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:12
 #, python-format
@@ -12346,10 +12490,13 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
 "\t Use this code to whirl as you move the mouse:"
 msgstr ""
+"<p>Insérer <img src=\"%(STATIC_URL)s/images/help/mouse-x.png\"> dans <img "
+"src=\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
+"\tUtilisez ce code pour tourbillonner lorsque vous déplacez la souris:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:19
 msgid "Try different effects by choosing the menu:"
-msgstr ""
+msgstr "Essayez différents effets en choisissant le menu:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:25
 #: templates/info/help/studio/tips/howto/play-with-effects.html:26
@@ -12358,10 +12505,12 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"> to clear "
 "all effects."
 msgstr ""
+"Un clic sur <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"> pour "
+"effacer tous les effets."
 
 #: templates/info/help/studio/tips/howto/keep-score.html:10
 msgid "Make a variable to keep track of score."
-msgstr ""
+msgstr "Crée une variable pour garder une trace du score."
 
 #: templates/info/help/studio/tips/howto/keep-score.html:11
 #, python-format
@@ -12370,18 +12519,23 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/make-variable-button.png\"></p>\n"
 "\t Type in the name \"Score\" and then click OK:"
 msgstr ""
+"Choisis <img src=\"%(STATIC_URL)s/images/help/data-palette.png\"> et ensuite "
+"<img src=\"%(STATIC_URL)s/images/help/make-variable-button.png\"></p>\n"
+"\t Tape le nom \"Score\" et puis clique OK:"
 
 #: templates/info/help/studio/tips/howto/keep-score.html:16
 msgid "New blocks will appear and the variable Score will show on the Stage:"
 msgstr ""
+"De nouveaux blocs apparaissent et la variable \"Score\" apparaîtront sur ​​la "
+"scène:"
 
 #: templates/info/help/studio/tips/howto/keep-score.html:20
 msgid "Here's an example script for keeping score:"
-msgstr ""
+msgstr "Voici un exemple de script pour compter les points:"
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:7
 msgid "Move your sprite with arrow keys"
-msgstr ""
+msgstr "Déplacez votre lutin avec les touches fléchées"
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:12
 #, python-format
@@ -12393,10 +12547,16 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\"%(STATIC_URL)s/"
 "images/help/right-arrow-key.png\"> to trigger."
 msgstr ""
+"Essaie ce code:<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/move-with-arrow-all.png\"> <br/>\n"
+"Appuyez sur les touches fléchées  <img src=\"%(STATIC_URL)s/images/help/up-"
+"arrow-key.png\"> <img src=\"%(STATIC_URL)s/images/help/down-arrow-key.png\"> "
+"<img src=\"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\"%"
+"(STATIC_URL)s/images/help/right-arrow-key.png\"> pour déclencher."
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:18
 msgid "To copy a stack of blocks, click at the top with the duplicate tool:"
-msgstr ""
+msgstr "Pour copier une pile de blocs, cliquez en haut avec l'outil dupliquer:"
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:22
 #, python-format
@@ -12404,10 +12564,13 @@ msgid ""
 "If your sprite turns upside-down, click <img src=\"%(STATIC_URL)s/images/"
 "help/info.png\"> and set its rotation style to left-right:"
 msgstr ""
+"Si ton lutin se retrouve à l'envers, un clic sur <img src=\"%"
+"(STATIC_URL)s/images/help/info.png\"> et mettre le style de rotation : "
+"position à gauche ou à droite :"
 
 #: templates/info/help/studio/tips/howto/move.html:6
 msgid "Move a sprite"
-msgstr ""
+msgstr "Déplace un lutin"
 
 #: templates/info/help/studio/tips/howto/move.html:13
 #, python-format
@@ -12416,10 +12579,15 @@ msgid ""
 "help/move-1-step.png\"> to move a tiny bit or a bigger number to move "
 "further."
 msgstr ""
+"Essayez d'entrer différents numéros, comme <img src=\"%"
+"(STATIC_URL)s/images/help/move-1-step.png\">pour se  déplacer un petit peu ou "
+"un plus grand nombre d'aller plus loin."
 
 #: templates/info/help/studio/tips/howto/move.html:17
 msgid "If you type in a <b>negative</b> number, the sprite will move backward:"
 msgstr ""
+"Si vous tapez un nombre <b>negative</b> , le lutin va se déplacer en "
+"arrière:"
 
 #: templates/info/help/studio/tips/howto/move.html:25
 msgid ""
@@ -12428,6 +12596,11 @@ msgid ""
 "<p>To go to a certain spot on the screen, use “go to x y”</p>\n"
 "<p>To glide smoothly, use “glide to x y”</p>"
 msgstr ""
+"<p>Pour changer de direction, emploie se diriger en faisant un angle de "
+".<br/>\n"
+"Ou vous pouvez activer.</p>\n"
+"<p>Pour aller à un certain endroit sur ​​l'écran, utiliser «aller à x y\"</p>\n"
+"<p>Pour glisser en douceur, utilisez \"glisser pour x y\" </p>"
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:10
 msgid "To play notes, choose an instrument and note:"
@@ -12480,15 +12653,15 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/play-with-effects.html:12
 msgid "Choose a sprite with lots of color, such as:"
-msgstr ""
+msgstr "Choisis un lutin avec beaucoup de couleurs, tels que:"
 
 #: templates/info/help/studio/tips/howto/play-with-effects.html:15
 msgid "Add this script and then press the space key:"
-msgstr ""
+msgstr "Ajoute ce script, puis appuie sur la touche espace:"
 
 #: templates/info/help/studio/tips/howto/play-with-effects.html:22
 msgid "Choose from the menu to try a different effect:"
-msgstr ""
+msgstr "Choisis dans le menu pour essayer un effet différent."
 
 #: templates/info/help/studio/tips/howto/record-sounds.html:11
 #, python-format
@@ -12555,11 +12728,13 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/switch-happy.html:13
 msgid "Pick a new sprite that has more than one costume, such as:"
-msgstr ""
+msgstr "Choisis un nouveau lutin qui a plus d'un costume, tel que:"
 
 #: templates/info/help/studio/tips/howto/switch-happy.html:20
 msgid "You can use key press to switch costumes:"
 msgstr ""
+"Tu peux utiliser appuyez sur la touche pour basculer d'un costume sur "
+"l'autre:"
 
 #: templates/info/help/studio/tips/howto/talking-sprite.html:7
 msgid "Make your sprite talk"
@@ -12597,14 +12772,17 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/walking.html:12
 msgid "Choose a sprite that has costumes with moving legs, such as:"
 msgstr ""
+"Choisis un lutin qui a des costumes avec les jambes qui bougent, tel que:"
 
 #: templates/info/help/studio/tips/howto/walking.html:16
 msgid "Add a script to change costumes and move:"
-msgstr ""
+msgstr "Ajouter un script pour changer de costume et se déplacer:"
 
 #: templates/info/help/studio/tips/howto/walking.html:18
 msgid "You can change how fast it moves by typing in other numbers."
 msgstr ""
+"Vous pouvez modifier la vitesse à laquelle il se déplace en entrant d'autres "
+"numéros."
 
 #: templates/info/help/studio/tips/howto/walking.html:22
 #, python-format
@@ -12613,6 +12791,9 @@ msgid ""
 "click <img src=\"%(STATIC_URL)s/images/help/info.gif\"> <br/>\n"
 "and set the rotation style to left-right:"
 msgstr ""
+"Si le lutin est à l'envers, \n"
+"un clic sur <img src=\"%(STATIC_URL)s/images/help/info.gif\"> <br/>\n"
+"et changer le style de rotation pour : position à gauche ou à droite:"
 
 # 77%
 #: templates/info/help/studio/tips/ui/editor-map.html:5
@@ -12633,15 +12814,15 @@ msgstr "Outils du curseur"
 
 #: templates/info/help/studio/tips/ui/image-editor-map.html:7
 msgid "Here's a map of the paint editor:"
-msgstr ""
+msgstr "Voici une carte de l'éditeur de dessin:"
 
 #: templates/info/help/studio/tips/ui/image-editor-map.html:12
 msgid "Paint Tools (Vector)"
-msgstr ""
+msgstr "Outils de dessin (Vectoriel)"
 
 #: templates/info/help/studio/tips/ui/image-editor-map.html:17
 msgid "Paint Tips (Testing)"
-msgstr ""
+msgstr "Conseils en dessin ( test )"
 
 #: templates/notifications/notifications.html:9
 msgid "Messages"
@@ -12825,7 +13006,7 @@ msgstr "Nouveau Scratcheur"
 #: templates/profiles/profile_detail.html:79
 #, python-format
 msgid "Joined <span title=\"%(tDateLabel)s\">%(tDate)s</span> ago"
-msgstr ""
+msgstr "Inscrit il y a <span title=\"%(tDateLabel)s\">%(tDate)s</span> ago"
 
 #: templates/profiles/profile_detail.html:98
 msgid "About me"
@@ -12858,7 +13039,7 @@ msgstr "Ce que j'ai fait"
 
 #: templates/profiles/profile_detail.html:179
 msgid "Report profile"
-msgstr ""
+msgstr "Rapporte le profil"
 
 #: templates/profiles/profile_detail.html:189
 #: templates/profiles/includes/shared_projects_list.html:4
@@ -13070,10 +13251,14 @@ msgstr "Voir l'arbre des remix successifs"
 #: templates/projects/base.html:232
 msgid "Add this project to a studio you curate (or remove it from a studio)"
 msgstr ""
+"Ajouter ce projet à un studio dont vous êtes le curateur (ou le retirer du "
+"studio)"
 
 #: templates/projects/base.html:233
 msgid "Just click on the button for any of the studios from the list below"
 msgstr ""
+"Il suffit de cliquer sur le bouton pour l'un des studios de la liste ci-"
+"dessous"
 
 #: templates/projects/base.html:245
 msgid "Download this project file"
@@ -13215,7 +13400,7 @@ msgstr "Créateur"
 
 #: templates/projects/includes/explore-bar.html:39
 msgid "More projects (temporarily disabled)"
-msgstr ""
+msgstr "Plus de projets (désactivé temporairement)"
 
 #: templates/projects/includes/project_list.html:10
 #, python-format
@@ -13246,15 +13431,13 @@ msgstr ""
 
 # 95%
 #: templates/projects/includes/shared/shared-project-actions.html:4
-#, fuzzy
 msgid "Add project to studios"
-msgstr "Ajouté le projet au studio"
+msgstr "Ajoute le projet au studio"
 
 # 83%
 #: templates/projects/includes/shared/shared-project-actions.html:9
-#, fuzzy
 msgid "Embed project on other websites"
-msgstr "Partager le projet sur d'autres sites"
+msgstr "Partage le projet sur d'autres sites"
 
 #: templates/projects/includes/shared/shared-project-actions.html:14
 msgid "Report project as inappropriate"
