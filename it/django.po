@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-28 05:52+0000\n"
-"PO-Revision-Date: 2014-02-23 12:29+0200\n"
+"POT-Creation-Date: 2014-04-18 01:21+0000\n"
+"PO-Revision-Date: 2014-04-25 22:30+0200\n"
 "Last-Translator: s_federici <s_federici@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it\n"
@@ -16,6 +16,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.1.6\n"
+
+#: views.py:148
+msgid "Your message has been sent. We will respond within 3 days."
+msgstr ""
+"Il tuo messaggio è stato inviato. Ti risponderemo al massimo entro 3 giorni."
+
+#: views.py:152 views.py:191
+msgid "Please correct the errors below."
+msgstr "Ti preghiamo di correggere gli errori indicati qui sotto."
+
+#: views.py:187
+msgid ""
+"Your message has been sent! We check our mail every day, but it may take us "
+"several days to respond."
+msgstr ""
+"Il tuo messaggio è stato inviato! Controlliamo la nostra posta ogni giorni, "
+"ma possono passare alcuni giorni prima che riusciamo a risponderti."
 
 #: authentication/forms.py:17
 msgid "Looks like that isn't a valid email format"
@@ -54,42 +71,42 @@ msgstr "Spiacenti, ma non abbiamo trovato un account con questo username"
 msgid "Sorry we don't have an account with that email address"
 msgstr "Spiacenti, ma non abbiamo trovato un account con questo indirizzo email"
 
-#: base_comments/templatetags/scratch_text_filters.py:106
+#: base_comments/templatetags/scratch_text_filters.py:109
 msgid "day"
 msgid_plural "days"
 msgstr[0] "giorno"
 msgstr[1] "giorni"
 
 # 84%
-#: base_comments/templatetags/scratch_text_filters.py:112
+#: base_comments/templatetags/scratch_text_filters.py:115
 #, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
 msgstr[0] "1 minuto fa"
 msgstr[1] "%(minutes)d minuti fa "
 
-#: base_comments/templatetags/scratch_text_filters.py:116
+#: base_comments/templatetags/scratch_text_filters.py:119
 msgid "just now"
 msgstr "ora"
 
-#: base_comments/templatetags/scratch_text_filters.py:118
+#: base_comments/templatetags/scratch_text_filters.py:121
 #, python-format
 msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
 msgstr[0] "1 ora fa"
 msgstr[1] "%(hours)d ore fa"
 
-#: base_comments/templatetags/scratch_text_filters.py:122
+#: base_comments/templatetags/scratch_text_filters.py:125
 #, python-format
 msgid "yesterday at %s"
 msgstr "ieri alle %s"
 
-#: base_comments/templatetags/scratch_text_filters.py:125
+#: base_comments/templatetags/scratch_text_filters.py:128
 #, python-format
 msgid "%s"
 msgstr "%s"
 
-#: base_comments/templatetags/scratch_text_filters.py:133
+#: base_comments/templatetags/scratch_text_filters.py:136
 #, python-format
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s fa"
@@ -831,29 +848,28 @@ msgstr "Non hai il permesso di cancellare questo post."
 
 # 90%
 #: s2forums/djangobb_forum/views.py:996 s2forums/djangobb_forum/views.py:1028
-#, fuzzy
 msgid "You don't have permission to mark this post."
-msgstr "Non hai il permesso di modificare questo post."
+msgstr "Non hai il permesso di segnare questo post."
 
 #: s2forums/djangobb_forum/views.py:1000 s2forums/djangobb_forum/views.py:1032
 msgid "There was not enough data collected to mark this post."
-msgstr ""
+msgstr "Non sono stati raccolti dati sufficienti per segnare questo post."
 
 #: s2forums/djangobb_forum/views.py:1005
 msgid "Post marked as spam."
-msgstr ""
+msgstr "Post segnato come spam."
 
 #: s2forums/djangobb_forum/views.py:1007
 msgid "This post is not in the right state to be marked as spam."
-msgstr ""
+msgstr "Questo post non può ancora essere segnato come spam."
 
 #: s2forums/djangobb_forum/views.py:1037
 msgid "Post un-marked as spam."
-msgstr ""
+msgstr "Il post non è più segnato come spam."
 
 #: s2forums/djangobb_forum/views.py:1039
 msgid "This post is not in the right state to be un-marked as spam."
-msgstr ""
+msgstr "Il segno di spam non può essere ancora tolto da questo post."
 
 #: s2forums/djangobb_forum/views.py:1052
 msgid "Topic closed."
@@ -1017,8 +1033,8 @@ msgstr "In evidenza:"
 #: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:56
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:39
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:45
-#: templates/carousel/includes/project-thumb.html:38
-#: templates/carousel/includes/project-thumb.html:40
+#: templates/carousel/includes/project-thumb.html:26
+#: templates/carousel/includes/project-thumb.html:28
 #: templates/explore/explore2.html:54
 #: templates/explore/includes/project_list.html:10
 #: templates/explore/includes/related_projects.html:17
@@ -1413,6 +1429,8 @@ msgstr "IP:"
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:120
 msgid "Really delete all posts, and ban user? This is hard to reverse."
 msgstr ""
+"Vuoi davvero cancellare tutti i post e bandire l'utente? Annullare questa "
+"operazione sarebbe davvero complesso."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:137
 msgid "(Edit Signature)"
@@ -1420,19 +1438,19 @@ msgstr "(Modifica la Firma)"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
 msgid "Are you sure you want to mark this as spam?"
-msgstr ""
+msgstr "Sei sicuro di volerlo segnare come spam?"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
 msgid "Mark as Spam"
-msgstr ""
+msgstr "Segna come Spam"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
 msgid "Are you sure you want to unmark this as spam?"
-msgstr ""
+msgstr "Sei sicuro di voler togliere il segno di spam?"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
 msgid "Un-mark as Spam"
-msgstr ""
+msgstr "Toglie il segno di Spam"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:168
 msgid "Are you sure you want to delete this post?"
@@ -1715,7 +1733,7 @@ msgstr "Esci"
 msgid "Join Scratch"
 msgstr "Unisciti alla comunità di Scratch"
 
-#: templates/base.html:199 templates/base.html.py:211 templates/base.html:221
+#: templates/base.html:199 templates/base.html.py:210 templates/base.html:220
 #: templates/modal-login.html:10 templates/modal-login.html.py:33
 msgid "Sign in"
 msgstr "Entra"
@@ -1725,44 +1743,44 @@ msgstr "Entra"
 msgid "Password"
 msgstr "Password"
 
-#: templates/base.html:212
+#: templates/base.html:211
 msgid "Forgot password?"
 msgstr "Hai dimenticato la password?"
 
-#: templates/base.html:269
+#: templates/base.html:268
 msgid "About"
 msgstr "Info"
 
-#: templates/base.html:270
+#: templates/base.html:269
 msgid "Educators"
 msgstr "Educatori"
 
-#: templates/base.html:271
+#: templates/base.html:270
 msgid "Parents"
 msgstr "Genitori"
 
-#: templates/base.html:272
+#: templates/base.html:271
 msgid "Community Guidelines"
 msgstr "Linee Guida della Comunità"
 
-#: templates/base.html:273 templates/info/DMCA.html:10
+#: templates/base.html:272 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "Copyright"
 
 # 90%
-#: templates/base.html:274 templates/contact-us.html:26
+#: templates/base.html:273 templates/contact-us.html:26
 msgid "Contact Us"
 msgstr "Contattaci"
 
-#: templates/base.html:275
+#: templates/base.html:274
 msgid "Jobs"
 msgstr "Lavoro"
 
-#: templates/base.html:276
+#: templates/base.html:275
 msgid "Donate"
 msgstr "Donazioni"
 
-#: templates/base.html:288
+#: templates/base.html:286
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
@@ -2331,7 +2349,7 @@ msgstr "Guarda tutto"
 msgid "No items"
 msgstr "Nessun elemento"
 
-#: templates/carousel/includes/project-thumb.html:35
+#: templates/carousel/includes/project-thumb.html:23
 msgid "in"
 msgstr "in"
 
@@ -2630,12 +2648,12 @@ msgid "%(username)s Studio (%(tGCount)s)"
 msgstr "Galleria di %(username)s (%(tGCount)s)"
 
 #: templates/galleries/includes/activity_list.html:36
-#: templates/notifications/includes/notification_list.html:36
+#: templates/notifications/includes/notification_list.html:37
 msgid "Today"
 msgstr "Oggi"
 
 #: templates/galleries/includes/activity_list.html:38
-#: templates/notifications/includes/notification_list.html:38
+#: templates/notifications/includes/notification_list.html:39
 msgid "On"
 msgstr "Su"
 
@@ -2842,7 +2860,7 @@ msgstr "Gallerie in Evidenza"
 
 #: templates/homepage/index.html:198
 msgid "Learn more"
-msgstr ""
+msgstr "Ulteriori informazioni"
 
 # 75%
 #: templates/homepage/index.html:199
@@ -3090,16 +3108,14 @@ msgid ""
 "    <li><a href=\"../help/\">Scratch Help Page</a></li>\n"
 "    <li><a href=\"../help/faq/\">Frequently Asked Questions</a></li>\n"
 "    <li><a href=\"../parents/\">Information for Parents</a></li>\n"
-"    <li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
-"in the News</a></li>\n"
+"    <li><a href=\"/info/credits/\">Scratch Credits</a></li>\n"
 "    "
 msgstr ""
 "\n"
-"    <li><a href=\"../help/\">Pagina di Aiuto di Scratch</a></li>\n"
+"    <li><a href=\"../help/\">Pagina dell'Aiuto di Scratch</a></li>\n"
 "    <li><a href=\"../help/faq/\">Domande Frequenti</a></li>\n"
 "    <li><a href=\"../parents/\">Informazioni per i Genitori</a></li>\n"
-"    <li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
-"nelle News</a></li>\n"
+"    <li><a href=\"/info/credits/\">Crediti di Scratch</a></li>\n"
 "    "
 
 #: templates/info/about.html:70
@@ -3154,7 +3170,12 @@ msgid ""
 "edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). "
 "Find out more about <a href=\"/info/research\">Scratch research</a> and <a "
 "href=\"/statistics\">statistics about Scratch</a>.\n"
-msgstr ""
+msgstr "Il Team di Scratch del MIT e i suoi collaboratori stanno portando avanti "
+"delle ricerche sul modo in cui Scratch viene imparato e usato (per "
+"un'introduzione, vedi <a href=\"http://web.media.mit.edu/~mres/papers"
+"/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). Trova altre "
+"informazioni sulla <a href=\"/info/research\">Ricerca su Scratch</a> e sulle "
+"<a href=\"/statistics\">statistiche di Scratch</a>.\n"
 
 #: templates/info/about.html:90
 msgid "Support and Funding"
@@ -3200,7 +3221,7 @@ msgstr "Crediti e Contributi a Scratch"
 msgid "Meet the Scratch Team"
 msgstr "Incontra il Team di Scratch"
 
-#: templates/info/credits.html:170
+#: templates/info/credits.html:165
 msgid "Community and Moderation"
 msgstr "Comunità e Moderatori"
 
@@ -3344,7 +3365,7 @@ msgstr "Newsletter Trimestrale"
 
 #: templates/info/ext_download.html:19 templates/info/ext_download.html:24
 msgid "Scratch Extensions Browser Plugin"
-msgstr ""
+msgstr "Plugin per il Browser delle Estensioni di Scratch"
 
 #: templates/info/ext_download.html:28
 #, python-format
@@ -3385,6 +3406,42 @@ msgid ""
 "           Please check back on this page for future updates!\n"
 "                 "
 msgstr ""
+"\n"
+"           \n"
+"           <p>\n"
+"Questo plugin per le Estensioni di Scratch ti permette di usare il kit "
+"robotico LEGO WeDo con la versione online version di Scratch 2. (Una "
+"versione futura di questo plugin supporterà anche la PicoBoard.)\n"
+"</p><p>\n"
+"<b>NOTA:</b> Questa versione preliminare del plugin è per il beta testing. "
+"Al momento funziona soltanto su Mac OS X e Windows.\n"
+"</p><p>\n"
+"Provalo, scarica l'installatore per <a href=\"%"
+"(STATIC_URL)sext/ScratchDevicePlugin.dmg\">Mac</a> o <a href=\"%"
+"(STATIC_URL)sext/ScratchDevicePlugin.msi\">Windows</a>.\n"
+"</p><p>\n"
+"Per usare i blocchi WeDo, riavvia il browser. Nell'Editor di Scratch, clicca "
+"sulla categoria \"Altri Blocchi\" <strong>tenendo premuto il tasto "
+"Shift</strong>. Quindi clicca sul pulsante \"Aggiungi un'Estensione\". Si "
+"aprirà la finestra di dialogo Libreria delle Estensioni.\n"
+"</p><p>\n"
+"Seleziona l'estensione \"WeDo\" e clicca OK. I blocchi WeDo appariranno nella "
+"categoria \"Altri Blocchi\".\n"
+"</p><p>\n"
+"Se il plugin è stato installato correttamente, dovresti vedere un indicatore "
+"verde o giallo alla destra della scritta \"WeDo\".\n"
+"</p><p>Se inserisci una presa WeDo nella porta USB del tuo computer, "
+"l'indicatore dovrebbe diventare verde. \n"
+"Dovresti a questo punto poter usare i blocchi motore (se è stato collegato "
+"un motore alla presa) e vedere i valori dei sensori (se un sensore è stato "
+"collegato alla presa).\n"
+"</p><p>\n"
+" Giallo significa che c'è un problema. Muovi il cursore sopra l'indicatore "
+"per scoprire cosa non ha funzionato. \n"
+"           </p><p>\n"
+"           TI preghiamo di fare riferimento a questa pagina per i futuri "
+"aggiornamenti!\n"
+"                 "
 
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
@@ -4017,99 +4074,56 @@ msgstr "Editor Offline di Scratch (Beta)"
 msgid "Scratch 2 Offline Editor"
 msgstr "Editor Offline di Scratch 2"
 
-#: templates/info/scratch2download.html:28
+#: templates/info/scratch2download.html:31
 msgid ""
 "\n"
-"            <p>The Scratch Team is pleased to announce that the Scratch 2 "
-"Offline Editor is now available. \n"
+"            <p>You can install the Scratch 2.0 editor to work on projects "
+"without an internet connection. \n"
 "            This version will work on Mac, Windows, and some versions of "
 "Linux (32 bit).</p>\n"
-"           \n"
-"            <p><h4>Installation Instructions</h4></p>\n"
-"            <p>Click <strong>INSTALL NOW</strong> (below) and follow the "
-"directions.\n"
-"            It will install the Adobe AIR runtime system if you need it, "
-"then install the Scratch 2 application. </p>\n"
-"            <p>When installing, click <strong>\"Yes\" or \"Allow\"</strong> "
-"when the browser asks for permission. \n"
-"            (In <strong>Chrome</strong>, look for the question at the "
-"<strong>top</strong> of the browser window.)\n"
-"            Click <strong>\"Open\"</strong> when asked if you want to save "
-"or open the .air file. \n"
-"            </p>\n"
-"            <p>The file is large (23MB), so please be <strong>patient</"
-"strong> while it downloads, especially on slow connections.</p>\n"
-"            <p>* If you get an error message when installing, delete any "
-"previous Scratch 2 Offline Editor app and try again. Or, see "
-"<strong>Optional Download</strong>, below.\n"
-"            "
+"           "
 msgstr ""
 "\n"
-"            <p>Lo Scratch Team ha il piacere di annunciare che l'Editor "
-"Offline di Scratch 2 è disponibile. \n"
-"            Questa versione funziona su Mac, Windows e su alcune versioni di "
+"            <p>Puoi installare l'editor di Scratch 2.0 per lavorare sui "
+"progetti senza bisogno di una connessione a internet. \n"
+"            Questa versione funziona con Mac, Windows e alcune versione di "
 "Linux (32 bit).</p>\n"
-"           \n"
-"            <p><h4>Instruzioni per l'Installazione </h4></p>\n"
-"            <p>Clicca <strong>INSTALLA ORA</strong> (qui sotto) e segui le "
-"indicazioni.\n"
-"            Se necessario verrà prima installato il runtime system di Adobe "
-"AIR, e poi l'applicazioni di Scratch 2</p>\n"
-"            <p>Durante l'installazione, clicca <strong>\"Si\" or "
-"\"Permetti\"</strong> quando il browser ti chiede il permesso. \n"
-"            (In <strong>Chrome</strong>, trovi la domanda <strong>in "
-"alto</strong> nella finestra del browser.)\n"
-"            Clicca <strong>\"Apri\"</strong> quando ti viene chiesto se vuoi "
-"salvare o aprire il file .air. \n"
-"            </p>\n"
-"            <p>Il file è di grandi dimensioni (23MB), quindi ti preghiamo di "
-"essere <strong>paziente</strong> mentre il file viene scaricato, "
-"specialmente se la tua connessione non è veloce.</p>\n"
-"            <p>* Se durante l'installazione compare un messaggio di errore, "
-"rimuovi le precedenti installazioni dell'Editor Offline di Scratch 2 e "
-"riprova. In alternativa, vedi il <strong>Download Opzionale</strong> qui "
-"sotto.\n"
-"            "
+"           "
 
-#: templates/info/scratch2download.html:113
+#: templates/info/scratch2download.html:35
 #, python-format
 msgid ""
 " \n"
-"<p><h4>Optional Download</h4></p>\n"
-"<p>If you prefer to download the installers to your local drive: </br>\n"
-"     (1) If you don't have it, download and install the latest <a href="
-"\"http://get.adobe.com/air/\">Adobe AIR 3.x</a>. For Linux, use <a href="
-"\"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin"
-"\">AIR 2.6.0 for Linux</a> (15MB).</br>\n"
+"    <p><h4>How to Install the Scratch 2.0 Offline Editor</h4></p>\n"
+"    <p>\n"
+"    <b>1. Install Adobe Air:</b> If you don't already have it, download and "
+"install the latest <a href=\"http://get.adobe.com/air/\">Adobe AIR</a>. For "
+"Linux, use <a href=\"http://airdownload.adobe.com/air/lin/download/2.6/"
+"AdobeAIRInstaller.bin\">AIR 2.6.0 for Linux</a> (15MB).</br>\n"
 "     &nbsp;&nbsp;&nbsp; Note: For older Mac OSx 10.5 or below, use: <a href="
 "\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.dmg\">Adobe AIR "
 "2.6.0 Mac </a>(18MB).</br>\n"
-"    (2) And then download and install the <a href=\"http://cdn.scratch.mit."
-"edu/scratchr2/static/sa/Scratch.air\">Scratch installer</a>.</p>\n"
+"    <b>2. Install Scratch offline editor:</b> Download and launch the <a "
+"href=\"%(STATIC_URL)ssa/Scratch.air\">Scratch 2.0 installer</a>.</p>\n"
 "     \n"
 "       \n"
-"        <h4>Known issues to be fixed later:</h4>\n"
+"        <h4>Known issues:</h4>\n"
 "        <p><ul>\n"
-"       <li>Graphic effects blocks (in \"Looks\") may slow down projects due "
-"to a known Flash bug. A fix will be available in a future update.</li>\n"
-"        <li>The <strong>backpack</strong> is not yet available.</li>\n"
+"            <li>If your offline editor is crashing directly after Scratch is "
+"opened, install the Scratch 2 offline editor again (see step 2 above.) This "
+"issue is due to a bug introduced in Adobe Air version 14. (released April "
+"2014).</li>  \n"
+"            <li>Graphic effects blocks (in \"Looks\") may slow down projects "
+"due to a known Flash bug. </li>\n"
+"            <li>The <strong>backpack</strong> is not yet available.</li>\n"
 "          </ul></p>\n"
 "       \n"
 "        <p><h4>Updates</h4></p>\n"
 "        <p>The Offline Editor can update itself (with user permission). \n"
 "        It will check for updates at startup or you can use the \"Check for "
 "updates\" command in the file menu. </p>      \n"
-"        <p>Update v370 - September 10, 2013: Fixes a problem with project "
-"saving that sometimes prevented the saved project from being opened. Also "
-"now opens and repairs projects that were saved incorrectly by earlier "
-"versions of the Offline Editor.</p>\n"
-"        <p>Update v366 - August 29, 2013: Can upload and share to website; "
-"Compiled with Adobe Air 2.6 so it can work on some versions of Linux and "
-"older Mac OSX; Shorter app name; Music MP3 upload fixed; Top-right text "
-"fixed; Tips closes in presentation mode.</p>\n"
-"\n"
-"\t\n"
-"        \n"
+"        <p> The current version is v404, updated 10 April 2014.</p>\n"
+"\t        \n"
 "        <p><h4>Starter Projects and Support Materials</h4></p>\n"
 "        <p>The Scratch 2 Starter Projects are available for download in this "
 "<a href=\"%(STATIC_URL)ssa/Scratch2StarterProjects.zip\">Starter Projects "
@@ -4119,69 +4133,59 @@ msgid ""
 "href=\"%(STATIC_URL)spdfs/help/Scratch2Cards_Jan2013.pdf\">Scratch Cards "
 "(PDF)</a>.  \n"
 "        \n"
-"        <p><h4>Feedback</h4></p>\n"
-"        <p>Please report feedback and bugs on the <a href=\"http://scratch."
-"mit.edu/discuss/topic/14690/\">Scratch discussion forums</a>.\n"
+"        <p><h4>Bugs and Glitches</h4></p>\n"
+"        <p>Found a bug? Please report it by posting in the <a href=\"http://"
+"scratch.mit.edu/discuss/3/\">Bugs and Glitches discussion forum</a>.\n"
 "        </p>\n"
 "        \n"
 "    \n"
 "       "
 msgstr ""
 " \n"
-"<p><h4>Download Opzionale</h4></p>\n"
-"<p>Se preferisci scaricare gli installatori nel suo disco locale: </br>\n"
-"     (1) Se non lo hai già fatto, scarica e installa l'ultimo <a "
-"href=\"http://get.adobe.com/air/\">Adobe AIR 3.x</a>. Per Linux, usa <a href=\""
-"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin\">AIR "
-"2.6.0 per Linux</a> (15MB).</br>\n"
-"     &nbsp;&nbsp;&nbsp; Nota: Per il vecchio Mac OSx 10.5 e precedenti, usa: "
-"<a "
+"    <p><h4>Come Installare l'Editor Offline di Scratch 2.0</h4></p>\n"
+"    <p>\n"
+"    <b>1. Installa Adobe Air:</b> Se ancora non lo hai installato, scarica e "
+"installa l'ultima versione di <a href=\"http://get.adobe.com/air/\">Adobe "
+"AIR</a>. Per Linux, usa <a href=\"http://airdownload.adobe.com/air/lin/downlo"
+"ad/2.6/AdobeAIRInstaller.bin\">AIR 2.6.0 per Linux</a> (15MB).</br>\n"
+"     &nbsp;&nbsp;&nbsp; Nota: Per Mac OSx 10.5 o precedenti, usa: <a "
 "href=\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.dmg\">Adobe "
 "AIR 2.6.0 Mac </a>(18MB).</br>\n"
-"    (2) Quindi scarica e installa l'<a href=\"http://cdn.scratch.mit.edu/scra"
-"tchr2/static/sa/Scratch.air\">installatore di Scratch installer</a>.</p>\n"
+"    <b>2. Installa l'editor offline di Scratch:</b> Scarica ed esegui l'<a "
+"href=\"%(STATIC_URL)ssa/Scratch.air\">installatore di Scratch 2.0</a>.</p>\n"
 "     \n"
 "       \n"
-"        <h4>Problemi noti che verranno corretti in futuro:</h4>\n"
+"        <h4>Problemi noti:</h4>\n"
 "        <p><ul>\n"
-"       <li>I blocchi degli effetti grafici (in \"Aspetto\") possono rallentare "
-"i progetti a causa di un bug di Flash. Una soluzione verrà resa disponibile "
-"in un futuro aggiornamento.</li>\n"
-"        <li>La <strong>valigetta</strong> non è ancora disponibile.</li>\n"
+"            <li>Se l'editor offline si chiude subito dopo che Scratch è "
+"stato aperto, installa nuvoamente l'editor offline di Scratch 2 (vedi il "
+"passo 2 qui sopra.) Questo problema è causato da un bug introdotto in Adobe "
+"Air versione 14. (rilasciato ad Aprile 2014).</li>  \n"
+"            <li>I blocchi degli Effetti Grafici (in \"Aspetto\") posso "
+"rallentare i progetti a causa di un bug noto di Flash. </li>\n"
+"            <li>La <strong>valigetta</strong> non è ancora disponibile.</li>\n"
 "          </ul></p>\n"
 "       \n"
 "        <p><h4>Aggiornamenti</h4></p>\n"
-"        <p>L'Editor Offline può aggiornarsi automaticamente (con il permesso "
-"dell'utente). \n"
-"        Verifica infatti la presenza di aggiornamenti ogni volta che viene "
-"avviato oppure puoi usare tu stesso il comando \"Verifica aggiornamenti\" mel "
-"menu file. </p>      \n"
-"        <p>Aggiornamento v370 - 10 Settembre 2013: Corregge un problema del "
-"salvataggio dei progetti che impediva a volte di riaprire i progetti "
-"salvati. Ora anche i progetti che erano stati salvati in maniera errata da "
-"versioni precedenti dell'Editor Offline vengono aperti e riparati.</p>\n"
-"        <p>Aggiornamento v366 - 29 Agosto 2013: E' possibile caricare e "
-"condividere i progetti sul sito web; Compilato con Adobe Air 2.6 in modo da "
-"poter funzionare con alcune versioni di Linux e sui vecchi Mac OSX; Nome "
-"dell'app più breve; corretta l'importazione di file MP3; corretto il testo "
-"in posizione in alto a destra; la finestra dei suggerimenti si chiude "
-"automaticamente in modalità presentazione.</p>\n"
-"\n"
-"\t\n"
-"        \n"
+"        <p>L'Editor Offline può autoaggiornarsi (se l'utente lo consente). \n"
+"        Verificherà automaticamente la presenza di aggiornamenti quando "
+"viene avviato oppure puoi usare il comando \"Verifica aggiornamenti\" del menu "
+"File. </p>      \n"
+"        <p> La versione attuale è v404, aggiornata il 10 April 2014.</p>\n"
+"\t        \n"
 "        <p><h4>Progetti per Iniziare e Materiali di Supporto</h4></p>\n"
-"        <p>I Progetti per Iniziare di Scratch 2 sono disponibili per lo "
-"scaricamento nel <a href=\"%(STATIC_URL)ssa/Scratch2StarterProjects.zip\">file "
+"        <p>I Progetti per Iniziare di Scratch 2 sono disponibili per essere "
+"scaricati nel <a href=\"%(STATIC_URL)ssa/Scratch2StarterProjects.zip\">file "
 "dei Progetti per Iniziare (zip)</a>.</p>\n"
 "        <p>Puoi anche scaricare la <a href=\"%(STATIC_URL)spdfs/help/Getting-"
 "Started-Guide-Scratch2.pdf\">Guida per Iniziare (PDF)</a> e le <a href=\"%"
 "(STATIC_URL)spdfs/help/Scratch2Cards_Jan2013.pdf\">Schede di Scratch "
 "(PDF)</a>.  \n"
 "        \n"
-"        <p><h4>Feedback</h4></p>\n"
-"        <p>Puoi segnalare il tuo feedback e la presenza di bug nei <a "
-"href=\"http://scratch.mit.edu/discuss/topic/14690/\">forum di discussione di "
-"Scratch</a>.\n"
+"        <p><h4>Errori e Inconvenienti</h4></p>\n"
+"        <p>Hai trovato un errore? Puoi farcelo sapere usando il <a "
+"href=\"http://scratch.mit.edu/discuss/3/\">forum di discussione degli Errori e "
+"Inconvenienti</a>.\n"
 "        </p>\n"
 "        \n"
 "    \n"
@@ -4673,15 +4677,15 @@ msgstr ""
 
 #: templates/info/help/faq.html:43
 msgid ""
-"The <a href=\"\\scratch2download\\\">Scratch 2 offline editor (beta version)"
-"</a> is now available. You can also still use <a href =\"/"
+"The <a href=\"/scratch2download/\">Scratch 2 offline editor (beta version)</"
+"a> is now available. You can also still use <a href =\"/"
 "scratch_1.4\">Scratch 1.4</a>. Note: You can have both Scratch 1.4 and 2 on "
 "your computer."
 msgstr ""
-"L'<a href=\"\\scratch2download\\\">editor offline di Scratch 2 (versione "
-"beta)</a> è ora disponibile. Puoi comunque continuare ad usare anche <a href "
-"=\"/scratch_1.4\">Scratch 1.4</a>. Nota: Puoi installare Scratch 1.4 e 2 allo "
-"stesso tempo sul tuo computer."
+"L'<a href=\"/scratch2download/\">editor offline di Scratch 2 (versione "
+"beta)</a> è ora disponibile. Volendo puoi continuare ad usare <a href "
+"=\"/scratch_1.4\">Scratch 1.4</a>. Nota: Puoi avere installati "
+"contemporaneamente sul tuo computer sia Scratch 1.4 che Scratch 2."
 
 #: templates/info/help/faq.html:46
 msgid ""
@@ -5882,7 +5886,7 @@ msgstr "Introduzione Passo-Passo"
 #: templates/info/help/studio/tips/home.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:5
 msgid "Holiday Card Tutorial"
-msgstr ""
+msgstr "Tutorial Cartolina delle Vacanze"
 
 #: templates/info/help/studio/tips/home.html:7
 msgid "Map of Project Editor"
@@ -6583,6 +6587,61 @@ msgstr "Altri Blocchi"
 #: templates/info/help/studio/tips/home.html:238
 msgid "Make a Block"
 msgstr "Crea Blocco"
+
+#: templates/info/help/studio/tips/home.html:239
+msgid "Add an Extension"
+msgstr "Aggiungi un'Estesione"
+
+# 83%
+#: templates/info/help/studio/tips/blocks/add-an-extension.html:6
+#, python-format
+msgid "<img src=\"%(STATIC_URL)s/images/help/add-an-extension.png\"/>"
+msgstr "<img src=\"%(STATIC_URL)s/images/help/change_tempo.png\"/>"
+
+#: templates/info/help/studio/tips/blocks/add-an-extension.html:9
+msgid "Add blocks that extend what you can do in Scratch"
+msgstr "Aggiunge nuovi blocchi che estendono le possibilità di uso di Scratch"
+
+#: templates/info/help/studio/tips/blocks/add-an-extension.html:13
+msgid ""
+"\n"
+"<p>Extensions allow you to connect Scratch to hardware devices or web "
+"services.</p>\n"
+"<p>\n"
+"Click \"Add an Extension\" and choose from the dialog box. For hardware "
+"devices, it will prompt you to download and install a browser plug-in.\n"
+"</p>\n"
+msgstr ""
+"\n"
+"<p>Le estensioni di permettono di collegare Scratch a dispositivi hardware o "
+"a servizi web.</p>\n"
+"<p>\n"
+"Clicca su \"Aggiungi un'Estensione\" e scegli l'estensione nella finestra di "
+"dialogo. Per estensioni riguardanti dispositivi hardware ti verrà chiesto di "
+"scaricare e installare un plug-in.\n"
+"</p>\n"
+
+#: templates/info/help/studio/tips/blocks/add-an-extension.html:22
+msgid ""
+"\n"
+"Currently there is one extension available:<br>\n"
+"LEGO WeDo\n"
+msgstr ""
+"\n"
+"Al momento è disponibile una sola estensione:<br>\n"
+"LEGO WeDo\n"
+
+#: templates/info/help/studio/tips/blocks/add-an-extension.html:29
+msgid ""
+"\n"
+"<h4>Troubleshooting:</h4>\n"
+"<p>If your extension is not working, see the <a href=\"../../ui/extensions/"
+"\">Extensions tips</a>. \n"
+msgstr ""
+"\n"
+"<h4>Soluzione dei Problemi:</h4>\n"
+"<p>Se la tua estensione non funziona, vai alla pagina dei <a "
+"href=\"../../ui/extensions/\">Suggerimenti per le Estensioni</a>. \n"
 
 #: templates/info/help/studio/tips/blocks/add-to-list.html:6
 #, python-format
@@ -8028,6 +8087,14 @@ msgid ""
 "increases by 1.\n"
 "  "
 msgstr ""
+"\n"
+"  Puoi indicare dove inserire l'elemento selezionando una posizione nel menu "
+"o \n"
+"   digitando un numero. Se scegli \"random\" l'elemento verrà inserito in una "
+"posizione della lista scelta a caso. Se scegli \n"
+"  \"ultimo\" l'elemento verrà aggiunto in fondo alla lista. La lunghezza della "
+"lista aumenta di 1.\n"
+"  "
 
 #: templates/info/help/studio/tips/blocks/insert-list.html:18
 #, python-format
@@ -11005,9 +11072,55 @@ msgstr ""
 "casella a fianco al blocco:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/y-position-display.png\"></p>"
 
+#: templates/info/help/studio/tips/ext/LEGO WeDo.html:6
 #: templates/info/help/studio/tips/ext/wedo.html:6
 msgid "LEGO WeDo"
 msgstr "LEGO WeDo"
+
+#: templates/info/help/studio/tips/ext/LEGO WeDo.html:10
+#, python-format
+msgid ""
+"<p>This extension works with the LEGO WeDo construction set.</p>\n"
+" <img src=\"%(STATIC_URL)s/images/help/wedo-hub.jpg\" />\n"
+msgstr ""
+"<p>Questa estensione funziona con il kit di costruzioni LEGO WeDo.</p>\n"
+" <img src=\"%(STATIC_URL)s/images/help/wedo-hub.jpg\" />\n"
+
+#: templates/info/help/studio/tips/ext/LEGO WeDo.html:16
+#, python-format
+msgid ""
+"<p>To use it, you first need to download and then open the installer file "
+"for <a href=\"%(STATIC_URL)s/ext/ScratchDevicePlugin.dmg\">Mac</a>\n"
+"or <a href=\"%(STATIC_URL)s/ext/ScratchDevicePlugin.msi\">Windows</a>. You "
+"will need administrator access on your computer to install it. (A Unix "
+"version will be available soon.)</p>\n"
+msgstr ""
+"<p>Per usarla, devi prima scaricare ed eseguire l'installatore per <a href=\""
+"%(STATIC_URL)s/ext/ScratchDevicePlugin.dmg\">Mac</a>\n"
+"o <a href=\"%(STATIC_URL)s/ext/ScratchDevicePlugin.msi\">Windows</a>. Per "
+"poterlo installare devi averi i permessi di amministrazione sul tuo "
+"computer. (Una versione Unix sarà presto disponibile.)</p>\n"
+
+#: templates/info/help/studio/tips/ext/LEGO WeDo.html:23
+msgid ""
+"\n"
+"  To find out more about the LEGO WeDo and blocks, see the <a href=\"http://"
+"wiki.scratch.mit.edu/wiki/LEGO_WeDo_Construction_Set\" target=\"_blank"
+"\">LEGO WeDo page</a> on the Scratch wiki.\n"
+"  </p> \n"
+"  \n"
+"\n"
+"  "
+msgstr ""
+"\n"
+"  Per avere altre informazioni su LEGO WeDo e sui blocchi LEGO WeDo, vai "
+"alla pagina <a "
+"href=\"http://wiki.scratch.mit.edu/wiki/LEGO_WeDo_Construction_Set\" "
+"target=\"_blank\">LEGO WeDo page</a> nel wiki di Scratch.\n"
+"  </p> \n"
+"  \n"
+"\n"
+"  "
 
 #: templates/info/help/studio/tips/ext/wedo.html:10
 #, python-format
@@ -11054,25 +11167,25 @@ msgstr ""
 
 # 98%
 #: templates/info/help/studio/tips/howto/arrowkeys.html:7
-#, fuzzy
 msgid "Points sprite towards mouse-pointer or another sprite."
 msgstr "Dirige lo sprite verso il puntatore del mouse o verso un altro sprite"
 
 # 84%
 #: templates/info/help/studio/tips/howto/arrowkeys.html:18
-#, fuzzy
 msgid "changes the direction of the current sprite."
-msgstr "Definisce la direzione dello sprite"
+msgstr "cambia la direzione dello sprite"
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:11
 msgid "To make a sprite bounce around the Stage, try this script:"
-msgstr ""
+msgstr "Per far rimbalzare uno sprite sullo Stage, prova questo script:"
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:13
 msgid ""
 "The sprite points at an angle, and then keeps moving and bouncing off the "
 "edge."
 msgstr ""
+"Lo sprite prima si orienta in diagonale, poi inizia a muoversi e a "
+"rimbalzare sui bordi."
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:19
 #, python-format
@@ -11080,18 +11193,22 @@ msgid ""
 "If your sprite looks upside-down, click <img src=\"%(STATIC_URL)s/images/"
 "help/info.gif\"> and set its rotation style to left-right:"
 msgstr ""
+"Se il tuo sprite appare a testa in giù, clicca <img src=\"%"
+"(STATIC_URL)s/images/help/info.gif\"> e cambia il suo stile di rotazione in "
+"\"voltati solo a destra-sinistra\":"
 
 #: templates/info/help/studio/tips/howto/collide.html:7
 msgid "Make sprites react when they collide"
-msgstr ""
+msgstr "Fai reagire gli sprite quando si scontrano"
 
 #: templates/info/help/studio/tips/howto/collide.html:11
 msgid "Make two sprites, such as a ball and a paddle:"
-msgstr ""
+msgstr "Crea due sprite, ad esempio una palla e una racchetta:"
 
 #: templates/info/help/studio/tips/howto/collide.html:15
 msgid "This script tells the ball what to do when it hits the paddle:"
 msgstr ""
+"Questo script dice alla palla come comportarsi quando colpisce la racchetta:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:10
 msgid ""
@@ -11099,16 +11216,21 @@ msgid ""
 "<p>Have two sprites take turns saying something.</p>\n"
 "Try this code in one sprite:"
 msgstr ""
+"Vuoi creare un dialogo o raccontare una barzelletta?<br/>\n"
+"<p>Usa due sprite che dicano a turno delle cose.</p>\n"
+"Prova questo codice in uno sprite:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:14
 msgid "And this in another sprite:"
-msgstr ""
+msgstr "Aggiungi questo in un'altro sprite:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:20
 msgid ""
 "Broadcast a message to tell another sprite when to talk. When it receives "
 "the message, it can respond."
 msgstr ""
+"Invia un messaggio per indicare ad un'altro sprite quando è il momento di "
+"parlare. Quando riceve il messaggio potrà rispondere."
 
 #: templates/info/help/studio/tips/howto/edit-sounds.html:12
 #, python-format
@@ -11134,7 +11256,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:7
 msgid "Want to get started with Scratch? Try this!"
-msgstr ""
+msgstr "Vuoi sapere come iniziare con Scratch? Prova questo!"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:9
 msgid "1 Start Moving"
@@ -11151,14 +11273,13 @@ msgid "Then, click on that block to make the cat move:"
 msgstr "Quindi clicca sul blocco per far muovere il gatto:"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:20
-msgid "Now, <a href=\"../get-started-2/\">add a sound</a>."
-msgstr ""
+msgid "Now, add a sound."
+msgstr "Ora aggiungi un suono."
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-1.html:26
-#, fuzzy
 msgid "1 of 13"
-msgstr "3 di 13"
+msgstr "1 di 13"
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:6
 msgid " 10 Add a Sprite"
@@ -11210,9 +11331,8 @@ msgstr ""
 
 # 75%
 #: templates/info/help/studio/tips/howto/get-started-10.html:26
-#, fuzzy
 msgid "10 of 13"
-msgstr "3 di 13"
+msgstr "10 di 13"
 
 # 77%
 #: templates/info/help/studio/tips/howto/get-started-11.html:7
@@ -11276,9 +11396,8 @@ msgstr ""
 
 # 75%
 #: templates/info/help/studio/tips/howto/get-started-11.html:29
-#, fuzzy
 msgid "11 of 13"
-msgstr "3 di 13"
+msgstr "11 di 13"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:6
 msgid " Share!"
@@ -11316,9 +11435,8 @@ msgstr ""
 
 # 75%
 #: templates/info/help/studio/tips/howto/get-started-12.html:27
-#, fuzzy
 msgid "12 of 13"
-msgstr "3 di 13"
+msgstr "12 di 13"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:6
 msgid "Now What?"
@@ -11362,9 +11480,8 @@ msgstr ""
 
 # 87%
 #: templates/info/help/studio/tips/howto/get-started-13.html:23
-#, fuzzy
 msgid "13 of 13"
-msgstr "3 di 13"
+msgstr "13 di 13"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:8
 msgid "2 Add a Sound"
@@ -11373,26 +11490,29 @@ msgstr "2 Aggiungere un Suono"
 #: templates/info/help/studio/tips/howto/get-started-2.html:10
 msgid ""
 "Drag out a <span class=soundcolor>PLAY DRUM</span> block (from <span "
-"class=soundcolor>Sound</span>) and snap it onto the <span "
-"class=movecolor>MOVE</span> block."
+"class=soundcolor>Sound</span>)\n"
+"\t and snap it onto the <span class=movecolor>MOVE</span> block."
 msgstr ""
-"Trascina ora un blocco <span class=soundcolor>SUONA TAMBURO</span> (da <span "
-"class=soundcolor>Suono</span>) e attaccalo sotto al blocco <span "
-"class=movecolor>FAI PASSI</span>."
+"Trascina un blocco <span class=soundcolor>SUONA TAMBURO</span> block (da "
+"<span class=soundcolor>Suoni</span>)\n"
+"\t e attaccalo sopra al blocco <span class=movecolor>FAI PASSI</span>."
 
-#: templates/info/help/studio/tips/howto/get-started-2.html:15
+#: templates/info/help/studio/tips/howto/get-started-2.html:13
 msgid "Click and listen."
 msgstr "Clicca e ascolta."
 
-#: templates/info/help/studio/tips/howto/get-started-2.html:17
+#: templates/info/help/studio/tips/howto/get-started-2.html:15
 msgid "(Make sure your computer's speakers are on.)"
 msgstr "(Assicurati che le casse del computer siano accese.)"
 
+#: templates/info/help/studio/tips/howto/get-started-2.html:19
+msgid "Next, start a dance."
+msgstr "Ora iniziamo a ballare."
+
 # 85%
-#: templates/info/help/studio/tips/howto/get-started-2.html:26
-#, fuzzy
+#: templates/info/help/studio/tips/howto/get-started-2.html:29
 msgid "2 of 13"
-msgstr "3 di 13"
+msgstr "2 di 13"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:6
 msgid "3 Start a Dance"
@@ -11446,9 +11566,8 @@ msgstr "Clicca la pila di blocchi per eseguirla:"
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-4.html:19
-#, fuzzy
 msgid "4 of 13"
-msgstr "3 di 13"
+msgstr "4 di 13"
 
 # 86%
 #: templates/info/help/studio/tips/howto/get-started-5.html:6
@@ -11478,9 +11597,8 @@ msgstr ""
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-5.html:21
-#, fuzzy
 msgid "5 of 13"
-msgstr "3 di 13"
+msgstr "5 di 13"
 
 #: templates/info/help/studio/tips/howto/get-started-6.html:6
 msgid "6 Green Flag"
@@ -11518,9 +11636,8 @@ msgstr ""
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-6.html:22
-#, fuzzy
 msgid "6 of 13"
-msgstr "3 di 13"
+msgstr "6 di 13"
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-7.html:5
@@ -11550,9 +11667,8 @@ msgstr ""
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-7.html:23
-#, fuzzy
 msgid "7 of 13"
-msgstr "3 di 13"
+msgstr "7 di 13"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:6
 msgid "8 Key Press"
@@ -11574,9 +11690,8 @@ msgstr "Puoi scegliere un tasto diverso nel menu:"
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-8.html:18
-#, fuzzy
 msgid "8 of 13"
-msgstr "3 di 13"
+msgstr "8 di 13"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:5
 msgid " 9 Add a Backdrop"
@@ -11604,9 +11719,8 @@ msgstr ""
 
 # 85%
 #: templates/info/help/studio/tips/howto/get-started-9.html:18
-#, fuzzy
 msgid "9 of 13"
-msgstr "3 di 13"
+msgstr "9 di 13"
 
 #: templates/info/help/studio/tips/howto/glide-stage.html:11
 #, python-format
@@ -11618,6 +11732,12 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/glide-off-stage-script.png\"><br/>\n"
 " <p>After the sprite glides, it then hides.</p>"
 msgstr ""
+"\n"
+"<p>Per far sembrare che uno sprite esca dallo Stage, fallo scivolare verso "
+"il bordo e poi nascondilo.</p>\n"
+"Ad esempio prova questo script:<br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/glide-off-stage-script.png\"><br/>\n"
+" <p>Dopo che lo sprite ha terminato di scivolare si nasconde.</p>"
 
 #: templates/info/help/studio/tips/howto/glide-stage.html:20
 #, python-format
@@ -11625,6 +11745,8 @@ msgid ""
 "Can't see your sprite? Use <img src=\"%(STATIC_URL)s/images/help/show.png\"> "
 "to make it appear."
 msgstr ""
+"Non vedi più il tuo sprite? Usa <img src=\"%"
+"(STATIC_URL)s/images/help/show.png\"> per farlo riapparire."
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:6
 #: templates/info/help/studio/tips/howto/hoc.html:16
@@ -12191,6 +12313,26 @@ msgid ""
 "<p>Now you can send a link to your holiday card to family, friends, and "
 "others!</p>\n"
 msgstr ""
+"\n"
+"<p>Quando sei pronto per condividere il tuo progetto, clicca il pulsante "
+"“Condividi” in alto a destra della finestra di Scratch.</p>\n"
+"\n"
+"<p>(Se non lo hai già fatto, per condividere il tuo progetto online dovrai "
+"<a id=\"tips-join-scratch\">creare un account Scratch</a>.)</p>\n"
+"<script>\n"
+"  $(document).ready(function() {\n"
+"    $('#tips-join-scratch').on('click', function() {\n"
+"      parent.postMessage('registration-modal', '*');\n"
+"      console.log('postMessage to parent');\n"
+"    });\n"
+"  });\n"
+"</script>\n"
+"\n"
+"<p>Dopo aver condiviso il tuo progetto, puoi accedere alla pagina del "
+"progetto per aggiungere un titolo, delle istruzioni e delle note.</p>\n"
+"\n"
+"<p>Ora puoi inviare un link alla tua cartolina alla tua famiglia, ai tuoi "
+"amici e a tutti gli altri!</p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:32
 #, python-format
@@ -12199,6 +12341,9 @@ msgid ""
 "<p>Click <a href=\"../../home/\"><img src = \"%(STATIC_URL)s/images/help/"
 "house-icon.png\"></a> <a href=\"../../home/\">Tips</a> for more ideas!\n"
 msgstr ""
+"\n"
+"<p>Clicca <a href=\"../../home/\"><img src = \"%(STATIC_URL)s/images/help"
+"/house-icon.png\"></a> <a href=\"../../home/\">Suggerimenti</a> per altre idee!\n"
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:6
 msgid "Add your project to the Hour of Code studio"
@@ -12297,6 +12442,11 @@ msgid ""
 "introduce millions of students to one hour of computer science and computer "
 "programming."
 msgstr ""
+"Questo tutorial è stato creato per l'Ora del Codice, una iniziativa "
+"nazionale della <a href=\"http://csedweek.org\" target=\"_blank\">Settimana "
+"dell'Insegnamento dell'Informatica</a> e di <a href=\"http://code.org\" "
+"target=\"_blank\">Code.org</a> per introdurre milioni di studenti ad un ora di "
+"informatica e di programmazione."
 
 #: templates/info/help/studio/tips/howto/hoc.html:41
 msgid "Let's code!"
@@ -12342,22 +12492,26 @@ msgid ""
 "Have a microphone? You can use <img src=\"%(STATIC_URL)s/images/help/"
 "loudness-small.png\">"
 msgstr ""
+"Hai un microfono? Puoi usare <img src=\"%(STATIC_URL)s/images/help/loudness-"
+"small.png\">"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:15
 msgid "Make noise so your sprite will jump!"
-msgstr ""
+msgstr "Fai rumore per far saltare il tuo sprite!"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:16
 msgid "For a larger effect, multiply by a number:"
-msgstr ""
+msgstr "Per un effetto maggiore, moltipla per un numero:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:22
 msgid "If you see this pop up, click <b>Allow</b> to access the microphone:"
 msgstr ""
+"Se vedi questo messaggio, clicca <b>Permetti</b> per avere accesso al "
+"microfono:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:30
 msgid "Click the checkbox to see how loud it is:"
-msgstr ""
+msgstr "Clicca il quadrato per vedere quanto è forte il rumore:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:32
 #, python-format
@@ -12365,6 +12519,8 @@ msgid ""
 "The monitor will show on the Stage: <img src=\"%(STATIC_URL)s/images/help/"
 "loudness-monitor.png\">."
 msgstr ""
+"Il monitor comparirà sullo Stage: <img src=\"%(STATIC_URL)s/images/help"
+"/loudness-monitor.png\">."
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:12
 #, python-format
@@ -12373,10 +12529,13 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
 "\t Use this code to whirl as you move the mouse:"
 msgstr ""
+"<p>Inserisci <img src=\"%(STATIC_URL)s/images/help/mouse-x.png\"> in <img "
+"src=\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
+"\t Usa questo codice per creare un effetto mulinello quando muovi il mouse:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:19
 msgid "Try different effects by choosing the menu:"
-msgstr ""
+msgstr "Prova effetti differenti scegliendoli nel menu:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:25
 #: templates/info/help/studio/tips/howto/play-with-effects.html:26
@@ -12385,10 +12544,12 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"> to clear "
 "all effects."
 msgstr ""
+"Clicca stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"> per "
+"annullare tutti gli effetti."
 
 #: templates/info/help/studio/tips/howto/keep-score.html:10
 msgid "Make a variable to keep track of score."
-msgstr ""
+msgstr "Crea una variabile per tener traccia del punteggio."
 
 #: templates/info/help/studio/tips/howto/keep-score.html:11
 #, python-format
@@ -12397,18 +12558,24 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/make-variable-button.png\"></p>\n"
 "\t Type in the name \"Score\" and then click OK:"
 msgstr ""
+"Seleziona la categoria <img src=\"%(STATIC_URL)s/images/help/data-"
+"palette.png\"> e poi clicca il pulsante <img src=\"%(STATIC_URL)s/images/help"
+"/make-variable-button.png\"></p>\n"
+"\t Inserisci il nome \"Punteggio\" e poi clicca OK:"
 
 #: templates/info/help/studio/tips/howto/keep-score.html:16
 msgid "New blocks will appear and the variable Score will show on the Stage:"
 msgstr ""
+"Appariranno dei nuovi blocchi e la variabile Punteggio comparirà sullo "
+"Stage:"
 
 #: templates/info/help/studio/tips/howto/keep-score.html:20
 msgid "Here's an example script for keeping score:"
-msgstr ""
+msgstr "Ecco uno script di esempio per tenere il punteggio:"
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:7
 msgid "Move your sprite with arrow keys"
-msgstr ""
+msgstr "Muovi lo sprite con i tasti freccia"
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:12
 #, python-format
@@ -12420,10 +12587,18 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\"%(STATIC_URL)s/"
 "images/help/right-arrow-key.png\"> to trigger."
 msgstr ""
+"Prova questo codice:<br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/move-with-arrow-all.png\"> <br/>\n"
+" Premi i tasti freccia <img src=\"%(STATIC_URL)s/images/help/up-arrow-"
+"key.png\"> <img src=\"%(STATIC_URL)s/images/help/down-arrow-key.png\"> <img "
+"src=\"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\"%"
+"(STATIC_URL)s/images/help/right-arrow-key.png\"> per attivarlo."
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:18
 msgid "To copy a stack of blocks, click at the top with the duplicate tool:"
 msgstr ""
+"Per copiare una sequenza di blocchi clicca sul primo blocco con lo strumento "
+"Duplica:"
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:22
 #, python-format
@@ -12431,10 +12606,13 @@ msgid ""
 "If your sprite turns upside-down, click <img src=\"%(STATIC_URL)s/images/"
 "help/info.png\"> and set its rotation style to left-right:"
 msgstr ""
+"Se lo sprite finisce a testa in giù clicca <img src=\"%"
+"(STATIC_URL)s/images/help/info.png\"> e cambia il suo stile di rotazione in "
+"\"destra-sinistra\":"
 
 #: templates/info/help/studio/tips/howto/move.html:6
 msgid "Move a sprite"
-msgstr ""
+msgstr "Muovi uno sprite"
 
 #: templates/info/help/studio/tips/howto/move.html:13
 #, python-format
@@ -12443,10 +12621,13 @@ msgid ""
 "help/move-1-step.png\"> to move a tiny bit or a bigger number to move "
 "further."
 msgstr ""
+"Prova a digitare numeri diversi, come <img src=\"%"
+"(STATIC_URL)s/images/help/move-1-step.png\"> per un piccolo spostamento o un "
+"numero più grande per muoverti di più."
 
 #: templates/info/help/studio/tips/howto/move.html:17
 msgid "If you type in a <b>negative</b> number, the sprite will move backward:"
-msgstr ""
+msgstr "Se digiti un numero <b>negativo</b> lo sprite si muoverà all'indietro:"
 
 #: templates/info/help/studio/tips/howto/move.html:25
 msgid ""
@@ -12659,6 +12840,53 @@ msgstr "Area dello Stage"
 msgid "Cursor Tools"
 msgstr "Strumenti"
 
+#: templates/info/help/studio/tips/ui/extensions.html:5
+msgid "Extensions"
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/extensions.html:6
+msgid ""
+"Extensions allow you to connect to hardware devices or web services. To add "
+"an extension, go to the <strong>More Blocks</strong> palette."
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/extensions.html:10
+msgid "IMPORTANT: Install the Plug-In"
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/extensions.html:11
+#, python-format
+msgid ""
+"\n"
+"You need a plug-in to use any hardware extension. Download and then open the "
+"installer file for <a href=\"%(STATIC_URL)s/ext/ScratchDevicePlugin.dmg"
+"\">Mac</a>\n"
+"or <a href=\"%(STATIC_URL)s/ext/ScratchDevicePlugin.msi\">Windows</a>. You "
+"will need administrator access on your computer to install it. (A Unix "
+"version will be available soon.)</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/extensions.html:19
+msgid "Status: Hardware Devices"
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/extensions.html:33
+msgid "Troubleshooting"
+msgstr ""
+
+#: templates/info/help/studio/tips/ui/extensions.html:35
+msgid ""
+"If it's not working, try:\n"
+"\n"
+"<ul>\n"
+"<li>Make sure you have opened and installed the plug-in file.</li>\n"
+"<li>Restart your browser.</li>\n"
+"<li>Make sure that you don't have Scratch open in another tab or browser.</"
+"li>\n"
+"<li>Make sure the hardware is plugged in.</li>\n"
+"</ul>\n"
+msgstr ""
+
 #: templates/info/help/studio/tips/ui/image-editor-map.html:7
 msgid "Here's a map of the paint editor:"
 msgstr ""
@@ -12770,15 +12998,15 @@ msgid "was promoted to manager of "
 msgstr "è stato promosso manager di "
 
 # 80%
-#: templates/notifications/includes/notification_list.html:45
+#: templates/notifications/includes/notification_list.html:46
 msgid "is now following you"
 msgstr "ti sta seguendo"
 
-#: templates/notifications/includes/notification_list.html:54
+#: templates/notifications/includes/notification_list.html:55
 msgid "loved your project"
 msgstr "ha inserito il tuo progetto tra quelli che gli piacciono"
 
-#: templates/notifications/includes/notification_list.html:65
+#: templates/notifications/includes/notification_list.html:66
 msgid "favorited your project"
 msgstr "ha inserito il tuo progetto tra i suoi preferiti"
 
@@ -13129,7 +13357,11 @@ msgstr "Condividi"
 msgid "remixes"
 msgstr "remix"
 
-#: templates/projects/base.html:388
+#: templates/projects/base.html:398
+msgid "OK, Got it."
+msgstr ""
+
+#: templates/projects/base.html:416
 msgid "Tips"
 msgstr "Suggerimenti"
 
@@ -13172,12 +13404,12 @@ msgid "Instructions"
 msgstr "Istruzioni"
 
 #: templates/projects/shared-other.html:42
-#: templates/projects/includes/owner/editable-notes.html:4
+#: templates/projects/includes/owner/editable-notes.html:5
 msgid "Notes and Credits"
 msgstr "Note e Crediti"
 
 #: templates/projects/shared-other.html:42
-#: templates/projects/includes/owner/editable-notes.html:4
+#: templates/projects/includes/owner/editable-notes.html:5
 msgid "added by"
 msgstr "aggiunto da"
 
@@ -13259,14 +13491,6 @@ msgstr ""
 "premere)."
 
 #: templates/projects/includes/owner/editable-notes.html:7
-msgid ""
-"What did you change or add in this remix?  Say thanks to the Scratchers "
-"whose projects you remixed."
-msgstr ""
-"Cosa hai cambiato o aggiunto in questo remix?  Ringrazia gli autori del "
-"progetto originale che hai remixato."
-
-#: templates/projects/includes/owner/editable-notes.html:9
 msgid ""
 "How did you make the project?</br>Did you use ideas, scripts, or artwork "
 "from other people? Thank them here."
@@ -13512,6 +13736,218 @@ msgstr "Creati da me"
 #: templates/studio/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
 msgstr "Curati da me"
+
+#~ msgid ""
+#~ "\n"
+#~ "    <li><a href=\"../help/\">Scratch Help Page</a></li>\n"
+#~ "    <li><a href=\"../help/faq/\">Frequently Asked Questions</a></li>\n"
+#~ "    <li><a href=\"../parents/\">Information for Parents</a></li>\n"
+#~ "    <li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
+#~ "in the News</a></li>\n"
+#~ "    "
+#~ msgstr ""
+#~ "\n"
+#~ "    <li><a href=\"../help/\">Pagina di Aiuto di Scratch</a></li>\n"
+#~ "    <li><a href=\"../help/faq/\">Domande Frequenti</a></li>\n"
+#~ "    <li><a href=\"../parents/\">Informazioni per i Genitori</a></li>\n"
+#~ "    <li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
+#~ "nelle News</a></li>\n"
+#~ "    "
+
+#~ msgid ""
+#~ "\n"
+#~ "            <p>The Scratch Team is pleased to announce that the Scratch 2 "
+#~ "Offline Editor is now available. \n"
+#~ "            This version will work on Mac, Windows, and some versions of "
+#~ "Linux (32 bit).</p>\n"
+#~ "           \n"
+#~ "            <p><h4>Installation Instructions</h4></p>\n"
+#~ "            <p>Click <strong>INSTALL NOW</strong> (below) and follow the "
+#~ "directions.\n"
+#~ "            It will install the Adobe AIR runtime system if you need it, "
+#~ "then install the Scratch 2 application. </p>\n"
+#~ "            <p>When installing, click <strong>\"Yes\" or \"Allow\"</strong> "
+#~ "when the browser asks for permission. \n"
+#~ "            (In <strong>Chrome</strong>, look for the question at the "
+#~ "<strong>top</strong> of the browser window.)\n"
+#~ "            Click <strong>\"Open\"</strong> when asked if you want to save "
+#~ "or open the .air file. \n"
+#~ "            </p>\n"
+#~ "            <p>The file is large (23MB), so please be <strong>patient</"
+#~ "strong> while it downloads, especially on slow connections.</p>\n"
+#~ "            <p>* If you get an error message when installing, delete any "
+#~ "previous Scratch 2 Offline Editor app and try again. Or, see "
+#~ "<strong>Optional Download</strong>, below.\n"
+#~ "            "
+#~ msgstr ""
+#~ "\n"
+#~ "            <p>Lo Scratch Team ha il piacere di annunciare che l'Editor "
+#~ "Offline di Scratch 2 è disponibile. \n"
+#~ "            Questa versione funziona su Mac, Windows e su alcune versioni di "
+#~ "Linux (32 bit).</p>\n"
+#~ "           \n"
+#~ "            <p><h4>Instruzioni per l'Installazione </h4></p>\n"
+#~ "            <p>Clicca <strong>INSTALLA ORA</strong> (qui sotto) e segui le "
+#~ "indicazioni.\n"
+#~ "            Se necessario verrà prima installato il runtime system di Adobe "
+#~ "AIR, e poi l'applicazioni di Scratch 2</p>\n"
+#~ "            <p>Durante l'installazione, clicca <strong>\"Si\" or "
+#~ "\"Permetti\"</strong> quando il browser ti chiede il permesso. \n"
+#~ "            (In <strong>Chrome</strong>, trovi la domanda <strong>in "
+#~ "alto</strong> nella finestra del browser.)\n"
+#~ "            Clicca <strong>\"Apri\"</strong> quando ti viene chiesto se vuoi "
+#~ "salvare o aprire il file .air. \n"
+#~ "            </p>\n"
+#~ "            <p>Il file è di grandi dimensioni (23MB), quindi ti preghiamo di "
+#~ "essere <strong>paziente</strong> mentre il file viene scaricato, "
+#~ "specialmente se la tua connessione non è veloce.</p>\n"
+#~ "            <p>* Se durante l'installazione compare un messaggio di errore, "
+#~ "rimuovi le precedenti installazioni dell'Editor Offline di Scratch 2 e "
+#~ "riprova. In alternativa, vedi il <strong>Download Opzionale</strong> qui "
+#~ "sotto.\n"
+#~ "            "
+
+#, python-format
+#~ msgid ""
+#~ " \n"
+#~ "<p><h4>Optional Download</h4></p>\n"
+#~ "<p>If you prefer to download the installers to your local drive: </br>\n"
+#~ "     (1) If you don't have it, download and install the latest <a href="
+#~ "\"http://get.adobe.com/air/\">Adobe AIR 3.x</a>. For Linux, use <a href="
+#~ "\"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin"
+#~ "\">AIR 2.6.0 for Linux</a> (15MB).</br>\n"
+#~ "     &nbsp;&nbsp;&nbsp; Note: For older Mac OSx 10.5 or below, use: <a href="
+#~ "\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.dmg\">Adobe AIR "
+#~ "2.6.0 Mac </a>(18MB).</br>\n"
+#~ "    (2) And then download and install the <a href=\"http://cdn.scratch.mit."
+#~ "edu/scratchr2/static/sa/Scratch.air\">Scratch installer</a>.</p>\n"
+#~ "     \n"
+#~ "       \n"
+#~ "        <h4>Known issues to be fixed later:</h4>\n"
+#~ "        <p><ul>\n"
+#~ "       <li>Graphic effects blocks (in \"Looks\") may slow down projects due "
+#~ "to a known Flash bug. A fix will be available in a future update.</li>\n"
+#~ "        <li>The <strong>backpack</strong> is not yet available.</li>\n"
+#~ "          </ul></p>\n"
+#~ "       \n"
+#~ "        <p><h4>Updates</h4></p>\n"
+#~ "        <p>The Offline Editor can update itself (with user permission). \n"
+#~ "        It will check for updates at startup or you can use the \"Check for "
+#~ "updates\" command in the file menu. </p>      \n"
+#~ "        <p>Update v370 - September 10, 2013: Fixes a problem with project "
+#~ "saving that sometimes prevented the saved project from being opened. Also "
+#~ "now opens and repairs projects that were saved incorrectly by earlier "
+#~ "versions of the Offline Editor.</p>\n"
+#~ "        <p>Update v366 - August 29, 2013: Can upload and share to website; "
+#~ "Compiled with Adobe Air 2.6 so it can work on some versions of Linux and "
+#~ "older Mac OSX; Shorter app name; Music MP3 upload fixed; Top-right text "
+#~ "fixed; Tips closes in presentation mode.</p>\n"
+#~ "\n"
+#~ "\t\n"
+#~ "        \n"
+#~ "        <p><h4>Starter Projects and Support Materials</h4></p>\n"
+#~ "        <p>The Scratch 2 Starter Projects are available for download in this "
+#~ "<a href=\"%(STATIC_URL)ssa/Scratch2StarterProjects.zip\">Starter Projects "
+#~ "file (zip)</a>.</p>\n"
+#~ "        <p>You can also download the <a href=\"%(STATIC_URL)spdfs/help/"
+#~ "Getting-Started-Guide-Scratch2.pdf\">Getting Started Guide (PDF)</a> and <a "
+#~ "href=\"%(STATIC_URL)spdfs/help/Scratch2Cards_Jan2013.pdf\">Scratch Cards "
+#~ "(PDF)</a>.  \n"
+#~ "        \n"
+#~ "        <p><h4>Feedback</h4></p>\n"
+#~ "        <p>Please report feedback and bugs on the <a href=\"http://scratch."
+#~ "mit.edu/discuss/topic/14690/\">Scratch discussion forums</a>.\n"
+#~ "        </p>\n"
+#~ "        \n"
+#~ "    \n"
+#~ "       "
+#~ msgstr ""
+#~ " \n"
+#~ "<p><h4>Download Opzionale</h4></p>\n"
+#~ "<p>Se preferisci scaricare gli installatori nel suo disco locale: </br>\n"
+#~ "     (1) Se non lo hai già fatto, scarica e installa l'ultimo <a "
+#~ "href=\"http://get.adobe.com/air/\">Adobe AIR 3.x</a>. Per Linux, usa <a href=\""
+#~ "http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin\">AIR "
+#~ "2.6.0 per Linux</a> (15MB).</br>\n"
+#~ "     &nbsp;&nbsp;&nbsp; Nota: Per il vecchio Mac OSx 10.5 e precedenti, usa: "
+#~ "<a "
+#~ "href=\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.dmg\">Adobe "
+#~ "AIR 2.6.0 Mac </a>(18MB).</br>\n"
+#~ "    (2) Quindi scarica e installa l'<a href=\"http://cdn.scratch.mit.edu/scra"
+#~ "tchr2/static/sa/Scratch.air\">installatore di Scratch installer</a>.</p>\n"
+#~ "     \n"
+#~ "       \n"
+#~ "        <h4>Problemi noti che verranno corretti in futuro:</h4>\n"
+#~ "        <p><ul>\n"
+#~ "       <li>I blocchi degli effetti grafici (in \"Aspetto\") possono rallentare "
+#~ "i progetti a causa di un bug di Flash. Una soluzione verrà resa disponibile "
+#~ "in un futuro aggiornamento.</li>\n"
+#~ "        <li>La <strong>valigetta</strong> non è ancora disponibile.</li>\n"
+#~ "          </ul></p>\n"
+#~ "       \n"
+#~ "        <p><h4>Aggiornamenti</h4></p>\n"
+#~ "        <p>L'Editor Offline può aggiornarsi automaticamente (con il permesso "
+#~ "dell'utente). \n"
+#~ "        Verifica infatti la presenza di aggiornamenti ogni volta che viene "
+#~ "avviato oppure puoi usare tu stesso il comando \"Verifica aggiornamenti\" mel "
+#~ "menu file. </p>      \n"
+#~ "        <p>Aggiornamento v370 - 10 Settembre 2013: Corregge un problema del "
+#~ "salvataggio dei progetti che impediva a volte di riaprire i progetti "
+#~ "salvati. Ora anche i progetti che erano stati salvati in maniera errata da "
+#~ "versioni precedenti dell'Editor Offline vengono aperti e riparati.</p>\n"
+#~ "        <p>Aggiornamento v366 - 29 Agosto 2013: E' possibile caricare e "
+#~ "condividere i progetti sul sito web; Compilato con Adobe Air 2.6 in modo da "
+#~ "poter funzionare con alcune versioni di Linux e sui vecchi Mac OSX; Nome "
+#~ "dell'app più breve; corretta l'importazione di file MP3; corretto il testo "
+#~ "in posizione in alto a destra; la finestra dei suggerimenti si chiude "
+#~ "automaticamente in modalità presentazione.</p>\n"
+#~ "\n"
+#~ "\t\n"
+#~ "        \n"
+#~ "        <p><h4>Progetti per Iniziare e Materiali di Supporto</h4></p>\n"
+#~ "        <p>I Progetti per Iniziare di Scratch 2 sono disponibili per lo "
+#~ "scaricamento nel <a href=\"%(STATIC_URL)ssa/Scratch2StarterProjects.zip\">file "
+#~ "dei Progetti per Iniziare (zip)</a>.</p>\n"
+#~ "        <p>Puoi anche scaricare la <a href=\"%(STATIC_URL)spdfs/help/Getting-"
+#~ "Started-Guide-Scratch2.pdf\">Guida per Iniziare (PDF)</a> e le <a href=\"%"
+#~ "(STATIC_URL)spdfs/help/Scratch2Cards_Jan2013.pdf\">Schede di Scratch "
+#~ "(PDF)</a>.  \n"
+#~ "        \n"
+#~ "        <p><h4>Feedback</h4></p>\n"
+#~ "        <p>Puoi segnalare il tuo feedback e la presenza di bug nei <a "
+#~ "href=\"http://scratch.mit.edu/discuss/topic/14690/\">forum di discussione di "
+#~ "Scratch</a>.\n"
+#~ "        </p>\n"
+#~ "        \n"
+#~ "    \n"
+#~ "       "
+
+#~ msgid ""
+#~ "The <a href=\"\\scratch2download\\\">Scratch 2 offline editor (beta version)"
+#~ "</a> is now available. You can also still use <a href =\"/"
+#~ "scratch_1.4\">Scratch 1.4</a>. Note: You can have both Scratch 1.4 and 2 on "
+#~ "your computer."
+#~ msgstr ""
+#~ "L'<a href=\"\\scratch2download\\\">editor offline di Scratch 2 (versione "
+#~ "beta)</a> è ora disponibile. Puoi comunque continuare ad usare anche <a href "
+#~ "=\"/scratch_1.4\">Scratch 1.4</a>. Nota: Puoi installare Scratch 1.4 e 2 allo "
+#~ "stesso tempo sul tuo computer."
+
+#~ msgid ""
+#~ "Drag out a <span class=soundcolor>PLAY DRUM</span> block (from <span "
+#~ "class=soundcolor>Sound</span>) and snap it onto the <span "
+#~ "class=movecolor>MOVE</span> block."
+#~ msgstr ""
+#~ "Trascina ora un blocco <span class=soundcolor>SUONA TAMBURO</span> (da <span "
+#~ "class=soundcolor>Suono</span>) e attaccalo sotto al blocco <span "
+#~ "class=movecolor>FAI PASSI</span>."
+
+#~ msgid ""
+#~ "What did you change or add in this remix?  Say thanks to the Scratchers "
+#~ "whose projects you remixed."
+#~ msgstr ""
+#~ "Cosa hai cambiato o aggiunto in questo remix?  Ringrazia gli autori del "
+#~ "progetto originale che hai remixato."
 
 #~ msgid ""
 #~ "\n"
