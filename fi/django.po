@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-29 04:21+0000\n"
-"PO-Revision-Date: 2014-06-11 06:59+0200\n"
+"PO-Revision-Date: 2014-07-22 17:24+0200\n"
 "Last-Translator: Juha <juha.harviainen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fi\n"
@@ -841,7 +841,7 @@ msgstr "Sinulla ei ole oikeuksia merkitä tätä viestiä."
 
 #: s2forums/djangobb_forum/views.py:1000 s2forums/djangobb_forum/views.py:1032
 msgid "There was not enough data collected to mark this post."
-msgstr ""
+msgstr "Viestin merkitsemistä varten ei ollut tarpeeksi kerättyä dataa."
 
 #: s2forums/djangobb_forum/views.py:1005
 msgid "Post marked as spam."
@@ -850,16 +850,18 @@ msgstr "Viesti merkitty roskapostiksi."
 #: s2forums/djangobb_forum/views.py:1007
 msgid "This post is not in the right state to be marked as spam."
 msgstr ""
+"Tämä viesti ei ole oikeassa tilassa jotta sen voisi merkitä roskapostiksi."
 
 # 86%
 #: s2forums/djangobb_forum/views.py:1037
-#, fuzzy
 msgid "Post un-marked as spam."
-msgstr "Viesti merkitty roskapostiksi."
+msgstr "Viestistä poistettu roskaposti-merkintä."
 
 #: s2forums/djangobb_forum/views.py:1039
 msgid "This post is not in the right state to be un-marked as spam."
 msgstr ""
+"Tämä viesti ei ole oikeassa tilassa jotta siitä voisi poistaa roskaposti-"
+"merkinnän."
 
 #: s2forums/djangobb_forum/views.py:1052
 msgid "Topic closed."
@@ -1426,13 +1428,12 @@ msgstr "Merkitse roskapostiksi"
 
 # 95%
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
-#, fuzzy
 msgid "Are you sure you want to unmark this as spam?"
-msgstr "Haluatko varmasti merkitä tämän roskapostiksi?"
+msgstr "Haluatko varmasti poistaa tämän roskaposti-merkinnän?"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
 msgid "Un-mark as Spam"
-msgstr ""
+msgstr "Poista roskaposti-merkintä"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:168
 msgid "Are you sure you want to delete this post?"
@@ -1794,7 +1795,7 @@ msgid ""
 "forums</a>:"
 msgstr ""
 "Voit myös yrittää etsiä Scratchin <a "
-"href=\"/discuss\">kuskustelufoorumilta</a>:"
+"href=\"/discuss\">keskustelufoorumilta</a>:"
 
 #: templates/contact-us.html:82
 msgid ""
@@ -1898,7 +1899,7 @@ msgstr "Oho"
 
 #: templates/modal-registration.html:23
 msgid "It's easy (and free!) to sign up for a Scratch account."
-msgstr "On helppoa (ja ilmaista!) luoda Scratch-tunnus"
+msgstr "On helppoa (ja ilmaista!) luoda Scratch-tunnus."
 
 #: templates/modal-registration.html:31
 msgid "Choose a Scratch Username"
@@ -2162,11 +2163,11 @@ msgstr "Laita"
 
 #: templates/privacy_policy.html:14
 msgid "Scratch Privacy Policy"
-msgstr ""
+msgstr "Scratch Yksityisyyden suoja"
 
 #: templates/temporarily-disabled.html:6
 msgid "We'll be Back Soon-  Scratch"
-msgstr ""
+msgstr "Palaamme pian- Scratch"
 
 # 78%
 #: templates/temporarily-disabled.html:12
@@ -2229,8 +2230,8 @@ msgid ""
 "let us know about it."
 msgstr ""
 "<b>Auta pitämään sivusto ystävällisenä.</b> Jos projekti tai kommentti on "
-"mielestäsi häijy, loukkaava, liian väkibaltainen, tai muuten epäasiallinen, "
-"paina \"Raportoi\" ilmoittaaksesi siitä meille."
+"mielestäsi häijy, loukkaava, liian väkivaltainen, tai muuten epäasiallinen, "
+"paina “Raportoi” ilmoittaaksesi siitä meille."
 
 #: templates/accounts/base.html:24 templates/registration/base.html:24
 msgid "Account Settings"
@@ -2265,6 +2266,8 @@ msgid ""
 "The new project player will appear automatically on the project page. If you "
 "see a bug, click 'Beta Bug?' on the project page to report it."
 msgstr ""
+"Tämä uusi projektisoitin tulee automaattisesti näkyviin sivulle. Jos näet "
+"bugin, paina \"Beta-bugi?\" projektisivulla raportoidaksesi sen."
 
 # 85%
 #: templates/accounts/beta_optin.html:33
@@ -2424,7 +2427,7 @@ msgstr "Tutki projekteja"
 
 #: templates/explore/projects.html:13 templates/explore/studios.html:13
 msgid "Featured"
-msgstr "Suositut"
+msgstr "Valitut"
 
 #: templates/explore/projects.html:14 templates/explore/studios.html:14
 #: templates/studio/includes/project_action_bar.html:14
@@ -2797,11 +2800,11 @@ msgstr "VANHEMMILLE"
 
 #: templates/homepage/index.html:166 templates/projects/project_list.html:16
 msgid "Featured Projects"
-msgstr "Suositut projektit"
+msgstr "Valitut projektit"
 
 #: templates/homepage/index.html:182
 msgid "Featured Studios"
-msgstr "Suositut studiot"
+msgstr "Valitut studiot"
 
 #: templates/homepage/index.html:198
 msgid "Learn more"
@@ -2837,7 +2840,7 @@ msgstr "Projektit studioissa joita seuraan"
 
 #: templates/homepage/index.html:299
 msgid "What the Community is Remixing"
-msgstr "Mitä yhteisö remixaa"
+msgstr "Mitä yhteisö remiksaa"
 
 #: templates/homepage/index.html:303
 msgid "What the Community is Loving"
@@ -2870,7 +2873,7 @@ msgstr "Rakastamiset"
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
 msgid "Remixes"
-msgstr "Remixaukset"
+msgstr "Remiksaukset"
 
 #: templates/info/DMCA.html:14
 msgid ""
@@ -2912,6 +2915,9 @@ msgid ""
 "creations/website but also as an opportunity to do something good for "
 "children’s education."
 msgstr ""
+"Toivomme että ymmärrät että Scratch ei ole ainoastaan hyvä tapa julkistaa "
+"luomuksiasi/sivujasi, vaan myös mahdollisuus tehdä jotain lasten koulutuksen "
+"hyväksi."
 
 #: templates/info/DMCA.html:25
 msgid ""
@@ -2941,8 +2947,8 @@ msgid ""
 "and work collaboratively &mdash; essential skills for life in the 21st "
 "century."
 msgstr ""
-"Scratch auttaa nuori ihmisiä oppimaan ajattelemaan luovasti, "
-"järjestelmällisesti ja työskentelemään yhteisössä &mdash; olennaisia "
+"Scratch auttaa nuori ihmisiä oppimaan ajattelemaan luovasti, järkeilemään "
+"systemaattisesti ja työskentelemään yhteisössä &mdash; olennaisia "
 "elämäntaitoja 20. vuosisadalla."
 
 #: templates/info/about.html:23
@@ -3025,6 +3031,11 @@ msgid ""
 "    <li><a href=\"/info/credits/\">Scratch Credits</a></li>\n"
 "    "
 msgstr ""
+"\n"
+"<li><a href=\"../help/\">Scratch-ohjesivu</a></li>\n"
+"<li><a href=\"../help/faq/\">Usein kysyttyjä kysymyksiä</a></li>\n"
+"<li><a href=\"../parents/\">Informaatiota vanhemmille</a></li>\n"
+"<li><a href=\"/info/credits/\">Scratch'n tekijät</a></li>\n"
 
 #: templates/info/about.html:70
 msgid "Learn to Code, Code to Learn"
@@ -3038,10 +3049,14 @@ msgid ""
 "strategies for solving problems, designing projects, and communicating "
 "ideas.\n"
 msgstr ""
+"\n"
+"Kyky koodata tietokoneohjelmia on tärkeä osa nykypäivän yhteiskuntaa. Kun "
+"ihmiset oppivat koodaamaan Scrathissa, he oppivat tärkeitä strategioita "
+"ongelmanratkaisuun, projektien suunnitteluun ja kommunikointi-ideoihin.\n"
 
 #: templates/info/about.html:77
 msgid "Scratch in Schools"
-msgstr ""
+msgstr "Scratch kouluissa"
 
 #: templates/info/about.html:80
 msgid ""
@@ -3052,10 +3067,16 @@ msgid ""
 "questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
 "\">ScratchEd website</a>.\n"
 msgstr ""
+"\n"
+"Kaikentasoiset opiskelijat oppivat Scratchilla (peruskoulusta korkeakouluun) "
+"ja eri tieteenaloja (kuten matematiikassa, tietotekniikassa, kielissä ja "
+"yhteiskuntaopissa). Opiskelijat jakavat tarinoita, jakavat resursseja, "
+"kysyvät kysymyksiä ja löytävät ihmisiä <a "
+"href=\"http://scratched.media.mit.edu/\">ScratchED-sivulla</a>.\n"
 
 #: templates/info/about.html:84
 msgid "Research"
-msgstr ""
+msgstr "Tutkimus"
 
 #: templates/info/about.html:87
 msgid ""
@@ -3064,11 +3085,16 @@ msgid ""
 "edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). "
 "Find out more about <a href=\"/info/research\">Scratch research</a> and <a "
 "href=\"/statistics\">statistics about Scratch</a>.\n"
-msgstr ""
+msgstr "MIT Scratch Team ja muut yhteistyökumppanit tutkivat kuinka ihmiset "
+"käyttävät ja oppivat Scratchilla (johdantona, katso <a "
+"href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: "
+"Programming for All</a>). Löydä lisää <a "
+"href=\"/info/research\">tutkimuksesta</a> ja <a href=\"/statistics\">Scratchin "
+"tilastoista</a>.\n"
 
 #: templates/info/about.html:90
 msgid "Support and Funding"
-msgstr ""
+msgstr "Tukeminen ja rahoitus"
 
 #: templates/info/about.html:92
 msgid ""
@@ -3080,16 +3106,28 @@ msgid ""
 "research consortia. If you'd like to support Scratch, please see our <a href="
 "\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
 msgstr ""
+"\n"
+"Scratch-projekti, aloitettu 2003, on saanut anteliasta tukea National "
+"Science Foundation:lta (avustukset 0325828, 1002713, 1027848, 1019396), "
+"Intel Foundation:lta, Microsoft:lta, MacArthur Foundation:lta, LEGO "
+"Foundation:lta, Code-to-Learn Foundation:lta, Googlelta, Dell:ltä, "
+"Fastly:ltä, Intersoft:lta ja MIT Media Lab tutkimusyhteenliittymiltä. Jos "
+"haluat tukea Scratchia, ole hyvä ja katso <a "
+"href=\"/info/donate\">lahjoitussivumme</a>, tai ota yhteyttä "
+"donate@scratch.mit.edu.\n"
 
 #: templates/info/community_guidelines.html:14
 msgid "Scratch Community Guidelines"
-msgstr ""
+msgstr "Scratch yhteisön suuntaviivat"
 
 #: templates/info/community_guidelines.html:18
 msgid ""
 "We need everyone’s help to keep Scratch a friendly and creative community "
 "where people with different backgrounds and interests feel welcome."
 msgstr ""
+"Tarvitsemme kaikkien apua pitääksemme Scratchin ystävällisenä ja luovana "
+"yhteisönä johon ihmiset erilaisine taustoineen ja kiinnostuksenkohteineen "
+"ovat tervetulleita."
 
 #: templates/info/community_guidelines.html:28
 msgid ""
@@ -3107,7 +3145,7 @@ msgstr ""
 
 #: templates/info/credits.html:165
 msgid "Community and Moderation"
-msgstr ""
+msgstr "Yhteisö ja moderointi"
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
@@ -3184,15 +3222,15 @@ msgstr ""
 
 #: templates/info/educators.html:47
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: templates/info/educators.html:48
 msgid "Facebook"
-msgstr ""
+msgstr "Facebook"
 
 #: templates/info/educators.html:49
 msgid "Edmodo"
-msgstr ""
+msgstr "Edmodo"
 
 #: templates/info/educators.html:50
 msgid "Weekly Roundups"
@@ -3357,7 +3395,7 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
 msgstr ""
 "Voit nähdä ja hallita kaikki projektejasi <b>Omat tavarat</b> -sivulla <img "
-"src=\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />"
+"src=\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
 
 #: templates/info/overview.html:60
 msgid "Community Features"
@@ -3398,6 +3436,8 @@ msgid ""
 "Discover interesting projects by clicking on the Related Projects bar at the "
 "bottom of any project page."
 msgstr ""
+"Löydä mielenkiintoisia projekteja painamalla Samankaltaiset projektit minkä "
+"tahansa projektisivun alalaidassa."
 
 #: templates/info/overview.html:73
 msgid ""
@@ -3429,31 +3469,35 @@ msgstr ""
 
 #: templates/info/overview.html:80
 msgid "The Search features lets you find and preview projects more easily."
-msgstr ""
+msgstr "Haku-toiminnot antavat sinun hakea ja katsella projekteja helpommim."
 
 #: templates/info/overview.html:84
 msgid "Planned for Summer 2013"
-msgstr ""
+msgstr "Suunnitteilla kesälle 2013"
 
 #: templates/info/overview.html:86
 msgid ""
 "Download an off-line version of the Scratch project editor to use without an "
 "Internet connection"
 msgstr ""
+"Lataa off-line versio Scratch-projektieditorista käytettäväksi ilman "
+"internet-yhteyttä"
 
 #: templates/info/overview.html:87
 msgid ""
 "Connect to external devices with new Scratch extensions (including LEGO WeDo "
 "and the ScratchBoard)"
 msgstr ""
+"Yhdistä muihin laitteisiin uusilla Scratch-laajennuksilla (mukaanlukien LEGO "
+"WeDO ja ScratchBoard)"
 
 #: templates/info/parents.html:8
 msgid "Scratch - For Parents"
-msgstr ""
+msgstr "Scratch - Vanhemmille"
 
 #: templates/info/parents.html:12
 msgid "For Parents"
-msgstr ""
+msgstr "Vanhemmille"
 
 #: templates/info/parents.html:15
 msgid ""
@@ -3646,11 +3690,11 @@ msgstr ""
 
 #: templates/info/quotes.html:4
 msgid "Quotes - Scratch"
-msgstr ""
+msgstr "Lainauksia - Scratch"
 
 #: templates/info/quotes.html:16
 msgid "What <b>Youth</b> are Saying about Scratch"
-msgstr ""
+msgstr "Mitä <b>nuoret</b> sanovat Scratchista"
 
 #: templates/info/quotes.html:19
 msgid ""
@@ -3662,6 +3706,12 @@ msgid ""
 "something creative and new.<span class=\"quotes\">&rdquo;</span> - 13-year-"
 "old </p>\n"
 msgstr ""
+"Pidän Scratchista enemmäm kuin blogeista tai sosiaalisista sivuista kuten "
+"Facebook koska\n"
+"\t teemme mielenkiintoisia pelejä ja projekteja joita on hauska peöata, "
+"katsoa, ja ladata.\n"
+"\t En tahdo ainoastaan puhua ihmisten kanssa onlinessa, tahdon puhia jostain "
+"luovasta ja uudesta.<span class=\"quotes\">&rdquo- 13-vuotias</p>\n"
 
 #: templates/info/quotes.html:26
 msgid ""
@@ -4061,7 +4111,7 @@ msgstr "Scratch käyttöehdot"
 # 75%
 #: templates/info/help/base.html:4 templates/info/help/help_layout.html:7
 msgid "Scratch Help"
-msgstr "Scratch apu"
+msgstr "Scratch-apua"
 
 #: templates/info/help/cards.html:9 templates/info/help/index.html:66
 msgid "Scratch Cards"
@@ -4977,9 +5027,8 @@ msgstr "Kysymyksiä Scratchista"
 
 # 89%
 #: templates/info/help/index.html:110
-#, fuzzy
 msgid "- Help with Scripts"
-msgstr "Apua skripteissä"
+msgstr "- Apua skripteissä"
 
 #: templates/info/help/index.html:113
 msgid "Resources"
