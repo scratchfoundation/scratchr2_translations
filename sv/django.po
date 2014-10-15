@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-23 00:48+0000\n"
-"PO-Revision-Date: 2014-09-11 10:49+0200\n"
+"PO-Revision-Date: 2014-10-12 18:43+0200\n"
 "Last-Translator: Anders <anders.berggren@smedjebacken.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
@@ -1633,6 +1633,8 @@ msgid ""
 "We couldn't authorize you to view this page. If you need to get in touch "
 "with us about this, send us an email at "
 msgstr ""
+"Vi kunde inte godkänna att du visar denna sidan. Om du vill kontakta oss "
+"angående detta, skicka ett mejl till "
 
 #: templates/404.html:13
 msgid "404. Oh noes! Our server is Scratch'ing its head"
@@ -1781,7 +1783,7 @@ msgstr "FAQ"
 
 #: templates/base.html:325
 msgid "Offline Editor"
-msgstr ""
+msgstr "Offline-redigerare"
 
 # 90%
 #: templates/base.html:326 templates/contact-us-success.html:12
@@ -1791,11 +1793,11 @@ msgstr "Kontakta oss"
 
 #: templates/base.html:330
 msgid "Legal"
-msgstr ""
+msgstr "Laglig"
 
 #: templates/base.html:332
 msgid "Terms of Use"
-msgstr ""
+msgstr "Användarvillkor"
 
 #: templates/base.html:333 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80
@@ -1808,34 +1810,31 @@ msgstr "DMCA"
 
 #: templates/base.html:338
 msgid "Scratch Family"
-msgstr ""
+msgstr "Scratch-familjen"
 
 # 77%
 #: templates/base.html:340
-#, fuzzy
 msgid "ScratchEd"
-msgstr "Scratch"
+msgstr "ScratchED"
 
 # 77%
 # 88%
 #: templates/base.html:341
-#, fuzzy
 msgid "ScratchJr"
-msgstr "Scratchare"
+msgstr "ScratchJr"
 
 # 75%
 #: templates/base.html:342
-#, fuzzy
 msgid "Scratch Day"
-msgstr "Scratch Team"
+msgstr "Scratchdagen"
 
 #: templates/base.html:343
 msgid "Scratch Conference"
-msgstr ""
+msgstr "Scratchkonferens"
 
 #: templates/base.html:344
 msgid "Code-to-Learn Foundation"
-msgstr ""
+msgstr "Code-to-Learnstiftelsen"
 
 #: templates/base.html:359
 msgid ""
@@ -1970,7 +1969,7 @@ msgstr "Mest remixade"
 
 #: templates/modal-login.html:29
 msgid "Please enter the text below"
-msgstr ""
+msgstr "Skriv in text nedan"
 
 # 83%
 # 80%
@@ -2502,16 +2501,14 @@ msgstr "Avbryt"
 
 # 83%
 #: templates/comments/comment-module.html:43
-#, fuzzy
 msgid "Sorry, comment posting has been turned off for this"
-msgstr "Tyvärr, kommentering av inlägg är avslaget för detta %(type)s."
+msgstr "Tyvärr, kommentering av inlägg är avslaget för detta"
 
 # 85%
 # 83%
 #: templates/comments/comment-module.html:43
-#, fuzzy
 msgid "studio"
-msgstr "Studio"
+msgstr "studio"
 
 #: templates/comments/comment-module.html:45
 msgid ""
@@ -2676,7 +2673,7 @@ msgstr "Studio:"
 
 #: templates/extensions/terms_of_use.html:13
 msgid "Extension Developer Terms of Use"
-msgstr ""
+msgstr "Användarvillkor för utvecklare av anslutningar"
 
 #: templates/galleries/activity.html:19
 #: templates/notifications/notifications.html:31
@@ -2719,9 +2716,8 @@ msgstr "Följare%(tPlural)s )"
 
 # 82%
 #: templates/galleries/base.html:113
-#, fuzzy
 msgid "Projects ( <span data-count=\"projects\">100+</span> )"
-msgstr "Projekt ( <span data-count=\"projects\">%(tCount)s</span> )"
+msgstr "Projekt ( <span data-count=\"projects\">100+</span> )"
 
 #: templates/galleries/base.html:113
 #, python-format
@@ -3296,7 +3292,7 @@ msgstr ""
 
 #: templates/info/characterscamp.html:9 templates/info/characterscamp.html:16
 msgid "Creative Characters Camp"
-msgstr ""
+msgstr "Creative Characters Camp"
 
 #: templates/info/community_guidelines.html:14
 msgid "Scratch Community Guidelines"
@@ -3315,6 +3311,8 @@ msgid ""
 "<b>Be constructive.</b> When commenting on others' projects, say something "
 "you like about it and offer suggestions."
 msgstr ""
+"<b>Var påhittig.</b>När du kommenterar andras projekt, skriv något du tycker "
+"är bra med det och kom med förslag."
 
 #: templates/info/community_guidelines.html:28
 msgid ""
@@ -4169,10 +4167,15 @@ msgid ""
 "Windows, and some versions of Linux (32 bit).</p>\n"
 "\t\t"
 msgstr ""
+"\n"
+"\t\t<p class=\"lg-msg\">Du kan installera Scratch 2.0 editor så att du kan "
+"arbeta med projekt utan Internet-anslutning. Den versionen fungerar på vissa "
+"versioner av Linux (32bit), Mac och Windows.</p>\n"
+"\t\t"
 
 #: templates/info/scratch2download.html:34
 msgid "Adobe AIR"
-msgstr ""
+msgstr "Adobe AIR"
 
 #: templates/info/scratch2download.html:35
 #, python-format
@@ -4197,6 +4200,25 @@ msgid ""
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
+"\n"
+"\t \t \t \t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-"
+"editor/step1.png\" alt=\"Step 1\">\n"
+"\t \t \t \t<p>Om du inte redan har installerat det, ladda ner senaste versionen "
+"av<a href=\"http://get.adobe.com/air/\">Adobe AIR</a> </p>\n"
+"\t \t \t \tMac OS X - <a href=\"http://get.adobe.com/air/\">Ladda ner<img src=\"%"
+"(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
+"\t \t \t \t<p>Mac OS 10.5 & Older - <a "
+"href=\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.dmg\">Ladda "
+"ner<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" "
+"alt=\"Ladda ner \"></a> <br>\n"
+"\t \t \t \tWindows - <a href=\"http://get.adobe.com/air/\">Ladda ner<img src=\"%"
+"(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> "
+"<br>\n"
+"\t \t \t \t Linux - <a href=\"http://airdownload.adobe.com/air/lin/download/2.6/A"
+"dobeAIRInstaller.bin\">Ladda ner<img src=\"%(STATIC_URL)simages/help/offline-"
+"editor/download.png\" alt=\"Download \"></a>\n"
+"\t \t \t \t</p>\n"
+"\t \t \t \t"
 
 #: templates/info/scratch2download.html:47
 #, python-format
@@ -4223,7 +4245,7 @@ msgstr ""
 
 #: templates/info/scratch2download.html:58
 msgid "Support Materials"
-msgstr ""
+msgstr "Hjälpmaterial"
 
 #: templates/info/scratch2download.html:59
 #, python-format
@@ -4987,6 +5009,8 @@ msgid ""
 "Can I use images / sounds / media from outside of the Scratch website in my "
 "Scratch projects?"
 msgstr ""
+"Kan jag använda bilder / ljud / media som inte finns på Scratch-webbplatsen "
+"i mina Scratch-projekt?"
 
 #: templates/info/help/faq.html:119
 msgid ""
@@ -5618,7 +5642,7 @@ msgstr "Denna steg-för-steg-guide (PDF) ger en enkel introduktion till Scratch.
 #: templates/info/help/index.html:53
 #, python-format
 msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
-msgstr ""
+msgstr "Ladda ner <a href=\"%(enguide)s\">engelsk version.</a>"
 
 #: templates/info/help/index.html:62
 msgid "Each of these cards shows something you can do in Scratch."
@@ -5894,12 +5918,12 @@ msgstr "Centrum av klädsel"
 
 #: templates/info/help/studio/tips/home.html:4
 msgid "Step-by-Step Guides"
-msgstr ""
+msgstr "Steg-för-steg-guider"
 
 #: templates/info/help/studio/tips/home.html:6
 #: templates/info/help/studio/tips/howto/nametip-intro.html:17
 msgid "Animate Your Name"
-msgstr ""
+msgstr "Animera ditt namn"
 
 #: templates/info/help/studio/tips/home.html:7
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:18
@@ -5908,7 +5932,7 @@ msgstr "Skapa ett gratulationskort"
 
 #: templates/info/help/studio/tips/home.html:8
 msgid "Map of Scratch editor"
-msgstr ""
+msgstr "Karta över Scratch-editorn"
 
 #: templates/info/help/studio/tips/home.html:21
 msgid "How To"
@@ -10237,6 +10261,8 @@ msgid ""
 "Run a script when the distance detected by the LEGO WeDo distance sensor "
 "becomes greater (or less) than a specified value"
 msgstr ""
+"Kör ett skript där avståndet som avståndsmätaren på LEGO WeDo känner av blir "
+"längre (eller kortare) än ett angivet värde."
 
 #: templates/info/help/studio/tips/ext/wedo-when-distance.html:11
 #, python-format
@@ -10384,12 +10410,14 @@ msgstr "Tillbaka"
 #: templates/info/help/studio/tips/howto/nametip-intro.html:13
 #: templates/info/help/studio/tips/ui/tour-intro.html:13
 msgid "Begin"
-msgstr ""
+msgstr "Börja"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:19
 msgid ""
 "Start here to make an interactive greeting card for a friend using Scratch!"
 msgstr ""
+"Börja här för att använda Scratch för att skapa ett interaktivt "
+"gratulationskort åt en kompis."
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:21
 #: templates/info/help/studio/tips/howto/nametip-intro.html:23
