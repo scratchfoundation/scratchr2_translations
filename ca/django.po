@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 00:48+0000\n"
+"POT-Creation-Date: 2014-11-21 23:51+0000\n"
 "PO-Revision-Date: 2014-08-13 13:04+0000\n"
 "Last-Translator: Eugeni <eugenicat@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,48 +18,65 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1407935053.000000\n"
 
-#: views.py:181
+#: views.py:308
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr "El teu missatge ha estat enviat. Et contestarem en un marge de 3 dies."
 
-#: views.py:185 views.py:225
+#: views.py:312 views.py:352
 msgid "Please correct the errors below."
 msgstr "Si us plau, corregeix els errors de sota."
 
-#: authentication/forms.py:18
+#: authentication/forms.py:22
+msgid "Keep my projects, but disable all comments"
+msgstr ""
+
+#: authentication/forms.py:23
+msgid "Delete my projects"
+msgstr ""
+
+#: authentication/forms.py:26
+msgid "Enter your password to confirm"
+msgstr ""
+
+#: authentication/forms.py:45
 msgid "Looks like that isn't a valid email format"
 msgstr "Sembla que aquest correu electrònic no té un format vàlid"
 
-#: authentication/forms.py:30
+#: authentication/forms.py:57
 msgid "The two password fields didn't match."
 msgstr "Les dues contrasenyes no coincideixen."
 
-#: authentication/forms.py:31 authentication/forms.py:52
+#: authentication/forms.py:58 authentication/forms.py:79
 msgid "Your password must be at least 6 characters long."
 msgstr "La teva contrasenya ha de tenir 6 caràcters com a mínim."
 
-#: authentication/forms.py:32 authentication/forms.py:53
+#: authentication/forms.py:59 authentication/forms.py:80
 msgid "Your password cannot be 'password'."
 msgstr "La teva contrasenya no pot ser 'password'."
 
-#: authentication/forms.py:33 authentication/forms.py:54
+#: authentication/forms.py:60 authentication/forms.py:81
 msgid "Your password cannot be the same as your username."
 msgstr "La teva contrasenya i el teu nom d'usuari no poden ser iguals."
 
-#: authentication/forms.py:74 templates/modal-registration.html:78
+#: authentication/forms.py:101 templates/modal-registration.html:78
+#: templates/accounts/account_settings.html:10
+#: templates/accounts/email_change.html:10
+#: templates/accounts/password_change_form.html:10
+#: templates/accounts/deletion/confirmation.html:8
+#: templates/accounts/deletion/nostalgia.html:7
 #: templates/info/educators.html:52
 msgid "Email"
 msgstr "Correu electrònic"
 
-#: authentication/forms.py:82
+#: authentication/forms.py:109
 msgid "You must provide an email or username"
 msgstr "Escriu un nom d'usuari o un correu electrònic"
 
-#: authentication/forms.py:87
+#: authentication/forms.py:114
 msgid "Sorry we don't have an account with that username"
 msgstr "No hi ha cap compte amb aquest nom d'usuari"
 
-#: authentication/forms.py:92
+#: authentication/forms.py:119
 msgid "Sorry we don't have an account with that email address"
 msgstr "No hi ha cap compte amb aquest correu electrònic"
 
@@ -104,7 +121,7 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "fa %(number)d %(type)s"
 
-#: projects/views.py:496
+#: projects/views.py:494
 msgid "This tag has too many projects to load"
 msgstr "Aquesta etiqueta té massa projectes per carregar"
 
@@ -113,13 +130,13 @@ msgid "subscribers"
 msgstr "subscriptors"
 
 #: s2forums/djangobb_forum/feeds.py:27 s2forums/djangobb_forum/feeds.py:28
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:14
 msgid "Latest posts on forum"
 msgstr "Darrers articles al fòrum"
 
 # 81%
 #: s2forums/djangobb_forum/feeds.py:46 s2forums/djangobb_forum/feeds.py:47
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:16
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
 msgid "Latest topics on forum"
 msgstr "Darrers comentaris al fòrum"
 
@@ -144,52 +161,52 @@ msgstr "Darrers articles en el fòrum \"%s\""
 msgid "Latest posts on the category \"%s\""
 msgstr "Darrers articles a la categoria \"%s\""
 
-#: s2forums/djangobb_forum/forms.py:29 s2forums/djangobb_forum/forms.py:229
-#: s2forums/djangobb_forum/forms.py:366 templates/base.html:211
+#: s2forums/djangobb_forum/forms.py:27 s2forums/djangobb_forum/forms.py:227
+#: s2forums/djangobb_forum/forms.py:364 templates/base.html:207
 #: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
 msgid "Username"
 msgstr "Nom d'Usuari"
 
-#: s2forums/djangobb_forum/forms.py:30
+#: s2forums/djangobb_forum/forms.py:28
 msgid "Registered"
 msgstr "Registrat"
 
-#: s2forums/djangobb_forum/forms.py:31
+#: s2forums/djangobb_forum/forms.py:29
 msgid "Number of posts"
 msgstr "Nombre d'articles"
 
-#: s2forums/djangobb_forum/forms.py:35
+#: s2forums/djangobb_forum/forms.py:33
 msgid "Post time"
 msgstr "Hora de l'article"
 
-#: s2forums/djangobb_forum/forms.py:36
+#: s2forums/djangobb_forum/forms.py:34
 msgid "Author"
 msgstr "Autor"
 
-#: s2forums/djangobb_forum/forms.py:37 s2forums/djangobb_forum/forms.py:60
-#: s2forums/djangobb_forum/forms.py:188 s2forums/djangobb_forum/forms.py:459
+#: s2forums/djangobb_forum/forms.py:35 s2forums/djangobb_forum/forms.py:58
+#: s2forums/djangobb_forum/forms.py:186 s2forums/djangobb_forum/forms.py:457
 #: s2forums/djangobb_forum/models.py:160
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:29
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
 msgid "Subject"
 msgstr "Assumpte"
 
-#: s2forums/djangobb_forum/forms.py:38 s2forums/djangobb_forum/forms.py:402
+#: s2forums/djangobb_forum/forms.py:36 s2forums/djangobb_forum/forms.py:400
 #: s2forums/djangobb_forum/models.py:130 s2forums/djangobb_forum/models.py:159
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:55
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:26
 msgid "Forum"
 msgstr "Fòrum"
 
-#: s2forums/djangobb_forum/forms.py:42
+#: s2forums/djangobb_forum/forms.py:40
 msgid "Ascending"
 msgstr "Ascendent"
 
-#: s2forums/djangobb_forum/forms.py:43
+#: s2forums/djangobb_forum/forms.py:41
 msgid "Descending"
 msgstr "Descendent"
 
-#: s2forums/djangobb_forum/forms.py:47 s2forums/djangobb_forum/models.py:175
+#: s2forums/djangobb_forum/forms.py:45 s2forums/djangobb_forum/models.py:175
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:56
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
@@ -197,45 +214,45 @@ msgid "Topics"
 msgstr "Temes"
 
 # 80%
-#: s2forums/djangobb_forum/forms.py:48 s2forums/djangobb_forum/models.py:275
+#: s2forums/djangobb_forum/forms.py:46 s2forums/djangobb_forum/models.py:275
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:57
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
 msgid "Posts"
 msgstr "Articles"
 
-#: s2forums/djangobb_forum/forms.py:52
+#: s2forums/djangobb_forum/forms.py:50
 msgid "Message text and topic subject"
 msgstr "Text del missatge i tema"
 
-#: s2forums/djangobb_forum/forms.py:53
+#: s2forums/djangobb_forum/forms.py:51
 msgid "Message text only"
 msgstr "Només missatges de text"
 
-#: s2forums/djangobb_forum/forms.py:54
+#: s2forums/djangobb_forum/forms.py:52
 msgid "Topic subject only"
 msgstr "Només tema"
 
-#: s2forums/djangobb_forum/forms.py:62
+#: s2forums/djangobb_forum/forms.py:60
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
 msgid "Attachment"
 msgstr "Fitxer adjunt"
 
 # 90%
 # 81%
-#: s2forums/djangobb_forum/forms.py:63
+#: s2forums/djangobb_forum/forms.py:61
 msgid "Subscribe"
 msgstr "Subscriptors"
 
-#: s2forums/djangobb_forum/forms.py:63
+#: s2forums/djangobb_forum/forms.py:61
 msgid "Subscribe to this topic."
 msgstr "Subscriu-me a aquest tema."
 
-#: s2forums/djangobb_forum/forms.py:93
+#: s2forums/djangobb_forum/forms.py:91
 msgid "Can't be empty nor contain only whitespace characters"
 msgstr "No pot estar buit ni contenir només espais en blanc"
 
-#: s2forums/djangobb_forum/forms.py:103
+#: s2forums/djangobb_forum/forms.py:101
 msgid ""
 "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
 "Scratch, so your account has been muted for the rest of the day. :/"
@@ -244,97 +261,97 @@ msgstr ""
 "correctes per Scratch, per això el teu compte ha estat cancel·lat la resta "
 "del dia. :/"
 
-#: s2forums/djangobb_forum/forms.py:132 s2forums/djangobb_forum/forms.py:136
+#: s2forums/djangobb_forum/forms.py:130 s2forums/djangobb_forum/forms.py:134
 #, python-format
 msgid "Sorry, you have to wait %d seconds between posts."
 msgstr "Ho sentim, has d'esperar %d segons abans de fer un altre article."
 
-#: s2forums/djangobb_forum/forms.py:145
+#: s2forums/djangobb_forum/forms.py:143
 msgid "Attachment is too big"
 msgstr "L'adjunt és massa gran"
 
-#: s2forums/djangobb_forum/forms.py:190
+#: s2forums/djangobb_forum/forms.py:188
 msgid "Silent edit?"
 msgstr "Edició silenciosa?"
 
 # 83%
-#: s2forums/djangobb_forum/forms.py:230
+#: s2forums/djangobb_forum/forms.py:228
 msgid "E-mail"
 msgstr "Correu electrònic"
 
-#: s2forums/djangobb_forum/forms.py:261
+#: s2forums/djangobb_forum/forms.py:259
 msgid "Real name"
 msgstr "Nom real"
 
-#: s2forums/djangobb_forum/forms.py:368 s2forums/djangobb_forum/forms.py:404
+#: s2forums/djangobb_forum/forms.py:366 s2forums/djangobb_forum/forms.py:402
 #: templates/includes/sort-projects-dropdown.html:4
 #: templates/studio/includes/sort-galleries-dropdown.html:19
 #: templates/studio/includes/sort-projects-dropdown.html:4
 msgid "Sort by"
 msgstr "Ordena per"
 
-#: s2forums/djangobb_forum/forms.py:369 s2forums/djangobb_forum/forms.py:405
+#: s2forums/djangobb_forum/forms.py:367 s2forums/djangobb_forum/forms.py:403
 msgid "Sort order"
 msgstr "Tipus d'ordenació"
 
-#: s2forums/djangobb_forum/forms.py:398
+#: s2forums/djangobb_forum/forms.py:396
 msgid "Keyword search"
 msgstr "Cerca per paraula clau"
 
-#: s2forums/djangobb_forum/forms.py:400
+#: s2forums/djangobb_forum/forms.py:398
 msgid "Author search"
 msgstr "Cerca per autor"
 
-#: s2forums/djangobb_forum/forms.py:403
+#: s2forums/djangobb_forum/forms.py:401
 msgid "Search in"
 msgstr "Cerca a"
 
-#: s2forums/djangobb_forum/forms.py:406
+#: s2forums/djangobb_forum/forms.py:404
 msgid "Show results as"
 msgstr "Mostra els resultats com"
 
-#: s2forums/djangobb_forum/forms.py:431
+#: s2forums/djangobb_forum/forms.py:429
 #, python-format
 msgid "User \"%s\" does not exist"
 msgstr "L'usuari \"%s\" no existeix"
 
 # 83%
-#: s2forums/djangobb_forum/forms.py:441
+#: s2forums/djangobb_forum/forms.py:439
 msgid "You already voted for this post"
 msgstr "Ja has votat en aquesta enquesta"
 
-#: s2forums/djangobb_forum/forms.py:445
+#: s2forums/djangobb_forum/forms.py:443
 msgid "This post does't belong to that user"
 msgstr "Aquesta article no pertany a aquest usuari"
 
 # 87%
-#: s2forums/djangobb_forum/forms.py:461 s2forums/djangobb_forum/models.py:266
+#: s2forums/djangobb_forum/forms.py:459 s2forums/djangobb_forum/models.py:266
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:34
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
 msgid "Message"
 msgstr "Missatge"
 
-#: s2forums/djangobb_forum/forms.py:514
+#: s2forums/djangobb_forum/forms.py:512
 #, python-format
 msgid "You have selected too many choices. You may only select %i."
 msgstr "Has seleccionat massa opcions. Només en pots seleccionar %i."
 
-#: s2forums/djangobb_forum/forms.py:521
+#: s2forums/djangobb_forum/forms.py:519
 msgid "Write each answer on a new line."
 msgstr "Escriu cada resposta en una línia diferent."
 
-#: s2forums/djangobb_forum/forms.py:524
+#: s2forums/djangobb_forum/forms.py:522
 msgid ""
 "Number of days for this poll to run. Leave empty for an indefinite poll."
 msgstr ""
 "Nombre de dies per mantenir activa l'enquesta. Deixa-ho en blanc per a "
 "enquestes permanents."
 
-#: s2forums/djangobb_forum/forms.py:541
+#: s2forums/djangobb_forum/forms.py:539
 msgid "There is no valid answer."
 msgstr "No hi ha una resposta vàlida."
 
-#: s2forums/djangobb_forum/forms.py:547
+#: s2forums/djangobb_forum/forms.py:545
 msgid "One of the answers is too long."
 msgstr "Una de les respostes és massa llarga."
 
@@ -587,7 +604,7 @@ msgstr "Subscriure's automàticament a tots els temes que has creat o comentat."
 msgid "Default markup"
 msgstr "Marcat per defecte"
 
-#: s2forums/djangobb_forum/models.py:414 templates/base.html:188
+#: s2forums/djangobb_forum/models.py:414 templates/base.html:237
 msgid "Profile"
 msgstr "Perfil"
 
@@ -620,7 +637,7 @@ msgstr "Denuncia"
 
 # 85%
 #: s2forums/djangobb_forum/models.py:455
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:31
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:28
 #: s2forums/djangobb_forum/templates/djangobb_forum/reports.html:6
 msgid "Reports"
 msgstr "Denúncies"
@@ -875,18 +892,18 @@ msgstr "Nou tema"
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:11
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:27
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:189
-#: templates/base.html:315
+#: templates/base.html:324
 msgid "Discussion Forums"
 msgstr "Fòrum de discussió"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:6
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:6
 msgid "Discuss Scratch"
 msgstr "Discussió d'Scratch"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:129
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:43
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:126
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:40
 msgid "Notice"
 msgstr "Notícia"
 
@@ -1012,8 +1029,9 @@ msgstr "Marcat:"
 #: templates/explore/includes/related_projects.html:75
 #: templates/explore/includes/related_projects2.html:8
 #: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-list.html:13
-#: templates/projects/base.html:105 templates/projects/base.html.py:364
+#: templates/galleries/includes/project-thumb.html:26
+#: templates/galleries/includes/project-thumb.html:28
+#: templates/projects/base.html:105 templates/projects/base.html.py:368
 #: templates/projects/includes/project_list.html:11
 msgid "by"
 msgstr "per"
@@ -1031,24 +1049,24 @@ msgstr "El fòrum està buit."
 msgid "Moderate forum"
 msgstr "Fòrum moderat"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:16
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:15
 msgid "Show new posts since last visit"
 msgstr "Mostra els nous articles des de la darrera visita"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:20
 msgid "Discussion Home"
 msgstr "Inici de Discussió"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:23
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:18
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:20
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
-#: templates/404.html:19 templates/base.html:166 templates/contact-us.html:105
+#: templates/404.html:18 templates/base.html:184 templates/contact-us.html:92
 msgid "Search"
 msgstr "Cerca"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:29
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:26
 #, python-format
 msgid "Reports (%(report_count)s)"
 msgstr "Denúncies (%(report_count)s)"
@@ -1504,8 +1522,8 @@ msgid ""
 "%(avatar_height)s pixels "
 msgstr ""
 "Un avatar és una petita imatge que es mostra sota el teu nom d'usuari en els "
-"teus comentaris. No pot ser més gran de %(avatar_width)s x %"
-"(avatar_height)s píxels "
+"teus comentaris. No pot ser més gran de %(avatar_width)s x %(avatar_height)s "
+"píxels "
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
 msgid "Upload"
@@ -1553,7 +1571,7 @@ msgstr "Respostes:"
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
-#: templates/base.html:146
+#: templates/base.html:177
 msgid "Discuss"
 msgstr "Comenta"
 
@@ -1628,22 +1646,22 @@ msgid "When you update your profile, you will be redirected back to this page."
 msgstr "Quan canviïs el teu perfil, seràs redirigit a aquesta pàgina."
 
 # 97%
-#: templates/403.html:13
+#: templates/403.html:12
 #, fuzzy
 msgid "403. Oh noes! Our server is Scratch'ing its head"
 msgstr "404. Ai ai ai! El servidor s'està gratant el cap"
 
-#: templates/403.html:16
+#: templates/403.html:15
 msgid ""
 "We couldn't authorize you to view this page. If you need to get in touch "
 "with us about this, send us an email at "
 msgstr ""
 
-#: templates/404.html:13
+#: templates/404.html:12
 msgid "404. Oh noes! Our server is Scratch'ing its head"
 msgstr "404. Ai ai ai! El servidor s'està gratant el cap"
 
-#: templates/404.html:16
+#: templates/404.html:15
 msgid ""
 "We couldn't find the page you're looking for. Check to make sure you've "
 "typed the url correctly."
@@ -1651,7 +1669,7 @@ msgstr ""
 "No s'ha pogut trobar la pàgina que buscaves. Assegura't d'haver-ne escrit "
 "correctament l'URL."
 
-#: templates/404.html:17
+#: templates/404.html:16
 msgid "You can try searching for what you're looking for here:"
 msgstr "Pots intentar cercar el que t'interessa aquí:"
 
@@ -1671,183 +1689,199 @@ msgstr "Configuració del compte - Scratch"
 msgid "Coming Soon..."
 msgstr "Molt aviat..."
 
-#: templates/base.html:19
+#: templates/base.html:18
 msgid "Scratch"
 msgstr "Scratch"
 
-#: templates/base.html:19
+#: templates/base.html:18
 msgid "Imagine, Program, Share"
 msgstr "Imagina, Programa, Comparteix"
 
-#: templates/base.html:144
+#: templates/base.html:175
 msgid "Create"
 msgstr "Crea"
 
-#: templates/base.html:145 templates/explore/explore2.html:40
+#: templates/base.html:176 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Explora"
 
-#: templates/base.html:147
+#: templates/base.html:178
 msgid "Help"
 msgstr "Ajuda"
 
-#: templates/base.html:180
-msgid "messages - updates and notices"
-msgstr "missatges - actualitzacions i notícies"
-
-#: templates/base.html:181
-msgid "my stuff - manage projects and studios"
-msgstr "les meves coses - gestiona projectes i estudis"
-
-#: templates/base.html:189 templates/explore/base.html:24
-#: templates/studio/base.html:21
-msgid "My Stuff"
-msgstr "Les Meves Coses"
-
-#: templates/base.html:190
-msgid "Account settings"
-msgstr "Configuració del compte"
-
-#: templates/base.html:191
-msgid "Sign out"
-msgstr "Finalitza la sessió"
-
 # 83%
-#: templates/base.html:202 templates/modal-registration.html:6
+#: templates/base.html:198 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Uneix-te a Scratch"
 
-#: templates/base.html:205 templates/base.html.py:216 templates/base.html:226
+#: templates/base.html:201 templates/base.html.py:212 templates/base.html:222
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Inicia la sessió"
 
-#: templates/base.html:213 templates/modal-login.html:21
+#: templates/base.html:209 templates/modal-login.html:21
+#: templates/accounts/account_settings.html:9
+#: templates/accounts/email_change.html:9
+#: templates/accounts/deletion/confirmation.html:7
+#: templates/accounts/deletion/nostalgia.html:6
 #: templates/includes/backbone-templates.html:26
 msgid "Password"
 msgstr "Contrasenya"
 
-#: templates/base.html:217
+#: templates/base.html:213
 msgid "Forgot password?"
 msgstr "Has oblidat la contrasenya?"
 
-#: templates/base.html:293
+#: templates/base.html:229
+msgid "messages - updates and notices"
+msgstr "missatges - actualitzacions i notícies"
+
+#: templates/base.html:230
+msgid "my stuff - manage projects and studios"
+msgstr "les meves coses - gestiona projectes i estudis"
+
+#: templates/base.html:238 templates/explore/base.html:24
+#: templates/studio/base.html:21
+msgid "My Stuff"
+msgstr "Les Meves Coses"
+
+#: templates/base.html:239
+msgid "Account settings"
+msgstr "Configuració del compte"
+
+#: templates/base.html:240
+msgid "Sign out"
+msgstr "Finalitza la sessió"
+
+#: templates/base.html:310
 msgid "About"
 msgstr "A propòsit de"
 
-#: templates/base.html:295 templates/info/about.html:13
-#: templates/info/help/index.html:93
+#: templates/base.html:312 templates/info/about.html:13
+#: templates/info/help/index.html:92
 msgid "About Scratch"
 msgstr "Quant a Scratch"
 
-#: templates/base.html:296 templates/info/parents.html:12
+#: templates/base.html:313 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "Per als Pares"
 
-#: templates/base.html:297 templates/info/educators.html:12
+#: templates/base.html:314 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "Per Educadors"
 
-#: templates/base.html:306
-msgid "Donate"
-msgstr "Donació"
+#: templates/base.html:315
+msgid "Credits"
+msgstr ""
 
-#: templates/base.html:308
+#: templates/base.html:316
 msgid "Jobs"
 msgstr "Treballs"
 
-#: templates/base.html:312 templates/info/parents.html:72
+#: templates/base.html:317
+msgid "Press"
+msgstr ""
+
+#: templates/base.html:321 templates/info/parents.html:72
 msgid "Community"
 msgstr "Comunitat"
 
-#: templates/base.html:314
+#: templates/base.html:323
 msgid "Community Guidelines"
 msgstr "Normes de la Comunitat"
 
-#: templates/base.html:316 templates/info/help/index.html:114
+#: templates/base.html:325 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
-#: templates/base.html:317
+#: templates/base.html:326
 msgid "Statistics"
 msgstr ""
 
-#: templates/base.html:321 templates/search/includes/tabs.html:17
+#: templates/base.html:330 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr ""
 
-#: templates/base.html:323
+#: templates/base.html:332
 msgid "Help Page"
 msgstr ""
 
-#: templates/base.html:324
+#: templates/base.html:333
 msgid "FAQ"
 msgstr ""
 
-#: templates/base.html:325
+#: templates/base.html:334
 msgid "Offline Editor"
 msgstr ""
 
 # 90%
-#: templates/base.html:326 templates/contact-us-success.html:12
+#: templates/base.html:335 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Contacta'ns"
 
-#: templates/base.html:330
+#: templates/base.html:336
+msgid "Donate"
+msgstr "Donació"
+
+#: templates/base.html:340
 msgid "Legal"
 msgstr ""
 
-#: templates/base.html:332
+#: templates/base.html:342
 msgid "Terms of Use"
 msgstr ""
 
-#: templates/base.html:333 templates/info/help/faq.html:28
+#: templates/base.html:343 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80
 msgid "Privacy Policy"
 msgstr "Política de Privacitat"
 
-#: templates/base.html:334 templates/info/DMCA.html:10
+#: templates/base.html:344 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:338
+#: templates/base.html:348
 msgid "Scratch Family"
 msgstr ""
 
 # 77%
-#: templates/base.html:340
+#: templates/base.html:350
 #, fuzzy
 msgid "ScratchEd"
 msgstr "Scratch"
 
 # 77%
 # 88%
-#: templates/base.html:341
+#: templates/base.html:351
 #, fuzzy
 msgid "ScratchJr"
 msgstr "Scratcher"
 
 # 75%
-#: templates/base.html:342
+#: templates/base.html:352
 #, fuzzy
 msgid "Scratch Day"
 msgstr "Equip Scratch"
 
-#: templates/base.html:343
+#: templates/base.html:353
 msgid "Scratch Conference"
 msgstr ""
 
-#: templates/base.html:344
+#: templates/base.html:354
 msgid "Code-to-Learn Foundation"
 msgstr ""
 
-#: templates/base.html:359
+#: templates/base.html:369
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
 "Scratch és un projecte del Lifelong Kindergarten Group del MIT Media Lab"
+
+#: templates/base.html:435
+msgid "Your Account Will Not Be Deleted"
+msgstr ""
 
 #: templates/coming-soon.html:6
 msgid "Coming Soon-  Scratch"
@@ -1872,8 +1906,8 @@ msgid ""
 msgstr ""
 "L'Equip d'Scratch rep un gran nombre de missatges cada dia. Lamentablement, "
 "no tenim temps de contestar-los tots. Afortunadament, pots trobar respostes "
-"a moltes preguntes sobre Scratch a la pàgina de  <a "
-"href=\"/help/faq/\">Prequntes Més Freqüents</a>."
+"a moltes preguntes sobre Scratch a la pàgina de  <a href=\"/help/faq/\">"
+"Prequntes Més Freqüents</a>."
 
 #: templates/contact-us.html:88
 msgid ""
@@ -1883,29 +1917,29 @@ msgstr ""
 "També pots provar de fer una cerca als <a href=\"/discuss\">Fòrums de "
 "discussió</a> d'Scratch:"
 
-#: templates/contact-us.html:107
+#: templates/contact-us.html:94
 msgid ""
 "If you can't find an answer, post a new topic on the <a href=\"/discuss"
 "\">Discussion forums.</a> There are many experienced Scratchers who can help!"
 msgstr ""
-"Si no trobes una resposta, pots crear un nou tema de debat als <a "
-"href=\"/discuss\">Fòrums de discussió.</a> Hi ha molts Scratchers amb molta "
+"Si no trobes una resposta, pots crear un nou tema de debat als <a href=\"/"
+"discuss\">Fòrums de discussió.</a> Hi ha molts Scratchers amb molta "
 "experiència que et poden donar un cop de mà!"
 
 # 95%
-#: templates/contact-us.html:110
+#: templates/contact-us.html:97
 msgid "Questions About Scratch"
 msgstr "Preguntes sobre Scratch"
 
-#: templates/contact-us.html:111
+#: templates/contact-us.html:98
 msgid "Help with Scripts"
 msgstr "Ajuda amb els Programes"
 
-#: templates/contact-us.html:112
+#: templates/contact-us.html:99
 msgid "Bugs and Glitches"
 msgstr "Bugs i Errades"
 
-#: templates/contact-us.html:115
+#: templates/contact-us.html:102
 msgid ""
 "If you need to contact us, please choose from one of the options below. We "
 "get a lot of mail, so we may not be able to respond to your message."
@@ -1914,23 +1948,23 @@ msgstr ""
 "les següents opcions. rebem molt correu o sigui que és possible que no "
 "puguem contestar el teu missatge."
 
-#: templates/contact-us.html:120
+#: templates/contact-us.html:107
 msgid "Select a topic"
 msgstr "Tria un tema"
 
-#: templates/contact-us.html:121
+#: templates/contact-us.html:108
 msgid "Report something inappropriate..."
 msgstr "Denuncia alguna cosa no apropiada..."
 
-#: templates/contact-us.html:122
+#: templates/contact-us.html:109
 msgid "Report a problem with the website..."
 msgstr "Informa d'un problema amb el lloc web..."
 
-#: templates/contact-us.html:123
+#: templates/contact-us.html:110
 msgid "Other..."
 msgstr "Un altre..."
 
-#: templates/contact-us.html:132 templates/accounts/banned-response.html:78
+#: templates/contact-us.html:119 templates/accounts/banned-response.html:78
 msgid "Send"
 msgstr "Enviar"
 
@@ -2158,8 +2192,8 @@ msgid ""
 "\">respectful and friendly</a>."
 msgstr ""
 "Scratch és una comunitat per a totes les edats, de tot el món. Assegura't "
-"que els teus projectes i comentaris són <a target=\"_blank\" "
-"href=\"/community_guidelines\">respectuosos i amigables</a>."
+"que els teus projectes i comentaris són <a target=\"_blank\" href=\"/"
+"community_guidelines\">respectuosos i amigables</a>."
 
 #: templates/modal-registration.html:161
 msgid "Would you like to:"
@@ -2212,6 +2246,17 @@ msgstr "Connecta't amb un Scratcher"
 #: templates/info/help/studio/tips/howto/nametip7.html:13
 #: templates/info/help/studio/tips/howto/nametip8.html:13
 #: templates/info/help/studio/tips/howto/nametip9.html:13
+#: templates/info/help/studio/tips/howto/pgametip1.html:13
+#: templates/info/help/studio/tips/howto/pgametip10.html:13
+#: templates/info/help/studio/tips/howto/pgametip11.html:13
+#: templates/info/help/studio/tips/howto/pgametip2.html:13
+#: templates/info/help/studio/tips/howto/pgametip3.html:13
+#: templates/info/help/studio/tips/howto/pgametip4.html:13
+#: templates/info/help/studio/tips/howto/pgametip5.html:13
+#: templates/info/help/studio/tips/howto/pgametip6.html:13
+#: templates/info/help/studio/tips/howto/pgametip7.html:13
+#: templates/info/help/studio/tips/howto/pgametip8.html:13
+#: templates/info/help/studio/tips/howto/pgametip9.html:13
 #: templates/profiles/scratcher_promotion_modal.html:65
 msgid "Next"
 msgstr "Següent"
@@ -2313,6 +2358,19 @@ msgstr "Tornarem aviat..."
 msgid "Scratch Terms of Use"
 msgstr "Condicions d'Ús d'Scratch"
 
+#: templates/accounts/account_settings.html:8
+#: templates/accounts/email_change.html:8
+#: templates/accounts/password_change_form.html:8
+#: templates/accounts/deletion/confirmation.html:6
+#: templates/accounts/deletion/nostalgia.html:5
+#, fuzzy
+msgid "Account"
+msgstr "Comptes"
+
+#: templates/accounts/account_settings.html:38
+msgid "Save my Changes"
+msgstr ""
+
 #: templates/accounts/banned-response.html:32
 msgid "The Scratch Team decided to block the account:"
 msgstr "L'equip d'Scratch ha decidit bloquejar el teu compte:"
@@ -2362,7 +2420,7 @@ msgstr ""
 "telèfon o adreces."
 
 #: templates/accounts/banned-response.html:62
-#: templates/info/community_guidelines.html:25
+#: templates/info/community_guidelines.html:26
 msgid ""
 "<b>Help keep the site friendly.</b> If you think a project or comment is "
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
@@ -2379,22 +2437,14 @@ msgstr "Configuració del compte"
 
 # 93%
 #: templates/accounts/beta_optin.html:8
-#: templates/accounts/change_country.html:8
-#: templates/accounts/email_change.html:8
 msgid "Change password"
 msgstr "Canvia la contrasenya"
 
 #: templates/accounts/beta_optin.html:9
-#: templates/accounts/change_country.html:9
-#: templates/accounts/email_change.html:9
-#: templates/accounts/password_change_form.html:9
 msgid "Change email"
 msgstr "Canvia el correu electrònic"
 
 #: templates/accounts/beta_optin.html:10
-#: templates/accounts/change_country.html:10
-#: templates/accounts/email_change.html:10
-#: templates/accounts/password_change_form.html:10
 msgid "Change country"
 msgstr "Canvia el país"
 
@@ -2413,7 +2463,6 @@ msgstr ""
 
 # 85%
 #: templates/accounts/beta_optin.html:33
-#: templates/accounts/change_country.html:32
 msgid "Update"
 msgstr "Actualitza"
 
@@ -2421,9 +2470,10 @@ msgstr "Actualitza"
 msgid "Change Email"
 msgstr "Canvia el correu electrònic"
 
-#: templates/accounts/password_change_form.html:8
-msgid "Change password "
-msgstr "Canvia la contrasenya "
+#: templates/accounts/password_change_form.html:9
+#, fuzzy
+msgid "Password "
+msgstr "Contrasenya"
 
 #: templates/accounts/password_change_form.html:16
 msgid "After changing your password, you will be prompted to log back in."
@@ -2435,6 +2485,72 @@ msgstr ""
 msgid "Change Password"
 msgstr "Canviar la Contrasenya"
 
+#: templates/accounts/deletion/confirmation.html:12
+#: templates/accounts/deletion/nostalgia.html:11
+msgid "Delete my account"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:15
+msgid "Whoops, go back"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:17
+#, fuzzy
+msgid "Are you sure you want to delete your account?"
+msgstr "Estàs segur que vols esborrar aquest article?"
+
+#: templates/accounts/deletion/nostalgia.html:22
+#, python-format
+msgid "You joined the Scratch community %(years_ago)s years ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:24
+msgid "You joined the Scratch community a year ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:26
+#, python-format
+msgid "You joined the Scratch community %(months_ago)s months ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:28
+msgid "You joined the Scratch community a month ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:33
+#, python-format
+msgid ""
+"You've created %(num_projects)s projects and have %(num_followers)s "
+"followers."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:41
+msgid "Some of your projects"
+msgstr ""
+
+# 92%
+#: templates/accounts/deletion/nostalgia.html:42
+#, fuzzy
+msgid "Your projects"
+msgstr "Més projectes"
+
+#: templates/accounts/deletion/nostalgia.html:63
+msgid "Some of your followers"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:64
+#, fuzzy
+msgid "Your followers"
+msgstr "Més seguidors"
+
+#: templates/accounts/deletion/nostalgia.html:81
+msgid "Yes, next step"
+msgstr ""
+
+#: templates/accounts/deletion/includes/deletion_form.html:15
+msgid "Delete account &amp; Sign out"
+msgstr ""
+
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
 #: templates/carousel/carousel.html:18 templates/homepage/index.html:83
@@ -2443,8 +2559,8 @@ msgstr "Canviar la Contrasenya"
 #: templates/profiles/profile_detail.html:270
 #: templates/profiles/profile_detail.html:290
 #: templates/profiles/profile_detail.html:310
-#: templates/profiles/profile_detail.html:347 templates/projects/base.html:353
-#: templates/projects/base.html.py:383 templates/search/search.html:58
+#: templates/profiles/profile_detail.html:347 templates/projects/base.html:357
+#: templates/projects/base.html.py:387 templates/search/search.html:58
 #: templates/search/search.html.py:88 templates/search/search.html:96
 msgid "View all"
 msgstr "Veure-ho tot"
@@ -2454,6 +2570,7 @@ msgid "No items"
 msgstr "Sense elements"
 
 #: templates/carousel/includes/project-thumb.html:23
+#: templates/galleries/includes/project-thumb.html:23
 msgid "in"
 msgstr "a"
 
@@ -2642,7 +2759,7 @@ msgid "Projects"
 msgstr "Projectes"
 
 #: templates/explore/projects.html:101 templates/explore/studios.html:86
-#: templates/projects/base.html:382
+#: templates/projects/base.html:386
 #: templates/projects/includes/shared/shared-project-actions.html:5
 #: templates/search/search.html:64 templates/search/search.html.py:87
 #: templates/search/includes/tabs.html:11
@@ -2951,8 +3068,8 @@ msgid ""
 "A creative learning community with <span class=\"projcount\">"
 "%(project_count)s</span> projects shared"
 msgstr ""
-"Una comunitat d'aprenentatge amb <span class=\"projcount\">%"
-"(project_count)s</span> projectes compartits"
+"Una comunitat d'aprenentatge amb <span class=\"projcount\""
+">%(project_count)s</span> projectes compartits"
 
 #: templates/homepage/index.html:148
 msgid "ABOUT SCRATCH"
@@ -3038,7 +3155,7 @@ msgid "Loves"
 msgstr "Li agrada"
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:352 templates/projects/remixes.html:3
+#: templates/projects/base.html:356 templates/projects/remixes.html:3
 #: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
@@ -3071,10 +3188,10 @@ msgid ""
 msgstr ""
 "El Lifelong Kindergarten Group processarà i investigarà notificacions de "
 "suposades infraccions i prendrà les accions apropiades sota el Digital "
-"Millennium Copyright Act (\"DMCA\") i altres lleis de propietat intel·lectual "
-"aplicables immediatament. Després de la recepció de notificacions complint o "
-"substancialment complint amb la DMCA, el Lifelong Kindergarten Group pot "
-"actuar per retirar o inhabilitar l'accés a qualsevol material que "
+"Millennium Copyright Act (\"DMCA\") i altres lleis de propietat intel·"
+"lectual aplicables immediatament. Després de la recepció de notificacions "
+"complint o substancialment complint amb la DMCA, el Lifelong Kindergarten "
+"Group pot actuar per retirar o inhabilitar l'accés a qualsevol material que "
 "suposadament viola. Repetir les infraccions dels drets d'autor de tercers "
 "estan subjectes a la cancel·lació del compte."
 
@@ -3152,8 +3269,8 @@ msgid ""
 "<a href=\"/parents\">INFO FOR PARENTS</a> | <a href=\"/educators\">INFO FOR "
 "EDUCATORS</a>"
 msgstr ""
-"<a href=\"/parents\">INFORMACIÓ PER PARES</a> | <a "
-"href=\"/educators\">INFORMACIÓ PER EDUCADORS</a>"
+"<a href=\"/parents\">INFORMACIÓ PER PARES</a> | <a href=\"/educators\">"
+"INFORMACIÓ PER EDUCADORS</a>"
 
 #: templates/info/about.html:35
 msgid "Who Uses Scratch?"
@@ -3188,9 +3305,8 @@ msgstr ""
 "de 40 llengües. Per canviar la llengua, clica el menú que trobaràs al final "
 "de la pàgina. A l'editor de projectes, fes clic al globus que hi ha a dalt "
 "de tot de la pàgina. Per afegir alguna cosa o millorar una traddució, \n"
-"  mira la <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scratch\">pàgina de "
-"traduccions</a>."
+"  mira la <a href=\"http://wiki.scratch.mit.edu/wiki/"
+"How_to_Translate_Scratch\">pàgina de traduccions</a>."
 
 #: templates/info/about.html:46
 msgid "Quotes"
@@ -3227,7 +3343,7 @@ msgstr ""
 "<li><a href=\"/info/credits/\">Crèdits d'Scratch</a></li>\n"
 "    "
 
-#: templates/info/about.html:70
+#: templates/info/about.html:70 templates/info/hoc2014.html:57
 msgid "Learn to Code, Code to Learn"
 msgstr "Aprèn a Programar, Programar per Aprendre"
 
@@ -3255,15 +3371,9 @@ msgid ""
 "  Students are learning with Scratch at all levels (from elementary school "
 "to college) and across disciplines (such as math, computer science, language "
 "arts, social studies). Educators share stories, exchange resources, ask "
-"questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+"questions, and find people on the <a href=\"http://scratched.gse.harvard.edu/"
 "\">ScratchEd website</a>.\n"
 msgstr ""
-"\n"
-"   Alumnes de tots els nivells educatius estan aprenent amb Scratch (des de "
-"la primària fins a la universitat) en diferents matèries (matemàtiques, "
-"informàtica, llengua, plàstica, socials). Els educadors comparteixen les "
-"seves experiències, intercanvien recursos, fan preguntes i troben companys a "
-"la pàgina <a href=\"http://scratched.media.mit.edu/\">ScratchEd</a>.\n"
 
 #: templates/info/about.html:84
 msgid "Research"
@@ -3276,12 +3386,13 @@ msgid ""
 "edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). "
 "Find out more about <a href=\"/info/research\">Scratch research</a> and <a "
 "href=\"/statistics\">statistics about Scratch</a>.\n"
-msgstr "L'Equip d'Scratch del MIT i col·laboradors estan  investigant com la gent "
-"utilitza i aprèn amb Scratch (un exemple a  <a "
-"href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: "
+msgstr ""
+"L'Equip d'Scratch del MIT i col·laboradors estan  investigant com la gent "
+"utilitza i aprèn amb Scratch (un exemple a  <a href=\""
+"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: "
 "Programming for All</a>). En aquests enllaços trobaràs més informació sobre "
-"la <a href=\"/info/research\">recerca sobre Scratch</a> i les  <a "
-"href=\"/statistics\">estadístiques d'ús d''Scratch</a>.\n"
+"la <a href=\"/info/research\">recerca sobre Scratch</a> i les  <a href=\"/"
+"statistics\">estadístiques d'ús d''Scratch</a>.\n"
 
 #: templates/info/about.html:90
 msgid "Support and Funding"
@@ -3294,17 +3405,10 @@ msgid ""
 "the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
 "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
 "Learn Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab "
-"research consortia. If you'd like to support Scratch, please see our <a href="
-"\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
+"research consortia. If you'd like to support Scratch, please see our \n"
+"<a href=\"https://secure.donationpay.org/codetolearn/\">donate page</a>, or "
+"contact us at donate@scratch.mit.edu.\n"
 msgstr ""
-"\n"
-"El projecte Scratch, iniciat l'any 2003, ha rebut el generós suport de la "
-"National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
-"Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
-"Learn Foundation, Google, Dell, Fastly, Inversoft, i el consorci de recerca "
-"del MIT Media Lab. Si vols recolzar Scratch, si us plau, mira la nostra <a "
-"href=\"/info/donate\">pàgina de donatius</a>, o contacta'ns a "
-"donate@scratch.mit.edu.\n"
 
 #: templates/info/characterscamp.html:9 templates/info/characterscamp.html:16
 msgid "Creative Characters Camp"
@@ -3328,7 +3432,13 @@ msgid ""
 "you like about it and offer suggestions."
 msgstr ""
 
-#: templates/info/community_guidelines.html:28
+#: templates/info/community_guidelines.html:25
+msgid ""
+"<b>Be honest.</b> Don’t try to impersonate other Scratchers, spread rumors, "
+"or otherwise try to trick the community."
+msgstr ""
+
+#: templates/info/community_guidelines.html:29
 msgid ""
 "Scratch welcomes people of all ages, races, ethnicities, religions, sexual "
 "orientations, and gender identities."
@@ -3336,17 +3446,21 @@ msgstr ""
 "Scratch accepta gent de totes les edats, races, ètnies, religions, "
 "orientacions sexuals i identitats de gènere."
 
-#: templates/info/credits.html:96
+# 75%
+#: templates/info/credits.html:94
+#, fuzzy
+msgid "Scratch Credits"
+msgstr "Productes Scratch"
+
+#: templates/info/credits.html:98
 msgid "Scratch Credits and Contributors"
 msgstr "Crèdits d'Scratch i Col·laboradors"
 
+# 75%
 #: templates/info/credits.html:101
-msgid "Meet the Scratch Team"
-msgstr "Coneix l'Equip d'Scratch"
-
-#: templates/info/credits.html:187
-msgid "Community and Moderation"
-msgstr "Comunitat i Moderació"
+#, fuzzy
+msgid "MIT Scratch Team"
+msgstr "Equip Scratch"
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
@@ -3360,44 +3474,27 @@ msgid ""
 "educational and computer science researchers, librarians, museum educators, "
 "and parents.<br/><br/>\n"
 "Want to learn more about learning with Scratch?<br/>Check out the <a href="
-"\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+"\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd online "
+"community</a>.\n"
 "    "
 msgstr ""
-"Scratch està dissenyat amb l'aprenentatge i l'educació en ment. Un gran grup "
-"d'educadors ha estat donant suport als creadors d'Scratch des del 2007, en "
-"entorns d'aprenentatge formals i informals &ndash; mestres de primària, "
-"investigadors en l'ús de les TIC, bibliotecaris, educadors als museus i "
-"famílies.<br/><br>/>\n"
-"Vols aprendre més sobre com aprendre amb Scratch?<br/>Visita la pàgina de la "
-"comunitat <a href=\"http://scratch-ed.org\" target=\"_blank\">ScratchEd</a>.\n"
-"    "
 
 #: templates/info/educators.html:26
 msgid ""
 "\n"
 " <h3>What is ScratchEd?</h3>\n"
-"\t      <p>Launched in July 2009, <a href=\"http://scratch-ed.org\" target="
-"\"_blank\">ScratchEd</a> is an online community where Scratch educators "
-"share stories, exchange resources, ask questions, and find people.</p>\n"
+"\t      <p>Launched in July 2009, <a href=\"http://scratched.gse.harvard.edu"
+"\" target=\"_blank\">ScratchEd</a> is an online community where Scratch "
+"educators share stories, exchange resources, ask questions, and find people."
+"</p>\n"
 "\t      <p>Since its launch, more than 7500 educators from all around the "
 "world have joined the community, sharing hundreds of resources and engaging "
 "in thousands of discussions.</p>\n"
-"\t      <p>Join the ScratchEd community for free at <a href=\"http://scratch-"
-"ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+"\t      <p>Join the ScratchEd community for free at <a href=\"http://"
+"scratched.gse.harvard.edu\" target=\"_blank\">scratched.gse.harvard.edu</a>."
+"<p>\n"
 "\t      "
 msgstr ""
-"\n"
-" <h3>Què és ScratchEd?</h3>\n"
-"\t     <p>Des de Juliol de 2009, <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a> és una comunitat en línia on els educadors que "
-"fan servir Scratch comparteixen històries, intercanvien recursos, comenten "
-"dubtes i coneixen gent</p>\n"
-"\t     <p>Des de la seva aparició, més de 7500 educadors d'arreu del món "
-"s'han unit a la comunitat, compartint centenars de recursos i generant "
-"milers de debats.</p>\n"
-"\t     <p>Uneix-te gratuïtament a la Comunitat ScratchEd aquí <a href=\"http"
-"://scratch-ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
-"\t     "
 
 #: templates/info/educators.html:32
 msgid ""
@@ -3405,52 +3502,27 @@ msgid ""
 "\t      <h3>How can I learn more about what educators are doing with Scratch "
 "&ndash; and how I might use it?</h3>\n"
 "\t      <p>Not sure what might be possible with Scratch?</p>\n"
-"\t      <p><a href=\"http://scratched.media.mit.edu/stories\" target=\"_blank"
-"\">Read a story</a> about how educators have been including Scratch "
+"\t      <p><a href=\"http://scratched.gse.harvard.edu/stories\" target="
+"\"_blank\">Read a story</a> about how educators have been including Scratch "
 "activities in a wide range of learning environments.</a></p>\n"
-"\t      <p>Or <a href=\"http://scratched.media.mit.edu/resources/all\" "
+"\t      <p>Or <a href=\"http://scratched.gse.harvard.edu/resources/all\" "
 "target=\"_blank\">explore resources</a> across ages, disciplines, and "
-"settings. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+"settings. <a href=\"http://scratched.gse.harvard.edu/resources/new-scratch\" "
 "target=\"_blank\">Watch webinars</a> and review documents like the <a href="
-"\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-draft\" "
-"target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
-"\t      <p>In addition to exploring the <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a> online community and its resources, you can "
-"engage with the ScratchEd Team and other Scratch educators via <a href="
-"\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a href="
-"\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
-"<a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>"
-"\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/"
-"scratched-weekly-roundup\" target=\"_blank>\">weekly roundups</a>, and our "
-"<a href=\"http://scratched.media.mit.edu/events\" target=\"_blank>"
-"\">quarterly newsletter</a>.<p>\n"
+"\"http://scratched.gse.harvard.edu/resources/scratch-curriculum-guide-draft"
+"\" target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
+"\t      <p>In addition to exploring the <a href=\"http://scratched.gse."
+"harvard.edu\" target=\"_blank\">ScratchEd</a> online community and its "
+"resources, you can engage with the ScratchEd Team and other Scratch "
+"educators via <a href=\"http://twitter.com/scratchedteam\" target=\"_blank>"
+"\">Twitter</a>, <a href=\"http://www.facebook.com/ScratchEdTeam\" target="
+"\"_blank>\">Facebook</a>, <a href=\"http://www.edmodo.com/publisher/"
+"scratcheducation\" target=\"_blank>\">Edmodo</a>, <a href=\"http://scratched."
+"gse.harvard.edu/discussions/scratched-weekly-roundup\" target=\"_blank>"
+"\">weekly roundups</a>, and our <a href=\"http://scratched.gse.harvard.edu/"
+"events\" target=\"_blank>\">quarterly newsletter</a>.<p>\n"
 "\t      "
 msgstr ""
-"\n"
-"\t <h3>Com puc saber més coses sobre el què fan els docents amb Scratch i com "
-"el puc fer servir jo?</h3>\n"
-"\t <p>Tens dubtes sobre el què es pot arribar a fer amb Scratch?</p>\n"
-"\t <p><a href=\"http://scratched.media.mit.edu/stories\" "
-"target=\"_blank\">Llegeix una història</a> sobre com diferents educadors han "
-"estat duent a terme activitats amb Scratch en diferents entorns.</a></p>\n"
-"\t <p>O bé <a href=\"http://scratched.media.mit.edu/resources/all\" "
-"target=\"_blank\">explora recursos</a> per diferents edats, disciplines i "
-"entorns. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
-"target=\"_blank\">Mira webinars</a> i dóna un cop d'ull a documents com la<a "
-"href=\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-"
-"draft\" target=\"_blank\">Guia del currículum d'Scratch</a>.</p>\n"
-"\t <p>A més d'explorar la comunitat <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a> i els seus recursos, pots mantenir-te en "
-"contacte amb l'Equip d'ScratchEd i altres educadors via <a "
-"href=\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a "
-"href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
-"<a href=\"http://www.edmodo.com/publisher/scratcheducation\" "
-"target=\"_blank>\">Edmodo</a>, <a "
-"href=\"http://scratched.media.mit.edu/discussions/scratched-weekly-roundup\" "
-"target=\"_blank>\">els reculls de la setmana</a>, i la nostra <a "
-"href=\"http://scratched.media.mit.edu/events\" target=\"_blank>\">newsletter "
-"quadrimestral</a>.<p>\n"
-"\t"
 
 # 83%
 #: templates/info/educators.html:44
@@ -3534,15 +3606,16 @@ msgstr ""
 "<b>AVÍS:</b> Aquesta versió del connector està encara en fase beta. "
 "Actualment funiona només per Mac OS X i Windows.\n"
 "</p><p>\n"
-"Per provar-lo, descarrega l'instal·lador per <a href=\"%"
-"(STATIC_URL)sext/ScratchDevicePlugin.dmg\">Mac</a> o per <a href=\"%"
-"(STATIC_URL)sext/ScratchDevicePlugin.msi\">Windows</a>.\n"
+"Per provar-lo, descarrega l'instal·lador per <a href=\""
+"%(STATIC_URL)sext/ScratchDevicePlugin.dmg\">Mac</a> o per <a href=\""
+"%(STATIC_URL)sext/ScratchDevicePlugin.msi\">Windows</a>.\n"
 "</p><p>\n"
 "Per començar a fer servir els blocs de WeDo, reinicia el teu navegador. Dins "
-"l'editor d'Scratch, vés a la categoria \"Més blocs\" i fes clic al botó "
-"\"Afegeix una Extensió\".Apareixerà la finestra de la galeria d'Extensions.\n"
+"l'editor d'Scratch, vés a la categoria \"Més blocs\" i fes clic al botó \""
+"Afegeix una Extensió\".Apareixerà la finestra de la galeria d'Extensions.\n"
 "</p><p>\n"
-"Tria l'extensió \"WeDo\" i els blocs apareixeran a la categoria \"Més Blocs\"\n"
+"Tria l'extensió \"WeDo\" i els blocs apareixeran a la categoria \"Més Blocs\""
+"\n"
 "</p><p>\n"
 "Si el connector ha estat correctament instal·lat, veuràs un indicador de "
 "color verd o groc al costat del títol \"LEGO WeDo\".\n"
@@ -3557,6 +3630,52 @@ msgstr ""
 "</p><p>\n"
 "Si us plau, torna a aquesta pàgina per veure futures actualitzacions!\n"
 " "
+
+#: templates/info/hoc2014.html:4 templates/info/hoc2014.html.py:10
+msgid "Get Creative with Coding"
+msgstr ""
+
+#: templates/info/hoc2014.html:35
+msgid "Create one of these projects with Scratch!"
+msgstr ""
+
+#: templates/info/hoc2014.html:38
+msgid ""
+"\n"
+"          With <a href=\"http://scratch.mit.edu/about\">Scratch</a>, you can "
+"program your own stories, games, and animations  &mdash; and share them "
+"online.\n"
+"          "
+msgstr ""
+
+#: templates/info/hoc2014.html:48
+msgid "Scratch: Imagine, Program, Share"
+msgstr ""
+
+#: templates/info/hoc2014.html:51
+msgid ""
+"\n"
+"    \tMillions of young people around the world create projects with "
+"Scratch, a free programming language and <a href=\"http://scratch.mit.edu"
+"\">online community</a> developed by the MIT Media Lab.\n"
+msgstr ""
+
+#: templates/info/hoc2014.html:60
+msgid ""
+"When people learn to code in Scratch, they learn important strategies for "
+"solving problems, designing projects, and communicating ideas."
+msgstr ""
+
+#: templates/info/hoc2014.html:64
+msgid ""
+"\n"
+"          The <strong>Hour of Code</strong>&#8482; is a nationwide "
+"initiative by <a href=\"http://csedweek.org\">Computer Science Education "
+"Week</a> and <a href=\"http://code.org\">Code.org</a><br />\n"
+"          to introduce millions of students to one hour of computer science "
+"and computer programming.\n"
+"          "
+msgstr ""
 
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
@@ -3658,8 +3777,8 @@ msgid ""
 "Find out more about the <a href=\"http://info.scratch.mit.edu/prototype"
 "\">new Scratch blocks</a>."
 msgstr ""
-"Troba més informació sobre els <a "
-"href=\"http://info.scratch.mit.edu/prototype\">nous blocs d'Scratch</a>."
+"Troba més informació sobre els <a href=\"http://info.scratch.mit.edu/"
+"prototype\">nous blocs d'Scratch</a>."
 
 #: templates/info/overview.html:57
 #, python-format
@@ -3718,8 +3837,8 @@ msgid ""
 "where you can feature one of your projects and tell others what you're "
 "working on."
 msgstr ""
-"Clica el teu nom d'usuari o icona per anar a la teva pàgina de "
-"<b>Perfil</b>, \n"
+"Clica el teu nom d'usuari o icona per anar a la teva pàgina de <b>Perfil</b>"
+", \n"
 "on pots presentar un dels teus projectes i explicar als altres en què estàs "
 "treballant."
 
@@ -3729,8 +3848,8 @@ msgid ""
 "People can post comments on your Profile page and <img src=\"%(STATIC_URL)s/"
 "images/help/follow-button.png\" /> your Scratch account to see updates."
 msgstr ""
-"La gent pot publicar comentaris a la teva pàgina de Perfil i <img src=\"%"
-"(STATIC_URL)s/images/help/follow-button.png\" /> el teu compte Scratch per "
+"La gent pot publicar comentaris a la teva pàgina de Perfil i <img src=\""
+"%(STATIC_URL)s/images/help/follow-button.png\" /> el teu compte Scratch per "
 "veure novetats."
 
 #: templates/info/overview.html:78
@@ -3814,13 +3933,13 @@ msgid ""
 "\">Scratch Cards</a> provide a fun way to learn more. For an overview of "
 "Scratch resources, see <a href=\"/help/\">Scratch Help</a>."
 msgstr ""
-"Si tot just acabes de començar. aquí tens una<a "
-"href=\"/projects/editor/?tip_bar=getStarted\">guia pas a pas</a> disponible "
-"dins d'Scratch o pots descarregar la <a href=\"%(STATIC_URL)s/pdfs/help"
-"/Getting-Started-Guide-Scratch2.pdf\">Guia d'Inici (PDF)</a>. Les <a "
-"href=\"/help/cards/\">Scratch Cards</a> proporcionen una manera divertida "
-"d'aprendre més. Si vols un resum dels recursos disponibles, vés a la <a "
-"href=\"/help/\">Pàgina d'Ajuda d'Scratch</a>."
+"Si tot just acabes de començar. aquí tens una<a href=\""
+"/projects/editor/?tip_bar=getStarted\">guia pas a pas</a> disponible dins "
+"d'Scratch o pots descarregar la <a href=\"%(STATIC_URL)s/pdfs/help/Getting-"
+"Started-Guide-Scratch2.pdf\">Guia d'Inici (PDF)</a>. Les <a href=\""
+"/help/cards/\">Scratch Cards</a> proporcionen una manera divertida "
+"d'aprendre més. Si vols un resum dels recursos disponibles, vés a la <a href="
+"\"/help/\">Pàgina d'Ajuda d'Scratch</a>."
 
 #: templates/info/parents.html:34
 msgid "What is the Scratch online community?"
@@ -3921,14 +4040,15 @@ msgid ""
 "and I thank you wholeheartedly. \n"
 "\""
 msgstr ""
-"<b>\"La meva filla, tímida però amb mentalitat tecnològica, ha trobat en això "
-"una eina fantàstica i segura per expressar la seva creativitat.</b> Dedica "
-"hores del seu temps lliure a crear animacions més difícils i a compartir-les "
-"amb la comunitat d'Scratch. Els fòrums li proporcionen un entorn on hi "
-"troba gent amb les mateixes inquietuds on hi pot mantenir una conversa. Ella "
-"viu els ordinadors, el disseny gràfic i l'animació com una cosa a la què "
-"s'hi podria dedicar en un futur. El vostre programa li ha obert un nou "
-"completament nou en molts sentit i us ho vull agrair de tot cor. \n"
+"<b>\"La meva filla, tímida però amb mentalitat tecnològica, ha trobat en "
+"això una eina fantàstica i segura per expressar la seva creativitat.</b> "
+"Dedica hores del seu temps lliure a crear animacions més difícils i a "
+"compartir-les amb la comunitat d'Scratch. Els fòrums li proporcionen un "
+"entorn on hi troba gent amb les mateixes inquietuds on hi pot mantenir una "
+"conversa. Ella viu els ordinadors, el disseny gràfic i l'animació com una "
+"cosa a la què s'hi podria dedicar en un futur. El vostre programa li ha "
+"obert un nou completament nou en molts sentit i us ho vull agrair de tot "
+"cor. \n"
 "\""
 
 #: templates/info/parents.html:58
@@ -3959,8 +4079,8 @@ msgid ""
 "Scratch</a>."
 msgstr ""
 "Si vols una pàgina amb un resum sobre el què el jovent aprèn amb Scratch, "
-"mira <a href=\"http://llk.media.mit.edu/scratch/Learning-with-"
-"Scratch.pdf\">Aprenent amb Scratch</a>."
+"mira <a href=\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">"
+"Aprenent amb Scratch</a>."
 
 #: templates/info/parents.html:66
 msgid ""
@@ -3975,8 +4095,8 @@ msgid ""
 "We ask all participants on the site to follow the <a href=\"/"
 "community_guidelines\">Community Guidelines</a>."
 msgstr ""
-"Demanem a tots els participants de la pàgina que seguexin les <a "
-"href=\"/community_guidelines\">normes d'ús de la comunitat</a>."
+"Demanem a tots els participants de la pàgina que seguexin les <a href=\"/"
+"community_guidelines\">normes d'ús de la comunitat</a>."
 
 #: templates/info/parents.html:75
 msgid ""
@@ -3988,7 +4108,7 @@ msgstr ""
 "us plau mira la nostra <a href=\"/help/faq/#privacy\">Política de "
 "Privacitat</a>."
 
-#: templates/info/parents.html:81 templates/info/help/index.html:98
+#: templates/info/parents.html:81 templates/info/help/index.html:97
 msgid "Questions?"
 msgstr "Preguntes?"
 
@@ -3997,8 +4117,8 @@ msgid ""
 "To find out more about Scratch, please see <a href=\"/help/faq/\">Frequently "
 "Asked Questions</a>."
 msgstr ""
-"Per saber més sobre Scratch, si us plau mira les <a "
-"href=\"/help/faq/\">Preguntes Més Freqüents</a>."
+"Per saber més sobre Scratch, si us plau mira les <a href=\"/help/faq/\">"
+"Preguntes Més Freqüents</a>."
 
 #: templates/info/parents.html:84
 msgid ""
@@ -4014,8 +4134,8 @@ msgid ""
 "If you need to contact our staff team directly, click <a href="
 "\"%(contact_us_url)s\">Contact Us</a> at the bottom of any page."
 msgstr ""
-"Si necessites contactar amb el nostre equip directament, clica a <a href=\"%"
-"(contact_us_url)s\">Contacta'ns</a> al final de qualsevol pàgina."
+"Si necessites contactar amb el nostre equip directament, clica a <a href=\""
+"%(contact_us_url)s\">Contacta'ns</a> al final de qualsevol pàgina."
 
 #: templates/info/quotes.html:4
 msgid "Quotes - Scratch"
@@ -4039,7 +4159,8 @@ msgstr ""
 "\testem creant jocs interessants i projectes que són divertits de jugar, "
 "mirar i descarregar. \n"
 "\tNo m'agrada només parlar amb gent a la xarxa, m'agrada parlar sobre alguna "
-"cosa creativa i novedosa.<span class=\"quotes\">&rdquo;</span> - 13 anys </p>\n"
+"cosa creativa i novedosa.<span class=\"quotes\">&rdquo;</span> - 13 anys </p>"
+"\n"
 
 #: templates/info/quotes.html:26
 msgid ""
@@ -4087,73 +4208,60 @@ msgid ""
 "span> - 14-year-old"
 msgstr ""
 "<span class=\"quotes\">&ldquo;</span>Fents servir un conjunt de 100 "
-"instruccions que es poden apilar una sobre de l'altra visualment, pots "
-"crear-ho pràcticament tot i aprendre les bases de llenguatges més avançats. "
-"A més, hi ha una comunitat de gent en línia que et donaran feedbacl dels "
-"teus projectes i que t'ajudaran encantats amb les teves preguntes. <span "
-"class=\"quotes\">&rdquo;</span> - 14 anys"
+"instruccions que es poden apilar una sobre de l'altra visualment, pots crear-"
+"ho pràcticament tot i aprendre les bases de llenguatges més avançats. A més, "
+"hi ha una comunitat de gent en línia que et donaran feedbacl dels teus "
+"projectes i que t'ajudaran encantats amb les teves preguntes. <span class=\""
+"quotes\">&rdquo;</span> - 14 anys"
 
 #: templates/info/research.html:4 templates/info/research.html.py:15
 msgid "Research on Scratch"
 msgstr "Recerca sobre Scratch"
 
 #: templates/info/research.html:21
-#, python-format
 msgid ""
-"<p>Scratch team members from the MIT Media Lab <a href=\"http://llk.media."
-"mit.edu\">Lifelong Kindergarten Group</a> and at the University of "
-"Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
-"Education</a> are researching how people use and learn from Scratch.<br />\n"
-"<br />\n"
+"\n"
+"\tResearch on Scratch is being conducted by members of the MIT Scratch Team "
+"and researchers at other universities, including Yasmin Kafai at the "
+"University of Pennsylvania Graduate School of Education, Karen Brennan at "
+"the Harvard Graduate School of Education, \n"
+"Benjamin Mako Hill at the University of Washington, Andrés Monroy Hernandez "
+"at Microsoft Research, Mimi Ito and Crystle Martin at the University of "
+"California, Irvine, Quinn Burke at College of Charleston, Deborah Fields at "
+"Utah State University, and Kylie Peppler at Indiana University. "
+msgstr ""
+
+#: templates/info/research.html:24
+msgid ""
 "By sharing projects and participating in the Scratch online community, you "
 "are helping us better understand how people can use and \n"
-"learn with Scratch.&nbsp;Any publicly shared&nbsp;projects, comments, or "
-"other material on the Scratch site may be included\n"
+"learn with Scratch. Any publicly shared projects, comments, or other "
+"material on the Scratch site may be included\n"
 "in the research analysis, presentations, papers, and reports. No personally "
-"identifiable information is shared. \n"
-"(If you have any questions, please use the <a href=\"%(contact_us_url)s"
-"\">Contact Us</a> form.)</p>\n"
-"<p>The following are research papers, presentations, and <a href=\"#theses"
-"\">dissertations and theses</a> that share our findings about Scratch and "
-"the Scratch online community. This list also includes some papers conducted "
-"on Scratch by other researchers. For magazines and other articles, see <a "
-"href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch in the "
-"News</a>.</p>"
+"identifiable information is shared. "
 msgstr ""
-"<p>Els membres de l'Equip de l'Scratch provinents del MIT Media Lab<a "
-"href=\"http://llk.media.mit.edu\">Lifelong Kindergarten Group</a> i de la "
-"Universitat de Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate "
-"School of Education</a> estan investigant com la gent utilitza i aprèn amb "
-"Scratch.<br />\n"
-"<br />\n"
-"Compartint projectes i participant de la comunitat d'Scratch en línia, ens "
-"estàs ajudant a entendre millor com la gent pot utilitzar i \n"
-"aprendre amb Scratch.&nbsp;Qualsevol projecte, comentari o altre material "
-"compartit a la web d'Scratch pot ser inclòs\n"
-"en investigacions, anàlisis, presentacions, documents i informes. Cap "
-"informació personal serà compartida. \n"
-"(Si tens cap dubte, si us plau utilitza el <a href=\"%"
-"(contact_us_url)s\">Formulari de contacte</a>.)</p>\n"
-"<p>Segueixen documents de recerca, presentacions i <a "
-"href=\"#theses\">dissertacions i tesis</a> que comparteixen les nostres "
-"trobades al voltant d'Scratch i de la comunitat en línia. Això inclou altres "
-"documents referents a Scratch elaborats per altres investigadors. Per a "
-"revistes i articles de premsa, mireu a <a "
-"href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch a les "
-"notícies</a>.</p>"
+
+#: templates/info/research.html:27
+#, python-format
+msgid ""
+" (If you have any questions, please use the <a href=\"%(contact_us_url)s"
+"\">Contact Us</a> form.)"
+msgstr ""
 
 #: templates/info/research.html:28
-msgid "Academic Publications &amp; Presentations"
-msgstr "Publicacions Acadèmiques i Presentacions"
-
-#: templates/info/research.html:73
-msgid "Dissertations and Theses"
-msgstr "Dissertacions i Tesis"
-
-#: templates/info/research.html:86
-msgid "Academic Publications by Other Researchers and Educators"
+msgid ""
+"Below are selected research papers, presentations, and theses on Scratch and "
+"the Scratch online community, followed by a list of National Science "
+"Foundation grants awarded to support Scratch."
 msgstr ""
-"Publicacions acadèmiques realitzades per altres investigadors i educadors"
+
+#: templates/info/research.html:30
+msgid "Research Papers &amp; Presentations"
+msgstr ""
+
+#: templates/info/research.html:81
+msgid "National Science Foundation Grants"
+msgstr ""
 
 #: templates/info/scratch2download.html:19
 #: templates/info/scratch2download.html:46
@@ -4209,17 +4317,17 @@ msgid ""
 "step2.png\" alt=\"Step 2\">\n"
 "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a> <br>\n"
-"\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
-"static/sa/Scratch.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-428a.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
+"\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
+"static/sa/Scratch-428a.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+"offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a> <br>\n"
+"sa/Scratch-428a.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
-"Scratch.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a>\n"
+"Scratch-428a.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"editor/download.png\" alt=\"Download \"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
@@ -4242,9 +4350,9 @@ msgid ""
 "\t\t\t\t   Getting Started Guide - <a href=\"%(STATIC_URL)spdfs/help/Getting-"
 "Started-Guide-Scratch2.pdf\">Download<img src=\"%(STATIC_URL)simages/help/"
 "offline-editor/pdf.png\" alt=\"PDF Download \"></a> <br>\n"
-"\t\t\t\t   Scratch Cards - <a href=\"%(STATIC_URL)spdfs/help/"
-"Scratch2Cards_Jan2013.pdf\">Download<img src=\"%(STATIC_URL)simages/help/"
-"offline-editor/pdf.png\" alt=\"PDF Download \"></a>\n"
+"\t\t\t\t   Scratch Cards - <a href=\"%(STATIC_URL)spdfs/help/Scratch2Cards."
+"pdf\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" "
+"alt=\"PDF Download \"></a>\n"
 "\t\t\t\t</p>\t\n"
 "\t\t\t\t"
 msgstr ""
@@ -4281,9 +4389,9 @@ msgid ""
 "For network deployments, use the <a href=\"http://download.scratch.mit.edu/"
 "Scratch1.4.msi.installer.zip\">Scratch1.4.msi.installer.zip</a>"
 msgstr ""
-"Per instal·lacions en xarxes, feu servir l'instal·lador <a href=\"http://down"
-"load.scratch.mit.edu/Scratch1.4.msi.installer.zip\">Scratch1.4.msi.installer."
-"zip</a>"
+"Per instal·lacions en xarxes, feu servir l'instal·lador <a href=\""
+"http://download.scratch.mit.edu/Scratch1.4.msi.installer.zip\""
+">Scratch1.4.msi.installer.zip</a>"
 
 #: templates/info/scratch_1.4.html:51
 msgid "Scratch 1.4 for Debian / Ubuntu"
@@ -4507,7 +4615,7 @@ msgstr "Xef de la Pizza"
 msgid "Scratch Help"
 msgstr "Ajuda d'Scratch"
 
-#: templates/info/help/cards.html:9 templates/info/help/index.html:60
+#: templates/info/help/cards.html:9 templates/info/help/index.html:59
 msgid "Scratch Cards"
 msgstr "Targetes Scratch"
 
@@ -4522,7 +4630,7 @@ msgid "Get all the Cards"
 msgstr "Aconsegueix totes les Targetes"
 
 #: templates/info/help/cards.html:18 templates/info/help/cards.html.py:20
-#: templates/info/help/index.html:46
+#: templates/info/help/index.html:45
 msgid "English"
 msgstr "Anglès"
 
@@ -4531,8 +4639,8 @@ msgid ""
 "Looking for Scratch Cards in your language? Check <a href=\"http://wiki."
 "scratch.mit.edu/wiki/Scratch_Support_Materials\">Scratch Wiki</a>."
 msgstr ""
-"Estàs cercant les Targetes Scratch en el teu idioma? Mira a la <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/Scratch_Support_Materials\">Wiki "
+"Estàs cercant les Targetes Scratch en el teu idioma? Mira a la <a href=\""
+"http://wiki.scratch.mit.edu/wiki/Scratch_Support_Materials\">Wiki "
 "d'Scratch</a>."
 
 #: templates/info/help/cards.html:31
@@ -4640,8 +4748,8 @@ msgstr ""
 "comparteix les teves creacions amb altres persones de tot el món. En el "
 "procés de disseny i programació de projectes Scratch, els més petits aprenen "
 "a pensar de manera creativa, raonar sistemàticament i treballar "
-"conjuntament. Per aprendre més sobre Scratch, mira la <a "
-"href=\"/about\">pàgina d'ajuda d'Scratch</a>."
+"conjuntament. Per aprendre més sobre Scratch, mira la <a href=\"/about\">"
+"pàgina d'ajuda d'Scratch</a>."
 
 #: templates/info/help/faq.html:52
 msgid "How do I make a game or animation with Scratch?"
@@ -4654,8 +4762,8 @@ msgid ""
 "\">dive in</a> to the project editor."
 msgstr ""
 "Mira la <a href=\"/help\"> pàgina d'ajuda</a> per veure moltes maneres de "
-"aprendre Scratch. O simplement <a "
-"href=\"/projects/editor/?tip_bar=getStarted\">prova</a> l'editor de projectes."
+"aprendre Scratch. O simplement <a href=\"/projects/editor/?tip_bar="
+"getStarted\">prova</a> l'editor de projectes."
 
 #: templates/info/help/faq.html:55
 msgid "What are the system requirements for Scratch?"
@@ -4665,7 +4773,7 @@ msgstr "Quins són els requeriments del sistema, per Scratch?"
 msgid ""
 "To run Scratch 2, you need a relatively recent web browser (<a href=\"http://"
 "google.com/chrome/\">Chrome</a> 7 or later, <a href=\"http://www.mozilla.org/"
-"en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 8 or "
+"en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 7 or "
 "later) with <a href=\"\">Adobe Flash Player</a> version 10.2 or later "
 "installed. Scratch 2 is designed to support screen sizes 1024 x 768 or "
 "larger. If your computer doesn’t meet these requirements, you can try "
@@ -4689,8 +4797,8 @@ msgid ""
 "your computer."
 msgstr ""
 "La versió <a href=\"/scratch2download/\">Scratch 2 offline editor (versió "
-"beta)</a> està disponible. També pots fer servir la versió <a href "
-"=\"/scratch_1.4\">Scratch 1.4</a>. Avís: Pots tenir les dues versions al teu "
+"beta)</a> està disponible. També pots fer servir la versió <a href =\""
+"/scratch_1.4\">Scratch 1.4</a>. Avís: Pots tenir les dues versions al teu "
 "ordinador."
 
 #: templates/info/help/faq.html:62
@@ -4726,13 +4834,13 @@ msgid ""
 "keep in mind that videos and projects aren’t the same."
 msgstr ""
 "Per fer un vídeo dels teus projectes Scratch, pots utilitzar diferent "
-"programari de gravació de pantalla com <a "
-"href=\"http://camstudio.org/\">CamStudio</a>. Però tingues present que alguns "
-"projectes Scratch són interactius: fan diferentes coses depenent en el què "
-"fa el visitant (per exemple: un videojoc que respon quan prems una tecla). "
-"Els vídeos no són interactius - t'ensenyen la mateixa cosa cada cop que els "
-"mires. Així doncs, pots fer un vídeo del teu projecte Scratch, però recorda "
-"que els projectes i els vídeos no són el mateix."
+"programari de gravació de pantalla com <a href=\"http://camstudio.org/\""
+">CamStudio</a>. Però tingues present que alguns projectes Scratch són "
+"interactius: fan diferentes coses depenent en el què fa el visitant (per "
+"exemple: un videojoc que respon quan prems una tecla). Els vídeos no són "
+"interactius - t'ensenyen la mateixa cosa cada cop que els mires. Així doncs, "
+"pots fer un vídeo del teu projecte Scratch, però recorda que els projectes i "
+"els vídeos no són el mateix."
 
 #: templates/info/help/faq.html:69
 msgid "How much does Scratch cost? Do I need a license?"
@@ -4761,9 +4869,9 @@ msgid ""
 "\"http://llk.media.mit.edu/\">Lifelong Kindergarten group</a> at <a href="
 "\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 msgstr ""
-"Scratch està desenvolupat i mantingut per l'equip Scratch al <a "
-"href=\"http://llk.media.mit.edu/\">grup de la Lifelong Kindergarten</a> al <a "
-"href=\"http://www.media.mit.edu/\">MIT Media Lab</a>."
+"Scratch està desenvolupat i mantingut per l'equip Scratch al <a href=\""
+"http://llk.media.mit.edu/\">grup de la Lifelong Kindergarten</a> al <a href="
+"\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 
 #: templates/info/help/faq.html:81
 msgid "What information do you ask for during account registration?"
@@ -4776,8 +4884,8 @@ msgid ""
 "for the following information:"
 msgstr ""
 "Per a protegir la privacitat dels membres de la comunitat, restringim el què "
-"recolectem i el què publiquem a la web. Durant el procés de registre "
-"demanem la següent informació:"
+"recolectem i el què publiquem a la web. Durant el procés de registre demanem "
+"la següent informació:"
 
 #: templates/info/help/faq.html:84
 msgid ""
@@ -4847,8 +4955,8 @@ msgstr ""
 "Quan l'usuari inicia la sessió, el lloc web d'Scratch demana al navegador "
 "poder desar-hi una <a href=\"http://en.wikipedia.org/wiki/HTTP_cookie\">http "
 "cookie</a> per tal de recordar que han iniciat la sessió mentre naveguen per "
-"diferents pàgines. Recollim algunes dades sobre el què els usuaris cliquen "
-"i quines parts del lloc web visiten fent servir Google Analytics. Aquesta "
+"diferents pàgines. Recollim algunes dades sobre el què els usuaris cliquen i "
+"quines parts del lloc web visiten fent servir Google Analytics. Aquesta "
 "informació ens ajuda a veure de quina manera podem millorar el nostre lloc "
 "web."
 
@@ -4911,8 +5019,8 @@ msgstr ""
 #: templates/info/help/faq.html:112
 msgid "Why does the Scratch Team require that all projects be “remixable”?"
 msgstr ""
-"Per què l'Equip d'Scratch demana que tots els projectes puguin ser "
-"\"reinventats\"?"
+"Per què l'Equip d'Scratch demana que tots els projectes puguin ser \""
+"reinventats\"?"
 
 #: templates/info/help/faq.html:113
 msgid ""
@@ -4931,31 +5039,34 @@ msgstr "Què passa si no vull que els altres reinventin els meus projectes?"
 
 #: templates/info/help/faq.html:116
 msgid ""
-"Everything on Scratch is remixable. By sharing your project on the Scratch "
-"website, you agree to license it under a <a href=\"http://creativecommons."
-"org/licenses/by-sa/2.0/deed.en\">Creative Commons Share Alike</a> license. "
-"This means it is okay for anyone to reuse the ideas, music, artwork, or "
-"anything else found in your Scratch project. If you don’t want others to "
+"By publishing your project on the Scratch website, you agree to license it "
+"under a <a href=\"http://creativecommons.org/licenses/by-sa/2.0/deed.en"
+"\">Creative Commons Share Alike</a> license. If you don’t want others to "
 "view and remix your creations, don’t share them on the Scratch website."
 msgstr ""
 
 #: templates/info/help/faq.html:118
-msgid ""
-"Can I use images / sounds / media from outside of the Scratch website in my "
-"Scratch projects?"
+msgid "Can I use images / sounds / media from the internet in my projects?"
 msgstr ""
+"Puc utilitzar imatges / sons / vídeos trets d'Internet dins dels meus "
+"projectes?"
 
 #: templates/info/help/faq.html:119
 msgid ""
-"Yes! To find art and sounds that are licensed for remixing, check out the <a "
-"href=\"http://search.creativecommons.org/\">Creative Commons search</a> "
-"page. Be sure to give credit to anyone whose work you re-use in the “Notes "
-"and Credits” section on your project page, and include a link back to the "
-"original. Remixing of media not explicitly licensed for re-use may be "
-"permitted under the <a href=\"http://www.copyright.gov/fls/fl102.html\">Fair "
-"Use</a> clause of US copyright law. Fair use allows for the remixing of "
-"copyrighted material for non-profit, educational purposes."
+"It's important to respect the original creator’s wishes regarding remixing. "
+"If you choose to integrate someone else’s work into your own, be sure to "
+"give them credit on the project “credits” section, and include a link back "
+"to the original. To find art / sounds that are already licensed for "
+"remixing, check out the <a href=\"http://search.creativecommons.org/"
+"\">Creative Commons search page</a>."
 msgstr ""
+"És important respectar els desitjos del creador original sobre la "
+"possibilitat de reinventar. Si tries integrar la feina d'algú altre dins la "
+"teva, estigues segur que el cites al teu projecte a la secció de \"crèdits\" "
+"i que inclous un enllaç a la font original. Per trobar imatges i sons que "
+"estiguin preparats per ser reinventats, mira <a href=\""
+"http://search.creativecommons.org/\">la pàgina de cerca de Creative "
+"Commons</a>."
 
 #: templates/info/help/faq.html:126
 msgid "I forgot my password, how can I reset it?"
@@ -4968,10 +5079,9 @@ msgid ""
 "associated with the account containing a link you can use to reset your "
 "password."
 msgstr ""
-"Introdueix el teu nom d'usuari a la <a "
-"href=\"/accounts/password_reset/\">pàgina de recuperació de contrasenya</a>. "
-"T'enviarem un correu electrònic a l'adreça associada al teu compte amb un "
-"enllaç perquè en triis una altra."
+"Introdueix el teu nom d'usuari a la <a href=\"/accounts/password_reset/\">"
+"pàgina de recuperació de contrasenya</a>. T'enviarem un correu electrònic a "
+"l'adreça associada al teu compte amb un enllaç perquè en triis una altra."
 
 #: templates/info/help/faq.html:130
 msgid "How do I change my password?"
@@ -5217,11 +5327,11 @@ msgid ""
 "explain. Be sure to include as much detail as you can, with links to "
 "relevant pages."
 msgstr ""
-"Pots fer clic a l'enllaç que diu \"informa\" a qualsevol projecte, comentari, "
-"discussió o pàgina d'usuari on consideris que hi ha alguna cosa que no és "
-"adequada dins d'Scratch. Si la situació és complicada, pots fer servir "
-"l'enllaç Contacta'ns per explicar-nos-ho. Assegurat d'incloure-hi tants "
-"detalls com puguis amb enllaços a pàgines rellevants."
+"Pots fer clic a l'enllaç que diu \"informa\" a qualsevol projecte, "
+"comentari, discussió o pàgina d'usuari on consideris que hi ha alguna cosa "
+"que no és adequada dins d'Scratch. Si la situació és complicada, pots fer "
+"servir l'enllaç Contacta'ns per explicar-nos-ho. Assegurat d'incloure-hi "
+"tants detalls com puguis amb enllaços a pàgines rellevants."
 
 #: templates/info/help/faq.html:196
 msgid "What do I do if I see someone being mean or disrespectful?"
@@ -5257,9 +5367,8 @@ msgstr ""
 "L'Equip d'Scratch revisa diariament els comentaris i projectes sobre els què "
 "s'ha informat. Si alguna cosa vulnera les normes d'ús de la comunitat "
 "d'Scratch ho podem eliminar i enviar un advertiment a l'usuari del compte. "
-"Depenent de com de greu sigui (o si ja havíem advertit l'usuari "
-"anteriorment), podem bloquejar els comptes o xarxes que s'han utilitzat per "
-"compartir-ho."
+"Depenent de com de greu sigui (o si ja havíem advertit l'usuari anteriorment)"
+", podem bloquejar els comptes o xarxes que s'han utilitzat per compartir-ho."
 
 #: templates/info/help/faq.html:202
 msgid "What happens when an account is blocked?"
@@ -5281,9 +5390,9 @@ msgstr ""
 "lo per crear projectes o comentaris. Quan inicïi la sessió veurà un pàgina "
 "que explica per què el seu compte ha estat bloquejat i un formulari on podrà "
 "demanar-ne el desbloqueig. Si l'usuari demostra que ha entès per què el seu "
-"compte ha estat bloquejat i promet respectar les normes d'ús de la "
-"comunitat en el futur, l'Equip d'Scratch revisarà el seu cas. Els comptes "
-"només es desbloquejaran en els casos on es pugui confiar en la paraula dels "
+"compte ha estat bloquejat i promet respectar les normes d'ús de la comunitat "
+"en el futur, l'Equip d'Scratch revisarà el seu cas. Els comptes només es "
+"desbloquejaran en els casos on es pugui confiar en la paraula dels "
 "propietaris. Si no és així, el compte (i altres comptes propietat de la "
 "mateixa persona) seran bloquejats permanentment."
 
@@ -5371,11 +5480,11 @@ msgid ""
 "look at it before sending your report. Make sure that you mention \"cloud "
 "data\" when you type your reason in the report."
 msgstr ""
-"Fes clic al botó \"Informa\" (sota del reproductor del projecte) per denunciar "
-"contingut inadequat dins les dades al núvol. El formulari inclou un enllaç "
-"a un registre amb totes les dades al núvol del projecte així com qui les ha "
-"desat - pots mirar-lo abans d'enviar el teu informe. Assegura't de mencionar "
-"\"dades al núvol\" quan escriguis els motius del teu informe."
+"Fes clic al botó \"Informa\" (sota del reproductor del projecte) per "
+"denunciar contingut inadequat dins les dades al núvol. El formulari inclou "
+"un enllaç a un registre amb totes les dades al núvol del projecte així com "
+"qui les ha desat - pots mirar-lo abans d'enviar el teu informe. Assegura't "
+"de mencionar \"dades al núvol\" quan escriguis els motius del teu informe."
 
 #: templates/info/help/faq.html:225
 msgid "Can I make chat rooms with cloud data?"
@@ -5478,79 +5587,79 @@ msgstr "Preguntes Més Freqüents (FAQ)"
 msgid "Browse FAQ"
 msgstr "Mira les Preguntes Més Freqüents"
 
-#: templates/info/help/index.html:10
+#: templates/info/help/index.html:9
 msgid "Get Started with Scratch"
 msgstr "Comença amb Scratch"
 
-#: templates/info/help/index.html:17
+#: templates/info/help/index.html:16
 msgid "Try out the</br> step-by-step intro"
 msgstr ""
 
 # 82%
-#: templates/info/help/index.html:26
+#: templates/info/help/index.html:25
 #, fuzzy
 msgid "Explore these</br> starter projects"
 msgstr "Prova aquests</br> projectes d'introducció"
 
-#: templates/info/help/index.html:32
+#: templates/info/help/index.html:31
 msgid "Watch the Getting Started video"
 msgstr "Mira el vídeo d'introducció"
 
-#: templates/info/help/index.html:37
+#: templates/info/help/index.html:36
 msgid "Scratch Guides"
 msgstr "Guies d'Scratch"
 
-#: templates/info/help/index.html:39
+#: templates/info/help/index.html:38
 msgid "Here are some guides to help you learn Scratch:"
 msgstr "Aquí tens algunes guies que t'ajudaran a aprendre Scratch:"
 
-#: templates/info/help/index.html:46
+#: templates/info/help/index.html:45
 msgid "Getting Started Guide"
 msgstr "Guia d'Iniciació"
 
-#: templates/info/help/index.html:49
+#: templates/info/help/index.html:48
 msgid "This step-by-step guide (PDF) provides an easy introduction to Scratch."
 msgstr "Aquesta guia pas a pas (PDF) t'ofereix una fàcil introducció a Scratch."
 
-#: templates/info/help/index.html:53
+#: templates/info/help/index.html:52
 #, python-format
 msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
 msgstr ""
 
-#: templates/info/help/index.html:62
+#: templates/info/help/index.html:61
 msgid "Each of these cards shows something you can do in Scratch."
 msgstr ""
 
-#: templates/info/help/index.html:67 templates/info/help/videos.html:19
+#: templates/info/help/index.html:66 templates/info/help/videos.html:19
 msgid "Video Tutorials"
 msgstr "Vídeo Tutorials"
 
-#: templates/info/help/index.html:69
+#: templates/info/help/index.html:68
 msgid ""
 "These videos include tips on using the paint editor, and introduce how to "
 "program games and animations in Scratch."
 msgstr ""
 
-#: templates/info/help/index.html:74
+#: templates/info/help/index.html:73
 msgid "Explore the Scratch Community"
 msgstr "Explora la Comunitat d'Scratch"
 
-#: templates/info/help/index.html:77
+#: templates/info/help/index.html:76
 msgid ""
 "<a href=\"../explore\">Explore</a> projects and studios Scratchers are making"
 msgstr ""
 "<a href=\"../explore\">Explora</a> els projectes i els estudis que estan "
 "creant altres Scratchers"
 
-#: templates/info/help/index.html:78
+#: templates/info/help/index.html:77
 msgid "Search for projects about:"
 msgstr "Cerca projectes sobre:"
 
-#: templates/info/help/index.html:83
+#: templates/info/help/index.html:82
 msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
 msgstr ""
 
-#: templates/info/help/index.html:84
+#: templates/info/help/index.html:83
 #, python-format
 msgid ""
 "Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
@@ -5559,43 +5668,43 @@ msgstr ""
 "Clica <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> a "
 "qualsevol perfil o estudi per rebre'n actualitzacions"
 
-#: templates/info/help/index.html:90
+#: templates/info/help/index.html:89
 msgid "What is Scratch?"
 msgstr "Què és Scratch?"
 
-#: templates/info/help/index.html:94
+#: templates/info/help/index.html:93
 msgid "For <a href=\"/parents\">Parents</a>"
 msgstr ""
 
-#: templates/info/help/index.html:95
+#: templates/info/help/index.html:94
 msgid "For <a href=\"/educators\">Educators</a>"
 msgstr ""
 
-#: templates/info/help/index.html:100
+#: templates/info/help/index.html:99
 msgid ""
 "Browse for answers on: </br><a href=\"/help/faq\">Frequently Asked "
 "Questions</a>"
 msgstr ""
 
-#: templates/info/help/index.html:102
+#: templates/info/help/index.html:101
 msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
 msgstr ""
 
 # 92%
-#: templates/info/help/index.html:103
+#: templates/info/help/index.html:102
 msgid "- Questions about Scratch"
 msgstr "- Preguntes sobre Scratch"
 
 # 89%
-#: templates/info/help/index.html:104
+#: templates/info/help/index.html:103
 msgid "- Help with Scripts"
 msgstr "- Ajuda amb els Programes"
 
-#: templates/info/help/index.html:107
+#: templates/info/help/index.html:106
 msgid "Resources"
 msgstr "Recursos"
 
-#: templates/info/help/index.html:110
+#: templates/info/help/index.html:109
 msgid ""
 "An online community for educators using Scratch, with stories, discussions, "
 "and resources, such as the Scratch curriculum guide."
@@ -5603,7 +5712,7 @@ msgstr ""
 "Una comunitat per educadors que fan servir Scratch, amb histories, "
 "discussions i recursos com la Guia de Currículum amb Scratch."
 
-#: templates/info/help/index.html:116
+#: templates/info/help/index.html:115
 msgid ""
 "The Scratch Wiki contains a wide variety of articles by Scratchers for "
 "Scratchers, including advanced topics and tutorials."
@@ -5612,55 +5721,55 @@ msgstr ""
 "Scratchers, incloent-hi temes avançats i tutorials."
 
 # 77%
-#: templates/info/help/index.html:119
+#: templates/info/help/index.html:118
 msgid "Scratch 2 Offline Editor (Beta)"
 msgstr "Editor Offline d'Scratch 2 (en proves)"
 
-#: templates/info/help/index.html:121
+#: templates/info/help/index.html:120
 msgid "Download the Scratch 2 offline editor (beta version)"
 msgstr "Descarrega la versió Scratch 2 offline (versió beta)"
 
-#: templates/info/help/index.html:123
+#: templates/info/help/index.html:122
 msgid "Scratch 1.4 Download"
 msgstr "Descarrega Scratch 1.4"
 
-#: templates/info/help/index.html:125
+#: templates/info/help/index.html:124
 msgid "Links and information on the previous version of Scratch."
 msgstr "Enllaços i informació sobre la versió anterior d'Scratch."
 
-#: templates/info/help/index.html:128
+#: templates/info/help/index.html:127
 msgid "Scratch Statistics"
 msgstr "Estadístiques d'Scratch"
 
-#: templates/info/help/index.html:130
+#: templates/info/help/index.html:129
 msgid "Explore up-to-date statistics about the Scratch online community."
 msgstr "Explora les estadístiques actualitzades sobre la comunitat d'Scratch."
 
-#: templates/info/help/index.html:133
+#: templates/info/help/index.html:132
 msgid ""
 "<a href=\"http://wiki.scratch.mit.edu/wiki/"
 "How_to_connect_to_the_physical_world\">Scratch and the Physical World</a>"
 msgstr ""
-"<a href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_wor"
-"ld\">Scratch i el Món Físic</a>"
+"<a href=\"http://wiki.scratch.mit.edu/wiki/"
+"How_to_connect_to_the_physical_world\">Scratch i el Món Físic</a>"
 
-#: templates/info/help/index.html:135
+#: templates/info/help/index.html:134
 msgid ""
 "Connect your Scratch projects to the physical world with <a href = \"http://"
 "www.makeymakey.com/\">MaKey MaKey</a>, <a href=\"http://info.scratch.mit.edu/"
 "WeDo\">LEGO WeDo</a>, or <a href=\"https://www.sparkfun.com/"
 "products/10311\">PicoBoard</a>."
 msgstr ""
-"Connecta el teu projecte amb el món real fent servir  <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://info.scratch.mit.edu/WeDo\">LEGO WeDo</a>, o la <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
+"Connecta el teu projecte amb el món real fent servir  <a href = \""
+"http://www.makeymakey.com/\">MaKey MaKey</a>, <a href=\""
+"http://info.scratch.mit.edu/WeDo\">LEGO WeDo</a>, o la <a href=\""
+"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
 
-#: templates/info/help/index.html:138
+#: templates/info/help/index.html:137
 msgid "Scratch Logo"
 msgstr "Scratch Logo"
 
-#: templates/info/help/index.html:140
+#: templates/info/help/index.html:139
 msgid "Access the Scratch logo and other media files."
 msgstr "Accedeix al logotip d'Scratch i altres fitxers."
 
@@ -5785,17 +5894,21 @@ msgid "Step-by-Step Guides"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:6
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:17
 #: templates/info/help/studio/tips/howto/nametip-intro.html:17
 msgid "Animate Your Name"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:7
-#: templates/info/help/studio/tips/howto/cardtip-intro.html:18
-msgid "Make a Greeting Card"
+msgid "Design a Holiday Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:8
-msgid "Map of Scratch editor"
+msgid "Create a Pong Game"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:9
+msgid "Make a Birthday Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:21
@@ -6548,8 +6661,8 @@ msgid ""
 msgstr ""
 "\n"
 "<h4>Problemes:</h4>\n"
-"<p>Si la teva extensió no funciona correctament, mira l'<a "
-"href=\"../../ui/extensions/\">ajuda sobre Extensions</a>. \n"
+"<p>Si la teva extensió no funciona correctament, mira l'<a href=\""
+"../../ui/extensions/\">ajuda sobre Extensions</a>. \n"
 
 #: templates/info/help/studio/tips/blocks/add-to-list.html:7
 msgid "Adds the specified item to the end of the list"
@@ -6593,8 +6706,8 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/ask-and-wait.png\"/></h3>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/answer.png\" />\n"
-"  <h3>Informa de la darrera entrada de teclat de <img src=\"%"
-"(STATIC_URL)s/images/help/ask-and-wait.png\"/></h3>"
+"  <h3>Informa de la darrera entrada de teclat de <img src=\""
+"%(STATIC_URL)s/images/help/ask-and-wait.png\"/></h3>"
 
 #: templates/info/help/studio/tips/blocks/answer.html:15
 #, python-format
@@ -6616,11 +6729,12 @@ msgid ""
 msgstr ""
 "\n"
 "<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> fa una "
-"pregunta i emmagatzema l'entrada del teclat en  <img src=\"%"
-"(STATIC_URL)s/images/help/answer.png\" />. La resposta és compartida per a "
+"pregunta i emmagatzema l'entrada del teclat en  <img src=\""
+"%(STATIC_URL)s/images/help/answer.png\" />. La resposta és compartida per a "
 "tots els personatges.</p>\n"
 "<p>Si vols guardar la resposta actual, pots desar-la en una variable o una "
-"llista. Per exemple, <img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/> \n"
+"llista. Per exemple, <img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/>"
+" \n"
 "</p>\n"
 "\n"
 "<p>\n"
@@ -6657,8 +6771,8 @@ msgid ""
 msgstr ""
 "\n"
 "<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> fa una "
-"pregunta i emmagatzema el text teclejat a  <img src=\"%"
-"(STATIC_URL)s/images/help/answer.png\" />. La pregunta apareix en una "
+"pregunta i emmagatzema el text teclejat a  <img src=\""
+"%(STATIC_URL)s/images/help/answer.png\" />. La pregunta apareix en una "
 "bafarada a la pantalla. El programa s'espera fins que es premi la tecla "
 "Retorn o es faci clic a la casella de verificació. \n"
 "</p>"
@@ -6676,8 +6790,8 @@ msgid ""
 "  </p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/backdrop-name-ex.png\"/>\n"
-"  <p>El nom del proper fons a la llista és el <img src=\"%"
-"(STATIC_URL)s/images/help/backdrop-name.png\" />\n"
+"  <p>El nom del proper fons a la llista és el <img src=\""
+"%(STATIC_URL)s/images/help/backdrop-name.png\" />\n"
 "  </p>"
 
 #: templates/info/help/studio/tips/blocks/backdrop-number.html:8
@@ -6688,8 +6802,8 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/backdrop-number.png\" />  </p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/backdrop-number-ex2.png\"/>\n"
-"  <p>El nombre del proper fons a la llista és el <img src=\"%"
-"(STATIC_URL)s/images/help/backdrop-number.png\" />  </p>"
+"  <p>El nombre del proper fons a la llista és el <img src=\""
+"%(STATIC_URL)s/images/help/backdrop-number.png\" />  </p>"
 
 #: templates/info/help/studio/tips/blocks/broadcast-wait.html:7
 msgid "Sends a message to all sprites and waits"
@@ -6715,16 +6829,16 @@ msgid ""
 msgstr ""
 "\n"
 "  <p>\n"
-"  Pots utilitzar <img src=\"%(STATIC_URL)s/images/help/broadcast-and-"
-"wait.png\" /> per enviar un missatge a tots els personatges per tal que facin "
+"  Pots utilitzar <img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait."
+"png\" /> per enviar un missatge a tots els personatges per tal que facin "
 "alguna cosa, i esperar a que hagin acabat abans de continuar. \n"
 "  </p>\n"
 "  \n"
 "  <p>\n"
 "  <br><img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait-ex2.png\" "
 "/><br/>\n"
-"  <br>Fes clic per triar quin missatge vols enviar. Tria \"nou missatge\" per "
-"crear-ne un de nou. <br/>\n"
+"  <br>Fes clic per triar quin missatge vols enviar. Tria \"nou missatge\" "
+"per crear-ne un de nou. <br/>\n"
 "  </p>\n"
 "  "
 
@@ -6744,12 +6858,12 @@ msgid ""
 "png\"/></a></p>\n"
 msgstr ""
 "\n"
-" <p> <img src=\"%(STATIC_URL)s/images/help/broadcast.png\"/> envia un missatge "
-"als altres personatges i a l'escenari. És útil si vols que els altres "
-"personatges facin alguna cosa.</p> \n"
+" <p> <img src=\"%(STATIC_URL)s/images/help/broadcast.png\"/> envia un "
+"missatge als altres personatges i a l'escenari. És útil si vols que els "
+"altres personatges facin alguna cosa.</p> \n"
 " <p> Què vols que facin els altres personatges quan rebin el missatge? Mira "
-"a <a href=\"../when-i-receive/\"><img src=\"%"
-"(STATIC_URL)s/images/help/when-i-receive.png\"/></a></p>\n"
+"a <a href=\"../when-i-receive/\"><img src=\""
+"%(STATIC_URL)s/images/help/when-i-receive.png\"/></a></p>\n"
 
 #: templates/info/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
@@ -6780,8 +6894,8 @@ msgid ""
 msgstr ""
 " \n"
 "Fes clic a stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> per "
-"esborrar tots els efectes gràfics. O utilitza <img src=\"%"
-"(STATIC_URL)s/images/help/clear-graphic-effects.png\"/>\n"
+"esborrar tots els efectes gràfics. O utilitza <img src=\""
+"%(STATIC_URL)s/images/help/clear-graphic-effects.png\"/>\n"
 
 # 83%
 # 97%
@@ -6807,8 +6921,8 @@ msgstr ""
 "\n"
 "<p>\n"
 "Tempo és la velocitat (bpm=cops per minut) a la que Scratch toca les notes i "
-"els cops de tambor. Si augmentes el valor del tempo, les notes i els cops "
-"de tambor sonaran més ràpids..\n"
+"els cops de tambor. Si augmentes el valor del tempo, les notes i els cops de "
+"tambor sonaran més ràpids..\n"
 "</p>\n"
 
 # 83%
@@ -6876,7 +6990,8 @@ msgid ""
 "Change y by a <b>positive</b> number to move the sprite <b>up</b>. \n"
 "Change y by a <b>negative</b> number to move the sprite <b>down</b>."
 msgstr ""
-"Canvia y per un nombre <b>positiu</b> per moure el personatge <b>amunt</b>. \n"
+"Canvia y per un nombre <b>positiu</b> per moure el personatge <b>amunt</b>. "
+"\n"
 "Canvia y per un nombre <b>negatiu</b> per moure el personatge <b>avall</b>."
 
 # 83%
@@ -7020,8 +7135,8 @@ msgstr ""
 "<p>\n"
 "Tria quin personatge vols duplicar de la llista desplegable.\n"
 "<br>\n"
-"Utilitza <img src=\"%(STATIC_URL)s/images/help/clone-startup.png\" /> per dir-"
-"li a la còpia que ha de fer quan hagi estat creada.\n"
+"Utilitza <img src=\"%(STATIC_URL)s/images/help/clone-startup.png\" /> per "
+"dir-li a la còpia que ha de fer quan hagi estat creada.\n"
 "</p>\n"
 "Exemple de programa:\n"
 "<br>\n"
@@ -7047,12 +7162,12 @@ msgstr ""
 "Solució de problemes:\n"
 "<br>\n"
 "Si no pots veure la còpia, vigila que el personatge original no l'estigui "
-"tapant. La còpia apareix a la mateixa localització que el personatge "
-"inicial.\n"
+"tapant. La còpia apareix a la mateixa localització que el personatge inicial."
+"\n"
 "<br/>\n"
 "<br>Assegura't que hagis triat el personatge que vulguis copiar de la llista "
-"desplegable en el <img src=\"%(STATIC_URL)s/images/help/create-clone-of.png\" "
-"/> bloc.\n"
+"desplegable en el <img src=\"%(STATIC_URL)s/images/help/create-clone-of.png\""
+" /> bloc.\n"
 "<br/>\n"
 "Nota: La còpia només existeix durant l'execució del projecte.\n"
 "</p>\n"
@@ -7130,8 +7245,8 @@ msgstr ""
 "Per fer-los servir, arrossega copies seves a d'altres blocs a l'interior del "
 "programa.\n"
 "</p>\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-"
-"script.png\"/></p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\""
+"/></p>\n"
 "Nota: Els blocs de paràmetres <strong>només</strong> es poden utilitzar en "
 "la definició del programa.\n"
 "\n"
@@ -7151,8 +7266,8 @@ msgid ""
 msgstr ""
 "<p>Pots especificar quin element vols esborrar triant-lo de la llista "
 "desplegable, o teclejant un \n"
-"  nombre d'ordre. Triant \"darrer\" s'esborrarà l'últim element. Triant \"tots\" "
-"s'esborrarà tota la llista. \n"
+"  nombre d'ordre. Triant \"darrer\" s'esborrarà l'últim element. Triant \""
+"tots\" s'esborrarà tota la llista. \n"
 "  Si esborres elements d'una llista es redueix la seva llargada.</p>"
 
 #: templates/info/help/studio/tips/blocks/delete-from-list.html:20
@@ -7219,7 +7334,8 @@ msgstr ""
 "\n"
 "\n"
 "Programa d'exemple:\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /><br/>"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
@@ -7240,8 +7356,8 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/direction-ex.png\"></p>\n"
 msgstr ""
 "<p><b>direció</b> indica la orientació del personatge.</p>\n"
-"Per veure la direcció d'un personatge fes clic a <img src=\"%"
-"(STATIC_URL)s/images/help/info.gif\">:<br/>\n"
+"Per veure la direcció d'un personatge fes clic a <img src=\""
+"%(STATIC_URL)s/images/help/info.gif\">:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-readout-indent.png\"><br/>\n"
 "Pots arrossegar la línia blava per canviar la direcció.</p>\n"
 "<p></p>\n"
@@ -7346,8 +7462,8 @@ msgid ""
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/go-back-example.png\" />\n"
 "  <p>\n"
-"  Per amagar el cranc darrere la roca, envia'l una capa enrere.<img src=\"%"
-"(STATIC_URL)s/images/help/go-back-1layer.png\" />\n"
+"  Per amagar el cranc darrere la roca, envia'l una capa enrere.<img src=\""
+"%(STATIC_URL)s/images/help/go-back-1layer.png\" />\n"
 "  "
 
 #: templates/info/help/studio/tips/blocks/go-to-front.html:7
@@ -7546,9 +7662,10 @@ msgid ""
 "want to keep, for example, the space key pressed continuously.\n"
 msgstr ""
 "\n"
-"Utilitza <img src=\"%(STATIC_URL)s/images/help/key-pressed.png\" /> en comptes "
-"de <img src=\"%(STATIC_URL)s/images/help/when-key-pressed.png\" /> quan "
-"vulguis comprobar, per exemple, si la tecla espai es prem contínuament.\n"
+"Utilitza <img src=\"%(STATIC_URL)s/images/help/key-pressed.png\" /> en "
+"comptes de <img src=\"%(STATIC_URL)s/images/help/when-key-pressed.png\" /> "
+"quan vulguis comprobar, per exemple, si la tecla espai es prem contínuament."
+"\n"
 
 #: templates/info/help/studio/tips/blocks/length-of-list.html:7
 msgid "Reports how many items are in the list"
@@ -7611,8 +7728,8 @@ msgid ""
 "reports false. "
 msgstr ""
 "\n"
-"<img src=\"%(STATIC_URL)s/images/help/list-contains-thing.png\" /> informa si "
-"un\n"
+"<img src=\"%(STATIC_URL)s/images/help/list-contains-thing.png\" /> informa "
+"si un\n"
 "element està a la llista. Si l'element coincideix exactament, retorna cert. "
 "Si no, \n"
 "retorna fals. "
@@ -7660,7 +7777,8 @@ msgstr ""
 "</p>\n"
 "\n"
 "<p>\n"
-"El bloc <img src=\"%(STATIC_URL)s/images/help/list.png\" /> retorna tots els\n"
+"El bloc <img src=\"%(STATIC_URL)s/images/help/list.png\" /> retorna tots "
+"els\n"
 "elements d'una llista. Per a obtenir-ne un de sol, utilitza el bloc: \n"
 "<img src=\"%(STATIC_URL)s/images/help/item-of-list.png\" />\n"
 "</p>\n"
@@ -7699,8 +7817,9 @@ msgstr ""
 msgid ""
 "<h3>You can create a custom block with inputs, for example: <img src="
 "\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
-msgstr "<h3>Pots crear el teu propi bloc amb entrades (paràmetres), per exemple: "
-"<img src=\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
+msgstr ""
+"<h3>Pots crear el teu propi bloc amb entrades (paràmetres), per exemple: <"
+"img src=\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
 
 #: templates/info/help/studio/tips/blocks/make-a-block-with-inputs.html:11
 #, python-format
@@ -7739,8 +7858,8 @@ msgstr ""
 "Per utilitzar-los, arrossega còpies del bloc d'entrada a altres blocs dins "
 "la seqüència defineix.\n"
 "</p>\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-"
-"script.png\"/></p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\""
+"/></p>\n"
 "Nota: Els blocs d'entrada <strong>només</strong> es poden usar dins de la "
 "seqüència defineix.\n"
 
@@ -7798,8 +7917,8 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"<p>Quan cliquis OK, el nou bloc apareixerà a <img src=\"%"
-"(STATIC_URL)s/images/help/more-blocks.png\" /> :\n"
+"<p>Quan cliquis OK, el nou bloc apareixerà a <img src=\""
+"%(STATIC_URL)s/images/help/more-blocks.png\" /> :\n"
 "<img src=\"%(STATIC_URL)s/images/help/jump-block.png\" /></p>\n"
 "</div>\n"
 "<div class=\"example\">\n"
@@ -7892,10 +8011,10 @@ msgid ""
 "\" /> is 5 (143 \n"
 "divided by 6 is 23, and the remainder is 5).\n"
 msgstr ""
-"<img src=\"%(STATIC_URL)s/images/help/mod.png\" /> és el residu de la divisió "
-"dels dos nombres. \n"
-"Per exemple, <img src=\"%(STATIC_URL)s/images/help/mod-ex2.png\" /> és 5 (143 "
-"dividit entre 6 \n"
+"<img src=\"%(STATIC_URL)s/images/help/mod.png\" /> és el residu de la "
+"divisió dels dos nombres. \n"
+"Per exemple, <img src=\"%(STATIC_URL)s/images/help/mod-ex2.png\" /> és 5 ("
+"143 dividit entre 6 \n"
 "és igual a 23, i el resudu és 5).\n"
 
 #: templates/info/help/studio/tips/blocks/mouse-down.html:7
@@ -8004,8 +8123,8 @@ msgid ""
 "dropping.</p>\n"
 msgstr ""
 "\n"
-"<p>Per veure els vestits del personatge, fes clic a <img src=\"%"
-"(STATIC_URL)s/images/help/costumes-tab.png\"/>.</p>\n"
+"<p>Per veure els vestits del personatge, fes clic a <img src=\""
+"%(STATIC_URL)s/images/help/costumes-tab.png\"/>.</p>\n"
 "<p> Pots canviar l'ordre dels vestits a la llista arrossegant-los i deixant-"
 "los anar.</p>\n"
 
@@ -8038,8 +8157,8 @@ msgid ""
 "dropping.</p>\n"
 msgstr ""
 "\n"
-"<p>Per veure els fons de l'escenari, fes clic a <img src=\"%"
-"(STATIC_URL)s/images/help/backdrop-tab.png\"/>.</p>\n"
+"<p>Per veure els fons de l'escenari, fes clic a <img src=\""
+"%(STATIC_URL)s/images/help/backdrop-tab.png\"/>.</p>\n"
 "<p> Pots canviar l'ordre dels fons a la llista arrossegant-los i deixant-los "
 "anar.</p>\n"
 
@@ -8051,8 +8170,8 @@ msgid ""
 "the end of the list, it goes back to the top.</p>\n"
 msgstr ""
 "\n"
-"<p>Quan <img src=\"%(STATIC_URL)s/images/help/nextbackdrop.png\" /> arriba al "
-"final de la llista, torna a començar pel principi.</p>\n"
+"<p>Quan <img src=\"%(STATIC_URL)s/images/help/nextbackdrop.png\" /> arriba "
+"al final de la llista, torna a començar pel principi.</p>\n"
 
 #: templates/info/help/studio/tips/blocks/not.html:7
 msgid "Reports true if condition is false; reports false if condition is true"
@@ -8067,8 +8186,7 @@ msgstr "Retorna cert si les dues condicions són certes"
 #: templates/info/help/studio/tips/blocks/pendown.html:9
 msgid "Puts down sprite's pen, so the sprite will draw as it moves"
 msgstr ""
-"Baixa el llapis del personatge, i així el personatge dibuixarà quan es "
-"mougui"
+"Baixa el llapis del personatge, i així el personatge dibuixarà quan es mougui"
 
 #: templates/info/help/studio/tips/blocks/pendown.html:18
 msgid ""
@@ -8144,8 +8262,8 @@ msgstr ""
 "</p>\n"
 "\n"
 "<p>\n"
-"Nota: la durada de la pulsació es pot especificar amb <img src=\"%"
-"(STATIC_URL)s/images/help/set_tempo.png\" />\n"
+"Nota: la durada de la pulsació es pot especificar amb <img src=\""
+"%(STATIC_URL)s/images/help/set_tempo.png\" />\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/playnote.html:7
@@ -8187,8 +8305,8 @@ msgid ""
 "</p>\n"
 msgstr ""
 "<p>\n"
-"La durada de la pulsació es pot especificar amb <img src=\"%"
-"(STATIC_URL)s/images/help/set_tempo.png\" />.\n"
+"La durada de la pulsació es pot especificar amb <img src=\""
+"%(STATIC_URL)s/images/help/set_tempo.png\" />.\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/playsound.html:7
@@ -8243,12 +8361,12 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> waits until "
 "the sound is finished playing before continuing to the next block."
 msgstr ""
-"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/> inicia la reproducció "
-"del so i continua immediatament amb el següent bloc.\n"
+"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/> inicia la "
+"reproducció del so i continua immediatament amb el següent bloc.\n"
 "</p>\n"
 "<p>\n"
-"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> espera que la "
-"reproducció del so acabi abans de continuar amb el bloc següent."
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> espera que "
+"la reproducció del so acabi abans de continuar amb el bloc següent."
 
 #: templates/info/help/studio/tips/blocks/playsound_untildone.html:8
 #, python-format
@@ -8299,14 +8417,15 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 msgstr ""
 "Fes clic per triar del menú:\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\"/><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\""
+"/><br/>\n"
 "\n"
 "<p>O escriu un nombre:<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/point-in-direction-45.png\"/></p>\n"
 "\n"
 "\n"
-"<p>Per veure la direcció actual del personatge, fes clic a <img src=\"%"
-"(STATIC_URL)s/images/help/info.gif\"/><br>\n"
+"<p>Per veure la direcció actual del personatge, fes clic a <img src=\""
+"%(STATIC_URL)s/images/help/info.gif\"/><br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 
 #: templates/info/help/studio/tips/blocks/point-towards.html:7
@@ -8360,8 +8479,8 @@ msgid ""
 msgstr ""
 "Pots especificar quin valor de la llista vols canviar triant-lo de la llista "
 "desplegable o\n"
-"  escrivint un nombre. Si tries \"aleatori\" es canviarà un element qualsevol "
-"de la llista.  La \n"
+"  escrivint un nombre. Si tries \"aleatori\" es canviarà un element "
+"qualsevol de la llista.  La \n"
 "  longitud de la llista no canvia."
 
 #: templates/info/help/studio/tips/blocks/replace-list.html:21
@@ -8403,8 +8522,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/round-5.6.png\" /> is 6.\n"
 msgstr ""
 "\n"
-"<img src=\"%(STATIC_URL)s/images/help/round.png\" /> torna el valor arrodonit "
-"d'un nombre.\n"
+"<img src=\"%(STATIC_URL)s/images/help/round.png\" /> torna el valor "
+"arrodonit d'un nombre.\n"
 "Vol dir que transforma un nombre decimal en el nombre sencer més proper Per "
 "exemple: \n"
 "<img src=\"%(STATIC_URL)s/images/help/round-5.1.png\" /> és 5, i \n"
@@ -8443,8 +8562,8 @@ msgstr ""
 "<p>Pots escriure a dins qualsevol text. Les paraules apareixeran dins una "
 "bafarada.</p>\n"
 "\n"
-"Per eliminar la bafarada, esborra el text i clica a <img src=\"%"
-"(STATIC_URL)s/images/help/say.png\" />."
+"Per eliminar la bafarada, esborra el text i clica a <img src=\""
+"%(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/info/help/studio/tips/blocks/say.html:16
 #: templates/info/help/studio/tips/blocks/think.html:18
@@ -8458,8 +8577,8 @@ msgid ""
 "To remove the speech bubble, click an empty say block: <img src="
 "\"%(STATIC_URL)s/images/help/say.png\" />."
 msgstr ""
-"Per eliminar la bafarada, fes clic a un bloc digues buit: <img src=\"%"
-"(STATIC_URL)s/images/help/say.png\" />."
+"Per eliminar la bafarada, fes clic a un bloc digues buit: <img src=\""
+"%(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/info/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
@@ -8679,11 +8798,12 @@ msgstr ""
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/setcolortoex1.png\"/> \n"
 "<p>\n"
-"També pots assignar el color del llapis a una variable, com <img src=\"%"
-"(STATIC_URL)s/images/help/y-position.png\" /> o un nombre. Per exemple, el "
-"nombre 0 és el color <font color = red>vermell</font>, el 70 és el color "
-"<font color = green>verd</font>, el 130 és el color <font color = "
-"blue>blau</font>, i el 170 és el color <font color = magenta>magenta</font>.\n"
+"També pots assignar el color del llapis a una variable, com <img src=\""
+"%(STATIC_URL)s/images/help/y-position.png\" /> o un nombre. Per exemple, el "
+"nombre 0 és el color <font color = red>vermell</font>, el 70 és el color <"
+"font color = green>verd</font>, el 130 és el color <font color = "
+"blue>blau</font>, i el 170 és el color <font color = magenta>magenta</font>."
+"\n"
 "<p>\n"
 "El color del llapis 0 és l'extrem vermell de l'arc de Sant Martí, i el color "
 "del llapis 100 és l'extrem blau. Els nombres del 0 al 200 recorren la roda "
@@ -8738,8 +8858,8 @@ msgid ""
 "Select \"don't rotate\" from the drop-down menu to make the sprite face only "
 "one direction."
 msgstr ""
-"Tria \"no giris\" del menú desplegable per fer que el personatge només miri en "
-"una direcció."
+"Tria \"no giris\" del menú desplegable per fer que el personatge només miri "
+"en una direcció."
 
 # 83%
 # 78%
@@ -8857,8 +8977,8 @@ msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/stampex1.png\" /> </p>\n"
 "<p>\n"
 "Una estampació és només una imatge temporal del personatge que es dibuixa a "
-"l'escenari. Es pot dibuixar damunt o esborrar amb el bloc <img src=\"%"
-"(STATIC_URL)s/images/help/clear.png\" />\n"
+"l'escenari. Es pot dibuixar damunt o esborrar amb el bloc <img src=\""
+"%(STATIC_URL)s/images/help/clear.png\" />\n"
 "<p>\n"
 "Una estampació no es pot moure i no pot contenir programes.\n"
 
@@ -8906,10 +9026,10 @@ msgid ""
 "going to the next block.  \n"
 " "
 msgstr ""
-"<img src=\"%(STATIC_URL)s/images/help/switch-backdrop-to-backdrop1-and-"
-"wait.png\" /> espera a que tots els programes que comencen per <img src=\"%"
-"(STATIC_URL)s/images/help/when-backdrop-switches-to-backdrop1.png\" /> acabin "
-"per continuar amb el següent bloc.   \n"
+"<img src=\"%(STATIC_URL)s/images/help/switch-backdrop-to-backdrop1-and-wait."
+"png\" /> espera a que tots els programes que comencen per <img src=\""
+"%(STATIC_URL)s/images/help/when-backdrop-switches-to-backdrop1.png\" /> "
+"acabin per continuar amb el següent bloc.   \n"
 "  "
 
 #: templates/info/help/studio/tips/blocks/switch-backdrop.html:7
@@ -8926,8 +9046,8 @@ msgid ""
 msgstr ""
 "Primer, escull el fons que vulguis <img src=\"%(STATIC_URL)s/images/help"
 "/choose-backdrop-icon.png\">. \n"
-"Després, tria el nom del fons de la llista desplegable: <img src=\"%"
-"(STATIC_URL)s/images/help/switch-backdrop-to.png\">"
+"Després, tria el nom del fons de la llista desplegable: <img src=\""
+"%(STATIC_URL)s/images/help/switch-backdrop-to.png\">"
 
 #: templates/info/help/studio/tips/blocks/switch-costume.html:8
 msgid "Switch costumes to change the look of a sprite"
@@ -8944,8 +9064,8 @@ msgid ""
 "costumes-tab.png\" /></p>\n"
 "Choose a costume name from the pull-down menu."
 msgstr ""
-"Per veure els vestits d'un personatge, fes clic a <img src=\"%"
-"(STATIC_URL)s/images/help/costumes-tab.png\" /></p>\n"
+"Per veure els vestits d'un personatge, fes clic a <img src=\""
+"%(STATIC_URL)s/images/help/costumes-tab.png\" /></p>\n"
 "Tria el nom d'un vestit de la llista desplegable."
 
 #: templates/info/help/studio/tips/blocks/tempo.html:8
@@ -8977,8 +9097,8 @@ msgid ""
 "To remove the speech bubble, use a blank block: <img src=\"%(STATIC_URL)s/"
 "images/help/think-blank.png\" />."
 msgstr ""
-"Per fer desaparèixer la bafarada, utilitza un bloc en blanc: <img src=\"%"
-"(STATIC_URL)s/images/help/think-blank.png\" />."
+"Per fer desaparèixer la bafarada, utilitza un bloc en blanc: <img src=\""
+"%(STATIC_URL)s/images/help/think-blank.png\" />."
 
 #: templates/info/help/studio/tips/blocks/timer.html:7
 msgid "Reports the value of the timer in seconds"
@@ -9038,10 +9158,9 @@ msgid ""
 "can check if the sprite is: </b></p>\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/touching-ex2.png\"/></p>"
 msgstr ""
-"<p>Pots fer servir el bloc <img src=\"%"
-"(STATIC_URL)s/images/help/touching.png\"/> de tres formes diferents. "
-"Selecciona de la llista desplegable per triar una. Pots comprovar si el "
-"personatge: </b></p>\n"
+"<p>Pots fer servir el bloc <img src=\"%(STATIC_URL)s/images/help/touching."
+"png\"/> de tres formes diferents. Selecciona de la llista desplegable per "
+"triar una. Pots comprovar si el personatge: </b></p>\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/touching-ex2.png\"/></p>"
 
 #: templates/info/help/studio/tips/blocks/turn-left.html:6
@@ -9142,8 +9261,8 @@ msgstr ""
 "</div>\n"
 "\n"
 "<div class=\"example\">\n"
-"Veure també: <a href=\"../make-a-block/\">Crea un Bloc</a> i <a "
-"href=\"../define/\">Defineix un Bloc</a> \n"
+"Veure també: <a href=\"../make-a-block/\">Crea un Bloc</a> i <a href=\""
+"../define/\">Defineix un Bloc</a> \n"
 "</div>\n"
 "\n"
 
@@ -9164,7 +9283,8 @@ msgid ""
 "</p> "
 msgstr ""
 "\n"
-"<p>Aquest bloc mostra el nom de l'usuari que esta visitant el projecte..</p>\n"
+"<p>Aquest bloc mostra el nom de l'usuari que esta visitant el projecte..</p>"
+"\n"
 "\n"
 "<p>Si vols guardar el nom de l'usuari visitant, el pots desar en una "
 "variable o llista. Per exemple, \n"
@@ -9194,7 +9314,8 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"Per veure el valor de la variable, fes clic a la casella de davant del bloc.\n"
+"Per veure el valor de la variable, fes clic a la casella de davant del bloc."
+"\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/check-variable.png\" /><br/>\n"
 "\n"
 "<p>\n"
@@ -9246,8 +9367,9 @@ msgstr ""
 "  <li> Utilitza <img src=\"%(STATIC_URL)s/images/help/video-motion-this-"
 "sprite.png\" /> per detectar la quantitat de moviment de vídeo sota el "
 "personatge. </li>\n"
-"  <li> Utilitza <img src=\"%(STATIC_URL)s/images/help/video-motion-stage.png\" "
-"/> per detectar la quantitat de moviment de vídeo de tota la imatge.</li>\n"
+"  <li> Utilitza <img src=\"%(STATIC_URL)s/images/help/video-motion-stage."
+"png\" /> per detectar la quantitat de moviment de vídeo de tota la "
+"imatge.</li>\n"
 "  <li> Utilitza <img src=\"%(STATIC_URL)s/images/help/video-direction-this-"
 "sprite.png\" /> per detectar la direcció del moviment de vídeo sota el "
 "personatge.</li>\n"
@@ -9315,8 +9437,8 @@ msgid ""
 "</p>"
 msgstr ""
 "<p>\n"
-"La pila de blocs s'executarà només un cop. Si vols que <img src=\"%"
-"(STATIC_URL)s/images/help/wait-until.png\" /> faci la comprovació "
+"La pila de blocs s'executarà només un cop. Si vols que <img src=\""
+"%(STATIC_URL)s/images/help/wait-until.png\" /> faci la comprovació "
 "contínuament, col·loca la pila de blocs dins un bloc per sempre.\n"
 "</p>"
 
@@ -9334,7 +9456,8 @@ msgid ""
 "I'm in the kitchen!</p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex.png\"/>\n"
-"  <br><img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex2.png\"/>\n"
+"  <br><img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex2.png\""
+"/>\n"
 "  <br><p>Quan l'escenari canvia a la cuina, el personatge diu \"Ara estic a "
 "la cuina!\"</p>"
 
@@ -9438,7 +9561,8 @@ msgstr ""
 " \n"
 "  <p>\n"
 "  La posició x del fantasma es fixa a la posició x d'en Gobo.\n"
-"  <br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\"/><br/>\n"
+"  <br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\""
+"/><br/>\n"
 "  </p>\n"
 "  "
 
@@ -9452,7 +9576,8 @@ msgid ""
 msgstr ""
 "Utilitza aquest bloc per accedir a diverses propietats d'un altre personatge "
 "i fer servir aquesta informació pels programes del personatge actual.\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/x-position.html:7
 msgid "Reports the <b>x</b> position of a sprite"
@@ -9512,8 +9637,8 @@ msgid ""
 "</p>"
 msgstr ""
 "Totes les extensions de maquinari necessiten un connector per funcionar. Si "
-"el connector no està instal\"lat, mira la pàgina d' <a "
-"href=\"../../ui/extensions/\">Extensions</a> per seguir les instruccions.\n"
+"el connector no està instal\"lat, mira la pàgina d' <a href=\""
+"../../ui/extensions/\">Extensions</a> per seguir les instruccions.\n"
 "</p>"
 
 # 85%
@@ -9608,9 +9733,9 @@ msgid ""
 "<p>To learn more, see the <a href=\"http://wiki.scratch.mit.edu/wiki/"
 "PicoBoard\" target=\"_blank\">PicoBoard</a> page on the Scratch wiki.</p>"
 msgstr ""
-"<p>Per aprendre'n més, mira la pàgina de la <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/PicoBoard\" "
-"target=\"_blank\">PicoBoard</a> a la Wiki d'Scratch.</p>"
+"<p>Per aprendre'n més, mira la pàgina de la <a href=\""
+"http://wiki.scratch.mit.edu/wiki/PicoBoard\" target=\"_blank\">PicoBoard</a> "
+"a la Wiki d'Scratch.</p>"
 
 #: templates/info/help/studio/tips/ext/pico-sensor-button-pressed.html:6
 msgid ""
@@ -9966,9 +10091,10 @@ msgstr ""
 "sense importar a quin lloc del Hub WeDo estigui connectat.</li>\n"
 " \t<li>Si tens dos motors i els vols controlar independentment, pots fer "
 "servir \"motor A\" amb un i \"motor B\" amb l'altre.</li>\n"
-" \t<li>\"llums\" activa les llums sense importar a quina entrada del hub WeDo "
-"estiguin connectades.</li>\n"
-" \t<li>\"tot\" activa tots els motors i llums que estiguin connectades.</li>\n"
+" \t<li>\"llums\" activa les llums sense importar a quina entrada del hub "
+"WeDo estiguin connectades.</li>\n"
+" \t<li>\"tot\" activa tots els motors i llums que estiguin connectades.</li>"
+"\n"
 " </ul>"
 
 #: templates/info/help/studio/tips/ext/wedo-turn-on.html:27
@@ -10103,6 +10229,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/get-started-8.html:9
 #: templates/info/help/studio/tips/howto/get-started-9.html:8
 #: templates/info/help/studio/tips/howto/get-started-intro.html:10
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:9
 #: templates/info/help/studio/tips/howto/nametip-intro.html:9
 #: templates/info/help/studio/tips/howto/nametip1.html:9
 #: templates/info/help/studio/tips/howto/nametip2.html:9
@@ -10113,6 +10240,18 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/nametip7.html:9
 #: templates/info/help/studio/tips/howto/nametip8.html:9
 #: templates/info/help/studio/tips/howto/nametip9.html:9
+#: templates/info/help/studio/tips/howto/pgame-intro.html:9
+#: templates/info/help/studio/tips/howto/pgametip1.html:9
+#: templates/info/help/studio/tips/howto/pgametip10.html:9
+#: templates/info/help/studio/tips/howto/pgametip11.html:9
+#: templates/info/help/studio/tips/howto/pgametip2.html:9
+#: templates/info/help/studio/tips/howto/pgametip3.html:9
+#: templates/info/help/studio/tips/howto/pgametip4.html:9
+#: templates/info/help/studio/tips/howto/pgametip5.html:9
+#: templates/info/help/studio/tips/howto/pgametip6.html:9
+#: templates/info/help/studio/tips/howto/pgametip7.html:9
+#: templates/info/help/studio/tips/howto/pgametip8.html:9
+#: templates/info/help/studio/tips/howto/pgametip9.html:9
 #: templates/info/help/studio/tips/ui/tour-intro.html:9
 #: templates/profiles/scratcher_promotion_modal.html:61
 msgid "Back"
@@ -10120,9 +10259,15 @@ msgstr "Enrere"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:13
 #: templates/info/help/studio/tips/howto/get-started-intro.html:14
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:13
 #: templates/info/help/studio/tips/howto/nametip-intro.html:13
+#: templates/info/help/studio/tips/howto/pgame-intro.html:13
 #: templates/info/help/studio/tips/ui/tour-intro.html:13
 msgid "Begin"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/cardtip-intro.html:18
+msgid "Make a Greeting Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:19
@@ -10131,7 +10276,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:21
-#: templates/info/help/studio/tips/howto/nametip-intro.html:23
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:23
 msgid ""
 "\n"
 "\t<p>This activity is part of <a href=\"#made-with-code\">Made with Code</a>."
@@ -10145,12 +10290,16 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:28
 #: templates/info/help/studio/tips/howto/get-started-intro.html:32
-#: templates/info/help/studio/tips/howto/nametip-intro.html:32
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:32
+#: templates/info/help/studio/tips/howto/nametip-intro.html:28
+#: templates/info/help/studio/tips/howto/pgame-intro.html:27
 msgid "Step Index"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
-#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/ui/tour-intro.html:29
 msgid "1"
 msgstr "1"
@@ -10161,7 +10310,9 @@ msgid "Say a Greeting"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
-#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/ui/tour-intro.html:30
 msgid "2"
 msgstr "2"
@@ -10172,7 +10323,9 @@ msgid "Start with a Green Flag"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
-#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/ui/tour-intro.html:31
 msgid "3"
 msgstr "3"
@@ -10186,7 +10339,9 @@ msgid "Add a Background"
 msgstr " 9 Afegeix un fons"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
-#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/ui/tour-intro.html:32
 msgid "4"
 msgstr "4"
@@ -10197,7 +10352,9 @@ msgid "Add a Cake"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
-#: templates/info/help/studio/tips/howto/nametip-intro.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 #: templates/info/help/studio/tips/ui/tour-intro.html:33
 msgid "5"
 msgstr "5"
@@ -10211,7 +10368,9 @@ msgid "Add Sound"
 msgstr "2 Afegeix un So"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
-#: templates/info/help/studio/tips/howto/nametip-intro.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/ui/tour-intro.html:34
 msgid "6"
 msgstr "6"
@@ -10222,7 +10381,9 @@ msgid "Blow Out the Candles"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "7"
 msgstr "7"
@@ -10233,7 +10394,9 @@ msgid "Add a Dancing Sprite"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
-#: templates/info/help/studio/tips/howto/nametip-intro.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 msgid "8"
 msgstr "8"
 
@@ -10247,7 +10410,7 @@ msgid "Again and Again"
 msgstr "4 Un cop i un altre"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
-#: templates/info/help/studio/tips/howto/nametip-intro.html:42
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 msgid "9"
 msgstr "9"
 
@@ -10257,6 +10420,7 @@ msgid "Say What to Do"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 msgid "10"
 msgstr ""
 
@@ -10266,6 +10430,7 @@ msgid "Customize Your Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 msgid "11"
 msgstr ""
 
@@ -10279,7 +10444,6 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:40
 #: templates/info/help/studio/tips/howto/cardtip12.html:18
-#: templates/info/help/studio/tips/howto/nametip-intro.html:42
 #: templates/info/help/studio/tips/howto/nametip9.html:17
 msgid "Keep Making!"
 msgstr ""
@@ -10514,10 +10678,10 @@ msgstr "2 de 13"
 #, python-format
 msgid ""
 "\n"
-"\t<p>Click the <span class=\"controlcolor\">Events</span> category.</p>\n"
-"\t<p>Drag out a <span class=\"controlcolor\">when <img class=\"intext\" src "
-"= \"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and "
-"snap it on top, like this:</p>\n"
+"\t<p>Click the <span class=\"eventscolor\">Events</span> category.</p>\n"
+"\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top, like this:</p>\n"
 "\t<img src = \"%(STATIC_URL)s/images/help/flagsay2.gif\">\n"
 "\t"
 msgstr ""
@@ -10545,7 +10709,8 @@ msgstr "3 de 13"
 # 82%
 #: templates/info/help/studio/tips/howto/cardtip3.html:17
 #: templates/info/help/studio/tips/howto/get-started-9.html:16
-#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip4.html:17
 #, fuzzy
 msgid "Add a Backdrop"
@@ -10934,6 +11099,8 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:24
 #: templates/info/help/studio/tips/howto/get-started-1.html:29
+#: templates/info/help/studio/tips/howto/pgametip3.html:24
+#: templates/info/help/studio/tips/howto/pgametip3.html:29
 msgid "drag move block to Scripts area"
 msgstr ""
 
@@ -11137,8 +11304,11 @@ msgstr "2 de 13"
 # 84%
 #: templates/info/help/studio/tips/howto/get-started-2.html:19
 #: templates/info/help/studio/tips/howto/get-started-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip3.html:17
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgametip8.html:17
 #, fuzzy
 msgid "Add a Sound"
 msgstr "2 Afegeix un So"
@@ -11838,7 +12008,8 @@ msgstr ""
 
 # 88%
 #: templates/info/help/studio/tips/howto/hoc-8.html:17
-#: templates/info/help/studio/tips/howto/nametip-intro.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro.html:37
 #, fuzzy
 msgid "Share Your Project"
 msgstr "Comparteix el teu projecte"
@@ -11998,8 +12169,9 @@ msgstr ""
 "<p>En aquesta activitat, crearàs un a postal interactiva que pots compartir "
 "amb la teva família o amics.</p>\n"
 "<p>Per començar, mira aquest vídeo d'introducció:</p>\n"
-"<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&byline=0&portrait="
-"0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
+"<p><iframe src=\""
+"//player.vimeo.com/video/78998915?title=0&byline=0&portrait=0;hd_off=1&\" "
+"width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
 "mozallowfullscreen allowfullscreen></iframe></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc.html:17
@@ -12151,8 +12323,8 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
 "\t Use this code to whirl as you move the mouse:"
 msgstr ""
-"<p>Col·loca <img src=\"%(STATIC_URL)s/images/help/mouse-x.png\"> dins de <img "
-"src=\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
+"<p>Col·loca <img src=\"%(STATIC_URL)s/images/help/mouse-x.png\"> dins de <"
+"img src=\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
 "\t Utilitza aquest codi per fer-lo girar quan moguis el ratolí:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:19
@@ -12180,8 +12352,9 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/make-variable-button.png\"></p>\n"
 "\t Type in the name \"Score\" and then click OK:"
 msgstr ""
-"Fes clic a <img src=\"%(STATIC_URL)s/images/help/data-palette.png\"> i després "
-"<img src=\"%(STATIC_URL)s/images/help/make-variable-button.png\"></p>\n"
+"Fes clic a <img src=\"%(STATIC_URL)s/images/help/data-palette.png\"> i "
+"després <img src=\"%(STATIC_URL)s/images/help/make-variable-button.png\"></p>"
+"\n"
 "\t Escriu \"Puntuació\" en el nom i fes clic a OK:"
 
 #: templates/info/help/studio/tips/howto/keep-score.html:16
@@ -12190,8 +12363,8 @@ msgid ""
 "New blocks will appear and the variable Score will show on the Stage: <img "
 "src=\"%(STATIC_URL)s/images/help/score-monitor.png\">"
 msgstr ""
-"Apareixeran nous blocs i la variable Puntuació es mostrarà a l'Escenari: "
-"<img src=\"%(STATIC_URL)s/images/help/score-monitor.png\">"
+"Apareixeran nous blocs i la variable Puntuació es mostrarà a l'Escenari: <"
+"img src=\"%(STATIC_URL)s/images/help/score-monitor.png\">"
 
 #: templates/info/help/studio/tips/howto/keep-score.html:20
 msgid "Here's an example script for keeping score:"
@@ -12215,8 +12388,8 @@ msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/move-with-arrow-all.png\"> <br/>\n"
 "Prem les fletxes del cursor <img src=\"%(STATIC_URL)s/images/help/up-arrow-"
 "key.png\"> <img src=\"%(STATIC_URL)s/images/help/down-arrow-key.png\"> <img "
-"src=\"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\"%"
-"(STATIC_URL)s/images/help/right-arrow-key.png\"> per moure'l."
+"src=\"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\""
+"%(STATIC_URL)s/images/help/right-arrow-key.png\"> per moure'l."
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:18
 msgid "To copy a stack of blocks, click at the top with the duplicate tool:"
@@ -12228,8 +12401,8 @@ msgid ""
 "If your sprite turns upside-down, click <img src=\"%(STATIC_URL)s/images/"
 "help/info.png\"> and set its rotation style to left-right:"
 msgstr ""
-"Si el teu personatge es gira cap per avall, fes clic a <img src=\"%"
-"(STATIC_URL)s/images/help/info.png\"> i fixa l'estil de rotació a esquerra-"
+"Si el teu personatge es gira cap per avall, fes clic a <img src=\""
+"%(STATIC_URL)s/images/help/info.png\"> i fixa l'estil de rotació a esquerra-"
 "dreta:"
 
 #: templates/info/help/studio/tips/howto/move.html:6
@@ -12243,8 +12416,8 @@ msgid ""
 "help/move-1-step.png\"> to move a tiny bit or a bigger number to move "
 "further."
 msgstr ""
-"Prova escrivint diferents nombres, com ara <img src=\"%"
-"(STATIC_URL)s/images/help/move-1-step.png\"> per moure'l només un xic, o un "
+"Prova escrivint diferents nombres, com ara <img src=\""
+"%(STATIC_URL)s/images/help/move-1-step.png\"> per moure'l només un xic, o un "
 "nombre més gran per que es mogui més."
 
 #: templates/info/help/studio/tips/howto/move.html:17
@@ -12260,40 +12433,47 @@ msgid ""
 msgstr ""
 "<p>Per canviar la direcció, utilitza apunta en diercció.<br/>\n"
 "O pots fer-lo girar.</p>\n"
-"<p>Per anar a un lloc determinat de la pantalla, fes servir “vés a x: "
-"y:”</p>\n"
+"<p>Per anar a un lloc determinat de la pantalla, fes servir “vés a x: y:”</p>"
+"\n"
 "<p>Perquè es mogui suament, fes servir “llisca fins x: y:”</p>"
 
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:20
 #: templates/info/help/studio/tips/howto/nametip-intro.html:20
 msgid ""
 "Make your name come to life! Animate the letters by coding in Scratch. Add "
 "sound and music, too."
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:28
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:28
+#: templates/info/help/studio/tips/howto/nametip-intro.html:24
 msgid "First, choose a letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip1.html:17
 msgid "Choose the First Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip2.html:17
 msgid "Add Color Effects"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip5.html:17
 msgid "Add Your Next Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro.html:35
 msgid "Make It Spin"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip7.html:17
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "Finish Your Name"
@@ -12310,8 +12490,8 @@ msgid ""
 "\t<p>To start, choose the first letter of your name, initials, or username.</"
 "p>\n"
 "\t\n"
-"\t<p>Click to choose a new sprite <img class=\"intext\" src = "
-"\"%(STATIC_URL)s/images/help/10b-sprite.png\">:</p>\n"
+"\t<p>Find and click this icon <img class=\"intext\" src = \"%(STATIC_URL)s/"
+"images/help/10b-sprite.png\"> to choose a new sprite:</p>\n"
 "\t<p><img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\"></p> \n"
 "\t<p>then select one of the letters in the Sprite library:</br>\n"
 "<p><img src = \"%(STATIC_URL)s/images/help/letter-choose.png\"></p>\n"
@@ -12378,6 +12558,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip2.html:44
+#: templates/info/help/studio/tips/howto/pgametip7.html:35
 msgid "Next, add a sound"
 msgstr ""
 
@@ -12434,19 +12615,14 @@ msgid ""
 "\n"
 "\t<p>Click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/"
 "images/help/landscape-icon.png\"> icon to open the Backdrop library:</p>\t\n"
-"\t  <p><img src = \"%(STATIC_URL)s/images/help/backgroundlibrary2.png\"> </"
-"p>\n"
 "\t"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip4.html:26
-#, python-format
 msgid ""
 "\n"
 "\t<p>Choose the backdrop you want (such as \"boardwalk\" or \"circles\").</"
 "p>\n"
-"\t  <p><img src = \"%(STATIC_URL)s/images/help/boardwalk.png\"> <img src = "
-"\"%(STATIC_URL)s/images/help/circles-backdrop.png\"></p>\t\n"
 "\t"
 msgstr ""
 
@@ -12592,6 +12768,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip7.html:50
+#: templates/info/help/studio/tips/howto/pgametip10.html:50
 msgid "Next, share your project"
 msgstr ""
 
@@ -12664,6 +12841,487 @@ msgid ""
 "style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png"
 "\">All Tips</a>.</p>\n"
 "\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:17
+msgid "Make a Pong Game"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:20
+msgid ""
+"Create a version of the bouncing ball game. Find out how to add sounds, "
+"points, or other effects. Then, challenge your friends to play."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:23
+msgid "First, choose a backdrop"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
+#: templates/info/help/studio/tips/howto/pgametip1.html:17
+msgid "Choose a Backdrop"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgametip2.html:17
+msgid "Choose a Ball"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgametip3.html:17
+msgid "Make the Ball Move"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgametip4.html:17
+msgid "Move and Bounce"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+msgid "Choose your Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgametip6.html:17
+msgid "Control the Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgametip7.html:17
+msgid "Bounce Off the Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgametip9.html:17
+msgid "Adding a Challenge"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgametip10.html:17
+msgid "Enhance and Customize"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgametip11.html:17
+msgid "Share Your Game"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip1.html:11
+#, fuzzy
+msgid "1 of 11"
+msgstr "1 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:19
+msgid "Choose a backdrop for your pong game."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:22
+#, python-format
+msgid ""
+"\n"
+"\t<p>Click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/"
+"images/help/landscape-icon.png\"> icon to open the Backdrop library:</p>\t\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:26
+msgid "Then choose the backdrop you want (such as neon tunnel or brick wall):"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:28
+msgid "Next, choose a ball"
+msgstr ""
+
+# 75%
+# 87%
+#: templates/info/help/studio/tips/howto/pgametip10.html:11
+#, fuzzy
+msgid "10 of 11"
+msgstr "10 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:20
+msgid "What else do you want to add to your game? Try some of these ideas."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:24
+msgid "Add Effects"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:25
+msgid "Change the color of the ball when it hits the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:30
+msgid "Starting Position"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:31
+msgid "You may want to set the ball’s starting position."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:32
+msgid ""
+"\n"
+"Move the ball to where you want it to start, then drag the <span class="
+"\"motioncolor\">go to x: y:</span> \n"
+"block into the top of this script: \n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:40
+msgid "Add Points"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:41
+msgid "Create a variable for keeping score."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:43
+msgid "Then add the score blocks to your script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:48
+msgid ""
+"You can also change what happens when the ball touches the bottom. For "
+"example:"
+msgstr ""
+
+# 75%
+# 87%
+#: templates/info/help/studio/tips/howto/pgametip11.html:11
+#, fuzzy
+msgid "11 of 11"
+msgstr "11 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:19
+msgid "Congratulations! You've coded your own game!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:20
+msgid ""
+"When you are ready to share your project with others, click the “Share” "
+"button at the top of the screen."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:23
+msgid ""
+"(If you haven't already, you will need to create a Scratch account to share "
+"your project online.)"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:27
+msgid "To give your project a name and add notes, click:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:29
+msgid "Here's a video that shows the project page:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:34
+msgid ""
+"\n"
+"You can add your project to the <a href=\"http://scratch.mit.edu/"
+"studios/644508\" target=\"_blank\">Pong Game studio</a>:\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:42
+#, python-format
+msgid ""
+"\n"
+"For more ideas, click <a href=\"../../home/\"><img class=\"intext\" style="
+"\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">All "
+"Tips</a>.\n"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip2.html:11
+#, fuzzy
+msgid "2 of 11"
+msgstr "2 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:22
+msgid "Then select a ball for your game:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:24
+msgid ""
+"Why are characters in Scratch called 'sprites'? We borrowed the word from "
+"the first video games."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:28
+msgid ""
+"You can delete the cat with the scissors tool. Click on the scissors, then "
+"click on the cat:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:30
+msgid "Or, use the right-click menu (Ctrl+click on Mac), and choose 'delete'."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:31
+msgid "Next, make the ball move"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip3.html:11
+#, fuzzy
+msgid "3 of 11"
+msgstr "3 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:20
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"motioncolor\">Motion</span> category, and drag "
+"out a <span class=\"motioncolor\">move</span> block into the Scripts area.</"
+"p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:28
+#, fuzzy
+msgid "Then, click on that block to make the ball move."
+msgstr "Després, fes clic al bloc per fer que el gat es mogui:"
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:30
+msgid "Next, move and bounce"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip4.html:11
+#, fuzzy
+msgid "4 of 11"
+msgstr "4 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:20
+msgid ""
+"\n"
+"\tWant it to keep going? Snap on the block <span class=\"motioncolor\">if on "
+"edge, bounce</span>.\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:23
+msgid ""
+"Then, click the <span class=\"controlcolor\">Control</span> category. Wrap a "
+"<span class=\"controlcolor\">forever</span> block around the other blocks, "
+"like this:</p>\t\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:27
+msgid "Click anywhere on the stack of blocks to try it."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:28
+msgid "To stop, click the stop button: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:32
+msgid ""
+"\n"
+"\t Want it to go at an angle? Snap a <span class=\"motioncolor\">point in "
+"direction</span> block on top, and type in an angle.\n"
+"\t "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:39
+#, python-format
+msgid ""
+"\n"
+"\t<p>Next, click the <span class=\"eventscolor\">Events</span> category.</"
+"p>\n"
+"\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top:</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:44
+msgid "Your script will start whenever you click the green flag: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:49
+msgid ""
+"Tip: Want to change the speed of the ball? Type in a different number of "
+"steps:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:52
+msgid "Now, choose your paddle"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip5.html:11
+#, fuzzy
+msgid "5 of 11"
+msgstr "5 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:17
+msgid "Choose a Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:19
+msgid "Add a paddle so you can start to play! Click to choose a new sprite:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:21
+msgid "Then, select a paddle from the Sprite library:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:27
+msgid ""
+"Tip: Adjust the size of the paddle by clicking with the grow or shrink tool:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:30
+msgid "Next, control the paddle"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip6.html:11
+#, fuzzy
+msgid "6 of 11"
+msgstr "6 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:19
+msgid "Make it interactive! You can control the paddle with the mouse cursor."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:22
+msgid "Select the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:25
+msgid "Then build this script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:30
+msgid "Click the green flag to start your scripts: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:31
+msgid ""
+"How can you get the ball to bounce off the paddle? Find out in the next step!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:33
+msgid "Next, bounce off the paddle"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip7.html:11
+#, fuzzy
+msgid "7 of 11"
+msgstr "7 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:20
+msgid "Click to choose the ball:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:25
+msgid "Add this script to make it bounce whenever it hits the paddle:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:27
+msgid "Here’s how to build the script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:34
+msgid "Click the green flag to try it out: "
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip8.html:11
+#, fuzzy
+msgid "8 of 11"
+msgstr "8 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:20
+msgid "Make a sound when the ball hits the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:24
+#, python-format
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"tab-ref\">Sounds</span> tab, then click <img "
+"class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-"
+"icon.png\"></p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:34
+msgid "Choose the 'water drop' sound (in Effects):"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:39
+msgid ""
+"\n"
+"\t<p>Then, click the <span class=\"tab-ref\">Scripts</span> tab.\n"
+"\tClick the <span class=\"soundcolor\">Sound</span> category, and drag out a "
+"<span class=\"soundcolor\">play sound</span> block.</p>\n"
+"\t<p>Snap that sound block into the script, like this:</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:46
+msgid "Next, add a challenge"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip9.html:11
+#, fuzzy
+msgid "9 of 11"
+msgstr "9 de 13"
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:20
+msgid "Add a challenge! Make the game stop if the ball hits the bottom."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:24
+msgid "Click to select the Stage:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:29
+msgid ""
+"\n"
+"Select the <span class=\"tab-ref\">Backdrops</span> tab.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:33
+msgid ""
+"Now you can edit your backdrop. Select the line tool. Draw a thick line at "
+"the bottom:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:35
+msgid ""
+"Tip: Hold down the Shift key while drawing the line to make it straight."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:36
+msgid "Tip: To undo, click the Undo arrow:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:41
+msgid "Click to select the Ball sprite:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:46
+msgid ""
+"\n"
+"<p>Click the <span class=\"tab-ref\">Scripts</span> tab, then add this "
+"script to make the ball stop if it hits the line color:</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:51
+msgid ""
+"\n"
+"Tip: Click inside the square box in the <span class=\"sensingcolor"
+"\">touching color</span> block. Then move your cursor to point and click on "
+"the bottom line color.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:55
+msgid "Next, customize your game"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:10
@@ -12767,7 +13425,8 @@ msgstr ""
 "  \n"
 "Ara fes clic a <img src=\"%(STATIC_URL)s/images/help/scripts-tab.png\"> i "
 "utilitza aquest bloc:<br/>\n"
-"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>"
+"\n"
 "Tria el nom del so del menú desplegable.\n"
 
 #: templates/info/help/studio/tips/howto/switch-backdrop.html:9
@@ -12830,8 +13489,8 @@ msgid ""
 msgstr ""
 "Per afegir la teca veu, fes clic a <img src=\"%(STATIC_URL)s/images/help"
 "/sounds-tab.png\"><br/>\n"
-"i al micròfon <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\"> per "
-"gravar les paraules.</p>\n"
+"i al micròfon <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\"> "
+"per gravar les paraules.</p>\n"
 "Afegeix això al teu programa:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"><br/>\n"
 "just després de la bandera verda."
@@ -13001,7 +13660,7 @@ msgid "All Messages"
 msgstr "Tots els Missatges"
 
 #: templates/notifications/notifications.html:16
-#: templates/profiles/profile_detail.html:364 templates/projects/base.html:334
+#: templates/profiles/profile_detail.html:364 templates/projects/base.html:338
 #: templates/studio/includes/sort-galleries-dropdown.html:26
 msgid "Comments"
 msgstr "Comentaris"
@@ -13301,7 +13960,6 @@ msgid ""
 msgstr ""
 "Scratch es un lloc divertit i agradable perquè els Scratchers ho fan així. "
 "Si veus un projecte o comentari ofensiu o desagradable, fes clic a Denuncia. "
-""
 
 #: templates/profiles/scratcher_promotion_modal.html:45
 msgid "We invite you to become a Scratcher."
@@ -13317,10 +13975,9 @@ msgid ""
 "strong>, <strong>give credit</strong>, and <strong>help keep the site "
 "friendly</strong>, click \"I agree!\""
 msgstr ""
-"Si estàs d'acord en <strong>ser "
-"respectuós</strong>,<strong>creatiu</strong>, <strong>reconèixer la feina "
-"dels altres</strong> i <strong>ajudar a mantenir el lloc agradable</strong>, "
-"fes clic a \"Estic d'acord!\"."
+"Si estàs d'acord en <strong>ser respectuós</strong>,<strong>creatiu</strong>"
+", <strong>reconèixer la feina dels altres</strong> i <strong>ajudar a "
+"mantenir el lloc agradable</strong>, fes clic a \"Estic d'acord!\"."
 
 #: templates/profiles/scratcher_promotion_modal.html:50
 msgid ""
@@ -13364,92 +14021,92 @@ msgstr "Estudis que segueixo"
 msgid "on Scratch"
 msgstr "a Scratch"
 
-#: templates/projects/base.html:113
+#: templates/projects/base.html:117
 msgid "scripts"
 msgstr "programes"
 
-#: templates/projects/base.html:114
+#: templates/projects/base.html:118
 msgid "sprites"
 msgstr "personatges"
 
-#: templates/projects/base.html:118 templates/studio/studio.html:96
+#: templates/projects/base.html:122 templates/studio/studio.html:96
 #: templates/studio/studio.html.py:133 templates/studio/studio.html:153
 msgid "See inside"
 msgstr "Com està fet"
 
-#: templates/projects/base.html:154
+#: templates/projects/base.html:158
 msgid "Based on:"
 msgstr "Basat en:"
 
-#: templates/projects/base.html:166
+#: templates/projects/base.html:170
 msgid "Original project:"
 msgstr "Projecte original:"
 
-#: templates/projects/base.html:182
+#: templates/projects/base.html:186
 msgid "not shared"
 msgstr "sense compartir"
 
 # 75%
-#: templates/projects/base.html:184
+#: templates/projects/base.html:188
 #, python-format
 #, fuzzy, python-format
 msgid "Modified: %(tDate)s"
 msgstr "Darrera modificació: %(tDate)s"
 
-#: templates/projects/base.html:196 templates/projects/base.html.py:203
+#: templates/projects/base.html:200 templates/projects/base.html.py:207
 msgid "Favorite this project"
 msgstr "Marca el projecte com a favorit"
 
-#: templates/projects/base.html:213 templates/projects/base.html.py:219
+#: templates/projects/base.html:217 templates/projects/base.html.py:223
 msgid "Love this project"
 msgstr "M'agrada aquest projecte"
 
-#: templates/projects/base.html:235
+#: templates/projects/base.html:239
 msgid "Total views"
 msgstr "Visites totals"
 
-#: templates/projects/base.html:239
+#: templates/projects/base.html:243
 msgid "View the remix tree"
 msgstr "Arbre de reinvencions"
 
-#: templates/projects/base.html:261
+#: templates/projects/base.html:265
 msgid "Add this project to a studio you curate (or remove it from a studio)"
 msgstr ""
 "Afegeix aquest projecte a un estudi que conserves (o treure'l d'un estudi)"
 
-#: templates/projects/base.html:262
+#: templates/projects/base.html:266
 msgid "Just click on the button for any of the studios from the list below"
 msgstr "Fes clic al botó de l'estudi de la llista següent "
 
-#: templates/projects/base.html:274
+#: templates/projects/base.html:278
 msgid "Download this project file"
 msgstr "Descarrega't aquest projecte"
 
-#: templates/projects/base.html:297
+#: templates/projects/base.html:301
 #: templates/projects/includes/shared/shared-project-actions.html:10
 msgid "Embed"
 msgstr "Incrusta"
 
-#: templates/projects/base.html:302
+#: templates/projects/base.html:306
 msgid "Copy and paste the embed code above."
 msgstr "Copia i enganxa el codi d'incrustació del quadre."
 
 # 83%
-#: templates/projects/base.html:306 templates/projects/censored.html:16
+#: templates/projects/base.html:310 templates/projects/censored.html:16
 #: templates/projects/unshared-owner.html:22
 msgid "Share"
 msgstr "Comparteix"
 
 # 85%
-#: templates/projects/base.html:366
+#: templates/projects/base.html:370
 msgid "remixes"
 msgstr "reinvencions"
 
-#: templates/projects/base.html:432
+#: templates/projects/base.html:436
 msgid "OK, Got it."
 msgstr ""
 
-#: templates/projects/base.html:451
+#: templates/projects/base.html:455
 msgid "All Tips"
 msgstr ""
 
@@ -13602,15 +14259,15 @@ msgstr "Afegeix el projecte a l'estudi"
 msgid "Embed project on other websites"
 msgstr "Comparteix el projecte a altres llocs web"
 
-#: templates/projects/includes/shared/shared-project-actions.html:14
+#: templates/projects/includes/shared/shared-project-actions.html:15
 msgid "Report project as inappropriate"
 msgstr "Informa com a inadequat aquest projecte"
 
-#: templates/projects/includes/shared/shared-project-actions.html:15
+#: templates/projects/includes/shared/shared-project-actions.html:16
 msgid "Report this"
 msgstr "Informa sobre això"
 
-#: templates/projects/includes/shared/shared-project-actions.html:20
+#: templates/projects/includes/shared/shared-project-actions.html:22
 msgid "View Cloud Data activity for this project."
 msgstr "Mira el registre d'activitat de les Dades al Núvol d'aquest projecte."
 
@@ -13801,16 +14458,16 @@ msgstr ""
 msgid ""
 "All Projects (<span data-content=\"project-count\">%(projects_count)s</span>)"
 msgstr ""
-"Tots els Projectes (<span data-content=\"project-count\">%"
-"(projects_count)s</span>)"
+"Tots els Projectes (<span data-content=\"project-count\""
+">%(projects_count)s</span>)"
 
 #: templates/studio/studio.html:7
 #, python-format
 msgid ""
 "Shared Projects (<span data-content=\"shared-count\">%(shared_count)s</span>)"
 msgstr ""
-"Projectes Compartits (<span data-content=\"shared-count\">%"
-"(shared_count)s</span>)"
+"Projectes Compartits (<span data-content=\"shared-count\""
+">%(shared_count)s</span>)"
 
 #: templates/studio/studio.html:8
 #, python-format
@@ -13818,16 +14475,16 @@ msgid ""
 "Unshared Projects (<span data-content=\"unshared-count\">"
 "%(notshared_count)s</span>)"
 msgstr ""
-"Projectes No Compartits (<span data-content=\"unshared-count\">%"
-"(notshared_count)s</span>)"
+"Projectes No Compartits (<span data-content=\"unshared-count\""
+">%(notshared_count)s</span>)"
 
 #: templates/studio/studio.html:9
 #, python-format
 msgid ""
 "My Studios (<span data-content=\"gallery-count\">%(gallery_count)s</span>)"
 msgstr ""
-"Els meus Estudis (<span data-content=\"gallery-count\">%"
-"(gallery_count)s</span>)"
+"Els meus Estudis (<span data-content=\"gallery-count\""
+">%(gallery_count)s</span>)"
 
 #: templates/studio/studio.html:10
 #, python-format
@@ -13906,6 +14563,353 @@ msgstr "De la meva creació"
 #: templates/studio/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
 msgstr "Conservat per mi"
+
+#: templates/base.html:235
+msgid "Educators"
+msgstr "Educadors"
+
+#: templates/base.html:236
+msgid "Parents"
+msgstr "Pares"
+
+#: templates/base.html:238
+msgid "Contact us"
+msgstr "Contacta'ns"
+
+#: templates/comments/list.html:20
+msgid "View previous comments"
+msgstr "Veure els comentaris anteriors"
+
+#: templates/comments/includes/comment.html:26
+msgid "ago"
+msgstr "fa"
+
+#: templates/explore/includes/related_projects.html:62
+msgid "Sudio:"
+msgstr "Estudi:"
+
+#: templates/galleries/base.html:30
+msgid "Studio description"
+msgstr "Descripció de l'estudi"
+
+#: templates/galleries/gallery.html:21
+#, python-format
+msgid "created %(tDate)s"
+msgstr "creat %(tDate)s"
+
+#: templates/galleries/gallery.html:25
+msgid "Read more &raquo;"
+msgstr "Llegeix més &raquo;"
+
+#: templates/galleries/gallery.html:57
+#, python-format
+msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
+msgstr "Conservadors ( <span data-count=\"curators\">%(tCount)s</span> )"
+
+#: templates/galleries/gallery.html:60
+msgid "More info"
+msgstr "Més informació"
+
+#: templates/galleries/gallery_list.html:4
+#, python-format
+msgid "%(username)s Studio (%(galleries.count)s)"
+msgstr "Estudi de %(username)s (%(galleries.count)s)"
+
+#: templates/homepage/index.html:55
+msgid "Welcome, Scratchers!"
+msgstr "Benvinguts, Scratchers!"
+
+#: templates/homepage/index.html:56
+msgid ""
+"Thanks for helping us find and fix glitches in Scratch 2.0! Found a bug? Let "
+"us know!"
+msgstr ""
+"Gràcies per ajudar-nos a trobar i corregit errors en Scratch 2.0! Has trobat "
+"un error? Fes-nos-el saber!"
+
+#: templates/homepage/index.html:57
+msgid "Report bugs here &raquo;"
+msgstr "Informans sobre errors aquí &raquo;"
+
+#: templates/homepage/index.html:64
+msgid "Try out new features"
+msgstr "Prova noves característiques"
+
+#: templates/homepage/index.html:65
+msgid "Here’s a description of what’s new in Scratch 2.0."
+msgstr "Aquí hi ha una descripció de que hi ha de nou a Scratch 2.0."
+
+#: templates/homepage/index.html:66
+msgid "Check it out! &raquo;"
+msgstr "Fes una ullada! &raquo;"
+
+#: templates/homepage/index.html:81
+msgid "Scratch 2.0 Beta"
+msgstr "Scratch 2.0 Beta"
+
+#: templates/homepage/index.html:83
+msgid "Welcome to the Scratch 2.0 Beta website!"
+msgstr "Benvingut al lloc web de Scratch 2.0 Beta!"
+
+#: templates/homepage/index.html:86
+msgid ""
+"Please explore and experiment with this preview version of the new Scratch. "
+"Check out the <b>Featured Projects</b> and <b>Featured Studios</b> below.  "
+"Click <a href=\"/help\">Help</a> to learn more."
+msgstr ""
+"Explora i experimenta amb aquesta versió preliminar del nou Scratch. Visita "
+"els següents <b>Projectes Destacats</b> i els <b>Estudis Destacats</b>. Fes "
+"clic a <a href=\"/help\">Ajuda</a> per aprendre més."
+
+#: templates/homepage/index.html:89
+msgid ""
+"The Scratch 2.0 Beta is open to everyone. But you can only log in if you "
+"created your Scratch account before January 26th."
+msgstr ""
+"Scratch 2.0 Beta ja és oberta per a tothom. Però només pots accedir si vas "
+"crear el teu compte Scratch abans del 26 de Gener."
+
+#: templates/homepage/index.html:92
+msgid ""
+"We still have a few features to add, and lots of glitches to fix! You can "
+"help us by <a href=\"/forums/3/\">reporting bugs and glitches</a>. The "
+"sooner we find and fix them, the sooner we can officially release Scratch "
+"2.0."
+msgstr ""
+"Encara ens falten característiques per afegir, i molts errors que corregir! "
+"Pots ajudar-nos <a href=\"/forums/3/\">informant-nos dels errors</a>. Quan "
+"més aviat els trobem i corregim, abans podrem treure la versió oficial "
+"d'Scratch 2.0. "
+
+#: templates/homepage/index.html:95
+msgid "Find out more about"
+msgstr "Més sobre"
+
+#: templates/homepage/index.html:95
+msgid "the move to Scratch 2.0"
+msgstr "la migració cap a Scratch 2.0"
+
+#: templates/homepage/index.html:151
+msgid "What the Community is Sharing"
+msgstr "El què la Comunitat està compartint"
+
+#: templates/projects/base.html:148
+msgid "Total remixes"
+msgstr "Reinvencions totals"
+
+#: templates/projects/base.html:195
+msgid "views"
+msgstr "visites"
+
+#: templates/projects/shared-other.html:66
+#: templates/projects/shared-owner.html:30
+msgid "Shared on:"
+msgstr "Compartit a:"
+
+#: templates/projects/includes/shared/shared-project-actions.html:3
+msgid "Share project on other websites"
+msgstr "Comparteix el projecte a altres llocs web"
+
+#: templates/projects/includes/shared/shared-project-actions.html:4
+msgid "Share to"
+msgstr "Comparteix a"
+
+#: templates/projects/includes/shared/shared-project-actions.html:9
+msgid "Add project to gallery"
+msgstr "Afegeix el projecte a la galeria"
+
+#~ msgid "Change password "
+#~ msgstr "Canvia la contrasenya "
+
+#~ msgid ""
+#~ "\n"
+#~ "  Students are learning with Scratch at all levels (from elementary school "
+#~ "to college) and across disciplines (such as math, computer science, language "
+#~ "arts, social studies). Educators share stories, exchange resources, ask "
+#~ "questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+#~ "\">ScratchEd website</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "   Alumnes de tots els nivells educatius estan aprenent amb Scratch (des de "
+#~ "la primària fins a la universitat) en diferents matèries (matemàtiques, "
+#~ "informàtica, llengua, plàstica, socials). Els educadors comparteixen les "
+#~ "seves experiències, intercanvien recursos, fan preguntes i troben companys a "
+#~ "la pàgina <a href=\"http://scratched.media.mit.edu/\">ScratchEd</a>.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "The Scratch project, initiated in 2003, has received generous support from "
+#~ "the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
+#~ "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
+#~ "Learn Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab "
+#~ "research consortia. If you'd like to support Scratch, please see our <a href="
+#~ "\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "El projecte Scratch, iniciat l'any 2003, ha rebut el generós suport de la "
+#~ "National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
+#~ "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
+#~ "Learn Foundation, Google, Dell, Fastly, Inversoft, i el consorci de recerca "
+#~ "del MIT Media Lab. Si vols recolzar Scratch, si us plau, mira la nostra <a "
+#~ "href=\"/info/donate\">pàgina de donatius</a>, o contacta'ns a "
+#~ "donate@scratch.mit.edu.\n"
+
+#~ msgid "Meet the Scratch Team"
+#~ msgstr "Coneix l'Equip d'Scratch"
+
+#~ msgid "Community and Moderation"
+#~ msgstr "Comunitat i Moderació"
+
+#~ msgid ""
+#~ "Scratch is designed with learning and education in mind. A wide variety of "
+#~ "educators have been supporting Scratch creators since 2007, in both formal "
+#~ "and informal learning environments &ndash; K-12 classroom teachers, "
+#~ "educational and computer science researchers, librarians, museum educators, "
+#~ "and parents.<br/><br/>\n"
+#~ "Want to learn more about learning with Scratch?<br/>Check out the <a href="
+#~ "\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+#~ "    "
+#~ msgstr ""
+#~ "Scratch està dissenyat amb l'aprenentatge i l'educació en ment. Un gran grup "
+#~ "d'educadors ha estat donant suport als creadors d'Scratch des del 2007, en "
+#~ "entorns d'aprenentatge formals i informals &ndash; mestres de primària, "
+#~ "investigadors en l'ús de les TIC, bibliotecaris, educadors als museus i "
+#~ "famílies.<br/><br>/>\n"
+#~ "Vols aprendre més sobre com aprendre amb Scratch?<br/>Visita la pàgina de la "
+#~ "comunitat <a href=\"http://scratch-ed.org\" target=\"_blank\">ScratchEd</a>.\n"
+#~ "    "
+
+#~ msgid ""
+#~ "\n"
+#~ " <h3>What is ScratchEd?</h3>\n"
+#~ "\t      <p>Launched in July 2009, <a href=\"http://scratch-ed.org\" target="
+#~ "\"_blank\">ScratchEd</a> is an online community where Scratch educators "
+#~ "share stories, exchange resources, ask questions, and find people.</p>\n"
+#~ "\t      <p>Since its launch, more than 7500 educators from all around the "
+#~ "world have joined the community, sharing hundreds of resources and engaging "
+#~ "in thousands of discussions.</p>\n"
+#~ "\t      <p>Join the ScratchEd community for free at <a href=\"http://scratch-"
+#~ "ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+#~ "\t      "
+#~ msgstr ""
+#~ "\n"
+#~ " <h3>Què és ScratchEd?</h3>\n"
+#~ "\t     <p>Des de Juliol de 2009, <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a> és una comunitat en línia on els educadors que "
+#~ "fan servir Scratch comparteixen històries, intercanvien recursos, comenten "
+#~ "dubtes i coneixen gent</p>\n"
+#~ "\t     <p>Des de la seva aparició, més de 7500 educadors d'arreu del món "
+#~ "s'han unit a la comunitat, compartint centenars de recursos i generant "
+#~ "milers de debats.</p>\n"
+#~ "\t     <p>Uneix-te gratuïtament a la Comunitat ScratchEd aquí <a href=\"http"
+#~ "://scratch-ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+#~ "\t     "
+
+#~ msgid ""
+#~ "\n"
+#~ "\t      <h3>How can I learn more about what educators are doing with Scratch "
+#~ "&ndash; and how I might use it?</h3>\n"
+#~ "\t      <p>Not sure what might be possible with Scratch?</p>\n"
+#~ "\t      <p><a href=\"http://scratched.media.mit.edu/stories\" target=\"_blank"
+#~ "\">Read a story</a> about how educators have been including Scratch "
+#~ "activities in a wide range of learning environments.</a></p>\n"
+#~ "\t      <p>Or <a href=\"http://scratched.media.mit.edu/resources/all\" "
+#~ "target=\"_blank\">explore resources</a> across ages, disciplines, and "
+#~ "settings. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+#~ "target=\"_blank\">Watch webinars</a> and review documents like the <a href="
+#~ "\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-draft\" "
+#~ "target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
+#~ "\t      <p>In addition to exploring the <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a> online community and its resources, you can "
+#~ "engage with the ScratchEd Team and other Scratch educators via <a href="
+#~ "\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a href="
+#~ "\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
+#~ "<a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>"
+#~ "\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/"
+#~ "scratched-weekly-roundup\" target=\"_blank>\">weekly roundups</a>, and our "
+#~ "<a href=\"http://scratched.media.mit.edu/events\" target=\"_blank>"
+#~ "\">quarterly newsletter</a>.<p>\n"
+#~ "\t      "
+#~ msgstr ""
+#~ "\n"
+#~ "\t <h3>Com puc saber més coses sobre el què fan els docents amb Scratch i com "
+#~ "el puc fer servir jo?</h3>\n"
+#~ "\t <p>Tens dubtes sobre el què es pot arribar a fer amb Scratch?</p>\n"
+#~ "\t <p><a href=\"http://scratched.media.mit.edu/stories\" "
+#~ "target=\"_blank\">Llegeix una història</a> sobre com diferents educadors han "
+#~ "estat duent a terme activitats amb Scratch en diferents entorns.</a></p>\n"
+#~ "\t <p>O bé <a href=\"http://scratched.media.mit.edu/resources/all\" "
+#~ "target=\"_blank\">explora recursos</a> per diferents edats, disciplines i "
+#~ "entorns. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+#~ "target=\"_blank\">Mira webinars</a> i dóna un cop d'ull a documents com la<a "
+#~ "href=\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-"
+#~ "draft\" target=\"_blank\">Guia del currículum d'Scratch</a>.</p>\n"
+#~ "\t <p>A més d'explorar la comunitat <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a> i els seus recursos, pots mantenir-te en "
+#~ "contacte amb l'Equip d'ScratchEd i altres educadors via <a "
+#~ "href=\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a "
+#~ "href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
+#~ "<a href=\"http://www.edmodo.com/publisher/scratcheducation\" "
+#~ "target=\"_blank>\">Edmodo</a>, <a "
+#~ "href=\"http://scratched.media.mit.edu/discussions/scratched-weekly-roundup\" "
+#~ "target=\"_blank>\">els reculls de la setmana</a>, i la nostra <a "
+#~ "href=\"http://scratched.media.mit.edu/events\" target=\"_blank>\">newsletter "
+#~ "quadrimestral</a>.<p>\n"
+#~ "\t"
+
+#, python-format
+#~ msgid ""
+#~ "<p>Scratch team members from the MIT Media Lab <a href=\"http://llk.media."
+#~ "mit.edu\">Lifelong Kindergarten Group</a> and at the University of "
+#~ "Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
+#~ "Education</a> are researching how people use and learn from Scratch.<br />\n"
+#~ "<br />\n"
+#~ "By sharing projects and participating in the Scratch online community, you "
+#~ "are helping us better understand how people can use and \n"
+#~ "learn with Scratch.&nbsp;Any publicly shared&nbsp;projects, comments, or "
+#~ "other material on the Scratch site may be included\n"
+#~ "in the research analysis, presentations, papers, and reports. No personally "
+#~ "identifiable information is shared. \n"
+#~ "(If you have any questions, please use the <a href=\"%(contact_us_url)s"
+#~ "\">Contact Us</a> form.)</p>\n"
+#~ "<p>The following are research papers, presentations, and <a href=\"#theses"
+#~ "\">dissertations and theses</a> that share our findings about Scratch and "
+#~ "the Scratch online community. This list also includes some papers conducted "
+#~ "on Scratch by other researchers. For magazines and other articles, see <a "
+#~ "href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch in the "
+#~ "News</a>.</p>"
+#~ msgstr ""
+#~ "<p>Els membres de l'Equip de l'Scratch provinents del MIT Media Lab<a "
+#~ "href=\"http://llk.media.mit.edu\">Lifelong Kindergarten Group</a> i de la "
+#~ "Universitat de Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate "
+#~ "School of Education</a> estan investigant com la gent utilitza i aprèn amb "
+#~ "Scratch.<br />\n"
+#~ "<br />\n"
+#~ "Compartint projectes i participant de la comunitat d'Scratch en línia, ens "
+#~ "estàs ajudant a entendre millor com la gent pot utilitzar i \n"
+#~ "aprendre amb Scratch.&nbsp;Qualsevol projecte, comentari o altre material "
+#~ "compartit a la web d'Scratch pot ser inclòs\n"
+#~ "en investigacions, anàlisis, presentacions, documents i informes. Cap "
+#~ "informació personal serà compartida. \n"
+#~ "(Si tens cap dubte, si us plau utilitza el <a href=\"%"
+#~ "(contact_us_url)s\">Formulari de contacte</a>.)</p>\n"
+#~ "<p>Segueixen documents de recerca, presentacions i <a "
+#~ "href=\"#theses\">dissertacions i tesis</a> que comparteixen les nostres "
+#~ "trobades al voltant d'Scratch i de la comunitat en línia. Això inclou altres "
+#~ "documents referents a Scratch elaborats per altres investigadors. Per a "
+#~ "revistes i articles de premsa, mireu a <a "
+#~ "href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch a les "
+#~ "notícies</a>.</p>"
+
+#~ msgid "Academic Publications &amp; Presentations"
+#~ msgstr "Publicacions Acadèmiques i Presentacions"
+
+#~ msgid "Dissertations and Theses"
+#~ msgstr "Dissertacions i Tesis"
+
+#~ msgid "Academic Publications by Other Researchers and Educators"
+#~ msgstr ""
+#~ "Publicacions acadèmiques realitzades per altres investigadors i educadors"
 
 # 83%
 # 98%
@@ -17117,12 +18121,6 @@ msgstr "Conservat per mi"
 #~ msgid "static pages"
 #~ msgstr "pàgines estàtiques"
 
-#~ msgid "Educators"
-#~ msgstr "Educadors"
-
-#~ msgid "Parents"
-#~ msgstr "Pares"
-
 #, python-format
 #~ msgid "Sorry, comment posting has been turned off for this %(type)s."
 #~ msgstr "Ho sentim, els comentaris han estat desactivats per aquest %(type)s."
@@ -17130,31 +18128,6 @@ msgstr "Conservat per mi"
 #, python-format
 #~ msgid "Last modified: %(tDate)s"
 #~ msgstr "Darrera modificació: %(tDate)s"
-
-#, python-format
-#~ msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
-#~ msgstr "Conservadors ( <span data-count=\"curators\">%(tCount)s</span> )"
-
-#~ msgid "Can I use images / sounds / media from the internet in my projects?"
-#~ msgstr ""
-#~ "Puc utilitzar imatges / sons / vídeos trets d'Internet dins dels meus "
-#~ "projectes?"
-
-#~ msgid ""
-#~ "It's important to respect the original creator’s wishes regarding remixing. "
-#~ "If you choose to integrate someone else’s work into your own, be sure to "
-#~ "give them credit on the project “credits” section, and include a link back "
-#~ "to the original. To find art / sounds that are already licensed for "
-#~ "remixing, check out the <a href=\"http://search.creativecommons.org/"
-#~ "\">Creative Commons search page</a>."
-#~ msgstr ""
-#~ "És important respectar els desitjos del creador original sobre la "
-#~ "possibilitat de reinventar. Si tries integrar la feina d'algú altre dins la "
-#~ "teva, estigues segur que el cites al teu projecte a la secció de \"crèdits\" i "
-#~ "que inclous un enllaç a la font original. Per trobar imatges i sons que "
-#~ "estiguin preparats per ser reinventats, mira <a "
-#~ "href=\"http://search.creativecommons.org/\">la pàgina de cerca de Creative "
-#~ "Commons</a>."
 
 #~ msgid "Getting Started"
 #~ msgstr "Començant"
@@ -18186,118 +19159,8 @@ msgstr "Conservat per mi"
 #~ "Es va unir fa %(tDate)s \n"
 #~ "      "
 
-#~ msgid "Share to"
-#~ msgstr "Comparteix a"
-
-#~ msgid "Share project on other websites"
-#~ msgstr "Comparteix el projecte a altres llocs web"
-
 #~ msgid "Add project to studio"
 #~ msgstr "Afegeix el projecte a l'estudi"
-
-#~ msgid "Contact us"
-#~ msgstr "Contacta'ns"
-
-#~ msgid "View previous comments"
-#~ msgstr "Veure els comentaris anteriors"
-
-#~ msgid "ago"
-#~ msgstr "fa"
-
-#~ msgid "Sudio:"
-#~ msgstr "Estudi:"
-
-#~ msgid "Studio description"
-#~ msgstr "Descripció de l'estudi"
-
-#, python-format
-#~ msgid "created %(tDate)s"
-#~ msgstr "creat %(tDate)s"
-
-#~ msgid "Read more &raquo;"
-#~ msgstr "Llegeix més &raquo;"
-
-#~ msgid "More info"
-#~ msgstr "Més informació"
-
-#, python-format
-#~ msgid "%(username)s Studio (%(galleries.count)s)"
-#~ msgstr "Estudi de %(username)s (%(galleries.count)s)"
-
-#~ msgid "Welcome, Scratchers!"
-#~ msgstr "Benvinguts, Scratchers!"
-
-#~ msgid ""
-#~ "Thanks for helping us find and fix glitches in Scratch 2.0! Found a bug? Let "
-#~ "us know!"
-#~ msgstr ""
-#~ "Gràcies per ajudar-nos a trobar i corregit errors en Scratch 2.0! Has trobat "
-#~ "un error? Fes-nos-el saber!"
-
-#~ msgid "Report bugs here &raquo;"
-#~ msgstr "Informans sobre errors aquí &raquo;"
-
-#~ msgid "Try out new features"
-#~ msgstr "Prova noves característiques"
-
-#~ msgid "Here’s a description of what’s new in Scratch 2.0."
-#~ msgstr "Aquí hi ha una descripció de que hi ha de nou a Scratch 2.0."
-
-#~ msgid "Check it out! &raquo;"
-#~ msgstr "Fes una ullada! &raquo;"
-
-#~ msgid "Scratch 2.0 Beta"
-#~ msgstr "Scratch 2.0 Beta"
-
-#~ msgid "Welcome to the Scratch 2.0 Beta website!"
-#~ msgstr "Benvingut al lloc web de Scratch 2.0 Beta!"
-
-#~ msgid ""
-#~ "Please explore and experiment with this preview version of the new Scratch. "
-#~ "Check out the <b>Featured Projects</b> and <b>Featured Studios</b> below.  "
-#~ "Click <a href=\"/help\">Help</a> to learn more."
-#~ msgstr ""
-#~ "Explora i experimenta amb aquesta versió preliminar del nou Scratch. Visita "
-#~ "els següents <b>Projectes Destacats</b> i els <b>Estudis Destacats</b>. Fes "
-#~ "clic a <a href=\"/help\">Ajuda</a> per aprendre més."
-
-#~ msgid ""
-#~ "The Scratch 2.0 Beta is open to everyone. But you can only log in if you "
-#~ "created your Scratch account before January 26th."
-#~ msgstr ""
-#~ "Scratch 2.0 Beta ja és oberta per a tothom. Però només pots accedir si vas "
-#~ "crear el teu compte Scratch abans del 26 de Gener."
-
-#~ msgid ""
-#~ "We still have a few features to add, and lots of glitches to fix! You can "
-#~ "help us by <a href=\"/forums/3/\">reporting bugs and glitches</a>. The sooner "
-#~ "we find and fix them, the sooner we can officially release Scratch 2.0."
-#~ msgstr ""
-#~ "Encara ens falten característiques per afegir, i molts errors que corregir! "
-#~ "Pots ajudar-nos <a href=\"/forums/3/\">informant-nos dels errors</a>. Quan més "
-#~ "aviat els trobem i corregim, abans podrem treure la versió oficial "
-#~ "d'Scratch 2.0. "
-
-#~ msgid "Find out more about"
-#~ msgstr "Més sobre"
-
-#~ msgid "the move to Scratch 2.0"
-#~ msgstr "la migració cap a Scratch 2.0"
-
-#~ msgid "What the Community is Sharing"
-#~ msgstr "El què la Comunitat està compartint"
-
-#~ msgid "Total remixes"
-#~ msgstr "Reinvencions totals"
-
-#~ msgid "views"
-#~ msgstr "visites"
-
-#~ msgid "Shared on:"
-#~ msgstr "Compartit a:"
-
-#~ msgid "Add project to gallery"
-#~ msgstr "Afegeix el projecte a la galeria"
 
 #~ msgid "Owner"
 #~ msgstr "Propietari"
@@ -18316,11 +19179,6 @@ msgstr "Conservat per mi"
 #~ "    <li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
 #~ "als Mitjans</a></li>\n"
 #~ "    "
-
-# 75%
-#, fuzzy
-#~ msgid "Scratch Credits"
-#~ msgstr "Productes Scratch"
 
 # 76%
 #~ msgid "Related Projects"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 00:48+0000\n"
+"POT-Creation-Date: 2014-11-21 23:51+0000\n"
 "PO-Revision-Date: 2014-11-10 14:54+0000\n"
 "Last-Translator: Jüri <juri.vilipold@ttu.ee>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,48 +18,65 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1415631251.000000\n"
 
-#: views.py:181
+#: views.py:308
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr "Sinu teade on saadetud. Vastame kolme päeva jooksul"
 
-#: views.py:185 views.py:225
+#: views.py:312 views.py:352
 msgid "Please correct the errors below."
 msgstr "Palun paranda allolevad vead."
 
-#: authentication/forms.py:18
+#: authentication/forms.py:22
+msgid "Keep my projects, but disable all comments"
+msgstr ""
+
+#: authentication/forms.py:23
+msgid "Delete my projects"
+msgstr ""
+
+#: authentication/forms.py:26
+msgid "Enter your password to confirm"
+msgstr ""
+
+#: authentication/forms.py:45
 msgid "Looks like that isn't a valid email format"
 msgstr "Paistab, et see ei ole korrektne e-postituse formaat"
 
-#: authentication/forms.py:30
+#: authentication/forms.py:57
 msgid "The two password fields didn't match."
 msgstr "Parooli väljad ei ole vastavuses."
 
-#: authentication/forms.py:31 authentication/forms.py:52
+#: authentication/forms.py:58 authentication/forms.py:79
 msgid "Your password must be at least 6 characters long."
 msgstr "Paroolis peab olema vähemalt 6 märki."
 
-#: authentication/forms.py:32 authentication/forms.py:53
+#: authentication/forms.py:59 authentication/forms.py:80
 msgid "Your password cannot be 'password'."
 msgstr "Sinu parool ei saa olla 'password'."
 
-#: authentication/forms.py:33 authentication/forms.py:54
+#: authentication/forms.py:60 authentication/forms.py:81
 msgid "Your password cannot be the same as your username."
 msgstr "Parool ja kasutajanimi ei tohi olla samad."
 
-#: authentication/forms.py:74 templates/modal-registration.html:78
+#: authentication/forms.py:101 templates/modal-registration.html:78
+#: templates/accounts/account_settings.html:10
+#: templates/accounts/email_change.html:10
+#: templates/accounts/password_change_form.html:10
+#: templates/accounts/deletion/confirmation.html:8
+#: templates/accounts/deletion/nostalgia.html:7
 #: templates/info/educators.html:52
 msgid "Email"
 msgstr "E-meil"
 
-#: authentication/forms.py:82
+#: authentication/forms.py:109
 msgid "You must provide an email or username"
 msgstr "Sa pead sisestama meiliadressi või kasutajanime"
 
-#: authentication/forms.py:87
+#: authentication/forms.py:114
 msgid "Sorry we don't have an account with that username"
 msgstr "Vabandust, meil ei ole sellise kasutajanimega kontot"
 
-#: authentication/forms.py:92
+#: authentication/forms.py:119
 msgid "Sorry we don't have an account with that email address"
 msgstr "Vabandust, meil ei ole sellise meiliaadressiga kontot"
 
@@ -104,7 +121,7 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s tagasi"
 
-#: projects/views.py:496
+#: projects/views.py:494
 msgid "This tag has too many projects to load"
 msgstr "Liiga palju projekte laadimiseks"
 
@@ -113,12 +130,12 @@ msgid "subscribers"
 msgstr "abonendid"
 
 #: s2forums/djangobb_forum/feeds.py:27 s2forums/djangobb_forum/feeds.py:28
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:14
 msgid "Latest posts on forum"
 msgstr "Foorumi viimased postitused"
 
 #: s2forums/djangobb_forum/feeds.py:46 s2forums/djangobb_forum/feeds.py:47
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:16
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
 msgid "Latest topics on forum"
 msgstr "Foorumi viimased teemad"
 
@@ -143,52 +160,52 @@ msgstr "Viimased postitused foorumis \"%s\""
 msgid "Latest posts on the category \"%s\""
 msgstr "Viimased postitused kategoorias \"%s\""
 
-#: s2forums/djangobb_forum/forms.py:29 s2forums/djangobb_forum/forms.py:229
-#: s2forums/djangobb_forum/forms.py:366 templates/base.html:211
+#: s2forums/djangobb_forum/forms.py:27 s2forums/djangobb_forum/forms.py:227
+#: s2forums/djangobb_forum/forms.py:364 templates/base.html:207
 #: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
 msgid "Username"
 msgstr "Kasutajanimi"
 
-#: s2forums/djangobb_forum/forms.py:30
+#: s2forums/djangobb_forum/forms.py:28
 msgid "Registered"
 msgstr "Registreeritud"
 
-#: s2forums/djangobb_forum/forms.py:31
+#: s2forums/djangobb_forum/forms.py:29
 msgid "Number of posts"
 msgstr "Postituste arv"
 
-#: s2forums/djangobb_forum/forms.py:35
+#: s2forums/djangobb_forum/forms.py:33
 msgid "Post time"
 msgstr "Postituse aeg"
 
-#: s2forums/djangobb_forum/forms.py:36
+#: s2forums/djangobb_forum/forms.py:34
 msgid "Author"
 msgstr "Autor"
 
-#: s2forums/djangobb_forum/forms.py:37 s2forums/djangobb_forum/forms.py:60
-#: s2forums/djangobb_forum/forms.py:188 s2forums/djangobb_forum/forms.py:459
+#: s2forums/djangobb_forum/forms.py:35 s2forums/djangobb_forum/forms.py:58
+#: s2forums/djangobb_forum/forms.py:186 s2forums/djangobb_forum/forms.py:457
 #: s2forums/djangobb_forum/models.py:160
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:29
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
 msgid "Subject"
 msgstr "Teema"
 
-#: s2forums/djangobb_forum/forms.py:38 s2forums/djangobb_forum/forms.py:402
+#: s2forums/djangobb_forum/forms.py:36 s2forums/djangobb_forum/forms.py:400
 #: s2forums/djangobb_forum/models.py:130 s2forums/djangobb_forum/models.py:159
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:55
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:26
 msgid "Forum"
 msgstr "Foorum"
 
-#: s2forums/djangobb_forum/forms.py:42
+#: s2forums/djangobb_forum/forms.py:40
 msgid "Ascending"
 msgstr "Kasvav"
 
-#: s2forums/djangobb_forum/forms.py:43
+#: s2forums/djangobb_forum/forms.py:41
 msgid "Descending"
 msgstr "Kahanev"
 
-#: s2forums/djangobb_forum/forms.py:47 s2forums/djangobb_forum/models.py:175
+#: s2forums/djangobb_forum/forms.py:45 s2forums/djangobb_forum/models.py:175
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:56
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
@@ -196,44 +213,44 @@ msgid "Topics"
 msgstr "Teemad"
 
 # 80%
-#: s2forums/djangobb_forum/forms.py:48 s2forums/djangobb_forum/models.py:275
+#: s2forums/djangobb_forum/forms.py:46 s2forums/djangobb_forum/models.py:275
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:57
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
 msgid "Posts"
 msgstr "Postitused"
 
-#: s2forums/djangobb_forum/forms.py:52
+#: s2forums/djangobb_forum/forms.py:50
 msgid "Message text and topic subject"
 msgstr "Sõnumi tekst ning teema pealkiri"
 
-#: s2forums/djangobb_forum/forms.py:53
+#: s2forums/djangobb_forum/forms.py:51
 msgid "Message text only"
 msgstr "Ainult sõnumi tekst"
 
-#: s2forums/djangobb_forum/forms.py:54
+#: s2forums/djangobb_forum/forms.py:52
 msgid "Topic subject only"
 msgstr "Ainult sõnumi pealkiri"
 
-#: s2forums/djangobb_forum/forms.py:62
+#: s2forums/djangobb_forum/forms.py:60
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
 msgid "Attachment"
 msgstr "Manus"
 
-#: s2forums/djangobb_forum/forms.py:63
+#: s2forums/djangobb_forum/forms.py:61
 msgid "Subscribe"
 msgstr "Tellimine"
 
 # 87%
-#: s2forums/djangobb_forum/forms.py:63
+#: s2forums/djangobb_forum/forms.py:61
 msgid "Subscribe to this topic."
 msgstr "Telli see teema."
 
-#: s2forums/djangobb_forum/forms.py:93
+#: s2forums/djangobb_forum/forms.py:91
 msgid "Can't be empty nor contain only whitespace characters"
 msgstr "Ei saa olla tühi või sisaldada ainult tühikuid"
 
-#: s2forums/djangobb_forum/forms.py:103
+#: s2forums/djangobb_forum/forms.py:101
 msgid ""
 "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
 "Scratch, so your account has been muted for the rest of the day. :/"
@@ -241,96 +258,96 @@ msgstr ""
 "Hmm, filterbot on päris kindel, et sinu viimased kommentaarid ei olnud OK "
 "Scratchi jaoks, nii et sinu konto on päeva lõpuni tumm. :/"
 
-#: s2forums/djangobb_forum/forms.py:132 s2forums/djangobb_forum/forms.py:136
+#: s2forums/djangobb_forum/forms.py:130 s2forums/djangobb_forum/forms.py:134
 #, python-format
 msgid "Sorry, you have to wait %d seconds between posts."
 msgstr "Vabandust, sa pead postituste vahel ootama %d sekundit."
 
-#: s2forums/djangobb_forum/forms.py:145
+#: s2forums/djangobb_forum/forms.py:143
 msgid "Attachment is too big"
 msgstr "Manusfail on liiga suur"
 
-#: s2forums/djangobb_forum/forms.py:190
+#: s2forums/djangobb_forum/forms.py:188
 msgid "Silent edit?"
 msgstr "Vaiklik redigeerimine?"
 
 # 83%
-#: s2forums/djangobb_forum/forms.py:230
+#: s2forums/djangobb_forum/forms.py:228
 msgid "E-mail"
 msgstr "E-post"
 
-#: s2forums/djangobb_forum/forms.py:261
+#: s2forums/djangobb_forum/forms.py:259
 msgid "Real name"
 msgstr "Tegelik nimi"
 
-#: s2forums/djangobb_forum/forms.py:368 s2forums/djangobb_forum/forms.py:404
+#: s2forums/djangobb_forum/forms.py:366 s2forums/djangobb_forum/forms.py:402
 #: templates/includes/sort-projects-dropdown.html:4
 #: templates/studio/includes/sort-galleries-dropdown.html:19
 #: templates/studio/includes/sort-projects-dropdown.html:4
 msgid "Sort by"
 msgstr "Sordi"
 
-#: s2forums/djangobb_forum/forms.py:369 s2forums/djangobb_forum/forms.py:405
+#: s2forums/djangobb_forum/forms.py:367 s2forums/djangobb_forum/forms.py:403
 msgid "Sort order"
 msgstr "Sortimise suund"
 
-#: s2forums/djangobb_forum/forms.py:398
+#: s2forums/djangobb_forum/forms.py:396
 msgid "Keyword search"
 msgstr "Võtmesõna otsimine"
 
-#: s2forums/djangobb_forum/forms.py:400
+#: s2forums/djangobb_forum/forms.py:398
 msgid "Author search"
 msgstr "Autori otsimne"
 
-#: s2forums/djangobb_forum/forms.py:403
+#: s2forums/djangobb_forum/forms.py:401
 msgid "Search in"
 msgstr "Otsimise koht"
 
-#: s2forums/djangobb_forum/forms.py:406
+#: s2forums/djangobb_forum/forms.py:404
 msgid "Show results as"
 msgstr "Näita tulemusi nagu"
 
-#: s2forums/djangobb_forum/forms.py:431
+#: s2forums/djangobb_forum/forms.py:429
 #, python-format
 msgid "User \"%s\" does not exist"
 msgstr "Kasutajat \"%s\" ei ole olemas"
 
-#: s2forums/djangobb_forum/forms.py:441
+#: s2forums/djangobb_forum/forms.py:439
 msgid "You already voted for this post"
 msgstr "Sa juba hääletasid selles postituses"
 
-#: s2forums/djangobb_forum/forms.py:445
+#: s2forums/djangobb_forum/forms.py:443
 msgid "This post does't belong to that user"
 msgstr "Postitus ei kuulu sellele kasutajale"
 
 # 87%
-#: s2forums/djangobb_forum/forms.py:461 s2forums/djangobb_forum/models.py:266
+#: s2forums/djangobb_forum/forms.py:459 s2forums/djangobb_forum/models.py:266
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:34
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
 msgid "Message"
 msgstr "Teade"
 
-#: s2forums/djangobb_forum/forms.py:514
+#: s2forums/djangobb_forum/forms.py:512
 #, python-format
 msgid "You have selected too many choices. You may only select %i."
 msgstr "Oled teinud liiga palju valikuid. Võid valida vaid %i."
 
-#: s2forums/djangobb_forum/forms.py:521
+#: s2forums/djangobb_forum/forms.py:519
 msgid "Write each answer on a new line."
 msgstr "Kirjuta iga vastus uuele reale."
 
-#: s2forums/djangobb_forum/forms.py:524
+#: s2forums/djangobb_forum/forms.py:522
 msgid ""
 "Number of days for this poll to run. Leave empty for an indefinite poll."
 msgstr ""
 "Päevade arv selle küsitluse kasutamiseks. Jäta tühjaks ajaliselt "
 "piiritlemata küsitluse puhul."
 
-#: s2forums/djangobb_forum/forms.py:541
+#: s2forums/djangobb_forum/forms.py:539
 msgid "There is no valid answer."
 msgstr "See ei ole sobiv vastus."
 
-#: s2forums/djangobb_forum/forms.py:547
+#: s2forums/djangobb_forum/forms.py:545
 msgid "One of the answers is too long."
 msgstr "Üks vastustest on liiga pikk."
 
@@ -579,7 +596,7 @@ msgstr "Loodud või vastatud teemade automaatne tellimine."
 msgid "Default markup"
 msgstr "Vaikimisi märgistus"
 
-#: s2forums/djangobb_forum/models.py:414 templates/base.html:188
+#: s2forums/djangobb_forum/models.py:414 templates/base.html:237
 msgid "Profile"
 msgstr "Profiil"
 
@@ -612,7 +629,7 @@ msgstr "Teade"
 
 # 85%
 #: s2forums/djangobb_forum/models.py:455
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:31
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:28
 #: s2forums/djangobb_forum/templates/djangobb_forum/reports.html:6
 msgid "Reports"
 msgstr "Teated"
@@ -866,18 +883,18 @@ msgstr "Uus teema"
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:11
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:27
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:189
-#: templates/base.html:315
+#: templates/base.html:324
 msgid "Discussion Forums"
 msgstr "Foorumid mõtetevahetuseks"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:6
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:6
 msgid "Discuss Scratch"
 msgstr "Räägime Scratchist"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:129
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:43
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:126
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:40
 msgid "Notice"
 msgstr "Teatis"
 
@@ -1000,8 +1017,9 @@ msgstr "Kleebi:"
 #: templates/explore/includes/related_projects.html:75
 #: templates/explore/includes/related_projects2.html:8
 #: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-list.html:13
-#: templates/projects/base.html:105 templates/projects/base.html.py:364
+#: templates/galleries/includes/project-thumb.html:26
+#: templates/galleries/includes/project-thumb.html:28
+#: templates/projects/base.html:105 templates/projects/base.html.py:368
 #: templates/projects/includes/project_list.html:11
 msgid "by"
 msgstr "autor"
@@ -1019,25 +1037,25 @@ msgstr "Foorum on tühi."
 msgid "Moderate forum"
 msgstr "Modereeri foorumit"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:16
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:15
 msgid "Show new posts since last visit"
 msgstr "Näita uusi postitusi alates viimasest külastusest"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:20
 #, fuzzy
 msgid "Discussion Home"
 msgstr "Arutelu kodu"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:23
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:18
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:20
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
-#: templates/404.html:19 templates/base.html:166 templates/contact-us.html:105
+#: templates/404.html:18 templates/base.html:184 templates/contact-us.html:92
 msgid "Search"
 msgstr "Otsing"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:29
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:26
 #, python-format
 msgid "Reports (%(report_count)s)"
 msgstr "Teateid (%(report_count)s)"
@@ -1530,7 +1548,7 @@ msgstr "Vastused:"
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
-#: templates/base.html:146
+#: templates/base.html:177
 msgid "Discuss"
 msgstr "Arutamine"
 
@@ -1604,28 +1622,28 @@ msgid "When you update your profile, you will be redirected back to this page."
 msgstr "Kui oled uuendanud oma profiili, suunatakse sind tagasi sellele lehele."
 
 # 97%
-#: templates/403.html:13
+#: templates/403.html:12
 #, fuzzy
 msgid "403. Oh noes! Our server is Scratch'ing its head"
 msgstr "404. Oh ei! Meie server kratsib pead"
 
-#: templates/403.html:16
+#: templates/403.html:15
 msgid ""
 "We couldn't authorize you to view this page. If you need to get in touch "
 "with us about this, send us an email at "
 msgstr ""
 
-#: templates/404.html:13
+#: templates/404.html:12
 msgid "404. Oh noes! Our server is Scratch'ing its head"
 msgstr "404. Oh ei! Meie server kratsib pead"
 
-#: templates/404.html:16
+#: templates/404.html:15
 msgid ""
 "We couldn't find the page you're looking for. Check to make sure you've "
 "typed the url correctly."
 msgstr "Me ei leia sinu poolt soovitud lehekülge. Vaata kas URL on õige."
 
-#: templates/404.html:17
+#: templates/404.html:16
 msgid "You can try searching for what you're looking for here:"
 msgstr "Sa võid proovida otsida siin:"
 
@@ -1645,184 +1663,200 @@ msgstr "Konto seaded - Scratch"
 msgid "Coming Soon..."
 msgstr "Varsti saabub ..."
 
-#: templates/base.html:19
+#: templates/base.html:18
 msgid "Scratch"
 msgstr "Scratch"
 
-#: templates/base.html:19
+#: templates/base.html:18
 msgid "Imagine, Program, Share"
 msgstr "Kujunda, programmeeri, jaga"
 
-#: templates/base.html:144
+#: templates/base.html:175
 msgid "Create"
 msgstr "Loo"
 
-#: templates/base.html:145 templates/explore/explore2.html:40
+#: templates/base.html:176 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Uuri"
 
-#: templates/base.html:147
+#: templates/base.html:178
 msgid "Help"
 msgstr "Abi"
 
-#: templates/base.html:180
-msgid "messages - updates and notices"
-msgstr "teated - uuendused ja sõnumid"
-
-#: templates/base.html:181
-msgid "my stuff - manage projects and studios"
-msgstr "minu asjad - projektide ja stuudiote haldamine"
-
-#: templates/base.html:189 templates/explore/base.html:24
-#: templates/studio/base.html:21
-msgid "My Stuff"
-msgstr "Minu asjad"
-
-#: templates/base.html:190
-msgid "Account settings"
-msgstr "Konto seaded"
-
-#: templates/base.html:191
-msgid "Sign out"
-msgstr "Logi välja"
-
 # 83%
-#: templates/base.html:202 templates/modal-registration.html:6
+#: templates/base.html:198 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Ühine Scratchiga"
 
-#: templates/base.html:205 templates/base.html.py:216 templates/base.html:226
+#: templates/base.html:201 templates/base.html.py:212 templates/base.html:222
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Logi sisse"
 
-#: templates/base.html:213 templates/modal-login.html:21
+#: templates/base.html:209 templates/modal-login.html:21
+#: templates/accounts/account_settings.html:9
+#: templates/accounts/email_change.html:9
+#: templates/accounts/deletion/confirmation.html:7
+#: templates/accounts/deletion/nostalgia.html:6
 #: templates/includes/backbone-templates.html:26
 msgid "Password"
 msgstr "Parool"
 
-#: templates/base.html:217
+#: templates/base.html:213
 msgid "Forgot password?"
 msgstr "Unustasid parooli?"
 
-#: templates/base.html:293
+#: templates/base.html:229
+msgid "messages - updates and notices"
+msgstr "teated - uuendused ja sõnumid"
+
+#: templates/base.html:230
+msgid "my stuff - manage projects and studios"
+msgstr "minu asjad - projektide ja stuudiote haldamine"
+
+#: templates/base.html:238 templates/explore/base.html:24
+#: templates/studio/base.html:21
+msgid "My Stuff"
+msgstr "Minu asjad"
+
+#: templates/base.html:239
+msgid "Account settings"
+msgstr "Konto seaded"
+
+#: templates/base.html:240
+msgid "Sign out"
+msgstr "Logi välja"
+
+#: templates/base.html:310
 msgid "About"
 msgstr "Üldinfo"
 
-#: templates/base.html:295 templates/info/about.html:13
-#: templates/info/help/index.html:93
+#: templates/base.html:312 templates/info/about.html:13
+#: templates/info/help/index.html:92
 msgid "About Scratch"
 msgstr "Scratchist"
 
-#: templates/base.html:296 templates/info/parents.html:12
+#: templates/base.html:313 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "Lapsevanematele"
 
-#: templates/base.html:297 templates/info/educators.html:12
+#: templates/base.html:314 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "Koolitajatele"
 
-#: templates/base.html:306
-msgid "Donate"
-msgstr "Donate"
+#: templates/base.html:315
+msgid "Credits"
+msgstr ""
 
-#: templates/base.html:308
+#: templates/base.html:316
 msgid "Jobs"
 msgstr "Tööd"
 
-#: templates/base.html:312 templates/info/parents.html:72
+#: templates/base.html:317
+msgid "Press"
+msgstr ""
+
+#: templates/base.html:321 templates/info/parents.html:72
 msgid "Community"
 msgstr "Kogukond"
 
-#: templates/base.html:314
+#: templates/base.html:323
 msgid "Community Guidelines"
 msgstr "Kogukonna suunised"
 
-#: templates/base.html:316 templates/info/help/index.html:114
+#: templates/base.html:325 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Scratchi Wiki"
 
-#: templates/base.html:317
+#: templates/base.html:326
 msgid "Statistics"
 msgstr ""
 
-#: templates/base.html:321 templates/search/includes/tabs.html:17
+#: templates/base.html:330 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr "Tugi"
 
-#: templates/base.html:323
+#: templates/base.html:332
 msgid "Help Page"
 msgstr ""
 
-#: templates/base.html:324
+#: templates/base.html:333
 msgid "FAQ"
 msgstr ""
 
-#: templates/base.html:325
+#: templates/base.html:334
 msgid "Offline Editor"
 msgstr ""
 
 # 90%
-#: templates/base.html:326 templates/contact-us-success.html:12
+#: templates/base.html:335 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Kontakteeru meiega"
 
-#: templates/base.html:330
+#: templates/base.html:336
+msgid "Donate"
+msgstr "Donate"
+
+#: templates/base.html:340
 msgid "Legal"
 msgstr ""
 
-#: templates/base.html:332
+#: templates/base.html:342
 msgid "Terms of Use"
 msgstr ""
 
-#: templates/base.html:333 templates/info/help/faq.html:28
+#: templates/base.html:343 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80
 msgid "Privacy Policy"
 msgstr "Privaatsuspoliitika"
 
-#: templates/base.html:334 templates/info/DMCA.html:10
+#: templates/base.html:344 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:338
+#: templates/base.html:348
 msgid "Scratch Family"
 msgstr ""
 
 # 77%
-#: templates/base.html:340
+#: templates/base.html:350
 #, fuzzy
 msgid "ScratchEd"
 msgstr "Scratch"
 
 # 77%
 # 88%
-#: templates/base.html:341
+#: templates/base.html:351
 #, fuzzy
 msgid "ScratchJr"
 msgstr "Scratchija"
 
 # 75%
-#: templates/base.html:342
+#: templates/base.html:352
 #, fuzzy
 msgid "Scratch Day"
 msgstr "Scratchi tiim"
 
-#: templates/base.html:343
+#: templates/base.html:353
 msgid "Scratch Conference"
 msgstr ""
 
-#: templates/base.html:344
+#: templates/base.html:354
 msgid "Code-to-Learn Foundation"
 msgstr ""
 
-#: templates/base.html:359
+#: templates/base.html:369
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
 "Scratch on MIT Meedialabori töögrupi <i>Lifelong Kindergarten</i> (Elukestev "
 "Lasteaed) projekt"
+
+#: templates/base.html:435
+msgid "Your Account Will Not Be Deleted"
+msgstr ""
 
 #: templates/coming-soon.html:6
 msgid "Coming Soon-  Scratch"
@@ -1847,8 +1881,8 @@ msgid ""
 msgstr ""
 "Scratchi meeskond saab suure hulga sõnumeid iga päev. Kahjuks ei ole meil "
 "aega neile kõigile vastata. Õnneks saab enamikule Scratchi kohta esitatud "
-"küsimustele leida vastused meie lehelt <a href=\"/help/faq/\">Korduma Kippuvad "
-"Küsimused</a>."
+"küsimustele leida vastused meie lehelt <a href=\"/help/faq/\">Korduma "
+"Kippuvad Küsimused</a>."
 
 #: templates/contact-us.html:88
 msgid ""
@@ -1856,28 +1890,28 @@ msgid ""
 "forums</a>:"
 msgstr "Võid proovida otsingut Scratchi <a href=\"/discuss\">foorumites</a>:"
 
-#: templates/contact-us.html:107
+#: templates/contact-us.html:94
 msgid ""
 "If you can't find an answer, post a new topic on the <a href=\"/discuss"
 "\">Discussion forums.</a> There are many experienced Scratchers who can help!"
 msgstr ""
-"Kui sa ei leia vastust, postita uus teema <a href=\"/discuss\">foorumisse</a> "
-"Seal on palju kogenud scratchijaid, kes võivad aidata!"
+"Kui sa ei leia vastust, postita uus teema <a href=\"/discuss\">foorumisse</a>"
+" Seal on palju kogenud scratchijaid, kes võivad aidata!"
 
 # 95%
-#: templates/contact-us.html:110
+#: templates/contact-us.html:97
 msgid "Questions About Scratch"
 msgstr "Küsimused Scratchi kohta"
 
-#: templates/contact-us.html:111
+#: templates/contact-us.html:98
 msgid "Help with Scripts"
 msgstr "Abiinfo skriptide kohta"
 
-#: templates/contact-us.html:112
+#: templates/contact-us.html:99
 msgid "Bugs and Glitches"
 msgstr "Vead ja tõrked"
 
-#: templates/contact-us.html:115
+#: templates/contact-us.html:102
 msgid ""
 "If you need to contact us, please choose from one of the options below. We "
 "get a lot of mail, so we may not be able to respond to your message."
@@ -1886,23 +1920,23 @@ msgstr ""
 "võimalustest. Me saame palju posti, nii et me ei jõua vastata kõikidele "
 "sõnumitele."
 
-#: templates/contact-us.html:120
+#: templates/contact-us.html:107
 msgid "Select a topic"
 msgstr "Vali teema"
 
-#: templates/contact-us.html:121
+#: templates/contact-us.html:108
 msgid "Report something inappropriate..."
 msgstr "Teata millestki kohatust..."
 
-#: templates/contact-us.html:122
+#: templates/contact-us.html:109
 msgid "Report a problem with the website..."
 msgstr "Teata probleemist veebilehega..."
 
-#: templates/contact-us.html:123
+#: templates/contact-us.html:110
 msgid "Other..."
 msgstr "Muu..."
 
-#: templates/contact-us.html:132 templates/accounts/banned-response.html:78
+#: templates/contact-us.html:119 templates/accounts/banned-response.html:78
 msgid "Send"
 msgstr "Saada"
 
@@ -2130,8 +2164,8 @@ msgid ""
 "\">respectful and friendly</a>."
 msgstr ""
 "Scratchi kogukonna liikmed on erinevas vanuses ja igast maailma paigast. "
-"Veendu, et sinu projektid ja kommentaarid on <a target=\"_blank\" "
-"href=\"/community_guidelines\">lugupidavad ja sõbralikud</a>."
+"Veendu, et sinu projektid ja kommentaarid on <a target=\"_blank\" href=\"/"
+"community_guidelines\">lugupidavad ja sõbralikud</a>."
 
 #: templates/modal-registration.html:161
 msgid "Would you like to:"
@@ -2184,6 +2218,17 @@ msgstr "Võta ühendust Scratchijatega"
 #: templates/info/help/studio/tips/howto/nametip7.html:13
 #: templates/info/help/studio/tips/howto/nametip8.html:13
 #: templates/info/help/studio/tips/howto/nametip9.html:13
+#: templates/info/help/studio/tips/howto/pgametip1.html:13
+#: templates/info/help/studio/tips/howto/pgametip10.html:13
+#: templates/info/help/studio/tips/howto/pgametip11.html:13
+#: templates/info/help/studio/tips/howto/pgametip2.html:13
+#: templates/info/help/studio/tips/howto/pgametip3.html:13
+#: templates/info/help/studio/tips/howto/pgametip4.html:13
+#: templates/info/help/studio/tips/howto/pgametip5.html:13
+#: templates/info/help/studio/tips/howto/pgametip6.html:13
+#: templates/info/help/studio/tips/howto/pgametip7.html:13
+#: templates/info/help/studio/tips/howto/pgametip8.html:13
+#: templates/info/help/studio/tips/howto/pgametip9.html:13
 #: templates/profiles/scratcher_promotion_modal.html:65
 msgid "Next"
 msgstr "Järgmine"
@@ -2285,6 +2330,19 @@ msgstr "Oleme varsti tagasi"
 msgid "Scratch Terms of Use"
 msgstr ""
 
+#: templates/accounts/account_settings.html:8
+#: templates/accounts/email_change.html:8
+#: templates/accounts/password_change_form.html:8
+#: templates/accounts/deletion/confirmation.html:6
+#: templates/accounts/deletion/nostalgia.html:5
+#, fuzzy
+msgid "Account"
+msgstr "Kontod"
+
+#: templates/accounts/account_settings.html:38
+msgid "Save my Changes"
+msgstr ""
+
 #: templates/accounts/banned-response.html:32
 msgid "The Scratch Team decided to block the account:"
 msgstr "Scratchi tiim otsustas blokeerida konto:"
@@ -2332,7 +2390,7 @@ msgstr ""
 "pärisnime ega postita oma kontaktandmeid nagu telefoninumbrid ja aadressid."
 
 #: templates/accounts/banned-response.html:62
-#: templates/info/community_guidelines.html:25
+#: templates/info/community_guidelines.html:26
 msgid ""
 "<b>Help keep the site friendly.</b> If you think a project or comment is "
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
@@ -2349,22 +2407,14 @@ msgstr "Konto seaded"
 
 # 93%
 #: templates/accounts/beta_optin.html:8
-#: templates/accounts/change_country.html:8
-#: templates/accounts/email_change.html:8
 msgid "Change password"
 msgstr "Muuda parooli"
 
 #: templates/accounts/beta_optin.html:9
-#: templates/accounts/change_country.html:9
-#: templates/accounts/email_change.html:9
-#: templates/accounts/password_change_form.html:9
 msgid "Change email"
 msgstr "Muuda meili"
 
 #: templates/accounts/beta_optin.html:10
-#: templates/accounts/change_country.html:10
-#: templates/accounts/email_change.html:10
-#: templates/accounts/password_change_form.html:10
 msgid "Change country"
 msgstr "Muuda riiki"
 
@@ -2382,7 +2432,6 @@ msgstr ""
 
 # 85%
 #: templates/accounts/beta_optin.html:33
-#: templates/accounts/change_country.html:32
 msgid "Update"
 msgstr "Uuendus"
 
@@ -2390,9 +2439,10 @@ msgstr "Uuendus"
 msgid "Change Email"
 msgstr "Muuda E-meili"
 
-#: templates/accounts/password_change_form.html:8
-msgid "Change password "
-msgstr "Muuda parooli "
+#: templates/accounts/password_change_form.html:9
+#, fuzzy
+msgid "Password "
+msgstr "Parool"
 
 #: templates/accounts/password_change_form.html:16
 msgid "After changing your password, you will be prompted to log back in."
@@ -2402,6 +2452,72 @@ msgstr "Peale parooli muutmist pakutakse sulle uuesti sisselogimise võimalust."
 msgid "Change Password"
 msgstr "Parooli muutmine"
 
+#: templates/accounts/deletion/confirmation.html:12
+#: templates/accounts/deletion/nostalgia.html:11
+msgid "Delete my account"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:15
+msgid "Whoops, go back"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:17
+#, fuzzy
+msgid "Are you sure you want to delete your account?"
+msgstr "Kas oled kindel, et soovid kustutada selle postituse?"
+
+#: templates/accounts/deletion/nostalgia.html:22
+#, python-format
+msgid "You joined the Scratch community %(years_ago)s years ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:24
+msgid "You joined the Scratch community a year ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:26
+#, python-format
+msgid "You joined the Scratch community %(months_ago)s months ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:28
+msgid "You joined the Scratch community a month ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:33
+#, python-format
+msgid ""
+"You've created %(num_projects)s projects and have %(num_followers)s "
+"followers."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:41
+msgid "Some of your projects"
+msgstr ""
+
+# 92%
+#: templates/accounts/deletion/nostalgia.html:42
+#, fuzzy
+msgid "Your projects"
+msgstr "Enamik projekte"
+
+#: templates/accounts/deletion/nostalgia.html:63
+msgid "Some of your followers"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:64
+#, fuzzy
+msgid "Your followers"
+msgstr "Enim jälgitud"
+
+#: templates/accounts/deletion/nostalgia.html:81
+msgid "Yes, next step"
+msgstr ""
+
+#: templates/accounts/deletion/includes/deletion_form.html:15
+msgid "Delete account &amp; Sign out"
+msgstr ""
+
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
 #: templates/carousel/carousel.html:18 templates/homepage/index.html:83
@@ -2410,8 +2526,8 @@ msgstr "Parooli muutmine"
 #: templates/profiles/profile_detail.html:270
 #: templates/profiles/profile_detail.html:290
 #: templates/profiles/profile_detail.html:310
-#: templates/profiles/profile_detail.html:347 templates/projects/base.html:353
-#: templates/projects/base.html.py:383 templates/search/search.html:58
+#: templates/profiles/profile_detail.html:347 templates/projects/base.html:357
+#: templates/projects/base.html.py:387 templates/search/search.html:58
 #: templates/search/search.html.py:88 templates/search/search.html:96
 msgid "View all"
 msgstr "Vaata kõiki"
@@ -2421,6 +2537,7 @@ msgid "No items"
 msgstr "Andmeid ei ole"
 
 #: templates/carousel/includes/project-thumb.html:23
+#: templates/galleries/includes/project-thumb.html:23
 msgid "in"
 msgstr "stuudios"
 
@@ -2456,8 +2573,8 @@ msgid ""
 "                            Make sure your comments are friendly and "
 "respectful."
 msgstr ""
-"Pea meeles, et selle projekti autor võib olla programmeerimises alles "
-"algaja.\n"
+"Pea meeles, et selle projekti autor võib olla programmeerimises alles algaja."
+"\n"
 "Veendu, et sinu kommentaarid on sõbralikud ja lugupidavad."
 
 # 96%
@@ -2610,7 +2727,7 @@ msgid "Projects"
 msgstr "Projektid"
 
 #: templates/explore/projects.html:101 templates/explore/studios.html:86
-#: templates/projects/base.html:382
+#: templates/projects/base.html:386
 #: templates/projects/includes/shared/shared-project-actions.html:5
 #: templates/search/search.html:64 templates/search/search.html.py:87
 #: templates/search/includes/tabs.html:11
@@ -3003,7 +3120,7 @@ msgid "Loves"
 msgstr "Armastab"
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:352 templates/projects/remixes.html:3
+#: templates/projects/base.html:356 templates/projects/remixes.html:3
 #: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
@@ -3054,8 +3171,8 @@ msgstr ""
 "Hinnates, kas Scratchi kasutaja on rikkunud sinu autoriõigusi, arvesta "
 "palun, et Scratch on haridus- ja mittetulunduslik algatus, mille eesmärk on "
 "edendada noorte haridust, pakkudes vahendeid õppimiseks ja eneseväljenduseks "
-"digitehnoloogia vahendusel. Please also keep in mind the “Fair Use” "
-"doctrine incorporated into the Copyright Act of 1976, 17 U.S.C. § 107."
+"digitehnoloogia vahendusel. Please also keep in mind the “Fair Use” doctrine "
+"incorporated into the Copyright Act of 1976, 17 U.S.C. § 107."
 
 #: templates/info/DMCA.html:24
 msgid ""
@@ -3144,8 +3261,8 @@ msgstr ""
 "Scratch on kasutusel rohkem kui 150 erinevas riigis ning saadaval rohkem kui "
 "40 keeles. Vali keel komboboksist lehekülje allservas või klõpsa gloobust "
 "projektiredaktori ülaosas. Tõlgete lisamiseks ja parandamiseks vaata \n"
-" <a href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scratch\">tõlkimi"
-"ne</a>."
+" <a href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scratch\""
+">tõlkimine</a>."
 
 #: templates/info/about.html:46
 msgid "Quotes"
@@ -3182,7 +3299,7 @@ msgstr ""
 "    <li><a href=\"/info/credits/\">Scratch Credits</a></li>\n"
 "    "
 
-#: templates/info/about.html:70
+#: templates/info/about.html:70 templates/info/hoc2014.html:57
 msgid "Learn to Code, Code to Learn"
 msgstr "<i>Learn to Code, Code to Learn</i>"
 
@@ -3209,15 +3326,9 @@ msgid ""
 "  Students are learning with Scratch at all levels (from elementary school "
 "to college) and across disciplines (such as math, computer science, language "
 "arts, social studies). Educators share stories, exchange resources, ask "
-"questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+"questions, and find people on the <a href=\"http://scratched.gse.harvard.edu/"
 "\">ScratchEd website</a>.\n"
 msgstr ""
-"\n"
-"Scratchi abil saab õpetada igas vanuses õpilasi (alates algkoolist kuni "
-"ülikoolini) erinevates valdkondades (nt matemaatika, informaatika, keeled, "
-"ühiskonnaõpetus). Õpetajad jagavad omavahel lugusid, vahetavad kogemusi, "
-"esitavad küsimusi ja leiavad inimesi <a "
-"href=\"http://scratched.media.mit.edu/\">veebilehel ScratchEd</a>.\n"
 
 #: templates/info/about.html:84
 msgid "Research"
@@ -3230,12 +3341,12 @@ msgid ""
 "edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). "
 "Find out more about <a href=\"/info/research\">Scratch research</a> and <a "
 "href=\"/statistics\">statistics about Scratch</a>.\n"
-msgstr "MIT Scratchi tiim ja selle kaastöötajad uurivad, kuidas inimesed Scratchi "
-"kasutavad ja selle abil õpivad. (sissejuhatuseks vaata <a "
-"href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: "
-"programmeerimine kõigile</a>). Rohkem infot leiad <a "
-"href=\"/info/research\">Scratch uuringud</a> ja <a href=\"/statistics\">Scratchi "
-"statistika</a>.\n"
+msgstr ""
+"MIT Scratchi tiim ja selle kaastöötajad uurivad, kuidas inimesed Scratchi "
+"kasutavad ja selle abil õpivad. (sissejuhatuseks vaata <a href=\""
+"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: "
+"programmeerimine kõigile</a>). Rohkem infot leiad <a href=\"/info/research\">"
+"Scratch uuringud</a> ja <a href=\"/statistics\">Scratchi statistika</a>.\n"
 
 #: templates/info/about.html:90
 msgid "Support and Funding"
@@ -3248,17 +3359,10 @@ msgid ""
 "the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
 "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
 "Learn Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab "
-"research consortia. If you'd like to support Scratch, please see our <a href="
-"\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
+"research consortia. If you'd like to support Scratch, please see our \n"
+"<a href=\"https://secure.donationpay.org/codetolearn/\">donate page</a>, or "
+"contact us at donate@scratch.mit.edu.\n"
 msgstr ""
-"\n"
-"Scratch projekti alustati aastal 2003, seda toetasid suuremeelselt National "
-"Science Foundation (grandid 0325828, 1002713, 1027848, 1019396), Inteli "
-"Sihtasutus, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-Learn "
-"Foundation, Google, Dell, Fastly, Inversoft ja MIT Meedia Lab teadustöö "
-"konsortsiumid. Kui soovid Scratchi toetada, vaata palun meie <a "
-"href=\"/info/donate\">annetuslehte</a>, või võta meiega ühendust aadressil "
-"donate@scratch.mit.edu.\n"
 
 #: templates/info/characterscamp.html:9 templates/info/characterscamp.html:16
 msgid "Creative Characters Camp"
@@ -3280,23 +3384,32 @@ msgid ""
 "you like about it and offer suggestions."
 msgstr ""
 
-#: templates/info/community_guidelines.html:28
+#: templates/info/community_guidelines.html:25
+msgid ""
+"<b>Be honest.</b> Don’t try to impersonate other Scratchers, spread rumors, "
+"or otherwise try to trick the community."
+msgstr ""
+
+#: templates/info/community_guidelines.html:29
 msgid ""
 "Scratch welcomes people of all ages, races, ethnicities, religions, sexual "
 "orientations, and gender identities."
 msgstr ""
 
-#: templates/info/credits.html:96
+# 75%
+#: templates/info/credits.html:94
+msgid "Scratch Credits"
+msgstr "Scratchi tooted"
+
+#: templates/info/credits.html:98
 msgid "Scratch Credits and Contributors"
 msgstr "Scratchi autorid ja toetajad"
 
+# 75%
 #: templates/info/credits.html:101
-msgid "Meet the Scratch Team"
-msgstr "Tutvu Scratchi meeskonnaga"
-
-#: templates/info/credits.html:187
-msgid "Community and Moderation"
-msgstr "Kogukond ja modereerimine"
+#, fuzzy
+msgid "MIT Scratch Team"
+msgstr "Scratchi tiim"
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
@@ -3310,43 +3423,27 @@ msgid ""
 "educational and computer science researchers, librarians, museum educators, "
 "and parents.<br/><br/>\n"
 "Want to learn more about learning with Scratch?<br/>Check out the <a href="
-"\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+"\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd online "
+"community</a>.\n"
 "    "
 msgstr ""
-"Scratch on loodud õppimise ja hariduse jaoks. Suur hulk koolitajaid on "
-"toetanud Scratch loojaid nii ametlikes kui mitteametlikes õppekeskkondades "
-"alates aastast 2007 &ndash; K-12 klasside õpetajad, haridus- ja "
-"infotehnoloogiateadlased, raamatukogu- ja muuseumitöötajad ning "
-"lapsevanemad.<br/>\n"
-"Tahad rohkem teada Scratchi abil õppimisest? <br/>Vaata <a href=\"http"
-"://scratch-ed.org\" target=\"_blank\">ScratchEd online-kogukond</a>.\n"
-"    "
 
 #: templates/info/educators.html:26
 msgid ""
 "\n"
 " <h3>What is ScratchEd?</h3>\n"
-"\t      <p>Launched in July 2009, <a href=\"http://scratch-ed.org\" target="
-"\"_blank\">ScratchEd</a> is an online community where Scratch educators "
-"share stories, exchange resources, ask questions, and find people.</p>\n"
+"\t      <p>Launched in July 2009, <a href=\"http://scratched.gse.harvard.edu"
+"\" target=\"_blank\">ScratchEd</a> is an online community where Scratch "
+"educators share stories, exchange resources, ask questions, and find people."
+"</p>\n"
 "\t      <p>Since its launch, more than 7500 educators from all around the "
 "world have joined the community, sharing hundreds of resources and engaging "
 "in thousands of discussions.</p>\n"
-"\t      <p>Join the ScratchEd community for free at <a href=\"http://scratch-"
-"ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+"\t      <p>Join the ScratchEd community for free at <a href=\"http://"
+"scratched.gse.harvard.edu\" target=\"_blank\">scratched.gse.harvard.edu</a>."
+"<p>\n"
 "\t      "
 msgstr ""
-"\n"
-"<h3>Mis on ScratchEd?</h3> \n"
-"\t<p>Käivitati juulis 2009. <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a> on kogukond, kus Scratchi koolitajad jagavad "
-"edulugusid, vahetavad kogemusi, esitavad küsimusi ning leiavad "
-"mõttekaaslasi.</p> \n"
-"\t<p> Alates käivitamisest on kogukonnga liitunud üle 7500 koolitaja üle kogu "
-"maailma jagades sadu ressursse ning käivitades tuhandeid arutelusid.</p> \n"
-"\t<p> Liitumine Scratchi kogukonnaga on tasuta <a href=\"http://scratch-"
-"ed.org\" target=\"_blank\">scratch-ed.org</a>. <p> \n"
-"\t"
 
 #: templates/info/educators.html:32
 msgid ""
@@ -3354,52 +3451,27 @@ msgid ""
 "\t      <h3>How can I learn more about what educators are doing with Scratch "
 "&ndash; and how I might use it?</h3>\n"
 "\t      <p>Not sure what might be possible with Scratch?</p>\n"
-"\t      <p><a href=\"http://scratched.media.mit.edu/stories\" target=\"_blank"
-"\">Read a story</a> about how educators have been including Scratch "
+"\t      <p><a href=\"http://scratched.gse.harvard.edu/stories\" target="
+"\"_blank\">Read a story</a> about how educators have been including Scratch "
 "activities in a wide range of learning environments.</a></p>\n"
-"\t      <p>Or <a href=\"http://scratched.media.mit.edu/resources/all\" "
+"\t      <p>Or <a href=\"http://scratched.gse.harvard.edu/resources/all\" "
 "target=\"_blank\">explore resources</a> across ages, disciplines, and "
-"settings. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+"settings. <a href=\"http://scratched.gse.harvard.edu/resources/new-scratch\" "
 "target=\"_blank\">Watch webinars</a> and review documents like the <a href="
-"\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-draft\" "
-"target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
-"\t      <p>In addition to exploring the <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a> online community and its resources, you can "
-"engage with the ScratchEd Team and other Scratch educators via <a href="
-"\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a href="
-"\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
-"<a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>"
-"\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/"
-"scratched-weekly-roundup\" target=\"_blank>\">weekly roundups</a>, and our "
-"<a href=\"http://scratched.media.mit.edu/events\" target=\"_blank>"
-"\">quarterly newsletter</a>.<p>\n"
+"\"http://scratched.gse.harvard.edu/resources/scratch-curriculum-guide-draft"
+"\" target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
+"\t      <p>In addition to exploring the <a href=\"http://scratched.gse."
+"harvard.edu\" target=\"_blank\">ScratchEd</a> online community and its "
+"resources, you can engage with the ScratchEd Team and other Scratch "
+"educators via <a href=\"http://twitter.com/scratchedteam\" target=\"_blank>"
+"\">Twitter</a>, <a href=\"http://www.facebook.com/ScratchEdTeam\" target="
+"\"_blank>\">Facebook</a>, <a href=\"http://www.edmodo.com/publisher/"
+"scratcheducation\" target=\"_blank>\">Edmodo</a>, <a href=\"http://scratched."
+"gse.harvard.edu/discussions/scratched-weekly-roundup\" target=\"_blank>"
+"\">weekly roundups</a>, and our <a href=\"http://scratched.gse.harvard.edu/"
+"events\" target=\"_blank>\">quarterly newsletter</a>.<p>\n"
 "\t      "
 msgstr ""
-"\n"
-"\t<h3> Kuidas saada rohkem infot selle kohta, mida õpetajad teevad Scratchga "
-"ja kuidas seda kasutada?</h3>\n"
-"\t       <p>Sa ei tea, mida saab teha Scratchiga?</p>\n"
-"\t       <p><a href=\"http://scratched.media.mit.edu/stories\" "
-"target=\"_blank\">Loe edulugu</a>, kuidas koolitajad kasutavad Scratchi "
-"erinevates õpikeskkondades.</a> </p>\n"
-"\t       <p> Või <a href=\"http://scratched.media.mit.edu/resources/all\" "
-"target=\"_blank\">uuri vahendeid</a> üle aegade, valdkondade ja seadete.<a "
-"href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
-"target=\"_blank\">Vaata veebilehti</a> ja dokumente, näiteks <a "
-"href=\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-"
-"draft\" target =\"_blank \">Scratchi õppekava</a>.</p>\n"
-"\t       <p> Avastades <a href=\"http://scratch-ed.org\" target=\"_blank\"> "
-"ScratchEd </a> kogukonda ja selle võimalusi, võid osaleda koos Scratchi "
-"tiimi ja teiste Scratchi kooitajatega keskkondades <a "
-"href=\"http://twitter.com/scratchedteam\" target=\"_blank> \"> Twitter </a> <a "
-"href =\" http://www.facebook.com/ScratchEdTeam \"target = "
-"\"_blank>\">Facebook</a>, <a "
-"href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank> "
-"\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/scratched-"
-"weekly-roundup\" target=\"_blank>\">weekly roundups</a> ja meie <a "
-"href=\"http://scratched.media.mit.edu/events\" target=\"_blank>\">quarterly "
-"newsletter</a>.<p>\n"
-"\t"
 
 # 83%
 #: templates/info/educators.html:44
@@ -3486,9 +3558,9 @@ msgstr ""
 "<b>NOTE:</b> See esialgne 'browser plugin' versioon on beta-testimiseks ja "
 "toimib praegu vaid Windows'is ja Mac OS X-s.\n"
 "</p><p>\n"
-"Proovi seda, lae alla installeerimisfailid <a href=\"%"
-"(STATIC_URL)sext/ScratchDevicePlugin.dmg\">Mac</a> või <a href=\"%"
-"(STATIC_URL)sext/ScratchDevicePlugin.msi\">Windows</a> jaoks.\n"
+"Proovi seda, lae alla installeerimisfailid <a href=\""
+"%(STATIC_URL)sext/ScratchDevicePlugin.dmg\">Mac</a> või <a href=\""
+"%(STATIC_URL)sext/ScratchDevicePlugin.msi\">Windows</a> jaoks.\n"
 "</p><p>\n"
 "WeDo plokkide kasutamiseks käivita oma brauser uuesti. Scrachi editori aknas "
 "klõpsa käsugrupil \"Lisaplokid\" <strong>Shift-klahvi all hoides</strong>. "
@@ -3499,7 +3571,8 @@ msgstr ""
 "gkäsugruppi.\n"
 "</p><p>\n"
 "Kui Scratchi 'browser plugin' on korralikult installeeritud, peaksid sa "
-"nägema rohelist või kollast olekuindikaatorit \"WeDo\" päise paremas servas.\n"
+"nägema rohelist või kollast olekuindikaatorit \"WeDo\" päise paremas servas."
+"\n"
 "</p><p>Kui lülitad WeDo pistiku oma arvuti USB porti, peaks olekuindikaator "
 "muutuma roheliseks. \n"
 "Nüüd peaksid sa saama kasutada mootori plokke (kui mootor on ühendatud to "
@@ -3511,6 +3584,52 @@ msgstr ""
 "           </p><p>\n"
 "           Please check back on this page for future updates!\n"
 "                 "
+
+#: templates/info/hoc2014.html:4 templates/info/hoc2014.html.py:10
+msgid "Get Creative with Coding"
+msgstr ""
+
+#: templates/info/hoc2014.html:35
+msgid "Create one of these projects with Scratch!"
+msgstr ""
+
+#: templates/info/hoc2014.html:38
+msgid ""
+"\n"
+"          With <a href=\"http://scratch.mit.edu/about\">Scratch</a>, you can "
+"program your own stories, games, and animations  &mdash; and share them "
+"online.\n"
+"          "
+msgstr ""
+
+#: templates/info/hoc2014.html:48
+msgid "Scratch: Imagine, Program, Share"
+msgstr ""
+
+#: templates/info/hoc2014.html:51
+msgid ""
+"\n"
+"    \tMillions of young people around the world create projects with "
+"Scratch, a free programming language and <a href=\"http://scratch.mit.edu"
+"\">online community</a> developed by the MIT Media Lab.\n"
+msgstr ""
+
+#: templates/info/hoc2014.html:60
+msgid ""
+"When people learn to code in Scratch, they learn important strategies for "
+"solving problems, designing projects, and communicating ideas."
+msgstr ""
+
+#: templates/info/hoc2014.html:64
+msgid ""
+"\n"
+"          The <strong>Hour of Code</strong>&#8482; is a nationwide "
+"initiative by <a href=\"http://csedweek.org\">Computer Science Education "
+"Week</a> and <a href=\"http://code.org\">Code.org</a><br />\n"
+"          to introduce millions of students to one hour of computer science "
+"and computer programming.\n"
+"          "
+msgstr ""
 
 #: templates/info/overview.html:4
 msgid "What's New in 2.0? - Scratch"
@@ -3527,8 +3646,7 @@ msgid ""
 "process."
 msgstr ""
 "Tere tulemast uue põlvkonna Scratchi. Scratch 2.0-ga saad luua uut tüüpi "
-"projekte, teha uutmoodi koostööd ning õppida seejuures uusi asju ja "
-"tegevusi."
+"projekte, teha uutmoodi koostööd ning õppida seejuures uusi asju ja tegevusi."
 
 #: templates/info/overview.html:21
 msgid ""
@@ -3536,8 +3654,8 @@ msgid ""
 "web browser. (You no longer have to download or upload projects or install "
 "any software.)"
 msgstr ""
-"Scratch 2.0 võimaldab luua, muuta ja vaadata projekte otse veebilehitsejas. "
-"(Pole vaja laadida alla ja üles projekte või installeerida tarkvara.)"
+"Scratch 2.0 võimaldab luua, muuta ja vaadata projekte otse veebilehitsejas. ("
+"Pole vaja laadida alla ja üles projekte või installeerida tarkvara.)"
 
 #: templates/info/overview.html:23
 msgid "Here are some of the new features in Scratch 2.0."
@@ -3618,8 +3736,8 @@ msgid ""
 "You can see and manage all your projects in <b>My Stuff</b> <img src="
 "\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
 msgstr ""
-"Võid näha ja hallata kõiki oma projekte kasuades <b>Minu Asjad</b> <img "
-"src=\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
+"Võid näha ja hallata kõiki oma projekte kasuades <b>Minu Asjad</b> <img src="
+"\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
 
 #: templates/info/overview.html:60
 msgid "Community Features"
@@ -3639,9 +3757,8 @@ msgid ""
 "When viewing a project, click <img src=\"%(STATIC_URL)s/images/help/see-"
 "inside-small.png\" /> to see how it works and experiment with the code."
 msgstr ""
-"Projektivaates klõpsa <img src=\"%(STATIC_URL)s/images/help/see-inside-"
-"small.png\" />, et näha, kuidas projekt on loodud, ja koodi "
-"modifitseerimiseks."
+"Projektivaates klõpsa <img src=\"%(STATIC_URL)s/images/help/see-inside-small."
+"png\" />, et näha, kuidas projekt on loodud, ja koodi modifitseerimiseks."
 
 #: templates/info/overview.html:68
 #, python-format
@@ -3681,8 +3798,8 @@ msgid ""
 "People can post comments on your Profile page and <img src=\"%(STATIC_URL)s/"
 "images/help/follow-button.png\" /> your Scratch account to see updates."
 msgstr ""
-"Inimesed saavad postitada sinu profiili lehele kommentaare ja <img src=\"%"
-"(STATIC_URL)s/images/help/follow-button.png\" /> sinu Scratchi kontot, et "
+"Inimesed saavad postitada sinu profiili lehele kommentaare ja <img src=\""
+"%(STATIC_URL)s/images/help/follow-button.png\" /> sinu Scratchi kontot, et "
 "näha uuendusi."
 
 #: templates/info/overview.html:78
@@ -3731,10 +3848,10 @@ msgid ""
 "MIT Media Lab. "
 msgstr ""
 "Scratch on programmeerimiskeel ja ühtlasi online-kogukond, mille abil saavad "
-"noored programmeerida ja jagada oma loomingut (lugusid, mänge ja "
-"animatsione) inimestega üle kogu maailma. Scratchiga tegeledes õpivad lapsed "
-"loovat mõtlemist, süsteemset lähenemist ja koostööd. Scratchi looja ja "
-"arendaja on MIT Meedialabori Lifelong Kindergarten Grupp."
+"noored programmeerida ja jagada oma loomingut (lugusid, mänge ja animatsione)"
+" inimestega üle kogu maailma. Scratchiga tegeledes õpivad lapsed loovat "
+"mõtlemist, süsteemset lähenemist ja koostööd. Scratchi looja ja arendaja on "
+"MIT Meedialabori Lifelong Kindergarten Grupp."
 
 #: templates/info/parents.html:24
 msgid "What is the age range for Scratch?"
@@ -3763,13 +3880,12 @@ msgid ""
 "\">Scratch Cards</a> provide a fun way to learn more. For an overview of "
 "Scratch resources, see <a href=\"/help/\">Scratch Help</a>."
 msgstr ""
-"Kui Sa oled päris algaja, on Scratchis olemas <a "
-"href=\"/projects/editor/?tip_bar=getStarted\">samm-sammuline juhend</a> või "
-"lae alla <a href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-"
-"Scratch2.pdf\">Getting Started guide (PDF)</a>. <a "
-"href=\"/help/cards/\">Scratch Cards</a> pakub õppimiseks lõbusaid võimalusi. "
-"Scratchi võimalustest ülevaate saamiseks vaata <a href=\"/help/\">Scratch "
-"Help</a>."
+"Kui Sa oled päris algaja, on Scratchis olemas <a href=\""
+"/projects/editor/?tip_bar=getStarted\">samm-sammuline juhend</a> või lae "
+"alla <a href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-Scratch2.pdf\">"
+"Getting Started guide (PDF)</a>. <a href=\"/help/cards/\">Scratch Cards</a> "
+"pakub õppimiseks lõbusaid võimalusi. Scratchi võimalustest ülevaate "
+"saamiseks vaata <a href=\"/help/\">Scratch Help</a>."
 
 #: templates/info/parents.html:34
 msgid "What is the Scratch online community?"
@@ -3818,8 +3934,8 @@ msgid ""
 msgstr ""
 "Laste privaatsuse kaitsmiseks piirame me andmete kogumist registreerimisel "
 "ja avalikustatavat infot veebilehel. Me ei müü ega rendi konto andmeid "
-"kellelegi. Meie privaatsuspoliitika kohta leiad rohkem infot <a "
-"href=\"/help/faq/#privacy\">korduma kippuvate küsimuste</a> lehel ."
+"kellelegi. Meie privaatsuspoliitika kohta leiad rohkem infot <a href=\""
+"/help/faq/#privacy\">korduma kippuvate küsimuste</a> lehel ."
 
 #: templates/info/parents.html:48
 msgid "Is there a way to use Scratch without participating online?"
@@ -3888,8 +4004,8 @@ msgid ""
 "father and son time. This is just incredible. Just a big thanks to you and "
 "MIT.\""
 msgstr ""
-"\"<b>My son is learning more than I can imagine from your tool.</b> He is not "
-"a natural logical thinker but loves LEGO. Your LEGO-like building block "
+"\"<b>My son is learning more than I can imagine from your tool.</b> He is "
+"not a natural logical thinker but loves LEGO. Your LEGO-like building block "
 "structure has moved him forward by light-years in his logical thinking "
 "skills...He can snap things together and begin to see the logic reinforced "
 "by immediate feedback. Of course we work on some things together--instant "
@@ -3907,8 +4023,8 @@ msgid ""
 "Scratch</a>."
 msgstr ""
 "Üheleheküljeline ülevaade sellest, mida noored Scratchis õpivad. Vaata <a "
-"href=\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Õpime koos "
-"Scratchiga </a>."
+"href=\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Õpime "
+"koos Scratchiga </a>."
 
 #: templates/info/parents.html:66
 msgid ""
@@ -3924,8 +4040,8 @@ msgid ""
 "We ask all participants on the site to follow the <a href=\"/"
 "community_guidelines\">Community Guidelines</a>."
 msgstr ""
-"Me palume kõigil osalejatel jälgida <a "
-"href=\"/community_guidelines\">Kogukonna juhiseid</a>."
+"Me palume kõigil osalejatel jälgida <a href=\"/community_guidelines\">"
+"Kogukonna juhiseid</a>."
 
 #: templates/info/parents.html:75
 msgid ""
@@ -3933,10 +4049,10 @@ msgid ""
 "information, please see the <a href=\"/help/faq/#privacy\">Privacy Policy</"
 "a>."
 msgstr ""
-"Me ei avalda konto andmed kellelegi. Lisateavet leiad <a "
-"href=\"/help/faq/#privacy\">Privaatsuspoliitika</a>."
+"Me ei avalda konto andmed kellelegi. Lisateavet leiad <a href=\"/help/faq/#"
+"privacy\">Privaatsuspoliitika</a>."
 
-#: templates/info/parents.html:81 templates/info/help/index.html:98
+#: templates/info/parents.html:81 templates/info/help/index.html:97
 msgid "Questions?"
 msgstr "Küsimused?"
 
@@ -3983,11 +4099,11 @@ msgid ""
 msgstr ""
 "Mulle meelib Scratch rohkem kui blogid ja sotsiaalvõrgustikud nagu Facebook, "
 "sest \n"
-"\t me loome huvitavaid mänge ja projekte, mida on vahva mängida, vaadata ning "
-"alla laadida. \n"
+"\t me loome huvitavaid mänge ja projekte, mida on vahva mängida, vaadata "
+"ning alla laadida. \n"
 "\t Mulle ei meeldi inimestega internetis lihtsalt niisama rääkida, ma tahan "
-"nendega rääkida milleski uuest ja loomingulisest.<span "
-"class=\"quotes\">&rdquo;</span> - 13-aastane </p>\n"
+"nendega rääkida milleski uuest ja loomingulisest.<span class=\"quotes\""
+">&rdquo;</span> - 13-aastane </p>\n"
 
 #: templates/info/quotes.html:26
 msgid ""
@@ -4002,8 +4118,8 @@ msgstr ""
 "aktiivsed Scratchi kogukonna liikmed juba üle aasta.\n"
 "Mulle meeldib mängude ja animatsioonide disainimine ning programmeerimine "
 "koos teiste lastega, sest erinevatel inimestel on erinevad oskused. \n"
-"Koostöös suudame luua palju parema projekti kui üksi töötades.<span "
-"class=\"quotes\">&rdquo;</span> - 13-aastane"
+"Koostöös suudame luua palju parema projekti kui üksi töötades.<span class=\""
+"quotes\">&rdquo;</span> - 13-aastane"
 
 #: templates/info/quotes.html:30
 msgid ""
@@ -4021,8 +4137,8 @@ msgstr ""
 "kuid ma ei tahaks kasutada tõeliselt keerulist programmeerimiskeelt. Alguses "
 "tundus isegi Scratch raske, kuid sellega mõnda aega tegeledes olen valmis "
 "saanud mõned hämmastavad mängud. Ja võimalus projekte nii lihtsalt teistega "
-"jagada teeb selle veel paremaks. Scratch on vaimustav!<span "
-"class=\"quotes\">&rdquo;</span>\n"
+"jagada teeb selle veel paremaks. Scratch on vaimustav!<span class=\"quotes\""
+">&rdquo;</span>\n"
 "  - 17-aastane "
 
 #: templates/info/quotes.html:36
@@ -4045,60 +4161,49 @@ msgid "Research on Scratch"
 msgstr "Uurimustööd Scratchi kohta"
 
 #: templates/info/research.html:21
-#, python-format
 msgid ""
-"<p>Scratch team members from the MIT Media Lab <a href=\"http://llk.media."
-"mit.edu\">Lifelong Kindergarten Group</a> and at the University of "
-"Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
-"Education</a> are researching how people use and learn from Scratch.<br />\n"
-"<br />\n"
+"\n"
+"\tResearch on Scratch is being conducted by members of the MIT Scratch Team "
+"and researchers at other universities, including Yasmin Kafai at the "
+"University of Pennsylvania Graduate School of Education, Karen Brennan at "
+"the Harvard Graduate School of Education, \n"
+"Benjamin Mako Hill at the University of Washington, Andrés Monroy Hernandez "
+"at Microsoft Research, Mimi Ito and Crystle Martin at the University of "
+"California, Irvine, Quinn Burke at College of Charleston, Deborah Fields at "
+"Utah State University, and Kylie Peppler at Indiana University. "
+msgstr ""
+
+#: templates/info/research.html:24
+msgid ""
 "By sharing projects and participating in the Scratch online community, you "
 "are helping us better understand how people can use and \n"
-"learn with Scratch.&nbsp;Any publicly shared&nbsp;projects, comments, or "
-"other material on the Scratch site may be included\n"
+"learn with Scratch. Any publicly shared projects, comments, or other "
+"material on the Scratch site may be included\n"
 "in the research analysis, presentations, papers, and reports. No personally "
-"identifiable information is shared. \n"
-"(If you have any questions, please use the <a href=\"%(contact_us_url)s"
-"\">Contact Us</a> form.)</p>\n"
-"<p>The following are research papers, presentations, and <a href=\"#theses"
-"\">dissertations and theses</a> that share our findings about Scratch and "
-"the Scratch online community. This list also includes some papers conducted "
-"on Scratch by other researchers. For magazines and other articles, see <a "
-"href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch in the "
-"News</a>.</p>"
+"identifiable information is shared. "
 msgstr ""
-"<p>Scratchi meeskond MIT Media Lab <a "
-"href=\"http://llk.media.mit.edu\">Lifelong Kindergarten Group</a> ja "
-"Pennsylvania Ülikooli <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
-"Education</a> uurivad, kuidas inimesed Scratchi kasutavad ja selle abil "
-"õpivad.<br />\n"
-"<br />\n"
-"Oma projekte jagades ja osaledes Scratchi online-kogukonnas, aitad sa meil "
-"paremini mõista, kuidas inimesed Scratchi kasutavad ja selle abil õpivad. \n"
-"Iga jagatud projekt, kommentaar või muu materjal Scratchi veebilehel võib "
-"olla lisatud uurimustööle, analüüsile, esitlusele, artiklile, aruandele. "
-"Kunagi ei jagata infot, mis võimaldaks tuvastada konkreetset isikut. \n"
-"(Kui sul on küsimusi, kasutata meie <a href=\"%(contact_us_url)s\">võta "
-"ühendust</a> vormi.)</p>\n"
-"<p>Järgnevalt on toodud urimused, esitlused, <a href=\"#theses\">väitekirjad "
-"ja teesid</a>, kus on analüüside tulemused Scratchi ja Scratchi online-"
-"kogukonna kohta. Selles loetelus on ka teiste teadlaste uurimistööde "
-"tulemusi Scratchi kohta. Ajakirjade ja teiste artklite kohta vaata <a "
-"href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
-"uudistes</a>.</p>"
+
+#: templates/info/research.html:27
+#, python-format
+msgid ""
+" (If you have any questions, please use the <a href=\"%(contact_us_url)s"
+"\">Contact Us</a> form.)"
+msgstr ""
 
 #: templates/info/research.html:28
-#, fuzzy
-msgid "Academic Publications &amp; Presentations"
-msgstr "Akadeemiliste publikatsioonie esitlused"
+msgid ""
+"Below are selected research papers, presentations, and theses on Scratch and "
+"the Scratch online community, followed by a list of National Science "
+"Foundation grants awarded to support Scratch."
+msgstr ""
 
-#: templates/info/research.html:73
-msgid "Dissertations and Theses"
-msgstr "Väitekirjad"
+#: templates/info/research.html:30
+msgid "Research Papers &amp; Presentations"
+msgstr ""
 
-#: templates/info/research.html:86
-msgid "Academic Publications by Other Researchers and Educators"
-msgstr "Teiste teadlaste ja haridustöötajate akadeemilised publikatsioonid"
+#: templates/info/research.html:81
+msgid "National Science Foundation Grants"
+msgstr ""
 
 # 81%
 #: templates/info/scratch2download.html:19
@@ -4156,17 +4261,17 @@ msgid ""
 "step2.png\" alt=\"Step 2\">\n"
 "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a> <br>\n"
-"\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
-"static/sa/Scratch.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-428a.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
+"\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
+"static/sa/Scratch-428a.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+"offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a> <br>\n"
+"sa/Scratch-428a.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
-"Scratch.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a>\n"
+"Scratch-428a.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"editor/download.png\" alt=\"Download \"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
@@ -4189,9 +4294,9 @@ msgid ""
 "\t\t\t\t   Getting Started Guide - <a href=\"%(STATIC_URL)spdfs/help/Getting-"
 "Started-Guide-Scratch2.pdf\">Download<img src=\"%(STATIC_URL)simages/help/"
 "offline-editor/pdf.png\" alt=\"PDF Download \"></a> <br>\n"
-"\t\t\t\t   Scratch Cards - <a href=\"%(STATIC_URL)spdfs/help/"
-"Scratch2Cards_Jan2013.pdf\">Download<img src=\"%(STATIC_URL)simages/help/"
-"offline-editor/pdf.png\" alt=\"PDF Download \"></a>\n"
+"\t\t\t\t   Scratch Cards - <a href=\"%(STATIC_URL)spdfs/help/Scratch2Cards."
+"pdf\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" "
+"alt=\"PDF Download \"></a>\n"
 "\t\t\t\t</p>\t\n"
 "\t\t\t\t"
 msgstr ""
@@ -4227,8 +4332,9 @@ msgid ""
 "For network deployments, use the <a href=\"http://download.scratch.mit.edu/"
 "Scratch1.4.msi.installer.zip\">Scratch1.4.msi.installer.zip</a>"
 msgstr ""
-"Võrguversioonides kasuta <a href=\"http://download.scratch.mit.edu/Scratch1.4"
-".msi.installer.zip\">Scratch1.4.msi.installer.zip</a>"
+"Võrguversioonides kasuta <a href=\""
+"http://download.scratch.mit.edu/Scratch1.4.msi.installer.zip\""
+">Scratch1.4.msi.installer.zip</a>"
 
 #: templates/info/scratch_1.4.html:51
 msgid "Scratch 1.4 for Debian / Ubuntu"
@@ -4304,8 +4410,8 @@ msgstr ""
 "hilisem, Ubuntu Linux 9.04 või hilisem (teiste Linux versioonide kohta vaata "
 "Linuxi installeerimise lehte)\n"
 "\t\t</br>Ketas:vähemalt 120 MB vaba ruumi Scratchi installeerimiseks.\n"
-"\t\t</br>CPU ja mälu: enamikul arvutitel on piisavalt mälu Scratch 1.4 jaoks, "
-"aga väga vanadel arvutitel võib Scratch olla aeglane.\n"
+"\t\t</br>CPU ja mälu: enamikul arvutitel on piisavalt mälu Scratch 1.4 "
+"jaoks, aga väga vanadel arvutitel võib Scratch olla aeglane.\n"
 "\t\t</br>Sound / Video: muusika kuulamiseks on vaja kõlareid (või "
 "kõrvaklappe), lindistamiseks on vajalik mikrofon. Paljudel sülearvutitel on "
 "kõlarid ja mikrofon sisse ehitatud. Scratch 1.4 oskab kasutada ka USB või "
@@ -4337,12 +4443,12 @@ msgstr ""
 "1. Fail on liiga suur (üle 10 MB). Faili mahu vähendamiseks vali Edit-"
 "menüüst paki helid või paki pildid. Kui oled helid kokku pakkinud, aga faili "
 "ei saa ikkagi üles laadida, proovi mõned helid kustutada.\n"
-"\t\t</br>2. Internetiühendus on liiga aeglane ja aeg sai otsa. Püüa teha fail "
-"väiksemaks. Kui see ei toimi, proovi kasutada mõnda teist ühendust, arvutit "
-"või brauserit.\n"
+"\t\t</br>2. Internetiühendus on liiga aeglane ja aeg sai otsa. Püüa teha "
+"fail väiksemaks. Kui see ei toimi, proovi kasutada mõnda teist ühendust, "
+"arvutit või brauserit.\n"
 "\t\t</br>3. Probleemid proxy serveriga. Proovi internetiühendust, kus ei "
-"kasutata proxy serverit, või seadista Scratch oma proxy serveri "
-"kasutamiseks.\n"
+"kasutata proxy serverit, või seadista Scratch oma proxy serveri kasutamiseks."
+"\n"
 "\t\t</br>4. Vale kasutajanimi ja parool. Proovi logida Scratchi lehehele, et "
 "olla kindel kasutajanime ja parooli õigsuses."
 
@@ -4483,7 +4589,7 @@ msgstr "Pitsakokk"
 msgid "Scratch Help"
 msgstr "Scratchi abiinfo"
 
-#: templates/info/help/cards.html:9 templates/info/help/index.html:60
+#: templates/info/help/cards.html:9 templates/info/help/index.html:59
 msgid "Scratch Cards"
 msgstr "Scratchi kaardid"
 
@@ -4496,7 +4602,7 @@ msgid "Get all the Cards"
 msgstr "Kõik kaardid (pdf)"
 
 #: templates/info/help/cards.html:18 templates/info/help/cards.html.py:20
-#: templates/info/help/index.html:46
+#: templates/info/help/index.html:45
 msgid "English"
 msgstr "English"
 
@@ -4505,8 +4611,8 @@ msgid ""
 "Looking for Scratch Cards in your language? Check <a href=\"http://wiki."
 "scratch.mit.edu/wiki/Scratch_Support_Materials\">Scratch Wiki</a>."
 msgstr ""
-"Otsid emakeelseid Scratchi kaarte? Vaata <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/Scratch_Support_Materials\">Scratch "
+"Otsid emakeelseid Scratchi kaarte? Vaata <a href=\""
+"http://wiki.scratch.mit.edu/wiki/Scratch_Support_Materials\">Scratch "
 "Wiki</a>."
 
 #: templates/info/help/cards.html:31
@@ -4637,13 +4743,22 @@ msgstr "Millised on Scratchi nõuded süsteemile?"
 msgid ""
 "To run Scratch 2, you need a relatively recent web browser (<a href=\"http://"
 "google.com/chrome/\">Chrome</a> 7 or later, <a href=\"http://www.mozilla.org/"
-"en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 8 or "
+"en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 7 or "
 "later) with <a href=\"\">Adobe Flash Player</a> version 10.2 or later "
 "installed. Scratch 2 is designed to support screen sizes 1024 x 768 or "
 "larger. If your computer doesn’t meet these requirements, you can try "
 "downloading and installing <a href =\"/scratch_1.4\">Scratch 1.4</a>, which "
 "you can still use to share projects to the Scratch 2 website."
 msgstr ""
+"Scratch 2 kasutamiseks on vaja suhteliselt uuemat veebibrauserit (<a href=\""
+"http://google.com/chrome/\">Chrome</a> 7 või hilisem, <a href=\""
+"http://www.mozilla.org/en-US/firefox/new/\">Firefox</a> 4 või hilisem, või "
+"Internet Explorer 7 või hilisem) kus on installeeritud<a href=\"\">Adobe "
+"Flash Player</a> versioon 10.2 või hilisem. Scratch 2 soovitatav "
+"ekraanisuurus on 1024 x 768 või suurem. Kui sinu arvuti ei vasta neile "
+"nõudmistele, võid alla laadida ja installeerida <a href =\"/scratch_1.4\">"
+"Scratch 1.4</a>, milles loodud rakendusi saad samuti jagada Scratch 2 "
+"veebilehel."
 
 #: templates/info/help/faq.html:58
 msgid ""
@@ -4660,9 +4775,10 @@ msgid ""
 "scratch_1.4\">Scratch 1.4</a>. Note: You can have both Scratch 1.4 and 2 on "
 "your computer."
 msgstr ""
-"<a href=\"/scratch2download/\">Scratch 2 offline-editor (beta versioon)</a> on "
-"nüüd kättesaadav. Võid endiselt kasutada ka <a href =\"/scratch_1.4\">Scratch "
-"1.4</a>. Märkus:  Sinu arvutis võivad olla mõlemad - Scratch 1.4 ja 2."
+"<a href=\"/scratch2download/\">Scratch 2 offline-editor (beta versioon)</a> "
+"on nüüd kättesaadav. Võid endiselt kasutada ka <a href =\"/scratch_1.4\">"
+"Scratch 1.4</a>. Märkus:  Sinu arvutis võivad olla mõlemad - Scratch 1.4 ja "
+"2."
 
 #: templates/info/help/faq.html:62
 msgid ""
@@ -4683,9 +4799,9 @@ msgid ""
 msgstr ""
 "Jah - saate kasutada projekte, mis on tehtud varasemate Scratchi "
 "versioonidega. (Muidugi ei saa varasemates versioonides kasutada projekte, "
-"mis on tehtud uuema versiooniga. Näiteks ei saa  avada Scratch 2 projekti "
-"<href =\"/scratch_1.4\"> Scratch 1.4 </a>, sest <href =\"/scratch_1.4\">Scratch "
-"1.4</a> ei oska lugeda. SB2 projekti vormingus.)"
+"mis on tehtud uuema versiooniga. Näiteks ei saa  avada Scratch 2 projekti <"
+"href =\"/scratch_1.4\"> Scratch 1.4 </a>, sest <href =\"/scratch_1.4\">"
+"Scratch 1.4</a> ei oska lugeda. SB2 projekti vormingus.)"
 
 #: templates/info/help/faq.html:66
 msgid "Can I make a video with Scratch and upload it to YouTube?"
@@ -4734,9 +4850,9 @@ msgid ""
 "\"http://llk.media.mit.edu/\">Lifelong Kindergarten group</a> at <a href="
 "\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 msgstr ""
-"Scratchi on loonud ja seda arendab Scratchi tiim - <a "
-"href=\"http://www.media.mit.edu/\">MIT Meedia Lab</a> <a "
-"href=\"http://llk.media.mit.edu/\">Lifelong Kindergarten group</a> ."
+"Scratchi on loonud ja seda arendab Scratchi tiim - <a href=\""
+"http://www.media.mit.edu/\">MIT Meedia Lab</a> <a href=\""
+"http://llk.media.mit.edu/\">Lifelong Kindergarten group</a> ."
 
 #: templates/info/help/faq.html:81
 msgid "What information do you ask for during account registration?"
@@ -4830,8 +4946,8 @@ msgid ""
 msgstr ""
 "Osa Scratchi kodulehel kogutavast infost kasutatakse uuringutes, et "
 "täiendada meie teadmisi sellest, kuidas inimesed Scratchi abil õpivad. Nende "
-"uuringute tulemusi on avaldatud konverentsidel, ajakirjades jm. Rohkem "
-"infot selle kohta leidad meie <a href=\"/info/research\">uuringute lehel</a>."
+"uuringute tulemusi on avaldatud konverentsidel, ajakirjades jm. Rohkem infot "
+"selle kohta leidad meie <a href=\"/info/research\">uuringute lehel</a>."
 
 #: templates/info/help/faq.html:97
 msgid ""
@@ -4862,8 +4978,8 @@ msgstr ""
 "Kuna Scratchi tiim vastutab projektide haldamise eest, on meil juurdepääs "
 "kõigele, mis on salvestatud Scratch kodulehel - ka projektidele, mis ei ole "
 "jagatud. Kui eelistad töötada täielikus privaatsuses, võid kasutada kas <a "
-"href=\"/scratch2download\"> Scratch 2 offline-redaktorit</a> või <a href "
-"=\"/scratch_1.4\"> Scratch 1.4 </a>. \n"
+"href=\"/scratch2download\"> Scratch 2 offline-redaktorit</a> või <a href =\""
+"/scratch_1.4\"> Scratch 1.4 </a>. \n"
 "  "
 
 #: templates/info/help/faq.html:109
@@ -4906,31 +5022,32 @@ msgstr "Mida teha, kui ma ei soovi, et teised remiksiks minu projekte?"
 
 #: templates/info/help/faq.html:116
 msgid ""
-"Everything on Scratch is remixable. By sharing your project on the Scratch "
-"website, you agree to license it under a <a href=\"http://creativecommons."
-"org/licenses/by-sa/2.0/deed.en\">Creative Commons Share Alike</a> license. "
-"This means it is okay for anyone to reuse the ideas, music, artwork, or "
-"anything else found in your Scratch project. If you don’t want others to "
+"By publishing your project on the Scratch website, you agree to license it "
+"under a <a href=\"http://creativecommons.org/licenses/by-sa/2.0/deed.en"
+"\">Creative Commons Share Alike</a> license. If you don’t want others to "
 "view and remix your creations, don’t share them on the Scratch website."
 msgstr ""
 
 #: templates/info/help/faq.html:118
-msgid ""
-"Can I use images / sounds / media from outside of the Scratch website in my "
-"Scratch projects?"
+msgid "Can I use images / sounds / media from the internet in my projects?"
 msgstr ""
+"Kas ma võin kasutada oma projektides internetist leitud pilte / helindeid / "
+"meediat?"
 
 #: templates/info/help/faq.html:119
 msgid ""
-"Yes! To find art and sounds that are licensed for remixing, check out the <a "
-"href=\"http://search.creativecommons.org/\">Creative Commons search</a> "
-"page. Be sure to give credit to anyone whose work you re-use in the “Notes "
-"and Credits” section on your project page, and include a link back to the "
-"original. Remixing of media not explicitly licensed for re-use may be "
-"permitted under the <a href=\"http://www.copyright.gov/fls/fl102.html\">Fair "
-"Use</a> clause of US copyright law. Fair use allows for the remixing of "
-"copyrighted material for non-profit, educational purposes."
+"It's important to respect the original creator’s wishes regarding remixing. "
+"If you choose to integrate someone else’s work into your own, be sure to "
+"give them credit on the project “credits” section, and include a link back "
+"to the original. To find art / sounds that are already licensed for "
+"remixing, check out the <a href=\"http://search.creativecommons.org/"
+"\">Creative Commons search page</a>."
 msgstr ""
+"Oluline on järgida originaali autori soove. Kui soovid oma projektis "
+"kasutada kellegi teise töid, siis kindlasti viita neile projektidele ja lisa "
+"lingid originaalile. Et leida pilte/helisid, mis on juba litsensitud "
+"remiksimiseks, vaata <a href=\"http://search.creativecommons.org/\">Creative "
+"Commons otsingu lehte</a>."
 
 #: templates/info/help/faq.html:126
 msgid "I forgot my password, how can I reset it?"
@@ -4944,8 +5061,8 @@ msgid ""
 "password."
 msgstr ""
 "Sisesta oma kasutajanimi <a href=\"/accounts/password_reset/\">paroolo "
-"lähtestamise lehele</a>. Veebilehtleht saadab selle kasutajaga seotud "
-"e-postiaadressile lingi parooli lähtestamiseks."
+"lähtestamise lehele</a>. Veebilehtleht saadab selle kasutajaga seotud e-"
+"postiaadressile lingi parooli lähtestamiseks."
 
 #: templates/info/help/faq.html:130
 msgid "How do I change my password?"
@@ -5038,11 +5155,11 @@ msgid ""
 "forum posts that contain this kind of information so the Scratch team can "
 "remove it, and remind the author of our policy."
 msgstr ""
-"Palun ära jaga oma isiklikke kontaktandmeid nagu füüsiline aadress, "
-"e-postiaadress, telefon või midagi muud, mida saab kasutada kontakti "
-"loomiseks väljaspool Scratchi kodulehte. Palun teata projektidest, "
-"kommentaaridest või foorumi postitustest, mis sisaldavad sellist teavet, et "
-"Scratchi meeskond saaks need eemaldada."
+"Palun ära jaga oma isiklikke kontaktandmeid nagu füüsiline aadress, e-"
+"postiaadress, telefon või midagi muud, mida saab kasutada kontakti loomiseks "
+"väljaspool Scratchi kodulehte. Palun teata projektidest, kommentaaridest või "
+"foorumi postitustest, mis sisaldavad sellist teavet, et Scratchi meeskond "
+"saaks need eemaldada."
 
 #: templates/info/help/faq.html:151
 msgid "How do I delete my account?"
@@ -5121,8 +5238,8 @@ msgstr ""
 "animatsioone ning jagada oma loomingut teistega üle maailma. Scratch "
 "rakenduste kavandamisel ja programmeerimisel õpivad noored loovat mõtlemist, "
 "süstemset lähenemist ja koostööd. Scratch on MIT Meedialabori Lifelong "
-"Kindergarten grupi projekt. See on tasuta kättesaadav "
-"http://scratch.mit.edu\""
+"Kindergarten grupi projekt. See on tasuta kättesaadav http://scratch.mit."
+"edu\""
 
 #: templates/info/help/faq.html:172
 msgid "Can I present Scratch at a conference?"
@@ -5178,10 +5295,10 @@ msgid ""
 "Assembla</a>."
 msgstr ""
 "Scratch 2 lähtekood (veebileht ja redaktor) ei ole veel kättesaadavad. <a "
-"href =\"/scratch_1.4\"> Scratch 1.4 </a> Squeak'is kirjutatud lähtekoodi leiad "
-"<a href=\"https://github.com/LLK/Scratch_1.4\">on github </a>. Scratchi "
-"esimese versiooni - ScratchR - lähtekood on saadaval <a "
-"href=\"http://svn.assembla.com/svn/scratchr/\">on Assembla</a>."
+"href =\"/scratch_1.4\"> Scratch 1.4 </a> Squeak'is kirjutatud lähtekoodi "
+"leiad <a href=\"https://github.com/LLK/Scratch_1.4\">on github </a>. "
+"Scratchi esimese versiooni - ScratchR - lähtekood on saadaval <a href=\""
+"http://svn.assembla.com/svn/scratchr/\">on Assembla</a>."
 
 #: templates/info/help/faq.html:190
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
@@ -5212,9 +5329,9 @@ msgid ""
 msgstr ""
 "Kui näed Scratchi veebilehel midagi sobimatut, klõpsa selle projekti, "
 "kommentaari, foorumipostituse või kasutaja lehel linki “report (teata)”. Kui "
-"olukord on komplitseerium, kasutada linki Contact Us, et olukoda "
-"täpsustada. Kirjelda kindlasti kõike võimalikult üksikasjalikult ja lisa ka "
-"lingid vastavatele lehekülgedele."
+"olukord on komplitseerium, kasutada linki Contact Us, et olukoda täpsustada. "
+"Kirjelda kindlasti kõike võimalikult üksikasjalikult ja lisa ka lingid "
+"vastavatele lehekülgedele."
 
 #: templates/info/help/faq.html:196
 msgid "What do I do if I see someone being mean or disrespectful?"
@@ -5362,8 +5479,8 @@ msgid ""
 "data\" when you type your reason in the report."
 msgstr ""
 "Vajuta \"Teata sellest\" nupule (projekti all), teatades sobimatus sisust "
-"pilveandmetes.Teate vorm võimaldab seda teha. Veendu, et sa mainid "
-"\"pilveandmed\", kui kirjutad oma teadet."
+"pilveandmetes.Teate vorm võimaldab seda teha. Veendu, et sa mainid \""
+"pilveandmed\", kui kirjutad oma teadet."
 
 #: templates/info/help/faq.html:225
 msgid "Can I make chat rooms with cloud data?"
@@ -5458,53 +5575,53 @@ msgstr "Korduma Kippuvad Küsimused (KKK)"
 msgid "Browse FAQ"
 msgstr "Sirvi KKK"
 
-#: templates/info/help/index.html:10
+#: templates/info/help/index.html:9
 msgid "Get Started with Scratch"
 msgstr "Alustame Scratchiga"
 
-#: templates/info/help/index.html:17
+#: templates/info/help/index.html:16
 msgid "Try out the</br> step-by-step intro"
 msgstr "Proovi </br> samm sammulist sissejuhatust"
 
 # 82%
-#: templates/info/help/index.html:26
+#: templates/info/help/index.html:25
 msgid "Explore these</br> starter projects"
 msgstr "Proovige neid </br> stardiprojekte"
 
-#: templates/info/help/index.html:32
+#: templates/info/help/index.html:31
 msgid "Watch the Getting Started video"
 msgstr "Vaata alustamise videot (<i>Getting Started</i>)"
 
-#: templates/info/help/index.html:37
+#: templates/info/help/index.html:36
 msgid "Scratch Guides"
 msgstr "Scratchi juhendid"
 
-#: templates/info/help/index.html:39
+#: templates/info/help/index.html:38
 msgid "Here are some guides to help you learn Scratch:"
 msgstr "Siin on mõned juhised, mis aitavad sul õppida Scratchi:"
 
-#: templates/info/help/index.html:46
+#: templates/info/help/index.html:45
 msgid "Getting Started Guide"
 msgstr "Alustusjuhend"
 
-#: templates/info/help/index.html:49
+#: templates/info/help/index.html:48
 msgid "This step-by-step guide (PDF) provides an easy introduction to Scratch."
 msgstr "See samm-sammuline juhend (PDF) on lihtne sissejuhatus Scratchi."
 
-#: templates/info/help/index.html:53
+#: templates/info/help/index.html:52
 #, python-format
 msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
 msgstr ""
 
-#: templates/info/help/index.html:62
+#: templates/info/help/index.html:61
 msgid "Each of these cards shows something you can do in Scratch."
 msgstr "Kõik need kaardid näitavad, mida saad teha Scratchiga."
 
-#: templates/info/help/index.html:67 templates/info/help/videos.html:19
+#: templates/info/help/index.html:66 templates/info/help/videos.html:19
 msgid "Video Tutorials"
 msgstr "Videojuhendid"
 
-#: templates/info/help/index.html:69
+#: templates/info/help/index.html:68
 msgid ""
 "These videos include tips on using the paint editor, and introduce how to "
 "program games and animations in Scratch."
@@ -5512,26 +5629,26 @@ msgstr ""
 "Need videod sisaldavad näpunäiteid joonistamisredaktori kasutmiseks ja "
 "tutvustavad, kuidas programmeerida mänge ja animatsioone Scratchis."
 
-#: templates/info/help/index.html:74
+#: templates/info/help/index.html:73
 msgid "Explore the Scratch Community"
 msgstr "Uuri Scratchi kogukonda"
 
-#: templates/info/help/index.html:77
+#: templates/info/help/index.html:76
 msgid ""
 "<a href=\"../explore\">Explore</a> projects and studios Scratchers are making"
 msgstr ""
 "<a href=\"../explore\">Uuri</a> Scratchijate poolt tehtavaid projekte ja "
 "stuudioid"
 
-#: templates/info/help/index.html:78
+#: templates/info/help/index.html:77
 msgid "Search for projects about:"
 msgstr "Otsi projekte:"
 
-#: templates/info/help/index.html:83
+#: templates/info/help/index.html:82
 msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
 msgstr "<a href=\"/discuss/6/\">Tutvusta</a> end Scratchi foorumil"
 
-#: templates/info/help/index.html:84
+#: templates/info/help/index.html:83
 #, python-format
 msgid ""
 "Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
@@ -5540,44 +5657,44 @@ msgstr ""
 "Klõpsa <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> iga "
 "profiili või stuudio juures, et saada teada seal toimunud muudatustest"
 
-#: templates/info/help/index.html:90
+#: templates/info/help/index.html:89
 msgid "What is Scratch?"
 msgstr "Mis on Scratch?"
 
-#: templates/info/help/index.html:94
+#: templates/info/help/index.html:93
 msgid "For <a href=\"/parents\">Parents</a>"
 msgstr "<a href=\"/parents\">Lapsevanemad</a>"
 
-#: templates/info/help/index.html:95
+#: templates/info/help/index.html:94
 msgid "For <a href=\"/educators\">Educators</a>"
 msgstr "<a href=\"/educators\">Koolitajad</a>"
 
-#: templates/info/help/index.html:100
+#: templates/info/help/index.html:99
 msgid ""
 "Browse for answers on: </br><a href=\"/help/faq\">Frequently Asked "
 "Questions</a>"
 msgstr ""
 "Sirvi vastuseid: </br> <a href=\"/help/faq\">Korduma Kippuvad Küsimused</a>"
 
-#: templates/info/help/index.html:102
+#: templates/info/help/index.html:101
 msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
 msgstr "Või külasta <a href=\"/discuss\"> foorumeid </a>:"
 
 # 92%
-#: templates/info/help/index.html:103
+#: templates/info/help/index.html:102
 msgid "- Questions about Scratch"
 msgstr "- Küsimused Scratchi kohta"
 
 # 89%
-#: templates/info/help/index.html:104
+#: templates/info/help/index.html:103
 msgid "- Help with Scripts"
 msgstr "- Abiinfo skriptide kohta"
 
-#: templates/info/help/index.html:107
+#: templates/info/help/index.html:106
 msgid "Resources"
 msgstr "Ressursid"
 
-#: templates/info/help/index.html:110
+#: templates/info/help/index.html:109
 msgid ""
 "An online community for educators using Scratch, with stories, discussions, "
 "and resources, such as the Scratch curriculum guide."
@@ -5585,7 +5702,7 @@ msgstr ""
 "Õpetajate kogukond kasutab Scratchi lugusid, arutelusid, materjale ja "
 "õppejuhendeid."
 
-#: templates/info/help/index.html:116
+#: templates/info/help/index.html:115
 msgid ""
 "The Scratch Wiki contains a wide variety of articles by Scratchers for "
 "Scratchers, including advanced topics and tutorials."
@@ -5593,55 +5710,55 @@ msgstr ""
 "Scratch Wiki sisaldab mitmesuguseid artikleid Scratcheritelt Scratcheritele, "
 "sealhulgas teemasid edasijõudnutele ja juhendeid."
 
-#: templates/info/help/index.html:119
+#: templates/info/help/index.html:118
 msgid "Scratch 2 Offline Editor (Beta)"
 msgstr "Scratch 2 offline-editor (Beta)"
 
-#: templates/info/help/index.html:121
+#: templates/info/help/index.html:120
 msgid "Download the Scratch 2 offline editor (beta version)"
 msgstr "Laadi alla Scratch 2 offlain-redaktor (beeta versioon)"
 
-#: templates/info/help/index.html:123
+#: templates/info/help/index.html:122
 msgid "Scratch 1.4 Download"
 msgstr "Scratch 1.4 allalaadimine"
 
-#: templates/info/help/index.html:125
+#: templates/info/help/index.html:124
 msgid "Links and information on the previous version of Scratch."
 msgstr "Lingid ja teave Scratchi eelmise versiooni kohta."
 
-#: templates/info/help/index.html:128
+#: templates/info/help/index.html:127
 msgid "Scratch Statistics"
 msgstr "Scratchi statistika"
 
-#: templates/info/help/index.html:130
+#: templates/info/help/index.html:129
 msgid "Explore up-to-date statistics about the Scratch online community."
 msgstr "Uuem statistika Scratchi online-kogukonna kohta "
 
-#: templates/info/help/index.html:133
+#: templates/info/help/index.html:132
 msgid ""
 "<a href=\"http://wiki.scratch.mit.edu/wiki/"
 "How_to_connect_to_the_physical_world\">Scratch and the Physical World</a>"
 msgstr ""
-"<a href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_wor"
-"ld\">Scratch ja füüsiline maailm</a>"
+"<a href=\"http://wiki.scratch.mit.edu/wiki/"
+"How_to_connect_to_the_physical_world\">Scratch ja füüsiline maailm</a>"
 
-#: templates/info/help/index.html:135
+#: templates/info/help/index.html:134
 msgid ""
 "Connect your Scratch projects to the physical world with <a href = \"http://"
 "www.makeymakey.com/\">MaKey MaKey</a>, <a href=\"http://info.scratch.mit.edu/"
 "WeDo\">LEGO WeDo</a>, or <a href=\"https://www.sparkfun.com/"
 "products/10311\">PicoBoard</a>."
 msgstr ""
-"Ühenda oma Scratch projekt füüsilise maailmaga <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://info.scratch.mit.edu/WeDo\">LEGO WeDo</a>, or <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
+"Ühenda oma Scratch projekt füüsilise maailmaga <a href = \""
+"http://www.makeymakey.com/\">MaKey MaKey</a>, <a href=\""
+"http://info.scratch.mit.edu/WeDo\">LEGO WeDo</a>, or <a href=\""
+"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
 
-#: templates/info/help/index.html:138
+#: templates/info/help/index.html:137
 msgid "Scratch Logo"
 msgstr "Scratchi logo"
 
-#: templates/info/help/index.html:140
+#: templates/info/help/index.html:139
 msgid "Access the Scratch logo and other media files."
 msgstr "Juurdepääs Scratchi logole ja muud meedia failid."
 
@@ -5767,17 +5884,21 @@ msgid "Step-by-Step Guides"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:6
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:17
 #: templates/info/help/studio/tips/howto/nametip-intro.html:17
 msgid "Animate Your Name"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:7
-#: templates/info/help/studio/tips/howto/cardtip-intro.html:18
-msgid "Make a Greeting Card"
+msgid "Design a Holiday Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:8
-msgid "Map of Scratch editor"
+msgid "Create a Pong Game"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:9
+msgid "Make a Birthday Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:21
@@ -6582,9 +6703,9 @@ msgid ""
 "</p>"
 msgstr ""
 "\n"
-"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />kuvab küsimuse "
-"ja salvestab klaviatuuri sisendi <img src = \"%"
-"(STATIC_URL)s/images/abi/answer.png\"/>. Vastus on kättesaadav kõikidele "
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />kuvab "
+"küsimuse ja salvestab klaviatuuri sisendi <img src = \""
+"%(STATIC_URL)s/images/abi/answer.png\"/>. Vastus on kättesaadav kõikidele "
 "spraitidele </p>\n"
 "<p> Kui soovid salvestada vastuse, võid selle säilitada muutujas või "
 "loendis. Näiteks <img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/>\n"
@@ -6622,11 +6743,11 @@ msgid ""
 "</p>"
 msgstr ""
 "\n"
-"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />kuvab küsimuse "
-"ja salvestab klaviatuuri sisendi <img src=\"%"
-"(STATIC_URL)s/images/help/answer.png\" />Küsimus ilmub helibaloonis. Programm "
-"ootab kuni kasutaja sisestab vastuse ja vajutab klahvile  Enter või klõpsab "
-"linnukest. \n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />kuvab "
+"küsimuse ja salvestab klaviatuuri sisendi <img src=\""
+"%(STATIC_URL)s/images/help/answer.png\" />Küsimus ilmub helibaloonis. "
+"Programm ootab kuni kasutaja sisestab vastuse ja vajutab klahvile  Enter või "
+"klõpsab linnukest. \n"
 "</p>"
 
 # 97%
@@ -6682,13 +6803,14 @@ msgid ""
 msgstr ""
 "\n"
 "  <p>\n"
-"  Võid kasutada <img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait.png\" "
-"/>saatmaks sõnumit spraitidele, et öelda neile teha midagi ja oodata, kuni "
-"nad kõik lõpetavad tegevused enne kui jjätkata. \n"
+"  Võid kasutada <img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait."
+"png\" />saatmaks sõnumit spraitidele, et öelda neile teha midagi ja oodata, "
+"kuni nad kõik lõpetavad tegevused enne kui jjätkata. \n"
 "</p>\n"
 "\n"
 "<p>\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait-ex2.png\" /><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait-ex2.png\" "
+"/><br/>\n"
 "<br>Klõpsa, et valida teade. Vali \"uus\" uue teate valimiseks. <br/>\n"
 "</p>\n"
 "  "
@@ -6712,9 +6834,8 @@ msgstr ""
 "<p> <img src=\"%(STATIC_URL)s/images/help/broadcast.png\"/> saadab teate "
 "kõikidele spraitidele (ja lavale). See võimaldab öelda teistele spraitidele, "
 "mida on vaja teha</p> \n"
-"<p>Mida peab tegema, kui saabub eade? Vaata <a "
-"href=\"../when-i-receive/\"><img src=\"%"
-"(STATIC_URL)s/images/help/when-i-receive.png\"/></a></p>\n"
+"<p>Mida peab tegema, kui saabub eade? Vaata <a href=\"../when-i-receive/\"><"
+"img src=\"%(STATIC_URL)s/images/help/when-i-receive.png\"/></a></p>\n"
 
 # 97%
 #: templates/info/help/studio/tips/blocks/change-effect.html:8
@@ -6746,8 +6867,8 @@ msgid ""
 msgstr ""
 "  \n"
 "Klõpsa stopp <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> "
-"kustutamaks kõik graafika efektid. Või kasuta<img src=\"%"
-"(STATIC_URL)s/images/help/clear-graphic-effects.png\"/>\n"
+"kustutamaks kõik graafika efektid. Või kasuta<img src=\""
+"%(STATIC_URL)s/images/help/clear-graphic-effects.png\"/>\n"
 
 # 83%
 # 97%
@@ -6786,8 +6907,7 @@ msgid ""
 "If you have more \n"
 "than one variable, use the pull-down menu to select the variable name."
 msgstr ""
-"Kui sul on rohkem kui üks muutuja, kasuta rippmenüüd, et valida muutuja "
-"nimi."
+"Kui sul on rohkem kui üks muutuja, kasuta rippmenüüd, et valida muutuja nimi."
 
 # 83%
 # 77%
@@ -6922,7 +7042,8 @@ msgid ""
 msgstr ""
 "\n"
 "Skript käivitub niipea kui kloon on loodud. \n"
-"<p> <img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /> </p> \n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /> </p>"
+" \n"
 "Kloonid vastavad kõigile \"kui ...\" plokkidele pärast nende on loomist \n"
 
 #: templates/info/help/studio/tips/blocks/color-is-touching.html:7
@@ -6979,8 +7100,8 @@ msgstr ""
 "<p>\n"
 "Vali menüüst, millist spraiti kloonida \n"
 "<br>\n"
-"Kasuta <img src=\"%(STATIC_URL)s/images/help/clone-startup.png\" /> mida teha, "
-"kui kloon on loodudf.\n"
+"Kasuta <img src=\"%(STATIC_URL)s/images/help/clone-startup.png\" /> mida "
+"teha, kui kloon on loodudf.\n"
 "</p>\n"
 "Näiteskript:\n"
 "<br>\n"
@@ -7008,8 +7129,8 @@ msgstr ""
 "Kui sa ei näe klooni, liiguta seda nii, et originaal sprite ei kataks teda. "
 "Kloon ilmub samas kohas nagu sprite esialgu. \n"
 "<br/> \n"
-"<br> Veendu, et oled valinud menüüst spraidi kloonimiseks <img src=\"%"
-"(STATIC_URL)s/images/help/create-clone-of.png\" /> ploki \n"
+"<br> Veendu, et oled valinud menüüst spraidi kloonimiseks <img src=\""
+"%(STATIC_URL)s/images/help/create-clone-of.png\" /> ploki \n"
 "<br/> \n"
 "Märkus: kloon kestab ainult kui projekt töötab \n"
 "</p> \n"
@@ -7086,8 +7207,8 @@ msgstr ""
 "Et neid kasutada, lohistatakse nende koopiad teistesse plokkidesse "
 "defineeritavas skriptis.\n"
 "</p>\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-"
-"script.png\"/></p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\""
+"/></p>\n"
 "Märkus: Sisendplokke saab kasutada<strong> ainult </strong>defineeritavas "
 "skriptis.\n"
 "\n"
@@ -7106,8 +7227,8 @@ msgid ""
 "  from the list. Deleting decreases the length of the list.</p>"
 msgstr ""
 "<p> Eemaldatava elemendi saab määrata, valides rippmenüüst või kirjutades "
-"järjenumbri. Valik \"viimane\" eemaldab loendi viimase elemendi. Valik \"kõik\" "
-"kustutab kõik väärtused. Kustutamine vähendab loendi pikkust. </p>"
+"järjenumbri. Valik \"viimane\" eemaldab loendi viimase elemendi. Valik \""
+"kõik\" kustutab kõik väärtused. Kustutamine vähendab loendi pikkust. </p>"
 
 #: templates/info/help/studio/tips/blocks/delete-from-list.html:20
 #, python-format
@@ -7171,7 +7292,8 @@ msgstr ""
 " \n"
 " \n"
 " Näite Skript:\n"
-" <br><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /><br/>\n"
+" <br><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" "
+"/><br/>\n"
 
 #: templates/info/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
@@ -7192,8 +7314,8 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/direction-ex.png\"></p>\n"
 msgstr ""
 "<p><b>suund</b> määrab spraidi liikumise suuna.</p>\n"
-" Et näha spraidi suunda, klõpsa<img src=\"%"
-"(STATIC_URL)s/images/help/info.gif\">:<br/>\n"
+" Et näha spraidi suunda, klõpsa<img src=\"%(STATIC_URL)s/images/help/info."
+"gif\">:<br/>\n"
 " <img src=\"%(STATIC_URL)s/images/help/direction-readout-indent.png\"><br/>\n"
 " Spraidi suuna muutmiseks lohistada sinist joont .</p>\n"
 " <p></p>\n"
@@ -7297,8 +7419,8 @@ msgid ""
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/go-back-example.png\" />\n"
 " <p>\n"
-" Et krabi peituks kivi taha, ütle seda plokis<img src=\"%"
-"(STATIC_URL)s/images/help/go-back-1layer.png\" />\n"
+" Et krabi peituks kivi taha, ütle seda plokis<img src=\""
+"%(STATIC_URL)s/images/help/go-back-1layer.png\" />\n"
 " "
 
 # 97%
@@ -7412,7 +7534,8 @@ msgstr ""
 "\n"
 "  Saad määrata lisatava väärtuse asukoha valides selle rippvalikust või "
 "tippides numbri. Valik \"juhuslik\" lisab väärtuse juhuslikku kohta loendis. "
-"Valik \"viimane\" lisab väärtuse loendi lõppu. Loendi pikkus suureneb 1 võrra.\n"
+"Valik \"viimane\" lisab väärtuse loendi lõppu. Loendi pikkus suureneb 1 "
+"võrra.\n"
 "  "
 
 #: templates/info/help/studio/tips/blocks/insert-list.html:21
@@ -7457,8 +7580,8 @@ msgid ""
 "  in a number. Choosing \"any\" reports a random item in the list.\n"
 msgstr ""
 "\n"
-"Element saab määrata, valides rippmenüüst või kirjutades numbri. Valik "
-"\"mõni\" annab loendist juhusliku elemendi.\n"
+"Element saab määrata, valides rippmenüüst või kirjutades numbri. Valik \""
+"mõni\" annab loendist juhusliku elemendi.\n"
 
 #: templates/info/help/studio/tips/blocks/item-of-list.html:20
 #, python-format
@@ -7499,8 +7622,8 @@ msgid ""
 "want to keep, for example, the space key pressed continuously.\n"
 msgstr ""
 "\n"
-"Kasuta <img src=\"%(STATIC_URL)s/images/help/key-pressed.png\" /> <img src=\"%"
-"(STATIC_URL)s/images/help/when-key-pressed.png\" /> asemel, kui soovid "
+"Kasuta <img src=\"%(STATIC_URL)s/images/help/key-pressed.png\" /> <img src=\""
+"%(STATIC_URL)s/images/help/when-key-pressed.png\" /> asemel, kui soovid "
 "vajutada näiteks tühikuklahvi pidevalt.\n"
 
 #: templates/info/help/studio/tips/blocks/length-of-list.html:7
@@ -7562,9 +7685,9 @@ msgid ""
 "reports false. "
 msgstr ""
 "\n"
-"<img src=\"%(STATIC_URL)s/images/help/list-contains-thing.png\" /> teatab, kas "
-"väärtus on loendis. Kui väärtus vastab täpselt, tagastab tõene, kui mitte, "
-"siis \n"
+"<img src=\"%(STATIC_URL)s/images/help/list-contains-thing.png\" /> teatab, "
+"kas väärtus on loendis. Kui väärtus vastab täpselt, tagastab tõene, kui "
+"mitte, siis \n"
 "tagastab väär."
 
 #: templates/info/help/studio/tips/blocks/list.html:7
@@ -7643,8 +7766,9 @@ msgstr ""
 msgid ""
 "<h3>You can create a custom block with inputs, for example: <img src="
 "\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
-msgstr "<h3>Saad luua kasutajaploki sisenditega, näiteks: <img src=\"%"
-"(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
+msgstr ""
+"<h3>Saad luua kasutajaploki sisenditega, näiteks: <img src=\""
+"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
 
 #: templates/info/help/studio/tips/blocks/make-a-block-with-inputs.html:11
 #, python-format
@@ -7683,8 +7807,8 @@ msgstr ""
 " Et neid kasutada, lohista plokide koopiad teiste plokkide sisse "
 "defineeritavas skriptis.\n"
 "</p>\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-"
-"script.png\"/></p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\""
+"/></p>\n"
 " Märkus: sisendploke võib kasutada <strong>ainult</c>  defineeritavas "
 "skriptis.\n"
 
@@ -7837,8 +7961,8 @@ msgid ""
 "divided by 6 is 23, and the remainder is 5).\n"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/mod.png\" /> annab jäägi \n"
-"kahe arvu jagamisel . Näiteks <img src=\"%(STATIC_URL)s/images/help/mod-"
-"ex2.png\" /> on 5 (143 \n"
+"kahe arvu jagamisel . Näiteks <img src=\"%(STATIC_URL)s/images/help/mod-ex2."
+"png\" /> on 5 (143 \n"
 "jagatud 6 on 23 ja jääk on 5).\n"
 
 #: templates/info/help/studio/tips/blocks/mouse-down.html:7
@@ -7853,8 +7977,8 @@ msgid ""
 "the mouse button is clicked anywhere on the screen.\n"
 msgstr ""
 "\n"
-"<img src=\"%(STATIC_URL)s/images/help/mouse-down.png\" /> tagastab tõene, kui "
-"hiirenuppu klõpsatakse suvaliel kohal ekraanil.\n"
+"<img src=\"%(STATIC_URL)s/images/help/mouse-down.png\" /> tagastab tõene, "
+"kui hiirenuppu klõpsatakse suvaliel kohal ekraanil.\n"
 
 #: templates/info/help/studio/tips/blocks/mouse-x.html:7
 msgid "Reports the x-position of mouse-pointer"
@@ -7918,7 +8042,8 @@ msgstr ""
 "teisaldada.</p>\n"
 " Kui kirjutad negatiivne arvu (näiteks -10), sprait läheb\n"
 " vastupidises suunas.</p>\n"
-"<p><b>Piksel</b> on väga väike vahema. Scratchi lava on 480 pikselit lai ja \n"
+"<p><b>Piksel</b> on väga väike vahema. Scratchi lava on 480 pikselit lai ja "
+"\n"
 " 360 pikselit kõrge:</p><img src=\"%(STATIC_URL)s/images/help/stage-width-"
 "height.png\" />\n"
 
@@ -7957,8 +8082,8 @@ msgid ""
 "gets to the end of the list, it goes back to the top.</p>\n"
 msgstr ""
 "\n"
-"<p>Kui <img src=\"%(STATIC_URL)s/images/help/next-costume-block.png\" /> jõuab "
-"loetelu lõpuni, läheb see algusesse. </p>\n"
+"<p>Kui <img src=\"%(STATIC_URL)s/images/help/next-costume-block.png\" /> "
+"jõuab loetelu lõpuni, läheb see algusesse. </p>\n"
 
 #: templates/info/help/studio/tips/blocks/nextbackdrop.html:8
 msgid ""
@@ -8041,8 +8166,8 @@ msgstr ""
 "juhusliku arvu 1 kuni 10.<br/>\n"
 "\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/pick-random-ex3.png\" /><br/>\n"
-"<br>Klõpsa, et sprait ütleks juhusliku arvu. Klõpsa uuesti, et saada teine "
-"​​juhuslik arv.<br/>\n"
+"<br>Klõpsa, et sprait ütleks juhusliku arvu. Klõpsa uuesti, et saada teine ​​"
+"juhuslik arv.<br/>\n"
 "\n"
 
 #: templates/info/help/studio/tips/blocks/play_drum.html:8
@@ -8082,8 +8207,8 @@ msgstr ""
 "</p>\n"
 "\n"
 "<p>\n"
-"Märkus: löögi pikkust saab valida<img src=\"%"
-"(STATIC_URL)s/images/help/set_tempo.png\" />\n"
+"Märkus: löögi pikkust saab valida<img src=\""
+"%(STATIC_URL)s/images/help/set_tempo.png\" />\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/playnote.html:7
@@ -8125,8 +8250,8 @@ msgid ""
 "</p>\n"
 msgstr ""
 "<p>\n"
-"Löögi pikkust saab valida<img src=\"%(STATIC_URL)s/images/help/set_tempo.png\" "
-"/>.\n"
+"Löögi pikkust saab valida<img src=\"%(STATIC_URL)s/images/help/set_tempo."
+"png\" />.\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/playsound.html:7
@@ -8185,8 +8310,8 @@ msgstr ""
 "jätkab kohe järgmise plokiga..\n"
 "</p>\n"
 "<p>\n"
-"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> mängib helindi "
-"lõpuni ja siis jätkab järgmise plokiga."
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> mängib "
+"helindi lõpuni ja siis jätkab järgmise plokiga."
 
 #: templates/info/help/studio/tips/blocks/playsound_untildone.html:8
 #, python-format
@@ -8236,14 +8361,15 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 msgstr ""
 "Klõpsa, et valida menüüst:\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\"/><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\""
+"/><br/>\n"
 "\n"
 "<p>või sisesta arv:<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/point-in-direction-45.png\"/></p>\n"
 "\n"
 "\n"
-"<p>Et näha spraidi jooksvat suunda, klõpsa <img src=\"%"
-"(STATIC_URL)s/images/help/info.gif\"/><br>\n"
+"<p>Et näha spraidi jooksvat suunda, klõpsa <img src=\""
+"%(STATIC_URL)s/images/help/info.gif\"/><br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 
 #: templates/info/help/studio/tips/blocks/point-towards.html:7
@@ -8372,8 +8498,8 @@ msgid ""
 msgstr ""
 "<p>Võid sisestada suvalise teksti.Sõnad ilmuvad jutumullis.</p>\n"
 "\n"
-"Jutumulli eemaldamiseks klõpsa <img src=\"%(STATIC_URL)s/images/help/say.png\" "
-"/>."
+"Jutumulli eemaldamiseks klõpsa <img src=\"%(STATIC_URL)s/images/help/say."
+"png\" />."
 
 #: templates/info/help/studio/tips/blocks/say.html:16
 #: templates/info/help/studio/tips/blocks/think.html:18
@@ -8386,8 +8512,8 @@ msgid ""
 "To remove the speech bubble, click an empty say block: <img src="
 "\"%(STATIC_URL)s/images/help/say.png\" />."
 msgstr ""
-"Jutumulli eemaldamiseks klõpsa tühja ütle-ploki: <img src=\"%"
-"(STATIC_URL)s/images/help/say.png\" />."
+"Jutumulli eemaldamiseks klõpsa tühja ütle-ploki: <img src=\""
+"%(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/info/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
@@ -8607,11 +8733,11 @@ msgstr ""
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/setcolortoex1.png\"/> \n"
 "<p>\n"
-"Võid määrata pliiatsi värvi muutuja abil, nagu <img src=\"%"
-"(STATIC_URL)s/images/help/y-position.png\" /> või arvuna. Näiteks arv 0 on "
-"<font color = red>punane</font>, arv 70 on <font color = "
-"green>roheline</font>, arv 130 on <font color = blue>sinine</font> ja 170 on "
-"<font color = magenta> magenta </font>.\n"
+"Võid määrata pliiatsi värvi muutuja abil, nagu <img src=\""
+"%(STATIC_URL)s/images/help/y-position.png\" /> või arvuna. Näiteks arv 0 on <"
+"font color = red>punane</font>, arv 70 on <font color = green>roheline</font>"
+", arv 130 on <font color = blue>sinine</font> ja 170 on <font color = "
+"magenta> magenta </font>.\n"
 "<p>\n"
 "Pliiatsi_värv = 0 vikerkaare punases otsas, pliiatsi_värv = 100 on sinine. "
 "Värvid on vahemikus 0 kuni 200.\n"
@@ -8778,8 +8904,8 @@ msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/stampex1.png\" /> </p>\n"
 "<p>\n"
 "Jäljend on ainult spraidi ajutine pilt, mis on joonistatud lavale. Selle "
-"saab üle joonistada või kustutada kasutades <img src=\"%"
-"(STATIC_URL)s/images/help/clear.png\" /> plokki.\n"
+"saab üle joonistada või kustutada kasutades <img src=\""
+"%(STATIC_URL)s/images/help/clear.png\" /> plokki.\n"
 "<p>\n"
 "Jäljend ei liigu ja sellel ei ole skripte.\n"
 
@@ -8825,9 +8951,9 @@ msgid ""
 "going to the next block.  \n"
 " "
 msgstr ""
-"<img src=\"%(STATIC_URL)s/images/help/switch-backdrop-to-backdrop1-and-"
-"wait.png\" /> ootab kõikide skriptide töö lõppu, mis stardivad <img src=\"%"
-"(STATIC_URL)s/images/help/when-backdrop-switches-to-backdrop1.png\" /> enne "
+"<img src=\"%(STATIC_URL)s/images/help/switch-backdrop-to-backdrop1-and-wait."
+"png\" /> ootab kõikide skriptide töö lõppu, mis stardivad <img src=\""
+"%(STATIC_URL)s/images/help/when-backdrop-switches-to-backdrop1.png\" /> enne "
 "kui läheb järgmise ploki juurde. \n"
 " "
 
@@ -8891,8 +9017,8 @@ msgid ""
 "To remove the speech bubble, use a blank block: <img src=\"%(STATIC_URL)s/"
 "images/help/think-blank.png\" />."
 msgstr ""
-"Kõneballoni eemaldamiseks kasuta tühja ploki: <img src=\"%"
-"(STATIC_URL)s/images/help/think-blank.png\" />."
+"Kõneballoni eemaldamiseks kasuta tühja ploki: <img src=\""
+"%(STATIC_URL)s/images/help/think-blank.png\" />."
 
 #: templates/info/help/studio/tips/blocks/timer.html:7
 msgid "Reports the value of the timer in seconds"
@@ -8950,9 +9076,9 @@ msgid ""
 "can check if the sprite is: </b></p>\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/touching-ex2.png\"/></p>"
 msgstr ""
-"<p>Saad kasutada <img src=\"%(STATIC_URL)s/images/help/touching.png\"/> ploki "
-"kolmel erineval viisil, valides rippmenüüst vajaliku. Saad kontrollida, kas "
-"sprait: </b></p>\n"
+"<p>Saad kasutada <img src=\"%(STATIC_URL)s/images/help/touching.png\"/> "
+"ploki kolmel erineval viisil, valides rippmenüüst vajaliku. Saad "
+"kontrollida, kas sprait: </b></p>\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/touching-ex2.png\"/></p>"
 
 #: templates/info/help/studio/tips/blocks/turn-left.html:6
@@ -9050,8 +9176,8 @@ msgstr ""
 "</div>\n"
 "\n"
 "<div class=\"example\">\n"
-"Vaata ka: <a href=\"../make-a-block/\">Loo plokk</a> ja <a "
-"href=\"../define/\">Defineeri plokk</a> \n"
+"Vaata ka: <a href=\"../make-a-block/\">Loo plokk</a> ja <a href=\"../define/"
+"\">Defineeri plokk</a> \n"
 "</div>\n"
 "\n"
 
@@ -9151,15 +9277,15 @@ msgstr ""
 "<b>Kuidas kasutada seda:</b>\n"
 "<ul>\n"
 " <li>Nõutav on veebikamera.</li>\n"
-" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-motion-this-"
-"sprite.png\" /> kontrollimaks videopildi  liikumise suurust jooksva spraidi "
+" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-motion-this-sprite."
+"png\" /> kontrollimaks videopildi  liikumise suurust jooksva spraidi "
 "all.</li>\n"
-" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-motion-stage.png\" /> "
-"kontrollimaks videopildi kogu liikumise suurust.</li>\n"
+" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-motion-stage.png\" />"
+" kontrollimaks videopildi kogu liikumise suurust.</li>\n"
 " <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-direction-this-"
 "sprite.png\" /> määramaks video liikumise suunda jooksva spraidi all.</li>\n"
-" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-direction-stage.png\" "
-"/> määramaks videopildi liikumise suunda.</li>\n"
+" <li>Kasuta <img src=\"%(STATIC_URL)s/images/help/video-direction-stage.png\""
+" /> määramaks videopildi liikumise suunda.</li>\n"
 "</ul>\n"
 "\n"
 "<p>\n"
@@ -9220,7 +9346,8 @@ msgid ""
 msgstr ""
 "<p>\n"
 "Kogu pinu täidetakse korra. Kui soovid <img src=\"%(STATIC_URL)s/images/help"
-"/wait-until.png\" /> jätkata kontrollimist, pane pinu plokki korda lõputult.\n"
+"/wait-until.png\" /> jätkata kontrollimist, pane pinu plokki korda lõputult."
+"\n"
 "</p>"
 
 #: templates/info/help/studio/tips/blocks/when-backdrop-switches.html:7
@@ -9237,7 +9364,8 @@ msgid ""
 "I'm in the kitchen!</p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex.png\"/>\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex2.png\"/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex2.png\"/>"
+"\n"
 "<br><p>Kui taustaks võetakse köök, ütleb sprait: \"Nüüd ma olen köögis!\"</p>"
 
 #: templates/info/help/studio/tips/blocks/when-flag-clicked.html:7
@@ -9339,7 +9467,8 @@ msgstr ""
 "\n"
 " <p>\n"
 " Kummituse x-koordinaat  pannakse võrdseks Gobo x-koordinaadiga.\n"
-" <br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\"/><br/>\n"
+" <br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\"/><br/>"
+"\n"
 " </p>\n"
 "  "
 
@@ -9353,7 +9482,8 @@ msgid ""
 msgstr ""
 "Kasuta seda ploki juurdepääsuks teiste spraitide erinevatele omadustele ja "
 "kasuta seda teavet, jooksva spraitdi skriptides.\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/x-position.html:7
 msgid "Reports the <b>x</b> position of a sprite"
@@ -9952,6 +10082,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/get-started-8.html:9
 #: templates/info/help/studio/tips/howto/get-started-9.html:8
 #: templates/info/help/studio/tips/howto/get-started-intro.html:10
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:9
 #: templates/info/help/studio/tips/howto/nametip-intro.html:9
 #: templates/info/help/studio/tips/howto/nametip1.html:9
 #: templates/info/help/studio/tips/howto/nametip2.html:9
@@ -9962,6 +10093,18 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/nametip7.html:9
 #: templates/info/help/studio/tips/howto/nametip8.html:9
 #: templates/info/help/studio/tips/howto/nametip9.html:9
+#: templates/info/help/studio/tips/howto/pgame-intro.html:9
+#: templates/info/help/studio/tips/howto/pgametip1.html:9
+#: templates/info/help/studio/tips/howto/pgametip10.html:9
+#: templates/info/help/studio/tips/howto/pgametip11.html:9
+#: templates/info/help/studio/tips/howto/pgametip2.html:9
+#: templates/info/help/studio/tips/howto/pgametip3.html:9
+#: templates/info/help/studio/tips/howto/pgametip4.html:9
+#: templates/info/help/studio/tips/howto/pgametip5.html:9
+#: templates/info/help/studio/tips/howto/pgametip6.html:9
+#: templates/info/help/studio/tips/howto/pgametip7.html:9
+#: templates/info/help/studio/tips/howto/pgametip8.html:9
+#: templates/info/help/studio/tips/howto/pgametip9.html:9
 #: templates/info/help/studio/tips/ui/tour-intro.html:9
 #: templates/profiles/scratcher_promotion_modal.html:61
 msgid "Back"
@@ -9969,9 +10112,15 @@ msgstr "Tagasi"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:13
 #: templates/info/help/studio/tips/howto/get-started-intro.html:14
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:13
 #: templates/info/help/studio/tips/howto/nametip-intro.html:13
+#: templates/info/help/studio/tips/howto/pgame-intro.html:13
 #: templates/info/help/studio/tips/ui/tour-intro.html:13
 msgid "Begin"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/cardtip-intro.html:18
+msgid "Make a Greeting Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:19
@@ -9980,7 +10129,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:21
-#: templates/info/help/studio/tips/howto/nametip-intro.html:23
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:23
 msgid ""
 "\n"
 "\t<p>This activity is part of <a href=\"#made-with-code\">Made with Code</a>."
@@ -9994,12 +10143,16 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:28
 #: templates/info/help/studio/tips/howto/get-started-intro.html:32
-#: templates/info/help/studio/tips/howto/nametip-intro.html:32
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:32
+#: templates/info/help/studio/tips/howto/nametip-intro.html:28
+#: templates/info/help/studio/tips/howto/pgame-intro.html:27
 msgid "Step Index"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
-#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/ui/tour-intro.html:29
 msgid "1"
 msgstr "1"
@@ -10010,7 +10163,9 @@ msgid "Say a Greeting"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
-#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/ui/tour-intro.html:30
 msgid "2"
 msgstr "2"
@@ -10021,7 +10176,9 @@ msgid "Start with a Green Flag"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
-#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/ui/tour-intro.html:31
 msgid "3"
 msgstr "3"
@@ -10035,7 +10192,9 @@ msgid "Add a Background"
 msgstr " 9 Lisa taust"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
-#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/ui/tour-intro.html:32
 msgid "4"
 msgstr "4"
@@ -10046,7 +10205,9 @@ msgid "Add a Cake"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
-#: templates/info/help/studio/tips/howto/nametip-intro.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 #: templates/info/help/studio/tips/ui/tour-intro.html:33
 msgid "5"
 msgstr "5"
@@ -10060,7 +10221,9 @@ msgid "Add Sound"
 msgstr "2 Lisa helind"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
-#: templates/info/help/studio/tips/howto/nametip-intro.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/ui/tour-intro.html:34
 msgid "6"
 msgstr "6"
@@ -10071,7 +10234,9 @@ msgid "Blow Out the Candles"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "7"
 msgstr "7"
@@ -10082,7 +10247,9 @@ msgid "Add a Dancing Sprite"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
-#: templates/info/help/studio/tips/howto/nametip-intro.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 msgid "8"
 msgstr "8"
 
@@ -10096,7 +10263,7 @@ msgid "Again and Again"
 msgstr "4 Uuesti ja uuesti"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
-#: templates/info/help/studio/tips/howto/nametip-intro.html:42
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 msgid "9"
 msgstr "9"
 
@@ -10106,6 +10273,7 @@ msgid "Say What to Do"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 msgid "10"
 msgstr "10"
 
@@ -10115,6 +10283,7 @@ msgid "Customize Your Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 msgid "11"
 msgstr "11"
 
@@ -10128,7 +10297,6 @@ msgstr "12"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:40
 #: templates/info/help/studio/tips/howto/cardtip12.html:18
-#: templates/info/help/studio/tips/howto/nametip-intro.html:42
 #: templates/info/help/studio/tips/howto/nametip9.html:17
 msgid "Keep Making!"
 msgstr ""
@@ -10363,10 +10531,10 @@ msgstr "2 13-st"
 #, python-format
 msgid ""
 "\n"
-"\t<p>Click the <span class=\"controlcolor\">Events</span> category.</p>\n"
-"\t<p>Drag out a <span class=\"controlcolor\">when <img class=\"intext\" src "
-"= \"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and "
-"snap it on top, like this:</p>\n"
+"\t<p>Click the <span class=\"eventscolor\">Events</span> category.</p>\n"
+"\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top, like this:</p>\n"
 "\t<img src = \"%(STATIC_URL)s/images/help/flagsay2.gif\">\n"
 "\t"
 msgstr ""
@@ -10394,7 +10562,8 @@ msgstr "3. 13-st"
 # 82%
 #: templates/info/help/studio/tips/howto/cardtip3.html:17
 #: templates/info/help/studio/tips/howto/get-started-9.html:16
-#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip4.html:17
 #, fuzzy
 msgid "Add a Backdrop"
@@ -10786,6 +10955,8 @@ msgstr "Lohista <span class=movecolor>MOVE</span> plokk skriptide alasse."
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:24
 #: templates/info/help/studio/tips/howto/get-started-1.html:29
+#: templates/info/help/studio/tips/howto/pgametip3.html:24
+#: templates/info/help/studio/tips/howto/pgametip3.html:29
 msgid "drag move block to Scripts area"
 msgstr ""
 
@@ -10989,8 +11160,11 @@ msgstr "2 13-st"
 # 84%
 #: templates/info/help/studio/tips/howto/get-started-2.html:19
 #: templates/info/help/studio/tips/howto/get-started-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip3.html:17
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgametip8.html:17
 #, fuzzy
 msgid "Add a Sound"
 msgstr "2 Lisa helind"
@@ -11275,8 +11449,8 @@ msgid ""
 "Can't see your sprite? Use <img src=\"%(STATIC_URL)s/images/help/show.png\"> "
 "to make it appear."
 msgstr ""
-"Sa ei näe spraiti? Spraidi nähtavaks tegemiseks kasuta <img src=\"%"
-"(STATIC_URL)s/images/help/show.png\">."
+"Sa ei näe spraiti? Spraidi nähtavaks tegemiseks kasuta <img src=\""
+"%(STATIC_URL)s/images/help/show.png\">."
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:12
 msgid "1 of 8"
@@ -11698,7 +11872,8 @@ msgstr ""
 
 # 88%
 #: templates/info/help/studio/tips/howto/hoc-8.html:17
-#: templates/info/help/studio/tips/howto/nametip-intro.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro.html:37
 #, fuzzy
 msgid "Share Your Project"
 msgstr "Jaga oma projekti"
@@ -11730,9 +11905,8 @@ msgstr ""
 "<p>Kui oled valmis oma rakendust teistega jagama, klõpsa nuppu “Jaga” "
 "ekraani ülaosas.</p>\n"
 "\n"
-"<p>(Kui sa pole seda veel teinud, peaksid nüüd <a id=\"tips-join-"
-"scratch\">looma Scratchi kasutajakonto</a>, et jagada oma projekte "
-"veebis.)</p>\n"
+"<p>(Kui sa pole seda veel teinud, peaksid nüüd <a id=\"tips-join-scratch\">"
+"looma Scratchi kasutajakonto</a>, et jagada oma projekte veebis.)</p>\n"
 "<script>\n"
 "  $(document).ready(function() {\n"
 "    $('#tips-join-scratch').on('click', function() {\n"
@@ -11745,7 +11919,8 @@ msgstr ""
 "<p>Pärast rakenduse jagamist saad minna projekti lehele, et lisada pealkiri, "
 "instruktsinid ja muud märkmed.</p>\n"
 "\n"
-"<p>Nüüd saad saata pühadekaardi lingi oma perele, sõpradele ja teistele!</p>\n"
+"<p>Nüüd saad saata pühadekaardi lingi oma perele, sõpradele ja teistele!</p>"
+"\n"
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:45
 #, python-format
@@ -11878,8 +12053,9 @@ msgstr ""
 "<p>Siin lood interaktiivse pühadekaardi, mida saad jagada oma pere ja "
 "sõpradega.</p>\n"
 "<p>Alustamiseks vaata seda tutvustavat videot:</p>\n"
-"<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&byline=0&portrait="
-"0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
+"<p><iframe src=\""
+"//player.vimeo.com/video/78998915?title=0&byline=0&portrait=0;hd_off=1&\" "
+"width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
 "mozallowfullscreen allowfullscreen></iframe></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc.html:17
@@ -12027,8 +12203,8 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
 "\t Use this code to whirl as you move the mouse:"
 msgstr ""
-"<p>Insert <img src=\"%(STATIC_URL)s/images/help/mouse-x.png\"> into <img src=\""
-"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
+"<p>Insert <img src=\"%(STATIC_URL)s/images/help/mouse-x.png\"> into <img src="
+"\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
 "\t Kasuta seda skripti, et hiire liikumise peale pöörelda:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:19
@@ -12090,10 +12266,10 @@ msgid ""
 msgstr ""
 "Proovi sellist skripti:<br/>\n"
 " <img src=\"%(STATIC_URL)s/images/help/move-with-arrow-all.png\"> <br/>\n"
-" Vajuta nooleklahve <img src=\"%(STATIC_URL)s/images/help/up-arrow-key.png\"> "
-"<img src=\"%(STATIC_URL)s/images/help/down-arrow-key.png\"> <img src=\"%"
-"(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\"%"
-"(STATIC_URL)s/images/help/right-arrow-key.png\"> liikumaks teises suunas."
+" Vajuta nooleklahve <img src=\"%(STATIC_URL)s/images/help/up-arrow-key.png\">"
+" <img src=\"%(STATIC_URL)s/images/help/down-arrow-key.png\"> <img src=\""
+"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img src=\""
+"%(STATIC_URL)s/images/help/right-arrow-key.png\"> liikumaks teises suunas."
 
 #: templates/info/help/studio/tips/howto/move-with-arrow-keys.html:18
 msgid "To copy a stack of blocks, click at the top with the duplicate tool:"
@@ -12107,8 +12283,8 @@ msgid ""
 "If your sprite turns upside-down, click <img src=\"%(STATIC_URL)s/images/"
 "help/info.png\"> and set its rotation style to left-right:"
 msgstr ""
-"Kui sprait liigub pea alaspidi, klõpsa <img src=\"%"
-"(STATIC_URL)s/images/help/info.png\"> ja määra pööramise stiiliks parem-"
+"Kui sprait liigub pea alaspidi, klõpsa <img src=\""
+"%(STATIC_URL)s/images/help/info.png\"> ja määra pööramise stiiliks parem-"
 "vasak:"
 
 #: templates/info/help/studio/tips/howto/move.html:6
@@ -12122,9 +12298,9 @@ msgid ""
 "help/move-1-step.png\"> to move a tiny bit or a bigger number to move "
 "further."
 msgstr ""
-"Proovi erinevaid arve, näiteks <img src=\"%"
-"(STATIC_URL)s/images/help/move-1-step.png\">, et liikuda natuke või suuremaid "
-"väärtusi, et liikuda rohkem."
+"Proovi erinevaid arve, näiteks <img src=\""
+"%(STATIC_URL)s/images/help/move-1-step.png\">, et liikuda natuke või "
+"suuremaid väärtusi, et liikuda rohkem."
 
 #: templates/info/help/studio/tips/howto/move.html:17
 msgid "If you type in a <b>negative</b> number, the sprite will move backward:"
@@ -12142,36 +12318,43 @@ msgstr ""
 "<p>Liikumaks laval kindlasse punkti kasuta plokki [mine x y] </p>\n"
 "<p>Sujuvaks liikumiseks kasuta plokki [liugle ... x y]</p>"
 
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:20
 #: templates/info/help/studio/tips/howto/nametip-intro.html:20
 msgid ""
 "Make your name come to life! Animate the letters by coding in Scratch. Add "
 "sound and music, too."
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:28
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:28
+#: templates/info/help/studio/tips/howto/nametip-intro.html:24
 msgid "First, choose a letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip1.html:17
 msgid "Choose the First Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip2.html:17
 msgid "Add Color Effects"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip5.html:17
 msgid "Add Your Next Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro.html:35
 msgid "Make It Spin"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip7.html:17
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "Finish Your Name"
@@ -12188,8 +12371,8 @@ msgid ""
 "\t<p>To start, choose the first letter of your name, initials, or username.</"
 "p>\n"
 "\t\n"
-"\t<p>Click to choose a new sprite <img class=\"intext\" src = "
-"\"%(STATIC_URL)s/images/help/10b-sprite.png\">:</p>\n"
+"\t<p>Find and click this icon <img class=\"intext\" src = \"%(STATIC_URL)s/"
+"images/help/10b-sprite.png\"> to choose a new sprite:</p>\n"
 "\t<p><img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\"></p> \n"
 "\t<p>then select one of the letters in the Sprite library:</br>\n"
 "<p><img src = \"%(STATIC_URL)s/images/help/letter-choose.png\"></p>\n"
@@ -12257,6 +12440,7 @@ msgstr ""
 
 # 76%
 #: templates/info/help/studio/tips/howto/nametip2.html:44
+#: templates/info/help/studio/tips/howto/pgametip7.html:35
 #, fuzzy
 msgid "Next, add a sound"
 msgstr "Nüüd lisa heli."
@@ -12314,19 +12498,14 @@ msgid ""
 "\n"
 "\t<p>Click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/"
 "images/help/landscape-icon.png\"> icon to open the Backdrop library:</p>\t\n"
-"\t  <p><img src = \"%(STATIC_URL)s/images/help/backgroundlibrary2.png\"> </"
-"p>\n"
 "\t"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip4.html:26
-#, python-format
 msgid ""
 "\n"
 "\t<p>Choose the backdrop you want (such as \"boardwalk\" or \"circles\").</"
 "p>\n"
-"\t  <p><img src = \"%(STATIC_URL)s/images/help/boardwalk.png\"> <img src = "
-"\"%(STATIC_URL)s/images/help/circles-backdrop.png\"></p>\t\n"
 "\t"
 msgstr ""
 
@@ -12472,6 +12651,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip7.html:50
+#: templates/info/help/studio/tips/howto/pgametip10.html:50
 msgid "Next, share your project"
 msgstr ""
 
@@ -12544,6 +12724,487 @@ msgid ""
 "style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png"
 "\">All Tips</a>.</p>\n"
 "\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:17
+msgid "Make a Pong Game"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:20
+msgid ""
+"Create a version of the bouncing ball game. Find out how to add sounds, "
+"points, or other effects. Then, challenge your friends to play."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:23
+msgid "First, choose a backdrop"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
+#: templates/info/help/studio/tips/howto/pgametip1.html:17
+msgid "Choose a Backdrop"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgametip2.html:17
+msgid "Choose a Ball"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgametip3.html:17
+msgid "Make the Ball Move"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgametip4.html:17
+msgid "Move and Bounce"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+msgid "Choose your Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgametip6.html:17
+msgid "Control the Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgametip7.html:17
+msgid "Bounce Off the Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgametip9.html:17
+msgid "Adding a Challenge"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgametip10.html:17
+msgid "Enhance and Customize"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgametip11.html:17
+msgid "Share Your Game"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip1.html:11
+#, fuzzy
+msgid "1 of 11"
+msgstr "1 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:19
+msgid "Choose a backdrop for your pong game."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:22
+#, python-format
+msgid ""
+"\n"
+"\t<p>Click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/"
+"images/help/landscape-icon.png\"> icon to open the Backdrop library:</p>\t\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:26
+msgid "Then choose the backdrop you want (such as neon tunnel or brick wall):"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:28
+msgid "Next, choose a ball"
+msgstr ""
+
+# 75%
+# 87%
+#: templates/info/help/studio/tips/howto/pgametip10.html:11
+#, fuzzy
+msgid "10 of 11"
+msgstr "10 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:20
+msgid "What else do you want to add to your game? Try some of these ideas."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:24
+msgid "Add Effects"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:25
+msgid "Change the color of the ball when it hits the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:30
+msgid "Starting Position"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:31
+msgid "You may want to set the ball’s starting position."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:32
+msgid ""
+"\n"
+"Move the ball to where you want it to start, then drag the <span class="
+"\"motioncolor\">go to x: y:</span> \n"
+"block into the top of this script: \n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:40
+msgid "Add Points"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:41
+msgid "Create a variable for keeping score."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:43
+msgid "Then add the score blocks to your script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:48
+msgid ""
+"You can also change what happens when the ball touches the bottom. For "
+"example:"
+msgstr ""
+
+# 75%
+# 87%
+#: templates/info/help/studio/tips/howto/pgametip11.html:11
+#, fuzzy
+msgid "11 of 11"
+msgstr "11 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:19
+msgid "Congratulations! You've coded your own game!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:20
+msgid ""
+"When you are ready to share your project with others, click the “Share” "
+"button at the top of the screen."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:23
+msgid ""
+"(If you haven't already, you will need to create a Scratch account to share "
+"your project online.)"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:27
+msgid "To give your project a name and add notes, click:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:29
+msgid "Here's a video that shows the project page:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:34
+msgid ""
+"\n"
+"You can add your project to the <a href=\"http://scratch.mit.edu/"
+"studios/644508\" target=\"_blank\">Pong Game studio</a>:\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:42
+#, python-format
+msgid ""
+"\n"
+"For more ideas, click <a href=\"../../home/\"><img class=\"intext\" style="
+"\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">All "
+"Tips</a>.\n"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip2.html:11
+#, fuzzy
+msgid "2 of 11"
+msgstr "2 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:22
+msgid "Then select a ball for your game:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:24
+msgid ""
+"Why are characters in Scratch called 'sprites'? We borrowed the word from "
+"the first video games."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:28
+msgid ""
+"You can delete the cat with the scissors tool. Click on the scissors, then "
+"click on the cat:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:30
+msgid "Or, use the right-click menu (Ctrl+click on Mac), and choose 'delete'."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:31
+msgid "Next, make the ball move"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip3.html:11
+#, fuzzy
+msgid "3 of 11"
+msgstr "3. 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:20
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"motioncolor\">Motion</span> category, and drag "
+"out a <span class=\"motioncolor\">move</span> block into the Scripts area.</"
+"p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:28
+#, fuzzy
+msgid "Then, click on that block to make the ball move."
+msgstr "Siis klõpsa seda plokki, et panna kass liikuma:"
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:30
+msgid "Next, move and bounce"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip4.html:11
+#, fuzzy
+msgid "4 of 11"
+msgstr "4 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:20
+msgid ""
+"\n"
+"\tWant it to keep going? Snap on the block <span class=\"motioncolor\">if on "
+"edge, bounce</span>.\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:23
+msgid ""
+"Then, click the <span class=\"controlcolor\">Control</span> category. Wrap a "
+"<span class=\"controlcolor\">forever</span> block around the other blocks, "
+"like this:</p>\t\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:27
+msgid "Click anywhere on the stack of blocks to try it."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:28
+msgid "To stop, click the stop button: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:32
+msgid ""
+"\n"
+"\t Want it to go at an angle? Snap a <span class=\"motioncolor\">point in "
+"direction</span> block on top, and type in an angle.\n"
+"\t "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:39
+#, python-format
+msgid ""
+"\n"
+"\t<p>Next, click the <span class=\"eventscolor\">Events</span> category.</"
+"p>\n"
+"\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top:</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:44
+msgid "Your script will start whenever you click the green flag: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:49
+msgid ""
+"Tip: Want to change the speed of the ball? Type in a different number of "
+"steps:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:52
+msgid "Now, choose your paddle"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip5.html:11
+#, fuzzy
+msgid "5 of 11"
+msgstr "5 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:17
+msgid "Choose a Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:19
+msgid "Add a paddle so you can start to play! Click to choose a new sprite:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:21
+msgid "Then, select a paddle from the Sprite library:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:27
+msgid ""
+"Tip: Adjust the size of the paddle by clicking with the grow or shrink tool:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:30
+msgid "Next, control the paddle"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip6.html:11
+#, fuzzy
+msgid "6 of 11"
+msgstr "6 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:19
+msgid "Make it interactive! You can control the paddle with the mouse cursor."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:22
+msgid "Select the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:25
+msgid "Then build this script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:30
+msgid "Click the green flag to start your scripts: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:31
+msgid ""
+"How can you get the ball to bounce off the paddle? Find out in the next step!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:33
+msgid "Next, bounce off the paddle"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip7.html:11
+#, fuzzy
+msgid "7 of 11"
+msgstr "7 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:20
+msgid "Click to choose the ball:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:25
+msgid "Add this script to make it bounce whenever it hits the paddle:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:27
+msgid "Here’s how to build the script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:34
+msgid "Click the green flag to try it out: "
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip8.html:11
+#, fuzzy
+msgid "8 of 11"
+msgstr "8 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:20
+msgid "Make a sound when the ball hits the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:24
+#, python-format
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"tab-ref\">Sounds</span> tab, then click <img "
+"class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-"
+"icon.png\"></p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:34
+msgid "Choose the 'water drop' sound (in Effects):"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:39
+msgid ""
+"\n"
+"\t<p>Then, click the <span class=\"tab-ref\">Scripts</span> tab.\n"
+"\tClick the <span class=\"soundcolor\">Sound</span> category, and drag out a "
+"<span class=\"soundcolor\">play sound</span> block.</p>\n"
+"\t<p>Snap that sound block into the script, like this:</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:46
+msgid "Next, add a challenge"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip9.html:11
+#, fuzzy
+msgid "9 of 11"
+msgstr "9 13-st"
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:20
+msgid "Add a challenge! Make the game stop if the ball hits the bottom."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:24
+msgid "Click to select the Stage:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:29
+msgid ""
+"\n"
+"Select the <span class=\"tab-ref\">Backdrops</span> tab.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:33
+msgid ""
+"Now you can edit your backdrop. Select the line tool. Draw a thick line at "
+"the bottom:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:35
+msgid ""
+"Tip: Hold down the Shift key while drawing the line to make it straight."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:36
+msgid "Tip: To undo, click the Undo arrow:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:41
+msgid "Click to select the Ball sprite:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:46
+msgid ""
+"\n"
+"<p>Click the <span class=\"tab-ref\">Scripts</span> tab, then add this "
+"script to make the ball stop if it hits the line color:</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:51
+msgid ""
+"\n"
+"Tip: Click inside the square box in the <span class=\"sensingcolor"
+"\">touching color</span> block. Then move your cursor to point and click on "
+"the bottom line color.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:55
+msgid "Next, customize your game"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/play-instrument.html:10
@@ -12646,7 +13307,8 @@ msgstr ""
 "   \n"
 " Siis klõpsa <img src=\"%(STATIC_URL)s/images/help/scripts-tab.png\"> ja "
 "kasuta plokki:<br/>\n"
-"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>"
+"\n"
 " Vali helindi nimi menüüst.\n"
 
 #: templates/info/help/studio/tips/howto/switch-backdrop.html:9
@@ -12707,8 +13369,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"><br/>\n"
 "just below the green flag block."
 msgstr ""
-"Oma hääle lisamiseks klõpsa <img src=\"%(STATIC_URL)s/images/help/sounds-"
-"tab.png\"><br/>\n"
+"Oma hääle lisamiseks klõpsa <img src=\"%(STATIC_URL)s/images/help/sounds-tab."
+"png\"><br/>\n"
 "ja mikrofoni <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\"> "
 "lindistamiseks juttu.</p>\n"
 "Selle lisamiseks skripti:<br/>\n"
@@ -12877,7 +13539,7 @@ msgid "All Messages"
 msgstr "Kõik teated"
 
 #: templates/notifications/notifications.html:16
-#: templates/profiles/profile_detail.html:364 templates/projects/base.html:334
+#: templates/profiles/profile_detail.html:364 templates/projects/base.html:338
 #: templates/studio/includes/sort-galleries-dropdown.html:26
 msgid "Comments"
 msgstr "Kommentaarid"
@@ -13191,9 +13853,9 @@ msgid ""
 "strong>, <strong>give credit</strong>, and <strong>help keep the site "
 "friendly</strong>, click \"I agree!\""
 msgstr ""
-"Kui nõustud olema <strong>lugupidav</strong>, "
-"<strong>konstruktiivne</strong>, <strong>jagama tunnustust</strong> ja "
-"<strong> aidama hoida saiti sõbralikuna </strong>, klõpsa \"Ma olen nõus!\""
+"Kui nõustud olema <strong>lugupidav</strong>, <strong>konstruktiivne</strong>"
+", <strong>jagama tunnustust</strong> ja <strong> aidama hoida saiti "
+"sõbralikuna </strong>, klõpsa \"Ma olen nõus!\""
 
 #: templates/profiles/scratcher_promotion_modal.html:50
 msgid ""
@@ -13237,90 +13899,90 @@ msgstr "Stuudiod, mida ma jälgin"
 msgid "on Scratch"
 msgstr "Scratch'i"
 
-#: templates/projects/base.html:113
+#: templates/projects/base.html:117
 msgid "scripts"
 msgstr "skripti"
 
-#: templates/projects/base.html:114
+#: templates/projects/base.html:118
 msgid "sprites"
 msgstr "spraiti"
 
-#: templates/projects/base.html:118 templates/studio/studio.html:96
+#: templates/projects/base.html:122 templates/studio/studio.html:96
 #: templates/studio/studio.html.py:133 templates/studio/studio.html:153
 msgid "See inside"
 msgstr "Vaata seestpoolt"
 
-#: templates/projects/base.html:154
+#: templates/projects/base.html:158
 msgid "Based on:"
 msgstr "Põhineb:"
 
-#: templates/projects/base.html:166
+#: templates/projects/base.html:170
 msgid "Original project:"
 msgstr "Originaalprojekt:"
 
-#: templates/projects/base.html:182
+#: templates/projects/base.html:186
 msgid "not shared"
 msgstr "ei ole jagatud"
 
 # 75%
-#: templates/projects/base.html:184
+#: templates/projects/base.html:188
 #, python-format
 msgid "Modified: %(tDate)s"
 msgstr "Viimati muudetud: %(tDate)s"
 
-#: templates/projects/base.html:196 templates/projects/base.html.py:203
+#: templates/projects/base.html:200 templates/projects/base.html.py:207
 msgid "Favorite this project"
 msgstr "Eelista seda projekti"
 
-#: templates/projects/base.html:213 templates/projects/base.html.py:219
+#: templates/projects/base.html:217 templates/projects/base.html.py:223
 msgid "Love this project"
 msgstr "Armasta seda projekti"
 
-#: templates/projects/base.html:235
+#: templates/projects/base.html:239
 msgid "Total views"
 msgstr "Vaatamisi kokku"
 
-#: templates/projects/base.html:239
+#: templates/projects/base.html:243
 msgid "View the remix tree"
 msgstr "Vaata remiksimiste puud"
 
-#: templates/projects/base.html:261
+#: templates/projects/base.html:265
 msgid "Add this project to a studio you curate (or remove it from a studio)"
 msgstr ""
 
-#: templates/projects/base.html:262
+#: templates/projects/base.html:266
 msgid "Just click on the button for any of the studios from the list below"
 msgstr ""
 
-#: templates/projects/base.html:274
+#: templates/projects/base.html:278
 msgid "Download this project file"
 msgstr "Laadi alla projekti fail"
 
-#: templates/projects/base.html:297
+#: templates/projects/base.html:301
 #: templates/projects/includes/shared/shared-project-actions.html:10
 msgid "Embed"
 msgstr "Hõlma (sängita)"
 
-#: templates/projects/base.html:302
+#: templates/projects/base.html:306
 msgid "Copy and paste the embed code above."
 msgstr "Kopeeri ja kleebi hõlmatud kood."
 
 # 83%
-#: templates/projects/base.html:306 templates/projects/censored.html:16
+#: templates/projects/base.html:310 templates/projects/censored.html:16
 #: templates/projects/unshared-owner.html:22
 msgid "Share"
 msgstr "Jaga"
 
 # 85%
-#: templates/projects/base.html:366
+#: templates/projects/base.html:370
 msgid "remixes"
 msgstr "remiksid"
 
-#: templates/projects/base.html:432
+#: templates/projects/base.html:436
 msgid "OK, Got it."
 msgstr ""
 
-#: templates/projects/base.html:451
+#: templates/projects/base.html:455
 msgid "All Tips"
 msgstr ""
 
@@ -13468,15 +14130,15 @@ msgstr "Lisa projekt stuudiosse"
 msgid "Embed project on other websites"
 msgstr "Jaga projekti teistel veebisaitidel"
 
-#: templates/projects/includes/shared/shared-project-actions.html:14
+#: templates/projects/includes/shared/shared-project-actions.html:15
 msgid "Report project as inappropriate"
 msgstr "Tunnista projekt sobimatuks"
 
-#: templates/projects/includes/shared/shared-project-actions.html:15
+#: templates/projects/includes/shared/shared-project-actions.html:16
 msgid "Report this"
 msgstr "Teavita sellest"
 
-#: templates/projects/includes/shared/shared-project-actions.html:20
+#: templates/projects/includes/shared/shared-project-actions.html:22
 msgid "View Cloud Data activity for this project."
 msgstr "Vaata selle projekti pilveandmete muutuseid."
 
@@ -13666,16 +14328,16 @@ msgstr "Scratcherid maailmas"
 msgid ""
 "All Projects (<span data-content=\"project-count\">%(projects_count)s</span>)"
 msgstr ""
-"Kõik projektid (<span data-content=\"project-count\">%"
-"(projects_count)s</span>)"
+"Kõik projektid (<span data-content=\"project-count\""
+">%(projects_count)s</span>)"
 
 #: templates/studio/studio.html:7
 #, python-format
 msgid ""
 "Shared Projects (<span data-content=\"shared-count\">%(shared_count)s</span>)"
 msgstr ""
-"Jagatud projektid (<span data-content=\"shared-count\">%"
-"(shared_count)s</span>)"
+"Jagatud projektid (<span data-content=\"shared-count\""
+">%(shared_count)s</span>)"
 
 #: templates/studio/studio.html:8
 #, python-format
@@ -13683,8 +14345,8 @@ msgid ""
 "Unshared Projects (<span data-content=\"unshared-count\">"
 "%(notshared_count)s</span>)"
 msgstr ""
-"Jagmata projektid (<span data-content=\"unshared-count\">%"
-"(notshared_count)s</span>)"
+"Jagmata projektid (<span data-content=\"unshared-count\""
+">%(notshared_count)s</span>)"
 
 #: templates/studio/studio.html:9
 #, python-format
@@ -13770,6 +14432,350 @@ msgstr "Minu omad"
 #: templates/studio/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
 msgstr "Minu poolt kureeritud"
+
+#: templates/base.html:235
+msgid "Educators"
+msgstr "Koolitajad"
+
+#: templates/base.html:236
+msgid "Parents"
+msgstr "Lapsevanemad"
+
+#: templates/base.html:238
+msgid "Contact us"
+msgstr "Kontakteeru meiega"
+
+#: templates/comments/list.html:20
+msgid "View previous comments"
+msgstr "Vaata eelmisi kommentaare"
+
+#: templates/comments/includes/comment.html:26
+msgid "ago"
+msgstr "tagasi"
+
+#: templates/explore/includes/related_projects.html:62
+msgid "Sudio:"
+msgstr "Stuudio:"
+
+#: templates/galleries/base.html:30
+msgid "Studio description"
+msgstr "Stuudio kirjeldus"
+
+#: templates/galleries/gallery.html:21
+#, python-format
+msgid "created %(tDate)s"
+msgstr "loodud %(tDate)s"
+
+#: templates/galleries/gallery.html:25
+msgid "Read more &raquo;"
+msgstr "Loe veel &raquo;"
+
+#: templates/galleries/gallery.html:57
+#, python-format
+msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
+msgstr "Kuraatorid ( <span data-count=\"curators\">%(tCount)s</span> )"
+
+#: templates/galleries/gallery.html:60
+msgid "More info"
+msgstr "Veel infot"
+
+#: templates/galleries/gallery_list.html:4
+#, python-format
+msgid "%(username)s Studio (%(galleries.count)s)"
+msgstr "%(username)s Stuudio (%(galleries.count)s)"
+
+#: templates/homepage/index.html:55
+msgid "Welcome, Scratchers!"
+msgstr "Tere tulemast, Kraapurid!"
+
+#: templates/homepage/index.html:56
+msgid ""
+"Thanks for helping us find and fix glitches in Scratch 2.0! Found a bug? Let "
+"us know!"
+msgstr ""
+"Täname abi eest Scratch 2.0 tõrgete leidmisel ja parandamisel! Leidsid vea? "
+"Anna meile teada!"
+
+#: templates/homepage/index.html:57
+msgid "Report bugs here &raquo;"
+msgstr "Teavita vigadest siin &raquo;"
+
+#: templates/homepage/index.html:64
+msgid "Try out new features"
+msgstr "Proovi uusi võimalusi"
+
+#: templates/homepage/index.html:65
+msgid "Here’s a description of what’s new in Scratch 2.0."
+msgstr "Siin on kirjeldus Scratch 2.0 uuenduste kohta"
+
+#: templates/homepage/index.html:66
+msgid "Check it out! &raquo;"
+msgstr "Kontrolli seda! &raquo;"
+
+#: templates/homepage/index.html:81
+msgid "Scratch 2.0 Beta"
+msgstr "Scratch 2.0 beta"
+
+#: templates/homepage/index.html:83
+msgid "Welcome to the Scratch 2.0 Beta website!"
+msgstr "Tere tulemast Scratch 2.0 Beta veebilehele!"
+
+#: templates/homepage/index.html:86
+msgid ""
+"Please explore and experiment with this preview version of the new Scratch. "
+"Check out the <b>Featured Projects</b> and <b>Featured Studios</b> below.  "
+"Click <a href=\"/help\">Help</a> to learn more."
+msgstr ""
+"Palun uurii ja katseta seda uue Scratch eelvaate versiooni. Tutvu <b> "
+"Eelistatud projektidega </ b> ja <b> Eelistatud stuudiotega </ b>. Klõpsa <a "
+"href=\"/help\"> Abi </ a>, et saada lisateavet."
+
+#: templates/homepage/index.html:89
+msgid ""
+"The Scratch 2.0 Beta is open to everyone. But you can only log in if you "
+"created your Scratch account before January 26th."
+msgstr ""
+"Scratch 2.0 Beta on avatud kõigile. Sisse saad logida ainult siis, kui oled "
+"loonud oma Scratchi konto enne 26. jaanuari."
+
+#: templates/homepage/index.html:92
+msgid ""
+"We still have a few features to add, and lots of glitches to fix! You can "
+"help us by <a href=\"/forums/3/\">reporting bugs and glitches</a>. The "
+"sooner we find and fix them, the sooner we can officially release Scratch "
+"2.0."
+msgstr ""
+"Meil on veel lisada mõned võimalused ja parandada mitmeid vigu! Te saate "
+"meid aidata: <a href=\"/forums/3/\"> vigade ja tõrgete teated </ a>. Mida "
+"varem me leiame ja parandadame need, seda kiiremini saame ametlikult "
+"väljastada Scratch 2.0."
+
+#: templates/homepage/index.html:95
+msgid "Find out more about"
+msgstr "Loe sellest lähemalt"
+
+#: templates/homepage/index.html:95
+msgid "the move to Scratch 2.0"
+msgstr "liikumine Scratch 2.0-i"
+
+#: templates/homepage/index.html:151
+msgid "What the Community is Sharing"
+msgstr "Mida kogukond jagab"
+
+#: templates/projects/base.html:148
+msgid "Total remixes"
+msgstr "Remikse kokku"
+
+#: templates/projects/base.html:195
+msgid "views"
+msgstr "vaatamisi"
+
+#: templates/projects/shared-other.html:66
+#: templates/projects/shared-owner.html:30
+msgid "Shared on:"
+msgstr "Jagatud:"
+
+#: templates/projects/includes/shared/shared-project-actions.html:3
+msgid "Share project on other websites"
+msgstr "Jaga projekti teistel veebisaitidel"
+
+#: templates/projects/includes/shared/shared-project-actions.html:4
+msgid "Share to"
+msgstr "Jaga"
+
+#: templates/projects/includes/shared/shared-project-actions.html:9
+msgid "Add project to gallery"
+msgstr "Lisa projekt galeriise"
+
+#~ msgid "Change password "
+#~ msgstr "Muuda parooli "
+
+#~ msgid ""
+#~ "\n"
+#~ "  Students are learning with Scratch at all levels (from elementary school "
+#~ "to college) and across disciplines (such as math, computer science, language "
+#~ "arts, social studies). Educators share stories, exchange resources, ask "
+#~ "questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+#~ "\">ScratchEd website</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Scratchi abil saab õpetada igas vanuses õpilasi (alates algkoolist kuni "
+#~ "ülikoolini) erinevates valdkondades (nt matemaatika, informaatika, keeled, "
+#~ "ühiskonnaõpetus). Õpetajad jagavad omavahel lugusid, vahetavad kogemusi, "
+#~ "esitavad küsimusi ja leiavad inimesi <a "
+#~ "href=\"http://scratched.media.mit.edu/\">veebilehel ScratchEd</a>.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "The Scratch project, initiated in 2003, has received generous support from "
+#~ "the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
+#~ "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
+#~ "Learn Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab "
+#~ "research consortia. If you'd like to support Scratch, please see our <a href="
+#~ "\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Scratch projekti alustati aastal 2003, seda toetasid suuremeelselt National "
+#~ "Science Foundation (grandid 0325828, 1002713, 1027848, 1019396), Inteli "
+#~ "Sihtasutus, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-Learn "
+#~ "Foundation, Google, Dell, Fastly, Inversoft ja MIT Meedia Lab teadustöö "
+#~ "konsortsiumid. Kui soovid Scratchi toetada, vaata palun meie <a "
+#~ "href=\"/info/donate\">annetuslehte</a>, või võta meiega ühendust aadressil "
+#~ "donate@scratch.mit.edu.\n"
+
+#~ msgid "Meet the Scratch Team"
+#~ msgstr "Tutvu Scratchi meeskonnaga"
+
+#~ msgid "Community and Moderation"
+#~ msgstr "Kogukond ja modereerimine"
+
+#~ msgid ""
+#~ "Scratch is designed with learning and education in mind. A wide variety of "
+#~ "educators have been supporting Scratch creators since 2007, in both formal "
+#~ "and informal learning environments &ndash; K-12 classroom teachers, "
+#~ "educational and computer science researchers, librarians, museum educators, "
+#~ "and parents.<br/><br/>\n"
+#~ "Want to learn more about learning with Scratch?<br/>Check out the <a href="
+#~ "\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+#~ "    "
+#~ msgstr ""
+#~ "Scratch on loodud õppimise ja hariduse jaoks. Suur hulk koolitajaid on "
+#~ "toetanud Scratch loojaid nii ametlikes kui mitteametlikes õppekeskkondades "
+#~ "alates aastast 2007 &ndash; K-12 klasside õpetajad, haridus- ja "
+#~ "infotehnoloogiateadlased, raamatukogu- ja muuseumitöötajad ning "
+#~ "lapsevanemad.<br/>\n"
+#~ "Tahad rohkem teada Scratchi abil õppimisest? <br/>Vaata <a href=\"http"
+#~ "://scratch-ed.org\" target=\"_blank\">ScratchEd online-kogukond</a>.\n"
+#~ "    "
+
+#~ msgid ""
+#~ "\n"
+#~ " <h3>What is ScratchEd?</h3>\n"
+#~ "\t      <p>Launched in July 2009, <a href=\"http://scratch-ed.org\" target="
+#~ "\"_blank\">ScratchEd</a> is an online community where Scratch educators "
+#~ "share stories, exchange resources, ask questions, and find people.</p>\n"
+#~ "\t      <p>Since its launch, more than 7500 educators from all around the "
+#~ "world have joined the community, sharing hundreds of resources and engaging "
+#~ "in thousands of discussions.</p>\n"
+#~ "\t      <p>Join the ScratchEd community for free at <a href=\"http://scratch-"
+#~ "ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+#~ "\t      "
+#~ msgstr ""
+#~ "\n"
+#~ "<h3>Mis on ScratchEd?</h3> \n"
+#~ "\t<p>Käivitati juulis 2009. <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a> on kogukond, kus Scratchi koolitajad jagavad "
+#~ "edulugusid, vahetavad kogemusi, esitavad küsimusi ning leiavad "
+#~ "mõttekaaslasi.</p> \n"
+#~ "\t<p> Alates käivitamisest on kogukonnga liitunud üle 7500 koolitaja üle kogu "
+#~ "maailma jagades sadu ressursse ning käivitades tuhandeid arutelusid.</p> \n"
+#~ "\t<p> Liitumine Scratchi kogukonnaga on tasuta <a href=\"http://scratch-"
+#~ "ed.org\" target=\"_blank\">scratch-ed.org</a>. <p> \n"
+#~ "\t"
+
+#~ msgid ""
+#~ "\n"
+#~ "\t      <h3>How can I learn more about what educators are doing with Scratch "
+#~ "&ndash; and how I might use it?</h3>\n"
+#~ "\t      <p>Not sure what might be possible with Scratch?</p>\n"
+#~ "\t      <p><a href=\"http://scratched.media.mit.edu/stories\" target=\"_blank"
+#~ "\">Read a story</a> about how educators have been including Scratch "
+#~ "activities in a wide range of learning environments.</a></p>\n"
+#~ "\t      <p>Or <a href=\"http://scratched.media.mit.edu/resources/all\" "
+#~ "target=\"_blank\">explore resources</a> across ages, disciplines, and "
+#~ "settings. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+#~ "target=\"_blank\">Watch webinars</a> and review documents like the <a href="
+#~ "\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-draft\" "
+#~ "target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
+#~ "\t      <p>In addition to exploring the <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a> online community and its resources, you can "
+#~ "engage with the ScratchEd Team and other Scratch educators via <a href="
+#~ "\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a href="
+#~ "\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
+#~ "<a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>"
+#~ "\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/"
+#~ "scratched-weekly-roundup\" target=\"_blank>\">weekly roundups</a>, and our "
+#~ "<a href=\"http://scratched.media.mit.edu/events\" target=\"_blank>"
+#~ "\">quarterly newsletter</a>.<p>\n"
+#~ "\t      "
+#~ msgstr ""
+#~ "\n"
+#~ "\t<h3> Kuidas saada rohkem infot selle kohta, mida õpetajad teevad Scratchga "
+#~ "ja kuidas seda kasutada?</h3>\n"
+#~ "\t       <p>Sa ei tea, mida saab teha Scratchiga?</p>\n"
+#~ "\t       <p><a href=\"http://scratched.media.mit.edu/stories\" "
+#~ "target=\"_blank\">Loe edulugu</a>, kuidas koolitajad kasutavad Scratchi "
+#~ "erinevates õpikeskkondades.</a> </p>\n"
+#~ "\t       <p> Või <a href=\"http://scratched.media.mit.edu/resources/all\" "
+#~ "target=\"_blank\">uuri vahendeid</a> üle aegade, valdkondade ja seadete.<a "
+#~ "href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+#~ "target=\"_blank\">Vaata veebilehti</a> ja dokumente, näiteks <a "
+#~ "href=\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-"
+#~ "draft\" target =\"_blank \">Scratchi õppekava</a>.</p>\n"
+#~ "\t       <p> Avastades <a href=\"http://scratch-ed.org\" target=\"_blank\"> "
+#~ "ScratchEd </a> kogukonda ja selle võimalusi, võid osaleda koos Scratchi "
+#~ "tiimi ja teiste Scratchi kooitajatega keskkondades <a "
+#~ "href=\"http://twitter.com/scratchedteam\" target=\"_blank> \"> Twitter </a> <a "
+#~ "href =\" http://www.facebook.com/ScratchEdTeam \"target = "
+#~ "\"_blank>\">Facebook</a>, <a "
+#~ "href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank> "
+#~ "\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/scratched-"
+#~ "weekly-roundup\" target=\"_blank>\">weekly roundups</a> ja meie <a "
+#~ "href=\"http://scratched.media.mit.edu/events\" target=\"_blank>\">quarterly "
+#~ "newsletter</a>.<p>\n"
+#~ "\t"
+
+#, python-format
+#~ msgid ""
+#~ "<p>Scratch team members from the MIT Media Lab <a href=\"http://llk.media."
+#~ "mit.edu\">Lifelong Kindergarten Group</a> and at the University of "
+#~ "Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
+#~ "Education</a> are researching how people use and learn from Scratch.<br />\n"
+#~ "<br />\n"
+#~ "By sharing projects and participating in the Scratch online community, you "
+#~ "are helping us better understand how people can use and \n"
+#~ "learn with Scratch.&nbsp;Any publicly shared&nbsp;projects, comments, or "
+#~ "other material on the Scratch site may be included\n"
+#~ "in the research analysis, presentations, papers, and reports. No personally "
+#~ "identifiable information is shared. \n"
+#~ "(If you have any questions, please use the <a href=\"%(contact_us_url)s"
+#~ "\">Contact Us</a> form.)</p>\n"
+#~ "<p>The following are research papers, presentations, and <a href=\"#theses"
+#~ "\">dissertations and theses</a> that share our findings about Scratch and "
+#~ "the Scratch online community. This list also includes some papers conducted "
+#~ "on Scratch by other researchers. For magazines and other articles, see <a "
+#~ "href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch in the "
+#~ "News</a>.</p>"
+#~ msgstr ""
+#~ "<p>Scratchi meeskond MIT Media Lab <a "
+#~ "href=\"http://llk.media.mit.edu\">Lifelong Kindergarten Group</a> ja "
+#~ "Pennsylvania Ülikooli <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
+#~ "Education</a> uurivad, kuidas inimesed Scratchi kasutavad ja selle abil "
+#~ "õpivad.<br />\n"
+#~ "<br />\n"
+#~ "Oma projekte jagades ja osaledes Scratchi online-kogukonnas, aitad sa meil "
+#~ "paremini mõista, kuidas inimesed Scratchi kasutavad ja selle abil õpivad. \n"
+#~ "Iga jagatud projekt, kommentaar või muu materjal Scratchi veebilehel võib "
+#~ "olla lisatud uurimustööle, analüüsile, esitlusele, artiklile, aruandele. "
+#~ "Kunagi ei jagata infot, mis võimaldaks tuvastada konkreetset isikut. \n"
+#~ "(Kui sul on küsimusi, kasutata meie <a href=\"%(contact_us_url)s\">võta "
+#~ "ühendust</a> vormi.)</p>\n"
+#~ "<p>Järgnevalt on toodud urimused, esitlused, <a href=\"#theses\">väitekirjad "
+#~ "ja teesid</a>, kus on analüüside tulemused Scratchi ja Scratchi online-"
+#~ "kogukonna kohta. Selles loetelus on ka teiste teadlaste uurimistööde "
+#~ "tulemusi Scratchi kohta. Ajakirjade ja teiste artklite kohta vaata <a "
+#~ "href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
+#~ "uudistes</a>.</p>"
+
+#, fuzzy
+#~ msgid "Academic Publications &amp; Presentations"
+#~ msgstr "Akadeemiliste publikatsioonie esitlused"
+
+#~ msgid "Dissertations and Theses"
+#~ msgstr "Väitekirjad"
+
+#~ msgid "Academic Publications by Other Researchers and Educators"
+#~ msgstr "Teiste teadlaste ja haridustöötajate akadeemilised publikatsioonid"
 
 # 83%
 # 98%
@@ -16733,12 +17739,6 @@ msgstr "Minu poolt kureeritud"
 #~ msgid "static pages"
 #~ msgstr "staatilised lehed"
 
-#~ msgid "Educators"
-#~ msgstr "Koolitajad"
-
-#~ msgid "Parents"
-#~ msgstr "Lapsevanemad"
-
 # 96%
 #, python-format
 #~ msgid "Sorry, comment posting has been turned off for this %(type)s."
@@ -16747,10 +17747,6 @@ msgstr "Minu poolt kureeritud"
 #, python-format
 #~ msgid "Last modified: %(tDate)s"
 #~ msgstr "Viimati muudetud: %(tDate)s"
-
-#, python-format
-#~ msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
-#~ msgstr "Kuraatorid ( <span data-count=\"curators\">%(tCount)s</span> )"
 
 #, fuzzy
 #~ msgid ""
@@ -16767,45 +17763,6 @@ msgstr "Minu poolt kureeritud"
 #~ "            See versioon toimib Maci, Windowsi ja mõnede Linuxi "
 #~ "versioonidega (32 bit).</p>\n"
 #~ "           "
-
-#~ msgid ""
-#~ "To run Scratch 2, you need a relatively recent web browser (<a href=\"http://"
-#~ "google.com/chrome/\">Chrome</a> 7 or later, <a href=\"http://www.mozilla.org/"
-#~ "en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 7 or "
-#~ "later) with <a href=\"\">Adobe Flash Player</a> version 10.2 or later "
-#~ "installed. Scratch 2 is designed to support screen sizes 1024 x 768 or "
-#~ "larger. If your computer doesn’t meet these requirements, you can try "
-#~ "downloading and installing <a href =\"/scratch_1.4\">Scratch 1.4</a>, which "
-#~ "you can still use to share projects to the Scratch 2 website."
-#~ msgstr ""
-#~ "Scratch 2 kasutamiseks on vaja suhteliselt uuemat veebibrauserit (<a "
-#~ "href=\"http://google.com/chrome/\">Chrome</a> 7 või hilisem, <a "
-#~ "href=\"http://www.mozilla.org/en-US/firefox/new/\">Firefox</a> 4 või hilisem, "
-#~ "või Internet Explorer 7 või hilisem) kus on installeeritud<a href=\"\">Adobe "
-#~ "Flash Player</a> versioon 10.2 või hilisem. Scratch 2 soovitatav "
-#~ "ekraanisuurus on 1024 x 768 või suurem. Kui sinu arvuti ei vasta neile "
-#~ "nõudmistele, võid alla laadida ja installeerida <a href "
-#~ "=\"/scratch_1.4\">Scratch 1.4</a>, milles loodud rakendusi saad samuti jagada "
-#~ "Scratch 2 veebilehel."
-
-#~ msgid "Can I use images / sounds / media from the internet in my projects?"
-#~ msgstr ""
-#~ "Kas ma võin kasutada oma projektides internetist leitud pilte / helindeid / "
-#~ "meediat?"
-
-#~ msgid ""
-#~ "It's important to respect the original creator’s wishes regarding remixing. "
-#~ "If you choose to integrate someone else’s work into your own, be sure to "
-#~ "give them credit on the project “credits” section, and include a link back "
-#~ "to the original. To find art / sounds that are already licensed for "
-#~ "remixing, check out the <a href=\"http://search.creativecommons.org/"
-#~ "\">Creative Commons search page</a>."
-#~ msgstr ""
-#~ "Oluline on järgida originaali autori soove. Kui soovid oma projektis "
-#~ "kasutada kellegi teise töid, siis kindlasti viita neile projektidele ja lisa "
-#~ "lingid originaalile. Et leida pilte/helisid, mis on juba litsensitud "
-#~ "remiksimiseks, vaata <a href=\"http://search.creativecommons.org/\">Creative "
-#~ "Commons otsingu lehte</a>."
 
 #~ msgid "Getting Started"
 #~ msgstr "Alustamine"
@@ -18210,127 +19167,17 @@ msgstr "Minu poolt kureeritud"
 #~ msgid "Just check the studio you wish to add to from the list below"
 #~ msgstr "Vali lisatav stuudio allolevast nimekirjast"
 
-#~ msgid "Share to"
-#~ msgstr "Jaga"
-
 #~ msgid "Test new Scratch Player"
 #~ msgstr "Testi uut Scratchi Playerit"
 
 #~ msgid "Try it!"
 #~ msgstr "Proovi seda"
 
-#~ msgid "Share project on other websites"
-#~ msgstr "Jaga projekti teistel veebisaitidel"
-
 #~ msgid "Add project to studio"
 #~ msgstr "Lisa projekt stuudiosse"
 
 #~ msgid "Beta bug?"
 #~ msgstr "Beta viga?"
-
-#~ msgid "Contact us"
-#~ msgstr "Kontakteeru meiega"
-
-#~ msgid "View previous comments"
-#~ msgstr "Vaata eelmisi kommentaare"
-
-#~ msgid "ago"
-#~ msgstr "tagasi"
-
-#~ msgid "Sudio:"
-#~ msgstr "Stuudio:"
-
-#~ msgid "Studio description"
-#~ msgstr "Stuudio kirjeldus"
-
-#, python-format
-#~ msgid "created %(tDate)s"
-#~ msgstr "loodud %(tDate)s"
-
-#~ msgid "Read more &raquo;"
-#~ msgstr "Loe veel &raquo;"
-
-#~ msgid "More info"
-#~ msgstr "Veel infot"
-
-#, python-format
-#~ msgid "%(username)s Studio (%(galleries.count)s)"
-#~ msgstr "%(username)s Stuudio (%(galleries.count)s)"
-
-#~ msgid "Welcome, Scratchers!"
-#~ msgstr "Tere tulemast, Kraapurid!"
-
-#~ msgid ""
-#~ "Thanks for helping us find and fix glitches in Scratch 2.0! Found a bug? Let "
-#~ "us know!"
-#~ msgstr ""
-#~ "Täname abi eest Scratch 2.0 tõrgete leidmisel ja parandamisel! Leidsid vea? "
-#~ "Anna meile teada!"
-
-#~ msgid "Report bugs here &raquo;"
-#~ msgstr "Teavita vigadest siin &raquo;"
-
-#~ msgid "Try out new features"
-#~ msgstr "Proovi uusi võimalusi"
-
-#~ msgid "Here’s a description of what’s new in Scratch 2.0."
-#~ msgstr "Siin on kirjeldus Scratch 2.0 uuenduste kohta"
-
-#~ msgid "Check it out! &raquo;"
-#~ msgstr "Kontrolli seda! &raquo;"
-
-#~ msgid "Scratch 2.0 Beta"
-#~ msgstr "Scratch 2.0 beta"
-
-#~ msgid "Welcome to the Scratch 2.0 Beta website!"
-#~ msgstr "Tere tulemast Scratch 2.0 Beta veebilehele!"
-
-#~ msgid ""
-#~ "Please explore and experiment with this preview version of the new Scratch. "
-#~ "Check out the <b>Featured Projects</b> and <b>Featured Studios</b> below.  "
-#~ "Click <a href=\"/help\">Help</a> to learn more."
-#~ msgstr ""
-#~ "Palun uurii ja katseta seda uue Scratch eelvaate versiooni. Tutvu <b> "
-#~ "Eelistatud projektidega </ b> ja <b> Eelistatud stuudiotega </ b>. Klõpsa <a "
-#~ "href=\"/help\"> Abi </ a>, et saada lisateavet."
-
-#~ msgid ""
-#~ "The Scratch 2.0 Beta is open to everyone. But you can only log in if you "
-#~ "created your Scratch account before January 26th."
-#~ msgstr ""
-#~ "Scratch 2.0 Beta on avatud kõigile. Sisse saad logida ainult siis, kui oled "
-#~ "loonud oma Scratchi konto enne 26. jaanuari."
-
-#~ msgid ""
-#~ "We still have a few features to add, and lots of glitches to fix! You can "
-#~ "help us by <a href=\"/forums/3/\">reporting bugs and glitches</a>. The sooner "
-#~ "we find and fix them, the sooner we can officially release Scratch 2.0."
-#~ msgstr ""
-#~ "Meil on veel lisada mõned võimalused ja parandada mitmeid vigu! Te saate "
-#~ "meid aidata: <a href=\"/forums/3/\"> vigade ja tõrgete teated </ a>. Mida "
-#~ "varem me leiame ja parandadame need, seda kiiremini saame ametlikult "
-#~ "väljastada Scratch 2.0."
-
-#~ msgid "Find out more about"
-#~ msgstr "Loe sellest lähemalt"
-
-#~ msgid "the move to Scratch 2.0"
-#~ msgstr "liikumine Scratch 2.0-i"
-
-#~ msgid "What the Community is Sharing"
-#~ msgstr "Mida kogukond jagab"
-
-#~ msgid "Total remixes"
-#~ msgstr "Remikse kokku"
-
-#~ msgid "views"
-#~ msgstr "vaatamisi"
-
-#~ msgid "Shared on:"
-#~ msgstr "Jagatud:"
-
-#~ msgid "Add project to gallery"
-#~ msgstr "Lisa projekt galeriise"
 
 #~ msgid "Owner"
 #~ msgstr "Omanik"
@@ -18349,10 +19196,6 @@ msgstr "Minu poolt kureeritud"
 #~ "    <li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
 #~ "uudistes </a></li>\n"
 #~ "    "
-
-# 75%
-#~ msgid "Scratch Credits"
-#~ msgstr "Scratchi tooted"
 
 #~ msgid ""
 #~ "\n"

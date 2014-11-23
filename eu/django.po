@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 00:48+0000\n"
+"POT-Creation-Date: 2014-11-21 23:51+0000\n"
 "PO-Revision-Date: 2014-09-24 16:05+0000\n"
 "Last-Translator: aitolajau <aitorolano@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,48 +18,65 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1411574715.000000\n"
 
-#: views.py:181
+#: views.py:308
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr "Zure mezua bidalia izan da. 3 egunen baino lehen erantzungo dizugu."
 
-#: views.py:185 views.py:225
+#: views.py:312 views.py:352
 msgid "Please correct the errors below."
 msgstr "Azpiko akatsak zuzen itzazu mesedez."
 
-#: authentication/forms.py:18
+#: authentication/forms.py:22
+msgid "Keep my projects, but disable all comments"
+msgstr ""
+
+#: authentication/forms.py:23
+msgid "Delete my projects"
+msgstr ""
+
+#: authentication/forms.py:26
+msgid "Enter your password to confirm"
+msgstr ""
+
+#: authentication/forms.py:45
 msgid "Looks like that isn't a valid email format"
 msgstr "Honakoa ez da email formatu egokia"
 
-#: authentication/forms.py:30
+#: authentication/forms.py:57
 msgid "The two password fields didn't match."
 msgstr "Bi pasahitzak ez dira berdinak"
 
-#: authentication/forms.py:31 authentication/forms.py:52
+#: authentication/forms.py:58 authentication/forms.py:79
 msgid "Your password must be at least 6 characters long."
 msgstr "Zure pasahitzak gutxienez 6 karaktere izan behar ditu."
 
-#: authentication/forms.py:32 authentication/forms.py:53
+#: authentication/forms.py:59 authentication/forms.py:80
 msgid "Your password cannot be 'password'."
 msgstr "Zure pasahitza ezin da \"password\" izan."
 
-#: authentication/forms.py:33 authentication/forms.py:54
+#: authentication/forms.py:60 authentication/forms.py:81
 msgid "Your password cannot be the same as your username."
 msgstr "Zure pasahitzak ezin du erabiltzaile izenaren berdina izan."
 
-#: authentication/forms.py:74 templates/modal-registration.html:78
+#: authentication/forms.py:101 templates/modal-registration.html:78
+#: templates/accounts/account_settings.html:10
+#: templates/accounts/email_change.html:10
+#: templates/accounts/password_change_form.html:10
+#: templates/accounts/deletion/confirmation.html:8
+#: templates/accounts/deletion/nostalgia.html:7
 #: templates/info/educators.html:52
 msgid "Email"
 msgstr "Emaila"
 
-#: authentication/forms.py:82
+#: authentication/forms.py:109
 msgid "You must provide an email or username"
 msgstr "Emaila edo erabiltzaile izena idatzi behar duzu"
 
-#: authentication/forms.py:87
+#: authentication/forms.py:114
 msgid "Sorry we don't have an account with that username"
 msgstr "Barkatu baina ez dugu izen hori duen erabiltzailerik"
 
-#: authentication/forms.py:92
+#: authentication/forms.py:119
 msgid "Sorry we don't have an account with that email address"
 msgstr "Barkatu baina ez dugu email helbide hori duen erabiltzaile konturik"
 
@@ -102,7 +119,7 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "duela %(number)d %(type)s"
 
-#: projects/views.py:496
+#: projects/views.py:494
 msgid "This tag has too many projects to load"
 msgstr "Etiketa honek proiektu gehiegi ditu kargatuak izateko"
 
@@ -111,12 +128,12 @@ msgid "subscribers"
 msgstr "harpidedunak"
 
 #: s2forums/djangobb_forum/feeds.py:27 s2forums/djangobb_forum/feeds.py:28
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:14
 msgid "Latest posts on forum"
 msgstr "Foroko azken argitalpenak"
 
 #: s2forums/djangobb_forum/feeds.py:46 s2forums/djangobb_forum/feeds.py:47
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:16
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
 msgid "Latest topics on forum"
 msgstr "Foroko azken gaiak"
 
@@ -141,95 +158,95 @@ msgstr "\"%s\" foroko azken argitalpenak"
 msgid "Latest posts on the category \"%s\""
 msgstr "\"%s\" kategoriako azken argitalpenak"
 
-#: s2forums/djangobb_forum/forms.py:29 s2forums/djangobb_forum/forms.py:229
-#: s2forums/djangobb_forum/forms.py:366 templates/base.html:211
+#: s2forums/djangobb_forum/forms.py:27 s2forums/djangobb_forum/forms.py:227
+#: s2forums/djangobb_forum/forms.py:364 templates/base.html:207
 #: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
 msgid "Username"
 msgstr "Erabiltzaile izena"
 
-#: s2forums/djangobb_forum/forms.py:30
+#: s2forums/djangobb_forum/forms.py:28
 msgid "Registered"
 msgstr "Erregistratu"
 
-#: s2forums/djangobb_forum/forms.py:31
+#: s2forums/djangobb_forum/forms.py:29
 msgid "Number of posts"
 msgstr "Argitalpenen kopurua"
 
-#: s2forums/djangobb_forum/forms.py:35
+#: s2forums/djangobb_forum/forms.py:33
 msgid "Post time"
 msgstr "Argitalpenaren ordua"
 
-#: s2forums/djangobb_forum/forms.py:36
+#: s2forums/djangobb_forum/forms.py:34
 msgid "Author"
 msgstr "Egilea"
 
-#: s2forums/djangobb_forum/forms.py:37 s2forums/djangobb_forum/forms.py:60
-#: s2forums/djangobb_forum/forms.py:188 s2forums/djangobb_forum/forms.py:459
+#: s2forums/djangobb_forum/forms.py:35 s2forums/djangobb_forum/forms.py:58
+#: s2forums/djangobb_forum/forms.py:186 s2forums/djangobb_forum/forms.py:457
 #: s2forums/djangobb_forum/models.py:160
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:29
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
 msgid "Subject"
 msgstr "Gaia"
 
-#: s2forums/djangobb_forum/forms.py:38 s2forums/djangobb_forum/forms.py:402
+#: s2forums/djangobb_forum/forms.py:36 s2forums/djangobb_forum/forms.py:400
 #: s2forums/djangobb_forum/models.py:130 s2forums/djangobb_forum/models.py:159
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:55
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:26
 msgid "Forum"
 msgstr "Foroa"
 
-#: s2forums/djangobb_forum/forms.py:42
+#: s2forums/djangobb_forum/forms.py:40
 msgid "Ascending"
 msgstr "Behetik gora"
 
-#: s2forums/djangobb_forum/forms.py:43
+#: s2forums/djangobb_forum/forms.py:41
 msgid "Descending"
 msgstr "Goitik behera"
 
-#: s2forums/djangobb_forum/forms.py:47 s2forums/djangobb_forum/models.py:175
+#: s2forums/djangobb_forum/forms.py:45 s2forums/djangobb_forum/models.py:175
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:56
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
 msgid "Topics"
 msgstr "Gaiak"
 
-#: s2forums/djangobb_forum/forms.py:48 s2forums/djangobb_forum/models.py:275
+#: s2forums/djangobb_forum/forms.py:46 s2forums/djangobb_forum/models.py:275
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:57
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
 msgid "Posts"
 msgstr "Argitalpenak"
 
-#: s2forums/djangobb_forum/forms.py:52
+#: s2forums/djangobb_forum/forms.py:50
 msgid "Message text and topic subject"
 msgstr "Mezuaren testua eta gaia"
 
-#: s2forums/djangobb_forum/forms.py:53
+#: s2forums/djangobb_forum/forms.py:51
 msgid "Message text only"
 msgstr "Mezuaren testua bakarrik"
 
-#: s2forums/djangobb_forum/forms.py:54
+#: s2forums/djangobb_forum/forms.py:52
 msgid "Topic subject only"
 msgstr "Gaia bakarrik"
 
-#: s2forums/djangobb_forum/forms.py:62
+#: s2forums/djangobb_forum/forms.py:60
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
 msgid "Attachment"
 msgstr "Eranskina"
 
-#: s2forums/djangobb_forum/forms.py:63
+#: s2forums/djangobb_forum/forms.py:61
 msgid "Subscribe"
 msgstr "Harpidetu"
 
-#: s2forums/djangobb_forum/forms.py:63
+#: s2forums/djangobb_forum/forms.py:61
 msgid "Subscribe to this topic."
 msgstr "Gai honetara harpidetu."
 
-#: s2forums/djangobb_forum/forms.py:93
+#: s2forums/djangobb_forum/forms.py:91
 msgid "Can't be empty nor contain only whitespace characters"
 msgstr "Ezin da hutsean edo hutsunez osatuta utzi"
 
-#: s2forums/djangobb_forum/forms.py:103
+#: s2forums/djangobb_forum/forms.py:101
 msgid ""
 "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
 "Scratch, so your account has been muted for the rest of the day. :/"
@@ -237,95 +254,95 @@ msgstr ""
 "Hmm, iragazkia ziur da zure azken iruzkinak etzirela Scratcherako egokiak. "
 "Ondorioz zure kontua isildua izan da egun osorako. :/"
 
-#: s2forums/djangobb_forum/forms.py:132 s2forums/djangobb_forum/forms.py:136
+#: s2forums/djangobb_forum/forms.py:130 s2forums/djangobb_forum/forms.py:134
 #, python-format
 msgid "Sorry, you have to wait %d seconds between posts."
 msgstr ""
 "Barkatu baina %d segunduz itxaron behar duzu argitalpen berri bat egiteko."
 
-#: s2forums/djangobb_forum/forms.py:145
+#: s2forums/djangobb_forum/forms.py:143
 msgid "Attachment is too big"
 msgstr "Eranskina handiegia da"
 
-#: s2forums/djangobb_forum/forms.py:190
+#: s2forums/djangobb_forum/forms.py:188
 msgid "Silent edit?"
 msgstr "Isileko edizioa?"
 
-#: s2forums/djangobb_forum/forms.py:230
+#: s2forums/djangobb_forum/forms.py:228
 msgid "E-mail"
 msgstr "E-maila"
 
-#: s2forums/djangobb_forum/forms.py:261
+#: s2forums/djangobb_forum/forms.py:259
 msgid "Real name"
 msgstr "Zure egiazko izena"
 
-#: s2forums/djangobb_forum/forms.py:368 s2forums/djangobb_forum/forms.py:404
+#: s2forums/djangobb_forum/forms.py:366 s2forums/djangobb_forum/forms.py:402
 #: templates/includes/sort-projects-dropdown.html:4
 #: templates/studio/includes/sort-galleries-dropdown.html:19
 #: templates/studio/includes/sort-projects-dropdown.html:4
 msgid "Sort by"
 msgstr "Sailkatu kontuan izanda"
 
-#: s2forums/djangobb_forum/forms.py:369 s2forums/djangobb_forum/forms.py:405
+#: s2forums/djangobb_forum/forms.py:367 s2forums/djangobb_forum/forms.py:403
 msgid "Sort order"
 msgstr "Sailkapenaren norantza"
 
-#: s2forums/djangobb_forum/forms.py:398
+#: s2forums/djangobb_forum/forms.py:396
 msgid "Keyword search"
 msgstr "Gako-hitzen bilaketa"
 
-#: s2forums/djangobb_forum/forms.py:400
+#: s2forums/djangobb_forum/forms.py:398
 msgid "Author search"
 msgstr "Egilearen bilaketa"
 
-#: s2forums/djangobb_forum/forms.py:403
+#: s2forums/djangobb_forum/forms.py:401
 msgid "Search in"
 msgstr "Bilatu: "
 
-#: s2forums/djangobb_forum/forms.py:406
+#: s2forums/djangobb_forum/forms.py:404
 msgid "Show results as"
 msgstr "Emaitzak honela erakutsi: "
 
-#: s2forums/djangobb_forum/forms.py:431
+#: s2forums/djangobb_forum/forms.py:429
 #, python-format
 msgid "User \"%s\" does not exist"
 msgstr "\"%s\" erabiltzailea ez da existitzen"
 
-#: s2forums/djangobb_forum/forms.py:441
+#: s2forums/djangobb_forum/forms.py:439
 msgid "You already voted for this post"
 msgstr "Dagoeneko bozkatu duzu argitalpen hau"
 
-#: s2forums/djangobb_forum/forms.py:445
+#: s2forums/djangobb_forum/forms.py:443
 msgid "This post does't belong to that user"
 msgstr "Argitalpen hau ez da erabiltzaile horrena"
 
-#: s2forums/djangobb_forum/forms.py:461 s2forums/djangobb_forum/models.py:266
+#: s2forums/djangobb_forum/forms.py:459 s2forums/djangobb_forum/models.py:266
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:34
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
 msgid "Message"
 msgstr "Mezua"
 
-#: s2forums/djangobb_forum/forms.py:514
+#: s2forums/djangobb_forum/forms.py:512
 #, python-format
 msgid "You have selected too many choices. You may only select %i."
 msgstr "Aukera gehiegi hautatu dituzu. %i soilik hauta dezakezu."
 
-#: s2forums/djangobb_forum/forms.py:521
+#: s2forums/djangobb_forum/forms.py:519
 msgid "Write each answer on a new line."
 msgstr "Erantzun bakoitza lerro berri batean idatzi."
 
-#: s2forums/djangobb_forum/forms.py:524
+#: s2forums/djangobb_forum/forms.py:522
 msgid ""
 "Number of days for this poll to run. Leave empty for an indefinite poll."
 msgstr ""
 "Inkesta hau zenbat egunetan egongo den aktibatuta. Hutsean utzi definitu "
 "gabeko inkestarako."
 
-#: s2forums/djangobb_forum/forms.py:541
+#: s2forums/djangobb_forum/forms.py:539
 msgid "There is no valid answer."
 msgstr "Ez dago baliozko erantzunik."
 
-#: s2forums/djangobb_forum/forms.py:547
+#: s2forums/djangobb_forum/forms.py:545
 msgid "One of the answers is too long."
 msgstr "Erantzunetako bat luzeegia da."
 
@@ -570,7 +587,7 @@ msgstr "Sortu edo erantzun duzun gai orotara auto-harpidetu."
 msgid "Default markup"
 msgstr "Defektuzko markaketa"
 
-#: s2forums/djangobb_forum/models.py:414 templates/base.html:188
+#: s2forums/djangobb_forum/models.py:414 templates/base.html:237
 msgid "Profile"
 msgstr "Profila"
 
@@ -601,7 +618,7 @@ msgid "Report"
 msgstr "Jakinarazi/Salatu"
 
 #: s2forums/djangobb_forum/models.py:455
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:31
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:28
 #: s2forums/djangobb_forum/templates/djangobb_forum/reports.html:6
 msgid "Reports"
 msgstr "Jakinarazpenak"
@@ -852,18 +869,18 @@ msgstr "Gai berria"
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:11
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:27
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:189
-#: templates/base.html:315
+#: templates/base.html:324
 msgid "Discussion Forums"
 msgstr "Eztabaida foroak"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:6
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:6
 msgid "Discuss Scratch"
 msgstr "Scratchi buruz eztabaidatu"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:129
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:43
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:126
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:40
 msgid "Notice"
 msgstr "Oharra"
 
@@ -986,8 +1003,9 @@ msgstr "Itsaskina:"
 #: templates/explore/includes/related_projects.html:75
 #: templates/explore/includes/related_projects2.html:8
 #: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-list.html:13
-#: templates/projects/base.html:105 templates/projects/base.html.py:364
+#: templates/galleries/includes/project-thumb.html:26
+#: templates/galleries/includes/project-thumb.html:28
+#: templates/projects/base.html:105 templates/projects/base.html.py:368
 #: templates/projects/includes/project_list.html:11
 msgid "by"
 msgstr "egilea"
@@ -1005,24 +1023,24 @@ msgstr "Foroa hutsik dago."
 msgid "Moderate forum"
 msgstr "Foroa moderatu"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:16
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:15
 msgid "Show new posts since last visit"
 msgstr "Azken bisitatik izan diren argitalpen berriak erakutsi"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:20
 msgid "Discussion Home"
 msgstr "Eztabaidaren orria"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:23
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:18
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:20
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
-#: templates/404.html:19 templates/base.html:166 templates/contact-us.html:105
+#: templates/404.html:18 templates/base.html:184 templates/contact-us.html:92
 msgid "Search"
 msgstr "Bilatu"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:29
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:26
 #, python-format
 msgid "Reports (%(report_count)s)"
 msgstr "Txostenak (%(report_count)s)"
@@ -1299,8 +1317,7 @@ msgstr "Errore bat suertatu da :( Berriz saiatu?"
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:200
 msgid "Follow this discussion to get a message when there's a new post"
 msgstr ""
-"Eztabaida hau jarraitu, argitalpen berri bat egiten denean mezu bat "
-"jasotzeko"
+"Eztabaida hau jarraitu, argitalpen berri bat egiten denean mezu bat jasotzeko"
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:18
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:200
@@ -1515,7 +1532,7 @@ msgstr "Erantzunak:"
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
-#: templates/base.html:146
+#: templates/base.html:177
 msgid "Discuss"
 msgstr "Eztabaidatu"
 
@@ -1577,8 +1594,8 @@ msgstr ""
 "Sinadura, zure argitalpenetara erantsia den testu motza da. Bertan nahi "
 "duzuna idatz zenezake. Gogokoen duzun aipamena edo beste edozer jar "
 "zenezake. BB kodea erabil dezakezu zure sinaduran, foro zehatz honetan "
-"baimenduta bada. Zure sinadura editatzen duzun bakoitzean, "
-"baimenduta/aktibatuta dauden ezaugarrien zerranda ikus dezakezu."
+"baimenduta bada. Zure sinadura editatzen duzun bakoitzean, baimenduta/"
+"aktibatuta dauden ezaugarrien zerranda ikus dezakezu."
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:27
 msgid "No signature currently stored in profile."
@@ -1589,13 +1606,13 @@ msgid "When you update your profile, you will be redirected back to this page."
 msgstr "Zure profila eguneratzean, orri hontara berbideratua izango zara."
 
 # 97%
-#: templates/403.html:13
+#: templates/403.html:12
 msgid "403. Oh noes! Our server is Scratch'ing its head"
 msgstr ""
 "404. Ai ama! Gure zerbitzaria bere bururi hazka egiten dabil (Scratch hitzak "
 "hazka egitea esan nahi du ingelesez)"
 
-#: templates/403.html:16
+#: templates/403.html:15
 msgid ""
 "We couldn't authorize you to view this page. If you need to get in touch "
 "with us about this, send us an email at "
@@ -1603,13 +1620,13 @@ msgstr ""
 "Ezin izan dizugu orri hau ikusteko baimenik eman. Hau dela eta gurekin "
 "kontaktuan jarri nahi izanez gero, bidali email bat hurrengo helbidera: "
 
-#: templates/404.html:13
+#: templates/404.html:12
 msgid "404. Oh noes! Our server is Scratch'ing its head"
 msgstr ""
 "404. Ai ama! Gure zerbitzaria bere bururi hazka egiten dabil (Scratch = "
 "Hazka egin)"
 
-#: templates/404.html:16
+#: templates/404.html:15
 msgid ""
 "We couldn't find the page you're looking for. Check to make sure you've "
 "typed the url correctly."
@@ -1617,7 +1634,7 @@ msgstr ""
 "Bila zabiltzan orria ezin izan dugu aurkitu. URLa ongi idatzi duzula ziurta "
 "ezazu."
 
-#: templates/404.html:17
+#: templates/404.html:16
 msgid "You can try searching for what you're looking for here:"
 msgstr "Bila zabiltzana  hemen bila dezakezu:"
 
@@ -1637,180 +1654,196 @@ msgstr "Kontuaren ezarpenak -  Scratch"
 msgid "Coming Soon..."
 msgstr "Laister izango dugu..."
 
-#: templates/base.html:19
+#: templates/base.html:18
 msgid "Scratch"
 msgstr "Scratch"
 
-#: templates/base.html:19
+#: templates/base.html:18
 msgid "Imagine, Program, Share"
 msgstr "Irudikatu, Programatu, Partekatu"
 
-#: templates/base.html:144
+#: templates/base.html:175
 msgid "Create"
 msgstr "Sortu"
 
-#: templates/base.html:145 templates/explore/explore2.html:40
+#: templates/base.html:176 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Esploratu"
 
-#: templates/base.html:147
+#: templates/base.html:178
 msgid "Help"
 msgstr "Laguntza"
 
-#: templates/base.html:180
-msgid "messages - updates and notices"
-msgstr "mezuak - eguneraketak eta berriak"
-
-#: templates/base.html:181
-msgid "my stuff - manage projects and studios"
-msgstr "nire gauzak - proiektuak eta estudioak kudeatu"
-
-#: templates/base.html:189 templates/explore/base.html:24
-#: templates/studio/base.html:21
-msgid "My Stuff"
-msgstr "Nire gauzak"
-
-#: templates/base.html:190
-msgid "Account settings"
-msgstr "Kontuaren ezarpenak"
-
-#: templates/base.html:191
-msgid "Sign out"
-msgstr "Saioa amaitu"
-
-#: templates/base.html:202 templates/modal-registration.html:6
+#: templates/base.html:198 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Scratchera batu"
 
-#: templates/base.html:205 templates/base.html.py:216 templates/base.html:226
+#: templates/base.html:201 templates/base.html.py:212 templates/base.html:222
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Saioa hasi"
 
-#: templates/base.html:213 templates/modal-login.html:21
+#: templates/base.html:209 templates/modal-login.html:21
+#: templates/accounts/account_settings.html:9
+#: templates/accounts/email_change.html:9
+#: templates/accounts/deletion/confirmation.html:7
+#: templates/accounts/deletion/nostalgia.html:6
 #: templates/includes/backbone-templates.html:26
 msgid "Password"
 msgstr "Pasahitza"
 
-#: templates/base.html:217
+#: templates/base.html:213
 msgid "Forgot password?"
 msgstr "Pasahitza ahaztu al duzu?"
 
-#: templates/base.html:293
+#: templates/base.html:229
+msgid "messages - updates and notices"
+msgstr "mezuak - eguneraketak eta berriak"
+
+#: templates/base.html:230
+msgid "my stuff - manage projects and studios"
+msgstr "nire gauzak - proiektuak eta estudioak kudeatu"
+
+#: templates/base.html:238 templates/explore/base.html:24
+#: templates/studio/base.html:21
+msgid "My Stuff"
+msgstr "Nire gauzak"
+
+#: templates/base.html:239
+msgid "Account settings"
+msgstr "Kontuaren ezarpenak"
+
+#: templates/base.html:240
+msgid "Sign out"
+msgstr "Saioa amaitu"
+
+#: templates/base.html:310
 msgid "About"
 msgstr "Scratchi buruz"
 
-#: templates/base.html:295 templates/info/about.html:13
-#: templates/info/help/index.html:93
+#: templates/base.html:312 templates/info/about.html:13
+#: templates/info/help/index.html:92
 msgid "About Scratch"
 msgstr "Scratchi buruz"
 
-#: templates/base.html:296 templates/info/parents.html:12
+#: templates/base.html:313 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "Gurasoentzat"
 
-#: templates/base.html:297 templates/info/educators.html:12
+#: templates/base.html:314 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "Hezitzaileentzat"
 
-#: templates/base.html:306
-msgid "Donate"
-msgstr "Dohaintzan eman"
+#: templates/base.html:315
+msgid "Credits"
+msgstr ""
 
-#: templates/base.html:308
+#: templates/base.html:316
 msgid "Jobs"
 msgstr "Lanak"
 
-#: templates/base.html:312 templates/info/parents.html:72
+#: templates/base.html:317
+msgid "Press"
+msgstr ""
+
+#: templates/base.html:321 templates/info/parents.html:72
 msgid "Community"
 msgstr "Komunitatea"
 
-#: templates/base.html:314
+#: templates/base.html:323
 msgid "Community Guidelines"
 msgstr "Komunitatearen jarraibideak"
 
-#: templates/base.html:316 templates/info/help/index.html:114
+#: templates/base.html:325 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Scratch Wikia"
 
-#: templates/base.html:317
+#: templates/base.html:326
 msgid "Statistics"
 msgstr "Estatistikak"
 
-#: templates/base.html:321 templates/search/includes/tabs.html:17
+#: templates/base.html:330 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr "Sustengua"
 
-#: templates/base.html:323
+#: templates/base.html:332
 msgid "Help Page"
 msgstr "Laguntza Orria"
 
-#: templates/base.html:324
+#: templates/base.html:333
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/base.html:325
+#: templates/base.html:334
 msgid "Offline Editor"
 msgstr "Lineaz Kanpoko Editorea"
 
-#: templates/base.html:326 templates/contact-us-success.html:12
+#: templates/base.html:335 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Gurekin harremanetan jarri"
 
-#: templates/base.html:330
+#: templates/base.html:336
+msgid "Donate"
+msgstr "Dohaintzan eman"
+
+#: templates/base.html:340
 msgid "Legal"
 msgstr ""
 
-#: templates/base.html:332
+#: templates/base.html:342
 msgid "Terms of Use"
 msgstr ""
 
-#: templates/base.html:333 templates/info/help/faq.html:28
+#: templates/base.html:343 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80
 msgid "Privacy Policy"
 msgstr "Pribatasun politika"
 
-#: templates/base.html:334 templates/info/DMCA.html:10
+#: templates/base.html:344 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:338
+#: templates/base.html:348
 msgid "Scratch Family"
 msgstr ""
 
 # 77%
-#: templates/base.html:340
+#: templates/base.html:350
 #, fuzzy
 msgid "ScratchEd"
 msgstr "Scratch"
 
 # 88%
-#: templates/base.html:341
+#: templates/base.html:351
 #, fuzzy
 msgid "ScratchJr"
 msgstr "Scratcherra"
 
 # 75%
-#: templates/base.html:342
+#: templates/base.html:352
 #, fuzzy
 msgid "Scratch Day"
 msgstr "Scratch Taldea"
 
-#: templates/base.html:343
+#: templates/base.html:353
 msgid "Scratch Conference"
 msgstr ""
 
-#: templates/base.html:344
+#: templates/base.html:354
 msgid "Code-to-Learn Foundation"
 msgstr ""
 
-#: templates/base.html:359
+#: templates/base.html:369
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
 "Scratch, MIT Media Lab-eko Lifelong Kindergarten Group-aren proiektu bat da"
+
+#: templates/base.html:435
+msgid "Your Account Will Not Be Deleted"
+msgstr ""
 
 #: templates/coming-soon.html:6
 msgid "Coming Soon-  Scratch"
@@ -1846,28 +1879,28 @@ msgstr ""
 "Scratcheko <a href=\"/discuss\">Eztabaida foroetan</a> ere egin dezakezu "
 "bilaketa:"
 
-#: templates/contact-us.html:107
+#: templates/contact-us.html:94
 msgid ""
 "If you can't find an answer, post a new topic on the <a href=\"/discuss"
 "\">Discussion forums.</a> There are many experienced Scratchers who can help!"
 msgstr ""
-"Erantzunik ezin baduzu aurkitu, gaia berriz argitara ezazu <a "
-"href=\"/discuss\">Eztabaida foroetan.</a> Lagun zaitzaken hainbat "
-"experientziadun Scratch erabiltzaile dago bertan! "
+"Erantzunik ezin baduzu aurkitu, gaia berriz argitara ezazu <a href=\"/"
+"discuss\">Eztabaida foroetan.</a> Lagun zaitzaken hainbat experientziadun "
+"Scratch erabiltzaile dago bertan! "
 
-#: templates/contact-us.html:110
+#: templates/contact-us.html:97
 msgid "Questions About Scratch"
 msgstr "Scratchi buruzko galderak"
 
-#: templates/contact-us.html:111
+#: templates/contact-us.html:98
 msgid "Help with Scripts"
 msgstr "Skriptei buruzko laguntza"
 
-#: templates/contact-us.html:112
+#: templates/contact-us.html:99
 msgid "Bugs and Glitches"
 msgstr "Akatsak eta erroreak"
 
-#: templates/contact-us.html:115
+#: templates/contact-us.html:102
 msgid ""
 "If you need to contact us, please choose from one of the options below. We "
 "get a lot of mail, so we may not be able to respond to your message."
@@ -1875,23 +1908,23 @@ msgstr ""
 "Gurekin harremanetan jartzekotan, hauta ezazu beheko aukeretako bat. Email "
 "asko jasotzen dugu eta agian ez gara zure mezua erantzuteko gai izango."
 
-#: templates/contact-us.html:120
+#: templates/contact-us.html:107
 msgid "Select a topic"
 msgstr "Gaia aukeratu"
 
-#: templates/contact-us.html:121
+#: templates/contact-us.html:108
 msgid "Report something inappropriate..."
 msgstr "Desegokia den zerbait salatu..."
 
-#: templates/contact-us.html:122
+#: templates/contact-us.html:109
 msgid "Report a problem with the website..."
 msgstr "Webguneak duen arazoren bat jakinarazi..."
 
-#: templates/contact-us.html:123
+#: templates/contact-us.html:110
 msgid "Other..."
 msgstr "Beste zerbait..."
 
-#: templates/contact-us.html:132 templates/accounts/banned-response.html:78
+#: templates/contact-us.html:119 templates/accounts/banned-response.html:78
 msgid "Send"
 msgstr "Bidali"
 
@@ -2115,8 +2148,8 @@ msgid ""
 "\">respectful and friendly</a>."
 msgstr ""
 "Scratch urte guztitako jendez osaturiko komunitatea da.  Ziurta ezazu zure "
-"proiektuak eta iruzkinak <a target=\"_blank\" "
-"href=\"/community_guidelines\">errespetuzkoak eta adiskidetsuak</a> direla."
+"proiektuak eta iruzkinak <a target=\"_blank\" href=\"/community_guidelines\">"
+"errespetuzkoak eta adiskidetsuak</a> direla."
 
 #: templates/modal-registration.html:161
 msgid "Would you like to:"
@@ -2169,6 +2202,17 @@ msgstr "Scratcher batekin konektatu"
 #: templates/info/help/studio/tips/howto/nametip7.html:13
 #: templates/info/help/studio/tips/howto/nametip8.html:13
 #: templates/info/help/studio/tips/howto/nametip9.html:13
+#: templates/info/help/studio/tips/howto/pgametip1.html:13
+#: templates/info/help/studio/tips/howto/pgametip10.html:13
+#: templates/info/help/studio/tips/howto/pgametip11.html:13
+#: templates/info/help/studio/tips/howto/pgametip2.html:13
+#: templates/info/help/studio/tips/howto/pgametip3.html:13
+#: templates/info/help/studio/tips/howto/pgametip4.html:13
+#: templates/info/help/studio/tips/howto/pgametip5.html:13
+#: templates/info/help/studio/tips/howto/pgametip6.html:13
+#: templates/info/help/studio/tips/howto/pgametip7.html:13
+#: templates/info/help/studio/tips/howto/pgametip8.html:13
+#: templates/info/help/studio/tips/howto/pgametip9.html:13
 #: templates/profiles/scratcher_promotion_modal.html:65
 msgid "Next"
 msgstr "Hurrengoa"
@@ -2264,6 +2308,19 @@ msgstr "Hemendik oso gutxira..."
 msgid "Scratch Terms of Use"
 msgstr ""
 
+#: templates/accounts/account_settings.html:8
+#: templates/accounts/email_change.html:8
+#: templates/accounts/password_change_form.html:8
+#: templates/accounts/deletion/confirmation.html:6
+#: templates/accounts/deletion/nostalgia.html:5
+#, fuzzy
+msgid "Account"
+msgstr "Kontuak"
+
+#: templates/accounts/account_settings.html:38
+msgid "Save my Changes"
+msgstr ""
+
 #: templates/accounts/banned-response.html:32
 msgid "The Scratch Team decided to block the account:"
 msgstr "Scratch lantaldeak kontua blokeatzea erabaki du:"
@@ -2313,7 +2370,7 @@ msgstr ""
 "datuak argitaratu."
 
 #: templates/accounts/banned-response.html:62
-#: templates/info/community_guidelines.html:25
+#: templates/info/community_guidelines.html:26
 msgid ""
 "<b>Help keep the site friendly.</b> If you think a project or comment is "
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
@@ -2328,22 +2385,14 @@ msgid "Account Settings"
 msgstr "Kontuaren ezarpenak"
 
 #: templates/accounts/beta_optin.html:8
-#: templates/accounts/change_country.html:8
-#: templates/accounts/email_change.html:8
 msgid "Change password"
 msgstr "Pasahitza aldatu"
 
 #: templates/accounts/beta_optin.html:9
-#: templates/accounts/change_country.html:9
-#: templates/accounts/email_change.html:9
-#: templates/accounts/password_change_form.html:9
 msgid "Change email"
 msgstr "Emaila aldatu"
 
 #: templates/accounts/beta_optin.html:10
-#: templates/accounts/change_country.html:10
-#: templates/accounts/email_change.html:10
-#: templates/accounts/password_change_form.html:10
 msgid "Change country"
 msgstr "Herrialdea aldatu"
 
@@ -2361,7 +2410,6 @@ msgstr ""
 
 # 85%
 #: templates/accounts/beta_optin.html:33
-#: templates/accounts/change_country.html:32
 msgid "Update"
 msgstr "Eguneratu"
 
@@ -2369,9 +2417,10 @@ msgstr "Eguneratu"
 msgid "Change Email"
 msgstr "Emaila aldatu"
 
-#: templates/accounts/password_change_form.html:8
-msgid "Change password "
-msgstr "Pasahitza aldatu"
+#: templates/accounts/password_change_form.html:9
+#, fuzzy
+msgid "Password "
+msgstr "Pasahitza"
 
 #: templates/accounts/password_change_form.html:16
 msgid "After changing your password, you will be prompted to log back in."
@@ -2381,6 +2430,71 @@ msgstr "Zure pasahitza aldatu ondoren, berriro hasi beharko duzu saioa."
 msgid "Change Password"
 msgstr "Pasahitza aldatu"
 
+#: templates/accounts/deletion/confirmation.html:12
+#: templates/accounts/deletion/nostalgia.html:11
+msgid "Delete my account"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:15
+msgid "Whoops, go back"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:17
+#, fuzzy
+msgid "Are you sure you want to delete your account?"
+msgstr "Argitalpen hau ezabatu nahi al duzu benetan?"
+
+#: templates/accounts/deletion/nostalgia.html:22
+#, python-format
+msgid "You joined the Scratch community %(years_ago)s years ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:24
+msgid "You joined the Scratch community a year ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:26
+#, python-format
+msgid "You joined the Scratch community %(months_ago)s months ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:28
+msgid "You joined the Scratch community a month ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:33
+#, python-format
+msgid ""
+"You've created %(num_projects)s projects and have %(num_followers)s "
+"followers."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:41
+msgid "Some of your projects"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:42
+#, fuzzy
+msgid "Your projects"
+msgstr "Proiektu gehienak"
+
+#: templates/accounts/deletion/nostalgia.html:63
+msgid "Some of your followers"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:64
+#, fuzzy
+msgid "Your followers"
+msgstr "Jarraitzaile gehienak"
+
+#: templates/accounts/deletion/nostalgia.html:81
+msgid "Yes, next step"
+msgstr ""
+
+#: templates/accounts/deletion/includes/deletion_form.html:15
+msgid "Delete account &amp; Sign out"
+msgstr ""
+
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
 #: templates/carousel/carousel.html:18 templates/homepage/index.html:83
@@ -2389,8 +2503,8 @@ msgstr "Pasahitza aldatu"
 #: templates/profiles/profile_detail.html:270
 #: templates/profiles/profile_detail.html:290
 #: templates/profiles/profile_detail.html:310
-#: templates/profiles/profile_detail.html:347 templates/projects/base.html:353
-#: templates/projects/base.html.py:383 templates/search/search.html:58
+#: templates/profiles/profile_detail.html:347 templates/projects/base.html:357
+#: templates/projects/base.html.py:387 templates/search/search.html:58
 #: templates/search/search.html.py:88 templates/search/search.html:96
 msgid "View all"
 msgstr "Guztia ikusi"
@@ -2400,6 +2514,7 @@ msgid "No items"
 msgstr "Edukirik ez dago"
 
 #: templates/carousel/includes/project-thumb.html:23
+#: templates/galleries/includes/project-thumb.html:23
 msgid "in"
 msgstr "--"
 
@@ -2436,8 +2551,7 @@ msgid ""
 "respectful."
 msgstr ""
 "Gogoan izan proiektu hau programazioan hasi berria den batek egin izan ahal "
-"duela. /nZure iruzkinak adiskidetsuak eta errespetuzkoak direla ziurta "
-"ezazu."
+"duela. /nZure iruzkinak adiskidetsuak eta errespetuzkoak direla ziurta ezazu."
 
 #: templates/comments/comment-module.html:35
 msgid "You have <span id=\"chars-left\">500</span> characters left."
@@ -2587,7 +2701,7 @@ msgid "Projects"
 msgstr "Proiektuak"
 
 #: templates/explore/projects.html:101 templates/explore/studios.html:86
-#: templates/projects/base.html:382
+#: templates/projects/base.html:386
 #: templates/projects/includes/shared/shared-project-actions.html:5
 #: templates/search/search.html:64 templates/search/search.html.py:87
 #: templates/search/includes/tabs.html:11
@@ -2967,7 +3081,7 @@ msgid "Loves"
 msgstr "Gogokoenak"
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:352 templates/projects/remixes.html:3
+#: templates/projects/base.html:356 templates/projects/remixes.html:3
 #: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
@@ -3019,8 +3133,8 @@ msgstr ""
 "Scratcheko erabilitzaile batek zure copyrighta urratu duen ala ez jakiteko, "
 "kontuan izan arren Scratch heziketarako ekimen bat dela eta ez dirua "
 "egitekoa, umeei heziketa laguntzen saiatzen dela, teknologia digitala "
-"erabiliz beren burua adierazteko herrramintak emanez. Kontuan izan ere  "
-"“Fair Use” doktrina (1976ko Copyright Act, 17 U.S.C. § 107)."
+"erabiliz beren burua adierazteko herrramintak emanez. Kontuan izan ere  “"
+"Fair Use” doktrina (1976ko Copyright Act, 17 U.S.C. § 107)."
 
 #: templates/info/DMCA.html:24
 msgid ""
@@ -3042,8 +3156,8 @@ msgstr ""
 "Copyrightaren urraketa salaketa bat egitea aukeratzen baduzu, kontuan izan "
 "zure salaketa argitara dezakegula, identifikazio pertsonala erraztu dezaken "
 "informazioaz, chillingeffects.org bezalako konpentsazio kamara batean. Jakin "
-"ere kalteordainen erantzule izan zaitezkela (abokatuen kostuak barne) "
-"ekimen batek zure copyrighta urratzen duela faltsuki salatuz gero."
+"ere kalteordainen erantzule izan zaitezkela (abokatuen kostuak barne) ekimen "
+"batek zure copyrighta urratzen duela faltsuki salatuz gero."
 
 #: templates/info/about.html:17
 msgid ""
@@ -3077,8 +3191,8 @@ msgid ""
 "<a href=\"/parents\">INFO FOR PARENTS</a> | <a href=\"/educators\">INFO FOR "
 "EDUCATORS</a>"
 msgstr ""
-"<a href=\"/parents\">GURASOENTZAKO INFORMAZIOA</a> | <a "
-"href=\"/educators\">HEZITZAILEENTZAKO INFORMAZIOA</a>"
+"<a href=\"/parents\">GURASOENTZAKO INFORMAZIOA</a> | <a href=\"/educators\">"
+"HEZITZAILEENTZAKO INFORMAZIOA</a>"
 
 #: templates/info/about.html:35
 msgid "Who Uses Scratch?"
@@ -3113,8 +3227,8 @@ msgstr ""
 "Hizkuntza aldatzeko klikatu orriaren azpian dagoen menuan. Edo Proiektu "
 "Editorean, klika ezazu munduko globoa orriaren gaikaldean.Itzulpen bat "
 "gehitu edo hobetzeko \n"
-"ikus <a href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scratch\">itz"
-"ulpenen</a> orria."
+"ikus <a href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scratch\""
+">itzulpenen</a> orria."
 
 #: templates/info/about.html:46
 msgid "Quotes"
@@ -3128,8 +3242,8 @@ msgid ""
 msgstr ""
 "Scratch lantaldeak hainbat email jaso ditu gazte, guraso eta hezitzaileek "
 "bidalita eskerrak emanez Scratchengatik. Jakin nahi al duzu jendeak zer "
-"dioen? Sorta bat irakur dezakezu jaso ditugun  <a "
-"href=\"/info/quotes\">aipamenekin</a>."
+"dioen? Sorta bat irakur dezakezu jaso ditugun  <a href=\"/info/quotes\""
+">aipamenekin</a>."
 
 #: templates/info/about.html:50
 msgid "Learn More About Scratch"
@@ -3151,7 +3265,7 @@ msgstr ""
 "<li><a href=\"/info/credits/\">Scratchen Kredituak</a></li>\n"
 "    "
 
-#: templates/info/about.html:70
+#: templates/info/about.html:70 templates/info/hoc2014.html:57
 msgid "Learn to Code, Code to Learn"
 msgstr "Ikasi Programatzen, Programatuz ikasi"
 
@@ -3179,16 +3293,9 @@ msgid ""
 "  Students are learning with Scratch at all levels (from elementary school "
 "to college) and across disciplines (such as math, computer science, language "
 "arts, social studies). Educators share stories, exchange resources, ask "
-"questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+"questions, and find people on the <a href=\"http://scratched.gse.harvard.edu/"
 "\">ScratchEd website</a>.\n"
 msgstr ""
-"\n"
-"Ikasleak maila ezberdinetan ari dira ikasten Scratchekin (oinarrizko "
-"hezkuntzatik unibertsitaterarte) eta esparru ezberdinetan (matematika, "
-"informatika, hizkuntzak, ikasketa sozialak besteak beste). Hezitzaileek "
-"istorioak partekatu, errekurtsoak elkarbanatu, galderak egin eta jende "
-"berria ezagutzen dute <a href=\"http://scratched.media.mit.edu/\">ScratchEd "
-"webgunean</a>.\n"
 
 #: templates/info/about.html:84
 msgid "Research"
@@ -3214,17 +3321,10 @@ msgid ""
 "the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
 "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
 "Learn Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab "
-"research consortia. If you'd like to support Scratch, please see our <a href="
-"\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
+"research consortia. If you'd like to support Scratch, please see our \n"
+"<a href=\"https://secure.donationpay.org/codetolearn/\">donate page</a>, or "
+"contact us at donate@scratch.mit.edu.\n"
 msgstr ""
-"\n"
-"Scratch proiektuak, 2003an hasi zenak, sostengu eskuzabala jaso du National "
-"Science Foundationaren eskutik (0325828, 1002713, 1027848, 1019396 sariak), "
-"Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code.to-"
-"Learn Foundation, Google, Dell, Fastly, Inversoft, eta MIT Media Lab "
-"ikerketa konsorzioarenetik ere. Scratch diruz lagundu nahi izango bazenu, "
-"ikus mesedez gure <a href=\"/info/donate\">dohaintza orrria</a>, edo kontakta "
-"ezazu gurekin donate@scratch.mit.edu helbidean.\n"
 
 #: templates/info/characterscamp.html:9 templates/info/characterscamp.html:16
 msgid "Creative Characters Camp"
@@ -3246,23 +3346,30 @@ msgid ""
 "you like about it and offer suggestions."
 msgstr ""
 
-#: templates/info/community_guidelines.html:28
+#: templates/info/community_guidelines.html:25
+msgid ""
+"<b>Be honest.</b> Don’t try to impersonate other Scratchers, spread rumors, "
+"or otherwise try to trick the community."
+msgstr ""
+
+#: templates/info/community_guidelines.html:29
 msgid ""
 "Scratch welcomes people of all ages, races, ethnicities, religions, sexual "
 "orientations, and gender identities."
 msgstr ""
 
-#: templates/info/credits.html:96
+#: templates/info/credits.html:94
+msgid "Scratch Credits"
+msgstr "Scratchen Kredituak"
+
+#: templates/info/credits.html:98
 msgid "Scratch Credits and Contributors"
 msgstr "Scratcheko Kredituak eta Laguntzaileak"
 
 #: templates/info/credits.html:101
-msgid "Meet the Scratch Team"
-msgstr "Ezagutu Scratch Lantaldea"
-
-#: templates/info/credits.html:187
-msgid "Community and Moderation"
-msgstr "Komunitatea eta Moderazioa"
+#, fuzzy
+msgid "MIT Scratch Team"
+msgstr "Scratch Taldea"
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
@@ -3276,45 +3383,27 @@ msgid ""
 "educational and computer science researchers, librarians, museum educators, "
 "and parents.<br/><br/>\n"
 "Want to learn more about learning with Scratch?<br/>Check out the <a href="
-"\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+"\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd online "
+"community</a>.\n"
 "    "
 msgstr ""
-"Scratch ikasketa eta heziketa helburu izanik dago diseinatuta. 2007tik "
-"heziketa talde zabal bat aritu da Scratch sustengatzen, heziketa ingurune "
-"formal eta informaletan; k-12 ikasgela irakasleak, heziketa eta ordenagailu "
-"zientzia ikertzaileak, liburuzainak, museo hezitzaileak eta "
-"gurasoak.<br/><br/>\n"
-"Scratchekin nola ikasteari buruz gehiago ikasi nahi?<br/>Begira ezazu <a "
-"href=\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online "
-"komunitatean</a>.\n"
-"    "
 
 #: templates/info/educators.html:26
 msgid ""
 "\n"
 " <h3>What is ScratchEd?</h3>\n"
-"\t      <p>Launched in July 2009, <a href=\"http://scratch-ed.org\" target="
-"\"_blank\">ScratchEd</a> is an online community where Scratch educators "
-"share stories, exchange resources, ask questions, and find people.</p>\n"
+"\t      <p>Launched in July 2009, <a href=\"http://scratched.gse.harvard.edu"
+"\" target=\"_blank\">ScratchEd</a> is an online community where Scratch "
+"educators share stories, exchange resources, ask questions, and find people."
+"</p>\n"
 "\t      <p>Since its launch, more than 7500 educators from all around the "
 "world have joined the community, sharing hundreds of resources and engaging "
 "in thousands of discussions.</p>\n"
-"\t      <p>Join the ScratchEd community for free at <a href=\"http://scratch-"
-"ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+"\t      <p>Join the ScratchEd community for free at <a href=\"http://"
+"scratched.gse.harvard.edu\" target=\"_blank\">scratched.gse.harvard.edu</a>."
+"<p>\n"
 "\t      "
 msgstr ""
-"\n"
-"<h3>Zer da ScratchEd?</h3>\n"
-"\t <p>2009ko Uztailean jarria abian, <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a> online komunitate bat da non Scratcheko "
-"hezitzaileak istorioak elkarbanatu, errekurtsoak partekatu, galderak galdetu "
-"eta jendea ezagutzen duten.</p>\n"
-"\t <p>Abian jarri zenetik, mundu guztiko 7500 hezitzaile baino gehiago batu "
-"dira komunitatera, ehundaka errekurtso elkarbanatuz eta milaka eztabaidetan "
-"lotu direlatik.</p>\n"
-"\t <p>ScratchEd komunitatera batu zaitez dohainik <a href=\"http://scratch-"
-"ed.org\" target=\"_blank\">scratch-ed.org</a> webgunean.<p>\n"
-"\t"
 
 #: templates/info/educators.html:32
 msgid ""
@@ -3322,54 +3411,27 @@ msgid ""
 "\t      <h3>How can I learn more about what educators are doing with Scratch "
 "&ndash; and how I might use it?</h3>\n"
 "\t      <p>Not sure what might be possible with Scratch?</p>\n"
-"\t      <p><a href=\"http://scratched.media.mit.edu/stories\" target=\"_blank"
-"\">Read a story</a> about how educators have been including Scratch "
+"\t      <p><a href=\"http://scratched.gse.harvard.edu/stories\" target="
+"\"_blank\">Read a story</a> about how educators have been including Scratch "
 "activities in a wide range of learning environments.</a></p>\n"
-"\t      <p>Or <a href=\"http://scratched.media.mit.edu/resources/all\" "
+"\t      <p>Or <a href=\"http://scratched.gse.harvard.edu/resources/all\" "
 "target=\"_blank\">explore resources</a> across ages, disciplines, and "
-"settings. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+"settings. <a href=\"http://scratched.gse.harvard.edu/resources/new-scratch\" "
 "target=\"_blank\">Watch webinars</a> and review documents like the <a href="
-"\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-draft\" "
-"target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
-"\t      <p>In addition to exploring the <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a> online community and its resources, you can "
-"engage with the ScratchEd Team and other Scratch educators via <a href="
-"\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a href="
-"\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
-"<a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>"
-"\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/"
-"scratched-weekly-roundup\" target=\"_blank>\">weekly roundups</a>, and our "
-"<a href=\"http://scratched.media.mit.edu/events\" target=\"_blank>"
-"\">quarterly newsletter</a>.<p>\n"
+"\"http://scratched.gse.harvard.edu/resources/scratch-curriculum-guide-draft"
+"\" target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
+"\t      <p>In addition to exploring the <a href=\"http://scratched.gse."
+"harvard.edu\" target=\"_blank\">ScratchEd</a> online community and its "
+"resources, you can engage with the ScratchEd Team and other Scratch "
+"educators via <a href=\"http://twitter.com/scratchedteam\" target=\"_blank>"
+"\">Twitter</a>, <a href=\"http://www.facebook.com/ScratchEdTeam\" target="
+"\"_blank>\">Facebook</a>, <a href=\"http://www.edmodo.com/publisher/"
+"scratcheducation\" target=\"_blank>\">Edmodo</a>, <a href=\"http://scratched."
+"gse.harvard.edu/discussions/scratched-weekly-roundup\" target=\"_blank>"
+"\">weekly roundups</a>, and our <a href=\"http://scratched.gse.harvard.edu/"
+"events\" target=\"_blank>\">quarterly newsletter</a>.<p>\n"
 "\t      "
 msgstr ""
-"\n"
-"\t <h3>Nola ikas nezake gehiago Scratchekin hezitzaileak egiten ari direnari "
-"eta nola erabil nezakeenari buruz?</h3>\n"
-"\t <p>Ez zaude ziur Scratchekin egin daitekenari buruz?</p>\n"
-"\t <p><a href=\"http://scratched.media.mit.edu/stories\" "
-"target=\"_blank\">Irakurri istorio bat</a> zeinak hezitzaileek Scratch "
-"jarduerak heziketa eremu ezberdinetara nola integratu dituzten kontatzen "
-"duena.</a></p>\n"
-"\t <p>Edo <a href=\"http://scratched.media.mit.edu/resources/all\" "
-"target=\"_blank\">errekurtsoak esploratu</a> urte, disziplina eta kontextu "
-"ezberdinetan oinarrituak. <a href=\"http://scratched.media.mit.edu/resources"
-"/new-scratch\" target=\"_blank\">Ikusi webinarak</a> eta berrikusi dokumentuak "
-"<a href=\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-"
-"draft\" target=\"_blank\">Scratch kurrikulu gida</a> besteak beste.</p>\n"
-"\t <p><a href=\"http://scratch-ed.org\" target=\"_blank\">ScratchEd</a> "
-"esploratzearekin batera, online komunitatea eta bere errekurtsoak, ScratchEd "
-"Teamarekin eta beste Scratch hezitzaile batzuekin elkarlanean jardun "
-"zaitezke: <a href=\"http://twitter.com/scratchedteam\" "
-"target=\"_blank>\">Twitter</a>, <a "
-"href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
-"<a href=\"http://www.edmodo.com/publisher/scratcheducation\" "
-"target=\"_blank>\">Edmodo</a>, <a "
-"href=\"http://scratched.media.mit.edu/discussions/scratched-weekly-roundup\" "
-"target=\"_blank>\">asteroko bilketa</a>, eta gure <a "
-"href=\"http://scratched.media.mit.edu/events\" target=\"_blank>\">hiruhileroko "
-"buletinetan</a>.<p>\n"
-"\t"
 
 #: templates/info/educators.html:44
 msgid "Connect with ScratchEd"
@@ -3441,6 +3503,52 @@ msgid ""
 "           </p><p>\n"
 "           Please check back on this page for future updates!\n"
 "                 "
+msgstr ""
+
+#: templates/info/hoc2014.html:4 templates/info/hoc2014.html.py:10
+msgid "Get Creative with Coding"
+msgstr ""
+
+#: templates/info/hoc2014.html:35
+msgid "Create one of these projects with Scratch!"
+msgstr ""
+
+#: templates/info/hoc2014.html:38
+msgid ""
+"\n"
+"          With <a href=\"http://scratch.mit.edu/about\">Scratch</a>, you can "
+"program your own stories, games, and animations  &mdash; and share them "
+"online.\n"
+"          "
+msgstr ""
+
+#: templates/info/hoc2014.html:48
+msgid "Scratch: Imagine, Program, Share"
+msgstr ""
+
+#: templates/info/hoc2014.html:51
+msgid ""
+"\n"
+"    \tMillions of young people around the world create projects with "
+"Scratch, a free programming language and <a href=\"http://scratch.mit.edu"
+"\">online community</a> developed by the MIT Media Lab.\n"
+msgstr ""
+
+#: templates/info/hoc2014.html:60
+msgid ""
+"When people learn to code in Scratch, they learn important strategies for "
+"solving problems, designing projects, and communicating ideas."
+msgstr ""
+
+#: templates/info/hoc2014.html:64
+msgid ""
+"\n"
+"          The <strong>Hour of Code</strong>&#8482; is a nationwide "
+"initiative by <a href=\"http://csedweek.org\">Computer Science Education "
+"Week</a> and <a href=\"http://code.org\">Code.org</a><br />\n"
+"          to introduce millions of students to one hour of computer science "
+"and computer programming.\n"
+"          "
 msgstr ""
 
 #: templates/info/overview.html:4
@@ -3544,9 +3652,8 @@ msgid ""
 "Find out more about the <a href=\"http://info.scratch.mit.edu/prototype"
 "\">new Scratch blocks</a>."
 msgstr ""
-"Ikas ezazu gehiago  <a "
-"href=\"http://info.scratch.mit.edu/prototype\">Scratcheko bloke berriei</a> "
-"buruz."
+"Ikas ezazu gehiago  <a href=\"http://info.scratch.mit.edu/prototype\">"
+"Scratcheko bloke berriei</a> buruz."
 
 #: templates/info/overview.html:57
 #, python-format
@@ -3554,8 +3661,8 @@ msgid ""
 "You can see and manage all your projects in <b>My Stuff</b> <img src="
 "\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
 msgstr ""
-"Zure proiektu guztiak kudea ditzakezu hemen: <b>Nire Gauzak</b> <img src=\"%"
-"(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
+"Zure proiektu guztiak kudea ditzakezu hemen: <b>Nire Gauzak</b> <img src=\""
+"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
 
 #: templates/info/overview.html:60
 msgid "Community Features"
@@ -3576,8 +3683,8 @@ msgid ""
 "inside-small.png\" /> to see how it works and experiment with the code."
 msgstr ""
 "Proiektu bat ikustean, klikatu  <img src=\"%(STATIC_URL)s/images/help/see-"
-"inside-small.png\" /> bere funtzionamendua ikusteko eta kodearekin jolasteko. "
-""
+"inside-small.png\" /> bere funtzionamendua ikusteko eta kodearekin "
+"jolasteko. "
 
 #: templates/info/overview.html:68
 #, python-format
@@ -3616,8 +3723,8 @@ msgid ""
 "People can post comments on your Profile page and <img src=\"%(STATIC_URL)s/"
 "images/help/follow-button.png\" /> your Scratch account to see updates."
 msgstr ""
-"Jendeak zure Profil orrian iruzkinak argitara ditzake  <img src=\"%"
-"(STATIC_URL)s/images/help/follow-button.png\" />  eta zure Scratch kontuan "
+"Jendeak zure Profil orrian iruzkinak argitara ditzake  <img src=\""
+"%(STATIC_URL)s/images/help/follow-button.png\" />  eta zure Scratch kontuan "
 "ere eguneraketak ikusteko."
 
 #: templates/info/overview.html:78
@@ -3681,8 +3788,7 @@ msgid ""
 "by people of all ages, including younger children with their parents."
 msgstr ""
 "Scratch 8 eta 16 urte artekoentzat bereziki diseinatua badago ere, adin "
-"ezberdineko jendeak erabiltzen du, ume gazteagoak eta beraien gurasoak "
-"barne."
+"ezberdineko jendeak erabiltzen du, ume gazteagoak eta beraien gurasoak barne."
 
 #: templates/info/parents.html:29
 msgid "What resources are available for learning Scratch?"
@@ -3699,8 +3805,8 @@ msgid ""
 "Scratch resources, see <a href=\"/help/\">Scratch Help</a>."
 msgstr ""
 "Hasi berria bazara, <a href=\"/projects/editor/?tip_bar=getStarted\">pausuz "
-"pausuko gida</a> duzu eskura Scratch barnean, edo <a href=\"%"
-"(STATIC_URL)s/pdfs/help/Getting-Started-Guide-Scratch2.pdf\">Hasiera guida "
+"pausuko gida</a> duzu eskura Scratch barnean, edo <a href=\""
+"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-Scratch2.pdf\">Hasiera guida "
 "(PDF)</a> jaitsi dezakezu. <a href=\"/help/cards/\">Scratch Txartelek</a> "
 "gehiago ikasteko era dibertigarri bat dira. Scratch errekurtsoen "
 "gainbegirada bat izateko, ikus a href=\"/help/\">Scratch Laguntza</a>."
@@ -3805,14 +3911,14 @@ msgid ""
 "and I thank you wholeheartedly. \n"
 "\""
 msgstr ""
-"<b>\"Oso lotsatia baina izakera teknikokoa den nire alabaren sorkuntzarentzat "
-"abagagune zoragarri eta segurua da.</b>. Bere denbora librean geroz eta "
-"konplexuagoak diren animazioak sortzen eta Scratch komunitatearekin banatzen "
-"ditu. Foroek antzeko izakera duten pertsonekin komunikatzea eta hizketaldi "
-"bat mantentzea ahalegintzen dute... Orain ordenagailuak, diseinu grafikoa "
-"eta animazioa, etorkizunean egin nahi izango duen zerbait dela sentitzen du. "
-"Zuen programak mundu berri bat ireki dio hainbat zentzutan, eta eskerrak "
-"eman nahi nizkizueke bihotz bihotzez\n"
+"<b>\"Oso lotsatia baina izakera teknikokoa den nire alabaren "
+"sorkuntzarentzat abagagune zoragarri eta segurua da.</b>. Bere denbora "
+"librean geroz eta konplexuagoak diren animazioak sortzen eta Scratch "
+"komunitatearekin banatzen ditu. Foroek antzeko izakera duten pertsonekin "
+"komunikatzea eta hizketaldi bat mantentzea ahalegintzen dute... Orain "
+"ordenagailuak, diseinu grafikoa eta animazioa, etorkizunean egin nahi izango "
+"duen zerbait dela sentitzen du. Zuen programak mundu berri bat ireki dio "
+"hainbat zentzutan, eta eskerrak eman nahi nizkizueke bihotz bihotzez\n"
 "\""
 
 #: templates/info/parents.html:58
@@ -3844,8 +3950,8 @@ msgid ""
 "Scratch</a>."
 msgstr ""
 "Gazteek Scratchekin ikasten dutenari buruz orri bateko gainbegirada izateko, "
-"ikus <a href=\"http://llk.media.mit.edu/scratch/Learning-with-"
-"Scratch.pdf\">Scratchekin ikasten</a>."
+"ikus <a href=\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">"
+"Scratchekin ikasten</a>."
 
 #: templates/info/parents.html:66
 msgid ""
@@ -3861,8 +3967,8 @@ msgid ""
 "We ask all participants on the site to follow the <a href=\"/"
 "community_guidelines\">Community Guidelines</a>."
 msgstr ""
-"Webgunearen parte-hartzaileei  <a href=\"/community_guidelines\">Komunitateko "
-"jarraibideak</a> jarraitzeko eskatzen diegu."
+"Webgunearen parte-hartzaileei  <a href=\"/community_guidelines\">"
+"Komunitateko jarraibideak</a> jarraitzeko eskatzen diegu."
 
 #: templates/info/parents.html:75
 msgid ""
@@ -3871,10 +3977,10 @@ msgid ""
 "a>."
 msgstr ""
 "Ez dugu kontu pribatuetako informazioa inorentzako ikusgarri egiten. "
-"Informazio gehiagorako, ikus mesedez <a href=\"/help/faq/#privacy\">Pribatasun "
-"Politika</a>."
+"Informazio gehiagorako, ikus mesedez <a href=\"/help/faq/#privacy\">"
+"Pribatasun Politika</a>."
 
-#: templates/info/parents.html:81 templates/info/help/index.html:98
+#: templates/info/parents.html:81 templates/info/help/index.html:97
 msgid "Questions?"
 msgstr "Galderarik?"
 
@@ -3899,8 +4005,8 @@ msgid ""
 "If you need to contact our staff team directly, click <a href="
 "\"%(contact_us_url)s\">Contact Us</a> at the bottom of any page."
 msgstr ""
-"Lantaldearekin zuzenean kontaktatu behar bazenu, klikatu <a href=\"%"
-"(contact_us_url)s\">Gurekin Kontaktatu</a> orriaren behekaldean."
+"Lantaldearekin zuzenean kontaktatu behar bazenu, klikatu <a href=\""
+"%(contact_us_url)s\">Gurekin Kontaktatu</a> orriaren behekaldean."
 
 #: templates/info/quotes.html:4
 msgid "Quotes - Scratch"
@@ -3924,8 +4030,8 @@ msgstr ""
 "\t joku interesgarriak eta jolastu, ikusi eta deskargatzeko dibertigarriak "
 "diren proiektuak sortzen gabiltzalako. \n"
 "\t Ez dut beste jendearekin hitzegitea soilik gustoko, sortzailea eta berria "
-"den zerbaiti buruz hitzegitea dut gustoko. <span "
-"class=\"quotes\">&rdquo;</span> - 13 urte</p>\n"
+"den zerbaiti buruz hitzegitea dut gustoko. <span class=\"quotes\""
+">&rdquo;</span> - 13 urte</p>\n"
 
 #: templates/info/quotes.html:26
 msgid ""
@@ -3936,8 +4042,8 @@ msgid ""
 "and when you work together, you can build a much better project than you can "
 "alone.<span class=\"quotes\">&rdquo;</span> - 13-year-old"
 msgstr ""
-"<span class=\"quotes\">&ldquo;</span>Nire 8 urteko alaba eta ni Scratch online "
-"komunitateko parte hartzaile izan gara urtebete baina gehiagoz. \n"
+"<span class=\"quotes\">&ldquo;</span>Nire 8 urteko alaba eta ni Scratch "
+"online komunitateko parte hartzaile izan gara urtebete baina gehiagoz. \n"
 "Gustoko gut jokuak eta animazioak beste umeekin diseinatu eta programatzea, "
 "jende ezberdinak gaitasun ezberdinak dituelako, \n"
 "eta batera egiten baduzu lan, bakarrik sor ditzazkezun baino proiektu hobeak "
@@ -3959,8 +4065,8 @@ msgstr ""
 " baina ez nuen oso konplexua zen lengoaia bat ikasi nahi. Haseran Scratchek "
 "ere konplexua zirudien, baina denbora batean berarekin jardun ostean joku "
 "izugarri batzu sortzeko gai izan naiz. Eta proiektuak hain errez parteka "
-"ahal izateak oraindik hobea egiten du. Scratch izugarria da! <span "
-"class=\"quotes\">&rdquo;</span>\n"
+"ahal izateak oraindik hobea egiten du. Scratch izugarria da! <span class=\""
+"quotes\">&rdquo;</span>\n"
 "  - 17 urte"
 
 #: templates/info/quotes.html:36
@@ -3983,39 +4089,48 @@ msgid "Research on Scratch"
 msgstr "Ikerketa Scratchen"
 
 #: templates/info/research.html:21
-#, python-format
 msgid ""
-"<p>Scratch team members from the MIT Media Lab <a href=\"http://llk.media."
-"mit.edu\">Lifelong Kindergarten Group</a> and at the University of "
-"Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
-"Education</a> are researching how people use and learn from Scratch.<br />\n"
-"<br />\n"
+"\n"
+"\tResearch on Scratch is being conducted by members of the MIT Scratch Team "
+"and researchers at other universities, including Yasmin Kafai at the "
+"University of Pennsylvania Graduate School of Education, Karen Brennan at "
+"the Harvard Graduate School of Education, \n"
+"Benjamin Mako Hill at the University of Washington, Andrés Monroy Hernandez "
+"at Microsoft Research, Mimi Ito and Crystle Martin at the University of "
+"California, Irvine, Quinn Burke at College of Charleston, Deborah Fields at "
+"Utah State University, and Kylie Peppler at Indiana University. "
+msgstr ""
+
+#: templates/info/research.html:24
+msgid ""
 "By sharing projects and participating in the Scratch online community, you "
 "are helping us better understand how people can use and \n"
-"learn with Scratch.&nbsp;Any publicly shared&nbsp;projects, comments, or "
-"other material on the Scratch site may be included\n"
+"learn with Scratch. Any publicly shared projects, comments, or other "
+"material on the Scratch site may be included\n"
 "in the research analysis, presentations, papers, and reports. No personally "
-"identifiable information is shared. \n"
-"(If you have any questions, please use the <a href=\"%(contact_us_url)s"
-"\">Contact Us</a> form.)</p>\n"
-"<p>The following are research papers, presentations, and <a href=\"#theses"
-"\">dissertations and theses</a> that share our findings about Scratch and "
-"the Scratch online community. This list also includes some papers conducted "
-"on Scratch by other researchers. For magazines and other articles, see <a "
-"href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch in the "
-"News</a>.</p>"
+"identifiable information is shared. "
+msgstr ""
+
+#: templates/info/research.html:27
+#, python-format
+msgid ""
+" (If you have any questions, please use the <a href=\"%(contact_us_url)s"
+"\">Contact Us</a> form.)"
 msgstr ""
 
 #: templates/info/research.html:28
-msgid "Academic Publications &amp; Presentations"
+msgid ""
+"Below are selected research papers, presentations, and theses on Scratch and "
+"the Scratch online community, followed by a list of National Science "
+"Foundation grants awarded to support Scratch."
 msgstr ""
 
-#: templates/info/research.html:73
-msgid "Dissertations and Theses"
+#: templates/info/research.html:30
+msgid "Research Papers &amp; Presentations"
 msgstr ""
 
-#: templates/info/research.html:86
-msgid "Academic Publications by Other Researchers and Educators"
+#: templates/info/research.html:81
+msgid "National Science Foundation Grants"
 msgstr ""
 
 # 81%
@@ -4074,17 +4189,17 @@ msgid ""
 "step2.png\" alt=\"Step 2\">\n"
 "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a> <br>\n"
-"\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
-"static/sa/Scratch.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-428a.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
+"\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
+"static/sa/Scratch-428a.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+"offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a> <br>\n"
+"sa/Scratch-428a.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
-"Scratch.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a>\n"
+"Scratch-428a.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"editor/download.png\" alt=\"Download \"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
@@ -4107,9 +4222,9 @@ msgid ""
 "\t\t\t\t   Getting Started Guide - <a href=\"%(STATIC_URL)spdfs/help/Getting-"
 "Started-Guide-Scratch2.pdf\">Download<img src=\"%(STATIC_URL)simages/help/"
 "offline-editor/pdf.png\" alt=\"PDF Download \"></a> <br>\n"
-"\t\t\t\t   Scratch Cards - <a href=\"%(STATIC_URL)spdfs/help/"
-"Scratch2Cards_Jan2013.pdf\">Download<img src=\"%(STATIC_URL)simages/help/"
-"offline-editor/pdf.png\" alt=\"PDF Download \"></a>\n"
+"\t\t\t\t   Scratch Cards - <a href=\"%(STATIC_URL)spdfs/help/Scratch2Cards."
+"pdf\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" "
+"alt=\"PDF Download \"></a>\n"
 "\t\t\t\t</p>\t\n"
 "\t\t\t\t"
 msgstr ""
@@ -4358,7 +4473,7 @@ msgstr "Pizza Txefa"
 msgid "Scratch Help"
 msgstr "Scratchi buruzko laguntza"
 
-#: templates/info/help/cards.html:9 templates/info/help/index.html:60
+#: templates/info/help/cards.html:9 templates/info/help/index.html:59
 msgid "Scratch Cards"
 msgstr "Scratch txartelak"
 
@@ -4371,7 +4486,7 @@ msgid "Get all the Cards"
 msgstr "Txartel guztiak eskuratu"
 
 #: templates/info/help/cards.html:18 templates/info/help/cards.html.py:20
-#: templates/info/help/index.html:46
+#: templates/info/help/index.html:45
 msgid "English"
 msgstr ""
 
@@ -4500,8 +4615,8 @@ msgid ""
 "\">dive in</a> to the project editor."
 msgstr ""
 "Ikus <a href=\"/help\">laguntza orria</a> Scratchekin hasteko hainbat era "
-"ezagutzeko. Edo <a href=\"/projects/editor/?tip_bar=getStarted\">murgildu</a> "
-"proiektu editorean."
+"ezagutzeko. Edo <a href=\"/projects/editor/?tip_bar=getStarted\">murgildu</a>"
+" proiektu editorean."
 
 #: templates/info/help/faq.html:55
 msgid "What are the system requirements for Scratch?"
@@ -4511,7 +4626,7 @@ msgstr "Zeintzu dira Scratchentzako sistema eskakizunak?"
 msgid ""
 "To run Scratch 2, you need a relatively recent web browser (<a href=\"http://"
 "google.com/chrome/\">Chrome</a> 7 or later, <a href=\"http://www.mozilla.org/"
-"en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 8 or "
+"en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 7 or "
 "later) with <a href=\"\">Adobe Flash Player</a> version 10.2 or later "
 "installed. Scratch 2 is designed to support screen sizes 1024 x 768 or "
 "larger. If your computer doesn’t meet these requirements, you can try "
@@ -4555,9 +4670,9 @@ msgstr ""
 "Bai - Scratchen bertsio zaharragoz eginiko proiektuak partekatu eta igo "
 "ditzakezu, eta ikusgarri eta erabilgarri izango dira. (Hala ere, ezin duzu "
 "Scratch bertsio berriagoz eginiko proiekturik jaitsi gero bertsio zaharrago "
-"batez irekitzako. Adibidez, ezin duzu Scratch 2 proiekturik ireki  <a href "
-"=\"/scratch_1.4\">Scratch 1.4</a> bertsioan,  <a href =\"/scratch_1.4\">Scratch "
-"1.4</a> bertsioak ez daki eta nola irakurri .sb2 proiektu fitxategi "
+"batez irekitzako. Adibidez, ezin duzu Scratch 2 proiekturik ireki  <a href ="
+"\"/scratch_1.4\">Scratch 1.4</a> bertsioan,  <a href =\"/scratch_1.4\">"
+"Scratch 1.4</a> bertsioak ez daki eta nola irakurri .sb2 proiektu fitxategi "
 "formatua)."
 
 #: templates/info/help/faq.html:66
@@ -4574,14 +4689,14 @@ msgid ""
 "play them. So you can definitely make a video of your Scratch project, just "
 "keep in mind that videos and projects aren’t the same."
 msgstr ""
-"Zure Scratch proiektuaren bideo bat sortzeko,  <a "
-"href=\"http://camstudio.org/\">CamStudio</a> bezalako pantaila irudia "
-"grabatzeko softwarea erabil dezakezu. Baina izan kontuan Scratch proiektu "
-"batzu interaktiboak direla: jokaera ezberdina dute erabiltzaileak egiten "
-"duenaren arabera (adibidez: tekla sakatzetara erantzuten duen joku bat).   "
-"Bideoak ez dira interaktiboak - gauza bera erakusten dute ikusten dituzun "
-"aldi oro. Beraz, egin dezakezu zure Scratch proiektuari buruzko bideo bat, "
-"baina izan kontuan bideoak eta proiektuak ez direla gauza bera."
+"Zure Scratch proiektuaren bideo bat sortzeko,  <a href=\""
+"http://camstudio.org/\">CamStudio</a> bezalako pantaila irudia grabatzeko "
+"softwarea erabil dezakezu. Baina izan kontuan Scratch proiektu batzu "
+"interaktiboak direla: jokaera ezberdina dute erabiltzaileak egiten duenaren "
+"arabera (adibidez: tekla sakatzetara erantzuten duen joku bat).   Bideoak ez "
+"dira interaktiboak - gauza bera erakusten dute ikusten dituzun aldi oro. "
+"Beraz, egin dezakezu zure Scratch proiektuari buruzko bideo bat, baina izan "
+"kontuan bideoak eta proiektuak ez direla gauza bera."
 
 #: templates/info/help/faq.html:69
 msgid "How much does Scratch cost? Do I need a license?"
@@ -4609,9 +4724,9 @@ msgid ""
 "\"http://llk.media.mit.edu/\">Lifelong Kindergarten group</a> at <a href="
 "\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 msgstr ""
-" <a href=\"http://www.media.mit.edu/\">MIT Media Labeko</a> <a "
-"href=\"http://llk.media.mit.edu/\">Lifelong Kindergarten taldeko</a> Scratch "
-"Team taldeak garatu eta mantentzen du Scratch."
+" <a href=\"http://www.media.mit.edu/\">MIT Media Labeko</a> <a href=\""
+"http://llk.media.mit.edu/\">Lifelong Kindergarten taldeko</a> Scratch Team "
+"taldeak garatu eta mantentzen du Scratch."
 
 #: templates/info/help/faq.html:81
 msgid "What information do you ask for during account registration?"
@@ -4697,8 +4812,8 @@ msgstr ""
 "cookie</a> bat ezartzeko eskatzen dio, saioa hasita duela gogora dezan beste "
 "webgune batzuk bisitatzen dabilen artean. Erabiltzaileek klik non egiten "
 "duten eta webguneko zein zati bisitatzen duten bezalako datuak gordetzen "
-"ditugu Google Analytics bitartez. \"Klikei buruzko datu\" hauek webgunea nola "
-"hobetu jakiten laguntzen gaituzte."
+"ditugu Google Analytics bitartez. \"Klikei buruzko datu\" hauek webgunea "
+"nola hobetu jakiten laguntzen gaituzte."
 
 #: templates/info/help/faq.html:95
 msgid ""
@@ -4711,8 +4826,8 @@ msgstr ""
 "Scratch webgunean jasotako zenbait informazio eta datu, jendeak Scratch "
 "bidez nola ikasten duen ikertzen duten ikerketetan erabiltzen dira. Ikerketa "
 "hauetako emaitzak hezitzaile eta ikerlariekin elkarbanatzen dira "
-"konferentzia, aldizkari eta bestelako argitalpenetan. Gure <a "
-"href=\"/info/research\">Ikerketa orrian</a> gehiago ikasi dezakezu honi buruz."
+"konferentzia, aldizkari eta bestelako argitalpenetan. Gure <a href=\"/info/"
+"research\">Ikerketa orrian</a> gehiago ikasi dezakezu honi buruz."
 
 #: templates/info/help/faq.html:97
 msgid ""
@@ -4729,8 +4844,8 @@ msgstr "Ez."
 #: templates/info/help/faq.html:100
 msgid "Can the Scratch Team view unshared projects on my 'My Stuff' page?"
 msgstr ""
-"Scratch lantaldeak ikus al ditzake \"Nire Gauzak\" orriak dauzkadan partekatu "
-"gabeko proiektuak?"
+"Scratch lantaldeak ikus al ditzake \"Nire Gauzak\" orriak dauzkadan "
+"partekatu gabeko proiektuak?"
 
 #: templates/info/help/faq.html:101
 msgid ""
@@ -4743,9 +4858,9 @@ msgid ""
 msgstr ""
 "Scratch lantaldea moderazioaren erantzule denez gero, Scratch webgunean "
 "gorderik dagoen informazio orora sarbidea dugu - partekatu gabeko proiektuak "
-"barne. Proiektuetan pribatasun osoaz lan egin nahi baduzu,  <a "
-"href=\"/scratch2download\">Scratch 2 lineaz kanpoko editorea (beta)</a> edo <a "
-"href =\"/scratch_1.4\">Scratch 1.4</a> erabil ditzakezu.\n"
+"barne. Proiektuetan pribatasun osoaz lan egin nahi baduzu,  <a href=\"/"
+"scratch2download\">Scratch 2 lineaz kanpoko editorea (beta)</a> edo <a href ="
+"\"/scratch_1.4\">Scratch 1.4</a> erabil ditzakezu.\n"
 "  "
 
 #: templates/info/help/faq.html:109
@@ -4791,31 +4906,32 @@ msgstr "Eta ez badut besteek nire proiektuak birnahasterik nahi?"
 
 #: templates/info/help/faq.html:116
 msgid ""
-"Everything on Scratch is remixable. By sharing your project on the Scratch "
-"website, you agree to license it under a <a href=\"http://creativecommons."
-"org/licenses/by-sa/2.0/deed.en\">Creative Commons Share Alike</a> license. "
-"This means it is okay for anyone to reuse the ideas, music, artwork, or "
-"anything else found in your Scratch project. If you don’t want others to "
+"By publishing your project on the Scratch website, you agree to license it "
+"under a <a href=\"http://creativecommons.org/licenses/by-sa/2.0/deed.en"
+"\">Creative Commons Share Alike</a> license. If you don’t want others to "
 "view and remix your creations, don’t share them on the Scratch website."
 msgstr ""
 
 #: templates/info/help/faq.html:118
-msgid ""
-"Can I use images / sounds / media from outside of the Scratch website in my "
-"Scratch projects?"
+msgid "Can I use images / sounds / media from the internet in my projects?"
 msgstr ""
+"Erabil al ditzaket interneteko irudiak / soinuak / media nire proiektuetan?"
 
 #: templates/info/help/faq.html:119
 msgid ""
-"Yes! To find art and sounds that are licensed for remixing, check out the <a "
-"href=\"http://search.creativecommons.org/\">Creative Commons search</a> "
-"page. Be sure to give credit to anyone whose work you re-use in the “Notes "
-"and Credits” section on your project page, and include a link back to the "
-"original. Remixing of media not explicitly licensed for re-use may be "
-"permitted under the <a href=\"http://www.copyright.gov/fls/fl102.html\">Fair "
-"Use</a> clause of US copyright law. Fair use allows for the remixing of "
-"copyrighted material for non-profit, educational purposes."
+"It's important to respect the original creator’s wishes regarding remixing. "
+"If you choose to integrate someone else’s work into your own, be sure to "
+"give them credit on the project “credits” section, and include a link back "
+"to the original. To find art / sounds that are already licensed for "
+"remixing, check out the <a href=\"http://search.creativecommons.org/"
+"\">Creative Commons search page</a>."
 msgstr ""
+"Jatorrizko egilearen birnahasteari buruzko desioak errespetatzea "
+"garrantzitsua da. Beste baten lana zurean integratzea aukeratzen baduzu, "
+"ziurta ezazu berari kreditua ematea proiektuaren \"kredituak\" atalean, eta "
+"jatorrizkora esteka bat. Birnahasgarri diren artea / soinuak aurkitzeko, "
+"ikus <a href=\"http://search.creativecommons.org/\">Creative Commons "
+"bilaketa orrian</a>."
 
 #: templates/info/help/faq.html:126
 msgid "I forgot my password, how can I reset it?"
@@ -4828,10 +4944,10 @@ msgid ""
 "associated with the account containing a link you can use to reset your "
 "password."
 msgstr ""
-"Zure kontuaren izena idatz ezazu  <a "
-"href=\"/accounts/password_reset/\">pasahitza berrezartzeko orrian</a>. "
-"Webguneak email bat bidaliko dizu kontuan ezarritako email helbidera, "
-"pasahitza berrezartzeko esteka bat izango duelarik bertan. "
+"Zure kontuaren izena idatz ezazu  <a href=\"/accounts/password_reset/\">"
+"pasahitza berrezartzeko orrian</a>. Webguneak email bat bidaliko dizu "
+"kontuan ezarritako email helbidera, pasahitza berrezartzeko esteka bat "
+"izango duelarik bertan. "
 
 #: templates/info/help/faq.html:130
 msgid "How do I change my password?"
@@ -4950,8 +5066,8 @@ msgid ""
 msgstr ""
 "Lehenik, jaitsi ezazu mantendu nahi duzun proiektu oro. \n"
 "Behin kontua ezabatuta, zure proiektuak ez dira erabiltgarri izango.  <a "
-"href=\"http://scratch.mit.edu/contact-us/\">Gurekin harremanetan jarri "
-"</a>orriko formularioa erabil ezazu eta ondorengo informazioa atxeki: \n"
+"href=\"http://scratch.mit.edu/contact-us/\">Gurekin harremanetan jarri </a>"
+"orriko formularioa erabil ezazu eta ondorengo informazioa atxeki: \n"
 "<ul><li>Kontua sortzean sartu zenituen jaiotze hila eta urtea</li>\n"
 "<li>Kontuari loturiko  email helbidea."
 
@@ -5013,8 +5129,8 @@ msgstr ""
 "Scratcheko proiektuak diseinatu eta programatzeko prozesuan, gazteek "
 "sormenez pentsatzen, sistematikoki arrazoitzen eta talde-lanean aritzen "
 "ikasten dute. Scratch MIT Media Labeko Lifelong Kindergarten Group taldeak "
-"garaturiko proiektu bat da. Dohakoa da eta erabilgarri dago "
-"http://scratch.mit.edu helbidean.\""
+"garaturiko proiektu bat da. Dohakoa da eta erabilgarri dago http://"
+"scratch.mit.edu helbidean.\""
 
 #: templates/info/help/faq.html:172
 msgid "Can I present Scratch at a conference?"
@@ -5073,10 +5189,10 @@ msgid ""
 msgstr ""
 "Scratch 2ren iturburu kodea (webgune eta editorearena) ez dago erabilgarri "
 "oraindik.  <a href =\"/scratch_1.4\">Scratch 1.4</a>ren iturburu kodea, "
-"Squeaken idatzirikoa, erabilgarri dago "
-"href=\"https://github.com/LLK/Scratch_1.4\"> githuben</a>. Scratch webgunearen "
-"lehenengo bertsioaren  - ScratchR - iturburu kodea erabilgarri dago "
-"href=\"http://svn.assembla.com/svn/scratchr/\">Assemblan</a>."
+"Squeaken idatzirikoa, erabilgarri dago href=\""
+"https://github.com/LLK/Scratch_1.4\"> githuben</a>. Scratch webgunearen "
+"lehenengo bertsioaren  - ScratchR - iturburu kodea erabilgarri dago href=\""
+"http://svn.assembla.com/svn/scratchr/\">Assemblan</a>."
 
 #: templates/info/help/faq.html:190
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
@@ -5088,8 +5204,8 @@ msgid ""
 "guidelines</a> - they’re brief and don’t include a lot of legal stuff. "
 "There’s a link at the bottom of every page on Scratch."
 msgstr ""
-"Ikus <a href=\"/community_guidelines\">Scratch komunitatearen jarraibideak/a> "
-" - idatzi laburra da eta ez du hizkera juridikoa erabiltzen. Scratch "
+"Ikus <a href=\"/community_guidelines\">Scratch komunitatearen jarraibideak/a>"
+"  - idatzi laburra da eta ez du hizkera juridikoa erabiltzen. Scratch "
 "webguneko orri guztietan, bertara joateko esteka bat dago orriaren "
 "behekaldean."
 
@@ -5105,11 +5221,11 @@ msgid ""
 "explain. Be sure to include as much detail as you can, with links to "
 "relevant pages."
 msgstr ""
-"\"Salatu\" dioen estekan klikatu dezakezu edozein proiektu, iruzkin, eztabaida "
-"argitalpen edo erabiltzaile orritan, Scratchentzako desegokia den zerbait "
-"dagoela uste baduzu. Egoera konplexua bada, Gurekin Harremanetan Jarri dioen "
-"esteke erabil dezakezu. Ahal hainbat xehetasunez deskriba ezazu, dagokion "
-"orrietara estekak ipiniz."
+"\"Salatu\" dioen estekan klikatu dezakezu edozein proiektu, iruzkin, "
+"eztabaida argitalpen edo erabiltzaile orritan, Scratchentzako desegokia den "
+"zerbait dagoela uste baduzu. Egoera konplexua bada, Gurekin Harremanetan "
+"Jarri dioen esteke erabil dezakezu. Ahal hainbat xehetasunez deskriba ezazu, "
+"dagokion orrietara estekak ipiniz."
 
 #: templates/info/help/faq.html:196
 msgid "What do I do if I see someone being mean or disrespectful?"
@@ -5368,10 +5484,10 @@ msgstr ""
 "Kasuaren araberakoa da. Bi Scratcherrek internet konexio nahiko azkarra "
 "badute (DSL edo kablea), eta ordenagailu sarean ez badago firewall "
 "murriztailerik, eguneraketak milisegundu batzutan helarazi beharko lirakete. "
-"Hala ere, ordenagailu ugarik firewalla dute martxan, eta firewall "
-"softwareak kanporako 531 eta 843  portuko TCP konexioak blokeatzen baditu, "
-"denbora \"lag\"a (desfasea) segundu batekoa bihurtzen da. Arazo hau "
-"konpontzeko erak pentsatzen dihardugu."
+"Hala ere, ordenagailu ugarik firewalla dute martxan, eta firewall softwareak "
+"kanporako 531 eta 843  portuko TCP konexioak blokeatzen baditu, denbora \""
+"lag\"a (desfasea) segundu batekoa bihurtzen da. Arazo hau konpontzeko erak "
+"pentsatzen dihardugu."
 
 #: templates/info/help/faq_layout.html:6
 msgid "Frequently Asked Questions (FAQ)"
@@ -5381,54 +5497,54 @@ msgstr "Sarri Egindako Galderak (FAQ)"
 msgid "Browse FAQ"
 msgstr ""
 
-#: templates/info/help/index.html:10
+#: templates/info/help/index.html:9
 msgid "Get Started with Scratch"
 msgstr "Hasi zaitez Scratch erabiltzen"
 
-#: templates/info/help/index.html:17
+#: templates/info/help/index.html:16
 msgid "Try out the</br> step-by-step intro"
 msgstr "Probatu</br> pausuz pausuko sarrera."
 
-#: templates/info/help/index.html:26
+#: templates/info/help/index.html:25
 msgid "Explore these</br> starter projects"
 msgstr "Esploratu</br> haserarako proiektu hauek."
 
-#: templates/info/help/index.html:32
+#: templates/info/help/index.html:31
 msgid "Watch the Getting Started video"
 msgstr ""
 
-#: templates/info/help/index.html:37
+#: templates/info/help/index.html:36
 msgid "Scratch Guides"
 msgstr "Scratch gidak"
 
-#: templates/info/help/index.html:39
+#: templates/info/help/index.html:38
 msgid "Here are some guides to help you learn Scratch:"
 msgstr "Scratch ikasten lagunduko zaituzten zenbait gida:"
 
-#: templates/info/help/index.html:46
+#: templates/info/help/index.html:45
 msgid "Getting Started Guide"
 msgstr "Haserarako Gida"
 
-#: templates/info/help/index.html:49
+#: templates/info/help/index.html:48
 msgid "This step-by-step guide (PDF) provides an easy introduction to Scratch."
 msgstr ""
 "Pausuz pausuko gida honek (PDF) Scratcherako sarrera erraza eskeintzen du."
 
-#: templates/info/help/index.html:53
+#: templates/info/help/index.html:52
 #, python-format
 msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
 msgstr ""
 
-#: templates/info/help/index.html:62
+#: templates/info/help/index.html:61
 msgid "Each of these cards shows something you can do in Scratch."
 msgstr ""
 "Txartel hauetako bakoitzak Scratchekin egin dezakezun zerbait erakusten du."
 
-#: templates/info/help/index.html:67 templates/info/help/videos.html:19
+#: templates/info/help/index.html:66 templates/info/help/videos.html:19
 msgid "Video Tutorials"
 msgstr "Bideo-tutorialak"
 
-#: templates/info/help/index.html:69
+#: templates/info/help/index.html:68
 msgid ""
 "These videos include tips on using the paint editor, and introduce how to "
 "program games and animations in Scratch."
@@ -5436,26 +5552,26 @@ msgstr ""
 "Bideo hauek marrazketa editorea erabiltzeko aholkuak dituzte, eta joko eta "
 "animazioak Scratchen nola programatu ikasteko bidea aurkezten dute."
 
-#: templates/info/help/index.html:74
+#: templates/info/help/index.html:73
 msgid "Explore the Scratch Community"
 msgstr "Scratcheko komunitatea esploratu"
 
-#: templates/info/help/index.html:77
+#: templates/info/help/index.html:76
 msgid ""
 "<a href=\"../explore\">Explore</a> projects and studios Scratchers are making"
 msgstr ""
 "<a href=\"../explore\">Esploratu</a> itzazu Scratcherrak egiten dabiltzan "
 "proiektuak eta estudioak"
 
-#: templates/info/help/index.html:78
+#: templates/info/help/index.html:77
 msgid "Search for projects about:"
 msgstr "Hurrengoari buruzko proiektuak bilatu:"
 
-#: templates/info/help/index.html:83
+#: templates/info/help/index.html:82
 msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
 msgstr "<a href=\"/discuss/6/\">Aurkeztu</a> zaitez Scratcheko foroetan"
 
-#: templates/info/help/index.html:84
+#: templates/info/help/index.html:83
 #, python-format
 msgid ""
 "Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
@@ -5464,42 +5580,42 @@ msgstr ""
 "Klikatu <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> "
 "edozein profil edo estudiotan eguneraketak jasotzeko"
 
-#: templates/info/help/index.html:90
+#: templates/info/help/index.html:89
 msgid "What is Scratch?"
 msgstr "Zer da Scratch?"
 
-#: templates/info/help/index.html:94
+#: templates/info/help/index.html:93
 msgid "For <a href=\"/parents\">Parents</a>"
 msgstr "<a href=\"/parents\">Gurasoentzat</a>"
 
-#: templates/info/help/index.html:95
+#: templates/info/help/index.html:94
 msgid "For <a href=\"/educators\">Educators</a>"
 msgstr "<a href=\"/educators\">Hezitzaileentzat</a>"
 
-#: templates/info/help/index.html:100
+#: templates/info/help/index.html:99
 msgid ""
 "Browse for answers on: </br><a href=\"/help/faq\">Frequently Asked "
 "Questions</a>"
 msgstr ""
 "Erantzunak irakurri: </br><a href=\"/help/faq\">Sarri Egindako Galderetan</a>"
 
-#: templates/info/help/index.html:102
+#: templates/info/help/index.html:101
 msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
 msgstr "Edo bisitatu <a href=\"/discuss\">eztabaida foroak</a>:"
 
-#: templates/info/help/index.html:103
+#: templates/info/help/index.html:102
 msgid "- Questions about Scratch"
 msgstr "- Scratchi buruzko galderak"
 
-#: templates/info/help/index.html:104
+#: templates/info/help/index.html:103
 msgid "- Help with Scripts"
 msgstr "- Scriptei buruzko laguntza"
 
-#: templates/info/help/index.html:107
+#: templates/info/help/index.html:106
 msgid "Resources"
 msgstr "Errekurtsoak"
 
-#: templates/info/help/index.html:110
+#: templates/info/help/index.html:109
 msgid ""
 "An online community for educators using Scratch, with stories, discussions, "
 "and resources, such as the Scratch curriculum guide."
@@ -5507,7 +5623,7 @@ msgstr ""
 "Scratch darabilten hezitzaileentzako komunitatea, istorio, eztabaida eta "
 "errekurtsoekin, Scratchen kurrikulum gida bezalakoak."
 
-#: templates/info/help/index.html:116
+#: templates/info/help/index.html:115
 msgid ""
 "The Scratch Wiki contains a wide variety of articles by Scratchers for "
 "Scratchers, including advanced topics and tutorials."
@@ -5515,55 +5631,55 @@ msgstr ""
 "Scratch Wikian Scratcherrek beste Scratcherrontzako sorturiko artikulu sorta "
 "zabala dago, gai eta tutorial aurreratuak barne."
 
-#: templates/info/help/index.html:119
+#: templates/info/help/index.html:118
 msgid "Scratch 2 Offline Editor (Beta)"
 msgstr "Scratch 2 Lineaz Kanpoko Editorea (Beta)"
 
-#: templates/info/help/index.html:121
+#: templates/info/help/index.html:120
 msgid "Download the Scratch 2 offline editor (beta version)"
 msgstr "Deskargatu Scratch 2 lineaz kanpoko editorea (beta bertsioa)"
 
-#: templates/info/help/index.html:123
+#: templates/info/help/index.html:122
 msgid "Scratch 1.4 Download"
 msgstr "Scratch 1.4 deskargatu"
 
-#: templates/info/help/index.html:125
+#: templates/info/help/index.html:124
 msgid "Links and information on the previous version of Scratch."
 msgstr "Scratchen aurreko bertsioei buruzko informazioa eta estekak."
 
-#: templates/info/help/index.html:128
+#: templates/info/help/index.html:127
 msgid "Scratch Statistics"
 msgstr ""
 
-#: templates/info/help/index.html:130
+#: templates/info/help/index.html:129
 msgid "Explore up-to-date statistics about the Scratch online community."
 msgstr ""
 
-#: templates/info/help/index.html:133
+#: templates/info/help/index.html:132
 msgid ""
 "<a href=\"http://wiki.scratch.mit.edu/wiki/"
 "How_to_connect_to_the_physical_world\">Scratch and the Physical World</a>"
 msgstr ""
-"<a href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_wor"
-"ld\">Scratch eta mundu fisikoa</a>"
+"<a href=\"http://wiki.scratch.mit.edu/wiki/"
+"How_to_connect_to_the_physical_world\">Scratch eta mundu fisikoa</a>"
 
-#: templates/info/help/index.html:135
+#: templates/info/help/index.html:134
 msgid ""
 "Connect your Scratch projects to the physical world with <a href = \"http://"
 "www.makeymakey.com/\">MaKey MaKey</a>, <a href=\"http://info.scratch.mit.edu/"
 "WeDo\">LEGO WeDo</a>, or <a href=\"https://www.sparkfun.com/"
 "products/10311\">PicoBoard</a>."
 msgstr ""
-"Konekta itzazu Scratch proiektuak mundu fisikora <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://info.scratch.mit.edu/WeDo\">LEGO WeDo</a>, edo <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a> erabiliz."
+"Konekta itzazu Scratch proiektuak mundu fisikora <a href = \""
+"http://www.makeymakey.com/\">MaKey MaKey</a>, <a href=\""
+"http://info.scratch.mit.edu/WeDo\">LEGO WeDo</a>, edo <a href=\""
+"https://www.sparkfun.com/products/10311\">PicoBoard</a> erabiliz."
 
-#: templates/info/help/index.html:138
+#: templates/info/help/index.html:137
 msgid "Scratch Logo"
 msgstr "Scratchen logoa"
 
-#: templates/info/help/index.html:140
+#: templates/info/help/index.html:139
 msgid "Access the Scratch logo and other media files."
 msgstr "Scratchen logoa eta bestelako media fitxategiak erabili."
 
@@ -5684,17 +5800,21 @@ msgid "Step-by-Step Guides"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:6
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:17
 #: templates/info/help/studio/tips/howto/nametip-intro.html:17
 msgid "Animate Your Name"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:7
-#: templates/info/help/studio/tips/howto/cardtip-intro.html:18
-msgid "Make a Greeting Card"
+msgid "Design a Holiday Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:8
-msgid "Map of Scratch editor"
+msgid "Create a Pong Game"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:9
+msgid "Make a Birthday Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:21
@@ -6494,11 +6614,12 @@ msgid ""
 msgstr ""
 "\n"
 "<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> galdera bat "
-"egiten du eta teklatuko sarrera gordetzen du hurrengoan <img src=\"%"
-"(STATIC_URL)s/images/help/answer.png\" />. Erantzuna sprite guztiek "
+"egiten du eta teklatuko sarrera gordetzen du hurrengoan <img src=\""
+"%(STATIC_URL)s/images/help/answer.png\" />. Erantzuna sprite guztiek "
 "partekatzen dute. </p>\n"
 "<p>Uneko erantzuna gorde nahi baduzu, aldagai edo zerrenda batean gorde "
-"dezakezu. Adibidez, <img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/> \n"
+"dezakezu. Adibidez, <img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/> "
+"\n"
 "</p>\n"
 "\n"
 "<p>\n"
@@ -6535,8 +6656,8 @@ msgid ""
 msgstr ""
 "\n"
 "<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> galdera bat "
-"egiten du eta teklatuko sarrera hurrengoan gordetzen du <img src=\"%"
-"(STATIC_URL)s/images/help/answer.png\" />. Galdera ahots burbuila batetan "
+"egiten du eta teklatuko sarrera hurrengoan gordetzen du <img src=\""
+"%(STATIC_URL)s/images/help/answer.png\" />. Galdera ahots burbuila batetan "
 "azaltzen da pantailan. Programak erabiltzaileak erantzuna idatzi arte "
 "itxaroten du; Enter tekla sakatu arte do baieztapen marka sakatu arte. \n"
 "</p>"
@@ -6554,8 +6675,8 @@ msgid ""
 "  </p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/backdrop-name-ex.png\"/>\n"
-"<p>Zerrendan hondoaren hurren dagoen titulua hau da: <img src=\"%"
-"(STATIC_URL)s/images/help/backdrop-name.png\" />\n"
+"<p>Zerrendan hondoaren hurren dagoen titulua hau da: <img src=\""
+"%(STATIC_URL)s/images/help/backdrop-name.png\" />\n"
 "</p>"
 
 #: templates/info/help/studio/tips/blocks/backdrop-number.html:8
@@ -6566,8 +6687,8 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/backdrop-number.png\" />  </p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/backdrop-number-ex2.png\"/>\n"
-"<p>Zerrendan hondoaren hurren dagoen titulua hau da: <img src=\"%"
-"(STATIC_URL)s/images/help/backdrop-number.png\" /> </p>"
+"<p>Zerrendan hondoaren hurren dagoen titulua hau da: <img src=\""
+"%(STATIC_URL)s/images/help/backdrop-number.png\" /> </p>"
 
 #: templates/info/help/studio/tips/blocks/broadcast-wait.html:7
 msgid "Sends a message to all sprites and waits"
@@ -6599,7 +6720,8 @@ msgstr ""
 "</p>\n"
 "\n"
 "<p>\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait-ex2.png\" /><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait-ex2.png\" "
+"/><br/>\n"
 "<br>Zein mezu bidaltzen den aukeratzeko klikatu ezazu. \"Berria\" aukeratu "
 "zure mezu propioa idazteko. <br/>\n"
 "</p>\n"
@@ -6624,9 +6746,9 @@ msgstr ""
 "<p> <img src=\"%(STATIC_URL)s/images/help/broadcast.png\"/> sprite guztiei "
 "mezua bidaltzen die (eta hondoari). Beste spriteei zerbait egiteko esan nahi "
 "diezunerako da erabilgarria.</p> \n"
-"<p> Zer nahi duzu beraiek egitea mezua jasotzean? Ikus <a "
-"href=\"../when-i-receive/\"><img src=\"%"
-"(STATIC_URL)s/images/help/when-i-receive.png\"/></a></p>\n"
+"<p> Zer nahi duzu beraiek egitea mezua jasotzean? Ikus <a href=\""
+"../when-i-receive/\"><img src=\"%(STATIC_URL)s/images/help/when-i-receive."
+"png\"/></a></p>\n"
 
 #: templates/info/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
@@ -6644,8 +6766,8 @@ msgstr ""
 " \n"
 "Klikatu menutik efektu bat jasotzeko:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/change-effect-ex2.png\"/><br>\n"
-"Efektu hauekin aproba egin ezazu 10, 35 edo 100 bezalako zenbakiekin. Edo "
-"-50 bezalako zenbaki negatiboak erabili.\n"
+"Efektu hauekin aproba egin ezazu 10, 35 edo 100 bezalako zenbakiekin. Edo -"
+"50 bezalako zenbaki negatiboak erabili.\n"
 
 #: templates/info/help/studio/tips/blocks/change-effect.html:23
 #, python-format
@@ -6678,9 +6800,9 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"Tenpoa Scratcheko nota eta danborrak jotzen duteneko abiadura da "
-"(taupada/minutuko, ingelesez bpm = beats per minute). Tenpoa handitu ahala, "
-"azkarrago joko dute notak eta danborrak.\n"
+"Tenpoa Scratcheko nota eta danborrak jotzen duteneko abiadura da (taupada/"
+"minutuko, ingelesez bpm = beats per minute). Tenpoa handitu ahala, azkarrago "
+"joko dute notak eta danborrak.\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/change-variable.html:7
@@ -6791,8 +6913,8 @@ msgid ""
 "clears all the graphic effects for this sprite.</p>\n"
 msgstr ""
 "\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/clear-graphic-effects.png\" /> sprite "
-"honen efektu grafiko guztiak ezabatzen ditu.</p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/clear-graphic-effects.png\" /> "
+"sprite honen efektu grafiko guztiak ezabatzen ditu.</p>\n"
 
 #: templates/info/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
@@ -6822,8 +6944,8 @@ msgstr ""
 "\n"
 "Skripta klona sortu bezain azkar aktibatzen da.\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /></p>\n"
-"Klonek, sortuak izan ondorengo \"X gertatzen denean\" (Gertaera) bloke guztiei "
-"ere erantzuten diete.\n"
+"Klonek, sortuak izan ondorengo \"X gertatzen denean\" (Gertaera) bloke "
+"guztiei ere erantzuten diete.\n"
 
 #: templates/info/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
@@ -6881,8 +7003,8 @@ msgstr ""
 "<p>\n"
 "Goitikbeherako menutik zein sprite klonatu aukeratu.\n"
 "<br>\n"
-"Use <img src=\"%(STATIC_URL)s/images/help/clone-startup.png\" /> klonari behin "
-"sortuta zer egin esateko.\n"
+"Use <img src=\"%(STATIC_URL)s/images/help/clone-startup.png\" /> klonari "
+"behin sortuta zer egin esateko.\n"
 "</p>\n"
 "Adibide Skripta:\n"
 "<br>\n"
@@ -6990,8 +7112,8 @@ msgstr ""
 "Berauek erabiltzeko, sarrera blokeen kopiak arrastan eman itzazu definizio "
 "skript barruko beste blokeetara.\n"
 "</p>\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-"
-"script.png\"/></p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\""
+"/></p>\n"
 "Oharra: Sarrera blokeak <strong>soilik</strong> erabil daitezke definizio "
 "skriptean.\n"
 "\n"
@@ -7042,7 +7164,8 @@ msgstr ""
 "</p>\n"
 "\n"
 "<p>\n"
-"Zerrendako azken itema ezabatzeko, aukeratu \"azkena\" goitikbeherako menutik:\n"
+"Zerrendako azken itema ezabatzeko, aukeratu \"azkena\" goitikbeherako "
+"menutik:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/delete-last-mylist.png\" /><br/>\n"
 "</p>\n"
 "\n"
@@ -7073,11 +7196,13 @@ msgstr ""
 "Bloke hau skript batetan jarri klonak bere ekintzak bukatu ondoren.\n"
 "<br>\n"
 "\n"
-"<br>Klon guztiak automatikoki ezabatzen dira programa gelditzen denean.<br/>\n"
+"<br>Klon guztiak automatikoki ezabatzen dira programa gelditzen denean.<br/>"
+"\n"
 "\n"
 "\n"
 "Adibide skripta:\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /><br/>"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
@@ -7098,8 +7223,8 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/direction-ex.png\"></p>\n"
 msgstr ""
 "<p><b>norabideak</b> spritea norantza doan dio.</p>\n"
-"Sprite baten norabidea ikusteko, klikatu <img src=\"%"
-"(STATIC_URL)s/images/help/info.gif\">:<br/>\n"
+"Sprite baten norabidea ikusteko, klikatu <img src=\""
+"%(STATIC_URL)s/images/help/info.gif\">:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-readout-indent.png\"><br/>\n"
 "Lerro urdina arrasta dezakezu norabidea aldatzeko.</p>\n"
 "<p></p>\n"
@@ -7204,8 +7329,8 @@ msgid ""
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/go-back-example.png\" />\n"
 "<p>\n"
-"Karramarroa arrokaren atzean gordetzeko, esaiozu <img src=\"%"
-"(STATIC_URL)s/images/help/go-back-1layer.png\" />\n"
+"Karramarroa arrokaren atzean gordetzeko, esaiozu <img src=\""
+"%(STATIC_URL)s/images/help/go-back-1layer.png\" />\n"
 "  "
 
 #: templates/info/help/studio/tips/blocks/go-to-front.html:7
@@ -7281,8 +7406,8 @@ msgid ""
 "If condition is true, runs the blocks inside the <b>if</b> portion; if not, "
 "runs the blocks inside the <b>else</b> portion"
 msgstr ""
-"Baldintza egiazkoa bada, <b>baldin</b> zatiaren barruko kodea exekutatzen "
-"du; ez bada, <b>bestela</b> zatiaren barruko kodea exekutatzen du."
+"Baldintza egiazkoa bada, <b>baldin</b> zatiaren barruko kodea exekutatzen du;"
+" ez bada, <b>bestela</b> zatiaren barruko kodea exekutatzen du."
 
 #: templates/info/help/studio/tips/blocks/if-on-edge-bounce.html:7
 msgid "If touching the edge of the stage, then bounce away"
@@ -7336,14 +7461,14 @@ msgstr ""
 "\n"
 "<p>\n"
 "Zerrendako zein tokitan gehitu nahi duzun itema zehaztu dezakezu.\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/insert-scoreboard.png\" /> elementu "
-"bat txertatzen du\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/insert-scoreboard.png\" /> "
+"elementu bat txertatzen du\n"
 "zerrendako esaniko tokian.<br/>\n"
 "</p>\n"
 "\n"
 "<p>\n"
-"<img src=\"%(STATIC_URL)s/images/help/insert-greetings.png\" /> itema ausazko "
-"kokapenean txertatzen du\n"
+"<img src=\"%(STATIC_URL)s/images/help/insert-greetings.png\" /> itema "
+"ausazko kokapenean txertatzen du\n"
 "zerrendan.\n"
 "</p>\n"
 
@@ -7401,8 +7526,8 @@ msgid ""
 "want to keep, for example, the space key pressed continuously.\n"
 msgstr ""
 "\n"
-"Erabili <img src=\"%(STATIC_URL)s/images/help/key-pressed.png\" /> eta ez <img "
-"src=\"%(STATIC_URL)s/images/help/when-key-pressed.png\" /> , adibidez, "
+"Erabili <img src=\"%(STATIC_URL)s/images/help/key-pressed.png\" /> eta ez <"
+"img src=\"%(STATIC_URL)s/images/help/when-key-pressed.png\" /> , adibidez, "
 "hutsune tekla etengabe zapalduta mantendu nahi duzun kasurako.\n"
 
 #: templates/info/help/studio/tips/blocks/length-of-list.html:7
@@ -7528,8 +7653,8 @@ msgid ""
 "Reports the volume (from 1 to 100) of sounds detected by the computer "
 "microphone"
 msgstr ""
-"Ordenagailuko mikrofonoak hautemandako bolumenaren balioa itzultzen du "
-"(1etik 100era)"
+"Ordenagailuko mikrofonoak hautemandako bolumenaren balioa itzultzen du ("
+"1etik 100era)"
 
 #: templates/info/help/studio/tips/blocks/loudness.html:14
 #, python-format
@@ -7552,7 +7677,8 @@ msgstr ""
 msgid ""
 "<h3>You can create a custom block with inputs, for example: <img src="
 "\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
-msgstr "<h3>Sarrerak dituen neurrira egindako blokea sortu dezakezu, adibidez: <img "
+msgstr ""
+"<h3>Sarrerak dituen neurrira egindako blokea sortu dezakezu, adibidez: <img "
 "src=\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
 
 #: templates/info/help/studio/tips/blocks/make-a-block-with-inputs.html:11
@@ -7592,10 +7718,10 @@ msgstr ""
 "Erabiltzeko, sarrera blokeen kopiak arrastan eman itzazu \"definitu\" skript "
 "barruko beste blokeetara.\n"
 "</p>\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-"
-"script.png\"/></p>\n"
-"Oharra: Sarrera blokeak \"definitu\" skriptean <strong>soilik</strong> erabil "
-"daitezke.\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\""
+"/></p>\n"
+"Oharra: Sarrera blokeak \"definitu\" skriptean <strong>soilik</strong> "
+"erabil daitezke.\n"
 
 #: templates/info/help/studio/tips/blocks/make-a-block-with-inputs.html:30
 msgid ""
@@ -7662,8 +7788,8 @@ msgstr ""
 "<p><img src=\"%(STATIC_URL)s/images/help/make-block-script-ex.png\" /></p>\n"
 "</div>\n"
 "<div class=\"example\">\n"
-"Ikus ezazu ere: <a href=\"../make-a-block-with-inputs/\">Sortu sarrerak dituen "
-"bloke bat</a> \n"
+"Ikus ezazu ere: <a href=\"../make-a-block-with-inputs/\">Sortu sarrerak "
+"dituen bloke bat</a> \n"
 "</div>\n"
 "\n"
 
@@ -7747,8 +7873,8 @@ msgid ""
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/mod.png\" /> bi zenbakiren zatiketaren "
 "hondarra \n"
-"itzultzen du. Adibidez, <img src=\"%(STATIC_URL)s/images/help/mod-ex2.png\" /> "
-"5 da (143 \n"
+"itzultzen du. Adibidez, <img src=\"%(STATIC_URL)s/images/help/mod-ex2.png\" "
+"/> 5 da (143 \n"
 "zati 6, 23 da, eta hondarra 5).\n"
 
 #: templates/info/help/studio/tips/blocks/mouse-down.html:7
@@ -7857,8 +7983,8 @@ msgid ""
 "dropping.</p>\n"
 msgstr ""
 "\n"
-"<p>Spritearen mozorroak ikusteko, klikatu <img src=\"%"
-"(STATIC_URL)s/images/help/costumes-tab.png\"/>.</p>\n"
+"<p>Spritearen mozorroak ikusteko, klikatu <img src=\""
+"%(STATIC_URL)s/images/help/costumes-tab.png\"/>.</p>\n"
 "<p> Mozorroen ordena berrantola dezakezu arrastatu eta jareginez.</p>\n"
 
 #: templates/info/help/studio/tips/blocks/next-costume.html:25
@@ -7890,10 +8016,10 @@ msgid ""
 "dropping.</p>\n"
 msgstr ""
 "\n"
-"<p>Eszenatokiaren hondoak ikusteko, klikatu <img src=\"%"
-"(STATIC_URL)s/images/help/backdrop-tab.png\"/>.</p>\n"
-"<p>Hondoen ordena berrantola dezakezu zerrendan, arrastatu eta "
-"jareginez.</p>\n"
+"<p>Eszenatokiaren hondoak ikusteko, klikatu <img src=\""
+"%(STATIC_URL)s/images/help/backdrop-tab.png\"/>.</p>\n"
+"<p>Hondoen ordena berrantola dezakezu zerrendan, arrastatu eta jareginez.</p>"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/nextbackdrop.html:21
 #, python-format
@@ -7996,8 +8122,8 @@ msgstr ""
 "</p>\n"
 "\n"
 "<p>\n"
-"Oharra: taupada baten luzera <img src=\"%"
-"(STATIC_URL)s/images/help/set_tempo.png\" /> bidez ezarri daiteke\n"
+"Oharra: taupada baten luzera <img src=\"%(STATIC_URL)s/images/help/set_tempo."
+"png\" /> bidez ezarri daiteke\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/playnote.html:7
@@ -8039,8 +8165,8 @@ msgid ""
 "</p>\n"
 msgstr ""
 "<p>\n"
-"Taupada baten luzera <img src=\"%(STATIC_URL)s/images/help/set_tempo.png\" /> "
-"bidez ezarri daiteke.\n"
+"Taupada baten luzera <img src=\"%(STATIC_URL)s/images/help/set_tempo.png\" />"
+" bidez ezarri daiteke.\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/playsound.html:7
@@ -8099,8 +8225,8 @@ msgstr ""
 "hasten da eta hurrengo blokera mugitzen da segidan.\n"
 "</p>\n"
 "<p>\n"
-"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> soinua bukatu "
-"artean itxaroten du hurrengo blokera pasa aurretik."
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> soinua "
+"bukatu artean itxaroten du hurrengo blokera pasa aurretik."
 
 #: templates/info/help/studio/tips/blocks/playsound_untildone.html:8
 #, python-format
@@ -8150,14 +8276,15 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 msgstr ""
 "Klikatu menutik aukeratzeko:\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\"/><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\""
+"/><br/>\n"
 "\n"
 "<p>Edo, zenbaki bat idatzi:<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/point-in-direction-45.png\"/></p>\n"
 "\n"
 "\n"
-"<p>Sprite baten uneko norabidea ikusteko, klikatu <img src=\"%"
-"(STATIC_URL)s/images/help/info.gif\"/><br>\n"
+"<p>Sprite baten uneko norabidea ikusteko, klikatu <img src=\""
+"%(STATIC_URL)s/images/help/info.gif\"/><br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 
 #: templates/info/help/studio/tips/blocks/point-towards.html:7
@@ -8291,8 +8418,8 @@ msgstr ""
 "<p>Edozein testu idatz dezakezu. Hitzak hitz-burbuila batetan azalduko "
 "dira.</p>\n"
 "\n"
-"Hitz-burbuila ezabatzeko, testua ezabatu eta klikatu <img src=\"%"
-"(STATIC_URL)s/images/help/say.png\" />."
+"Hitz-burbuila ezabatzeko, testua ezabatu eta klikatu <img src=\""
+"%(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/info/help/studio/tips/blocks/say.html:16
 #: templates/info/help/studio/tips/blocks/think.html:18
@@ -8306,14 +8433,13 @@ msgid ""
 "To remove the speech bubble, click an empty say block: <img src="
 "\"%(STATIC_URL)s/images/help/say.png\" />."
 msgstr ""
-"Hitz-burbuila ezabatzeko, klikatu esate-bloke huts bat: <img src=\"%"
-"(STATIC_URL)s/images/help/say.png\" />."
+"Hitz-burbuila ezabatzeko, klikatu esate-bloke huts bat: <img src=\""
+"%(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/info/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
 msgstr ""
-"Scratch hasi zenetik (2007ko Maiatzak 15) igarotako egun kopurua itzultzen "
-"du"
+"Scratch hasi zenetik (2007ko Maiatzak 15) igarotako egun kopurua itzultzen du"
 
 #: templates/info/help/studio/tips/blocks/set-effect.html:9
 msgid "Sets the graphic effect of a sprite to a specific number"
@@ -8535,10 +8661,10 @@ msgstr ""
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/setcolortoex1.png\"/> \n"
 "<p>\n"
-"Arkatzaren kolorea aldagai batez alda dezakezu <img src=\"%"
-"(STATIC_URL)s/images/help/y-position.png\" /> bezala, edo zenbaki bidez. "
-"Adibidez 0 zenbakia <font color = red>red</font> kolorea da, 70 zenbakia "
-"<font color = green>green</font> kolorea da, 130 zenbakia <font color = "
+"Arkatzaren kolorea aldagai batez alda dezakezu <img src=\""
+"%(STATIC_URL)s/images/help/y-position.png\" /> bezala, edo zenbaki bidez. "
+"Adibidez 0 zenbakia <font color = red>red</font> kolorea da, 70 zenbakia <"
+"font color = green>green</font> kolorea da, 130 zenbakia <font color = "
 "blue>blue</font> kolorea da, eta 170 zenbakia <font color = "
 "magenta>magenta</font> kolorea da.\n"
 "<p>\n"
@@ -8575,8 +8701,8 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"Aukeratu \"ezker-eskuint\" goitikbeherako menutik spriteak horizontalki soilik "
-"bira dezan agintzeko .\n"
+"Aukeratu \"ezker-eskuint\" goitikbeherako menutik spriteak horizontalki "
+"soilik bira dezan agintzeko .\n"
 "</p>\n"
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/setrotation-ex.png\" /><br/> \n"
@@ -8651,8 +8777,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/size-ex2.png\" />"
 msgstr ""
 "\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/size.png\" /> objektuaren jatorrizko "
-"tamainaren %% itzultzen du</p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/size.png\" /> objektuaren "
+"jatorrizko tamainaren %% itzultzen du</p>\n"
 "<p>Tamainaren balioa ikusteko, paletan blokearen ondoan dagoen kontrol "
 "laukia klikatu ezazu.</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/size-ex2.png\" />"
@@ -8706,8 +8832,8 @@ msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/stampex1.png\" /> </p>\n"
 "<p>\n"
 "Zigilu bat sprite baten une baterako irudia da, eszenatokian irudikatzen "
-"dena. Gainetik marraztua edo ezabatua izan daiteke <img src=\"%"
-"(STATIC_URL)s/images/help/clear.png\" /> blokea erabiliz.\n"
+"dena. Gainetik marraztua edo ezabatua izan daiteke <img src=\""
+"%(STATIC_URL)s/images/help/clear.png\" /> blokea erabiliz.\n"
 "<p>\n"
 "Zigilu bat ezin daiteke mugitu eta ezin du skriptik izan.\n"
 
@@ -8754,8 +8880,8 @@ msgid ""
 "going to the next block.  \n"
 " "
 msgstr ""
-"<img src=\"%(STATIC_URL)s/images/help/switch-backdrop-to-backdrop1-and-"
-"wait.png\" /> itxaron egingo du <img src=\"%(STATIC_URL)s/images/help/when-"
+"<img src=\"%(STATIC_URL)s/images/help/switch-backdrop-to-backdrop1-and-wait."
+"png\" /> itxaron egingo du <img src=\"%(STATIC_URL)s/images/help/when-"
 "backdrop-switches-to-backdrop1.png\" /> -rekin hasten diten skript guztiak "
 "amaitu arte hurrengo blokera joan aurretik. \n"
 " "
@@ -8774,8 +8900,8 @@ msgid ""
 msgstr ""
 "Lehendabizi, nahi duzun hondoa aukeratu <img src=\"%(STATIC_URL)s/images/help"
 "/choose-backdrop-icon.png\">. \n"
-"Ondoren, hondoaren izena aukeratu goitikbeherako menutik: <img src=\"%"
-"(STATIC_URL)s/images/help/switch-backdrop-to.png\">"
+"Ondoren, hondoaren izena aukeratu goitikbeherako menutik: <img src=\""
+"%(STATIC_URL)s/images/help/switch-backdrop-to.png\">"
 
 #: templates/info/help/studio/tips/blocks/switch-costume.html:8
 msgid "Switch costumes to change the look of a sprite"
@@ -8792,8 +8918,8 @@ msgid ""
 "costumes-tab.png\" /></p>\n"
 "Choose a costume name from the pull-down menu."
 msgstr ""
-"Sprite baten mozorroak ikusteko, klikatu <img src=\"%"
-"(STATIC_URL)s/images/help/costumes-tab.png\" /></p>\n"
+"Sprite baten mozorroak ikusteko, klikatu <img src=\""
+"%(STATIC_URL)s/images/help/costumes-tab.png\" /></p>\n"
 "Aukeratu mozorro izen bat goitikbeherako menutik."
 
 #: templates/info/help/studio/tips/blocks/tempo.html:8
@@ -8823,8 +8949,8 @@ msgid ""
 "To remove the speech bubble, use a blank block: <img src=\"%(STATIC_URL)s/"
 "images/help/think-blank.png\" />."
 msgstr ""
-"Hitz burbuila ezabatzeko, erabili bloke huts bat: <img src=\"%"
-"(STATIC_URL)s/images/help/think-blank.png\" />."
+"Hitz burbuila ezabatzeko, erabili bloke huts bat: <img src=\""
+"%(STATIC_URL)s/images/help/think-blank.png\" />."
 
 #: templates/info/help/studio/tips/blocks/timer.html:7
 msgid "Reports the value of the timer in seconds"
@@ -8862,8 +8988,8 @@ msgid ""
 msgstr ""
 "\n"
 "Kolore bat aukeratzeko, tantaz tantakoa erabili laukian klikatuz. Tantaz "
-"tantakoa erabili nahi duzun kolorean klikatzeko. Kolorea laukian azalduko "
-"da.\n"
+"tantakoa erabili nahi duzun kolorean klikatzeko. Kolorea laukian azalduko da."
+"\n"
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/touching-color-picker.png\"/> \n"
 "</p>"
@@ -8980,13 +9106,13 @@ msgstr ""
 "</div>\n"
 "\n"
 "<div class=\"example\">\n"
-"Blokea editatzeko, eskuin klik egin (Ctrl+klik Mac-en) blokean eta \"editatu\" "
-"aukeratu menutik.\n"
+"Blokea editatzeko, eskuin klik egin (Ctrl+klik Mac-en) blokean eta \""
+"editatu\" aukeratu menutik.\n"
 "</div>\n"
 "\n"
 "<div class=\"example\">\n"
-"See also: <a href=\"../make-a-block/\">Bloke bat sortu</a> eta <a "
-"href=\"../define/\">blokea definitu</a> \n"
+"See also: <a href=\"../make-a-block/\">Bloke bat sortu</a> eta <a href=\""
+"../define/\">blokea definitu</a> \n"
 "</div>\n"
 "\n"
 
@@ -9038,7 +9164,8 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"Aldagaiaren balioa ikusteko, blokearen ondoan dagoen kontrol laukia klikatu.\n"
+"Aldagaiaren balioa ikusteko, blokearen ondoan dagoen kontrol laukia klikatu."
+"\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/check-variable.png\" /><br/>\n"
 "\n"
 "<p>\n"
@@ -9087,15 +9214,15 @@ msgstr ""
 "<b>Nola erabili:</b>\n"
 "<ul>\n"
 "<li>Webcama erabili.</li>\n"
-"<li> Use <img src=\"%(STATIC_URL)s/images/help/video-motion-this-sprite.png\" "
-"/> bideoko uneko spritean zenbat mugimendu dagoen ikusteko.</li>\n"
+"<li> Use <img src=\"%(STATIC_URL)s/images/help/video-motion-this-sprite.png\""
+" /> bideoko uneko spritean zenbat mugimendu dagoen ikusteko.</li>\n"
 "<li> Use <img src=\"%(STATIC_URL)s/images/help/video-motion-stage.png\" /> "
 "bideo irudi osoan zenbat mugimendu dagoen ikusteko.</li>\n"
-"<li> Use <img src=\"%(STATIC_URL)s/images/help/video-direction-this-"
-"sprite.png\" />bideoko uneko spritean mugimenduaren norabidea zein den "
+"<li> Use <img src=\"%(STATIC_URL)s/images/help/video-direction-this-sprite."
+"png\" />bideoko uneko spritean mugimenduaren norabidea zein den "
 "ikusteko.</li>\n"
-"<li> Use <img src=\"%(STATIC_URL)s/images/help/video-direction-stage.png\" "
-"/>bideo irudi osoan mugimenduaren norabidea zein den ikusteko.</li>\n"
+"<li> Use <img src=\"%(STATIC_URL)s/images/help/video-direction-stage.png\" />"
+"bideo irudi osoan mugimenduaren norabidea zein den ikusteko.</li>\n"
 "</ul>\n"
 "\n"
 "<p>\n"
@@ -9179,7 +9306,8 @@ msgid ""
 "I'm in the kitchen!</p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex.png\"/>\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex2.png\"/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex2.png\"/>"
+"\n"
 "<br><p>Behin hondoa \"sukadera\" aldatzen denean, spriteak \"Orain sukaldean "
 "nago!\" esango du</p>"
 
@@ -9285,7 +9413,8 @@ msgstr ""
 "\n"
 "<p>\n"
 "Mamuaren x posizioa Goboren x posizio berera ezartzen da.\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\"/><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\"/><br/>"
+"\n"
 "</p>\n"
 "  "
 
@@ -9299,7 +9428,8 @@ msgid ""
 msgstr ""
 "Erabili bloke hau beste spriteen hainbat ezaugarri atzitzeko (access) eta "
 "uneko spritearen skriptetan erabil ezazu informazio hori.\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/x-position.html:7
 msgid "Reports the <b>x</b> position of a sprite"
@@ -9902,6 +10032,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/get-started-8.html:9
 #: templates/info/help/studio/tips/howto/get-started-9.html:8
 #: templates/info/help/studio/tips/howto/get-started-intro.html:10
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:9
 #: templates/info/help/studio/tips/howto/nametip-intro.html:9
 #: templates/info/help/studio/tips/howto/nametip1.html:9
 #: templates/info/help/studio/tips/howto/nametip2.html:9
@@ -9912,6 +10043,18 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/nametip7.html:9
 #: templates/info/help/studio/tips/howto/nametip8.html:9
 #: templates/info/help/studio/tips/howto/nametip9.html:9
+#: templates/info/help/studio/tips/howto/pgame-intro.html:9
+#: templates/info/help/studio/tips/howto/pgametip1.html:9
+#: templates/info/help/studio/tips/howto/pgametip10.html:9
+#: templates/info/help/studio/tips/howto/pgametip11.html:9
+#: templates/info/help/studio/tips/howto/pgametip2.html:9
+#: templates/info/help/studio/tips/howto/pgametip3.html:9
+#: templates/info/help/studio/tips/howto/pgametip4.html:9
+#: templates/info/help/studio/tips/howto/pgametip5.html:9
+#: templates/info/help/studio/tips/howto/pgametip6.html:9
+#: templates/info/help/studio/tips/howto/pgametip7.html:9
+#: templates/info/help/studio/tips/howto/pgametip8.html:9
+#: templates/info/help/studio/tips/howto/pgametip9.html:9
 #: templates/info/help/studio/tips/ui/tour-intro.html:9
 #: templates/profiles/scratcher_promotion_modal.html:61
 msgid "Back"
@@ -9919,9 +10062,15 @@ msgstr "Atzera"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:13
 #: templates/info/help/studio/tips/howto/get-started-intro.html:14
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:13
 #: templates/info/help/studio/tips/howto/nametip-intro.html:13
+#: templates/info/help/studio/tips/howto/pgame-intro.html:13
 #: templates/info/help/studio/tips/ui/tour-intro.html:13
 msgid "Begin"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/cardtip-intro.html:18
+msgid "Make a Greeting Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:19
@@ -9930,7 +10079,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:21
-#: templates/info/help/studio/tips/howto/nametip-intro.html:23
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:23
 msgid ""
 "\n"
 "\t<p>This activity is part of <a href=\"#made-with-code\">Made with Code</a>."
@@ -9944,12 +10093,16 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:28
 #: templates/info/help/studio/tips/howto/get-started-intro.html:32
-#: templates/info/help/studio/tips/howto/nametip-intro.html:32
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:32
+#: templates/info/help/studio/tips/howto/nametip-intro.html:28
+#: templates/info/help/studio/tips/howto/pgame-intro.html:27
 msgid "Step Index"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
-#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/ui/tour-intro.html:29
 msgid "1"
 msgstr "1"
@@ -9960,7 +10113,9 @@ msgid "Say a Greeting"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
-#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/ui/tour-intro.html:30
 msgid "2"
 msgstr "2"
@@ -9971,7 +10126,9 @@ msgid "Start with a Green Flag"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
-#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/ui/tour-intro.html:31
 msgid "3"
 msgstr "3"
@@ -9985,7 +10142,9 @@ msgid "Add a Background"
 msgstr "9 Hondo bat gehitu"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
-#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/ui/tour-intro.html:32
 msgid "4"
 msgstr "4"
@@ -9996,7 +10155,9 @@ msgid "Add a Cake"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
-#: templates/info/help/studio/tips/howto/nametip-intro.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 #: templates/info/help/studio/tips/ui/tour-intro.html:33
 msgid "5"
 msgstr "5"
@@ -10010,7 +10171,9 @@ msgid "Add Sound"
 msgstr "2 Soinu bat gehitu"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
-#: templates/info/help/studio/tips/howto/nametip-intro.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/ui/tour-intro.html:34
 msgid "6"
 msgstr "6"
@@ -10021,7 +10184,9 @@ msgid "Blow Out the Candles"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "7"
 msgstr "7"
@@ -10032,7 +10197,9 @@ msgid "Add a Dancing Sprite"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
-#: templates/info/help/studio/tips/howto/nametip-intro.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 msgid "8"
 msgstr "8"
 
@@ -10046,7 +10213,7 @@ msgid "Again and Again"
 msgstr "4 Behin eta berriz"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
-#: templates/info/help/studio/tips/howto/nametip-intro.html:42
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 msgid "9"
 msgstr "9"
 
@@ -10056,6 +10223,7 @@ msgid "Say What to Do"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 msgid "10"
 msgstr "10"
 
@@ -10065,6 +10233,7 @@ msgid "Customize Your Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 msgid "11"
 msgstr "11"
 
@@ -10078,7 +10247,6 @@ msgstr "12"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:40
 #: templates/info/help/studio/tips/howto/cardtip12.html:18
-#: templates/info/help/studio/tips/howto/nametip-intro.html:42
 #: templates/info/help/studio/tips/howto/nametip9.html:17
 msgid "Keep Making!"
 msgstr ""
@@ -10300,10 +10468,10 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"\t<p>Click the <span class=\"controlcolor\">Events</span> category.</p>\n"
-"\t<p>Drag out a <span class=\"controlcolor\">when <img class=\"intext\" src "
-"= \"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and "
-"snap it on top, like this:</p>\n"
+"\t<p>Click the <span class=\"eventscolor\">Events</span> category.</p>\n"
+"\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top, like this:</p>\n"
 "\t<img src = \"%(STATIC_URL)s/images/help/flagsay2.gif\">\n"
 "\t"
 msgstr ""
@@ -10329,7 +10497,8 @@ msgstr ""
 # 82%
 #: templates/info/help/studio/tips/howto/cardtip3.html:17
 #: templates/info/help/studio/tips/howto/get-started-9.html:16
-#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip4.html:17
 #, fuzzy
 msgid "Add a Backdrop"
@@ -10702,6 +10871,8 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:24
 #: templates/info/help/studio/tips/howto/get-started-1.html:29
+#: templates/info/help/studio/tips/howto/pgametip3.html:24
+#: templates/info/help/studio/tips/howto/pgametip3.html:29
 msgid "drag move block to Scripts area"
 msgstr ""
 
@@ -10897,8 +11068,11 @@ msgstr ""
 # 84%
 #: templates/info/help/studio/tips/howto/get-started-2.html:19
 #: templates/info/help/studio/tips/howto/get-started-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip3.html:17
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgametip8.html:17
 #, fuzzy
 msgid "Add a Sound"
 msgstr "2 Soinu bat gehitu"
@@ -11572,7 +11746,8 @@ msgid "8 of 8"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:17
-#: templates/info/help/studio/tips/howto/nametip-intro.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro.html:37
 msgid "Share Your Project"
 msgstr ""
 
@@ -11748,7 +11923,6 @@ msgstr ""
 msgid "Delete the cat"
 msgstr ""
 
-# 75%
 # 75%
 # 90%
 #: templates/info/help/studio/tips/howto/hoc.html:22
@@ -11961,36 +12135,43 @@ msgid ""
 "<p>To glide smoothly, use “glide to x y”</p>"
 msgstr ""
 
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:20
 #: templates/info/help/studio/tips/howto/nametip-intro.html:20
 msgid ""
 "Make your name come to life! Animate the letters by coding in Scratch. Add "
 "sound and music, too."
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:28
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:28
+#: templates/info/help/studio/tips/howto/nametip-intro.html:24
 msgid "First, choose a letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip1.html:17
 msgid "Choose the First Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip2.html:17
 msgid "Add Color Effects"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip5.html:17
 msgid "Add Your Next Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro.html:35
 msgid "Make It Spin"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip7.html:17
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "Finish Your Name"
@@ -12007,8 +12188,8 @@ msgid ""
 "\t<p>To start, choose the first letter of your name, initials, or username.</"
 "p>\n"
 "\t\n"
-"\t<p>Click to choose a new sprite <img class=\"intext\" src = "
-"\"%(STATIC_URL)s/images/help/10b-sprite.png\">:</p>\n"
+"\t<p>Find and click this icon <img class=\"intext\" src = \"%(STATIC_URL)s/"
+"images/help/10b-sprite.png\"> to choose a new sprite:</p>\n"
 "\t<p><img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\"></p> \n"
 "\t<p>then select one of the letters in the Sprite library:</br>\n"
 "<p><img src = \"%(STATIC_URL)s/images/help/letter-choose.png\"></p>\n"
@@ -12075,6 +12256,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip2.html:44
+#: templates/info/help/studio/tips/howto/pgametip7.html:35
 msgid "Next, add a sound"
 msgstr ""
 
@@ -12131,19 +12313,14 @@ msgid ""
 "\n"
 "\t<p>Click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/"
 "images/help/landscape-icon.png\"> icon to open the Backdrop library:</p>\t\n"
-"\t  <p><img src = \"%(STATIC_URL)s/images/help/backgroundlibrary2.png\"> </"
-"p>\n"
 "\t"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip4.html:26
-#, python-format
 msgid ""
 "\n"
 "\t<p>Choose the backdrop you want (such as \"boardwalk\" or \"circles\").</"
 "p>\n"
-"\t  <p><img src = \"%(STATIC_URL)s/images/help/boardwalk.png\"> <img src = "
-"\"%(STATIC_URL)s/images/help/circles-backdrop.png\"></p>\t\n"
 "\t"
 msgstr ""
 
@@ -12289,6 +12466,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip7.html:50
+#: templates/info/help/studio/tips/howto/pgametip10.html:50
 msgid "Next, share your project"
 msgstr ""
 
@@ -12361,6 +12539,463 @@ msgid ""
 "\t"
 msgstr ""
 
+#: templates/info/help/studio/tips/howto/pgame-intro.html:17
+msgid "Make a Pong Game"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:20
+msgid ""
+"Create a version of the bouncing ball game. Find out how to add sounds, "
+"points, or other effects. Then, challenge your friends to play."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:23
+msgid "First, choose a backdrop"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
+#: templates/info/help/studio/tips/howto/pgametip1.html:17
+msgid "Choose a Backdrop"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgametip2.html:17
+msgid "Choose a Ball"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgametip3.html:17
+msgid "Make the Ball Move"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgametip4.html:17
+msgid "Move and Bounce"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+msgid "Choose your Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgametip6.html:17
+msgid "Control the Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgametip7.html:17
+msgid "Bounce Off the Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgametip9.html:17
+msgid "Adding a Challenge"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgametip10.html:17
+msgid "Enhance and Customize"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgametip11.html:17
+msgid "Share Your Game"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:11
+msgid "1 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:19
+msgid "Choose a backdrop for your pong game."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:22
+#, python-format
+msgid ""
+"\n"
+"\t<p>Click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/"
+"images/help/landscape-icon.png\"> icon to open the Backdrop library:</p>\t\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:26
+msgid "Then choose the backdrop you want (such as neon tunnel or brick wall):"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:28
+msgid "Next, choose a ball"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:11
+msgid "10 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:20
+msgid "What else do you want to add to your game? Try some of these ideas."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:24
+msgid "Add Effects"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:25
+msgid "Change the color of the ball when it hits the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:30
+msgid "Starting Position"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:31
+msgid "You may want to set the ball’s starting position."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:32
+msgid ""
+"\n"
+"Move the ball to where you want it to start, then drag the <span class="
+"\"motioncolor\">go to x: y:</span> \n"
+"block into the top of this script: \n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:40
+msgid "Add Points"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:41
+msgid "Create a variable for keeping score."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:43
+msgid "Then add the score blocks to your script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:48
+msgid ""
+"You can also change what happens when the ball touches the bottom. For "
+"example:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:11
+msgid "11 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:19
+msgid "Congratulations! You've coded your own game!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:20
+msgid ""
+"When you are ready to share your project with others, click the “Share” "
+"button at the top of the screen."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:23
+msgid ""
+"(If you haven't already, you will need to create a Scratch account to share "
+"your project online.)"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:27
+msgid "To give your project a name and add notes, click:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:29
+msgid "Here's a video that shows the project page:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:34
+msgid ""
+"\n"
+"You can add your project to the <a href=\"http://scratch.mit.edu/"
+"studios/644508\" target=\"_blank\">Pong Game studio</a>:\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:42
+#, python-format
+msgid ""
+"\n"
+"For more ideas, click <a href=\"../../home/\"><img class=\"intext\" style="
+"\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">All "
+"Tips</a>.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:11
+msgid "2 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:22
+msgid "Then select a ball for your game:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:24
+msgid ""
+"Why are characters in Scratch called 'sprites'? We borrowed the word from "
+"the first video games."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:28
+msgid ""
+"You can delete the cat with the scissors tool. Click on the scissors, then "
+"click on the cat:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:30
+msgid "Or, use the right-click menu (Ctrl+click on Mac), and choose 'delete'."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:31
+msgid "Next, make the ball move"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:11
+msgid "3 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:20
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"motioncolor\">Motion</span> category, and drag "
+"out a <span class=\"motioncolor\">move</span> block into the Scripts area.</"
+"p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:28
+#, fuzzy
+msgid "Then, click on that block to make the ball move."
+msgstr "Ondoren, klik egin bloke horretan katua mugitu dadin"
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:30
+msgid "Next, move and bounce"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:11
+msgid "4 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:20
+msgid ""
+"\n"
+"\tWant it to keep going? Snap on the block <span class=\"motioncolor\">if on "
+"edge, bounce</span>.\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:23
+msgid ""
+"Then, click the <span class=\"controlcolor\">Control</span> category. Wrap a "
+"<span class=\"controlcolor\">forever</span> block around the other blocks, "
+"like this:</p>\t\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:27
+msgid "Click anywhere on the stack of blocks to try it."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:28
+msgid "To stop, click the stop button: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:32
+msgid ""
+"\n"
+"\t Want it to go at an angle? Snap a <span class=\"motioncolor\">point in "
+"direction</span> block on top, and type in an angle.\n"
+"\t "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:39
+#, python-format
+msgid ""
+"\n"
+"\t<p>Next, click the <span class=\"eventscolor\">Events</span> category.</"
+"p>\n"
+"\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top:</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:44
+msgid "Your script will start whenever you click the green flag: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:49
+msgid ""
+"Tip: Want to change the speed of the ball? Type in a different number of "
+"steps:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:52
+msgid "Now, choose your paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:11
+msgid "5 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:17
+msgid "Choose a Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:19
+msgid "Add a paddle so you can start to play! Click to choose a new sprite:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:21
+msgid "Then, select a paddle from the Sprite library:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:27
+msgid ""
+"Tip: Adjust the size of the paddle by clicking with the grow or shrink tool:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:30
+msgid "Next, control the paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:11
+msgid "6 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:19
+msgid "Make it interactive! You can control the paddle with the mouse cursor."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:22
+msgid "Select the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:25
+msgid "Then build this script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:30
+msgid "Click the green flag to start your scripts: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:31
+msgid ""
+"How can you get the ball to bounce off the paddle? Find out in the next step!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:33
+msgid "Next, bounce off the paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:11
+msgid "7 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:20
+msgid "Click to choose the ball:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:25
+msgid "Add this script to make it bounce whenever it hits the paddle:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:27
+msgid "Here’s how to build the script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:34
+msgid "Click the green flag to try it out: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:11
+msgid "8 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:20
+msgid "Make a sound when the ball hits the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:24
+#, python-format
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"tab-ref\">Sounds</span> tab, then click <img "
+"class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-"
+"icon.png\"></p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:34
+msgid "Choose the 'water drop' sound (in Effects):"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:39
+msgid ""
+"\n"
+"\t<p>Then, click the <span class=\"tab-ref\">Scripts</span> tab.\n"
+"\tClick the <span class=\"soundcolor\">Sound</span> category, and drag out a "
+"<span class=\"soundcolor\">play sound</span> block.</p>\n"
+"\t<p>Snap that sound block into the script, like this:</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:46
+msgid "Next, add a challenge"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:11
+msgid "9 of 11"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:20
+msgid "Add a challenge! Make the game stop if the ball hits the bottom."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:24
+msgid "Click to select the Stage:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:29
+msgid ""
+"\n"
+"Select the <span class=\"tab-ref\">Backdrops</span> tab.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:33
+msgid ""
+"Now you can edit your backdrop. Select the line tool. Draw a thick line at "
+"the bottom:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:35
+msgid ""
+"Tip: Hold down the Shift key while drawing the line to make it straight."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:36
+msgid "Tip: To undo, click the Undo arrow:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:41
+msgid "Click to select the Ball sprite:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:46
+msgid ""
+"\n"
+"<p>Click the <span class=\"tab-ref\">Scripts</span> tab, then add this "
+"script to make the ball stop if it hits the line color:</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:51
+msgid ""
+"\n"
+"Tip: Click inside the square box in the <span class=\"sensingcolor"
+"\">touching color</span> block. Then move your cursor to point and click on "
+"the bottom line color.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:55
+msgid "Next, customize your game"
+msgstr ""
+
 #: templates/info/help/studio/tips/howto/play-instrument.html:10
 msgid "To play notes, choose an instrument and note:"
 msgstr "Notak jotzeko, aukeratu musika tresna eta nota bat:"
@@ -12385,10 +13020,10 @@ msgid ""
 "speaker-icon.png\"> or upload a file <img src=\"%(STATIC_URL)s/images/help/"
 "upload-icon.png\">."
 msgstr ""
-"Soinuen fitxa aukeratu <img src=\"%(STATIC_URL)s/images/help/sounds-"
-"tab.png\">. Liburutegitik musika aukeratu ezazu <img src=\"%"
-"(STATIC_URL)s/images/help/speaker-icon.png\"> edo fitxategi bat igo <img "
-"src=\"%(STATIC_URL)s/images/help/upload-icon.png\">."
+"Soinuen fitxa aukeratu <img src=\"%(STATIC_URL)s/images/help/sounds-tab.png\""
+">. Liburutegitik musika aukeratu ezazu <img src=\"%(STATIC_URL)s/images/help"
+"/speaker-icon.png\"> edo fitxategi bat igo <img src=\""
+"%(STATIC_URL)s/images/help/upload-icon.png\">."
 
 #: templates/info/help/studio/tips/howto/play-music.html:13
 msgid "This script will keep playing music in the background:"
@@ -12460,9 +13095,10 @@ msgid ""
 "Choose the sound name from the drop-down menu.\n"
 msgstr ""
 "  \n"
-"Ondoren, klikatu <img src=\"%(STATIC_URL)s/images/help/scripts-tab.png\"> eta "
-"bloke hau erabili:<br/>\n"
-"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>\n"
+"Ondoren, klikatu <img src=\"%(STATIC_URL)s/images/help/scripts-tab.png\"> "
+"eta bloke hau erabili:<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>"
+"\n"
 "Soinuaren izena aukeratu goitikbeherako menutik.\n"
 
 #: templates/info/help/studio/tips/howto/switch-backdrop.html:9
@@ -12692,7 +13328,7 @@ msgid "All Messages"
 msgstr "Mezu guztiak"
 
 #: templates/notifications/notifications.html:16
-#: templates/profiles/profile_detail.html:364 templates/projects/base.html:334
+#: templates/profiles/profile_detail.html:364 templates/projects/base.html:338
 #: templates/studio/includes/sort-galleries-dropdown.html:26
 msgid "Comments"
 msgstr "Iruzkinak"
@@ -12998,9 +13634,9 @@ msgid ""
 "strong>, <strong>give credit</strong>, and <strong>help keep the site "
 "friendly</strong>, click \"I agree!\""
 msgstr ""
-"<strong>Errespetuz</strong>,<strong>konstruktiboki</strong>, eta "
-"<strong>kreditua emanez</strong> jardungo bazara, eta <strong>webgunea jator "
-"eta txukun mantentzen saiatuko bazara </strong>, klikatu \"Ados nago!\""
+"<strong>Errespetuz</strong>,<strong>konstruktiboki</strong>, eta <strong>"
+"kreditua emanez</strong> jardungo bazara, eta <strong>webgunea jator eta "
+"txukun mantentzen saiatuko bazara </strong>, klikatu \"Ados nago!\""
 
 #: templates/profiles/scratcher_promotion_modal.html:50
 msgid ""
@@ -13019,8 +13655,8 @@ msgid ""
 "Congratulations! You’ll notice that the word \"Scratcher\" now appears on "
 "your profile page, and under your user icon on forum posts. "
 msgstr ""
-"Zorionak! \"Scratcher\" hitza zure profil horrian azalduko da orain, eta zure "
-"erabiltzaile ikonoaren azpian foroko argitalpenetan."
+"Zorionak! \"Scratcher\" hitza zure profil horrian azalduko da orain, eta "
+"zure erabiltzaile ikonoaren azpian foroko argitalpenetan."
 
 #: templates/profiles/scratcher_promotion_modal.html:66
 msgid "I agree!"
@@ -13043,87 +13679,87 @@ msgstr "Jarraitzen ditudan estudioak"
 msgid "on Scratch"
 msgstr "Scratchen"
 
-#: templates/projects/base.html:113
+#: templates/projects/base.html:117
 msgid "scripts"
 msgstr "skriptak"
 
-#: templates/projects/base.html:114
+#: templates/projects/base.html:118
 msgid "sprites"
 msgstr "spriteak"
 
-#: templates/projects/base.html:118 templates/studio/studio.html:96
+#: templates/projects/base.html:122 templates/studio/studio.html:96
 #: templates/studio/studio.html.py:133 templates/studio/studio.html:153
 msgid "See inside"
 msgstr "Ikus barnean"
 
-#: templates/projects/base.html:154
+#: templates/projects/base.html:158
 msgid "Based on:"
 msgstr "Oinarria:"
 
-#: templates/projects/base.html:166
+#: templates/projects/base.html:170
 msgid "Original project:"
 msgstr "Jatorrizko proiektua:"
 
-#: templates/projects/base.html:182
+#: templates/projects/base.html:186
 msgid "not shared"
 msgstr "partekatu gabea"
 
-#: templates/projects/base.html:184
+#: templates/projects/base.html:188
 #, python-format
 msgid "Modified: %(tDate)s"
 msgstr "Aldatua: %(tDate)s"
 
-#: templates/projects/base.html:196 templates/projects/base.html.py:203
+#: templates/projects/base.html:200 templates/projects/base.html.py:207
 msgid "Favorite this project"
 msgstr "Proiektu hau kuttuna dut"
 
-#: templates/projects/base.html:213 templates/projects/base.html.py:219
+#: templates/projects/base.html:217 templates/projects/base.html.py:223
 msgid "Love this project"
 msgstr "Proiektu hau gogoko dut"
 
-#: templates/projects/base.html:235
+#: templates/projects/base.html:239
 msgid "Total views"
 msgstr "Bisita kopurua"
 
-#: templates/projects/base.html:239
+#: templates/projects/base.html:243
 msgid "View the remix tree"
 msgstr "Birnahasketa zuhaitza ikusi"
 
-#: templates/projects/base.html:261
+#: templates/projects/base.html:265
 msgid "Add this project to a studio you curate (or remove it from a studio)"
 msgstr ""
 
-#: templates/projects/base.html:262
+#: templates/projects/base.html:266
 msgid "Just click on the button for any of the studios from the list below"
 msgstr ""
 
-#: templates/projects/base.html:274
+#: templates/projects/base.html:278
 msgid "Download this project file"
 msgstr "Proiektuaren fitxategia deskargatu"
 
-#: templates/projects/base.html:297
+#: templates/projects/base.html:301
 #: templates/projects/includes/shared/shared-project-actions.html:10
 msgid "Embed"
 msgstr "Txertatu"
 
-#: templates/projects/base.html:302
+#: templates/projects/base.html:306
 msgid "Copy and paste the embed code above."
 msgstr "Goiko txertatxe kodea kopiatu eta pegatu."
 
-#: templates/projects/base.html:306 templates/projects/censored.html:16
+#: templates/projects/base.html:310 templates/projects/censored.html:16
 #: templates/projects/unshared-owner.html:22
 msgid "Share"
 msgstr "Partekatu"
 
-#: templates/projects/base.html:366
+#: templates/projects/base.html:370
 msgid "remixes"
 msgstr "birnahasketak"
 
-#: templates/projects/base.html:432
+#: templates/projects/base.html:436
 msgid "OK, Got it."
 msgstr ""
 
-#: templates/projects/base.html:451
+#: templates/projects/base.html:455
 msgid "All Tips"
 msgstr ""
 
@@ -13224,8 +13860,7 @@ msgid ""
 msgstr ""
 "Zure salaketa jaso dugu. Scratch lantaldeak zure proiektua gainbegiratuko "
 "du, eta webgunean jarraitu beharko lukeen erabakiko dugu  <a "
-"href='/community_guidelines'>Scratch komunitateko jarraibideak</a> "
-"jarraituz."
+"href='/community_guidelines'>Scratch komunitateko jarraibideak</a> jarraituz."
 
 #: templates/projects/includes/explore-bar.html:7
 msgid "More projects by"
@@ -13270,15 +13905,15 @@ msgstr "Proiektua estudiora gehitu"
 msgid "Embed project on other websites"
 msgstr "Beste webguneetan partekatu proiektua"
 
-#: templates/projects/includes/shared/shared-project-actions.html:14
+#: templates/projects/includes/shared/shared-project-actions.html:15
 msgid "Report project as inappropriate"
 msgstr "Proiektua desegokitzat salatu"
 
-#: templates/projects/includes/shared/shared-project-actions.html:15
+#: templates/projects/includes/shared/shared-project-actions.html:16
 msgid "Report this"
 msgstr "Hau salatu"
 
-#: templates/projects/includes/shared/shared-project-actions.html:20
+#: templates/projects/includes/shared/shared-project-actions.html:22
 msgid "View Cloud Data activity for this project."
 msgstr "Proiektu honentzako hodei datuen jarduera ikusi."
 
@@ -13467,16 +14102,16 @@ msgstr "Scratcherrak munduan zehar"
 msgid ""
 "All Projects (<span data-content=\"project-count\">%(projects_count)s</span>)"
 msgstr ""
-"Proiektu guztiak (<span data-content=\"project-count\">%"
-"(projects_count)s</span>)"
+"Proiektu guztiak (<span data-content=\"project-count\""
+">%(projects_count)s</span>)"
 
 #: templates/studio/studio.html:7
 #, python-format
 msgid ""
 "Shared Projects (<span data-content=\"shared-count\">%(shared_count)s</span>)"
 msgstr ""
-"Partekatutako proiektuak (<span data-content=\"shared-count\">%"
-"(shared_count)s</span>)"
+"Partekatutako proiektuak (<span data-content=\"shared-count\""
+">%(shared_count)s</span>)"
 
 #: templates/studio/studio.html:8
 #, python-format
@@ -13484,15 +14119,16 @@ msgid ""
 "Unshared Projects (<span data-content=\"unshared-count\">"
 "%(notshared_count)s</span>)"
 msgstr ""
-"Partekatu gabeko proiektuak (<span data-content=\"unshared-count\">%"
-"(notshared_count)s</span>)"
+"Partekatu gabeko proiektuak (<span data-content=\"unshared-count\""
+">%(notshared_count)s</span>)"
 
 #: templates/studio/studio.html:9
 #, python-format
 msgid ""
 "My Studios (<span data-content=\"gallery-count\">%(gallery_count)s</span>)"
 msgstr ""
-"Nire estudioak (<span data-content=\"gallery-count\">%(gallery_count)s</span>)"
+"Nire estudioak (<span data-content=\"gallery-count\""
+">%(gallery_count)s</span>)"
 
 #: templates/studio/studio.html:10
 #, python-format
@@ -13570,6 +14206,300 @@ msgstr "Nik sortuak"
 #: templates/studio/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
 msgstr "Nik onduak"
+
+#: templates/base.html:235
+msgid "Educators"
+msgstr "Hezitzaileak"
+
+#: templates/base.html:236
+msgid "Parents"
+msgstr "Gurasoak"
+
+# 90%
+#: templates/base.html:238
+#, fuzzy
+msgid "Contact us"
+msgstr "Gurekin harremanetan jarri"
+
+#: templates/comments/list.html:20
+msgid "View previous comments"
+msgstr ""
+
+#: templates/comments/includes/comment.html:26
+msgid "ago"
+msgstr ""
+
+# 85%
+#: templates/explore/includes/related_projects.html:62
+#, fuzzy
+msgid "Sudio:"
+msgstr "Estudioa:"
+
+#: templates/galleries/base.html:30
+msgid "Studio description"
+msgstr ""
+
+# 82%
+#: templates/galleries/gallery.html:21
+#, fuzzy
+msgid "created %(tDate)s"
+msgstr "Eguneraketa: %(tDate)s"
+
+#: templates/galleries/gallery.html:25
+msgid "Read more &raquo;"
+msgstr ""
+
+#: templates/galleries/gallery.html:57
+#, python-format
+msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
+msgstr "Ontzailea ( <span data-count=\"curators\">%(tCount)s</span> )"
+
+#: templates/galleries/gallery.html:60
+msgid "More info"
+msgstr ""
+
+#: templates/galleries/gallery_list.html:4
+msgid "%(username)s Studio (%(galleries.count)s)"
+msgstr ""
+
+#: templates/homepage/index.html:55
+msgid "Welcome, Scratchers!"
+msgstr ""
+
+#: templates/homepage/index.html:56
+msgid ""
+"Thanks for helping us find and fix glitches in Scratch 2.0! Found a bug? Let "
+"us know!"
+msgstr ""
+
+#: templates/homepage/index.html:57
+msgid "Report bugs here &raquo;"
+msgstr ""
+
+#: templates/homepage/index.html:64
+msgid "Try out new features"
+msgstr ""
+
+#: templates/homepage/index.html:65
+msgid "Here’s a description of what’s new in Scratch 2.0."
+msgstr ""
+
+#: templates/homepage/index.html:66
+msgid "Check it out! &raquo;"
+msgstr ""
+
+#: templates/homepage/index.html:81
+msgid "Scratch 2.0 Beta"
+msgstr ""
+
+#: templates/homepage/index.html:83
+msgid "Welcome to the Scratch 2.0 Beta website!"
+msgstr ""
+
+#: templates/homepage/index.html:86
+msgid ""
+"Please explore and experiment with this preview version of the new Scratch. "
+"Check out the <b>Featured Projects</b> and <b>Featured Studios</b> below.  "
+"Click <a href=\"/help\">Help</a> to learn more."
+msgstr ""
+
+#: templates/homepage/index.html:89
+msgid ""
+"The Scratch 2.0 Beta is open to everyone. But you can only log in if you "
+"created your Scratch account before January 26th."
+msgstr ""
+
+#: templates/homepage/index.html:92
+msgid ""
+"We still have a few features to add, and lots of glitches to fix! You can "
+"help us by <a href=\"/forums/3/\">reporting bugs and glitches</a>. The "
+"sooner we find and fix them, the sooner we can officially release Scratch "
+"2.0."
+msgstr ""
+
+#: templates/homepage/index.html:95
+msgid "Find out more about"
+msgstr ""
+
+#: templates/homepage/index.html:95
+msgid "the move to Scratch 2.0"
+msgstr ""
+
+# 86%
+#: templates/homepage/index.html:151
+#, fuzzy
+msgid "What the Community is Sharing"
+msgstr "Komunitatean gustoko duena"
+
+#: templates/projects/base.html:148
+msgid "Total remixes"
+msgstr ""
+
+# 80%
+#: templates/projects/base.html:195
+#, fuzzy
+msgid "views"
+msgstr "Ikuskapenak"
+
+#: templates/projects/shared-other.html:66
+#: templates/projects/shared-owner.html:30
+msgid "Shared on:"
+msgstr ""
+
+#: templates/projects/includes/shared/shared-project-actions.html:3
+msgid "Share project on other websites"
+msgstr "Beste webguneetan partekatu proiektua"
+
+#: templates/projects/includes/shared/shared-project-actions.html:4
+msgid "Share to"
+msgstr "Partekatu"
+
+#: templates/projects/includes/shared/shared-project-actions.html:9
+msgid "Add project to gallery"
+msgstr ""
+
+#~ msgid "Change password "
+#~ msgstr "Pasahitza aldatu"
+
+#~ msgid ""
+#~ "\n"
+#~ "  Students are learning with Scratch at all levels (from elementary school "
+#~ "to college) and across disciplines (such as math, computer science, language "
+#~ "arts, social studies). Educators share stories, exchange resources, ask "
+#~ "questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+#~ "\">ScratchEd website</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Ikasleak maila ezberdinetan ari dira ikasten Scratchekin (oinarrizko "
+#~ "hezkuntzatik unibertsitaterarte) eta esparru ezberdinetan (matematika, "
+#~ "informatika, hizkuntzak, ikasketa sozialak besteak beste). Hezitzaileek "
+#~ "istorioak partekatu, errekurtsoak elkarbanatu, galderak egin eta jende "
+#~ "berria ezagutzen dute <a href=\"http://scratched.media.mit.edu/\">ScratchEd "
+#~ "webgunean</a>.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "The Scratch project, initiated in 2003, has received generous support from "
+#~ "the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
+#~ "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
+#~ "Learn Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab "
+#~ "research consortia. If you'd like to support Scratch, please see our <a href="
+#~ "\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Scratch proiektuak, 2003an hasi zenak, sostengu eskuzabala jaso du National "
+#~ "Science Foundationaren eskutik (0325828, 1002713, 1027848, 1019396 sariak), "
+#~ "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code.to-"
+#~ "Learn Foundation, Google, Dell, Fastly, Inversoft, eta MIT Media Lab "
+#~ "ikerketa konsorzioarenetik ere. Scratch diruz lagundu nahi izango bazenu, "
+#~ "ikus mesedez gure <a href=\"/info/donate\">dohaintza orrria</a>, edo kontakta "
+#~ "ezazu gurekin donate@scratch.mit.edu helbidean.\n"
+
+#~ msgid "Meet the Scratch Team"
+#~ msgstr "Ezagutu Scratch Lantaldea"
+
+#~ msgid "Community and Moderation"
+#~ msgstr "Komunitatea eta Moderazioa"
+
+#~ msgid ""
+#~ "Scratch is designed with learning and education in mind. A wide variety of "
+#~ "educators have been supporting Scratch creators since 2007, in both formal "
+#~ "and informal learning environments &ndash; K-12 classroom teachers, "
+#~ "educational and computer science researchers, librarians, museum educators, "
+#~ "and parents.<br/><br/>\n"
+#~ "Want to learn more about learning with Scratch?<br/>Check out the <a href="
+#~ "\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+#~ "    "
+#~ msgstr ""
+#~ "Scratch ikasketa eta heziketa helburu izanik dago diseinatuta. 2007tik "
+#~ "heziketa talde zabal bat aritu da Scratch sustengatzen, heziketa ingurune "
+#~ "formal eta informaletan; k-12 ikasgela irakasleak, heziketa eta ordenagailu "
+#~ "zientzia ikertzaileak, liburuzainak, museo hezitzaileak eta "
+#~ "gurasoak.<br/><br/>\n"
+#~ "Scratchekin nola ikasteari buruz gehiago ikasi nahi?<br/>Begira ezazu <a "
+#~ "href=\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online "
+#~ "komunitatean</a>.\n"
+#~ "    "
+
+#~ msgid ""
+#~ "\n"
+#~ " <h3>What is ScratchEd?</h3>\n"
+#~ "\t      <p>Launched in July 2009, <a href=\"http://scratch-ed.org\" target="
+#~ "\"_blank\">ScratchEd</a> is an online community where Scratch educators "
+#~ "share stories, exchange resources, ask questions, and find people.</p>\n"
+#~ "\t      <p>Since its launch, more than 7500 educators from all around the "
+#~ "world have joined the community, sharing hundreds of resources and engaging "
+#~ "in thousands of discussions.</p>\n"
+#~ "\t      <p>Join the ScratchEd community for free at <a href=\"http://scratch-"
+#~ "ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+#~ "\t      "
+#~ msgstr ""
+#~ "\n"
+#~ "<h3>Zer da ScratchEd?</h3>\n"
+#~ "\t <p>2009ko Uztailean jarria abian, <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a> online komunitate bat da non Scratcheko "
+#~ "hezitzaileak istorioak elkarbanatu, errekurtsoak partekatu, galderak galdetu "
+#~ "eta jendea ezagutzen duten.</p>\n"
+#~ "\t <p>Abian jarri zenetik, mundu guztiko 7500 hezitzaile baino gehiago batu "
+#~ "dira komunitatera, ehundaka errekurtso elkarbanatuz eta milaka eztabaidetan "
+#~ "lotu direlatik.</p>\n"
+#~ "\t <p>ScratchEd komunitatera batu zaitez dohainik <a href=\"http://scratch-"
+#~ "ed.org\" target=\"_blank\">scratch-ed.org</a> webgunean.<p>\n"
+#~ "\t"
+
+#~ msgid ""
+#~ "\n"
+#~ "\t      <h3>How can I learn more about what educators are doing with Scratch "
+#~ "&ndash; and how I might use it?</h3>\n"
+#~ "\t      <p>Not sure what might be possible with Scratch?</p>\n"
+#~ "\t      <p><a href=\"http://scratched.media.mit.edu/stories\" target=\"_blank"
+#~ "\">Read a story</a> about how educators have been including Scratch "
+#~ "activities in a wide range of learning environments.</a></p>\n"
+#~ "\t      <p>Or <a href=\"http://scratched.media.mit.edu/resources/all\" "
+#~ "target=\"_blank\">explore resources</a> across ages, disciplines, and "
+#~ "settings. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+#~ "target=\"_blank\">Watch webinars</a> and review documents like the <a href="
+#~ "\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-draft\" "
+#~ "target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
+#~ "\t      <p>In addition to exploring the <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a> online community and its resources, you can "
+#~ "engage with the ScratchEd Team and other Scratch educators via <a href="
+#~ "\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a href="
+#~ "\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
+#~ "<a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>"
+#~ "\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/"
+#~ "scratched-weekly-roundup\" target=\"_blank>\">weekly roundups</a>, and our "
+#~ "<a href=\"http://scratched.media.mit.edu/events\" target=\"_blank>"
+#~ "\">quarterly newsletter</a>.<p>\n"
+#~ "\t      "
+#~ msgstr ""
+#~ "\n"
+#~ "\t <h3>Nola ikas nezake gehiago Scratchekin hezitzaileak egiten ari direnari "
+#~ "eta nola erabil nezakeenari buruz?</h3>\n"
+#~ "\t <p>Ez zaude ziur Scratchekin egin daitekenari buruz?</p>\n"
+#~ "\t <p><a href=\"http://scratched.media.mit.edu/stories\" "
+#~ "target=\"_blank\">Irakurri istorio bat</a> zeinak hezitzaileek Scratch "
+#~ "jarduerak heziketa eremu ezberdinetara nola integratu dituzten kontatzen "
+#~ "duena.</a></p>\n"
+#~ "\t <p>Edo <a href=\"http://scratched.media.mit.edu/resources/all\" "
+#~ "target=\"_blank\">errekurtsoak esploratu</a> urte, disziplina eta kontextu "
+#~ "ezberdinetan oinarrituak. <a href=\"http://scratched.media.mit.edu/resources"
+#~ "/new-scratch\" target=\"_blank\">Ikusi webinarak</a> eta berrikusi dokumentuak "
+#~ "<a href=\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-"
+#~ "draft\" target=\"_blank\">Scratch kurrikulu gida</a> besteak beste.</p>\n"
+#~ "\t <p><a href=\"http://scratch-ed.org\" target=\"_blank\">ScratchEd</a> "
+#~ "esploratzearekin batera, online komunitatea eta bere errekurtsoak, ScratchEd "
+#~ "Teamarekin eta beste Scratch hezitzaile batzuekin elkarlanean jardun "
+#~ "zaitezke: <a href=\"http://twitter.com/scratchedteam\" "
+#~ "target=\"_blank>\">Twitter</a>, <a "
+#~ "href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
+#~ "<a href=\"http://www.edmodo.com/publisher/scratcheducation\" "
+#~ "target=\"_blank>\">Edmodo</a>, <a "
+#~ "href=\"http://scratched.media.mit.edu/discussions/scratched-weekly-roundup\" "
+#~ "target=\"_blank>\">asteroko bilketa</a>, eta gure <a "
+#~ "href=\"http://scratched.media.mit.edu/events\" target=\"_blank>\">hiruhileroko "
+#~ "buletinetan</a>.<p>\n"
+#~ "\t"
 
 # 83%
 # 98%
@@ -16518,12 +17448,6 @@ msgstr "Nik onduak"
 #~ msgid "static pages"
 #~ msgstr "orri estatikoak"
 
-#~ msgid "Educators"
-#~ msgstr "Hezitzaileak"
-
-#~ msgid "Parents"
-#~ msgstr "Gurasoak"
-
 #, python-format
 #~ msgid "Sorry, comment posting has been turned off for this %(type)s."
 #~ msgstr "Iradokizunak ezgaitu egin dira %(type)s honentzat."
@@ -16531,29 +17455,6 @@ msgstr "Nik onduak"
 #, python-format
 #~ msgid "Last modified: %(tDate)s"
 #~ msgstr "Azken aldaketa: %(tDate)s"
-
-#, python-format
-#~ msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
-#~ msgstr "Ontzailea ( <span data-count=\"curators\">%(tCount)s</span> )"
-
-#~ msgid "Can I use images / sounds / media from the internet in my projects?"
-#~ msgstr ""
-#~ "Erabil al ditzaket interneteko irudiak / soinuak / media nire proiektuetan?"
-
-#~ msgid ""
-#~ "It's important to respect the original creator’s wishes regarding remixing. "
-#~ "If you choose to integrate someone else’s work into your own, be sure to "
-#~ "give them credit on the project “credits” section, and include a link back "
-#~ "to the original. To find art / sounds that are already licensed for "
-#~ "remixing, check out the <a href=\"http://search.creativecommons.org/"
-#~ "\">Creative Commons search page</a>."
-#~ msgstr ""
-#~ "Jatorrizko egilearen birnahasteari buruzko desioak errespetatzea "
-#~ "garrantzitsua da. Beste baten lana zurean integratzea aukeratzen baduzu, "
-#~ "ziurta ezazu berari kreditua ematea proiektuaren \"kredituak\" atalean, eta "
-#~ "jatorrizkora esteka bat. Birnahasgarri diren artea / soinuak aurkitzeko, "
-#~ "ikus <a href=\"http://search.creativecommons.org/\">Creative Commons bilaketa "
-#~ "orrian</a>."
 
 #~ msgid "Getting Started"
 #~ msgstr "Lehen urratsak"
@@ -17295,45 +18196,14 @@ msgstr "Nik onduak"
 #~ msgid "Just check the studio you wish to add to from the list below"
 #~ msgstr "Gehitu nahi duzun estudioa egiazta ezatu azpiko listatik"
 
-#~ msgid "Share to"
-#~ msgstr "Partekatu"
-
 #~ msgid "Test new Scratch Player"
 #~ msgstr "Scratch berria proba ezazu"
 
 #~ msgid "Try it!"
 #~ msgstr "Proba ezazu!"
 
-#~ msgid "Share project on other websites"
-#~ msgstr "Beste webguneetan partekatu proiektua"
-
 #~ msgid "Add project to studio"
 #~ msgstr "Proiektua estudiora gehitu"
-
-# 90%
-#, fuzzy
-#~ msgid "Contact us"
-#~ msgstr "Gurekin harremanetan jarri"
-
-# 85%
-#, fuzzy
-#~ msgid "Sudio:"
-#~ msgstr "Estudioa:"
-
-# 82%
-#, fuzzy
-#~ msgid "created %(tDate)s"
-#~ msgstr "Eguneraketa: %(tDate)s"
-
-# 86%
-#, fuzzy
-#~ msgid "What the Community is Sharing"
-#~ msgstr "Komunitatean gustoko duena"
-
-# 80%
-#, fuzzy
-#~ msgid "views"
-#~ msgstr "Ikuskapenak"
 
 #~ msgid "Owner"
 #~ msgstr "Jabea"
@@ -17352,9 +18222,6 @@ msgstr "Nik onduak"
 #~ "<li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch "
 #~ "Albisteetan</a></li>\n"
 #~ "      "
-
-#~ msgid "Scratch Credits"
-#~ msgstr "Scratchen Kredituak"
 
 #~ msgid ""
 #~ "\n"

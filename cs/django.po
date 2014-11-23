@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 00:48+0000\n"
+"POT-Creation-Date: 2014-11-21 23:51+0000\n"
 "PO-Revision-Date: 2014-03-25 08:29+0000\n"
 "Last-Translator: Karel <janda@ccs.cz>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,48 +18,65 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1395736172.000000\n"
 
-#: views.py:181
+#: views.py:308
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr ""
 
-#: views.py:185 views.py:225
+#: views.py:312 views.py:352
 msgid "Please correct the errors below."
 msgstr ""
 
-#: authentication/forms.py:18
+#: authentication/forms.py:22
+msgid "Keep my projects, but disable all comments"
+msgstr ""
+
+#: authentication/forms.py:23
+msgid "Delete my projects"
+msgstr ""
+
+#: authentication/forms.py:26
+msgid "Enter your password to confirm"
+msgstr ""
+
+#: authentication/forms.py:45
 msgid "Looks like that isn't a valid email format"
 msgstr "Toto není platná e-mailová adresa"
 
-#: authentication/forms.py:30
+#: authentication/forms.py:57
 msgid "The two password fields didn't match."
 msgstr "Zadaná hesla se neshodují."
 
-#: authentication/forms.py:31 authentication/forms.py:52
+#: authentication/forms.py:58 authentication/forms.py:79
 msgid "Your password must be at least 6 characters long."
 msgstr "Tvoje heslo musí být alespoň 6 znaků dlouhé."
 
-#: authentication/forms.py:32 authentication/forms.py:53
+#: authentication/forms.py:59 authentication/forms.py:80
 msgid "Your password cannot be 'password'."
 msgstr "Tvoje heslo nemůže být 'password'."
 
-#: authentication/forms.py:33 authentication/forms.py:54
+#: authentication/forms.py:60 authentication/forms.py:81
 msgid "Your password cannot be the same as your username."
 msgstr "Heslo se nesmí shodovat s uživatelským jménem."
 
-#: authentication/forms.py:74 templates/modal-registration.html:78
+#: authentication/forms.py:101 templates/modal-registration.html:78
+#: templates/accounts/account_settings.html:10
+#: templates/accounts/email_change.html:10
+#: templates/accounts/password_change_form.html:10
+#: templates/accounts/deletion/confirmation.html:8
+#: templates/accounts/deletion/nostalgia.html:7
 #: templates/info/educators.html:52
 msgid "Email"
 msgstr "E-mail"
 
-#: authentication/forms.py:82
+#: authentication/forms.py:109
 msgid "You must provide an email or username"
 msgstr "Musíš zadat svou e-mailovou adresu nebo uživatelské jméno."
 
-#: authentication/forms.py:87
+#: authentication/forms.py:114
 msgid "Sorry we don't have an account with that username"
 msgstr "Účet s tímto uživatelským jménem neexistuje."
 
-#: authentication/forms.py:92
+#: authentication/forms.py:119
 msgid "Sorry we don't have an account with that email address"
 msgstr "Účet s touto e-mailovou adresou neexistuje."
 
@@ -106,7 +123,7 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s staré"
 
-#: projects/views.py:496
+#: projects/views.py:494
 msgid "This tag has too many projects to load"
 msgstr "Tento štítek má příliš mnoho projektů ke stažení"
 
@@ -115,12 +132,12 @@ msgid "subscribers"
 msgstr "registrovaní odběratelé"
 
 #: s2forums/djangobb_forum/feeds.py:27 s2forums/djangobb_forum/feeds.py:28
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:14
 msgid "Latest posts on forum"
 msgstr "Poslední příspěvky ve fóru"
 
 #: s2forums/djangobb_forum/feeds.py:46 s2forums/djangobb_forum/feeds.py:47
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:16
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
 msgid "Latest topics on forum"
 msgstr "Poslední témata ve fóru"
 
@@ -145,52 +162,52 @@ msgstr "Poslední příspěvky ve fóru \"%s\""
 msgid "Latest posts on the category \"%s\""
 msgstr "Poslední příspěvky v kategorii \"%s\""
 
-#: s2forums/djangobb_forum/forms.py:29 s2forums/djangobb_forum/forms.py:229
-#: s2forums/djangobb_forum/forms.py:366 templates/base.html:211
+#: s2forums/djangobb_forum/forms.py:27 s2forums/djangobb_forum/forms.py:227
+#: s2forums/djangobb_forum/forms.py:364 templates/base.html:207
 #: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
 msgid "Username"
 msgstr "Jméno uživatele"
 
-#: s2forums/djangobb_forum/forms.py:30
+#: s2forums/djangobb_forum/forms.py:28
 msgid "Registered"
 msgstr "Registrován"
 
-#: s2forums/djangobb_forum/forms.py:31
+#: s2forums/djangobb_forum/forms.py:29
 msgid "Number of posts"
 msgstr "Počet příspěvků"
 
-#: s2forums/djangobb_forum/forms.py:35
+#: s2forums/djangobb_forum/forms.py:33
 msgid "Post time"
 msgstr "Čas příspěvku"
 
-#: s2forums/djangobb_forum/forms.py:36
+#: s2forums/djangobb_forum/forms.py:34
 msgid "Author"
 msgstr "Autor"
 
-#: s2forums/djangobb_forum/forms.py:37 s2forums/djangobb_forum/forms.py:60
-#: s2forums/djangobb_forum/forms.py:188 s2forums/djangobb_forum/forms.py:459
+#: s2forums/djangobb_forum/forms.py:35 s2forums/djangobb_forum/forms.py:58
+#: s2forums/djangobb_forum/forms.py:186 s2forums/djangobb_forum/forms.py:457
 #: s2forums/djangobb_forum/models.py:160
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:29
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
 msgid "Subject"
 msgstr "Téma"
 
-#: s2forums/djangobb_forum/forms.py:38 s2forums/djangobb_forum/forms.py:402
+#: s2forums/djangobb_forum/forms.py:36 s2forums/djangobb_forum/forms.py:400
 #: s2forums/djangobb_forum/models.py:130 s2forums/djangobb_forum/models.py:159
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:55
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:26
 msgid "Forum"
 msgstr "Fórum"
 
-#: s2forums/djangobb_forum/forms.py:42
+#: s2forums/djangobb_forum/forms.py:40
 msgid "Ascending"
 msgstr "Vzestupně"
 
-#: s2forums/djangobb_forum/forms.py:43
+#: s2forums/djangobb_forum/forms.py:41
 msgid "Descending"
 msgstr "Sestupně"
 
-#: s2forums/djangobb_forum/forms.py:47 s2forums/djangobb_forum/models.py:175
+#: s2forums/djangobb_forum/forms.py:45 s2forums/djangobb_forum/models.py:175
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:56
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
@@ -198,44 +215,44 @@ msgid "Topics"
 msgstr "Náměty"
 
 # 80%
-#: s2forums/djangobb_forum/forms.py:48 s2forums/djangobb_forum/models.py:275
+#: s2forums/djangobb_forum/forms.py:46 s2forums/djangobb_forum/models.py:275
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:57
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
 msgid "Posts"
 msgstr "Příspěvky"
 
-#: s2forums/djangobb_forum/forms.py:52
+#: s2forums/djangobb_forum/forms.py:50
 msgid "Message text and topic subject"
 msgstr "Text zprávy a předmět tématu"
 
-#: s2forums/djangobb_forum/forms.py:53
+#: s2forums/djangobb_forum/forms.py:51
 msgid "Message text only"
 msgstr "Pouze text zprávy"
 
-#: s2forums/djangobb_forum/forms.py:54
+#: s2forums/djangobb_forum/forms.py:52
 msgid "Topic subject only"
 msgstr "Pouze předmět tématu"
 
-#: s2forums/djangobb_forum/forms.py:62
+#: s2forums/djangobb_forum/forms.py:60
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
 msgid "Attachment"
 msgstr "Přílohy"
 
-#: s2forums/djangobb_forum/forms.py:63
+#: s2forums/djangobb_forum/forms.py:61
 msgid "Subscribe"
 msgstr "Odebírat"
 
 # 87%
-#: s2forums/djangobb_forum/forms.py:63
+#: s2forums/djangobb_forum/forms.py:61
 msgid "Subscribe to this topic."
 msgstr "Odebírej toto téma."
 
-#: s2forums/djangobb_forum/forms.py:93
+#: s2forums/djangobb_forum/forms.py:91
 msgid "Can't be empty nor contain only whitespace characters"
 msgstr "Nesmí být prázdné nebo obsahovat jen mezerové znaky"
 
-#: s2forums/djangobb_forum/forms.py:103
+#: s2forums/djangobb_forum/forms.py:101
 msgid ""
 "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
 "Scratch, so your account has been muted for the rest of the day. :/"
@@ -243,95 +260,95 @@ msgstr ""
 "Hmm, filtrovací robot si je jistý, že tvé nedávné komentáře nebyly slušné, "
 "takže tvé přihlášení bude umlčeno po zbytek dne. :/"
 
-#: s2forums/djangobb_forum/forms.py:132 s2forums/djangobb_forum/forms.py:136
+#: s2forums/djangobb_forum/forms.py:130 s2forums/djangobb_forum/forms.py:134
 #, python-format
 msgid "Sorry, you have to wait %d seconds between posts."
 msgstr "Lituji, musíš čekat %d sekund mezi příspěvky."
 
-#: s2forums/djangobb_forum/forms.py:145
+#: s2forums/djangobb_forum/forms.py:143
 msgid "Attachment is too big"
 msgstr "Příloha je příliš velká"
 
-#: s2forums/djangobb_forum/forms.py:190
+#: s2forums/djangobb_forum/forms.py:188
 msgid "Silent edit?"
 msgstr "Tichá editace?"
 
 # 83%
-#: s2forums/djangobb_forum/forms.py:230
+#: s2forums/djangobb_forum/forms.py:228
 msgid "E-mail"
 msgstr "Email"
 
-#: s2forums/djangobb_forum/forms.py:261
+#: s2forums/djangobb_forum/forms.py:259
 msgid "Real name"
 msgstr "Skutečné jméno"
 
-#: s2forums/djangobb_forum/forms.py:368 s2forums/djangobb_forum/forms.py:404
+#: s2forums/djangobb_forum/forms.py:366 s2forums/djangobb_forum/forms.py:402
 #: templates/includes/sort-projects-dropdown.html:4
 #: templates/studio/includes/sort-galleries-dropdown.html:19
 #: templates/studio/includes/sort-projects-dropdown.html:4
 msgid "Sort by"
 msgstr "Třídění podle"
 
-#: s2forums/djangobb_forum/forms.py:369 s2forums/djangobb_forum/forms.py:405
+#: s2forums/djangobb_forum/forms.py:367 s2forums/djangobb_forum/forms.py:403
 msgid "Sort order"
 msgstr "Pořadí třídění"
 
-#: s2forums/djangobb_forum/forms.py:398
+#: s2forums/djangobb_forum/forms.py:396
 msgid "Keyword search"
 msgstr "Vyhledání klíčovými slovy"
 
-#: s2forums/djangobb_forum/forms.py:400
+#: s2forums/djangobb_forum/forms.py:398
 msgid "Author search"
 msgstr "Vyhledání podle autora"
 
-#: s2forums/djangobb_forum/forms.py:403
+#: s2forums/djangobb_forum/forms.py:401
 msgid "Search in"
 msgstr "Hledání v"
 
-#: s2forums/djangobb_forum/forms.py:406
+#: s2forums/djangobb_forum/forms.py:404
 msgid "Show results as"
 msgstr "Ukaž výsledky jako"
 
-#: s2forums/djangobb_forum/forms.py:431
+#: s2forums/djangobb_forum/forms.py:429
 #, python-format
 msgid "User \"%s\" does not exist"
 msgstr "Uživatel \"%s\" neexistuje"
 
-#: s2forums/djangobb_forum/forms.py:441
+#: s2forums/djangobb_forum/forms.py:439
 msgid "You already voted for this post"
 msgstr "Už jsi hlasoval/a/ pro tento příspěvek"
 
-#: s2forums/djangobb_forum/forms.py:445
+#: s2forums/djangobb_forum/forms.py:443
 msgid "This post does't belong to that user"
 msgstr "Tento příspěvek nepatří tomuto uživateli"
 
 # 87%
-#: s2forums/djangobb_forum/forms.py:461 s2forums/djangobb_forum/models.py:266
+#: s2forums/djangobb_forum/forms.py:459 s2forums/djangobb_forum/models.py:266
 #: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:34
 #: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
 msgid "Message"
 msgstr "Zpráva"
 
-#: s2forums/djangobb_forum/forms.py:514
+#: s2forums/djangobb_forum/forms.py:512
 #, python-format
 msgid "You have selected too many choices. You may only select %i."
 msgstr "Vybral jsi příliš mnoho voleb. Můžeš zvolit pouze %i."
 
-#: s2forums/djangobb_forum/forms.py:521
+#: s2forums/djangobb_forum/forms.py:519
 msgid "Write each answer on a new line."
 msgstr "Napiš každou odpověď na nový řádek."
 
-#: s2forums/djangobb_forum/forms.py:524
+#: s2forums/djangobb_forum/forms.py:522
 msgid ""
 "Number of days for this poll to run. Leave empty for an indefinite poll."
 msgstr ""
 "Počet dní trvání této ankety. Ponechej nevyplněné pro neomezenou anketu."
 
-#: s2forums/djangobb_forum/forms.py:541
+#: s2forums/djangobb_forum/forms.py:539
 msgid "There is no valid answer."
 msgstr "Není tu platná odpověď."
 
-#: s2forums/djangobb_forum/forms.py:547
+#: s2forums/djangobb_forum/forms.py:545
 msgid "One of the answers is too long."
 msgstr "Jedna z odpovědí je příliš dlouhá."
 
@@ -580,7 +597,7 @@ msgstr "Autoregistrovat se ke všem námětům tebou vytvořených nebo odpověz
 msgid "Default markup"
 msgstr "Standartní označování"
 
-#: s2forums/djangobb_forum/models.py:414 templates/base.html:188
+#: s2forums/djangobb_forum/models.py:414 templates/base.html:237
 msgid "Profile"
 msgstr "Profil"
 
@@ -613,7 +630,7 @@ msgstr "Hlášení"
 
 # 85%
 #: s2forums/djangobb_forum/models.py:455
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:31
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:28
 #: s2forums/djangobb_forum/templates/djangobb_forum/reports.html:6
 msgid "Reports"
 msgstr "Hlášení"
@@ -867,18 +884,18 @@ msgstr "Nové téma"
 #: s2forums/djangobb_forum/templates/djangobb_forum/report.html:11
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:27
 #: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:189
-#: templates/base.html:315
+#: templates/base.html:324
 msgid "Discussion Forums"
 msgstr "Diskuzní fóra"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:6
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/index.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:6
 msgid "Discuss Scratch"
 msgstr "Diskuze ke Scratch"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:129
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:43
+#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:126
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:40
 msgid "Notice"
 msgstr "Oznámení"
 
@@ -1002,8 +1019,9 @@ msgstr "Důležité:"
 #: templates/explore/includes/related_projects.html:75
 #: templates/explore/includes/related_projects2.html:8
 #: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-list.html:13
-#: templates/projects/base.html:105 templates/projects/base.html.py:364
+#: templates/galleries/includes/project-thumb.html:26
+#: templates/galleries/includes/project-thumb.html:28
+#: templates/projects/base.html:105 templates/projects/base.html.py:368
 #: templates/projects/includes/project_list.html:11
 msgid "by"
 msgstr "od"
@@ -1021,25 +1039,25 @@ msgstr "Fórum je prázdné."
 msgid "Moderate forum"
 msgstr "Moderované fórum"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:16
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:15
 msgid "Show new posts since last visit"
 msgstr "Ukázat nové příspěvky od poslední návštěvy"
 
 # 76%
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:20
 msgid "Discussion Home"
 msgstr "Diskuzní fóra"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:23
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:5
 #: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:18
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:20
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
-#: templates/404.html:19 templates/base.html:166 templates/contact-us.html:105
+#: templates/404.html:18 templates/base.html:184 templates/contact-us.html:92
 msgid "Search"
 msgstr "Hledání"
 
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:29
+#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:26
 #, python-format
 msgid "Reports (%(report_count)s)"
 msgstr "Hlášení (%(report_count)s)"
@@ -1483,8 +1501,7 @@ msgid ""
 "%(avatar_height)s pixels "
 msgstr ""
 "Avatar je malý obrázek který bude zobrazen pod tvým jménem uživatele v tvých "
-"příspěvcích. Nesmí být větší než %(avatar_width)s x %(avatar_height)s "
-"pixelů "
+"příspěvcích. Nesmí být větší než %(avatar_width)s x %(avatar_height)s pixelů "
 
 #: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
 msgid "Upload"
@@ -1531,7 +1548,7 @@ msgstr "Odpovědi:"
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
 #: s2forums/djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
-#: templates/base.html:146
+#: templates/base.html:177
 msgid "Discuss"
 msgstr "Diskutovat"
 
@@ -1608,30 +1625,29 @@ msgid "When you update your profile, you will be redirected back to this page."
 msgstr "Až zaktualizuješ svůj profil, přesměruje tě to zpět na tuto stránku."
 
 # 97%
-#: templates/403.html:13
+#: templates/403.html:12
 #, fuzzy
 msgid "403. Oh noes! Our server is Scratch'ing its head"
 msgstr "404. Ach ne! Náš server si drbe hlavu"
 
-#: templates/403.html:16
+#: templates/403.html:15
 msgid ""
 "We couldn't authorize you to view this page. If you need to get in touch "
 "with us about this, send us an email at "
 msgstr ""
 
-#: templates/404.html:13
+#: templates/404.html:12
 msgid "404. Oh noes! Our server is Scratch'ing its head"
 msgstr "404. Ach ne! Náš server si drbe hlavu"
 
-#: templates/404.html:16
+#: templates/404.html:15
 msgid ""
 "We couldn't find the page you're looking for. Check to make sure you've "
 "typed the url correctly."
 msgstr ""
-"Nemůžeme nalézt stránku kterou hledáš. Zkontroluj, že jsi napsal URL "
-"správně."
+"Nemůžeme nalézt stránku kterou hledáš. Zkontroluj, že jsi napsal URL správně."
 
-#: templates/404.html:17
+#: templates/404.html:16
 msgid "You can try searching for what you're looking for here:"
 msgstr "Můžeš zkusit vyhledat to co hledáš tady:"
 
@@ -1651,184 +1667,200 @@ msgstr "Nastavení účtu -  Scratch"
 msgid "Coming Soon..."
 msgstr "Připravujeme..."
 
-#: templates/base.html:19
+#: templates/base.html:18
 msgid "Scratch"
 msgstr "Scratch"
 
-#: templates/base.html:19
+#: templates/base.html:18
 msgid "Imagine, Program, Share"
 msgstr "Vymysli, programuj, poděl se"
 
-#: templates/base.html:144
+#: templates/base.html:175
 msgid "Create"
 msgstr "Tvořit"
 
-#: templates/base.html:145 templates/explore/explore2.html:40
+#: templates/base.html:176 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Prozkoumat"
 
-#: templates/base.html:147
+#: templates/base.html:178
 msgid "Help"
 msgstr "Pomoc"
 
-#: templates/base.html:180
-msgid "messages - updates and notices"
-msgstr "zprávy - aktualizace a oznámení"
-
-#: templates/base.html:181
-msgid "my stuff - manage projects and studios"
-msgstr "moje věci - správa projektů a studií"
-
-#: templates/base.html:189 templates/explore/base.html:24
-#: templates/studio/base.html:21
-msgid "My Stuff"
-msgstr "Moje věci"
-
-#: templates/base.html:190
-msgid "Account settings"
-msgstr "Nastavení účtu"
-
-#: templates/base.html:191
-msgid "Sign out"
-msgstr "Odhlášení"
-
 # 83%
-#: templates/base.html:202 templates/modal-registration.html:6
+#: templates/base.html:198 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Připojit se ke Scratchi"
 
-#: templates/base.html:205 templates/base.html.py:216 templates/base.html:226
+#: templates/base.html:201 templates/base.html.py:212 templates/base.html:222
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Přihlášení"
 
-#: templates/base.html:213 templates/modal-login.html:21
+#: templates/base.html:209 templates/modal-login.html:21
+#: templates/accounts/account_settings.html:9
+#: templates/accounts/email_change.html:9
+#: templates/accounts/deletion/confirmation.html:7
+#: templates/accounts/deletion/nostalgia.html:6
 #: templates/includes/backbone-templates.html:26
 msgid "Password"
 msgstr "Heslo"
 
-#: templates/base.html:217
+#: templates/base.html:213
 msgid "Forgot password?"
 msgstr "Zapoměl/a/ jsi heslo?"
 
-#: templates/base.html:293
+#: templates/base.html:229
+msgid "messages - updates and notices"
+msgstr "zprávy - aktualizace a oznámení"
+
+#: templates/base.html:230
+msgid "my stuff - manage projects and studios"
+msgstr "moje věci - správa projektů a studií"
+
+#: templates/base.html:238 templates/explore/base.html:24
+#: templates/studio/base.html:21
+msgid "My Stuff"
+msgstr "Moje věci"
+
+#: templates/base.html:239
+msgid "Account settings"
+msgstr "Nastavení účtu"
+
+#: templates/base.html:240
+msgid "Sign out"
+msgstr "Odhlášení"
+
+#: templates/base.html:310
 msgid "About"
 msgstr "O aplikaci"
 
-#: templates/base.html:295 templates/info/about.html:13
-#: templates/info/help/index.html:93
+#: templates/base.html:312 templates/info/about.html:13
+#: templates/info/help/index.html:92
 msgid "About Scratch"
 msgstr "O Scratchi"
 
-#: templates/base.html:296 templates/info/parents.html:12
+#: templates/base.html:313 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "Pro rodiče"
 
-#: templates/base.html:297 templates/info/educators.html:12
+#: templates/base.html:314 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "Pro učitele"
 
-#: templates/base.html:306
-msgid "Donate"
-msgstr "Sponzorovat"
+#: templates/base.html:315
+msgid "Credits"
+msgstr ""
 
-#: templates/base.html:308
+#: templates/base.html:316
 msgid "Jobs"
 msgstr "Zaměstnání"
 
-#: templates/base.html:312 templates/info/parents.html:72
+#: templates/base.html:317
+msgid "Press"
+msgstr ""
+
+#: templates/base.html:321 templates/info/parents.html:72
 msgid "Community"
 msgstr "Společenství"
 
-#: templates/base.html:314
+#: templates/base.html:323
 msgid "Community Guidelines"
 msgstr "Pravidla společenství"
 
-#: templates/base.html:316 templates/info/help/index.html:114
+#: templates/base.html:325 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
-#: templates/base.html:317
+#: templates/base.html:326
 msgid "Statistics"
 msgstr ""
 
-#: templates/base.html:321 templates/search/includes/tabs.html:17
+#: templates/base.html:330 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr "Podpora"
 
-#: templates/base.html:323
+#: templates/base.html:332
 msgid "Help Page"
 msgstr ""
 
-#: templates/base.html:324
+#: templates/base.html:333
 msgid "FAQ"
 msgstr ""
 
-#: templates/base.html:325
+#: templates/base.html:334
 msgid "Offline Editor"
 msgstr ""
 
 # 90%
-#: templates/base.html:326 templates/contact-us-success.html:12
+#: templates/base.html:335 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Kontaktujte nás"
 
-#: templates/base.html:330
+#: templates/base.html:336
+msgid "Donate"
+msgstr "Sponzorovat"
+
+#: templates/base.html:340
 msgid "Legal"
 msgstr ""
 
-#: templates/base.html:332
+#: templates/base.html:342
 msgid "Terms of Use"
 msgstr ""
 
-#: templates/base.html:333 templates/info/help/faq.html:28
+#: templates/base.html:343 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80
 msgid "Privacy Policy"
 msgstr "Politika soukromí"
 
-#: templates/base.html:334 templates/info/DMCA.html:10
+#: templates/base.html:344 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "Autorská práva"
 
-#: templates/base.html:338
+#: templates/base.html:348
 msgid "Scratch Family"
 msgstr ""
 
 # 77%
-#: templates/base.html:340
+#: templates/base.html:350
 #, fuzzy
 msgid "ScratchEd"
 msgstr "Scratch"
 
 # 77%
 # 88%
-#: templates/base.html:341
+#: templates/base.html:351
 #, fuzzy
 msgid "ScratchJr"
 msgstr "Scratcher"
 
 # 75%
-#: templates/base.html:342
+#: templates/base.html:352
 #, fuzzy
 msgid "Scratch Day"
 msgstr "Tým Scratch"
 
-#: templates/base.html:343
+#: templates/base.html:353
 msgid "Scratch Conference"
 msgstr ""
 
-#: templates/base.html:344
+#: templates/base.html:354
 msgid "Code-to-Learn Foundation"
 msgstr ""
 
-#: templates/base.html:359
+#: templates/base.html:369
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
 "Scratch je projektem skupiny Lifelong Kindergarten Group na škole MIT Media "
 "Lab"
+
+#: templates/base.html:435
+msgid "Your Account Will Not Be Deleted"
+msgstr ""
 
 #: templates/coming-soon.html:6
 msgid "Coming Soon-  Scratch"
@@ -1862,29 +1894,28 @@ msgid ""
 msgstr ""
 "Můžeš také zkusit prohledat Scratchová<a href=\"/discuss\">Diskuzní fora</a>:"
 
-#: templates/contact-us.html:107
+#: templates/contact-us.html:94
 msgid ""
 "If you can't find an answer, post a new topic on the <a href=\"/discuss"
 "\">Discussion forums.</a> There are many experienced Scratchers who can help!"
 msgstr ""
-"Pokud nemůžeš najít odpověď, pošli nový námět do <a "
-"href=\"/discuss\">Diskuzního fóra.</a> Je zde mnoho zkušených Scratcherů kteří "
-"mohou pomoci!"
+"Pokud nemůžeš najít odpověď, pošli nový námět do <a href=\"/discuss\">"
+"Diskuzního fóra.</a> Je zde mnoho zkušených Scratcherů kteří mohou pomoci!"
 
 # 95%
-#: templates/contact-us.html:110
+#: templates/contact-us.html:97
 msgid "Questions About Scratch"
 msgstr "Dotazy ke Scratch"
 
-#: templates/contact-us.html:111
+#: templates/contact-us.html:98
 msgid "Help with Scripts"
 msgstr "Pomoc se scénáři"
 
-#: templates/contact-us.html:112
+#: templates/contact-us.html:99
 msgid "Bugs and Glitches"
 msgstr "Chyby a závady"
 
-#: templates/contact-us.html:115
+#: templates/contact-us.html:102
 msgid ""
 "If you need to contact us, please choose from one of the options below. We "
 "get a lot of mail, so we may not be able to respond to your message."
@@ -1892,23 +1923,23 @@ msgstr ""
 "Pokud nás potřebuješ kontaktovat, prosím vyber jednu z možností dále. "
 "Dostáváme mnoho pošty, takže nemusíme být schopni odpovědi na tvou zprávu."
 
-#: templates/contact-us.html:120
+#: templates/contact-us.html:107
 msgid "Select a topic"
 msgstr "Vyber téma"
 
-#: templates/contact-us.html:121
+#: templates/contact-us.html:108
 msgid "Report something inappropriate..."
 msgstr "Nahlášení něčeho nevhodného..."
 
-#: templates/contact-us.html:122
+#: templates/contact-us.html:109
 msgid "Report a problem with the website..."
 msgstr "Nahlášení problémů s webovým serverem..."
 
-#: templates/contact-us.html:123
+#: templates/contact-us.html:110
 msgid "Other..."
 msgstr "Jiné..."
 
-#: templates/contact-us.html:132 templates/accounts/banned-response.html:78
+#: templates/contact-us.html:119 templates/accounts/banned-response.html:78
 msgid "Send"
 msgstr "Odeslat"
 
@@ -2135,8 +2166,8 @@ msgid ""
 "\">respectful and friendly</a>."
 msgstr ""
 "Scratch je společenstvím každého věku, z celého světa. Ujisti se, že tvé "
-"projekty a komentáře jsou <a target=\"_blank\" "
-"href=\"/community_guidelines\">ohleduplné a přátelské</a>."
+"projekty a komentáře jsou <a target=\"_blank\" href=\"/community_guidelines\""
+">ohleduplné a přátelské</a>."
 
 #: templates/modal-registration.html:161
 msgid "Would you like to:"
@@ -2189,6 +2220,17 @@ msgstr "Spojit se se Scratcherem"
 #: templates/info/help/studio/tips/howto/nametip7.html:13
 #: templates/info/help/studio/tips/howto/nametip8.html:13
 #: templates/info/help/studio/tips/howto/nametip9.html:13
+#: templates/info/help/studio/tips/howto/pgametip1.html:13
+#: templates/info/help/studio/tips/howto/pgametip10.html:13
+#: templates/info/help/studio/tips/howto/pgametip11.html:13
+#: templates/info/help/studio/tips/howto/pgametip2.html:13
+#: templates/info/help/studio/tips/howto/pgametip3.html:13
+#: templates/info/help/studio/tips/howto/pgametip4.html:13
+#: templates/info/help/studio/tips/howto/pgametip5.html:13
+#: templates/info/help/studio/tips/howto/pgametip6.html:13
+#: templates/info/help/studio/tips/howto/pgametip7.html:13
+#: templates/info/help/studio/tips/howto/pgametip8.html:13
+#: templates/info/help/studio/tips/howto/pgametip9.html:13
 #: templates/profiles/scratcher_promotion_modal.html:65
 msgid "Next"
 msgstr "Další"
@@ -2290,6 +2332,19 @@ msgstr "Brzy se vrátí...."
 msgid "Scratch Terms of Use"
 msgstr ""
 
+#: templates/accounts/account_settings.html:8
+#: templates/accounts/email_change.html:8
+#: templates/accounts/password_change_form.html:8
+#: templates/accounts/deletion/confirmation.html:6
+#: templates/accounts/deletion/nostalgia.html:5
+#, fuzzy
+msgid "Account"
+msgstr "Účty"
+
+#: templates/accounts/account_settings.html:38
+msgid "Save my Changes"
+msgstr ""
+
 #: templates/accounts/banned-response.html:32
 msgid "The Scratch Team decided to block the account:"
 msgstr "Tým Scratch se rozhodl zablokovat účet:"
@@ -2338,7 +2393,7 @@ msgstr ""
 "adresy."
 
 #: templates/accounts/banned-response.html:62
-#: templates/info/community_guidelines.html:25
+#: templates/info/community_guidelines.html:26
 msgid ""
 "<b>Help keep the site friendly.</b> If you think a project or comment is "
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
@@ -2355,22 +2410,14 @@ msgstr "Nastavení účtu"
 
 # 93%
 #: templates/accounts/beta_optin.html:8
-#: templates/accounts/change_country.html:8
-#: templates/accounts/email_change.html:8
 msgid "Change password"
 msgstr "Změna hesla"
 
 #: templates/accounts/beta_optin.html:9
-#: templates/accounts/change_country.html:9
-#: templates/accounts/email_change.html:9
-#: templates/accounts/password_change_form.html:9
 msgid "Change email"
 msgstr "Změna emailu"
 
 #: templates/accounts/beta_optin.html:10
-#: templates/accounts/change_country.html:10
-#: templates/accounts/email_change.html:10
-#: templates/accounts/password_change_form.html:10
 msgid "Change country"
 msgstr "Změna země"
 
@@ -2388,7 +2435,6 @@ msgstr ""
 
 # 85%
 #: templates/accounts/beta_optin.html:33
-#: templates/accounts/change_country.html:32
 msgid "Update"
 msgstr "Aktualizovat"
 
@@ -2396,9 +2442,10 @@ msgstr "Aktualizovat"
 msgid "Change Email"
 msgstr "Změna emailu"
 
-#: templates/accounts/password_change_form.html:8
-msgid "Change password "
-msgstr "Změna hesla "
+#: templates/accounts/password_change_form.html:9
+#, fuzzy
+msgid "Password "
+msgstr "Heslo"
 
 #: templates/accounts/password_change_form.html:16
 msgid "After changing your password, you will be prompted to log back in."
@@ -2408,6 +2455,72 @@ msgstr "Po změně svého hesla budeš znovu vyzván/a/ k přihlášení."
 msgid "Change Password"
 msgstr "Změnit heslo"
 
+#: templates/accounts/deletion/confirmation.html:12
+#: templates/accounts/deletion/nostalgia.html:11
+msgid "Delete my account"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:15
+msgid "Whoops, go back"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:17
+#, fuzzy
+msgid "Are you sure you want to delete your account?"
+msgstr "Chceš určitě zrušit tento příspěvek?"
+
+#: templates/accounts/deletion/nostalgia.html:22
+#, python-format
+msgid "You joined the Scratch community %(years_ago)s years ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:24
+msgid "You joined the Scratch community a year ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:26
+#, python-format
+msgid "You joined the Scratch community %(months_ago)s months ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:28
+msgid "You joined the Scratch community a month ago."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:33
+#, python-format
+msgid ""
+"You've created %(num_projects)s projects and have %(num_followers)s "
+"followers."
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:41
+msgid "Some of your projects"
+msgstr ""
+
+# 92%
+#: templates/accounts/deletion/nostalgia.html:42
+#, fuzzy
+msgid "Your projects"
+msgstr "Nejvíce projektů"
+
+#: templates/accounts/deletion/nostalgia.html:63
+msgid "Some of your followers"
+msgstr ""
+
+#: templates/accounts/deletion/nostalgia.html:64
+#, fuzzy
+msgid "Your followers"
+msgstr "Nejvíce následovníků"
+
+#: templates/accounts/deletion/nostalgia.html:81
+msgid "Yes, next step"
+msgstr ""
+
+#: templates/accounts/deletion/includes/deletion_form.html:15
+msgid "Delete account &amp; Sign out"
+msgstr ""
+
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
 #: templates/carousel/carousel.html:18 templates/homepage/index.html:83
@@ -2416,8 +2529,8 @@ msgstr "Změnit heslo"
 #: templates/profiles/profile_detail.html:270
 #: templates/profiles/profile_detail.html:290
 #: templates/profiles/profile_detail.html:310
-#: templates/profiles/profile_detail.html:347 templates/projects/base.html:353
-#: templates/projects/base.html.py:383 templates/search/search.html:58
+#: templates/profiles/profile_detail.html:347 templates/projects/base.html:357
+#: templates/projects/base.html.py:387 templates/search/search.html:58
 #: templates/search/search.html.py:88 templates/search/search.html:96
 msgid "View all"
 msgstr "Ukázat vše"
@@ -2427,6 +2540,7 @@ msgid "No items"
 msgstr "Žádné položky"
 
 #: templates/carousel/includes/project-thumb.html:23
+#: templates/galleries/includes/project-thumb.html:23
 msgid "in"
 msgstr "v"
 
@@ -2613,7 +2727,7 @@ msgid "Projects"
 msgstr "Projekty"
 
 #: templates/explore/projects.html:101 templates/explore/studios.html:86
-#: templates/projects/base.html:382
+#: templates/projects/base.html:386
 #: templates/projects/includes/shared/shared-project-actions.html:5
 #: templates/search/search.html:64 templates/search/search.html.py:87
 #: templates/search/includes/tabs.html:11
@@ -2916,8 +3030,8 @@ msgid ""
 "A creative learning community with <span class=\"projcount\">"
 "%(project_count)s</span> projects shared"
 msgstr ""
-"Tvořivé výukové společenství s <span class=\"projcount\">%"
-"(project_count)s</span> sdílenými projekty"
+"Tvořivé výukové společenství s <span class=\"projcount\""
+">%(project_count)s</span> sdílenými projekty"
 
 #: templates/homepage/index.html:148
 msgid "ABOUT SCRATCH"
@@ -3002,7 +3116,7 @@ msgid "Loves"
 msgstr "Lajkované"
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:352 templates/projects/remixes.html:3
+#: templates/projects/base.html:356 templates/projects/remixes.html:3
 #: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
@@ -3145,8 +3259,8 @@ msgstr ""
 "40 jazycích. Pro změnu jazyka klikni na menu na dolním okraji stránky. Nebo "
 "v Projekt Editoru klikni na glóbus na horním okraji stránky. Pro přidání "
 "nebo vylepšení překladu \n"
-"  viz stránku <a href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scr"
-"atch\">překlad</a>."
+"  viz stránku <a href=\"http://wiki.scratch.mit.edu/wiki/"
+"How_to_Translate_Scratch\">překlad</a>."
 
 #: templates/info/about.html:46
 msgid "Quotes"
@@ -3159,8 +3273,8 @@ msgid ""
 "read a collection of the <a href=\"/info/quotes\">quotes</a> we've received. "
 msgstr ""
 "Tým Scratch obdržel mnoho mailů od mládeže, rodičů a učitelů děkujících za "
-"Scratch. Chceš vidět co lidé říkají? Můžeš si přečíst sbírku s <a "
-"href=\"/info/quotes\">citáty</a> které jsme dostali. "
+"Scratch. Chceš vidět co lidé říkají? Můžeš si přečíst sbírku s <a href=\""
+"/info/quotes\">citáty</a> které jsme dostali. "
 
 #: templates/info/about.html:50
 msgid "Learn More About Scratch"
@@ -3176,7 +3290,7 @@ msgid ""
 "    "
 msgstr ""
 
-#: templates/info/about.html:70
+#: templates/info/about.html:70 templates/info/hoc2014.html:57
 msgid "Learn to Code, Code to Learn"
 msgstr "Naučit se kódovat, kód k naučení"
 
@@ -3203,15 +3317,9 @@ msgid ""
 "  Students are learning with Scratch at all levels (from elementary school "
 "to college) and across disciplines (such as math, computer science, language "
 "arts, social studies). Educators share stories, exchange resources, ask "
-"questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+"questions, and find people on the <a href=\"http://scratched.gse.harvard.edu/"
 "\">ScratchEd website</a>.\n"
 msgstr ""
-"\n"
-"  Studenti se učí se Scratchem na všech úrovních škol (od základních po "
-"vysoké) a napříč předměty (jako je matematika, počítačové vědy, umění "
-"programovat, společenské vědy). Lektoři sdílí zkušenosti s nasazením, "
-"vyměňují si zdroje, pokládají otázky a hledají kontakty na <a "
-"href=\"http://scratched.media.mit.edu/\">ScratchEd webserveru</a>.\n"
 
 #: templates/info/about.html:84
 msgid "Research"
@@ -3237,17 +3345,10 @@ msgid ""
 "the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
 "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
 "Learn Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab "
-"research consortia. If you'd like to support Scratch, please see our <a href="
-"\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
+"research consortia. If you'd like to support Scratch, please see our \n"
+"<a href=\"https://secure.donationpay.org/codetolearn/\">donate page</a>, or "
+"contact us at donate@scratch.mit.edu.\n"
 msgstr ""
-"\n"
-"The Scratch projekt, zahájený v roce 2003, obdržel štědrou podporu od nadace "
-"National Science Foundation (granty 0325828, 1002713, 1027848, 1019396), "
-"Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
-"Learn Foundation, Google, Dell, Fastly, Inversoft, a MIT Media Lab "
-"výzkumného konsorcia. Pokud chceš podpořit Scratch, prosím prohlédni si naši "
-"<a href=\"/info/donate\">stránku příspěvků</a>, nebo nás kontaktuj na "
-"donate@scratch.mit.edu.\n"
 
 #: templates/info/characterscamp.html:9 templates/info/characterscamp.html:16
 msgid "Creative Characters Camp"
@@ -3269,23 +3370,31 @@ msgid ""
 "you like about it and offer suggestions."
 msgstr ""
 
-#: templates/info/community_guidelines.html:28
+#: templates/info/community_guidelines.html:25
+msgid ""
+"<b>Be honest.</b> Don’t try to impersonate other Scratchers, spread rumors, "
+"or otherwise try to trick the community."
+msgstr ""
+
+#: templates/info/community_guidelines.html:29
 msgid ""
 "Scratch welcomes people of all ages, races, ethnicities, religions, sexual "
 "orientations, and gender identities."
 msgstr ""
 
-#: templates/info/credits.html:96
+#: templates/info/credits.html:94
+msgid "Scratch Credits"
+msgstr "Zásluhy o Scratch"
+
+#: templates/info/credits.html:98
 msgid "Scratch Credits and Contributors"
 msgstr "Zásluhy a přispěvatelé Scratch"
 
+# 75%
 #: templates/info/credits.html:101
-msgid "Meet the Scratch Team"
-msgstr "Poznej tým Scratch"
-
-#: templates/info/credits.html:187
-msgid "Community and Moderation"
-msgstr "Společenství a moderování"
+#, fuzzy
+msgid "MIT Scratch Team"
+msgstr "Tým Scratch"
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
@@ -3299,43 +3408,27 @@ msgid ""
 "educational and computer science researchers, librarians, museum educators, "
 "and parents.<br/><br/>\n"
 "Want to learn more about learning with Scratch?<br/>Check out the <a href="
-"\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+"\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd online "
+"community</a>.\n"
 "    "
 msgstr ""
-"Scratch je vytvořen s úmyslem vyučovat a vzdělávat. Široké spektrum lektorů "
-"podorovalo tvůrce Scratch od roku 2007, v jak formálních tak i přirozených "
-"výukových prostředích &ndash; učitelé tříd K-12, výzkumníci ve vydělávání a "
-"počítačových vědách, knihovníci, lektoři museí a rodiče.<br/><br/>\n"
-"Chceš se dozvědět více o výuce se Scratchem?<br/>Zkus stránku <a href=\"http"
-"://scratch-ed.org\" target=\"_blank\">ScratchEd online společnosti</a>.\n"
-"    "
 
 #: templates/info/educators.html:26
 msgid ""
 "\n"
 " <h3>What is ScratchEd?</h3>\n"
-"\t      <p>Launched in July 2009, <a href=\"http://scratch-ed.org\" target="
-"\"_blank\">ScratchEd</a> is an online community where Scratch educators "
-"share stories, exchange resources, ask questions, and find people.</p>\n"
+"\t      <p>Launched in July 2009, <a href=\"http://scratched.gse.harvard.edu"
+"\" target=\"_blank\">ScratchEd</a> is an online community where Scratch "
+"educators share stories, exchange resources, ask questions, and find people."
+"</p>\n"
 "\t      <p>Since its launch, more than 7500 educators from all around the "
 "world have joined the community, sharing hundreds of resources and engaging "
 "in thousands of discussions.</p>\n"
-"\t      <p>Join the ScratchEd community for free at <a href=\"http://scratch-"
-"ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+"\t      <p>Join the ScratchEd community for free at <a href=\"http://"
+"scratched.gse.harvard.edu\" target=\"_blank\">scratched.gse.harvard.edu</a>."
+"<p>\n"
 "\t      "
 msgstr ""
-"\n"
-" <h3>Co je ScratchEd?</h3>\n"
-"\t      <p>Od července 2009 je spuštěný <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a>, což je online společenství kde se lektoři "
-"Scratch dělí o své příběhy, vyměňují nápady, kladou otázky a nacházejí "
-"kolegy.</p>\n"
-"\t      <p>Od svého spuštění se připojilo ke společenství už více než 7500 "
-"lektorů z celého světa, přičemž sdílejí stovky nápadů a zapojují se do "
-"tisíců diskuzí.</p>\n"
-"\t      <p>Připoj se ke společenství ScratchEd zdarma na <a href=\"http"
-"://scratch-ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
-"\t      "
 
 #: templates/info/educators.html:32
 msgid ""
@@ -3343,52 +3436,27 @@ msgid ""
 "\t      <h3>How can I learn more about what educators are doing with Scratch "
 "&ndash; and how I might use it?</h3>\n"
 "\t      <p>Not sure what might be possible with Scratch?</p>\n"
-"\t      <p><a href=\"http://scratched.media.mit.edu/stories\" target=\"_blank"
-"\">Read a story</a> about how educators have been including Scratch "
+"\t      <p><a href=\"http://scratched.gse.harvard.edu/stories\" target="
+"\"_blank\">Read a story</a> about how educators have been including Scratch "
 "activities in a wide range of learning environments.</a></p>\n"
-"\t      <p>Or <a href=\"http://scratched.media.mit.edu/resources/all\" "
+"\t      <p>Or <a href=\"http://scratched.gse.harvard.edu/resources/all\" "
 "target=\"_blank\">explore resources</a> across ages, disciplines, and "
-"settings. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+"settings. <a href=\"http://scratched.gse.harvard.edu/resources/new-scratch\" "
 "target=\"_blank\">Watch webinars</a> and review documents like the <a href="
-"\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-draft\" "
-"target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
-"\t      <p>In addition to exploring the <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a> online community and its resources, you can "
-"engage with the ScratchEd Team and other Scratch educators via <a href="
-"\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a href="
-"\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
-"<a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>"
-"\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/"
-"scratched-weekly-roundup\" target=\"_blank>\">weekly roundups</a>, and our "
-"<a href=\"http://scratched.media.mit.edu/events\" target=\"_blank>"
-"\">quarterly newsletter</a>.<p>\n"
+"\"http://scratched.gse.harvard.edu/resources/scratch-curriculum-guide-draft"
+"\" target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
+"\t      <p>In addition to exploring the <a href=\"http://scratched.gse."
+"harvard.edu\" target=\"_blank\">ScratchEd</a> online community and its "
+"resources, you can engage with the ScratchEd Team and other Scratch "
+"educators via <a href=\"http://twitter.com/scratchedteam\" target=\"_blank>"
+"\">Twitter</a>, <a href=\"http://www.facebook.com/ScratchEdTeam\" target="
+"\"_blank>\">Facebook</a>, <a href=\"http://www.edmodo.com/publisher/"
+"scratcheducation\" target=\"_blank>\">Edmodo</a>, <a href=\"http://scratched."
+"gse.harvard.edu/discussions/scratched-weekly-roundup\" target=\"_blank>"
+"\">weekly roundups</a>, and our <a href=\"http://scratched.gse.harvard.edu/"
+"events\" target=\"_blank>\">quarterly newsletter</a>.<p>\n"
 "\t      "
 msgstr ""
-"\n"
-"\t      <h3>Jak se dozvím více o tom, co lektoři dělají se Scratch &ndash; a "
-"jak jej mohu využít?</h3>\n"
-"\t      <p>Nevíš jistě co je možné dělat se Scratchem?</p>\n"
-"\t      <p><a href=\"http://scratched.media.mit.edu/stories\" "
-"target=\"_blank\">Přečíst vyprávění</a> jak lektoři začleňují Scratch activity "
-"v širokém spektru vzdělávacích prostředích.</a></p>\n"
-"\t      <p>Nebo <a href=\"http://scratched.media.mit.edu/resources/all\" "
-"target=\"_blank\">prozkoumej nápady</a> bez omení věkem, oborům i situacemi. "
-"<a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
-"target=\"_blank\">Sleduj webové konference</a> a shlédni dokumenty jako <a "
-"href=\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-"
-"draft\" target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
-"\t      <p>Navíc proykoumej <a href=\"http://scratch-ed.org\" "
-"target=\"_blank\">ScratchEd</a> online společenství s jejich nápady a střetni "
-"se s Týmem ScratchEd a dalšími lektory skrze <a "
-"href=\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a "
-"href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
-"<a href=\"http://www.edmodo.com/publisher/scratcheducation\" "
-"target=\"_blank>\">Edmodo</a>, <a "
-"href=\"http://scratched.media.mit.edu/discussions/scratched-weekly-roundup\" "
-"target=\"_blank>\">týdení přehledy</a>, a náš <a "
-"href=\"http://scratched.media.mit.edu/events\" "
-"target=\"_blank>\">čtvrtkletník</a>.<p>\n"
-"\t      "
 
 # 83%
 #: templates/info/educators.html:44
@@ -3461,6 +3529,52 @@ msgid ""
 "           </p><p>\n"
 "           Please check back on this page for future updates!\n"
 "                 "
+msgstr ""
+
+#: templates/info/hoc2014.html:4 templates/info/hoc2014.html.py:10
+msgid "Get Creative with Coding"
+msgstr ""
+
+#: templates/info/hoc2014.html:35
+msgid "Create one of these projects with Scratch!"
+msgstr ""
+
+#: templates/info/hoc2014.html:38
+msgid ""
+"\n"
+"          With <a href=\"http://scratch.mit.edu/about\">Scratch</a>, you can "
+"program your own stories, games, and animations  &mdash; and share them "
+"online.\n"
+"          "
+msgstr ""
+
+#: templates/info/hoc2014.html:48
+msgid "Scratch: Imagine, Program, Share"
+msgstr ""
+
+#: templates/info/hoc2014.html:51
+msgid ""
+"\n"
+"    \tMillions of young people around the world create projects with "
+"Scratch, a free programming language and <a href=\"http://scratch.mit.edu"
+"\">online community</a> developed by the MIT Media Lab.\n"
+msgstr ""
+
+#: templates/info/hoc2014.html:60
+msgid ""
+"When people learn to code in Scratch, they learn important strategies for "
+"solving problems, designing projects, and communicating ideas."
+msgstr ""
+
+#: templates/info/hoc2014.html:64
+msgid ""
+"\n"
+"          The <strong>Hour of Code</strong>&#8482; is a nationwide "
+"initiative by <a href=\"http://csedweek.org\">Computer Science Education "
+"Week</a> and <a href=\"http://code.org\">Code.org</a><br />\n"
+"          to introduce millions of students to one hour of computer science "
+"and computer programming.\n"
+"          "
 msgstr ""
 
 #: templates/info/overview.html:4
@@ -3569,8 +3683,8 @@ msgid ""
 "You can see and manage all your projects in <b>My Stuff</b> <img src="
 "\"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
 msgstr ""
-"Můžeš vidět a spravovat všechny své projekty v <b>Moje věci</b> <img src=\"%"
-"(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
+"Můžeš vidět a spravovat všechny své projekty v <b>Moje věci</b> <img src=\""
+"%(STATIC_URL)s/images/help/mystuff-thumb.png\" />."
 
 #: templates/info/overview.html:60
 msgid "Community Features"
@@ -3630,8 +3744,8 @@ msgid ""
 "People can post comments on your Profile page and <img src=\"%(STATIC_URL)s/"
 "images/help/follow-button.png\" /> your Scratch account to see updates."
 msgstr ""
-"Lidé mohou posílat komentáře ke tvé stránce Profil a <img src=\"%"
-"(STATIC_URL)s/images/help/follow-button.png\" /> tvého Scratch účtu aby "
+"Lidé mohou posílat komentáře ke tvé stránce Profil a <img src=\""
+"%(STATIC_URL)s/images/help/follow-button.png\" /> tvého Scratch účtu aby "
 "viděli aktualizace."
 
 #: templates/info/overview.html:78
@@ -3712,13 +3826,12 @@ msgid ""
 "\">Scratch Cards</a> provide a fun way to learn more. For an overview of "
 "Scratch resources, see <a href=\"/help/\">Scratch Help</a>."
 msgstr ""
-"Jestliže právě začínáš, tady je <a "
-"href=\"/projects/editor/?tip_bar=getStarted\">příručka krok-za-krokem</a> "
-"dostupná uvnitř Scratch, nebo můžeš stáhnou <a href=\"%"
-"(STATIC_URL)s/pdfs/help/Getting-Started-Guide-Scratch2.pdf\">Příručku "
-"začátečníka (PDF)</a>. Tyto <a href=\"/help/cards/\">Scratch karty</a> jsou "
-"zábavnou cestou k další výuce. Pro přehled Scratch zdrojů navštiv <a "
-"href=\"/help/\">Scratch pomoc</a>."
+"Jestliže právě začínáš, tady je <a href=\"/projects/editor/?tip_bar="
+"getStarted\">příručka krok-za-krokem</a> dostupná uvnitř Scratch, nebo můžeš "
+"stáhnou <a href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-Scratch2."
+"pdf\">Příručku začátečníka (PDF)</a>. Tyto <a href=\"/help/cards/\">Scratch "
+"karty</a> jsou zábavnou cestou k další výuce. Pro přehled Scratch zdrojů "
+"navštiv <a href=\"/help/\">Scratch pomoc</a>."
 
 #: templates/info/parents.html:34
 msgid "What is the Scratch online community?"
@@ -3855,8 +3968,8 @@ msgid ""
 "\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Learning with "
 "Scratch</a>."
 msgstr ""
-"Pro jednostránkový přehled co se mládež učí se Scratchem, viz <a "
-"href=\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Výuka se "
+"Pro jednostránkový přehled co se mládež učí se Scratchem, viz <a href=\""
+"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Výuka se "
 "Scratch</a>."
 
 #: templates/info/parents.html:66
@@ -3872,8 +3985,8 @@ msgid ""
 "We ask all participants on the site to follow the <a href=\"/"
 "community_guidelines\">Community Guidelines</a>."
 msgstr ""
-"Požadujeme po všech účastnících na tomto serveru, aby dodržovali <a "
-"href=\"/community_guidelines\">Pravidla společenství</a>."
+"Požadujeme po všech účastnících na tomto serveru, aby dodržovali <a href=\"/"
+"community_guidelines\">Pravidla společenství</a>."
 
 #: templates/info/parents.html:75
 msgid ""
@@ -3884,7 +3997,7 @@ msgstr ""
 "Nikomu neposkytujeme informace o osobních účtech. Pro více informací prosím "
 "navštivte stránku <a href=\"/help/faq/#privacy\">Politika soukromí</a>."
 
-#: templates/info/parents.html:81 templates/info/help/index.html:98
+#: templates/info/parents.html:81 templates/info/help/index.html:97
 msgid "Questions?"
 msgstr "Otázky?"
 
@@ -3908,8 +4021,8 @@ msgid ""
 "If you need to contact our staff team directly, click <a href="
 "\"%(contact_us_url)s\">Contact Us</a> at the bottom of any page."
 msgstr ""
-"Pokud potřebuješ kontaktovat přímo náš tým zaměstnaců, klikni na <a href=\"%"
-"(contact_us_url)s\">Kontaktujte nás</a> na dolním okraji každé strany."
+"Pokud potřebuješ kontaktovat přímo náš tým zaměstnaců, klikni na <a href=\""
+"%(contact_us_url)s\">Kontaktujte nás</a> na dolním okraji každé strany."
 
 #: templates/info/quotes.html:4
 msgid "Quotes - Scratch"
@@ -3947,8 +4060,8 @@ msgstr ""
 "aktivní členové Scratch společenství už přes rok. \n"
 "Baví mě navrhování a programování her a animací s ostatními dětmi, protože "
 "různí lide mají rozdílné schopnosti \n"
-"a když děláš společně, tak postavíš lepší projekt než sám.<span "
-"class=\"quotes\">&rdquo;</span> - 13-tiletá"
+"a když děláš společně, tak postavíš lepší projekt než sám.<span class=\""
+"quotes\">&rdquo;</span> - 13-tiletá"
 
 #: templates/info/quotes.html:30
 msgid ""
@@ -3964,9 +4077,9 @@ msgstr ""
 "<span class=\"quotes\">&ldquo;</span>Dělat hry je něco, co jsem vždycky "
 "považoval za zábavu,\n"
 " ale nečekal jsem fakt složitej programovací jazyk. Zkraje i Scratch vypadal "
-"složitě, ale když jsem to chvíli vydržel, mohl jsem si udělat pár "
-"povedených her. A to, že se můžou sdílet tak snadno projekty je ještě lepší. "
-"Scratch je boží!<span class=\"quotes\">&rdquo;</span>\n"
+"složitě, ale když jsem to chvíli vydržel, mohl jsem si udělat pár povedených "
+"her. A to, že se můžou sdílet tak snadno projekty je ještě lepší. Scratch je "
+"boží!<span class=\"quotes\">&rdquo;</span>\n"
 "  - 17-tiletý "
 
 #: templates/info/quotes.html:36
@@ -3978,70 +4091,60 @@ msgid ""
 "and gladly help you with your questions.<span class=\"quotes\">&rdquo;</"
 "span> - 14-year-old"
 msgstr ""
-"<span class=\"quotes\">&ldquo;</span>Se sadou víc než 100 příkazů, který můžeš "
-"viditelně spojit dohromady se dá udělat skoro všechno, i naučit se základy "
-"pokročilejších jazyků. Navíc je tu celý společenství lidí online, kteří "
-"reagujou na projekty a na dotaz ti rádi poradí.<span "
-"class=\"quotes\">&rdquo;</span> - 14-tiletý"
+"<span class=\"quotes\">&ldquo;</span>Se sadou víc než 100 příkazů, který "
+"můžeš viditelně spojit dohromady se dá udělat skoro všechno, i naučit se "
+"základy pokročilejších jazyků. Navíc je tu celý společenství lidí online, "
+"kteří reagujou na projekty a na dotaz ti rádi poradí.<span class=\"quotes\""
+">&rdquo;</span> - 14-tiletý"
 
 #: templates/info/research.html:4 templates/info/research.html.py:15
 msgid "Research on Scratch"
 msgstr "Výzkum o Scratch"
 
 #: templates/info/research.html:21
-#, python-format
 msgid ""
-"<p>Scratch team members from the MIT Media Lab <a href=\"http://llk.media."
-"mit.edu\">Lifelong Kindergarten Group</a> and at the University of "
-"Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
-"Education</a> are researching how people use and learn from Scratch.<br />\n"
-"<br />\n"
+"\n"
+"\tResearch on Scratch is being conducted by members of the MIT Scratch Team "
+"and researchers at other universities, including Yasmin Kafai at the "
+"University of Pennsylvania Graduate School of Education, Karen Brennan at "
+"the Harvard Graduate School of Education, \n"
+"Benjamin Mako Hill at the University of Washington, Andrés Monroy Hernandez "
+"at Microsoft Research, Mimi Ito and Crystle Martin at the University of "
+"California, Irvine, Quinn Burke at College of Charleston, Deborah Fields at "
+"Utah State University, and Kylie Peppler at Indiana University. "
+msgstr ""
+
+#: templates/info/research.html:24
+msgid ""
 "By sharing projects and participating in the Scratch online community, you "
 "are helping us better understand how people can use and \n"
-"learn with Scratch.&nbsp;Any publicly shared&nbsp;projects, comments, or "
-"other material on the Scratch site may be included\n"
+"learn with Scratch. Any publicly shared projects, comments, or other "
+"material on the Scratch site may be included\n"
 "in the research analysis, presentations, papers, and reports. No personally "
-"identifiable information is shared. \n"
-"(If you have any questions, please use the <a href=\"%(contact_us_url)s"
-"\">Contact Us</a> form.)</p>\n"
-"<p>The following are research papers, presentations, and <a href=\"#theses"
-"\">dissertations and theses</a> that share our findings about Scratch and "
-"the Scratch online community. This list also includes some papers conducted "
-"on Scratch by other researchers. For magazines and other articles, see <a "
-"href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch in the "
-"News</a>.</p>"
+"identifiable information is shared. "
 msgstr ""
-"<p>členové týmu Scratch tým z MIT Media Lab <a "
-"href=\"http://llk.media.mit.edu\">Lifelong Kindergarten Group</a> a University "
-"of Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
-"Education</a> zkoumají, jak lidé Scratch používají a učí se z něj.<br />\n"
-"<br />\n"
-"Sdílením projektů a účastí ve Scratch online společenství nám pomáháš lépe "
-"porozumět, jak mohou lidé Scratch používat \n"
-"a učit se s ním.&nbsp;Všechny veřejně sdílené&nbsp;projektz, komentáře nebo "
-"jiné materiály o Scratch wabu mohou být zahrnuty\n"
-"ve výzkumných analýzách, prezentacích, poblikacích a zprávách. Žádné osobní "
-"identifikační informace nejsou sdíleny. \n"
-"(Pokud máě nějaké dotazy, prosím použij formulář <a href=\"%"
-"(contact_us_url)s\">Kontaktujte nás</a>.)</p>\n"
-"<p>Následují výkumné zprávy, prezentace a <a href=\"#theses\">diplomové práce "
-"a studie</a> která sdílí naše zjištění o Scratch a o Scratch online "
-"společenství. Tento seznam také obsahuje některé poblikace prováděných na "
-"Scratch jinými výzkumníky. Pro časopisy a jiné články shlédni <a "
-"href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch ve "
-"zprávách</a>.</p>"
+
+#: templates/info/research.html:27
+#, python-format
+msgid ""
+" (If you have any questions, please use the <a href=\"%(contact_us_url)s"
+"\">Contact Us</a> form.)"
+msgstr ""
 
 #: templates/info/research.html:28
-msgid "Academic Publications &amp; Presentations"
-msgstr "Akademické publikace &amp; prezentace"
+msgid ""
+"Below are selected research papers, presentations, and theses on Scratch and "
+"the Scratch online community, followed by a list of National Science "
+"Foundation grants awarded to support Scratch."
+msgstr ""
 
-#: templates/info/research.html:73
-msgid "Dissertations and Theses"
-msgstr "Diplomové práce a studie"
+#: templates/info/research.html:30
+msgid "Research Papers &amp; Presentations"
+msgstr ""
 
-#: templates/info/research.html:86
-msgid "Academic Publications by Other Researchers and Educators"
-msgstr "Akademické práce jiných výskumníků a lektorů"
+#: templates/info/research.html:81
+msgid "National Science Foundation Grants"
+msgstr ""
 
 # 81%
 #: templates/info/scratch2download.html:19
@@ -4099,17 +4202,17 @@ msgid ""
 "step2.png\" alt=\"Step 2\">\n"
 "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a> <br>\n"
-"\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
-"static/sa/Scratch.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-428a.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
+"\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
+"static/sa/Scratch-428a.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+"offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a> <br>\n"
+"sa/Scratch-428a.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
-"Scratch.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/"
-"download.png\" alt=\"Download \"></a>\n"
+"Scratch-428a.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"editor/download.png\" alt=\"Download \"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
@@ -4132,9 +4235,9 @@ msgid ""
 "\t\t\t\t   Getting Started Guide - <a href=\"%(STATIC_URL)spdfs/help/Getting-"
 "Started-Guide-Scratch2.pdf\">Download<img src=\"%(STATIC_URL)simages/help/"
 "offline-editor/pdf.png\" alt=\"PDF Download \"></a> <br>\n"
-"\t\t\t\t   Scratch Cards - <a href=\"%(STATIC_URL)spdfs/help/"
-"Scratch2Cards_Jan2013.pdf\">Download<img src=\"%(STATIC_URL)simages/help/"
-"offline-editor/pdf.png\" alt=\"PDF Download \"></a>\n"
+"\t\t\t\t   Scratch Cards - <a href=\"%(STATIC_URL)spdfs/help/Scratch2Cards."
+"pdf\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" "
+"alt=\"PDF Download \"></a>\n"
 "\t\t\t\t</p>\t\n"
 "\t\t\t\t"
 msgstr ""
@@ -4170,8 +4273,9 @@ msgid ""
 "For network deployments, use the <a href=\"http://download.scratch.mit.edu/"
 "Scratch1.4.msi.installer.zip\">Scratch1.4.msi.installer.zip</a>"
 msgstr ""
-"Pro síťová nasazení použij <a href=\"http://download.scratch.mit.edu/Scratch1"
-".4.msi.installer.zip\">Scratch1.4.msi.installer.zip</a>"
+"Pro síťová nasazení použij <a href=\""
+"http://download.scratch.mit.edu/Scratch1.4.msi.installer.zip\""
+">Scratch1.4.msi.installer.zip</a>"
 
 #: templates/info/scratch_1.4.html:51
 msgid "Scratch 1.4 for Debian / Ubuntu"
@@ -4212,13 +4316,13 @@ msgid ""
 "Cards</a> provide brief explanations that show how to make animations and "
 "interactive projects with Scratch.</p>"
 msgstr ""
-"<p>Pro úvod krok-za-krokem stáhni <a href "
-"=\"http://download.scratch.mit.edu/ScratchGettingStartedv14.pdf\">Scratch 1.4 "
-"Příručku začátečníka</a>. Tato <a href "
-"=\"http://download.scratch.mit.edu/ScratchReferenceGuide14.pdf\">Scratch 1.4 "
+"<p>Pro úvod krok-za-krokem stáhni <a href =\""
+"http://download.scratch.mit.edu/ScratchGettingStartedv14.pdf\">Scratch 1.4 "
+"Příručku začátečníka</a>. Tato <a href =\""
+"http://download.scratch.mit.edu/ScratchReferenceGuide14.pdf\">Scratch 1.4 "
 "Referenční příručka</a> obsahuje podrobné vysvětlení Scratch rozhraní i "
-"programovacího jazyka. <a href "
-"=\"http://download.scratch.mit.edu/ScratchCardsAll-v1.4-PDF.zip\">Scratch "
+"programovacího jazyka. <a href =\""
+"http://download.scratch.mit.edu/ScratchCardsAll-v1.4-PDF.zip\">Scratch "
 "karty</a> poskytnou krátká vysvětlení která ukayují jak tvořit animace a "
 "interaktivní projekty se Scratch.</p>"
 
@@ -4250,9 +4354,9 @@ msgstr ""
 "\t\t</br>Disk: alespoň 120 megabytů volného místa pro instalaci Scratch.\n"
 "\t\t</br>CPU a paměť: Většina počítačů má dostatek paměti pro spouštění "
 "Scratch 1.4, ale na hodně starých počítačích může Scratch běžet pomalu.\n"
-"\t\t</br>Zvuk / Video: Přehrávání zvuku vyřaduje reproduktory (nebo sluchátka) "
-"a záznam vyžaduje mikrofon. Většina laptopů má reproduktory i mikrofon "
-"zabudovené. Scratch 1.4 může používat USB nebo zabudovanou kameru "
+"\t\t</br>Zvuk / Video: Přehrávání zvuku vyřaduje reproduktory (nebo "
+"sluchátka) a záznam vyžaduje mikrofon. Většina laptopů má reproduktory i "
+"mikrofon zabudovené. Scratch 1.4 může používat USB nebo zabudovanou kameru "
 "(volitelné).</br></p>"
 
 #: templates/info/scratch_1.4.html:72
@@ -4427,7 +4531,7 @@ msgstr "Šéfkuchař pizzy"
 msgid "Scratch Help"
 msgstr "Scratch pomoc"
 
-#: templates/info/help/cards.html:9 templates/info/help/index.html:60
+#: templates/info/help/cards.html:9 templates/info/help/index.html:59
 msgid "Scratch Cards"
 msgstr "Scratch karty"
 
@@ -4440,7 +4544,7 @@ msgid "Get all the Cards"
 msgstr "Získat všechny karty"
 
 #: templates/info/help/cards.html:18 templates/info/help/cards.html.py:20
-#: templates/info/help/index.html:46
+#: templates/info/help/index.html:45
 msgid "English"
 msgstr "Anglicky"
 
@@ -4449,8 +4553,8 @@ msgid ""
 "Looking for Scratch Cards in your language? Check <a href=\"http://wiki."
 "scratch.mit.edu/wiki/Scratch_Support_Materials\">Scratch Wiki</a>."
 msgstr ""
-"Hledáš Scratch karty ve své jazyce? Prověř <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/Scratch_Support_Materials\">Scratch "
+"Hledáš Scratch karty ve své jazyce? Prověř <a href=\""
+"http://wiki.scratch.mit.edu/wiki/Scratch_Support_Materials\">Scratch "
 "Wiki</a>."
 
 #: templates/info/help/cards.html:31
@@ -4557,8 +4661,8 @@ msgstr ""
 "vytvářet své vlastní interaktivní příběhy, hry a animace -- a sdílet své "
 "výtvory s jinými z celého světa. Během návrhu a programování Scratch "
 "projektů se mládež učí myslet kreativně, přemýšlet systematicky a "
-"spolupracovat. Pro další poučení o Scratch vyzkoušej stránku <a "
-"href=\"/about\">O Scratch</a>."
+"spolupracovat. Pro další poučení o Scratch vyzkoušej stránku <a href=\"/"
+"about\">O Scratch</a>."
 
 #: templates/info/help/faq.html:52
 msgid "How do I make a game or animation with Scratch?"
@@ -4571,8 +4675,8 @@ msgid ""
 "\">dive in</a> to the project editor."
 msgstr ""
 "Vyzkoušej <a href=\"/help\">help page</a> abys viděl více možností jak začít "
-"se Scratch. Nebo se prostě <a "
-"href=\"/projects/editor/?tip_bar=getStarted\">ponoř</a> do projekt editoru."
+"se Scratch. Nebo se prostě <a href=\"/projects/editor/?tip_bar=getStarted\""
+">ponoř</a> do projekt editoru."
 
 #: templates/info/help/faq.html:55
 msgid "What are the system requirements for Scratch?"
@@ -4582,13 +4686,22 @@ msgstr "Jaké jsou systémové požadavky pro Scratch?"
 msgid ""
 "To run Scratch 2, you need a relatively recent web browser (<a href=\"http://"
 "google.com/chrome/\">Chrome</a> 7 or later, <a href=\"http://www.mozilla.org/"
-"en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 8 or "
+"en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 7 or "
 "later) with <a href=\"\">Adobe Flash Player</a> version 10.2 or later "
 "installed. Scratch 2 is designed to support screen sizes 1024 x 768 or "
 "larger. If your computer doesn’t meet these requirements, you can try "
 "downloading and installing <a href =\"/scratch_1.4\">Scratch 1.4</a>, which "
 "you can still use to share projects to the Scratch 2 website."
 msgstr ""
+"Ke spuštění Scratch 2 potřebuješ relativně moderní prohlížeč (<a href=\""
+"http://google.com/chrome/\">Chrome</a> 7 nebo novější, <a href=\""
+"http://www.mozilla.org/en-US/firefox/new/\">Firefox</a> 4 nebo novější, nebo "
+"Internet Explorer 7 nebo novější) s nainstalovaným <a href=\"\">Adobe Flash "
+"Player</a> verze 10.2 nebo novějším. Scratch 2 je navržen pro podporu "
+"obrazovky rozměrů 1024 x 768 nebo větších. Pokud tvůj počítač nesplňuje tyto "
+"požadavky, můžeš zkusit stáhnout a nainstalovat <a href =\"/scratch_1.4\">"
+"Scratch 1.4</a>, kterou stále můžeš používat pro sdílení projektů do Scratch "
+"2 webu."
 
 #: templates/info/help/faq.html:58
 msgid ""
@@ -4624,8 +4737,8 @@ msgstr ""
 "Ano - můžeš sdílet nebo nahrávat projety udělané v předchozích verzích "
 "Scratche a ony budou stále viditelné a hratelné. (Avšak nemůžeš stahovat "
 "projekty vytvořené nebo upravené v novějších verzích Scratche a otevírat je "
-"ve starších verzích. Například nemůžeš otevřít Scratch 2 projekt ve <a href "
-"=\"/scratch_1.4\">Scratch 1.4</a>, protože <a href =\"/scratch_1.4\">Scratch "
+"ve starších verzích. Například nemůžeš otevřít Scratch 2 projekt ve <a href ="
+"\"/scratch_1.4\">Scratch 1.4</a>, protože <a href =\"/scratch_1.4\">Scratch "
 "1.4</a> neumí přečíst formát .sb2 souboru projektu.)"
 
 #: templates/info/help/faq.html:66
@@ -4643,8 +4756,8 @@ msgid ""
 "keep in mind that videos and projects aren’t the same."
 msgstr ""
 "Pro vytvoření videa ze svého Scratch projektu můžeš použít software pro "
-"záznam obsahu obrazovky jako  <a href=\"http://camstudio.org/\">CamStudio</a>. "
-"Vezmi ovšem v potaz, že některé Scratch projekty jsou interaktivní: "
+"záznam obsahu obrazovky jako  <a href=\"http://camstudio.org/\">CamStudio</a>"
+". Vezmi ovšem v potaz, že některé Scratch projekty jsou interaktivní: "
 "provádějí různé činnosti podle toho, co dělá uživatel (např. videohra "
 "reaguje na stisk kláves). Video není interaktivní, ukazují pokaždé totéž. "
 "Takže můžeš vytvářet z projektů videa, ale měj na paměti, že video a projekt "
@@ -4662,9 +4775,8 @@ msgid ""
 "Scratch, check out our <a href=\"#\">Donate page</a>."
 msgstr ""
 "Scratch je a vždy byl zdarma. Nepotřebuješ licenci k jeho používání doma, ve "
-"škole ani kdekoliv jinde. Vývoj a údržba Scratche je placen z grantů a "
-"darů. Chceš-li na Scratch přispět, podívej se na stránku <a "
-"href=\"#\">Darujte</a>."
+"škole ani kdekoliv jinde. Vývoj a údržba Scratche je placen z grantů a darů. "
+"Chceš-li na Scratch přispět, podívej se na stránku <a href=\"#\">Darujte</a>."
 
 #: templates/info/help/faq.html:72
 msgid "Who created Scratch?"
@@ -4676,10 +4788,9 @@ msgid ""
 "\"http://llk.media.mit.edu/\">Lifelong Kindergarten group</a> at <a href="
 "\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 msgstr ""
-"Scratch je vyvíjen a udržován Scratch týmem z <a "
-"href=\"http://llk.media.mit.edu/\">Lifelong Kindergarten group</a> "
-"(Celoživotní mateřská školka) na <a href=\"http://www.media.mit.edu/\">MIT "
-"Media Lab</a>."
+"Scratch je vyvíjen a udržován Scratch týmem z <a href=\""
+"http://llk.media.mit.edu/\">Lifelong Kindergarten group</a> (Celoživotní "
+"mateřská školka) na <a href=\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 
 #: templates/info/help/faq.html:81
 msgid "What information do you ask for during account registration?"
@@ -4725,10 +4836,9 @@ msgid ""
 "the email address of their parent or guardian. We do not send email to this "
 "address except when someone requests to have the account password reset."
 msgstr ""
-"kontaktní e-mail - pokud je držitel účtu mladší 13 let, požadujeme "
-"e-mailovou adresu jeho rodičů nebo zákonných zástupců. Neodesíláme maily na "
-"tuto adresu, s výjimkou, kdyz někdo požaduje reset přístupového hesla k "
-"účtu."
+"kontaktní e-mail - pokud je držitel účtu mladší 13 let, požadujeme e-"
+"mailovou adresu jeho rodičů nebo zákonných zástupců. Neodesíláme maily na "
+"tuto adresu, s výjimkou, kdyz někdo požaduje reset přístupového hesla k účtu."
 
 #: templates/info/help/faq.html:90
 msgid ""
@@ -4762,8 +4872,8 @@ msgstr ""
 "href=\"http://en.wikipedia.org/wiki/HTTP_cookie\">http cookie</a> do jejich "
 "počítače, aby si zapamatoval, že je přihlášen tehdy, když používá více "
 "různých stránek. Pomocí Google Analytics shromažďujeme určité údaje o tom, "
-"kam uživatelé klikají, jaké části webu navštěvují. Tyto \"klikací\" údaje nám "
-"pomáhají stanovit cesty, jak zlepšovat náš web."
+"kam uživatelé klikají, jaké části webu navštěvují. Tyto \"klikací\" údaje "
+"nám pomáhají stanovit cesty, jak zlepšovat náš web."
 
 #: templates/info/help/faq.html:95
 msgid ""
@@ -4804,9 +4914,9 @@ msgid ""
 msgstr ""
 "Jelikož tým Scratch je zopdpovědný za moderování, máme přístup k veškerému "
 "obsahu uloženému na Scratch webu - včetně nesdílených projektů. Dáváš li "
-"přednost pracovat na projektech v úplném soukromí můžeš používat buď <a "
-"href=\"/scratch2download\">Scratch 2 offline editor (beta)</a> nebo <a href "
-"=\"/scratch_1.4\">Scratch 1.4</a>.\n"
+"přednost pracovat na projektech v úplném soukromí můžeš používat buď <a href="
+"\"/scratch2download\">Scratch 2 offline editor (beta)</a> nebo <a href =\""
+"/scratch_1.4\">Scratch 1.4</a>.\n"
 "  "
 
 #: templates/info/help/faq.html:109
@@ -4824,10 +4934,10 @@ msgid ""
 msgstr ""
 "Jestliže uživatel Scratche vytvoří kopii projektu někoho jiného, změní ji a "
 "doplní vlastními nápady (např. změnou scénářů nebo kostýmů), výsledný "
-"projekt se nazývá \"odvozený\". Každý projekt sdílený na Scratch webu se může "
-"použít k odvození jiného projektu. Uvažujeme, že i malá změna může znamenat "
-"správně odvodit, pokud je uveden původní autor projektu a ostatní, kteří "
-"nějakým způsobem k odvození nového projektu přispěli."
+"projekt se nazývá \"odvozený\". Každý projekt sdílený na Scratch webu se "
+"může použít k odvození jiného projektu. Uvažujeme, že i malá změna může "
+"znamenat správně odvodit, pokud je uveden původní autor projektu a ostatní, "
+"kteří nějakým způsobem k odvození nového projektu přispěli."
 
 #: templates/info/help/faq.html:112
 msgid "Why does the Scratch Team require that all projects be “remixable”?"
@@ -4851,31 +4961,31 @@ msgstr "Co když nechci aby ostatní odvozovali z mého projektu?"
 
 #: templates/info/help/faq.html:116
 msgid ""
-"Everything on Scratch is remixable. By sharing your project on the Scratch "
-"website, you agree to license it under a <a href=\"http://creativecommons."
-"org/licenses/by-sa/2.0/deed.en\">Creative Commons Share Alike</a> license. "
-"This means it is okay for anyone to reuse the ideas, music, artwork, or "
-"anything else found in your Scratch project. If you don’t want others to "
+"By publishing your project on the Scratch website, you agree to license it "
+"under a <a href=\"http://creativecommons.org/licenses/by-sa/2.0/deed.en"
+"\">Creative Commons Share Alike</a> license. If you don’t want others to "
 "view and remix your creations, don’t share them on the Scratch website."
 msgstr ""
 
 #: templates/info/help/faq.html:118
-msgid ""
-"Can I use images / sounds / media from outside of the Scratch website in my "
-"Scratch projects?"
-msgstr ""
+msgid "Can I use images / sounds / media from the internet in my projects?"
+msgstr "Mohu používat obrázky / zvuky / média z internetu ve svých projektech?"
 
 #: templates/info/help/faq.html:119
 msgid ""
-"Yes! To find art and sounds that are licensed for remixing, check out the <a "
-"href=\"http://search.creativecommons.org/\">Creative Commons search</a> "
-"page. Be sure to give credit to anyone whose work you re-use in the “Notes "
-"and Credits” section on your project page, and include a link back to the "
-"original. Remixing of media not explicitly licensed for re-use may be "
-"permitted under the <a href=\"http://www.copyright.gov/fls/fl102.html\">Fair "
-"Use</a> clause of US copyright law. Fair use allows for the remixing of "
-"copyrighted material for non-profit, educational purposes."
+"It's important to respect the original creator’s wishes regarding remixing. "
+"If you choose to integrate someone else’s work into your own, be sure to "
+"give them credit on the project “credits” section, and include a link back "
+"to the original. To find art / sounds that are already licensed for "
+"remixing, check out the <a href=\"http://search.creativecommons.org/"
+"\">Creative Commons search page</a>."
 msgstr ""
+"Je důležité respektovat přání původního tvůrce týkající se odvozování. Když "
+"se rozhodneš připojit práci jiných do své vlastní, určitě jim přiznej "
+"zásluhy v sekci \"kredity\" a zahrň odkaz na originál. K vyhledání grafiky / "
+"zvuků které jsou již licencovány pro odvozování vyzkoušej <a href=\""
+"http://search.creativecommons.org/\">vyhledávácí stránku Creative "
+"Commons</a>."
 
 #: templates/info/help/faq.html:126
 msgid "I forgot my password, how can I reset it?"
@@ -4888,9 +4998,9 @@ msgid ""
 "associated with the account containing a link you can use to reset your "
 "password."
 msgstr ""
-"Zadej své přihlašovací jméno na <a href=\"/accounts/password_reset/\">stránce "
-"resetu hesla</a>. Webová stránka odešle email na adresu přiřazenou k účtu, "
-"obsahující odkaz kterým můžeš resetovat heslo."
+"Zadej své přihlašovací jméno na <a href=\"/accounts/password_reset/\">"
+"stránce resetu hesla</a>. Webová stránka odešle email na adresu přiřazenou k "
+"účtu, obsahující odkaz kterým můžeš resetovat heslo."
 
 #: templates/info/help/faq.html:130
 msgid "How do I change my password?"
@@ -5005,8 +5115,8 @@ msgid ""
 msgstr ""
 "Nejprve si stáhni všechny projektz, které si chceš uchovat. \n"
 "    Jakmile je účet zrušen, tvé projekty již nebudou dostupné. Použij "
-"formulář na stránce <a href=\"http://scratch.mit.edu/contact-us/\">Kontaktujte "
-"nás</a> a doplň následující informace:\n"
+"formulář na stránce <a href=\"http://scratch.mit.edu/contact-us/\">"
+"Kontaktujte nás</a> a doplň následující informace:\n"
 "    <ul><li>Měsíc a rok narození který jsi zadal při vytváření účtu</li>\n"
 "    <li>E-mailovou adresu svázanou s účtem "
 
@@ -5123,10 +5233,10 @@ msgid ""
 "Assembla</a>."
 msgstr ""
 "Zdrojový kód pro Scratch 2 (webu i editoru) není zatím dostupný. Zdrojový "
-"kód pro <a href =\"/scratch_1.4\">Scratch 1.4</a>, napsaný v jazyku Squeak, je "
-"dostupný <a href=\"https://github.com/LLK/Scratch_1.4\">na githubu</a>. "
-"Zdrojový kód první verze Scratch webu - ScratchR - je k dispozici <a "
-"href=\"http://svn.assembla.com/svn/scratchr/\">na Assembla</a>."
+"kód pro <a href =\"/scratch_1.4\">Scratch 1.4</a>, napsaný v jazyku Squeak, "
+"je dostupný <a href=\"https://github.com/LLK/Scratch_1.4\">na githubu</a>. "
+"Zdrojový kód první verze Scratch webu - ScratchR - je k dispozici <a href=\""
+"http://svn.assembla.com/svn/scratchr/\">na Assembla</a>."
 
 #: templates/info/help/faq.html:190
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
@@ -5139,9 +5249,9 @@ msgid ""
 "guidelines</a> - they’re brief and don’t include a lot of legal stuff. "
 "There’s a link at the bottom of every page on Scratch."
 msgstr ""
-"Zkontroluj <a href=\"/community_guidelines\">Pravidla společenství Scratch</a> "
-"- jsou stručná a neobsahují mnoho právnických výrazů. Odkaz vede zespodu "
-"každé stránky na Scratch webu."
+"Zkontroluj <a href=\"/community_guidelines\">Pravidla společenství "
+"Scratch</a> - jsou stručná a neobsahují mnoho právnických výrazů. Odkaz vede "
+"zespodu každé stránky na Scratch webu."
 
 #: templates/info/help/faq.html:193
 msgid "What do I do if I see something that’s inappropriate?"
@@ -5155,9 +5265,9 @@ msgid ""
 "explain. Be sure to include as much detail as you can, with links to "
 "relevant pages."
 msgstr ""
-"Můžeš kliknout na odkaz \"zpráva\" u každého projektu, komentáře, diskuse nebo "
-"stránce uživatele, kde vidíš něco, je pro Scratch není vhodné. Jestliže je "
-"situace komplikovaná, můžeš použít odkaz Kontaktuj nás pro vysvětlení. "
+"Můžeš kliknout na odkaz \"zpráva\" u každého projektu, komentáře, diskuse "
+"nebo stránce uživatele, kde vidíš něco, je pro Scratch není vhodné. Jestliže "
+"je situace komplikovaná, můžeš použít odkaz Kontaktuj nás pro vysvětlení. "
 "Nezapomeň uvést co nejvíce detailů můžeš, včetně odkazů na odpovídající "
 "stránky."
 
@@ -5195,8 +5305,8 @@ msgstr ""
 "Scratch tým prohlíží nahlášené komentáře a projekty každý den. Jestliže něco "
 "porušuje pravidla Scratch společenství, můžeme to odstranit a poslat "
 "varování vlastníkovi účtu. V závislosti na tom, jak moc je to zlé (nebo když "
-"jsem předtím vlastníka účtu varovali), můžeme též zablokovat účty nebo "
-"sítě, pomocí kterých to bylo sdíleno."
+"jsem předtím vlastníka účtu varovali), můžeme též zablokovat účty nebo sítě, "
+"pomocí kterých to bylo sdíleno."
 
 #: templates/info/help/faq.html:202
 msgid "What happens when an account is blocked?"
@@ -5219,10 +5329,10 @@ msgstr ""
 "stránku s vysvětlujícím textem, proč je účet zablokován, a s formulářem pro "
 "případnou žádost k odblokování. Jestliže vlastník účtu chce ukázat, že "
 "rozumí tomu, proč byl účet zablokován, a slíbí, že bude v budoucnu dodržovat "
-"pravidla společenství,  Scratch tým se jeho případem bude zabývat. Účet "
-"může být odblokován pouze tehdy, pokud lze vlastníkovým slovům věřit. V "
-"opačném případě (a pravděpodobně i ostatní účty vlastněné nebo vytvořené "
-"touto osobou) mohou být zablokovány trvale."
+"pravidla společenství,  Scratch tým se jeho případem bude zabývat. Účet může "
+"být odblokován pouze tehdy, pokud lze vlastníkovým slovům věřit. V opačném "
+"případě (a pravděpodobně i ostatní účty vlastněné nebo vytvořené touto "
+"osobou) mohou být zablokovány trvale."
 
 #: templates/info/help/faq.html:205
 msgid ""
@@ -5244,8 +5354,8 @@ msgstr ""
 "Ty jsi zodpovědný za to, že své heslo uchováš v bezpečí. Jestliže někdo ve "
 "skutečném životě převezme kontrolu nad tvým účtem a dělá špatnosti, řekni to "
 "dospělým, kteří mají počítače na starosti. Jestliže si myslíš, že někdo "
-"neznámý získal přístup k tvému účtu, změň heslo nebo se použij odkaz "
-"\"kontaktuj nás\" k vysvětlení situace. Jestliže jsi zablokován, protože jsi "
+"neznámý získal přístup k tvému účtu, změň heslo nebo se použij odkaz \""
+"kontaktuj nás\" k vysvětlení situace. Jestliže jsi zablokován, protože jsi "
 "dělal něco, co je v rozporu s pravidly společenství, neříkej ovšem, že ti "
 "někdo účet hacknul. Když ti nebudeme důvěřovat, neodblokujeme tě."
 
@@ -5329,8 +5439,7 @@ msgid ""
 msgstr ""
 "I když je technicky možné vytvořit chat místnosti s cloud daty, v "
 "současnosti nejsou povoleny. Plánujeme přehodnocení této politiky jakmile "
-"lépe vycítíme naše schopnosti pro moderování a správě reportů nad cloud "
-"daty."
+"lépe vycítíme naše schopnosti pro moderování a správě reportů nad cloud daty."
 
 #: templates/info/help/faq.html:228
 msgid "How do I add a cloud variable when I'm making a project?"
@@ -5341,8 +5450,8 @@ msgid ""
 "When you make a variable, you can check the box that says \"Cloud variable."
 "\" Any data you store will be saved on the server and visible to others."
 msgstr ""
-"Když uděláš proměnnou, můžeš zaškrtnout okénko říkající \"cloudová proměnná\". "
-"Všechna data která uložíš budou uložena na serveru a viditelná pro ostatní."
+"Když uděláš proměnnou, můžeš zaškrtnout okénko říkající \"cloudová proměnná\""
+". Všechna data která uložíš budou uložena na serveru a viditelná pro ostatní."
 
 #: templates/info/help/faq.html:231
 msgid "Who can change the information in a cloud variable?"
@@ -5404,12 +5513,11 @@ msgid ""
 "which we can work around this limitation."
 msgstr ""
 "To záleží. Jestliže oba Scratcheři mají rozumně rychlé internetové připojení "
-"(ADSL nebo kabelem) a pokud v počítačové síti nebo v počítačích neběží "
-"žádný omezující firewall, aktualizace mohou být přeneseny v milisekundách. "
-"Ovšem mnoho počítačů má spuštěný firewall software, který blokuje připojení "
-"na TCP post 531 a TCP port 843, zpoždění dosáhne až jedné sekundy. Právě "
-"zkoušíme nastavit způsoby, pomocí nichž bychom mohli pracovat bez těchto "
-"omezení."
+"(ADSL nebo kabelem) a pokud v počítačové síti nebo v počítačích neběží žádný "
+"omezující firewall, aktualizace mohou být přeneseny v milisekundách. Ovšem "
+"mnoho počítačů má spuštěný firewall software, který blokuje připojení na TCP "
+"post 531 a TCP port 843, zpoždění dosáhne až jedné sekundy. Právě zkoušíme "
+"nastavit způsoby, pomocí nichž bychom mohli pracovat bez těchto omezení."
 
 # 81%
 #: templates/info/help/faq_layout.html:6
@@ -5420,54 +5528,54 @@ msgstr "Často kladené otázky"
 msgid "Browse FAQ"
 msgstr "Prohlížení často kladených otázek"
 
-#: templates/info/help/index.html:10
+#: templates/info/help/index.html:9
 msgid "Get Started with Scratch"
 msgstr "Začínáme se Scratchem"
 
-#: templates/info/help/index.html:17
+#: templates/info/help/index.html:16
 msgid "Try out the</br> step-by-step intro"
 msgstr "Vyzkoušej</br> úvod krok-za-krokem"
 
 # 82%
-#: templates/info/help/index.html:26
+#: templates/info/help/index.html:25
 msgid "Explore these</br> starter projects"
 msgstr "Vyzkoušej tyto</br> počáteční projekty"
 
-#: templates/info/help/index.html:32
+#: templates/info/help/index.html:31
 msgid "Watch the Getting Started video"
 msgstr "Shlédni video Začínáme"
 
-#: templates/info/help/index.html:37
+#: templates/info/help/index.html:36
 msgid "Scratch Guides"
 msgstr "Scratch průvodci"
 
-#: templates/info/help/index.html:39
+#: templates/info/help/index.html:38
 msgid "Here are some guides to help you learn Scratch:"
 msgstr "Zde je několik rad které ti pomohou naučit se Scratch:"
 
-#: templates/info/help/index.html:46
+#: templates/info/help/index.html:45
 msgid "Getting Started Guide"
 msgstr "Příručka začátečníka"
 
-#: templates/info/help/index.html:49
+#: templates/info/help/index.html:48
 msgid "This step-by-step guide (PDF) provides an easy introduction to Scratch."
 msgstr ""
 "Tato příručka krok-za-krokem (PDF) poskytuje jednoduchý úvod do Scratche."
 
-#: templates/info/help/index.html:53
+#: templates/info/help/index.html:52
 #, python-format
 msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
 msgstr ""
 
-#: templates/info/help/index.html:62
+#: templates/info/help/index.html:61
 msgid "Each of these cards shows something you can do in Scratch."
 msgstr "Každá z těchto karet ukazuje něco, co můžeš dělat ve Scratchi."
 
-#: templates/info/help/index.html:67 templates/info/help/videos.html:19
+#: templates/info/help/index.html:66 templates/info/help/videos.html:19
 msgid "Video Tutorials"
 msgstr "Video návody"
 
-#: templates/info/help/index.html:69
+#: templates/info/help/index.html:68
 msgid ""
 "These videos include tips on using the paint editor, and introduce how to "
 "program games and animations in Scratch."
@@ -5475,71 +5583,72 @@ msgstr ""
 "Tato videa obsahují tipy pro používání editoru kreslení a úvod jak ve "
 "Scratchi programovat hry a animace."
 
-#: templates/info/help/index.html:74
+#: templates/info/help/index.html:73
 msgid "Explore the Scratch Community"
 msgstr "Prozkoumat Scratch komunitu"
 
-#: templates/info/help/index.html:77
+#: templates/info/help/index.html:76
 msgid ""
 "<a href=\"../explore\">Explore</a> projects and studios Scratchers are making"
 msgstr ""
 "<a href=\"../explore\">Prozkoumat</a> projecty a studia vytvářená Scratch-ery"
 
-#: templates/info/help/index.html:78
+#: templates/info/help/index.html:77
 msgid "Search for projects about:"
 msgstr "Hledat projekty které:"
 
-#: templates/info/help/index.html:83
+#: templates/info/help/index.html:82
 msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
 msgstr "<a href=\"/discuss/6/\">Představit se</a> ve Scratch fórech"
 
-#: templates/info/help/index.html:84
+#: templates/info/help/index.html:83
 #, python-format
 msgid ""
 "Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
 "any profile or studio to receive updates"
 msgstr ""
-"Klikni na <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> v "
-"jakémkoli profilu nebo studiu pro přijímání aktualizací"
+"Klikni na <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> "
+"v jakémkoli profilu nebo studiu pro přijímání aktualizací"
 
-#: templates/info/help/index.html:90
+#: templates/info/help/index.html:89
 msgid "What is Scratch?"
 msgstr "Co je Scratch?"
 
-#: templates/info/help/index.html:94
+#: templates/info/help/index.html:93
 msgid "For <a href=\"/parents\">Parents</a>"
 msgstr "Pro <a href=\"/parents\">rodiče</a>"
 
-#: templates/info/help/index.html:95
+#: templates/info/help/index.html:94
 msgid "For <a href=\"/educators\">Educators</a>"
 msgstr "Pro <a href=\"/educators\">lektory</a>"
 
-#: templates/info/help/index.html:100
+#: templates/info/help/index.html:99
 msgid ""
 "Browse for answers on: </br><a href=\"/help/faq\">Frequently Asked "
 "Questions</a>"
 msgstr ""
-"Prohlížej pro odpovědi na: </br><a href=\"/help/faq\">Často kladené otázky</a>"
+"Prohlížej pro odpovědi na: </br><a href=\"/help/faq\">Často kladené "
+"otázky</a>"
 
-#: templates/info/help/index.html:102
+#: templates/info/help/index.html:101
 msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
 msgstr "Nebo navštiv <a href=\"/discuss\">diskuzní fóra</a>:"
 
 # 92%
-#: templates/info/help/index.html:103
+#: templates/info/help/index.html:102
 msgid "- Questions about Scratch"
 msgstr "- Dotazy ke Scratchi"
 
 # 89%
-#: templates/info/help/index.html:104
+#: templates/info/help/index.html:103
 msgid "- Help with Scripts"
 msgstr "- Pomoc se scénáři"
 
-#: templates/info/help/index.html:107
+#: templates/info/help/index.html:106
 msgid "Resources"
 msgstr "Zdroje"
 
-#: templates/info/help/index.html:110
+#: templates/info/help/index.html:109
 msgid ""
 "An online community for educators using Scratch, with stories, discussions, "
 "and resources, such as the Scratch curriculum guide."
@@ -5547,7 +5656,7 @@ msgstr ""
 "Online komunita pro učitele používající Scratch, s příběhy, diskuzemi a "
 "zdroji, jako je průvodce historií Scratch."
 
-#: templates/info/help/index.html:116
+#: templates/info/help/index.html:115
 msgid ""
 "The Scratch Wiki contains a wide variety of articles by Scratchers for "
 "Scratchers, including advanced topics and tutorials."
@@ -5555,55 +5664,55 @@ msgstr ""
 "Scratch Wiki obsahuje široké spektrum článků od uživatelů Scratch pro "
 "uživatele, včetně pokročilých témat a návodů."
 
-#: templates/info/help/index.html:119
+#: templates/info/help/index.html:118
 msgid "Scratch 2 Offline Editor (Beta)"
 msgstr "Scratch 2 offline editor (beta)"
 
-#: templates/info/help/index.html:121
+#: templates/info/help/index.html:120
 msgid "Download the Scratch 2 offline editor (beta version)"
 msgstr "Stažení Scratch 2 offline editoru (beta verze)"
 
-#: templates/info/help/index.html:123
+#: templates/info/help/index.html:122
 msgid "Scratch 1.4 Download"
 msgstr "Stažení Scratch 1.4"
 
-#: templates/info/help/index.html:125
+#: templates/info/help/index.html:124
 msgid "Links and information on the previous version of Scratch."
 msgstr "Odkazy a informace o předchozích verzích Scratch."
 
-#: templates/info/help/index.html:128
+#: templates/info/help/index.html:127
 msgid "Scratch Statistics"
 msgstr "Scratch Statistiky"
 
-#: templates/info/help/index.html:130
+#: templates/info/help/index.html:129
 msgid "Explore up-to-date statistics about the Scratch online community."
 msgstr "Prozkoumej aktuální statistiky o Scratch online společenství"
 
-#: templates/info/help/index.html:133
+#: templates/info/help/index.html:132
 msgid ""
 "<a href=\"http://wiki.scratch.mit.edu/wiki/"
 "How_to_connect_to_the_physical_world\">Scratch and the Physical World</a>"
 msgstr ""
-"<a href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_wor"
-"ld\">Scratch a fyzický svět</a>"
+"<a href=\"http://wiki.scratch.mit.edu/wiki/"
+"How_to_connect_to_the_physical_world\">Scratch a fyzický svět</a>"
 
-#: templates/info/help/index.html:135
+#: templates/info/help/index.html:134
 msgid ""
 "Connect your Scratch projects to the physical world with <a href = \"http://"
 "www.makeymakey.com/\">MaKey MaKey</a>, <a href=\"http://info.scratch.mit.edu/"
 "WeDo\">LEGO WeDo</a>, or <a href=\"https://www.sparkfun.com/"
 "products/10311\">PicoBoard</a>."
 msgstr ""
-"Připoj svůj Scratch projekt k fyzickému světu s <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://info.scratch.mit.edu/WeDo\">LEGO WeDo</a> nebo <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoardem</a>."
+"Připoj svůj Scratch projekt k fyzickému světu s <a href = \""
+"http://www.makeymakey.com/\">MaKey MaKey</a>, <a href=\""
+"http://info.scratch.mit.edu/WeDo\">LEGO WeDo</a> nebo <a href=\""
+"https://www.sparkfun.com/products/10311\">PicoBoardem</a>."
 
-#: templates/info/help/index.html:138
+#: templates/info/help/index.html:137
 msgid "Scratch Logo"
 msgstr "Scratch Logo"
 
-#: templates/info/help/index.html:140
+#: templates/info/help/index.html:139
 msgid "Access the Scratch logo and other media files."
 msgstr "Přístup ke Scratch logu a dalším mediálním souborům."
 
@@ -5627,8 +5736,8 @@ msgid ""
 "        "
 msgstr ""
 "Po <strong>Začínáme</strong>, si vybírej z <a href=\"#Introductory "
-"Tutorials\">Návody pro začátečníky</a> nebo <a href=\"#Paint Editor Tips\">Tipy "
-"editoru kreslení</a>.\n"
+"Tutorials\">Návody pro začátečníky</a> nebo <a href=\"#Paint Editor Tips\">"
+"Tipy editoru kreslení</a>.\n"
 "        "
 
 #: templates/info/help/videos.html:39
@@ -5733,17 +5842,21 @@ msgid "Step-by-Step Guides"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:6
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:17
 #: templates/info/help/studio/tips/howto/nametip-intro.html:17
 msgid "Animate Your Name"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:7
-#: templates/info/help/studio/tips/howto/cardtip-intro.html:18
-msgid "Make a Greeting Card"
+msgid "Design a Holiday Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:8
-msgid "Map of Scratch editor"
+msgid "Create a Pong Game"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:9
+msgid "Make a Birthday Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:21
@@ -6526,8 +6639,8 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/ask-and-wait.png\"/></h3>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/answer.png\" />\n"
-"  <h3>Ohlásí vstup z klávesnice z posledního použití <img src=\"%"
-"(STATIC_URL)s/images/help/ask-and-wait.png\"/></h3>"
+"  <h3>Ohlásí vstup z klávesnice z posledního použití <img src=\""
+"%(STATIC_URL)s/images/help/ask-and-wait.png\"/></h3>"
 
 #: templates/info/help/studio/tips/blocks/answer.html:15
 #, python-format
@@ -6548,11 +6661,13 @@ msgid ""
 "</p>"
 msgstr ""
 "\n"
-"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> položí otázku "
-"a uloží klávesový vstup do  <img src=\"%(STATIC_URL)s/images/help/answer.png\" "
-"/>. Odpověď je sdílena všemi postavami. </p>\n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> položí "
+"otázku a uloží klávesový vstup do  <img src=\""
+"%(STATIC_URL)s/images/help/answer.png\" />. Odpověď je sdílena všemi "
+"postavami. </p>\n"
 "<p>Když chceš uchovat aktuální odpověď, můžeš ji uložit do proměnné nebo "
-"seznamu. Například <img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/> \n"
+"seznamu. Například <img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/> "
+"\n"
 "</p>\n"
 "\n"
 "<p>\n"
@@ -6588,11 +6703,11 @@ msgid ""
 "</p>"
 msgstr ""
 "\n"
-"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> položí otázku "
-"a uloží klávesový vstup do  <img src=\"%(STATIC_URL)s/images/help/answer.png\" "
-"/>. Otázka se objeví jako mluvící bublina na obrazovce. Program čeká, dokud "
-"uživatel při psaní odpovědi nestiskne klávesu Enter nebo neklikne na "
-"odfajfknutí. \n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> položí "
+"otázku a uloží klávesový vstup do  <img src=\""
+"%(STATIC_URL)s/images/help/answer.png\" />. Otázka se objeví jako mluvící "
+"bublina na obrazovce. Program čeká, dokud uživatel při psaní odpovědi "
+"nestiskne klávesu Enter nebo neklikne na odfajfknutí. \n"
 "</p>"
 
 # 97%
@@ -6648,9 +6763,9 @@ msgid ""
 msgstr ""
 "\n"
 "  <p>\n"
-"  Můžeš použít <img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait.png\" "
-"/> pro poslání zprávy všem postavám abys jim řekl ať něco dělají, a čekat až "
-"všichni skončí před pokračováním dále. \n"
+"  Můžeš použít <img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait.png\""
+" /> pro poslání zprávy všem postavám abys jim řekl ať něco dělají, a čekat "
+"až všichni skončí před pokračováním dále. \n"
 "  </p>\n"
 "  \n"
 "  <p>\n"
@@ -6677,12 +6792,12 @@ msgid ""
 "png\"/></a></p>\n"
 msgstr ""
 "\n"
-" <p> <img src=\"%(STATIC_URL)s/images/help/broadcast.png\"/> pošle zprávu všem "
-"postavám (a pozadí). Tohle se hodí když chceš jiným postavám říci kdy mají "
-"něco dělat.</p> \n"
-" <p> Co chceš aby dělali po obdržení zprávy? Podívej se na <a "
-"href=\"../when-i-receive/\"><img src=\"%"
-"(STATIC_URL)s/images/help/when-i-receive.png\"/></a></p>\n"
+" <p> <img src=\"%(STATIC_URL)s/images/help/broadcast.png\"/> pošle zprávu "
+"všem postavám (a pozadí). Tohle se hodí když chceš jiným postavám říci kdy "
+"mají něco dělat.</p> \n"
+" <p> Co chceš aby dělali po obdržení zprávy? Podívej se na <a href=\""
+"../when-i-receive/\"><img src=\"%(STATIC_URL)s/images/help/when-i-receive."
+"png\"/></a></p>\n"
 
 #: templates/info/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
@@ -6713,8 +6828,8 @@ msgid ""
 msgstr ""
 " \n"
 "Klikni na stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> pro "
-"výmaz všech grafických efektů. Nebo použij <img src=\"%"
-"(STATIC_URL)s/images/help/clear-graphic-effects.png\"/>\n"
+"výmaz všech grafických efektů. Nebo použij <img src=\""
+"%(STATIC_URL)s/images/help/clear-graphic-effects.png\"/>\n"
 
 # 83%
 # 97%
@@ -6947,8 +7062,8 @@ msgstr ""
 "<p>\n"
 "Vyber kterou postavu klonovat z rozbalovacího menu.\n"
 "<br>\n"
-"Použij <img src=\"%(STATIC_URL)s/images/help/clone-startup.png\" /> abys řekl "
-"klonu co má dělat jakmile je vytvořen.\n"
+"Použij <img src=\"%(STATIC_URL)s/images/help/clone-startup.png\" /> abys "
+"řekl klonu co má dělat jakmile je vytvořen.\n"
 "</p>\n"
 "Příklad scénáře:\n"
 "<br>\n"
@@ -6976,8 +7091,8 @@ msgstr ""
 "Když klon nevidíš, pohni s ním aby jej původní postava nezakrývala.Klon se "
 "objevuje na stejné pozici jako měla původní postava.\n"
 "<br/>\n"
-"<br>Zkontroluj že jsi vybral postavu kterou chceš klonovat z menu v <img "
-"src=\"%(STATIC_URL)s/images/help/create-clone-of.png\" /> block.\n"
+"<br>Zkontroluj že jsi vybral postavu kterou chceš klonovat z menu v <img src="
+"\"%(STATIC_URL)s/images/help/create-clone-of.png\" /> block.\n"
 "<br/>\n"
 "Poznámka: Klon trvá jen po dobu běžícího projektu.\n"
 "</p>\n"
@@ -7054,8 +7169,8 @@ msgstr ""
 "Abys je použil, přetáhni kopie vstupních bloků dovnitř jiných bloků uvnitř "
 "definičního scénáře.\n"
 "</p>\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-"
-"script.png\"/></p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\""
+"/></p>\n"
 "Poznámka: Vstupní bloky mohou být použity <strong>pouze</strong> v "
 "definičním scénáři.\n"
 "\n"
@@ -7073,9 +7188,9 @@ msgid ""
 "\" deletes everything \n"
 "  from the list. Deleting decreases the length of the list.</p>"
 msgstr ""
-"<p>Který prvek zrušit můžeš určit výběrem z rozbalovacího menu nebo napsáním "
-"  čísla. Výběrem \"poslední\" se zruší poslední prvek seznamu. Vyběrem \"vše\" "
-"se zruší všechno \n"
+"<p>Který prvek zrušit můžeš určit výběrem z rozbalovacího menu nebo "
+"napsáním   čísla. Výběrem \"poslední\" se zruší poslední prvek seznamu. "
+"Vyběrem \"vše\" se zruší všechno \n"
 "  v seznamu. Rušení zkracuje délku seznamu.</p>"
 
 #: templates/info/help/studio/tips/blocks/delete-from-list.html:20
@@ -7105,7 +7220,8 @@ msgstr ""
 "</p>\n"
 "\n"
 "<p>\n"
-"Pro zrušení posledního prvku seznamu, zvol \"poslední\" z rozbalovacího menu:\n"
+"Pro zrušení posledního prvku seznamu, zvol \"poslední\" z rozbalovacího menu:"
+"\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/delete-last-mylist.png\" /><br/>\n"
 "</p>\n"
 "\n"
@@ -7140,7 +7256,8 @@ msgstr ""
 "\n"
 "\n"
 "Příklad scénáře:\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /><br/>"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
@@ -7161,8 +7278,8 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/direction-ex.png\"></p>\n"
 msgstr ""
 "<p><b>směr</b> říká kterým směrem má postava namířeno.</p>\n"
-"K ukázání směru postavy klikni na <img src=\"%"
-"(STATIC_URL)s/images/help/info.gif\">:<br/>\n"
+"K ukázání směru postavy klikni na <img src=\"%(STATIC_URL)s/images/help/info."
+"gif\">:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-readout-indent.png\"><br/>\n"
 "Můžeš tažením modré čáry měnit směr.</p>\n"
 "<p></p>\n"
@@ -7266,8 +7383,8 @@ msgid ""
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/go-back-example.png\" />\n"
 "  <p>\n"
-"  Abys skryl kraba za skálu, řekni mu aby <img src=\"%"
-"(STATIC_URL)s/images/help/go-back-1layer.png\" />\n"
+"  Abys skryl kraba za skálu, řekni mu aby <img src=\""
+"%(STATIC_URL)s/images/help/go-back-1layer.png\" />\n"
 "  "
 
 #: templates/info/help/studio/tips/blocks/go-to-front.html:7
@@ -7463,9 +7580,9 @@ msgid ""
 "want to keep, for example, the space key pressed continuously.\n"
 msgstr ""
 "\n"
-"Používej <img src=\"%(STATIC_URL)s/images/help/key-pressed.png\" /> místo <img "
-"src=\"%(STATIC_URL)s/images/help/when-key-pressed.png\" /> pokud chceš držet, "
-"například mezerník, stisknutý nepřetržitě.\n"
+"Používej <img src=\"%(STATIC_URL)s/images/help/key-pressed.png\" /> místo <"
+"img src=\"%(STATIC_URL)s/images/help/when-key-pressed.png\" /> pokud chceš "
+"držet, například mezerník, stisknutý nepřetržitě.\n"
 
 #: templates/info/help/studio/tips/blocks/length-of-list.html:7
 msgid "Reports how many items are in the list"
@@ -7612,8 +7729,9 @@ msgstr ""
 msgid ""
 "<h3>You can create a custom block with inputs, for example: <img src="
 "\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
-msgstr "<h3>Můžeš vytvořit uživatelský blok se vstupy, například: <img src=\"%"
-"(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
+msgstr ""
+"<h3>Můžeš vytvořit uživatelský blok se vstupy, například: <img src=\""
+"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
 
 #: templates/info/help/studio/tips/blocks/make-a-block-with-inputs.html:11
 #, python-format
@@ -7652,8 +7770,8 @@ msgstr ""
 "Pro jejich použití přesuň kopie vstupních bloků do jiných bloků uvnitř "
 "definičního scénáře.\n"
 "</p>\n"
-"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-"
-"script.png\"/></p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\""
+"/></p>\n"
 "Poznámka: Vstupní bloky mohou být užity <strong>pouze</strong> v definičním "
 "scénáři.\n"
 
@@ -7711,8 +7829,8 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"<p>Po kliknutí na OK se nový blok objeví ve <img src=\"%"
-"(STATIC_URL)s/images/help/more-blocks.png\" /> :\n"
+"<p>Po kliknutí na OK se nový blok objeví ve <img src=\""
+"%(STATIC_URL)s/images/help/more-blocks.png\" /> :\n"
 "<img src=\"%(STATIC_URL)s/images/help/jump-block.png\" /></p>\n"
 "</div>\n"
 "<div class=\"example\">\n"
@@ -7722,8 +7840,8 @@ msgstr ""
 "<p><img src=\"%(STATIC_URL)s/images/help/make-block-script-ex.png\" /></p>\n"
 "</div>\n"
 "<div class=\"example\">\n"
-"Prohlédni si také: <a href=\"../make-a-block-with-inputs/\">Vytvoření bloku se "
-"vstupy</a> \n"
+"Prohlédni si také: <a href=\"../make-a-block-with-inputs/\">Vytvoření bloku "
+"se vstupy</a> \n"
 "</div>\n"
 "\n"
 
@@ -7804,8 +7922,8 @@ msgid ""
 "divided by 6 is 23, and the remainder is 5).\n"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/mod.png\" /> dává zbytek po dělení \n"
-"dvou čísel. Například, <img src=\"%(STATIC_URL)s/images/help/mod-ex2.png\" /> "
-"je 5 (143 \n"
+"dvou čísel. Například, <img src=\"%(STATIC_URL)s/images/help/mod-ex2.png\" />"
+" je 5 (143 \n"
 "děleno 6 je 23, a zbytek je 5).\n"
 
 #: templates/info/help/studio/tips/blocks/mouse-down.html:7
@@ -7913,8 +8031,8 @@ msgid ""
 "dropping.</p>\n"
 msgstr ""
 "\n"
-"<p>K zobrazení kostýmů postavy klikni na <img src=\"%"
-"(STATIC_URL)s/images/help/costumes-tab.png\"/>.</p>\n"
+"<p>K zobrazení kostýmů postavy klikni na <img src=\""
+"%(STATIC_URL)s/images/help/costumes-tab.png\"/>.</p>\n"
 "<p> Můžeš měnit pořadí kostýmů jejich tažením a upuštěním.</p>\n"
 
 #: templates/info/help/studio/tips/blocks/next-costume.html:25
@@ -7958,8 +8076,8 @@ msgid ""
 "the end of the list, it goes back to the top.</p>\n"
 msgstr ""
 "\n"
-"<p>Když se <img src=\"%(STATIC_URL)s/images/help/nextbackdrop.png\" /> dostane "
-"na konec seznamu, vrací se zpět na začátek.</p>\n"
+"<p>Když se <img src=\"%(STATIC_URL)s/images/help/nextbackdrop.png\" /> "
+"dostane na konec seznamu, vrací se zpět na začátek.</p>\n"
 
 #: templates/info/help/studio/tips/blocks/not.html:7
 msgid "Reports true if condition is false; reports false if condition is true"
@@ -8049,8 +8167,8 @@ msgstr ""
 "</p>\n"
 "\n"
 "<p>\n"
-"Poznámka: délka taktu se dá nastavit použitím <img src=\"%"
-"(STATIC_URL)s/images/help/set_tempo.png\" />\n"
+"Poznámka: délka taktu se dá nastavit použitím <img src=\""
+"%(STATIC_URL)s/images/help/set_tempo.png\" />\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/playnote.html:7
@@ -8092,8 +8210,8 @@ msgid ""
 "</p>\n"
 msgstr ""
 "<p>\n"
-"Délka taktu se dá nastavit použitím <img src=\"%"
-"(STATIC_URL)s/images/help/set_tempo.png\" />.\n"
+"Délka taktu se dá nastavit použitím <img src=\""
+"%(STATIC_URL)s/images/help/set_tempo.png\" />.\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/playsound.html:7
@@ -8148,8 +8266,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> waits until "
 "the sound is finished playing before continuing to the next block."
 msgstr ""
-"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/> začne přehrávat zvuk a "
-"ihned pokračuje příštím blokem.\n"
+"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/> začne přehrávat zvuk "
+"a ihned pokračuje příštím blokem.\n"
 "</p>\n"
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> čeká na "
@@ -8203,14 +8321,15 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 msgstr ""
 "Klikni pro výběr z menu:\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\"/><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\""
+"/><br/>\n"
 "\n"
 "<p>Nebo napiš číslo:<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/point-in-direction-45.png\"/></p>\n"
 "\n"
 "\n"
-"<p>Pro zobrazení směru aktuální postavy klikni na <img src=\"%"
-"(STATIC_URL)s/images/help/info.gif\"/><br>\n"
+"<p>Pro zobrazení směru aktuální postavy klikni na <img src=\""
+"%(STATIC_URL)s/images/help/info.gif\"/><br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 
 #: templates/info/help/studio/tips/blocks/point-towards.html:7
@@ -8260,7 +8379,8 @@ msgid ""
 "The length \n"
 "  of the list does not change."
 msgstr ""
-"Můžeš určit, která položka se má nahradit výběrem z rozbalovacího menu nebo \n"
+"Můžeš určit, která položka se má nahradit výběrem z rozbalovacího menu nebo "
+"\n"
 "  napsáním čísla. Výběr \"náhodně\" nahradí náhodný prvek v seznamu.  Délka "
 "seznamu \n"
 "  se tím nezmění."
@@ -8340,8 +8460,8 @@ msgid ""
 msgstr ""
 "<p>Můžeš napsat jakýkoli text. Slova se objeví v textové bublině.</p>\n"
 "\n"
-"Pro smazání textové bubliny smaž její text a klikni na <img src=\"%"
-"(STATIC_URL)s/images/help/say.png\" />."
+"Pro smazání textové bubliny smaž její text a klikni na <img src=\""
+"%(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/info/help/studio/tips/blocks/say.html:16
 #: templates/info/help/studio/tips/blocks/think.html:18
@@ -8354,8 +8474,8 @@ msgid ""
 "To remove the speech bubble, click an empty say block: <img src="
 "\"%(STATIC_URL)s/images/help/say.png\" />."
 msgstr ""
-"Pro smazání textové bubliny klikni na prázný blok říkej: <img src=\"%"
-"(STATIC_URL)s/images/help/say.png\" />."
+"Pro smazání textové bubliny klikni na prázný blok říkej: <img src=\""
+"%(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/info/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
@@ -8576,8 +8696,8 @@ msgstr ""
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/setcolortoex1.png\"/> \n"
 "<p>\n"
-"Můžeš přiřadit barvu pera k proměné, jako <img src=\"%"
-"(STATIC_URL)s/images/help/y-position.png\" /> nebo číslu. Například číslo 0 "
+"Můžeš přiřadit barvu pera k proměné, jako <img src=\""
+"%(STATIC_URL)s/images/help/y-position.png\" /> nebo číslu. Například číslo 0 "
 "je barva <font color = red>červená</font>, číslo 70 je <font color = "
 "green>zelená</font>, číslo 130 je <font color = blue>modrá</font> a číslo "
 "170 je <font color = magenta>fialová</font>.\n"
@@ -8624,7 +8744,8 @@ msgstr ""
 "</p>\n"
 "\n"
 "<p>\n"
-"Vyber \"dokola\" z roletkového menu abys donutil postavu se překlápět svisle.\n"
+"Vyber \"dokola\" z roletkového menu abys donutil postavu se překlápět svisle."
+"\n"
 "</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/setrotate-around.gif\"/> <br/>\n"
 "\n"
@@ -8748,8 +8869,8 @@ msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/stampex1.png\" /> </p>\n"
 "<p>\n"
 "Razítko je pouze dočasný obrázek postavy, který je vykreslen na scéně. Může "
-"být překreslen, nebo smazán pomocí bloku <img src=\"%"
-"(STATIC_URL)s/images/help/clear.png\" />.\n"
+"být překreslen, nebo smazán pomocí bloku <img src=\""
+"%(STATIC_URL)s/images/help/clear.png\" />.\n"
 "<p>\n"
 "Otisk razítka se nemůže hýbat ani mít přiřazeny scénáře.\n"
 
@@ -8795,9 +8916,9 @@ msgid ""
 "going to the next block.  \n"
 " "
 msgstr ""
-"<img src=\"%(STATIC_URL)s/images/help/switch-backdrop-to-backdrop1-and-"
-"wait.png\" /> bude čekat na všechny scénáře začínající <img src=\"%"
-"(STATIC_URL)s/images/help/when-backdrop-switches-to-backdrop1.png\" /> až "
+"<img src=\"%(STATIC_URL)s/images/help/switch-backdrop-to-backdrop1-and-wait."
+"png\" /> bude čekat na všechny scénáře začínající <img src=\""
+"%(STATIC_URL)s/images/help/when-backdrop-switches-to-backdrop1.png\" /> až "
 "skončí než bude pokračovat příštím blokem.  \n"
 " "
 
@@ -8815,8 +8936,8 @@ msgid ""
 msgstr ""
 "Nejdříve si vyber pozadí které chceš <img src=\"%(STATIC_URL)s/images/help"
 "/choose-backdrop-icon.png\">. \n"
-"Potom zvol název pozadí z roletkového menu: <img src=\"%"
-"(STATIC_URL)s/images/help/switch-backdrop-to.png\">"
+"Potom zvol název pozadí z roletkového menu: <img src=\""
+"%(STATIC_URL)s/images/help/switch-backdrop-to.png\">"
 
 #: templates/info/help/studio/tips/blocks/switch-costume.html:8
 msgid "Switch costumes to change the look of a sprite"
@@ -8863,8 +8984,8 @@ msgid ""
 "To remove the speech bubble, use a blank block: <img src=\"%(STATIC_URL)s/"
 "images/help/think-blank.png\" />."
 msgstr ""
-"Pro odstranění přemýšlecí bubliny použij prázdný blok: <img src=\"%"
-"(STATIC_URL)s/images/help/think-blank.png\" />."
+"Pro odstranění přemýšlecí bubliny použij prázdný blok: <img src=\""
+"%(STATIC_URL)s/images/help/think-blank.png\" />."
 
 #: templates/info/help/studio/tips/blocks/timer.html:7
 msgid "Reports the value of the timer in seconds"
@@ -9082,7 +9203,8 @@ msgstr ""
 "<br><img src=\"%(STATIC_URL)s/images/help/variable-menu.png\" <br/>\n"
 "\n"
 "<p>\n"
-"Pro zrušení nebo přejmenování proměnné klikni pravým tlačítkem na proměnnou.\n"
+"Pro zrušení nebo přejmenování proměnné klikni pravým tlačítkem na proměnnou."
+"\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/delete-variable.png\" <br/>\n"
 "</p>\n"
 
@@ -9123,16 +9245,16 @@ msgstr ""
 "<b>Jak použít:</b>\n"
 "<ul>\n"
 "  <li>Vyžaduje webovou kameru.</li>\n"
-"  <li> Použij <img src=\"%(STATIC_URL)s/images/help/video-motion-this-"
-"sprite.png\" /> pro otestování množství pohybu ve videu pod aktuální "
-"postavou.</li>\n"
+"  <li> Použij <img src=\"%(STATIC_URL)s/images/help/video-motion-this-sprite."
+"png\" /> pro otestování množství pohybu ve videu pod aktuální postavou.</li>"
+"\n"
 "  <li> Použij <img src=\"%(STATIC_URL)s/images/help/video-motion-stage.png\" "
 "/> pro otestování množství pohybu v celém videoobraze.</li>\n"
 "  <li> Použij <img src=\"%(STATIC_URL)s/images/help/video-direction-this-"
 "sprite.png\" /> pro otestování směru pohybu ve videu pod aktuální "
 "postavou.</li>\n"
-"  <li> Použij <img src=\"%(STATIC_URL)s/images/help/video-direction-"
-"stage.png\" />  pro otestování směru pohybu ve videoobraze.</li>\n"
+"  <li> Použij <img src=\"%(STATIC_URL)s/images/help/video-direction-stage."
+"png\" />  pro otestování směru pohybu ve videoobraze.</li>\n"
 " </ul>\n"
 "\n"
 "<p>\n"
@@ -9193,8 +9315,8 @@ msgid ""
 "</p>"
 msgstr ""
 "<p>\n"
-"Celý zásobník se spustí právě jednou. Pokud chceš <img src=\"%"
-"(STATIC_URL)s/images/help/wait-until.png\" /> stále testovat, vlož celý "
+"Celý zásobník se spustí právě jednou. Pokud chceš <img src=\""
+"%(STATIC_URL)s/images/help/wait-until.png\" /> stále testovat, vlož celý "
 "zásobník dovnitř bloku věčného cyklu.\n"
 "</p>"
 
@@ -9212,7 +9334,8 @@ msgid ""
 "I'm in the kitchen!</p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex.png\"/>\n"
-" <br><img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex2.png\"/>\n"
+" <br><img src=\"%(STATIC_URL)s/images/help/when-backdrop-switches-ex2.png\"/>"
+"\n"
 " <br><p>Jakmile se pozadí přepne do kuchyně, scénář řekne \"Teď jsem v "
 "kuchyni!</p>"
 
@@ -9315,7 +9438,8 @@ msgstr ""
 " \n"
 "  <p>\n"
 "  Souřadnice x ducha je nastavena na hodnotu souřadnice x postavy Gobo.\n"
-"  <br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\"/><br/>\n"
+"  <br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\""
+"/><br/>\n"
 "  </p>\n"
 "  "
 
@@ -9329,7 +9453,8 @@ msgid ""
 msgstr ""
 "Tento blok použij k přístupu k různým vlastnostem jiných postav a tuto "
 "informaci využij ve scénářích aktuální postavy.\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/x-position.html:7
 msgid "Reports the <b>x</b> position of a sprite"
@@ -9930,6 +10055,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/get-started-8.html:9
 #: templates/info/help/studio/tips/howto/get-started-9.html:8
 #: templates/info/help/studio/tips/howto/get-started-intro.html:10
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:9
 #: templates/info/help/studio/tips/howto/nametip-intro.html:9
 #: templates/info/help/studio/tips/howto/nametip1.html:9
 #: templates/info/help/studio/tips/howto/nametip2.html:9
@@ -9940,6 +10066,18 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/nametip7.html:9
 #: templates/info/help/studio/tips/howto/nametip8.html:9
 #: templates/info/help/studio/tips/howto/nametip9.html:9
+#: templates/info/help/studio/tips/howto/pgame-intro.html:9
+#: templates/info/help/studio/tips/howto/pgametip1.html:9
+#: templates/info/help/studio/tips/howto/pgametip10.html:9
+#: templates/info/help/studio/tips/howto/pgametip11.html:9
+#: templates/info/help/studio/tips/howto/pgametip2.html:9
+#: templates/info/help/studio/tips/howto/pgametip3.html:9
+#: templates/info/help/studio/tips/howto/pgametip4.html:9
+#: templates/info/help/studio/tips/howto/pgametip5.html:9
+#: templates/info/help/studio/tips/howto/pgametip6.html:9
+#: templates/info/help/studio/tips/howto/pgametip7.html:9
+#: templates/info/help/studio/tips/howto/pgametip8.html:9
+#: templates/info/help/studio/tips/howto/pgametip9.html:9
 #: templates/info/help/studio/tips/ui/tour-intro.html:9
 #: templates/profiles/scratcher_promotion_modal.html:61
 msgid "Back"
@@ -9947,9 +10085,15 @@ msgstr "Zpět"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:13
 #: templates/info/help/studio/tips/howto/get-started-intro.html:14
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:13
 #: templates/info/help/studio/tips/howto/nametip-intro.html:13
+#: templates/info/help/studio/tips/howto/pgame-intro.html:13
 #: templates/info/help/studio/tips/ui/tour-intro.html:13
 msgid "Begin"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/cardtip-intro.html:18
+msgid "Make a Greeting Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:19
@@ -9958,7 +10102,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:21
-#: templates/info/help/studio/tips/howto/nametip-intro.html:23
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:23
 msgid ""
 "\n"
 "\t<p>This activity is part of <a href=\"#made-with-code\">Made with Code</a>."
@@ -9972,12 +10116,16 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:28
 #: templates/info/help/studio/tips/howto/get-started-intro.html:32
-#: templates/info/help/studio/tips/howto/nametip-intro.html:32
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:32
+#: templates/info/help/studio/tips/howto/nametip-intro.html:28
+#: templates/info/help/studio/tips/howto/pgame-intro.html:27
 msgid "Step Index"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
-#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/ui/tour-intro.html:29
 msgid "1"
 msgstr "1"
@@ -9988,7 +10136,9 @@ msgid "Say a Greeting"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
-#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/ui/tour-intro.html:30
 msgid "2"
 msgstr "2"
@@ -9999,7 +10149,9 @@ msgid "Start with a Green Flag"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
-#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/ui/tour-intro.html:31
 msgid "3"
 msgstr "3"
@@ -10013,7 +10165,9 @@ msgid "Add a Background"
 msgstr " 9 Přidání pozadí"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
-#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/ui/tour-intro.html:32
 msgid "4"
 msgstr "4"
@@ -10024,7 +10178,9 @@ msgid "Add a Cake"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
-#: templates/info/help/studio/tips/howto/nametip-intro.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 #: templates/info/help/studio/tips/ui/tour-intro.html:33
 msgid "5"
 msgstr "5"
@@ -10038,7 +10194,9 @@ msgid "Add Sound"
 msgstr "2 Přidání zvuku"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
-#: templates/info/help/studio/tips/howto/nametip-intro.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/ui/tour-intro.html:34
 msgid "6"
 msgstr "6"
@@ -10049,7 +10207,9 @@ msgid "Blow Out the Candles"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "7"
 msgstr "7"
@@ -10060,7 +10220,9 @@ msgid "Add a Dancing Sprite"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
-#: templates/info/help/studio/tips/howto/nametip-intro.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 msgid "8"
 msgstr "8"
 
@@ -10074,7 +10236,7 @@ msgid "Again and Again"
 msgstr "4 Znova and znova"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
-#: templates/info/help/studio/tips/howto/nametip-intro.html:42
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 msgid "9"
 msgstr "9"
 
@@ -10084,6 +10246,7 @@ msgid "Say What to Do"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 msgid "10"
 msgstr "10"
 
@@ -10093,6 +10256,7 @@ msgid "Customize Your Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 msgid "11"
 msgstr "11"
 
@@ -10106,7 +10270,6 @@ msgstr "12"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:40
 #: templates/info/help/studio/tips/howto/cardtip12.html:18
-#: templates/info/help/studio/tips/howto/nametip-intro.html:42
 #: templates/info/help/studio/tips/howto/nametip9.html:17
 msgid "Keep Making!"
 msgstr ""
@@ -10341,10 +10504,10 @@ msgstr "3 z 13"
 #, python-format
 msgid ""
 "\n"
-"\t<p>Click the <span class=\"controlcolor\">Events</span> category.</p>\n"
-"\t<p>Drag out a <span class=\"controlcolor\">when <img class=\"intext\" src "
-"= \"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and "
-"snap it on top, like this:</p>\n"
+"\t<p>Click the <span class=\"eventscolor\">Events</span> category.</p>\n"
+"\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top, like this:</p>\n"
 "\t<img src = \"%(STATIC_URL)s/images/help/flagsay2.gif\">\n"
 "\t"
 msgstr ""
@@ -10372,7 +10535,8 @@ msgstr "3 z 13"
 # 82%
 #: templates/info/help/studio/tips/howto/cardtip3.html:17
 #: templates/info/help/studio/tips/howto/get-started-9.html:16
-#: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
+#: templates/info/help/studio/tips/howto/nametip-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip4.html:17
 #, fuzzy
 msgid "Add a Backdrop"
@@ -10758,6 +10922,8 @@ msgstr "Přetáhni blok <span class=movecolor>POSUN</span> do plochy Scénáře.
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:24
 #: templates/info/help/studio/tips/howto/get-started-1.html:29
+#: templates/info/help/studio/tips/howto/pgametip3.html:24
+#: templates/info/help/studio/tips/howto/pgametip3.html:29
 msgid "drag move block to Scripts area"
 msgstr ""
 
@@ -10966,8 +11132,11 @@ msgstr "3 z 13"
 # 84%
 #: templates/info/help/studio/tips/howto/get-started-2.html:19
 #: templates/info/help/studio/tips/howto/get-started-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
+#: templates/info/help/studio/tips/howto/nametip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip3.html:17
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgametip8.html:17
 #, fuzzy
 msgid "Add a Sound"
 msgstr "2 Přidání zvuku"
@@ -11675,7 +11844,8 @@ msgstr ""
 
 # 88%
 #: templates/info/help/studio/tips/howto/hoc-8.html:17
-#: templates/info/help/studio/tips/howto/nametip-intro.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
+#: templates/info/help/studio/tips/howto/nametip-intro.html:37
 #, fuzzy
 msgid "Share Your Project"
 msgstr "Sdílej svůj projekt"
@@ -11835,8 +12005,9 @@ msgstr ""
 "<p>V této aktivitě vytvoříš interaktivní pohlednici z dovolené, kterou můžeš "
 "sdílet s přáteli a rodinou.</p>\n"
 "<p>Na začátku shlédni toto úvodní video:</p>\n"
-"<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&byline=0&portrait="
-"0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
+"<p><iframe src=\""
+"//player.vimeo.com/video/78998915?title=0&byline=0&portrait=0;hd_off=1&\" "
+"width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
 "mozallowfullscreen allowfullscreen></iframe></p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc.html:17
@@ -12066,36 +12237,43 @@ msgid ""
 "<p>To glide smoothly, use “glide to x y”</p>"
 msgstr ""
 
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:20
 #: templates/info/help/studio/tips/howto/nametip-intro.html:20
 msgid ""
 "Make your name come to life! Animate the letters by coding in Scratch. Add "
 "sound and music, too."
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:28
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:28
+#: templates/info/help/studio/tips/howto/nametip-intro.html:24
 msgid "First, choose a letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
+#: templates/info/help/studio/tips/howto/nametip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip1.html:17
 msgid "Choose the First Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
+#: templates/info/help/studio/tips/howto/nametip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip2.html:17
 msgid "Add Color Effects"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
+#: templates/info/help/studio/tips/howto/nametip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip5.html:17
 msgid "Add Your Next Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
+#: templates/info/help/studio/tips/howto/nametip-intro.html:35
 msgid "Make It Spin"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
+#: templates/info/help/studio/tips/howto/nametip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip7.html:17
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "Finish Your Name"
@@ -12112,8 +12290,8 @@ msgid ""
 "\t<p>To start, choose the first letter of your name, initials, or username.</"
 "p>\n"
 "\t\n"
-"\t<p>Click to choose a new sprite <img class=\"intext\" src = "
-"\"%(STATIC_URL)s/images/help/10b-sprite.png\">:</p>\n"
+"\t<p>Find and click this icon <img class=\"intext\" src = \"%(STATIC_URL)s/"
+"images/help/10b-sprite.png\"> to choose a new sprite:</p>\n"
 "\t<p><img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\"></p> \n"
 "\t<p>then select one of the letters in the Sprite library:</br>\n"
 "<p><img src = \"%(STATIC_URL)s/images/help/letter-choose.png\"></p>\n"
@@ -12180,6 +12358,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip2.html:44
+#: templates/info/help/studio/tips/howto/pgametip7.html:35
 msgid "Next, add a sound"
 msgstr ""
 
@@ -12236,19 +12415,14 @@ msgid ""
 "\n"
 "\t<p>Click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/"
 "images/help/landscape-icon.png\"> icon to open the Backdrop library:</p>\t\n"
-"\t  <p><img src = \"%(STATIC_URL)s/images/help/backgroundlibrary2.png\"> </"
-"p>\n"
 "\t"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip4.html:26
-#, python-format
 msgid ""
 "\n"
 "\t<p>Choose the backdrop you want (such as \"boardwalk\" or \"circles\").</"
 "p>\n"
-"\t  <p><img src = \"%(STATIC_URL)s/images/help/boardwalk.png\"> <img src = "
-"\"%(STATIC_URL)s/images/help/circles-backdrop.png\"></p>\t\n"
 "\t"
 msgstr ""
 
@@ -12394,6 +12568,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip7.html:50
+#: templates/info/help/studio/tips/howto/pgametip10.html:50
 msgid "Next, share your project"
 msgstr ""
 
@@ -12468,6 +12643,487 @@ msgid ""
 "\t"
 msgstr ""
 
+#: templates/info/help/studio/tips/howto/pgame-intro.html:17
+msgid "Make a Pong Game"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:20
+msgid ""
+"Create a version of the bouncing ball game. Find out how to add sounds, "
+"points, or other effects. Then, challenge your friends to play."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:23
+msgid "First, choose a backdrop"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
+#: templates/info/help/studio/tips/howto/pgametip1.html:17
+msgid "Choose a Backdrop"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgametip2.html:17
+msgid "Choose a Ball"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgametip3.html:17
+msgid "Make the Ball Move"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgametip4.html:17
+msgid "Move and Bounce"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+msgid "Choose your Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgametip6.html:17
+msgid "Control the Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgametip7.html:17
+msgid "Bounce Off the Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgametip9.html:17
+msgid "Adding a Challenge"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgametip10.html:17
+msgid "Enhance and Customize"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgametip11.html:17
+msgid "Share Your Game"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip1.html:11
+#, fuzzy
+msgid "1 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:19
+msgid "Choose a backdrop for your pong game."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:22
+#, python-format
+msgid ""
+"\n"
+"\t<p>Click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/"
+"images/help/landscape-icon.png\"> icon to open the Backdrop library:</p>\t\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:26
+msgid "Then choose the backdrop you want (such as neon tunnel or brick wall):"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip1.html:28
+msgid "Next, choose a ball"
+msgstr ""
+
+# 75%
+# 87%
+#: templates/info/help/studio/tips/howto/pgametip10.html:11
+#, fuzzy
+msgid "10 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:20
+msgid "What else do you want to add to your game? Try some of these ideas."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:24
+msgid "Add Effects"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:25
+msgid "Change the color of the ball when it hits the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:30
+msgid "Starting Position"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:31
+msgid "You may want to set the ball’s starting position."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:32
+msgid ""
+"\n"
+"Move the ball to where you want it to start, then drag the <span class="
+"\"motioncolor\">go to x: y:</span> \n"
+"block into the top of this script: \n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:40
+msgid "Add Points"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:41
+msgid "Create a variable for keeping score."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:43
+msgid "Then add the score blocks to your script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip10.html:48
+msgid ""
+"You can also change what happens when the ball touches the bottom. For "
+"example:"
+msgstr ""
+
+# 75%
+# 87%
+#: templates/info/help/studio/tips/howto/pgametip11.html:11
+#, fuzzy
+msgid "11 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:19
+msgid "Congratulations! You've coded your own game!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:20
+msgid ""
+"When you are ready to share your project with others, click the “Share” "
+"button at the top of the screen."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:23
+msgid ""
+"(If you haven't already, you will need to create a Scratch account to share "
+"your project online.)"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:27
+msgid "To give your project a name and add notes, click:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:29
+msgid "Here's a video that shows the project page:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:34
+msgid ""
+"\n"
+"You can add your project to the <a href=\"http://scratch.mit.edu/"
+"studios/644508\" target=\"_blank\">Pong Game studio</a>:\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:42
+#, python-format
+msgid ""
+"\n"
+"For more ideas, click <a href=\"../../home/\"><img class=\"intext\" style="
+"\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">All "
+"Tips</a>.\n"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip2.html:11
+#, fuzzy
+msgid "2 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:22
+msgid "Then select a ball for your game:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:24
+msgid ""
+"Why are characters in Scratch called 'sprites'? We borrowed the word from "
+"the first video games."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:28
+msgid ""
+"You can delete the cat with the scissors tool. Click on the scissors, then "
+"click on the cat:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:30
+msgid "Or, use the right-click menu (Ctrl+click on Mac), and choose 'delete'."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip2.html:31
+msgid "Next, make the ball move"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip3.html:11
+#, fuzzy
+msgid "3 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:20
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"motioncolor\">Motion</span> category, and drag "
+"out a <span class=\"motioncolor\">move</span> block into the Scripts area.</"
+"p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:28
+#, fuzzy
+msgid "Then, click on that block to make the ball move."
+msgstr "Potom na tento blok klikni abys přinutil kocoura pohnout:"
+
+#: templates/info/help/studio/tips/howto/pgametip3.html:30
+msgid "Next, move and bounce"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip4.html:11
+#, fuzzy
+msgid "4 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:20
+msgid ""
+"\n"
+"\tWant it to keep going? Snap on the block <span class=\"motioncolor\">if on "
+"edge, bounce</span>.\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:23
+msgid ""
+"Then, click the <span class=\"controlcolor\">Control</span> category. Wrap a "
+"<span class=\"controlcolor\">forever</span> block around the other blocks, "
+"like this:</p>\t\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:27
+msgid "Click anywhere on the stack of blocks to try it."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:28
+msgid "To stop, click the stop button: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:32
+msgid ""
+"\n"
+"\t Want it to go at an angle? Snap a <span class=\"motioncolor\">point in "
+"direction</span> block on top, and type in an angle.\n"
+"\t "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:39
+#, python-format
+msgid ""
+"\n"
+"\t<p>Next, click the <span class=\"eventscolor\">Events</span> category.</"
+"p>\n"
+"\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top:</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:44
+msgid "Your script will start whenever you click the green flag: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:49
+msgid ""
+"Tip: Want to change the speed of the ball? Type in a different number of "
+"steps:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip4.html:52
+msgid "Now, choose your paddle"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip5.html:11
+#, fuzzy
+msgid "5 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:17
+msgid "Choose a Paddle"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:19
+msgid "Add a paddle so you can start to play! Click to choose a new sprite:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:21
+msgid "Then, select a paddle from the Sprite library:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:27
+msgid ""
+"Tip: Adjust the size of the paddle by clicking with the grow or shrink tool:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip5.html:30
+msgid "Next, control the paddle"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip6.html:11
+#, fuzzy
+msgid "6 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:19
+msgid "Make it interactive! You can control the paddle with the mouse cursor."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:22
+msgid "Select the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:25
+msgid "Then build this script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:30
+msgid "Click the green flag to start your scripts: "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:31
+msgid ""
+"How can you get the ball to bounce off the paddle? Find out in the next step!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip6.html:33
+msgid "Next, bounce off the paddle"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip7.html:11
+#, fuzzy
+msgid "7 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:20
+msgid "Click to choose the ball:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:25
+msgid "Add this script to make it bounce whenever it hits the paddle:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:27
+msgid "Here’s how to build the script:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip7.html:34
+msgid "Click the green flag to try it out: "
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip8.html:11
+#, fuzzy
+msgid "8 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:20
+msgid "Make a sound when the ball hits the paddle."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:24
+#, python-format
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"tab-ref\">Sounds</span> tab, then click <img "
+"class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-"
+"icon.png\"></p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:34
+msgid "Choose the 'water drop' sound (in Effects):"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:39
+msgid ""
+"\n"
+"\t<p>Then, click the <span class=\"tab-ref\">Scripts</span> tab.\n"
+"\tClick the <span class=\"soundcolor\">Sound</span> category, and drag out a "
+"<span class=\"soundcolor\">play sound</span> block.</p>\n"
+"\t<p>Snap that sound block into the script, like this:</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip8.html:46
+msgid "Next, add a challenge"
+msgstr ""
+
+# 85%
+#: templates/info/help/studio/tips/howto/pgametip9.html:11
+#, fuzzy
+msgid "9 of 11"
+msgstr "3 z 13"
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:20
+msgid "Add a challenge! Make the game stop if the ball hits the bottom."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:24
+msgid "Click to select the Stage:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:29
+msgid ""
+"\n"
+"Select the <span class=\"tab-ref\">Backdrops</span> tab.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:33
+msgid ""
+"Now you can edit your backdrop. Select the line tool. Draw a thick line at "
+"the bottom:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:35
+msgid ""
+"Tip: Hold down the Shift key while drawing the line to make it straight."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:36
+msgid "Tip: To undo, click the Undo arrow:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:41
+msgid "Click to select the Ball sprite:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:46
+msgid ""
+"\n"
+"<p>Click the <span class=\"tab-ref\">Scripts</span> tab, then add this "
+"script to make the ball stop if it hits the line color:</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:51
+msgid ""
+"\n"
+"Tip: Click inside the square box in the <span class=\"sensingcolor"
+"\">touching color</span> block. Then move your cursor to point and click on "
+"the bottom line color.\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip9.html:55
+msgid "Next, customize your game"
+msgstr ""
+
 #: templates/info/help/studio/tips/howto/play-instrument.html:10
 msgid "To play notes, choose an instrument and note:"
 msgstr "Pro hraní not, zvol nástroj a notu:"
@@ -12493,9 +13149,9 @@ msgid ""
 "upload-icon.png\">."
 msgstr ""
 "Zvol záložku Zvuky <img src=\"%(STATIC_URL)s/images/help/sounds-tab.png\">. "
-"Vyber hudbu z knihovny <img src=\"%(STATIC_URL)s/images/help/speaker-"
-"icon.png\"> nebo nahraj soubor <img src=\"%(STATIC_URL)s/images/help/upload-"
-"icon.png\">."
+"Vyber hudbu z knihovny <img src=\"%(STATIC_URL)s/images/help/speaker-icon."
+"png\"> nebo nahraj soubor <img src=\"%(STATIC_URL)s/images/help/upload-icon."
+"png\">."
 
 #: templates/info/help/studio/tips/howto/play-music.html:13
 msgid "This script will keep playing music in the background:"
@@ -12538,8 +13194,8 @@ msgid ""
 "<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/record-sound-button.png\">\n"
 msgstr ""
-"Pro nahrání zvuku klikni na <img src=\"%(STATIC_URL)s/images/help/sounds-"
-"tab.png\"><br/>\n"
+"Pro nahrání zvuku klikni na <img src=\"%(STATIC_URL)s/images/help/sounds-tab."
+"png\"><br/>\n"
 "a mikrofon <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\">. Pak "
 "klikni na tlačítko nahrávat:\n"
 "<br/>\n"
@@ -12569,7 +13225,8 @@ msgstr ""
 "  \n"
 "Potom klikni na <img src=\"%(STATIC_URL)s/images/help/scripts-tab.png\"> a "
 "použij tento blok:<br/>\n"
-"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/play-recording1-until-done.png\"><br/>"
+"\n"
 "Vyber název zvuku z roletkového menu.\n"
 
 #: templates/info/help/studio/tips/howto/switch-backdrop.html:9
@@ -12800,7 +13457,7 @@ msgid "All Messages"
 msgstr "Všechny zprávy"
 
 #: templates/notifications/notifications.html:16
-#: templates/profiles/profile_detail.html:364 templates/projects/base.html:334
+#: templates/profiles/profile_detail.html:364 templates/projects/base.html:338
 #: templates/studio/includes/sort-galleries-dropdown.html:26
 msgid "Comments"
 msgstr "Komentáře"
@@ -13159,91 +13816,91 @@ msgstr "Studia která následuji"
 msgid "on Scratch"
 msgstr "v Scratchi"
 
-#: templates/projects/base.html:113
+#: templates/projects/base.html:117
 msgid "scripts"
 msgstr "scénářů"
 
 # 2.pád
-#: templates/projects/base.html:114
+#: templates/projects/base.html:118
 msgid "sprites"
 msgstr "postav"
 
-#: templates/projects/base.html:118 templates/studio/studio.html:96
+#: templates/projects/base.html:122 templates/studio/studio.html:96
 #: templates/studio/studio.html.py:133 templates/studio/studio.html:153
 msgid "See inside"
 msgstr "Pohlédni dovnitř"
 
-#: templates/projects/base.html:154
+#: templates/projects/base.html:158
 msgid "Based on:"
 msgstr "Na základě:"
 
-#: templates/projects/base.html:166
+#: templates/projects/base.html:170
 msgid "Original project:"
 msgstr "Původní projekt:"
 
-#: templates/projects/base.html:182
+#: templates/projects/base.html:186
 msgid "not shared"
 msgstr "nesdíleno"
 
 # 75%
-#: templates/projects/base.html:184
+#: templates/projects/base.html:188
 #, python-format
 msgid "Modified: %(tDate)s"
 msgstr "Poslední změna: %(tDate)s"
 
-#: templates/projects/base.html:196 templates/projects/base.html.py:203
+#: templates/projects/base.html:200 templates/projects/base.html.py:207
 msgid "Favorite this project"
 msgstr "Přidat tento projekt do mých oblíbených"
 
-#: templates/projects/base.html:213 templates/projects/base.html.py:219
+#: templates/projects/base.html:217 templates/projects/base.html.py:223
 msgid "Love this project"
 msgstr "Tento projekt se mi líbí"
 
-#: templates/projects/base.html:235
+#: templates/projects/base.html:239
 msgid "Total views"
 msgstr "Celkem přístupů"
 
-#: templates/projects/base.html:239
+#: templates/projects/base.html:243
 msgid "View the remix tree"
 msgstr "Ukázat strom upravení"
 
-#: templates/projects/base.html:261
+#: templates/projects/base.html:265
 msgid "Add this project to a studio you curate (or remove it from a studio)"
 msgstr ""
 
-#: templates/projects/base.html:262
+#: templates/projects/base.html:266
 msgid "Just click on the button for any of the studios from the list below"
 msgstr ""
 
-#: templates/projects/base.html:274
+#: templates/projects/base.html:278
 msgid "Download this project file"
 msgstr "Stažení souboru tohoto projektu"
 
-#: templates/projects/base.html:297
+#: templates/projects/base.html:301
 #: templates/projects/includes/shared/shared-project-actions.html:10
 msgid "Embed"
 msgstr "Vnořit"
 
-#: templates/projects/base.html:302
+#: templates/projects/base.html:306
 msgid "Copy and paste the embed code above."
 msgstr "Zkopíruj a vlož vložený kód výše"
 
 # 83%
-#: templates/projects/base.html:306 templates/projects/censored.html:16
+#: templates/projects/base.html:310 templates/projects/censored.html:16
 #: templates/projects/unshared-owner.html:22
 msgid "Share"
 msgstr "Sdílené"
 
 # 85%
-#: templates/projects/base.html:366
+#: templates/projects/base.html:370
 msgid "remixes"
 msgstr "upravené"
 
-#: templates/projects/base.html:432
+#: templates/projects/base.html:436
 msgid "OK, Got it."
 msgstr ""
 
-#: templates/projects/base.html:451
+#: templates/projects/base.html:455
 msgid "All Tips"
 msgstr ""
 
@@ -13395,15 +14052,15 @@ msgstr "Přidat projekt do studia"
 msgid "Embed project on other websites"
 msgstr "Sdílet projekt na jiných webserverech"
 
-#: templates/projects/includes/shared/shared-project-actions.html:14
+#: templates/projects/includes/shared/shared-project-actions.html:15
 msgid "Report project as inappropriate"
 msgstr "Nahlásit projekt jako nepatřičný"
 
-#: templates/projects/includes/shared/shared-project-actions.html:15
+#: templates/projects/includes/shared/shared-project-actions.html:16
 msgid "Report this"
 msgstr "Ohlas toto"
 
-#: templates/projects/includes/shared/shared-project-actions.html:20
+#: templates/projects/includes/shared/shared-project-actions.html:22
 msgid "View Cloud Data activity for this project."
 msgstr "Zobrazit aktivitu Cloud Data pro tento projekt."
 
@@ -13593,15 +14250,16 @@ msgstr "Scratcheři celosvětově"
 msgid ""
 "All Projects (<span data-content=\"project-count\">%(projects_count)s</span>)"
 msgstr ""
-"Všechny projekty (<span data-content=\"project-count\">%"
-"(projects_count)s</span>)"
+"Všechny projekty (<span data-content=\"project-count\""
+">%(projects_count)s</span>)"
 
 #: templates/studio/studio.html:7
 #, python-format
 msgid ""
 "Shared Projects (<span data-content=\"shared-count\">%(shared_count)s</span>)"
 msgstr ""
-"Sdílené projekty (<span data-content=\"shared-count\">%(shared_count)s</span>)"
+"Sdílené projekty (<span data-content=\"shared-count\""
+">%(shared_count)s</span>)"
 
 #: templates/studio/studio.html:8
 #, python-format
@@ -13609,8 +14267,8 @@ msgid ""
 "Unshared Projects (<span data-content=\"unshared-count\">"
 "%(notshared_count)s</span>)"
 msgstr ""
-"Nesdílené projekty (<span data-content=\"unshared-count\">%"
-"(notshared_count)s</span>)"
+"Nesdílené projekty (<span data-content=\"unshared-count\""
+">%(notshared_count)s</span>)"
 
 #: templates/studio/studio.html:9
 #, python-format
@@ -13696,6 +14354,349 @@ msgstr "Jsem vlastníkem"
 #: templates/studio/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
 msgstr "Jsem správcem"
+
+#: templates/base.html:235
+msgid "Educators"
+msgstr "Učitelé"
+
+#: templates/base.html:236
+msgid "Parents"
+msgstr "Rodiče"
+
+#: templates/base.html:238
+msgid "Contact us"
+msgstr "Kontaktujte nás"
+
+#: templates/comments/list.html:20
+msgid "View previous comments"
+msgstr "Ukázat předchozí komentáře"
+
+#: templates/comments/includes/comment.html:26
+msgid "ago"
+msgstr "staré"
+
+#: templates/explore/includes/related_projects.html:62
+msgid "Sudio:"
+msgstr "Studio:"
+
+#: templates/galleries/base.html:30
+msgid "Studio description"
+msgstr "Popis studia"
+
+#: templates/galleries/gallery.html:21
+#, python-format
+msgid "created %(tDate)s"
+msgstr "vytvořené %(tDate)s"
+
+#: templates/galleries/gallery.html:25
+msgid "Read more &raquo;"
+msgstr "Číst dále &raquo;"
+
+#: templates/galleries/gallery.html:57
+#, python-format
+msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
+msgstr "Správci ( <span data-count=\"curators\">%(tCount)s</span> )"
+
+#: templates/galleries/gallery.html:60
+msgid "More info"
+msgstr "Více informací"
+
+#: templates/galleries/gallery_list.html:4
+#, python-format
+msgid "%(username)s Studio (%(galleries.count)s)"
+msgstr "%(username)s - Studio (%(galleries.count)s)"
+
+#: templates/homepage/index.html:55
+msgid "Welcome, Scratchers!"
+msgstr "Vítejte, Scratcheři!"
+
+#: templates/homepage/index.html:56
+msgid ""
+"Thanks for helping us find and fix glitches in Scratch 2.0! Found a bug? Let "
+"us know!"
+msgstr ""
+"Děkujeme za pomoc při hledání a odstraňování závad ve Scratch 2.0. Nalezl "
+"jsi chybu? Dej nám vědět!"
+
+#: templates/homepage/index.html:57
+msgid "Report bugs here &raquo;"
+msgstr "Chyby hlaste zde &raquo;"
+
+#: templates/homepage/index.html:64
+msgid "Try out new features"
+msgstr "Vyzkoušej nové funkce"
+
+#: templates/homepage/index.html:65
+msgid "Here’s a description of what’s new in Scratch 2.0."
+msgstr "Zde je popis, co je nového ve Scratch 2.0."
+
+#: templates/homepage/index.html:66
+msgid "Check it out! &raquo;"
+msgstr "Prohlédni si! &raquo;"
+
+#: templates/homepage/index.html:81
+msgid "Scratch 2.0 Beta"
+msgstr "Scratch 2.0 Beta"
+
+#: templates/homepage/index.html:83
+msgid "Welcome to the Scratch 2.0 Beta website!"
+msgstr "Vítej na webu Scratch 2.0 Beta!"
+
+#: templates/homepage/index.html:86
+msgid ""
+"Please explore and experiment with this preview version of the new Scratch. "
+"Check out the <b>Featured Projects</b> and <b>Featured Studios</b> below.  "
+"Click <a href=\"/help\">Help</a> to learn more."
+msgstr ""
+"Prosím poznávej a zkoušej s touto předběžnou verzí nového Scratch. Vyzkoušej "
+"<b>Vybrané projekty</b> a <b>Vybraná studia</b> níže.  Klikni na <a href=\"/"
+"help\">Pomoc</a> pro další poučení."
+
+#: templates/homepage/index.html:89
+msgid ""
+"The Scratch 2.0 Beta is open to everyone. But you can only log in if you "
+"created your Scratch account before January 26th."
+msgstr ""
+"Scratch 2.0 Beta je přístupný každému. Ale přihlásit se můžeš jen pokud jsi "
+"vytvořil(a) svůj účet před 26 lednem."
+
+#: templates/homepage/index.html:92
+msgid ""
+"We still have a few features to add, and lots of glitches to fix! You can "
+"help us by <a href=\"/forums/3/\">reporting bugs and glitches</a>. The "
+"sooner we find and fix them, the sooner we can officially release Scratch "
+"2.0."
+msgstr ""
+"Stále ještě musíme přidat nové funkce a odladit mnoho chyb! Můžeš nám pomoci "
+"tím, že budeš <a href=\"/forums/3/\">hlásit chyby a závady</a>. Čím dříve je "
+"najdeme a opravíme, tím dříve budeme moci Scratch 2.0 oficiálně zveřejnit."
+
+#: templates/homepage/index.html:95
+msgid "Find out more about"
+msgstr "Zjisti více"
+
+#: templates/homepage/index.html:95
+msgid "the move to Scratch 2.0"
+msgstr "posun k Scratch 2.0"
+
+#: templates/homepage/index.html:151
+msgid "What the Community is Sharing"
+msgstr "Co společenství sdílí"
+
+#: templates/projects/base.html:148
+msgid "Total remixes"
+msgstr "Celkem upravených"
+
+#: templates/projects/base.html:195
+msgid "views"
+msgstr "přístupy"
+
+# nasleduje datum
+#: templates/projects/shared-other.html:66
+#: templates/projects/shared-owner.html:30
+msgid "Shared on:"
+msgstr "Sdíleno od:"
+
+#: templates/projects/includes/shared/shared-project-actions.html:3
+msgid "Share project on other websites"
+msgstr "Sdílet projekt na jiných webserverech"
+
+#: templates/projects/includes/shared/shared-project-actions.html:4
+msgid "Share to"
+msgstr "Sdílet na"
+
+#: templates/projects/includes/shared/shared-project-actions.html:9
+msgid "Add project to gallery"
+msgstr "Přidat projekt do galerie"
+
+#~ msgid "Change password "
+#~ msgstr "Změna hesla "
+
+#~ msgid ""
+#~ "\n"
+#~ "  Students are learning with Scratch at all levels (from elementary school "
+#~ "to college) and across disciplines (such as math, computer science, language "
+#~ "arts, social studies). Educators share stories, exchange resources, ask "
+#~ "questions, and find people on the <a href=\"http://scratched.media.mit.edu/"
+#~ "\">ScratchEd website</a>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  Studenti se učí se Scratchem na všech úrovních škol (od základních po "
+#~ "vysoké) a napříč předměty (jako je matematika, počítačové vědy, umění "
+#~ "programovat, společenské vědy). Lektoři sdílí zkušenosti s nasazením, "
+#~ "vyměňují si zdroje, pokládají otázky a hledají kontakty na <a "
+#~ "href=\"http://scratched.media.mit.edu/\">ScratchEd webserveru</a>.\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "The Scratch project, initiated in 2003, has received generous support from "
+#~ "the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
+#~ "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
+#~ "Learn Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab "
+#~ "research consortia. If you'd like to support Scratch, please see our <a href="
+#~ "\"/info/donate\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "The Scratch projekt, zahájený v roce 2003, obdržel štědrou podporu od nadace "
+#~ "National Science Foundation (granty 0325828, 1002713, 1027848, 1019396), "
+#~ "Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
+#~ "Learn Foundation, Google, Dell, Fastly, Inversoft, a MIT Media Lab "
+#~ "výzkumného konsorcia. Pokud chceš podpořit Scratch, prosím prohlédni si naši "
+#~ "<a href=\"/info/donate\">stránku příspěvků</a>, nebo nás kontaktuj na "
+#~ "donate@scratch.mit.edu.\n"
+
+#~ msgid "Meet the Scratch Team"
+#~ msgstr "Poznej tým Scratch"
+
+#~ msgid "Community and Moderation"
+#~ msgstr "Společenství a moderování"
+
+#~ msgid ""
+#~ "Scratch is designed with learning and education in mind. A wide variety of "
+#~ "educators have been supporting Scratch creators since 2007, in both formal "
+#~ "and informal learning environments &ndash; K-12 classroom teachers, "
+#~ "educational and computer science researchers, librarians, museum educators, "
+#~ "and parents.<br/><br/>\n"
+#~ "Want to learn more about learning with Scratch?<br/>Check out the <a href="
+#~ "\"http://scratch-ed.org\" target=\"_blank\">ScratchEd online community</a>.\n"
+#~ "    "
+#~ msgstr ""
+#~ "Scratch je vytvořen s úmyslem vyučovat a vzdělávat. Široké spektrum lektorů "
+#~ "podorovalo tvůrce Scratch od roku 2007, v jak formálních tak i přirozených "
+#~ "výukových prostředích &ndash; učitelé tříd K-12, výzkumníci ve vydělávání a "
+#~ "počítačových vědách, knihovníci, lektoři museí a rodiče.<br/><br/>\n"
+#~ "Chceš se dozvědět více o výuce se Scratchem?<br/>Zkus stránku <a href=\"http"
+#~ "://scratch-ed.org\" target=\"_blank\">ScratchEd online společnosti</a>.\n"
+#~ "    "
+
+#~ msgid ""
+#~ "\n"
+#~ " <h3>What is ScratchEd?</h3>\n"
+#~ "\t      <p>Launched in July 2009, <a href=\"http://scratch-ed.org\" target="
+#~ "\"_blank\">ScratchEd</a> is an online community where Scratch educators "
+#~ "share stories, exchange resources, ask questions, and find people.</p>\n"
+#~ "\t      <p>Since its launch, more than 7500 educators from all around the "
+#~ "world have joined the community, sharing hundreds of resources and engaging "
+#~ "in thousands of discussions.</p>\n"
+#~ "\t      <p>Join the ScratchEd community for free at <a href=\"http://scratch-"
+#~ "ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+#~ "\t      "
+#~ msgstr ""
+#~ "\n"
+#~ " <h3>Co je ScratchEd?</h3>\n"
+#~ "\t      <p>Od července 2009 je spuštěný <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a>, což je online společenství kde se lektoři "
+#~ "Scratch dělí o své příběhy, vyměňují nápady, kladou otázky a nacházejí "
+#~ "kolegy.</p>\n"
+#~ "\t      <p>Od svého spuštění se připojilo ke společenství už více než 7500 "
+#~ "lektorů z celého světa, přičemž sdílejí stovky nápadů a zapojují se do "
+#~ "tisíců diskuzí.</p>\n"
+#~ "\t      <p>Připoj se ke společenství ScratchEd zdarma na <a href=\"http"
+#~ "://scratch-ed.org\" target=\"_blank\">scratch-ed.org</a>.<p>\n"
+#~ "\t      "
+
+#~ msgid ""
+#~ "\n"
+#~ "\t      <h3>How can I learn more about what educators are doing with Scratch "
+#~ "&ndash; and how I might use it?</h3>\n"
+#~ "\t      <p>Not sure what might be possible with Scratch?</p>\n"
+#~ "\t      <p><a href=\"http://scratched.media.mit.edu/stories\" target=\"_blank"
+#~ "\">Read a story</a> about how educators have been including Scratch "
+#~ "activities in a wide range of learning environments.</a></p>\n"
+#~ "\t      <p>Or <a href=\"http://scratched.media.mit.edu/resources/all\" "
+#~ "target=\"_blank\">explore resources</a> across ages, disciplines, and "
+#~ "settings. <a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+#~ "target=\"_blank\">Watch webinars</a> and review documents like the <a href="
+#~ "\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-draft\" "
+#~ "target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
+#~ "\t      <p>In addition to exploring the <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a> online community and its resources, you can "
+#~ "engage with the ScratchEd Team and other Scratch educators via <a href="
+#~ "\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a href="
+#~ "\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
+#~ "<a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>"
+#~ "\">Edmodo</a>, <a href=\"http://scratched.media.mit.edu/discussions/"
+#~ "scratched-weekly-roundup\" target=\"_blank>\">weekly roundups</a>, and our "
+#~ "<a href=\"http://scratched.media.mit.edu/events\" target=\"_blank>"
+#~ "\">quarterly newsletter</a>.<p>\n"
+#~ "\t      "
+#~ msgstr ""
+#~ "\n"
+#~ "\t      <h3>Jak se dozvím více o tom, co lektoři dělají se Scratch &ndash; a "
+#~ "jak jej mohu využít?</h3>\n"
+#~ "\t      <p>Nevíš jistě co je možné dělat se Scratchem?</p>\n"
+#~ "\t      <p><a href=\"http://scratched.media.mit.edu/stories\" "
+#~ "target=\"_blank\">Přečíst vyprávění</a> jak lektoři začleňují Scratch activity "
+#~ "v širokém spektru vzdělávacích prostředích.</a></p>\n"
+#~ "\t      <p>Nebo <a href=\"http://scratched.media.mit.edu/resources/all\" "
+#~ "target=\"_blank\">prozkoumej nápady</a> bez omení věkem, oborům i situacemi. "
+#~ "<a href=\"http://scratched.media.mit.edu/resources/new-scratch\" "
+#~ "target=\"_blank\">Sleduj webové konference</a> a shlédni dokumenty jako <a "
+#~ "href=\"http://scratched.media.mit.edu/resources/scratch-curriculum-guide-"
+#~ "draft\" target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
+#~ "\t      <p>Navíc proykoumej <a href=\"http://scratch-ed.org\" "
+#~ "target=\"_blank\">ScratchEd</a> online společenství s jejich nápady a střetni "
+#~ "se s Týmem ScratchEd a dalšími lektory skrze <a "
+#~ "href=\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a "
+#~ "href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, "
+#~ "<a href=\"http://www.edmodo.com/publisher/scratcheducation\" "
+#~ "target=\"_blank>\">Edmodo</a>, <a "
+#~ "href=\"http://scratched.media.mit.edu/discussions/scratched-weekly-roundup\" "
+#~ "target=\"_blank>\">týdení přehledy</a>, a náš <a "
+#~ "href=\"http://scratched.media.mit.edu/events\" "
+#~ "target=\"_blank>\">čtvrtkletník</a>.<p>\n"
+#~ "\t      "
+
+#, python-format
+#~ msgid ""
+#~ "<p>Scratch team members from the MIT Media Lab <a href=\"http://llk.media."
+#~ "mit.edu\">Lifelong Kindergarten Group</a> and at the University of "
+#~ "Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
+#~ "Education</a> are researching how people use and learn from Scratch.<br />\n"
+#~ "<br />\n"
+#~ "By sharing projects and participating in the Scratch online community, you "
+#~ "are helping us better understand how people can use and \n"
+#~ "learn with Scratch.&nbsp;Any publicly shared&nbsp;projects, comments, or "
+#~ "other material on the Scratch site may be included\n"
+#~ "in the research analysis, presentations, papers, and reports. No personally "
+#~ "identifiable information is shared. \n"
+#~ "(If you have any questions, please use the <a href=\"%(contact_us_url)s"
+#~ "\">Contact Us</a> form.)</p>\n"
+#~ "<p>The following are research papers, presentations, and <a href=\"#theses"
+#~ "\">dissertations and theses</a> that share our findings about Scratch and "
+#~ "the Scratch online community. This list also includes some papers conducted "
+#~ "on Scratch by other researchers. For magazines and other articles, see <a "
+#~ "href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch in the "
+#~ "News</a>.</p>"
+#~ msgstr ""
+#~ "<p>členové týmu Scratch tým z MIT Media Lab <a "
+#~ "href=\"http://llk.media.mit.edu\">Lifelong Kindergarten Group</a> a University "
+#~ "of Pennsylvania <a href=\"http://www.gse.upenn.edu/\">Graduate School of "
+#~ "Education</a> zkoumají, jak lidé Scratch používají a učí se z něj.<br />\n"
+#~ "<br />\n"
+#~ "Sdílením projektů a účastí ve Scratch online společenství nám pomáháš lépe "
+#~ "porozumět, jak mohou lidé Scratch používat \n"
+#~ "a učit se s ním.&nbsp;Všechny veřejně sdílené&nbsp;projektz, komentáře nebo "
+#~ "jiné materiály o Scratch wabu mohou být zahrnuty\n"
+#~ "ve výzkumných analýzách, prezentacích, poblikacích a zprávách. Žádné osobní "
+#~ "identifikační informace nejsou sdíleny. \n"
+#~ "(Pokud máě nějaké dotazy, prosím použij formulář <a href=\"%"
+#~ "(contact_us_url)s\">Kontaktujte nás</a>.)</p>\n"
+#~ "<p>Následují výkumné zprávy, prezentace a <a href=\"#theses\">diplomové práce "
+#~ "a studie</a> která sdílí naše zjištění o Scratch a o Scratch online "
+#~ "společenství. Tento seznam také obsahuje některé poblikace prováděných na "
+#~ "Scratch jinými výzkumníky. Pro časopisy a jiné články shlédni <a "
+#~ "href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch ve "
+#~ "zprávách</a>.</p>"
+
+#~ msgid "Academic Publications &amp; Presentations"
+#~ msgstr "Akademické publikace &amp; prezentace"
+
+#~ msgid "Dissertations and Theses"
+#~ msgstr "Diplomové práce a studie"
+
+#~ msgid "Academic Publications by Other Researchers and Educators"
+#~ msgstr "Akademické práce jiných výskumníků a lektorů"
 
 # 83%
 # 98%
@@ -16645,12 +17646,6 @@ msgstr "Jsem správcem"
 #~ msgid "static pages"
 #~ msgstr "statické stránky"
 
-#~ msgid "Educators"
-#~ msgstr "Učitelé"
-
-#~ msgid "Parents"
-#~ msgstr "Rodiče"
-
 #, python-format
 #~ msgid "Sorry, comment posting has been turned off for this %(type)s."
 #~ msgstr "Lituji, posílání komentářů bylo vypnuto pro %(type)s."
@@ -16658,48 +17653,6 @@ msgstr "Jsem správcem"
 #, python-format
 #~ msgid "Last modified: %(tDate)s"
 #~ msgstr "Poslední změna: %(tDate)s"
-
-#, python-format
-#~ msgid "Curators ( <span data-count=\"curators\">%(tCount)s</span> )"
-#~ msgstr "Správci ( <span data-count=\"curators\">%(tCount)s</span> )"
-
-#~ msgid ""
-#~ "To run Scratch 2, you need a relatively recent web browser (<a href=\"http://"
-#~ "google.com/chrome/\">Chrome</a> 7 or later, <a href=\"http://www.mozilla.org/"
-#~ "en-US/firefox/new/\">Firefox</a> 4 or later, or Internet Explorer 7 or "
-#~ "later) with <a href=\"\">Adobe Flash Player</a> version 10.2 or later "
-#~ "installed. Scratch 2 is designed to support screen sizes 1024 x 768 or "
-#~ "larger. If your computer doesn’t meet these requirements, you can try "
-#~ "downloading and installing <a href =\"/scratch_1.4\">Scratch 1.4</a>, which "
-#~ "you can still use to share projects to the Scratch 2 website."
-#~ msgstr ""
-#~ "Ke spuštění Scratch 2 potřebuješ relativně moderní prohlížeč (<a "
-#~ "href=\"http://google.com/chrome/\">Chrome</a> 7 nebo novější, <a "
-#~ "href=\"http://www.mozilla.org/en-US/firefox/new/\">Firefox</a> 4 nebo novější, "
-#~ "nebo Internet Explorer 7 nebo novější) s nainstalovaným <a href=\"\">Adobe "
-#~ "Flash Player</a> verze 10.2 nebo novějším. Scratch 2 je navržen pro podporu "
-#~ "obrazovky rozměrů 1024 x 768 nebo větších. Pokud tvůj počítač nesplňuje tyto "
-#~ "požadavky, můžeš zkusit stáhnout a nainstalovat <a href "
-#~ "=\"/scratch_1.4\">Scratch 1.4</a>, kterou stále můžeš používat pro sdílení "
-#~ "projektů do Scratch 2 webu."
-
-#~ msgid "Can I use images / sounds / media from the internet in my projects?"
-#~ msgstr "Mohu používat obrázky / zvuky / média z internetu ve svých projektech?"
-
-#~ msgid ""
-#~ "It's important to respect the original creator’s wishes regarding remixing. "
-#~ "If you choose to integrate someone else’s work into your own, be sure to "
-#~ "give them credit on the project “credits” section, and include a link back "
-#~ "to the original. To find art / sounds that are already licensed for "
-#~ "remixing, check out the <a href=\"http://search.creativecommons.org/"
-#~ "\">Creative Commons search page</a>."
-#~ msgstr ""
-#~ "Je důležité respektovat přání původního tvůrce týkající se odvozování. Když "
-#~ "se rozhodneš připojit práci jiných do své vlastní, určitě jim přiznej "
-#~ "zásluhy v sekci \"kredity\" a zahrň odkaz na originál. K vyhledání grafiky / "
-#~ "zvuků které jsou již licencovány pro odvozování vyzkoušej <a "
-#~ "href=\"http://search.creativecommons.org/\">vyhledávácí stránku Creative "
-#~ "Commons</a>."
 
 #~ msgid "Getting Started"
 #~ msgstr "Začínáme"
@@ -18007,17 +18960,11 @@ msgstr "Jsem správcem"
 #~ msgid "Just check the studio you wish to add to from the list below"
 #~ msgstr "Zaškrtni studio které chceš přidat z následujícího seznamu"
 
-#~ msgid "Share to"
-#~ msgstr "Sdílet na"
-
 #~ msgid "Test new Scratch Player"
 #~ msgstr "Otestuj nový Scratch přehrávač"
 
 #~ msgid "Try it!"
 #~ msgstr "Zkus ho!"
-
-#~ msgid "Share project on other websites"
-#~ msgstr "Sdílet projekt na jiných webserverech"
 
 #~ msgid "Add project to studio"
 #~ msgstr "Přidat projekt do studia"
@@ -18027,110 +18974,6 @@ msgstr "Jsem správcem"
 
 #~ msgid "Beta bug?"
 #~ msgstr "Chyba v beta?"
-
-#~ msgid "Contact us"
-#~ msgstr "Kontaktujte nás"
-
-#~ msgid "View previous comments"
-#~ msgstr "Ukázat předchozí komentáře"
-
-#~ msgid "ago"
-#~ msgstr "staré"
-
-#~ msgid "Sudio:"
-#~ msgstr "Studio:"
-
-#~ msgid "Studio description"
-#~ msgstr "Popis studia"
-
-#, python-format
-#~ msgid "created %(tDate)s"
-#~ msgstr "vytvořené %(tDate)s"
-
-#~ msgid "Read more &raquo;"
-#~ msgstr "Číst dále &raquo;"
-
-#~ msgid "More info"
-#~ msgstr "Více informací"
-
-#, python-format
-#~ msgid "%(username)s Studio (%(galleries.count)s)"
-#~ msgstr "%(username)s - Studio (%(galleries.count)s)"
-
-#~ msgid "Welcome, Scratchers!"
-#~ msgstr "Vítejte, Scratcheři!"
-
-#~ msgid ""
-#~ "Thanks for helping us find and fix glitches in Scratch 2.0! Found a bug? Let "
-#~ "us know!"
-#~ msgstr ""
-#~ "Děkujeme za pomoc při hledání a odstraňování závad ve Scratch 2.0. Nalezl "
-#~ "jsi chybu? Dej nám vědět!"
-
-#~ msgid "Report bugs here &raquo;"
-#~ msgstr "Chyby hlaste zde &raquo;"
-
-#~ msgid "Try out new features"
-#~ msgstr "Vyzkoušej nové funkce"
-
-#~ msgid "Here’s a description of what’s new in Scratch 2.0."
-#~ msgstr "Zde je popis, co je nového ve Scratch 2.0."
-
-#~ msgid "Check it out! &raquo;"
-#~ msgstr "Prohlédni si! &raquo;"
-
-#~ msgid "Scratch 2.0 Beta"
-#~ msgstr "Scratch 2.0 Beta"
-
-#~ msgid "Welcome to the Scratch 2.0 Beta website!"
-#~ msgstr "Vítej na webu Scratch 2.0 Beta!"
-
-#~ msgid ""
-#~ "Please explore and experiment with this preview version of the new Scratch. "
-#~ "Check out the <b>Featured Projects</b> and <b>Featured Studios</b> below.  "
-#~ "Click <a href=\"/help\">Help</a> to learn more."
-#~ msgstr ""
-#~ "Prosím poznávej a zkoušej s touto předběžnou verzí nového Scratch. Vyzkoušej "
-#~ "<b>Vybrané projekty</b> a <b>Vybraná studia</b> níže.  Klikni na <a "
-#~ "href=\"/help\">Pomoc</a> pro další poučení."
-
-#~ msgid ""
-#~ "The Scratch 2.0 Beta is open to everyone. But you can only log in if you "
-#~ "created your Scratch account before January 26th."
-#~ msgstr ""
-#~ "Scratch 2.0 Beta je přístupný každému. Ale přihlásit se můžeš jen pokud jsi "
-#~ "vytvořil(a) svůj účet před 26 lednem."
-
-#~ msgid ""
-#~ "We still have a few features to add, and lots of glitches to fix! You can "
-#~ "help us by <a href=\"/forums/3/\">reporting bugs and glitches</a>. The sooner "
-#~ "we find and fix them, the sooner we can officially release Scratch 2.0."
-#~ msgstr ""
-#~ "Stále ještě musíme přidat nové funkce a odladit mnoho chyb! Můžeš nám pomoci "
-#~ "tím, že budeš <a href=\"/forums/3/\">hlásit chyby a závady</a>. Čím dříve je "
-#~ "najdeme a opravíme, tím dříve budeme moci Scratch 2.0 oficiálně zveřejnit."
-
-#~ msgid "Find out more about"
-#~ msgstr "Zjisti více"
-
-#~ msgid "the move to Scratch 2.0"
-#~ msgstr "posun k Scratch 2.0"
-
-#~ msgid "What the Community is Sharing"
-#~ msgstr "Co společenství sdílí"
-
-#~ msgid "Total remixes"
-#~ msgstr "Celkem upravených"
-
-#~ msgid "views"
-#~ msgstr "přístupy"
-
-# nasleduje datum
-#~ msgid "Shared on:"
-#~ msgstr "Sdíleno od:"
-
-#~ msgid "Add project to gallery"
-#~ msgstr "Přidat projekt do galerie"
 
 #~ msgid "Owner"
 #~ msgstr "Vlastník"
@@ -18149,9 +18992,6 @@ msgstr "Jsem správcem"
 #~ "    <li><a href=\"http://info.scratch.mit.edu/Scratch_in_the_News\">Scratch v "
 #~ "novinách</a></li>\n"
 #~ "    "
-
-#~ msgid "Scratch Credits"
-#~ msgstr "Zásluhy o Scratch"
 
 #~ msgid ""
 #~ "\n"
