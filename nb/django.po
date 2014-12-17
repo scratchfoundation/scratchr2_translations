@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-25 23:48+0000\n"
+"POT-Creation-Date: 2014-12-13 16:02+0000\n"
 "PO-Revision-Date: 2014-12-02 07:14+0000\n"
 "Last-Translator: Torbjorn <torbjorn.skauli@ffi.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,42 +80,63 @@ msgstr "Det finnes ikke en konto med det brukernavnet"
 msgid "Sorry we don't have an account with that email address"
 msgstr "Det finnes ikke en konto med den e-postadressen"
 
-#: base_comments/templatetags/scratch_text_filters.py:109
+#: authentication/forms.py:189 authentication/forms.py:210
+#, fuzzy
+msgid "Incorrect username or password."
+msgstr "Glemt brukernavn eller passord?"
+
+#: authentication/forms.py:190 authentication/forms.py:211
+msgid "Please enable cookies on your browser."
+msgstr ""
+
+#: authentication/forms.py:191 authentication/forms.py:212
+msgid "This account is inactive."
+msgstr ""
+
+#: authentication/forms.py:192 authentication/forms.py:213
+msgid "This account is deleted!"
+msgstr ""
+
+#: authentication/forms.py:214
+msgid "Incorrect captcha, please try again."
+msgstr ""
+
+#: base_comments/templatetags/scratch_text_filters.py:110
 msgid "day"
 msgid_plural "days"
 msgstr[0] "dag"
 msgstr[1] "dager"
 
 # 84%
-#: base_comments/templatetags/scratch_text_filters.py:115
+#: base_comments/templatetags/scratch_text_filters.py:116
 #, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
 msgstr[0] "for 1 minutt siden"
 msgstr[1] "for %(minutes)d minuttter siden"
 
-#: base_comments/templatetags/scratch_text_filters.py:119
+#: base_comments/templatetags/scratch_text_filters.py:120
 msgid "just now"
 msgstr "akkurat nå"
 
-#: base_comments/templatetags/scratch_text_filters.py:121
+#: base_comments/templatetags/scratch_text_filters.py:122
 #, python-format
 msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
 msgstr[0] "for 1 time siden"
 msgstr[1] "for %(hours)d timer siden"
 
-#: base_comments/templatetags/scratch_text_filters.py:125
+#: base_comments/templatetags/scratch_text_filters.py:126
 #, python-format
 msgid "yesterday at %s"
 msgstr "igår %s"
 
-#: base_comments/templatetags/scratch_text_filters.py:128
+#: base_comments/templatetags/scratch_text_filters.py:129
 #, python-format
 msgid "%s"
 msgstr "%s"
 
-#: base_comments/templatetags/scratch_text_filters.py:136
+#: base_comments/templatetags/scratch_text_filters.py:137
 #, python-format
 msgid "%(number)d %(type)s ago"
 msgstr "for %(number)d %(type)s siden"
@@ -123,1493 +144,6 @@ msgstr "for %(number)d %(type)s siden"
 #: projects/views.py:496
 msgid "This tag has too many projects to load"
 msgstr "Ikke plass til å lese inn alle prosjekter med dette nøkkelordet"
-
-#: s2forums/djangobb_forum/admin.py:31
-msgid "subscribers"
-msgstr "abonnenter"
-
-#: s2forums/djangobb_forum/feeds.py:27 s2forums/djangobb_forum/feeds.py:28
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
-msgid "Latest posts on forum"
-msgstr "Siste meldinger på forumet"
-
-#: s2forums/djangobb_forum/feeds.py:46 s2forums/djangobb_forum/feeds.py:47
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:16
-msgid "Latest topics on forum"
-msgstr "Siste emner på forumet"
-
-#: s2forums/djangobb_forum/feeds.py:75 s2forums/djangobb_forum/feeds.py:100
-#: s2forums/djangobb_forum/feeds.py:125
-#, python-format
-msgid "Latest posts on %s"
-msgstr "Siste meldinger på %s"
-
-#: s2forums/djangobb_forum/feeds.py:83
-#, python-format
-msgid "Latest posts on the topic \"%s\""
-msgstr "Siste meldinger på emnet \"%s\""
-
-#: s2forums/djangobb_forum/feeds.py:108
-#, python-format
-msgid "Latest posts on the forum \"%s\""
-msgstr "Siste meldinger på forumet \"%s\""
-
-#: s2forums/djangobb_forum/feeds.py:128
-#, python-format
-msgid "Latest posts on the category \"%s\""
-msgstr "Siste meldinger i kategorien \"%s\""
-
-#: s2forums/djangobb_forum/forms.py:29 s2forums/djangobb_forum/forms.py:229
-#: s2forums/djangobb_forum/forms.py:366 templates/base.html:207
-#: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
-msgid "Username"
-msgstr "Brukernavn"
-
-#: s2forums/djangobb_forum/forms.py:30
-msgid "Registered"
-msgstr "Registrert"
-
-#: s2forums/djangobb_forum/forms.py:31
-msgid "Number of posts"
-msgstr "Meldinger"
-
-#: s2forums/djangobb_forum/forms.py:35
-msgid "Post time"
-msgstr "Tid"
-
-#: s2forums/djangobb_forum/forms.py:36
-msgid "Author"
-msgstr "Forfatter"
-
-#: s2forums/djangobb_forum/forms.py:37 s2forums/djangobb_forum/forms.py:60
-#: s2forums/djangobb_forum/forms.py:188 s2forums/djangobb_forum/forms.py:459
-#: s2forums/djangobb_forum/models.py:160
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
-msgid "Subject"
-msgstr "Emne"
-
-#: s2forums/djangobb_forum/forms.py:38 s2forums/djangobb_forum/forms.py:402
-#: s2forums/djangobb_forum/models.py:130 s2forums/djangobb_forum/models.py:159
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:55
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:26
-msgid "Forum"
-msgstr "Forum"
-
-#: s2forums/djangobb_forum/forms.py:42
-msgid "Ascending"
-msgstr "Økende"
-
-#: s2forums/djangobb_forum/forms.py:43
-msgid "Descending"
-msgstr "Minkende"
-
-#: s2forums/djangobb_forum/forms.py:47 s2forums/djangobb_forum/models.py:175
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:56
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
-msgid "Topics"
-msgstr "Emner"
-
-# 80%
-#: s2forums/djangobb_forum/forms.py:48 s2forums/djangobb_forum/models.py:275
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:57
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
-msgid "Posts"
-msgstr "Meldinger"
-
-#: s2forums/djangobb_forum/forms.py:52
-msgid "Message text and topic subject"
-msgstr "Meldingstekst og emne"
-
-#: s2forums/djangobb_forum/forms.py:53
-msgid "Message text only"
-msgstr "Bare meldingstekst"
-
-#: s2forums/djangobb_forum/forms.py:54
-msgid "Topic subject only"
-msgstr "Bare emne"
-
-#: s2forums/djangobb_forum/forms.py:62
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
-msgid "Attachment"
-msgstr "Vedlegg"
-
-#: s2forums/djangobb_forum/forms.py:63
-msgid "Subscribe"
-msgstr "Abonner"
-
-# 87%
-#: s2forums/djangobb_forum/forms.py:63
-msgid "Subscribe to this topic."
-msgstr "Abonnér på dette emnet."
-
-#: s2forums/djangobb_forum/forms.py:93
-msgid "Can't be empty nor contain only whitespace characters"
-msgstr "Kan ikke være tom eller inneholde bare mellomromtegn"
-
-#: s2forums/djangobb_forum/forms.py:103
-msgid ""
-"Hmm, the filterbot is pretty sure your recent comments weren't ok for "
-"Scratch, so your account has been muted for the rest of the day. :/"
-msgstr ""
-"Hmm, filter-roboten er ganske sikker på at dine siste kommentarer ikke var "
-"OK her på Scratch så kontoen din er sperret for nye innlegg resten av dagen. "
-":/"
-
-#: s2forums/djangobb_forum/forms.py:132 s2forums/djangobb_forum/forms.py:136
-#, python-format
-msgid "Sorry, you have to wait %d seconds between posts."
-msgstr "Beklager, du må vente %d sekunder mellom meldinger."
-
-#: s2forums/djangobb_forum/forms.py:145
-msgid "Attachment is too big"
-msgstr "Vedlegget er for stort"
-
-#: s2forums/djangobb_forum/forms.py:190
-msgid "Silent edit?"
-msgstr "Uannonsert redigering?"
-
-# 83%
-#: s2forums/djangobb_forum/forms.py:230
-msgid "E-mail"
-msgstr "Epost"
-
-#: s2forums/djangobb_forum/forms.py:261
-msgid "Real name"
-msgstr "Virkelig navn"
-
-#: s2forums/djangobb_forum/forms.py:368 s2forums/djangobb_forum/forms.py:404
-#: templates/includes/sort-projects-dropdown.html:4
-#: templates/studio/includes/sort-galleries-dropdown.html:19
-#: templates/studio/includes/sort-projects-dropdown.html:4
-msgid "Sort by"
-msgstr "Sorter etter"
-
-#: s2forums/djangobb_forum/forms.py:369 s2forums/djangobb_forum/forms.py:405
-msgid "Sort order"
-msgstr "Rekkefølge"
-
-#: s2forums/djangobb_forum/forms.py:398
-msgid "Keyword search"
-msgstr "Søk nøkkelord"
-
-#: s2forums/djangobb_forum/forms.py:400
-msgid "Author search"
-msgstr "Søk forfatter"
-
-#: s2forums/djangobb_forum/forms.py:403
-msgid "Search in"
-msgstr "Søk i"
-
-#: s2forums/djangobb_forum/forms.py:406
-msgid "Show results as"
-msgstr "Vis resultat som"
-
-#: s2forums/djangobb_forum/forms.py:431
-#, python-format
-msgid "User \"%s\" does not exist"
-msgstr "Bruker \"%s\" finnes ikke"
-
-#: s2forums/djangobb_forum/forms.py:441
-msgid "You already voted for this post"
-msgstr "Du har allerede stemt for dette innlegget"
-
-#: s2forums/djangobb_forum/forms.py:445
-msgid "This post does't belong to that user"
-msgstr "Dette innlegget tilhører ikke den brukeren"
-
-# 87%
-#: s2forums/djangobb_forum/forms.py:461 s2forums/djangobb_forum/models.py:266
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:34
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
-msgid "Message"
-msgstr "Melding"
-
-#: s2forums/djangobb_forum/forms.py:514
-#, python-format
-msgid "You have selected too many choices. You may only select %i."
-msgstr "Du har valgt for mange. Du kan bare velge %i."
-
-#: s2forums/djangobb_forum/forms.py:521
-msgid "Write each answer on a new line."
-msgstr "Skriv hvert svar på en egen linje."
-
-#: s2forums/djangobb_forum/forms.py:524
-msgid ""
-"Number of days for this poll to run. Leave empty for an indefinite poll."
-msgstr ""
-"Avstemmingens varighet i dager. La stå tomt hvis ingen sluttdato ønskes."
-
-#: s2forums/djangobb_forum/forms.py:541
-msgid "There is no valid answer."
-msgstr "Det er ingen riktige svar."
-
-#: s2forums/djangobb_forum/forms.py:547
-msgid "One of the answers is too long."
-msgstr "Ett av svarene er for langt."
-
-#: s2forums/djangobb_forum/models.py:45
-msgid "Display your e-mail address."
-msgstr "Vis din epostadresse."
-
-#: s2forums/djangobb_forum/models.py:46
-msgid "Hide your e-mail address but allow form e-mail."
-msgstr "Skjul din epost, men tillat meldinger via skjemaet."
-
-#: s2forums/djangobb_forum/models.py:47
-msgid "Hide your e-mail address and disallow form e-mail."
-msgstr "Skjul din epostadresse og ikke bruk epostskjemaet."
-
-#: s2forums/djangobb_forum/models.py:81 s2forums/djangobb_forum/models.py:119
-#: s2forums/djangobb_forum/models.py:489
-msgid "Name"
-msgstr "Navn"
-
-#: s2forums/djangobb_forum/models.py:82
-msgid "Groups"
-msgstr "Grupper"
-
-#: s2forums/djangobb_forum/models.py:82
-msgid "Only users from these groups can see this category"
-msgstr "Bare brukere fra disse gruppene kan se denne kategorien"
-
-# Stilling?
-#: s2forums/djangobb_forum/models.py:83 s2forums/djangobb_forum/models.py:120
-msgid "Position"
-msgstr "Posisjon"
-
-#: s2forums/djangobb_forum/models.py:87 s2forums/djangobb_forum/models.py:117
-msgid "Category"
-msgstr "Kategori"
-
-#: s2forums/djangobb_forum/models.py:88
-msgid "Categories"
-msgstr "Kategorier"
-
-#: s2forums/djangobb_forum/models.py:118
-msgid "New topics by moderators only"
-msgstr "Nye emner kun av moderator"
-
-# 90%
-#: s2forums/djangobb_forum/models.py:121
-msgid "Description"
-msgstr "Beskrivelse"
-
-#: s2forums/djangobb_forum/models.py:122
-msgid "Moderators"
-msgstr "Moderatorer"
-
-#: s2forums/djangobb_forum/models.py:123 s2forums/djangobb_forum/models.py:162
-#: s2forums/djangobb_forum/models.py:263
-msgid "Updated"
-msgstr "Oppdatert"
-
-#: s2forums/djangobb_forum/models.py:124 s2forums/djangobb_forum/models.py:168
-#: s2forums/djangobb_forum/models.py:409
-msgid "Post count"
-msgstr "Antall innlegg"
-
-#: s2forums/djangobb_forum/models.py:125
-msgid "Topic count"
-msgstr "Antall emner"
-
-#: s2forums/djangobb_forum/models.py:131
-#: templates/search/includes/tabs.html:20
-msgid "Forums"
-msgstr "Forum"
-
-# 87%
-#: s2forums/djangobb_forum/models.py:161 s2forums/djangobb_forum/models.py:262
-#: s2forums/djangobb_forum/models.py:450
-msgid "Created"
-msgstr "Opprettet"
-
-#: s2forums/djangobb_forum/models.py:163 s2forums/djangobb_forum/models.py:261
-#: s2forums/djangobb_forum/models.py:388
-#: templates/cloudmonitor/monitor.html:67
-msgid "User"
-msgstr "Bruker"
-
-#: s2forums/djangobb_forum/models.py:164
-msgid "Views count"
-msgstr "Antall visninger"
-
-#: s2forums/djangobb_forum/models.py:165
-msgid "Sticky"
-msgstr "Fast"
-
-# 83%
-#: s2forums/djangobb_forum/models.py:166
-msgid "Closed"
-msgstr "Lukket"
-
-#: s2forums/djangobb_forum/models.py:167
-msgid "Subscribers"
-msgstr "Abonnenter"
-
-#: s2forums/djangobb_forum/models.py:174 s2forums/djangobb_forum/models.py:260
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:35
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:31
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:25
-msgid "Topic"
-msgstr "Emne"
-
-#: s2forums/djangobb_forum/models.py:264
-msgid "Updated by"
-msgstr "Oppdatert av"
-
-#: s2forums/djangobb_forum/models.py:265
-msgid "Markup"
-msgstr "Merking"
-
-#: s2forums/djangobb_forum/models.py:267
-msgid "HTML version"
-msgstr "HTML-versjon"
-
-#: s2forums/djangobb_forum/models.py:268
-msgid "User IP"
-msgstr "Brukerens IP"
-
-#: s2forums/djangobb_forum/models.py:274 s2forums/djangobb_forum/models.py:361
-#: s2forums/djangobb_forum/models.py:447 s2forums/djangobb_forum/models.py:485
-#: templates/comments/comment-module.html:38
-#: templates/comments/comment_module.html:17
-#: templates/comments/comment_module.html:67
-#: templates/includes/backbone-templates.html:62
-msgid "Post"
-msgstr "Send"
-
-#: s2forums/djangobb_forum/models.py:359
-msgid "From"
-msgstr "Fra"
-
-#: s2forums/djangobb_forum/models.py:360
-msgid "To"
-msgstr "Til"
-
-#: s2forums/djangobb_forum/models.py:362
-#: templates/cloudmonitor/monitor.html:71
-msgid "Time"
-msgstr "Tid"
-
-#: s2forums/djangobb_forum/models.py:363
-msgid "Sign"
-msgstr "Signatur"
-
-#: s2forums/djangobb_forum/models.py:364 s2forums/djangobb_forum/models.py:451
-#: s2forums/djangobb_forum/models.py:464
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:25
-msgid "Reason"
-msgstr "Årsak"
-
-#: s2forums/djangobb_forum/models.py:367
-msgid "Reputation"
-msgstr "Omdømme"
-
-#: s2forums/djangobb_forum/models.py:368
-msgid "Reputations"
-msgstr "Omdømmer"
-
-#: s2forums/djangobb_forum/models.py:389
-msgid "Status"
-msgstr "Status"
-
-#: s2forums/djangobb_forum/models.py:390
-msgid "Site"
-msgstr "Sted"
-
-#: s2forums/djangobb_forum/models.py:391
-msgid "Jabber"
-msgstr "Jabber"
-
-#: s2forums/djangobb_forum/models.py:392
-msgid "ICQ"
-msgstr "ICQ"
-
-#: s2forums/djangobb_forum/models.py:393
-msgid "MSN"
-msgstr "MSN"
-
-#: s2forums/djangobb_forum/models.py:394
-msgid "AIM"
-msgstr "AIM"
-
-#: s2forums/djangobb_forum/models.py:395
-msgid "Yahoo"
-msgstr "Yahoo"
-
-#: s2forums/djangobb_forum/models.py:396
-msgid "Location"
-msgstr "Sted"
-
-#: s2forums/djangobb_forum/models.py:397 s2forums/djangobb_forum/models.py:398
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:19
-msgid "Signature"
-msgstr "Underskrift"
-
-#: s2forums/djangobb_forum/models.py:399
-msgid "Time zone"
-msgstr "Tidssone"
-
-# 87%
-#: s2forums/djangobb_forum/models.py:400
-msgid "Language"
-msgstr "Språk"
-
-#: s2forums/djangobb_forum/models.py:401
-msgid "Avatar"
-msgstr "Avatar"
-
-#: s2forums/djangobb_forum/models.py:402
-msgid "Theme"
-msgstr "Tema"
-
-#: s2forums/djangobb_forum/models.py:403
-msgid "Show avatar"
-msgstr "Vis avatar"
-
-#: s2forums/djangobb_forum/models.py:404
-msgid "Show signatures"
-msgstr "Vis underskrifter"
-
-#: s2forums/djangobb_forum/models.py:405
-msgid "Show smilies"
-msgstr "Vis smilefjes"
-
-#: s2forums/djangobb_forum/models.py:406
-msgid "Privacy permission"
-msgstr "Tillatelse til bruk av personopplysninger"
-
-#: s2forums/djangobb_forum/models.py:407
-msgid "Auto subscribe"
-msgstr "Abonnér automatisk"
-
-#: s2forums/djangobb_forum/models.py:407
-msgid "Auto subscribe all topics you have created or reply."
-msgstr "Abonner automatisk på emner du skriver innlegg i."
-
-#: s2forums/djangobb_forum/models.py:408
-msgid "Default markup"
-msgstr "Standard merking"
-
-#: s2forums/djangobb_forum/models.py:414 templates/base.html:237
-msgid "Profile"
-msgstr "Profil"
-
-# 87%
-#: s2forums/djangobb_forum/models.py:415
-msgid "Profiles"
-msgstr "Profiler"
-
-#: s2forums/djangobb_forum/models.py:439 s2forums/djangobb_forum/models.py:440
-msgid "Post tracking"
-msgstr "Spor innlegg"
-
-#: s2forums/djangobb_forum/models.py:446
-msgid "Reported by"
-msgstr "Meldt av"
-
-#: s2forums/djangobb_forum/models.py:448
-msgid "Zapped"
-msgstr "Zappet"
-
-#: s2forums/djangobb_forum/models.py:449
-msgid "Zapped by"
-msgstr "Zappet av"
-
-#: s2forums/djangobb_forum/models.py:454
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:159
-#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
-msgid "Report"
-msgstr "Meld"
-
-# 85%
-#: s2forums/djangobb_forum/models.py:455
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:31
-#: s2forums/djangobb_forum/templates/djangobb_forum/reports.html:6
-msgid "Reports"
-msgstr "Meldinger"
-
-#: s2forums/djangobb_forum/models.py:461
-msgid "Banned user"
-msgstr "Utestengt bruker"
-
-#: s2forums/djangobb_forum/models.py:462
-msgid "Ban start"
-msgstr "Utestengt fra"
-
-#: s2forums/djangobb_forum/models.py:463
-msgid "Ban end"
-msgstr "Utestengt til"
-
-#: s2forums/djangobb_forum/models.py:467
-msgid "Ban"
-msgstr "Utestengning"
-
-#: s2forums/djangobb_forum/models.py:468
-msgid "Bans"
-msgstr "Utestengninger"
-
-# 75%
-#: s2forums/djangobb_forum/models.py:486
-msgid "Size"
-msgstr "Størrelse"
-
-#: s2forums/djangobb_forum/models.py:487
-msgid "Content type"
-msgstr "Innholdstype"
-
-#: s2forums/djangobb_forum/models.py:488
-msgid "Path"
-msgstr "Bane"
-
-#: s2forums/djangobb_forum/models.py:490
-msgid "Hash"
-msgstr "Hash"
-
-#: s2forums/djangobb_forum/models.py:517
-msgid "How many choices are allowed simultaneously."
-msgstr "Hvor mange kan velges på en gang?"
-
-#: s2forums/djangobb_forum/models.py:520
-msgid "Can users vote to this poll or just see the result?"
-msgstr "Kan brukerne stemme eller bare se resultatet?"
-
-#: s2forums/djangobb_forum/models.py:523
-msgid "Point of time after this poll would be automatic deactivated"
-msgstr "Tidspunkt når avstemmingen avsluttes automatisk"
-
-#: s2forums/djangobb_forum/models.py:526
-msgid "Users who has voted this poll."
-msgstr "Brukere som har stemt."
-
-#: s2forums/djangobb_forum/util.py:273
-#, python-format
-msgid ""
-"Sorry, you need to host your images with a service like imageshack.com. "
-"Please update your image links or remove all BB code [img] tags. Bad image "
-"url: %s"
-msgstr ""
-"Beklager, du må legge bildene hos en webtjeneste som for eksempel "
-"imageshack.com. Oppdater linkene dine eller fjern BB-kode [img]. Ugyldig url "
-"for bilde: %s"
-
-#: s2forums/djangobb_forum/views.py:93
-msgid "Topics deleted."
-msgstr "Emner slettet."
-
-#: s2forums/djangobb_forum/views.py:98
-msgid "Topics opened."
-msgstr "Emner åpnet."
-
-#: s2forums/djangobb_forum/views.py:103
-msgid "Topics closed."
-msgstr "Emner lukket."
-
-#: s2forums/djangobb_forum/views.py:296
-#, python-format
-msgid "Found %i posts."
-msgstr "Fant %i innlegg."
-
-#: s2forums/djangobb_forum/views.py:300
-#, python-format
-msgid "Found %i topics."
-msgstr "Fant %i emner."
-
-#: s2forums/djangobb_forum/views.py:314
-msgid "Marked all topics as read."
-msgstr "Merket alle emner som lest."
-
-#: s2forums/djangobb_forum/views.py:324
-msgid "Post reported."
-msgstr "Innlegg meldt."
-
-#: s2forums/djangobb_forum/views.py:341
-msgid "Email sent."
-msgstr "Epost er sendt."
-
-#: s2forums/djangobb_forum/views.py:343
-msgid "Email could not be sent."
-msgstr "Epost kunne ikke sendes."
-
-#: s2forums/djangobb_forum/views.py:437 s2forums/djangobb_forum/views.py:1147
-msgid "Reply saved."
-msgstr "Svaret er lagret."
-
-#: s2forums/djangobb_forum/views.py:483
-msgid "This poll is not active."
-msgstr "Avstemmingen er ikke aktiv."
-
-#: s2forums/djangobb_forum/views.py:486
-msgid "You already voted on this poll."
-msgstr "Du har allerede stemt."
-
-#: s2forums/djangobb_forum/views.py:495
-msgid "Vote saved."
-msgstr "Stemmen er lagret."
-
-#: s2forums/djangobb_forum/views.py:593
-msgid "Topic with poll saved."
-msgstr "Emne med avstemming er lagret."
-
-#: s2forums/djangobb_forum/views.py:595
-msgid "Topic saved."
-msgstr "Emnet er lagret."
-
-#: s2forums/djangobb_forum/views.py:630
-msgid "Avatar uploaded."
-msgstr "Avatar oppdatert."
-
-#: s2forums/djangobb_forum/views.py:639
-msgid "Please sign in."
-msgstr "Vennligst logg inn."
-
-#: s2forums/djangobb_forum/views.py:653
-msgid "Profile saved."
-msgstr "Profil lagret."
-
-#: s2forums/djangobb_forum/views.py:688
-msgid "Reputation deleted."
-msgstr "Omdømme slettet."
-
-#: s2forums/djangobb_forum/views.py:694
-msgid "Reputation saved."
-msgstr "Omdømme lagret."
-
-#: s2forums/djangobb_forum/views.py:735
-msgid "You don't have permission to edit this post."
-msgstr "Du har ikke tillatelse til å redigere dette innlegget."
-
-# 76%
-#: s2forums/djangobb_forum/views.py:745
-msgid "Post updated."
-msgstr "Innlegg oppdatert."
-
-#: s2forums/djangobb_forum/views.py:768 s2forums/djangobb_forum/views.py:963
-msgid "Post deleted."
-msgstr "Innlegg slettet."
-
-#: s2forums/djangobb_forum/views.py:812
-msgid "The topic ID must be an integer."
-msgstr "Emne-ID må være et heltall."
-
-#: s2forums/djangobb_forum/views.py:818
-msgid "That thread doesn't exist."
-msgstr "Tråden finnes ikke."
-
-#: s2forums/djangobb_forum/views.py:859
-msgid "Posts moved."
-msgstr "Innlegg flyttet."
-
-#: s2forums/djangobb_forum/views.py:923
-msgid "Topic moved."
-msgstr "Emne flyttet."
-
-#: s2forums/djangobb_forum/views.py:939
-msgid "Topic stickied."
-msgstr "Emnet er fremhevet."
-
-#: s2forums/djangobb_forum/views.py:941
-msgid "Topic unstickied."
-msgstr "Ikke lenger fremhevet."
-
-#: s2forums/djangobb_forum/views.py:959
-msgid "You don't have permission to delete this post."
-msgstr "Du har ikke tillatelse til å slette innlegget."
-
-# 90%
-#: s2forums/djangobb_forum/views.py:986 s2forums/djangobb_forum/views.py:1018
-msgid "You don't have permission to mark this post."
-msgstr "Du har ikke tillatelse til å merke dette innlegget."
-
-#: s2forums/djangobb_forum/views.py:990 s2forums/djangobb_forum/views.py:1022
-msgid "There was not enough data collected to mark this post."
-msgstr "Det er ikke nok data til å merke dette innlegget."
-
-#: s2forums/djangobb_forum/views.py:995
-msgid "Post marked as spam."
-msgstr "Innlegget er merket som søppelpost."
-
-#: s2forums/djangobb_forum/views.py:997
-msgid "This post is not in the right state to be marked as spam."
-msgstr "Dette innleggets status gjør at det ikke kan merkes som søppelpost."
-
-#: s2forums/djangobb_forum/views.py:1027
-msgid "Post un-marked as spam."
-msgstr "Søppelpost-merke er fjernet."
-
-#: s2forums/djangobb_forum/views.py:1029
-msgid "This post is not in the right state to be un-marked as spam."
-msgstr "Dette innleggets status gjør at søppelpost-merke ikke kan fjernes."
-
-#: s2forums/djangobb_forum/views.py:1042
-msgid "Topic closed."
-msgstr "Emne lukket."
-
-#: s2forums/djangobb_forum/views.py:1045
-msgid "Topic opened."
-msgstr "Emne åpnet."
-
-#: s2forums/djangobb_forum/views.py:1067
-msgid "Unsubscribed from topic."
-msgstr "Abonnement avbrutt."
-
-#: s2forums/djangobb_forum/views.py:1079
-msgid "Subscribed to topic."
-msgstr "Abonnerer på emnet."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:13
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:10
-msgid "New Topic"
-msgstr "Nytt emne"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:15
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:15
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:77
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:72
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:65
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:10
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:27
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:189
-#: templates/base.html:324
-msgid "Discussion Forums"
-msgstr "Forum"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:6
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:6
-msgid "Discuss Scratch"
-msgstr "Diskuter Scratch"
-
-# Merknad?
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:129
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:43
-msgid "Notice"
-msgstr "Merknad"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:7
-#, python-format
-msgid "Delete Posts - %(name)s"
-msgstr "Slett innlegg - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:68
-msgid "Delete Posts"
-msgstr "Slett innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:46
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:48
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:130
-#, python-format
-msgid "Last edited by %(user)s (%(time)s)"
-msgstr "Sist redigert av %(user)s (%(time)s)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:51
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:35
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:52
-msgid "Select"
-msgstr "Velg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:72
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:85
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:168
-#: templates/studio/studio.html:137
-msgid "Delete"
-msgstr "Slett"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:73
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:46
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:90
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:41
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:35
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:66
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:41
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:74
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:30
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:65
-msgid "Go back"
-msgstr "Gå tilbake"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:5
-#, python-format
-msgid "Edit Post - %(name)s"
-msgstr "Rediger innlegg - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:14
-msgid "Edit Post"
-msgstr "Rediger innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:22
-msgid "Edit post"
-msgstr "Rediger innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:41
-msgid "Silent edit (don't display 'Edited by ...' in topic view)"
-msgstr "Taus redigering (viser ikke 'Redigert av ...' i emnet)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:45
-msgid "Save"
-msgstr "Lagre"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:24
-msgid ""
-"Can't find an answer to your question? Click here to ask it in a new thread."
-msgstr "Finner du ikke svar på spørsmålet? Klikk her for å opprette en ny tråd."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:24
-msgid "New topic"
-msgstr "Nytt emne"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:36
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:32
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:27
-msgid "Replies"
-msgstr "Svar"
-
-# 80%
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:37
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:33
-#: templates/includes/sort-projects-dropdown.html:10
-#: templates/studio/includes/sort-projects-dropdown.html:10
-msgid "Views"
-msgstr "Visninger"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:38
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:58
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:34
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:28
-msgid "Last Post"
-msgstr "Siste innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:53
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:47
-msgid "Sticky:"
-msgstr "Fremhevet:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:56
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:63
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum_row.html:40
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:50
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:56
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:39
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:45
-#: templates/carousel/includes/project-thumb.html:26
-#: templates/carousel/includes/project-thumb.html:28
-#: templates/explore/explore2.html:54
-#: templates/explore/includes/related_projects.html:17
-#: templates/explore/includes/related_projects.html:32
-#: templates/explore/includes/related_projects.html:46
-#: templates/explore/includes/related_projects.html:75
-#: templates/explore/includes/related_projects2.html:8
-#: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-thumb.html:22
-#: templates/galleries/includes/project-thumb.html:24
-#: templates/projects/base.html:105 templates/projects/base.html.py:368
-#: templates/projects/includes/project_list.html:11
-msgid "by"
-msgstr "av"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:57
-msgid "(New Posts)"
-msgstr "(Nye innlegg)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:67
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:61
-msgid "Forum is empty."
-msgstr "Forumet er tomt."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:107
-msgid "Moderate forum"
-msgstr "Moderer forum"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:16
-msgid "Show new posts since last visit"
-msgstr "Vis nye innlegg siden sist"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
-msgid "Discussion Home"
-msgstr "Startside for forum"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:20
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
-#: templates/404.html:21 templates/base.html:184 templates/contact-us.html:92
-msgid "Search"
-msgstr "Søk"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:29
-#, python-format
-msgid "Reports (%(report_count)s)"
-msgstr "Meldinger (%(report_count)s)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-msgid "Show your"
-msgstr "Vis dine"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-msgid "topics"
-msgstr "emner"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-msgid "posts"
-msgstr "innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:78
-msgid "Change your signature"
-msgstr "Endre din signatur"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:82
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:43
-msgid "Show recent posts"
-msgstr "Vis nylige innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:83
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:44
-msgid "Show unanswered posts"
-msgstr "Vis ubesvarte innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:85
-msgid "Mark all topics as read"
-msgstr "Merk alle emner som lest"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:7
-msgid "Send e-mail to"
-msgstr "Send epost til"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:13
-msgid "Write and submit your e-mail message"
-msgstr "Skriv og send din epostmelding"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:19
-msgid ""
-"Please note that by using this form, your e-mail address will be disclosed "
-"to the recipient."
-msgstr ""
-"Husk at når du bruker dette skjemaet vil mottakeren få se din epostadresse."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:34
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:41
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:73
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:64
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:59
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/post_form.html:16
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:31
-#: templates/extensions/terms_of_use.html:40
-msgid "Submit"
-msgstr "Send"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:7
-#, python-format
-msgid "Moderate - %(name)s"
-msgstr "Moderere - %(name)s"
-
-# 92%
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:16
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:74
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:80
-msgid "Moderate Forum"
-msgstr "Moderer forum"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:84
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:89
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:40
-#: templates/info/help/studio/tips/howto/hoc-4a.html:18
-#: templates/info/help/studio/tips/howto/hoc.html:24
-msgid "Move"
-msgstr "Flytt"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:86
-msgid "Open"
-msgstr "Åpne"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:87
-#: templates/modal-registration.html:188
-msgid "Close"
-msgstr "Lukk"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderators.html:3
-msgid "Moderated by"
-msgstr "Moderert av"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:7
-#, python-format
-msgid "Move Posts - %(name)s"
-msgstr "Flytt innlegg - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:22
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:68
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:74
-msgid "Move Posts"
-msgstr "Flytt innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:82
-msgid "All posts (original topic will be deleted)"
-msgstr "Alle innlegg (opprinnelig emne vil bli slettet)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:85
-msgid "Topic ID or URL"
-msgstr "Emne-ID eller URL"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:17
-msgid "Move Topic"
-msgstr "Flytt emne"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:26
-msgid "Move to"
-msgstr "Flytt til"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/pagination.html:3
-msgid "Pages"
-msgstr "Sider"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:22
-msgid "Report Post"
-msgstr "Meld innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:32
-msgid "Please enter a short reason why you are reporting this post."
-msgstr "Gi en kort begrunnelse for at du melder dette innlegget."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:17
-msgid "Reputation of the user"
-msgstr "Brukerens omdømme"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:23
-msgid "From user"
-msgstr "Fra bruker"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:24
-msgid "For post in topic"
-msgstr "For innlegg under emnet"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:26
-msgid "Estimation"
-msgstr "Estimering"
-
-# 80%
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:27
-msgid "Date"
-msgstr "Dato"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:64
-msgid "Are you sure"
-msgstr "Er du sikker"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:7
-msgid "Please, fill the form"
-msgstr "Fyll inn i skjemaet"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:17
-msgid "Your name:"
-msgstr "Ditt navn:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:21
-msgid "To whom we change a reputation:"
-msgstr "Personen vi endrer ommdømme for:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:29
-msgid "Method:"
-msgstr "Metode:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:32
-msgid "Add of a reputation"
-msgstr "Økning av omdømme"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:34
-msgid "Reduction of a reputation"
-msgstr "Reduksjon av omdømme"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:32
-msgid "(Dustbin all posts and topics)"
-msgstr "(Kast alle innlegg og emner)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:37
-msgid ""
-"To search by keyword, enter a term or terms to search for. Separate terms "
-"with spaces. To search by author enter the username of the author whose "
-"posts you wish to search for."
-msgstr ""
-"Skriv inn ett eller flere søkeord adskilt av mellomrom. Skriv et brukernavn "
-"for å søke etter innlegg fra en bestemt bruker."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:42
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:30
-msgid "All forums"
-msgstr "Alle forumene"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:56
-msgid ""
-"Choose in which forum you would like to search and if you want to search in "
-"topic subjects, message text or both."
-msgstr ""
-"Velg forumet du vil søke i, og om du vil søke i emne, meldingstekst eller "
-"begge."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:70
-msgid "You can choose how you wish to sort and show your results."
-msgstr "Du kan velge hvordan du vil sortere og vise resultatene."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:6
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:7
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:10
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:10
-msgid "Search Results"
-msgstr "Søkeresultater"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:12
-msgid "Show results as topic list."
-msgstr "Vis resultatene som en liste av emner."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:26
-msgid "Info"
-msgstr "Info"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:49
-msgid "Your search returned no hits."
-msgstr "Søket ga ingen treff."
-
-# 75%
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:42
-msgid "Search links"
-msgstr "Søk i linker"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:46
-msgid "Show your subscribed topics"
-msgstr "Vis emner du abonnerer på"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:47
-msgid "Show your topics"
-msgstr "Vis dine emner"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:13
-msgid "Show results as post list."
-msgstr "Vis resultatene som liste av innlegg."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:16
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:198
-msgid "loading..."
-msgstr "laster..."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:17
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:199
-msgid "There was an error :( Try again?"
-msgstr "Noe gikk galt :( Prøve igjen?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:200
-msgid "Follow this discussion to get a message when there's a new post"
-msgstr "Følg denne diskusjonen for å få melding om nye innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:200
-msgid "Follow Discussion"
-msgstr "Følg diskusjon"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:201
-msgid "Stop getting messages about new posts to this discussion"
-msgstr "Slutt å sende meldinger om nye innlegg i denne diskusjonen"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:201
-msgid "Unfollow Discussion"
-msgstr "Avslutt følging"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:35
-msgid "Poll"
-msgstr "Avstemming"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:43
-#, python-format
-msgid "(%(count)s answers allows.)"
-msgstr "(%(count)s svar tillatt.)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:46
-msgid "Vote"
-msgstr "Stem"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:97
-msgid "1000+ posts"
-msgstr "1000+ innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:99
-msgid "500+ posts"
-msgstr "500+ innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:101
-msgid "100+ posts"
-msgstr "100+ innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:103
-msgid "1 post"
-msgstr "1 innlegg"
-
-# 83%
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:105
-msgid " posts"
-msgstr " innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:111
-msgid "From:"
-msgstr "Fra:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:113
-msgid "Registered:"
-msgstr "Registrert:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:114
-msgid "Posts:"
-msgstr "Innlegg:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:115
-msgid "IP:"
-msgstr "IP:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:120
-msgid "Really delete all posts, and ban user? This is hard to reverse."
-msgstr ""
-"Vil du virkelig slette alle innlegg og utestenge brukeren? Dette er "
-"vanskelig å gjøre om."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:137
-msgid "(Edit Signature)"
-msgstr "(Rediger signatur)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
-msgid "Are you sure you want to mark this as spam?"
-msgstr "Merke som søppelpost, er du sikker?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
-msgid "Mark as Spam"
-msgstr "Merk som søppelpost"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
-msgid "Are you sure you want to unmark this as spam?"
-msgstr "Fjerne søppelpost-merket, er du sikker?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
-msgid "Un-mark as Spam"
-msgstr "Fjerne søppelpost-merke"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:168
-msgid "Are you sure you want to delete this post?"
-msgstr "Vil du slette dette innlegget?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:172
-msgid "Edit"
-msgstr "Rediger"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:175
-msgid "Insert a quotation of this post in your reply."
-msgstr "Siter dette innlegget i ditt svar."
-
-# 83%
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:175
-msgid "Quote"
-msgstr "Kopier tidligere melding"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:220
-msgid "Jump to"
-msgstr "Hopp til"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:231
-#: templates/explore/projects.html:26
-msgid "Go"
-msgstr "Gå"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:236
-msgid "Moderator control"
-msgstr "Moderator-kontroll"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:237
-msgid "Delete multiple posts"
-msgstr "Slett flere innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:238
-msgid "Move multiple posts"
-msgstr "Flytt flere innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:239
-msgid "Move topic"
-msgstr "Flytt emne"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:241
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:253
-msgid "Open topic"
-msgstr "Åpne emne"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:243
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:256
-msgid "Close topic"
-msgstr "Lukk emne"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:246
-msgid "Unstick topic"
-msgstr "Ikke fremhev emnet"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:248
-msgid "Stick topic"
-msgstr "Fremhev emnet"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:7
-msgid "Upload avatar"
-msgstr "Last opp avatar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:13
-msgid "Enter an avatar file to upload"
-msgstr "Velg en avatar-fil for opplasting"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:19
-#, python-format
-msgid ""
-"An avatar is a small image that will be displayed under your username in "
-"your posts. It must not be any bigger than %(avatar_width)s x "
-"%(avatar_height)s pixels "
-msgstr ""
-"En avatar er et lite bilde som vises under brukernavnet ditt i dine innlegg. "
-"Det må ikke være større enn %(avatar_width)s x %(avatar_height)s piksel "
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
-msgid "Upload"
-msgstr "Last opp"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:5
-msgid "YouTube Video"
-msgstr "YouTube-video"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:22
-msgid "Video Not Found"
-msgstr "Fant ikke videoen"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:33
-msgid "Why do I see this page?"
-msgstr "Hvorfor kom jeg til denne siden?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:36
-msgid ""
-"Links to YouTube videos on the forums are automatically converted to links "
-"to this page, to hide comments and other content."
-msgstr ""
-"Linker til YouTube-videoer på forumene gjøres om til linker hit, for å "
-"skjule kommentarer og annet innhold."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
-msgid "New Reply"
-msgstr "Nytt svar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:22
-msgid "Create a poll"
-msgstr "Opprett en avstemning"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_in_search_page.html:14
-msgid "Replies:"
-msgstr "Svar:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:8
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/forum.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/index.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/reply.html:8
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
-#: templates/base.html:177
-msgid "Discuss"
-msgstr "Forum"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:23
-#, python-format
-msgid "Signed in as <strong>%(user)s</strong>"
-msgstr "Logget inn som <strong>%(user)s</strong>"
-
-# 85%
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:25
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:7
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:25
-msgid "Sign In"
-msgstr "Logg inn"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/index.html:16
-#, python-format
-msgid "%(posts)s post"
-msgid_plural "%(posts)s posts"
-msgstr[0] "%(posts)s innlegg"
-msgstr[1] "%(posts)s innlegg"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/reply.html:11
-#: templates/comments/comment.html:59
-#: templates/comments/comment_module.html:31
-#: templates/comments/comment_module.html:48
-#: templates/comments/includes/comment.html:12
-msgid "Reply"
-msgstr "Svar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:22
-msgid "No posts."
-msgstr "Ingen innlegg."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:7
-#, python-format
-msgid "%(replies)s reply"
-msgid_plural "%(replies)s replies"
-msgstr[0] "%(replies)s svar"
-msgstr[1] "%(replies)s svar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:10
-msgid "No topics."
-msgstr "Ingen emner."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:12
-#, python-format
-msgid "Settings (%(name)s)"
-msgstr "Innstillinger (%(name)s)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:22
-msgid ""
-"A signature is a small piece of text that is attached to your posts. In it, "
-"you can enter just about anything you like. Perhaps you would like to enter "
-"your favourite quote or your star sign. It's up to you! In your signature "
-"you can use BBCode if it is allowed in this particular forum. You can see "
-"the features that are allowed/enabled listed below whenever you edit your "
-"signature."
-msgstr ""
-"En signatur er en liten tekst som blir lagt til automatisk i dine innlegg. "
-"Der kan du skrive hva du vil, for eksempel et favorittsitat eller ditt "
-"stjernetegn. Det er opp til deg! I signaturen kan du bruke BBkode hvis det "
-"er tillatt i dette forumet. Når du redigerer signaturen ser du nedenfor "
-"hvilke funksjoner du kan bruke."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:27
-msgid "No signature currently stored in profile."
-msgstr "Ingen signatur i denne brukerprofilen nå."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:32
-msgid "When you update your profile, you will be redirected back to this page."
-msgstr "Når du oppdaterer brukerprofilen kommer du tilbake til denne siden."
 
 # 97%
 #: templates/403.html:12
@@ -1640,6 +174,10 @@ msgstr ""
 #: templates/404.html:19
 msgid "You can try searching for what you're looking for here:"
 msgstr "Her kan du prøve å søke etter det du ønsket:"
+
+#: templates/404.html:21 templates/base.html:185 templates/contact-us.html:92
+msgid "Search"
+msgstr "Søk"
 
 #: templates/500.html:40
 msgid "Looks like we are having issues with our servers!"
@@ -1673,30 +211,39 @@ msgstr "Scratch"
 msgid "Imagine, Program, Share"
 msgstr "Fantasi, Programmering, Samarbeid"
 
-#: templates/base.html:175
+#: templates/base.html:176
 msgid "Create"
 msgstr "Programmering"
 
-#: templates/base.html:176 templates/explore/explore2.html:40
+#: templates/base.html:177 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Prosjekter"
 
 #: templates/base.html:178
+msgid "Discuss"
+msgstr "Forum"
+
+#: templates/base.html:179
 msgid "Help"
 msgstr "Hjelp"
 
 # 83%
-#: templates/base.html:198 templates/modal-registration.html:6
+#: templates/base.html:199 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Bli Scratch-bruker"
 
-#: templates/base.html:201 templates/base.html.py:212 templates/base.html:222
+#: templates/base.html:202 templates/base.html.py:213 templates/base.html:223
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Logg inn"
 
-#: templates/base.html:209 templates/modal-login.html:21
+#: templates/base.html:208 templates/modal-login.html:14
+#: templates/includes/backbone-templates.html:19
+msgid "Username"
+msgstr "Brukernavn"
+
+#: templates/base.html:210 templates/modal-login.html:21
 #: templates/accounts/account_settings.html:9
 #: templates/accounts/email_change.html:9
 #: templates/accounts/deletion/confirmation.html:7
@@ -1705,154 +252,162 @@ msgstr "Logg inn"
 msgid "Password"
 msgstr "Passord"
 
-#: templates/base.html:213
+#: templates/base.html:214
 msgid "Forgot password?"
 msgstr "Glemt passord?"
 
-#: templates/base.html:229
+#: templates/base.html:230
 msgid "messages - updates and notices"
 msgstr "meldinger - besjeder og oppdateringer"
 
-#: templates/base.html:230
+#: templates/base.html:231
 msgid "my stuff - manage projects and studios"
 msgstr "mine ting - behandle prosjekter og gallerier"
 
-#: templates/base.html:238 templates/explore/base.html:24
+#: templates/base.html:238
+msgid "Profile"
+msgstr "Profil"
+
+#: templates/base.html:239 templates/explore/base.html:24
 #: templates/studio/base.html:21
 msgid "My Stuff"
 msgstr "Mine ting"
 
-#: templates/base.html:239
+#: templates/base.html:240
 msgid "Account settings"
 msgstr "Brukerinnstillinger"
 
-#: templates/base.html:240
+#: templates/base.html:241
 msgid "Sign out"
 msgstr "Logg ut"
 
-#: templates/base.html:310
+#: templates/base.html:311
 msgid "About"
 msgstr "Om"
 
-#: templates/base.html:312 templates/info/about.html:13
+#: templates/base.html:313 templates/info/about.html:13
 #: templates/info/help/index.html:92
 msgid "About Scratch"
 msgstr "Om Scratch"
 
-#: templates/base.html:313 templates/info/parents.html:12
+#: templates/base.html:314 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "For foreldre"
 
-#: templates/base.html:314 templates/info/educators.html:12
+#: templates/base.html:315 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "For lærere"
 
-#: templates/base.html:315
+#: templates/base.html:316
 msgid "Credits"
 msgstr "Bidragsytere"
 
-#: templates/base.html:316
+#: templates/base.html:317
 msgid "Jobs"
 msgstr "Ledig jobb"
 
-#: templates/base.html:317
+#: templates/base.html:318
 msgid "Press"
 msgstr "I mediene"
 
-#: templates/base.html:321 templates/info/parents.html:72
+#: templates/base.html:322 templates/info/parents.html:72
 msgid "Community"
 msgstr "Nettsamfunn"
 
-#: templates/base.html:323
+#: templates/base.html:324
 msgid "Community Guidelines"
 msgstr "Retningslinjer for nettstedet"
 
-#: templates/base.html:325 templates/info/help/index.html:113
+#: templates/base.html:325
+msgid "Discussion Forums"
+msgstr "Forum"
+
+#: templates/base.html:326 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
-#: templates/base.html:326
+#: templates/base.html:327
 msgid "Statistics"
 msgstr "Statistikk"
 
-#: templates/base.html:330 templates/search/includes/tabs.html:17
+#: templates/base.html:331 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr "Hjelp"
 
-#: templates/base.html:332
+#: templates/base.html:333
 msgid "Help Page"
 msgstr "Hjelpeside"
 
-#: templates/base.html:333
+#: templates/base.html:334
 msgid "FAQ"
 msgstr "Spørsmål og svar"
 
-#: templates/base.html:334
+#: templates/base.html:335
 msgid "Offline Editor"
 msgstr "Scratch uten nettforbindelse"
 
 # 90%
-#: templates/base.html:335 templates/contact-us-success.html:12
+#: templates/base.html:336 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Kontakt oss"
 
-#: templates/base.html:336
+#: templates/base.html:337
 msgid "Donate"
 msgstr "Støtt Scratch"
 
-#: templates/base.html:340
+#: templates/base.html:341
 msgid "Legal"
 msgstr "Regler og vilkår"
 
-#: templates/base.html:342
+#: templates/base.html:343
 msgid "Terms of Use"
 msgstr "Vilkår for nettstedet"
 
-#: templates/base.html:343 templates/info/help/faq.html:28
+#: templates/base.html:344 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80
 msgid "Privacy Policy"
 msgstr "Personvern"
 
-#: templates/base.html:344 templates/info/DMCA.html:10
+#: templates/base.html:345 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:348
+#: templates/base.html:349
 msgid "Scratch Family"
 msgstr "Scratch-familien"
 
 # 77%
-#: templates/base.html:350
+#: templates/base.html:351
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
 # 77%
 # 88%
-#: templates/base.html:351
+#: templates/base.html:352
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
 # 75%
-#: templates/base.html:352
+#: templates/base.html:353
 msgid "Scratch Day"
 msgstr "Scratch Day"
 
-#: templates/base.html:353
+#: templates/base.html:354
 msgid "Scratch Conference"
 msgstr "Scratch-konferanse"
 
-#: templates/base.html:354
+#: templates/base.html:355
 msgid "Code-to-Learn Foundation"
 msgstr "Stiftelsen \"Code to learn\""
 
-#: templates/base.html:369
+#: templates/base.html:370
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
 "Scratch er et prosjekt fra \"Lifelong Kindergarten Group\" ved MIT Media Lab"
 
-#: templates/base.html:435
+#: templates/base.html:436
 msgid "Your Account Will Not Be Deleted"
 msgstr "Din konto vil ikke bli slettet"
 
@@ -2232,6 +787,10 @@ msgstr "Neste"
 msgid "OK Lets Go!"
 msgstr "Da starter vi!"
 
+#: templates/modal-registration.html:188
+msgid "Close"
+msgstr "Lukk"
+
 #: templates/modal-registration.html:201
 msgid "Your username must be between 3 and 20 characters"
 msgstr "Brukernavnet må være 3 til 20 tegn langt"
@@ -2519,8 +1078,8 @@ msgstr "Slett konto &amp; Logg ut"
 #: templates/profiles/profile_detail.html:270
 #: templates/profiles/profile_detail.html:290
 #: templates/profiles/profile_detail.html:310
-#: templates/profiles/profile_detail.html:347 templates/projects/base.html:357
-#: templates/projects/base.html.py:387 templates/search/search.html:58
+#: templates/profiles/profile_detail.html:347 templates/projects/base.html:356
+#: templates/projects/base.html.py:386 templates/search/search.html:58
 #: templates/search/search.html.py:88 templates/search/search.html:96
 msgid "View all"
 msgstr "Vis alt"
@@ -2533,6 +1092,22 @@ msgstr "Ingen"
 msgid "in"
 msgstr "i"
 
+#: templates/carousel/includes/project-thumb.html:26
+#: templates/carousel/includes/project-thumb.html:28
+#: templates/explore/explore2.html:54
+#: templates/explore/includes/related_projects.html:17
+#: templates/explore/includes/related_projects.html:32
+#: templates/explore/includes/related_projects.html:46
+#: templates/explore/includes/related_projects.html:75
+#: templates/explore/includes/related_projects2.html:8
+#: templates/galleries/includes/activity_list.html:96
+#: templates/galleries/includes/project-thumb.html:22
+#: templates/galleries/includes/project-thumb.html:24
+#: templates/projects/base.html:105 templates/projects/base.html.py:367
+#: templates/projects/includes/project_list.html:11
+msgid "by"
+msgstr "av"
+
 #: templates/cas/login.html:9
 msgid "Log in to your account"
 msgstr "Logg inn"
@@ -2540,6 +1115,10 @@ msgstr "Logg inn"
 #: templates/cloudmonitor/monitor.html:59
 msgid "Cloud data history"
 msgstr "Historikk for nettdata"
+
+#: templates/cloudmonitor/monitor.html:67
+msgid "User"
+msgstr "Bruker"
 
 #: templates/cloudmonitor/monitor.html:68
 msgid "Data Name"
@@ -2552,6 +1131,10 @@ msgstr "Handling"
 #: templates/cloudmonitor/monitor.html:70
 msgid "Data Value"
 msgstr "Dataverdi"
+
+#: templates/cloudmonitor/monitor.html:71
+msgid "Time"
+msgstr "Tid"
 
 #: templates/comments/comment-module.html:24
 #: templates/comments/comment_module.html:11
@@ -2574,6 +1157,13 @@ msgstr ""
 #: templates/comments/comment-module.html:35
 msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr "Du har plass til <span id=\"chars-left\">500</span> tegn."
+
+#: templates/comments/comment-module.html:38
+#: templates/comments/comment_module.html:17
+#: templates/comments/comment_module.html:67
+#: templates/includes/backbone-templates.html:62
+msgid "Post"
+msgstr "Send"
 
 #: templates/comments/comment-module.html:39
 #: templates/comments/comment_module.html:20
@@ -2603,6 +1193,17 @@ msgstr ""
 #: templates/comments/comment-module.html:51
 msgid "Comments loading..."
 msgstr "Laster kommentarer..."
+
+#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
+msgid "Report"
+msgstr "Meld"
+
+#: templates/comments/comment.html:59
+#: templates/comments/comment_module.html:31
+#: templates/comments/comment_module.html:48
+#: templates/comments/includes/comment.html:12
+msgid "Reply"
+msgstr "Svar"
 
 #: templates/comments/comment_module.html:36
 #: templates/comments/comment_module.html:54
@@ -2693,6 +1294,10 @@ msgstr "Fortellinger"
 msgid "Tag:"
 msgstr "Nøkkelord:"
 
+#: templates/explore/projects.html:26
+msgid "Go"
+msgstr "Gå"
+
 #: templates/explore/projects.html:38 templates/projects/project_list.html:32
 #: templates/studio/includes/project_action_bar.html:15
 msgid "Shared"
@@ -2720,7 +1325,7 @@ msgid "Projects"
 msgstr "Prosjekter"
 
 #: templates/explore/projects.html:101 templates/explore/studios.html:86
-#: templates/projects/base.html:386
+#: templates/projects/base.html:385
 #: templates/projects/includes/shared/shared-project-actions.html:5
 #: templates/search/search.html:64 templates/search/search.html.py:87
 #: templates/search/includes/tabs.html:11
@@ -2757,6 +1362,10 @@ msgstr "Galleri:"
 #: templates/extensions/terms_of_use.html:13
 msgid "Extension Developer Terms of Use"
 msgstr "Vilkår for utviklere av programtillegg"
+
+#: templates/extensions/terms_of_use.html:40
+msgid "Submit"
+msgstr "Send"
 
 #: templates/galleries/activity.html:19
 #: templates/notifications/notifications.html:31
@@ -3093,6 +1702,12 @@ msgstr "Følg"
 msgid "Unfollow"
 msgstr "Slutt å følge"
 
+#: templates/includes/sort-projects-dropdown.html:4
+#: templates/studio/includes/sort-galleries-dropdown.html:19
+#: templates/studio/includes/sort-projects-dropdown.html:4
+msgid "Sort by"
+msgstr "Sorter etter"
+
 #: templates/includes/sort-projects-dropdown.html:9
 #: templates/studio/includes/project_action_bar.html:22
 #: templates/studio/includes/project_action_bar.html:27
@@ -3101,13 +1716,19 @@ msgstr "Slutt å følge"
 msgid "Last modified"
 msgstr "Sist endret"
 
+# 80%
+#: templates/includes/sort-projects-dropdown.html:10
+#: templates/studio/includes/sort-projects-dropdown.html:10
+msgid "Views"
+msgstr "Visninger"
+
 #: templates/includes/sort-projects-dropdown.html:11
 #: templates/studio/includes/sort-projects-dropdown.html:11
 msgid "Loves"
 msgstr "Liker"
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:356 templates/projects/remixes.html:3
+#: templates/projects/base.html:355 templates/projects/remixes.html:3
 #: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
@@ -4790,6 +3411,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/get-started-7.html:16
 #: templates/info/help/studio/tips/howto/get-started-intro.html:40
 #: templates/info/help/studio/tips/howto/hoc-4d.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:41
 msgid "Change Color"
 msgstr "Bytt farge"
 
@@ -4814,6 +3436,7 @@ msgstr "Styring med piltastene"
 #: templates/info/help/studio/tips/howto/get-started-5.html:18
 #: templates/info/help/studio/tips/howto/get-started-intro.html:38
 #: templates/info/help/studio/tips/howto/hoc-4b.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:39
 msgid "Say Something"
 msgstr "Si noe"
 
@@ -4861,15 +3484,15 @@ msgstr "Remiksing og kopiering"
 msgid "Accounts"
 msgstr "Brukerkontoer"
 
-#: templates/info/help/faq.html:35 templates/info/help/faq.html.py:161
+#: templates/info/help/faq.html:35 templates/info/help/faq.html.py:158
 msgid "Licensing and Permissions"
 msgstr "Lisensiering og tillatelser"
 
-#: templates/info/help/faq.html:36 templates/info/help/faq.html.py:189
+#: templates/info/help/faq.html:36 templates/info/help/faq.html.py:186
 msgid "Inappropriate Content"
 msgstr "Upassende innhold"
 
-#: templates/info/help/faq.html:39 templates/info/help/faq.html.py:211
+#: templates/info/help/faq.html:39 templates/info/help/faq.html.py:208
 msgid "Cloud Data"
 msgstr "Nettdata"
 
@@ -5350,27 +3973,16 @@ msgstr "Hvordan sletter jeg brukerkontoen min?"
 
 #: templates/info/help/faq.html:152
 msgid ""
-"First, download any projects that you want to keep. \n"
-"    Once the account is deleted, your projects will no longer be available. "
-"Use the form on the <a href=\"http://scratch.mit.edu/contact-us/\">Contact "
-"Us</a> page and include the following information:\n"
-"    <ul><li>Birth Month and Year that you entered when you created the "
-"account</li>\n"
-"    <li>The email address associated with the account "
+"Log in to Scratch, and then click your username in the top right-hand "
+"corner. Select “Account Settings,” then click the <em>“I want to delete my "
+"account”</em> link at the bottom of the page."
 msgstr ""
-"Først må du huske å laste ned prosjekter du vil beholde. \n"
-"    Etter at kontoen er slettet kan du ikke få tilbake prosjektene dine. "
-"Bruk skjemaet på <a href=\"http://scratch.mit.edu/contact-us/\">Kontakt "
-"oss</a>-siden og ta med denne informasjonen i meldingen:\n"
-"    <ul><li>Fødselsmåned og -år som du skreve inn da du opprettet "
-"brukerkontoen</li>\n"
-"    <li>Epostadressen som tilhører kontoen "
 
-#: templates/info/help/faq.html:163
+#: templates/info/help/faq.html:160
 msgid "Is Scratch free?"
 msgstr "Er Scratch gratis?"
 
-#: templates/info/help/faq.html:164
+#: templates/info/help/faq.html:161
 msgid ""
 "Yes! Scratch is available free of charge. You can use it in your school, and "
 "you can teach a course about it (even a course that costs money). You don't "
@@ -5380,14 +3992,14 @@ msgstr ""
 "kurs om Scratch (til og med et kurs som koster penger). Du trenger ingen "
 "programlisens - det er gratis."
 
-#: templates/info/help/faq.html:166
+#: templates/info/help/faq.html:163
 msgid ""
 "Can I use Scratch and / or screenshots of Scratch in a textbook or a CD?"
 msgstr ""
 "Kan jeg bruke Scratch og/eller skjermbilder fra Scratch i en lærebok eller "
 "CD?"
 
-#: templates/info/help/faq.html:167
+#: templates/info/help/faq.html:164
 msgid ""
 "Yes, you can even write a book or chapter about Scratch. You may also use "
 "the Scratch logo when referring to Scratch. You may create screenshots / "
@@ -5406,7 +4018,7 @@ msgstr ""
 "som sier at \"Scratch er utviklet av \"Lifelong Kindergarten group\" ved MIT "
 "Media Lab, se http://scratch.mit.edu\"."
 
-#: templates/info/help/faq.html:169
+#: templates/info/help/faq.html:166
 msgid ""
 "Can I include a description of Scratch and the Scratch logo in brochures or "
 "other materials?"
@@ -5414,7 +4026,7 @@ msgstr ""
 "Kan jeg beskrive Scratch og bruke Scratch-logoen i brosjyrer og annet "
 "materiell?"
 
-#: templates/info/help/faq.html:170
+#: templates/info/help/faq.html:167
 msgid ""
 "Sure! We recommend the following description: \"Scratch is a programming "
 "language and online community where you can create your own interactive "
@@ -5433,18 +4045,18 @@ msgstr ""
 "Lifelong Kindergarten`-gruppen ved MIT Media Lab. Det kan lastes ned gratis "
 "fra http://scratch.mit.edu\""
 
-#: templates/info/help/faq.html:172
+#: templates/info/help/faq.html:169
 msgid "Can I present Scratch at a conference?"
 msgstr "Kan jeg presentere Scratch på en konferanse?"
 
-#: templates/info/help/faq.html:173
+#: templates/info/help/faq.html:170
 msgid ""
 "Please feel free to make presentations about Scratch to educators or other "
 "groups. We grant our permission to make presentations."
 msgstr ""
 "Du er velkommen til å presentere Scratch til lærere eller andre grupper."
 
-#: templates/info/help/faq.html:175
+#: templates/info/help/faq.html:172
 msgid ""
 "May I use / remix Scratch support materials, sprites, images, sounds or "
 "sample projects I’ve found on the website?"
@@ -5452,7 +4064,7 @@ msgstr ""
 "Kan jeg bruke/remikse Scratch-innhold, figurer, bilder, lyder eller "
 "prosjekter som jeg har funnet på nettstedet?"
 
-#: templates/info/help/faq.html:176
+#: templates/info/help/faq.html:173
 msgid ""
 "Yes - Scratch support materials made available on the Scratch website by the "
 "Scratch Team are available under the <a href=\"http://creativecommons.org/"
@@ -5465,11 +4077,11 @@ msgstr ""
 "Commons Attribution-ShareAlike</a>-lisensen, med unntak av Scratch-logoen, "
 "Scratch-katten og Gobo (varemerker for Scratch)."
 
-#: templates/info/help/faq.html:178
+#: templates/info/help/faq.html:175
 msgid "Can I sell my Scratch projects?"
 msgstr "Kan jeg selge Scratch-prosjektene mine?"
 
-#: templates/info/help/faq.html:179
+#: templates/info/help/faq.html:176
 msgid ""
 "Certainly - your project is your creation. Keep in mind that once you share "
 "your project on Scratch, everyone is free to download, remix, and reuse it "
@@ -5483,11 +4095,11 @@ msgstr ""
 "BY-SA 2.0</a>-lisensen. Så hvis du planlegger å selge prosjektet ditt bør du "
 "ikke legge det ut, eventuelt ta det av nett."
 
-#: templates/info/help/faq.html:181
+#: templates/info/help/faq.html:178
 msgid "Where can I find the source code for Scratch?"
 msgstr "Hvor finner jeg kildekoden til Scratch?"
 
-#: templates/info/help/faq.html:182
+#: templates/info/help/faq.html:179
 msgid ""
 "The source code for Scratch 2 (website and editor) is not yet available. The "
 "source code for <a href =\"/scratch_1.4\">Scratch 1.4</a>, written in "
@@ -5503,11 +4115,11 @@ msgstr ""
 "er tilgjengelig <a href=\"http://svn.assembla.com/svn/scratchr/\">på "
 "Assembla</a>."
 
-#: templates/info/help/faq.html:190
+#: templates/info/help/faq.html:187
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
 msgstr "Hvordan vet jeg hva som er greit å legge ut på Scratch-nettstedet?"
 
-#: templates/info/help/faq.html:191
+#: templates/info/help/faq.html:188
 msgid ""
 "Check out the <a href=\"/community_guidelines\">Scratch community "
 "guidelines</a> - they’re brief and don’t include a lot of legal stuff. "
@@ -5517,11 +4129,11 @@ msgstr ""
 ", de er korte og uten masse juridisk språk. Det er en link til "
 "retningslinjene nederst på alle sidene."
 
-#: templates/info/help/faq.html:193
+#: templates/info/help/faq.html:190
 msgid "What do I do if I see something that’s inappropriate?"
 msgstr "Hva skal jeg gjøre hvis jeg finner upassende ting?"
 
-#: templates/info/help/faq.html:194
+#: templates/info/help/faq.html:191
 msgid ""
 "You can click the link that says “report” on any project, comment, "
 "discussion post, or user page where you think something isn't ok for "
@@ -5535,11 +4147,11 @@ msgstr ""
 "på å forklare godt hva du mener, helst på engelsk, og ta med linker til de "
 "problematiske sidene."
 
-#: templates/info/help/faq.html:196
+#: templates/info/help/faq.html:193
 msgid "What do I do if I see someone being mean or disrespectful?"
 msgstr "Hva skal jeg gjøre hvis jeg ser at noen er slemme eller respektløse?"
 
-#: templates/info/help/faq.html:197
+#: templates/info/help/faq.html:194
 msgid ""
 "Don’t add to the flames! Responding to mean comments with more mean comments "
 "just makes things worse, and could result in your account being blocked. "
@@ -5553,12 +4165,12 @@ msgstr ""
 "ta kontakt med den som la det ut. Vi sjekker meldinger mange ganger om "
 "dagen, så du kan være sikker på at vi ordner opp."
 
-#: templates/info/help/faq.html:199
+#: templates/info/help/faq.html:196
 msgid "What does the Scratch team do when something is reported or flagged?"
 msgstr ""
 "Hva gjør administratorene på nettstedet når noe blir meldt inn eller merket?"
 
-#: templates/info/help/faq.html:200
+#: templates/info/help/faq.html:197
 msgid ""
 "The Scratch Team reviews reported comments and projects every day. If "
 "something breaks the Scratch community guidelines, we may remove it and send "
@@ -5572,11 +4184,11 @@ msgstr ""
 "allerede har sendt brukeren en advarsel) kan det hende at vi sperrer "
 "brukerkontoen eller nettadressen det kom fra."
 
-#: templates/info/help/faq.html:202
+#: templates/info/help/faq.html:199
 msgid "What happens when an account is blocked?"
 msgstr "Hva skjer når en brukerkonto blir sperret?"
 
-#: templates/info/help/faq.html:203
+#: templates/info/help/faq.html:200
 msgid ""
 "When an account is blocked, the owner can no longer access it, or use it to "
 "create projects or comments. When they login, they see a page that explains "
@@ -5598,7 +4210,7 @@ msgstr ""
 "kontoen (og sannsynligvis andre kontoer som tilhører samme person) kunne bli "
 "stengt permanent."
 
-#: templates/info/help/faq.html:205
+#: templates/info/help/faq.html:202
 msgid ""
 "My mean brother / Kaj / some other bad guy stole my account and got it "
 "banned, what do I do?"
@@ -5606,7 +4218,7 @@ msgstr ""
 "Den dumme broren min / Knut / en annen slemming stjal passordet mitt og "
 "gjorde slik at kontoen ble stengt, hva gjør jeg nå?"
 
-#: templates/info/help/faq.html:206
+#: templates/info/help/faq.html:203
 msgid ""
 "You are responsible for keeping your password secure. If someone in real "
 "life takes control of your account and does bad stuff, tell the adults in "
@@ -5624,11 +4236,11 @@ msgstr ""
 "må du forklare ordentlig hva som har skjedd, ikke bare si at noen har hacket "
 "seg inn. Hvis vi ikke kan stole på deg kan vi ikke åpne kontoen igjen."
 
-#: templates/info/help/faq.html:213
+#: templates/info/help/faq.html:210
 msgid "What is cloud data?"
 msgstr "Hva er \"nettdata\"?"
 
-#: templates/info/help/faq.html:214
+#: templates/info/help/faq.html:211
 msgid ""
 "Cloud data is a feature in Scratch 2 that allows for data from a project to "
 "be saved and shared online. You can use cloud data to make surveys and other "
@@ -5639,11 +4251,11 @@ msgstr ""
 "andre og kan brukes til å lagre poengsummer, statistikk og til andre ting "
 "der du trenger å lagre tall over lang tid."
 
-#: templates/info/help/faq.html:216
+#: templates/info/help/faq.html:213
 msgid "Who can see the data stored in cloud data?"
 msgstr "Hvem kan se data lagret på nettet?"
 
-#: templates/info/help/faq.html:217
+#: templates/info/help/faq.html:214
 msgid ""
 "When you interact with a project using cloud data blocks, your information "
 "can be stored along with your username, and others can view it. Each project "
@@ -5654,14 +4266,14 @@ msgstr ""
 "prosjekt har en logg som viser hvem som har brukt det og hvilke data de har "
 "lagt ut."
 
-#: templates/info/help/faq.html:219
+#: templates/info/help/faq.html:216
 msgid ""
 "Why is cloud data currently limited to only numbers -- with no strings or "
 "lists? "
 msgstr ""
 "Hvorfor kan bare tall lagres på nettet -- og ikke tekster eller lister? "
 
-#: templates/info/help/faq.html:220
+#: templates/info/help/faq.html:217
 msgid ""
 "The current site is limited to numbers in variables as an initial step to "
 "work out any issues with their use on the site. We plan to roll out cloud "
@@ -5673,7 +4285,7 @@ msgstr ""
 "muligheten til å lagre nettdata etterhvert. Hvis systemet fungerer bra er "
 "planen å legge til muligheter for å lagre lister, tekst osv."
 
-#: templates/info/help/faq.html:222
+#: templates/info/help/faq.html:219
 msgid ""
 "If I see someone post inappropriate content using cloud data, how do I "
 "report it?"
@@ -5681,7 +4293,7 @@ msgstr ""
 "Hvis jeg ser at noen bruker nettdata for å lagre upassende ting, hvordan "
 "melder jeg fra om det?"
 
-#: templates/info/help/faq.html:223
+#: templates/info/help/faq.html:220
 msgid ""
 "Click the \"Report this\" button (under on the project player) to report "
 "inappropriate content in cloud data. The report form includes a link to a "
@@ -5695,11 +4307,11 @@ msgstr ""
 "titt på denne loggen før du sender meldingen. Du bør skrive på engelsk og "
 "nevne \"cloud data\" (nettdata) i begrunnelsen for meldingen."
 
-#: templates/info/help/faq.html:225
+#: templates/info/help/faq.html:222
 msgid "Can I make chat rooms with cloud data?"
 msgstr "Kan jeg lage chat-tjenester med nettdata?"
 
-#: templates/info/help/faq.html:226
+#: templates/info/help/faq.html:223
 msgid ""
 "While it is technically possible to create chat rooms with cloud data, they "
 "are not currently allowed. We will reconsider this policy once we have a "
@@ -5710,11 +4322,11 @@ msgstr ""
 "tiden ikke tillatt. Denne regelen kan bli gjort om når vi har bedre oversikt "
 "over muligheten for å overvåke nettdata og håndtere meldinger om misbruk."
 
-#: templates/info/help/faq.html:228
+#: templates/info/help/faq.html:225
 msgid "How do I add a cloud variable when I'm making a project?"
 msgstr "Hvordan oppretter jeg en nettvariabel når jeg lager et prosjekt?"
 
-#: templates/info/help/faq.html:229
+#: templates/info/help/faq.html:226
 msgid ""
 "When you make a variable, you can check the box that says \"Cloud variable."
 "\" Any data you store will be saved on the server and visible to others."
@@ -5722,11 +4334,11 @@ msgstr ""
 "Når du lager en variabel merker du av i ruten \"Nettvariabel\". Data du "
 "lagrer i denne variabelen blir lagret på nettstedet og er synlig for andre."
 
-#: templates/info/help/faq.html:231
+#: templates/info/help/faq.html:228
 msgid "Who can change the information in a cloud variable?"
 msgstr "Hvem kan forandre informasjonen i en nettvariabel?"
 
-#: templates/info/help/faq.html:232
+#: templates/info/help/faq.html:229
 msgid ""
 "Only your project can store data in its cloud variable. If people change or "
 "remix your code, it creates a different variable in their project with the "
@@ -5736,7 +4348,7 @@ msgstr ""
 "forandrer eller remikser programmet vil deres prosjekt få en annen "
 "nettvariabel med samme navn."
 
-#: templates/info/help/faq.html:234
+#: templates/info/help/faq.html:231
 msgid ""
 "I am logged in, but I still cannot use projects with cloud data. What is "
 "going on?"
@@ -5744,7 +4356,7 @@ msgstr ""
 "Jeg er logget inn, men får ikke til å bruke prosjekter med nettdata. Hva er "
 "galt?"
 
-#: templates/info/help/faq.html:235
+#: templates/info/help/faq.html:232
 msgid ""
 "You need to have become a \"Scratcher\" on the website to have access to "
 "cloud data. You can become a Scratcher through actively participating on the "
@@ -5753,11 +4365,11 @@ msgstr ""
 "Du må ha blitt en \"Scratcher\" på nettstedet for å få tilgang til nettdata. "
 "Du blir Scratcher ved å delta aktivt på nettstedet."
 
-#: templates/info/help/faq.html:237
+#: templates/info/help/faq.html:234
 msgid "Is it possible to make multiplayer games with cloud data?"
 msgstr "Er det mulig å lage spill for flere spillere ved å bruke nettdata?"
 
-#: templates/info/help/faq.html:238
+#: templates/info/help/faq.html:235
 msgid ""
 "Multiplayer games may be difficult to create, due to network speed and "
 "synchronization issues. However, some Scratchers are coming up with creative "
@@ -5768,13 +4380,13 @@ msgstr ""
 "Derimot er det mulig å lage spill der spillerne bytter på å spille, eller "
 "bruke nettdata på andre kreative måter."
 
-#: templates/info/help/faq.html:240
+#: templates/info/help/faq.html:237
 msgid "How long does it take for cloud data to reach another Scratcher?"
 msgstr ""
 "Hvor lang tid tar det før data som lagres på nett kommer fram til en annen "
 "Scratcher?"
 
-#: templates/info/help/faq.html:241
+#: templates/info/help/faq.html:238
 msgid ""
 "It depends. If both Scratchers have a reasonably fast Internet connection "
 "(DSL/Cable), and there are no restrictive firewalls on the computers/"
@@ -10641,16 +9253,17 @@ msgstr "Begynn med en hilsen"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:28
 #: templates/info/help/studio/tips/howto/get-started-intro.html:32
+#: templates/info/help/studio/tips/howto/hoc-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:32
 #: templates/info/help/studio/tips/howto/nametip-intro.html:28
-#: templates/info/help/studio/tips/howto/pgame-intro.html:28
+#: templates/info/help/studio/tips/howto/pgame-intro.html:27
 msgid "Step Index"
 msgstr "Oversikt"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
 #: templates/info/help/studio/tips/howto/nametip-intro.html:30
-#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/ui/tour-intro.html:29
 msgid "1"
 msgstr "1"
@@ -10663,7 +9276,7 @@ msgstr "Si en hilsen"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
 #: templates/info/help/studio/tips/howto/nametip-intro.html:31
-#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/ui/tour-intro.html:30
 msgid "2"
 msgstr "2"
@@ -10676,7 +9289,7 @@ msgstr "Start med grønt flagg"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro.html:32
-#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/ui/tour-intro.html:31
 msgid "3"
 msgstr "3"
@@ -10689,7 +9302,7 @@ msgstr "Legg på en bakgrunn"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
 #: templates/info/help/studio/tips/howto/nametip-intro.html:33
-#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/ui/tour-intro.html:32
 msgid "4"
 msgstr "4"
@@ -10702,7 +9315,7 @@ msgstr "Lag en kake"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
 #: templates/info/help/studio/tips/howto/nametip-intro.html:34
-#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 #: templates/info/help/studio/tips/ui/tour-intro.html:33
 msgid "5"
 msgstr "5"
@@ -10715,7 +9328,7 @@ msgstr "Legg på lyd"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
 #: templates/info/help/studio/tips/howto/nametip-intro.html:35
-#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/ui/tour-intro.html:34
 msgid "6"
 msgstr "6"
@@ -10728,7 +9341,7 @@ msgstr "Blås ut lysene"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
 #: templates/info/help/studio/tips/howto/nametip-intro.html:36
-#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "7"
 msgstr "7"
@@ -10741,7 +9354,7 @@ msgstr "Legg til en figur som danser"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
 #: templates/info/help/studio/tips/howto/nametip-intro.html:37
-#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 msgid "8"
 msgstr "8"
 
@@ -10754,7 +9367,7 @@ msgid "Again and Again"
 msgstr "Mange ganger"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
-#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 msgid "9"
 msgstr "9"
 
@@ -10764,7 +9377,7 @@ msgid "Say What to Do"
 msgstr "Si hvordan kortet brukes"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:38
-#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 msgid "10"
 msgstr "10"
 
@@ -10774,7 +9387,7 @@ msgid "Customize Your Card"
 msgstr "Legg inn dine egne ideer"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:39
-#: templates/info/help/studio/tips/howto/pgame-intro.html:40
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 msgid "11"
 msgstr "11"
 
@@ -11942,7 +10555,7 @@ msgstr "2 av 13"
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip3.html:17
-#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 #: templates/info/help/studio/tips/howto/pgametip8.html:17
 msgid "Add a Sound"
 msgstr "Legg på lyd"
@@ -12295,6 +10908,7 @@ msgstr "1 av 9"
 
 # 88%
 #: templates/info/help/studio/tips/howto/hoc-1.html:18
+#: templates/info/help/studio/tips/howto/hoc-intro.html:34
 msgid "Explore Ideas for Your Card"
 msgstr "Tenk på hva slags kort du vil lage"
 
@@ -12335,6 +10949,7 @@ msgstr "2 av 9"
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-2.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:35
 msgid "Delete the Cat"
 msgstr "Ta bort katten"
 
@@ -12375,6 +10990,7 @@ msgstr "3 av 9"
 
 # 90%
 #: templates/info/help/studio/tips/howto/hoc-3.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:36
 msgid "Add Sprites"
 msgstr "Nye figurer"
 
@@ -12432,6 +11048,7 @@ msgstr "4 av 9"
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-4.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:37
 msgid "Make the Sprites Interactive"
 msgstr "Få figurene til å reagere"
 
@@ -12496,6 +11113,11 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/hoc-4a.html:12
 msgid "4A of 9"
 msgstr "4A av 9"
+
+#: templates/info/help/studio/tips/howto/hoc-4a.html:18
+#: templates/info/help/studio/tips/howto/hoc-intro.html:38
+msgid "Move"
+msgstr "Flytt"
 
 #: templates/info/help/studio/tips/howto/hoc-4a.html:25
 #, python-format
@@ -12581,6 +11203,7 @@ msgstr "4C av 9"
 
 # 91%
 #: templates/info/help/studio/tips/howto/hoc-4c.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:40
 msgid "Make a Sound"
 msgstr "Lag lyd"
 
@@ -12678,6 +11301,7 @@ msgstr "4E av 9"
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-4e.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:42
 msgid "Change Costume"
 msgstr "Bytt drakt"
 
@@ -12740,6 +11364,7 @@ msgstr "5 av 9"
 
 # 90%
 #: templates/info/help/studio/tips/howto/hoc-5.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:43
 msgid "Add a Background Image"
 msgstr "Legg inn et bakgrunnsbilde"
 
@@ -12802,6 +11427,7 @@ msgstr "6 av 9"
 
 # 90%
 #: templates/info/help/studio/tips/howto/hoc-6.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:44
 msgid "Add Background Sound"
 msgstr "Legg på lyd i bakgrunnen"
 
@@ -12845,6 +11471,7 @@ msgstr "7 av 9"
 
 # 94%
 #: templates/info/help/studio/tips/howto/hoc-7.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:45
 msgid "Set up the Project"
 msgstr "Gjør prosjektet klart"
 
@@ -13004,12 +11631,10 @@ msgid "Introduction"
 msgstr "Introduksjon"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:18
-#: templates/info/help/studio/tips/howto/hoc.html:8
 msgid "Holiday Card Tutorial"
 msgstr "Lær å lage julekort"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:20
-#, python-format
 msgid ""
 "\n"
 "\t<p>In this activity, you'll create an interactive holiday card that you "
@@ -13018,95 +11643,23 @@ msgid ""
 "\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
 "portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
 "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
-"\t\n"
-"\n"
-"\t<a class=\"next-step-button\" href=\"../hoc-1/\">\n"
-"\t\t<p>Let's begin!\n"
-"\t\t\t<img src = \"%(STATIC_URL)s/images/help/tip-next-step-arrow.png\">\t\n"
-"\t\t</p>\t\n"
-"\t</a> \n"
-"\t\n"
-"\t<ul class=\"step-index\">\n"
-"\t<h3>Step Index</h3>\t\n"
-"\t\t<li><a href=\"../hoc-1/\"><div class=\"index-num\">1</div>Explore Ideas "
-"for Your Card</a></li>\n"
-"\t\t<li><a href=\"../hoc-2/\"><div class=\"index-num\">2</div>Delete the "
-"Cat</a></li>\n"
-"\t\t<li><a href=\"../hoc-3/\"><div class=\"index-num\">3</div>Add Sprites</"
-"a></li>\n"
-"\t\t<li><a href=\"../hoc-4/\"><div class=\"index-num\">4</div>Make the "
-"Sprites Interactive</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4a/"
-"\"><div class=\"index-num\">A</div>Move</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4b/"
-"\"><div class=\"index-num\">B</div>Say Something</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4c/"
-"\"><div class=\"index-num\">C</div>Make a Sound</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4d/"
-"\"><div class=\"index-num\">D</div>Change Color</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4e/"
-"\"><div class=\"index-num\">E</div>Change Costume</a></li>\n"
-"\t\t<li><a href=\"../hoc-5/\"><div class=\"index-num\">5</div>Add a "
-"Background Image</a></li>\n"
-"\t\t<li><a href=\"../hoc-6/\"><div class=\"index-num\">6</div>Add Background "
-"Sound</a></li>\n"
-"\t\t<li><a href=\"../hoc-7/\"><div class=\"index-num\">7</div>Set up the "
-"Project</a></li>\n"
-"\t\t<li><a href=\"../hoc-8/\"><div class=\"index-num\">8</div>Share your "
-"Project</a></li>\n"
-"\t<li><a href=\"../hoc-9/\"><div class=\"index-num\">9</div>Add to the "
-"Holiday Card Studio</a></li>\n"
-"\t</ul>\n"
 msgstr ""
-"\n"
-"\t<p>Her får du lage ditt eget interaktive julekort som du kan sende til "
-"familie og venner.</p>\n"
-"\t<p>Først kan du se på denne videoen (engelsk tale):</p>\n"
-"\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;po"
-"rtrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
-"webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
-"\t\n"
-"\n"
-"\t<a class=\"next-step-button\" href=\"../hoc-1/\">\n"
-"\t\t<p>Da starter vi!\n"
-"\t\t\t<img src = \"%(STATIC_URL)s/images/help/tip-next-step-arrow.png\">\t\n"
-"\t\t</p>\t\n"
-"\t</a> \n"
-"\t\n"
-"\t<ul class=\"step-index\">\n"
-"\t<h3>Oversikt</h3>\t\n"
-"\t\t<li><a href=\"../hoc-1/\"><div class=\"index-num\">1</div>Tenk på hva "
-"slags kort du vil lage</a></li>\n"
-"\t\t<li><a href=\"../hoc-2/\"><div class=\"index-num\">2</div>Ta bort "
-"katten</a></li>\n"
-"\t\t<li><a href=\"../hoc-3/\"><div class=\"index-num\">3</div>Nye "
-"figurer</a></li>\n"
-"\t\t<li><a href=\"../hoc-4/\"><div class=\"index-num\">4</div>Gjør figurene "
-"interaktive</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4a/\"><"
-"div class=\"index-num\">A</div>Bevegelse</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4b/\"><"
-"div class=\"index-num\">B</div>Si noe</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4c/\"><"
-"div class=\"index-num\">C</div>Lag lyd</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4d/\"><"
-"div class=\"index-num\">D</div>Bytt farge</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4e/\"><"
-"div class=\"index-num\">E</div>Bytt drakt</a></li>\n"
-"\t\t<li><a href=\"../hoc-5/\"><div class=\"index-num\">5</div>Legg inn et "
-"bakgrunnsbilde</a></li>\n"
-"\t\t<li><a href=\"../hoc-6/\"><div class=\"index-num\">6</div>Legg på "
-"lyd</a></li>\n"
-"\t\t<li><a href=\"../hoc-7/\"><div class=\"index-num\">7</div>Gjør kortet "
-"klar til bruk</a></li>\n"
-"\t\t<li><a href=\"../hoc-8/\"><div class=\"index-num\">8</div>Legg ut "
-"prosjektet</a></li>\n"
-"\t<li><a href=\"../hoc-9/\"><div class=\"index-num\">9</div>Vis det på "
-"julekortgalleriet</a></li>\n"
-"\t</ul>\n"
+
+#: templates/info/help/studio/tips/howto/hoc-intro.html:27
+msgid "Let's begin!"
+msgstr ""
+
+# 88%
+#: templates/info/help/studio/tips/howto/hoc-intro.html:46
+#, fuzzy
+msgid "Share your Project"
+msgstr "Vis fram prosjektet"
+
+#: templates/info/help/studio/tips/howto/hoc-intro.html:47
+msgid "Add to the Holiday Card Studio"
+msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:53
-#: templates/info/help/studio/tips/howto/hoc.html:37
 msgid ""
 "This tutorial was created for Hour of Code, a nationwide initiative by <a "
 "href=\"http://csedweek.org\" target=\"_blank\">Computer Science Education "
@@ -13117,95 +11670,6 @@ msgstr ""
 "Denne veiledningen er laget til Kodetimen, et initiativ fra <a href=\""
 "http://code.org\" target=\"_blank\">Code.org</a> for å gi millioner av barn "
 "og unge en introduksjon til programmering og informatikk."
-
-#: templates/info/help/studio/tips/howto/hoc.html:10
-msgid ""
-"\n"
-"<p>In this activity, you'll create an interactive holiday card that you can "
-"share with friends and family.</p>\n"
-"<p>To get started, watch this intro video:</p>\n"
-"<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
-"portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
-"webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
-msgstr ""
-"\n"
-"<p>Her får du lage ditt eget interaktive julekort som du kan sende til "
-"familie og venner.</p>\n"
-"<p>Først kan du se på denne videoen (engelsk tale):</p>\n"
-"<p><iframe src=\""
-"//player.vimeo.com/video/78998915?title=0&byline=0&portrait=0;hd_off=1&\" "
-"width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
-"mozallowfullscreen allowfullscreen></iframe></p>\n"
-
-#: templates/info/help/studio/tips/howto/hoc.html:17
-msgid "Get more help by following these steps:"
-msgstr "Her er en veiledning i flere trinn:"
-
-#: templates/info/help/studio/tips/howto/hoc.html:18
-msgid "Imagine your holiday card"
-msgstr "Bruk fantasien og tenk på hva du vil lage"
-
-#: templates/info/help/studio/tips/howto/hoc.html:19
-msgid "Explore ideas for your card"
-msgstr "Tenk på hva slags kort du vil lage"
-
-#: templates/info/help/studio/tips/howto/hoc.html:20
-msgid "Program your holiday card"
-msgstr "Programmér julekortet"
-
-#: templates/info/help/studio/tips/howto/hoc.html:21
-msgid "Delete the cat"
-msgstr "Ta bort katten"
-
-#: templates/info/help/studio/tips/howto/hoc.html:22
-msgid "Add sprites"
-msgstr "Nye figurer"
-
-#: templates/info/help/studio/tips/howto/hoc.html:23
-msgid "Make the sprites interactive"
-msgstr "Få figurene til å reagere"
-
-# 92%
-#: templates/info/help/studio/tips/howto/hoc.html:25
-msgid "Say something"
-msgstr "Si noe"
-
-#: templates/info/help/studio/tips/howto/hoc.html:26
-msgid "Make a sound"
-msgstr "Lag lyd"
-
-# 91%
-#: templates/info/help/studio/tips/howto/hoc.html:27
-msgid "Change color"
-msgstr "Bytt farge"
-
-#: templates/info/help/studio/tips/howto/hoc.html:28
-msgid "Change costume"
-msgstr "Bytt drakt"
-
-#: templates/info/help/studio/tips/howto/hoc.html:29
-msgid "Add a background image"
-msgstr "Legg til en bakgrunn"
-
-#: templates/info/help/studio/tips/howto/hoc.html:30
-msgid "Add background sound"
-msgstr "Legg inn bakgrunnslyd"
-
-#: templates/info/help/studio/tips/howto/hoc.html:31
-msgid "Set up the project"
-msgstr "Gjør prosjektet klart"
-
-#: templates/info/help/studio/tips/howto/hoc.html:32
-msgid "Share your holiday card"
-msgstr "Legg ut kortet på nett"
-
-#: templates/info/help/studio/tips/howto/hoc.html:33
-msgid "Share your project"
-msgstr "Legg ut prosjektet"
-
-#: templates/info/help/studio/tips/howto/hoc.html:44
-msgid "Let's code!"
-msgstr "Vi går i gang!"
 
 #: templates/info/help/studio/tips/howto/import-music.html:11
 msgid "Select the Sounds tab"
@@ -13441,6 +11905,12 @@ msgstr "Få den til å snurre"
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "Finish Your Name"
 msgstr "Fullfør navnet ditt"
+
+#: templates/info/help/studio/tips/howto/nametip-intro.html:21
+msgid ""
+"//player.vimeo.com/video/111342687?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
+msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip1.html:11
 msgid "1 of 8"
@@ -13935,55 +12405,61 @@ msgstr ""
 "Lag et spill der du spretter en ball. Lær å lage lyder, poeng og andre "
 "effekter. Inviter venner til å spille med deg!"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:24
+#: templates/info/help/studio/tips/howto/pgame-intro.html:21
+msgid ""
+"//player.vimeo.com/video/112442208?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:23
 msgid "First, choose a backdrop"
 msgstr "Først, velg et bakgrunnsbilde"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/howto/pgametip1.html:17
 msgid "Choose a Backdrop"
 msgstr "Velg et bakgrunnsbilde"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/howto/pgametip2.html:17
 msgid "Choose a Ball"
 msgstr "Velg en ball"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/howto/pgametip3.html:17
 msgid "Make the Ball Move"
 msgstr "Få ballen til å bevege seg"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/howto/pgametip4.html:17
 msgid "Move and Bounce"
 msgstr "Sprett omkring"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 msgid "Choose your Paddle"
 msgstr "Velg en racket"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/howto/pgametip6.html:17
 msgid "Control the Paddle"
 msgstr "Styring av racketen"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/howto/pgametip7.html:17
 msgid "Bounce Off the Paddle"
 msgstr "Sprett i racketen"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 #: templates/info/help/studio/tips/howto/pgametip9.html:17
 msgid "Adding a Challenge"
 msgstr "Gjør det mer spennende"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 #: templates/info/help/studio/tips/howto/pgametip10.html:17
 msgid "Enhance and Customize"
 msgstr "Flere forbedringer"
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:40
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 #: templates/info/help/studio/tips/howto/pgametip11.html:17
 msgid "Share Your Game"
 msgstr "Legg ut spillet ditt"
@@ -14088,6 +12564,12 @@ msgstr "11 av 11"
 #: templates/info/help/studio/tips/howto/pgametip11.html:19
 msgid "Congratulations! You've coded your own game!"
 msgstr "Gratulerer! Du har programmert ditt eget spill!"
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:33
+msgid ""
+"//player.vimeo.com/video/108273389?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
+msgstr ""
 
 #: templates/info/help/studio/tips/howto/pgametip11.html:41
 msgid ""
@@ -14824,7 +13306,7 @@ msgid "All Messages"
 msgstr "Alle meldinger"
 
 #: templates/notifications/notifications.html:16
-#: templates/profiles/profile_detail.html:364 templates/projects/base.html:338
+#: templates/profiles/profile_detail.html:364 templates/projects/base.html:337
 #: templates/studio/includes/sort-galleries-dropdown.html:26
 msgid "Comments"
 msgstr "Kommentarer"
@@ -15213,55 +13695,55 @@ msgstr "Sist endret: %(tDate)s"
 msgid "Favorite this project"
 msgstr "Merk som favoritt"
 
-#: templates/projects/base.html:217 templates/projects/base.html.py:223
+#: templates/projects/base.html:216 templates/projects/base.html.py:222
 msgid "Love this project"
 msgstr "Liker dette prosjektet"
 
-#: templates/projects/base.html:239
+#: templates/projects/base.html:238
 msgid "Total views"
 msgstr "Visninger totalt"
 
-#: templates/projects/base.html:243
+#: templates/projects/base.html:242
 msgid "View the remix tree"
 msgstr "Vis remiksingstreet"
 
-#: templates/projects/base.html:265
+#: templates/projects/base.html:264
 msgid "Add this project to a studio you curate (or remove it from a studio)"
 msgstr "Legg inn (eller ta bort) dette prosjektet i et galleri du forvalter"
 
-#: templates/projects/base.html:266
+#: templates/projects/base.html:265
 msgid "Just click on the button for any of the studios from the list below"
 msgstr "Klikk for å merke av i listen nedenfor hvor du vil legge inn prosjektet"
 
-#: templates/projects/base.html:278
+#: templates/projects/base.html:277
 msgid "Download this project file"
 msgstr "Last ned denne prosjektfilen"
 
-#: templates/projects/base.html:301
+#: templates/projects/base.html:300
 #: templates/projects/includes/shared/shared-project-actions.html:10
 msgid "Embed"
 msgstr "Link"
 
-#: templates/projects/base.html:306
+#: templates/projects/base.html:305
 msgid "Copy and paste the embed code above."
 msgstr "Kopier linkadressen ovenfor."
 
 # 83%
-#: templates/projects/base.html:310 templates/projects/censored.html:16
+#: templates/projects/base.html:309 templates/projects/censored.html:16
 #: templates/projects/unshared-owner.html:22
 msgid "Share"
 msgstr "Legg ut"
 
 # 85%
-#: templates/projects/base.html:370
+#: templates/projects/base.html:369
 msgid "remixes"
 msgstr "remiksinger"
 
-#: templates/projects/base.html:437
+#: templates/projects/base.html:436
 msgid "OK, Got it."
 msgstr "OK, skjønner."
 
-#: templates/projects/base.html:456
+#: templates/projects/base.html:455
 msgid "All Tips"
 msgstr "Alle tips"
 
@@ -15487,6 +13969,10 @@ msgstr "Hjelpesider"
 msgid "All Results"
 msgstr "Alle resultater"
 
+#: templates/search/includes/tabs.html:20
+msgid "Forums"
+msgstr "Forum"
+
 #: templates/search/includes/projects/filters.html:8
 msgid "Most recent"
 msgstr "Nyeste"
@@ -15685,6 +14171,10 @@ msgstr "Legg til i"
 msgid "Unshare"
 msgstr "Ta av nett"
 
+#: templates/studio/studio.html:137
+msgid "Delete"
+msgstr "Slett"
+
 #: templates/studio/includes/galleries_action_bar.html:8
 msgid "View:"
 msgstr "Vis:"
@@ -15729,6 +14219,1140 @@ msgstr "Mine egne"
 #: templates/studio/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
 msgstr "Forvaltet av meg"
+
+#~ msgid "subscribers"
+#~ msgstr "abonnenter"
+
+#~ msgid "Latest posts on forum"
+#~ msgstr "Siste meldinger på forumet"
+
+#~ msgid "Latest topics on forum"
+#~ msgstr "Siste emner på forumet"
+
+#, python-format
+#~ msgid "Latest posts on %s"
+#~ msgstr "Siste meldinger på %s"
+
+#, python-format
+#~ msgid "Latest posts on the topic \"%s\""
+#~ msgstr "Siste meldinger på emnet \"%s\""
+
+#, python-format
+#~ msgid "Latest posts on the forum \"%s\""
+#~ msgstr "Siste meldinger på forumet \"%s\""
+
+#, python-format
+#~ msgid "Latest posts on the category \"%s\""
+#~ msgstr "Siste meldinger i kategorien \"%s\""
+
+#~ msgid "Registered"
+#~ msgstr "Registrert"
+
+#~ msgid "Number of posts"
+#~ msgstr "Meldinger"
+
+#~ msgid "Post time"
+#~ msgstr "Tid"
+
+#~ msgid "Author"
+#~ msgstr "Forfatter"
+
+#~ msgid "Subject"
+#~ msgstr "Emne"
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "Ascending"
+#~ msgstr "Økende"
+
+#~ msgid "Descending"
+#~ msgstr "Minkende"
+
+#~ msgid "Topics"
+#~ msgstr "Emner"
+
+# 80%
+#~ msgid "Posts"
+#~ msgstr "Meldinger"
+
+#~ msgid "Message text and topic subject"
+#~ msgstr "Meldingstekst og emne"
+
+#~ msgid "Message text only"
+#~ msgstr "Bare meldingstekst"
+
+#~ msgid "Topic subject only"
+#~ msgstr "Bare emne"
+
+#~ msgid "Attachment"
+#~ msgstr "Vedlegg"
+
+#~ msgid "Subscribe"
+#~ msgstr "Abonner"
+
+# 87%
+#~ msgid "Subscribe to this topic."
+#~ msgstr "Abonnér på dette emnet."
+
+#~ msgid "Can't be empty nor contain only whitespace characters"
+#~ msgstr "Kan ikke være tom eller inneholde bare mellomromtegn"
+
+#~ msgid ""
+#~ "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
+#~ "Scratch, so your account has been muted for the rest of the day. :/"
+#~ msgstr ""
+#~ "Hmm, filter-roboten er ganske sikker på at dine siste kommentarer ikke var "
+#~ "OK her på Scratch så kontoen din er sperret for nye innlegg resten av dagen. "
+#~ ":/"
+
+#, python-format
+#~ msgid "Sorry, you have to wait %d seconds between posts."
+#~ msgstr "Beklager, du må vente %d sekunder mellom meldinger."
+
+#~ msgid "Attachment is too big"
+#~ msgstr "Vedlegget er for stort"
+
+#~ msgid "Silent edit?"
+#~ msgstr "Uannonsert redigering?"
+
+# 83%
+#~ msgid "E-mail"
+#~ msgstr "Epost"
+
+#~ msgid "Real name"
+#~ msgstr "Virkelig navn"
+
+#~ msgid "Sort order"
+#~ msgstr "Rekkefølge"
+
+#~ msgid "Keyword search"
+#~ msgstr "Søk nøkkelord"
+
+#~ msgid "Author search"
+#~ msgstr "Søk forfatter"
+
+#~ msgid "Search in"
+#~ msgstr "Søk i"
+
+#~ msgid "Show results as"
+#~ msgstr "Vis resultat som"
+
+#, python-format
+#~ msgid "User \"%s\" does not exist"
+#~ msgstr "Bruker \"%s\" finnes ikke"
+
+#~ msgid "You already voted for this post"
+#~ msgstr "Du har allerede stemt for dette innlegget"
+
+#~ msgid "This post does't belong to that user"
+#~ msgstr "Dette innlegget tilhører ikke den brukeren"
+
+# 87%
+#~ msgid "Message"
+#~ msgstr "Melding"
+
+#, python-format
+#~ msgid "You have selected too many choices. You may only select %i."
+#~ msgstr "Du har valgt for mange. Du kan bare velge %i."
+
+#~ msgid "Write each answer on a new line."
+#~ msgstr "Skriv hvert svar på en egen linje."
+
+#~ msgid ""
+#~ "Number of days for this poll to run. Leave empty for an indefinite poll."
+#~ msgstr ""
+#~ "Avstemmingens varighet i dager. La stå tomt hvis ingen sluttdato ønskes."
+
+#~ msgid "There is no valid answer."
+#~ msgstr "Det er ingen riktige svar."
+
+#~ msgid "One of the answers is too long."
+#~ msgstr "Ett av svarene er for langt."
+
+#~ msgid "Display your e-mail address."
+#~ msgstr "Vis din epostadresse."
+
+#~ msgid "Hide your e-mail address but allow form e-mail."
+#~ msgstr "Skjul din epost, men tillat meldinger via skjemaet."
+
+#~ msgid "Hide your e-mail address and disallow form e-mail."
+#~ msgstr "Skjul din epostadresse og ikke bruk epostskjemaet."
+
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgid "Groups"
+#~ msgstr "Grupper"
+
+#~ msgid "Only users from these groups can see this category"
+#~ msgstr "Bare brukere fra disse gruppene kan se denne kategorien"
+
+# Stilling?
+#~ msgid "Position"
+#~ msgstr "Posisjon"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorier"
+
+#~ msgid "New topics by moderators only"
+#~ msgstr "Nye emner kun av moderator"
+
+# 90%
+#~ msgid "Description"
+#~ msgstr "Beskrivelse"
+
+#~ msgid "Moderators"
+#~ msgstr "Moderatorer"
+
+#~ msgid "Updated"
+#~ msgstr "Oppdatert"
+
+#~ msgid "Post count"
+#~ msgstr "Antall innlegg"
+
+#~ msgid "Topic count"
+#~ msgstr "Antall emner"
+
+# 87%
+#~ msgid "Created"
+#~ msgstr "Opprettet"
+
+#~ msgid "Views count"
+#~ msgstr "Antall visninger"
+
+#~ msgid "Sticky"
+#~ msgstr "Fast"
+
+# 83%
+#~ msgid "Closed"
+#~ msgstr "Lukket"
+
+#~ msgid "Subscribers"
+#~ msgstr "Abonnenter"
+
+#~ msgid "Topic"
+#~ msgstr "Emne"
+
+#~ msgid "Updated by"
+#~ msgstr "Oppdatert av"
+
+#~ msgid "Markup"
+#~ msgstr "Merking"
+
+#~ msgid "HTML version"
+#~ msgstr "HTML-versjon"
+
+#~ msgid "User IP"
+#~ msgstr "Brukerens IP"
+
+#~ msgid "From"
+#~ msgstr "Fra"
+
+#~ msgid "To"
+#~ msgstr "Til"
+
+#~ msgid "Sign"
+#~ msgstr "Signatur"
+
+#~ msgid "Reason"
+#~ msgstr "Årsak"
+
+#~ msgid "Reputation"
+#~ msgstr "Omdømme"
+
+#~ msgid "Reputations"
+#~ msgstr "Omdømmer"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Site"
+#~ msgstr "Sted"
+
+#~ msgid "Jabber"
+#~ msgstr "Jabber"
+
+#~ msgid "ICQ"
+#~ msgstr "ICQ"
+
+#~ msgid "MSN"
+#~ msgstr "MSN"
+
+#~ msgid "AIM"
+#~ msgstr "AIM"
+
+#~ msgid "Yahoo"
+#~ msgstr "Yahoo"
+
+#~ msgid "Location"
+#~ msgstr "Sted"
+
+#~ msgid "Signature"
+#~ msgstr "Underskrift"
+
+#~ msgid "Time zone"
+#~ msgstr "Tidssone"
+
+# 87%
+#~ msgid "Language"
+#~ msgstr "Språk"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Show avatar"
+#~ msgstr "Vis avatar"
+
+#~ msgid "Show signatures"
+#~ msgstr "Vis underskrifter"
+
+#~ msgid "Show smilies"
+#~ msgstr "Vis smilefjes"
+
+#~ msgid "Privacy permission"
+#~ msgstr "Tillatelse til bruk av personopplysninger"
+
+#~ msgid "Auto subscribe"
+#~ msgstr "Abonnér automatisk"
+
+#~ msgid "Auto subscribe all topics you have created or reply."
+#~ msgstr "Abonner automatisk på emner du skriver innlegg i."
+
+#~ msgid "Default markup"
+#~ msgstr "Standard merking"
+
+# 87%
+#~ msgid "Profiles"
+#~ msgstr "Profiler"
+
+#~ msgid "Post tracking"
+#~ msgstr "Spor innlegg"
+
+#~ msgid "Reported by"
+#~ msgstr "Meldt av"
+
+#~ msgid "Zapped"
+#~ msgstr "Zappet"
+
+#~ msgid "Zapped by"
+#~ msgstr "Zappet av"
+
+# 85%
+#~ msgid "Reports"
+#~ msgstr "Meldinger"
+
+#~ msgid "Banned user"
+#~ msgstr "Utestengt bruker"
+
+#~ msgid "Ban start"
+#~ msgstr "Utestengt fra"
+
+#~ msgid "Ban end"
+#~ msgstr "Utestengt til"
+
+#~ msgid "Ban"
+#~ msgstr "Utestengning"
+
+#~ msgid "Bans"
+#~ msgstr "Utestengninger"
+
+# 75%
+#~ msgid "Size"
+#~ msgstr "Størrelse"
+
+#~ msgid "Content type"
+#~ msgstr "Innholdstype"
+
+#~ msgid "Path"
+#~ msgstr "Bane"
+
+#~ msgid "Hash"
+#~ msgstr "Hash"
+
+#~ msgid "How many choices are allowed simultaneously."
+#~ msgstr "Hvor mange kan velges på en gang?"
+
+#~ msgid "Can users vote to this poll or just see the result?"
+#~ msgstr "Kan brukerne stemme eller bare se resultatet?"
+
+#~ msgid "Point of time after this poll would be automatic deactivated"
+#~ msgstr "Tidspunkt når avstemmingen avsluttes automatisk"
+
+#~ msgid "Users who has voted this poll."
+#~ msgstr "Brukere som har stemt."
+
+#, python-format
+#~ msgid ""
+#~ "Sorry, you need to host your images with a service like imageshack.com. "
+#~ "Please update your image links or remove all BB code [img] tags. Bad image "
+#~ "url: %s"
+#~ msgstr ""
+#~ "Beklager, du må legge bildene hos en webtjeneste som for eksempel "
+#~ "imageshack.com. Oppdater linkene dine eller fjern BB-kode [img]. Ugyldig url "
+#~ "for bilde: %s"
+
+#~ msgid "Topics deleted."
+#~ msgstr "Emner slettet."
+
+#~ msgid "Topics opened."
+#~ msgstr "Emner åpnet."
+
+#~ msgid "Topics closed."
+#~ msgstr "Emner lukket."
+
+#, python-format
+#~ msgid "Found %i posts."
+#~ msgstr "Fant %i innlegg."
+
+#, python-format
+#~ msgid "Found %i topics."
+#~ msgstr "Fant %i emner."
+
+#~ msgid "Marked all topics as read."
+#~ msgstr "Merket alle emner som lest."
+
+#~ msgid "Post reported."
+#~ msgstr "Innlegg meldt."
+
+#~ msgid "Email sent."
+#~ msgstr "Epost er sendt."
+
+#~ msgid "Email could not be sent."
+#~ msgstr "Epost kunne ikke sendes."
+
+#~ msgid "Reply saved."
+#~ msgstr "Svaret er lagret."
+
+#~ msgid "This poll is not active."
+#~ msgstr "Avstemmingen er ikke aktiv."
+
+#~ msgid "You already voted on this poll."
+#~ msgstr "Du har allerede stemt."
+
+#~ msgid "Vote saved."
+#~ msgstr "Stemmen er lagret."
+
+#~ msgid "Topic with poll saved."
+#~ msgstr "Emne med avstemming er lagret."
+
+#~ msgid "Topic saved."
+#~ msgstr "Emnet er lagret."
+
+#~ msgid "Avatar uploaded."
+#~ msgstr "Avatar oppdatert."
+
+#~ msgid "Please sign in."
+#~ msgstr "Vennligst logg inn."
+
+#~ msgid "Profile saved."
+#~ msgstr "Profil lagret."
+
+#~ msgid "Reputation deleted."
+#~ msgstr "Omdømme slettet."
+
+#~ msgid "Reputation saved."
+#~ msgstr "Omdømme lagret."
+
+#~ msgid "You don't have permission to edit this post."
+#~ msgstr "Du har ikke tillatelse til å redigere dette innlegget."
+
+# 76%
+#~ msgid "Post updated."
+#~ msgstr "Innlegg oppdatert."
+
+#~ msgid "Post deleted."
+#~ msgstr "Innlegg slettet."
+
+#~ msgid "The topic ID must be an integer."
+#~ msgstr "Emne-ID må være et heltall."
+
+#~ msgid "That thread doesn't exist."
+#~ msgstr "Tråden finnes ikke."
+
+#~ msgid "Posts moved."
+#~ msgstr "Innlegg flyttet."
+
+#~ msgid "Topic moved."
+#~ msgstr "Emne flyttet."
+
+#~ msgid "Topic stickied."
+#~ msgstr "Emnet er fremhevet."
+
+#~ msgid "Topic unstickied."
+#~ msgstr "Ikke lenger fremhevet."
+
+#~ msgid "You don't have permission to delete this post."
+#~ msgstr "Du har ikke tillatelse til å slette innlegget."
+
+# 90%
+#~ msgid "You don't have permission to mark this post."
+#~ msgstr "Du har ikke tillatelse til å merke dette innlegget."
+
+#~ msgid "There was not enough data collected to mark this post."
+#~ msgstr "Det er ikke nok data til å merke dette innlegget."
+
+#~ msgid "Post marked as spam."
+#~ msgstr "Innlegget er merket som søppelpost."
+
+#~ msgid "This post is not in the right state to be marked as spam."
+#~ msgstr "Dette innleggets status gjør at det ikke kan merkes som søppelpost."
+
+#~ msgid "Post un-marked as spam."
+#~ msgstr "Søppelpost-merke er fjernet."
+
+#~ msgid "This post is not in the right state to be un-marked as spam."
+#~ msgstr "Dette innleggets status gjør at søppelpost-merke ikke kan fjernes."
+
+#~ msgid "Topic closed."
+#~ msgstr "Emne lukket."
+
+#~ msgid "Topic opened."
+#~ msgstr "Emne åpnet."
+
+#~ msgid "Unsubscribed from topic."
+#~ msgstr "Abonnement avbrutt."
+
+#~ msgid "Subscribed to topic."
+#~ msgstr "Abonnerer på emnet."
+
+#~ msgid "New Topic"
+#~ msgstr "Nytt emne"
+
+#~ msgid "Discuss Scratch"
+#~ msgstr "Diskuter Scratch"
+
+# Merknad?
+#~ msgid "Notice"
+#~ msgstr "Merknad"
+
+#, python-format
+#~ msgid "Delete Posts - %(name)s"
+#~ msgstr "Slett innlegg - %(name)s"
+
+#~ msgid "Delete Posts"
+#~ msgstr "Slett innlegg"
+
+#, python-format
+#~ msgid "Last edited by %(user)s (%(time)s)"
+#~ msgstr "Sist redigert av %(user)s (%(time)s)"
+
+#~ msgid "Select"
+#~ msgstr "Velg"
+
+#~ msgid "Go back"
+#~ msgstr "Gå tilbake"
+
+#, python-format
+#~ msgid "Edit Post - %(name)s"
+#~ msgstr "Rediger innlegg - %(name)s"
+
+#~ msgid "Edit Post"
+#~ msgstr "Rediger innlegg"
+
+#~ msgid "Edit post"
+#~ msgstr "Rediger innlegg"
+
+#~ msgid "Silent edit (don't display 'Edited by ...' in topic view)"
+#~ msgstr "Taus redigering (viser ikke 'Redigert av ...' i emnet)"
+
+#~ msgid "Save"
+#~ msgstr "Lagre"
+
+#~ msgid ""
+#~ "Can't find an answer to your question? Click here to ask it in a new thread."
+#~ msgstr "Finner du ikke svar på spørsmålet? Klikk her for å opprette en ny tråd."
+
+#~ msgid "New topic"
+#~ msgstr "Nytt emne"
+
+#~ msgid "Replies"
+#~ msgstr "Svar"
+
+#~ msgid "Last Post"
+#~ msgstr "Siste innlegg"
+
+#~ msgid "Sticky:"
+#~ msgstr "Fremhevet:"
+
+#~ msgid "(New Posts)"
+#~ msgstr "(Nye innlegg)"
+
+#~ msgid "Forum is empty."
+#~ msgstr "Forumet er tomt."
+
+#~ msgid "Moderate forum"
+#~ msgstr "Moderer forum"
+
+#~ msgid "Show new posts since last visit"
+#~ msgstr "Vis nye innlegg siden sist"
+
+#~ msgid "Discussion Home"
+#~ msgstr "Startside for forum"
+
+#, python-format
+#~ msgid "Reports (%(report_count)s)"
+#~ msgstr "Meldinger (%(report_count)s)"
+
+#~ msgid "Show your"
+#~ msgstr "Vis dine"
+
+#~ msgid "topics"
+#~ msgstr "emner"
+
+#~ msgid "posts"
+#~ msgstr "innlegg"
+
+#~ msgid "Change your signature"
+#~ msgstr "Endre din signatur"
+
+#~ msgid "Show recent posts"
+#~ msgstr "Vis nylige innlegg"
+
+#~ msgid "Show unanswered posts"
+#~ msgstr "Vis ubesvarte innlegg"
+
+#~ msgid "Mark all topics as read"
+#~ msgstr "Merk alle emner som lest"
+
+#~ msgid "Send e-mail to"
+#~ msgstr "Send epost til"
+
+#~ msgid "Write and submit your e-mail message"
+#~ msgstr "Skriv og send din epostmelding"
+
+#~ msgid ""
+#~ "Please note that by using this form, your e-mail address will be disclosed "
+#~ "to the recipient."
+#~ msgstr ""
+#~ "Husk at når du bruker dette skjemaet vil mottakeren få se din epostadresse."
+
+#, python-format
+#~ msgid "Moderate - %(name)s"
+#~ msgstr "Moderere - %(name)s"
+
+# 92%
+#~ msgid "Moderate Forum"
+#~ msgstr "Moderer forum"
+
+#~ msgid "Open"
+#~ msgstr "Åpne"
+
+#~ msgid "Moderated by"
+#~ msgstr "Moderert av"
+
+#, python-format
+#~ msgid "Move Posts - %(name)s"
+#~ msgstr "Flytt innlegg - %(name)s"
+
+#~ msgid "Move Posts"
+#~ msgstr "Flytt innlegg"
+
+#~ msgid "All posts (original topic will be deleted)"
+#~ msgstr "Alle innlegg (opprinnelig emne vil bli slettet)"
+
+#~ msgid "Topic ID or URL"
+#~ msgstr "Emne-ID eller URL"
+
+#~ msgid "Move Topic"
+#~ msgstr "Flytt emne"
+
+#~ msgid "Move to"
+#~ msgstr "Flytt til"
+
+#~ msgid "Pages"
+#~ msgstr "Sider"
+
+#~ msgid "Report Post"
+#~ msgstr "Meld innlegg"
+
+#~ msgid "Please enter a short reason why you are reporting this post."
+#~ msgstr "Gi en kort begrunnelse for at du melder dette innlegget."
+
+#~ msgid "Reputation of the user"
+#~ msgstr "Brukerens omdømme"
+
+#~ msgid "From user"
+#~ msgstr "Fra bruker"
+
+#~ msgid "For post in topic"
+#~ msgstr "For innlegg under emnet"
+
+#~ msgid "Estimation"
+#~ msgstr "Estimering"
+
+# 80%
+#~ msgid "Date"
+#~ msgstr "Dato"
+
+#~ msgid "Are you sure"
+#~ msgstr "Er du sikker"
+
+#~ msgid "Please, fill the form"
+#~ msgstr "Fyll inn i skjemaet"
+
+#~ msgid "Your name:"
+#~ msgstr "Ditt navn:"
+
+#~ msgid "To whom we change a reputation:"
+#~ msgstr "Personen vi endrer ommdømme for:"
+
+#~ msgid "Method:"
+#~ msgstr "Metode:"
+
+#~ msgid "Add of a reputation"
+#~ msgstr "Økning av omdømme"
+
+#~ msgid "Reduction of a reputation"
+#~ msgstr "Reduksjon av omdømme"
+
+#~ msgid "(Dustbin all posts and topics)"
+#~ msgstr "(Kast alle innlegg og emner)"
+
+#~ msgid ""
+#~ "To search by keyword, enter a term or terms to search for. Separate terms "
+#~ "with spaces. To search by author enter the username of the author whose "
+#~ "posts you wish to search for."
+#~ msgstr ""
+#~ "Skriv inn ett eller flere søkeord adskilt av mellomrom. Skriv et brukernavn "
+#~ "for å søke etter innlegg fra en bestemt bruker."
+
+#~ msgid "All forums"
+#~ msgstr "Alle forumene"
+
+#~ msgid ""
+#~ "Choose in which forum you would like to search and if you want to search in "
+#~ "topic subjects, message text or both."
+#~ msgstr ""
+#~ "Velg forumet du vil søke i, og om du vil søke i emne, meldingstekst eller "
+#~ "begge."
+
+#~ msgid "You can choose how you wish to sort and show your results."
+#~ msgstr "Du kan velge hvordan du vil sortere og vise resultatene."
+
+#~ msgid "Search Results"
+#~ msgstr "Søkeresultater"
+
+#~ msgid "Show results as topic list."
+#~ msgstr "Vis resultatene som en liste av emner."
+
+#~ msgid "Info"
+#~ msgstr "Info"
+
+#~ msgid "Your search returned no hits."
+#~ msgstr "Søket ga ingen treff."
+
+# 75%
+#~ msgid "Search links"
+#~ msgstr "Søk i linker"
+
+#~ msgid "Show your subscribed topics"
+#~ msgstr "Vis emner du abonnerer på"
+
+#~ msgid "Show your topics"
+#~ msgstr "Vis dine emner"
+
+#~ msgid "Show results as post list."
+#~ msgstr "Vis resultatene som liste av innlegg."
+
+#~ msgid "loading..."
+#~ msgstr "laster..."
+
+#~ msgid "There was an error :( Try again?"
+#~ msgstr "Noe gikk galt :( Prøve igjen?"
+
+#~ msgid "Follow this discussion to get a message when there's a new post"
+#~ msgstr "Følg denne diskusjonen for å få melding om nye innlegg"
+
+#~ msgid "Follow Discussion"
+#~ msgstr "Følg diskusjon"
+
+#~ msgid "Stop getting messages about new posts to this discussion"
+#~ msgstr "Slutt å sende meldinger om nye innlegg i denne diskusjonen"
+
+#~ msgid "Unfollow Discussion"
+#~ msgstr "Avslutt følging"
+
+#~ msgid "Poll"
+#~ msgstr "Avstemming"
+
+#, python-format
+#~ msgid "(%(count)s answers allows.)"
+#~ msgstr "(%(count)s svar tillatt.)"
+
+#~ msgid "Vote"
+#~ msgstr "Stem"
+
+#~ msgid "1000+ posts"
+#~ msgstr "1000+ innlegg"
+
+#~ msgid "500+ posts"
+#~ msgstr "500+ innlegg"
+
+#~ msgid "100+ posts"
+#~ msgstr "100+ innlegg"
+
+#~ msgid "1 post"
+#~ msgstr "1 innlegg"
+
+# 83%
+#~ msgid " posts"
+#~ msgstr " innlegg"
+
+#~ msgid "From:"
+#~ msgstr "Fra:"
+
+#~ msgid "Registered:"
+#~ msgstr "Registrert:"
+
+#~ msgid "Posts:"
+#~ msgstr "Innlegg:"
+
+#~ msgid "IP:"
+#~ msgstr "IP:"
+
+#~ msgid "Really delete all posts, and ban user? This is hard to reverse."
+#~ msgstr ""
+#~ "Vil du virkelig slette alle innlegg og utestenge brukeren? Dette er "
+#~ "vanskelig å gjøre om."
+
+#~ msgid "(Edit Signature)"
+#~ msgstr "(Rediger signatur)"
+
+#~ msgid "Are you sure you want to mark this as spam?"
+#~ msgstr "Merke som søppelpost, er du sikker?"
+
+#~ msgid "Mark as Spam"
+#~ msgstr "Merk som søppelpost"
+
+#~ msgid "Are you sure you want to unmark this as spam?"
+#~ msgstr "Fjerne søppelpost-merket, er du sikker?"
+
+#~ msgid "Un-mark as Spam"
+#~ msgstr "Fjerne søppelpost-merke"
+
+#~ msgid "Are you sure you want to delete this post?"
+#~ msgstr "Vil du slette dette innlegget?"
+
+#~ msgid "Edit"
+#~ msgstr "Rediger"
+
+#~ msgid "Insert a quotation of this post in your reply."
+#~ msgstr "Siter dette innlegget i ditt svar."
+
+# 83%
+#~ msgid "Quote"
+#~ msgstr "Kopier tidligere melding"
+
+#~ msgid "Jump to"
+#~ msgstr "Hopp til"
+
+#~ msgid "Moderator control"
+#~ msgstr "Moderator-kontroll"
+
+#~ msgid "Delete multiple posts"
+#~ msgstr "Slett flere innlegg"
+
+#~ msgid "Move multiple posts"
+#~ msgstr "Flytt flere innlegg"
+
+#~ msgid "Move topic"
+#~ msgstr "Flytt emne"
+
+#~ msgid "Open topic"
+#~ msgstr "Åpne emne"
+
+#~ msgid "Close topic"
+#~ msgstr "Lukk emne"
+
+#~ msgid "Unstick topic"
+#~ msgstr "Ikke fremhev emnet"
+
+#~ msgid "Stick topic"
+#~ msgstr "Fremhev emnet"
+
+#~ msgid "Upload avatar"
+#~ msgstr "Last opp avatar"
+
+#~ msgid "Enter an avatar file to upload"
+#~ msgstr "Velg en avatar-fil for opplasting"
+
+#, python-format
+#~ msgid ""
+#~ "An avatar is a small image that will be displayed under your username in "
+#~ "your posts. It must not be any bigger than %(avatar_width)s x "
+#~ "%(avatar_height)s pixels "
+#~ msgstr ""
+#~ "En avatar er et lite bilde som vises under brukernavnet ditt i dine innlegg. "
+#~ "Det må ikke være større enn %(avatar_width)s x %(avatar_height)s piksel "
+
+#~ msgid "Upload"
+#~ msgstr "Last opp"
+
+#~ msgid "YouTube Video"
+#~ msgstr "YouTube-video"
+
+#~ msgid "Video Not Found"
+#~ msgstr "Fant ikke videoen"
+
+#~ msgid "Why do I see this page?"
+#~ msgstr "Hvorfor kom jeg til denne siden?"
+
+#~ msgid ""
+#~ "Links to YouTube videos on the forums are automatically converted to links "
+#~ "to this page, to hide comments and other content."
+#~ msgstr ""
+#~ "Linker til YouTube-videoer på forumene gjøres om til linker hit, for å "
+#~ "skjule kommentarer og annet innhold."
+
+#~ msgid "New Reply"
+#~ msgstr "Nytt svar"
+
+#~ msgid "Create a poll"
+#~ msgstr "Opprett en avstemning"
+
+#~ msgid "Replies:"
+#~ msgstr "Svar:"
+
+#, python-format
+#~ msgid "Signed in as <strong>%(user)s</strong>"
+#~ msgstr "Logget inn som <strong>%(user)s</strong>"
+
+# 85%
+#~ msgid "Sign In"
+#~ msgstr "Logg inn"
+
+#, python-format
+#~ msgid "%(posts)s post"
+#~ msgid_plural "%(posts)s posts"
+#~ msgstr[0] "%(posts)s innlegg"
+#~ msgstr[1] "%(posts)s innlegg"
+
+#~ msgid "No posts."
+#~ msgstr "Ingen innlegg."
+
+#, python-format
+#~ msgid "%(replies)s reply"
+#~ msgid_plural "%(replies)s replies"
+#~ msgstr[0] "%(replies)s svar"
+#~ msgstr[1] "%(replies)s svar"
+
+#~ msgid "No topics."
+#~ msgstr "Ingen emner."
+
+#, python-format
+#~ msgid "Settings (%(name)s)"
+#~ msgstr "Innstillinger (%(name)s)"
+
+#~ msgid ""
+#~ "A signature is a small piece of text that is attached to your posts. In it, "
+#~ "you can enter just about anything you like. Perhaps you would like to enter "
+#~ "your favourite quote or your star sign. It's up to you! In your signature "
+#~ "you can use BBCode if it is allowed in this particular forum. You can see "
+#~ "the features that are allowed/enabled listed below whenever you edit your "
+#~ "signature."
+#~ msgstr ""
+#~ "En signatur er en liten tekst som blir lagt til automatisk i dine innlegg. "
+#~ "Der kan du skrive hva du vil, for eksempel et favorittsitat eller ditt "
+#~ "stjernetegn. Det er opp til deg! I signaturen kan du bruke BBkode hvis det "
+#~ "er tillatt i dette forumet. Når du redigerer signaturen ser du nedenfor "
+#~ "hvilke funksjoner du kan bruke."
+
+#~ msgid "No signature currently stored in profile."
+#~ msgstr "Ingen signatur i denne brukerprofilen nå."
+
+#~ msgid "When you update your profile, you will be redirected back to this page."
+#~ msgstr "Når du oppdaterer brukerprofilen kommer du tilbake til denne siden."
+
+#~ msgid ""
+#~ "First, download any projects that you want to keep. \n"
+#~ "    Once the account is deleted, your projects will no longer be available. "
+#~ "Use the form on the <a href=\"http://scratch.mit.edu/contact-us/\">Contact "
+#~ "Us</a> page and include the following information:\n"
+#~ "    <ul><li>Birth Month and Year that you entered when you created the "
+#~ "account</li>\n"
+#~ "    <li>The email address associated with the account "
+#~ msgstr ""
+#~ "Først må du huske å laste ned prosjekter du vil beholde. \n"
+#~ "    Etter at kontoen er slettet kan du ikke få tilbake prosjektene dine. "
+#~ "Bruk skjemaet på <a href=\"http://scratch.mit.edu/contact-us/\">Kontakt "
+#~ "oss</a>-siden og ta med denne informasjonen i meldingen:\n"
+#~ "    <ul><li>Fødselsmåned og -år som du skreve inn da du opprettet "
+#~ "brukerkontoen</li>\n"
+#~ "    <li>Epostadressen som tilhører kontoen "
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "\t<p>In this activity, you'll create an interactive holiday card that you "
+#~ "can share with friends and family.</p>\n"
+#~ "\t<p>To get started, watch this intro video:</p>\n"
+#~ "\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
+#~ "portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
+#~ "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
+#~ "\t\n"
+#~ "\n"
+#~ "\t<a class=\"next-step-button\" href=\"../hoc-1/\">\n"
+#~ "\t\t<p>Let's begin!\n"
+#~ "\t\t\t<img src = \"%(STATIC_URL)s/images/help/tip-next-step-arrow.png\">\t\n"
+#~ "\t\t</p>\t\n"
+#~ "\t</a> \n"
+#~ "\t\n"
+#~ "\t<ul class=\"step-index\">\n"
+#~ "\t<h3>Step Index</h3>\t\n"
+#~ "\t\t<li><a href=\"../hoc-1/\"><div class=\"index-num\">1</div>Explore Ideas "
+#~ "for Your Card</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-2/\"><div class=\"index-num\">2</div>Delete the "
+#~ "Cat</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-3/\"><div class=\"index-num\">3</div>Add Sprites</"
+#~ "a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-4/\"><div class=\"index-num\">4</div>Make the "
+#~ "Sprites Interactive</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4a/"
+#~ "\"><div class=\"index-num\">A</div>Move</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4b/"
+#~ "\"><div class=\"index-num\">B</div>Say Something</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4c/"
+#~ "\"><div class=\"index-num\">C</div>Make a Sound</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4d/"
+#~ "\"><div class=\"index-num\">D</div>Change Color</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4e/"
+#~ "\"><div class=\"index-num\">E</div>Change Costume</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-5/\"><div class=\"index-num\">5</div>Add a "
+#~ "Background Image</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-6/\"><div class=\"index-num\">6</div>Add Background "
+#~ "Sound</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-7/\"><div class=\"index-num\">7</div>Set up the "
+#~ "Project</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-8/\"><div class=\"index-num\">8</div>Share your "
+#~ "Project</a></li>\n"
+#~ "\t<li><a href=\"../hoc-9/\"><div class=\"index-num\">9</div>Add to the "
+#~ "Holiday Card Studio</a></li>\n"
+#~ "\t</ul>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\t<p>Her får du lage ditt eget interaktive julekort som du kan sende til "
+#~ "familie og venner.</p>\n"
+#~ "\t<p>Først kan du se på denne videoen (engelsk tale):</p>\n"
+#~ "\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;po"
+#~ "rtrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
+#~ "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
+#~ "\t\n"
+#~ "\n"
+#~ "\t<a class=\"next-step-button\" href=\"../hoc-1/\">\n"
+#~ "\t\t<p>Da starter vi!\n"
+#~ "\t\t\t<img src = \"%(STATIC_URL)s/images/help/tip-next-step-arrow.png\">\t\n"
+#~ "\t\t</p>\t\n"
+#~ "\t</a> \n"
+#~ "\t\n"
+#~ "\t<ul class=\"step-index\">\n"
+#~ "\t<h3>Oversikt</h3>\t\n"
+#~ "\t\t<li><a href=\"../hoc-1/\"><div class=\"index-num\">1</div>Tenk på hva "
+#~ "slags kort du vil lage</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-2/\"><div class=\"index-num\">2</div>Ta bort "
+#~ "katten</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-3/\"><div class=\"index-num\">3</div>Nye "
+#~ "figurer</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-4/\"><div class=\"index-num\">4</div>Gjør figurene "
+#~ "interaktive</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4a/\"><"
+#~ "div class=\"index-num\">A</div>Bevegelse</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4b/\"><"
+#~ "div class=\"index-num\">B</div>Si noe</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4c/\"><"
+#~ "div class=\"index-num\">C</div>Lag lyd</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4d/\"><"
+#~ "div class=\"index-num\">D</div>Bytt farge</a></li>\n"
+#~ "\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4e/\"><"
+#~ "div class=\"index-num\">E</div>Bytt drakt</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-5/\"><div class=\"index-num\">5</div>Legg inn et "
+#~ "bakgrunnsbilde</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-6/\"><div class=\"index-num\">6</div>Legg på "
+#~ "lyd</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-7/\"><div class=\"index-num\">7</div>Gjør kortet "
+#~ "klar til bruk</a></li>\n"
+#~ "\t\t<li><a href=\"../hoc-8/\"><div class=\"index-num\">8</div>Legg ut "
+#~ "prosjektet</a></li>\n"
+#~ "\t<li><a href=\"../hoc-9/\"><div class=\"index-num\">9</div>Vis det på "
+#~ "julekortgalleriet</a></li>\n"
+#~ "\t</ul>\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "<p>In this activity, you'll create an interactive holiday card that you can "
+#~ "share with friends and family.</p>\n"
+#~ "<p>To get started, watch this intro video:</p>\n"
+#~ "<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
+#~ "portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
+#~ "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<p>Her får du lage ditt eget interaktive julekort som du kan sende til "
+#~ "familie og venner.</p>\n"
+#~ "<p>Først kan du se på denne videoen (engelsk tale):</p>\n"
+#~ "<p><iframe src=\""
+#~ "//player.vimeo.com/video/78998915?title=0&byline=0&portrait=0;hd_off=1&\" "
+#~ "width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
+#~ "mozallowfullscreen allowfullscreen></iframe></p>\n"
+
+#~ msgid "Get more help by following these steps:"
+#~ msgstr "Her er en veiledning i flere trinn:"
+
+#~ msgid "Imagine your holiday card"
+#~ msgstr "Bruk fantasien og tenk på hva du vil lage"
+
+#~ msgid "Explore ideas for your card"
+#~ msgstr "Tenk på hva slags kort du vil lage"
+
+#~ msgid "Program your holiday card"
+#~ msgstr "Programmér julekortet"
+
+#~ msgid "Delete the cat"
+#~ msgstr "Ta bort katten"
+
+#~ msgid "Add sprites"
+#~ msgstr "Nye figurer"
+
+#~ msgid "Make the sprites interactive"
+#~ msgstr "Få figurene til å reagere"
+
+# 92%
+#~ msgid "Say something"
+#~ msgstr "Si noe"
+
+#~ msgid "Make a sound"
+#~ msgstr "Lag lyd"
+
+# 91%
+#~ msgid "Change color"
+#~ msgstr "Bytt farge"
+
+#~ msgid "Change costume"
+#~ msgstr "Bytt drakt"
+
+#~ msgid "Add a background image"
+#~ msgstr "Legg til en bakgrunn"
+
+#~ msgid "Add background sound"
+#~ msgstr "Legg inn bakgrunnslyd"
+
+#~ msgid "Set up the project"
+#~ msgstr "Gjør prosjektet klart"
+
+#~ msgid "Share your holiday card"
+#~ msgstr "Legg ut kortet på nett"
+
+#~ msgid "Share your project"
+#~ msgstr "Legg ut prosjektet"
+
+#~ msgid "Let's code!"
+#~ msgstr "Vi går i gang!"
 
 #, python-format
 #~ msgid "Online (%(count)s):"

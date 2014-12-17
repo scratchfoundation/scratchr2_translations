@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-25 23:48+0000\n"
+"POT-Creation-Date: 2014-12-13 16:02+0000\n"
 "PO-Revision-Date: 2014-06-24 13:15+0000\n"
 "Last-Translator: Matija <matija.lokar@fmf.uni-lj.si>\n"
 "Language-Team: FMF <Matija.Lokar@fmf.uni-lj.si>\n"
@@ -82,7 +82,28 @@ msgstr "Žal nimamo računa s tem uporabniškim imenom"
 msgid "Sorry we don't have an account with that email address"
 msgstr "Žal nimamo računa s tem e-poštnim naslovom"
 
-#: base_comments/templatetags/scratch_text_filters.py:109
+#: authentication/forms.py:189 authentication/forms.py:210
+#, fuzzy
+msgid "Incorrect username or password."
+msgstr "Si pozabil-a uporabniško ime ali geslo?"
+
+#: authentication/forms.py:190 authentication/forms.py:211
+msgid "Please enable cookies on your browser."
+msgstr ""
+
+#: authentication/forms.py:191 authentication/forms.py:212
+msgid "This account is inactive."
+msgstr ""
+
+#: authentication/forms.py:192 authentication/forms.py:213
+msgid "This account is deleted!"
+msgstr ""
+
+#: authentication/forms.py:214
+msgid "Incorrect captcha, please try again."
+msgstr ""
+
+#: base_comments/templatetags/scratch_text_filters.py:110
 msgid "day"
 msgid_plural "days"
 msgstr[0] "dan"
@@ -90,7 +111,7 @@ msgstr[1] "dneva"
 msgstr[2] "dnevi"
 msgstr[3] "dni"
 
-#: base_comments/templatetags/scratch_text_filters.py:115
+#: base_comments/templatetags/scratch_text_filters.py:116
 #, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
@@ -99,11 +120,11 @@ msgstr[1] "Pred %(minutes)d minutama"
 msgstr[2] "Pred %(minutes)d minutami"
 msgstr[3] "Pred %(minutes)d minutami"
 
-#: base_comments/templatetags/scratch_text_filters.py:119
+#: base_comments/templatetags/scratch_text_filters.py:120
 msgid "just now"
 msgstr "ravnokar"
 
-#: base_comments/templatetags/scratch_text_filters.py:121
+#: base_comments/templatetags/scratch_text_filters.py:122
 #, python-format
 msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
@@ -112,17 +133,17 @@ msgstr[1] "Pred %(hours)d urama"
 msgstr[2] "Pred %(hours)d urami"
 msgstr[3] "Pred %(hours)d urami"
 
-#: base_comments/templatetags/scratch_text_filters.py:125
+#: base_comments/templatetags/scratch_text_filters.py:126
 #, python-format
 msgid "yesterday at %s"
 msgstr "včeraj ob %s"
 
-#: base_comments/templatetags/scratch_text_filters.py:128
+#: base_comments/templatetags/scratch_text_filters.py:129
 #, python-format
 msgid "%s"
 msgstr "%s"
 
-#: base_comments/templatetags/scratch_text_filters.py:136
+#: base_comments/templatetags/scratch_text_filters.py:137
 #, python-format
 msgid "%(number)d %(type)s ago"
 msgstr "pred %(number)d %(type)s"
@@ -130,1483 +151,6 @@ msgstr "pred %(number)d %(type)s"
 #: projects/views.py:496
 msgid "This tag has too many projects to load"
 msgstr "Pod to oznako je preveč projektov, da bi jih naložili"
-
-#: s2forums/djangobb_forum/admin.py:31
-msgid "subscribers"
-msgstr "naročniki"
-
-#: s2forums/djangobb_forum/feeds.py:27 s2forums/djangobb_forum/feeds.py:28
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
-msgid "Latest posts on forum"
-msgstr "Zadnje objave na forumu"
-
-# 81%
-#: s2forums/djangobb_forum/feeds.py:46 s2forums/djangobb_forum/feeds.py:47
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:16
-msgid "Latest topics on forum"
-msgstr "Zadnje teme na forumu"
-
-#: s2forums/djangobb_forum/feeds.py:75 s2forums/djangobb_forum/feeds.py:100
-#: s2forums/djangobb_forum/feeds.py:125
-#, python-format
-msgid "Latest posts on %s"
-msgstr "Zadnje objave na %s"
-
-#: s2forums/djangobb_forum/feeds.py:83
-#, python-format
-msgid "Latest posts on the topic \"%s\""
-msgstr "Zadnje objave na temo \"%s\""
-
-#: s2forums/djangobb_forum/feeds.py:108
-#, python-format
-msgid "Latest posts on the forum \"%s\""
-msgstr "Zadnje objave na forumu \"%s\""
-
-#: s2forums/djangobb_forum/feeds.py:128
-#, python-format
-msgid "Latest posts on the category \"%s\""
-msgstr "Zadnje objave v kategoriji \"%s\""
-
-#: s2forums/djangobb_forum/forms.py:29 s2forums/djangobb_forum/forms.py:229
-#: s2forums/djangobb_forum/forms.py:366 templates/base.html:207
-#: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
-msgid "Username"
-msgstr "Uporabniško ime"
-
-#: s2forums/djangobb_forum/forms.py:30
-msgid "Registered"
-msgstr "Registriran"
-
-#: s2forums/djangobb_forum/forms.py:31
-msgid "Number of posts"
-msgstr "Število objav"
-
-#: s2forums/djangobb_forum/forms.py:35
-msgid "Post time"
-msgstr "Čas objave"
-
-#: s2forums/djangobb_forum/forms.py:36
-msgid "Author"
-msgstr "Avtor"
-
-#: s2forums/djangobb_forum/forms.py:37 s2forums/djangobb_forum/forms.py:60
-#: s2forums/djangobb_forum/forms.py:188 s2forums/djangobb_forum/forms.py:459
-#: s2forums/djangobb_forum/models.py:160
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
-msgid "Subject"
-msgstr "Zadeva"
-
-#: s2forums/djangobb_forum/forms.py:38 s2forums/djangobb_forum/forms.py:402
-#: s2forums/djangobb_forum/models.py:130 s2forums/djangobb_forum/models.py:159
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:55
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:26
-msgid "Forum"
-msgstr "Forum"
-
-#: s2forums/djangobb_forum/forms.py:42
-msgid "Ascending"
-msgstr "Naraščajoče"
-
-#: s2forums/djangobb_forum/forms.py:43
-msgid "Descending"
-msgstr "Padajoče"
-
-#: s2forums/djangobb_forum/forms.py:47 s2forums/djangobb_forum/models.py:175
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:56
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
-msgid "Topics"
-msgstr "Teme"
-
-#: s2forums/djangobb_forum/forms.py:48 s2forums/djangobb_forum/models.py:275
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:57
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
-msgid "Posts"
-msgstr "Objave"
-
-#: s2forums/djangobb_forum/forms.py:52
-msgid "Message text and topic subject"
-msgstr "Besedilo sporočila in naslov teme"
-
-#: s2forums/djangobb_forum/forms.py:53
-msgid "Message text only"
-msgstr "Samo besedilo sporočila"
-
-#: s2forums/djangobb_forum/forms.py:54
-msgid "Topic subject only"
-msgstr "Samo naslov teme"
-
-#: s2forums/djangobb_forum/forms.py:62
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
-msgid "Attachment"
-msgstr "Priponka"
-
-#: s2forums/djangobb_forum/forms.py:63
-msgid "Subscribe"
-msgstr "Naroči se"
-
-#: s2forums/djangobb_forum/forms.py:63
-msgid "Subscribe to this topic."
-msgstr "Naroči se na to temo."
-
-#: s2forums/djangobb_forum/forms.py:93
-msgid "Can't be empty nor contain only whitespace characters"
-msgstr "Ne sme biti prazno ali vsebovati le presledkov"
-
-#: s2forums/djangobb_forum/forms.py:103
-msgid ""
-"Hmm, the filterbot is pretty sure your recent comments weren't ok for "
-"Scratch, so your account has been muted for the rest of the day. :/"
-msgstr ""
-"Hmm, (robo)filter je prepričan, da tvoji zadnji komentarji niso primerni za "
-"Scratch, zato bo tvoj račun blokiran do konca dneva. :/"
-
-#: s2forums/djangobb_forum/forms.py:132 s2forums/djangobb_forum/forms.py:136
-#, python-format
-msgid "Sorry, you have to wait %d seconds between posts."
-msgstr "Oprosti, med objavami moraš počakati %d sekund."
-
-#: s2forums/djangobb_forum/forms.py:145
-msgid "Attachment is too big"
-msgstr "Priponka je prevelika"
-
-#: s2forums/djangobb_forum/forms.py:190
-msgid "Silent edit?"
-msgstr "Skrito urejanje?"
-
-# 83%
-#: s2forums/djangobb_forum/forms.py:230
-msgid "E-mail"
-msgstr "E-pošta"
-
-#: s2forums/djangobb_forum/forms.py:261
-msgid "Real name"
-msgstr "Pravo ime"
-
-# 87%
-#: s2forums/djangobb_forum/forms.py:368 s2forums/djangobb_forum/forms.py:404
-#: templates/includes/sort-projects-dropdown.html:4
-#: templates/studio/includes/sort-galleries-dropdown.html:19
-#: templates/studio/includes/sort-projects-dropdown.html:4
-msgid "Sort by"
-msgstr "Razvrsti po"
-
-#: s2forums/djangobb_forum/forms.py:369 s2forums/djangobb_forum/forms.py:405
-msgid "Sort order"
-msgstr "Vrstni red"
-
-#: s2forums/djangobb_forum/forms.py:398
-msgid "Keyword search"
-msgstr "Iskanje po ključnih besedah"
-
-#: s2forums/djangobb_forum/forms.py:400
-msgid "Author search"
-msgstr "Iskanje po avtorju"
-
-#: s2forums/djangobb_forum/forms.py:403
-msgid "Search in"
-msgstr "Išči v"
-
-#: s2forums/djangobb_forum/forms.py:406
-msgid "Show results as"
-msgstr "Prikaži rezultate kot"
-
-#: s2forums/djangobb_forum/forms.py:431
-#, python-format
-msgid "User \"%s\" does not exist"
-msgstr "Uporabnik \"%s\" ne obstaja"
-
-#: s2forums/djangobb_forum/forms.py:441
-msgid "You already voted for this post"
-msgstr "Za to objavo si že glasoval-a"
-
-#: s2forums/djangobb_forum/forms.py:445
-msgid "This post does't belong to that user"
-msgstr "Ta objava ni od tega uporabnika"
-
-#: s2forums/djangobb_forum/forms.py:461 s2forums/djangobb_forum/models.py:266
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:34
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
-msgid "Message"
-msgstr "Sporočilo"
-
-#: s2forums/djangobb_forum/forms.py:514
-#, python-format
-msgid "You have selected too many choices. You may only select %i."
-msgstr "Izbrati smeš največ %i možnosti. Izbral-a si jih preveč."
-
-#: s2forums/djangobb_forum/forms.py:521
-msgid "Write each answer on a new line."
-msgstr "Zapiši vsak odgovor v novo vrstico."
-
-#: s2forums/djangobb_forum/forms.py:524
-msgid ""
-"Number of days for this poll to run. Leave empty for an indefinite poll."
-msgstr "Število dni za glasovanje. Pusti prazno, če ga ne želiš omejiti."
-
-#: s2forums/djangobb_forum/forms.py:541
-msgid "There is no valid answer."
-msgstr "Ni veljavnega odgovora."
-
-#: s2forums/djangobb_forum/forms.py:547
-msgid "One of the answers is too long."
-msgstr "Eden od odgovorov je predolg."
-
-#: s2forums/djangobb_forum/models.py:45
-msgid "Display your e-mail address."
-msgstr "Prikaži svoj e-poštni naslov."
-
-#: s2forums/djangobb_forum/models.py:46
-msgid "Hide your e-mail address but allow form e-mail."
-msgstr "Skrij svoj e-poštni naslov, dovoli pa obrazec za e-pošto."
-
-#: s2forums/djangobb_forum/models.py:47
-msgid "Hide your e-mail address and disallow form e-mail."
-msgstr "Skrij svoj e-poštni naslov in prepovej obrazec za e-pošto."
-
-#: s2forums/djangobb_forum/models.py:81 s2forums/djangobb_forum/models.py:119
-#: s2forums/djangobb_forum/models.py:489
-msgid "Name"
-msgstr "Ime"
-
-#: s2forums/djangobb_forum/models.py:82
-msgid "Groups"
-msgstr "Skupine"
-
-#: s2forums/djangobb_forum/models.py:82
-msgid "Only users from these groups can see this category"
-msgstr "Samo člani teh skupin lahko vidijo to kategorijo"
-
-#: s2forums/djangobb_forum/models.py:83 s2forums/djangobb_forum/models.py:120
-msgid "Position"
-msgstr "Položaj"
-
-#: s2forums/djangobb_forum/models.py:87 s2forums/djangobb_forum/models.py:117
-msgid "Category"
-msgstr "Kategorija"
-
-#: s2forums/djangobb_forum/models.py:88
-msgid "Categories"
-msgstr "Kategorije"
-
-#: s2forums/djangobb_forum/models.py:118
-msgid "New topics by moderators only"
-msgstr "Nove teme lahko ustvarijo le moderatorji."
-
-#: s2forums/djangobb_forum/models.py:121
-msgid "Description"
-msgstr "Opis"
-
-#: s2forums/djangobb_forum/models.py:122
-msgid "Moderators"
-msgstr "Moderatorji"
-
-#: s2forums/djangobb_forum/models.py:123 s2forums/djangobb_forum/models.py:162
-#: s2forums/djangobb_forum/models.py:263
-msgid "Updated"
-msgstr "Posodobljeno"
-
-#: s2forums/djangobb_forum/models.py:124 s2forums/djangobb_forum/models.py:168
-#: s2forums/djangobb_forum/models.py:409
-msgid "Post count"
-msgstr "Število objav"
-
-#: s2forums/djangobb_forum/models.py:125
-msgid "Topic count"
-msgstr "Število tem"
-
-#: s2forums/djangobb_forum/models.py:131
-#: templates/search/includes/tabs.html:20
-msgid "Forums"
-msgstr "Forumi"
-
-#: s2forums/djangobb_forum/models.py:161 s2forums/djangobb_forum/models.py:262
-#: s2forums/djangobb_forum/models.py:450
-msgid "Created"
-msgstr "Ustvarjeno"
-
-#: s2forums/djangobb_forum/models.py:163 s2forums/djangobb_forum/models.py:261
-#: s2forums/djangobb_forum/models.py:388
-#: templates/cloudmonitor/monitor.html:67
-msgid "User"
-msgstr "Uporabnik"
-
-#: s2forums/djangobb_forum/models.py:164
-msgid "Views count"
-msgstr "Število ogledov"
-
-#: s2forums/djangobb_forum/models.py:165
-msgid "Sticky"
-msgstr "Stalno na vrhu"
-
-#: s2forums/djangobb_forum/models.py:166
-msgid "Closed"
-msgstr "Zaprto"
-
-#: s2forums/djangobb_forum/models.py:167
-msgid "Subscribers"
-msgstr "Naročniki"
-
-#: s2forums/djangobb_forum/models.py:174 s2forums/djangobb_forum/models.py:260
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:35
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:31
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:25
-msgid "Topic"
-msgstr "Tema"
-
-#: s2forums/djangobb_forum/models.py:264
-msgid "Updated by"
-msgstr "Posodobil-a"
-
-#: s2forums/djangobb_forum/models.py:265
-msgid "Markup"
-msgstr "Oznaka"
-
-#: s2forums/djangobb_forum/models.py:267
-msgid "HTML version"
-msgstr "različica v HTML"
-
-#: s2forums/djangobb_forum/models.py:268
-msgid "User IP"
-msgstr "Uporabnikov IP"
-
-#: s2forums/djangobb_forum/models.py:274 s2forums/djangobb_forum/models.py:361
-#: s2forums/djangobb_forum/models.py:447 s2forums/djangobb_forum/models.py:485
-#: templates/comments/comment-module.html:38
-#: templates/comments/comment_module.html:17
-#: templates/comments/comment_module.html:67
-#: templates/includes/backbone-templates.html:62
-msgid "Post"
-msgstr "Objava"
-
-#: s2forums/djangobb_forum/models.py:359
-msgid "From"
-msgstr "Od"
-
-#: s2forums/djangobb_forum/models.py:360
-msgid "To"
-msgstr "Za"
-
-#: s2forums/djangobb_forum/models.py:362
-#: templates/cloudmonitor/monitor.html:71
-msgid "Time"
-msgstr "Čas"
-
-#: s2forums/djangobb_forum/models.py:363
-msgid "Sign"
-msgstr "Podpiši"
-
-#: s2forums/djangobb_forum/models.py:364 s2forums/djangobb_forum/models.py:451
-#: s2forums/djangobb_forum/models.py:464
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:25
-msgid "Reason"
-msgstr "Razlog"
-
-#: s2forums/djangobb_forum/models.py:367
-msgid "Reputation"
-msgstr "Ugled"
-
-#: s2forums/djangobb_forum/models.py:368
-msgid "Reputations"
-msgstr "Ugledi"
-
-#: s2forums/djangobb_forum/models.py:389
-msgid "Status"
-msgstr "Status"
-
-#: s2forums/djangobb_forum/models.py:390
-msgid "Site"
-msgstr "Spletna stran"
-
-#: s2forums/djangobb_forum/models.py:391
-msgid "Jabber"
-msgstr "Blebetanje"
-
-#: s2forums/djangobb_forum/models.py:392
-msgid "ICQ"
-msgstr "ICQ"
-
-#: s2forums/djangobb_forum/models.py:393
-msgid "MSN"
-msgstr "MSN"
-
-#: s2forums/djangobb_forum/models.py:394
-msgid "AIM"
-msgstr "AIM"
-
-#: s2forums/djangobb_forum/models.py:395
-msgid "Yahoo"
-msgstr "Yahoo"
-
-#: s2forums/djangobb_forum/models.py:396
-msgid "Location"
-msgstr "Kraj"
-
-#: s2forums/djangobb_forum/models.py:397 s2forums/djangobb_forum/models.py:398
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:19
-msgid "Signature"
-msgstr "Podpis"
-
-#: s2forums/djangobb_forum/models.py:399
-msgid "Time zone"
-msgstr "Časovni pas"
-
-#: s2forums/djangobb_forum/models.py:400
-msgid "Language"
-msgstr "Jezik"
-
-#: s2forums/djangobb_forum/models.py:401
-msgid "Avatar"
-msgstr "Avatar"
-
-#: s2forums/djangobb_forum/models.py:402
-msgid "Theme"
-msgstr "Oblikovna tema"
-
-#: s2forums/djangobb_forum/models.py:403
-msgid "Show avatar"
-msgstr "Prikaži avatarja"
-
-#: s2forums/djangobb_forum/models.py:404
-msgid "Show signatures"
-msgstr "Prikaži podpise"
-
-#: s2forums/djangobb_forum/models.py:405
-msgid "Show smilies"
-msgstr "Prikaži smeške"
-
-#: s2forums/djangobb_forum/models.py:406
-msgid "Privacy permission"
-msgstr "Dovoljenje za uporabo osebnih podatkov"
-
-#: s2forums/djangobb_forum/models.py:407
-msgid "Auto subscribe"
-msgstr "Samodejno naročanje"
-
-#: s2forums/djangobb_forum/models.py:407
-msgid "Auto subscribe all topics you have created or reply."
-msgstr ""
-"Samodejno naročanje na vse teme, ki si jih ustvaril-a ali nanje odgovarjal-a."
-
-#: s2forums/djangobb_forum/models.py:408
-msgid "Default markup"
-msgstr "Privzeta oznaka"
-
-#: s2forums/djangobb_forum/models.py:414 templates/base.html:237
-msgid "Profile"
-msgstr "Profil"
-
-# 87%
-#: s2forums/djangobb_forum/models.py:415
-msgid "Profiles"
-msgstr "Profili"
-
-#: s2forums/djangobb_forum/models.py:439 s2forums/djangobb_forum/models.py:440
-msgid "Post tracking"
-msgstr "Sledenje objavam"
-
-#: s2forums/djangobb_forum/models.py:446
-msgid "Reported by"
-msgstr "Prijavil-a"
-
-#: s2forums/djangobb_forum/models.py:448
-msgid "Zapped"
-msgstr "Zaključeno"
-
-#: s2forums/djangobb_forum/models.py:449
-msgid "Zapped by"
-msgstr "Zaključil"
-
-#: s2forums/djangobb_forum/models.py:454
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:159
-#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
-msgid "Report"
-msgstr "Poročilo"
-
-# 85%
-#: s2forums/djangobb_forum/models.py:455
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:31
-#: s2forums/djangobb_forum/templates/djangobb_forum/reports.html:6
-msgid "Reports"
-msgstr "Poročila"
-
-#: s2forums/djangobb_forum/models.py:461
-msgid "Banned user"
-msgstr "Uporabnik je izključen iz sistema"
-
-#: s2forums/djangobb_forum/models.py:462
-msgid "Ban start"
-msgstr "Začetek prepovedi"
-
-#: s2forums/djangobb_forum/models.py:463
-msgid "Ban end"
-msgstr "Konec prepovedi"
-
-#: s2forums/djangobb_forum/models.py:467
-msgid "Ban"
-msgstr "Prepoved"
-
-#: s2forums/djangobb_forum/models.py:468
-msgid "Bans"
-msgstr "Prepovedi"
-
-#: s2forums/djangobb_forum/models.py:486
-msgid "Size"
-msgstr "Velikost"
-
-#: s2forums/djangobb_forum/models.py:487
-msgid "Content type"
-msgstr "Vrsta vsebine"
-
-#: s2forums/djangobb_forum/models.py:488
-msgid "Path"
-msgstr "Pot"
-
-#: s2forums/djangobb_forum/models.py:490
-msgid "Hash"
-msgstr "Zgoščeno"
-
-#: s2forums/djangobb_forum/models.py:517
-msgid "How many choices are allowed simultaneously."
-msgstr "Koliko izbir je dovoljenih hkrati"
-
-#: s2forums/djangobb_forum/models.py:520
-msgid "Can users vote to this poll or just see the result?"
-msgstr "Ali lahko uporabniki sodelujejo v tej anketi ali samo vidijo rezultat?"
-
-#: s2forums/djangobb_forum/models.py:523
-msgid "Point of time after this poll would be automatic deactivated"
-msgstr "Časovna točka bo po tej anketi samodejno deaktivirana"
-
-#: s2forums/djangobb_forum/models.py:526
-msgid "Users who has voted this poll."
-msgstr "Uporabniki, ki so glasovali to anketo"
-
-#: s2forums/djangobb_forum/util.py:273
-#, python-format
-msgid ""
-"Sorry, you need to host your images with a service like imageshack.com. "
-"Please update your image links or remove all BB code [img] tags. Bad image "
-"url: %s"
-msgstr ""
-"Žal za gostovanje slik potrebuješ storitev kot je na primer "
-"imageshack.comPosodobit povezave do slik ali odstranitev vse BB kode [img] "
-"oznake. Slaba slikaurl: %s"
-
-#: s2forums/djangobb_forum/views.py:93
-msgid "Topics deleted."
-msgstr "Teme izbrisane."
-
-#: s2forums/djangobb_forum/views.py:98
-msgid "Topics opened."
-msgstr "Teme odprte."
-
-#: s2forums/djangobb_forum/views.py:103
-msgid "Topics closed."
-msgstr "Teme zaprte."
-
-#: s2forums/djangobb_forum/views.py:296
-#, python-format
-msgid "Found %i posts."
-msgstr "Najdenih %i objav."
-
-#: s2forums/djangobb_forum/views.py:300
-#, python-format
-msgid "Found %i topics."
-msgstr "Najdenih %i tem."
-
-#: s2forums/djangobb_forum/views.py:314
-msgid "Marked all topics as read."
-msgstr "Vse teme so bile označene kot prebrane."
-
-#: s2forums/djangobb_forum/views.py:324
-msgid "Post reported."
-msgstr "Objava je prijavljena."
-
-#: s2forums/djangobb_forum/views.py:341
-msgid "Email sent."
-msgstr "E-pošta poslana."
-
-#: s2forums/djangobb_forum/views.py:343
-msgid "Email could not be sent."
-msgstr "E-pošte ni bilo mogoče poslati."
-
-#: s2forums/djangobb_forum/views.py:437 s2forums/djangobb_forum/views.py:1147
-msgid "Reply saved."
-msgstr "Odgovor je shranjen."
-
-#: s2forums/djangobb_forum/views.py:483
-msgid "This poll is not active."
-msgstr "Ta anketa ni aktivna."
-
-#: s2forums/djangobb_forum/views.py:486
-msgid "You already voted on this poll."
-msgstr "V tej anketi si že glasoval-a."
-
-#: s2forums/djangobb_forum/views.py:495
-msgid "Vote saved."
-msgstr "Glas je shranjen."
-
-#: s2forums/djangobb_forum/views.py:593
-msgid "Topic with poll saved."
-msgstr "Tema z anketo je shranjena."
-
-#: s2forums/djangobb_forum/views.py:595
-msgid "Topic saved."
-msgstr "Tema je shranjena."
-
-#: s2forums/djangobb_forum/views.py:630
-msgid "Avatar uploaded."
-msgstr "Avatar je naložen."
-
-#: s2forums/djangobb_forum/views.py:639
-msgid "Please sign in."
-msgstr "Prosimo, vpiši se."
-
-#: s2forums/djangobb_forum/views.py:653
-msgid "Profile saved."
-msgstr "Profil je shranjen."
-
-#: s2forums/djangobb_forum/views.py:688
-msgid "Reputation deleted."
-msgstr "Ugled uporabnika je izbrisan."
-
-#: s2forums/djangobb_forum/views.py:694
-msgid "Reputation saved."
-msgstr "Ugled uporabnika je shranjen."
-
-#: s2forums/djangobb_forum/views.py:735
-msgid "You don't have permission to edit this post."
-msgstr "Za urejanje te objave nimaš dovoljenja."
-
-#: s2forums/djangobb_forum/views.py:745
-msgid "Post updated."
-msgstr "Objava je posodobljena."
-
-#: s2forums/djangobb_forum/views.py:768 s2forums/djangobb_forum/views.py:963
-msgid "Post deleted."
-msgstr "Objava je izbrisana."
-
-#: s2forums/djangobb_forum/views.py:812
-msgid "The topic ID must be an integer."
-msgstr "ID teme mora biti celo število."
-
-#: s2forums/djangobb_forum/views.py:818
-msgid "That thread doesn't exist."
-msgstr "Ta nit ne obstaja."
-
-#: s2forums/djangobb_forum/views.py:859
-msgid "Posts moved."
-msgstr "Objave so premaknjene."
-
-#: s2forums/djangobb_forum/views.py:923
-msgid "Topic moved."
-msgstr "Tema je premaknjena."
-
-#: s2forums/djangobb_forum/views.py:939
-msgid "Topic stickied."
-msgstr "Tema je zasidrana."
-
-#: s2forums/djangobb_forum/views.py:941
-msgid "Topic unstickied."
-msgstr "Tema je odsidrana."
-
-#: s2forums/djangobb_forum/views.py:959
-msgid "You don't have permission to delete this post."
-msgstr "Za izbris te objave nimaš dovoljenja."
-
-#: s2forums/djangobb_forum/views.py:986 s2forums/djangobb_forum/views.py:1018
-msgid "You don't have permission to mark this post."
-msgstr "Nimaš dovoljenja, da označiš to objavo."
-
-#: s2forums/djangobb_forum/views.py:990 s2forums/djangobb_forum/views.py:1022
-msgid "There was not enough data collected to mark this post."
-msgstr "Ni bilo zbrano dovolj podatkov, da bi označili to objavo."
-
-#: s2forums/djangobb_forum/views.py:995
-msgid "Post marked as spam."
-msgstr "Objava je bila označena kot nezaželena."
-
-#: s2forums/djangobb_forum/views.py:997
-msgid "This post is not in the right state to be marked as spam."
-msgstr "Objava ni v ustreznem stanju, da bi jo označili kot nezaželeno."
-
-#: s2forums/djangobb_forum/views.py:1027
-msgid "Post un-marked as spam."
-msgstr "Objava ni več označena kot nezaželena."
-
-#: s2forums/djangobb_forum/views.py:1029
-msgid "This post is not in the right state to be un-marked as spam."
-msgstr "Objava ni v ustreznem stanju, da bi jo odznačili kot nezaželeno."
-
-#: s2forums/djangobb_forum/views.py:1042
-msgid "Topic closed."
-msgstr "Tema je zaklenjena."
-
-#: s2forums/djangobb_forum/views.py:1045
-msgid "Topic opened."
-msgstr "Tema je odprta."
-
-#: s2forums/djangobb_forum/views.py:1067
-msgid "Unsubscribed from topic."
-msgstr "Izpisan iz teme."
-
-#: s2forums/djangobb_forum/views.py:1079
-msgid "Subscribed to topic."
-msgstr "Naročen na temo."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:13
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:10
-msgid "New Topic"
-msgstr "Nova tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:15
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:15
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:77
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:72
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:65
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:10
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:27
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:189
-#: templates/base.html:324
-msgid "Discussion Forums"
-msgstr "Razpravljalni forumi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:6
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:6
-msgid "Discuss Scratch"
-msgstr "Razpravljaj o Scratchu"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:129
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:43
-msgid "Notice"
-msgstr "Obvestilo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:7
-#, python-format
-msgid "Delete Posts - %(name)s"
-msgstr "Izbriši objave - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:68
-msgid "Delete Posts"
-msgstr "Izbriši objave"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:46
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:48
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:130
-#, python-format
-msgid "Last edited by %(user)s (%(time)s)"
-msgstr "Zadnji uredil %(user)s (%(time)s)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:51
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:35
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:52
-msgid "Select"
-msgstr "Izberi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:72
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:85
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:168
-#: templates/studio/studio.html:137
-msgid "Delete"
-msgstr "Izbriši"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:73
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:46
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:90
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:41
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:35
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:66
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:41
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:74
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:30
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:65
-msgid "Go back"
-msgstr "Nazaj"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:5
-#, python-format
-msgid "Edit Post - %(name)s"
-msgstr "Uredi objavo - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:14
-msgid "Edit Post"
-msgstr "Uredi objavo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:22
-msgid "Edit post"
-msgstr "Uredi objavo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:41
-msgid "Silent edit (don't display 'Edited by ...' in topic view)"
-msgstr "Skrito urejanje (ne prikaži drugim 'Urejal ...')"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:45
-msgid "Save"
-msgstr "Shrani"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:24
-msgid ""
-"Can't find an answer to your question? Click here to ask it in a new thread."
-msgstr ""
-"Ne najdeš odgovora na svoje vprašanje? Klikni tu in ga vprašaj v novi niti"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:24
-msgid "New topic"
-msgstr "Nova tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:36
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:32
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:27
-msgid "Replies"
-msgstr "Odgovori"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:37
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:33
-#: templates/includes/sort-projects-dropdown.html:10
-#: templates/studio/includes/sort-projects-dropdown.html:10
-msgid "Views"
-msgstr "Ogledi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:38
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:58
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:34
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:28
-msgid "Last Post"
-msgstr "Zadnja objava"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:53
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:47
-msgid "Sticky:"
-msgstr "Zasidrano:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:56
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:63
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum_row.html:40
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:50
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:56
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:39
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:45
-#: templates/carousel/includes/project-thumb.html:26
-#: templates/carousel/includes/project-thumb.html:28
-#: templates/explore/explore2.html:54
-#: templates/explore/includes/related_projects.html:17
-#: templates/explore/includes/related_projects.html:32
-#: templates/explore/includes/related_projects.html:46
-#: templates/explore/includes/related_projects.html:75
-#: templates/explore/includes/related_projects2.html:8
-#: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-thumb.html:22
-#: templates/galleries/includes/project-thumb.html:24
-#: templates/projects/base.html:105 templates/projects/base.html.py:368
-#: templates/projects/includes/project_list.html:11
-msgid "by"
-msgstr "od"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:57
-msgid "(New Posts)"
-msgstr "(Nove objave)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:67
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:61
-msgid "Forum is empty."
-msgstr "Forum je prazen."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:107
-msgid "Moderate forum"
-msgstr "Moderiraj forum"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:16
-msgid "Show new posts since last visit"
-msgstr "Pokaži objave po zadnjem obisku"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
-msgid "Discussion Home"
-msgstr "Začetek razprav"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:20
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
-#: templates/404.html:21 templates/base.html:184 templates/contact-us.html:92
-msgid "Search"
-msgstr "Išči"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:29
-#, python-format
-msgid "Reports (%(report_count)s)"
-msgstr "Število prijav je (%(report_count)s)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-msgid "Show your"
-msgstr "Pokaži svoj"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-msgid "topics"
-msgstr "teme"
-
-# 80%
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-msgid "posts"
-msgstr "objave"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:78
-msgid "Change your signature"
-msgstr "Spremeni svoj podpis"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:82
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:43
-msgid "Show recent posts"
-msgstr "Prikaži nedavne objave"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:83
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:44
-msgid "Show unanswered posts"
-msgstr "Prikaži objave brez odgovorov"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:85
-msgid "Mark all topics as read"
-msgstr "Označi vse teme kot prebrane"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:7
-msgid "Send e-mail to"
-msgstr "Pošlji e-pošto"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:13
-msgid "Write and submit your e-mail message"
-msgstr "Napiši in pošlji e-pošto"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:19
-msgid ""
-"Please note that by using this form, your e-mail address will be disclosed "
-"to the recipient."
-msgstr ""
-"Prosimo upoštevaj, da bo z uporabo tega obrazca tvoj e-poštni naslov viden "
-"prejemniku."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:34
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:41
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:73
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:64
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:59
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/post_form.html:16
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:31
-#: templates/extensions/terms_of_use.html:40
-msgid "Submit"
-msgstr "Oddaj"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:7
-#, python-format
-msgid "Moderate - %(name)s"
-msgstr "Moderiraj - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:16
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:74
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:80
-msgid "Moderate Forum"
-msgstr "Moderiraj forum"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:84
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:89
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:40
-#: templates/info/help/studio/tips/howto/hoc-4a.html:18
-#: templates/info/help/studio/tips/howto/hoc.html:24
-msgid "Move"
-msgstr "Premakni"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:86
-msgid "Open"
-msgstr "Odpri"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:87
-#: templates/modal-registration.html:188
-msgid "Close"
-msgstr "Zapri"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderators.html:3
-msgid "Moderated by"
-msgstr "Moderiral"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:7
-#, python-format
-msgid "Move Posts - %(name)s"
-msgstr "Premakni objave - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:22
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:68
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:74
-msgid "Move Posts"
-msgstr "Premakni objave"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:82
-msgid "All posts (original topic will be deleted)"
-msgstr "Vse objave (izvirne teme bodo izbrisane)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:85
-msgid "Topic ID or URL"
-msgstr "ID teme ali URL"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:17
-msgid "Move Topic"
-msgstr "Premakni temo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:26
-msgid "Move to"
-msgstr "Premakni v"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/pagination.html:3
-msgid "Pages"
-msgstr "Strani"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:22
-msgid "Report Post"
-msgstr "Prijavi objavo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:32
-msgid "Please enter a short reason why you are reporting this post."
-msgstr "Prosimo, napiši kratko obrazložitev, zakaj prijavljaš to objavo."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:17
-msgid "Reputation of the user"
-msgstr "Ugled uporabnika"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:23
-msgid "From user"
-msgstr "Od uporabnika"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:24
-msgid "For post in topic"
-msgstr "Za objavo v temi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:26
-msgid "Estimation"
-msgstr "Ocena"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:27
-msgid "Date"
-msgstr "Datum"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:64
-msgid "Are you sure"
-msgstr "Si prepričan-a"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:7
-msgid "Please, fill the form"
-msgstr "Prosimo, izpolni obrazec"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:17
-msgid "Your name:"
-msgstr "Tvoje ime:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:21
-msgid "To whom we change a reputation:"
-msgstr "Komu naj spremenimo ugled:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:29
-msgid "Method:"
-msgstr "Metoda:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:32
-msgid "Add of a reputation"
-msgstr "Povečanje ugleda"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:34
-msgid "Reduction of a reputation"
-msgstr "Zmanjšanje ugleda"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:32
-msgid "(Dustbin all posts and topics)"
-msgstr "(Vrzi v koš vse objave in teme)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:37
-msgid ""
-"To search by keyword, enter a term or terms to search for. Separate terms "
-"with spaces. To search by author enter the username of the author whose "
-"posts you wish to search for."
-msgstr ""
-"Za iskanje po ključnih besedah vstavi izraz ali izraze za iskanje. Loči "
-"izraze s presledki. Za iskanje po avtorju vstavi uporabniško ime avtorja "
-"čigarobjave iščeš."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:42
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:30
-msgid "All forums"
-msgstr "Vsi forumi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:56
-msgid ""
-"Choose in which forum you would like to search and if you want to search in "
-"topic subjects, message text or both."
-msgstr ""
-"Izberi, v katerem forumu želiš iskati, ali želiš iskati poimenih tem, po "
-"besedilu v temah ali oboje."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:70
-msgid "You can choose how you wish to sort and show your results."
-msgstr "Lahko izbereš, kako želiš razvrstiti in prikazati rezultate iskanja."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:6
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:7
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:10
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:10
-msgid "Search Results"
-msgstr "Rezultati iskanja"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:12
-msgid "Show results as topic list."
-msgstr "Prikaži rezultate kot seznam tem."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:26
-msgid "Info"
-msgstr "Informacije"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:49
-msgid "Your search returned no hits."
-msgstr "Tvoje iskanje ni vrnilo zadetkov."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:42
-msgid "Search links"
-msgstr "Išči povezave"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:46
-msgid "Show your subscribed topics"
-msgstr "Prikaži naročene teme"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:47
-msgid "Show your topics"
-msgstr "Prikaži svoje teme"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:13
-msgid "Show results as post list."
-msgstr "Prikaži rezultate kot seznam objav."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:16
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:198
-msgid "loading..."
-msgstr "nalaganje..."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:17
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:199
-msgid "There was an error :( Try again?"
-msgstr "Prišlo je do napake :( Ponovni poskus?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:200
-msgid "Follow this discussion to get a message when there's a new post"
-msgstr "Sledi tej razpravi, da dobiš sporočilo, ko  bo kaj novega v tej objavi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:200
-msgid "Follow Discussion"
-msgstr "Sledi razpravi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:201
-msgid "Stop getting messages about new posts to this discussion"
-msgstr "Ne prikazuj sporočil o novih objavah v tej razpravi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:201
-msgid "Unfollow Discussion"
-msgstr "Prenehaj slediti razpravi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:35
-msgid "Poll"
-msgstr "Anketa"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:43
-#, python-format
-msgid "(%(count)s answers allows.)"
-msgstr "(%(count)s dovoljenih odgovorov.)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:46
-msgid "Vote"
-msgstr "Glasuj"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:97
-msgid "1000+ posts"
-msgstr "1000+ objav"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:99
-msgid "500+ posts"
-msgstr "500+ objav"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:101
-msgid "100+ posts"
-msgstr "100+ objav"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:103
-msgid "1 post"
-msgstr "1 objava"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:105
-msgid " posts"
-msgstr " objave"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:111
-msgid "From:"
-msgstr "Od:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:113
-msgid "Registered:"
-msgstr "Registriran:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:114
-msgid "Posts:"
-msgstr "Objave:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:115
-msgid "IP:"
-msgstr "IP:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:120
-msgid "Really delete all posts, and ban user? This is hard to reverse."
-msgstr ""
-"Si prepričan, da želiš zbrisati vse objave in zakleniti uporabnika? To je "
-"težko obnoviti neazaj."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:137
-msgid "(Edit Signature)"
-msgstr "(Uredi podpis)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
-msgid "Are you sure you want to mark this as spam?"
-msgstr "Si prepričan-a, da želiš to objavo označiti kot nezaželeno?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
-msgid "Mark as Spam"
-msgstr "Označi kot nezaželeno"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
-msgid "Are you sure you want to unmark this as spam?"
-msgstr "Si prepričan-a, da želiš to objavo odznačiti kot nezaželeno?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
-msgid "Un-mark as Spam"
-msgstr "Ni več označeno kot nezaželeno "
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:168
-msgid "Are you sure you want to delete this post?"
-msgstr "Si prepričan-a, da želiš izbrisati to objavo?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:172
-msgid "Edit"
-msgstr "Uredi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:175
-msgid "Insert a quotation of this post in your reply."
-msgstr "Vstavi navedek te objave v svoj odgovor."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:175
-msgid "Quote"
-msgstr "Navedek"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:220
-msgid "Jump to"
-msgstr "Skoči na"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:231
-#: templates/explore/projects.html:26
-msgid "Go"
-msgstr "Pojdi"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:236
-msgid "Moderator control"
-msgstr "Nadzor moderatorja"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:237
-msgid "Delete multiple posts"
-msgstr "Zbriši več objav"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:238
-msgid "Move multiple posts"
-msgstr "Premakni več objav"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:239
-msgid "Move topic"
-msgstr "Premakni temo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:241
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:253
-msgid "Open topic"
-msgstr "Odpri temo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:243
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:256
-msgid "Close topic"
-msgstr "Zapri temo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:246
-msgid "Unstick topic"
-msgstr "Odsidraj temo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:248
-msgid "Stick topic"
-msgstr "Zasidraj temo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:7
-msgid "Upload avatar"
-msgstr "Naloži avatarja"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:13
-msgid "Enter an avatar file to upload"
-msgstr "Naloži avatarja"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:19
-#, python-format
-msgid ""
-"An avatar is a small image that will be displayed under your username in "
-"your posts. It must not be any bigger than %(avatar_width)s x "
-"%(avatar_height)s pixels "
-msgstr ""
-"Avatar je majhna slika, ki bo prikazana pod tvojim uporabniškim imenom v "
-"tvojih objavah. Velika sme biti največ %(avatar_width)s x %(avatar_height)s "
-"pikslov."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
-msgid "Upload"
-msgstr "Naloži"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:5
-msgid "YouTube Video"
-msgstr "YouTube Video"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:22
-msgid "Video Not Found"
-msgstr "Video ni bil najden"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:33
-msgid "Why do I see this page?"
-msgstr "Zakaj vidim to stran?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:36
-msgid ""
-"Links to YouTube videos on the forums are automatically converted to links "
-"to this page, to hide comments and other content."
-msgstr ""
-"Povezave do YouTube videov na forumih so samodejno pretvorjene v povezave do "
-"te strani, da se skrije komentarje in ostalo vsebino."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
-msgid "New Reply"
-msgstr "Nov odgovor"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:22
-msgid "Create a poll"
-msgstr "Ustvari anketo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_in_search_page.html:14
-msgid "Replies:"
-msgstr "Odgovori:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:8
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/forum.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/index.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/reply.html:8
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
-#: templates/base.html:177
-msgid "Discuss"
-msgstr "Razpravljaj"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:23
-#, python-format
-msgid "Signed in as <strong>%(user)s</strong>"
-msgstr "Prijavljen-a kot <strong>%(user)s</strong>"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:25
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:7
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:25
-msgid "Sign In"
-msgstr "Vpiši se"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/index.html:16
-#, python-format
-msgid "%(posts)s post"
-msgid_plural "%(posts)s posts"
-msgstr[0] "%(posts)s objava"
-msgstr[1] "%(posts)s objavi"
-msgstr[2] "%(posts)s objave"
-msgstr[3] "%(posts)s objav"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/reply.html:11
-#: templates/comments/comment.html:59
-#: templates/comments/comment_module.html:31
-#: templates/comments/comment_module.html:48
-#: templates/comments/includes/comment.html:12
-msgid "Reply"
-msgstr "Odgovori"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:22
-msgid "No posts."
-msgstr "Ni objav."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:7
-#, python-format
-msgid "%(replies)s reply"
-msgid_plural "%(replies)s replies"
-msgstr[0] "%(replies)s odgovor"
-msgstr[1] "%(replies)s odgovora"
-msgstr[2] "%(replies)s odgovori"
-msgstr[3] "%(replies)s odgovorov"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:10
-msgid "No topics."
-msgstr "Ni tem."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:12
-#, python-format
-msgid "Settings (%(name)s)"
-msgstr "Nastavitve (%(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:22
-msgid ""
-"A signature is a small piece of text that is attached to your posts. In it, "
-"you can enter just about anything you like. Perhaps you would like to enter "
-"your favourite quote or your star sign. It's up to you! In your signature "
-"you can use BBCode if it is allowed in this particular forum. You can see "
-"the features that are allowed/enabled listed below whenever you edit your "
-"signature."
-msgstr ""
-"Podpis je besedilo, pripeto k tvojim objavam. V podpis lahko napišeš karkoli "
-"želiš, morda tvoj najljubši  rek ali tvoje nebesno znamenje. Odločitev je "
-"tvoja! V podpisu lahko uporabiš BBCode, če to forum dovoljuje. Katere "
-"funkcije so dovoljene, si lahko ogledaš spodaj, vedno ko urejaš podpis."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:27
-msgid "No signature currently stored in profile."
-msgstr "V profilu trenutno ni shranjenega podpisa."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:32
-msgid "When you update your profile, you will be redirected back to this page."
-msgstr "Ko bo profil posodobljen, boš preusmerjen-a nazaj na to stran."
 
 # 97%
 #: templates/403.html:12
@@ -1638,6 +182,10 @@ msgstr ""
 msgid "You can try searching for what you're looking for here:"
 msgstr "Z iskanjem želenega lahko poskusiš tukaj:"
 
+#: templates/404.html:21 templates/base.html:185 templates/contact-us.html:92
+msgid "Search"
+msgstr "Išči"
+
 #: templates/500.html:40
 msgid "Looks like we are having issues with our servers!"
 msgstr ""
@@ -1668,29 +216,38 @@ msgstr "Scratch"
 msgid "Imagine, Program, Share"
 msgstr "Zamisli si, programiraj, deli"
 
-#: templates/base.html:175
+#: templates/base.html:176
 msgid "Create"
 msgstr "Ustvari"
 
-#: templates/base.html:176 templates/explore/explore2.html:40
+#: templates/base.html:177 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Raziskuj"
 
 #: templates/base.html:178
+msgid "Discuss"
+msgstr "Razpravljaj"
+
+#: templates/base.html:179
 msgid "Help"
 msgstr "Pomoč"
 
-#: templates/base.html:198 templates/modal-registration.html:6
+#: templates/base.html:199 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Pridruži se Scratchu"
 
-#: templates/base.html:201 templates/base.html.py:212 templates/base.html:222
+#: templates/base.html:202 templates/base.html.py:213 templates/base.html:223
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Vpiši se"
 
-#: templates/base.html:209 templates/modal-login.html:21
+#: templates/base.html:208 templates/modal-login.html:14
+#: templates/includes/backbone-templates.html:19
+msgid "Username"
+msgstr "Uporabniško ime"
+
+#: templates/base.html:210 templates/modal-login.html:21
 #: templates/accounts/account_settings.html:9
 #: templates/accounts/email_change.html:9
 #: templates/accounts/deletion/confirmation.html:7
@@ -1699,155 +256,163 @@ msgstr "Vpiši se"
 msgid "Password"
 msgstr "Geslo"
 
-#: templates/base.html:213
+#: templates/base.html:214
 msgid "Forgot password?"
 msgstr "Pozabljeno geslo?"
 
-#: templates/base.html:229
+#: templates/base.html:230
 msgid "messages - updates and notices"
 msgstr "sporočila - posodobitve in obvestila"
 
-#: templates/base.html:230
+#: templates/base.html:231
 msgid "my stuff - manage projects and studios"
 msgstr "moje stvari - vodenje projektov in studiev"
 
-#: templates/base.html:238 templates/explore/base.html:24
+#: templates/base.html:238
+msgid "Profile"
+msgstr "Profil"
+
+#: templates/base.html:239 templates/explore/base.html:24
 #: templates/studio/base.html:21
 msgid "My Stuff"
 msgstr "Moje stvari"
 
-#: templates/base.html:239
+#: templates/base.html:240
 msgid "Account settings"
 msgstr "Nastavitve računa"
 
-#: templates/base.html:240
+#: templates/base.html:241
 msgid "Sign out"
 msgstr "Izpiši se"
 
-#: templates/base.html:310
+#: templates/base.html:311
 msgid "About"
 msgstr "O nas"
 
-#: templates/base.html:312 templates/info/about.html:13
+#: templates/base.html:313 templates/info/about.html:13
 #: templates/info/help/index.html:92
 msgid "About Scratch"
 msgstr "O Scratchu"
 
-#: templates/base.html:313 templates/info/parents.html:12
+#: templates/base.html:314 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "Za starše"
 
-#: templates/base.html:314 templates/info/educators.html:12
+#: templates/base.html:315 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "Za učitelje"
 
-#: templates/base.html:315
+#: templates/base.html:316
 msgid "Credits"
 msgstr ""
 
-#: templates/base.html:316
+#: templates/base.html:317
 msgid "Jobs"
 msgstr "Dela"
 
-#: templates/base.html:317
+#: templates/base.html:318
 msgid "Press"
 msgstr ""
 
-#: templates/base.html:321 templates/info/parents.html:72
+#: templates/base.html:322 templates/info/parents.html:72
 msgid "Community"
 msgstr "Skupnost"
 
-#: templates/base.html:323
+#: templates/base.html:324
 msgid "Community Guidelines"
 msgstr "Smernice skupnosti"
 
-#: templates/base.html:325 templates/info/help/index.html:113
+#: templates/base.html:325
+msgid "Discussion Forums"
+msgstr "Razpravljalni forumi"
+
+#: templates/base.html:326 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
-#: templates/base.html:326
+#: templates/base.html:327
 msgid "Statistics"
 msgstr ""
 
-#: templates/base.html:330 templates/search/includes/tabs.html:17
+#: templates/base.html:331 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr "Podpora"
 
-#: templates/base.html:332
+#: templates/base.html:333
 msgid "Help Page"
 msgstr ""
 
-#: templates/base.html:333
+#: templates/base.html:334
 msgid "FAQ"
 msgstr ""
 
-#: templates/base.html:334
+#: templates/base.html:335
 msgid "Offline Editor"
 msgstr ""
 
-#: templates/base.html:335 templates/contact-us-success.html:12
+#: templates/base.html:336 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Piši nam"
 
-#: templates/base.html:336
+#: templates/base.html:337
 msgid "Donate"
 msgstr "Prispevaj"
 
-#: templates/base.html:340
+#: templates/base.html:341
 msgid "Legal"
 msgstr ""
 
-#: templates/base.html:342
+#: templates/base.html:343
 msgid "Terms of Use"
 msgstr ""
 
-#: templates/base.html:343 templates/info/help/faq.html:28
+#: templates/base.html:344 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80
 msgid "Privacy Policy"
 msgstr "Politika zasebnosti"
 
-#: templates/base.html:344 templates/info/DMCA.html:10
+#: templates/base.html:345 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:348
+#: templates/base.html:349
 msgid "Scratch Family"
 msgstr ""
 
 # 77%
-#: templates/base.html:350
+#: templates/base.html:351
 #, fuzzy
 msgid "ScratchEd"
 msgstr "Scratch"
 
 # 88%
-#: templates/base.html:351
+#: templates/base.html:352
 #, fuzzy
 msgid "ScratchJr"
 msgstr "Scratcher"
 
 # 75%
-#: templates/base.html:352
+#: templates/base.html:353
 #, fuzzy
 msgid "Scratch Day"
 msgstr "Scratch ekipa"
 
-#: templates/base.html:353
+#: templates/base.html:354
 msgid "Scratch Conference"
 msgstr ""
 
-#: templates/base.html:354
+#: templates/base.html:355
 msgid "Code-to-Learn Foundation"
 msgstr ""
 
-#: templates/base.html:369
+#: templates/base.html:370
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
 "Scratch je projekt skupine Lifelong Kindergarten Group v okviru MIT Media Lab"
 
-#: templates/base.html:435
+#: templates/base.html:436
 msgid "Your Account Will Not Be Deleted"
 msgstr ""
 
@@ -2223,6 +788,10 @@ msgstr "Naprej"
 msgid "OK Lets Go!"
 msgstr "No, pa začnimo!"
 
+#: templates/modal-registration.html:188
+msgid "Close"
+msgstr "Zapri"
+
 #: templates/modal-registration.html:201
 msgid "Your username must be between 3 and 20 characters"
 msgstr "Tvoje uporabniško ime mora imeti med 3 in 20 znakov"
@@ -2505,8 +1074,8 @@ msgstr ""
 #: templates/profiles/profile_detail.html:270
 #: templates/profiles/profile_detail.html:290
 #: templates/profiles/profile_detail.html:310
-#: templates/profiles/profile_detail.html:347 templates/projects/base.html:357
-#: templates/projects/base.html.py:387 templates/search/search.html:58
+#: templates/profiles/profile_detail.html:347 templates/projects/base.html:356
+#: templates/projects/base.html.py:386 templates/search/search.html:58
 #: templates/search/search.html.py:88 templates/search/search.html:96
 msgid "View all"
 msgstr "Poglej vse"
@@ -2519,6 +1088,22 @@ msgstr "Ni izdelkov"
 msgid "in"
 msgstr "v"
 
+#: templates/carousel/includes/project-thumb.html:26
+#: templates/carousel/includes/project-thumb.html:28
+#: templates/explore/explore2.html:54
+#: templates/explore/includes/related_projects.html:17
+#: templates/explore/includes/related_projects.html:32
+#: templates/explore/includes/related_projects.html:46
+#: templates/explore/includes/related_projects.html:75
+#: templates/explore/includes/related_projects2.html:8
+#: templates/galleries/includes/activity_list.html:96
+#: templates/galleries/includes/project-thumb.html:22
+#: templates/galleries/includes/project-thumb.html:24
+#: templates/projects/base.html:105 templates/projects/base.html.py:367
+#: templates/projects/includes/project_list.html:11
+msgid "by"
+msgstr "od"
+
 #: templates/cas/login.html:9
 msgid "Log in to your account"
 msgstr "Prijavi se v račun"
@@ -2526,6 +1111,10 @@ msgstr "Prijavi se v račun"
 #: templates/cloudmonitor/monitor.html:59
 msgid "Cloud data history"
 msgstr "Zgodovina podatkov v oblaku"
+
+#: templates/cloudmonitor/monitor.html:67
+msgid "User"
+msgstr "Uporabnik"
 
 #: templates/cloudmonitor/monitor.html:68
 msgid "Data Name"
@@ -2538,6 +1127,10 @@ msgstr "Dejanje"
 #: templates/cloudmonitor/monitor.html:70
 msgid "Data Value"
 msgstr "Vrednost podatka"
+
+#: templates/cloudmonitor/monitor.html:71
+msgid "Time"
+msgstr "Čas"
 
 #: templates/comments/comment-module.html:24
 #: templates/comments/comment_module.html:11
@@ -2559,6 +1152,13 @@ msgstr ""
 #: templates/comments/comment-module.html:35
 msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr "Na voljo imaš še <span id=\"chars-left\">500</span> znakov"
+
+#: templates/comments/comment-module.html:38
+#: templates/comments/comment_module.html:17
+#: templates/comments/comment_module.html:67
+#: templates/includes/backbone-templates.html:62
+msgid "Post"
+msgstr "Objava"
 
 #: templates/comments/comment-module.html:39
 #: templates/comments/comment_module.html:20
@@ -2587,6 +1187,17 @@ msgstr ""
 #: templates/comments/comment-module.html:51
 msgid "Comments loading..."
 msgstr "Nalaganje komentarjev..."
+
+#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
+msgid "Report"
+msgstr "Poročilo"
+
+#: templates/comments/comment.html:59
+#: templates/comments/comment_module.html:31
+#: templates/comments/comment_module.html:48
+#: templates/comments/includes/comment.html:12
+msgid "Reply"
+msgstr "Odgovori"
 
 #: templates/comments/comment_module.html:36
 #: templates/comments/comment_module.html:54
@@ -2677,6 +1288,10 @@ msgstr "Zgodbe"
 msgid "Tag:"
 msgstr "Oznaka:"
 
+#: templates/explore/projects.html:26
+msgid "Go"
+msgstr "Pojdi"
+
 #: templates/explore/projects.html:38 templates/projects/project_list.html:32
 #: templates/studio/includes/project_action_bar.html:15
 msgid "Shared"
@@ -2704,7 +1319,7 @@ msgid "Projects"
 msgstr "Projekti"
 
 #: templates/explore/projects.html:101 templates/explore/studios.html:86
-#: templates/projects/base.html:386
+#: templates/projects/base.html:385
 #: templates/projects/includes/shared/shared-project-actions.html:5
 #: templates/search/search.html:64 templates/search/search.html.py:87
 #: templates/search/includes/tabs.html:11
@@ -2739,6 +1354,10 @@ msgstr "Studio:"
 #: templates/extensions/terms_of_use.html:13
 msgid "Extension Developer Terms of Use"
 msgstr ""
+
+#: templates/extensions/terms_of_use.html:40
+msgid "Submit"
+msgstr "Oddaj"
 
 #: templates/galleries/activity.html:19
 #: templates/notifications/notifications.html:31
@@ -3068,6 +1687,13 @@ msgstr "Sledi"
 msgid "Unfollow"
 msgstr "Prenehaj slediti"
 
+# 87%
+#: templates/includes/sort-projects-dropdown.html:4
+#: templates/studio/includes/sort-galleries-dropdown.html:19
+#: templates/studio/includes/sort-projects-dropdown.html:4
+msgid "Sort by"
+msgstr "Razvrsti po"
+
 # 92%
 #: templates/includes/sort-projects-dropdown.html:9
 #: templates/studio/includes/project_action_bar.html:22
@@ -3077,13 +1703,18 @@ msgstr "Prenehaj slediti"
 msgid "Last modified"
 msgstr "Zadnjič spremenjeno:"
 
+#: templates/includes/sort-projects-dropdown.html:10
+#: templates/studio/includes/sort-projects-dropdown.html:10
+msgid "Views"
+msgstr "Ogledi"
+
 #: templates/includes/sort-projects-dropdown.html:11
 #: templates/studio/includes/sort-projects-dropdown.html:11
 msgid "Loves"
 msgstr "Všečki"
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:356 templates/projects/remixes.html:3
+#: templates/projects/base.html:355 templates/projects/remixes.html:3
 #: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
@@ -4614,6 +3245,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/get-started-7.html:16
 #: templates/info/help/studio/tips/howto/get-started-intro.html:40
 #: templates/info/help/studio/tips/howto/hoc-4d.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:41
 msgid "Change Color"
 msgstr "Spremeni barvo"
 
@@ -4638,6 +3270,7 @@ msgstr "Premiki s tipkami"
 #: templates/info/help/studio/tips/howto/get-started-5.html:18
 #: templates/info/help/studio/tips/howto/get-started-intro.html:38
 #: templates/info/help/studio/tips/howto/hoc-4b.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:39
 msgid "Say Something"
 msgstr "Reci kaj"
 
@@ -4685,15 +3318,15 @@ msgstr "Predelave in kopiranje"
 msgid "Accounts"
 msgstr "Računi"
 
-#: templates/info/help/faq.html:35 templates/info/help/faq.html.py:161
+#: templates/info/help/faq.html:35 templates/info/help/faq.html.py:158
 msgid "Licensing and Permissions"
 msgstr "Licence in dovoljenja"
 
-#: templates/info/help/faq.html:36 templates/info/help/faq.html.py:189
+#: templates/info/help/faq.html:36 templates/info/help/faq.html.py:186
 msgid "Inappropriate Content"
 msgstr "Neprimerna vsebina"
 
-#: templates/info/help/faq.html:39 templates/info/help/faq.html.py:211
+#: templates/info/help/faq.html:39 templates/info/help/faq.html.py:208
 msgid "Cloud Data"
 msgstr "Podatki v oblaku"
 
@@ -5184,26 +3817,16 @@ msgstr "Kako lahko izbrišem svoj račun?"
 
 #: templates/info/help/faq.html:152
 msgid ""
-"First, download any projects that you want to keep. \n"
-"    Once the account is deleted, your projects will no longer be available. "
-"Use the form on the <a href=\"http://scratch.mit.edu/contact-us/\">Contact "
-"Us</a> page and include the following information:\n"
-"    <ul><li>Birth Month and Year that you entered when you created the "
-"account</li>\n"
-"    <li>The email address associated with the account "
+"Log in to Scratch, and then click your username in the top right-hand "
+"corner. Select “Account Settings,” then click the <em>“I want to delete my "
+"account”</em> link at the bottom of the page."
 msgstr ""
-"Najprej prenesi vse projekte, ki jih želiš obdržati. \n"
-"    Ko bo račun izbrisan, tvoji projekti namreč ne bodo več dosegljivi. "
-"Uporabi obrazec na <a href=\"http://scratch.mit.edu/contact-us/\">Piši "
-"nam</a> strani in vključi naslednje podatke:\n"
-"    <ul><li>Mesec in leto rojstva, ki si jih vpisal ob registraciji </li>\n"
-"    <li>E-poštni naslov, ki je povezan s tem računom "
 
-#: templates/info/help/faq.html:163
+#: templates/info/help/faq.html:160
 msgid "Is Scratch free?"
 msgstr "Ali je Scratch brezplačen?"
 
-#: templates/info/help/faq.html:164
+#: templates/info/help/faq.html:161
 msgid ""
 "Yes! Scratch is available free of charge. You can use it in your school, and "
 "you can teach a course about it (even a course that costs money). You don't "
@@ -5213,14 +3836,14 @@ msgstr ""
 "njim poučuje Scratch tečaj (tudi če je tečaj plačljiv). Ni ti potrebno "
 "kupiti licence, saj je zastonj."
 
-#: templates/info/help/faq.html:166
+#: templates/info/help/faq.html:163
 msgid ""
 "Can I use Scratch and / or screenshots of Scratch in a textbook or a CD?"
 msgstr ""
 "Ali lahko uporabim Scratch in / ali zaslonske slike Scratcha v učbeniku ali "
 "na CD-ju?"
 
-#: templates/info/help/faq.html:167
+#: templates/info/help/faq.html:164
 msgid ""
 "Yes, you can even write a book or chapter about Scratch. You may also use "
 "the Scratch logo when referring to Scratch. You may create screenshots / "
@@ -5240,7 +3863,7 @@ msgstr ""
 "drugo vašo gradivo vključite opombo,, ki pravi, da je \"Scratch razvija "
 "Lifelong Kindergarten Group pri MIT Media Lab. Glej http://scratch.mit.edu\"."
 
-#: templates/info/help/faq.html:169
+#: templates/info/help/faq.html:166
 msgid ""
 "Can I include a description of Scratch and the Scratch logo in brochures or "
 "other materials?"
@@ -5248,7 +3871,7 @@ msgstr ""
 "Ali lahko vključim opis Scratcha in Scratch logotip v brošure ali druga "
 "gradiva?"
 
-#: templates/info/help/faq.html:170
+#: templates/info/help/faq.html:167
 msgid ""
 "Sure! We recommend the following description: \"Scratch is a programming "
 "language and online community where you can create your own interactive "
@@ -5267,11 +3890,11 @@ msgstr ""
 "projekt  Lifelong Kindergarten group pri MIT Media Lab. Na voljo je "
 "brezplačno na http://scratch.mit.edu\""
 
-#: templates/info/help/faq.html:172
+#: templates/info/help/faq.html:169
 msgid "Can I present Scratch at a conference?"
 msgstr "Ali lahko predstavim Scratch na konferenci?"
 
-#: templates/info/help/faq.html:173
+#: templates/info/help/faq.html:170
 msgid ""
 "Please feel free to make presentations about Scratch to educators or other "
 "groups. We grant our permission to make presentations."
@@ -5279,7 +3902,7 @@ msgstr ""
 "Seveda, imaš proste roke pri predstavitvah o Scratchu učiteljem in ostalim "
 "skupinam. Imaš naše dovoljenje za pripravo predstavitev."
 
-#: templates/info/help/faq.html:175
+#: templates/info/help/faq.html:172
 msgid ""
 "May I use / remix Scratch support materials, sprites, images, sounds or "
 "sample projects I’ve found on the website?"
@@ -5287,7 +3910,7 @@ msgstr ""
 "Ali lahko uporabim / predelam Scratch podporna gradiva, figure, slike, zvoke "
 "ali vzorčne projekte, ki sem jih našel / našla na vaši spletni strani?"
 
-#: templates/info/help/faq.html:176
+#: templates/info/help/faq.html:173
 msgid ""
 "Yes - Scratch support materials made available on the Scratch website by the "
 "Scratch Team are available under the <a href=\"http://creativecommons.org/"
@@ -5301,11 +3924,11 @@ msgstr ""
 "Attribution-ShareAlike license</ a>, z izjemo logotipa Scratch, maskot "
 "Scratch mačke in Gobo (Scratch zaščitene znamke)."
 
-#: templates/info/help/faq.html:178
+#: templates/info/help/faq.html:175
 msgid "Can I sell my Scratch projects?"
 msgstr "Ali lahko prodam moje Scratch projekte?"
 
-#: templates/info/help/faq.html:179
+#: templates/info/help/faq.html:176
 msgid ""
 "Certainly - your project is your creation. Keep in mind that once you share "
 "your project on Scratch, everyone is free to download, remix, and reuse it "
@@ -5319,11 +3942,11 @@ msgstr ""
 " deed.en \"> CC-BY-SA 2.0 licence </ a>. Torej, če nameravate svoj ​​projekt "
 "prodajati, ga boste morali vzeti iz skupne rabe."
 
-#: templates/info/help/faq.html:181
+#: templates/info/help/faq.html:178
 msgid "Where can I find the source code for Scratch?"
 msgstr "Kje lahko najdem izvorno kodo za Scratch?"
 
-#: templates/info/help/faq.html:182
+#: templates/info/help/faq.html:179
 msgid ""
 "The source code for Scratch 2 (website and editor) is not yet available. The "
 "source code for <a href =\"/scratch_1.4\">Scratch 1.4</a>, written in "
@@ -5339,12 +3962,12 @@ msgstr ""
 "- je na voljo na <a href=\"http://svn.assembla.com/svn/scratchr/\">na "
 "Assembla</a>."
 
-#: templates/info/help/faq.html:190
+#: templates/info/help/faq.html:187
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
 msgstr ""
 "Kako naj vem, kaj lahko in česa ne smem deliti na Scratch spletni strani?"
 
-#: templates/info/help/faq.html:191
+#: templates/info/help/faq.html:188
 msgid ""
 "Check out the <a href=\"/community_guidelines\">Scratch community "
 "guidelines</a> - they’re brief and don’t include a lot of legal stuff. "
@@ -5354,11 +3977,11 @@ msgstr ""
 "so kratke in ne vključujejo veliko pravnih zadev. Povezavo lahko najdeš na "
 "dnu vsake strani na Scratchu."
 
-#: templates/info/help/faq.html:193
+#: templates/info/help/faq.html:190
 msgid "What do I do if I see something that’s inappropriate?"
 msgstr "Kaj naj storim, če vidim kaj neprimernega?"
 
-#: templates/info/help/faq.html:194
+#: templates/info/help/faq.html:191
 msgid ""
 "You can click the link that says “report” on any project, comment, "
 "discussion post, or user page where you think something isn't ok for "
@@ -5372,11 +3995,11 @@ msgstr ""
 "Piši nam in nam jo razložiš. Vključi čimveč podrobnosti s povezavami do "
 "ustreznih strani."
 
-#: templates/info/help/faq.html:196
+#: templates/info/help/faq.html:193
 msgid "What do I do if I see someone being mean or disrespectful?"
 msgstr "Kaj naj storim, če opazim, da je nekdo nesramen ali nespoštljiv?"
 
-#: templates/info/help/faq.html:197
+#: templates/info/help/faq.html:194
 msgid ""
 "Don’t add to the flames! Responding to mean comments with more mean comments "
 "just makes things worse, and could result in your account being blocked. "
@@ -5390,11 +4013,11 @@ msgstr ""
 "kritiko in nam prepusti, da to uredimo z avtorjem. Prijave pregledujemo vsak "
 "dan, večkrat na dan - tako, da si lahko prepričan-a, da bomo stvari uredili."
 
-#: templates/info/help/faq.html:199
+#: templates/info/help/faq.html:196
 msgid "What does the Scratch team do when something is reported or flagged?"
 msgstr "Kaj stori Scratch ekipa, ko je nekaj prijavljeno ali označeno?"
 
-#: templates/info/help/faq.html:200
+#: templates/info/help/faq.html:197
 msgid ""
 "The Scratch Team reviews reported comments and projects every day. If "
 "something breaks the Scratch community guidelines, we may remove it and send "
@@ -5408,11 +4031,11 @@ msgstr ""
 "velika je kršitev (ali če je uporabnik že kdaj prejel opozorilo), se "
 "odločimo ali bomo zablokirali račun ali omrežje, ki je bilo uporabljeno."
 
-#: templates/info/help/faq.html:202
+#: templates/info/help/faq.html:199
 msgid "What happens when an account is blocked?"
 msgstr "Kaj se zgodi, ko je račun blokiran?"
 
-#: templates/info/help/faq.html:203
+#: templates/info/help/faq.html:200
 msgid ""
 "When an account is blocked, the owner can no longer access it, or use it to "
 "create projects or comments. When they login, they see a page that explains "
@@ -5434,7 +4057,7 @@ msgstr ""
 "računa. Sicer je račun (in ostali računi, ki jih je ustvaril isti avtor) "
 "trajno blokiran."
 
-#: templates/info/help/faq.html:205
+#: templates/info/help/faq.html:202
 msgid ""
 "My mean brother / Kaj / some other bad guy stole my account and got it "
 "banned, what do I do?"
@@ -5442,7 +4065,7 @@ msgstr ""
 "Moj zlobni brat / Kaj / nek drug zlobnež je ukradel moj račun in dosegel, da "
 "je bil moj račun blokiran. Kaj naj storim?"
 
-#: templates/info/help/faq.html:206
+#: templates/info/help/faq.html:203
 msgid ""
 "You are responsible for keeping your password secure. If someone in real "
 "life takes control of your account and does bad stuff, tell the adults in "
@@ -5460,11 +4083,11 @@ msgstr ""
 "smernice skupnosti, se ne izgovarjaj, da ti je nekdo vdrl v račun, če to ni "
 "res. Če ti ne moremo zaupati, tvojega računa ne bomo odblokirali."
 
-#: templates/info/help/faq.html:213
+#: templates/info/help/faq.html:210
 msgid "What is cloud data?"
 msgstr "Kaj so podatki v oblaku?"
 
-#: templates/info/help/faq.html:214
+#: templates/info/help/faq.html:211
 msgid ""
 "Cloud data is a feature in Scratch 2 that allows for data from a project to "
 "be saved and shared online. You can use cloud data to make surveys and other "
@@ -5474,11 +4097,11 @@ msgstr ""
 "da soshranjeni in deljeni na spletu. Podatke v oblaku lahko uporabiš za "
 "izdelavo anket in drugih projektov, ki shranjujejo števila skozi čas."
 
-#: templates/info/help/faq.html:216
+#: templates/info/help/faq.html:213
 msgid "Who can see the data stored in cloud data?"
 msgstr "Kdo lahko vidi podatke shranjene v podatkih v oblaku?"
 
-#: templates/info/help/faq.html:217
+#: templates/info/help/faq.html:214
 msgid ""
 "When you interact with a project using cloud data blocks, your information "
 "can be stored along with your username, and others can view it. Each project "
@@ -5489,7 +4112,7 @@ msgstr ""
 "informacije lahko vidijo tudi drugi. Vsak projekt vodi dnevnik, kdo vse "
 "jeuporabljal interaktivni projekt in podatke, ki jih je delil. "
 
-#: templates/info/help/faq.html:219
+#: templates/info/help/faq.html:216
 msgid ""
 "Why is cloud data currently limited to only numbers -- with no strings or "
 "lists? "
@@ -5497,7 +4120,7 @@ msgstr ""
 "Zakaj so trenutno podatki v oblaku omejeni samo na števila - brez nizov ali "
 "seznamov?"
 
-#: templates/info/help/faq.html:220
+#: templates/info/help/faq.html:217
 msgid ""
 "The current site is limited to numbers in variables as an initial step to "
 "work out any issues with their use on the site. We plan to roll out cloud "
@@ -5510,7 +4133,7 @@ msgstr ""
 "podatkov v oblaku.Če bo trenutna infrastruktura dobro delovala, načrtujemo, "
 "da bomo dodali druge oblike  (sezname v oblaku, podpiranje nizov, itd.)."
 
-#: templates/info/help/faq.html:222
+#: templates/info/help/faq.html:219
 msgid ""
 "If I see someone post inappropriate content using cloud data, how do I "
 "report it?"
@@ -5518,7 +4141,7 @@ msgstr ""
 "Če opazim, da je nekdo objavil neprimerno vsebino tako, da je uporabil "
 "podatke v oblaku, kako to prijavim?"
 
-#: templates/info/help/faq.html:223
+#: templates/info/help/faq.html:220
 msgid ""
 "Click the \"Report this\" button (under on the project player) to report "
 "inappropriate content in cloud data. The report form includes a link to a "
@@ -5532,11 +4155,11 @@ msgstr ""
 "ustvaril - morda bi bilo dobro, da to pregledaš, preden pošlješ prijavo. Ne "
 "pozabi zapisati  \"podatki v oblaku\", ko vstaviš razloge za prijavo."
 
-#: templates/info/help/faq.html:225
+#: templates/info/help/faq.html:222
 msgid "Can I make chat rooms with cloud data?"
 msgstr "Ali lahko ustvarim klepetalnice s podatki v oblaku?"
 
-#: templates/info/help/faq.html:226
+#: templates/info/help/faq.html:223
 msgid ""
 "While it is technically possible to create chat rooms with cloud data, they "
 "are not currently allowed. We will reconsider this policy once we have a "
@@ -5548,11 +4171,11 @@ msgstr ""
 "razumeli, kakšne so naše zmožnosti za moderiranje in upravljanje prijav v "
 "podatkih v oblaku."
 
-#: templates/info/help/faq.html:228
+#: templates/info/help/faq.html:225
 msgid "How do I add a cloud variable when I'm making a project?"
 msgstr "Kako lahko dodam spremenljivko v oblaku, ko ustvarjam projekt? "
 
-#: templates/info/help/faq.html:229
+#: templates/info/help/faq.html:226
 msgid ""
 "When you make a variable, you can check the box that says \"Cloud variable."
 "\" Any data you store will be saved on the server and visible to others."
@@ -5560,11 +4183,11 @@ msgstr ""
 "Ko ustvariš spremenljivko, lahko preveriš polje \"Spremenljivka v oblaku.\" "
 "Vsi podatki, ki jih shraniš, bodo shranjeni na strežniku in vidni ostalim."
 
-#: templates/info/help/faq.html:231
+#: templates/info/help/faq.html:228
 msgid "Who can change the information in a cloud variable?"
 msgstr "Kdo lahko spreminja informacije v spremenljivki v oblaku?"
 
-#: templates/info/help/faq.html:232
+#: templates/info/help/faq.html:229
 msgid ""
 "Only your project can store data in its cloud variable. If people change or "
 "remix your code, it creates a different variable in their project with the "
@@ -5574,7 +4197,7 @@ msgstr ""
 "ljudje spremenijo ali predelajo tvojo kodo, se ustvati druga spremenljivka v "
 "njihovem projektu z istim imenom."
 
-#: templates/info/help/faq.html:234
+#: templates/info/help/faq.html:231
 msgid ""
 "I am logged in, but I still cannot use projects with cloud data. What is "
 "going on?"
@@ -5582,7 +4205,7 @@ msgstr ""
 "Kljub temu, da sem prijavljen-a, ne morem uporabljati projektov s podatki v "
 "oblaku. Kaj se dogaja?"
 
-#: templates/info/help/faq.html:235
+#: templates/info/help/faq.html:232
 msgid ""
 "You need to have become a \"Scratcher\" on the website to have access to "
 "cloud data. You can become a Scratcher through actively participating on the "
@@ -5592,12 +4215,12 @@ msgstr ""
 "Scratch spletni strani. Scratcher lahko postaneš z aktivnim sodelovanjem na "
 "spletni strani."
 
-#: templates/info/help/faq.html:237
+#: templates/info/help/faq.html:234
 msgid "Is it possible to make multiplayer games with cloud data?"
 msgstr ""
 "Ali je mogoče ustvariti igrice za več igralcev s pomočjo podatkov oblaku?"
 
-#: templates/info/help/faq.html:238
+#: templates/info/help/faq.html:235
 msgid ""
 "Multiplayer games may be difficult to create, due to network speed and "
 "synchronization issues. However, some Scratchers are coming up with creative "
@@ -5608,11 +4231,11 @@ msgstr ""
 "izvirne načine, kako uporabiti podatke v oblaku za igrice z več igralci in "
 "ostale igrice."
 
-#: templates/info/help/faq.html:240
+#: templates/info/help/faq.html:237
 msgid "How long does it take for cloud data to reach another Scratcher?"
 msgstr "Kako dolgo traja, da podatki v oblaku dosežejo drugega Scratcherja?"
 
-#: templates/info/help/faq.html:241
+#: templates/info/help/faq.html:238
 msgid ""
 "It depends. If both Scratchers have a reasonably fast Internet connection "
 "(DSL/Cable), and there are no restrictive firewalls on the computers/"
@@ -10412,16 +9035,17 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:28
 #: templates/info/help/studio/tips/howto/get-started-intro.html:32
+#: templates/info/help/studio/tips/howto/hoc-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:32
 #: templates/info/help/studio/tips/howto/nametip-intro.html:28
-#: templates/info/help/studio/tips/howto/pgame-intro.html:28
+#: templates/info/help/studio/tips/howto/pgame-intro.html:27
 msgid "Step Index"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
 #: templates/info/help/studio/tips/howto/nametip-intro.html:30
-#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/ui/tour-intro.html:29
 msgid "1"
 msgstr ""
@@ -10434,7 +9058,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
 #: templates/info/help/studio/tips/howto/nametip-intro.html:31
-#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/ui/tour-intro.html:30
 msgid "2"
 msgstr ""
@@ -10447,7 +9071,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro.html:32
-#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/ui/tour-intro.html:31
 msgid "3"
 msgstr ""
@@ -10463,7 +9087,7 @@ msgstr "9 Dodaj ozadje"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
 #: templates/info/help/studio/tips/howto/nametip-intro.html:33
-#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/ui/tour-intro.html:32
 msgid "4"
 msgstr ""
@@ -10476,7 +9100,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
 #: templates/info/help/studio/tips/howto/nametip-intro.html:34
-#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 #: templates/info/help/studio/tips/ui/tour-intro.html:33
 msgid "5"
 msgstr ""
@@ -10492,7 +9116,7 @@ msgstr "2 Dodaj zvok"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
 #: templates/info/help/studio/tips/howto/nametip-intro.html:35
-#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/ui/tour-intro.html:34
 msgid "6"
 msgstr ""
@@ -10505,7 +9129,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
 #: templates/info/help/studio/tips/howto/nametip-intro.html:36
-#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "7"
 msgstr ""
@@ -10518,7 +9142,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
 #: templates/info/help/studio/tips/howto/nametip-intro.html:37
-#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 msgid "8"
 msgstr ""
 
@@ -10532,7 +9156,7 @@ msgid "Again and Again"
 msgstr "4 Znova in znova"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
-#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 msgid "9"
 msgstr ""
 
@@ -10542,7 +9166,7 @@ msgid "Say What to Do"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:38
-#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 msgid "10"
 msgstr ""
 
@@ -10552,7 +9176,7 @@ msgid "Customize Your Card"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:39
-#: templates/info/help/studio/tips/howto/pgame-intro.html:40
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 msgid "11"
 msgstr ""
 
@@ -11418,7 +10042,7 @@ msgstr "2 od 13"
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip3.html:17
-#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 #: templates/info/help/studio/tips/howto/pgametip8.html:17
 #, fuzzy
 msgid "Add a Sound"
@@ -11707,6 +10331,7 @@ msgstr ""
 
 # 88%
 #: templates/info/help/studio/tips/howto/hoc-1.html:18
+#: templates/info/help/studio/tips/howto/hoc-intro.html:34
 #, fuzzy
 msgid "Explore Ideas for Your Card"
 msgstr "Raziskuj med idejami za praznično voščilnico"
@@ -11737,6 +10362,7 @@ msgstr ""
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-2.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:35
 #, fuzzy
 msgid "Delete the Cat"
 msgstr "Izbriši Praskača"
@@ -11767,6 +10393,7 @@ msgstr ""
 
 # 90%
 #: templates/info/help/studio/tips/howto/hoc-3.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:36
 #, fuzzy
 msgid "Add Sprites"
 msgstr "Dodaj figure"
@@ -11806,6 +10433,7 @@ msgstr ""
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-4.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:37
 #, fuzzy
 msgid "Make the Sprites Interactive"
 msgstr "Ustvari interaktivno figuro"
@@ -11851,6 +10479,11 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/hoc-4a.html:12
 msgid "4A of 9"
 msgstr ""
+
+#: templates/info/help/studio/tips/howto/hoc-4a.html:18
+#: templates/info/help/studio/tips/howto/hoc-intro.html:38
+msgid "Move"
+msgstr "Premakni"
 
 #: templates/info/help/studio/tips/howto/hoc-4a.html:25
 #, python-format
@@ -11907,6 +10540,7 @@ msgstr ""
 
 # 91%
 #: templates/info/help/studio/tips/howto/hoc-4c.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:40
 #, fuzzy
 msgid "Make a Sound"
 msgstr "Ustvari zvok"
@@ -11974,6 +10608,7 @@ msgstr ""
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-4e.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:42
 #, fuzzy
 msgid "Change Costume"
 msgstr "Spremeni videz"
@@ -12015,6 +10650,7 @@ msgstr ""
 
 # 90%
 #: templates/info/help/studio/tips/howto/hoc-5.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:43
 #, fuzzy
 msgid "Add a Background Image"
 msgstr "Dodaj sliko ozadja"
@@ -12057,6 +10693,7 @@ msgstr ""
 
 # 90%
 #: templates/info/help/studio/tips/howto/hoc-6.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:44
 #, fuzzy
 msgid "Add Background Sound"
 msgstr "Dodaj zvoke v ozadje"
@@ -12088,6 +10725,7 @@ msgstr ""
 
 # 94%
 #: templates/info/help/studio/tips/howto/hoc-7.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:45
 #, fuzzy
 msgid "Set up the Project"
 msgstr "Postavi projekt na noge"
@@ -12195,12 +10833,10 @@ msgid "Introduction"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:18
-#: templates/info/help/studio/tips/howto/hoc.html:8
 msgid "Holiday Card Tutorial"
 msgstr "Vodič za izdelavo voščilnice"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:20
-#, python-format
 msgid ""
 "\n"
 "\t<p>In this activity, you'll create an interactive holiday card that you "
@@ -12209,49 +10845,23 @@ msgid ""
 "\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
 "portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
 "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
-"\t\n"
-"\n"
-"\t<a class=\"next-step-button\" href=\"../hoc-1/\">\n"
-"\t\t<p>Let's begin!\n"
-"\t\t\t<img src = \"%(STATIC_URL)s/images/help/tip-next-step-arrow.png\">\t\n"
-"\t\t</p>\t\n"
-"\t</a> \n"
-"\t\n"
-"\t<ul class=\"step-index\">\n"
-"\t<h3>Step Index</h3>\t\n"
-"\t\t<li><a href=\"../hoc-1/\"><div class=\"index-num\">1</div>Explore Ideas "
-"for Your Card</a></li>\n"
-"\t\t<li><a href=\"../hoc-2/\"><div class=\"index-num\">2</div>Delete the "
-"Cat</a></li>\n"
-"\t\t<li><a href=\"../hoc-3/\"><div class=\"index-num\">3</div>Add Sprites</"
-"a></li>\n"
-"\t\t<li><a href=\"../hoc-4/\"><div class=\"index-num\">4</div>Make the "
-"Sprites Interactive</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4a/"
-"\"><div class=\"index-num\">A</div>Move</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4b/"
-"\"><div class=\"index-num\">B</div>Say Something</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4c/"
-"\"><div class=\"index-num\">C</div>Make a Sound</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4d/"
-"\"><div class=\"index-num\">D</div>Change Color</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4e/"
-"\"><div class=\"index-num\">E</div>Change Costume</a></li>\n"
-"\t\t<li><a href=\"../hoc-5/\"><div class=\"index-num\">5</div>Add a "
-"Background Image</a></li>\n"
-"\t\t<li><a href=\"../hoc-6/\"><div class=\"index-num\">6</div>Add Background "
-"Sound</a></li>\n"
-"\t\t<li><a href=\"../hoc-7/\"><div class=\"index-num\">7</div>Set up the "
-"Project</a></li>\n"
-"\t\t<li><a href=\"../hoc-8/\"><div class=\"index-num\">8</div>Share your "
-"Project</a></li>\n"
-"\t<li><a href=\"../hoc-9/\"><div class=\"index-num\">9</div>Add to the "
-"Holiday Card Studio</a></li>\n"
-"\t</ul>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/hoc-intro.html:27
+msgid "Let's begin!"
+msgstr ""
+
+# 88%
+#: templates/info/help/studio/tips/howto/hoc-intro.html:46
+#, fuzzy
+msgid "Share your Project"
+msgstr "Deli svoj projekt"
+
+#: templates/info/help/studio/tips/howto/hoc-intro.html:47
+msgid "Add to the Holiday Card Studio"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:53
-#: templates/info/help/studio/tips/howto/hoc.html:37
 msgid ""
 "This tutorial was created for Hour of Code, a nationwide initiative by <a "
 "href=\"http://csedweek.org\" target=\"_blank\">Computer Science Education "
@@ -12264,92 +10874,6 @@ msgstr ""
 "Computer Science Education Week</a> in <a href=\"http://code.org\" target=\""
 "_blank\">Code.org</a> z namenom, da bi milijoni študentov doživeli vsaj eno "
 "uro računalniške znanosti in programiranja."
-
-#: templates/info/help/studio/tips/howto/hoc.html:10
-msgid ""
-"\n"
-"<p>In this activity, you'll create an interactive holiday card that you can "
-"share with friends and family.</p>\n"
-"<p>To get started, watch this intro video:</p>\n"
-"<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
-"portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
-"webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
-msgstr ""
-"\n"
-"<p>V tej aktivnosti boš ustvaril-a interaktivno praznično voščilnico, ki jo "
-"lahko deliš z družino in prijatelji.</p>\n"
-"<p>Za uvod si oglej ta video posnetek:</p>\n"
-"<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;p"
-"ortrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
-"webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
-
-#: templates/info/help/studio/tips/howto/hoc.html:17
-msgid "Get more help by following these steps:"
-msgstr "Če želiš več pomoči, sledi naslednjim korakom:"
-
-#: templates/info/help/studio/tips/howto/hoc.html:18
-msgid "Imagine your holiday card"
-msgstr "Zamisi si, kako bo tvoja praznična voščilnica izgledala"
-
-#: templates/info/help/studio/tips/howto/hoc.html:19
-msgid "Explore ideas for your card"
-msgstr "Raziskuj med idejami za praznično voščilnico"
-
-#: templates/info/help/studio/tips/howto/hoc.html:20
-msgid "Program your holiday card"
-msgstr "Sprogramiraj svojo voščilnico"
-
-#: templates/info/help/studio/tips/howto/hoc.html:21
-msgid "Delete the cat"
-msgstr "Izbriši Praskača"
-
-#: templates/info/help/studio/tips/howto/hoc.html:22
-msgid "Add sprites"
-msgstr "Dodaj figure"
-
-#: templates/info/help/studio/tips/howto/hoc.html:23
-msgid "Make the sprites interactive"
-msgstr "Ustvari interaktivno figuro"
-
-#: templates/info/help/studio/tips/howto/hoc.html:25
-msgid "Say something"
-msgstr "Reci kaj"
-
-#: templates/info/help/studio/tips/howto/hoc.html:26
-msgid "Make a sound"
-msgstr "Ustvari zvok"
-
-#: templates/info/help/studio/tips/howto/hoc.html:27
-msgid "Change color"
-msgstr "Spremeni barvo"
-
-#: templates/info/help/studio/tips/howto/hoc.html:28
-msgid "Change costume"
-msgstr "Spremeni videz"
-
-#: templates/info/help/studio/tips/howto/hoc.html:29
-msgid "Add a background image"
-msgstr "Dodaj sliko ozadja"
-
-#: templates/info/help/studio/tips/howto/hoc.html:30
-msgid "Add background sound"
-msgstr "Dodaj zvoke v ozadje"
-
-#: templates/info/help/studio/tips/howto/hoc.html:31
-msgid "Set up the project"
-msgstr "Postavi projekt na noge"
-
-#: templates/info/help/studio/tips/howto/hoc.html:32
-msgid "Share your holiday card"
-msgstr "Deli voščilnico z drugimi"
-
-#: templates/info/help/studio/tips/howto/hoc.html:33
-msgid "Share your project"
-msgstr "Deli svoj projekt"
-
-#: templates/info/help/studio/tips/howto/hoc.html:44
-msgid "Let's code!"
-msgstr "Začnimo programirati!"
 
 #: templates/info/help/studio/tips/howto/import-music.html:11
 msgid "Select the Sounds tab"
@@ -12582,6 +11106,12 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/nametip7.html:17
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "Finish Your Name"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/nametip-intro.html:21
+msgid ""
+"//player.vimeo.com/video/111342687?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip1.html:11
@@ -12948,56 +11478,62 @@ msgid ""
 "points, or other effects. Then, challenge your friends to play."
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:24
+#: templates/info/help/studio/tips/howto/pgame-intro.html:21
+msgid ""
+"//player.vimeo.com/video/112442208?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:23
 #, fuzzy
 msgid "First, choose a backdrop"
 msgstr "Sedaj izberi ozadje."
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/howto/pgametip1.html:17
 msgid "Choose a Backdrop"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/howto/pgametip2.html:17
 msgid "Choose a Ball"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/howto/pgametip3.html:17
 msgid "Make the Ball Move"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/howto/pgametip4.html:17
 msgid "Move and Bounce"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 msgid "Choose your Paddle"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/howto/pgametip6.html:17
 msgid "Control the Paddle"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/howto/pgametip7.html:17
 msgid "Bounce Off the Paddle"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 #: templates/info/help/studio/tips/howto/pgametip9.html:17
 msgid "Adding a Challenge"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 #: templates/info/help/studio/tips/howto/pgametip10.html:17
 msgid "Enhance and Customize"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:40
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 #: templates/info/help/studio/tips/howto/pgametip11.html:17
 msgid "Share Your Game"
 msgstr ""
@@ -13088,6 +11624,12 @@ msgstr "11 od 13"
 
 #: templates/info/help/studio/tips/howto/pgametip11.html:19
 msgid "Congratulations! You've coded your own game!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:33
+msgid ""
+"//player.vimeo.com/video/108273389?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/pgametip11.html:41
@@ -13763,7 +12305,7 @@ msgid "All Messages"
 msgstr "Vsa sporočila"
 
 #: templates/notifications/notifications.html:16
-#: templates/profiles/profile_detail.html:364 templates/projects/base.html:338
+#: templates/profiles/profile_detail.html:364 templates/projects/base.html:337
 #: templates/studio/includes/sort-galleries-dropdown.html:26
 msgid "Comments"
 msgstr "Komentarji"
@@ -14150,54 +12692,54 @@ msgstr "Nazadnje urejeno: %(tDate)s"
 msgid "Favorite this project"
 msgstr "Dodaj ta projekt med priljubljene"
 
-#: templates/projects/base.html:217 templates/projects/base.html.py:223
+#: templates/projects/base.html:216 templates/projects/base.html.py:222
 msgid "Love this project"
 msgstr "Všečkaj ta projekt"
 
-#: templates/projects/base.html:239
+#: templates/projects/base.html:238
 msgid "Total views"
 msgstr "Vsi ogledi"
 
-#: templates/projects/base.html:243
+#: templates/projects/base.html:242
 msgid "View the remix tree"
 msgstr "Oglej si drevo predelav"
 
-#: templates/projects/base.html:265
+#: templates/projects/base.html:264
 msgid "Add this project to a studio you curate (or remove it from a studio)"
 msgstr "Dodaj ta projekt v studio, ki ga vodiš (ali ga odstrani iz studia)"
 
-#: templates/projects/base.html:266
+#: templates/projects/base.html:265
 msgid "Just click on the button for any of the studios from the list below"
 msgstr "Za poljubni studio s spiska le klikni na gumb"
 
-#: templates/projects/base.html:278
+#: templates/projects/base.html:277
 msgid "Download this project file"
 msgstr "Prenesi to datoteko projekta"
 
-#: templates/projects/base.html:301
+#: templates/projects/base.html:300
 #: templates/projects/includes/shared/shared-project-actions.html:10
 msgid "Embed"
 msgstr "Vdelaj"
 
-#: templates/projects/base.html:306
+#: templates/projects/base.html:305
 msgid "Copy and paste the embed code above."
 msgstr "Kopiraj in prilepi kodo za vdelavo zgoraj"
 
 # 83%
-#: templates/projects/base.html:310 templates/projects/censored.html:16
+#: templates/projects/base.html:309 templates/projects/censored.html:16
 #: templates/projects/unshared-owner.html:22
 msgid "Share"
 msgstr "Deli"
 
-#: templates/projects/base.html:370
+#: templates/projects/base.html:369
 msgid "remixes"
 msgstr "predelave"
 
-#: templates/projects/base.html:437
+#: templates/projects/base.html:436
 msgid "OK, Got it."
 msgstr "V redu. Razumem."
 
-#: templates/projects/base.html:456
+#: templates/projects/base.html:455
 msgid "All Tips"
 msgstr ""
 
@@ -14422,6 +12964,10 @@ msgstr "Podporne strani"
 msgid "All Results"
 msgstr "Vsi zadetki"
 
+#: templates/search/includes/tabs.html:20
+msgid "Forums"
+msgstr "Forumi"
+
 #: templates/search/includes/projects/filters.html:8
 msgid "Most recent"
 msgstr "Najnovejši"
@@ -14599,6 +13145,10 @@ msgstr "Dodaj v"
 msgid "Unshare"
 msgstr "Prenehaj deliti"
 
+#: templates/studio/studio.html:137
+msgid "Delete"
+msgstr "Izbriši"
+
 # 80%
 #: templates/studio/includes/galleries_action_bar.html:8
 msgid "View:"
@@ -14645,6 +13195,1030 @@ msgstr "V moji lasti"
 #: templates/studio/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
 msgstr "V mojem skrbništvu"
+
+#~ msgid "subscribers"
+#~ msgstr "naročniki"
+
+#~ msgid "Latest posts on forum"
+#~ msgstr "Zadnje objave na forumu"
+
+# 81%
+#~ msgid "Latest topics on forum"
+#~ msgstr "Zadnje teme na forumu"
+
+#, python-format
+#~ msgid "Latest posts on %s"
+#~ msgstr "Zadnje objave na %s"
+
+#, python-format
+#~ msgid "Latest posts on the topic \"%s\""
+#~ msgstr "Zadnje objave na temo \"%s\""
+
+#, python-format
+#~ msgid "Latest posts on the forum \"%s\""
+#~ msgstr "Zadnje objave na forumu \"%s\""
+
+#, python-format
+#~ msgid "Latest posts on the category \"%s\""
+#~ msgstr "Zadnje objave v kategoriji \"%s\""
+
+#~ msgid "Registered"
+#~ msgstr "Registriran"
+
+#~ msgid "Number of posts"
+#~ msgstr "Število objav"
+
+#~ msgid "Post time"
+#~ msgstr "Čas objave"
+
+#~ msgid "Author"
+#~ msgstr "Avtor"
+
+#~ msgid "Subject"
+#~ msgstr "Zadeva"
+
+#~ msgid "Forum"
+#~ msgstr "Forum"
+
+#~ msgid "Ascending"
+#~ msgstr "Naraščajoče"
+
+#~ msgid "Descending"
+#~ msgstr "Padajoče"
+
+#~ msgid "Topics"
+#~ msgstr "Teme"
+
+#~ msgid "Posts"
+#~ msgstr "Objave"
+
+#~ msgid "Message text and topic subject"
+#~ msgstr "Besedilo sporočila in naslov teme"
+
+#~ msgid "Message text only"
+#~ msgstr "Samo besedilo sporočila"
+
+#~ msgid "Topic subject only"
+#~ msgstr "Samo naslov teme"
+
+#~ msgid "Attachment"
+#~ msgstr "Priponka"
+
+#~ msgid "Subscribe"
+#~ msgstr "Naroči se"
+
+#~ msgid "Subscribe to this topic."
+#~ msgstr "Naroči se na to temo."
+
+#~ msgid "Can't be empty nor contain only whitespace characters"
+#~ msgstr "Ne sme biti prazno ali vsebovati le presledkov"
+
+#~ msgid ""
+#~ "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
+#~ "Scratch, so your account has been muted for the rest of the day. :/"
+#~ msgstr ""
+#~ "Hmm, (robo)filter je prepričan, da tvoji zadnji komentarji niso primerni za "
+#~ "Scratch, zato bo tvoj račun blokiran do konca dneva. :/"
+
+#, python-format
+#~ msgid "Sorry, you have to wait %d seconds between posts."
+#~ msgstr "Oprosti, med objavami moraš počakati %d sekund."
+
+#~ msgid "Attachment is too big"
+#~ msgstr "Priponka je prevelika"
+
+#~ msgid "Silent edit?"
+#~ msgstr "Skrito urejanje?"
+
+# 83%
+#~ msgid "E-mail"
+#~ msgstr "E-pošta"
+
+#~ msgid "Real name"
+#~ msgstr "Pravo ime"
+
+#~ msgid "Sort order"
+#~ msgstr "Vrstni red"
+
+#~ msgid "Keyword search"
+#~ msgstr "Iskanje po ključnih besedah"
+
+#~ msgid "Author search"
+#~ msgstr "Iskanje po avtorju"
+
+#~ msgid "Search in"
+#~ msgstr "Išči v"
+
+#~ msgid "Show results as"
+#~ msgstr "Prikaži rezultate kot"
+
+#, python-format
+#~ msgid "User \"%s\" does not exist"
+#~ msgstr "Uporabnik \"%s\" ne obstaja"
+
+#~ msgid "You already voted for this post"
+#~ msgstr "Za to objavo si že glasoval-a"
+
+#~ msgid "This post does't belong to that user"
+#~ msgstr "Ta objava ni od tega uporabnika"
+
+#~ msgid "Message"
+#~ msgstr "Sporočilo"
+
+#, python-format
+#~ msgid "You have selected too many choices. You may only select %i."
+#~ msgstr "Izbrati smeš največ %i možnosti. Izbral-a si jih preveč."
+
+#~ msgid "Write each answer on a new line."
+#~ msgstr "Zapiši vsak odgovor v novo vrstico."
+
+#~ msgid ""
+#~ "Number of days for this poll to run. Leave empty for an indefinite poll."
+#~ msgstr "Število dni za glasovanje. Pusti prazno, če ga ne želiš omejiti."
+
+#~ msgid "There is no valid answer."
+#~ msgstr "Ni veljavnega odgovora."
+
+#~ msgid "One of the answers is too long."
+#~ msgstr "Eden od odgovorov je predolg."
+
+#~ msgid "Display your e-mail address."
+#~ msgstr "Prikaži svoj e-poštni naslov."
+
+#~ msgid "Hide your e-mail address but allow form e-mail."
+#~ msgstr "Skrij svoj e-poštni naslov, dovoli pa obrazec za e-pošto."
+
+#~ msgid "Hide your e-mail address and disallow form e-mail."
+#~ msgstr "Skrij svoj e-poštni naslov in prepovej obrazec za e-pošto."
+
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#~ msgid "Groups"
+#~ msgstr "Skupine"
+
+#~ msgid "Only users from these groups can see this category"
+#~ msgstr "Samo člani teh skupin lahko vidijo to kategorijo"
+
+#~ msgid "Position"
+#~ msgstr "Položaj"
+
+#~ msgid "Category"
+#~ msgstr "Kategorija"
+
+#~ msgid "Categories"
+#~ msgstr "Kategorije"
+
+#~ msgid "New topics by moderators only"
+#~ msgstr "Nove teme lahko ustvarijo le moderatorji."
+
+#~ msgid "Description"
+#~ msgstr "Opis"
+
+#~ msgid "Moderators"
+#~ msgstr "Moderatorji"
+
+#~ msgid "Updated"
+#~ msgstr "Posodobljeno"
+
+#~ msgid "Post count"
+#~ msgstr "Število objav"
+
+#~ msgid "Topic count"
+#~ msgstr "Število tem"
+
+#~ msgid "Created"
+#~ msgstr "Ustvarjeno"
+
+#~ msgid "Views count"
+#~ msgstr "Število ogledov"
+
+#~ msgid "Sticky"
+#~ msgstr "Stalno na vrhu"
+
+#~ msgid "Closed"
+#~ msgstr "Zaprto"
+
+#~ msgid "Subscribers"
+#~ msgstr "Naročniki"
+
+#~ msgid "Topic"
+#~ msgstr "Tema"
+
+#~ msgid "Updated by"
+#~ msgstr "Posodobil-a"
+
+#~ msgid "Markup"
+#~ msgstr "Oznaka"
+
+#~ msgid "HTML version"
+#~ msgstr "različica v HTML"
+
+#~ msgid "User IP"
+#~ msgstr "Uporabnikov IP"
+
+#~ msgid "From"
+#~ msgstr "Od"
+
+#~ msgid "To"
+#~ msgstr "Za"
+
+#~ msgid "Sign"
+#~ msgstr "Podpiši"
+
+#~ msgid "Reason"
+#~ msgstr "Razlog"
+
+#~ msgid "Reputation"
+#~ msgstr "Ugled"
+
+#~ msgid "Reputations"
+#~ msgstr "Ugledi"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Site"
+#~ msgstr "Spletna stran"
+
+#~ msgid "Jabber"
+#~ msgstr "Blebetanje"
+
+#~ msgid "ICQ"
+#~ msgstr "ICQ"
+
+#~ msgid "MSN"
+#~ msgstr "MSN"
+
+#~ msgid "AIM"
+#~ msgstr "AIM"
+
+#~ msgid "Yahoo"
+#~ msgstr "Yahoo"
+
+#~ msgid "Location"
+#~ msgstr "Kraj"
+
+#~ msgid "Signature"
+#~ msgstr "Podpis"
+
+#~ msgid "Time zone"
+#~ msgstr "Časovni pas"
+
+#~ msgid "Language"
+#~ msgstr "Jezik"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Theme"
+#~ msgstr "Oblikovna tema"
+
+#~ msgid "Show avatar"
+#~ msgstr "Prikaži avatarja"
+
+#~ msgid "Show signatures"
+#~ msgstr "Prikaži podpise"
+
+#~ msgid "Show smilies"
+#~ msgstr "Prikaži smeške"
+
+#~ msgid "Privacy permission"
+#~ msgstr "Dovoljenje za uporabo osebnih podatkov"
+
+#~ msgid "Auto subscribe"
+#~ msgstr "Samodejno naročanje"
+
+#~ msgid "Auto subscribe all topics you have created or reply."
+#~ msgstr ""
+#~ "Samodejno naročanje na vse teme, ki si jih ustvaril-a ali nanje odgovarjal-a."
+
+#~ msgid "Default markup"
+#~ msgstr "Privzeta oznaka"
+
+# 87%
+#~ msgid "Profiles"
+#~ msgstr "Profili"
+
+#~ msgid "Post tracking"
+#~ msgstr "Sledenje objavam"
+
+#~ msgid "Reported by"
+#~ msgstr "Prijavil-a"
+
+#~ msgid "Zapped"
+#~ msgstr "Zaključeno"
+
+#~ msgid "Zapped by"
+#~ msgstr "Zaključil"
+
+# 85%
+#~ msgid "Reports"
+#~ msgstr "Poročila"
+
+#~ msgid "Banned user"
+#~ msgstr "Uporabnik je izključen iz sistema"
+
+#~ msgid "Ban start"
+#~ msgstr "Začetek prepovedi"
+
+#~ msgid "Ban end"
+#~ msgstr "Konec prepovedi"
+
+#~ msgid "Ban"
+#~ msgstr "Prepoved"
+
+#~ msgid "Bans"
+#~ msgstr "Prepovedi"
+
+#~ msgid "Size"
+#~ msgstr "Velikost"
+
+#~ msgid "Content type"
+#~ msgstr "Vrsta vsebine"
+
+#~ msgid "Path"
+#~ msgstr "Pot"
+
+#~ msgid "Hash"
+#~ msgstr "Zgoščeno"
+
+#~ msgid "How many choices are allowed simultaneously."
+#~ msgstr "Koliko izbir je dovoljenih hkrati"
+
+#~ msgid "Can users vote to this poll or just see the result?"
+#~ msgstr "Ali lahko uporabniki sodelujejo v tej anketi ali samo vidijo rezultat?"
+
+#~ msgid "Point of time after this poll would be automatic deactivated"
+#~ msgstr "Časovna točka bo po tej anketi samodejno deaktivirana"
+
+#~ msgid "Users who has voted this poll."
+#~ msgstr "Uporabniki, ki so glasovali to anketo"
+
+#, python-format
+#~ msgid ""
+#~ "Sorry, you need to host your images with a service like imageshack.com. "
+#~ "Please update your image links or remove all BB code [img] tags. Bad image "
+#~ "url: %s"
+#~ msgstr ""
+#~ "Žal za gostovanje slik potrebuješ storitev kot je na primer "
+#~ "imageshack.comPosodobit povezave do slik ali odstranitev vse BB kode [img] "
+#~ "oznake. Slaba slikaurl: %s"
+
+#~ msgid "Topics deleted."
+#~ msgstr "Teme izbrisane."
+
+#~ msgid "Topics opened."
+#~ msgstr "Teme odprte."
+
+#~ msgid "Topics closed."
+#~ msgstr "Teme zaprte."
+
+#, python-format
+#~ msgid "Found %i posts."
+#~ msgstr "Najdenih %i objav."
+
+#, python-format
+#~ msgid "Found %i topics."
+#~ msgstr "Najdenih %i tem."
+
+#~ msgid "Marked all topics as read."
+#~ msgstr "Vse teme so bile označene kot prebrane."
+
+#~ msgid "Post reported."
+#~ msgstr "Objava je prijavljena."
+
+#~ msgid "Email sent."
+#~ msgstr "E-pošta poslana."
+
+#~ msgid "Email could not be sent."
+#~ msgstr "E-pošte ni bilo mogoče poslati."
+
+#~ msgid "Reply saved."
+#~ msgstr "Odgovor je shranjen."
+
+#~ msgid "This poll is not active."
+#~ msgstr "Ta anketa ni aktivna."
+
+#~ msgid "You already voted on this poll."
+#~ msgstr "V tej anketi si že glasoval-a."
+
+#~ msgid "Vote saved."
+#~ msgstr "Glas je shranjen."
+
+#~ msgid "Topic with poll saved."
+#~ msgstr "Tema z anketo je shranjena."
+
+#~ msgid "Topic saved."
+#~ msgstr "Tema je shranjena."
+
+#~ msgid "Avatar uploaded."
+#~ msgstr "Avatar je naložen."
+
+#~ msgid "Please sign in."
+#~ msgstr "Prosimo, vpiši se."
+
+#~ msgid "Profile saved."
+#~ msgstr "Profil je shranjen."
+
+#~ msgid "Reputation deleted."
+#~ msgstr "Ugled uporabnika je izbrisan."
+
+#~ msgid "Reputation saved."
+#~ msgstr "Ugled uporabnika je shranjen."
+
+#~ msgid "You don't have permission to edit this post."
+#~ msgstr "Za urejanje te objave nimaš dovoljenja."
+
+#~ msgid "Post updated."
+#~ msgstr "Objava je posodobljena."
+
+#~ msgid "Post deleted."
+#~ msgstr "Objava je izbrisana."
+
+#~ msgid "The topic ID must be an integer."
+#~ msgstr "ID teme mora biti celo število."
+
+#~ msgid "That thread doesn't exist."
+#~ msgstr "Ta nit ne obstaja."
+
+#~ msgid "Posts moved."
+#~ msgstr "Objave so premaknjene."
+
+#~ msgid "Topic moved."
+#~ msgstr "Tema je premaknjena."
+
+#~ msgid "Topic stickied."
+#~ msgstr "Tema je zasidrana."
+
+#~ msgid "Topic unstickied."
+#~ msgstr "Tema je odsidrana."
+
+#~ msgid "You don't have permission to delete this post."
+#~ msgstr "Za izbris te objave nimaš dovoljenja."
+
+#~ msgid "You don't have permission to mark this post."
+#~ msgstr "Nimaš dovoljenja, da označiš to objavo."
+
+#~ msgid "There was not enough data collected to mark this post."
+#~ msgstr "Ni bilo zbrano dovolj podatkov, da bi označili to objavo."
+
+#~ msgid "Post marked as spam."
+#~ msgstr "Objava je bila označena kot nezaželena."
+
+#~ msgid "This post is not in the right state to be marked as spam."
+#~ msgstr "Objava ni v ustreznem stanju, da bi jo označili kot nezaželeno."
+
+#~ msgid "Post un-marked as spam."
+#~ msgstr "Objava ni več označena kot nezaželena."
+
+#~ msgid "This post is not in the right state to be un-marked as spam."
+#~ msgstr "Objava ni v ustreznem stanju, da bi jo odznačili kot nezaželeno."
+
+#~ msgid "Topic closed."
+#~ msgstr "Tema je zaklenjena."
+
+#~ msgid "Topic opened."
+#~ msgstr "Tema je odprta."
+
+#~ msgid "Unsubscribed from topic."
+#~ msgstr "Izpisan iz teme."
+
+#~ msgid "Subscribed to topic."
+#~ msgstr "Naročen na temo."
+
+#~ msgid "New Topic"
+#~ msgstr "Nova tema"
+
+#~ msgid "Discuss Scratch"
+#~ msgstr "Razpravljaj o Scratchu"
+
+#~ msgid "Notice"
+#~ msgstr "Obvestilo"
+
+#, python-format
+#~ msgid "Delete Posts - %(name)s"
+#~ msgstr "Izbriši objave - %(name)s"
+
+#~ msgid "Delete Posts"
+#~ msgstr "Izbriši objave"
+
+#, python-format
+#~ msgid "Last edited by %(user)s (%(time)s)"
+#~ msgstr "Zadnji uredil %(user)s (%(time)s)"
+
+#~ msgid "Select"
+#~ msgstr "Izberi"
+
+#~ msgid "Go back"
+#~ msgstr "Nazaj"
+
+#, python-format
+#~ msgid "Edit Post - %(name)s"
+#~ msgstr "Uredi objavo - %(name)s"
+
+#~ msgid "Edit Post"
+#~ msgstr "Uredi objavo"
+
+#~ msgid "Edit post"
+#~ msgstr "Uredi objavo"
+
+#~ msgid "Silent edit (don't display 'Edited by ...' in topic view)"
+#~ msgstr "Skrito urejanje (ne prikaži drugim 'Urejal ...')"
+
+#~ msgid "Save"
+#~ msgstr "Shrani"
+
+#~ msgid ""
+#~ "Can't find an answer to your question? Click here to ask it in a new thread."
+#~ msgstr ""
+#~ "Ne najdeš odgovora na svoje vprašanje? Klikni tu in ga vprašaj v novi niti"
+
+#~ msgid "New topic"
+#~ msgstr "Nova tema"
+
+#~ msgid "Replies"
+#~ msgstr "Odgovori"
+
+#~ msgid "Last Post"
+#~ msgstr "Zadnja objava"
+
+#~ msgid "Sticky:"
+#~ msgstr "Zasidrano:"
+
+#~ msgid "(New Posts)"
+#~ msgstr "(Nove objave)"
+
+#~ msgid "Forum is empty."
+#~ msgstr "Forum je prazen."
+
+#~ msgid "Moderate forum"
+#~ msgstr "Moderiraj forum"
+
+#~ msgid "Show new posts since last visit"
+#~ msgstr "Pokaži objave po zadnjem obisku"
+
+#~ msgid "Discussion Home"
+#~ msgstr "Začetek razprav"
+
+#, python-format
+#~ msgid "Reports (%(report_count)s)"
+#~ msgstr "Število prijav je (%(report_count)s)"
+
+#~ msgid "Show your"
+#~ msgstr "Pokaži svoj"
+
+#~ msgid "topics"
+#~ msgstr "teme"
+
+# 80%
+#~ msgid "posts"
+#~ msgstr "objave"
+
+#~ msgid "Change your signature"
+#~ msgstr "Spremeni svoj podpis"
+
+#~ msgid "Show recent posts"
+#~ msgstr "Prikaži nedavne objave"
+
+#~ msgid "Show unanswered posts"
+#~ msgstr "Prikaži objave brez odgovorov"
+
+#~ msgid "Mark all topics as read"
+#~ msgstr "Označi vse teme kot prebrane"
+
+#~ msgid "Send e-mail to"
+#~ msgstr "Pošlji e-pošto"
+
+#~ msgid "Write and submit your e-mail message"
+#~ msgstr "Napiši in pošlji e-pošto"
+
+#~ msgid ""
+#~ "Please note that by using this form, your e-mail address will be disclosed "
+#~ "to the recipient."
+#~ msgstr ""
+#~ "Prosimo upoštevaj, da bo z uporabo tega obrazca tvoj e-poštni naslov viden "
+#~ "prejemniku."
+
+#, python-format
+#~ msgid "Moderate - %(name)s"
+#~ msgstr "Moderiraj - %(name)s"
+
+#~ msgid "Moderate Forum"
+#~ msgstr "Moderiraj forum"
+
+#~ msgid "Open"
+#~ msgstr "Odpri"
+
+#~ msgid "Moderated by"
+#~ msgstr "Moderiral"
+
+#, python-format
+#~ msgid "Move Posts - %(name)s"
+#~ msgstr "Premakni objave - %(name)s"
+
+#~ msgid "Move Posts"
+#~ msgstr "Premakni objave"
+
+#~ msgid "All posts (original topic will be deleted)"
+#~ msgstr "Vse objave (izvirne teme bodo izbrisane)"
+
+#~ msgid "Topic ID or URL"
+#~ msgstr "ID teme ali URL"
+
+#~ msgid "Move Topic"
+#~ msgstr "Premakni temo"
+
+#~ msgid "Move to"
+#~ msgstr "Premakni v"
+
+#~ msgid "Pages"
+#~ msgstr "Strani"
+
+#~ msgid "Report Post"
+#~ msgstr "Prijavi objavo"
+
+#~ msgid "Please enter a short reason why you are reporting this post."
+#~ msgstr "Prosimo, napiši kratko obrazložitev, zakaj prijavljaš to objavo."
+
+#~ msgid "Reputation of the user"
+#~ msgstr "Ugled uporabnika"
+
+#~ msgid "From user"
+#~ msgstr "Od uporabnika"
+
+#~ msgid "For post in topic"
+#~ msgstr "Za objavo v temi"
+
+#~ msgid "Estimation"
+#~ msgstr "Ocena"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Are you sure"
+#~ msgstr "Si prepričan-a"
+
+#~ msgid "Please, fill the form"
+#~ msgstr "Prosimo, izpolni obrazec"
+
+#~ msgid "Your name:"
+#~ msgstr "Tvoje ime:"
+
+#~ msgid "To whom we change a reputation:"
+#~ msgstr "Komu naj spremenimo ugled:"
+
+#~ msgid "Method:"
+#~ msgstr "Metoda:"
+
+#~ msgid "Add of a reputation"
+#~ msgstr "Povečanje ugleda"
+
+#~ msgid "Reduction of a reputation"
+#~ msgstr "Zmanjšanje ugleda"
+
+#~ msgid "(Dustbin all posts and topics)"
+#~ msgstr "(Vrzi v koš vse objave in teme)"
+
+#~ msgid ""
+#~ "To search by keyword, enter a term or terms to search for. Separate terms "
+#~ "with spaces. To search by author enter the username of the author whose "
+#~ "posts you wish to search for."
+#~ msgstr ""
+#~ "Za iskanje po ključnih besedah vstavi izraz ali izraze za iskanje. Loči "
+#~ "izraze s presledki. Za iskanje po avtorju vstavi uporabniško ime avtorja "
+#~ "čigarobjave iščeš."
+
+#~ msgid "All forums"
+#~ msgstr "Vsi forumi"
+
+#~ msgid ""
+#~ "Choose in which forum you would like to search and if you want to search in "
+#~ "topic subjects, message text or both."
+#~ msgstr ""
+#~ "Izberi, v katerem forumu želiš iskati, ali želiš iskati poimenih tem, po "
+#~ "besedilu v temah ali oboje."
+
+#~ msgid "You can choose how you wish to sort and show your results."
+#~ msgstr "Lahko izbereš, kako želiš razvrstiti in prikazati rezultate iskanja."
+
+#~ msgid "Search Results"
+#~ msgstr "Rezultati iskanja"
+
+#~ msgid "Show results as topic list."
+#~ msgstr "Prikaži rezultate kot seznam tem."
+
+#~ msgid "Info"
+#~ msgstr "Informacije"
+
+#~ msgid "Your search returned no hits."
+#~ msgstr "Tvoje iskanje ni vrnilo zadetkov."
+
+#~ msgid "Search links"
+#~ msgstr "Išči povezave"
+
+#~ msgid "Show your subscribed topics"
+#~ msgstr "Prikaži naročene teme"
+
+#~ msgid "Show your topics"
+#~ msgstr "Prikaži svoje teme"
+
+#~ msgid "Show results as post list."
+#~ msgstr "Prikaži rezultate kot seznam objav."
+
+#~ msgid "loading..."
+#~ msgstr "nalaganje..."
+
+#~ msgid "There was an error :( Try again?"
+#~ msgstr "Prišlo je do napake :( Ponovni poskus?"
+
+#~ msgid "Follow this discussion to get a message when there's a new post"
+#~ msgstr "Sledi tej razpravi, da dobiš sporočilo, ko  bo kaj novega v tej objavi"
+
+#~ msgid "Follow Discussion"
+#~ msgstr "Sledi razpravi"
+
+#~ msgid "Stop getting messages about new posts to this discussion"
+#~ msgstr "Ne prikazuj sporočil o novih objavah v tej razpravi"
+
+#~ msgid "Unfollow Discussion"
+#~ msgstr "Prenehaj slediti razpravi"
+
+#~ msgid "Poll"
+#~ msgstr "Anketa"
+
+#, python-format
+#~ msgid "(%(count)s answers allows.)"
+#~ msgstr "(%(count)s dovoljenih odgovorov.)"
+
+#~ msgid "Vote"
+#~ msgstr "Glasuj"
+
+#~ msgid "1000+ posts"
+#~ msgstr "1000+ objav"
+
+#~ msgid "500+ posts"
+#~ msgstr "500+ objav"
+
+#~ msgid "100+ posts"
+#~ msgstr "100+ objav"
+
+#~ msgid "1 post"
+#~ msgstr "1 objava"
+
+#~ msgid " posts"
+#~ msgstr " objave"
+
+#~ msgid "From:"
+#~ msgstr "Od:"
+
+#~ msgid "Registered:"
+#~ msgstr "Registriran:"
+
+#~ msgid "Posts:"
+#~ msgstr "Objave:"
+
+#~ msgid "IP:"
+#~ msgstr "IP:"
+
+#~ msgid "Really delete all posts, and ban user? This is hard to reverse."
+#~ msgstr ""
+#~ "Si prepričan, da želiš zbrisati vse objave in zakleniti uporabnika? To je "
+#~ "težko obnoviti neazaj."
+
+#~ msgid "(Edit Signature)"
+#~ msgstr "(Uredi podpis)"
+
+#~ msgid "Are you sure you want to mark this as spam?"
+#~ msgstr "Si prepričan-a, da želiš to objavo označiti kot nezaželeno?"
+
+#~ msgid "Mark as Spam"
+#~ msgstr "Označi kot nezaželeno"
+
+#~ msgid "Are you sure you want to unmark this as spam?"
+#~ msgstr "Si prepričan-a, da želiš to objavo odznačiti kot nezaželeno?"
+
+#~ msgid "Un-mark as Spam"
+#~ msgstr "Ni več označeno kot nezaželeno "
+
+#~ msgid "Are you sure you want to delete this post?"
+#~ msgstr "Si prepričan-a, da želiš izbrisati to objavo?"
+
+#~ msgid "Edit"
+#~ msgstr "Uredi"
+
+#~ msgid "Insert a quotation of this post in your reply."
+#~ msgstr "Vstavi navedek te objave v svoj odgovor."
+
+#~ msgid "Quote"
+#~ msgstr "Navedek"
+
+#~ msgid "Jump to"
+#~ msgstr "Skoči na"
+
+#~ msgid "Moderator control"
+#~ msgstr "Nadzor moderatorja"
+
+#~ msgid "Delete multiple posts"
+#~ msgstr "Zbriši več objav"
+
+#~ msgid "Move multiple posts"
+#~ msgstr "Premakni več objav"
+
+#~ msgid "Move topic"
+#~ msgstr "Premakni temo"
+
+#~ msgid "Open topic"
+#~ msgstr "Odpri temo"
+
+#~ msgid "Close topic"
+#~ msgstr "Zapri temo"
+
+#~ msgid "Unstick topic"
+#~ msgstr "Odsidraj temo"
+
+#~ msgid "Stick topic"
+#~ msgstr "Zasidraj temo"
+
+#~ msgid "Upload avatar"
+#~ msgstr "Naloži avatarja"
+
+#~ msgid "Enter an avatar file to upload"
+#~ msgstr "Naloži avatarja"
+
+#, python-format
+#~ msgid ""
+#~ "An avatar is a small image that will be displayed under your username in "
+#~ "your posts. It must not be any bigger than %(avatar_width)s x "
+#~ "%(avatar_height)s pixels "
+#~ msgstr ""
+#~ "Avatar je majhna slika, ki bo prikazana pod tvojim uporabniškim imenom v "
+#~ "tvojih objavah. Velika sme biti največ %(avatar_width)s x %(avatar_height)s "
+#~ "pikslov."
+
+#~ msgid "Upload"
+#~ msgstr "Naloži"
+
+#~ msgid "YouTube Video"
+#~ msgstr "YouTube Video"
+
+#~ msgid "Video Not Found"
+#~ msgstr "Video ni bil najden"
+
+#~ msgid "Why do I see this page?"
+#~ msgstr "Zakaj vidim to stran?"
+
+#~ msgid ""
+#~ "Links to YouTube videos on the forums are automatically converted to links "
+#~ "to this page, to hide comments and other content."
+#~ msgstr ""
+#~ "Povezave do YouTube videov na forumih so samodejno pretvorjene v povezave do "
+#~ "te strani, da se skrije komentarje in ostalo vsebino."
+
+#~ msgid "New Reply"
+#~ msgstr "Nov odgovor"
+
+#~ msgid "Create a poll"
+#~ msgstr "Ustvari anketo"
+
+#~ msgid "Replies:"
+#~ msgstr "Odgovori:"
+
+#, python-format
+#~ msgid "Signed in as <strong>%(user)s</strong>"
+#~ msgstr "Prijavljen-a kot <strong>%(user)s</strong>"
+
+#~ msgid "Sign In"
+#~ msgstr "Vpiši se"
+
+#, python-format
+#~ msgid "%(posts)s post"
+#~ msgid_plural "%(posts)s posts"
+#~ msgstr[0] "%(posts)s objava"
+#~ msgstr[1] "%(posts)s objavi"
+#~ msgstr[2] "%(posts)s objave"
+#~ msgstr[3] "%(posts)s objav"
+
+#~ msgid "No posts."
+#~ msgstr "Ni objav."
+
+#, python-format
+#~ msgid "%(replies)s reply"
+#~ msgid_plural "%(replies)s replies"
+#~ msgstr[0] "%(replies)s odgovor"
+#~ msgstr[1] "%(replies)s odgovora"
+#~ msgstr[2] "%(replies)s odgovori"
+#~ msgstr[3] "%(replies)s odgovorov"
+
+#~ msgid "No topics."
+#~ msgstr "Ni tem."
+
+#, python-format
+#~ msgid "Settings (%(name)s)"
+#~ msgstr "Nastavitve (%(name)s"
+
+#~ msgid ""
+#~ "A signature is a small piece of text that is attached to your posts. In it, "
+#~ "you can enter just about anything you like. Perhaps you would like to enter "
+#~ "your favourite quote or your star sign. It's up to you! In your signature "
+#~ "you can use BBCode if it is allowed in this particular forum. You can see "
+#~ "the features that are allowed/enabled listed below whenever you edit your "
+#~ "signature."
+#~ msgstr ""
+#~ "Podpis je besedilo, pripeto k tvojim objavam. V podpis lahko napišeš karkoli "
+#~ "želiš, morda tvoj najljubši  rek ali tvoje nebesno znamenje. Odločitev je "
+#~ "tvoja! V podpisu lahko uporabiš BBCode, če to forum dovoljuje. Katere "
+#~ "funkcije so dovoljene, si lahko ogledaš spodaj, vedno ko urejaš podpis."
+
+#~ msgid "No signature currently stored in profile."
+#~ msgstr "V profilu trenutno ni shranjenega podpisa."
+
+#~ msgid "When you update your profile, you will be redirected back to this page."
+#~ msgstr "Ko bo profil posodobljen, boš preusmerjen-a nazaj na to stran."
+
+#~ msgid ""
+#~ "First, download any projects that you want to keep. \n"
+#~ "    Once the account is deleted, your projects will no longer be available. "
+#~ "Use the form on the <a href=\"http://scratch.mit.edu/contact-us/\">Contact "
+#~ "Us</a> page and include the following information:\n"
+#~ "    <ul><li>Birth Month and Year that you entered when you created the "
+#~ "account</li>\n"
+#~ "    <li>The email address associated with the account "
+#~ msgstr ""
+#~ "Najprej prenesi vse projekte, ki jih želiš obdržati. \n"
+#~ "    Ko bo račun izbrisan, tvoji projekti namreč ne bodo več dosegljivi. "
+#~ "Uporabi obrazec na <a href=\"http://scratch.mit.edu/contact-us/\">Piši "
+#~ "nam</a> strani in vključi naslednje podatke:\n"
+#~ "    <ul><li>Mesec in leto rojstva, ki si jih vpisal ob registraciji </li>\n"
+#~ "    <li>E-poštni naslov, ki je povezan s tem računom "
+
+#~ msgid ""
+#~ "\n"
+#~ "<p>In this activity, you'll create an interactive holiday card that you can "
+#~ "share with friends and family.</p>\n"
+#~ "<p>To get started, watch this intro video:</p>\n"
+#~ "<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
+#~ "portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
+#~ "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<p>V tej aktivnosti boš ustvaril-a interaktivno praznično voščilnico, ki jo "
+#~ "lahko deliš z družino in prijatelji.</p>\n"
+#~ "<p>Za uvod si oglej ta video posnetek:</p>\n"
+#~ "<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;p"
+#~ "ortrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
+#~ "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
+
+#~ msgid "Get more help by following these steps:"
+#~ msgstr "Če želiš več pomoči, sledi naslednjim korakom:"
+
+#~ msgid "Imagine your holiday card"
+#~ msgstr "Zamisi si, kako bo tvoja praznična voščilnica izgledala"
+
+#~ msgid "Explore ideas for your card"
+#~ msgstr "Raziskuj med idejami za praznično voščilnico"
+
+#~ msgid "Program your holiday card"
+#~ msgstr "Sprogramiraj svojo voščilnico"
+
+#~ msgid "Delete the cat"
+#~ msgstr "Izbriši Praskača"
+
+#~ msgid "Add sprites"
+#~ msgstr "Dodaj figure"
+
+#~ msgid "Make the sprites interactive"
+#~ msgstr "Ustvari interaktivno figuro"
+
+#~ msgid "Say something"
+#~ msgstr "Reci kaj"
+
+#~ msgid "Make a sound"
+#~ msgstr "Ustvari zvok"
+
+#~ msgid "Change color"
+#~ msgstr "Spremeni barvo"
+
+#~ msgid "Change costume"
+#~ msgstr "Spremeni videz"
+
+#~ msgid "Add a background image"
+#~ msgstr "Dodaj sliko ozadja"
+
+#~ msgid "Add background sound"
+#~ msgstr "Dodaj zvoke v ozadje"
+
+#~ msgid "Set up the project"
+#~ msgstr "Postavi projekt na noge"
+
+#~ msgid "Share your holiday card"
+#~ msgstr "Deli voščilnico z drugimi"
+
+#~ msgid "Share your project"
+#~ msgstr "Deli svoj projekt"
+
+#~ msgid "Let's code!"
+#~ msgstr "Začnimo programirati!"
 
 #, python-format
 #~ msgid "Online (%(count)s):"

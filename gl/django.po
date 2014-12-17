@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-25 23:48+0000\n"
+"POT-Creation-Date: 2014-12-13 16:02+0000\n"
 "PO-Revision-Date: 2014-10-18 11:47+0000\n"
 "Last-Translator: Manuel <mcaeiror@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,41 +81,62 @@ msgid "Sorry we don't have an account with that email address"
 msgstr ""
 "Sentímolo, non existe unha conta con esa dirección de correo electrónico"
 
-#: base_comments/templatetags/scratch_text_filters.py:109
+#: authentication/forms.py:189 authentication/forms.py:210
+#, fuzzy
+msgid "Incorrect username or password."
+msgstr "Esqueciches o teu nome de usuario ou contrasinal?"
+
+#: authentication/forms.py:190 authentication/forms.py:211
+msgid "Please enable cookies on your browser."
+msgstr ""
+
+#: authentication/forms.py:191 authentication/forms.py:212
+msgid "This account is inactive."
+msgstr ""
+
+#: authentication/forms.py:192 authentication/forms.py:213
+msgid "This account is deleted!"
+msgstr ""
+
+#: authentication/forms.py:214
+msgid "Incorrect captcha, please try again."
+msgstr ""
+
+#: base_comments/templatetags/scratch_text_filters.py:110
 msgid "day"
 msgid_plural "days"
 msgstr[0] "día"
 msgstr[1] "días"
 
-#: base_comments/templatetags/scratch_text_filters.py:115
+#: base_comments/templatetags/scratch_text_filters.py:116
 #, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
 msgstr[0] "fai 1 minuto"
 msgstr[1] "fai %(minutes)d minutos"
 
-#: base_comments/templatetags/scratch_text_filters.py:119
+#: base_comments/templatetags/scratch_text_filters.py:120
 msgid "just now"
 msgstr "xusto agora"
 
-#: base_comments/templatetags/scratch_text_filters.py:121
+#: base_comments/templatetags/scratch_text_filters.py:122
 #, python-format
 msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
 msgstr[0] "fai 1 hora"
 msgstr[1] "fai %(hours)d horas"
 
-#: base_comments/templatetags/scratch_text_filters.py:125
+#: base_comments/templatetags/scratch_text_filters.py:126
 #, python-format
 msgid "yesterday at %s"
 msgstr "onte ás %s"
 
-#: base_comments/templatetags/scratch_text_filters.py:128
+#: base_comments/templatetags/scratch_text_filters.py:129
 #, python-format
 msgid "%s"
 msgstr "%s"
 
-#: base_comments/templatetags/scratch_text_filters.py:136
+#: base_comments/templatetags/scratch_text_filters.py:137
 #, python-format
 msgid "%(number)d %(type)s ago"
 msgstr "fai %(number)d %(type)s"
@@ -123,1487 +144,6 @@ msgstr "fai %(number)d %(type)s"
 #: projects/views.py:496
 msgid "This tag has too many projects to load"
 msgstr "Esta etiqueta ten demasiados proxectos para cargar"
-
-#: s2forums/djangobb_forum/admin.py:31
-msgid "subscribers"
-msgstr "suscriptores"
-
-#: s2forums/djangobb_forum/feeds.py:27 s2forums/djangobb_forum/feeds.py:28
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:15
-msgid "Latest posts on forum"
-msgstr "Últimas entradas no foro"
-
-#: s2forums/djangobb_forum/feeds.py:46 s2forums/djangobb_forum/feeds.py:47
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:16
-msgid "Latest topics on forum"
-msgstr "Últimos temas no foro"
-
-#: s2forums/djangobb_forum/feeds.py:75 s2forums/djangobb_forum/feeds.py:100
-#: s2forums/djangobb_forum/feeds.py:125
-#, python-format
-msgid "Latest posts on %s"
-msgstr "Últimas entradas en %s"
-
-#: s2forums/djangobb_forum/feeds.py:83
-#, python-format
-msgid "Latest posts on the topic \"%s\""
-msgstr "Últimas entradas no tema \"%s\""
-
-#: s2forums/djangobb_forum/feeds.py:108
-#, python-format
-msgid "Latest posts on the forum \"%s\""
-msgstr "Últimas entradas no foro \"%s\""
-
-#: s2forums/djangobb_forum/feeds.py:128
-#, python-format
-msgid "Latest posts on the category \"%s\""
-msgstr "Últimas entradas na categoría \"%s\""
-
-#: s2forums/djangobb_forum/forms.py:29 s2forums/djangobb_forum/forms.py:229
-#: s2forums/djangobb_forum/forms.py:366 templates/base.html:207
-#: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
-msgid "Username"
-msgstr "Nome de usuario"
-
-#: s2forums/djangobb_forum/forms.py:30
-msgid "Registered"
-msgstr "Rexistrado"
-
-#: s2forums/djangobb_forum/forms.py:31
-msgid "Number of posts"
-msgstr "Número de entradas"
-
-#: s2forums/djangobb_forum/forms.py:35
-msgid "Post time"
-msgstr "Hora da entrada"
-
-#: s2forums/djangobb_forum/forms.py:36
-msgid "Author"
-msgstr "Autor"
-
-#: s2forums/djangobb_forum/forms.py:37 s2forums/djangobb_forum/forms.py:60
-#: s2forums/djangobb_forum/forms.py:188 s2forums/djangobb_forum/forms.py:459
-#: s2forums/djangobb_forum/models.py:160
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
-msgid "Subject"
-msgstr "Asunto"
-
-#: s2forums/djangobb_forum/forms.py:38 s2forums/djangobb_forum/forms.py:402
-#: s2forums/djangobb_forum/models.py:130 s2forums/djangobb_forum/models.py:159
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:55
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:26
-msgid "Forum"
-msgstr "Foro"
-
-#: s2forums/djangobb_forum/forms.py:42
-msgid "Ascending"
-msgstr "Ascendente"
-
-#: s2forums/djangobb_forum/forms.py:43
-msgid "Descending"
-msgstr "Descendente"
-
-#: s2forums/djangobb_forum/forms.py:47 s2forums/djangobb_forum/models.py:175
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:56
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
-msgid "Topics"
-msgstr "Temas"
-
-#: s2forums/djangobb_forum/forms.py:48 s2forums/djangobb_forum/models.py:275
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:57
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
-msgid "Posts"
-msgstr "Entradas"
-
-#: s2forums/djangobb_forum/forms.py:52
-msgid "Message text and topic subject"
-msgstr "Texto da mensaxe e tema"
-
-#: s2forums/djangobb_forum/forms.py:53
-msgid "Message text only"
-msgstr "Só mensaxes de texto"
-
-#: s2forums/djangobb_forum/forms.py:54
-msgid "Topic subject only"
-msgstr "Soamente tema"
-
-#: s2forums/djangobb_forum/forms.py:62
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
-msgid "Attachment"
-msgstr "Anexo"
-
-#: s2forums/djangobb_forum/forms.py:63
-msgid "Subscribe"
-msgstr "Suscribir"
-
-#: s2forums/djangobb_forum/forms.py:63
-msgid "Subscribe to this topic."
-msgstr "Suscribir este tema."
-
-#: s2forums/djangobb_forum/forms.py:93
-msgid "Can't be empty nor contain only whitespace characters"
-msgstr "Non pode estar baleiro nin conter só espazos en branco"
-
-#: s2forums/djangobb_forum/forms.py:103
-msgid ""
-"Hmm, the filterbot is pretty sure your recent comments weren't ok for "
-"Scratch, so your account has been muted for the rest of the day. :/"
-msgstr ""
-"Umm, o sistema de filtrado está bastante seguro de que os seus comentarios "
-"recentes non eran apropiados para Scratch, así que a súa conta foi "
-"silenciada polo resto do dia. :/"
-
-#: s2forums/djangobb_forum/forms.py:132 s2forums/djangobb_forum/forms.py:136
-#, python-format
-msgid "Sorry, you have to wait %d seconds between posts."
-msgstr "Sentímolo, debe agardar %d segundos entre entradas."
-
-#: s2forums/djangobb_forum/forms.py:145
-msgid "Attachment is too big"
-msgstr "O anexo é demasiado grande"
-
-#: s2forums/djangobb_forum/forms.py:190
-msgid "Silent edit?"
-msgstr "Edición silenciosa?"
-
-#: s2forums/djangobb_forum/forms.py:230
-msgid "E-mail"
-msgstr "Correo electrónico"
-
-#: s2forums/djangobb_forum/forms.py:261
-msgid "Real name"
-msgstr "Nome real"
-
-#: s2forums/djangobb_forum/forms.py:368 s2forums/djangobb_forum/forms.py:404
-#: templates/includes/sort-projects-dropdown.html:4
-#: templates/studio/includes/sort-galleries-dropdown.html:19
-#: templates/studio/includes/sort-projects-dropdown.html:4
-msgid "Sort by"
-msgstr "Ordenar por"
-
-#: s2forums/djangobb_forum/forms.py:369 s2forums/djangobb_forum/forms.py:405
-msgid "Sort order"
-msgstr "Tipo de ordenación"
-
-#: s2forums/djangobb_forum/forms.py:398
-msgid "Keyword search"
-msgstr "Procura por palabra clave"
-
-#: s2forums/djangobb_forum/forms.py:400
-msgid "Author search"
-msgstr "Procura por autor"
-
-#: s2forums/djangobb_forum/forms.py:403
-msgid "Search in"
-msgstr "Procurar en"
-
-#: s2forums/djangobb_forum/forms.py:406
-msgid "Show results as"
-msgstr "Mostrar resultados como"
-
-#: s2forums/djangobb_forum/forms.py:431
-#, python-format
-msgid "User \"%s\" does not exist"
-msgstr "O usuario \"%s\" non existe"
-
-#: s2forums/djangobb_forum/forms.py:441
-msgid "You already voted for this post"
-msgstr "Vostede xa votou por esta entrada"
-
-#: s2forums/djangobb_forum/forms.py:445
-msgid "This post does't belong to that user"
-msgstr "Esta entrada non pertence a ese usuario"
-
-#: s2forums/djangobb_forum/forms.py:461 s2forums/djangobb_forum/models.py:266
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:34
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
-msgid "Message"
-msgstr "Mensaxe"
-
-#: s2forums/djangobb_forum/forms.py:514
-#, python-format
-msgid "You have selected too many choices. You may only select %i."
-msgstr "Selecionaches demasiadas opcións. Debe elixir só %i."
-
-#: s2forums/djangobb_forum/forms.py:521
-msgid "Write each answer on a new line."
-msgstr "Escriba cada resposta nuhna liña nova."
-
-#: s2forums/djangobb_forum/forms.py:524
-msgid ""
-"Number of days for this poll to run. Leave empty for an indefinite poll."
-msgstr ""
-"Número de días que estará activa a enquisa. Deixar en branco para unha "
-"enquisa indefinida."
-
-#: s2forums/djangobb_forum/forms.py:541
-msgid "There is no valid answer."
-msgstr "Non hai unha resposta válida."
-
-#: s2forums/djangobb_forum/forms.py:547
-msgid "One of the answers is too long."
-msgstr "Unha das respostas é demasiado longa."
-
-#: s2forums/djangobb_forum/models.py:45
-msgid "Display your e-mail address."
-msgstr "Amosar a súa dirección de correo electrónico."
-
-#: s2forums/djangobb_forum/models.py:46
-msgid "Hide your e-mail address but allow form e-mail."
-msgstr ""
-"Ocultar a súa dirección de correo electrónico pero permitir formulario de "
-"correo."
-
-#: s2forums/djangobb_forum/models.py:47
-msgid "Hide your e-mail address and disallow form e-mail."
-msgstr ""
-"Ocultar a súa dirección de correo electrónico e deshabilitar o formulario de "
-"correo."
-
-#: s2forums/djangobb_forum/models.py:81 s2forums/djangobb_forum/models.py:119
-#: s2forums/djangobb_forum/models.py:489
-msgid "Name"
-msgstr "Nome"
-
-#: s2forums/djangobb_forum/models.py:82
-msgid "Groups"
-msgstr "Grupos"
-
-#: s2forums/djangobb_forum/models.py:82
-msgid "Only users from these groups can see this category"
-msgstr "Só usuarios destes grupos poden ver esta categoría"
-
-#: s2forums/djangobb_forum/models.py:83 s2forums/djangobb_forum/models.py:120
-msgid "Position"
-msgstr "Posición"
-
-#: s2forums/djangobb_forum/models.py:87 s2forums/djangobb_forum/models.py:117
-msgid "Category"
-msgstr "Categoría"
-
-#: s2forums/djangobb_forum/models.py:88
-msgid "Categories"
-msgstr "Categorías"
-
-#: s2forums/djangobb_forum/models.py:118
-msgid "New topics by moderators only"
-msgstr "Só os moderadores poden crear novos temas"
-
-#: s2forums/djangobb_forum/models.py:121
-msgid "Description"
-msgstr "Descrición"
-
-#: s2forums/djangobb_forum/models.py:122
-msgid "Moderators"
-msgstr "Moderadores"
-
-#: s2forums/djangobb_forum/models.py:123 s2forums/djangobb_forum/models.py:162
-#: s2forums/djangobb_forum/models.py:263
-msgid "Updated"
-msgstr "Actualizado"
-
-#: s2forums/djangobb_forum/models.py:124 s2forums/djangobb_forum/models.py:168
-#: s2forums/djangobb_forum/models.py:409
-msgid "Post count"
-msgstr "Número de entradas"
-
-#: s2forums/djangobb_forum/models.py:125
-msgid "Topic count"
-msgstr "Número de temas"
-
-#: s2forums/djangobb_forum/models.py:131
-#: templates/search/includes/tabs.html:20
-msgid "Forums"
-msgstr "Foros"
-
-#: s2forums/djangobb_forum/models.py:161 s2forums/djangobb_forum/models.py:262
-#: s2forums/djangobb_forum/models.py:450
-msgid "Created"
-msgstr "Creado"
-
-#: s2forums/djangobb_forum/models.py:163 s2forums/djangobb_forum/models.py:261
-#: s2forums/djangobb_forum/models.py:388
-#: templates/cloudmonitor/monitor.html:67
-msgid "User"
-msgstr "Usuario"
-
-#: s2forums/djangobb_forum/models.py:164
-msgid "Views count"
-msgstr "Número de vistas"
-
-#: s2forums/djangobb_forum/models.py:165
-msgid "Sticky"
-msgstr "Discutido"
-
-#: s2forums/djangobb_forum/models.py:166
-msgid "Closed"
-msgstr "Pechado"
-
-#: s2forums/djangobb_forum/models.py:167
-msgid "Subscribers"
-msgstr "Suscriptores"
-
-#: s2forums/djangobb_forum/models.py:174 s2forums/djangobb_forum/models.py:260
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:35
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:31
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:25
-msgid "Topic"
-msgstr "Tema"
-
-#: s2forums/djangobb_forum/models.py:264
-msgid "Updated by"
-msgstr "Actualizado por"
-
-#: s2forums/djangobb_forum/models.py:265
-msgid "Markup"
-msgstr "Marcado"
-
-#: s2forums/djangobb_forum/models.py:267
-msgid "HTML version"
-msgstr "Versión HTML"
-
-#: s2forums/djangobb_forum/models.py:268
-msgid "User IP"
-msgstr "IP do usuario"
-
-#: s2forums/djangobb_forum/models.py:274 s2forums/djangobb_forum/models.py:361
-#: s2forums/djangobb_forum/models.py:447 s2forums/djangobb_forum/models.py:485
-#: templates/comments/comment-module.html:38
-#: templates/comments/comment_module.html:17
-#: templates/comments/comment_module.html:67
-#: templates/includes/backbone-templates.html:62
-msgid "Post"
-msgstr "Enviar"
-
-#: s2forums/djangobb_forum/models.py:359
-msgid "From"
-msgstr "De"
-
-#: s2forums/djangobb_forum/models.py:360
-msgid "To"
-msgstr "Para"
-
-#: s2forums/djangobb_forum/models.py:362
-#: templates/cloudmonitor/monitor.html:71
-msgid "Time"
-msgstr "Hora"
-
-#: s2forums/djangobb_forum/models.py:363
-msgid "Sign"
-msgstr "Autentíquese"
-
-#: s2forums/djangobb_forum/models.py:364 s2forums/djangobb_forum/models.py:451
-#: s2forums/djangobb_forum/models.py:464
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:25
-msgid "Reason"
-msgstr "Motivo"
-
-#: s2forums/djangobb_forum/models.py:367
-msgid "Reputation"
-msgstr "Reputación"
-
-#: s2forums/djangobb_forum/models.py:368
-msgid "Reputations"
-msgstr "Reputacións"
-
-#: s2forums/djangobb_forum/models.py:389
-msgid "Status"
-msgstr "Estado"
-
-#: s2forums/djangobb_forum/models.py:390
-msgid "Site"
-msgstr "Sitio"
-
-#: s2forums/djangobb_forum/models.py:391
-msgid "Jabber"
-msgstr "Jabber"
-
-#: s2forums/djangobb_forum/models.py:392
-msgid "ICQ"
-msgstr "ICQ"
-
-#: s2forums/djangobb_forum/models.py:393
-msgid "MSN"
-msgstr "MSN"
-
-#: s2forums/djangobb_forum/models.py:394
-msgid "AIM"
-msgstr "AIM"
-
-#: s2forums/djangobb_forum/models.py:395
-msgid "Yahoo"
-msgstr "Yahoo"
-
-#: s2forums/djangobb_forum/models.py:396
-msgid "Location"
-msgstr "Ubicación"
-
-#: s2forums/djangobb_forum/models.py:397 s2forums/djangobb_forum/models.py:398
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:19
-msgid "Signature"
-msgstr "Sinatura"
-
-#: s2forums/djangobb_forum/models.py:399
-msgid "Time zone"
-msgstr "Zona horaria"
-
-#: s2forums/djangobb_forum/models.py:400
-msgid "Language"
-msgstr "Idioma"
-
-#: s2forums/djangobb_forum/models.py:401
-msgid "Avatar"
-msgstr "Avatar"
-
-#: s2forums/djangobb_forum/models.py:402
-msgid "Theme"
-msgstr "Tema"
-
-#: s2forums/djangobb_forum/models.py:403
-msgid "Show avatar"
-msgstr "Amosar avatar"
-
-#: s2forums/djangobb_forum/models.py:404
-msgid "Show signatures"
-msgstr "Amosar sinaturas"
-
-#: s2forums/djangobb_forum/models.py:405
-msgid "Show smilies"
-msgstr "Amosar emocións"
-
-#: s2forums/djangobb_forum/models.py:406
-msgid "Privacy permission"
-msgstr "Permiso de privacidade"
-
-#: s2forums/djangobb_forum/models.py:407
-msgid "Auto subscribe"
-msgstr "Autosuscribirse"
-
-#: s2forums/djangobb_forum/models.py:407
-msgid "Auto subscribe all topics you have created or reply."
-msgstr "Autosuscribirse a todos os temas que tes creado ou contestado."
-
-#: s2forums/djangobb_forum/models.py:408
-msgid "Default markup"
-msgstr "Marca por defecto"
-
-#: s2forums/djangobb_forum/models.py:414 templates/base.html:237
-msgid "Profile"
-msgstr "Perfil"
-
-#: s2forums/djangobb_forum/models.py:415
-msgid "Profiles"
-msgstr "Perfís"
-
-#: s2forums/djangobb_forum/models.py:439 s2forums/djangobb_forum/models.py:440
-msgid "Post tracking"
-msgstr "Seguimento de entradas"
-
-#: s2forums/djangobb_forum/models.py:446
-msgid "Reported by"
-msgstr "Denunciado por"
-
-#: s2forums/djangobb_forum/models.py:448
-msgid "Zapped"
-msgstr "Reemplazado"
-
-#: s2forums/djangobb_forum/models.py:449
-msgid "Zapped by"
-msgstr "Reemplazado por"
-
-#: s2forums/djangobb_forum/models.py:454
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:159
-#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
-msgid "Report"
-msgstr "Denunciar"
-
-#: s2forums/djangobb_forum/models.py:455
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:31
-#: s2forums/djangobb_forum/templates/djangobb_forum/reports.html:6
-msgid "Reports"
-msgstr "Denuncias"
-
-#: s2forums/djangobb_forum/models.py:461
-msgid "Banned user"
-msgstr "Usuario suspendido"
-
-#: s2forums/djangobb_forum/models.py:462
-msgid "Ban start"
-msgstr "Inicio da suspensión"
-
-#: s2forums/djangobb_forum/models.py:463
-msgid "Ban end"
-msgstr "Fin da suspensión"
-
-#: s2forums/djangobb_forum/models.py:467
-msgid "Ban"
-msgstr "Suspender"
-
-#: s2forums/djangobb_forum/models.py:468
-msgid "Bans"
-msgstr "Suspensións"
-
-#: s2forums/djangobb_forum/models.py:486
-msgid "Size"
-msgstr "Tamaño"
-
-#: s2forums/djangobb_forum/models.py:487
-msgid "Content type"
-msgstr "Tipo de contido"
-
-#: s2forums/djangobb_forum/models.py:488
-msgid "Path"
-msgstr "Ruta"
-
-#: s2forums/djangobb_forum/models.py:490
-msgid "Hash"
-msgstr "Hash"
-
-#: s2forums/djangobb_forum/models.py:517
-msgid "How many choices are allowed simultaneously."
-msgstr "Cantas opcións se permiten ao mesmo tempo"
-
-#: s2forums/djangobb_forum/models.py:520
-msgid "Can users vote to this poll or just see the result?"
-msgstr "Os usuarios poden votar por esta enquisa ou ver so o resultado?"
-
-#: s2forums/djangobb_forum/models.py:523
-msgid "Point of time after this poll would be automatic deactivated"
-msgstr ""
-"Momento despois do que esta enquisa será desactivada de forma automática."
-
-#: s2forums/djangobb_forum/models.py:526
-msgid "Users who has voted this poll."
-msgstr "Usuarios que votaron nesta enquisa."
-
-#: s2forums/djangobb_forum/util.py:273
-#, python-format
-msgid ""
-"Sorry, you need to host your images with a service like imageshack.com. "
-"Please update your image links or remove all BB code [img] tags. Bad image "
-"url: %s"
-msgstr ""
-"Sentímolo, precisas dispor das túas imaxes nun servizo como imageshack.com. "
-"Por favor actualiza as ligazóns ás imaxes ou elimina todas as etiquetas [img]"
-" do código BB. URL de imaxe incorrecta: %s"
-
-#: s2forums/djangobb_forum/views.py:93
-msgid "Topics deleted."
-msgstr "Temas borrados"
-
-#: s2forums/djangobb_forum/views.py:98
-msgid "Topics opened."
-msgstr "Temas abertos."
-
-#: s2forums/djangobb_forum/views.py:103
-msgid "Topics closed."
-msgstr "Temas pechados."
-
-#: s2forums/djangobb_forum/views.py:296
-#, python-format
-msgid "Found %i posts."
-msgstr "Atopadas %i entradas."
-
-#: s2forums/djangobb_forum/views.py:300
-#, python-format
-msgid "Found %i topics."
-msgstr "Atopados %i temas."
-
-#: s2forums/djangobb_forum/views.py:314
-msgid "Marked all topics as read."
-msgstr "Marcados todos os temas como lidos."
-
-#: s2forums/djangobb_forum/views.py:324
-msgid "Post reported."
-msgstr "Entrada denunciada."
-
-#: s2forums/djangobb_forum/views.py:341
-msgid "Email sent."
-msgstr "Enviouse o correo electrónico."
-
-#: s2forums/djangobb_forum/views.py:343
-msgid "Email could not be sent."
-msgstr "O correo electrónico non se puido enviar."
-
-#: s2forums/djangobb_forum/views.py:437 s2forums/djangobb_forum/views.py:1147
-msgid "Reply saved."
-msgstr "Resposta gardada."
-
-#: s2forums/djangobb_forum/views.py:483
-msgid "This poll is not active."
-msgstr "Esta enquisa non está activa."
-
-#: s2forums/djangobb_forum/views.py:486
-msgid "You already voted on this poll."
-msgstr "Xa votaches nesta enquisa."
-
-#: s2forums/djangobb_forum/views.py:495
-msgid "Vote saved."
-msgstr "Voto gardado."
-
-#: s2forums/djangobb_forum/views.py:593
-msgid "Topic with poll saved."
-msgstr "Tema con enquisa gardada."
-
-#: s2forums/djangobb_forum/views.py:595
-msgid "Topic saved."
-msgstr "Tema gardado."
-
-#: s2forums/djangobb_forum/views.py:630
-msgid "Avatar uploaded."
-msgstr "Avatar cargado."
-
-#: s2forums/djangobb_forum/views.py:639
-msgid "Please sign in."
-msgstr "Por favor autentíquese."
-
-#: s2forums/djangobb_forum/views.py:653
-msgid "Profile saved."
-msgstr "Perfil gardado."
-
-#: s2forums/djangobb_forum/views.py:688
-msgid "Reputation deleted."
-msgstr "Reputación borrada."
-
-#: s2forums/djangobb_forum/views.py:694
-msgid "Reputation saved."
-msgstr "Reputación gardada."
-
-#: s2forums/djangobb_forum/views.py:735
-msgid "You don't have permission to edit this post."
-msgstr "Non tes permiso para editar esta entrada."
-
-#: s2forums/djangobb_forum/views.py:745
-msgid "Post updated."
-msgstr "Entrada actualizada."
-
-#: s2forums/djangobb_forum/views.py:768 s2forums/djangobb_forum/views.py:963
-msgid "Post deleted."
-msgstr "Entrada borrada."
-
-#: s2forums/djangobb_forum/views.py:812
-msgid "The topic ID must be an integer."
-msgstr "O ID do tema debe ser un enteiro."
-
-#: s2forums/djangobb_forum/views.py:818
-msgid "That thread doesn't exist."
-msgstr "Ese fio non existe."
-
-#: s2forums/djangobb_forum/views.py:859
-msgid "Posts moved."
-msgstr "Entrada movida."
-
-#: s2forums/djangobb_forum/views.py:923
-msgid "Topic moved."
-msgstr "Tema movido."
-
-#: s2forums/djangobb_forum/views.py:939
-msgid "Topic stickied."
-msgstr "Tema discutido."
-
-#: s2forums/djangobb_forum/views.py:941
-msgid "Topic unstickied."
-msgstr "Tema non destacado."
-
-#: s2forums/djangobb_forum/views.py:959
-msgid "You don't have permission to delete this post."
-msgstr "Non tes permiso para borrar esta entrada."
-
-# 90%
-#: s2forums/djangobb_forum/views.py:986 s2forums/djangobb_forum/views.py:1018
-msgid "You don't have permission to mark this post."
-msgstr "Non tes permiso para editar esta entrada."
-
-#: s2forums/djangobb_forum/views.py:990 s2forums/djangobb_forum/views.py:1022
-msgid "There was not enough data collected to mark this post."
-msgstr "Non se recopilaron suficientes datos para marcar esta mensaxe."
-
-#: s2forums/djangobb_forum/views.py:995
-msgid "Post marked as spam."
-msgstr "Mensaxe marcada como spam."
-
-#: s2forums/djangobb_forum/views.py:997
-msgid "This post is not in the right state to be marked as spam."
-msgstr "Esta mensaxe non está en estado axeitado para ser marcado como spam."
-
-#: s2forums/djangobb_forum/views.py:1027
-msgid "Post un-marked as spam."
-msgstr "Pon o non-marcado como spam."
-
-#: s2forums/djangobb_forum/views.py:1029
-msgid "This post is not in the right state to be un-marked as spam."
-msgstr ""
-"Esta mensaxe non está no estado axeitado para ser des-marcado como spam."
-
-#: s2forums/djangobb_forum/views.py:1042
-msgid "Topic closed."
-msgstr "Tema pechado."
-
-#: s2forums/djangobb_forum/views.py:1045
-msgid "Topic opened."
-msgstr "Tema aberto."
-
-#: s2forums/djangobb_forum/views.py:1067
-msgid "Unsubscribed from topic."
-msgstr "Subcripción a este tema eliminada."
-
-#: s2forums/djangobb_forum/views.py:1079
-msgid "Subscribed to topic."
-msgstr "Subscrito a tema."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:13
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:10
-msgid "New Topic"
-msgstr "Tema Novo"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/add_topic.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:15
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:15
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:77
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:72
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:65
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:10
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:27
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:189
-#: templates/base.html:324
-msgid "Discussion Forums"
-msgstr "Foros de Discusión"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:6
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:6
-msgid "Discuss Scratch"
-msgstr "Falar de Scratch"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/base.html:129
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:43
-msgid "Notice"
-msgstr "Aviso"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:7
-#, python-format
-msgid "Delete Posts - %(name)s"
-msgstr "Borrar Entradas -%(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:68
-msgid "Delete Posts"
-msgstr "Borrar Entradas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:46
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:48
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:130
-#, python-format
-msgid "Last edited by %(user)s (%(time)s)"
-msgstr "Última edición por %(user)s (%(time)s)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:51
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:35
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:52
-msgid "Select"
-msgstr "Seleccionar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:72
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:85
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:168
-#: templates/studio/studio.html:137
-msgid "Delete"
-msgstr "Borrar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/delete_posts.html:73
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:46
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:90
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:41
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:35
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:66
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:41
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:74
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:30
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:65
-msgid "Go back"
-msgstr "Voltar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:5
-#, python-format
-msgid "Edit Post - %(name)s"
-msgstr "Editar Entrada - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:14
-msgid "Edit Post"
-msgstr "Editar Entrada"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:22
-msgid "Edit post"
-msgstr "Editar entrada"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:41
-msgid "Silent edit (don't display 'Edited by ...' in topic view)"
-msgstr "Edición silenciada (non amosar 'Editado por ...\" na vista tema)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/edit_post.html:45
-msgid "Save"
-msgstr "Gardar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:24
-msgid ""
-"Can't find an answer to your question? Click here to ask it in a new thread."
-msgstr "Non pode respostar á pregunta? Prema aquí para preguntar nun fio novo."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:24
-msgid "New topic"
-msgstr "Novo tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:36
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:32
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:27
-msgid "Replies"
-msgstr "Respostas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:37
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:33
-#: templates/includes/sort-projects-dropdown.html:10
-#: templates/studio/includes/sort-projects-dropdown.html:10
-msgid "Views"
-msgstr "Vistas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:38
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:58
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:34
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:28
-msgid "Last Post"
-msgstr "Última Entrada:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:53
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:47
-msgid "Sticky:"
-msgstr "Discutido:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:56
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:63
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum_row.html:40
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:50
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:56
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:39
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:45
-#: templates/carousel/includes/project-thumb.html:26
-#: templates/carousel/includes/project-thumb.html:28
-#: templates/explore/explore2.html:54
-#: templates/explore/includes/related_projects.html:17
-#: templates/explore/includes/related_projects.html:32
-#: templates/explore/includes/related_projects.html:46
-#: templates/explore/includes/related_projects.html:75
-#: templates/explore/includes/related_projects2.html:8
-#: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-thumb.html:22
-#: templates/galleries/includes/project-thumb.html:24
-#: templates/projects/base.html:105 templates/projects/base.html.py:368
-#: templates/projects/includes/project_list.html:11
-msgid "by"
-msgstr "por"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:57
-msgid "(New Posts)"
-msgstr "(Novas Entradas)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:67
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:61
-msgid "Forum is empty."
-msgstr "O foro está baleiro"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/forum.html:107
-msgid "Moderate forum"
-msgstr "Moderar foro"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:16
-msgid "Show new posts since last visit"
-msgstr "Amosar novas entradas dende a última visita"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:21
-msgid "Discussion Home"
-msgstr "Páxina de Discusión"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:20
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
-#: templates/404.html:21 templates/base.html:184 templates/contact-us.html:92
-msgid "Search"
-msgstr "Buscar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/header.html:29
-#, python-format
-msgid "Reports (%(report_count)s)"
-msgstr "Denuncias (%(report_count)s)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-msgid "Show your"
-msgstr "Amosar o(s) teu(s)/a(s) túa(s)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-msgid "topics"
-msgstr "temas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:77
-msgid "posts"
-msgstr "entratas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:78
-msgid "Change your signature"
-msgstr "Cambiar a sinatura"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:82
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:43
-msgid "Show recent posts"
-msgstr "Amosar entradas recentes"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:83
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:44
-msgid "Show unanswered posts"
-msgstr "Amosar entradas non respostadas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/index.html:85
-msgid "Mark all topics as read"
-msgstr "Marcar todos os temas como lidos"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:7
-msgid "Send e-mail to"
-msgstr "Enviar correo electrónico a"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:13
-msgid "Write and submit your e-mail message"
-msgstr "Escribir e enviar a túa mensaxe de correo electrónico"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:19
-msgid ""
-"Please note that by using this form, your e-mail address will be disclosed "
-"to the recipient."
-msgstr ""
-"Por favor ten en conta que utilizando este foro a túa dirección de correo "
-"electrónico será revelada ao destinatario."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mail_to.html:23
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:34
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:41
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:73
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:64
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:59
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/post_form.html:16
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:31
-#: templates/extensions/terms_of_use.html:40
-msgid "Submit"
-msgstr "Enviar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:7
-#, python-format
-msgid "Moderate - %(name)s"
-msgstr "Moderar - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:16
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:74
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:80
-msgid "Moderate Forum"
-msgstr "Moderar Foro"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:84
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:89
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:40
-#: templates/info/help/studio/tips/howto/hoc-4a.html:18
-#: templates/info/help/studio/tips/howto/hoc.html:24
-msgid "Move"
-msgstr "Mover"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:86
-msgid "Open"
-msgstr "Abrir"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderate.html:87
-#: templates/modal-registration.html:188
-msgid "Close"
-msgstr "Pechar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/moderators.html:3
-msgid "Moderated by"
-msgstr "Moderado por"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:7
-#, python-format
-msgid "Move Posts - %(name)s"
-msgstr "Mover Entradas - %(name)s"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:22
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:68
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:74
-msgid "Move Posts"
-msgstr "Mover Entradas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:82
-msgid "All posts (original topic will be deleted)"
-msgstr "Todas as entradas (temas orixinales serán borrados)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_posts.html:85
-msgid "Topic ID or URL"
-msgstr "ID ou URL do tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:11
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:17
-msgid "Move Topic"
-msgstr "Mover Tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/move_topic.html:26
-msgid "Move to"
-msgstr "Mover a"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/pagination.html:3
-msgid "Pages"
-msgstr "Páxinas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:14
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:22
-msgid "Report Post"
-msgstr "Denunciar entrada"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/report.html:32
-msgid "Please enter a short reason why you are reporting this post."
-msgstr ""
-"Por favor introduza unha razón curta do por que está denunciando esta "
-"entrada."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:17
-msgid "Reputation of the user"
-msgstr "Reputación do usuario"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:23
-msgid "From user"
-msgstr "Dende o usuario"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:24
-msgid "For post in topic"
-msgstr "Para engadir no tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:26
-msgid "Estimation"
-msgstr "Estimación"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:27
-msgid "Date"
-msgstr "Data"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation.html:64
-msgid "Are you sure"
-msgstr "Estas seguro?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:7
-msgid "Please, fill the form"
-msgstr "Por favor, cubre o formulario"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:17
-msgid "Your name:"
-msgstr "O teu nome:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:21
-msgid "To whom we change a reputation:"
-msgstr "A quen lle cambiamos a reputación:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:29
-msgid "Method:"
-msgstr "Método:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:32
-msgid "Add of a reputation"
-msgstr "Mellorar a reputación"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/reputation_form.html:34
-msgid "Reduction of a reputation"
-msgstr "Reducir a reputación"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:32
-msgid "(Dustbin all posts and topics)"
-msgstr "(Borradas todas entradas e temas)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:37
-msgid ""
-"To search by keyword, enter a term or terms to search for. Separate terms "
-"with spaces. To search by author enter the username of the author whose "
-"posts you wish to search for."
-msgstr ""
-"Para buscar por palabra clave, introduce un termo ou varios termos que "
-"queiras buscar. Separa os termos con espazos. Para buscar por autor "
-"introduce o nome de usuario do autor do que queres buscar as entradas."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:42
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:30
-msgid "All forums"
-msgstr "Todos os foros"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:56
-msgid ""
-"Choose in which forum you would like to search and if you want to search in "
-"topic subjects, message text or both."
-msgstr ""
-"Elexir en que foro che gustaría buscar e si queres buscar nos títulos dos "
-"temas, texto das mensaxes ou en ámbolos dous."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_form.html:70
-msgid "You can choose how you wish to sort and show your results."
-msgstr "Podes elexir como desexas ordear e amosar os resultados"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:6
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:7
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:10
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:10
-msgid "Search Results"
-msgstr "Buscar resultados"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:12
-msgid "Show results as topic list."
-msgstr "Buscar resultados como unha lista de temas."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:26
-msgid "Info"
-msgstr "Información"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:29
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:49
-msgid "Your search returned no hits."
-msgstr "A túa búsqueda non devolveu resultados."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:42
-msgid "Search links"
-msgstr "Buscar ligazóns"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:46
-msgid "Show your subscribed topics"
-msgstr "Amosar os temas aos que estás subscrito"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_posts.html:47
-msgid "Show your topics"
-msgstr "Amosar os teus temas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/search_topics.html:13
-msgid "Show results as post list."
-msgstr "Amosar resultados como lista de entradas."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:16
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:198
-msgid "loading..."
-msgstr "cargando..."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:17
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:199
-msgid "There was an error :( Try again?"
-msgstr "Houbo un erro :(Tentar de novo?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:200
-msgid "Follow this discussion to get a message when there's a new post"
-msgstr ""
-"Segue esta discusión para recibir unha mensaxe cando haxa unha entrada nova"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:18
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:200
-msgid "Follow Discussion"
-msgstr "Seguir Discusión"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:201
-msgid "Stop getting messages about new posts to this discussion"
-msgstr "Deixar de recibir mensaxes sobre novas entradas nesta discusión"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:19
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:201
-msgid "Unfollow Discussion"
-msgstr "Deixar de Seguir Discusión"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:35
-msgid "Poll"
-msgstr "Enquisa"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:43
-#, python-format
-msgid "(%(count)s answers allows.)"
-msgstr "(%(count)s respostas permitidas.)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:46
-msgid "Vote"
-msgstr "Votar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:97
-msgid "1000+ posts"
-msgstr "Máis de 1000 entradas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:99
-msgid "500+ posts"
-msgstr "Máis de 500 entradas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:101
-msgid "100+ posts"
-msgstr "Máis de 100 entradas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:103
-msgid "1 post"
-msgstr "1 entrada"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:105
-msgid " posts"
-msgstr "entradas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:111
-msgid "From:"
-msgstr "De:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:113
-msgid "Registered:"
-msgstr "Rexistrado:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:114
-msgid "Posts:"
-msgstr "Entradas:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:115
-msgid "IP:"
-msgstr "IP:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:120
-msgid "Really delete all posts, and ban user? This is hard to reverse."
-msgstr ""
-"De verdade queres borrar todas as mensaxes e limitar ao usuario? Esto é "
-"difícil de desfacer."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:137
-msgid "(Edit Signature)"
-msgstr "(Editar Sinatura)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
-msgid "Are you sure you want to mark this as spam?"
-msgstr "Estás seguro de querer marcar esto como spam?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:161
-msgid "Mark as Spam"
-msgstr "Marcar como Spam"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
-msgid "Are you sure you want to unmark this as spam?"
-msgstr "Estás seguro de que queres desmarcar esto como spam?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:164
-msgid "Un-mark as Spam"
-msgstr "Desmarcar como Spam"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:168
-msgid "Are you sure you want to delete this post?"
-msgstr "Estás seguro que queres borrar esta entrada?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:172
-msgid "Edit"
-msgstr "Editar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:175
-msgid "Insert a quotation of this post in your reply."
-msgstr "Inserir unha cita desta entrada na túa resposta."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:175
-msgid "Quote"
-msgstr "Cita"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:220
-msgid "Jump to"
-msgstr "Saltar a"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:231
-#: templates/explore/projects.html:26
-msgid "Go"
-msgstr "Ir"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:236
-msgid "Moderator control"
-msgstr "Control do moderador"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:237
-msgid "Delete multiple posts"
-msgstr "Borrar entradas múltiples"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:238
-msgid "Move multiple posts"
-msgstr "Mover entradas múltiples"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:239
-msgid "Move topic"
-msgstr "Mover tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:241
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:253
-msgid "Open topic"
-msgstr "Abrir tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:243
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:256
-msgid "Close topic"
-msgstr "Pechar Tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:246
-msgid "Unstick topic"
-msgstr "Desdestacar tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/topic.html:248
-msgid "Stick topic"
-msgstr "Destacar tema"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:7
-msgid "Upload avatar"
-msgstr "Cargar avatar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:13
-msgid "Enter an avatar file to upload"
-msgstr "Introducir un ficheiro de avatar para cargar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:19
-#, python-format
-msgid ""
-"An avatar is a small image that will be displayed under your username in "
-"your posts. It must not be any bigger than %(avatar_width)s x "
-"%(avatar_height)s pixels "
-msgstr ""
-"Un avatar é unha imaxe pequena que se desplega baixo o teu nome de usuario "
-"nas túas entradas. A imaxe do avatar non debe ser maior a %(avatar_width)s x "
-"%(avatar_height)s pixeles"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
-msgid "Upload"
-msgstr "Cargar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:5
-msgid "YouTube Video"
-msgstr "Vídeo de YouTube"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:22
-msgid "Video Not Found"
-msgstr "Vídeo Non Atopado"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:33
-msgid "Why do I see this page?"
-msgstr "Por que vexo esta páxina?"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/youtube.html:36
-msgid ""
-"Links to YouTube videos on the forums are automatically converted to links "
-"to this page, to hide comments and other content."
-msgstr ""
-"As ligazóns a vídeos de YouTube nos foros convírtense automaticamente en "
-"ligazóns a esta páxina, para agochar comentarios e outro contido."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
-msgid "New Reply"
-msgstr "Nova Resposta"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_form.html:22
-msgid "Create a poll"
-msgstr "Crear unha enquisa"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/includes/post_in_search_page.html:14
-msgid "Replies:"
-msgstr "Respostas:"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:8
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/forum.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/index.html:5
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/reply.html:8
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_form.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
-#: templates/base.html:177
-msgid "Discuss"
-msgstr "Comentar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:23
-#, python-format
-msgid "Signed in as <strong>%(user)s</strong>"
-msgstr "Rexistrado como <strong>%(user)s</strong>"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/base.html:25
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:7
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:25
-msgid "Sign In"
-msgstr "Entrar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/index.html:16
-#, python-format
-msgid "%(posts)s post"
-msgid_plural "%(posts)s posts"
-msgstr[0] "%(posts)s entrada"
-msgstr[1] "%(posts)s entradas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/reply.html:11
-#: templates/comments/comment.html:59
-#: templates/comments/comment_module.html:31
-#: templates/comments/comment_module.html:48
-#: templates/comments/includes/comment.html:12
-msgid "Reply"
-msgstr "Respostar"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:22
-msgid "No posts."
-msgstr "Non hai entradas."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:7
-#, python-format
-msgid "%(replies)s reply"
-msgid_plural "%(replies)s replies"
-msgstr[0] "%(replies)s resposta"
-msgstr[1] "%(replies)s respostas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:10
-msgid "No topics."
-msgstr "Non hai temas"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:12
-#, python-format
-msgid "Settings (%(name)s)"
-msgstr "Axustes (%(name)s)"
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:22
-msgid ""
-"A signature is a small piece of text that is attached to your posts. In it, "
-"you can enter just about anything you like. Perhaps you would like to enter "
-"your favourite quote or your star sign. It's up to you! In your signature "
-"you can use BBCode if it is allowed in this particular forum. You can see "
-"the features that are allowed/enabled listed below whenever you edit your "
-"signature."
-msgstr ""
-"Unha sinatura é un texto curto que se adxunta ás túas entradas. Nela, podes "
-"introducir calquera cousa que desexes. poida que queiras utilizar a túa cita "
-"favorita ou o teu signo do zodiaco. É cousa túa! Na túa sinatura podes usar "
-"código BB si se permite no foro en cuestión. Cando edites a túa sinatura "
-"odes ver as características permitidas/habilitadas na lista que aparece "
-"abaixo."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:27
-msgid "No signature currently stored in profile."
-msgstr "Non se dispón de ningunha sinatura gardada nestes momentos."
-
-#: s2forums/djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:32
-msgid "When you update your profile, you will be redirected back to this page."
-msgstr ""
-"Cando actualices o teu perfil, serás redireccionado de volta a esta páxina."
 
 # 97%
 #: templates/403.html:12
@@ -1636,6 +176,10 @@ msgstr ""
 msgid "You can try searching for what you're looking for here:"
 msgstr "Podes tentar buscar o que estás procurando aquí:"
 
+#: templates/404.html:21 templates/base.html:185 templates/contact-us.html:92
+msgid "Search"
+msgstr "Buscar"
+
 #: templates/500.html:40
 msgid "Looks like we are having issues with our servers!"
 msgstr ""
@@ -1666,29 +210,38 @@ msgstr "Scratch"
 msgid "Imagine, Program, Share"
 msgstr "Imaxina, Programa, Comparte"
 
-#: templates/base.html:175
+#: templates/base.html:176
 msgid "Create"
 msgstr "Crear"
 
-#: templates/base.html:176 templates/explore/explore2.html:40
+#: templates/base.html:177 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Explorar"
 
 #: templates/base.html:178
+msgid "Discuss"
+msgstr "Comentar"
+
+#: templates/base.html:179
 msgid "Help"
 msgstr "Axuda"
 
-#: templates/base.html:198 templates/modal-registration.html:6
+#: templates/base.html:199 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Únete a Scratch"
 
-#: templates/base.html:201 templates/base.html.py:212 templates/base.html:222
+#: templates/base.html:202 templates/base.html.py:213 templates/base.html:223
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Entrar"
 
-#: templates/base.html:209 templates/modal-login.html:21
+#: templates/base.html:208 templates/modal-login.html:14
+#: templates/includes/backbone-templates.html:19
+msgid "Username"
+msgstr "Nome de usuario"
+
+#: templates/base.html:210 templates/modal-login.html:21
 #: templates/accounts/account_settings.html:9
 #: templates/accounts/email_change.html:9
 #: templates/accounts/deletion/confirmation.html:7
@@ -1697,152 +250,160 @@ msgstr "Entrar"
 msgid "Password"
 msgstr "Contrasinal"
 
-#: templates/base.html:213
+#: templates/base.html:214
 msgid "Forgot password?"
 msgstr "Esqueceches o teu contrasinal?"
 
-#: templates/base.html:229
+#: templates/base.html:230
 msgid "messages - updates and notices"
 msgstr "Mensaxes - actualizacións e novas"
 
-#: templates/base.html:230
+#: templates/base.html:231
 msgid "my stuff - manage projects and studios"
 msgstr "as miñas cousas - xestionar proxectos e estudos"
 
-#: templates/base.html:238 templates/explore/base.html:24
+#: templates/base.html:238
+msgid "Profile"
+msgstr "Perfil"
+
+#: templates/base.html:239 templates/explore/base.html:24
 #: templates/studio/base.html:21
 msgid "My Stuff"
 msgstr "As Miñas Cousas"
 
-#: templates/base.html:239
+#: templates/base.html:240
 msgid "Account settings"
 msgstr "Configuración da conta"
 
-#: templates/base.html:240
+#: templates/base.html:241
 msgid "Sign out"
 msgstr "Saír"
 
-#: templates/base.html:310
+#: templates/base.html:311
 msgid "About"
 msgstr "Acerca de Scratch"
 
-#: templates/base.html:312 templates/info/about.html:13
+#: templates/base.html:313 templates/info/about.html:13
 #: templates/info/help/index.html:92
 msgid "About Scratch"
 msgstr "Acerca de Scratch"
 
-#: templates/base.html:313 templates/info/parents.html:12
+#: templates/base.html:314 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "Para Nais e Pais"
 
-#: templates/base.html:314 templates/info/educators.html:12
+#: templates/base.html:315 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "Para Docentes"
 
-#: templates/base.html:315
+#: templates/base.html:316
 msgid "Credits"
 msgstr ""
 
-#: templates/base.html:316
+#: templates/base.html:317
 msgid "Jobs"
 msgstr "Traballos"
 
-#: templates/base.html:317
+#: templates/base.html:318
 msgid "Press"
 msgstr ""
 
-#: templates/base.html:321 templates/info/parents.html:72
+#: templates/base.html:322 templates/info/parents.html:72
 msgid "Community"
 msgstr "Comunidade"
 
-#: templates/base.html:323
+#: templates/base.html:324
 msgid "Community Guidelines"
 msgstr "Regras da Comunidade"
 
-#: templates/base.html:325 templates/info/help/index.html:113
+#: templates/base.html:325
+msgid "Discussion Forums"
+msgstr "Foros de Discusión"
+
+#: templates/base.html:326 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Wiki de Scratch"
 
-#: templates/base.html:326
+#: templates/base.html:327
 msgid "Statistics"
 msgstr "Estatísticas"
 
-#: templates/base.html:330 templates/search/includes/tabs.html:17
+#: templates/base.html:331 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr "Axuda"
 
-#: templates/base.html:332
+#: templates/base.html:333
 msgid "Help Page"
 msgstr "Páxina de Axuda"
 
-#: templates/base.html:333
+#: templates/base.html:334
 msgid "FAQ"
 msgstr "Pregunas Habituais"
 
-#: templates/base.html:334
+#: templates/base.html:335
 msgid "Offline Editor"
 msgstr "Editor Local"
 
-#: templates/base.html:335 templates/contact-us-success.html:12
+#: templates/base.html:336 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Contacta Connosco"
 
-#: templates/base.html:336
+#: templates/base.html:337
 msgid "Donate"
 msgstr "Doar"
 
-#: templates/base.html:340
+#: templates/base.html:341
 msgid "Legal"
 msgstr "Legal"
 
-#: templates/base.html:342
+#: templates/base.html:343
 msgid "Terms of Use"
 msgstr "Termos de Uso"
 
-#: templates/base.html:343 templates/info/help/faq.html:28
+#: templates/base.html:344 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80
 msgid "Privacy Policy"
 msgstr "Política de Privacidade"
 
-#: templates/base.html:344 templates/info/DMCA.html:10
+#: templates/base.html:345 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:348
+#: templates/base.html:349
 msgid "Scratch Family"
 msgstr "Familia Scratch"
 
 # 77%
-#: templates/base.html:350
+#: templates/base.html:351
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
 # 77%
 # 88%
-#: templates/base.html:351
+#: templates/base.html:352
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
 # 75%
-#: templates/base.html:352
+#: templates/base.html:353
 msgid "Scratch Day"
 msgstr "Día Scratch"
 
-#: templates/base.html:353
+#: templates/base.html:354
 msgid "Scratch Conference"
 msgstr "Conferencia Scratch"
 
-#: templates/base.html:354
+#: templates/base.html:355
 msgid "Code-to-Learn Foundation"
 msgstr "Fundación Programar-par-Aprender"
 
-#: templates/base.html:369
+#: templates/base.html:370
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr "Scratch é un proxecto do Lifelong Kindergarten Group do MIT Media Lab"
 
-#: templates/base.html:435
+#: templates/base.html:436
 msgid "Your Account Will Not Be Deleted"
 msgstr ""
 
@@ -2222,6 +783,10 @@ msgstr "Seguinte"
 msgid "OK Lets Go!"
 msgstr "OK Adiante!"
 
+#: templates/modal-registration.html:188
+msgid "Close"
+msgstr "Pechar"
+
 #: templates/modal-registration.html:201
 msgid "Your username must be between 3 and 20 characters"
 msgstr "O teu nome de usuario debe ter entre 3 e 20 caracteres"
@@ -2500,8 +1065,8 @@ msgstr ""
 #: templates/profiles/profile_detail.html:270
 #: templates/profiles/profile_detail.html:290
 #: templates/profiles/profile_detail.html:310
-#: templates/profiles/profile_detail.html:347 templates/projects/base.html:357
-#: templates/projects/base.html.py:387 templates/search/search.html:58
+#: templates/profiles/profile_detail.html:347 templates/projects/base.html:356
+#: templates/projects/base.html.py:386 templates/search/search.html:58
 #: templates/search/search.html.py:88 templates/search/search.html:96
 msgid "View all"
 msgstr "Ver todo"
@@ -2514,6 +1079,22 @@ msgstr "Non hai contido"
 msgid "in"
 msgstr "en"
 
+#: templates/carousel/includes/project-thumb.html:26
+#: templates/carousel/includes/project-thumb.html:28
+#: templates/explore/explore2.html:54
+#: templates/explore/includes/related_projects.html:17
+#: templates/explore/includes/related_projects.html:32
+#: templates/explore/includes/related_projects.html:46
+#: templates/explore/includes/related_projects.html:75
+#: templates/explore/includes/related_projects2.html:8
+#: templates/galleries/includes/activity_list.html:96
+#: templates/galleries/includes/project-thumb.html:22
+#: templates/galleries/includes/project-thumb.html:24
+#: templates/projects/base.html:105 templates/projects/base.html.py:367
+#: templates/projects/includes/project_list.html:11
+msgid "by"
+msgstr "por"
+
 #: templates/cas/login.html:9
 msgid "Log in to your account"
 msgstr "Acceder á túa conta"
@@ -2521,6 +1102,10 @@ msgstr "Acceder á túa conta"
 #: templates/cloudmonitor/monitor.html:59
 msgid "Cloud data history"
 msgstr "Historial de datos na nube"
+
+#: templates/cloudmonitor/monitor.html:67
+msgid "User"
+msgstr "Usuario"
 
 #: templates/cloudmonitor/monitor.html:68
 msgid "Data Name"
@@ -2533,6 +1118,10 @@ msgstr "Acción"
 #: templates/cloudmonitor/monitor.html:70
 msgid "Data Value"
 msgstr "Valor dos Datos"
+
+#: templates/cloudmonitor/monitor.html:71
+msgid "Time"
+msgstr "Hora"
 
 #: templates/comments/comment-module.html:24
 #: templates/comments/comment_module.html:11
@@ -2552,6 +1141,13 @@ msgstr ""
 #: templates/comments/comment-module.html:35
 msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr "Quedanche <span id=\"chars-left\">500</span> caracteres."
+
+#: templates/comments/comment-module.html:38
+#: templates/comments/comment_module.html:17
+#: templates/comments/comment_module.html:67
+#: templates/includes/backbone-templates.html:62
+msgid "Post"
+msgstr "Enviar"
 
 #: templates/comments/comment-module.html:39
 #: templates/comments/comment_module.html:20
@@ -2579,6 +1175,17 @@ msgstr ""
 #: templates/comments/comment-module.html:51
 msgid "Comments loading..."
 msgstr "Cargando comentarios..."
+
+#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
+msgid "Report"
+msgstr "Denunciar"
+
+#: templates/comments/comment.html:59
+#: templates/comments/comment_module.html:31
+#: templates/comments/comment_module.html:48
+#: templates/comments/includes/comment.html:12
+msgid "Reply"
+msgstr "Respostar"
 
 #: templates/comments/comment_module.html:36
 #: templates/comments/comment_module.html:54
@@ -2669,6 +1276,10 @@ msgstr "Historias"
 msgid "Tag:"
 msgstr "Etiqueta:"
 
+#: templates/explore/projects.html:26
+msgid "Go"
+msgstr "Ir"
+
 #: templates/explore/projects.html:38 templates/projects/project_list.html:32
 #: templates/studio/includes/project_action_bar.html:15
 msgid "Shared"
@@ -2696,7 +1307,7 @@ msgid "Projects"
 msgstr "Proxectos"
 
 #: templates/explore/projects.html:101 templates/explore/studios.html:86
-#: templates/projects/base.html:386
+#: templates/projects/base.html:385
 #: templates/projects/includes/shared/shared-project-actions.html:5
 #: templates/search/search.html:64 templates/search/search.html.py:87
 #: templates/search/includes/tabs.html:11
@@ -2731,6 +1342,10 @@ msgstr "Estudo:"
 #: templates/extensions/terms_of_use.html:13
 msgid "Extension Developer Terms of Use"
 msgstr "Extensión para Desenvolvedores Termos de Uso"
+
+#: templates/extensions/terms_of_use.html:40
+msgid "Submit"
+msgstr "Enviar"
 
 #: templates/galleries/activity.html:19
 #: templates/notifications/notifications.html:31
@@ -3061,6 +1676,12 @@ msgstr "Seguir"
 msgid "Unfollow"
 msgstr "Deixar de seguir"
 
+#: templates/includes/sort-projects-dropdown.html:4
+#: templates/studio/includes/sort-galleries-dropdown.html:19
+#: templates/studio/includes/sort-projects-dropdown.html:4
+msgid "Sort by"
+msgstr "Ordenar por"
+
 #: templates/includes/sort-projects-dropdown.html:9
 #: templates/studio/includes/project_action_bar.html:22
 #: templates/studio/includes/project_action_bar.html:27
@@ -3069,13 +1690,18 @@ msgstr "Deixar de seguir"
 msgid "Last modified"
 msgstr "Modificados recentemente"
 
+#: templates/includes/sort-projects-dropdown.html:10
+#: templates/studio/includes/sort-projects-dropdown.html:10
+msgid "Views"
+msgstr "Vistas"
+
 #: templates/includes/sort-projects-dropdown.html:11
 #: templates/studio/includes/sort-projects-dropdown.html:11
 msgid "Loves"
 msgstr "Gustaron"
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:356 templates/projects/remixes.html:3
+#: templates/projects/base.html:355 templates/projects/remixes.html:3
 #: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
@@ -4654,6 +3280,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/get-started-7.html:16
 #: templates/info/help/studio/tips/howto/get-started-intro.html:40
 #: templates/info/help/studio/tips/howto/hoc-4d.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:41
 msgid "Change Color"
 msgstr "Cambia a cor"
 
@@ -4678,6 +3305,7 @@ msgstr "Movementos Clave"
 #: templates/info/help/studio/tips/howto/get-started-5.html:18
 #: templates/info/help/studio/tips/howto/get-started-intro.html:38
 #: templates/info/help/studio/tips/howto/hoc-4b.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:39
 msgid "Say Something"
 msgstr "Decir Algo"
 
@@ -4725,15 +3353,15 @@ msgstr "Recreando e Copiando"
 msgid "Accounts"
 msgstr "Contas"
 
-#: templates/info/help/faq.html:35 templates/info/help/faq.html.py:161
+#: templates/info/help/faq.html:35 templates/info/help/faq.html.py:158
 msgid "Licensing and Permissions"
 msgstr "Licenzas e Permisos"
 
-#: templates/info/help/faq.html:36 templates/info/help/faq.html.py:189
+#: templates/info/help/faq.html:36 templates/info/help/faq.html.py:186
 msgid "Inappropriate Content"
 msgstr "Contido Inapropiado"
 
-#: templates/info/help/faq.html:39 templates/info/help/faq.html.py:211
+#: templates/info/help/faq.html:39 templates/info/help/faq.html.py:208
 msgid "Cloud Data"
 msgstr "Datos na Nube"
 
@@ -5234,27 +3862,16 @@ msgstr "Como borro a miña conta?"
 
 #: templates/info/help/faq.html:152
 msgid ""
-"First, download any projects that you want to keep. \n"
-"    Once the account is deleted, your projects will no longer be available. "
-"Use the form on the <a href=\"http://scratch.mit.edu/contact-us/\">Contact "
-"Us</a> page and include the following information:\n"
-"    <ul><li>Birth Month and Year that you entered when you created the "
-"account</li>\n"
-"    <li>The email address associated with the account "
+"Log in to Scratch, and then click your username in the top right-hand "
+"corner. Select “Account Settings,” then click the <em>“I want to delete my "
+"account”</em> link at the bottom of the page."
 msgstr ""
-"Primeiro, descarga os proxectos que desexas gardar. \n"
-"    Unha vez a conta esté borrada, os teus proxectos deixarán de estar "
-"dispoñibles. Usa o formulario da páxina <a href=\"http://scratch.mit.edu"
-"/contact-us/\">Contacta connosco</a> e inclue a seguiente información:\n"
-"    <ul><li>Mes e ano de nacimento que introduciches cando creaches a "
-"conta</li>\n"
-"    <li>O correo electrónico asociado coa conta "
 
-#: templates/info/help/faq.html:163
+#: templates/info/help/faq.html:160
 msgid "Is Scratch free?"
 msgstr "Scratch é de balde?"
 
-#: templates/info/help/faq.html:164
+#: templates/info/help/faq.html:161
 msgid ""
 "Yes! Scratch is available free of charge. You can use it in your school, and "
 "you can teach a course about it (even a course that costs money). You don't "
@@ -5264,14 +3881,14 @@ msgstr ""
 "dar un curso sobre el (incluso un curso polo que haxa que pagar). Non "
 "precisas comprar unha licenza - é de balde."
 
-#: templates/info/help/faq.html:166
+#: templates/info/help/faq.html:163
 msgid ""
 "Can I use Scratch and / or screenshots of Scratch in a textbook or a CD?"
 msgstr ""
 "Podo usar Scratch e / ou capturas de pantallas de Scratch nun libro de texto "
 "ou nun CD?"
 
-#: templates/info/help/faq.html:167
+#: templates/info/help/faq.html:164
 msgid ""
 "Yes, you can even write a book or chapter about Scratch. You may also use "
 "the Scratch logo when referring to Scratch. You may create screenshots / "
@@ -5291,7 +3908,7 @@ msgstr ""
 "diga \"Scractch é desenvolvido polo Lifelong Kindergarten Group do MIT Media "
 "Lab. Ver http://scratch.mit.edu\"."
 
-#: templates/info/help/faq.html:169
+#: templates/info/help/faq.html:166
 msgid ""
 "Can I include a description of Scratch and the Scratch logo in brochures or "
 "other materials?"
@@ -5299,7 +3916,7 @@ msgstr ""
 "Podo incluir unha descripción de Scratch e o logo de Scratch en folletos ou "
 "outros materiais?"
 
-#: templates/info/help/faq.html:170
+#: templates/info/help/faq.html:167
 msgid ""
 "Sure! We recommend the following description: \"Scratch is a programming "
 "language and online community where you can create your own interactive "
@@ -5319,11 +3936,11 @@ msgstr ""
 "grupo Lifelong Kindergarten do MIT Media Lab. Está dispoñible de balde en "
 "http://scratch.mit.edu\""
 
-#: templates/info/help/faq.html:172
+#: templates/info/help/faq.html:169
 msgid "Can I present Scratch at a conference?"
 msgstr "Podo presentar Scratch nunha conferencia?"
 
-#: templates/info/help/faq.html:173
+#: templates/info/help/faq.html:170
 msgid ""
 "Please feel free to make presentations about Scratch to educators or other "
 "groups. We grant our permission to make presentations."
@@ -5331,7 +3948,7 @@ msgstr ""
 "Por favor fai presentacións sobre Scratch a educadores ou a outros grupos "
 "con total liberdade. Tes o noso permiso para realizar presentacións."
 
-#: templates/info/help/faq.html:175
+#: templates/info/help/faq.html:172
 msgid ""
 "May I use / remix Scratch support materials, sprites, images, sounds or "
 "sample projects I’ve found on the website?"
@@ -5339,7 +3956,7 @@ msgstr ""
 "Podo usar ou reutilizar os materiais, figuras, imaxes, sons ou proxectos de "
 "exemplo de Scratch, que se atopen no sitio web?"
 
-#: templates/info/help/faq.html:176
+#: templates/info/help/faq.html:173
 msgid ""
 "Yes - Scratch support materials made available on the Scratch website by the "
 "Scratch Team are available under the <a href=\"http://creativecommons.org/"
@@ -5353,11 +3970,11 @@ msgstr ""
 "Commons Atribución-Compartir Igual</a>, coa excepción do Logo Scratch, o "
 "Gato Scratch e Gobo (que son marcas rexistradas Scratch)."
 
-#: templates/info/help/faq.html:178
+#: templates/info/help/faq.html:175
 msgid "Can I sell my Scratch projects?"
 msgstr "Podo vender os meus proxectos de Scratch?"
 
-#: templates/info/help/faq.html:179
+#: templates/info/help/faq.html:176
 msgid ""
 "Certainly - your project is your creation. Keep in mind that once you share "
 "your project on Scratch, everyone is free to download, remix, and reuse it "
@@ -5372,11 +3989,11 @@ msgstr ""
 "2.0</a>. Polo tanto, si te plantexas vender o teu proxecto, poida que queras "
 "non compartilo en Scratch."
 
-#: templates/info/help/faq.html:181
+#: templates/info/help/faq.html:178
 msgid "Where can I find the source code for Scratch?"
 msgstr "Onde podo atopar o código fonte de Scratch?"
 
-#: templates/info/help/faq.html:182
+#: templates/info/help/faq.html:179
 msgid ""
 "The source code for Scratch 2 (website and editor) is not yet available. The "
 "source code for <a href =\"/scratch_1.4\">Scratch 1.4</a>, written in "
@@ -5392,13 +4009,13 @@ msgstr ""
 "ScratchR - está dispoñible <a href=\"http://svn.assembla.com/svn/scratchr/\">"
 "en Assembla</a>."
 
-#: templates/info/help/faq.html:190
+#: templates/info/help/faq.html:187
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
 msgstr ""
 "Como sei o que está ben e o que non está ben compartir no sitio web de "
 "Scratch?"
 
-#: templates/info/help/faq.html:191
+#: templates/info/help/faq.html:188
 msgid ""
 "Check out the <a href=\"/community_guidelines\">Scratch community "
 "guidelines</a> - they’re brief and don’t include a lot of legal stuff. "
@@ -5408,11 +4025,11 @@ msgstr ""
 "Scratch</a> - son curtas e non inclúen especificacións legais. Hai unha "
 "ligazón ao final de cada páxina en Scratch."
 
-#: templates/info/help/faq.html:193
+#: templates/info/help/faq.html:190
 msgid "What do I do if I see something that’s inappropriate?"
 msgstr "Que fago si vexo algo inapropiado?"
 
-#: templates/info/help/faq.html:194
+#: templates/info/help/faq.html:191
 msgid ""
 "You can click the link that says “report” on any project, comment, "
 "discussion post, or user page where you think something isn't ok for "
@@ -5426,11 +4043,11 @@ msgstr ""
 "Contacta Connosco\" para explicalo. Asegúrate de incluir tantos detalles "
 "como poidas, con ligazóns ás páxinas pertinentes."
 
-#: templates/info/help/faq.html:196
+#: templates/info/help/faq.html:193
 msgid "What do I do if I see someone being mean or disrespectful?"
 msgstr "Que fago si vexo que alguén se comporta mal ou sin respeto?"
 
-#: templates/info/help/faq.html:197
+#: templates/info/help/faq.html:194
 msgid ""
 "Don’t add to the flames! Responding to mean comments with more mean comments "
 "just makes things worse, and could result in your account being blocked. "
@@ -5445,11 +4062,11 @@ msgstr ""
 "denuncias todos os días, varias veces ao día - así que podes descansar "
 "tranquilo porque nos resolveremos as cousas."
 
-#: templates/info/help/faq.html:199
+#: templates/info/help/faq.html:196
 msgid "What does the Scratch team do when something is reported or flagged?"
 msgstr "Que fai o equipo Scratch cando os usuarios denuncian ou sinalan algo?"
 
-#: templates/info/help/faq.html:200
+#: templates/info/help/faq.html:197
 msgid ""
 "The Scratch Team reviews reported comments and projects every day. If "
 "something breaks the Scratch community guidelines, we may remove it and send "
@@ -5463,11 +4080,11 @@ msgstr ""
 "teña a conta), poderíamos bloquear as contas ou redes utilizadas para subir "
 "o material en cuestión."
 
-#: templates/info/help/faq.html:202
+#: templates/info/help/faq.html:199
 msgid "What happens when an account is blocked?"
 msgstr "Que acontece cando unha conta é bloqueada?"
 
-#: templates/info/help/faq.html:203
+#: templates/info/help/faq.html:200
 msgid ""
 "When an account is blocked, the owner can no longer access it, or use it to "
 "create projects or comments. When they login, they see a page that explains "
@@ -5489,7 +4106,7 @@ msgstr ""
 "probablemente outras contas creadas pola mesma persoa) serán bloqueadas "
 "permanentemente."
 
-#: templates/info/help/faq.html:205
+#: templates/info/help/faq.html:202
 msgid ""
 "My mean brother / Kaj / some other bad guy stole my account and got it "
 "banned, what do I do?"
@@ -5497,7 +4114,7 @@ msgstr ""
 "O raio de meu irmán / Kaj / outro malote, entrou na miña conta e "
 "bloquearona, que podo facer?"
 
-#: templates/info/help/faq.html:206
+#: templates/info/help/faq.html:203
 msgid ""
 "You are responsible for keeping your password secure. If someone in real "
 "life takes control of your account and does bad stuff, tell the adults in "
@@ -5515,11 +4132,11 @@ msgstr ""
 "da comunidade, no servirá que digas que che \"hackearon\" a conta. Si non "
 "podemos confiar en ti, non te desbloquearemos."
 
-#: templates/info/help/faq.html:213
+#: templates/info/help/faq.html:210
 msgid "What is cloud data?"
 msgstr "Que son os datos na nube?"
 
-#: templates/info/help/faq.html:214
+#: templates/info/help/faq.html:211
 msgid ""
 "Cloud data is a feature in Scratch 2 that allows for data from a project to "
 "be saved and shared online. You can use cloud data to make surveys and other "
@@ -5529,11 +4146,11 @@ msgstr ""
 "dun proxecto sexan gardados e compartidos en liña. Podes usar datos na nube "
 "para crear enquisas e outros proxectos que garden números."
 
-#: templates/info/help/faq.html:216
+#: templates/info/help/faq.html:213
 msgid "Who can see the data stored in cloud data?"
 msgstr "Quen pode ver a información gardada na nube?"
 
-#: templates/info/help/faq.html:217
+#: templates/info/help/faq.html:214
 msgid ""
 "When you interact with a project using cloud data blocks, your information "
 "can be stored along with your username, and others can view it. Each project "
@@ -5544,7 +4161,7 @@ msgstr ""
 "Cada proxecto mantén un rexistro de quen interactuou con el e a información "
 "que se compartiu."
 
-#: templates/info/help/faq.html:219
+#: templates/info/help/faq.html:216
 msgid ""
 "Why is cloud data currently limited to only numbers -- with no strings or "
 "lists? "
@@ -5552,7 +4169,7 @@ msgstr ""
 "Por que os datos na nube se limitan polo de agora só a números -- pero non "
 "cadeas de caracteres ou listas? "
 
-#: templates/info/help/faq.html:220
+#: templates/info/help/faq.html:217
 msgid ""
 "The current site is limited to numbers in variables as an initial step to "
 "work out any issues with their use on the site. We plan to roll out cloud "
@@ -5565,7 +4182,7 @@ msgstr ""
 "planeado engadir outras características (listas na nube, soporte a cadeas, "
 "etc.)."
 
-#: templates/info/help/faq.html:222
+#: templates/info/help/faq.html:219
 msgid ""
 "If I see someone post inappropriate content using cloud data, how do I "
 "report it?"
@@ -5573,7 +4190,7 @@ msgstr ""
 "Si alguén comparte contido inapropiado a través dos datos na nube, como o "
 "denuncio?"
 
-#: templates/info/help/faq.html:223
+#: templates/info/help/faq.html:220
 msgid ""
 "Click the \"Report this\" button (under on the project player) to report "
 "inappropriate content in cloud data. The report form includes a link to a "
@@ -5587,11 +4204,11 @@ msgstr ""
 "quizá queiras revisala antes de enviar a denuncia. Menciona \"datos na nube\""
 " cando escribas o motivo na denuncia."
 
-#: templates/info/help/faq.html:225
+#: templates/info/help/faq.html:222
 msgid "Can I make chat rooms with cloud data?"
 msgstr "Podo crear salas de chat con datos na nube?"
 
-#: templates/info/help/faq.html:226
+#: templates/info/help/faq.html:223
 msgid ""
 "While it is technically possible to create chat rooms with cloud data, they "
 "are not currently allowed. We will reconsider this policy once we have a "
@@ -5603,11 +4220,11 @@ msgstr ""
 "teñamos unha mellor idea da nosa capacidade de moderar e manexar denuncias "
 "sobre os datos na nube."
 
-#: templates/info/help/faq.html:228
+#: templates/info/help/faq.html:225
 msgid "How do I add a cloud variable when I'm making a project?"
 msgstr "Como engado datos na nube nun proxecto?"
 
-#: templates/info/help/faq.html:229
+#: templates/info/help/faq.html:226
 msgid ""
 "When you make a variable, you can check the box that says \"Cloud variable."
 "\" Any data you store will be saved on the server and visible to others."
@@ -5615,11 +4232,11 @@ msgstr ""
 "Cando creas unha variable, podes comprobar a caixa que di \"datos na nube\". "
 "Todos os datos que gardes no servidor serán visibles para os demais usuarios."
 
-#: templates/info/help/faq.html:231
+#: templates/info/help/faq.html:228
 msgid "Who can change the information in a cloud variable?"
 msgstr "Quen pode cambiar a información nunha variable na nube?"
 
-#: templates/info/help/faq.html:232
+#: templates/info/help/faq.html:229
 msgid ""
 "Only your project can store data in its cloud variable. If people change or "
 "remix your code, it creates a different variable in their project with the "
@@ -5629,7 +4246,7 @@ msgstr ""
 "outra persoa cambia ou recrea o teu código, crearase unha variable diferente "
 "no seu proxecto co mesmo nome."
 
-#: templates/info/help/faq.html:234
+#: templates/info/help/faq.html:231
 msgid ""
 "I am logged in, but I still cannot use projects with cloud data. What is "
 "going on?"
@@ -5637,7 +4254,7 @@ msgstr ""
 "Entrei na miña conta, pero non podo usar proxectos con datos na nube. Que "
 "pasa?"
 
-#: templates/info/help/faq.html:235
+#: templates/info/help/faq.html:232
 msgid ""
 "You need to have become a \"Scratcher\" on the website to have access to "
 "cloud data. You can become a Scratcher through actively participating on the "
@@ -5647,11 +4264,11 @@ msgstr ""
 "nube. Podes convertirte en Scratcher a través da túa participación activa no "
 "sitio web."
 
-#: templates/info/help/faq.html:237
+#: templates/info/help/faq.html:234
 msgid "Is it possible to make multiplayer games with cloud data?"
 msgstr "Pódense facer xogos multixogador con datos na nube?"
 
-#: templates/info/help/faq.html:238
+#: templates/info/help/faq.html:235
 msgid ""
 "Multiplayer games may be difficult to create, due to network speed and "
 "synchronization issues. However, some Scratchers are coming up with creative "
@@ -5662,11 +4279,11 @@ msgstr ""
 "Scratchers descubriron solucións creativas de usar a nube para xogos por "
 "turnos e outros xogos."
 
-#: templates/info/help/faq.html:240
+#: templates/info/help/faq.html:237
 msgid "How long does it take for cloud data to reach another Scratcher?"
 msgstr "Canto tempo lle leva aos datos na nube chegar a outro Scratcher? "
 
-#: templates/info/help/faq.html:241
+#: templates/info/help/faq.html:238
 msgid ""
 "It depends. If both Scratchers have a reasonably fast Internet connection "
 "(DSL/Cable), and there are no restrictive firewalls on the computers/"
@@ -10549,16 +9166,17 @@ msgstr "Empezar cun saúdo"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:28
 #: templates/info/help/studio/tips/howto/get-started-intro.html:32
+#: templates/info/help/studio/tips/howto/hoc-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:32
 #: templates/info/help/studio/tips/howto/nametip-intro.html:28
-#: templates/info/help/studio/tips/howto/pgame-intro.html:28
+#: templates/info/help/studio/tips/howto/pgame-intro.html:27
 msgid "Step Index"
 msgstr "Lista de Pasos"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
 #: templates/info/help/studio/tips/howto/nametip-intro.html:30
-#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/ui/tour-intro.html:29
 msgid "1"
 msgstr "1"
@@ -10571,7 +9189,7 @@ msgstr "Di unha Felicitación"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
 #: templates/info/help/studio/tips/howto/nametip-intro.html:31
-#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/ui/tour-intro.html:30
 msgid "2"
 msgstr "2"
@@ -10584,7 +9202,7 @@ msgstr "Empezar coa Bandeira Verde"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro.html:32
-#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/ui/tour-intro.html:31
 msgid "3"
 msgstr "3"
@@ -10599,7 +9217,7 @@ msgstr "Engadir un Fondo"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
 #: templates/info/help/studio/tips/howto/nametip-intro.html:33
-#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/ui/tour-intro.html:32
 msgid "4"
 msgstr "4"
@@ -10612,7 +9230,7 @@ msgstr "Engadir unha Torta"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
 #: templates/info/help/studio/tips/howto/nametip-intro.html:34
-#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 #: templates/info/help/studio/tips/ui/tour-intro.html:33
 msgid "5"
 msgstr "5"
@@ -10627,7 +9245,7 @@ msgstr "Engadir un Son"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
 #: templates/info/help/studio/tips/howto/nametip-intro.html:35
-#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/ui/tour-intro.html:34
 msgid "6"
 msgstr "6"
@@ -10640,7 +9258,7 @@ msgstr "Apaga as Candelas"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
 #: templates/info/help/studio/tips/howto/nametip-intro.html:36
-#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "7"
 msgstr "7"
@@ -10653,7 +9271,7 @@ msgstr "Engade unha Figura que Baile"
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
 #: templates/info/help/studio/tips/howto/nametip-intro.html:37
-#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 msgid "8"
 msgstr "8"
 
@@ -10666,7 +9284,7 @@ msgid "Again and Again"
 msgstr "Outra vez e Outra vez"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
-#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 msgid "9"
 msgstr "9"
 
@@ -10676,7 +9294,7 @@ msgid "Say What to Do"
 msgstr "Conta o Que Facer"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:38
-#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 msgid "10"
 msgstr "10"
 
@@ -10686,7 +9304,7 @@ msgid "Customize Your Card"
 msgstr "Persoaliza a túa Tarxeta"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:39
-#: templates/info/help/studio/tips/howto/pgame-intro.html:40
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 msgid "11"
 msgstr "11"
 
@@ -11843,7 +10461,7 @@ msgstr "2 de 13"
 #: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip3.html:17
-#: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/pgame-intro.html:36
 #: templates/info/help/studio/tips/howto/pgametip8.html:17
 msgid "Add a Sound"
 msgstr "Engadir un Son"
@@ -12193,6 +10811,7 @@ msgstr "1 de 9"
 
 # 88%
 #: templates/info/help/studio/tips/howto/hoc-1.html:18
+#: templates/info/help/studio/tips/howto/hoc-intro.html:34
 msgid "Explore Ideas for Your Card"
 msgstr "Explora Ideas para a Túa Tarxeta"
 
@@ -12233,6 +10852,7 @@ msgstr "2 de 9"
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-2.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:35
 msgid "Delete the Cat"
 msgstr "Eliminar o Gato"
 
@@ -12273,6 +10893,7 @@ msgstr "3 de 9"
 
 # 90%
 #: templates/info/help/studio/tips/howto/hoc-3.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:36
 msgid "Add Sprites"
 msgstr "Engadir Figuras"
 
@@ -12330,6 +10951,7 @@ msgstr "4 de 9"
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-4.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:37
 msgid "Make the Sprites Interactive"
 msgstr "Facer as Figuras Interactivas"
 
@@ -12394,6 +11016,11 @@ msgstr ""
 #, fuzzy
 msgid "4A of 9"
 msgstr "4 de 9"
+
+#: templates/info/help/studio/tips/howto/hoc-4a.html:18
+#: templates/info/help/studio/tips/howto/hoc-intro.html:38
+msgid "Move"
+msgstr "Mover"
 
 #: templates/info/help/studio/tips/howto/hoc-4a.html:25
 #, python-format
@@ -12484,6 +11111,7 @@ msgstr "4 de 9"
 
 # 91%
 #: templates/info/help/studio/tips/howto/hoc-4c.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:40
 msgid "Make a Sound"
 msgstr "Facer un Son"
 
@@ -12586,6 +11214,7 @@ msgstr "4 de 9"
 
 # 92%
 #: templates/info/help/studio/tips/howto/hoc-4e.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:42
 msgid "Change Costume"
 msgstr "Cambiar a Vestimenta"
 
@@ -12648,6 +11277,7 @@ msgstr "5 de 9"
 
 # 90%
 #: templates/info/help/studio/tips/howto/hoc-5.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:43
 msgid "Add a Background Image"
 msgstr "Egnade unha Imaxe de Fondo"
 
@@ -12712,6 +11342,7 @@ msgstr "6 de 9"
 
 # 90%
 #: templates/info/help/studio/tips/howto/hoc-6.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:44
 msgid "Add Background Sound"
 msgstr "Engadir un Son de Fondo"
 
@@ -12755,6 +11386,7 @@ msgstr "7 de 9"
 
 # 94%
 #: templates/info/help/studio/tips/howto/hoc-7.html:17
+#: templates/info/help/studio/tips/howto/hoc-intro.html:45
 msgid "Set up the Project"
 msgstr "Configura o Proxecto"
 
@@ -12902,12 +11534,10 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:18
-#: templates/info/help/studio/tips/howto/hoc.html:8
 msgid "Holiday Card Tutorial"
 msgstr "Tutorial de Tarxeta de Festividade"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:20
-#, python-format
 msgid ""
 "\n"
 "\t<p>In this activity, you'll create an interactive holiday card that you "
@@ -12916,49 +11546,23 @@ msgid ""
 "\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
 "portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
 "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
-"\t\n"
-"\n"
-"\t<a class=\"next-step-button\" href=\"../hoc-1/\">\n"
-"\t\t<p>Let's begin!\n"
-"\t\t\t<img src = \"%(STATIC_URL)s/images/help/tip-next-step-arrow.png\">\t\n"
-"\t\t</p>\t\n"
-"\t</a> \n"
-"\t\n"
-"\t<ul class=\"step-index\">\n"
-"\t<h3>Step Index</h3>\t\n"
-"\t\t<li><a href=\"../hoc-1/\"><div class=\"index-num\">1</div>Explore Ideas "
-"for Your Card</a></li>\n"
-"\t\t<li><a href=\"../hoc-2/\"><div class=\"index-num\">2</div>Delete the "
-"Cat</a></li>\n"
-"\t\t<li><a href=\"../hoc-3/\"><div class=\"index-num\">3</div>Add Sprites</"
-"a></li>\n"
-"\t\t<li><a href=\"../hoc-4/\"><div class=\"index-num\">4</div>Make the "
-"Sprites Interactive</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4a/"
-"\"><div class=\"index-num\">A</div>Move</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4b/"
-"\"><div class=\"index-num\">B</div>Say Something</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4c/"
-"\"><div class=\"index-num\">C</div>Make a Sound</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4d/"
-"\"><div class=\"index-num\">D</div>Change Color</a></li>\n"
-"\t\t<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"../hoc-4e/"
-"\"><div class=\"index-num\">E</div>Change Costume</a></li>\n"
-"\t\t<li><a href=\"../hoc-5/\"><div class=\"index-num\">5</div>Add a "
-"Background Image</a></li>\n"
-"\t\t<li><a href=\"../hoc-6/\"><div class=\"index-num\">6</div>Add Background "
-"Sound</a></li>\n"
-"\t\t<li><a href=\"../hoc-7/\"><div class=\"index-num\">7</div>Set up the "
-"Project</a></li>\n"
-"\t\t<li><a href=\"../hoc-8/\"><div class=\"index-num\">8</div>Share your "
-"Project</a></li>\n"
-"\t<li><a href=\"../hoc-9/\"><div class=\"index-num\">9</div>Add to the "
-"Holiday Card Studio</a></li>\n"
-"\t</ul>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/hoc-intro.html:27
+msgid "Let's begin!"
+msgstr ""
+
+# 88%
+#: templates/info/help/studio/tips/howto/hoc-intro.html:46
+#, fuzzy
+msgid "Share your Project"
+msgstr "Comparte o Teu Proxecto"
+
+#: templates/info/help/studio/tips/howto/hoc-intro.html:47
+msgid "Add to the Holiday Card Studio"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:53
-#: templates/info/help/studio/tips/howto/hoc.html:37
 msgid ""
 "This tutorial was created for Hour of Code, a nationwide initiative by <a "
 "href=\"http://csedweek.org\" target=\"_blank\">Computer Science Education "
@@ -12971,95 +11575,6 @@ msgstr ""
 "Educación en Computación</a> e <a href=\"http://code.org\" target=\"_blank\""
 ">Code.org</a> para introducir a millóns de estudantes a unha hora de ciencia "
 "e programación de ordenadores."
-
-#: templates/info/help/studio/tips/howto/hoc.html:10
-msgid ""
-"\n"
-"<p>In this activity, you'll create an interactive holiday card that you can "
-"share with friends and family.</p>\n"
-"<p>To get started, watch this intro video:</p>\n"
-"<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
-"portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
-"webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
-msgstr ""
-"\n"
-"<p>Nesta actividade, crearás unha tarxeta interactiva dunha festividade que "
-"podes compartir cos teus amigos ou coa túa familia.</p>\n"
-"<p>Para comenzar, mira este vídeo:</p>\n"
-"<p><iframe src=\""
-"//player.vimeo.com/video/78998915?title=0&byline=0&portrait=0;hd_off=1&\" "
-"width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
-"mozallowfullscreen allowfullscreen></iframe></p>\n"
-
-#: templates/info/help/studio/tips/howto/hoc.html:17
-msgid "Get more help by following these steps:"
-msgstr "Obtén máis axuda seguindo estes pasos:"
-
-#: templates/info/help/studio/tips/howto/hoc.html:18
-msgid "Imagine your holiday card"
-msgstr "Imaxina a túa tarxeta da festividade"
-
-#: templates/info/help/studio/tips/howto/hoc.html:19
-msgid "Explore ideas for your card"
-msgstr "Explora ideas para a túa tarxeta"
-
-#: templates/info/help/studio/tips/howto/hoc.html:20
-msgid "Program your holiday card"
-msgstr "Programa a túa tarxeta da festividade"
-
-#: templates/info/help/studio/tips/howto/hoc.html:21
-msgid "Delete the cat"
-msgstr "Borrar o gato"
-
-#: templates/info/help/studio/tips/howto/hoc.html:22
-msgid "Add sprites"
-msgstr "Engadir figuras"
-
-#: templates/info/help/studio/tips/howto/hoc.html:23
-msgid "Make the sprites interactive"
-msgstr "Facer que as figuras sexan interactivas"
-
-# 92%
-#: templates/info/help/studio/tips/howto/hoc.html:25
-msgid "Say something"
-msgstr "Dicir Algo"
-
-#: templates/info/help/studio/tips/howto/hoc.html:26
-msgid "Make a sound"
-msgstr "Facer un son"
-
-# 91%
-#: templates/info/help/studio/tips/howto/hoc.html:27
-msgid "Change color"
-msgstr "Cambia a cor"
-
-#: templates/info/help/studio/tips/howto/hoc.html:28
-msgid "Change costume"
-msgstr "Cambiar vestimenta"
-
-#: templates/info/help/studio/tips/howto/hoc.html:29
-msgid "Add a background image"
-msgstr "Egnade unha imaxe de fondo"
-
-#: templates/info/help/studio/tips/howto/hoc.html:30
-msgid "Add background sound"
-msgstr "Engadir un son de fondo"
-
-#: templates/info/help/studio/tips/howto/hoc.html:31
-msgid "Set up the project"
-msgstr "Configura o proxecto"
-
-#: templates/info/help/studio/tips/howto/hoc.html:32
-msgid "Share your holiday card"
-msgstr "Comparte a túa tarxeta da festividade"
-
-#: templates/info/help/studio/tips/howto/hoc.html:33
-msgid "Share your project"
-msgstr "Comparte o teu proxecto"
-
-#: templates/info/help/studio/tips/howto/hoc.html:44
-msgid "Let's code!"
-msgstr "Vamos a programar!"
 
 #: templates/info/help/studio/tips/howto/import-music.html:11
 msgid "Select the Sounds tab"
@@ -13294,6 +11809,12 @@ msgstr "Fai que Xire sobre si Mesma"
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "Finish Your Name"
 msgstr "Completa o Teu Nome"
+
+#: templates/info/help/studio/tips/howto/nametip-intro.html:21
+msgid ""
+"//player.vimeo.com/video/111342687?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
+msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip1.html:11
 msgid "1 of 8"
@@ -13757,56 +12278,62 @@ msgid ""
 "points, or other effects. Then, challenge your friends to play."
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:24
+#: templates/info/help/studio/tips/howto/pgame-intro.html:21
+msgid ""
+"//player.vimeo.com/video/112442208?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgame-intro.html:23
 #, fuzzy
 msgid "First, choose a backdrop"
 msgstr "Agora, elixe un fondo."
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/howto/pgametip1.html:17
 msgid "Choose a Backdrop"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/pgame-intro.html:30
 #: templates/info/help/studio/tips/howto/pgametip2.html:17
 msgid "Choose a Ball"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/pgame-intro.html:31
 #: templates/info/help/studio/tips/howto/pgametip3.html:17
 msgid "Make the Ball Move"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:33
+#: templates/info/help/studio/tips/howto/pgame-intro.html:32
 #: templates/info/help/studio/tips/howto/pgametip4.html:17
 msgid "Move and Bounce"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/pgame-intro.html:33
 msgid "Choose your Paddle"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/pgame-intro.html:34
 #: templates/info/help/studio/tips/howto/pgametip6.html:17
 msgid "Control the Paddle"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/pgame-intro.html:35
 #: templates/info/help/studio/tips/howto/pgametip7.html:17
 msgid "Bounce Off the Paddle"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:38
+#: templates/info/help/studio/tips/howto/pgame-intro.html:37
 #: templates/info/help/studio/tips/howto/pgametip9.html:17
 msgid "Adding a Challenge"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:39
+#: templates/info/help/studio/tips/howto/pgame-intro.html:38
 #: templates/info/help/studio/tips/howto/pgametip10.html:17
 msgid "Enhance and Customize"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/pgame-intro.html:40
+#: templates/info/help/studio/tips/howto/pgame-intro.html:39
 #: templates/info/help/studio/tips/howto/pgametip11.html:17
 msgid "Share Your Game"
 msgstr ""
@@ -13898,6 +12425,12 @@ msgstr "11 de 12"
 
 #: templates/info/help/studio/tips/howto/pgametip11.html:19
 msgid "Congratulations! You've coded your own game!"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/pgametip11.html:33
+msgid ""
+"//player.vimeo.com/video/108273389?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/pgametip11.html:41
@@ -14584,7 +13117,7 @@ msgid "All Messages"
 msgstr "Todas as mensaxes"
 
 #: templates/notifications/notifications.html:16
-#: templates/profiles/profile_detail.html:364 templates/projects/base.html:338
+#: templates/profiles/profile_detail.html:364 templates/projects/base.html:337
 #: templates/studio/includes/sort-galleries-dropdown.html:26
 msgid "Comments"
 msgstr "Comentarios"
@@ -14982,55 +13515,55 @@ msgstr "Última modificación: %(tDate)s"
 msgid "Favorite this project"
 msgstr "Marcar como favorito este proxecto"
 
-#: templates/projects/base.html:217 templates/projects/base.html.py:223
+#: templates/projects/base.html:216 templates/projects/base.html.py:222
 msgid "Love this project"
 msgstr "Encántame este proxecto"
 
-#: templates/projects/base.html:239
+#: templates/projects/base.html:238
 msgid "Total views"
 msgstr "Visitais totais"
 
-#: templates/projects/base.html:243
+#: templates/projects/base.html:242
 msgid "View the remix tree"
 msgstr "Ver a árbore de recreacións"
 
-#: templates/projects/base.html:265
+#: templates/projects/base.html:264
 msgid "Add this project to a studio you curate (or remove it from a studio)"
 msgstr ""
 "Engadir este proxecto a un estudo que supervisas (ou eliminalo do estudo)"
 
-#: templates/projects/base.html:266
+#: templates/projects/base.html:265
 msgid "Just click on the button for any of the studios from the list below"
 msgstr "Simplemente preme no botón para calqueira dos estudos da seguinte lista"
 
-#: templates/projects/base.html:278
+#: templates/projects/base.html:277
 msgid "Download this project file"
 msgstr "Descargar este ficheiro do proxecto"
 
-#: templates/projects/base.html:301
+#: templates/projects/base.html:300
 #: templates/projects/includes/shared/shared-project-actions.html:10
 msgid "Embed"
 msgstr "Integrar"
 
-#: templates/projects/base.html:306
+#: templates/projects/base.html:305
 msgid "Copy and paste the embed code above."
 msgstr "Copiar e pegar o código integrado arriba."
 
 # 83%
-#: templates/projects/base.html:310 templates/projects/censored.html:16
+#: templates/projects/base.html:309 templates/projects/censored.html:16
 #: templates/projects/unshared-owner.html:22
 msgid "Share"
 msgstr "Compartir"
 
-#: templates/projects/base.html:370
+#: templates/projects/base.html:369
 msgid "remixes"
 msgstr "recreacións"
 
-#: templates/projects/base.html:437
+#: templates/projects/base.html:436
 msgid "OK, Got it."
 msgstr "OK, Fixéchelo."
 
-#: templates/projects/base.html:456
+#: templates/projects/base.html:455
 msgid "All Tips"
 msgstr "Todas as Suxestións"
 
@@ -15257,6 +13790,10 @@ msgstr "Páxinas de Axuda"
 msgid "All Results"
 msgstr "Todos os Resultados"
 
+#: templates/search/includes/tabs.html:20
+msgid "Forums"
+msgstr "Foros"
+
 #: templates/search/includes/projects/filters.html:8
 msgid "Most recent"
 msgstr "Máis recentes"
@@ -15457,6 +13994,10 @@ msgstr "Engadir a"
 msgid "Unshare"
 msgstr "Non compartir"
 
+#: templates/studio/studio.html:137
+msgid "Delete"
+msgstr "Borrar"
+
 # 80%
 #: templates/studio/includes/galleries_action_bar.html:8
 msgid "View:"
@@ -15505,6 +14046,1039 @@ msgstr "Creado por min"
 #: templates/studio/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
 msgstr "Supervisado por min"
+
+#~ msgid "subscribers"
+#~ msgstr "suscriptores"
+
+#~ msgid "Latest posts on forum"
+#~ msgstr "Últimas entradas no foro"
+
+#~ msgid "Latest topics on forum"
+#~ msgstr "Últimos temas no foro"
+
+#, python-format
+#~ msgid "Latest posts on %s"
+#~ msgstr "Últimas entradas en %s"
+
+#, python-format
+#~ msgid "Latest posts on the topic \"%s\""
+#~ msgstr "Últimas entradas no tema \"%s\""
+
+#, python-format
+#~ msgid "Latest posts on the forum \"%s\""
+#~ msgstr "Últimas entradas no foro \"%s\""
+
+#, python-format
+#~ msgid "Latest posts on the category \"%s\""
+#~ msgstr "Últimas entradas na categoría \"%s\""
+
+#~ msgid "Registered"
+#~ msgstr "Rexistrado"
+
+#~ msgid "Number of posts"
+#~ msgstr "Número de entradas"
+
+#~ msgid "Post time"
+#~ msgstr "Hora da entrada"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Subject"
+#~ msgstr "Asunto"
+
+#~ msgid "Forum"
+#~ msgstr "Foro"
+
+#~ msgid "Ascending"
+#~ msgstr "Ascendente"
+
+#~ msgid "Descending"
+#~ msgstr "Descendente"
+
+#~ msgid "Topics"
+#~ msgstr "Temas"
+
+#~ msgid "Posts"
+#~ msgstr "Entradas"
+
+#~ msgid "Message text and topic subject"
+#~ msgstr "Texto da mensaxe e tema"
+
+#~ msgid "Message text only"
+#~ msgstr "Só mensaxes de texto"
+
+#~ msgid "Topic subject only"
+#~ msgstr "Soamente tema"
+
+#~ msgid "Attachment"
+#~ msgstr "Anexo"
+
+#~ msgid "Subscribe"
+#~ msgstr "Suscribir"
+
+#~ msgid "Subscribe to this topic."
+#~ msgstr "Suscribir este tema."
+
+#~ msgid "Can't be empty nor contain only whitespace characters"
+#~ msgstr "Non pode estar baleiro nin conter só espazos en branco"
+
+#~ msgid ""
+#~ "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
+#~ "Scratch, so your account has been muted for the rest of the day. :/"
+#~ msgstr ""
+#~ "Umm, o sistema de filtrado está bastante seguro de que os seus comentarios "
+#~ "recentes non eran apropiados para Scratch, así que a súa conta foi "
+#~ "silenciada polo resto do dia. :/"
+
+#, python-format
+#~ msgid "Sorry, you have to wait %d seconds between posts."
+#~ msgstr "Sentímolo, debe agardar %d segundos entre entradas."
+
+#~ msgid "Attachment is too big"
+#~ msgstr "O anexo é demasiado grande"
+
+#~ msgid "Silent edit?"
+#~ msgstr "Edición silenciosa?"
+
+#~ msgid "E-mail"
+#~ msgstr "Correo electrónico"
+
+#~ msgid "Real name"
+#~ msgstr "Nome real"
+
+#~ msgid "Sort order"
+#~ msgstr "Tipo de ordenación"
+
+#~ msgid "Keyword search"
+#~ msgstr "Procura por palabra clave"
+
+#~ msgid "Author search"
+#~ msgstr "Procura por autor"
+
+#~ msgid "Search in"
+#~ msgstr "Procurar en"
+
+#~ msgid "Show results as"
+#~ msgstr "Mostrar resultados como"
+
+#, python-format
+#~ msgid "User \"%s\" does not exist"
+#~ msgstr "O usuario \"%s\" non existe"
+
+#~ msgid "You already voted for this post"
+#~ msgstr "Vostede xa votou por esta entrada"
+
+#~ msgid "This post does't belong to that user"
+#~ msgstr "Esta entrada non pertence a ese usuario"
+
+#~ msgid "Message"
+#~ msgstr "Mensaxe"
+
+#, python-format
+#~ msgid "You have selected too many choices. You may only select %i."
+#~ msgstr "Selecionaches demasiadas opcións. Debe elixir só %i."
+
+#~ msgid "Write each answer on a new line."
+#~ msgstr "Escriba cada resposta nuhna liña nova."
+
+#~ msgid ""
+#~ "Number of days for this poll to run. Leave empty for an indefinite poll."
+#~ msgstr ""
+#~ "Número de días que estará activa a enquisa. Deixar en branco para unha "
+#~ "enquisa indefinida."
+
+#~ msgid "There is no valid answer."
+#~ msgstr "Non hai unha resposta válida."
+
+#~ msgid "One of the answers is too long."
+#~ msgstr "Unha das respostas é demasiado longa."
+
+#~ msgid "Display your e-mail address."
+#~ msgstr "Amosar a súa dirección de correo electrónico."
+
+#~ msgid "Hide your e-mail address but allow form e-mail."
+#~ msgstr ""
+#~ "Ocultar a súa dirección de correo electrónico pero permitir formulario de "
+#~ "correo."
+
+#~ msgid "Hide your e-mail address and disallow form e-mail."
+#~ msgstr ""
+#~ "Ocultar a súa dirección de correo electrónico e deshabilitar o formulario de "
+#~ "correo."
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid "Groups"
+#~ msgstr "Grupos"
+
+#~ msgid "Only users from these groups can see this category"
+#~ msgstr "Só usuarios destes grupos poden ver esta categoría"
+
+#~ msgid "Position"
+#~ msgstr "Posición"
+
+#~ msgid "Category"
+#~ msgstr "Categoría"
+
+#~ msgid "Categories"
+#~ msgstr "Categorías"
+
+#~ msgid "New topics by moderators only"
+#~ msgstr "Só os moderadores poden crear novos temas"
+
+#~ msgid "Description"
+#~ msgstr "Descrición"
+
+#~ msgid "Moderators"
+#~ msgstr "Moderadores"
+
+#~ msgid "Updated"
+#~ msgstr "Actualizado"
+
+#~ msgid "Post count"
+#~ msgstr "Número de entradas"
+
+#~ msgid "Topic count"
+#~ msgstr "Número de temas"
+
+#~ msgid "Created"
+#~ msgstr "Creado"
+
+#~ msgid "Views count"
+#~ msgstr "Número de vistas"
+
+#~ msgid "Sticky"
+#~ msgstr "Discutido"
+
+#~ msgid "Closed"
+#~ msgstr "Pechado"
+
+#~ msgid "Subscribers"
+#~ msgstr "Suscriptores"
+
+#~ msgid "Topic"
+#~ msgstr "Tema"
+
+#~ msgid "Updated by"
+#~ msgstr "Actualizado por"
+
+#~ msgid "Markup"
+#~ msgstr "Marcado"
+
+#~ msgid "HTML version"
+#~ msgstr "Versión HTML"
+
+#~ msgid "User IP"
+#~ msgstr "IP do usuario"
+
+#~ msgid "From"
+#~ msgstr "De"
+
+#~ msgid "To"
+#~ msgstr "Para"
+
+#~ msgid "Sign"
+#~ msgstr "Autentíquese"
+
+#~ msgid "Reason"
+#~ msgstr "Motivo"
+
+#~ msgid "Reputation"
+#~ msgstr "Reputación"
+
+#~ msgid "Reputations"
+#~ msgstr "Reputacións"
+
+#~ msgid "Status"
+#~ msgstr "Estado"
+
+#~ msgid "Site"
+#~ msgstr "Sitio"
+
+#~ msgid "Jabber"
+#~ msgstr "Jabber"
+
+#~ msgid "ICQ"
+#~ msgstr "ICQ"
+
+#~ msgid "MSN"
+#~ msgstr "MSN"
+
+#~ msgid "AIM"
+#~ msgstr "AIM"
+
+#~ msgid "Yahoo"
+#~ msgstr "Yahoo"
+
+#~ msgid "Location"
+#~ msgstr "Ubicación"
+
+#~ msgid "Signature"
+#~ msgstr "Sinatura"
+
+#~ msgid "Time zone"
+#~ msgstr "Zona horaria"
+
+#~ msgid "Language"
+#~ msgstr "Idioma"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Theme"
+#~ msgstr "Tema"
+
+#~ msgid "Show avatar"
+#~ msgstr "Amosar avatar"
+
+#~ msgid "Show signatures"
+#~ msgstr "Amosar sinaturas"
+
+#~ msgid "Show smilies"
+#~ msgstr "Amosar emocións"
+
+#~ msgid "Privacy permission"
+#~ msgstr "Permiso de privacidade"
+
+#~ msgid "Auto subscribe"
+#~ msgstr "Autosuscribirse"
+
+#~ msgid "Auto subscribe all topics you have created or reply."
+#~ msgstr "Autosuscribirse a todos os temas que tes creado ou contestado."
+
+#~ msgid "Default markup"
+#~ msgstr "Marca por defecto"
+
+#~ msgid "Profiles"
+#~ msgstr "Perfís"
+
+#~ msgid "Post tracking"
+#~ msgstr "Seguimento de entradas"
+
+#~ msgid "Reported by"
+#~ msgstr "Denunciado por"
+
+#~ msgid "Zapped"
+#~ msgstr "Reemplazado"
+
+#~ msgid "Zapped by"
+#~ msgstr "Reemplazado por"
+
+#~ msgid "Reports"
+#~ msgstr "Denuncias"
+
+#~ msgid "Banned user"
+#~ msgstr "Usuario suspendido"
+
+#~ msgid "Ban start"
+#~ msgstr "Inicio da suspensión"
+
+#~ msgid "Ban end"
+#~ msgstr "Fin da suspensión"
+
+#~ msgid "Ban"
+#~ msgstr "Suspender"
+
+#~ msgid "Bans"
+#~ msgstr "Suspensións"
+
+#~ msgid "Size"
+#~ msgstr "Tamaño"
+
+#~ msgid "Content type"
+#~ msgstr "Tipo de contido"
+
+#~ msgid "Path"
+#~ msgstr "Ruta"
+
+#~ msgid "Hash"
+#~ msgstr "Hash"
+
+#~ msgid "How many choices are allowed simultaneously."
+#~ msgstr "Cantas opcións se permiten ao mesmo tempo"
+
+#~ msgid "Can users vote to this poll or just see the result?"
+#~ msgstr "Os usuarios poden votar por esta enquisa ou ver so o resultado?"
+
+#~ msgid "Point of time after this poll would be automatic deactivated"
+#~ msgstr ""
+#~ "Momento despois do que esta enquisa será desactivada de forma automática."
+
+#~ msgid "Users who has voted this poll."
+#~ msgstr "Usuarios que votaron nesta enquisa."
+
+#, python-format
+#~ msgid ""
+#~ "Sorry, you need to host your images with a service like imageshack.com. "
+#~ "Please update your image links or remove all BB code [img] tags. Bad image "
+#~ "url: %s"
+#~ msgstr ""
+#~ "Sentímolo, precisas dispor das túas imaxes nun servizo como imageshack.com. "
+#~ "Por favor actualiza as ligazóns ás imaxes ou elimina todas as etiquetas [img]"
+#~ " do código BB. URL de imaxe incorrecta: %s"
+
+#~ msgid "Topics deleted."
+#~ msgstr "Temas borrados"
+
+#~ msgid "Topics opened."
+#~ msgstr "Temas abertos."
+
+#~ msgid "Topics closed."
+#~ msgstr "Temas pechados."
+
+#, python-format
+#~ msgid "Found %i posts."
+#~ msgstr "Atopadas %i entradas."
+
+#, python-format
+#~ msgid "Found %i topics."
+#~ msgstr "Atopados %i temas."
+
+#~ msgid "Marked all topics as read."
+#~ msgstr "Marcados todos os temas como lidos."
+
+#~ msgid "Post reported."
+#~ msgstr "Entrada denunciada."
+
+#~ msgid "Email sent."
+#~ msgstr "Enviouse o correo electrónico."
+
+#~ msgid "Email could not be sent."
+#~ msgstr "O correo electrónico non se puido enviar."
+
+#~ msgid "Reply saved."
+#~ msgstr "Resposta gardada."
+
+#~ msgid "This poll is not active."
+#~ msgstr "Esta enquisa non está activa."
+
+#~ msgid "You already voted on this poll."
+#~ msgstr "Xa votaches nesta enquisa."
+
+#~ msgid "Vote saved."
+#~ msgstr "Voto gardado."
+
+#~ msgid "Topic with poll saved."
+#~ msgstr "Tema con enquisa gardada."
+
+#~ msgid "Topic saved."
+#~ msgstr "Tema gardado."
+
+#~ msgid "Avatar uploaded."
+#~ msgstr "Avatar cargado."
+
+#~ msgid "Please sign in."
+#~ msgstr "Por favor autentíquese."
+
+#~ msgid "Profile saved."
+#~ msgstr "Perfil gardado."
+
+#~ msgid "Reputation deleted."
+#~ msgstr "Reputación borrada."
+
+#~ msgid "Reputation saved."
+#~ msgstr "Reputación gardada."
+
+#~ msgid "You don't have permission to edit this post."
+#~ msgstr "Non tes permiso para editar esta entrada."
+
+#~ msgid "Post updated."
+#~ msgstr "Entrada actualizada."
+
+#~ msgid "Post deleted."
+#~ msgstr "Entrada borrada."
+
+#~ msgid "The topic ID must be an integer."
+#~ msgstr "O ID do tema debe ser un enteiro."
+
+#~ msgid "That thread doesn't exist."
+#~ msgstr "Ese fio non existe."
+
+#~ msgid "Posts moved."
+#~ msgstr "Entrada movida."
+
+#~ msgid "Topic moved."
+#~ msgstr "Tema movido."
+
+#~ msgid "Topic stickied."
+#~ msgstr "Tema discutido."
+
+#~ msgid "Topic unstickied."
+#~ msgstr "Tema non destacado."
+
+#~ msgid "You don't have permission to delete this post."
+#~ msgstr "Non tes permiso para borrar esta entrada."
+
+# 90%
+#~ msgid "You don't have permission to mark this post."
+#~ msgstr "Non tes permiso para editar esta entrada."
+
+#~ msgid "There was not enough data collected to mark this post."
+#~ msgstr "Non se recopilaron suficientes datos para marcar esta mensaxe."
+
+#~ msgid "Post marked as spam."
+#~ msgstr "Mensaxe marcada como spam."
+
+#~ msgid "This post is not in the right state to be marked as spam."
+#~ msgstr "Esta mensaxe non está en estado axeitado para ser marcado como spam."
+
+#~ msgid "Post un-marked as spam."
+#~ msgstr "Pon o non-marcado como spam."
+
+#~ msgid "This post is not in the right state to be un-marked as spam."
+#~ msgstr ""
+#~ "Esta mensaxe non está no estado axeitado para ser des-marcado como spam."
+
+#~ msgid "Topic closed."
+#~ msgstr "Tema pechado."
+
+#~ msgid "Topic opened."
+#~ msgstr "Tema aberto."
+
+#~ msgid "Unsubscribed from topic."
+#~ msgstr "Subcripción a este tema eliminada."
+
+#~ msgid "Subscribed to topic."
+#~ msgstr "Subscrito a tema."
+
+#~ msgid "New Topic"
+#~ msgstr "Tema Novo"
+
+#~ msgid "Discuss Scratch"
+#~ msgstr "Falar de Scratch"
+
+#~ msgid "Notice"
+#~ msgstr "Aviso"
+
+#, python-format
+#~ msgid "Delete Posts - %(name)s"
+#~ msgstr "Borrar Entradas -%(name)s"
+
+#~ msgid "Delete Posts"
+#~ msgstr "Borrar Entradas"
+
+#, python-format
+#~ msgid "Last edited by %(user)s (%(time)s)"
+#~ msgstr "Última edición por %(user)s (%(time)s)"
+
+#~ msgid "Select"
+#~ msgstr "Seleccionar"
+
+#~ msgid "Go back"
+#~ msgstr "Voltar"
+
+#, python-format
+#~ msgid "Edit Post - %(name)s"
+#~ msgstr "Editar Entrada - %(name)s"
+
+#~ msgid "Edit Post"
+#~ msgstr "Editar Entrada"
+
+#~ msgid "Edit post"
+#~ msgstr "Editar entrada"
+
+#~ msgid "Silent edit (don't display 'Edited by ...' in topic view)"
+#~ msgstr "Edición silenciada (non amosar 'Editado por ...\" na vista tema)"
+
+#~ msgid "Save"
+#~ msgstr "Gardar"
+
+#~ msgid ""
+#~ "Can't find an answer to your question? Click here to ask it in a new thread."
+#~ msgstr "Non pode respostar á pregunta? Prema aquí para preguntar nun fio novo."
+
+#~ msgid "New topic"
+#~ msgstr "Novo tema"
+
+#~ msgid "Replies"
+#~ msgstr "Respostas"
+
+#~ msgid "Last Post"
+#~ msgstr "Última Entrada:"
+
+#~ msgid "Sticky:"
+#~ msgstr "Discutido:"
+
+#~ msgid "(New Posts)"
+#~ msgstr "(Novas Entradas)"
+
+#~ msgid "Forum is empty."
+#~ msgstr "O foro está baleiro"
+
+#~ msgid "Moderate forum"
+#~ msgstr "Moderar foro"
+
+#~ msgid "Show new posts since last visit"
+#~ msgstr "Amosar novas entradas dende a última visita"
+
+#~ msgid "Discussion Home"
+#~ msgstr "Páxina de Discusión"
+
+#, python-format
+#~ msgid "Reports (%(report_count)s)"
+#~ msgstr "Denuncias (%(report_count)s)"
+
+#~ msgid "Show your"
+#~ msgstr "Amosar o(s) teu(s)/a(s) túa(s)"
+
+#~ msgid "topics"
+#~ msgstr "temas"
+
+#~ msgid "posts"
+#~ msgstr "entratas"
+
+#~ msgid "Change your signature"
+#~ msgstr "Cambiar a sinatura"
+
+#~ msgid "Show recent posts"
+#~ msgstr "Amosar entradas recentes"
+
+#~ msgid "Show unanswered posts"
+#~ msgstr "Amosar entradas non respostadas"
+
+#~ msgid "Mark all topics as read"
+#~ msgstr "Marcar todos os temas como lidos"
+
+#~ msgid "Send e-mail to"
+#~ msgstr "Enviar correo electrónico a"
+
+#~ msgid "Write and submit your e-mail message"
+#~ msgstr "Escribir e enviar a túa mensaxe de correo electrónico"
+
+#~ msgid ""
+#~ "Please note that by using this form, your e-mail address will be disclosed "
+#~ "to the recipient."
+#~ msgstr ""
+#~ "Por favor ten en conta que utilizando este foro a túa dirección de correo "
+#~ "electrónico será revelada ao destinatario."
+
+#, python-format
+#~ msgid "Moderate - %(name)s"
+#~ msgstr "Moderar - %(name)s"
+
+#~ msgid "Moderate Forum"
+#~ msgstr "Moderar Foro"
+
+#~ msgid "Open"
+#~ msgstr "Abrir"
+
+#~ msgid "Moderated by"
+#~ msgstr "Moderado por"
+
+#, python-format
+#~ msgid "Move Posts - %(name)s"
+#~ msgstr "Mover Entradas - %(name)s"
+
+#~ msgid "Move Posts"
+#~ msgstr "Mover Entradas"
+
+#~ msgid "All posts (original topic will be deleted)"
+#~ msgstr "Todas as entradas (temas orixinales serán borrados)"
+
+#~ msgid "Topic ID or URL"
+#~ msgstr "ID ou URL do tema"
+
+#~ msgid "Move Topic"
+#~ msgstr "Mover Tema"
+
+#~ msgid "Move to"
+#~ msgstr "Mover a"
+
+#~ msgid "Pages"
+#~ msgstr "Páxinas"
+
+#~ msgid "Report Post"
+#~ msgstr "Denunciar entrada"
+
+#~ msgid "Please enter a short reason why you are reporting this post."
+#~ msgstr ""
+#~ "Por favor introduza unha razón curta do por que está denunciando esta "
+#~ "entrada."
+
+#~ msgid "Reputation of the user"
+#~ msgstr "Reputación do usuario"
+
+#~ msgid "From user"
+#~ msgstr "Dende o usuario"
+
+#~ msgid "For post in topic"
+#~ msgstr "Para engadir no tema"
+
+#~ msgid "Estimation"
+#~ msgstr "Estimación"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "Are you sure"
+#~ msgstr "Estas seguro?"
+
+#~ msgid "Please, fill the form"
+#~ msgstr "Por favor, cubre o formulario"
+
+#~ msgid "Your name:"
+#~ msgstr "O teu nome:"
+
+#~ msgid "To whom we change a reputation:"
+#~ msgstr "A quen lle cambiamos a reputación:"
+
+#~ msgid "Method:"
+#~ msgstr "Método:"
+
+#~ msgid "Add of a reputation"
+#~ msgstr "Mellorar a reputación"
+
+#~ msgid "Reduction of a reputation"
+#~ msgstr "Reducir a reputación"
+
+#~ msgid "(Dustbin all posts and topics)"
+#~ msgstr "(Borradas todas entradas e temas)"
+
+#~ msgid ""
+#~ "To search by keyword, enter a term or terms to search for. Separate terms "
+#~ "with spaces. To search by author enter the username of the author whose "
+#~ "posts you wish to search for."
+#~ msgstr ""
+#~ "Para buscar por palabra clave, introduce un termo ou varios termos que "
+#~ "queiras buscar. Separa os termos con espazos. Para buscar por autor "
+#~ "introduce o nome de usuario do autor do que queres buscar as entradas."
+
+#~ msgid "All forums"
+#~ msgstr "Todos os foros"
+
+#~ msgid ""
+#~ "Choose in which forum you would like to search and if you want to search in "
+#~ "topic subjects, message text or both."
+#~ msgstr ""
+#~ "Elexir en que foro che gustaría buscar e si queres buscar nos títulos dos "
+#~ "temas, texto das mensaxes ou en ámbolos dous."
+
+#~ msgid "You can choose how you wish to sort and show your results."
+#~ msgstr "Podes elexir como desexas ordear e amosar os resultados"
+
+#~ msgid "Search Results"
+#~ msgstr "Buscar resultados"
+
+#~ msgid "Show results as topic list."
+#~ msgstr "Buscar resultados como unha lista de temas."
+
+#~ msgid "Info"
+#~ msgstr "Información"
+
+#~ msgid "Your search returned no hits."
+#~ msgstr "A túa búsqueda non devolveu resultados."
+
+#~ msgid "Search links"
+#~ msgstr "Buscar ligazóns"
+
+#~ msgid "Show your subscribed topics"
+#~ msgstr "Amosar os temas aos que estás subscrito"
+
+#~ msgid "Show your topics"
+#~ msgstr "Amosar os teus temas"
+
+#~ msgid "Show results as post list."
+#~ msgstr "Amosar resultados como lista de entradas."
+
+#~ msgid "loading..."
+#~ msgstr "cargando..."
+
+#~ msgid "There was an error :( Try again?"
+#~ msgstr "Houbo un erro :(Tentar de novo?"
+
+#~ msgid "Follow this discussion to get a message when there's a new post"
+#~ msgstr ""
+#~ "Segue esta discusión para recibir unha mensaxe cando haxa unha entrada nova"
+
+#~ msgid "Follow Discussion"
+#~ msgstr "Seguir Discusión"
+
+#~ msgid "Stop getting messages about new posts to this discussion"
+#~ msgstr "Deixar de recibir mensaxes sobre novas entradas nesta discusión"
+
+#~ msgid "Unfollow Discussion"
+#~ msgstr "Deixar de Seguir Discusión"
+
+#~ msgid "Poll"
+#~ msgstr "Enquisa"
+
+#, python-format
+#~ msgid "(%(count)s answers allows.)"
+#~ msgstr "(%(count)s respostas permitidas.)"
+
+#~ msgid "Vote"
+#~ msgstr "Votar"
+
+#~ msgid "1000+ posts"
+#~ msgstr "Máis de 1000 entradas"
+
+#~ msgid "500+ posts"
+#~ msgstr "Máis de 500 entradas"
+
+#~ msgid "100+ posts"
+#~ msgstr "Máis de 100 entradas"
+
+#~ msgid "1 post"
+#~ msgstr "1 entrada"
+
+#~ msgid " posts"
+#~ msgstr "entradas"
+
+#~ msgid "From:"
+#~ msgstr "De:"
+
+#~ msgid "Registered:"
+#~ msgstr "Rexistrado:"
+
+#~ msgid "Posts:"
+#~ msgstr "Entradas:"
+
+#~ msgid "IP:"
+#~ msgstr "IP:"
+
+#~ msgid "Really delete all posts, and ban user? This is hard to reverse."
+#~ msgstr ""
+#~ "De verdade queres borrar todas as mensaxes e limitar ao usuario? Esto é "
+#~ "difícil de desfacer."
+
+#~ msgid "(Edit Signature)"
+#~ msgstr "(Editar Sinatura)"
+
+#~ msgid "Are you sure you want to mark this as spam?"
+#~ msgstr "Estás seguro de querer marcar esto como spam?"
+
+#~ msgid "Mark as Spam"
+#~ msgstr "Marcar como Spam"
+
+#~ msgid "Are you sure you want to unmark this as spam?"
+#~ msgstr "Estás seguro de que queres desmarcar esto como spam?"
+
+#~ msgid "Un-mark as Spam"
+#~ msgstr "Desmarcar como Spam"
+
+#~ msgid "Are you sure you want to delete this post?"
+#~ msgstr "Estás seguro que queres borrar esta entrada?"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Insert a quotation of this post in your reply."
+#~ msgstr "Inserir unha cita desta entrada na túa resposta."
+
+#~ msgid "Quote"
+#~ msgstr "Cita"
+
+#~ msgid "Jump to"
+#~ msgstr "Saltar a"
+
+#~ msgid "Moderator control"
+#~ msgstr "Control do moderador"
+
+#~ msgid "Delete multiple posts"
+#~ msgstr "Borrar entradas múltiples"
+
+#~ msgid "Move multiple posts"
+#~ msgstr "Mover entradas múltiples"
+
+#~ msgid "Move topic"
+#~ msgstr "Mover tema"
+
+#~ msgid "Open topic"
+#~ msgstr "Abrir tema"
+
+#~ msgid "Close topic"
+#~ msgstr "Pechar Tema"
+
+#~ msgid "Unstick topic"
+#~ msgstr "Desdestacar tema"
+
+#~ msgid "Stick topic"
+#~ msgstr "Destacar tema"
+
+#~ msgid "Upload avatar"
+#~ msgstr "Cargar avatar"
+
+#~ msgid "Enter an avatar file to upload"
+#~ msgstr "Introducir un ficheiro de avatar para cargar"
+
+#, python-format
+#~ msgid ""
+#~ "An avatar is a small image that will be displayed under your username in "
+#~ "your posts. It must not be any bigger than %(avatar_width)s x "
+#~ "%(avatar_height)s pixels "
+#~ msgstr ""
+#~ "Un avatar é unha imaxe pequena que se desplega baixo o teu nome de usuario "
+#~ "nas túas entradas. A imaxe do avatar non debe ser maior a %(avatar_width)s x "
+#~ "%(avatar_height)s pixeles"
+
+#~ msgid "Upload"
+#~ msgstr "Cargar"
+
+#~ msgid "YouTube Video"
+#~ msgstr "Vídeo de YouTube"
+
+#~ msgid "Video Not Found"
+#~ msgstr "Vídeo Non Atopado"
+
+#~ msgid "Why do I see this page?"
+#~ msgstr "Por que vexo esta páxina?"
+
+#~ msgid ""
+#~ "Links to YouTube videos on the forums are automatically converted to links "
+#~ "to this page, to hide comments and other content."
+#~ msgstr ""
+#~ "As ligazóns a vídeos de YouTube nos foros convírtense automaticamente en "
+#~ "ligazóns a esta páxina, para agochar comentarios e outro contido."
+
+#~ msgid "New Reply"
+#~ msgstr "Nova Resposta"
+
+#~ msgid "Create a poll"
+#~ msgstr "Crear unha enquisa"
+
+#~ msgid "Replies:"
+#~ msgstr "Respostas:"
+
+#, python-format
+#~ msgid "Signed in as <strong>%(user)s</strong>"
+#~ msgstr "Rexistrado como <strong>%(user)s</strong>"
+
+#~ msgid "Sign In"
+#~ msgstr "Entrar"
+
+#, python-format
+#~ msgid "%(posts)s post"
+#~ msgid_plural "%(posts)s posts"
+#~ msgstr[0] "%(posts)s entrada"
+#~ msgstr[1] "%(posts)s entradas"
+
+#~ msgid "No posts."
+#~ msgstr "Non hai entradas."
+
+#, python-format
+#~ msgid "%(replies)s reply"
+#~ msgid_plural "%(replies)s replies"
+#~ msgstr[0] "%(replies)s resposta"
+#~ msgstr[1] "%(replies)s respostas"
+
+#~ msgid "No topics."
+#~ msgstr "Non hai temas"
+
+#, python-format
+#~ msgid "Settings (%(name)s)"
+#~ msgstr "Axustes (%(name)s)"
+
+#~ msgid ""
+#~ "A signature is a small piece of text that is attached to your posts. In it, "
+#~ "you can enter just about anything you like. Perhaps you would like to enter "
+#~ "your favourite quote or your star sign. It's up to you! In your signature "
+#~ "you can use BBCode if it is allowed in this particular forum. You can see "
+#~ "the features that are allowed/enabled listed below whenever you edit your "
+#~ "signature."
+#~ msgstr ""
+#~ "Unha sinatura é un texto curto que se adxunta ás túas entradas. Nela, podes "
+#~ "introducir calquera cousa que desexes. poida que queiras utilizar a túa cita "
+#~ "favorita ou o teu signo do zodiaco. É cousa túa! Na túa sinatura podes usar "
+#~ "código BB si se permite no foro en cuestión. Cando edites a túa sinatura "
+#~ "odes ver as características permitidas/habilitadas na lista que aparece "
+#~ "abaixo."
+
+#~ msgid "No signature currently stored in profile."
+#~ msgstr "Non se dispón de ningunha sinatura gardada nestes momentos."
+
+#~ msgid "When you update your profile, you will be redirected back to this page."
+#~ msgstr ""
+#~ "Cando actualices o teu perfil, serás redireccionado de volta a esta páxina."
+
+#~ msgid ""
+#~ "First, download any projects that you want to keep. \n"
+#~ "    Once the account is deleted, your projects will no longer be available. "
+#~ "Use the form on the <a href=\"http://scratch.mit.edu/contact-us/\">Contact "
+#~ "Us</a> page and include the following information:\n"
+#~ "    <ul><li>Birth Month and Year that you entered when you created the "
+#~ "account</li>\n"
+#~ "    <li>The email address associated with the account "
+#~ msgstr ""
+#~ "Primeiro, descarga os proxectos que desexas gardar. \n"
+#~ "    Unha vez a conta esté borrada, os teus proxectos deixarán de estar "
+#~ "dispoñibles. Usa o formulario da páxina <a href=\"http://scratch.mit.edu"
+#~ "/contact-us/\">Contacta connosco</a> e inclue a seguiente información:\n"
+#~ "    <ul><li>Mes e ano de nacimento que introduciches cando creaches a "
+#~ "conta</li>\n"
+#~ "    <li>O correo electrónico asociado coa conta "
+
+#~ msgid ""
+#~ "\n"
+#~ "<p>In this activity, you'll create an interactive holiday card that you can "
+#~ "share with friends and family.</p>\n"
+#~ "<p>To get started, watch this intro video:</p>\n"
+#~ "<p><iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;"
+#~ "portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
+#~ "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<p>Nesta actividade, crearás unha tarxeta interactiva dunha festividade que "
+#~ "podes compartir cos teus amigos ou coa túa familia.</p>\n"
+#~ "<p>Para comenzar, mira este vídeo:</p>\n"
+#~ "<p><iframe src=\""
+#~ "//player.vimeo.com/video/78998915?title=0&byline=0&portrait=0;hd_off=1&\" "
+#~ "width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen "
+#~ "mozallowfullscreen allowfullscreen></iframe></p>\n"
+
+#~ msgid "Get more help by following these steps:"
+#~ msgstr "Obtén máis axuda seguindo estes pasos:"
+
+#~ msgid "Imagine your holiday card"
+#~ msgstr "Imaxina a túa tarxeta da festividade"
+
+#~ msgid "Explore ideas for your card"
+#~ msgstr "Explora ideas para a túa tarxeta"
+
+#~ msgid "Program your holiday card"
+#~ msgstr "Programa a túa tarxeta da festividade"
+
+#~ msgid "Delete the cat"
+#~ msgstr "Borrar o gato"
+
+#~ msgid "Add sprites"
+#~ msgstr "Engadir figuras"
+
+#~ msgid "Make the sprites interactive"
+#~ msgstr "Facer que as figuras sexan interactivas"
+
+# 92%
+#~ msgid "Say something"
+#~ msgstr "Dicir Algo"
+
+#~ msgid "Make a sound"
+#~ msgstr "Facer un son"
+
+# 91%
+#~ msgid "Change color"
+#~ msgstr "Cambia a cor"
+
+#~ msgid "Change costume"
+#~ msgstr "Cambiar vestimenta"
+
+#~ msgid "Add a background image"
+#~ msgstr "Egnade unha imaxe de fondo"
+
+#~ msgid "Add background sound"
+#~ msgstr "Engadir un son de fondo"
+
+#~ msgid "Set up the project"
+#~ msgstr "Configura o proxecto"
+
+#~ msgid "Share your holiday card"
+#~ msgstr "Comparte a túa tarxeta da festividade"
+
+#~ msgid "Share your project"
+#~ msgstr "Comparte o teu proxecto"
+
+#~ msgid "Let's code!"
+#~ msgstr "Vamos a programar!"
 
 #, python-format
 #~ msgid "Online (%(count)s):"
