@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-09 13:20+0000\n"
+"POT-Creation-Date: 2015-02-06 14:00+0000\n"
 "PO-Revision-Date: 2015-01-13 13:59+0000\n"
 "Last-Translator: mungunbayar <mungunbayar@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,48 +18,73 @@ msgstr ""
 "X-Generator: Pootle 2.5.1.1\n"
 "X-POOTLE-MTIME: 1421157590.000000\n"
 
-#: views.py:316
+#: views.py:321
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr "Таны захиа илгээгдлээ. Бид 3 хоногийн дотор хариу мэдэгдэх болно."
 
-#: views.py:320 views.py:360
+#: views.py:325 views.py:365
 msgid "Please correct the errors below."
 msgstr "Та доорх алдааг засварлана уу."
 
-#: authentication/forms.py:22
-msgid "Keep my projects, but disable all comments"
+#: authentication/forms.py:89 authentication/forms.py:115
+msgid "You must enter your password."
 msgstr ""
 
-#: authentication/forms.py:23
-msgid "Delete my projects"
-msgstr "Миний төслүүдийг устга"
+#: authentication/forms.py:90 authentication/forms.py:116
+msgid "Wrong password, try again."
+msgstr ""
 
-#: authentication/forms.py:26
+#: authentication/forms.py:93
 msgid "Enter your password to confirm"
 msgstr ""
 
-#: authentication/forms.py:45
+#: authentication/forms.py:117 authentication/forms.py:316
+msgid "Incorrect captcha, please try again."
+msgstr ""
+
+#: authentication/forms.py:128
+msgid "Keep my projects, but disable all comments"
+msgstr ""
+
+#: authentication/forms.py:129
+msgid "Delete my projects"
+msgstr "Миний төслүүдийг устга"
+
+#: authentication/forms.py:137
 msgid "Looks like that isn't a valid email format"
 msgstr "Электрон шуудангийн хаяглал буруу бичигдсэн байна"
 
-#: authentication/forms.py:57
+#: authentication/forms.py:143
 msgid "The two password fields didn't match."
 msgstr "Нэвтрэх үгс адил бус байна."
 
-#: authentication/forms.py:58 authentication/forms.py:79
+#: authentication/forms.py:144 authentication/forms.py:165
 msgid "Your password must be at least 6 characters long."
 msgstr "Таны нууц үг хамгийн багадаа 6 тэмдэгтээс бүтэх ёстой."
 
-#: authentication/forms.py:59 authentication/forms.py:80
+#: authentication/forms.py:145 authentication/forms.py:166
 msgid "Your password cannot be 'password'."
 msgstr "Та 'password' гэсэн нууц үг өгч болохгүй."
 
-#: authentication/forms.py:60 authentication/forms.py:81
+#: authentication/forms.py:146 authentication/forms.py:167
 msgid "Your password cannot be the same as your username."
 msgstr "Таны нууц үг хэрэглэгчийн нэрээс өөр байх ёстой."
 
-#: authentication/forms.py:101 templates/modal-registration.html:78
-#: templates/accounts/account_settings.html:10
+#: authentication/forms.py:187
+msgid "Sorry we don't have an account with that email address"
+msgstr ""
+"Уучлаарай, таны бичсэн электрон шуудангийн хаяг манай бүртгэлд байхгүй байна"
+
+#: authentication/forms.py:188
+msgid "Sorry we don't have an account with that username"
+msgstr "Уучлаарай, таны бичсэн хэрэглэгчийн нэр манай бүртгэлд байхгүй байна"
+
+#: authentication/forms.py:189
+msgid "You must provide an email or username"
+msgstr ""
+"Та электрон шуудангийн хаяг эсвэл хэрэглэгчийн нэрээ оруулах шаардлагатай"
+
+#: authentication/forms.py:194 templates/accounts/account_settings.html:10
 #: templates/accounts/email_change.html:10
 #: templates/accounts/password_change_form.html:10
 #: templates/accounts/deletion/confirmation.html:8
@@ -68,39 +93,21 @@ msgstr "Таны нууц үг хэрэглэгчийн нэрээс өөр ба
 msgid "Email"
 msgstr "Электрон шуудан"
 
-#: authentication/forms.py:109
-msgid "You must provide an email or username"
-msgstr ""
-"Та электрон шуудангийн хаяг эсвэл хэрэглэгчийн нэрээ оруулах шаардлагатай"
-
-#: authentication/forms.py:114
-msgid "Sorry we don't have an account with that username"
-msgstr "Уучлаарай, таны бичсэн хэрэглэгчийн нэр манай бүртгэлд байхгүй байна"
-
-#: authentication/forms.py:119
-msgid "Sorry we don't have an account with that email address"
-msgstr ""
-"Уучлаарай, таны бичсэн электрон шуудангийн хаяг манай бүртгэлд байхгүй байна"
-
-#: authentication/forms.py:189 authentication/forms.py:210
+#: authentication/forms.py:291 authentication/forms.py:312
 #, fuzzy
 msgid "Incorrect username or password."
 msgstr "Хэрэглэгчийн нэр эсвэл нууц үгээ мартсан уу?"
 
-#: authentication/forms.py:190 authentication/forms.py:211
+#: authentication/forms.py:292 authentication/forms.py:313
 msgid "Please enable cookies on your browser."
 msgstr ""
 
-#: authentication/forms.py:191 authentication/forms.py:212
+#: authentication/forms.py:293 authentication/forms.py:314
 msgid "This account is inactive."
 msgstr ""
 
-#: authentication/forms.py:192 authentication/forms.py:213
+#: authentication/forms.py:294 authentication/forms.py:315
 msgid "This account is deleted!"
-msgstr ""
-
-#: authentication/forms.py:214
-msgid "Incorrect captcha, please try again."
 msgstr ""
 
 #: base_comments/templatetags/scratch_text_filters.py:110
@@ -142,7 +149,7 @@ msgstr ""
 msgid "%(number)d %(type)s ago"
 msgstr ""
 
-#: projects/views.py:499
+#: projects/views.py:501
 msgid "This tag has too many projects to load"
 msgstr ""
 
@@ -186,14 +193,6 @@ msgstr ""
 msgid ""
 "You can still <a href=\"/scratch2download/\">Download Scratch</a> and make "
 "projects."
-msgstr ""
-
-#: templates/account_settings.html:6
-msgid "Account Settings -  Scratch"
-msgstr ""
-
-#: templates/account_settings.html:12
-msgid "Coming Soon..."
 msgstr ""
 
 #: templates/base.html:18
@@ -273,128 +272,124 @@ msgstr "Бүртгэлийн тохиргоо"
 msgid "Sign out"
 msgstr "Бүртгэлээсээ гарах"
 
-#: templates/base.html:313
+#: templates/base.html:320
 msgid "About"
 msgstr "Scratch-ийн тухай"
 
-#: templates/base.html:315 templates/info/about.html:13
-#: templates/info/help/index.html:92
+#: templates/base.html:322 templates/info/about.html:13
+#: templates/info/help/index.html:92 templates/mail/base.html:49
 msgid "About Scratch"
 msgstr ""
 
-#: templates/base.html:316 templates/info/parents.html:12
+#: templates/base.html:323 templates/info/parents.html:12
 msgid "For Parents"
 msgstr ""
 
-#: templates/base.html:317 templates/info/educators.html:12
+#: templates/base.html:324 templates/info/educators.html:12
 msgid "For Educators"
 msgstr ""
 
-#: templates/base.html:318
+#: templates/base.html:325
 msgid "Credits"
 msgstr ""
 
-#: templates/base.html:319
+#: templates/base.html:326
 msgid "Jobs"
 msgstr ""
 
-#: templates/base.html:320
+#: templates/base.html:327
 msgid "Press"
 msgstr ""
 
-#: templates/base.html:324 templates/info/parents.html:72
+#: templates/base.html:331 templates/info/parents.html:72
 msgid "Community"
 msgstr ""
 
-#: templates/base.html:326
+#: templates/base.html:333
 msgid "Community Guidelines"
 msgstr ""
 
-#: templates/base.html:327
+#: templates/base.html:334
 msgid "Discussion Forums"
 msgstr ""
 
-#: templates/base.html:328 templates/info/help/index.html:113
+#: templates/base.html:335 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr ""
 
-#: templates/base.html:329
+#: templates/base.html:336
 msgid "Statistics"
 msgstr ""
 
-#: templates/base.html:333 templates/search/includes/tabs.html:17
+#: templates/base.html:340 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr ""
 
-#: templates/base.html:335
+#: templates/base.html:342
 msgid "Help Page"
 msgstr ""
 
-#: templates/base.html:336
+#: templates/base.html:343
 msgid "FAQ"
 msgstr ""
 
-#: templates/base.html:337
+#: templates/base.html:344
 msgid "Offline Editor"
 msgstr ""
 
-#: templates/base.html:338 templates/contact-us-success.html:12
+#: templates/base.html:345 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Бидэнтэй Харилцах"
 
-#: templates/base.html:339
+#: templates/base.html:346
 msgid "Donate"
 msgstr "Хандив өргөх"
 
-#: templates/base.html:343
+#: templates/base.html:350
 msgid "Legal"
 msgstr ""
 
-#: templates/base.html:345
+#: templates/base.html:352
 msgid "Terms of Use"
 msgstr ""
 
-#: templates/base.html:346 templates/info/help/faq.html:28
-#: templates/info/help/faq.html.py:80
+#: templates/base.html:353 templates/info/help/faq.html:28
+#: templates/info/help/faq.html.py:80 templates/mail/base.html:48
 msgid "Privacy Policy"
 msgstr ""
 
-#: templates/base.html:347 templates/info/DMCA.html:10
+#: templates/base.html:354 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr ""
 
-#: templates/base.html:351
+#: templates/base.html:358
 msgid "Scratch Family"
 msgstr ""
 
-#: templates/base.html:353
+#: templates/base.html:360
 msgid "ScratchEd"
 msgstr ""
 
-#: templates/base.html:354
+#: templates/base.html:361
 msgid "ScratchJr"
 msgstr ""
 
-#: templates/base.html:355
+#: templates/base.html:362
 msgid "Scratch Day"
 msgstr ""
 
-#: templates/base.html:356
+#: templates/base.html:363
 msgid "Scratch Conference"
 msgstr ""
 
-#: templates/base.html:357
+#: templates/base.html:364
 msgid "Code-to-Learn Foundation"
 msgstr ""
 
-#: templates/base.html:372
+#: templates/base.html:379
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
-msgstr ""
-
-#: templates/base.html:438
-msgid "Your Account Will Not Be Deleted"
 msgstr ""
 
 #: templates/coming-soon.html:6
@@ -468,6 +463,7 @@ msgid "Other..."
 msgstr "Бусад..."
 
 #: templates/contact-us.html:119 templates/accounts/banned-response.html:78
+#: templates/accounts/email_change.html:60
 msgid "Send"
 msgstr "Илгээх"
 
@@ -514,6 +510,7 @@ msgid "Most remixed"
 msgstr ""
 
 #: templates/modal-login.html:29
+#: templates/includes/password_required_form.html:17
 msgid "Please enter the text below"
 msgstr ""
 
@@ -523,15 +520,15 @@ msgstr ""
 msgid "Or Join Scratch"
 msgstr "Scratch-д элсэх"
 
-#: templates/modal-registration.html:11
+#: templates/modal-registration.html:12
 msgid "Uh oh"
 msgstr ""
 
-#: templates/modal-registration.html:23
+#: templates/modal-registration.html:24
 msgid "It's easy (and free!) to sign up for a Scratch account."
 msgstr "Scratch-д нэгдэх амархан (бас үнэгүй)."
 
-#: templates/modal-registration.html:31
+#: templates/modal-registration.html:29
 msgid "Choose a Scratch Username"
 msgstr "Хэрэглэгчийн нэрээ өгнө үү"
 
@@ -539,11 +536,11 @@ msgstr "Хэрэглэгчийн нэрээ өгнө үү"
 msgid "Don't use your real name"
 msgstr "Та өөрийн жинхэнэ нэрээ битгий ашиглаарай"
 
-#: templates/modal-registration.html:42
+#: templates/modal-registration.html:43
 msgid "Choose a Password"
 msgstr "Нууц үгээ бичнэ үү"
 
-#: templates/modal-registration.html:45
+#: templates/modal-registration.html:46
 msgid "Remember it - don't tell anyone else"
 msgstr ""
 
@@ -556,30 +553,30 @@ msgstr "Нууц үгээ баталгаажуулна уу"
 msgid "Retype your password"
 msgstr "Нууц үгээ дахин бичнэ үү"
 
-#: templates/modal-registration.html:67
+#: templates/modal-registration.html:68
 msgid "Your responses to these questions will be kept private."
 msgstr ""
 
-#: templates/modal-registration.html:68
+#: templates/modal-registration.html:69
 msgid "Why do we ask for this info"
 msgstr ""
 
-#: templates/modal-registration.html:70 templates/modal-registration.html:86
+#: templates/modal-registration.html:71 templates/modal-registration.html:85
 msgid "Birth Month and Year"
 msgstr ""
 
-#: templates/modal-registration.html:72
+#: templates/modal-registration.html:73
 msgid ""
 "We use this information to calculate the age range of people who use "
 "Scratch, and to confirm that you are the owner of the account if you contact "
 "us.  Your birth month and year will not be made public."
 msgstr ""
 
-#: templates/modal-registration.html:74 templates/modal-registration.html:112
+#: templates/modal-registration.html:76 templates/modal-registration.html:110
 msgid "Gender"
 msgstr ""
 
-#: templates/modal-registration.html:76
+#: templates/modal-registration.html:78
 msgid ""
 "This helps the Scratch design team understand who is using Scratch, and "
 "provides information that helps us broaden participation.  This information "
@@ -587,120 +584,136 @@ msgid ""
 "participation."
 msgstr ""
 
-#: templates/modal-registration.html:80
-msgid ""
-"We use this only in case you need to reset your password.  We won't share it "
-"with anyone."
-msgstr ""
-
-#: templates/modal-registration.html:88
+#: templates/modal-registration.html:87
 msgid "Month"
 msgstr ""
 
-#: templates/modal-registration.html:89
+#: templates/modal-registration.html:88
 msgid "January"
 msgstr ""
 
-#: templates/modal-registration.html:90
+#: templates/modal-registration.html:89
 msgid "February"
 msgstr ""
 
-#: templates/modal-registration.html:91
+#: templates/modal-registration.html:90
 msgid "March"
 msgstr ""
 
-#: templates/modal-registration.html:92
+#: templates/modal-registration.html:91
 msgid "April"
 msgstr ""
 
-#: templates/modal-registration.html:93
+#: templates/modal-registration.html:92
 msgid "May"
 msgstr ""
 
-#: templates/modal-registration.html:94
+#: templates/modal-registration.html:93
 msgid "June"
 msgstr ""
 
-#: templates/modal-registration.html:95
+#: templates/modal-registration.html:94
 msgid "July"
 msgstr ""
 
-#: templates/modal-registration.html:96
+#: templates/modal-registration.html:95
 msgid "August"
 msgstr ""
 
-#: templates/modal-registration.html:97
+#: templates/modal-registration.html:96
 msgid "September"
 msgstr ""
 
-#: templates/modal-registration.html:98
+#: templates/modal-registration.html:97
 msgid "October"
 msgstr ""
 
-#: templates/modal-registration.html:99
+#: templates/modal-registration.html:98
 msgid "November"
 msgstr ""
 
-#: templates/modal-registration.html:100
+#: templates/modal-registration.html:99
 msgid "December"
 msgstr ""
 
-#: templates/modal-registration.html:103
+#: templates/modal-registration.html:102
 msgid "Year"
 msgstr ""
 
-#: templates/modal-registration.html:113
+#: templates/modal-registration.html:111
 msgid "Male"
 msgstr ""
 
-#: templates/modal-registration.html:114
+#: templates/modal-registration.html:112
 msgid "Female"
 msgstr ""
 
-#: templates/modal-registration.html:126 templates/modal-registration.html:128
+#: templates/modal-registration.html:122 templates/modal-registration.html:124
 msgid "Country"
 msgstr ""
 
-#: templates/modal-registration.html:140
+#: templates/modal-registration.html:141
+msgid ""
+"Enter your email address and we will send you an email to confirm your "
+"account."
+msgstr ""
+
+#: templates/modal-registration.html:142
+msgid ""
+"Enter your parent's or guardian's email address and we will send them an "
+"email to confirm this account."
+msgstr ""
+
+#: templates/modal-registration.html:147
 msgid "Email address"
 msgstr ""
 
-#: templates/modal-registration.html:141
-msgid "Parent or guardian email address"
+#: templates/modal-registration.html:148
+msgid "Parent's or guardian's email address"
 msgstr ""
 
-#: templates/modal-registration.html:157
-msgid "Thanks for joining Scratch!"
+#: templates/modal-registration.html:156
+msgid "Confirm email address"
 msgstr ""
 
-#: templates/modal-registration.html:158
-msgid "You're now logged in."
+#: templates/modal-registration.html:170
+msgid "Welcome to Scratch,"
 msgstr ""
 
-#: templates/modal-registration.html:159
+#: templates/modal-registration.html:171
+msgid "You're now logged in! You can start exploring and creating projects."
+msgstr ""
+
+#: templates/modal-registration.html:173
 msgid ""
-"Scratch is a community of all ages, from all over the world. Make sure your "
-"projects and comments are <a target=\"_blank\" href=\"/community_guidelines"
-"\">respectful and friendly</a>."
+"If you want to share and comment, simply click the link in the email we sent "
+"you at <strong><span class=\"email-welcome\"></span></strong>"
 msgstr ""
 
-#: templates/modal-registration.html:161
+#: templates/modal-registration.html:177
+#, python-format
+msgid ""
+"Wrong email? Change your email address in <a href=\"%(settings_url)s"
+"\">Account Settings</a>"
+msgstr ""
+
+#: templates/modal-registration.html:180
 msgid "Would you like to:"
 msgstr ""
 
-#: templates/modal-registration.html:163
+#: templates/modal-registration.html:182
 msgid "Learn how to make a project"
 msgstr ""
 
-#: templates/modal-registration.html:164
+#: templates/modal-registration.html:183
 msgid "Choose a starter project"
 msgstr ""
 
-#: templates/modal-registration.html:165
+#: templates/modal-registration.html:184
 msgid "Connect with a Scratcher"
 msgstr ""
 
-#: templates/modal-registration.html:179
+#: templates/modal-registration.html:197
 #: templates/info/help/studio/tips/howto/cardtip1.html:13
 #: templates/info/help/studio/tips/howto/cardtip10.html:13
 #: templates/info/help/studio/tips/howto/cardtip11.html:13
@@ -745,6 +758,15 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/pgametip7.html:13
 #: templates/info/help/studio/tips/howto/pgametip8.html:13
 #: templates/info/help/studio/tips/howto/pgametip9.html:13
+#: templates/info/help/studio/tips/howto/valentine1.html:13
+#: templates/info/help/studio/tips/howto/valentine2.html:13
+#: templates/info/help/studio/tips/howto/valentine3.html:13
+#: templates/info/help/studio/tips/howto/valentine4.html:13
+#: templates/info/help/studio/tips/howto/valentine5.html:13
+#: templates/info/help/studio/tips/howto/valentine6.html:13
+#: templates/info/help/studio/tips/howto/valentine7.html:13
+#: templates/info/help/studio/tips/howto/valentine8.html:13
+#: templates/info/help/studio/tips/howto/valentine9.html:13
 #: templates/info/help/studio/tips/howto/vptip1.html:13
 #: templates/info/help/studio/tips/howto/vptip10.html:13
 #: templates/info/help/studio/tips/howto/vptip2.html:13
@@ -759,80 +781,85 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-#: templates/modal-registration.html:184
+#: templates/modal-registration.html:202
 msgid "OK Lets Go!"
 msgstr ""
 
-#: templates/modal-registration.html:188
+#: templates/modal-registration.html:206
+#: templates/accounts/email_verification/includes/verify_email_popup.html:27
 msgid "Close"
 msgstr ""
 
-#: templates/modal-registration.html:201
+#: templates/modal-registration.html:219
 msgid "Your username must be between 3 and 20 characters"
 msgstr ""
 
-#: templates/modal-registration.html:202
+#: templates/modal-registration.html:220
 msgid "Sorry, that username already exists"
 msgstr ""
 
-#: templates/modal-registration.html:203
+#: templates/modal-registration.html:221
 msgid "Invalid username"
 msgstr ""
 
-#: templates/modal-registration.html:204
+#: templates/modal-registration.html:222
 msgid "Hmm, that looks inappropriate"
 msgstr ""
 
-#: templates/modal-registration.html:205
+#: templates/modal-registration.html:223
 msgid "You must enter a username"
 msgstr ""
 
-#: templates/modal-registration.html:206
+#: templates/modal-registration.html:224
 msgid "Your username may only contain letters, numbers, - and _"
 msgstr ""
 
 # 82%
-#: templates/modal-registration.html:207
+#: templates/modal-registration.html:225
 #, fuzzy
 msgid "Your password cannot be \\\\\\'password\\\\\\'"
 msgstr "Та 'password' гэсэн нууц үг өгч болохгүй."
 
 # 87%
-#: templates/modal-registration.html:208
+#: templates/modal-registration.html:226
 #, fuzzy
 msgid "Your password must be at least 6 characters"
 msgstr "Таны нууц үг хамгийн багадаа 6 тэмдэгтээс бүтэх ёстой."
 
-#: templates/modal-registration.html:209
+#: templates/modal-registration.html:227
 msgid "You must enter a password"
 msgstr ""
 
-#: templates/modal-registration.html:210
+#: templates/modal-registration.html:228
 msgid "Your passwords do not match"
 msgstr ""
 
-#: templates/modal-registration.html:211
+#: templates/modal-registration.html:229
 msgid "Your password cannot match your username"
 msgstr ""
 
-#: templates/modal-registration.html:212
+#: templates/modal-registration.html:230
 msgid "You must select a birth month and year"
 msgstr ""
 
-#: templates/modal-registration.html:213
+#: templates/modal-registration.html:231
 msgid "You must specify a gender"
 msgstr ""
 
-#: templates/modal-registration.html:214
+#: templates/modal-registration.html:232
 msgid "You must select a country"
 msgstr ""
 
-#: templates/modal-registration.html:215
+#: templates/modal-registration.html:233
 msgid "You must provide an email address"
 msgstr ""
 
-#: templates/modal-registration.html:216
+#: templates/modal-registration.html:234
 msgid "You must provide valid email address"
+msgstr ""
+
+#: templates/modal-registration.html:235
+msgid "Whoops, emails do not match"
 msgstr ""
 
 #: templates/password_required_login.html:31
@@ -946,7 +973,75 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: templates/accounts/email_change.html:36
+#: templates/accounts/email_change.html:18
+#: templates/accounts/email_change.html:30
+msgid "Your email address is unconfirmed"
+msgstr ""
+
+#: templates/accounts/email_change.html:19
+msgid ""
+"If you want to share and comment, simply click the link in the email sent to "
+"you at:"
+msgstr ""
+
+#: templates/accounts/email_change.html:23
+#: templates/accounts/email_change.html:34
+msgid "Your new email address is unconfirmed"
+msgstr ""
+
+#: templates/accounts/email_change.html:25
+msgid ""
+"If you would like to change the email address - have your parent (or "
+"guardian) simply click the link in the message sent to their address."
+msgstr ""
+
+#: templates/accounts/email_change.html:27
+msgid ""
+"If you would like to change your email address - simply click the link in "
+"the message sent to your new address."
+msgstr ""
+
+#: templates/accounts/email_change.html:31
+msgid ""
+"To confirm your current email address, click \"Send\"  below and follow the "
+"instructions in the email sent to you at:"
+msgstr ""
+
+#: templates/accounts/email_change.html:35
+msgid ""
+"To change your email, simply click the link in the email sent to you at:"
+msgstr ""
+
+#: templates/accounts/email_change.html:40
+msgid "New Email Address"
+msgstr ""
+
+#: templates/accounts/email_change.html:46
+msgid "Current Email Address"
+msgstr ""
+
+#: templates/accounts/email_change.html:57
+msgid "Can't find the confirmation email? Check your spam folder"
+msgstr ""
+
+#: templates/accounts/email_change.html:58
+#: templates/accounts/email_verification/includes/verify_email_popup.html:26
+msgid "Resend"
+msgstr ""
+
+#: templates/accounts/email_change.html:66
+#: templates/comments/comment-module.html:41
+#: templates/comments/comment_module.html:20
+#: templates/comments/comment_module.html:70
+#: templates/includes/backbone-templates.html:63
+msgid "Cancel"
+msgstr ""
+
+#: templates/accounts/email_change.html:79
+msgid "Current Email"
+msgstr ""
+
+#: templates/accounts/email_change.html:91
 msgid "Change Email"
 msgstr ""
 
@@ -1027,6 +1122,232 @@ msgstr ""
 msgid "Delete account &amp; Sign out"
 msgstr ""
 
+#: templates/accounts/email_verification/change_email_verification_email.html:8
+#: templates/accounts/email_verification/change_email_verification_email_plain.html:3
+#: templates/accounts/email_verification/verification_email_plain.html:4
+msgid "Greetings from the Scratch Team at MIT!"
+msgstr ""
+
+#: templates/accounts/email_verification/change_email_verification_email.html:10
+#, python-format
+msgid ""
+"\n"
+"    A few minutes ago, you requested to link this email address to the "
+"Scratch account <strong>%(username)s</strong>. Please confirm your email "
+"address by clicking the button below:\n"
+msgstr ""
+
+#: templates/accounts/email_verification/change_email_verification_email.html:16
+#: templates/accounts/email_verification/verification_email.html:25
+msgid "Confirm my email address"
+msgstr ""
+
+#: templates/accounts/email_verification/change_email_verification_email.html:22
+#: templates/accounts/email_verification/change_email_verification_email_plain.html:12
+msgid ""
+"If you didn’t request an email change, don’t worry - you can just ignore "
+"this message."
+msgstr ""
+
+#: templates/accounts/email_verification/change_email_verification_email.html:25
+#: templates/accounts/email_verification/verification_email.html:42
+msgid "Scratch On!"
+msgstr ""
+
+#: templates/accounts/email_verification/change_email_verification_email.html:26
+#: templates/accounts/email_verification/change_email_verification_email_plain.html:16
+#: templates/accounts/email_verification/verification_email.html:44
+#: templates/accounts/email_verification/verification_email_plain.html:31
+msgid "The Scratch Team"
+msgstr ""
+
+#: templates/accounts/email_verification/change_email_verification_email_plain.html:5
+#, python-format
+msgid ""
+"\n"
+"A few minutes ago, you requested to link this email address to the Scratch "
+"account %(username)s. Please confirm your email address by clicking the "
+"button below:\n"
+msgstr ""
+
+#: templates/accounts/email_verification/change_email_verification_email_plain.html:14
+#: templates/accounts/email_verification/verification_email_plain.html:29
+msgid "Scratch on!"
+msgstr ""
+
+#: templates/accounts/email_verification/failed_verification.html:20
+msgid "Uh oh! Something went wrong with your email confirmation."
+msgstr ""
+
+#: templates/accounts/email_verification/failed_verification.html:21
+msgid ""
+"To try again, log into your Scratch Account Settings to request another link."
+msgstr ""
+
+# 93%
+#: templates/accounts/email_verification/failed_verification.html:23
+#, fuzzy
+msgid "My Account Settings"
+msgstr "Бүртгэлийн тохиргоо"
+
+#: templates/accounts/email_verification/passed_verification.html:21
+#: templates/homepage/index.html:37
+msgid "Welcome to Scratch!"
+msgstr ""
+
+#: templates/accounts/email_verification/passed_verification.html:24
+msgid ""
+"Scratch is a community of all ages, from all over the world. Make sure your "
+"projects and comments are <a target=\"_blank\" href=\"/community_guidelines"
+"\">respectful and friendly</a>."
+msgstr ""
+
+#: templates/accounts/email_verification/passed_verification.html:27
+#: templates/homepage/index.html:43
+msgid "Learn how to make a project in Scratch"
+msgstr ""
+
+#: templates/accounts/email_verification/passed_verification.html:33
+#: templates/homepage/index.html:49
+msgid "Try out starter projects"
+msgstr ""
+
+#: templates/accounts/email_verification/passed_verification.html:39
+#: templates/homepage/index.html:55
+msgid "Connect with other Scratchers"
+msgstr ""
+
+#: templates/accounts/email_verification/passed_verification.html:52
+msgid "All set to go!"
+msgstr ""
+
+#: templates/accounts/email_verification/passed_verification.html:56
+#, python-format
+msgid ""
+"Success! You have confirmed your email address, <strong>"
+"%(request.GET.username)s</strong>."
+msgstr ""
+
+#: templates/accounts/email_verification/passed_verification.html:57
+msgid ""
+"Jump into Scratch to create new projects and share them with the community!"
+msgstr ""
+
+#: templates/accounts/email_verification/passed_verification.html:59
+msgid "OK, let's go!"
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email.html:11
+#, python-format
+msgid ""
+"\n"
+"Greetings from the Scratch Team at MIT! A few minutes ago, your child signed "
+"up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the "
+"username:\n"
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email.html:15
+#, python-format
+msgid ""
+"\n"
+"Greetings from the Scratch Team at MIT! You just signed up for a new account "
+"on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email.html:21
+msgid "Please confirm this email address by clicking the button below:"
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email.html:32
+#, python-format
+msgid ""
+"\n"
+"    Scratch is a free programming language and online community where kids "
+"can create interactive stories, games, and animations. Confirming this email "
+"will give your child full access to share and comment in the Scratch online "
+"community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email.html:36
+#, python-format
+msgid ""
+"\n"
+"    Scratch is a free programming language and online community where you "
+"can create your own interactive stories, games, and animations. Confirming "
+"your email will give you full access to share and comment in the Scratch "
+"online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</"
+"a>.\n"
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email_plain.html:7
+#, python-format
+msgid ""
+"\n"
+"    A few minutes ago, your child signed up for a new account on Scratch "
+"(%(scratch_url)s. Please confirm this email address by clicking the button "
+"below:\n"
+"    "
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email_plain.html:11
+#, python-format
+msgid ""
+"\n"
+"    You just signed up for a new account on Scratch (%(scratch_url)s). "
+"Please confirm your email address by clicking the button below:\n"
+"    "
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email_plain.html:19
+#, python-format
+msgid ""
+"\n"
+"    Scratch is a free programming language and online community where kids "
+"can create interactive stories, games, and animations. Confirming this email "
+"will give your child full access to share and comment in the Scratch online "
+"community. Learn more at %(about_url)s.\n"
+"    "
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email_plain.html:23
+#, python-format
+msgid ""
+"\n"
+"    Scratch is a free programming language and online community where you "
+"can create your own interactive stories, games, and animations. Confirming "
+"your email will give you full access to share and comment in the Scratch "
+"online community. Learn more at %(about_url)s.\n"
+"    "
+msgstr ""
+
+#: templates/accounts/email_verification/includes/verify_email_popup.html:6
+msgid "Want to Share Projects, Comment, and Post in the Discussion Forums?"
+msgstr ""
+
+#: templates/accounts/email_verification/includes/verify_email_popup.html:8
+#, python-format
+msgid ""
+"\n"
+"        Click the link in the email we sent you at:\n"
+"        <br/>\n"
+"        <strong>%(email_address)s</strong>\n"
+"      "
+msgstr ""
+
+#: templates/accounts/email_verification/includes/verify_email_popup.html:16
+#, python-format
+msgid ""
+"\n"
+"        Not receiving emails? Make sure your email address is correct. "
+"Change your email address in <a href=\"%(settings_url)s\">Account Settings</"
+"a>.\n"
+"      "
+msgstr ""
+
+#: templates/accounts/email_verification/includes/verify_email_popup.html:22
+msgid "Before resending, check your spam folder."
+msgstr ""
+
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
 #: templates/carousel/carousel.html:18 templates/homepage/index.html:83
@@ -1035,9 +1356,9 @@ msgstr ""
 #: templates/profiles/profile_detail.html:270
 #: templates/profiles/profile_detail.html:290
 #: templates/profiles/profile_detail.html:310
-#: templates/profiles/profile_detail.html:347 templates/projects/base.html:356
-#: templates/projects/base.html.py:386 templates/search/search.html:58
-#: templates/search/search.html.py:88 templates/search/search.html:96
+#: templates/profiles/profile_detail.html:347 templates/projects/base.html:355
+#: templates/projects/base.html.py:385 templates/search/search.html:57
+#: templates/search/search.html.py:87 templates/search/search.html:95
 msgid "View all"
 msgstr ""
 
@@ -1060,7 +1381,7 @@ msgstr ""
 #: templates/galleries/includes/activity_list.html:96
 #: templates/galleries/includes/project-thumb.html:22
 #: templates/galleries/includes/project-thumb.html:24
-#: templates/projects/base.html:105 templates/projects/base.html.py:367
+#: templates/projects/base.html:104 templates/projects/base.html.py:366
 #: templates/projects/includes/project_list.html:11
 msgid "by"
 msgstr ""
@@ -1093,12 +1414,12 @@ msgstr ""
 msgid "Time"
 msgstr ""
 
-#: templates/comments/comment-module.html:24
+#: templates/comments/comment-module.html:26
 #: templates/comments/comment_module.html:11
 msgid "Leave a comment"
 msgstr ""
 
-#: templates/comments/comment-module.html:29
+#: templates/comments/comment-module.html:31
 msgid ""
 "Remember that this project may have been made by someone new to "
 "programming.\n"
@@ -1106,38 +1427,31 @@ msgid ""
 "respectful."
 msgstr ""
 
-#: templates/comments/comment-module.html:35
+#: templates/comments/comment-module.html:37
 msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr ""
 
-#: templates/comments/comment-module.html:38
+#: templates/comments/comment-module.html:40
 #: templates/comments/comment_module.html:17
 #: templates/comments/comment_module.html:67
 #: templates/includes/backbone-templates.html:62
 msgid "Post"
 msgstr ""
 
-#: templates/comments/comment-module.html:39
-#: templates/comments/comment_module.html:20
-#: templates/comments/comment_module.html:70
-#: templates/includes/backbone-templates.html:63
-msgid "Cancel"
-msgstr ""
-
-#: templates/comments/comment-module.html:43
+#: templates/comments/comment-module.html:45
 msgid "Sorry, comment posting has been turned off for this"
 msgstr ""
 
-#: templates/comments/comment-module.html:43
+#: templates/comments/comment-module.html:45
 msgid "studio"
 msgstr ""
 
-#: templates/comments/comment-module.html:45
+#: templates/comments/comment-module.html:47
 msgid ""
 "Sorry comment posting is not available right now. It should be back soon!"
 msgstr ""
 
-#: templates/comments/comment-module.html:51
+#: templates/comments/comment-module.html:53
 msgid "Comments loading..."
 msgstr ""
 
@@ -1223,19 +1537,19 @@ msgstr ""
 #: templates/explore/projects.html:19 templates/explore/studios.html:19
 #: templates/info/starter_projects.html:21
 #: templates/info/starter_projects.html:60
-#: templates/info/help/studio/tips/home.html:37
+#: templates/info/help/studio/tips/home.html:36
 msgid "Games"
 msgstr ""
 
 #: templates/explore/projects.html:20 templates/explore/studios.html:20
-#: templates/info/help/studio/tips/home.html:52
+#: templates/info/help/studio/tips/home.html:51
 msgid "Music"
 msgstr ""
 
 #: templates/explore/projects.html:21 templates/explore/studios.html:21
 #: templates/info/starter_projects.html:24
 #: templates/info/starter_projects.html:141
-#: templates/info/help/studio/tips/home.html:45
+#: templates/info/help/studio/tips/home.html:44
 msgid "Stories"
 msgstr ""
 
@@ -1267,16 +1581,16 @@ msgid "Sort by:"
 msgstr ""
 
 #: templates/explore/projects.html:100 templates/explore/studios.html:85
-#: templates/search/search.html:57 templates/search/search.html.py:62
+#: templates/search/search.html:56 templates/search/search.html.py:61
 #: templates/search/includes/tabs.html:8
 #: templates/studio/includes/sort-galleries-dropdown.html:25
 msgid "Projects"
 msgstr ""
 
 #: templates/explore/projects.html:101 templates/explore/studios.html:86
-#: templates/projects/base.html:385
+#: templates/projects/base.html:384
 #: templates/projects/includes/shared/shared-project-actions.html:5
-#: templates/search/search.html:64 templates/search/search.html.py:87
+#: templates/search/search.html:63 templates/search/search.html.py:86
 #: templates/search/includes/tabs.html:11
 msgid "Studios"
 msgstr ""
@@ -1506,22 +1820,6 @@ msgstr ""
 msgid "You can select projects from the bar below or add by url above."
 msgstr ""
 
-#: templates/homepage/index.html:37
-msgid "Welcome to Scratch!"
-msgstr ""
-
-#: templates/homepage/index.html:43
-msgid "Learn how to make a project in Scratch"
-msgstr ""
-
-#: templates/homepage/index.html:49
-msgid "Try out starter projects"
-msgstr ""
-
-#: templates/homepage/index.html:55
-msgid "Connect with other Scratchers"
-msgstr ""
-
 #: templates/homepage/index.html:64
 msgid "What's Happening?"
 msgstr ""
@@ -1639,6 +1937,14 @@ msgstr ""
 msgid "Unfollow"
 msgstr ""
 
+#: templates/includes/password_required_form.html:8
+msgid "Please verify your account"
+msgstr ""
+
+#: templates/includes/password_required_form.html:40
+msgid "Submit Password"
+msgstr ""
+
 #: templates/includes/sort-projects-dropdown.html:4
 #: templates/studio/includes/sort-galleries-dropdown.html:19
 #: templates/studio/includes/sort-projects-dropdown.html:4
@@ -1664,7 +1970,7 @@ msgid "Loves"
 msgstr ""
 
 #: templates/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:355 templates/projects/remixes.html:3
+#: templates/projects/base.html:354 templates/projects/remixes.html:3
 #: templates/projects/remixes.html.py:4
 #: templates/projects/includes/explore-bar.html:17
 #: templates/studio/includes/sort-projects-dropdown.html:12
@@ -2585,16 +2891,16 @@ msgid ""
 "step2.png\" alt=\"Step 2\">\n"
 "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-431.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-431a.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
-"static/sa/Scratch-431.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+"static/sa/Scratch-431a.air\">Download<img src=\"%(STATIC_URL)simages/help/"
 "offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-431.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-431a.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
-"Scratch-431.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"Scratch-431a.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
@@ -2746,7 +3052,7 @@ msgstr ""
 
 #: templates/info/starter_projects.html:20
 #: templates/info/starter_projects.html:33
-#: templates/info/help/studio/tips/home.html:30
+#: templates/info/help/studio/tips/home.html:29
 msgid "Animation"
 msgstr ""
 
@@ -2965,15 +3271,15 @@ msgstr ""
 msgid "Accounts"
 msgstr ""
 
-#: templates/info/help/faq.html:35 templates/info/help/faq.html.py:158
+#: templates/info/help/faq.html:35 templates/info/help/faq.html.py:167
 msgid "Licensing and Permissions"
 msgstr ""
 
-#: templates/info/help/faq.html:36 templates/info/help/faq.html.py:186
+#: templates/info/help/faq.html:36 templates/info/help/faq.html.py:195
 msgid "Inappropriate Content"
 msgstr ""
 
-#: templates/info/help/faq.html:39 templates/info/help/faq.html.py:208
+#: templates/info/help/faq.html:39 templates/info/help/faq.html.py:217
 msgid "Cloud Data"
 msgstr ""
 
@@ -3233,11 +3539,23 @@ msgid ""
 "\">Creative Commons search page</a>."
 msgstr ""
 
-#: templates/info/help/faq.html:126
+#: templates/info/help/faq.html:127
+msgid "What is a “confirmed” Scratch account?"
+msgstr ""
+
+#: templates/info/help/faq.html:130
+msgid "How do I confirm my account?"
+msgstr ""
+
+#: templates/info/help/faq.html:133
+msgid "Do I have to confirm my account?"
+msgstr ""
+
+#: templates/info/help/faq.html:136
 msgid "I forgot my password, how can I reset it?"
 msgstr ""
 
-#: templates/info/help/faq.html:128
+#: templates/info/help/faq.html:137
 msgid ""
 "Enter your account name on the <a href=\"/accounts/password_reset/"
 "\">password reset page</a>. The website will send an email to the address "
@@ -3245,33 +3563,33 @@ msgid ""
 "password."
 msgstr ""
 
-#: templates/info/help/faq.html:130
+#: templates/info/help/faq.html:139
 msgid "How do I change my password?"
 msgstr ""
 
-#: templates/info/help/faq.html:131
+#: templates/info/help/faq.html:140
 msgid ""
 "Go to the Scratch website, login, and then click your username in the upper "
 "right corner of the window. Choose \"account settings\", and click the link "
 "to change your password."
 msgstr ""
 
-#: templates/info/help/faq.html:133
+#: templates/info/help/faq.html:142
 msgid "How do I change my email address?"
 msgstr ""
 
-#: templates/info/help/faq.html:134
+#: templates/info/help/faq.html:143
 msgid ""
 "Go to the Scratch website, login, and then click your username in the upper "
 "right corner of the window. Choose \"account settings\", and click the link "
 "to change your email."
 msgstr ""
 
-#: templates/info/help/faq.html:136
+#: templates/info/help/faq.html:145
 msgid "How do I transition from 'New Scratcher' to 'Scratcher'?"
 msgstr ""
 
-#: templates/info/help/faq.html:137
+#: templates/info/help/faq.html:146
 msgid ""
 "Make and share projects, comment helpfully on other Scratcher's projects, "
 "and be patient! After a few weeks of being active, a link will appear on "
@@ -3280,32 +3598,32 @@ msgid ""
 "chocolates.)"
 msgstr ""
 
-#: templates/info/help/faq.html:139
+#: templates/info/help/faq.html:148
 msgid "Can I have more than one account?"
 msgstr ""
 
-#: templates/info/help/faq.html:140
+#: templates/info/help/faq.html:149
 msgid ""
 "It's fine to have a few accounts on the Scratch website, as long as none of "
 "them are used to break the Community Guidelines. In that case, all related "
 "accounts may be blocked or deleted."
 msgstr ""
 
-#: templates/info/help/faq.html:142
+#: templates/info/help/faq.html:151
 msgid "Is it OK to have more than one person logged into an account?"
 msgstr ""
 
-#: templates/info/help/faq.html:143
+#: templates/info/help/faq.html:152
 msgid ""
 "This is discouraged, because the website and project editor can easily get "
 "confused when more than one person is logged into the same account."
 msgstr ""
 
-#: templates/info/help/faq.html:145
+#: templates/info/help/faq.html:154
 msgid "Can I change my username?"
 msgstr ""
 
-#: templates/info/help/faq.html:146
+#: templates/info/help/faq.html:155
 msgid ""
 "The structure of the Scratch website depends on having a consistent account "
 "name, so it’s not possible to change your username. If you really need to, "
@@ -3313,11 +3631,11 @@ msgid ""
 "your own."
 msgstr ""
 
-#: templates/info/help/faq.html:148
+#: templates/info/help/faq.html:157
 msgid "What information can I share on / with my account?"
 msgstr ""
 
-#: templates/info/help/faq.html:149
+#: templates/info/help/faq.html:158
 msgid ""
 "Please don’t share personal contact information, such as your physical "
 "address, email, phone number, or anything else that can be used to make "
@@ -3326,34 +3644,34 @@ msgid ""
 "remove it, and remind the author of our policy."
 msgstr ""
 
-#: templates/info/help/faq.html:151
+#: templates/info/help/faq.html:160
 msgid "How do I delete my account?"
 msgstr ""
 
-#: templates/info/help/faq.html:152
+#: templates/info/help/faq.html:161
 msgid ""
 "Log in to Scratch, and then click your username in the top right-hand "
 "corner. Select “Account Settings,” then click the <em>“I want to delete my "
 "account”</em> link at the bottom of the page."
 msgstr ""
 
-#: templates/info/help/faq.html:160
+#: templates/info/help/faq.html:169
 msgid "Is Scratch free?"
 msgstr ""
 
-#: templates/info/help/faq.html:161
+#: templates/info/help/faq.html:170
 msgid ""
 "Yes! Scratch is available free of charge. You can use it in your school, and "
 "you can teach a course about it (even a course that costs money). You don't "
 "need to buy a license - it's free."
 msgstr ""
 
-#: templates/info/help/faq.html:163
+#: templates/info/help/faq.html:172
 msgid ""
 "Can I use Scratch and / or screenshots of Scratch in a textbook or a CD?"
 msgstr ""
 
-#: templates/info/help/faq.html:164
+#: templates/info/help/faq.html:173
 msgid ""
 "Yes, you can even write a book or chapter about Scratch. You may also use "
 "the Scratch logo when referring to Scratch. You may create screenshots / "
@@ -3365,13 +3683,13 @@ msgid ""
 "http://scratch.mit.edu\"."
 msgstr ""
 
-#: templates/info/help/faq.html:166
+#: templates/info/help/faq.html:175
 msgid ""
 "Can I include a description of Scratch and the Scratch logo in brochures or "
 "other materials?"
 msgstr ""
 
-#: templates/info/help/faq.html:167
+#: templates/info/help/faq.html:176
 msgid ""
 "Sure! We recommend the following description: \"Scratch is a programming "
 "language and online community where you can create your own interactive "
@@ -3383,23 +3701,23 @@ msgid ""
 "edu\""
 msgstr ""
 
-#: templates/info/help/faq.html:169
+#: templates/info/help/faq.html:178
 msgid "Can I present Scratch at a conference?"
 msgstr ""
 
-#: templates/info/help/faq.html:170
+#: templates/info/help/faq.html:179
 msgid ""
 "Please feel free to make presentations about Scratch to educators or other "
 "groups. We grant our permission to make presentations."
 msgstr ""
 
-#: templates/info/help/faq.html:172
+#: templates/info/help/faq.html:181
 msgid ""
 "May I use / remix Scratch support materials, sprites, images, sounds or "
 "sample projects I’ve found on the website?"
 msgstr ""
 
-#: templates/info/help/faq.html:173
+#: templates/info/help/faq.html:182
 msgid ""
 "Yes - Scratch support materials made available on the Scratch website by the "
 "Scratch Team are available under the <a href=\"http://creativecommons.org/"
@@ -3408,11 +3726,11 @@ msgid ""
 "(Scratch trademarks)."
 msgstr ""
 
-#: templates/info/help/faq.html:175
+#: templates/info/help/faq.html:184
 msgid "Can I sell my Scratch projects?"
 msgstr ""
 
-#: templates/info/help/faq.html:176
+#: templates/info/help/faq.html:185
 msgid ""
 "Certainly - your project is your creation. Keep in mind that once you share "
 "your project on Scratch, everyone is free to download, remix, and reuse it "
@@ -3421,11 +3739,11 @@ msgid ""
 "project, you may want to un-share it from Scratch."
 msgstr ""
 
-#: templates/info/help/faq.html:178
+#: templates/info/help/faq.html:187
 msgid "Where can I find the source code for Scratch?"
 msgstr ""
 
-#: templates/info/help/faq.html:179
+#: templates/info/help/faq.html:188
 msgid ""
 "The source code for Scratch 2 (website and editor) is not yet available. The "
 "source code for <a href =\"/scratch_1.4\">Scratch 1.4</a>, written in "
@@ -3435,22 +3753,22 @@ msgid ""
 "Assembla</a>."
 msgstr ""
 
-#: templates/info/help/faq.html:187
+#: templates/info/help/faq.html:196
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
 msgstr ""
 
-#: templates/info/help/faq.html:188
+#: templates/info/help/faq.html:197
 msgid ""
 "Check out the <a href=\"/community_guidelines\">Scratch community "
 "guidelines</a> - they’re brief and don’t include a lot of legal stuff. "
 "There’s a link at the bottom of every page on Scratch."
 msgstr ""
 
-#: templates/info/help/faq.html:190
+#: templates/info/help/faq.html:199
 msgid "What do I do if I see something that’s inappropriate?"
 msgstr ""
 
-#: templates/info/help/faq.html:191
+#: templates/info/help/faq.html:200
 msgid ""
 "You can click the link that says “report” on any project, comment, "
 "discussion post, or user page where you think something isn't ok for "
@@ -3459,11 +3777,11 @@ msgid ""
 "relevant pages."
 msgstr ""
 
-#: templates/info/help/faq.html:193
+#: templates/info/help/faq.html:202
 msgid "What do I do if I see someone being mean or disrespectful?"
 msgstr ""
 
-#: templates/info/help/faq.html:194
+#: templates/info/help/faq.html:203
 msgid ""
 "Don’t add to the flames! Responding to mean comments with more mean comments "
 "just makes things worse, and could result in your account being blocked. "
@@ -3472,11 +3790,11 @@ msgid ""
 "per day - so rest assured, we'll sort things out."
 msgstr ""
 
-#: templates/info/help/faq.html:196
+#: templates/info/help/faq.html:205
 msgid "What does the Scratch team do when something is reported or flagged?"
 msgstr ""
 
-#: templates/info/help/faq.html:197
+#: templates/info/help/faq.html:206
 msgid ""
 "The Scratch Team reviews reported comments and projects every day. If "
 "something breaks the Scratch community guidelines, we may remove it and send "
@@ -3485,11 +3803,11 @@ msgid ""
 "used to share it."
 msgstr ""
 
-#: templates/info/help/faq.html:199
+#: templates/info/help/faq.html:208
 msgid "What happens when an account is blocked?"
 msgstr ""
 
-#: templates/info/help/faq.html:200
+#: templates/info/help/faq.html:209
 msgid ""
 "When an account is blocked, the owner can no longer access it, or use it to "
 "create projects or comments. When they login, they see a page that explains "
@@ -3502,13 +3820,13 @@ msgid ""
 "blocked permanently."
 msgstr ""
 
-#: templates/info/help/faq.html:202
+#: templates/info/help/faq.html:211
 msgid ""
 "My mean brother / Kaj / some other bad guy stole my account and got it "
 "banned, what do I do?"
 msgstr ""
 
-#: templates/info/help/faq.html:203
+#: templates/info/help/faq.html:212
 msgid ""
 "You are responsible for keeping your password secure. If someone in real "
 "life takes control of your account and does bad stuff, tell the adults in "
@@ -3519,35 +3837,35 @@ msgid ""
 "we won't unblock you."
 msgstr ""
 
-#: templates/info/help/faq.html:210
+#: templates/info/help/faq.html:219
 msgid "What is cloud data?"
 msgstr ""
 
-#: templates/info/help/faq.html:211
+#: templates/info/help/faq.html:220
 msgid ""
 "Cloud data is a feature in Scratch 2 that allows for data from a project to "
 "be saved and shared online. You can use cloud data to make surveys and other "
 "projects that store numbers over time."
 msgstr ""
 
-#: templates/info/help/faq.html:213
+#: templates/info/help/faq.html:222
 msgid "Who can see the data stored in cloud data?"
 msgstr ""
 
-#: templates/info/help/faq.html:214
+#: templates/info/help/faq.html:223
 msgid ""
 "When you interact with a project using cloud data blocks, your information "
 "can be stored along with your username, and others can view it. Each project "
 "keeps a log of who interacted with it and any data they shared."
 msgstr ""
 
-#: templates/info/help/faq.html:216
+#: templates/info/help/faq.html:225
 msgid ""
 "Why is cloud data currently limited to only numbers -- with no strings or "
 "lists? "
 msgstr ""
 
-#: templates/info/help/faq.html:217
+#: templates/info/help/faq.html:226
 msgid ""
 "The current site is limited to numbers in variables as an initial step to "
 "work out any issues with their use on the site. We plan to roll out cloud "
@@ -3555,13 +3873,13 @@ msgid ""
 "to add other features (cloud lists, support for strings, etc.)."
 msgstr ""
 
-#: templates/info/help/faq.html:219
+#: templates/info/help/faq.html:228
 msgid ""
 "If I see someone post inappropriate content using cloud data, how do I "
 "report it?"
 msgstr ""
 
-#: templates/info/help/faq.html:220
+#: templates/info/help/faq.html:229
 msgid ""
 "Click the \"Report this\" button (under on the project player) to report "
 "inappropriate content in cloud data. The report form includes a link to a "
@@ -3570,11 +3888,11 @@ msgid ""
 "data\" when you type your reason in the report."
 msgstr ""
 
-#: templates/info/help/faq.html:222
+#: templates/info/help/faq.html:231
 msgid "Can I make chat rooms with cloud data?"
 msgstr ""
 
-#: templates/info/help/faq.html:223
+#: templates/info/help/faq.html:232
 msgid ""
 "While it is technically possible to create chat rooms with cloud data, they "
 "are not currently allowed. We will reconsider this policy once we have a "
@@ -3582,56 +3900,56 @@ msgid ""
 "data."
 msgstr ""
 
-#: templates/info/help/faq.html:225
+#: templates/info/help/faq.html:234
 msgid "How do I add a cloud variable when I'm making a project?"
 msgstr ""
 
-#: templates/info/help/faq.html:226
+#: templates/info/help/faq.html:235
 msgid ""
 "When you make a variable, you can check the box that says \"Cloud variable."
 "\" Any data you store will be saved on the server and visible to others."
 msgstr ""
 
-#: templates/info/help/faq.html:228
+#: templates/info/help/faq.html:237
 msgid "Who can change the information in a cloud variable?"
 msgstr ""
 
-#: templates/info/help/faq.html:229
+#: templates/info/help/faq.html:238
 msgid ""
 "Only your project can store data in its cloud variable. If people change or "
 "remix your code, it creates a different variable in their project with the "
 "same name."
 msgstr ""
 
-#: templates/info/help/faq.html:231
+#: templates/info/help/faq.html:240
 msgid ""
 "I am logged in, but I still cannot use projects with cloud data. What is "
 "going on?"
 msgstr ""
 
-#: templates/info/help/faq.html:232
+#: templates/info/help/faq.html:241
 msgid ""
 "You need to have become a \"Scratcher\" on the website to have access to "
 "cloud data. You can become a Scratcher through actively participating on the "
 "website."
 msgstr ""
 
-#: templates/info/help/faq.html:234
+#: templates/info/help/faq.html:243
 msgid "Is it possible to make multiplayer games with cloud data?"
 msgstr ""
 
-#: templates/info/help/faq.html:235
+#: templates/info/help/faq.html:244
 msgid ""
 "Multiplayer games may be difficult to create, due to network speed and "
 "synchronization issues. However, some Scratchers are coming up with creative "
 "ways to use the cloud data for turn-by-turn and other games."
 msgstr ""
 
-#: templates/info/help/faq.html:237
+#: templates/info/help/faq.html:246
 msgid "How long does it take for cloud data to reach another Scratcher?"
 msgstr ""
 
-#: templates/info/help/faq.html:238
+#: templates/info/help/faq.html:247
 msgid ""
 "It depends. If both Scratchers have a reasonably fast Internet connection "
 "(DSL/Cable), and there are no restrictive firewalls on the computers/"
@@ -3772,11 +4090,11 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/index.html:118
-msgid "Scratch 2 Offline Editor (Beta)"
+msgid "Scratch 2 Offline Editor "
 msgstr ""
 
 #: templates/info/help/index.html:120
-msgid "Download the Scratch 2 offline editor (beta version)"
+msgid "Download the Scratch 2 offline editor."
 msgstr ""
 
 #: templates/info/help/index.html:122
@@ -3932,721 +4250,725 @@ msgid "Step-by-Step Guides"
 msgstr ""
 
 #: templates/info/help/studio/tips/home.html:6
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:17
+#: templates/info/help/studio/tips/howto/valentine-intro.html:17
+msgid "Design a Valentine"
+msgstr ""
+
+#: templates/info/help/studio/tips/home.html:7
 #: templates/info/help/studio/tips/howto/nametip-intro.html:17
 msgid "Animate Your Name"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:7
+#: templates/info/help/studio/tips/home.html:8
 #: templates/info/help/studio/tips/howto/pgame-intro.html:17
 msgid "Create a Pong Game"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:8
+#: templates/info/help/studio/tips/home.html:9
 msgid "Make a Birthday Card"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:9
+#: templates/info/help/studio/tips/home.html:10
 #: templates/info/help/studio/tips/howto/vpet-intro.html:17
 msgid "Create a Virtual Pet"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:21
+#: templates/info/help/studio/tips/home.html:20
 msgid "How To"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:22
+#: templates/info/help/studio/tips/home.html:21
 msgid "Effects"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:24
+#: templates/info/help/studio/tips/home.html:23
 #: templates/info/help/studio/tips/howto/play-with-effects.html:6
 msgid "Play with effects"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:25
+#: templates/info/help/studio/tips/home.html:24
 #: templates/info/help/studio/tips/howto/interactive-effects.html:7
 msgid "Create interactive effects"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:26
+#: templates/info/help/studio/tips/home.html:25
 #: templates/info/help/studio/tips/howto/interact-microphone.html:7
 msgid "Interact with a microphone"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:32
+#: templates/info/help/studio/tips/home.html:31
 #: templates/info/help/studio/tips/howto/switch-happy.html:8
 msgid "Switch from happy to sad"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:33
+#: templates/info/help/studio/tips/home.html:32
 msgid "Make a sprite talk"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:34
+#: templates/info/help/studio/tips/home.html:33
 #: templates/info/help/studio/tips/howto/walking.html:6
 msgid "Make a sprite walk"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:39
+#: templates/info/help/studio/tips/home.html:38
 msgid "Use arrow keys to move"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:40
+#: templates/info/help/studio/tips/home.html:39
 #: templates/info/help/studio/tips/howto/bounce-around.html:7
 msgid "Bounce around"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:41
+#: templates/info/help/studio/tips/home.html:40
 msgid "Collide"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:42
+#: templates/info/help/studio/tips/home.html:41
 #: templates/info/help/studio/tips/howto/keep-score.html:7
 msgid "Keep score"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:47
+#: templates/info/help/studio/tips/home.html:46
 #: templates/info/help/studio/tips/howto/conversation.html:6
 msgid "Talk to each other"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:48
+#: templates/info/help/studio/tips/home.html:47
 #: templates/info/help/studio/tips/howto/glide-stage.html:6
 msgid "Glide off the stage"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:49
+#: templates/info/help/studio/tips/home.html:48
 #: templates/info/help/studio/tips/howto/switch-backdrop.html:6
 msgid "Switch backdrops"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:54
+#: templates/info/help/studio/tips/home.html:53
 #: templates/info/help/studio/tips/howto/play-instrument.html:6
 msgid "Play an instrument"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:55
+#: templates/info/help/studio/tips/home.html:54
 #: templates/info/help/studio/tips/howto/play-music.html:6
 msgid "Play background music"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:56
+#: templates/info/help/studio/tips/home.html:55
 #: templates/info/help/studio/tips/howto/import-music.html:7
 msgid "Import your music"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:57
+#: templates/info/help/studio/tips/home.html:56
 #: templates/info/help/studio/tips/howto/record-sounds.html:7
 msgid "Record sounds"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:58
+#: templates/info/help/studio/tips/home.html:57
 #: templates/info/help/studio/tips/howto/edit-sounds.html:7
 msgid "Edit sounds"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:71
+#: templates/info/help/studio/tips/home.html:70
 msgid "Blocks"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:72
+#: templates/info/help/studio/tips/home.html:71
 msgid "Motion"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:74
+#: templates/info/help/studio/tips/home.html:73
 msgid "move _ steps"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:75
+#: templates/info/help/studio/tips/home.html:74
 msgid "turn right"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:76
+#: templates/info/help/studio/tips/home.html:75
 msgid "turn left"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:77
+#: templates/info/help/studio/tips/home.html:76
 msgid "point in direction"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:78
+#: templates/info/help/studio/tips/home.html:77
 msgid "point towards"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:79
+#: templates/info/help/studio/tips/home.html:78
 msgid "go to x: y:"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:80
+#: templates/info/help/studio/tips/home.html:79
 msgid "go to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:81
+#: templates/info/help/studio/tips/home.html:80
 msgid "glide _ secs to x: y:"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:82
+#: templates/info/help/studio/tips/home.html:81
 msgid "change x by"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:83
+#: templates/info/help/studio/tips/home.html:82
 msgid "set x to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:84
+#: templates/info/help/studio/tips/home.html:83
 msgid "change y by"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:85
+#: templates/info/help/studio/tips/home.html:84
 msgid "set y to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:86
+#: templates/info/help/studio/tips/home.html:85
 msgid "if on edge, bounce"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:87
+#: templates/info/help/studio/tips/home.html:86
 msgid "set rotation style"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:88
+#: templates/info/help/studio/tips/home.html:87
 msgid "x position"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:89
+#: templates/info/help/studio/tips/home.html:88
 msgid "y position"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:90
+#: templates/info/help/studio/tips/home.html:89
 msgid "direction"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:92
+#: templates/info/help/studio/tips/home.html:91
 msgid "Looks"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:94
+#: templates/info/help/studio/tips/home.html:93
 msgid "say for _ secs"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:95
+#: templates/info/help/studio/tips/home.html:94
 msgid "say"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:96
+#: templates/info/help/studio/tips/home.html:95
 msgid "think for _ secs"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:97
+#: templates/info/help/studio/tips/home.html:96
 msgid "think"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:98
+#: templates/info/help/studio/tips/home.html:97
 msgid "show"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:99
+#: templates/info/help/studio/tips/home.html:98
 msgid "hide"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:100
+#: templates/info/help/studio/tips/home.html:99
 msgid "switch costume to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:101
+#: templates/info/help/studio/tips/home.html:100
 msgid "next costume"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:102
+#: templates/info/help/studio/tips/home.html:101
 msgid "next backdrop (Stage only)"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:103
+#: templates/info/help/studio/tips/home.html:102
 msgid "switch backdrop to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:104
+#: templates/info/help/studio/tips/home.html:103
 msgid "switch backdrop and wait (Stage only)"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:105
+#: templates/info/help/studio/tips/home.html:104
 msgid "change  effect to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:106
+#: templates/info/help/studio/tips/home.html:105
 msgid "set effect to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:107
+#: templates/info/help/studio/tips/home.html:106
 msgid "clear graphic effects"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:108
+#: templates/info/help/studio/tips/home.html:107
 msgid "change size by"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:109
+#: templates/info/help/studio/tips/home.html:108
 msgid "set size to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:110
+#: templates/info/help/studio/tips/home.html:109
 msgid "go to front"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:111
+#: templates/info/help/studio/tips/home.html:110
 msgid "go back _ layers"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:112
+#: templates/info/help/studio/tips/home.html:111
 msgid "costume #"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:113
+#: templates/info/help/studio/tips/home.html:112
 msgid "backdrop name"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:114
+#: templates/info/help/studio/tips/home.html:113
 msgid "backdrop # (Stage only)"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:115
+#: templates/info/help/studio/tips/home.html:114
 msgid "size"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:117
+#: templates/info/help/studio/tips/home.html:116
 msgid "Sound"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:119
+#: templates/info/help/studio/tips/home.html:118
 msgid "play sound _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:120
+#: templates/info/help/studio/tips/home.html:119
 msgid "play sound _ until done"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:121
+#: templates/info/help/studio/tips/home.html:120
 msgid "stop all sounds"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:122
+#: templates/info/help/studio/tips/home.html:121
 msgid "play drum _ for _ beats"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:123
+#: templates/info/help/studio/tips/home.html:122
 msgid "rest for _ beats"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:124
+#: templates/info/help/studio/tips/home.html:123
 msgid "play note _ for _ beats"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:125
+#: templates/info/help/studio/tips/home.html:124
 msgid "set instrument to _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:126
+#: templates/info/help/studio/tips/home.html:125
 msgid "change volume by _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:127
+#: templates/info/help/studio/tips/home.html:126
 #, python-format
 msgid "set volume to _%%"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:128
+#: templates/info/help/studio/tips/home.html:127
 msgid "change tempo by _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:129
+#: templates/info/help/studio/tips/home.html:128
 msgid "set tempo to _ bpm"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:130
+#: templates/info/help/studio/tips/home.html:129
 msgid "tempo"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:131
+#: templates/info/help/studio/tips/home.html:130
 msgid "volume"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:134
+#: templates/info/help/studio/tips/home.html:133
 msgid "Pen"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:136
+#: templates/info/help/studio/tips/home.html:135
 msgid "clear"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:137
+#: templates/info/help/studio/tips/home.html:136
 msgid "stamp"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:138
+#: templates/info/help/studio/tips/home.html:137
 msgid "pen down"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:139
+#: templates/info/help/studio/tips/home.html:138
 msgid "pen up"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:140
+#: templates/info/help/studio/tips/home.html:139
 msgid "set pen color to [color]"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:141
+#: templates/info/help/studio/tips/home.html:140
 msgid "change pen color by _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:142
+#: templates/info/help/studio/tips/home.html:141
 msgid "set pen color to [number]"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:143
+#: templates/info/help/studio/tips/home.html:142
 msgid "change pen shade by _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:144
+#: templates/info/help/studio/tips/home.html:143
 msgid "set pen shade to _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:145
+#: templates/info/help/studio/tips/home.html:144
 msgid "change pen size by _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:146
+#: templates/info/help/studio/tips/home.html:145
 msgid "set pen size to _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:148
+#: templates/info/help/studio/tips/home.html:147
 msgid "Data"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:150
+#: templates/info/help/studio/tips/home.html:149
 msgid "Make a Variable"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:151
+#: templates/info/help/studio/tips/home.html:150
 msgid "Variable"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:152
+#: templates/info/help/studio/tips/home.html:151
 msgid "set _ to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:153
+#: templates/info/help/studio/tips/home.html:152
 msgid "change _ by"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:154
+#: templates/info/help/studio/tips/home.html:153
 msgid "show variable"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:155
+#: templates/info/help/studio/tips/home.html:154
 msgid "hide variable"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:156
+#: templates/info/help/studio/tips/home.html:155
 msgid "Make a List"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:157
+#: templates/info/help/studio/tips/home.html:156
 msgid "List"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:158
+#: templates/info/help/studio/tips/home.html:157
 msgid "add _ to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:159
+#: templates/info/help/studio/tips/home.html:158
 msgid "delete _ of"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:160
+#: templates/info/help/studio/tips/home.html:159
 msgid "insert _ at _ of"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:161
+#: templates/info/help/studio/tips/home.html:160
 msgid "replace item _ of _ with"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:162
+#: templates/info/help/studio/tips/home.html:161
 msgid "item _ of"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:163
-#: templates/info/help/studio/tips/home.html:231
+#: templates/info/help/studio/tips/home.html:162
+#: templates/info/help/studio/tips/home.html:230
 msgid "length of"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:164
+#: templates/info/help/studio/tips/home.html:163
 msgid "_ contains"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:165
+#: templates/info/help/studio/tips/home.html:164
 msgid "show list"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:166
+#: templates/info/help/studio/tips/home.html:165
 msgid "hide list"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:168
+#: templates/info/help/studio/tips/home.html:167
 msgid "Events"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:170
+#: templates/info/help/studio/tips/home.html:169
 msgid "when green flag clicked"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:171
+#: templates/info/help/studio/tips/home.html:170
 msgid "when _ key pressed"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:172
+#: templates/info/help/studio/tips/home.html:171
 msgid "when this sprite clicked"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:173
+#: templates/info/help/studio/tips/home.html:172
 msgid "when backdrop switches to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:174
+#: templates/info/help/studio/tips/home.html:173
 msgid "when _ > _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:175
+#: templates/info/help/studio/tips/home.html:174
 msgid "when I receive"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:176
+#: templates/info/help/studio/tips/home.html:175
 msgid "broadcast "
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:177
+#: templates/info/help/studio/tips/home.html:176
 msgid "broadcast _ and wait"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:179
+#: templates/info/help/studio/tips/home.html:178
 msgid "Control"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:181
+#: templates/info/help/studio/tips/home.html:180
 msgid "wait _ secs"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:182
+#: templates/info/help/studio/tips/home.html:181
 msgid "repeat"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:183
+#: templates/info/help/studio/tips/home.html:182
 msgid "forever"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:184
+#: templates/info/help/studio/tips/home.html:183
 msgid "if _ then"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:185
+#: templates/info/help/studio/tips/home.html:184
 msgid "if _ then else"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:186
+#: templates/info/help/studio/tips/home.html:185
 msgid "wait until"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:187
+#: templates/info/help/studio/tips/home.html:186
 msgid "repeat until"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:188
+#: templates/info/help/studio/tips/home.html:187
 msgid "stop"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:189
+#: templates/info/help/studio/tips/home.html:188
 msgid "when I start as a clone"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:190
+#: templates/info/help/studio/tips/home.html:189
 msgid "create clone of"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:191
+#: templates/info/help/studio/tips/home.html:190
 msgid "delete this clone"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:193
+#: templates/info/help/studio/tips/home.html:192
 msgid "Sensing"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:195
+#: templates/info/help/studio/tips/home.html:194
 msgid "touching"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:196
+#: templates/info/help/studio/tips/home.html:195
 msgid "touching color"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:197
+#: templates/info/help/studio/tips/home.html:196
 msgid "color is touching"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:198
+#: templates/info/help/studio/tips/home.html:197
 msgid "distance to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:199
+#: templates/info/help/studio/tips/home.html:198
 msgid "ask _ and wait"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:200
+#: templates/info/help/studio/tips/home.html:199
 msgid "answer"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:201
+#: templates/info/help/studio/tips/home.html:200
 msgid "key _ pressed?"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:202
+#: templates/info/help/studio/tips/home.html:201
 msgid "mouse down?"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:203
+#: templates/info/help/studio/tips/home.html:202
 msgid "mouse x"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:204
+#: templates/info/help/studio/tips/home.html:203
 msgid "mouse y"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:205
+#: templates/info/help/studio/tips/home.html:204
 msgid "loudness"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:206
+#: templates/info/help/studio/tips/home.html:205
 msgid "video _ on _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:207
+#: templates/info/help/studio/tips/home.html:206
 msgid "turn video"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:208
+#: templates/info/help/studio/tips/home.html:207
 msgid "set video transparency to"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:209
+#: templates/info/help/studio/tips/home.html:208
 msgid "timer"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:210
+#: templates/info/help/studio/tips/home.html:209
 msgid "reset timer"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:211
-#: templates/info/help/studio/tips/home.html:234
+#: templates/info/help/studio/tips/home.html:210
+#: templates/info/help/studio/tips/home.html:233
 msgid "_ of _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:212
+#: templates/info/help/studio/tips/home.html:211
 msgid "current _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:213
+#: templates/info/help/studio/tips/home.html:212
 msgid "days since 2000"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:214
+#: templates/info/help/studio/tips/home.html:213
 msgid "username"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:216
+#: templates/info/help/studio/tips/home.html:215
 msgid "Operators"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:218
+#: templates/info/help/studio/tips/home.html:217
 msgid "+"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:219
+#: templates/info/help/studio/tips/home.html:218
 msgid "-"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:220
+#: templates/info/help/studio/tips/home.html:219
 msgid "*"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:221
+#: templates/info/help/studio/tips/home.html:220
 msgid "/"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:222
+#: templates/info/help/studio/tips/home.html:221
 msgid "pick random _ to _"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:223
+#: templates/info/help/studio/tips/home.html:222
 msgid "&lt;"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:224
+#: templates/info/help/studio/tips/home.html:223
 msgid "="
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:225
+#: templates/info/help/studio/tips/home.html:224
 msgid "&gt;"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:226
+#: templates/info/help/studio/tips/home.html:225
 msgid "and "
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:227
+#: templates/info/help/studio/tips/home.html:226
 msgid "or"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:228
+#: templates/info/help/studio/tips/home.html:227
 msgid "not"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:229
+#: templates/info/help/studio/tips/home.html:228
 msgid "join"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:230
+#: templates/info/help/studio/tips/home.html:229
 msgid "letter _ of "
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:232
+#: templates/info/help/studio/tips/home.html:231
 msgid "mod"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:233
+#: templates/info/help/studio/tips/home.html:232
 msgid "round"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:236
+#: templates/info/help/studio/tips/home.html:235
 msgid "More Blocks"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:238
+#: templates/info/help/studio/tips/home.html:237
 msgid "Make a Block"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:239
+#: templates/info/help/studio/tips/home.html:238
 msgid "Add an Extension"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:241
+#: templates/info/help/studio/tips/home.html:240
 #: templates/info/help/studio/tips/ui/extensions.html:5
 msgid "Extensions"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:243
+#: templates/info/help/studio/tips/home.html:242
 msgid "LEGO WeDo"
 msgstr ""
 
-#: templates/info/help/studio/tips/home.html:244
+#: templates/info/help/studio/tips/home.html:243
 msgid "PicoBoard"
 msgstr ""
 
@@ -7319,7 +7641,6 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/get-started-8.html:9
 #: templates/info/help/studio/tips/howto/get-started-9.html:8
 #: templates/info/help/studio/tips/howto/get-started-intro.html:10
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:9
 #: templates/info/help/studio/tips/howto/nametip-intro.html:9
 #: templates/info/help/studio/tips/howto/nametip1.html:9
 #: templates/info/help/studio/tips/howto/nametip2.html:9
@@ -7341,6 +7662,16 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/pgametip7.html:9
 #: templates/info/help/studio/tips/howto/pgametip8.html:9
 #: templates/info/help/studio/tips/howto/pgametip9.html:9
+#: templates/info/help/studio/tips/howto/valentine-intro.html:9
+#: templates/info/help/studio/tips/howto/valentine1.html:9
+#: templates/info/help/studio/tips/howto/valentine2.html:9
+#: templates/info/help/studio/tips/howto/valentine3.html:9
+#: templates/info/help/studio/tips/howto/valentine4.html:9
+#: templates/info/help/studio/tips/howto/valentine5.html:9
+#: templates/info/help/studio/tips/howto/valentine6.html:9
+#: templates/info/help/studio/tips/howto/valentine7.html:9
+#: templates/info/help/studio/tips/howto/valentine8.html:9
+#: templates/info/help/studio/tips/howto/valentine9.html:9
 #: templates/info/help/studio/tips/howto/vpet-intro.html:9
 #: templates/info/help/studio/tips/howto/vptip1.html:9
 #: templates/info/help/studio/tips/howto/vptip10.html:9
@@ -7359,9 +7690,9 @@ msgstr "Буцах"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:13
 #: templates/info/help/studio/tips/howto/get-started-intro.html:14
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:13
 #: templates/info/help/studio/tips/howto/nametip-intro.html:13
 #: templates/info/help/studio/tips/howto/pgame-intro.html:13
+#: templates/info/help/studio/tips/howto/valentine-intro.html:13
 #: templates/info/help/studio/tips/howto/vpet-intro.html:13
 #: templates/info/help/studio/tips/ui/tour-intro.html:13
 msgid "Begin"
@@ -7377,7 +7708,6 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:21
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:23
 msgid ""
 "\n"
 "\t<p>This activity is part of <a href=\"#made-with-code\">Made with Code</a>."
@@ -7392,17 +7722,17 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:28
 #: templates/info/help/studio/tips/howto/get-started-intro.html:32
 #: templates/info/help/studio/tips/howto/hoc-intro.html:33
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:32
 #: templates/info/help/studio/tips/howto/nametip-intro.html:28
 #: templates/info/help/studio/tips/howto/pgame-intro.html:27
+#: templates/info/help/studio/tips/howto/valentine-intro.html:27
 #: templates/info/help/studio/tips/howto/vpet-intro.html:27
 msgid "Step Index"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
 #: templates/info/help/studio/tips/howto/nametip-intro.html:30
 #: templates/info/help/studio/tips/howto/pgame-intro.html:29
+#: templates/info/help/studio/tips/howto/valentine-intro.html:29
 #: templates/info/help/studio/tips/howto/vpet-intro.html:29
 #: templates/info/help/studio/tips/ui/tour-intro.html:29
 msgid "1"
@@ -7414,9 +7744,9 @@ msgid "Say a Greeting"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
 #: templates/info/help/studio/tips/howto/nametip-intro.html:31
 #: templates/info/help/studio/tips/howto/pgame-intro.html:30
+#: templates/info/help/studio/tips/howto/valentine-intro.html:30
 #: templates/info/help/studio/tips/howto/vpet-intro.html:30
 #: templates/info/help/studio/tips/ui/tour-intro.html:30
 msgid "2"
@@ -7428,9 +7758,9 @@ msgid "Start with a Green Flag"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro.html:32
 #: templates/info/help/studio/tips/howto/pgame-intro.html:31
+#: templates/info/help/studio/tips/howto/valentine-intro.html:31
 #: templates/info/help/studio/tips/howto/vpet-intro.html:31
 #: templates/info/help/studio/tips/ui/tour-intro.html:31
 msgid "3"
@@ -7442,9 +7772,9 @@ msgid "Add a Background"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
 #: templates/info/help/studio/tips/howto/nametip-intro.html:33
 #: templates/info/help/studio/tips/howto/pgame-intro.html:32
+#: templates/info/help/studio/tips/howto/valentine-intro.html:32
 #: templates/info/help/studio/tips/howto/vpet-intro.html:32
 #: templates/info/help/studio/tips/ui/tour-intro.html:32
 msgid "4"
@@ -7456,9 +7786,9 @@ msgid "Add a Cake"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
 #: templates/info/help/studio/tips/howto/nametip-intro.html:34
 #: templates/info/help/studio/tips/howto/pgame-intro.html:33
+#: templates/info/help/studio/tips/howto/valentine-intro.html:33
 #: templates/info/help/studio/tips/howto/vpet-intro.html:33
 #: templates/info/help/studio/tips/ui/tour-intro.html:33
 msgid "5"
@@ -7470,9 +7800,9 @@ msgid "Add Sound"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
 #: templates/info/help/studio/tips/howto/nametip-intro.html:35
 #: templates/info/help/studio/tips/howto/pgame-intro.html:34
+#: templates/info/help/studio/tips/howto/valentine-intro.html:34
 #: templates/info/help/studio/tips/howto/vpet-intro.html:34
 #: templates/info/help/studio/tips/ui/tour-intro.html:34
 msgid "6"
@@ -7484,9 +7814,9 @@ msgid "Blow Out the Candles"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
 #: templates/info/help/studio/tips/howto/nametip-intro.html:36
 #: templates/info/help/studio/tips/howto/pgame-intro.html:35
+#: templates/info/help/studio/tips/howto/valentine-intro.html:35
 #: templates/info/help/studio/tips/howto/vpet-intro.html:35
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "7"
@@ -7498,9 +7828,9 @@ msgid "Add a Dancing Sprite"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
 #: templates/info/help/studio/tips/howto/nametip-intro.html:37
 #: templates/info/help/studio/tips/howto/pgame-intro.html:36
+#: templates/info/help/studio/tips/howto/valentine-intro.html:36
 #: templates/info/help/studio/tips/howto/vpet-intro.html:36
 msgid "8"
 msgstr ""
@@ -7514,6 +7844,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
 #: templates/info/help/studio/tips/howto/pgame-intro.html:37
+#: templates/info/help/studio/tips/howto/valentine-intro.html:37
 #: templates/info/help/studio/tips/howto/vpet-intro.html:37
 msgid "9"
 msgstr ""
@@ -7795,9 +8126,9 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip3.html:17
 #: templates/info/help/studio/tips/howto/get-started-9.html:16
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:37
 #: templates/info/help/studio/tips/howto/nametip-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip4.html:17
+#: templates/info/help/studio/tips/howto/valentine5.html:17
 msgid "Add a Backdrop"
 msgstr ""
 
@@ -7902,6 +8233,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:29
+#: templates/info/help/studio/tips/howto/valentine7.html:29
 #, python-format
 msgid ""
 "\n"
@@ -8199,7 +8531,7 @@ msgid ""
 "\n"
 "<div class=\"steps last\">\n"
 "\t<p>To add this sprite, click <img class=\"intext\" src = \"%(STATIC_URL)s/"
-"images/help/10b-sprite.png\"> then select \"Cassy Dancing\":</p>\n"
+"images/help/10b-sprite.png\"> then select \"Cassy Dance\":</p>\n"
 "\t<img src = \"%(STATIC_URL)s/images/help/10-cassy-sprite.png\"></p>\n"
 "\t<p>Drag the characters to where you want them on the Stage.</p>\n"
 "\t"
@@ -8341,7 +8673,6 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:19
 #: templates/info/help/studio/tips/howto/get-started-intro.html:35
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip3.html:17
 #: templates/info/help/studio/tips/howto/pgame-intro.html:36
@@ -8607,6 +8938,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:12
+#: templates/info/help/studio/tips/howto/valentine1.html:11
 msgid "1 of 9"
 msgstr ""
 
@@ -8636,6 +8968,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-2.html:11
+#: templates/info/help/studio/tips/howto/valentine2.html:11
 msgid "2 of 9"
 msgstr ""
 
@@ -8665,6 +8998,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-3.html:11
+#: templates/info/help/studio/tips/howto/valentine3.html:11
 msgid "3 of 9"
 msgstr ""
 
@@ -8703,6 +9037,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-4.html:11
+#: templates/info/help/studio/tips/howto/valentine4.html:11
 msgid "4 of 9"
 msgstr ""
 
@@ -8909,6 +9244,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-5.html:11
+#: templates/info/help/studio/tips/howto/valentine5.html:11
 msgid "5 of 9"
 msgstr ""
 
@@ -8950,6 +9286,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-6.html:11
+#: templates/info/help/studio/tips/howto/valentine6.html:11
 msgid "6 of 9"
 msgstr ""
 
@@ -8980,6 +9317,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-7.html:11
+#: templates/info/help/studio/tips/howto/valentine7.html:11
 msgid "7 of 9"
 msgstr ""
 
@@ -9014,12 +9352,13 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:11
+#: templates/info/help/studio/tips/howto/valentine8.html:11
 msgid "8 of 9"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-8.html:17
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:41
 #: templates/info/help/studio/tips/howto/nametip-intro.html:37
+#: templates/info/help/studio/tips/howto/valentine-intro.html:37
 msgid "Share Your Project"
 msgstr ""
 
@@ -9046,6 +9385,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:11
+#: templates/info/help/studio/tips/howto/valentine9.html:11
 msgid "9 of 9"
 msgstr ""
 
@@ -9275,52 +9615,45 @@ msgid ""
 "<p>To glide smoothly, use “glide to x y”</p>"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:20
 #: templates/info/help/studio/tips/howto/nametip-intro.html:20
 msgid ""
 "Make your name come to life! Animate the letters by coding in Scratch. Add "
 "sound and music, too."
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:28
+#: templates/info/help/studio/tips/howto/nametip-intro.html:21
+msgid ""
+"//player.vimeo.com/video/111342687?title=0&amp;byline=0&amp;portrait=0;"
+"hd_off=0&"
+msgstr ""
+
 #: templates/info/help/studio/tips/howto/nametip-intro.html:24
 msgid "First, choose a letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:34
 #: templates/info/help/studio/tips/howto/nametip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip1.html:17
 msgid "Choose the First Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:35
 #: templates/info/help/studio/tips/howto/nametip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip2.html:17
 msgid "Add Color Effects"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:38
 #: templates/info/help/studio/tips/howto/nametip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip5.html:17
 msgid "Add Your Next Letter"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:39
 #: templates/info/help/studio/tips/howto/nametip-intro.html:35
 msgid "Make It Spin"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/nametip-intro-other.html:40
 #: templates/info/help/studio/tips/howto/nametip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip7.html:17
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "Finish Your Name"
-msgstr ""
-
-#: templates/info/help/studio/tips/howto/nametip-intro.html:21
-msgid ""
-"//player.vimeo.com/video/111342687?title=0&amp;byline=0&amp;portrait=0;"
-"hd_off=0&"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip1.html:11
@@ -9334,6 +9667,8 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip1.html:22
+#: templates/info/help/studio/tips/howto/valentine1.html:22
+#: templates/info/help/studio/tips/howto/valentine6.html:22
 #, python-format
 msgid ""
 "\n"
@@ -9355,12 +9690,14 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip1.html:34
+#: templates/info/help/studio/tips/howto/valentine1.html:34
 msgid ""
 "Tip: If you don't want the cat in your project, you can delete it using the "
 "scissors tool."
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip1.html:36
+#: templates/info/help/studio/tips/howto/valentine1.html:36
 msgid "Click on the scissors, then click on the cat."
 msgstr ""
 
@@ -9455,6 +9792,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip3.html:42
+#: templates/info/help/studio/tips/howto/valentine4.html:31
 msgid "Next, add a backdrop"
 msgstr ""
 
@@ -9630,17 +9968,20 @@ msgid "8 of 8"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip8.html:17
+#: templates/info/help/studio/tips/howto/valentine9.html:17
 msgid "Share Your Project!"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip8.html:20
 #: templates/info/help/studio/tips/howto/pgametip11.html:20
+#: templates/info/help/studio/tips/howto/valentine9.html:20
 #: templates/info/help/studio/tips/howto/vptip10.html:20
 msgid "Type a title for your project."
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip8.html:25
 #: templates/info/help/studio/tips/howto/pgametip11.html:25
+#: templates/info/help/studio/tips/howto/valentine9.html:25
 #: templates/info/help/studio/tips/howto/vptip10.html:25
 msgid ""
 "When you are ready to share your project with others, click the “Share” "
@@ -9649,6 +9990,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip8.html:26
 #: templates/info/help/studio/tips/howto/pgametip11.html:26
+#: templates/info/help/studio/tips/howto/valentine9.html:26
 #: templates/info/help/studio/tips/howto/vptip10.html:26
 msgid ""
 "Tip: You'll need to sign up for a Scratch account to share your project "
@@ -9657,12 +9999,14 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip8.html:30
 #: templates/info/help/studio/tips/howto/pgametip11.html:30
+#: templates/info/help/studio/tips/howto/valentine9.html:30
 #: templates/info/help/studio/tips/howto/vptip10.html:30
 msgid "To add notes and credits, click:"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip8.html:32
 #: templates/info/help/studio/tips/howto/pgametip11.html:32
+#: templates/info/help/studio/tips/howto/valentine9.html:32
 #: templates/info/help/studio/tips/howto/vptip10.html:32
 msgid "Here's a video on how to edit the project page:"
 msgstr ""
@@ -9674,6 +10018,7 @@ msgid ""
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip8.html:45
+#: templates/info/help/studio/tips/howto/valentine9.html:46
 #, python-format
 msgid ""
 "\n"
@@ -9701,6 +10046,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/pgame-intro.html:29
 #: templates/info/help/studio/tips/howto/pgametip1.html:17
+#: templates/info/help/studio/tips/howto/valentine-intro.html:33
 #: templates/info/help/studio/tips/howto/vpet-intro.html:30
 #: templates/info/help/studio/tips/howto/vptip2.html:17
 msgid "Choose a Backdrop"
@@ -9737,7 +10083,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/pgame-intro.html:37
 #: templates/info/help/studio/tips/howto/pgametip9.html:17
-msgid "Adding a Challenge"
+msgid "Add a Challenge"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/pgame-intro.html:38
@@ -10078,7 +10424,7 @@ msgid "9 of 11"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/pgametip9.html:20
-msgid "Add a challenge! Make the game stop if the ball hits the bottom."
+msgid "Make the game stop if the ball hits the bottom."
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/pgametip9.html:24
@@ -10271,6 +10617,345 @@ msgid ""
 "Add this to your script:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"><br/>\n"
 "just below the green flag block."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine-intro.html:20
+msgid "Make a Valentine's Day card to share with your friends."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine-intro.html:23
+msgid "Start with a heart..."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine-intro.html:29
+#: templates/info/help/studio/tips/howto/valentine1.html:17
+msgid "Start with a Heart"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine-intro.html:30
+#: templates/info/help/studio/tips/howto/valentine2.html:17
+msgid "Add a Beat"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine-intro.html:31
+#: templates/info/help/studio/tips/howto/valentine3.html:17
+msgid "Loop It"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine-intro.html:32
+#: templates/info/help/studio/tips/howto/valentine4.html:17
+msgid "Go on Green"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine-intro.html:34
+#: templates/info/help/studio/tips/howto/valentine6.html:17
+msgid "Add a Message"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine-intro.html:35
+#: templates/info/help/studio/tips/howto/valentine7.html:17
+msgid "Add Music"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine-intro.html:36
+#: templates/info/help/studio/tips/howto/valentine8.html:17
+msgid "Animate and Decorate"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine1.html:20
+msgid "To start, choose a heart for your card."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine1.html:27
+msgid ""
+"Click the 'Things' category, then select a heart from the Sprite library:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine1.html:30
+msgid ""
+"What's a 'sprite'? Any character or thing that you can move or animate in "
+"Scratch."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine1.html:38
+msgid "Next, make the heart beat"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:18
+msgid "Make the heart beat - by changing its size and adding a drum sound. "
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:21
+msgid ""
+"\n"
+"\tClick the <span class=\"lookscolor\">Looks</span> category."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:24
+msgid ""
+"\n"
+"\tDrag a <span class=\"lookscolor\">change size by</span> block to the "
+"Scripts area:\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:28
+msgid "Click the block to try it."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:32
+msgid ""
+"Click the <span class=\"soundcolor\">Sound</span> category. \n"
+"Drag out a <span class=\"soundcolor\">play drum</span> block."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:34
+msgid "Snap the blocks together, like this:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:39
+msgid "Add these blocks to complete your beat:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:41
+msgid "Type in a negative number (like -10) to make the heart smaller."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:42
+#: templates/info/help/studio/tips/howto/valentine3.html:27
+msgid "Click anywhere on the stack to run it."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine2.html:43
+msgid "Next, loop the beat"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine3.html:19
+msgid "Make the heart keep beating."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine3.html:22
+msgid ""
+"\n"
+"\tClick the <span class=\"controlcolor\">Control</span> category.\n"
+"\tDrag out a <span class=\"controlcolor\">repeat</span> block and snap it "
+"around the other blocks:</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine3.html:31
+msgid ""
+"\n"
+"   Click <span class=\"lookscolor\">Looks</span>. Drag out a <span class="
+"\"lookscolor\">set size</span> block, and snap it on top.\n"
+"   </p>"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine3.html:34
+#, python-format
+msgid "Type in 100%% if you want to reset the size of the heart."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine3.html:39
+msgid "Make it go with a green flag"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine4.html:18
+msgid "Make your script run whenever you click the green flag."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine4.html:20
+#, python-format
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"eventscolor\">Events</span> category.</p>\n"
+"\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top:</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine4.html:27
+#, python-format
+msgid ""
+"\n"
+"\t<p>Now you can click on the green flag <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> to start your valentine.</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine5.html:18
+msgid "Choose a backdrop for your valentine."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine5.html:21
+#, python-format
+msgid ""
+"\n"
+"\t<p>To add a backdrop to the Stage, click the <img class=\"intext\" style="
+"\"top:0\" src = \"%(STATIC_URL)s/images/help/landscape-icon.png\"> icon:</p>"
+"\t\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine5.html:28
+msgid "Then choose the backdrop you want (such as doily or hearts):"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine5.html:33
+msgid "Your card will now have a backdrop and a sprite"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine5.html:38
+msgid ""
+"\n"
+"\t\tIf you want the backdrop to change colors, click the <span class=\"tab-"
+"ref\">Scripts</span> tab. Then, build a script like this:</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine5.html:42
+msgid "Next, add a message"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine6.html:18
+msgid "Add a message to your valentine."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine6.html:26
+msgid "Click the 'Things' category, and choose the sprite named 'Text':"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine6.html:31
+msgid ""
+"\n"
+"\t<p>Click the <span class=\"tab-ref\">Costumes</span> tab.\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine6.html:35
+msgid "Choose the 'Happy Valentine's Day' costume:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine6.html:40
+msgid "You can use the Text tool to type your own text."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine6.html:42
+msgid "Now, add music"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine7.html:18
+msgid "Add music to your valentine."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine7.html:21
+#, python-format
+msgid ""
+"\n"
+"\t<p>First, click the heart sprite to select it.\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/va-s7-i1.png\"></p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine7.html:36
+msgid ""
+"Click the 'Music Loops' category. Choose 'dance celebrate' or another sound:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine7.html:41
+msgid ""
+"\n"
+"\t<p>Select the <span class=\"tab-ref\">Scripts</span> tab, and click the "
+"<span class=\"soundcolor\">Sound</span> category. Drag out a <span class="
+"\"soundcolor\">play sound until done</span> block:</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine7.html:49
+#, python-format
+msgid ""
+"\n"
+" <p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
+"it on top:</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine7.html:57
+#, python-format
+msgid ""
+"\n"
+"\t<p>Now you can click on the green flag <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> to start your program.</p>\n"
+"\t"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine7.html:61
+msgid "Next, animate and decorate"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:18
+msgid ""
+"Add finishing touches to your valentine. Choose your own images and animate "
+"them."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:22
+msgid "ADD IMAGES"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:23
+msgid ""
+"To add a sprite (such as Giga or Nano, pictured above), click one of these "
+"buttons:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:24
+#, python-format
+msgid ""
+"\n"
+" <p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png"
+"\"> Choose sprite from the library</p>\n"
+"  <p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png"
+"\"> Paint your own sprite</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png"
+"\"> Upload your own image or sprite</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png"
+"\"> Take a picture (from a webcam)</p>\n"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:33
+msgid ""
+"Tip: Make any sprite bigger by clicking on it with the grow tool. Or make it "
+"smaller using the shrink tool:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:38
+msgid "MAKE IT SPIN"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:39
+msgid "To make a sprite spin, select the sprite, then add a script like this:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:41
+msgid "Type in different numbers to adjust the spin."
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:44
+msgid "To reset a sprite so it faces to the right, click this block:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:49
+msgid "Explore and experiment! Here are some other blocks you may want to try:"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine8.html:56
+msgid "Share your project"
+msgstr ""
+
+#: templates/info/help/studio/tips/howto/valentine9.html:39
+msgid ""
+"\tNow you can add your project to the <a href=\"http://scratch.mit.edu/"
+"studios/915780/\" target=\"_blank\">Design a Valentine studio</a>:\t"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/vpet-intro.html:20
@@ -10768,6 +11453,29 @@ msgstr ""
 msgid "Paint Editor"
 msgstr ""
 
+#: templates/mail/base.html:37
+#, python-format
+msgid ""
+"\n"
+"            <a href=\"%(scratch_url)s\">Scratch</a> is a free project of the "
+"Lifelong Kindergarten Group at the MIT Media Lab. Using Scratch, children "
+"can create interactive stories, games, and animations.\n"
+"        "
+msgstr ""
+
+#: templates/mail/base.html:43
+#, python-format
+msgid ""
+"\n"
+"            If you have questions about Scratch or this email, please take a "
+"look at our <a href=\"%(faq_url)s\">FAQ</a>.\n"
+"        "
+msgstr ""
+
+#: templates/mail/base.html:50
+msgid "Make a Donation"
+msgstr ""
+
 #: templates/notifications/notifications.html:9
 msgid "Messages"
 msgstr ""
@@ -10777,7 +11485,7 @@ msgid "All Messages"
 msgstr ""
 
 #: templates/notifications/notifications.html:16
-#: templates/profiles/profile_detail.html:364 templates/projects/base.html:337
+#: templates/profiles/profile_detail.html:364 templates/projects/base.html:336
 #: templates/studio/includes/sort-galleries-dropdown.html:26
 msgid "Comments"
 msgstr ""
@@ -10818,7 +11526,7 @@ msgstr ""
 
 #: templates/notifications/includes/friend-feed.html:47
 #: templates/notifications/includes/user-feed.html:70
-#: templates/projects/base.html:105
+#: templates/projects/base.html:104
 msgid "remixed"
 msgstr ""
 
@@ -11112,87 +11820,87 @@ msgstr ""
 msgid "on Scratch"
 msgstr "Scratch-д элсэх"
 
-#: templates/projects/base.html:117
+#: templates/projects/base.html:116
 msgid "scripts"
 msgstr ""
 
-#: templates/projects/base.html:118
+#: templates/projects/base.html:117
 msgid "sprites"
 msgstr ""
 
-#: templates/projects/base.html:122 templates/studio/studio.html:96
-#: templates/studio/studio.html.py:133 templates/studio/studio.html:153
+#: templates/projects/base.html:121 templates/studio/studio.html:97
+#: templates/studio/studio.html.py:134 templates/studio/studio.html:154
 msgid "See inside"
 msgstr ""
 
-#: templates/projects/base.html:158
+#: templates/projects/base.html:157
 msgid "Based on:"
 msgstr ""
 
-#: templates/projects/base.html:170
+#: templates/projects/base.html:169
 msgid "Original project:"
 msgstr ""
 
-#: templates/projects/base.html:186
+#: templates/projects/base.html:185
 msgid "not shared"
 msgstr ""
 
-#: templates/projects/base.html:188
+#: templates/projects/base.html:187
 #, python-format
 msgid "Modified: %(tDate)s"
 msgstr ""
 
-#: templates/projects/base.html:200 templates/projects/base.html.py:207
+#: templates/projects/base.html:199 templates/projects/base.html.py:206
 msgid "Favorite this project"
 msgstr ""
 
-#: templates/projects/base.html:216 templates/projects/base.html.py:222
+#: templates/projects/base.html:215 templates/projects/base.html.py:221
 msgid "Love this project"
 msgstr ""
 
-#: templates/projects/base.html:238
+#: templates/projects/base.html:237
 msgid "Total views"
 msgstr ""
 
-#: templates/projects/base.html:242
+#: templates/projects/base.html:241
 msgid "View the remix tree"
 msgstr ""
 
-#: templates/projects/base.html:264
+#: templates/projects/base.html:263
 msgid "Add this project to a studio you curate (or remove it from a studio)"
 msgstr ""
 
-#: templates/projects/base.html:265
+#: templates/projects/base.html:264
 msgid "Just click on the button for any of the studios from the list below"
 msgstr ""
 
-#: templates/projects/base.html:277
+#: templates/projects/base.html:276
 msgid "Download this project file"
 msgstr "Энэ төслийн баримтыг татаж авах"
 
-#: templates/projects/base.html:300
+#: templates/projects/base.html:299
 #: templates/projects/includes/shared/shared-project-actions.html:10
 msgid "Embed"
 msgstr ""
 
-#: templates/projects/base.html:305
+#: templates/projects/base.html:304
 msgid "Copy and paste the embed code above."
 msgstr ""
 
-#: templates/projects/base.html:309 templates/projects/censored.html:16
-#: templates/projects/unshared-owner.html:22
+#: templates/projects/base.html:308 templates/projects/censored.html:17
+#: templates/projects/unshared-owner.html:23
 msgid "Share"
 msgstr ""
 
-#: templates/projects/base.html:369
+#: templates/projects/base.html:368
 msgid "remixes"
 msgstr ""
 
-#: templates/projects/base.html:436
+#: templates/projects/base.html:435
 msgid "OK, Got it."
 msgstr ""
 
-#: templates/projects/base.html:455
+#: templates/projects/base.html:454
 msgid "All Tips"
 msgstr ""
 
@@ -11217,7 +11925,7 @@ msgid ""
 "Remix tree for \"%(projectTitle)s\"\n"
 msgstr ""
 
-#: templates/projects/remixtree.html:55
+#: templates/projects/remixtree.html:54
 msgid "Remix tree"
 msgstr ""
 
@@ -11267,15 +11975,15 @@ msgid ""
 "everyone see it!"
 msgstr ""
 
-#: templates/projects/unshared-owner.html:31
+#: templates/projects/unshared-owner.html:36
 msgid "Note: This project is in the trash folder"
 msgstr ""
 
-#: templates/projects/unshared-owner.html:33
+#: templates/projects/unshared-owner.html:38
 msgid "Note: this project is not visible, it was "
 msgstr ""
 
-#: templates/projects/unshared-owner.html:60
+#: templates/projects/unshared-owner.html:65
 msgid "Unshared"
 msgstr ""
 
@@ -11358,19 +12066,54 @@ msgstr "Нууц үгээ өөрчлөе"
 msgid "Password reset email sent..."
 msgstr ""
 
+#: templates/registration/password_reset_email.html:13
+#: templates/registration/password_reset_email.txt:7
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account on Scratch. If you didn't request a password change, you can "
+"just ignore this message."
+msgstr ""
+
+#: templates/registration/password_reset_email.html:17
+#: templates/registration/password_reset_email.txt:9
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:24
+#: templates/registration/password_reset_email.txt:16
+msgid ""
+"You're receiving this e-mail because you requested a password reset for your "
+"user account at Scratch. If you didn’t request a password change, you can "
+"just ignore this message."
+msgstr ""
+
+#: templates/registration/password_reset_email.html:27
+#: templates/registration/password_reset_email.txt:18
+msgid "Here are the username(s) associated with this email address:"
+msgstr ""
+
+#: templates/registration/password_reset_email.html:32
+#: templates/registration/password_reset_email.txt:23
+msgid "Go here to change the password:"
+msgstr ""
+
+#: templates/registration/password_reset_email_subject.txt:2
+msgid "Reset your password - Scratch"
+msgstr ""
+
 #: templates/registration/password_reset_form.html:8
 msgid "Reset Password"
 msgstr ""
 
-#: templates/registration/password_reset_form.html:19
+#: templates/registration/password_reset_form.html:25
 msgid "Enter Username"
 msgstr ""
 
-#: templates/registration/password_reset_form.html:25
+#: templates/registration/password_reset_form.html:35
 msgid "Email address you registered with"
 msgstr ""
 
-#: templates/registration/password_reset_form.html:29
+#: templates/registration/password_reset_form.html:39
 msgid "Send me a password reset link!"
 msgstr ""
 
@@ -11387,12 +12130,12 @@ msgstr ""
 msgid "Search - Scratch"
 msgstr ""
 
-#: templates/search/search.html:66 templates/search/search.html.py:95
+#: templates/search/search.html:65 templates/search/search.html.py:94
 #: templates/search/includes/tabs.html:14
 msgid "Users"
 msgstr ""
 
-#: templates/search/search.html:68
+#: templates/search/search.html:67
 msgid "Support Pages"
 msgstr ""
 
@@ -11543,8 +12286,7 @@ msgid ""
 msgstr ""
 
 #: templates/studio/studio.html:10
-#, python-format
-msgid "Trash (<span data-content=\"trash-count\">%(deleted_count)s</span>)"
+msgid "Trash"
 msgstr ""
 
 #: templates/studio/studio.html:18
@@ -11555,26 +12297,26 @@ msgstr ""
 msgid "New Studio"
 msgstr ""
 
-#: templates/studio/studio.html:45 templates/studio/studio.html.py:67
-#: templates/studio/studio.html:80
+#: templates/studio/studio.html:46 templates/studio/studio.html.py:68
+#: templates/studio/studio.html:81
 msgid "Load More"
 msgstr ""
 
-#: templates/studio/studio.html:94 templates/studio/studio.html.py:131
-#: templates/studio/studio.html:151
+#: templates/studio/studio.html:95 templates/studio/studio.html.py:132
+#: templates/studio/studio.html:152
 #: templates/studio/includes/project_list.html:19
 msgid "Last modified:"
 msgstr ""
 
-#: templates/studio/studio.html:107
+#: templates/studio/studio.html:108
 msgid "Add to"
 msgstr ""
 
-#: templates/studio/studio.html:117
+#: templates/studio/studio.html:118
 msgid "Unshare"
 msgstr ""
 
-#: templates/studio/studio.html:137
+#: templates/studio/studio.html:138
 msgid "Delete"
 msgstr ""
 
@@ -11621,6 +12363,32 @@ msgstr ""
 
 #: templates/studio/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
+msgstr ""
+
+# 76%
+#: userprofiles/models.py:87
+#, fuzzy
+msgid "Featured Project"
+msgstr "Бусадтай хуваалцаж буй төслүүд"
+
+#: userprofiles/models.py:88
+msgid "Featured Tutorial"
+msgstr ""
+
+#: userprofiles/models.py:89
+msgid "Work In Progress"
+msgstr ""
+
+#: userprofiles/models.py:90
+msgid "Remix This!"
+msgstr ""
+
+#: userprofiles/models.py:91
+msgid "My Favorite Things"
+msgstr ""
+
+#: userprofiles/models.py:92
+msgid "Why I Scratch"
 msgstr ""
 
 # 83%
