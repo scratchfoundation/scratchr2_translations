@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-06 14:00+0000\n"
-"PO-Revision-Date: 2015-02-12 14:54+0000\n"
+"PO-Revision-Date: 2015-02-26 17:53+0000\n"
 "Last-Translator: Kalvis <kalvis.kincis@r6vsk.lv>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: lv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);"
 "\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1423752892.000000\n"
+"X-POOTLE-MTIME: 1424973200.000000\n"
 
 #: views.py:321
 msgid "Your message has been sent. We will respond within 3 days."
@@ -8442,11 +8442,11 @@ msgstr ""
 "\n"
 "<p>\n"
 "Ar labo peles klikšķi uz rādījuma var iegūt citus skatus:\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/variable-menu.png\" /><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/variable-menu.png\" <br/>\n"
 "\n"
 "<p>\n"
 "Lai dzēstu vai pārsauktu mainīgo, klikšķini uz tā ar labo peles taustiņu.\n"
-"<br><img src=\"%(STATIC_URL)s/images/help/delete-variable.png\" /><br/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/delete-variable.png\" <br/>\n"
 "</p>\n"
 
 #: templates/info/help/studio/tips/blocks/video-motion.html:6
@@ -8534,14 +8534,16 @@ msgid ""
 "You can set the volume level for each sprite. To play two sounds at once "
 "with different volumes, use two sprites."
 msgstr ""
+"Tu vari iestatīt skaļuma līmeni katram gariņam. Lai vienlaicīgi atskaņotu "
+"divas skaņas dažādā skaļumā, izmanto divus gariņus."
 
 #: templates/info/help/studio/tips/blocks/wait-secs.html:7
 msgid "Waits specified number of seconds, then continues with next block"
-msgstr ""
+msgstr "Gaida norādīto laiku sekundēs, tad turpina ar nākamo bloku"
 
 #: templates/info/help/studio/tips/blocks/wait-until.html:7
 msgid "Waits until condition is true, then runs the blocks below"
-msgstr ""
+msgstr "Gaida, kamēr nosacījums ir patiess, tad izpilda zemākos blokus"
 
 #: templates/info/help/studio/tips/blocks/wait-until.html:13
 #, python-format
@@ -8552,6 +8554,11 @@ msgid ""
 "a forever block.\n"
 "</p>"
 msgstr ""
+"<p>\n"
+"Visi iekļautie bloki tiks izpildīti vienu reizi. Ja vēlies <img src=\""
+"%(STATIC_URL)s/images/help/wait-until.png\" /> likt visu laiku pārbaudīt, "
+"iekļauj blokus atkārtot nepārtraukti blokā.\n"
+"</p>"
 
 #: templates/info/help/studio/tips/blocks/when-backdrop-switches.html:7
 msgid "Runs a script when backdrop switches to a certain background"
@@ -8630,6 +8637,10 @@ msgid ""
 "<br>After the timer reaches 10 seconds, the script will run. <br/>\n"
 "<p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/when_timer.png\"/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/when_timer2.png\"/><br/>\n"
+"<br>Programma izpildīsies, kad taimeris būs saskaitījis 10 sekundes. <br/>\n"
+"<p>"
 
 #: templates/info/help/studio/tips/blocks/when-loudness.html:25
 #, python-format
@@ -8639,14 +8650,18 @@ msgid ""
 "<br>When the video motion on the sprite goes above 10, the script will run. "
 "<br/>\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/when-videomotion.png\"/>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/when-videomotion2.png\"/><br/>\n"
+"<br>Programma izpildīsies, kad gariņa video kustības vērtība pārsniegs 10. "
+"<br/>\n"
 
 #: templates/info/help/studio/tips/blocks/when-this-sprite-clicked.html:7
 msgid "Runs script below when sprite is clicked"
-msgstr ""
+msgstr "Izpilda tālāko programmu, kad ir uzklikšķināts uz gariņa"
 
 #: templates/info/help/studio/tips/blocks/x-position-sprite.html:7
 msgid "Reports a property or variable of another sprite"
-msgstr ""
+msgstr "Atgriež cita gariņa īpašību vai mainīgo"
 
 #: templates/info/help/studio/tips/blocks/x-position-sprite.html:11
 #, python-format
@@ -8660,6 +8675,14 @@ msgid ""
 "  </p>\n"
 "  "
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex.png\"/> \n"
+" \n"
+"  <p>\n"
+"  Spoka x koordināte tiek iestatīta par Gobo x koordināti.\n"
+"  <br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\""
+"/><br/>\n"
+"  </p>\n"
+"  "
 
 #: templates/info/help/studio/tips/blocks/x-position-sprite.html:21
 #, python-format
@@ -8669,10 +8692,14 @@ msgid ""
 "<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/"
 ">\n"
 msgstr ""
+"Šo bloku vari izmantot, lai piekļūtu cita gariņa dažādām īpašībām un "
+"izmantot šo informāciju pašreizējā gariņa programmā.\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>"
+"\n"
 
 #: templates/info/help/studio/tips/blocks/x-position.html:7
 msgid "Reports the <b>x</b> position of a sprite"
-msgstr ""
+msgstr "Atgriež gariņa <b>x</b> koordināti"
 
 #: templates/info/help/studio/tips/blocks/x-position.html:14
 #, python-format
@@ -8681,10 +8708,13 @@ msgid ""
 "checkbox next to the block:<br/>\n"
 "  <img src=\"%(STATIC_URL)s/images/help/x-position-display.png\">"
 msgstr ""
+"<p>Lai gariņa <b>x</b> koordināti parādītu uz skatuves, ieklikšķini ķeksīti "
+"blakus blokam:<br/>\n"
+"  <img src=\"%(STATIC_URL)s/images/help/x-position-display.png\">"
 
 #: templates/info/help/studio/tips/blocks/y-position.html:7
 msgid "Reports the <b>y</b> position of a sprite"
-msgstr ""
+msgstr "Atgriež gariņa <b>y</b> koordināti"
 
 #: templates/info/help/studio/tips/blocks/y-position.html:16
 #, python-format
@@ -8804,10 +8834,12 @@ msgid ""
 "See the <a href=\"../../ui/extensions/\">Extensions</a> page.\n"
 "</p>"
 msgstr ""
+"Skati <a href=\"../../ui/extensions/\">Paplašinājumu</a>lapu.\n"
+"</p>"
 
 #: templates/info/help/studio/tips/ext/PicoBoard.html:6
 msgid "PicoBoard Extension"
-msgstr ""
+msgstr "PicoBoard paplašinājums"
 
 #: templates/info/help/studio/tips/ext/PicoBoard.html:10
 #, python-format
@@ -8816,6 +8848,9 @@ msgid ""
 "Sensor Board).</p>\n"
 " <img src=\"%(STATIC_URL)s/images/help/picoboard.png\" />\n"
 msgstr ""
+"<p>Šis paplašinājums strādā ar PicoBoard (agrāk zin«ams kā Scratch Sensor "
+"Board).</p>\n"
+" <img src=\"%(STATIC_URL)s/images/help/picoboard.png\" />\n"
 
 #: templates/info/help/studio/tips/ext/PicoBoard.html:33
 #, python-format
@@ -8825,17 +8860,23 @@ msgid ""
 "via included cables.</p>\n"
 " \t<img src=\"%(STATIC_URL)s/images/help/picoboard-components.png\" />"
 msgstr ""
+"<p>PicoBoard iekļauj gaismas sensoru, skaņas sensoru, pogu un slīdni, kā arī "
+"4 papildus ieejas, kas ar iekļautajiem savienojumu vadiem var noteikt "
+"elektrisko pretestību.</p>\n"
+" \t<img src=\"%(STATIC_URL)s/images/help/picoboard-components.png\" />"
 
 #: templates/info/help/studio/tips/ext/PicoBoard.html:38
 msgid ""
 "<p>To learn more, see the <a href=\"http://wiki.scratch.mit.edu/wiki/"
 "PicoBoard\" target=\"_blank\">PicoBoard</a> page on the Scratch wiki.</p>"
 msgstr ""
+"<p>Lai uzzinātu vairāk, lasi <a href=\"http://wiki.scratch.mit.edu/wiki/"
+"PicoBoard\" target=\"_blank\">PicoBoard</a> lapu Scratch wiki.</p>"
 
 #: templates/info/help/studio/tips/ext/pico-sensor-button-pressed.html:6
 msgid ""
 "Report whether the button is pressed or one of the inputs A-D is connected."
-msgstr ""
+msgstr "Atgriež, vai ir nospiesta kāda poga vai pievienota kāda no A-D ieejām."
 
 #: templates/info/help/studio/tips/ext/pico-sensor-button-pressed.html:10
 #, python-format
@@ -8843,6 +8884,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/pico-sensor-button-pressed-ex1.png\">\n"
 "  <p>The sprite will spin as long as the button is pressed.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/pico-sensor-button-pressed-ex1.png\">\n"
+"  <p>Gariņš griezīsies tik ilgi, kamēr poga būs nospiesta.</p>"
 
 #: templates/info/help/studio/tips/ext/pico-sensor-button-pressed.html:15
 #, python-format
@@ -8851,6 +8894,9 @@ msgid ""
 "the palette.</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/pico-sensor-button-pressed-ex2.png\">"
 msgstr ""
+"<p>Lai redzētu sensora vērtību, ieklikšķini ķeksīti blakus attiecīgajam "
+"blokam rīku paletē.</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/pico-sensor-button-pressed-ex2.png\">"
 
 #: templates/info/help/studio/tips/ext/pico-sensor-button-pressed.html:20
 #, python-format
@@ -8862,6 +8908,13 @@ msgid ""
 "plugged into the inputs A-D. An input is connected if there is a good "
 "electrical connection between the metal ends of the clips.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/pico-sensor-button-pressed-dropdown."
+"png\"/>\n"
+" <p>Tu vari izvēlēties pogu vai vienu no četrām ieejām, kas apzīmētas ar "
+"A-D.</p>\n"
+" <p>PicoBoard komplektā ir četri pāri krokodilspaiļu, kuras var pieslēgt A-D "
+"ieejām. Ieeja ir pievienota, ja ir izveidots labs kontakts savienojuma "
+"metāla daļām.</p>"
 
 #: templates/info/help/studio/tips/ext/pico-slider-sensor-value.html:6
 msgid ""
@@ -8901,12 +8954,21 @@ msgid ""
 "number from 0 to 100, depending on how much electrical resistance there is "
 "between the metal ends of the alligator clips.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/pico-slider-sensor-value-dropdown.png\""
+"/>\n"
+" <p>Vari izvēlēties vienu no septiņiem PicoBoard sensoriem. Katrs atgriež "
+"vērtību intervālā no 0 līdz 100.</p>\n"
+" <p>PicoBoard ir komplektēts ar četriem pāriem krokodilspaiļu, kuras var "
+"pievienot ieejām A-D. Pretestības sensora vērtības blokas atgriež skaitli no "
+"0 līdz 100, atkarībā no elektriskās pretestības krokodilspaiļu galos.</p>"
 
 #: templates/info/help/studio/tips/ext/pico-when-button-pressed.html:7
 msgid ""
 "Run a script when the button is pressed or the ends of the alligator clips "
 "plugged into one of the four inputs (A-D) are connected."
 msgstr ""
+"Izpilda programmu, kad ir nospiesta poga vai A-D ieejās pieslēgtās "
+"krokodilspailes ir savienotas."
 
 #: templates/info/help/studio/tips/ext/pico-when-button-pressed.html:11
 #, python-format
@@ -8914,6 +8976,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/pico-when-button-pressed-ex1.png\"/>\n"
 "<p>When the button is pressed, the script will run.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/pico-when-button-pressed-ex1.png\"/>\n"
+"<p>Programma izpildīsies, kad tiks nospiesta poga.</p>"
 
 #: templates/info/help/studio/tips/ext/pico-when-button-pressed.html:16
 #, python-format
@@ -8925,12 +8989,21 @@ msgid ""
 "plugged into the inputs A-D. An input is connected if there is a good "
 "electrical connection between the metal ends of the clips.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/pico-when-button-pressed-dropdown.png\""
+"/>\n"
+" <p>Vari izvēlēties pogu vai vienu no četrām ieejām, kas apzīmētas ar "
+"A-D.</p>\n"
+" <p>PicoBoard ir komplektēts ar četriem pāriem krokodilspaiļu, kuras var "
+"pievienot ieejām A-D. Ieeja skaitās pieslēgta, ja ir labs savienojums "
+"krokodilspaiļu galos.</p>"
 
 #: templates/info/help/studio/tips/ext/pico-when-slider.html:7
 msgid ""
 "Run a script when the value of one of the PicoBoard's sensors becomes "
 "greater (or less) than a specified value."
 msgstr ""
+"Izpilda programmu, ja kāda no PicoBoard sensoru vērtībām kļūst lielāka (vai "
+"mazāka) par norādīto vērtību."
 
 #: templates/info/help/studio/tips/ext/pico-when-slider.html:11
 #, python-format
@@ -8938,6 +9011,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/pico-when-slider-ex1.png\"/>\n"
 "<p>Change the sprite's costume each time you clap.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/pico-when-slider-ex1.png\"/>\n"
+"<p>Mainīt gariņa tērpu katru reizi, kad plaukšķini.</p>"
 
 #: templates/info/help/studio/tips/ext/pico-when-slider.html:16
 #, python-format
@@ -8953,11 +9028,22 @@ msgid ""
 " <br>You can also select a <i>greater</i> or <i>less than</i> comparison "
 "from the second dropdown menu.<br/>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/pico-when-slider-dropdown1.png\"/>\n"
+" <p>Vari izvēlēties vienu no septiņiem PicoBoard sensoriem. Katrs no tiem "
+"atgriež vērtību intervālā no 0 līdz 100.</p>\n"
+" <p>PicoBoard komplektā ir četri pāri krokodilspaiļu, kuras var pieslēgt "
+"ieejām A-D. Sensoru vērtība atkarīga no pretestības krokodilspaiļu galos.</p>"
+"\n"
+" <img src=\"%(STATIC_URL)s/images/help/pico-when-slider-dropdown2.png\"/>\n"
+" <br>Vari izvēlēties salīdzinājumu <i>lielāks</i> vai <i>mazāks</i> no otrās "
+"izkrītošās izvēlnes.<br/>"
 
 #: templates/info/help/studio/tips/ext/wedo-distance.html:6
 msgid ""
 "Report the distance (from 0 to 100) detected by the LEGO WeDo distance sensor"
 msgstr ""
+"Atriež izmērīto attālumu (no 0 līdz 100), kas noteikts ar LEGO WeDo attāluma "
+"sensoru"
 
 #: templates/info/help/studio/tips/ext/wedo-distance.html:10
 #, python-format
@@ -8967,6 +9053,10 @@ msgid ""
 "distance, so you can actually use it to detect light and motion in addition "
 "to distance.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-distance-ex1.png\">\n"
+"  <p>Attāluma sensorus mēra apkārtējās telpas gaišumu, lai noteiktu "
+"attālumu, līdz ar to sensoru vai izmantot, lai noteiktu arī gaismu un "
+"kustību, ne tikai attālumu.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-distance.html:15
 #, python-format
@@ -8975,18 +9065,24 @@ msgid ""
 "the palette.</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/wedo-distance-ex2.png\">"
 msgstr ""
+"<p>Lai redzētu izmērīto attālumu, ieliec ķeksīti blakus blokas rīku "
+"paletē.</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/wedo-distance-ex2.png\">"
 
 #: templates/info/help/studio/tips/ext/wedo-distance.html:20
 msgid ""
 "<p>To use <b>distance</b>, you need a distance sensor connected to your "
 "computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Lai izmantotu <b>attālumu</b>, jābūt pieslēgtam attāluma sensoram pie "
+"datoram pievienotā LEGO WeDo huba.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-set-direction.html:7
 msgid ""
 "Set the direction of the motor(s). This block does not turn them on if they "
 "are already off."
 msgstr ""
+"Iestati motoru virzienu. Šis bloks neieslēdz motoru, ja tas ir izslēgts."
 
 #: templates/info/help/studio/tips/ext/wedo-set-direction.html:11
 #, python-format
@@ -8995,6 +9091,9 @@ msgid ""
 "<p>Run the motor for 10 seconds while switching the spinning direction every "
 "second.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-set-direction-ex1.png\" />\n"
+"<p>Iedarbina motoru uz 10 sekundēm, pārslēdzot griešanās virzienu ik pēc "
+"sekundes.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-set-direction.html:16
 #, python-format
@@ -9012,18 +9111,35 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/wedo-set-direction-dropdown2.png\"/>\n"
 " <p>You can select the direction from the second dropdown menu.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-set-direction-dropdown1.png\"/>\n"
+" <br>Tu vari izvēlēties WeDo motoru(s) no pirmā izkrītošā saraksta:<br/>\n"
+" <ul>\n"
+" \t<li>Ja tev ir tikai viens motors, izmanto iespēju \"motors\", tas "
+"iestatīs motora virzienu, neatkarīgi no tā, kur tas ir pieslēgts WeDo "
+"hubam.</li>\n"
+" \t<li>Ja tev ir divi motori, kurus gribi vadīt atsevišķi, vari izmantot \""
+"motors A\" ar vienu un \"motors B\" ar otru.</li>\n"
+" \t<li>\"visi motori\" iestata virzienu visiem pievienotajiem motoriem.</li>"
+"\n"
+" </ul>\n"
+" <img src=\"%(STATIC_URL)s/images/help/wedo-set-direction-dropdown2.png\"/>\n"
+" <p>Virzienu vari izvēlēties no otra izkrītošā saraksta.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-set-direction.html:28
 msgid ""
 "<p>To use <b>set direction</b>, you need WeDo motor(s) connected to your "
 "computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Lai izmantotu <b>iestatīt virzienu</b>, pie LEGO WeDo huba jābūt "
+"pieslēgtam WeDo motoram.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-set-power.html:7
 msgid ""
 "Set the power of motors or lights to a specified value and turn them on. The "
 "value ranges from 0 to 100 (0 is no power and 100 is the maximum power)."
 msgstr ""
+"Iestata motora jaudu vai gaismas norādītajā vērtībā un ieslēdz to. Vērtība "
+"ir intervālā no 0 līdz 100 (0 ir izslēgts un 100 ir pilna jauda)."
 
 #: templates/info/help/studio/tips/ext/wedo-set-power.html:11
 #, python-format
@@ -9031,6 +9147,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/wedo-set-power-ex1.png\" />\n"
 "<p>Change the speed of the motor using the up and down arrow keys.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-set-power-ex1.png\" />\n"
+"<p>Maina motora ātrumu, izmantojot bultiņas uz augšu un leju.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-set-power.html:16
 #, python-format
@@ -9049,16 +9167,32 @@ msgid ""
 "</li>\n"
 " </ul>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-set-power-dropdown.png\"/>\n"
+" <br>Vari izvēlēties ar LEGO WeDo savietojamu ierīci no izkrītošās "
+"izvēlnes:<br/>\n"
+" <ul>\n"
+"\t<li>Ja tev ir tikai viens motors, izmanto iespēju \"motors\", tas iestatīs "
+"motora jaudu, neatkarīgi no tā, kur tas ir pieslēgts WeDo hubam</li>\n"
+" \t<li>Ja tev ir divi motori, kurus gribi vadīt atsevišķi, vari izmantot \""
+"motors A\" ar vienu un \"motors B\" ar otru.</li>\n"
+" \t<li>\"gaisma\" iestata gaismas jaudu, neatkarīgi no tā, kur tā ir "
+"pieslēgta WeDo hubam.</li>\n"
+" \t<li>\"viss\" iestata jaudu visiem pievienotajiem motoriem un gaismām.</li>"
+"\n"
+" </ul>"
 
 #: templates/info/help/studio/tips/ext/wedo-set-power.html:27
 msgid ""
 "<p>To use <b>set power</b>, you need WeDo motor(s) or lights connected to "
 "your computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Lai izmantotu <b>iestatīt jaudu</b>, tev jābūt pie datora ar LEGO WeDo "
+"hubu pieslēgtiem WeDo motoriem vai gaismām.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-tilt.html:6
 msgid "Report the tilt (from 0 to 4) detected by the LEGO WeDo tilt sensor"
 msgstr ""
+"Atgriež sašķiebumu (no 0 līdz 4), ko noteicis LEGO WeDo sašķiebuma sensors"
 
 #: templates/info/help/studio/tips/ext/wedo-tilt.html:10
 #, python-format
@@ -9067,6 +9201,9 @@ msgid ""
 "  <p><b>tilt</b> reports a value of 1-4 when the sensor is tilted, and 0 "
 "otherwise.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-tilt-ex1.png\">\n"
+"  <p><b>sašķiebums</b> atgriež vērtību no 1 - 4, ja sensors ir sašķiebts un "
+"0 pārējos gadījumos.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-tilt.html:14
 #, python-format
@@ -9078,16 +9215,24 @@ msgid ""
 "palette.</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/wedo-tilt-ex2.png\"></p>"
 msgstr ""
+"<p>Sašķiebuma sensors atgriež skaitli no 0 līdz 4. 0 nozīmē, ka nav "
+"sašķiebts, 1 sašķiebts uz leju,\n"
+"2 sašķiebts pa labi, 3 sašķiebts uz augšu un 4 pa kreisi.</p>\n"
+"<p>Lai redzētu sašķiebuma vērtību, ieliec ķeksīti blakus blokam rīku "
+"paletē.</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/wedo-tilt-ex2.png\"></p>"
 
 #: templates/info/help/studio/tips/ext/wedo-tilt.html:21
 msgid ""
 "<p>To use <b>tilt</b>, you need a tilt sensor connected to your computer via "
 "a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Lai izmantotu <b>sašķiebumu</b>, pie LEGO WeDo huba jābūt pievienotam "
+"sašķiebuma sensoram.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-turn-off.html:7
 msgid "Turn motors or lights off."
-msgstr ""
+msgstr "Izslēdz motorus vai gaismas."
 
 #: templates/info/help/studio/tips/ext/wedo-turn-off.html:11
 #: templates/info/help/studio/tips/ext/wedo-turn-on.html:11
@@ -9097,6 +9242,9 @@ msgid ""
 "<p>Turn the lights on for 2 seconds when the space key is pressed, then turn "
 "it off.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-turn-on-ex1.png\" />\n"
+"<p>Ja nospiests atstarpes taustiņš, ieslēdz gaismas uz 2 sekundēm, pēc tam "
+"izslēdz.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-turn-off.html:16
 #, python-format
@@ -9114,16 +9262,30 @@ msgid ""
 " \t<li>\"everything\" turns off all the connected motors and lights.</li>\n"
 " </ul>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-turn-off-dropdown.png\"/>\n"
+" <br>Vari izvēlēties LEGO WeDo savietojamu ierīci no izkrītošā saraksta:<br/>"
+"\n"
+" <ul>\n"
+" \t<li>Ja tev ir tikai viena motors, izvēlies iespēju \"motors\", kas "
+"izslēgs motoru, neatkarīgi no tā, kur tas ir pieslēgts pie WeDo huba.</li>\n"
+" \t<li>Ja tev ir divi motori, kurus vēlies regulēt atsevišķi, izmanto \""
+"motors A\" vienam un \"motors B\" otram.</li>\n"
+" \t<li>\"gaismas\" izslēdz gaismas, neatkarīgi no tā, kur tās ir pieslēgtas "
+"pie WeDo huba.</li>\n"
+" \t<li>\"viss\" izslēdz visus pievienotos motorus un gaismas.</li>\n"
+" </ul>"
 
 #: templates/info/help/studio/tips/ext/wedo-turn-off.html:27
 msgid ""
 "<p>To use <b>turn off</b>, you need WeDo motor(s) or lights connected to "
 "your computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Lai izmantotu <b>izslēgt</b>, pie LEGO WeDo huba jābūt pievienotiem WeDo "
+"motoriem vai gaismām.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-turn-on-for.html:7
 msgid "Turn motors or lights on for a specified period of time."
-msgstr ""
+msgstr "Ieslēdz motorus vai gaismas uz norādīto laiku."
 
 #: templates/info/help/studio/tips/ext/wedo-turn-on-for.html:11
 #, python-format
@@ -9132,6 +9294,9 @@ msgid ""
 "<p>Run a specific motor for 1 second when the right/left arrow key is "
 "pressed.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-turn-on-for-ex1.png\" />\n"
+"<p>Iedarbina norādīto motoru uz 1 sekundi, ja ir nospiesta labā vai kreisā "
+"klaviatūras bulta.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-turn-on-for.html:16
 #, python-format
@@ -9149,16 +9314,30 @@ msgid ""
 " \t<li>\"everything\" turns on all the connected motors and lights.</li>\n"
 " </ul>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-turn-on-for-dropdown.png\"/>\n"
+" <br>Vari izvēlēties ar LEGO WeDo savietojamu ierīci no izkrītošās "
+"izvēlnes:<br/>\n"
+" <ul>\n"
+" \t<li>Ja tev ir tikai viens motors, izmanto iespēju \"motors\", tas ieslēgs "
+"motoru, neatkarīgi no tā, kur tas ir pieslēgts WeDo hubam.</li>\n"
+" \t<li>Ja tev ir divi motori, kurus gribi vadīt atsevišķi, vari izmantot \""
+"motors A\" ar vienu un \"motors B\" ar otru.</li>\n"
+" \t<li>\"gaisma\"ieslēdz gaismu, neatkarīgi no tā, kur tā ir pieslēgta WeDo "
+"hubam.</li>\n"
+" \t<li>\"viss\" ieslēdz visus pievienotos motorus un gaismas.</li>\n"
+" </ul>"
 
 #: templates/info/help/studio/tips/ext/wedo-turn-on-for.html:27
 msgid ""
 "<p>To use <b>turn on for</b>, you need WeDo motor(s) or lights connected to "
 "your computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Lai izmantotu <b>ieslēgt uz</b>, tev jābūt pie LEGo WeDo huba pieslēgtiem "
+"WeDo motoriem vai gaismām.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-turn-on.html:7
 msgid "Turn motors or lights on."
-msgstr ""
+msgstr "Ieslēdz motorus vai gaismas."
 
 #: templates/info/help/studio/tips/ext/wedo-turn-on.html:16
 #, python-format
@@ -9176,18 +9355,34 @@ msgid ""
 " \t<li>\"everything\" turns on all the connected motors and lights.</li>\n"
 " </ul>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-turn-on-dropdown.png\"/>\n"
+" <br>Vari izvēlēties ar LEGO WeDo savietojamu ierīci no izkrītošās "
+"izvēlnes:<br/>\n"
+" <ul>\n"
+" \t<li>Ja tev ir tikai viens motors, izmanto iespēju \"motors\", tas ieslēgs "
+"motoru, neatkarīgi no tā, kur tas ir pieslēgts WeDo hubam.</li>\n"
+" \t<li>Ja tev ir divi motori, kurus gribi vadīt atsevišķi, vari izmantot \""
+"motors A\" ar vienu un \"motors B\" ar otru.</li>\n"
+" \t<li>\"gaisma\"ieslēdz gaismu, neatkarīgi no tā, kur tā ir pieslēgta WeDo "
+"hubam.</li>\n"
+" \t<li>\"viss\" ieslēdz visus pievienotos motorus un gaismas.</li>\n"
+" </ul>"
 
 #: templates/info/help/studio/tips/ext/wedo-turn-on.html:27
 msgid ""
 "<p>To use <b>turn on</b>, you need WeDo motor(s) or lights connected to your "
 "computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Lai izmantotu <b>ieslēgt</b>, tev jābūt pie LEGo WeDo huba pieslēgtiem "
+"WeDo motoriem vai gaismām.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-when-distance.html:7
 msgid ""
 "Run a script when the distance detected by the LEGO WeDo distance sensor "
 "becomes greater (or less) than a specified value"
 msgstr ""
+"Izpilda programmu, kad LEGO WeDo attāluma sensora noteiktā vērtība ir "
+"lielāka (vai mazāka) par norādīto vērtību"
 
 #: templates/info/help/studio/tips/ext/wedo-when-distance.html:11
 #, python-format
@@ -9195,6 +9390,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/wedo-when-distance-ex1.png\"/>\n"
 "<p>When the distance goes under 20, the script will run.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-when-distance-ex1.png\"/>\n"
+"<p>Programma tiks izpildīta, kad attālums būs mazāks par 20.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-when-distance.html:16
 #, python-format
@@ -9206,16 +9403,24 @@ msgid ""
 "distance, so you can actually use it to detect light and motion in addition "
 "to distance.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-when-distance-dropdown.png\"/>\n"
+" <br>Vari izvēlēties salīdzinājumu <i>lielāks</i> vai <i>mazāks</i> no "
+"izkrītošā saraksta.<br/>\n"
+" <p>Attāluma sensors attāluma noteikšanai izmanto apkārtējo gaismu, līdz ar "
+"ko vai to izmantot ne vien attāluma, bet arī gaismas un kustību "
+"noteikšanai.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-when-distance.html:22
 msgid ""
 "<p>To use <b>when distance</b>, you need a distance sensor connected to your "
 "computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Lai izmantotu <b>kad attālums</b>, pie LEGO WeDo huba jābūt pievienotam "
+"attāluma sensoram.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-when-tilt.html:7
 msgid "Run a script when the tilt sensor changes position"
-msgstr ""
+msgstr "Izpilda programmu, ka sašķiebuma sensors maina novietojumu"
 
 #: templates/info/help/studio/tips/ext/wedo-when-tilt.html:11
 #, python-format
@@ -9223,6 +9428,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/wedo-when-tilt-ex1.png\"/>\n"
 "<p>When the tilt sensor gets tilted, the script will run. </p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-when-tilt-ex1.png\"/>\n"
+"<p>Programma izpildās, kad sašķiebuma sensors tiek pacelts.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-when-tilt.html:16
 #, python-format
@@ -9234,30 +9441,39 @@ msgid ""
 " <p>Use the dropdown menu to choose <b>= (equals)</b>  or <b>not = (not "
 "equal to)</b>, then type in a number from 0 to 4.</p>"
 msgstr ""
+"<p>Sašķiebuma sensors atgriež skaitļus 0 līdz 4. 0 ir nesašķiebts, 1 "
+"sašķiebts uz leju,\n"
+"2 sašķiebts pa labi, 3 uz augšu un 4 ir šašķiebts pa kreisi.</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/wedo-when-tilt-dropdown.png\"/>\n"
+" <p>Izmanto izkrītošo izvēlni, lai izvēlētos <b>= (vienāds)</b>  vai <b>not ="
+" (nav vienāds)</b>, tad ieraksti skaitli no 0 līdz 4.</p>"
 
 #: templates/info/help/studio/tips/ext/wedo-when-tilt.html:23
 msgid ""
 "<p>To use <b>when tilt</b>, you need a tilt sensor connected to your "
 "computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Lai izmantotu <b>kad sašķiebts</b>, pie LEGO WeDo huba jābūt pievienotam "
+"sašķiebuma sensoram.</p>"
 
 #: templates/info/help/studio/tips/howto/arrowkeys.html:7
 msgid "Points sprite towards mouse-pointer or another sprite."
-msgstr ""
+msgstr "Pagriež gariņu peles rādītāja vai cita gariņa virzienā."
 
 #: templates/info/help/studio/tips/howto/arrowkeys.html:18
 msgid "changes the direction of the current sprite."
-msgstr ""
+msgstr "maina pašreizējā gariņa virzienu."
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:11
 msgid "To make a sprite bounce around the Stage, try this script:"
-msgstr ""
+msgstr "Lai liktu gariņam lēkāt pa skatuvi, izmēģini šo programmu:"
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:13
 msgid ""
 "The sprite points at an angle, and then keeps moving and bouncing off the "
 "edge."
 msgstr ""
+"Gariņš pagriežās norādītajā leņķī un turpina kustēties, atsitoties no sienām."
 
 #: templates/info/help/studio/tips/howto/bounce-around.html:19
 #, python-format
@@ -9265,6 +9481,9 @@ msgid ""
 "If your sprite looks upside-down, click <img src=\"%(STATIC_URL)simages/help/"
 "info.gif\"> and set its rotation style to left-right:"
 msgstr ""
+"Ja tavs gariņš ir virzienā uz augšu vai leju, klikšķini <img src=\""
+"%(STATIC_URL)simages/help/info.gif\"> un iestati rotācijas stilu uz pa "
+"kreisi - pa labi:"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:9
 #: templates/info/help/studio/tips/howto/cardtip1.html:9
@@ -9338,7 +9557,7 @@ msgstr ""
 #: templates/info/help/studio/tips/ui/tour-intro.html:9
 #: templates/profiles/scratcher_promotion_modal.html:61
 msgid "Back"
-msgstr ""
+msgstr "Atpakaļ"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:13
 #: templates/info/help/studio/tips/howto/get-started-intro.html:14
@@ -9348,16 +9567,18 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/vpet-intro.html:13
 #: templates/info/help/studio/tips/ui/tour-intro.html:13
 msgid "Begin"
-msgstr ""
+msgstr "Sākums"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:18
 msgid "Make a Greeting Card"
-msgstr ""
+msgstr "Izveido apsveikuma kartīti"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:19
 msgid ""
 "Start here to make an interactive greeting card for a friend using Scratch!"
 msgstr ""
+"Sāc te, lai, izmantojot Scratch, draugiem izveidotu interaktīvu apsveikuma "
+"kartīti!"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:21
 msgid ""
@@ -9366,10 +9587,14 @@ msgid ""
 "</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Šī aktivitāte ir daļa no <a href=\"#made-with-code\">Made with "
+"Code</a>.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:25
 msgid "Start with a greeting"
-msgstr ""
+msgstr "Sāc ar sveicienu"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:28
 #: templates/info/help/studio/tips/howto/get-started-intro.html:32
@@ -9379,7 +9604,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/valentine-intro.html:27
 #: templates/info/help/studio/tips/howto/vpet-intro.html:27
 msgid "Step Index"
-msgstr ""
+msgstr "Soļu saraksts"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
 #: templates/info/help/studio/tips/howto/nametip-intro.html:30
@@ -9388,12 +9613,12 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/vpet-intro.html:29
 #: templates/info/help/studio/tips/ui/tour-intro.html:29
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:29
 #: templates/info/help/studio/tips/howto/cardtip1.html:18
 msgid "Say a Greeting"
-msgstr ""
+msgstr "Sasveicinies"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip-intro.html:31
@@ -9402,12 +9627,12 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/vpet-intro.html:30
 #: templates/info/help/studio/tips/ui/tour-intro.html:30
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:30
 #: templates/info/help/studio/tips/howto/cardtip2.html:18
 msgid "Start with a Green Flag"
-msgstr ""
+msgstr "Sāc ar zaļo karodziņu"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip-intro.html:32
@@ -9416,12 +9641,12 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/vpet-intro.html:31
 #: templates/info/help/studio/tips/ui/tour-intro.html:31
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:31
 #: templates/info/help/studio/tips/howto/get-started-intro.html:42
 msgid "Add a Background"
-msgstr ""
+msgstr "Pievieno fonu"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
 #: templates/info/help/studio/tips/howto/nametip-intro.html:33
@@ -9430,12 +9655,12 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/vpet-intro.html:32
 #: templates/info/help/studio/tips/ui/tour-intro.html:32
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:32
 #: templates/info/help/studio/tips/howto/cardtip4.html:17
 msgid "Add a Cake"
-msgstr ""
+msgstr "Pievieno kūku"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
 #: templates/info/help/studio/tips/howto/nametip-intro.html:34
@@ -9444,12 +9669,12 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/vpet-intro.html:33
 #: templates/info/help/studio/tips/ui/tour-intro.html:33
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:33
 #: templates/info/help/studio/tips/howto/cardtip5.html:18
 msgid "Add Sound"
-msgstr ""
+msgstr "Pievieno skaņu"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip-intro.html:35
@@ -9458,12 +9683,12 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/vpet-intro.html:34
 #: templates/info/help/studio/tips/ui/tour-intro.html:34
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:34
 #: templates/info/help/studio/tips/howto/cardtip6.html:17
 msgid "Blow Out the Candles"
-msgstr ""
+msgstr "Nopūt svecītes"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
 #: templates/info/help/studio/tips/howto/nametip-intro.html:36
@@ -9472,12 +9697,12 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/vpet-intro.html:35
 #: templates/info/help/studio/tips/ui/tour-intro.html:35
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:35
 #: templates/info/help/studio/tips/howto/cardtip7.html:17
 msgid "Add a Dancing Sprite"
-msgstr ""
+msgstr "Pievieno dejojošu gariņu"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip-intro.html:37
@@ -9485,59 +9710,59 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/valentine-intro.html:36
 #: templates/info/help/studio/tips/howto/vpet-intro.html:36
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:36
 #: templates/info/help/studio/tips/howto/cardtip8.html:17
 #: templates/info/help/studio/tips/howto/get-started-4.html:18
 #: templates/info/help/studio/tips/howto/get-started-intro.html:37
 msgid "Again and Again"
-msgstr ""
+msgstr "Vēl un vēl"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
 #: templates/info/help/studio/tips/howto/pgame-intro.html:37
 #: templates/info/help/studio/tips/howto/valentine-intro.html:37
 #: templates/info/help/studio/tips/howto/vpet-intro.html:37
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:37
 #: templates/info/help/studio/tips/howto/cardtip9.html:17
 msgid "Say What to Do"
-msgstr ""
+msgstr "Saki, ko darīt"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:38
 #: templates/info/help/studio/tips/howto/pgame-intro.html:38
 #: templates/info/help/studio/tips/howto/vpet-intro.html:38
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:38
 #: templates/info/help/studio/tips/howto/cardtip10.html:17
 msgid "Customize Your Card"
-msgstr ""
+msgstr "Pielāgo savu kartīti"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:39
 #: templates/info/help/studio/tips/howto/pgame-intro.html:39
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:39
 msgid "Share Your Greeting"
-msgstr ""
+msgstr "Dalies ar savu apsveikumu"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:40
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:40
 #: templates/info/help/studio/tips/howto/cardtip12.html:18
 msgid "Keep Making!"
-msgstr ""
+msgstr "Turpini veidot!"
 
 #: templates/info/help/studio/tips/howto/cardtip1.html:11
 msgid "1 of 12"
-msgstr ""
+msgstr "1 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip1.html:21
 #, python-format
@@ -9547,6 +9772,10 @@ msgid ""
 "\t<img src=\"%(STATIC_URL)s/images/help/select-cat-sprite.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Klikšķini, lai izvēlētos kaķi: </p>\n"
+"\t<img src=\"%(STATIC_URL)s/images/help/select-cat-sprite.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip1.html:28
 #, python-format
@@ -9558,6 +9787,12 @@ msgid ""
 "\t<img src=\"%(STATIC_URL)s/images/help/sayhappybirthday3.gif\">\n"
 "\t"
 msgstr ""
+"\n"
+"\tKlikšķini uz kategorijas <span class=\"lookscolor\">Izskats</span>, \n"
+"\tTad velc bloku <span class=\"lookscolor\">teikt Sveiki! 2 sekundes</span> "
+"uz programmas laukumu:</p>\n"
+"\t<img src=\"%(STATIC_URL)s/images/help/sayhappybirthday3.gif\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip1.html:36
 #, python-format
@@ -9567,6 +9802,10 @@ msgid ""
 "\t<img src=\"%(STATIC_URL)s/images/help/sayhappybirthday2.gif\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Uzraksti \"Daudz laimes dzimšanas dienā!\" vai citu sveicienu:</p>\n"
+"\t<img src=\"%(STATIC_URL)s/images/help/sayhappybirthday2.gif\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip1.html:43
 #, python-format
@@ -9576,14 +9815,18 @@ msgid ""
 "\t<p><img src=\"%(STATIC_URL)s/images/help/cat-happy-birthday.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Tad noklikšķini bloku, lai redzētu, ko kaķis saka.</p>\n"
+"\t<p><img src=\"%(STATIC_URL)s/images/help/cat-happy-birthday.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip1.html:47
 msgid "Next, add a way to start your card"
-msgstr ""
+msgstr "Tālāk noteiksim, kā iedarbināt kartīti"
 
 #: templates/info/help/studio/tips/howto/cardtip10.html:11
 msgid "10 of 12"
-msgstr ""
+msgstr "10 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip10.html:18
 msgid ""
@@ -9591,6 +9834,9 @@ msgid ""
 "\t<p>Now add your own images and ideas.</p>\n"
 "\t"
 msgstr ""
+" \n"
+"\t<p>Nu vari pievienot savus attēlus un idejas.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip10.html:22
 #, python-format
@@ -9607,6 +9853,17 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/partypicture.png\"></p>\n"
 "\t"
 msgstr ""
+" \n"
+"\t<h4>Pievieno attēlu</h4>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/new-sprite-icons.png\"></p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite."
+"png\"> Uzzīmē zīmējumu.</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/upload-icon."
+"png\"> Pievieno attēlu no sava datora.</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite."
+"png\"> Uzņem foto.</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/partypicture.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip10.html:33
 #, python-format
@@ -9622,18 +9879,29 @@ msgid ""
 "\t<p>Click the balloons in your card to see the color change.</p>\t\n"
 "\t"
 msgstr ""
+" \n"
+"\t<h4>Pievieno efektus!</h4>\n"
+"\t<p>Noklikšķini uz skatuves:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/stage-thumb.png\"></p>\n"
+"\t<p>Noklikšķi cilni <span class=\"tab-ref\">Programma</span>. Izmēģini šo "
+"programmu:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/whenclickrepeatcolor.png\"></p>"
+"\n"
+"\t<p>Savā kartītē klikšķini uz baloniem, lai redzētu, kā mainās krāsas.</p>\t"
+"\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip10.html:45
 msgid "Next, share your greeting!"
-msgstr ""
+msgstr "Tālak dalies ar savu apsveikumu!"
 
 #: templates/info/help/studio/tips/howto/cardtip11.html:11
 msgid "11 of 12"
-msgstr ""
+msgstr "11 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip11.html:18
 msgid "Share Your Greeting!"
-msgstr ""
+msgstr "Dalies ar savu apsveikumu!"
 
 #: templates/info/help/studio/tips/howto/cardtip11.html:21
 #, python-format
@@ -9643,6 +9911,10 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/title.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Ieraksti projekta nosaukumu.</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/title.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip11.html:28
 #, python-format
@@ -9652,6 +9924,10 @@ msgid ""
 "help/12b-share.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Klikšķini <img style=\"margin-bottom:-17px\" src = \""
+"%(STATIC_URL)s/images/help/12b-share.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip11.html:34
 msgid ""
@@ -9660,6 +9936,10 @@ msgid ""
 "who helped.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Piezīmēs paskaidro, kā izmantot tavu projektu. Arī pasaki paldies "
+"katram, kurš palīdzējis.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip11.html:40
 #, python-format
@@ -9669,6 +9949,10 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/12c-share.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Kad esi gatavs parādīt darbu citiem, klikšķini pogu Kopīgot.</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/12c-share.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip11.html:47
 #, python-format
@@ -9680,6 +9964,13 @@ msgid ""
 "\"><img src = \"%(STATIC_URL)s/images/help/card-studio.png\"></a></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Savu proejktu vari pievienot <a href=\""
+"http://scratch.mit.edu/studios/429363/\" target=\"_blank\">Apsveikuma "
+"kartīšu studijai!</a></p>\n"
+"\t<p><a href=\"http://scratch.mit.edu/studios/429363/\" target=\"_blank\"><"
+"img src = \"%(STATIC_URL)s/images/help/card-studio.png\"></a></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip11.html:54
 msgid ""
@@ -9688,14 +9979,18 @@ msgid ""
 "to share to Facebook or another website.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Lai aizsūtītu draugam, nokopē mājaslapas adresi un nosūti to. Vai "
+"klikšķini Iegult, lai kopīgotu Facebook vai citā mājaslapā.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip11.html:59
 msgid "What do you want to make next?"
-msgstr ""
+msgstr "Ko veidosi nākamo?"
 
 #: templates/info/help/studio/tips/howto/cardtip12.html:11
 msgid "12 of 12"
-msgstr ""
+msgstr "12 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip12.html:19
 #, python-format
@@ -9705,6 +10000,10 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/congrats.gif\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Nu vari izveidot citu apsveikuma kartīti vai sākt jaunu projektu!</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/congrats.gif\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip12.html:25
 #, python-format
@@ -9717,6 +10016,13 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/create.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>Sāc jaunu projektu</h4>\n"
+"\t<p>Klikšķini Datne, tad izvēlies Jauns:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/file-new.png\"></p>\n"
+"\t<p>Vai Scratch mājaslapā spied uz Veidot:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/create.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip12.html:35
 #, python-format
@@ -9741,10 +10047,30 @@ msgid ""
 "\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>Iemācies vairāk!</h4>\n"
+"\t<p>Noskaties video \"Scratch iesācēju ceļvedis\":</a></p>\n"
+" <iframe src=\""
+"//player.vimeo.com/video/80961102?title=0&amp;byline=0&amp;portrait=0\" "
+"width=\"291\" height=\"164\" frameborder=\"0\" webkitallowfullscreen "
+"mozallowfullscreen allowfullscreen></iframe>\n"
+"  </p>\n"
+"  \t<p>Vairāk idejām klikšķini <a href=\"../../home/\"><img class=\"intext\" "
+"style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">"
+"Visi padomi</a>.</p>\n"
+"\n"
+"\t<br />\n"
+"\t\t<p align=\"center\"><img src=\"%(STATIC_URL)s/images/help/scratch-logo-"
+"white.png\"> </p>\n"
+"\t\t<a href=\"https://www.madewithcode.com/\" target=\"_blank\"><p id=\"made-"
+"with-code\" align=\"center\"><img src = \"%(STATIC_URL)s/images/help/made-"
+"with-code-logo.png\"></p></a>\n"
+"\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip2.html:11
 msgid "2 of 12"
-msgstr ""
+msgstr "2 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip2.html:20
 #, python-format
@@ -9757,6 +10083,13 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/flagsay2.gif\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Noklikšķini sadaļu <span class=\"eventscolor\">Notikumi</span>.</p>\n"
+"\t<p>Pārvel bloku <span class=\"eventscolor\">kad nospiests <img class=\""
+"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\"> </span> un "
+"pievieno to augšā, līdzīgi kā te:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/flagsay2.gif\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip2.html:27
 #, python-format
@@ -9767,14 +10100,19 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/6c-green-flag.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Tagad, noklikšķinot uz zaļā karodziņa, <img class=\"intext\" src = \""
+"%(STATIC_URL)s/images/help/green-flag.png\"> kartīte tiks atskaņota:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/6c-green-flag.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip2.html:31
 msgid "Next, add a party scene"
-msgstr ""
+msgstr "Tālāk pievienosim ballītei fonu"
 
 #: templates/info/help/studio/tips/howto/cardtip3.html:11
 msgid "3 of 12"
-msgstr ""
+msgstr "3 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip3.html:17
 #: templates/info/help/studio/tips/howto/get-started-9.html:16
@@ -9782,11 +10120,11 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/nametip4.html:17
 #: templates/info/help/studio/tips/howto/valentine5.html:17
 msgid "Add a Backdrop"
-msgstr ""
+msgstr "Pievienot fonu"
 
 #: templates/info/help/studio/tips/howto/cardtip3.html:18
 msgid "Choose a backdrop for your card."
-msgstr ""
+msgstr "Izvēlies fonu savai kartītei."
 
 #: templates/info/help/studio/tips/howto/cardtip3.html:20
 #, python-format
@@ -9797,6 +10135,11 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/backgroundlibrary2.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Noklikšķini ikonu <img class=\"intext\" style=\"top:0\" src = \""
+"%(STATIC_URL)s/images/help/landscape-icon.png\">:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/backgroundlibrary2.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip3.html:27
 #, python-format
@@ -9806,6 +10149,10 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/partybackground.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Izvēlies \"ballīte\" vai citu fonu:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/partybackground.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip3.html:34
 #, python-format
@@ -9815,14 +10162,18 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/partybackgroundcat.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Tagad tava kartīte izskatās līdzīgi šai:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/partybackgroundcat.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip3.html:39
 msgid "Next, add a cake to your card"
-msgstr ""
+msgstr "Tālāk pievieno kūku savai kartītei"
 
 #: templates/info/help/studio/tips/howto/cardtip4.html:11
 msgid "4 of 12"
-msgstr ""
+msgstr "4 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip4.html:20
 #, python-format
@@ -9833,6 +10184,11 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Lai pievienotu kūku, klikšķini ikonu <img class=\"intext\" src = \""
+"%(STATIC_URL)s/images/help/10b-sprite.png\">:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip4.html:27
 #, python-format
@@ -9844,6 +10200,12 @@ msgid ""
 "sprite.</span></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Izvēlies gariņu \"kūka\", un klikšķini Labi.</br>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/cake.png\"></p>\n"
+"\t<span class=\"reminder\">Scratch vidē katru tēlu un objektu sauc par "
+"gariņu.</span></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip4.html:35
 #, python-format
@@ -9853,6 +10215,10 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/cakebackground.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Pārbīdi kūku tur, kur gribi to redzēt uz skatuves.</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/cakebackground.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip4.html:42
 #, python-format
@@ -9863,18 +10229,23 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/cursor-tools-grow-shrink.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Padoms: Palielini gariņu, klikšķinot uz palielināšanas rīka. Vai "
+"samazini, lietojot samazināšanas rīku:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/cursor-tools-grow-shrink.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip4.html:47
 msgid "Next, add music to your card!"
-msgstr ""
+msgstr "Tālāk pievienosim kartītei mūziku!"
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:11
 msgid "5 of 12"
-msgstr ""
+msgstr "5 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:19
 msgid "Now, add music that plays when you click the cake."
-msgstr ""
+msgstr "Tagad pievienosim mūziku, kura skanēs, kad noklikšķināsi uz kūkas."
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:21
 #, python-format
@@ -9883,6 +10254,9 @@ msgid ""
 "\t<p>First, click to select the cake.\n"
 "\t<img src = \"%(STATIC_URL)s/images/help/sprite-list-cake.png\">\n"
 msgstr ""
+"\n"
+"\t<p>Pirmkārt, noklikšķini uz kūkas, lai to izvēlētos.\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/sprite-list-cake.png\">\n"
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:29
 #: templates/info/help/studio/tips/howto/valentine7.html:29
@@ -9895,6 +10269,12 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/selectsound(3).gif\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Klikšķini uz cilnes <span class=\"tab-ref\">Skaņas</span> tad klikšķini "
+"uz <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/speaker-icon."
+"png\">.</p>\t\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/selectsound(3).gif\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:36
 #, python-format
@@ -9905,6 +10285,11 @@ msgid ""
 "p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Izvēlies \"dzimšanas diena\" vai citu skaņu:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/sound-library-birthday.png\""
+"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:43
 #, python-format
@@ -9916,6 +10301,12 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/play-sound-birthday.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Tagad izvēlies cilni <span class=\"tab-ref\">Programmas</span> un "
+"klikšķini uz sadaļas <span class=\"soundcolor\">Skaņa</span>. Pārvelc bloku <"
+"span class=\"soundcolor\">spēlēt skaņu</span>:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/play-sound-birthday.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:51
 #, python-format
@@ -9927,6 +10318,12 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/clickplaysound(3).gif\">\n"
 "\t"
 msgstr ""
+"\n"
+" \t<p>Tagad izvēlc bloku <span class=\"eventscolor\">kad uzklikšķināts uz šī "
+"gariņa</span>\n"
+"\tun pievieno to augšpusē:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/clickplaysound(3).gif\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:60
 msgid ""
@@ -9934,18 +10331,21 @@ msgid ""
 "\t<p>Click on the cake to hear it play.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Noklikšķini uz kūkas, lai dzirdētu, kā skan.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip5.html:64
 msgid "Now, blow out the candles!"
-msgstr ""
+msgstr "Tagad nopūtīsim sveces!"
 
 #: templates/info/help/studio/tips/howto/cardtip6.html:11
 msgid "6 of 12"
-msgstr ""
+msgstr "6 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip6.html:18
 msgid "Make the candles go out when you click the cake."
-msgstr ""
+msgstr "Lai sveces nodziest, kad uzklikšķināsi uz kūkas."
 
 #: templates/info/help/studio/tips/howto/cardtip6.html:20
 #, python-format
@@ -9973,14 +10373,36 @@ msgid ""
 "</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Klikšķini uz cilnes <span class=\"tab-ref\">Tērpi</span>.</p>\n"
+"\t<p>Tu redzi, ka kūkai ir divi tērpi:</p>\n"
+"\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/cake-candles.png\">\n"
+"</div>\t\n"
+"\n"
+"<div class=\"steps\">\t\n"
+"\t\t<p>Klikšķini cilni<span class=\"tab-ref\">Programmas</span> un tad "
+"sadaļu <span class=\"lookscolor\">Izskats</span>.\n"
+"\t\tIzvelc bloku <span class=\"lookscolor\">mainīt tērpu</span> un pievieno "
+"to programmai:</p>\n"
+"\t\t<img src = \"%(STATIC_URL)s/images/help/whenclickplayswitch.png\">\n"
+"</div>\t\t\n"
+"\t\t\n"
+"<div class=\"steps last\">\n"
+"\t\t<p>Tagad izveido citu programmu, kas iedegs sveces katru reizi, kad "
+"noklikšķināsi zaļo karodziņu:\n"
+"\t\t<img src = \"%(STATIC_URL)s/images/help/whenclickswitchdrop.png\">\n"
+"\t\t<p>Pārliecinies, ka izvēlies \"kūka-a\" (iededz sveces) no izkrītošās "
+"izvēlnes.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip6.html:39
 msgid "Next, make a dance party"
-msgstr ""
+msgstr "Tālāk sarīkosim dejas"
 
 #: templates/info/help/studio/tips/howto/cardtip7.html:11
 msgid "7 of 12"
-msgstr ""
+msgstr "7 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip7.html:20
 #, python-format
@@ -9994,6 +10416,14 @@ msgid ""
 "p>\n"
 "\t "
 msgstr ""
+"\n"
+"\t <p>Klikšķini uz <img class=\"intext\" src = \"%(STATIC_URL)s/images/help"
+"/10b-sprite.png\">, lai izvēlētos jaunu gariņu:</p>\n"
+"\t <p><img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\"></p>\n"
+"\t <p>Izvēlies \"Cassy Dance\" vai citu gariņu, kurš dejo:</p>\n"
+"\t <p><img src = \"%(STATIC_URL)s/images/help/sprite-library-dance.png\"></p>"
+"\n"
+"\t "
 
 #: templates/info/help/studio/tips/howto/cardtip7.html:29
 #, python-format
@@ -10007,6 +10437,14 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/whenclickednext.png\"></p>\t\n"
 "\t"
 msgstr ""
+"\t\n"
+"\t<p>Klikšķini sadaļu <span class=\"lookscolor\">Izskats</span>. Izvelc "
+"bloku <span class=\"lookscolor\">nākamais tērps</span>.</p>\t\n"
+"\t<p>Klikšķini sadaļu <span class=\"eventscolor\">Notikumi</span>. Izvelc "
+"bloku <span class=\"eventscolor\">kad uzklikšķināts uz šī gariņa</span> un "
+"novieto to augšpusē:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/whenclickednext.png\"></p>\t\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip7.html:37
 msgid ""
@@ -10014,18 +10452,21 @@ msgid ""
 "\tClick the dancer to see it switch to different poses.\n"
 "\t"
 msgstr ""
+"\t\n"
+"\tKlikšķini uz dejotājas, lai redzētu, kā viņa pārslēdzas dažādās pozās.\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip7.html:41
 msgid "Next, animate your dance"
-msgstr ""
+msgstr "Tālāk, pievieno animāciju dejai"
 
 #: templates/info/help/studio/tips/howto/cardtip8.html:11
 msgid "8 of 12"
-msgstr ""
+msgstr "8 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip8.html:18
 msgid "Keep the dance going!"
-msgstr ""
+msgstr "Lai tik dejo!"
 
 #: templates/info/help/studio/tips/howto/cardtip8.html:21
 #, python-format
@@ -10039,6 +10480,14 @@ msgid ""
 "\">\n"
 "\t"
 msgstr ""
+"\t\n"
+"\t<p>Klikšķini uz sadaļas <span class=\"controlcolor\">Vadība</span>. Izvelc "
+"bloku <span class=\"controlcolor\">nepārtraukti</span>.</p>\n"
+"\t<p>Pievieno bloku <span class=\"controlcolor\">gaidīt</span> lai "
+"kontrolētu dejas ātrumu, kā šajā piemērā:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/whenclickedforevercostume.gif\">"
+"\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip8.html:29
 #, python-format
@@ -10049,14 +10498,19 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/stop-sign-small.png\"> (above the Stage).</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>klikšķini uz dejotāja kartītē, lai sāktu animāciju.</p>\n"
+"\t<p>Padoms: Lai apturētu, klikšķini stop zpīmi <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/stop-sign-small.png\"> (virs skatuves).</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip8.html:34
 msgid "Next, get your party started!"
-msgstr ""
+msgstr "Tālāk liksim ballītei sākties!"
 
 #: templates/info/help/studio/tips/howto/cardtip9.html:11
 msgid "9 of 12"
-msgstr ""
+msgstr "9 no 12"
 
 #: templates/info/help/studio/tips/howto/cardtip9.html:20
 #, python-format
@@ -10067,6 +10521,11 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/name-click-things.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Lai pievienotu pamācību, divreiz noklikšķini uz kaķa un pievieno citu "
+"bloku <span class=\"soundcolor\">teikt</span>:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/name-click-things.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip9.html:27
 #, python-format
@@ -10076,22 +10535,26 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/partyinstructions.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Tad kartīte izskatīsies šādi:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/partyinstructions.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/cardtip9.html:31
 msgid "Next, make it your own"
-msgstr ""
+msgstr "Tālāk personalizēsim kartīti"
 
 #: templates/info/help/studio/tips/howto/collide.html:7
 msgid "Make sprites react when they collide"
-msgstr ""
+msgstr "Liec gariņiem pamanīt, kad tie sadurās"
 
 #: templates/info/help/studio/tips/howto/collide.html:11
 msgid "Make two sprites, such as a ball and a paddle:"
-msgstr ""
+msgstr "Izveido divus gariņus, piemēram, bumbu un dēlīti:"
 
 #: templates/info/help/studio/tips/howto/collide.html:15
 msgid "This script tells the ball what to do when it hits the paddle:"
-msgstr ""
+msgstr "Šī programma saka, ko bumbai darīt, kad tā atsitas pret dēlīti:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:10
 msgid ""
@@ -10099,16 +10562,21 @@ msgid ""
 "<p>Have two sprites take turns saying something.</p>\n"
 "Try this code in one sprite:"
 msgstr ""
+"Vēlies izveidot sarunu vai pastāstīt joku?<br/>\n"
+"<p>Izveido divus gariņus, kuri viens ar otru sarunāsies.</p>\n"
+"Izmēģini šo kodu vienam gariņam:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:14
 msgid "And this in another sprite:"
-msgstr ""
+msgstr "Un šo otram gariņam:"
 
 #: templates/info/help/studio/tips/howto/conversation.html:20
 msgid ""
 "Broadcast a message to tell another sprite when to talk. When it receives "
 "the message, it can respond."
 msgstr ""
+"Pārraida ziņu citam gariņam, lai tas sāk runāt. Saņēmis ziņu, tas varēs "
+"atbildēt."
 
 #: templates/info/help/studio/tips/howto/edit-sounds.html:12
 #, python-format
@@ -10122,49 +10590,61 @@ msgid ""
 "\n"
 "</div>\n"
 msgstr ""
+" Lai rediģētu skaņu, izvēlies skaņas sadaļu: <br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound.png\"><br/>\n"
+"Tad paņem no izvēlnes Rediģēt:<br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\">\n"
+" <p>Vai izvēlies \"Efekti\":<br/>\n"
+"  <img src=\"%(STATIC_URL)s/images/help/effects-menu.png\">\n"
+"\n"
+"</div>\n"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:12
 msgid "1 of 13"
-msgstr ""
+msgstr "1 no 13"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:19
 #: templates/info/help/studio/tips/howto/get-started-intro.html:34
 msgid "Start Moving"
-msgstr ""
+msgstr "Sākt kustību"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:23
 msgid ""
 "Drag a <span class=\"motioncolor\">move</span> block into the Scripts area."
 msgstr ""
+"Pārvelc bloku <span class=\"motioncolor\">pārvietot</span> uz programmas "
+"laukumu."
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:24
 #: templates/info/help/studio/tips/howto/get-started-1.html:29
 #: templates/info/help/studio/tips/howto/pgametip3.html:24
 #: templates/info/help/studio/tips/howto/pgametip3.html:29
 msgid "drag move block to Scripts area"
-msgstr ""
+msgstr "velc bloku uz programmas laukumu"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:28
 msgid "Then, click on that block to make the cat move:"
-msgstr ""
+msgstr "Pēc tam noklikšķini uz šī bloka, lai liktu kaķim kustēties:"
 
 #: templates/info/help/studio/tips/howto/get-started-1.html:32
 msgid "Now, add a sound."
-msgstr ""
+msgstr "Nu pievienosim skaņu."
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:11
 msgid "10 of 13"
-msgstr ""
+msgstr "10 no 13"
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:17
 msgid " Add a Sprite"
-msgstr ""
+msgstr " Pievienot gariņu"
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:20
 msgid ""
 "Each object in Scratch is called a sprite. To add a new sprite, click one of "
 "these buttons:"
 msgstr ""
+"Katru objektu Scratch sauc par gariņu. Lai pievienotu jaunu gariņu, "
+"klikšķini vienu no šīm pogām:"
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:26
 #, python-format
@@ -10188,14 +10668,33 @@ msgid ""
 "\t<p>Drag the characters to where you want them on the Stage.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>Jauna gariņa veidošanas pogas </h4>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite."
+"png\"> Izvēlēties gariņu no krātuves</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite."
+"png\"> Uzzīmēt savu gariņu</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite."
+"png\"> Augšuplādēt savu attēlu vai gariņu</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite."
+"png\"> Uzņemt attēlu (ar tīmekļa kameru)</p>\n"
+"</div>\n"
+"\n"
+"<div class=\"steps last\">\n"
+"\t<p>Lai pievienotu šo gariņu, klikšķini <img class=\"intext\" src = \""
+"%(STATIC_URL)s/images/help/10b-sprite.png\"> tad izvēlies \"Cassy Dance\""
+":</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/10-cassy-sprite.png\"></p>\n"
+"\t<p>Pārvelc tēlu uz skatuves kur vien vēlies.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-10.html:41
 msgid "Now, explore sound or animation."
-msgstr ""
+msgstr "Tagad pārlūko skaņu vai animāciju."
 
 #: templates/info/help/studio/tips/howto/get-started-11.html:11
 msgid "11 of 13"
-msgstr ""
+msgstr "11 no 13"
 
 # 77%
 # 88%
@@ -10227,6 +10726,25 @@ msgid ""
 "the menu and click to play.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\n"
+"\t<h4>Pievienot skaņu</h4>\n"
+"\t<p>Klikškini cilni <span class=\"tab-ref\">Skaņas</span> Tu vari:</p>\n"
+"\t<p><img  class=\"intext\" src = \"%(STATIC_URL)s/images/help/speaker-icon."
+"png\"> Izvēlēties skaņu</p>\n"
+"\t<p><img class=\"intext\"  src = \"%(STATIC_URL)s/images/help/microphone-"
+"icon.png\">  Ierakstīt savu</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/upload-icon."
+"png\"> Ielādēt skaņas datni</p>\n"
+"\n"
+"</div>\n"
+"\n"
+"<div class=\"steps\">\n"
+"\n"
+"\t<p>Tad klikšķini cilni <span class=\"tab-ref\">Programma</span>,un ievelc "
+"bloku <span class=\"soundcolor\">atskaņot skaņu</span>. Izvēlies kādu skaņu "
+"no izvēlnes un uzklikšķini bloku, lai atskaņotu.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-11.html:40
 #, python-format
@@ -10240,14 +10758,22 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/11-animate-script.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>Animēt</h4>\n"
+"\t<p>Klikšķini cilni <span class=\"tab-ref\">Tērpi</span>, lai apskatītu "
+"gariņa tērpus. Animāciju var izveidot, pārslēdzoties starp tērpiem.</p>\n"
+"\t<p>Klikšķini cilni <span class=\"tab-ref\">Programma</span> un izveido "
+"programmu, kas pārslēdz tērpus:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/11-animate-script.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-11.html:49
 msgid "Share your project."
-msgstr ""
+msgstr "Kopīgo savu projektu."
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:11
 msgid "12 of 13"
-msgstr ""
+msgstr "12 no 13"
 
 # 83%
 #: templates/info/help/studio/tips/howto/get-started-12.html:17
@@ -10262,6 +10788,10 @@ msgid ""
 "\t<p>Type a title for your project.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>Kopīgo savu projektu</h4>\n"
+"\t<p>Ieraksti sava projekta nosaukumu.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:27
 #, python-format
@@ -10269,30 +10799,34 @@ msgid ""
 "Click <img style=\"margin-bottom:-17px\" src = \"%(STATIC_URL)s/images/"
 "help/12b-share.png\">"
 msgstr ""
+"Klikšķini <img style=\"margin-bottom:-17px\" src = \""
+"%(STATIC_URL)s/images/help/12b-share.png\">"
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:31
 msgid ""
 "Type in notes to explain how to use your project. Give credit to anyone who "
 "helped."
 msgstr ""
+"Piezīmēs uzraksti, kā izmantot un darbināt tavu projektu. Piemini katru, "
+"kurš ir palīdzējis."
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:35
 msgid ""
 "When you're ready for others to see your project, click the Share button."
-msgstr ""
+msgstr "Kad esi gatavs parādīt savu darbu citiem klikšķini pogu Kopīgot."
 
 #: templates/info/help/studio/tips/howto/get-started-12.html:39
 msgid "What do you want to try next?"
-msgstr ""
+msgstr "Ko izmēģināsi nākamo?"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:11
 msgid "13 of 13"
-msgstr ""
+msgstr "13 no 13"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:17
 #: templates/info/help/studio/tips/howto/get-started-intro.html:46
 msgid "Now What?"
-msgstr ""
+msgstr "Ko tagad?"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:19
 #, python-format
@@ -10310,6 +10844,19 @@ msgid ""
 "\t</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Ar Scratch vari izveidot ļoti daudzveidīgus projektus. Piemērus vari "
+"paskatīties, klikšķinot <img style=\"margin-bottom:-10px\" src = \t\""
+"%(STATIC_URL)s/images/help/scratch-logo-small.png\"> mājaslapas augšējā "
+"kreisajā stūrī, lai pārlūkotu citus projektus</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/gobo-friends.png\"></p>\n"
+"\t<p>Ja apskatītais projekts tev patīk, klikšķini <img style=\"margin-"
+"bottom:-10px\" src = \"%(STATIC_URL)s/images/help/see-inside-smaller.png\"> "
+"un tad klikšķini <img style=\"margin-bottom:-10px\" src = \""
+"%(STATIC_URL)s/images/help/remix-button.png\">. Izmaini un pielāgo šo "
+"projektu sev!\n"
+"\t</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-13.html:29
 #, python-format
@@ -10321,10 +10868,16 @@ msgid ""
 "blue.png\">All Tips</a>.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t\n"
+"\t<p>Lai uzzinātu vairāk, vari pārskatīt <a href=\"../../home/\"><img class="
+"\"intext\" style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-"
+"blue.png\">visus padomus</a>.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:12
 msgid "2 of 13"
-msgstr ""
+msgstr "2 no 13"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:19
 #: templates/info/help/studio/tips/howto/get-started-intro.html:35
@@ -10333,7 +10886,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/pgame-intro.html:36
 #: templates/info/help/studio/tips/howto/pgametip8.html:17
 msgid "Add a Sound"
-msgstr ""
+msgstr "Pievienot skaņu"
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:23
 msgid ""
@@ -10341,39 +10894,46 @@ msgid ""
 "class=soundcolor>Sound</span>)\n"
 "\t and snap it onto the <span class=motioncolor>move</span> block."
 msgstr ""
+"Izvelc bloku <span class=soundcolor>spēlēt bungas</span> (no sadaļas <span "
+"class=soundcolor>Skaņa</span>)\n"
+"\t un pievienot to pie bloka <span class=motioncolor>pārvietoties</span>."
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:30
 msgid "Click and listen."
-msgstr ""
+msgstr "Uzklikšķini un klausies."
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:31
 msgid "Make sure your computer's speakers are on."
-msgstr ""
+msgstr "Pārliecinies, vai tava datora skaļruņi ir ieslēgti."
 
 #: templates/info/help/studio/tips/howto/get-started-2.html:35
 msgid "Next, start a dance."
-msgstr ""
+msgstr "Sākam deju."
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:12
 msgid "3 of 13"
-msgstr ""
+msgstr "3 no 13"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:19
 #: templates/info/help/studio/tips/howto/get-started-intro.html:36
 msgid "Start a Dance"
-msgstr ""
+msgstr "Sākam deju"
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:23
 msgid ""
 "Add another <span class=motioncolor>move</span> block. Click inside the "
 "block and type in a minus sign."
 msgstr ""
+"Pievieno citu bloku <span class=motioncolor>pārvietot</span>. Klikšķini šajā "
+"blokā un pieraksti mīnusa zīmi."
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:29
 msgid ""
 "Add another <span class=soundcolor>play drum</span> block, then choose a "
 "drum from the pull-down menu."
 msgstr ""
+"Pievieno vēl vienu bloku <span class=soundcolor>spēlēt bungas</span>, tad "
+"izvēlies citu sitaminstrumentu no saraksta."
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:35
 msgid "Click on any of the blocks to run the stack:"
@@ -10381,11 +10941,11 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-3.html:39
 msgid "Next, add a repeat."
-msgstr ""
+msgstr "Pievienosim atkārtošanu."
 
 #: templates/info/help/studio/tips/howto/get-started-4.html:11
 msgid "4 of 13"
-msgstr ""
+msgstr "4 no 13"
 
 #: templates/info/help/studio/tips/howto/get-started-4.html:22
 msgid ""
@@ -10394,18 +10954,22 @@ msgid ""
 "    (You want the \"mouth\" of the <span class=controlcolor>repeat</span> to "
 "wrap around the other blocks.)"
 msgstr ""
+"Izvelc bloku <span class=controlcolor>atkārtot</span> un atlaid to citu "
+"bloku augšpusē. \n"
+"    (Tev jāpanāk, lai bloka <span class=controlcolor>atkārtot</span> \"mute\""
+" ietvertu pārējos blokus.)"
 
 #: templates/info/help/studio/tips/howto/get-started-4.html:28
 msgid "Click to run the stack:"
-msgstr ""
+msgstr "Klikšķini, lai izpildītu blokus:"
 
 #: templates/info/help/studio/tips/howto/get-started-4.html:32
 msgid "Next, say something."
-msgstr ""
+msgstr "Tagad pasaki kaut ko."
 
 #: templates/info/help/studio/tips/howto/get-started-5.html:12
 msgid "5 of 13"
-msgstr ""
+msgstr "5 no 13"
 
 #: templates/info/help/studio/tips/howto/get-started-5.html:21
 #, python-format
@@ -10416,6 +10980,11 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/5a-say.gif\">\t\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Klikšķini uz <span class=lookscolor>Izskats</span> un izvelc bloku <"
+"span class=lookscolor>teikt</span>.</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/5a-say.gif\">\t\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-5.html:28
 #, python-format
@@ -10425,6 +10994,10 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/5b-say-new.gif\">\n"
 "\t"
 msgstr ""
+"\t\n"
+"\t<p>Ieraksti blokā, lai mainītu izteiktos vārdus:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/5b-say-new.gif\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-5.html:35
 #, python-format
@@ -10434,6 +11007,11 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/5c-say-new.png\">\t\n"
 "\t"
 msgstr ""
+"\t\n"
+"\t<p>Tad novieto to virs pārējiem blokiem. Lai palaistu programmu, klikšķini "
+"uz blokiem.</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/5c-say-new.png\">\t\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-5.html:41
 msgid "Now, add a way to start."
@@ -10500,16 +11078,16 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/get-started-7.html:33
 msgid "Now, make it interactive."
-msgstr ""
+msgstr "Nu padari to interaktīvu."
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:11
 msgid "8 of 13"
-msgstr ""
+msgstr "8 no 13"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:17
 #: templates/info/help/studio/tips/howto/get-started-intro.html:41
 msgid "Key Press"
-msgstr ""
+msgstr "Taustiņa piespiešana"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:20
 #, python-format
@@ -10520,6 +11098,13 @@ msgid ""
 "\t<p>Now press the space bar on your keyboard and watch what happens.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Pievieno pie bloka <span class=\"eventscolor\">kad piespiests "
+"taustiņš</span></p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/8b-key-press.gif\"></p>\n"
+"\t<p>Nu piespied atstarpes taustiņu uz klaviatūras un skaties, kas "
+"notiek.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:28
 #, python-format
@@ -10529,14 +11114,18 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/8d-key-press.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>No izvēlnes vari izvēlēties citu taustiņu:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/8d-key-press.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-8.html:35
 msgid "Now, choose a backdrop."
-msgstr ""
+msgstr "Tagad jānomaina fons."
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:10
 msgid "9 of 13"
-msgstr ""
+msgstr "9 no 13"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:19
 #, python-format
@@ -10546,6 +11135,10 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/9-new-backdrop.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Skatuvei vari pievienot jaunus fonus.</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/9-new-backdrop.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:26
 #, python-format
@@ -10557,22 +11150,28 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/9-spotlight-stage.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p> Klikšķini <img class=\"intext\" style=\"top: 0px\" src = \""
+"%(STATIC_URL)s/images/help/landscape-icon.png\">, lai izvēlētos jaunu fonu "
+"no krātuves (piemēram, \"Spotlight-Stage\"):</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/9-spotlight-stage.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/get-started-9.html:32
 msgid "Next, add a new sprite."
-msgstr ""
+msgstr "Tālāk pievienosim jaunu gariņu."
 
 #: templates/info/help/studio/tips/howto/get-started-intro.html:21
 msgid "Want to get started with Scratch? Try this!"
-msgstr ""
+msgstr "Vēlies iemācīties Scratch? Izmēģini šo!"
 
 #: templates/info/help/studio/tips/howto/get-started-intro.html:25
 msgid "Start moving"
-msgstr ""
+msgstr "Sākt kustību"
 
 #: templates/info/help/studio/tips/howto/get-started-intro.html:43
 msgid "Add a Sprite"
-msgstr ""
+msgstr "Pievienot gariņu"
 
 #: templates/info/help/studio/tips/howto/glide-stage.html:11
 #, python-format
@@ -10584,6 +11183,12 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/glide-off-stage-script.png\"><br/>\n"
 " <p>After the sprite glides, it then hides.</p>"
 msgstr ""
+"\n"
+"<p>Ja gribi, lai izskatās, ka gariņš aiziet no skatuves, aizslidini to līdz "
+"malai un tad paslēp.</p>\n"
+"Izmēģini šo programmu:<br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/glide-off-stage-script.png\"><br/>\n"
+" <p>Pēc tam, kad gariņš aizslīd, tas paslēpjas.</p>"
 
 #: templates/info/help/studio/tips/howto/glide-stage.html:20
 #, python-format
@@ -10591,16 +11196,18 @@ msgid ""
 "Can't see your sprite? Use <img src=\"%(STATIC_URL)s/images/help/show.png\"> "
 "to make it appear."
 msgstr ""
+"Nevari redzēt savu gariņu? Izmanto <img src=\""
+"%(STATIC_URL)s/images/help/show.png\">, lai tas atkal parādītos."
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:12
 #: templates/info/help/studio/tips/howto/valentine1.html:11
 msgid "1 of 9"
-msgstr ""
+msgstr "1 no 9"
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:18
 #: templates/info/help/studio/tips/howto/hoc-intro.html:34
 msgid "Explore Ideas for Your Card"
-msgstr ""
+msgstr "Pārskati idejas savai kartītei"
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:25
 msgid ""
@@ -10612,6 +11219,12 @@ msgid ""
 "\"http://scratch.mit.edu/studios/279432/\" target=\"_blank\">holiday card "
 "studio</a>.)</p>\n"
 msgstr ""
+"\n"
+"\t<p>Kā pirmo Scratch darbu izveidosi interaktīvu apsveikuma kartīti.</p>\n"
+"\t<p>Mēģini atcerēties jaukākos mirkļus no svētkiem, kādi tēli un skaņas nāk "
+"prātā? (Ja tev nepieciešama papildus iedvesma, apskati gatavos projektus <a "
+"href=\"http://scratch.mit.edu/studios/279432/\" target=\"_blank\">apsveikuma "
+"kartīšu studijā</a>.)</p>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-1.html:33
 #, python-format
@@ -10621,16 +11234,20 @@ msgid ""
 "deleting the cat.<img src = \"%(STATIC_URL)s/images/help/tip-next-step-arrow."
 "png\"></p></a>\n"
 msgstr ""
+"<p>Ir labas idejas savai kartītei?</p>\n"
+"\t<a class=\"next-step-button\" href=\"../hoc-2/\"><p>Sāksim ar kaķa "
+"izdzēšanu.<img src = \"%(STATIC_URL)s/images/help/tip-next-step-arrow.png\""
+"></p></a>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-2.html:11
 #: templates/info/help/studio/tips/howto/valentine2.html:11
 msgid "2 of 9"
-msgstr ""
+msgstr "2 no 9"
 
 #: templates/info/help/studio/tips/howto/hoc-2.html:17
 #: templates/info/help/studio/tips/howto/hoc-intro.html:35
 msgid "Delete the Cat"
-msgstr ""
+msgstr "Izdzēs kaķi"
 
 #: templates/info/help/studio/tips/howto/hoc-2.html:24
 msgid ""
@@ -10640,6 +11257,11 @@ msgid ""
 "on the sprite.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Scratch vidē tēli un objekti tiek saukti par \"gariņiem\".</p>\n"
+"\t<p>Gariņu var izdzēstuzklikšķinot vispirms uz šķērēm un tad uz gariņa.</p>"
+"\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-2.html:31
 #, python-format
@@ -10651,16 +11273,22 @@ msgid ""
 "holiday sprites to your card.<img src = \"%(STATIC_URL)s/images/help/tip-"
 "next-step-arrow.png\"></p></a>\n"
 msgstr ""
+"\n"
+"\t<p>Vari atrast arī citu paņēmienu, lai izdzēstu gariņu?</p>\n"
+"\t<p></p>\n"
+"\t<a class=\"next-step-button\" href=\"../hoc-3/\"><p>Tagad pievieno dažus "
+"svēktiem piemērotus gariņus savai kartītei.<img src = \""
+"%(STATIC_URL)s/images/help/tip-next-step-arrow.png\"></p></a>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-3.html:11
 #: templates/info/help/studio/tips/howto/valentine3.html:11
 msgid "3 of 9"
-msgstr ""
+msgstr "3 no 9"
 
 #: templates/info/help/studio/tips/howto/hoc-3.html:17
 #: templates/info/help/studio/tips/howto/hoc-intro.html:36
 msgid "Add Sprites"
-msgstr ""
+msgstr "Pievienot gariņus"
 
 #: templates/info/help/studio/tips/howto/hoc-3.html:24
 #, python-format
@@ -10671,6 +11299,11 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-3-add-sprite.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Ir 4 iespējas gariņu pievienošanai kartītei. Lai pievienotu gariņu, "
+"klikšķini vienu no pogām:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-3-add-sprite.png\"></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-3.html:31
 #, python-format
@@ -10690,6 +11323,20 @@ msgid ""
 "sprites interactive.<img src = \"%(STATIC_URL)s/images/help/tip-next-step-"
 "arrow.png\"></p></a>\n"
 msgstr ""
+"\n"
+"\t<h4>Lūk, ko dara katra poga:</h4>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite."
+"png\"> Izvēlēties gariņu no krātuves</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite."
+"png\"> Uzzīmēt savu gariņu</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite."
+"png\"> Augšuplādēt savu attēlu vai gariņu</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite."
+"png\"> Uzņemt attēlu (ar tīmekļa kameru)</p>\n"
+"\n"
+"<a class=\"next-step-button\" href=\"../hoc-4/\"><p>Tālāk padarīsim gariņus "
+"interaktīvus.<img src = \"%(STATIC_URL)s/images/help/tip-next-step-arrow."
+"png\"></p></a>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-4.html:11
 #: templates/info/help/studio/tips/howto/valentine4.html:11
@@ -10791,15 +11438,21 @@ msgid ""
 "step-arrow.png\"></p></a>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Kādus gariņš novēlēs tuvākajos svētkos?</p>\n"
+"\t<a class=\"next-step-button\" href=\"../hoc-4/\"><p>Pārskati citus "
+"interaktivitātes veidus...<img src = \"%(STATIC_URL)s/images/help/tip-next-"
+"step-arrow.png\"></p></a>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-4c.html:11
 msgid "4C of 9"
-msgstr ""
+msgstr "4C no 9"
 
 #: templates/info/help/studio/tips/howto/hoc-4c.html:17
 #: templates/info/help/studio/tips/howto/hoc-intro.html:40
 msgid "Make a Sound"
-msgstr ""
+msgstr "Izveido skaņu"
 
 #: templates/info/help/studio/tips/howto/hoc-4c.html:24
 #, python-format
@@ -10813,6 +11466,13 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-c-sound.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Ielādē skaņu savā kartītē, izmantojot skaņas no Scratch krātuves, "
+"augšuplādē skaņu no datora vai ieraksti savējās, izmantojot mikrofonu.</p>\n"
+"\t<p>Eksperimentē ar skaņas blokiem, lai pievienotu mūziku un citas skaņas "
+"savam gariņam:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-c-sound.png\">\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-4c.html:32
 #, python-format
@@ -10824,10 +11484,16 @@ msgid ""
 "step-arrow.png\"></p></a>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Kādas interesantas svētku skaņas vari pievienot savai kartītei?</p>\n"
+"\t<a class=\"next-step-button\" href=\"../hoc-4/\"><p>Izmēģini citus "
+"interaktivitātes veidus...<img src = \"%(STATIC_URL)s/images/help/tip-next-"
+"step-arrow.png\"></p></a>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-4d.html:11
 msgid "4D of 9"
-msgstr ""
+msgstr "4D no 9"
 
 #: templates/info/help/studio/tips/howto/hoc-4d.html:24
 #, python-format
@@ -10845,6 +11511,19 @@ msgid ""
 "\t\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Paspēlējies ar attēliem savā svētku kartītē, lietojot grafisko efektu "
+"blokus:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-d-effects."
+"png\"></p>\n"
+"</div>\n"
+"\n"
+"<div class=\"steps\">\n"
+"\t<p>Izmēģini šo kodu, lai dejojošajam gariņam pievienotu krāsainu "
+"efektu:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-d-color.png\">\t"
+"\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-4d.html:36
 #, python-format
@@ -10857,15 +11536,22 @@ msgid ""
 "step-arrow.png\"></p></a>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Kādus foršus efektus tu pievienosi savai kartītei?</p>\n"
+"\t\n"
+"\t<a class=\"next-step-button\" href=\"../hoc-4/\"><p>Izmēģini vēl citus "
+"interaktivitātes veidus...<img src = \"%(STATIC_URL)s/images/help/tip-next-"
+"step-arrow.png\"></p></a>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-4e.html:11
 msgid "4E of 9"
-msgstr ""
+msgstr "4E no 9"
 
 #: templates/info/help/studio/tips/howto/hoc-4e.html:17
 #: templates/info/help/studio/tips/howto/hoc-intro.html:42
 msgid "Change Costume"
-msgstr ""
+msgstr "Mainīt tērpu"
 
 #: templates/info/help/studio/tips/howto/hoc-4e.html:24
 #, python-format
@@ -10886,6 +11572,21 @@ msgid ""
 "\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Gariņiem var būt dažādi “tērpi” -- dažādi izskati, gluži kā aktieris "
+"izrādes laikā var dažādi saģērbties.</p>\n"
+"\n"
+"\t<p>Pievieno tērpus savam gariņam:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-e-costumes-"
+"panel.png\"></p>\n"
+"</div>\n"
+"\n"
+"<div class=\"steps\">\n"
+"\t<p>Un maini tērpus, izmantojot bloku “nomainīt tērpu”:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-e-costumes."
+"png\"></p>\n"
+"\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-4e.html:39
 #, python-format
@@ -10897,16 +11598,22 @@ msgid ""
 "step-arrow.png\"></p></a>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Kā tērpi var veidot animāciju apsveikuma kartītē?</p>\n"
+"\t<a class=\"next-step-button\" href=\"../hoc-4/\"><p>Apskatīsim dažādus "
+"interaktivitātes veidus...<img src = \"%(STATIC_URL)s/images/help/tip-next-"
+"step-arrow.png\"></p></a>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-5.html:11
 #: templates/info/help/studio/tips/howto/valentine5.html:11
 msgid "5 of 9"
-msgstr ""
+msgstr "5 no 9"
 
 #: templates/info/help/studio/tips/howto/hoc-5.html:17
 #: templates/info/help/studio/tips/howto/hoc-intro.html:43
 msgid "Add a Background Image"
-msgstr ""
+msgstr "Pievieno fona attēlu"
 
 #: templates/info/help/studio/tips/howto/hoc-5.html:24
 #, python-format
@@ -10930,6 +11637,24 @@ msgid ""
 "backdrop-camera.png\"> Take a picture (if you have a webcam)</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Ir četras iespējas, kā var pievienot fona attēlu savai kartītei. Lai "
+"pievienotu fonu, klikšķini vienu no pogām:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/hoc-5-add-backdrop.png\">\n"
+"</div>\n"
+"\n"
+"<div class=\"steps last\">\t\n"
+"\t<h4>Lūk, ko katra no tām dara:</h4>\n"
+"\t\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/hoc-5a-add-"
+"backdrop-library.png\"> Izvēlēties fonu no krātuves</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/hoc-5b-add-"
+"backdrop-paint.png\"> Zīmēt savu fonu</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/hoc-5c-add-"
+"backdrop-upload.png\"> Augšuplādē attēlu no sava datora</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/hoc-5d-add-"
+"backdrop-camera.png\"> Uzņem attēlu (izmantojot tīmekļa kameru)</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-5.html:38
 #, python-format
@@ -10939,11 +11664,15 @@ msgid ""
 "background music to your holiday card.<img src = \"%(STATIC_URL)s/images/"
 "help/tip-next-step-arrow.png\"></p></a>\n"
 msgstr ""
+"\n"
+"<a class=\"next-step-button\" href=\"../hoc-6/\"><p>Pievieno savai "
+"apsveikuma kartītei fona mūziku.<img src = \"%(STATIC_URL)s/images/help/tip-"
+"next-step-arrow.png\"></p></a>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-6.html:11
 #: templates/info/help/studio/tips/howto/valentine6.html:11
 msgid "6 of 9"
-msgstr ""
+msgstr "6 no 9"
 
 #: templates/info/help/studio/tips/howto/hoc-6.html:17
 #: templates/info/help/studio/tips/howto/hoc-intro.html:44
@@ -11038,15 +11767,18 @@ msgid ""
 "adding your card to the Holiday Card studio.<img src = \"%(STATIC_URL)s/"
 "images/help/tip-next-step-arrow.png\"></p></a>\n"
 msgstr ""
+"<a class=\"next-step-button\" href=\"../hoc-9/\">Nobeigumā pievieno savu "
+"kartīti apsveikumu kartīšu studijai.<img src = \"%(STATIC_URL)s/images/help"
+"/tip-next-step-arrow.png\"></p></a>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:11
 #: templates/info/help/studio/tips/howto/valentine9.html:11
 msgid "9 of 9"
-msgstr ""
+msgstr "9 no 9"
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:17
 msgid "Add your project to the Hour of Code studio"
-msgstr ""
+msgstr "Pievieno savu projektu Hour of Code studijai"
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:24
 #, python-format
@@ -11067,6 +11799,21 @@ msgid ""
 "\"_blank\">you completed the Hour of Code Scratch activity!</a></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Kopīgo savu apsveikuma kartīti ar cilvēkiem it visur pasaulē, "
+"pievienojot savu projektu Hour of Code studijai.</p>\n"
+"\n"
+"\t<p>Pirmkārt, ej uz  <a href=\"http://scratch.mit.edu/studios/279432/\" "
+"target=\"_blank\">Hour of Code studiju</a>. \n"
+"Pēc tam klikšķini pogu “Pievienot projektu” lapas augšā, lai pievienotu savu "
+"apsveikuma kartīti studijai.</p>\n"
+"\n"
+"\t<p>Paldies par radošumu, programmēšanu un dalīšanos ar savu Scratch "
+"apsveikuma kartīti -- <a href=\"http://www.google.com/url?q=http%%3A%%2F%%2Fc"
+"ode.org%%2Fapi%%2Fhour%%2Ffinish&sa=D&sntz=1&usg="
+"AFQjCNHVv1dbiUd4Qt7PzlQfXFPXN8uFpg\" target=\"_blank\">Tu esi pabeidzis Hour "
+"of Code nodarbību!</a></p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-9.html:35
 #, python-format
@@ -11078,14 +11825,20 @@ msgid ""
 "\">All Tips</a>.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Ko veidosi nākamo?</p>\n"
+"\t<p>Jaunām idejām klikšķini <a href=\"../../home/\"><img class=\"intext\" "
+"style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">"
+"Visi padomi</a>.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:12
 msgid "Introduction"
-msgstr ""
+msgstr "ievads"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:18
 msgid "Holiday Card Tutorial"
-msgstr ""
+msgstr "Apsveikuma kartītes pamācība"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:20
 msgid ""
@@ -11097,10 +11850,17 @@ msgid ""
 "portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
 "webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
 msgstr ""
+"\n"
+"\t<p>Šajā nodarbībā izveidosi interaktīvu apsveikuma kartīti, ar kuru varēsi "
+"dalīties ar draugiem un ģimeni.</p>\n"
+"\t<p>Lai sāktu, noskaties šo ievada video:</p>\n"
+"\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;po"
+"rtrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" "
+"webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:27
 msgid "Let's begin!"
-msgstr ""
+msgstr "Aiziet!"
 
 #: templates/info/help/studio/tips/howto/hoc-intro.html:46
 msgid "Share your Project"
@@ -11156,19 +11916,20 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:15
 msgid "Make noise so your sprite will jump!"
-msgstr ""
+msgstr "Radi troksni, lai gariņš palecās!"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:16
 msgid "For a larger effect, multiply by a number:"
-msgstr ""
+msgstr "Lai pastiprinātu efektu, pareizini ar skaitli:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:22
 msgid "If you see this pop up, click <b>Allow</b> to access the microphone:"
 msgstr ""
+"Ja redzi šādu izlecošo logu, klikšķini <b>Allow</b> lai izmantotu mikrofonu:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:30
 msgid "Click the checkbox to see how loud it is:"
-msgstr ""
+msgstr "Ieliec ķeksīti, lai redzētu, cik tas ir skaļš:"
 
 #: templates/info/help/studio/tips/howto/interact-microphone.html:32
 #, python-format
@@ -11176,6 +11937,8 @@ msgid ""
 "The monitor will show on the Stage: <img src=\"%(STATIC_URL)s/images/help/"
 "loudness-monitor.png\">."
 msgstr ""
+"Skaļuma monitoru redzēsi uz skatuves: <img src=\"%(STATIC_URL)s/images/help"
+"/loudness-monitor.png\">."
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:12
 #, python-format
@@ -11184,10 +11947,13 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/set-color-effect.png\"></p>\n"
 "\t Use this code to whirl as you move the mouse:"
 msgstr ""
+"<p>ievieto <img src=\"%(STATIC_URL)s/images/help/mouse-x.png\"> iekš <img "
+"src=\"%(STATIC_URL)s/images/help/set-color-effect.png\">\t Izmanto šo kodu, "
+"lai virpuļotu, kad kustini peli:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:19
 msgid "Try different effects by choosing the menu:"
-msgstr ""
+msgstr "Izvēlies dažādus efektus no izvēlnes:"
 
 #: templates/info/help/studio/tips/howto/interactive-effects.html:25
 #: templates/info/help/studio/tips/howto/play-with-effects.html:26
@@ -11196,10 +11962,12 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"> to clear "
 "all effects."
 msgstr ""
+"Klikšķini stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\">, lai "
+"notīrītu visus efektus."
 
 #: templates/info/help/studio/tips/howto/keep-score.html:10
 msgid "Make a variable to keep track of score."
-msgstr ""
+msgstr "Izveido mainīgo, lai sekotu līdzi rezultātam."
 
 #: templates/info/help/studio/tips/howto/keep-score.html:11
 #, python-format
@@ -11260,7 +12028,7 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/move.html:17
 msgid "If you type in a <b>negative</b> number, the sprite will move backward:"
-msgstr ""
+msgstr "Ja ierakstīsi <b>negatīvu</b> skaitli, gariņš kustēsies uz atpakaļ:"
 
 #: templates/info/help/studio/tips/howto/move.html:25
 msgid ""
@@ -11269,41 +12037,50 @@ msgid ""
 "<p>To go to a certain spot on the screen, use “go to x y”</p>\n"
 "<p>To glide smoothly, use “glide to x y”</p>"
 msgstr ""
+"<p>Lai mainītu virzienu, izmanto pagriezt virziena.<br/>\n"
+"Vai arī vari pagriezt.</p>\n"
+"<p>Lai nonāktu kādā noteiktā ekrāna vietā, izmanto “iet uz x y”</p>\n"
+"<p>Lai gludi slīdētu, izmanto “slīdēt uz x y”</p>"
 
 #: templates/info/help/studio/tips/howto/nametip-intro.html:20
 msgid ""
 "Make your name come to life! Animate the letters by coding in Scratch. Add "
 "sound and music, too."
 msgstr ""
+"Padari savu vārdu dzīvu! Iekustini burtus, programmējot ar Scratch. Pievieno "
+"arī skaņas un mūziku."
 
 #: templates/info/help/studio/tips/howto/nametip-intro.html:21
+#, fuzzy
 msgid ""
 "//player.vimeo.com/video/111342687?title=0&amp;byline=0&amp;portrait=0;"
 "hd_off=0&"
 msgstr ""
+"//player.vimeo.com/video/111342687?title=0&amp;byline=0&amp;portrait=0;hd_off"
+"=0&"
 
 #: templates/info/help/studio/tips/howto/nametip-intro.html:24
 msgid "First, choose a letter"
-msgstr ""
+msgstr "Sākumā izvēlies burtu"
 
 #: templates/info/help/studio/tips/howto/nametip-intro.html:30
 #: templates/info/help/studio/tips/howto/nametip1.html:17
 msgid "Choose the First Letter"
-msgstr ""
+msgstr "Izvēlies pirmo burtu"
 
 #: templates/info/help/studio/tips/howto/nametip-intro.html:31
 #: templates/info/help/studio/tips/howto/nametip2.html:17
 msgid "Add Color Effects"
-msgstr ""
+msgstr "Pievieno krāsu efektus"
 
 #: templates/info/help/studio/tips/howto/nametip-intro.html:34
 #: templates/info/help/studio/tips/howto/nametip5.html:17
 msgid "Add Your Next Letter"
-msgstr ""
+msgstr "Pievieno nākamo burtu"
 
 #: templates/info/help/studio/tips/howto/nametip-intro.html:35
 msgid "Make It Spin"
-msgstr ""
+msgstr "Liec tam griezties"
 
 #: templates/info/help/studio/tips/howto/nametip-intro.html:36
 #: templates/info/help/studio/tips/howto/nametip7.html:17
@@ -11362,11 +12139,11 @@ msgstr ""
 
 #: templates/info/help/studio/tips/howto/nametip2.html:11
 msgid "2 of 8"
-msgstr ""
+msgstr "2 no 8"
 
 #: templates/info/help/studio/tips/howto/nametip2.html:19
 msgid "Make the letter change color whenever it's clicked."
-msgstr ""
+msgstr "Maini burta krāsu katru reizi, kad uz tā uzklikšķini."
 
 #: templates/info/help/studio/tips/howto/nametip2.html:22
 #, python-format
@@ -11380,6 +12157,14 @@ msgid ""
 "\tYou can click on that block to try it.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Klikšķini sadaļu <span class=\"lookscolor\">Izskats</span>, \n"
+"\ttad velc bloku <span class=\"lookscolor\">mainīt krāsas efektu</span> "
+"programmu laukumā:\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/drag-change-color-animated.gif\""
+"></p> \n"
+"\tLai izmēģinātu, klikšķini uz šī bloka.</p>\n"
+"\t"
 
 #: templates/info/help/studio/tips/howto/nametip2.html:31
 #, python-format

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-06 14:00+0000\n"
-"PO-Revision-Date: 2015-02-09 19:13+0000\n"
+"PO-Revision-Date: 2015-02-26 20:02+0000\n"
 "Last-Translator: Jean-Jacques <i.scool@mac.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1423509222.000000\n"
+"X-POOTLE-MTIME: 1424980927.000000\n"
 
 #: views.py:321
 msgid "Your message has been sent. We will respond within 3 days."
@@ -106,7 +106,7 @@ msgstr "Ce compte n'est pas actif."
 
 #: authentication/forms.py:294 authentication/forms.py:315
 msgid "This account is deleted!"
-msgstr ""
+msgstr "Ce compte est désactivé."
 
 #: base_comments/templatetags/scratch_text_filters.py:110
 msgid "day"
@@ -154,7 +154,6 @@ msgstr "Cette balise a trop de projets à charger"
 
 # 97%
 #: templates/403.html:12
-#, fuzzy
 msgid "403. Oh noes! Our server is Scratch'ing its head"
 msgstr "404. Oh désolé! Notre serveur s'est Scratché"
 
@@ -163,12 +162,13 @@ msgid ""
 "We couldn't authorize you to view this page. If you need to get in touch "
 "with us about this, send us an email at "
 msgstr ""
+"Nous ne pouvions pas vous autoriser à accéder à cette page. Si vous avez "
+"besoin d'entrer en contact avec nous à ce sujet, envoyez-nous un courriel à"
 
 # 97%
 #: templates/404.html:16
-#, fuzzy
 msgid "Whoops! Our server is Scratch'ing its head"
-msgstr "404. Oh désolé! Notre serveur s'est Scratché"
+msgstr "404 Désolé! Notre serveur s'est Scratché"
 
 #: templates/404.html:18
 msgid ""
@@ -188,7 +188,7 @@ msgstr "Recherche"
 
 #: templates/500.html:40
 msgid "Looks like we are having issues with our servers!"
-msgstr ""
+msgstr "On dirait que nous avons des problèmes avec nos serveurs!"
 
 #: templates/500.html:45
 msgid "Try refreshing in a few minutes"
@@ -199,6 +199,8 @@ msgid ""
 "You can still <a href=\"/scratch2download/\">Download Scratch</a> and make "
 "projects."
 msgstr ""
+"Vous pouvez toujours <a href=\"/scratch2download/\">Télécharger Scratch</a> "
+"et faire des projets."
 
 #: templates/base.html:18
 msgid "Scratch"
@@ -297,7 +299,7 @@ msgstr "Pour les éducateurs"
 
 #: templates/base.html:325
 msgid "Credits"
-msgstr ""
+msgstr "Remerciements"
 
 #: templates/base.html:326
 msgid "Jobs"
@@ -305,7 +307,7 @@ msgstr "Emplois"
 
 #: templates/base.html:327
 msgid "Press"
-msgstr ""
+msgstr "Presse"
 
 #: templates/base.html:331 templates/info/parents.html:72
 msgid "Community"
@@ -325,7 +327,7 @@ msgstr "Wiki Scratch"
 
 #: templates/base.html:336
 msgid "Statistics"
-msgstr ""
+msgstr "Statistiques"
 
 #: templates/base.html:340 templates/search/includes/tabs.html:17
 msgid "Support"
@@ -333,15 +335,15 @@ msgstr "Aide"
 
 #: templates/base.html:342
 msgid "Help Page"
-msgstr ""
+msgstr "Page d'aide"
 
 #: templates/base.html:343
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: templates/base.html:344
 msgid "Offline Editor"
-msgstr ""
+msgstr "Editeur hors-ligne"
 
 # 90%
 #: templates/base.html:345 templates/contact-us-success.html:12
@@ -355,11 +357,11 @@ msgstr "Faire un don"
 
 #: templates/base.html:350
 msgid "Legal"
-msgstr ""
+msgstr "Juridique"
 
 #: templates/base.html:352
 msgid "Terms of Use"
-msgstr ""
+msgstr "Conditions d'utilisation"
 
 #: templates/base.html:353 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80 templates/mail/base.html:48
@@ -372,34 +374,31 @@ msgstr "DMCA"
 
 #: templates/base.html:358
 msgid "Scratch Family"
-msgstr ""
+msgstr "Famille Scratch"
 
 # 77%
 #: templates/base.html:360
-#, fuzzy
 msgid "ScratchEd"
-msgstr "Scratch"
+msgstr "Scratch Educateurs"
 
 # 77%
 # 88%
 #: templates/base.html:361
-#, fuzzy
 msgid "ScratchJr"
-msgstr "Scratcheur"
+msgstr "Scratch Junior"
 
 # 75%
 #: templates/base.html:362
-#, fuzzy
 msgid "Scratch Day"
-msgstr "L'équipe Scratch"
+msgstr "Le jour de Scratch"
 
 #: templates/base.html:363
 msgid "Scratch Conference"
-msgstr ""
+msgstr "Conférence sur Scratch"
 
 #: templates/base.html:364
 msgid "Code-to-Learn Foundation"
-msgstr ""
+msgstr "Fondation Code-to-Learn ( apprendre à coder )"
 
 #: templates/base.html:379
 msgid ""
@@ -538,7 +537,7 @@ msgstr "Les plus souvent remixés"
 #: templates/modal-login.html:29
 #: templates/includes/password_required_form.html:17
 msgid "Please enter the text below"
-msgstr ""
+msgstr "Veuillez saisir le texte ci-dessous"
 
 # 83%
 # 80%
@@ -691,40 +690,47 @@ msgid ""
 "Enter your email address and we will send you an email to confirm your "
 "account."
 msgstr ""
+"Entrez votre adresse courriel et nous vous enverrons un courriel pour "
+"confirmer votre compte."
 
 #: templates/modal-registration.html:142
 msgid ""
 "Enter your parent's or guardian's email address and we will send them an "
 "email to confirm this account."
 msgstr ""
+"Entrez l'adresse courriel de vos parents ou de votre tuteur et nous vous "
+"enverrons un courriel pour confirmer votre compte."
 
 #: templates/modal-registration.html:147
 msgid "Email address"
 msgstr "Adresse courriel"
 
 #: templates/modal-registration.html:148
-#, fuzzy
 msgid "Parent's or guardian's email address"
 msgstr "Adresse courriel d'un parent ou d'un tuteur"
 
 #: templates/modal-registration.html:156
 msgid "Confirm email address"
-msgstr ""
+msgstr "Confirmer votre adresse courriel"
 
 #: templates/modal-registration.html:170
-#, fuzzy
 msgid "Welcome to Scratch,"
-msgstr "Bienvenue à Scratch!"
+msgstr "Bienvenue à Scratch,"
 
 #: templates/modal-registration.html:171
 msgid "You're now logged in! You can start exploring and creating projects."
 msgstr ""
+"Vous êtes maintenant connecté! Vous pouvez commencer à explorer et de créer "
+"des projets."
 
 #: templates/modal-registration.html:173
 msgid ""
 "If you want to share and comment, simply click the link in the email we sent "
 "you at <strong><span class=\"email-welcome\"></span></strong>"
 msgstr ""
+"Si vous souhaitez partager et commenter, cliquez simplement sur le lien dans "
+"le courriel que nous vous avons envoyé à <strong><span class=\"email-"
+"welcome\"></span></strong>"
 
 #: templates/modal-registration.html:177
 #, python-format
@@ -732,6 +738,8 @@ msgid ""
 "Wrong email? Change your email address in <a href=\"%(settings_url)s"
 "\">Account Settings</a>"
 msgstr ""
+"Courriel iron? Changer votre adresse courriel dans <a href=\"%(settings_url)"
+"s\">Paramètres du compte</a>"
 
 #: templates/modal-registration.html:180
 msgid "Would you like to:"
@@ -902,7 +910,7 @@ msgstr "Votre devez fournir une adresse courriel valide"
 
 #: templates/modal-registration.html:235
 msgid "Whoops, emails do not match"
-msgstr ""
+msgstr "Whoops,les courriels ne correspondent pas"
 
 #: templates/password_required_login.html:31
 msgid "Enter"
@@ -930,13 +938,12 @@ msgstr "Conditions d'utilisation de Scratch"
 #: templates/accounts/password_change_form.html:8
 #: templates/accounts/deletion/confirmation.html:6
 #: templates/accounts/deletion/nostalgia.html:5
-#, fuzzy
 msgid "Account"
 msgstr "Comptes"
 
 #: templates/accounts/account_settings.html:38
 msgid "Save my Changes"
-msgstr ""
+msgstr "Enregistrer mes modifications"
 
 #: templates/accounts/banned-response.html:32
 msgid "The Scratch Team decided to block the account:"
@@ -953,7 +960,7 @@ msgid ""
 "that people of many different ages and backgrounds will see what you’ve "
 "shared."
 msgstr ""
-"<b> Soyez respectueux. </ b> Lorsque vous partagez de projets ou postez des "
+"<b>Soyez respectueux.</b> Lorsque vous partagez de projets ou postez des "
 "commentaires, rappelez-vous que des gens d'âges et de milieux différents "
 "pourront voir ce que vous avez partagé."
 
@@ -1037,58 +1044,70 @@ msgstr "Mis à jour"
 #: templates/accounts/email_change.html:18
 #: templates/accounts/email_change.html:30
 msgid "Your email address is unconfirmed"
-msgstr ""
+msgstr "Votre adresse courriel n'est pas confirmée"
 
 #: templates/accounts/email_change.html:19
 msgid ""
 "If you want to share and comment, simply click the link in the email sent to "
 "you at:"
 msgstr ""
+"Si vous souhaitez partager et commenter, cliquez simplement sur le lien dans "
+"le courriel envoyé à l'adresse:"
 
 #: templates/accounts/email_change.html:23
 #: templates/accounts/email_change.html:34
 msgid "Your new email address is unconfirmed"
-msgstr ""
+msgstr "Votre nouvelle adresse courriel n'est pas confirmée"
 
 #: templates/accounts/email_change.html:25
 msgid ""
 "If you would like to change the email address - have your parent (or "
 "guardian) simply click the link in the message sent to their address."
 msgstr ""
+"Si vous souhaitez modifier l'adresse courriel - votre parent (ou tuteur) "
+"doit tout simplement cliquer sur le lien dans le message envoyé à leur "
+"adresse."
 
 #: templates/accounts/email_change.html:27
 msgid ""
 "If you would like to change your email address - simply click the link in "
 "the message sent to your new address."
 msgstr ""
+"Si vous souhaitez changer votre adresse courriel - cliquez simplement sur le "
+"lien dans le courriel envoyé à la nouvelle adresse."
 
 #: templates/accounts/email_change.html:31
 msgid ""
 "To confirm your current email address, click \"Send\"  below and follow the "
 "instructions in the email sent to you at:"
 msgstr ""
+"Pour confirmer votre adresse courriel actuelle, cliquez ci-dessous sur \""
+"Envoyer\" et suivez les instructions dans le courriel envoyé à l'adresse:"
 
 #: templates/accounts/email_change.html:35
 msgid ""
 "To change your email, simply click the link in the email sent to you at:"
 msgstr ""
+"Pour modifier votre courriel, cliquez simplement sur le lien dans le "
+"courriel envoyé à l'adresse:"
 
 #: templates/accounts/email_change.html:40
 msgid "New Email Address"
-msgstr ""
+msgstr "Nouvelle adresse de courriel"
 
 #: templates/accounts/email_change.html:46
 msgid "Current Email Address"
-msgstr ""
+msgstr "Adresse courriel actuelle"
 
 #: templates/accounts/email_change.html:57
 msgid "Can't find the confirmation email? Check your spam folder"
 msgstr ""
+"Vous ne trouvez pas le courreil de confirmation? Vérifiez votre dossier spam"
 
 #: templates/accounts/email_change.html:58
 #: templates/accounts/email_verification/includes/verify_email_popup.html:26
 msgid "Resend"
-msgstr ""
+msgstr "Renvoyer"
 
 #: templates/accounts/email_change.html:66
 #: templates/comments/comment-module.html:41
@@ -1100,16 +1119,15 @@ msgstr "Annuler"
 
 #: templates/accounts/email_change.html:79
 msgid "Current Email"
-msgstr ""
+msgstr "Adresse de courriel actuelle"
 
 #: templates/accounts/email_change.html:91
 msgid "Change Email"
 msgstr "Changer l'adresse courriel"
 
 #: templates/accounts/password_change_form.html:9
-#, fuzzy
 msgid "Password "
-msgstr "Mot de passe"
+msgstr "Mot de passe "
 
 #: templates/accounts/password_change_form.html:16
 msgid "After changing your password, you will be prompted to log back in."
@@ -1119,39 +1137,39 @@ msgstr ""
 
 #: templates/accounts/password_change_form.html:25
 msgid "Change Password"
-msgstr "Changer le mot de passe"
+msgstr "Changer un mot de passe"
 
 #: templates/accounts/deletion/confirmation.html:12
 #: templates/accounts/deletion/nostalgia.html:11
 msgid "Delete my account"
-msgstr ""
+msgstr "Supprimer mon compte"
 
 #: templates/accounts/deletion/nostalgia.html:15
 msgid "Whoops, go back"
-msgstr ""
+msgstr "Oups, revenir"
 
 #: templates/accounts/deletion/nostalgia.html:17
-#, fuzzy
 msgid "Are you sure you want to delete your account?"
-msgstr "Etes-vous sûr de vouloir supprimer ce message?"
+msgstr "Etes-vous sûr de vouloir supprimer votre compte?"
 
 #: templates/accounts/deletion/nostalgia.html:22
 #, python-format
 msgid "You joined the Scratch community %(years_ago)s years ago."
 msgstr ""
+"Vous avez rejoint la communauté Scratch il y a de cela %(years_ago)s années."
 
 #: templates/accounts/deletion/nostalgia.html:24
 msgid "You joined the Scratch community a year ago."
-msgstr ""
+msgstr "Vous avez rejoint la communauté Scratch il y a de cela un an."
 
 #: templates/accounts/deletion/nostalgia.html:26
 #, python-format
 msgid "You joined the Scratch community %(months_ago)s months ago."
-msgstr ""
+msgstr "Vous avez rejoint la communauté Scratch %(months_ago)s mois."
 
 #: templates/accounts/deletion/nostalgia.html:28
 msgid "You joined the Scratch community a month ago."
-msgstr ""
+msgstr "Vous avez rejoint la communauté Scratch il y a de cela un mois."
 
 #: templates/accounts/deletion/nostalgia.html:33
 #, python-format
@@ -1159,39 +1177,39 @@ msgid ""
 "You've created %(num_projects)s projects and have %(num_followers)s "
 "followers."
 msgstr ""
+"Vous avez créé %(num_projects)s projets and vous avez %(num_followers)s "
+"scratchers qui vous suivent."
 
 #: templates/accounts/deletion/nostalgia.html:41
 msgid "Some of your projects"
-msgstr ""
+msgstr "Quelques uns de vos projects"
 
 # 92%
 #: templates/accounts/deletion/nostalgia.html:42
-#, fuzzy
 msgid "Your projects"
-msgstr "La plupart des projets"
+msgstr "Vos projets"
 
 #: templates/accounts/deletion/nostalgia.html:63
 msgid "Some of your followers"
-msgstr ""
+msgstr "Quelques uns des scratchers qui vous suivent"
 
 #: templates/accounts/deletion/nostalgia.html:64
-#, fuzzy
 msgid "Your followers"
-msgstr "Les plus suivis"
+msgstr "Ceux qui vous suivent"
 
 #: templates/accounts/deletion/nostalgia.html:81
 msgid "Yes, next step"
-msgstr ""
+msgstr "Oui, étape suivante"
 
 #: templates/accounts/deletion/includes/deletion_form.html:15
 msgid "Delete account &amp; Sign out"
-msgstr ""
+msgstr "Supprimer le compte &amp; Se déconnecter"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:8
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
 #: templates/accounts/email_verification/verification_email_plain.html:4
 msgid "Greetings from the Scratch Team at MIT!"
-msgstr ""
+msgstr "Félicitations de la part de l'Equipe Scratch du MIT!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:10
 #, python-format
@@ -1201,11 +1219,15 @@ msgid ""
 "Scratch account <strong>%(username)s</strong>. Please confirm your email "
 "address by clicking the button below:\n"
 msgstr ""
+"\n"
+"    Il y a de cela quelques minutes, vous avez demandé de lier cette adresse "
+"courriel au compte Scratch<strong>%(username)s</strong>. S'il vous plaît "
+"confirmer votre adresse courriel ne cliquent sur le bouton ci-dessous:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:16
 #: templates/accounts/email_verification/verification_email.html:25
 msgid "Confirm my email address"
-msgstr ""
+msgstr "Confirmer mon adresse courriel"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:22
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:12
@@ -1213,18 +1235,19 @@ msgid ""
 "If you didn’t request an email change, don’t worry - you can just ignore "
 "this message."
 msgstr ""
+"Si vous n'avez pas demandé un changement d'adresse courriel, ne vous "
+"inquiétez pas - vous pouvez simplement ignorer ce message."
 
 #: templates/accounts/email_verification/change_email_verification_email.html:25
 #: templates/accounts/email_verification/verification_email.html:42
 msgid "Scratch On!"
-msgstr ""
+msgstr "Allez Scratch!"
 
 # 75%
 #: templates/accounts/email_verification/change_email_verification_email.html:26
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
 #: templates/accounts/email_verification/verification_email.html:44
 #: templates/accounts/email_verification/verification_email_plain.html:31
-#, fuzzy
 msgid "The Scratch Team"
 msgstr "L'équipe Scratch"
 
@@ -1236,27 +1259,31 @@ msgid ""
 "account %(username)s. Please confirm your email address by clicking the "
 "button below:\n"
 msgstr ""
+"\n"
+"Il y a de cela quelques minutes vous avez demandé de lier cette adresse "
+"courriel au compte Scratch %(username)s. S'il vous plaît confirmer votre "
+"adresse courriel en cliquant sur le bouton ci-dessous:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:14
 #: templates/accounts/email_verification/verification_email_plain.html:29
-#, fuzzy
 msgid "Scratch on!"
-msgstr "Le logo Scratch"
+msgstr "Allez Scratch!"
 
 #: templates/accounts/email_verification/failed_verification.html:20
 msgid "Uh oh! Something went wrong with your email confirmation."
-msgstr ""
+msgstr "Uh oh! Quelque chose ne va pas avec votre courriel de confirmation."
 
 #: templates/accounts/email_verification/failed_verification.html:21
 msgid ""
 "To try again, log into your Scratch Account Settings to request another link."
 msgstr ""
+"Pour réessayer, connectez-vous avec vos paramètres du compte Scratch pour "
+"demander un autre lien."
 
 # 93%
 #: templates/accounts/email_verification/failed_verification.html:23
-#, fuzzy
 msgid "My Account Settings"
-msgstr "Paramètres du compte"
+msgstr "Paramètres de mon compte"
 
 #: templates/accounts/email_verification/passed_verification.html:21
 #: templates/homepage/index.html:37
@@ -1269,9 +1296,9 @@ msgid ""
 "projects and comments are <a target=\"_blank\" href=\"/community_guidelines"
 "\">respectful and friendly</a>."
 msgstr ""
-"Scratch regroupe une communauté de tous âges, de tous les coins du monde. "
-"Assurez-vous que vos projets et vos commentaires sont <a target=\"_blank\" "
-"href=\"/community_guidelines\"> respectueux et amicux </ a>."
+"Scratch regroupe une communauté de tous âges, de toute la planète. Assurez-"
+"vous que vos projets et vos commentaires sont respectueux des <a target=\""
+"_blank\" href=\"/community_guidelines\">et amicaux</a>."
 
 #: templates/accounts/email_verification/passed_verification.html:27
 #: templates/homepage/index.html:43
@@ -1291,7 +1318,7 @@ msgstr "Connectez-vous avec d'autres Scratchers"
 
 #: templates/accounts/email_verification/passed_verification.html:52
 msgid "All set to go!"
-msgstr ""
+msgstr "OK!"
 
 #: templates/accounts/email_verification/passed_verification.html:56
 #, python-format
@@ -1299,15 +1326,19 @@ msgid ""
 "Success! You have confirmed your email address, <strong>"
 "%(request.GET.username)s</strong>."
 msgstr ""
+"Avec succès! Vous avez confirmer votre adresse courriel, "
+"<strong>%(request.GET.username)s</strong>."
 
 #: templates/accounts/email_verification/passed_verification.html:57
 msgid ""
 "Jump into Scratch to create new projects and share them with the community!"
 msgstr ""
+"Plongez vous dans Scratch pour créer de nouveaux projets et pour les "
+"partager avec la communauté!"
 
 #: templates/accounts/email_verification/passed_verification.html:59
 msgid "OK, let's go!"
-msgstr ""
+msgstr "OK, allons-y!"
 
 #: templates/accounts/email_verification/verification_email.html:11
 #, python-format
@@ -1317,6 +1348,10 @@ msgid ""
 "up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the "
 "username:\n"
 msgstr ""
+"\n"
+"Salutations de l'équipe Scratch du MIT! Il y a de cela quelques minutes, "
+"votre enfant a signé pour un nouveau compte sur <a href=\"%(scratch_url)s\""
+">Scratch</a> avec le nom d'utilisateur:\n"
 
 #: templates/accounts/email_verification/verification_email.html:15
 #, python-format
@@ -1325,10 +1360,16 @@ msgid ""
 "Greetings from the Scratch Team at MIT! You just signed up for a new account "
 "on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"Salutations de l'équipe Scratch du MIT! Vous venez de signer pour un nouveau "
+"compte sur<a href=\"%(scratch_url)s\">Scratch</a> avec le nom d'utilisateur:"
+"\n"
 
 #: templates/accounts/email_verification/verification_email.html:21
 msgid "Please confirm this email address by clicking the button below:"
 msgstr ""
+"S'il vous plaît confirmez cette adresse courriel en cliquant sur le bouton "
+"ci-dessous:"
 
 #: templates/accounts/email_verification/verification_email.html:32
 #, python-format
@@ -1339,6 +1380,12 @@ msgid ""
 "will give your child full access to share and comment in the Scratch online "
 "community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 msgstr ""
+"\n"
+"    Scratch est un langage de programmation libre et une communauté en ligne "
+"où les enfants peuvent créer des histoires interactives, des jeux et des "
+"animations. En confirmant ce courriel votre enfant aura un accès complet "
+"pour partager et faire des commentaires dans la communauté en ligne Scratch. "
+"En savoir plus<a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
 #: templates/accounts/email_verification/verification_email.html:36
 #, python-format
@@ -1350,6 +1397,12 @@ msgid ""
 "online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</"
 "a>.\n"
 msgstr ""
+"\n"
+"    Scratch est un langage de programmation libre et une communauté en ligne "
+"où vous pouvez créer vos propres histoires interactives, jeux et animations. "
+"En confirmant ce courriel vous aurez un accès complet pour partager et faire "
+"des commentaires dans la communauté en ligne Scratch. En savoir plus <a href="
+"\"%(about_url)s\">%(about_url)s</a>.\n"
 
 #: templates/accounts/email_verification/verification_email_plain.html:7
 #, python-format
@@ -1360,6 +1413,11 @@ msgid ""
 "below:\n"
 "    "
 msgstr ""
+"\n"
+"    Il y a de cela quelques minutes, votre enfant s'est inscrit pour un "
+"nouveau compte Scratch (%(scratch_url)s. S'il vous plaît confirmez cette "
+"adresse courriel en cliquant sur le bouton ci-dessous:\n"
+"    "
 
 #: templates/accounts/email_verification/verification_email_plain.html:11
 #, python-format
@@ -1369,6 +1427,11 @@ msgid ""
 "Please confirm your email address by clicking the button below:\n"
 "    "
 msgstr ""
+"\n"
+"    Vous venez de vous inscrire pour un nouveau compte Scratch "
+"(%(scratch_url)s). S'il vous plaît confirmez votre adresse courriel en "
+"cliquant sur le bouton ci-dessous:\n"
+"        "
 
 #: templates/accounts/email_verification/verification_email_plain.html:19
 #, python-format
@@ -1380,6 +1443,13 @@ msgid ""
 "community. Learn more at %(about_url)s.\n"
 "    "
 msgstr ""
+"\n"
+"    Scratch est un langage de programmation libre et une communauté en ligne "
+"où les enfants peuvent créer des histoires interactives, des jeux et des "
+"animations. En confirmant ce courriel votre enfant aura un accès complet "
+"pour partager et faire des commentaires dans la communauté en ligne Scratch. "
+"En savoir plus %(about_url)s.\n"
+"    "
 
 #: templates/accounts/email_verification/verification_email_plain.html:23
 #, python-format
@@ -1391,10 +1461,19 @@ msgid ""
 "online community. Learn more at %(about_url)s.\n"
 "    "
 msgstr ""
+"\n"
+"    Scratch est un langage de programmation libre et une communauté en ligne "
+"où vous pouvez créer vos propres histoires interactives, jeux et animations. "
+"En confirmant ce courriel vous aurez un accès complet pour partager et faire "
+"des commentaires dans la communauté en ligne Scratch. En savoir plus "
+"%(about_url)s.\n"
+"    "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:6
 msgid "Want to Share Projects, Comment, and Post in the Discussion Forums?"
 msgstr ""
+"Vous voulez partager des projets, des commentaires, et des messages dans le "
+"forum des discussions?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:8
 #, python-format
@@ -1405,6 +1484,11 @@ msgid ""
 "        <strong>%(email_address)s</strong>\n"
 "      "
 msgstr ""
+"\n"
+"        Cliquer sur le lien dans le courriel que nous vous avons envoyé à:\n"
+"        <br/>\n"
+"        <strong>%(email_address)s</strong>\n"
+"     "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:16
 #, python-format
@@ -1415,10 +1499,15 @@ msgid ""
 "a>.\n"
 "      "
 msgstr ""
+"\n"
+"        Vous ne recevez pas de courriels? Assurez vous que votre adresse "
+"courriel est correcte. Modifiez votre adresse courriel dans les<a href=\""
+"%(settings_url)s\">Préférences du compte</a>.\n"
+"      "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:22
 msgid "Before resending, check your spam folder."
-msgstr ""
+msgstr "Avant de renvoyer, vérifier votre dossier des spams."
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
@@ -1440,7 +1529,7 @@ msgstr "Pas d'item"
 
 #: templates/carousel/includes/project-thumb.html:23
 msgid "in"
-msgstr "in"
+msgstr "dans"
 
 #: templates/carousel/includes/project-thumb.html:26
 #: templates/carousel/includes/project-thumb.html:28
@@ -1472,7 +1561,7 @@ msgstr "Utilisateur"
 
 #: templates/cloudmonitor/monitor.html:68
 msgid "Data Name"
-msgstr "Les données du Nom"
+msgstr "Nom de la donnée"
 
 #: templates/cloudmonitor/monitor.html:69
 msgid "Action"
@@ -1480,7 +1569,7 @@ msgstr "Action"
 
 #: templates/cloudmonitor/monitor.html:70
 msgid "Data Value"
-msgstr "La valeur des données"
+msgstr "Valeurs de données"
 
 #: templates/cloudmonitor/monitor.html:71
 msgid "Time"
@@ -1500,7 +1589,8 @@ msgid ""
 msgstr ""
 "Rappelez-vous que ce projet peut avoir été fait par quelqu'un de nouveau à "
 "la programmation.\n"
-"Assurez-vous que vos commentaires sont amicaux et respectueux."
+"                            Assurez-vous que vos commentaires sont amicaux "
+"et respectueux."
 
 # 96%
 #: templates/comments/comment-module.html:37
@@ -1516,16 +1606,14 @@ msgstr "Message"
 
 # 83%
 #: templates/comments/comment-module.html:45
-#, fuzzy
 msgid "Sorry, comment posting has been turned off for this"
-msgstr "Désolé, l'affichage du commentaire a été désactivé pour ce %(type)s."
+msgstr "Désolé, l'affichage du commentaire a été désactivé pour ce"
 
 # 85%
 # 83%
 #: templates/comments/comment-module.html:45
-#, fuzzy
 msgid "studio"
-msgstr "Studio"
+msgstr "studio"
 
 #: templates/comments/comment-module.html:47
 msgid ""
@@ -1705,7 +1793,7 @@ msgstr "Studio:"
 
 #: templates/extensions/terms_of_use.html:13
 msgid "Extension Developer Terms of Use"
-msgstr ""
+msgstr "Conditions d'utilisation pour les développeurs de l'extension"
 
 #: templates/extensions/terms_of_use.html:40
 msgid "Submit"
@@ -1752,9 +1840,8 @@ msgstr "Suiveurs%(tPlural)s )"
 
 # 82%
 #: templates/galleries/base.html:113
-#, fuzzy
 msgid "Projects ( <span data-count=\"projects\">100+</span> )"
-msgstr "Projets ( <span data-count=\"projects\">%(tCount)s</span> )"
+msgstr "Projets ( <span data-count=\"projects\">100+</span> )"
 
 #: templates/galleries/base.html:113
 #, python-format
@@ -1924,7 +2011,7 @@ msgstr "Que se passe-t-il?"
 
 #: templates/homepage/index.html:68
 msgid "This is where you will see updates from Scratchers you follow"
-msgstr "C'est là que vous verrez des mises à jour Scratchers vous suivez"
+msgstr "C'est là que vous verrez des mises à jour des Scratchers vous suivez"
 
 #: templates/homepage/index.html:69
 msgid "Check out some Scratchers</a> you might like to follow"
@@ -2039,11 +2126,11 @@ msgstr "Ne plus suivre"
 
 #: templates/includes/password_required_form.html:8
 msgid "Please verify your account"
-msgstr ""
+msgstr "S'il vous plaît vérifier votre compte"
 
 #: templates/includes/password_required_form.html:40
 msgid "Submit Password"
-msgstr ""
+msgstr "Donner un mot de passe"
 
 #: templates/includes/sort-projects-dropdown.html:4
 #: templates/studio/includes/sort-galleries-dropdown.html:19
@@ -2295,6 +2382,13 @@ msgid ""
 "questions, and find people on the <a href=\"http://scratched.gse.harvard.edu/"
 "\">ScratchEd website</a>.\n"
 msgstr ""
+"\n"
+"  Les étudiants apprennent avec Scratch à tous les niveaux (depuis l'Ecole "
+"élémentaire jusqu'à l'Université) et dans toutes les disciplines comme les "
+"mathématiques, l'informatique, les disciplines artistiques, les études "
+"sociales). Les éducateurs partagent des histoires, échangent des ressources, "
+"posent des questions et rencontrent des gens sur le <a href=\""
+"http://scratched.gse.harvard.edu/\">site web du ScratchEd</a>.\n"
 
 #: templates/info/about.html:84
 msgid "Research"
@@ -2330,10 +2424,19 @@ msgid ""
 "<a href=\"https://secure.donationpay.org/codetolearn/\">donate page</a>, or "
 "contact us at donate@scratch.mit.edu.\n"
 msgstr ""
+"\n"
+"Le projet de Scratch, initié en 2003, a reçu le soutien généreux d'un "
+"consortium regroupant la Fondation nationale des sciences (subventions "
+"0325828, 1002713, 1027848, 1019396), la Fondation Intel, Microsoft, la "
+"Fondation MacArthur, la Fondation LEGO, la Fondation Code-to-Learn, Google, "
+"Dell, Fastly, Inversoft et le MIT Media Lab. Si vous souhaitez soutenir "
+"Scratch, s'il vous plaît allez voir notre \n"
+"<a href=\"https://secure.donationpay.org/codetolearn/\">page donateur</a>, "
+"or contact us at donate@scratch.mit.edu.\n"
 
 #: templates/info/characterscamp.html:9 templates/info/characterscamp.html:16
 msgid "Creative Characters Camp"
-msgstr ""
+msgstr "Creative Characters Camp"
 
 #: templates/info/community_guidelines.html:14
 msgid "Scratch Community Guidelines"
@@ -2353,12 +2456,17 @@ msgid ""
 "<b>Be constructive.</b> When commenting on others' projects, say something "
 "you like about it and offer suggestions."
 msgstr ""
+"<b>Soyez constructif.</b> Lorsque vous commentez les projets des autres, "
+"dites quelque chose de constructif et proposez des suggestions."
 
 #: templates/info/community_guidelines.html:25
 msgid ""
 "<b>Be honest.</b> Don’t try to impersonate other Scratchers, spread rumors, "
 "or otherwise try to trick the community."
 msgstr ""
+"<b>Soyez honnête.</b> N'essayez pas d'usurper l'identité d'autres "
+"Scratchers, de répandre des rumeurs , ou sinon d'essayer de tromper la "
+"communauté."
 
 #: templates/info/community_guidelines.html:29
 msgid ""
@@ -2379,9 +2487,8 @@ msgstr "Collaborateurs et contributeurs de Scratch"
 
 # 75%
 #: templates/info/credits.html:101
-#, fuzzy
 msgid "MIT Scratch Team"
-msgstr "L'équipe Scratch"
+msgstr "L'équipe Scratch du MIT"
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
@@ -2399,6 +2506,15 @@ msgid ""
 "community</a>.\n"
 "    "
 msgstr ""
+"Scratch est conçu dans un esprit d'apprentissage et d'éducation. Une grande "
+"diversité d'éducateurs ont soutenu les créateurs de Scratch depuis 2007, que "
+"cela soit dans des domaines d'apprentissage formel ou informel &ndash; des "
+"professeurs K-12 , des chercheurs en éducation et en informatique, des "
+"libraires, des éducateurs de musée, et des parents.<br/><br/>\n"
+"Vous voulez en savoir plus sur l'apprentissage avec Scratch?<br/>Découvrez <"
+"a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">la communauté "
+"en ligne ScratchED</a>.\n"
+"    "
 
 #: templates/info/educators.html:26
 msgid ""

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-06 14:00+0000\n"
-"PO-Revision-Date: 2015-02-02 04:53+0000\n"
+"PO-Revision-Date: 2015-02-15 18:13+0000\n"
 "Last-Translator: Kazuhiro <abee@squeakland.jp>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ja\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1422852814.000000\n"
+"X-POOTLE-MTIME: 1424024024.000000\n"
 
 #: views.py:321
 msgid "Your message has been sent. We will respond within 3 days."
@@ -556,7 +556,7 @@ msgstr "絶対忘れず、誰にも教えないでください"
 #: templates/modal-registration.html:53
 #: templates/registration/password_reset_confirm.html:26
 msgid "Confirm Password"
-msgstr "新しいパスワード(確認用)"
+msgstr "パスワードの確認"
 
 #: templates/modal-registration.html:55
 msgid "Retype your password"
@@ -667,13 +667,13 @@ msgstr "国"
 msgid ""
 "Enter your email address and we will send you an email to confirm your "
 "account."
-msgstr ""
+msgstr "電子メールアドレスを入力してください。あなたのアカウントの確認のために電子メールを送信します。"
 
 #: templates/modal-registration.html:142
 msgid ""
 "Enter your parent's or guardian's email address and we will send them an "
 "email to confirm this account."
-msgstr ""
+msgstr "両親か保護者の電子メールアドレスを入力してください。このアカウントの確認のために電子メールを送信します。"
 
 #: templates/modal-registration.html:147
 msgid "Email address"
@@ -685,22 +685,23 @@ msgstr ""
 
 #: templates/modal-registration.html:156
 msgid "Confirm email address"
-msgstr ""
+msgstr "電子メールアドレスの確認"
 
 #: templates/modal-registration.html:170
-#, fuzzy
 msgid "Welcome to Scratch,"
 msgstr "Scratchへようこそ!"
 
 #: templates/modal-registration.html:171
 msgid "You're now logged in! You can start exploring and creating projects."
-msgstr ""
+msgstr "あなたは現在ログインしています! 探検を始めて、プロジェクトを作成することができます。"
 
 #: templates/modal-registration.html:173
 msgid ""
 "If you want to share and comment, simply click the link in the email we sent "
 "you at <strong><span class=\"email-welcome\"></span></strong>"
 msgstr ""
+"作品を共有したり、コメントしたいときは、あなたのアドレス<strong><span class=\"email-welcome\""
+"></span></strong>に送信した電子メールのリンクをクリックしてください。"
 
 #: templates/modal-registration.html:177
 #, python-format
@@ -708,6 +709,7 @@ msgid ""
 "Wrong email? Change your email address in <a href=\"%(settings_url)s"
 "\">Account Settings</a>"
 msgstr ""
+"電子メールが間違っていますか? 電子メールアドレスは<a href=\"%(settings_url)s\">アカウント設定</a>から変更できます。"
 
 #: templates/modal-registration.html:180
 msgid "Would you like to:"
@@ -800,7 +802,7 @@ msgstr "さあ、はじめよう！"
 #: templates/modal-registration.html:206
 #: templates/accounts/email_verification/includes/verify_email_popup.html:27
 msgid "Close"
-msgstr ""
+msgstr "閉じる"
 
 #: templates/modal-registration.html:219
 msgid "Your username must be between 3 and 20 characters"
@@ -808,7 +810,7 @@ msgstr ""
 
 #: templates/modal-registration.html:220
 msgid "Sorry, that username already exists"
-msgstr ""
+msgstr "すみません。そのユーザー名は既に使われています。"
 
 #: templates/modal-registration.html:221
 msgid "Invalid username"
@@ -824,7 +826,7 @@ msgstr ""
 
 #: templates/modal-registration.html:224
 msgid "Your username may only contain letters, numbers, - and _"
-msgstr ""
+msgstr "ユーザー名に半角英数字やアンダーバー(_)以外が含まれています。"
 
 # 82%
 #: templates/modal-registration.html:225
@@ -864,15 +866,15 @@ msgstr ""
 
 #: templates/modal-registration.html:233
 msgid "You must provide an email address"
-msgstr ""
+msgstr "電子メールアドレスを入力してください。"
 
 #: templates/modal-registration.html:234
 msgid "You must provide valid email address"
-msgstr ""
+msgstr "正しい電子メールアドレスを入力してください。"
 
 #: templates/modal-registration.html:235
 msgid "Whoops, emails do not match"
-msgstr ""
+msgstr "あれ、電子メールアドレスが一致しません。"
 
 #: templates/password_required_login.html:31
 msgid "Enter"
@@ -1051,7 +1053,7 @@ msgstr ""
 #: templates/accounts/email_change.html:58
 #: templates/accounts/email_verification/includes/verify_email_popup.html:26
 msgid "Resend"
-msgstr ""
+msgstr "再送"
 
 #: templates/accounts/email_change.html:66
 #: templates/comments/comment-module.html:41
@@ -1151,7 +1153,7 @@ msgstr ""
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
 #: templates/accounts/email_verification/verification_email_plain.html:4
 msgid "Greetings from the Scratch Team at MIT!"
-msgstr ""
+msgstr "MITのScratchチームからのご挨拶!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:10
 #, python-format
@@ -1274,6 +1276,9 @@ msgid ""
 "up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the "
 "username:\n"
 msgstr ""
+"\n"
+"MITのScratchチームからのご挨拶! あなたのお子様は<a href=\"%(scratch_url)s\""
+">Scratch</a>に以下のユーザー名で新しいアカウントをサインアップしました:\n"
 
 #: templates/accounts/email_verification/verification_email.html:15
 #, python-format
@@ -1282,6 +1287,9 @@ msgid ""
 "Greetings from the Scratch Team at MIT! You just signed up for a new account "
 "on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"MITのScratchチームからのご挨拶! あなたは<a href=\"%(scratch_url)s\""
+">Scratch</a>に以下のユーザー名で新しいアカウントを作成しました:\n"
 
 #: templates/accounts/email_verification/verification_email.html:21
 msgid "Please confirm this email address by clicking the button below:"
@@ -1351,7 +1359,7 @@ msgstr ""
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:6
 msgid "Want to Share Projects, Comment, and Post in the Discussion Forums?"
-msgstr ""
+msgstr "作品を共有したり、コメントしたり、フォーラムに投稿したりしたいですか?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:8
 #, python-format
@@ -1362,6 +1370,10 @@ msgid ""
 "        <strong>%(email_address)s</strong>\n"
 "      "
 msgstr ""
+"\n"
+"こちらから以下に送信した電子メールのリンクをクリックしてください:\n"
+"<br/>\n"
+"<strong>%(email_address)s</strong>\n"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:16
 #, python-format
@@ -1372,10 +1384,13 @@ msgid ""
 "a>.\n"
 "      "
 msgstr ""
+"\n"
+"電子メールを受け取っていないですか? あなたのメールアドレスが正しいことを書くんんしてください。電子メールアドレスは<a href=\""
+"%(settings_url)s\">アカウント設定</a>から変更できます。\n"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:22
 msgid "Before resending, check your spam folder."
-msgstr ""
+msgstr "再送信の前に迷惑メールフォルダーを調べてください。"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
