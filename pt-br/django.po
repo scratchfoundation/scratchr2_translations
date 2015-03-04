@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-06 14:00+0000\n"
-"PO-Revision-Date: 2015-02-24 11:49+0000\n"
-"Last-Translator: jlmmorais <wannoby@gmail.com>\n"
+"POT-Creation-Date: 2015-02-27 11:45+0000\n"
+"PO-Revision-Date: 2015-03-04 15:03+0000\n"
+"Last-Translator: Mariana <mcasetto@ig.com.br>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -16,76 +16,76 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1424778556.000000\n"
+"X-POOTLE-MTIME: 1425481402.000000\n"
 
-#: views.py:321
+#: views.py:322
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr "Sua mensagem foi enviada. Enviaremos uma resposta dentro de 3 dias."
 
-#: views.py:325 views.py:365
+#: views.py:326 views.py:366
 msgid "Please correct the errors below."
 msgstr "Corrija os erros abaixo."
 
 # 96%
-#: authentication/forms.py:89 authentication/forms.py:115
+#: authentication/forms.py:90 authentication/forms.py:116
 msgid "You must enter your password."
 msgstr "Você deve inserir sua senha."
 
-#: authentication/forms.py:90 authentication/forms.py:116
+#: authentication/forms.py:91 authentication/forms.py:117
 msgid "Wrong password, try again."
 msgstr "Senha incorreta, tente novamente."
 
-#: authentication/forms.py:93
+#: authentication/forms.py:94
 msgid "Enter your password to confirm"
 msgstr "Informe sua senha para confirmar"
 
-#: authentication/forms.py:117 authentication/forms.py:316
+#: authentication/forms.py:118 authentication/forms.py:319
 msgid "Incorrect captcha, please try again."
 msgstr "Captcha incorreto, tente novamente."
 
-#: authentication/forms.py:128
+#: authentication/forms.py:129
 msgid "Keep my projects, but disable all comments"
 msgstr "Manter meus projetos, mas desabilitar todos os comentários"
 
-#: authentication/forms.py:129
+#: authentication/forms.py:130
 msgid "Delete my projects"
 msgstr "Excluir meus projetos"
 
-#: authentication/forms.py:137
+#: authentication/forms.py:138
 msgid "Looks like that isn't a valid email format"
 msgstr "Parece que não é um formato de e-mail válido"
 
-#: authentication/forms.py:143
+#: authentication/forms.py:144
 msgid "The two password fields didn't match."
 msgstr "Os dois campos de senha não coincidem."
 
-#: authentication/forms.py:144 authentication/forms.py:165
+#: authentication/forms.py:145 authentication/forms.py:166
 msgid "Your password must be at least 6 characters long."
 msgstr "Sua senha deve ter pelo menos 6 caracteres."
 
 # the password is tested against the word "password" and not "senha"
 #
-#: authentication/forms.py:145 authentication/forms.py:166
+#: authentication/forms.py:146 authentication/forms.py:167
 msgid "Your password cannot be 'password'."
 msgstr "Sua senha não pode ser \"senha\"."
 
-#: authentication/forms.py:146 authentication/forms.py:167
+#: authentication/forms.py:147 authentication/forms.py:168
 msgid "Your password cannot be the same as your username."
 msgstr "A senha não pode ser igual ao nome de usuário."
 
-#: authentication/forms.py:187
+#: authentication/forms.py:188
 msgid "Sorry we don't have an account with that email address"
 msgstr "Não existe nenhuma conta com este endereço de e-mail"
 
-#: authentication/forms.py:188
+#: authentication/forms.py:189
 msgid "Sorry we don't have an account with that username"
 msgstr "Não existe nenhuma conta com este nome de usuário"
 
-#: authentication/forms.py:189
+#: authentication/forms.py:190
 msgid "You must provide an email or username"
 msgstr "Você deve inserir um e-mail ou um nome de usuário"
 
-#: authentication/forms.py:194 templates/accounts/account_settings.html:10
+#: authentication/forms.py:195 templates/accounts/account_settings.html:10
 #: templates/accounts/email_change.html:10
 #: templates/accounts/password_change_form.html:10
 #: templates/accounts/deletion/confirmation.html:8
@@ -94,21 +94,33 @@ msgstr "Você deve inserir um e-mail ou um nome de usuário"
 msgid "Email"
 msgstr "E-mail"
 
-#: authentication/forms.py:291 authentication/forms.py:312
+#: authentication/forms.py:294 authentication/forms.py:315
 msgid "Incorrect username or password."
 msgstr "Nome de usuário ou senha incorretos."
 
-#: authentication/forms.py:292 authentication/forms.py:313
+#: authentication/forms.py:295 authentication/forms.py:316
 msgid "Please enable cookies on your browser."
 msgstr "Habilite os cookies no seu navegador."
 
-#: authentication/forms.py:293 authentication/forms.py:314
+#: authentication/forms.py:296 authentication/forms.py:317
 msgid "This account is inactive."
 msgstr "Esta conta está inativa."
 
-#: authentication/forms.py:294 authentication/forms.py:315
+#: authentication/forms.py:297 authentication/forms.py:318
 msgid "This account is deleted!"
 msgstr "Esta conta foi excluída!"
+
+#: authentication/forms.py:329
+msgid "Send me Scratch Updates & Newsletters"
+msgstr "Envie-me atualizações e notícias do Scratch"
+
+#: authentication/views.py:590
+msgid "Unsubscribe me from Scratch updates"
+msgstr "Cancelar minha assinatura das atualizações do Scratch"
+
+#: authentication/views.py:591
+msgid "Unsubscribe me from Code-to-Learn Foundation updates"
+msgstr "Cancelar minha assinatura das atualizações da Fundação Code-to-Learn"
 
 #: base_comments/templatetags/scratch_text_filters.py:110
 msgid "day"
@@ -743,23 +755,7 @@ msgstr ""
 "E-mail errado? Altere seu endereço de e-mail em <a href=\"%(settings_url)s\">"
 "Configurações da Conta</a>"
 
-#: templates/modal-registration.html:180
-msgid "Would you like to:"
-msgstr "Você gostaria de:"
-
-#: templates/modal-registration.html:182
-msgid "Learn how to make a project"
-msgstr "Veja como criar um projeto"
-
-#: templates/modal-registration.html:183
-msgid "Choose a starter project"
-msgstr "Escolha um projeto inicial"
-
-#: templates/modal-registration.html:184
-msgid "Connect with a Scratcher"
-msgstr "Conecte-se com um Scratcher"
-
-#: templates/modal-registration.html:197
+#: templates/modal-registration.html:191
 #: templates/info/help/studio/tips/howto/cardtip1.html:13
 #: templates/info/help/studio/tips/howto/cardtip10.html:13
 #: templates/info/help/studio/tips/howto/cardtip11.html:13
@@ -827,94 +823,94 @@ msgstr "Conecte-se com um Scratcher"
 msgid "Next"
 msgstr "Próximo"
 
-#: templates/modal-registration.html:202
+#: templates/modal-registration.html:196
 msgid "OK Lets Go!"
 msgstr "Ok, vamos lá!"
 
-#: templates/modal-registration.html:206
+#: templates/modal-registration.html:200
 #: templates/accounts/email_verification/includes/verify_email_popup.html:27
 msgid "Close"
 msgstr "Fechar"
 
-#: templates/modal-registration.html:219
+#: templates/modal-registration.html:213
 msgid "Your username must be between 3 and 20 characters"
 msgstr "Seu nome de usuário deve conter de 3 a 20 caracteres."
 
-#: templates/modal-registration.html:220
+#: templates/modal-registration.html:214
 msgid "Sorry, that username already exists"
 msgstr "Desculpe, esse nome de usuário já existe"
 
-#: templates/modal-registration.html:221
+#: templates/modal-registration.html:215
 msgid "Invalid username"
 msgstr "Nome de usuário inválido."
 
-#: templates/modal-registration.html:222
+#: templates/modal-registration.html:216
 msgid "Hmm, that looks inappropriate"
 msgstr "Hmm, isso parece inapropriado"
 
-#: templates/modal-registration.html:223
+#: templates/modal-registration.html:217
 msgid "You must enter a username"
 msgstr "Você deve inserir um nome de usuário"
 
-#: templates/modal-registration.html:224
+#: templates/modal-registration.html:218
 msgid "Your username may only contain letters, numbers, - and _"
 msgstr "Seu nome de usuário deve conter apenas letras, números, - e _"
 
 # the password is tested against the word "password" and not "senha"
 # 82%
 #
-#: templates/modal-registration.html:225
+#: templates/modal-registration.html:219
 msgid "Your password cannot be \\\\\\'password\\\\\\'"
 msgstr "Sua senha não pode ser \\\\\\'senha\\\\\\'"
 
 # 87%
 #
-#: templates/modal-registration.html:226
+#: templates/modal-registration.html:220
 msgid "Your password must be at least 6 characters"
 msgstr "Sua senha deve ter pelo menos 6 caracteres"
 
 # 96%
-#: templates/modal-registration.html:227
+#: templates/modal-registration.html:221
 msgid "You must enter a password"
 msgstr "Você deve inserir uma senha"
 
 # 92%
-#: templates/modal-registration.html:228
+#: templates/modal-registration.html:222
 msgid "Your passwords do not match"
 msgstr "Suas senhas não são iguais"
 
-#: templates/modal-registration.html:229
+#: templates/modal-registration.html:223
 msgid "Your password cannot match your username"
 msgstr "Sua senha não pode ser igual ao seu nome de usuário"
 
 # 97%
 #
-#: templates/modal-registration.html:230
+#: templates/modal-registration.html:224
 msgid "You must select a birth month and year"
 msgstr "Você deve selecionar mês e ano de nascimento"
 
-#: templates/modal-registration.html:231
+#: templates/modal-registration.html:225
 msgid "You must specify a gender"
 msgstr "Você deve especificar um sexo"
 
 # 96%
-#: templates/modal-registration.html:232
+#: templates/modal-registration.html:226
 msgid "You must select a country"
 msgstr "Você deve selecionar um país"
 
 # 97%
 #
-#: templates/modal-registration.html:233
+#: templates/modal-registration.html:227
 msgid "You must provide an email address"
 msgstr "Você deve fornecer um e-mail"
 
 # 97%
 #
-#: templates/modal-registration.html:234
+#: templates/modal-registration.html:228
 msgid "You must provide valid email address"
 msgstr "Você deve fornecer um e-mail válido"
 
-#: templates/modal-registration.html:235
+#: templates/modal-registration.html:229
 msgid "Whoops, emails do not match"
 msgstr "Ops, os endereços de e-mail não correspondem"
 
@@ -1130,6 +1126,10 @@ msgstr "E-mail atual"
 msgid "Change Email"
 msgstr "Mudar E-mail"
 
+#: templates/accounts/email_change.html:104
+msgid "Update Subscription"
+msgstr "Atualizar assinatura"
+
 #: templates/accounts/password_change_form.html:9
 msgid "Password "
 msgstr "Senha "
@@ -1225,7 +1225,7 @@ msgstr ""
 "clicando no botão abaixo:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:16
-#: templates/accounts/email_verification/verification_email.html:25
+#: templates/accounts/email_verification/verification_email.html:26
 msgid "Confirm my email address"
 msgstr "Confirmar meu endereço de e-mail"
 
@@ -1239,14 +1239,18 @@ msgstr ""
 "ignorar esta mensagem."
 
 #: templates/accounts/email_verification/change_email_verification_email.html:25
-#: templates/accounts/email_verification/verification_email.html:42
+#: templates/accounts/email_verification/verification_email.html:43
+#: templates/registration/welcome_email_message.html:41
+#: templates/registration/welcome_email_message.txt:32
 msgid "Scratch On!"
 msgstr "Vamos ao Scratch!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
-#: templates/accounts/email_verification/verification_email.html:44
+#: templates/accounts/email_verification/verification_email.html:45
 #: templates/accounts/email_verification/verification_email_plain.html:31
+#: templates/registration/welcome_email_message.html:43
+#: templates/registration/welcome_email_message.txt:33
 msgid "The Scratch Team"
 msgstr "Equipe Scratch"
 
@@ -1286,6 +1290,7 @@ msgstr "Configurações da  Minha Conta"
 
 #: templates/accounts/email_verification/passed_verification.html:21
 #: templates/homepage/index.html:37
+#: templates/registration/welcome_email_subject.html:1
 msgid "Welcome to Scratch!"
 msgstr "Bem-vindo ao Scratch!"
 
@@ -1312,6 +1317,8 @@ msgstr "Experimente os projetos para iniciantes"
 # 79%
 #: templates/accounts/email_verification/passed_verification.html:39
 #: templates/homepage/index.html:55
+#: templates/registration/welcome_email_message.html:17
+#: templates/registration/welcome_email_message.txt:12
 msgid "Connect with other Scratchers"
 msgstr "Conecte-se com outros Scratchers"
 
@@ -1339,7 +1346,7 @@ msgstr ""
 msgid "OK, let's go!"
 msgstr "Ok, vamos lá!"
 
-#: templates/accounts/email_verification/verification_email.html:11
+#: templates/accounts/email_verification/verification_email.html:12
 #, python-format
 msgid ""
 "\n"
@@ -1352,7 +1359,7 @@ msgstr ""
 "nova conta no <a href=\"%(scratch_url)s\">Scratch</a> com o nome de usuário:"
 "\n"
 
-#: templates/accounts/email_verification/verification_email.html:15
+#: templates/accounts/email_verification/verification_email.html:16
 #, python-format
 msgid ""
 "\n"
@@ -1363,11 +1370,11 @@ msgstr ""
 "Saudações da Equipe Scratch do MIT! Você acabou de se registrar no <a href=\""
 "%(scratch_url)s\">Scratch</a> com o nome de usuário:\n"
 
-#: templates/accounts/email_verification/verification_email.html:21
+#: templates/accounts/email_verification/verification_email.html:22
 msgid "Please confirm this email address by clicking the button below:"
 msgstr "Confirme este endereço de e-mail clicando no botão abaixo:"
 
-#: templates/accounts/email_verification/verification_email.html:32
+#: templates/accounts/email_verification/verification_email.html:33
 #, python-format
 msgid ""
 "\n"
@@ -1383,7 +1390,7 @@ msgstr ""
 "compartilhar e comentar na comunidade Scratch on-line. Aprenda mais em <a "
 "href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
-#: templates/accounts/email_verification/verification_email.html:36
+#: templates/accounts/email_verification/verification_email.html:37
 #, python-format
 msgid ""
 "\n"
@@ -1500,6 +1507,50 @@ msgstr ""
 #: templates/accounts/email_verification/includes/verify_email_popup.html:22
 msgid "Before resending, check your spam folder."
 msgstr "Antes de reenviar, verifique sua caixa de spam."
+
+#: templates/accounts/includes/backbone-init-data.html:5
+msgid "Subscription update successful."
+msgstr "Assinatura atualizada com sucesso."
+
+#: templates/accounts/subscription/unsubscribe_email_verification_failure.html:20
+msgid "Oops! There has been a problem unsubscribing your email address."
+msgstr ""
+"Ops! Ocorreu um problema na remoção da assinatura do seu endereço de e-mail."
+
+#: templates/accounts/subscription/unsubscribe_email_verification_failure.html:22
+#, python-format
+msgid ""
+"If you continue to have issues, contact the <a href=\"%(contact_url)s"
+"\">Scratch Team</a>."
+msgstr ""
+"Se você continuar tendo problemas, entre em contato com a <a href=\""
+"%(contact_url)s\">Equipe Scratch</a>."
+
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:16
+msgid "Unsubscribed"
+msgstr "Assinatura cancelada"
+
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:20
+msgid "Your email address has been unsubscribed."
+msgstr "A assinatura do seu endereço de e-mail foi cancelada."
+
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:22
+#, python-format
+msgid ""
+"\n"
+"                You can manage your subscription to Scratch updates from the "
+"Email tab of your <a href=\"%(account_url)s\">Account Settings</a>.\n"
+"            "
+msgstr ""
+"\n"
+"                Você pode gerenciar sua assinatura das atualizações do "
+"Scratch na guia e-mail das suas <a href=\"%(account_url)s\">Configurações de "
+"Conta</a>.\n"
+"            "
+
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:26
+msgid "Take me back to Scratch!"
+msgstr "Voltar ao Scratch!"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
@@ -1727,13 +1778,13 @@ msgstr "Compartilhado"
 
 #: templates/explore/projects.html:42 templates/explore/studios.html:58
 #: templates/explore/studios.html.py:59 templates/explore/studios.html:71
-msgid "This week"
-msgstr "Esta semana"
+msgid "Past 7 Days"
+msgstr "Últimos 7 dias"
 
 #: templates/explore/projects.html:43 templates/explore/studios.html:60
 #: templates/explore/studios.html.py:72
-msgid "This month"
-msgstr "Este mês"
+msgid "Past 30 Days"
+msgstr "Últimos 30 dias"
 
 #: templates/explore/projects.html:48 templates/explore/studios.html:30
 msgid "Sort by:"
@@ -3469,16 +3520,16 @@ msgid ""
 "step2.png\" alt=\"Step 2\">\n"
 "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-431a.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-432.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
-"static/sa/Scratch-431a.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+"static/sa/Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/"
 "offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-431a.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-432.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
-"Scratch-431a.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
@@ -3486,21 +3537,23 @@ msgstr ""
 "\n"
 "\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-"
 "editor/step2.png\" alt=\"Step 2\">\n"
-"\t\t\t\t<p>A seguir, baixe e instale o <br>Scratch 2.0 Offline Editor</p>\n"
+"\t\t\t\t<p>Em seguida, baixe e instale o <br>Editor offline Scratch 2.0</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\""
-"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-431a.dmg\">Baixar<img "
+"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.dmg\">Baixar<img "
 "src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
 "\"></a> <br>\n"
-"\t\t\t\tMac OS 10.5 ou anterior - <a href=\""
-"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-431a.air\">Baixar<img "
+"\t\t\t\tMac OS 10.5 e anteriores - <a href=\""
+"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.air\">Baixar<img "
 "src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
 "\"></a> <br>\n"
-"\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa"
-"/Scratch-431a.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
-"editor/download.png\" alt=\"Download \"></a> <br>\n"
-"\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa"
-"/Scratch-431a.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
-"editor/download.png\" alt=\"Download \"></a>\n"
+"\t\t\t\t   Windows - <a href=\""
+"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.exe\">Baixar<img "
+"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+"\"></a> <br>\n"
+"\t\t\t\t   Linux - <a href=\""
+"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.air\">Baixar<img "
+"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+"\"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 
@@ -14172,12 +14225,8 @@ msgid "ADD IMAGES"
 msgstr "ADICIONE IMAGENS"
 
 #: templates/info/help/studio/tips/howto/valentine8.html:23
-msgid ""
-"To add a sprite (such as Giga or Nano, pictured above), click one of these "
-"buttons:"
-msgstr ""
-"Para adicionar um ator (como Giga ou Nano, mostrados acima), clique em um "
-"desses botões:"
+msgid "To add a sprite, click one of these buttons:"
+msgstr "Para adicionar um ator, clique em um desses botões:"
 
 #: templates/info/help/studio/tips/howto/valentine8.html:24
 #, python-format
@@ -15278,8 +15327,8 @@ msgstr "scripts"
 msgid "sprites"
 msgstr "atores"
 
-#: templates/projects/base.html:121 templates/studio/studio.html:97
-#: templates/studio/studio.html.py:134 templates/studio/studio.html:154
+#: templates/projects/base.html:121 templates/studio/studio.html:100
+#: templates/studio/studio.html.py:137 templates/studio/studio.html:157
 msgid "See inside"
 msgstr "Ver interior"
 
@@ -15425,7 +15474,7 @@ msgstr ""
 "Parabéns por compartilhar seu projeto! Outras pessoas agora podem "
 "experimentá-lo, fazer comentários e remixá-lo."
 
-#: templates/projects/unshared-other.html:8
+#: templates/projects/unshared-other.html:10
 msgid "Sorry this project is not shared"
 msgstr "Desculpe, este projeto não está compartilhado"
 
@@ -15576,7 +15625,7 @@ msgstr "Aqui estão os nomes de usuário associados com esse endereço de e-mail
 msgid "Go here to change the password:"
 msgstr "Acesse aqui para alterar a senha:"
 
-#: templates/registration/password_reset_email_subject.txt:2
+#: templates/registration/password_reset_email_subject.html:2
 msgid "Reset your password - Scratch"
 msgstr "Redefinir sua senha - Scratch"
 
@@ -15595,6 +15644,118 @@ msgstr "E-mail com o qual você se cadastrou"
 #: templates/registration/password_reset_form.html:39
 msgid "Send me a password reset link!"
 msgstr "Envie-me um link de redefinição de senha!"
+
+#: templates/registration/welcome_email_message.html:8
+#, python-format
+msgid "Welcome to Scratch, <strong>%(user.username)s</strong>!"
+msgstr "Bem-vindo ao Scratch, <strong>%(user.username)s</strong>!"
+
+#: templates/registration/welcome_email_message.html:10
+#: templates/registration/welcome_email_message.txt:6
+msgid ""
+"We're thrilled that you’ve joined our growing community! With Scratch, you "
+"can program your own interactive stories, games, and animations — and share "
+"your creations with others in the community."
+msgstr ""
+"Estamos felizes porque você agora faz parte da nossa comunidade que cresce "
+"cada vez mais! Com o Scratch, você pode programar seus próprios jogos, "
+"animações e histórias interativas — e compartilhar suas criações com outros "
+"membros da comunidade."
+
+#: templates/registration/welcome_email_message.html:12
+#: templates/registration/welcome_email_message.txt:8
+msgid "What's Next?"
+msgstr "O que vem agora?"
+
+#: templates/registration/welcome_email_message.html:14
+#: templates/registration/welcome_email_message.txt:9
+msgid "Read our Community Guidelines"
+msgstr "Leia nossas orientações da comunidade"
+
+#: templates/registration/welcome_email_message.html:15
+#: templates/registration/welcome_email_message.txt:10
+msgid "Learn how to make a project"
+msgstr "Veja como criar um projeto"
+
+#: templates/registration/welcome_email_message.html:16
+#: templates/registration/welcome_email_message.txt:11
+msgid "Get inspired with a starter project"
+msgstr "Inspire-se com um projeto para iniciantes"
+
+#: templates/registration/welcome_email_message.html:22
+#: templates/registration/welcome_email_message.txt:17
+msgid "Want to learn more?"
+msgstr "Quer saber mais?"
+
+#: templates/registration/welcome_email_message.html:24
+#, python-format
+msgid ""
+"\n"
+"    Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a href="
+"\"%(faq_url)s\">Frequently Asked Questions</a>, and <a href=\"%(discuss_url)s"
+"\">Discussion Forums</a>, to learn more about Scratch. Going forward, you "
+"will also receive occasional updates from the Scratch team and Code-to-Learn "
+"Foundation with coding tips, inspirational stories, project ideas, and more. "
+"The Code-to-Learn Foundation is a non-profit that supports Scratch "
+"educational initiatives. You can unsubscribe from within the updates or by "
+"clicking below:\n"
+msgstr ""
+"\n"
+"    Confira nossas páginas <a href=\"%(about_url)s\">Sobre o Scratch</a>, <a "
+"href=\"%(faq_url)s\">Perguntas Frequentes</a> e nossos <a href=\""
+"%(discuss_url)s\">Fóruns de Discussão</a> para saber mais sobre o Scratch. "
+"Além disso, você também vai receber atualizações da equipe Scratch e da "
+"Fundação Code-to-Learn, com dicas de programação, histórias inspiradoras, "
+"ideias de projeto e muito mais. A Fundação Code-to-Learn é uma entidade sem "
+"fins lucrativos que apoia as iniciativas educacionais do Scratch. Você pode "
+"cancelar sua assinatura nas atualizações ou clicando abaixo:\n"
+
+#: templates/registration/welcome_email_message.html:28
+#: templates/registration/welcome_email_message.txt:23
+msgid ""
+"\n"
+"    Check out our About Scratch page, Frequently Asked Questions, and "
+"Discussion Forums, to learn more about Scratch. Going forward, you will also "
+"receive occasional updates from the Scratch team with coding tips, "
+"inspirational stories, project ideas, and more. You can unsubscribe from "
+"within the updates or by clicking below:\n"
+msgstr ""
+"\n"
+"    \n"
+"    Confira nossas páginas Sobre o Scratch, Perguntas Frequentes e nossos "
+"Fóruns de Discussão para saber mais sobre o Scratch. Além disso, você também "
+"vai receber atualizações da equipe Scratch e da Fundação Code-to-Learn, com "
+"dicas de programação, histórias inspiradoras, ideias de projeto e muito "
+"mais. Você pode cancelar sua assinatura nas atualizações ou clicando abaixo:"
+"\n"
+
+#: templates/registration/welcome_email_message.txt:4
+#, python-format
+msgid "Welcome to Scratch, %(user.username)s!"
+msgstr "Bem-vindo ao Scratch, %(user.username)s!"
+
+#: templates/registration/welcome_email_message.txt:19
+#, python-format
+msgid ""
+"\n"
+"    Check out our About Scratch page (%(about_url)s),Frequently Asked "
+"Questions (%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn "
+"more about Scratch. Going forward, you will also receive occasional updates "
+"from the Scratch team and Code-to-Learn Foundation with coding tips, "
+"inspirational stories, project ideas, and more. The Code-to-Learn Foundation "
+"is a non-profit that supports Scratch educational initiatives. You can "
+"unsubscribe from within the updates or by clicking below:\n"
+msgstr ""
+"\n"
+"    \n"
+"    Confira nossas páginas Sobre o Scratch (%(about_url)s), as Perguntas "
+"Frequentes (%(faq_url)s) e os Fóruns de Discussão (%(discuss_url)s) para "
+"saber mais sobre o Scratch. Além disso, você também vai receber atualizações "
+"da equipe Scratch e da Fundação Code-to-Learn, com dicas de programação, "
+"histórias inspiradoras, ideias de projeto e muito mais. A Fundação Code-to-"
+"Learn é uma entidade sem fins lucrativos que apoia as iniciativas "
+"educacionais do Scratch. Você pode cancelar sua assinatura nas atualizações "
+"ou clicando abaixo:\n"
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format
@@ -15805,26 +15966,26 @@ msgstr "Novo Projeto"
 msgid "New Studio"
 msgstr "Novo Estúdio"
 
-#: templates/studio/studio.html:46 templates/studio/studio.html.py:68
-#: templates/studio/studio.html:81
+#: templates/studio/studio.html:49 templates/studio/studio.html.py:71
+#: templates/studio/studio.html:84
 msgid "Load More"
 msgstr "Carregar mais"
 
-#: templates/studio/studio.html:95 templates/studio/studio.html.py:132
-#: templates/studio/studio.html:152
+#: templates/studio/studio.html:98 templates/studio/studio.html.py:135
+#: templates/studio/studio.html:155
 #: templates/studio/includes/project_list.html:19
 msgid "Last modified:"
 msgstr "Última alteração:"
 
-#: templates/studio/studio.html:108
+#: templates/studio/studio.html:111
 msgid "Add to"
 msgstr "Adicionar a"
 
-#: templates/studio/studio.html:118
+#: templates/studio/studio.html:121
 msgid "Unshare"
 msgstr "Cancelar compartilhamento"
 
-#: templates/studio/studio.html:138
+#: templates/studio/studio.html:141
 msgid "Delete"
 msgstr "Apagar"
 
@@ -15897,6 +16058,70 @@ msgstr "Minhas coisas favoritas"
 #: userprofiles/models.py:92
 msgid "Why I Scratch"
 msgstr "Por que eu uso Scratch"
+
+#~ msgid "Would you like to:"
+#~ msgstr "Você gostaria de:"
+
+#~ msgid "Choose a starter project"
+#~ msgstr "Escolha um projeto inicial"
+
+#~ msgid "Connect with a Scratcher"
+#~ msgstr "Conecte-se com um Scratcher"
+
+#~ msgid "This week"
+#~ msgstr "Esta semana"
+
+#~ msgid "This month"
+#~ msgstr "Este mês"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/"
+#~ "step2.png\" alt=\"Step 2\">\n"
+#~ "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
+#~ "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
+#~ "sa/Scratch-431a.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/download.png\" alt=\"Download \"></a> <br>\n"
+#~ "\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
+#~ "static/sa/Scratch-431a.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+#~ "offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
+#~ "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
+#~ "sa/Scratch-431a.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/download.png\" alt=\"Download \"></a> <br>\n"
+#~ "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
+#~ "Scratch-431a.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/download.png\" alt=\"Download \"></a>\n"
+#~ "\t\t\t\t</p>\n"
+#~ "\t\t\t\t"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/step2.png\" alt=\"Step 2\">\n"
+#~ "\t\t\t\t<p>A seguir, baixe e instale o <br>Scratch 2.0 Offline Editor</p>\n"
+#~ "\t\t\t\t<p>Mac OS X - <a href=\""
+#~ "http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-431a.dmg\">Baixar<img "
+#~ "src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+#~ "\"></a> <br>\n"
+#~ "\t\t\t\tMac OS 10.5 ou anterior - <a href=\""
+#~ "http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-431a.air\">Baixar<img "
+#~ "src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+#~ "\"></a> <br>\n"
+#~ "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa"
+#~ "/Scratch-431a.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/download.png\" alt=\"Download \"></a> <br>\n"
+#~ "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa"
+#~ "/Scratch-431a.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/download.png\" alt=\"Download \"></a>\n"
+#~ "\t\t\t\t</p>\n"
+#~ "\t\t\t\t"
+
+#~ msgid ""
+#~ "To add a sprite (such as Giga or Nano, pictured above), click one of these "
+#~ "buttons:"
+#~ msgstr ""
+#~ "Para adicionar um ator (como Giga ou Nano, mostrados acima), clique em um "
+#~ "desses botões:"
 
 #~ msgid "Account Settings -  Scratch"
 #~ msgstr "Configurações de Conta - Scratch"
