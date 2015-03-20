@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-27 11:45+0000\n"
-"PO-Revision-Date: 2015-02-12 19:18+0000\n"
+"PO-Revision-Date: 2015-03-17 07:02+0000\n"
 "Last-Translator: s_federici <s_federici@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1423768714.000000\n"
+"X-POOTLE-MTIME: 1426575731.000000\n"
 
 #: views.py:322
 msgid "Your message has been sent. We will respond within 3 days."
@@ -113,15 +113,15 @@ msgstr "Questo account è stato cancellato!"
 
 #: authentication/forms.py:329
 msgid "Send me Scratch Updates & Newsletters"
-msgstr ""
+msgstr "Inviami le ultime novità di Scratch via email"
 
 #: authentication/views.py:590
 msgid "Unsubscribe me from Scratch updates"
-msgstr ""
+msgstr "Disiscrivimi dagli Aggiornamenti di Scratch"
 
 #: authentication/views.py:591
 msgid "Unsubscribe me from Code-to-Learn Foundation updates"
-msgstr ""
+msgstr "Disiscrivimi dagli aggiornamenti della Code-to-Learn Foundation"
 
 #: base_comments/templatetags/scratch_text_filters.py:110
 msgid "day"
@@ -1044,7 +1044,7 @@ msgstr "Aggiorna"
 #: templates/accounts/email_change.html:18
 #: templates/accounts/email_change.html:30
 msgid "Your email address is unconfirmed"
-msgstr "Il tuo indirizzo non è confermanto"
+msgstr "Il tuo indirizzo non è confermato"
 
 #: templates/accounts/email_change.html:19
 msgid ""
@@ -1126,7 +1126,7 @@ msgstr "Cambia Email"
 
 #: templates/accounts/email_change.html:104
 msgid "Update Subscription"
-msgstr ""
+msgstr "Aggiorna Iscrizione"
 
 #: templates/accounts/password_change_form.html:9
 msgid "Password "
@@ -1512,11 +1512,11 @@ msgstr "Prima di inviarlo di nuovo, controlla la tua casella della spam."
 
 #: templates/accounts/includes/backbone-init-data.html:5
 msgid "Subscription update successful."
-msgstr ""
+msgstr "Aggiornamento dell'iscrizione riuscito con successo."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_failure.html:20
 msgid "Oops! There has been a problem unsubscribing your email address."
-msgstr ""
+msgstr "Oops! C'è stato un problema durante l'annullamento dell'iscrizione."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_failure.html:22
 #, python-format
@@ -1524,14 +1524,16 @@ msgid ""
 "If you continue to have issues, contact the <a href=\"%(contact_url)s"
 "\">Scratch Team</a>."
 msgstr ""
+"Se il problema persiste, contatta il <a href=\"%(contact_url)s\">Team di "
+"Scratch</a>."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:16
 msgid "Unsubscribed"
-msgstr ""
+msgstr "Iscrizione annullata"
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:20
 msgid "Your email address has been unsubscribed."
-msgstr ""
+msgstr "Il tuo indirizzo email è stato disiscritto."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:22
 #, python-format
@@ -1541,10 +1543,15 @@ msgid ""
 "Email tab of your <a href=\"%(account_url)s\">Account Settings</a>.\n"
 "            "
 msgstr ""
+"\n"
+"                Puoi gestire la tua iscrizione agli aggiornamenti di Scratch "
+"dalla scheda Email della tua <a href=\"%(account_url)s\">Configurazione "
+"account</a>.\n"
+"            "
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:26
 msgid "Take me back to Scratch!"
-msgstr ""
+msgstr "Torna a Scratch!"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14 templates/carousel/carousel.html:16
@@ -1776,12 +1783,12 @@ msgstr "Condiviso"
 #: templates/explore/projects.html:42 templates/explore/studios.html:58
 #: templates/explore/studios.html.py:59 templates/explore/studios.html:71
 msgid "Past 7 Days"
-msgstr ""
+msgstr "Ultimi 7 Giorni"
 
 #: templates/explore/projects.html:43 templates/explore/studios.html:60
 #: templates/explore/studios.html.py:72
 msgid "Past 30 Days"
-msgstr ""
+msgstr "Ultimi 30 Giorni"
 
 #: templates/explore/projects.html:48 templates/explore/studios.html:30
 msgid "Sort by:"
@@ -3560,6 +3567,28 @@ msgid ""
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
+"\n"
+"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-"
+"editor/step2.png\" alt=\"Step 2\">\n"
+"\t\t\t\t<p>Poi scarica e installa l'Editor Offline di <br>Scratch 2.0</p>\n"
+"\t\t\t\t<p>Mac OS X - <a href=\""
+"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.dmg\">Scarica<img "
+"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+"\"></a> <br>\n"
+"\t\t\t\tMac OS 10.5 & Precedenti - <a href=\""
+"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.air\">Scarica<img "
+"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+"\"></a> <br>\n"
+"\t\t\t\t   Windows - <a href=\""
+"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.exe\">Scarica<img "
+"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+"\"></a> <br>\n"
+"\t\t\t\t   Linux - <a href=\""
+"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.air\">Scarica<img "
+"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+"\"></a>\n"
+"\t\t\t\t</p>\n"
+"\t\t\t\t"
 
 #: templates/info/scratch2download.html:58
 msgid "Support Materials"
@@ -14302,7 +14331,7 @@ msgstr "AGGIUNGERE DELLE IMMAGINI"
 
 #: templates/info/help/studio/tips/howto/valentine8.html:23
 msgid "To add a sprite, click one of these buttons:"
-msgstr ""
+msgstr "Per aggiungere uno sprite, clicca su uno di questi pulsanti:"
 
 #: templates/info/help/studio/tips/howto/valentine8.html:24
 #, python-format
@@ -15731,7 +15760,7 @@ msgstr "Inviami un link per la cancellazione della password!"
 #: templates/registration/welcome_email_message.html:8
 #, python-format
 msgid "Welcome to Scratch, <strong>%(user.username)s</strong>!"
-msgstr ""
+msgstr "Benvenuto su Scratch <strong>%(user.username)s</strong>!"
 
 #: templates/registration/welcome_email_message.html:10
 #: templates/registration/welcome_email_message.txt:6
@@ -15740,16 +15769,20 @@ msgid ""
 "can program your own interactive stories, games, and animations — and share "
 "your creations with others in the community."
 msgstr ""
+"Siamo entusiasti che tu ti sia unito alla nostra comunità in continua "
+"crescita! Con Scratch puoi programmare storie interattive, giochi, e "
+"animazioni — e condividere le tue creazioni con gli altri membri della "
+"comunità."
 
 #: templates/registration/welcome_email_message.html:12
 #: templates/registration/welcome_email_message.txt:8
 msgid "What's Next?"
-msgstr ""
+msgstr "E ora cosa vuoi fare?"
 
 #: templates/registration/welcome_email_message.html:14
 #: templates/registration/welcome_email_message.txt:9
 msgid "Read our Community Guidelines"
-msgstr ""
+msgstr "Leggi le Linee Guida della Comunità"
 
 #: templates/registration/welcome_email_message.html:15
 #: templates/registration/welcome_email_message.txt:10
@@ -15759,12 +15792,12 @@ msgstr "Impara come creare un progetto"
 #: templates/registration/welcome_email_message.html:16
 #: templates/registration/welcome_email_message.txt:11
 msgid "Get inspired with a starter project"
-msgstr ""
+msgstr "Lasciati ispirati da un progetto Per Iniziare"
 
 #: templates/registration/welcome_email_message.html:22
 #: templates/registration/welcome_email_message.txt:17
 msgid "Want to learn more?"
-msgstr ""
+msgstr "Vuoi saperne di più?"
 
 #: templates/registration/welcome_email_message.html:24
 #, python-format
@@ -15779,6 +15812,16 @@ msgid ""
 "educational initiatives. You can unsubscribe from within the updates or by "
 "clicking below:\n"
 msgstr ""
+"\n"
+"    Per saperne di più su Scratch, visita le pagine <a href=\"%(about_url)s\""
+">Informazioni su Scratch</a> e <a href=\"%(faq_url)s\">Domande frequenti "
+"(FAQ)</a> e i nostri <a href=\"%(discuss_url)s\">Forum di discussione</a>. "
+"Andando avanti riceverai di tanto in tanto degli aggiornamenti dal Team di "
+"Scratch e dalla Code-to-Learn Foundation con suggerimenti sulla "
+"programmazione, storie che possano ispirarti, idee per progetti e molto "
+"altro. La Code-to-Learn Foundation è un'organizzazione non a scopo di lucro "
+"e dà supporto alle iniziative educative di Scratch. Potrai disiscriverti "
+"usando il link che trovi negli aggiornamenti oppure cliccando qui sotto:\n"
 
 #: templates/registration/welcome_email_message.html:28
 #: templates/registration/welcome_email_message.txt:23
@@ -15790,11 +15833,21 @@ msgid ""
 "inspirational stories, project ideas, and more. You can unsubscribe from "
 "within the updates or by clicking below:\n"
 msgstr ""
+"\n"
+"    Per saperne di più su Scratch, visita le pagine <a href=\"%(about_url)s\""
+">Informazioni su Scratch</a> e <a href=\"%(faq_url)s\">Domande frequenti "
+"(FAQ)</a> e i nostri <a href=\"%(discuss_url)s\">Forum di discussione</a>. "
+"Andando avanti riceverai di tanto in tanto degli aggiornamenti dal Team di "
+"Scratch e dalla Code-to-Learn Foundation con suggerimenti sulla "
+"programmazione, storie che possano ispirarti, idee per progetti e molto "
+"altro. La Code-to-Learn Foundation è un'organizzazione non a scopo di lucro "
+"e dà supporto alle iniziative educative di Scratch. Potrai disiscriverti "
+"usando il link che trovi negli aggiornamenti oppure cliccando qui sotto:\n"
 
 #: templates/registration/welcome_email_message.txt:4
 #, python-format
 msgid "Welcome to Scratch, %(user.username)s!"
-msgstr ""
+msgstr "Benvenuto su Scratch %(user.username)s!"
 
 #: templates/registration/welcome_email_message.txt:19
 #, python-format
@@ -15808,6 +15861,16 @@ msgid ""
 "is a non-profit that supports Scratch educational initiatives. You can "
 "unsubscribe from within the updates or by clicking below:\n"
 msgstr ""
+"\n"
+"    Per saperne di più su Scratch, visita le pagine <a href=\"%(about_url)s\""
+">Informazioni su Scratch</a> e <a href=\"%(faq_url)s\">Domande frequenti "
+"(FAQ)</a> e i nostri <a href=\"%(discuss_url)s\">Forum di discussione</a>. "
+"Andando avanti riceverai di tanto in tanto degli aggiornamenti dal Team di "
+"Scratch e dalla Code-to-Learn Foundation con suggerimenti sulla "
+"programmazione, storie che possano ispirarti, idee per progetti e molto "
+"altro. La Code-to-Learn Foundation è un'organizzazione non a scopo di lucro "
+"e dà supporto alle iniziative educative di Scratch. Potrai disiscriverti "
+"usando il link che trovi negli aggiornamenti oppure cliccando qui sotto:\n"
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format
