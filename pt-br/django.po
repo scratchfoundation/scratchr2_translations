@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-27 11:45+0000\n"
+"POT-Creation-Date: 2015-03-20 14:16+0000\n"
 "PO-Revision-Date: 2015-03-06 21:29+0000\n"
 "Last-Translator: mewtaylor <mataylor@media.mit.edu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,66 +26,83 @@ msgstr "Sua mensagem foi enviada. Enviaremos uma resposta dentro de 3 dias."
 msgid "Please correct the errors below."
 msgstr "Corrija os erros abaixo."
 
+#: authentication/forms.py:29
+msgid "username exists"
+msgstr ""
+
+#: authentication/forms.py:36
+#, fuzzy
+msgid "invalid username"
+msgstr "Nome de usuário inválido."
+
+#: authentication/forms.py:50
+msgid "invalid gender choice"
+msgstr ""
+
+#: authentication/forms.py:52
+msgid "invalid password"
+msgstr ""
+
 # 96%
-#: authentication/forms.py:90 authentication/forms.py:116
+#: authentication/forms.py:92 authentication/forms.py:118
 msgid "You must enter your password."
 msgstr "Você deve inserir sua senha."
 
-#: authentication/forms.py:91 authentication/forms.py:117
+#: authentication/forms.py:93 authentication/forms.py:119
 msgid "Wrong password, try again."
 msgstr "Senha incorreta, tente novamente."
 
-#: authentication/forms.py:94
+#: authentication/forms.py:96
 msgid "Enter your password to confirm"
 msgstr "Informe sua senha para confirmar"
 
-#: authentication/forms.py:118 authentication/forms.py:319
+#: authentication/forms.py:120 authentication/forms.py:322
 msgid "Incorrect captcha, please try again."
 msgstr "Captcha incorreto, tente novamente."
 
-#: authentication/forms.py:129
+#: authentication/forms.py:131
 msgid "Keep my projects, but disable all comments"
 msgstr "Manter meus projetos, mas desabilitar todos os comentários"
 
-#: authentication/forms.py:130
+#: authentication/forms.py:132
 msgid "Delete my projects"
 msgstr "Excluir meus projetos"
 
-#: authentication/forms.py:138
+#: authentication/forms.py:140
 msgid "Looks like that isn't a valid email format"
 msgstr "Parece que não é um formato de e-mail válido"
 
-#: authentication/forms.py:144
+#: authentication/forms.py:146
 msgid "The two password fields didn't match."
 msgstr "Os dois campos de senha não coincidem."
 
-#: authentication/forms.py:145 authentication/forms.py:166
+#: authentication/forms.py:147 authentication/forms.py:168
 msgid "Your password must be at least 6 characters long."
 msgstr "Sua senha deve ter pelo menos 6 caracteres."
 
 # the password is tested against the word "password" and not "senha"
 #
-#: authentication/forms.py:146 authentication/forms.py:167
+#: authentication/forms.py:148 authentication/forms.py:169
 msgid "Your password cannot be 'password'."
 msgstr "Sua senha não pode ser \"senha\"."
 
-#: authentication/forms.py:147 authentication/forms.py:168
+#: authentication/forms.py:149 authentication/forms.py:170
 msgid "Your password cannot be the same as your username."
 msgstr "A senha não pode ser igual ao nome de usuário."
 
-#: authentication/forms.py:188
+#: authentication/forms.py:190
 msgid "Sorry we don't have an account with that email address"
 msgstr "Não existe nenhuma conta com este endereço de e-mail"
 
-#: authentication/forms.py:189
+#: authentication/forms.py:191
 msgid "Sorry we don't have an account with that username"
 msgstr "Não existe nenhuma conta com este nome de usuário"
 
-#: authentication/forms.py:190
+#: authentication/forms.py:192
 msgid "You must provide an email or username"
 msgstr "Você deve inserir um e-mail ou um nome de usuário"
 
-#: authentication/forms.py:195 templates/accounts/account_settings.html:10
+#: authentication/forms.py:197 templates/accounts/account_settings.html:10
 #: templates/accounts/email_change.html:10
 #: templates/accounts/password_change_form.html:10
 #: templates/accounts/deletion/confirmation.html:8
@@ -94,31 +111,31 @@ msgstr "Você deve inserir um e-mail ou um nome de usuário"
 msgid "Email"
 msgstr "E-mail"
 
-#: authentication/forms.py:294 authentication/forms.py:315
+#: authentication/forms.py:297 authentication/forms.py:318
 msgid "Incorrect username or password."
 msgstr "Nome de usuário ou senha incorretos."
 
-#: authentication/forms.py:295 authentication/forms.py:316
+#: authentication/forms.py:298 authentication/forms.py:319
 msgid "Please enable cookies on your browser."
 msgstr "Habilite os cookies no seu navegador."
 
-#: authentication/forms.py:296 authentication/forms.py:317
+#: authentication/forms.py:299 authentication/forms.py:320
 msgid "This account is inactive."
 msgstr "Esta conta está inativa."
 
-#: authentication/forms.py:297 authentication/forms.py:318
+#: authentication/forms.py:300 authentication/forms.py:321
 msgid "This account is deleted!"
 msgstr "Esta conta foi excluída!"
 
-#: authentication/forms.py:329
+#: authentication/forms.py:332
 msgid "Send me Scratch Updates & Newsletters"
 msgstr "Envie-me atualizações e notícias do Scratch"
 
-#: authentication/views.py:590
+#: authentication/views.py:598
 msgid "Unsubscribe me from Scratch updates"
 msgstr "Cancelar minha assinatura das atualizações do Scratch"
 
-#: authentication/views.py:591
+#: authentication/views.py:599
 msgid "Unsubscribe me from Code-to-Learn Foundation updates"
 msgstr "Cancelar minha assinatura das atualizações da Fundação Code-to-Learn"
 
@@ -162,6 +179,1501 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s atrás"
 
+#: djangobb_forum/admin.py:31
+msgid "subscribers"
+msgstr "membros"
+
+#: djangobb_forum/feeds.py:27 djangobb_forum/feeds.py:28
+#: djangobb_forum/templates/djangobb_forum/base.html:14
+msgid "Latest posts on forum"
+msgstr "Publicações mais recentes no fórum"
+
+#: djangobb_forum/feeds.py:46 djangobb_forum/feeds.py:47
+#: djangobb_forum/templates/djangobb_forum/base.html:15
+msgid "Latest topics on forum"
+msgstr "Tópicos mais recentes no fórum"
+
+#: djangobb_forum/feeds.py:75 djangobb_forum/feeds.py:100
+#: djangobb_forum/feeds.py:125
+#, python-format
+msgid "Latest posts on %s"
+msgstr "Publicações mais recentes em %s"
+
+#: djangobb_forum/feeds.py:83
+#, python-format
+msgid "Latest posts on the topic \"%s\""
+msgstr "Publicações mais recentes no tópico \"%s\""
+
+#: djangobb_forum/feeds.py:108
+#, python-format
+msgid "Latest posts on the forum \"%s\""
+msgstr "Publicações mais recentes no fórum \"%s\""
+
+#: djangobb_forum/feeds.py:128
+#, python-format
+msgid "Latest posts on the category \"%s\""
+msgstr "Publicações mais recentes na categoria \"%s\""
+
+#: djangobb_forum/forms.py:27 djangobb_forum/forms.py:227
+#: djangobb_forum/forms.py:365 templates/base.html:214
+#: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
+msgid "Username"
+msgstr "Nome de usuário"
+
+#: djangobb_forum/forms.py:28
+msgid "Registered"
+msgstr "Inscrito"
+
+#: djangobb_forum/forms.py:29
+msgid "Number of posts"
+msgstr "Número de publicações"
+
+#: djangobb_forum/forms.py:33
+msgid "Post time"
+msgstr "Horário de publicação"
+
+#: djangobb_forum/forms.py:34
+msgid "Author"
+msgstr "Autor"
+
+#: djangobb_forum/forms.py:35 djangobb_forum/forms.py:58
+#: djangobb_forum/forms.py:186 djangobb_forum/forms.py:458
+#: djangobb_forum/models.py:160
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:31
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
+msgid "Subject"
+msgstr "Assunto"
+
+#: djangobb_forum/forms.py:36 djangobb_forum/forms.py:401
+#: djangobb_forum/models.py:130 djangobb_forum/models.py:159
+#: djangobb_forum/templates/djangobb_forum/index.html:55
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:26
+msgid "Forum"
+msgstr "Fórum"
+
+#: djangobb_forum/forms.py:40
+msgid "Ascending"
+msgstr "Ascendente"
+
+#: djangobb_forum/forms.py:41
+msgid "Descending"
+msgstr "Descendente"
+
+#: djangobb_forum/forms.py:45 djangobb_forum/models.py:175
+#: djangobb_forum/templates/djangobb_forum/index.html:56
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
+msgid "Topics"
+msgstr "Tópicos"
+
+# 80%
+#: djangobb_forum/forms.py:46 djangobb_forum/models.py:275
+#: djangobb_forum/templates/djangobb_forum/index.html:57
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
+msgid "Posts"
+msgstr "Publicações"
+
+#: djangobb_forum/forms.py:50
+msgid "Message text and topic subject"
+msgstr "Texto da mensagem e assunto do tópico"
+
+#: djangobb_forum/forms.py:51
+msgid "Message text only"
+msgstr "Apenas o texto da mensagem"
+
+#: djangobb_forum/forms.py:52
+msgid "Topic subject only"
+msgstr "Apenas o assunto do tópico"
+
+#: djangobb_forum/forms.py:60
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
+msgid "Attachment"
+msgstr "Anexo"
+
+#: djangobb_forum/forms.py:61
+msgid "Subscribe"
+msgstr "Inscrever-se"
+
+# 87%
+#: djangobb_forum/forms.py:61
+msgid "Subscribe to this topic."
+msgstr "Inscrever-se neste tópico."
+
+#: djangobb_forum/forms.py:91
+msgid "Can't be empty nor contain only whitespace characters"
+msgstr "Este campo não pode estar vazio nem conter apenas espaços"
+
+#: djangobb_forum/forms.py:101
+msgid ""
+"Hmm, the filterbot is pretty sure your recent comments weren't ok for "
+"Scratch, so your account has been muted for the rest of the day. :/"
+msgstr ""
+"Hmm, o filterbot classificou seus últimos comentários como inadequados para "
+"o Scratch, portanto sua conta não tem autorização para publicar comentários "
+"até o final do dia. :/"
+
+#: djangobb_forum/forms.py:130 djangobb_forum/forms.py:134
+#, python-format
+msgid "Sorry, you have to wait %d seconds between posts."
+msgstr "Desculpe, você deve esperar %d segundos entre publicações sucessivas."
+
+#: djangobb_forum/forms.py:143
+msgid "Attachment is too big"
+msgstr "O anexo é muito grande"
+
+#: djangobb_forum/forms.py:188
+msgid "Silent edit?"
+msgstr "Edição silenciosa?"
+
+# 83%
+#
+#: djangobb_forum/forms.py:228
+msgid "E-mail"
+msgstr "E-mail"
+
+#: djangobb_forum/forms.py:259
+msgid "Real name"
+msgstr "Nome verdadeiro"
+
+#: djangobb_forum/forms.py:367 djangobb_forum/forms.py:403
+#: templates/includes/sort-projects-dropdown.html:4
+#: templates/studio/includes/sort-galleries-dropdown.html:19
+#: templates/studio/includes/sort-projects-dropdown.html:4
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#: djangobb_forum/forms.py:368 djangobb_forum/forms.py:404
+msgid "Sort order"
+msgstr "Critério de ordem"
+
+#: djangobb_forum/forms.py:397
+msgid "Keyword search"
+msgstr "Pesquisa por palavra-chave"
+
+#: djangobb_forum/forms.py:399
+msgid "Author search"
+msgstr "Pesquisa por autor"
+
+#: djangobb_forum/forms.py:402
+msgid "Search in"
+msgstr "Pesquisar em"
+
+#: djangobb_forum/forms.py:405
+msgid "Show results as"
+msgstr "Mostrar resultados como"
+
+#: djangobb_forum/forms.py:430
+#, python-format
+msgid "User \"%s\" does not exist"
+msgstr "O usuário \"%s\" não existe"
+
+#: djangobb_forum/forms.py:440
+msgid "You already voted for this post"
+msgstr "Você já votou nesta publicação"
+
+#: djangobb_forum/forms.py:444
+msgid "This post does't belong to that user"
+msgstr "Esta publicação não pertence a esse usuário"
+
+# 87%
+#: djangobb_forum/forms.py:460 djangobb_forum/models.py:266
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:36
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
+msgid "Message"
+msgstr "Mensagem"
+
+#: djangobb_forum/forms.py:513
+#, python-format
+msgid "You have selected too many choices. You may only select %i."
+msgstr "Você selecionou muitas opções. Você só pode selecionar %i."
+
+#: djangobb_forum/forms.py:520
+msgid "Write each answer on a new line."
+msgstr "Escreva cada resposta em uma nova linha."
+
+#: djangobb_forum/forms.py:523
+msgid ""
+"Number of days for this poll to run. Leave empty for an indefinite poll."
+msgstr ""
+"O número de dias que a pesquisa durará. Deixe vazio para uma pesquisa de "
+"duração indefinida."
+
+#: djangobb_forum/forms.py:540
+msgid "There is no valid answer."
+msgstr "Não há resposta válida."
+
+#: djangobb_forum/forms.py:546
+msgid "One of the answers is too long."
+msgstr "Uma das respostas é muito longa."
+
+#: djangobb_forum/models.py:46
+msgid "Display your e-mail address."
+msgstr "Exibir seu e-mail."
+
+#: djangobb_forum/models.py:47
+msgid "Hide your e-mail address but allow form e-mail."
+msgstr ""
+"Ocultar seu e-mail, mas permitir o envio de mensagens através de formulário."
+
+#: djangobb_forum/models.py:48
+msgid "Hide your e-mail address and disallow form e-mail."
+msgstr ""
+"Ocultar seu e-mail e não permitir o envio de mensagens através de formulário."
+
+#: djangobb_forum/models.py:81 djangobb_forum/models.py:119
+#: djangobb_forum/models.py:489
+msgid "Name"
+msgstr "Nome"
+
+#: djangobb_forum/models.py:82
+msgid "Groups"
+msgstr "Grupos"
+
+#: djangobb_forum/models.py:82
+msgid "Only users from these groups can see this category"
+msgstr "Apenas os usuários destes grupos podem ver esta categoria"
+
+#: djangobb_forum/models.py:83 djangobb_forum/models.py:120
+msgid "Position"
+msgstr "Posição"
+
+#: djangobb_forum/models.py:87 djangobb_forum/models.py:117
+msgid "Category"
+msgstr "Categoria"
+
+#: djangobb_forum/models.py:88
+msgid "Categories"
+msgstr "Categorias"
+
+#: djangobb_forum/models.py:118
+msgid "New topics by moderators only"
+msgstr "Somente os moderadores podem criar novos tópicos"
+
+# 90%
+#: djangobb_forum/models.py:121
+msgid "Description"
+msgstr "Descrição"
+
+#: djangobb_forum/models.py:122
+msgid "Moderators"
+msgstr "Moderadores"
+
+#: djangobb_forum/models.py:123 djangobb_forum/models.py:162
+#: djangobb_forum/models.py:263
+msgid "Updated"
+msgstr "Atualizado"
+
+#: djangobb_forum/models.py:124 djangobb_forum/models.py:168
+#: djangobb_forum/models.py:409
+msgid "Post count"
+msgstr "Número de publicações"
+
+#: djangobb_forum/models.py:125
+msgid "Topic count"
+msgstr "Número de tópicos"
+
+#: djangobb_forum/models.py:131 templates/search/includes/tabs.html:20
+msgid "Forums"
+msgstr "Fóruns"
+
+# 75%
+# 87%
+#: djangobb_forum/models.py:161 djangobb_forum/models.py:262
+#: djangobb_forum/models.py:450
+msgid "Created"
+msgstr "Criado"
+
+#: djangobb_forum/models.py:163 djangobb_forum/models.py:261
+#: djangobb_forum/models.py:388 templates/cloudmonitor/monitor.html:67
+msgid "User"
+msgstr "Usuário"
+
+#: djangobb_forum/models.py:164
+msgid "Views count"
+msgstr "Número de visualizações"
+
+#: djangobb_forum/models.py:165
+msgid "Sticky"
+msgstr "Persistente"
+
+# 83%
+#: djangobb_forum/models.py:166
+msgid "Closed"
+msgstr "Fechado"
+
+#: djangobb_forum/models.py:167
+msgid "Subscribers"
+msgstr "Inscritos"
+
+#: djangobb_forum/models.py:174 djangobb_forum/models.py:260
+#: djangobb_forum/templates/djangobb_forum/forum.html:35
+#: djangobb_forum/templates/djangobb_forum/moderate.html:31
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:25
+msgid "Topic"
+msgstr "Tópico"
+
+#: djangobb_forum/models.py:264
+msgid "Updated by"
+msgstr "Atualizado por"
+
+#: djangobb_forum/models.py:265
+msgid "Markup"
+msgstr "Marcação"
+
+#: djangobb_forum/models.py:267
+msgid "HTML version"
+msgstr "Versão HTML"
+
+#: djangobb_forum/models.py:268
+msgid "User IP"
+msgstr "IP do usuário"
+
+#: djangobb_forum/models.py:274 djangobb_forum/models.py:361
+#: djangobb_forum/models.py:447 djangobb_forum/models.py:485
+#: templates/comments/comment-module.html:40
+#: templates/comments/comment_module.html:17
+#: templates/comments/comment_module.html:67
+#: templates/includes/backbone-templates.html:62
+msgid "Post"
+msgstr "Publicar"
+
+#: djangobb_forum/models.py:359
+msgid "From"
+msgstr "De"
+
+#: djangobb_forum/models.py:360
+msgid "To"
+msgstr "Para"
+
+#: djangobb_forum/models.py:362 templates/cloudmonitor/monitor.html:71
+msgid "Time"
+msgstr "Tempo"
+
+#: djangobb_forum/models.py:363
+msgid "Sign"
+msgstr "Assinar"
+
+#: djangobb_forum/models.py:364 djangobb_forum/models.py:451
+#: djangobb_forum/models.py:464
+#: djangobb_forum/templates/djangobb_forum/report.html:29
+#: djangobb_forum/templates/djangobb_forum/reputation.html:25
+msgid "Reason"
+msgstr "Motivo"
+
+#: djangobb_forum/models.py:367
+msgid "Reputation"
+msgstr "Reputação"
+
+#: djangobb_forum/models.py:368
+msgid "Reputations"
+msgstr "Reputações"
+
+#: djangobb_forum/models.py:389
+msgid "Status"
+msgstr "Estado"
+
+#: djangobb_forum/models.py:390
+msgid "Site"
+msgstr "Site"
+
+#: djangobb_forum/models.py:391
+msgid "Jabber"
+msgstr "Jabber"
+
+#: djangobb_forum/models.py:392
+msgid "ICQ"
+msgstr "ICQ"
+
+#: djangobb_forum/models.py:393
+msgid "MSN"
+msgstr "Skype (antigo MSN)"
+
+#: djangobb_forum/models.py:394
+msgid "AIM"
+msgstr "AIM"
+
+#: djangobb_forum/models.py:395
+msgid "Yahoo"
+msgstr "Yahoo"
+
+#: djangobb_forum/models.py:396
+msgid "Location"
+msgstr "Localização"
+
+#: djangobb_forum/models.py:397 djangobb_forum/models.py:398
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:5
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:19
+msgid "Signature"
+msgstr "Assinatura"
+
+#: djangobb_forum/models.py:399
+msgid "Time zone"
+msgstr "Fuso horário"
+
+# 87%
+#: djangobb_forum/models.py:400
+msgid "Language"
+msgstr "Idioma"
+
+#: djangobb_forum/models.py:401
+msgid "Avatar"
+msgstr "Avatar"
+
+#: djangobb_forum/models.py:402
+msgid "Theme"
+msgstr "Tema"
+
+#: djangobb_forum/models.py:403
+msgid "Show avatar"
+msgstr "Mostrar avatar"
+
+#: djangobb_forum/models.py:404
+msgid "Show signatures"
+msgstr "Mostrar assinaturas"
+
+#: djangobb_forum/models.py:405
+msgid "Show smilies"
+msgstr "Mostrar smilies"
+
+#: djangobb_forum/models.py:406
+msgid "Privacy permission"
+msgstr "Permissão de privacidade"
+
+#: djangobb_forum/models.py:407
+msgid "Auto subscribe"
+msgstr "Inscrição automática"
+
+#: djangobb_forum/models.py:407
+msgid "Auto subscribe all topics you have created or reply."
+msgstr ""
+"Inscrição automática a todos os tópicos que eu tiver criado ou respondido."
+
+#: djangobb_forum/models.py:408
+msgid "Default markup"
+msgstr "Marcação predefinida"
+
+#: djangobb_forum/models.py:414 templates/base.html:244
+msgid "Profile"
+msgstr "Perfil"
+
+# 87%
+#: djangobb_forum/models.py:415
+msgid "Profiles"
+msgstr "Perfis"
+
+#: djangobb_forum/models.py:439 djangobb_forum/models.py:440
+msgid "Post tracking"
+msgstr "Acompanhamento de publicações"
+
+#: djangobb_forum/models.py:446
+msgid "Reported by"
+msgstr "Sinalizado por"
+
+#: djangobb_forum/models.py:448
+msgid "Zapped"
+msgstr "Destruído"
+
+#: djangobb_forum/models.py:449
+msgid "Zapped by"
+msgstr "Destruído por"
+
+#: djangobb_forum/models.py:454
+#: djangobb_forum/templates/djangobb_forum/topic.html:159
+#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
+msgid "Report"
+msgstr "Denunciar"
+
+# 85%
+#: djangobb_forum/models.py:455
+#: djangobb_forum/templates/djangobb_forum/header.html:28
+#: djangobb_forum/templates/djangobb_forum/reports.html:6
+msgid "Reports"
+msgstr "Denúncias"
+
+#: djangobb_forum/models.py:461
+msgid "Banned user"
+msgstr "Usuário banido"
+
+#: djangobb_forum/models.py:462
+msgid "Ban start"
+msgstr "Início do banimento"
+
+#: djangobb_forum/models.py:463
+msgid "Ban end"
+msgstr "Fim do banimento"
+
+#: djangobb_forum/models.py:467
+msgid "Ban"
+msgstr "Banimento"
+
+#: djangobb_forum/models.py:468
+msgid "Bans"
+msgstr "Banimentos"
+
+# 75%
+#: djangobb_forum/models.py:486
+msgid "Size"
+msgstr "Tamanho"
+
+#: djangobb_forum/models.py:487
+msgid "Content type"
+msgstr "Tipo do conteúdo"
+
+#: djangobb_forum/models.py:488
+msgid "Path"
+msgstr "Caminho"
+
+#: djangobb_forum/models.py:490
+msgid "Hash"
+msgstr "Hash"
+
+#: djangobb_forum/models.py:517
+msgid "How many choices are allowed simultaneously."
+msgstr "Quantas escolhas simultâneas são permitidas?"
+
+#: djangobb_forum/models.py:520
+msgid "Can users vote to this poll or just see the result?"
+msgstr "Os usuários podem votar nesta pesquisa ou podem apenas ver o resultado?"
+
+#: djangobb_forum/models.py:523
+msgid "Point of time after this poll would be automatic deactivated"
+msgstr "Data após a qual esta pesquisa deve ser automaticamente desativada"
+
+#: djangobb_forum/models.py:526
+msgid "Users who has voted this poll."
+msgstr "Usuários que votaram nesta pesquisa."
+
+#: djangobb_forum/util.py:273
+#, python-format
+msgid ""
+"Sorry, you need to host your images with a service like imageshack.com. "
+"Please update your image links or remove all BB code [img] tags. Bad image "
+"url: %s"
+msgstr ""
+"Desculpe, você deve hospedar suas imagens com um serviço como o "
+"imageshack.com. Atualize seus links de imagem ou remova todas as tags [img] "
+"do código BB. URL da imagem errada: %s"
+
+#: djangobb_forum/views.py:94
+msgid "Topics deleted."
+msgstr "Tópicos excluídos."
+
+#: djangobb_forum/views.py:99
+msgid "Topics opened."
+msgstr "Tópicos abertos."
+
+#: djangobb_forum/views.py:104
+msgid "Topics closed."
+msgstr "Tópicos fechados."
+
+#: djangobb_forum/views.py:297
+#, python-format
+msgid "Found %i posts."
+msgstr "Encontradas %i publicações."
+
+#: djangobb_forum/views.py:301
+#, python-format
+msgid "Found %i topics."
+msgstr "Encontrados %i tópicos."
+
+#: djangobb_forum/views.py:315
+msgid "Marked all topics as read."
+msgstr "Todos os tópicos marcados como lidos."
+
+#: djangobb_forum/views.py:325
+msgid "Post reported."
+msgstr "Publicação denunciada"
+
+#: djangobb_forum/views.py:342
+msgid "Email sent."
+msgstr "E-mail enviado."
+
+#: djangobb_forum/views.py:344
+msgid "Email could not be sent."
+msgstr "O e-mail não pôde ser enviado."
+
+#: djangobb_forum/views.py:439 djangobb_forum/views.py:1157
+msgid "Reply saved."
+msgstr "Resposta salva."
+
+#: djangobb_forum/views.py:485
+msgid "This poll is not active."
+msgstr "Esta pesquisa não está ativa."
+
+#: djangobb_forum/views.py:488
+msgid "You already voted on this poll."
+msgstr "Você já votou nesta pesquisa."
+
+#: djangobb_forum/views.py:497
+msgid "Vote saved."
+msgstr "Voto registrado."
+
+#: djangobb_forum/views.py:596
+msgid "Topic with poll saved."
+msgstr "Tópico com votação salvo."
+
+#: djangobb_forum/views.py:598
+msgid "Topic saved."
+msgstr "Tópico salvo."
+
+#: djangobb_forum/views.py:633
+msgid "Avatar uploaded."
+msgstr "Avatar carregado."
+
+#: djangobb_forum/views.py:642
+msgid "Please sign in."
+msgstr "Cadastre-se."
+
+#: djangobb_forum/views.py:656
+msgid "Profile saved."
+msgstr "Perfil salvo."
+
+#: djangobb_forum/views.py:691
+msgid "Reputation deleted."
+msgstr "Reputação removida."
+
+#: djangobb_forum/views.py:697
+msgid "Reputation saved."
+msgstr "Reputação salva."
+
+#: djangobb_forum/views.py:739
+msgid "You don't have permission to edit this post."
+msgstr "Você não tem permissão para editar esta publicação."
+
+# 76%
+#: djangobb_forum/views.py:749
+msgid "Post updated."
+msgstr "Publicação atualizada."
+
+#: djangobb_forum/views.py:774 djangobb_forum/views.py:971
+msgid "Post deleted."
+msgstr "Publicação removida."
+
+#: djangobb_forum/views.py:819
+msgid "The topic ID must be an integer."
+msgstr "O ID do tópico deve ser um inteiro."
+
+#: djangobb_forum/views.py:825
+msgid "That thread doesn't exist."
+msgstr "Essa conversa não existe."
+
+#: djangobb_forum/views.py:866
+msgid "Posts moved."
+msgstr "Publicações movidas."
+
+#: djangobb_forum/views.py:931
+msgid "Topic moved."
+msgstr "Tópico movido."
+
+#: djangobb_forum/views.py:947
+msgid "Topic stickied."
+msgstr "Tópico tornado persistente."
+
+#: djangobb_forum/views.py:949
+msgid "Topic unstickied."
+msgstr "Tópico tornado não persistente."
+
+#: djangobb_forum/views.py:967
+msgid "You don't have permission to delete this post."
+msgstr "Você não tem autorização para remover esta publicação."
+
+# 90%
+#: djangobb_forum/views.py:994 djangobb_forum/views.py:1026
+msgid "You don't have permission to mark this post."
+msgstr "Você não tem autorização para marcar esta publicação."
+
+#: djangobb_forum/views.py:998 djangobb_forum/views.py:1030
+msgid "There was not enough data collected to mark this post."
+msgstr "Não havia dados suficientes coletados para marcar esta publicação."
+
+#: djangobb_forum/views.py:1003
+msgid "Post marked as spam."
+msgstr "Publicação marcada como spam."
+
+#: djangobb_forum/views.py:1005
+msgid "This post is not in the right state to be marked as spam."
+msgstr "Esta publicação não pode ser marcada como spam."
+
+#: djangobb_forum/views.py:1035
+msgid "Post un-marked as spam."
+msgstr "Publicação desmarcada como spam."
+
+#: djangobb_forum/views.py:1037
+msgid "This post is not in the right state to be un-marked as spam."
+msgstr "Esta publicação não pode ser desmarcada como spam."
+
+#: djangobb_forum/views.py:1051
+msgid "Topic closed."
+msgstr "Tópico fechado."
+
+#: djangobb_forum/views.py:1054
+msgid "Topic opened."
+msgstr "Tópico aberto."
+
+#: djangobb_forum/views.py:1076
+msgid "Unsubscribed from topic."
+msgstr "Inscrição ao tópico cancelada."
+
+#: djangobb_forum/views.py:1088
+msgid "Subscribed to topic."
+msgstr "Inscrito ao tópico."
+
+#: djangobb_forum/templates/djangobb_forum/add_topic.html:5
+#: djangobb_forum/templates/djangobb_forum/add_topic.html:13
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
+#: djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:10
+msgid "New Topic"
+msgstr "Novo Tópico"
+
+#: djangobb_forum/templates/djangobb_forum/add_topic.html:11
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:15
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:11
+#: djangobb_forum/templates/djangobb_forum/forum.html:15
+#: djangobb_forum/templates/djangobb_forum/forum.html:77
+#: djangobb_forum/templates/djangobb_forum/moderate.html:14
+#: djangobb_forum/templates/djangobb_forum/moderate.html:72
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:19
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:65
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:10
+#: djangobb_forum/templates/djangobb_forum/report.html:11
+#: djangobb_forum/templates/djangobb_forum/topic.html:27
+#: djangobb_forum/templates/djangobb_forum/topic.html:189
+#: templates/base.html:339
+msgid "Discussion Forums"
+msgstr "Fóruns de Discussão"
+
+#: djangobb_forum/templates/djangobb_forum/base.html:5
+#: djangobb_forum/templates/djangobb_forum/index.html:5
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:6
+msgid "Discuss Scratch"
+msgstr "Discuta sobre o Scratch"
+
+#: djangobb_forum/templates/djangobb_forum/base.html:126
+#: djangobb_forum/templates/djangobb_forum/header.html:40
+msgid "Notice"
+msgstr "Notificação"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:7
+#, python-format
+msgid "Delete Posts - %(name)s"
+msgstr "Remover Publicações - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:18
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:68
+msgid "Delete Posts"
+msgstr "Remover Publicações"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:46
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:48
+#: djangobb_forum/templates/djangobb_forum/topic.html:130
+#, python-format
+msgid "Last edited by %(user)s (%(time)s)"
+msgstr "Editado pela última vez por %(user)s (%(time)s)"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:51
+#: djangobb_forum/templates/djangobb_forum/moderate.html:35
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:52
+msgid "Select"
+msgstr "Selecionar"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:72
+#: djangobb_forum/templates/djangobb_forum/moderate.html:85
+#: djangobb_forum/templates/djangobb_forum/reputation.html:29
+#: djangobb_forum/templates/djangobb_forum/topic.html:168
+#: templates/studio/studio.html:141
+msgid "Delete"
+msgstr "Apagar"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:73
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:48
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:23
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:90
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:41
+#: djangobb_forum/templates/djangobb_forum/report.html:35
+#: djangobb_forum/templates/djangobb_forum/reputation.html:66
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:41
+#: djangobb_forum/templates/djangobb_forum/search_form.html:74
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:30
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:65
+msgid "Go back"
+msgstr "Voltar"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:5
+#, python-format
+msgid "Edit Post - %(name)s"
+msgstr "Editar Publicação - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:14
+msgid "Edit Post"
+msgstr "Editar Publicação"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:22
+msgid "Edit post"
+msgstr "Editar publicação"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:43
+msgid "Silent edit (don't display 'Edited by ...' in topic view)"
+msgstr ""
+"Edição silenciosa (não mostra \"Editado por ...\" na visualização do tópico)"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:47
+msgid "Save"
+msgstr "Salvar"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:24
+msgid ""
+"Can't find an answer to your question? Click here to ask it in a new thread."
+msgstr ""
+"Não consegue encontrar uma resposta para sua pergunta? Clique aqui para "
+"perguntá-la em uma nova conversa."
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:24
+msgid "New topic"
+msgstr "Novo tópico"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:36
+#: djangobb_forum/templates/djangobb_forum/moderate.html:32
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:27
+msgid "Replies"
+msgstr "Respostas"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:37
+#: djangobb_forum/templates/djangobb_forum/moderate.html:33
+#: templates/includes/sort-projects-dropdown.html:10
+#: templates/studio/includes/sort-projects-dropdown.html:10
+msgid "Views"
+msgstr "Visualizações"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:38
+#: djangobb_forum/templates/djangobb_forum/index.html:58
+#: djangobb_forum/templates/djangobb_forum/moderate.html:34
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:28
+msgid "Last Post"
+msgstr "Última Publicação"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:53
+#: djangobb_forum/templates/djangobb_forum/moderate.html:47
+msgid "Sticky:"
+msgstr "Persistente:"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:56
+#: djangobb_forum/templates/djangobb_forum/forum.html:63
+#: djangobb_forum/templates/djangobb_forum/forum_row.html:40
+#: djangobb_forum/templates/djangobb_forum/moderate.html:50
+#: djangobb_forum/templates/djangobb_forum/moderate.html:56
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:39
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:45
+#: templates/carousel/includes/project-thumb.html:26
+#: templates/carousel/includes/project-thumb.html:28
+#: templates/explore/explore2.html:54
+#: templates/explore/includes/related_projects.html:17
+#: templates/explore/includes/related_projects.html:32
+#: templates/explore/includes/related_projects.html:46
+#: templates/explore/includes/related_projects.html:75
+#: templates/explore/includes/related_projects2.html:8
+#: templates/galleries/includes/activity_list.html:96
+#: templates/galleries/includes/project-thumb.html:22
+#: templates/galleries/includes/project-thumb.html:24
+#: templates/projects/base.html:104 templates/projects/base.html.py:366
+#: templates/projects/includes/project_list.html:11
+msgid "by"
+msgstr "por"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:57
+msgid "(New Posts)"
+msgstr "(Novas Publicações)"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:67
+#: djangobb_forum/templates/djangobb_forum/moderate.html:61
+msgid "Forum is empty."
+msgstr "O fórum está vazio."
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:107
+msgid "Moderate forum"
+msgstr "Moderar fórum"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:15
+msgid "Show new posts since last visit"
+msgstr "Mostrar novas publicações desde a última visita"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:20
+msgid "Discussion Home"
+msgstr "Início das Discussões"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:21
+#: djangobb_forum/templates/djangobb_forum/search_form.html:5
+#: djangobb_forum/templates/djangobb_forum/search_form.html:18
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:20
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
+#: templates/404.html:21 templates/base.html:191 templates/contact-us.html:92
+msgid "Search"
+msgstr "Busca"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:26
+#, python-format
+msgid "Reports (%(report_count)s)"
+msgstr "(%(report_count)s) denúncias"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:77
+msgid "Show your"
+msgstr "Mostrar o seu"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:77
+msgid "topics"
+msgstr "tópicos"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:77
+msgid "posts"
+msgstr "publicações"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:78
+msgid "Change your signature"
+msgstr "Alterar sua assinatura"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:82
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:43
+msgid "Show recent posts"
+msgstr "Mostrar publicações recentes"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:83
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:44
+msgid "Show unanswered posts"
+msgstr "Mostrar publicações sem resposta"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:85
+msgid "Mark all topics as read"
+msgstr "Marcar todos os tópicos como lidos"
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:7
+msgid "Send e-mail to"
+msgstr "Enviar e-mail para"
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:13
+msgid "Write and submit your e-mail message"
+msgstr "Escreva e envie sua mensagem de e-mail"
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:19
+msgid ""
+"Please note that by using this form, your e-mail address will be disclosed "
+"to the recipient."
+msgstr ""
+"Atenção: ao usar este formulário, seu e-mail será revelado ao destinatário."
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:23
+#: djangobb_forum/templates/djangobb_forum/report.html:34
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:41
+#: djangobb_forum/templates/djangobb_forum/search_form.html:73
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:64
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:59
+#: djangobb_forum/templates/djangobb_forum/mobile/includes/post_form.html:16
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:31
+#: templates/extensions/terms_of_use.html:40
+msgid "Submit"
+msgstr "Enviar"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:7
+#, python-format
+msgid "Moderate - %(name)s"
+msgstr "Moderar - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:16
+#: djangobb_forum/templates/djangobb_forum/moderate.html:74
+#: djangobb_forum/templates/djangobb_forum/moderate.html:80
+msgid "Moderate Forum"
+msgstr "Moderar Fórum"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:84
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:89
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:40
+#: templates/info/help/studio/tips/howto/hoc-4a.html:18
+#: templates/info/help/studio/tips/howto/hoc-intro.html:38
+msgid "Move"
+msgstr "Mover"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:86
+msgid "Open"
+msgstr "Abrir"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:87
+#: templates/modal-registration.html:200
+#: templates/accounts/email_verification/includes/verify_email_popup.html:27
+msgid "Close"
+msgstr "Fechar"
+
+#: djangobb_forum/templates/djangobb_forum/moderators.html:3
+msgid "Moderated by"
+msgstr "Moderado por"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:7
+#, python-format
+msgid "Move Posts - %(name)s"
+msgstr "Mover Publicações - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:22
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:68
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:74
+msgid "Move Posts"
+msgstr "Mover Publicações"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:82
+msgid "All posts (original topic will be deleted)"
+msgstr "Todas as publicações (os tópicos originais serão removidos)"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:85
+msgid "Topic ID or URL"
+msgstr "ID ou URL do tópico"
+
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:5
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:11
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:17
+msgid "Move Topic"
+msgstr "Mover Tópico"
+
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:26
+msgid "Move to"
+msgstr "Mover para"
+
+#: djangobb_forum/templates/djangobb_forum/pagination.html:3
+msgid "Pages"
+msgstr "Páginas"
+
+#: djangobb_forum/templates/djangobb_forum/report.html:5
+#: djangobb_forum/templates/djangobb_forum/report.html:14
+#: djangobb_forum/templates/djangobb_forum/report.html:22
+msgid "Report Post"
+msgstr "Denunciar Publicação"
+
+#: djangobb_forum/templates/djangobb_forum/report.html:32
+msgid "Please enter a short reason why you are reporting this post."
+msgstr ""
+"Justifique, em um texto breve, porque está a denunciando esta publicação."
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:17
+msgid "Reputation of the user"
+msgstr "Reputação do usuário"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:23
+msgid "From user"
+msgstr "Do usuário"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:24
+msgid "For post in topic"
+msgstr "Para publicação no tópico"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:26
+msgid "Estimation"
+msgstr "Estimativa"
+
+# 80%
+#: djangobb_forum/templates/djangobb_forum/reputation.html:27
+msgid "Date"
+msgstr "Data"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:64
+msgid "Are you sure"
+msgstr "Tem certeza"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:7
+msgid "Please, fill the form"
+msgstr "Preencha o formulário"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:17
+msgid "Your name:"
+msgstr "Seu nome:"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:21
+msgid "To whom we change a reputation:"
+msgstr "A quem alteramos a reputação:"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:29
+msgid "Method:"
+msgstr "Método:"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:32
+msgid "Add of a reputation"
+msgstr "Acréscimo de uma reputação"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:34
+msgid "Reduction of a reputation"
+msgstr "Redução de uma reputação"
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:32
+msgid "(Dustbin all posts and topics)"
+msgstr "(Enviar todas as publicações e tópicos para a lixeira)"
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:37
+msgid ""
+"To search by keyword, enter a term or terms to search for. Separate terms "
+"with spaces. To search by author enter the username of the author whose "
+"posts you wish to search for."
+msgstr ""
+"Para pesquisar por palavra-chave, introduza um termo ou vários termos a "
+"procurar. Separe os termos por espaços. Para procurar por autor, introduza o "
+"nome de usuário do autor cujas publicações quer procurar."
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:42
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:30
+msgid "All forums"
+msgstr "Todos os fóruns"
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:56
+msgid ""
+"Choose in which forum you would like to search and if you want to search in "
+"topic subjects, message text or both."
+msgstr ""
+"Escolha em que fórum deseja pesquisar e se deseja pesquisar nos assuntos, no "
+"texto das mensagens ou em ambos."
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:70
+msgid "You can choose how you wish to sort and show your results."
+msgstr "Você pode escolher como deseja ordenar e exibir seus resultados."
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:6
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:7
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:19
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:10
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:10
+msgid "Search Results"
+msgstr "Resultados da Pesquisa"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:12
+msgid "Show results as topic list."
+msgstr "Mostrar resultados como lista de tópicos."
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:26
+msgid "Info"
+msgstr "Informações"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:29
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:49
+msgid "Your search returned no hits."
+msgstr "Sua pesquisa não teve nenhum resultado."
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:42
+msgid "Search links"
+msgstr "Pesquisar links"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:46
+msgid "Show your subscribed topics"
+msgstr "Mostrar os tópicos que está seguindo"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:47
+msgid "Show your topics"
+msgstr "Mostrar seus tópicos"
+
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:13
+msgid "Show results as post list."
+msgstr "Mostrar os resultados como uma lista de publicações."
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:16
+#: djangobb_forum/templates/djangobb_forum/topic.html:198
+msgid "loading..."
+msgstr "carregando..."
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:17
+#: djangobb_forum/templates/djangobb_forum/topic.html:199
+msgid "There was an error :( Try again?"
+msgstr "Ocorreu um erro :( Tentar novamente?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:18
+#: djangobb_forum/templates/djangobb_forum/topic.html:200
+msgid "Follow this discussion to get a message when there's a new post"
+msgstr ""
+"Siga esta discussão para receber uma mensagem quando houver uma nova "
+"publicação"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:18
+#: djangobb_forum/templates/djangobb_forum/topic.html:200
+msgid "Follow Discussion"
+msgstr "Seguir Discussão"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:19
+#: djangobb_forum/templates/djangobb_forum/topic.html:201
+msgid "Stop getting messages about new posts to this discussion"
+msgstr "Deixar de receber mensagens sobre novas publicações nesta discussão"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:19
+#: djangobb_forum/templates/djangobb_forum/topic.html:201
+msgid "Unfollow Discussion"
+msgstr "Deixar de seguir esta Discussão"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:35
+msgid "Poll"
+msgstr "Pesquisa"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:43
+#, python-format
+msgid "(%(count)s answers allows.)"
+msgstr "(%(count)s respostas permitidas.)"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:46
+msgid "Vote"
+msgstr "Votar"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:97
+msgid "1000+ posts"
+msgstr "Mais de 1.000 publicações"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:99
+msgid "500+ posts"
+msgstr "Mais de 500 publicações "
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:101
+msgid "100+ posts"
+msgstr "Mais de 100 publicações"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:103
+msgid "1 post"
+msgstr "1 publicação"
+
+# 83%
+#: djangobb_forum/templates/djangobb_forum/topic.html:105
+msgid " posts"
+msgstr "   publicações"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:111
+msgid "From:"
+msgstr "De:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:113
+msgid "Registered:"
+msgstr "Registrado:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:114
+msgid "Posts:"
+msgstr "Publicações:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:115
+msgid "IP:"
+msgstr "IP:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:120
+msgid "Really delete all posts, and ban user? This is hard to reverse."
+msgstr ""
+"Tem certeza que deseja apagar todas as mensagens e banir o usuário? Esta "
+"ação é difícil de ser revertida."
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:137
+msgid "(Edit Signature)"
+msgstr "(Editar Assinatura)"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:161
+msgid "Are you sure you want to mark this as spam?"
+msgstr "Tem certeza de que deseja marcar como spam?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:161
+msgid "Mark as Spam"
+msgstr "Marcar como Spam"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:164
+msgid "Are you sure you want to unmark this as spam?"
+msgstr "Tem certeza de que deseja desmarcar como spam?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:164
+msgid "Un-mark as Spam"
+msgstr "Desmarcar como Spam"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:168
+msgid "Are you sure you want to delete this post?"
+msgstr "Tem certeza de que quer remover esta publicação?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:172
+msgid "Edit"
+msgstr "Editar"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:175
+msgid "Insert a quotation of this post in your reply."
+msgstr "Inserir uma citação desta publicação na sua resposta."
+
+# 83%
+#: djangobb_forum/templates/djangobb_forum/topic.html:175
+msgid "Quote"
+msgstr "Citação"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:220
+msgid "Jump to"
+msgstr "Saltar para"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:231
+#: templates/explore/projects.html:26
+msgid "Go"
+msgstr "Ir"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:236
+msgid "Moderator control"
+msgstr "Controle do moderador"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:237
+msgid "Delete multiple posts"
+msgstr "Remover várias publicações"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:238
+msgid "Move multiple posts"
+msgstr "Mover várias publicações"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:239
+msgid "Move topic"
+msgstr "Mover tópico"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:241
+#: djangobb_forum/templates/djangobb_forum/topic.html:253
+msgid "Open topic"
+msgstr "Abrir tópico"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:243
+#: djangobb_forum/templates/djangobb_forum/topic.html:256
+msgid "Close topic"
+msgstr "Fechar tópico"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:246
+msgid "Unstick topic"
+msgstr "Eliminar persistência do tópico"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:248
+msgid "Stick topic"
+msgstr "Colocar tópico em destaque"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:7
+msgid "Upload avatar"
+msgstr "Carregar avatar"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:13
+msgid "Enter an avatar file to upload"
+msgstr "Selecione um arquivo de avatar para carregar"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:19
+#, python-format
+msgid ""
+"An avatar is a small image that will be displayed under your username in "
+"your posts. It must not be any bigger than %(avatar_width)s x "
+"%(avatar_height)s pixels "
+msgstr ""
+"Um avatar é uma pequena imagem que será mostrada com seu nome de usuário nas "
+"suas publicações. Não pode ser maior do que %(avatar_width)s x "
+"%(avatar_height)s píxels "
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
+msgid "Upload"
+msgstr "Carregar"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:5
+msgid "YouTube Video"
+msgstr "Vídeo do YouTube"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:22
+msgid "Video Not Found"
+msgstr "Vídeo Não Encontrado"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:33
+msgid "Why do I see this page?"
+msgstr "Por que estou vendo esta página?"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:36
+msgid ""
+"Links to YouTube videos on the forums are automatically converted to links "
+"to this page, to hide comments and other content."
+msgstr ""
+"Os links para vídeos do YouTube usados nos fóruns são automaticamente "
+"transformados em links para esta página, para ocultar comentários e outro "
+"conteúdo."
+
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
+msgid "New Reply"
+msgstr "Nova Resposta"
+
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:22
+msgid "Create a poll"
+msgstr "Criar uma pesquisa"
+
+#: djangobb_forum/templates/djangobb_forum/includes/post_in_search_page.html:14
+msgid "Replies:"
+msgstr "Respostas:"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:8
+#: djangobb_forum/templates/djangobb_forum/mobile/forum.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/index.html:5
+#: djangobb_forum/templates/djangobb_forum/mobile/reply.html:8
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
+#: djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
+#: templates/base.html:184
+msgid "Discuss"
+msgstr "Discutir"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:23
+#, python-format
+msgid "Signed in as <strong>%(user)s</strong>"
+msgstr "Autenticado como <strong>%(user)s</strong>"
+
+# 85%
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:25
+#: djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:7
+#: djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:25
+msgid "Sign In"
+msgstr "Entrar"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/index.html:16
+#, python-format
+msgid "%(posts)s post"
+msgid_plural "%(posts)s posts"
+msgstr[0] "%(posts)s publicação"
+msgstr[1] "%(posts)s publicações"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/reply.html:11
+#: templates/comments/comment.html:59
+#: templates/comments/comment_module.html:31
+#: templates/comments/comment_module.html:48
+#: templates/comments/includes/comment.html:12
+msgid "Reply"
+msgstr "Responder"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:22
+msgid "No posts."
+msgstr "Nenhuma publicação."
+
+#: djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:7
+#, python-format
+msgid "%(replies)s reply"
+msgid_plural "%(replies)s replies"
+msgstr[0] "%(replies)s resposta"
+msgstr[1] "%(replies)s respostas"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:10
+msgid "No topics."
+msgstr "Nenhum tópico."
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:12
+#, python-format
+msgid "Settings (%(name)s)"
+msgstr "Preferências (%(name)s)"
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:22
+msgid ""
+"A signature is a small piece of text that is attached to your posts. In it, "
+"you can enter just about anything you like. Perhaps you would like to enter "
+"your favourite quote or your star sign. It's up to you! In your signature "
+"you can use BBCode if it is allowed in this particular forum. You can see "
+"the features that are allowed/enabled listed below whenever you edit your "
+"signature."
+msgstr ""
+"Uma assinatura é um fragmento de texto associado a suas publicações. Você "
+"pode colocar o que quiser na assinatura, como sua citação favorita ou seu "
+"signo. Você pode criar à vontade! Na sua assinatura, você pode usar o "
+"BBCode, caso seja permitido no fórum. Veja abaixo quais recursos são "
+"permitidos ou não ao editar sua assinatura."
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:27
+msgid "No signature currently stored in profile."
+msgstr "Seu perfil não tem nenhuma assinatura associada."
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:32
+msgid "When you update your profile, you will be redirected back to this page."
+msgstr "Quando atualizar o seu perfil, será redirecionado para esta página."
+
 #: projects/views.py:501
 msgid "This tag has too many projects to load"
 msgstr "Esta tag tem muitos projetos para carregar"
@@ -196,10 +1708,6 @@ msgstr ""
 msgid "You can try searching for what you're looking for here:"
 msgstr "Para procurar o que precisa, pode começar por aqui:"
 
-#: templates/404.html:21 templates/base.html:186 templates/contact-us.html:92
-msgid "Search"
-msgstr "Busca"
-
 #: templates/500.html:40
 msgid "Looks like we are having issues with our servers!"
 msgstr "Parece que estamos com problemas em nossos servidores!"
@@ -224,39 +1732,30 @@ msgstr "Scratch"
 msgid "Imagine, Program, Share"
 msgstr "Imagine, Programe, Compartilhe"
 
-#: templates/base.html:177
+#: templates/base.html:182
 msgid "Create"
 msgstr "Criar"
 
-#: templates/base.html:178 templates/explore/explore2.html:40
+#: templates/base.html:183 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Explorar"
 
-#: templates/base.html:179
-msgid "Discuss"
-msgstr "Discutir"
-
-#: templates/base.html:180
+#: templates/base.html:185
 msgid "Help"
 msgstr "Ajuda"
 
 # 83%
-#: templates/base.html:200 templates/modal-registration.html:6
+#: templates/base.html:205 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Inscreva-se"
 
-#: templates/base.html:203 templates/base.html.py:214 templates/base.html:224
+#: templates/base.html:208 templates/base.html.py:219 templates/base.html:229
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Entrar"
 
-#: templates/base.html:209 templates/modal-login.html:14
-#: templates/includes/backbone-templates.html:19
-msgid "Username"
-msgstr "Nome de usuário"
-
-#: templates/base.html:211 templates/modal-login.html:21
+#: templates/base.html:216 templates/modal-login.html:21
 #: templates/accounts/account_settings.html:9
 #: templates/accounts/email_change.html:9
 #: templates/accounts/deletion/confirmation.html:7
@@ -265,157 +1764,149 @@ msgstr "Nome de usuário"
 msgid "Password"
 msgstr "Senha"
 
-#: templates/base.html:215
+#: templates/base.html:220
 msgid "Forgot password?"
 msgstr "Esqueceu a senha?"
 
-#: templates/base.html:231
+#: templates/base.html:236
 msgid "messages - updates and notices"
 msgstr "mensagens - atualizações e avisos"
 
-#: templates/base.html:232
+#: templates/base.html:237
 msgid "my stuff - manage projects and studios"
 msgstr "minhas criações - administrar projetos e estúdios"
 
-#: templates/base.html:239
-msgid "Profile"
-msgstr "Perfil"
-
-#: templates/base.html:240 templates/explore/base.html:24
+#: templates/base.html:245 templates/explore/base.html:24
 #: templates/studio/base.html:21
 msgid "My Stuff"
 msgstr "Minhas Criações"
 
-#: templates/base.html:241
+#: templates/base.html:246
 msgid "Account settings"
 msgstr "Configurações de conta"
 
-#: templates/base.html:242
+#: templates/base.html:247
 msgid "Sign out"
 msgstr "Sair"
 
-#: templates/base.html:320
+#: templates/base.html:325
 msgid "About"
 msgstr "Sobre"
 
-#: templates/base.html:322 templates/info/about.html:13
-#: templates/info/help/index.html:92 templates/mail/base.html:49
+#: templates/base.html:327 templates/info/about.html:13
+#: templates/info/help/index.html:92 templates/mail/base.html:57
 msgid "About Scratch"
 msgstr "Sobre o Scratch"
 
-#: templates/base.html:323 templates/info/parents.html:12
+#: templates/base.html:328 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "Para os pais"
 
-#: templates/base.html:324 templates/info/educators.html:12
+#: templates/base.html:329 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "Para Educadores"
 
-#: templates/base.html:325
+#: templates/base.html:330
 msgid "Credits"
 msgstr "Créditos"
 
-#: templates/base.html:326
+#: templates/base.html:331
 msgid "Jobs"
 msgstr "Trabalhos"
 
-#: templates/base.html:327
+#: templates/base.html:332
 msgid "Press"
 msgstr "Imprensa"
 
-#: templates/base.html:331 templates/info/parents.html:72
+#: templates/base.html:336 templates/info/parents.html:72
 msgid "Community"
 msgstr "Comunidade"
 
-#: templates/base.html:333
+#: templates/base.html:338
 msgid "Community Guidelines"
 msgstr "Diretrizes da Comunidade"
 
-#: templates/base.html:334
-msgid "Discussion Forums"
-msgstr "Fóruns de Discussão"
-
-#: templates/base.html:335 templates/info/help/index.html:113
+#: templates/base.html:340 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Wiki Scratch"
 
-#: templates/base.html:336
+#: templates/base.html:341
 msgid "Statistics"
 msgstr "Estatísticas"
 
-#: templates/base.html:340 templates/search/includes/tabs.html:17
+#: templates/base.html:345 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr "Suporte"
 
-#: templates/base.html:342
+#: templates/base.html:347
 msgid "Help Page"
 msgstr "Página de Ajuda"
 
-#: templates/base.html:343
+#: templates/base.html:348
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/base.html:344
+#: templates/base.html:349
 msgid "Offline Editor"
 msgstr "Editor Offline"
 
 # 90%
 #
-#: templates/base.html:345 templates/contact-us-success.html:12
+#: templates/base.html:350 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Fale conosco"
 
-#: templates/base.html:346
+#: templates/base.html:351
 msgid "Donate"
 msgstr "Fazer doação"
 
-#: templates/base.html:350
+#: templates/base.html:355
 msgid "Legal"
 msgstr "Termos Legais"
 
-#: templates/base.html:352
+#: templates/base.html:357
 msgid "Terms of Use"
 msgstr "Termos de Uso"
 
-#: templates/base.html:353 templates/info/help/faq.html:28
-#: templates/info/help/faq.html.py:80 templates/mail/base.html:48
+#: templates/base.html:358 templates/info/help/faq.html:28
+#: templates/info/help/faq.html.py:80 templates/mail/base.html:56
 msgid "Privacy Policy"
 msgstr "Política de Privacidade"
 
-#: templates/base.html:354 templates/info/DMCA.html:10
+#: templates/base.html:359 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:358
+#: templates/base.html:363
 msgid "Scratch Family"
 msgstr "Família Scratch"
 
 # 77%
-#: templates/base.html:360
+#: templates/base.html:365
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
 # 77%
 # 88%
-#: templates/base.html:361
+#: templates/base.html:366
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
 # 75%
-#: templates/base.html:362
+#: templates/base.html:367
 msgid "Scratch Day"
 msgstr "Dia de Scratch"
 
-#: templates/base.html:363
+#: templates/base.html:368
 msgid "Scratch Conference"
 msgstr "Conferência Scratch"
 
-#: templates/base.html:364
+#: templates/base.html:369
 msgid "Code-to-Learn Foundation"
 msgstr "Fundação Code-to-Learn"
 
-#: templates/base.html:379
+#: templates/base.html:384
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr "O Scratch é um projeto do Grupo Lifelong Kindergarten do MIT Media Lab"
@@ -827,11 +2318,6 @@ msgstr "Próximo"
 msgid "OK Lets Go!"
 msgstr "Ok, vamos lá!"
 
-#: templates/modal-registration.html:200
-#: templates/accounts/email_verification/includes/verify_email_popup.html:27
-msgid "Close"
-msgstr "Fechar"
-
 #: templates/modal-registration.html:213
 msgid "Your username must be between 3 and 20 characters"
 msgstr "Seu nome de usuário deve conter de 3 a 20 caracteres."
@@ -839,14 +2325,6 @@ msgstr "Seu nome de usuário deve conter de 3 a 20 caracteres."
 #: templates/modal-registration.html:214
 msgid "Sorry, that username already exists"
 msgstr "Desculpe, esse nome de usuário já existe"
-
-#: templates/modal-registration.html:215
-msgid "Invalid username"
-msgstr "Nome de usuário inválido."
-
-#: templates/modal-registration.html:216
-msgid "Hmm, that looks inappropriate"
-msgstr "Hmm, isso parece inapropriado"
 
 #: templates/modal-registration.html:217
 msgid "You must enter a username"
@@ -857,11 +2335,10 @@ msgid "Your username may only contain letters, numbers, - and _"
 msgstr "Seu nome de usuário deve conter apenas letras, números, - e _"
 
 # the password is tested against the word "password" and not "senha"
-# 82%
-#
 #: templates/modal-registration.html:219
-msgid "Your password cannot be \\\\\\'password\\\\\\'"
-msgstr "Sua senha não pode ser \\\\\\'senha\\\\\\'"
+#, fuzzy
+msgid "Your password cannot be \\'password\\'"
+msgstr "Sua senha não pode ser \"senha\"."
 
 # 87%
 #
@@ -882,12 +2359,6 @@ msgstr "Suas senhas não são iguais"
 #: templates/modal-registration.html:223
 msgid "Your password cannot match your username"
 msgstr "Sua senha não pode ser igual ao seu nome de usuário"
-
-# 97%
-#
-#: templates/modal-registration.html:224
-msgid "You must select a birth month and year"
-msgstr "Você deve selecionar mês e ano de nascimento"
 
 #: templates/modal-registration.html:225
 msgid "You must specify a gender"
@@ -1205,13 +2676,13 @@ msgstr "Sim, próxima etapa"
 msgid "Delete account &amp; Sign out"
 msgstr "Excluir conta e sair"
 
-#: templates/accounts/email_verification/change_email_verification_email.html:8
+#: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
 #: templates/accounts/email_verification/verification_email_plain.html:4
 msgid "Greetings from the Scratch Team at MIT!"
 msgstr "Saudações da Equipe Scratch do MIT!"
 
-#: templates/accounts/email_verification/change_email_verification_email.html:10
+#: templates/accounts/email_verification/change_email_verification_email.html:11
 #, python-format
 msgid ""
 "\n"
@@ -1224,12 +2695,12 @@ msgstr ""
 "conta Scratch <strong>%(username)s</strong>. Confirme seu endereço de e-mail "
 "clicando no botão abaixo:\n"
 
-#: templates/accounts/email_verification/change_email_verification_email.html:16
+#: templates/accounts/email_verification/change_email_verification_email.html:17
 #: templates/accounts/email_verification/verification_email.html:26
 msgid "Confirm my email address"
 msgstr "Confirmar meu endereço de e-mail"
 
-#: templates/accounts/email_verification/change_email_verification_email.html:22
+#: templates/accounts/email_verification/change_email_verification_email.html:23
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:12
 msgid ""
 "If you didn’t request an email change, don’t worry - you can just ignore "
@@ -1238,19 +2709,19 @@ msgstr ""
 "Se você não pediu que seu e-mail fosse alterado, não se preocupe - você pode "
 "ignorar esta mensagem."
 
-#: templates/accounts/email_verification/change_email_verification_email.html:25
+#: templates/accounts/email_verification/change_email_verification_email.html:26
 #: templates/accounts/email_verification/verification_email.html:43
-#: templates/registration/welcome_email_message.html:41
-#: templates/registration/welcome_email_message.txt:32
+#: templates/registration/welcome_email_message.html:45
+#: templates/registration/welcome_email_message.txt:36
 msgid "Scratch On!"
 msgstr "Vamos ao Scratch!"
 
-#: templates/accounts/email_verification/change_email_verification_email.html:26
+#: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
 #: templates/accounts/email_verification/verification_email.html:45
 #: templates/accounts/email_verification/verification_email_plain.html:31
-#: templates/registration/welcome_email_message.html:43
-#: templates/registration/welcome_email_message.txt:33
+#: templates/registration/welcome_email_message.html:47
+#: templates/registration/welcome_email_message.txt:37
 msgid "The Scratch Team"
 msgstr "Equipe Scratch"
 
@@ -1534,7 +3005,7 @@ msgstr "Assinatura cancelada"
 msgid "Your email address has been unsubscribed."
 msgstr "A assinatura do seu endereço de e-mail foi cancelada."
 
-#: templates/accounts/subscription/unsubscribe_email_verification_success.html:22
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:23
 #, python-format
 msgid ""
 "\n"
@@ -1548,7 +3019,7 @@ msgstr ""
 "Conta</a>.\n"
 "            "
 
-#: templates/accounts/subscription/unsubscribe_email_verification_success.html:26
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:28
 msgid "Take me back to Scratch!"
 msgstr "Voltar ao Scratch!"
 
@@ -1574,22 +3045,6 @@ msgstr "Nenhum item"
 msgid "in"
 msgstr "em"
 
-#: templates/carousel/includes/project-thumb.html:26
-#: templates/carousel/includes/project-thumb.html:28
-#: templates/explore/explore2.html:54
-#: templates/explore/includes/related_projects.html:17
-#: templates/explore/includes/related_projects.html:32
-#: templates/explore/includes/related_projects.html:46
-#: templates/explore/includes/related_projects.html:75
-#: templates/explore/includes/related_projects2.html:8
-#: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-thumb.html:22
-#: templates/galleries/includes/project-thumb.html:24
-#: templates/projects/base.html:104 templates/projects/base.html.py:366
-#: templates/projects/includes/project_list.html:11
-msgid "by"
-msgstr "por"
-
 #: templates/cas/login.html:9
 msgid "Log in to your account"
 msgstr "Conecte-se a sua conta"
@@ -1597,10 +3052,6 @@ msgstr "Conecte-se a sua conta"
 #: templates/cloudmonitor/monitor.html:59
 msgid "Cloud data history"
 msgstr "Histórico de dados na nuvem"
-
-#: templates/cloudmonitor/monitor.html:67
-msgid "User"
-msgstr "Usuário"
 
 #: templates/cloudmonitor/monitor.html:68
 msgid "Data Name"
@@ -1613,10 +3064,6 @@ msgstr "Ação"
 #: templates/cloudmonitor/monitor.html:70
 msgid "Data Value"
 msgstr "Valor dos Dados"
-
-#: templates/cloudmonitor/monitor.html:71
-msgid "Time"
-msgstr "Tempo"
 
 #: templates/comments/comment-module.html:26
 #: templates/comments/comment_module.html:11
@@ -1640,13 +3087,6 @@ msgstr ""
 msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr "Você tem <span id=\"chars-left\">500</span> caracteres restantes."
 
-#: templates/comments/comment-module.html:40
-#: templates/comments/comment_module.html:17
-#: templates/comments/comment_module.html:67
-#: templates/includes/backbone-templates.html:62
-msgid "Post"
-msgstr "Publicar"
-
 # 83%
 #: templates/comments/comment-module.html:45
 msgid "Sorry, comment posting has been turned off for this"
@@ -1666,17 +3106,6 @@ msgstr ""
 #: templates/comments/comment-module.html:53
 msgid "Comments loading..."
 msgstr "Carregando comentários..."
-
-#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
-msgid "Report"
-msgstr "Denunciar"
-
-#: templates/comments/comment.html:59
-#: templates/comments/comment_module.html:31
-#: templates/comments/comment_module.html:48
-#: templates/comments/includes/comment.html:12
-msgid "Reply"
-msgstr "Responder"
 
 #: templates/comments/comment_module.html:36
 #: templates/comments/comment_module.html:54
@@ -1767,10 +3196,6 @@ msgstr "Histórias"
 msgid "Tag:"
 msgstr "Tag:"
 
-#: templates/explore/projects.html:26
-msgid "Go"
-msgstr "Ir"
-
 #: templates/explore/projects.html:38 templates/projects/project_list.html:32
 #: templates/studio/includes/project_action_bar.html:15
 msgid "Shared"
@@ -1834,10 +3259,6 @@ msgstr "Estúdio:"
 #: templates/extensions/terms_of_use.html:13
 msgid "Extension Developer Terms of Use"
 msgstr "Termos de Uso para Desenvolvedores de Extensão"
-
-#: templates/extensions/terms_of_use.html:40
-msgid "Submit"
-msgstr "Enviar"
 
 #: templates/galleries/activity.html:19
 #: templates/notifications/notifications.html:31
@@ -2169,12 +3590,6 @@ msgstr "Verifique sua conta"
 msgid "Submit Password"
 msgstr "Enviar senha"
 
-#: templates/includes/sort-projects-dropdown.html:4
-#: templates/studio/includes/sort-galleries-dropdown.html:19
-#: templates/studio/includes/sort-projects-dropdown.html:4
-msgid "Sort by"
-msgstr "Ordenar por"
-
 #: templates/includes/sort-projects-dropdown.html:9
 #: templates/studio/includes/project_action_bar.html:22
 #: templates/studio/includes/project_action_bar.html:27
@@ -2182,11 +3597,6 @@ msgstr "Ordenar por"
 #: templates/studio/includes/sort-projects-dropdown.html:9
 msgid "Last modified"
 msgstr "Última alteração"
-
-#: templates/includes/sort-projects-dropdown.html:10
-#: templates/studio/includes/sort-projects-dropdown.html:10
-msgid "Views"
-msgstr "Visualizações"
 
 #: templates/includes/sort-projects-dropdown.html:11
 #: templates/studio/includes/sort-projects-dropdown.html:11
@@ -3520,42 +4930,20 @@ msgid ""
 "step2.png\" alt=\"Step 2\">\n"
 "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-432.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-434.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
-"static/sa/Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+"static/sa/Scratch-434.air\">Download<img src=\"%(STATIC_URL)simages/help/"
 "offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-432.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-434.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
-"Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"Scratch-434.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
-"\n"
-"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-"
-"editor/step2.png\" alt=\"Step 2\">\n"
-"\t\t\t\t<p>Em seguida, baixe e instale o <br>Editor offline Scratch 2.0</p>\n"
-"\t\t\t\t<p>Mac OS X - <a href=\""
-"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.dmg\">Baixar<img "
-"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
-"\"></a> <br>\n"
-"\t\t\t\tMac OS 10.5 e anteriores - <a href=\""
-"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.air\">Baixar<img "
-"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
-"\"></a> <br>\n"
-"\t\t\t\t   Windows - <a href=\""
-"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.exe\">Baixar<img "
-"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
-"\"></a> <br>\n"
-"\t\t\t\t   Linux - <a href=\""
-"http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.air\">Baixar<img "
-"src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
-"\"></a>\n"
-"\t\t\t\t</p>\n"
-"\t\t\t\t"
 
 #: templates/info/scratch2download.html:58
 msgid "Support Materials"
@@ -4294,16 +5682,10 @@ msgid ""
 "Since the Scratch Team is responsible for moderation, we have access to all "
 "content stored on the Scratch website - including unshared projects. If you "
 "prefer to work on projects in complete privacy, you can use  either the <a "
-"href=\"/scratch2download\">Scratch 2 offline editor (beta)</a> or <a href ="
-"\"/scratch_1.4\">Scratch 1.4</a>.\n"
+"href=\"/scratch2download\">Scratch 2 offline editor</a> or <a href =\"/"
+"scratch_1.4\">Scratch 1.4</a>.\n"
 "  "
 msgstr ""
-"Como a Equipe do Scratch é responsável pela moderação, temos acesso a todo "
-"conteúdo armazenado no site do Scratch - inclusive projetos não "
-"compartilhados. Se você preferir trabalhar nos projetos com total "
-"privacidade, você pode usar o <a href=\"/scratch2download\">editor offline "
-"Scratch 2 (beta)</a> ou o <a href =\"/scratch_1.4\">Scratch 1.4</a>.\n"
-"  "
 
 #: templates/info/help/faq.html:109
 msgid "What is a remix?"
@@ -11820,11 +13202,6 @@ msgstr ""
 msgid "4A of 9"
 msgstr "4A de 9"
 
-#: templates/info/help/studio/tips/howto/hoc-4a.html:18
-#: templates/info/help/studio/tips/howto/hoc-intro.html:38
-msgid "Move"
-msgstr "Mover"
-
 #: templates/info/help/studio/tips/howto/hoc-4a.html:25
 #, python-format
 msgid ""
@@ -13878,7 +15255,8 @@ msgstr ""
 "logo abaixo do bloco da bandeira verde."
 
 #: templates/info/help/studio/tips/howto/valentine-intro.html:20
-msgid "Make a Valentine's Day card to share with your friends."
+#, fuzzy
+msgid "Make a Valentine's Day card to share with your friends!"
 msgstr "Faça um cartão para compartilhar com seus amigos."
 
 #: templates/info/help/studio/tips/howto/valentine-intro.html:23
@@ -14915,7 +16293,7 @@ msgstr "Mochila"
 msgid "Paint Editor"
 msgstr "Editor de desenho"
 
-#: templates/mail/base.html:37
+#: templates/mail/base.html:41
 #, python-format
 msgid ""
 "\n"
@@ -14930,7 +16308,7 @@ msgstr ""
 "criar histórias interativas, jogos e animações.\n"
 "        "
 
-#: templates/mail/base.html:43
+#: templates/mail/base.html:46
 #, python-format
 msgid ""
 "\n"
@@ -14943,7 +16321,16 @@ msgstr ""
 "olhada em nossa seção <a href=\"%(faq_url)s\">FAQ</a>.\n"
 "        "
 
-#: templates/mail/base.html:50
+#: templates/mail/base.html:51
+msgid ""
+"\n"
+"            If you are receiving multiple copies of this email, please let "
+"us know by emailing <a href=\"mailto:help@scratch.mit.edu\">help@scratch.mit."
+"edu</a>.\n"
+"        "
+msgstr ""
+
+#: templates/mail/base.html:58
 msgid "Make a Donation"
 msgstr "Faça uma doação"
 
@@ -15588,7 +16975,7 @@ msgstr "Modificar minha senha"
 msgid "Password reset email sent..."
 msgstr "Um e-mail de redefinição de senha foi enviado..."
 
-#: templates/registration/password_reset_email.html:13
+#: templates/registration/password_reset_email.html:14
 #: templates/registration/password_reset_email.txt:7
 msgid ""
 "You're receiving this email because you requested a password reset for your "
@@ -15599,12 +16986,12 @@ msgstr ""
 "sua conta no Scratch. Se você não pediu uma alteração de senha, você pode "
 "ignorar esta mensagem."
 
-#: templates/registration/password_reset_email.html:17
+#: templates/registration/password_reset_email.html:18
 #: templates/registration/password_reset_email.txt:9
 msgid "Please go to the following page and choose a new password:"
 msgstr "Vá até a página a seguir e escolha uma nova senha:"
 
-#: templates/registration/password_reset_email.html:24
+#: templates/registration/password_reset_email.html:25
 #: templates/registration/password_reset_email.txt:16
 msgid ""
 "You're receiving this e-mail because you requested a password reset for your "
@@ -15615,12 +17002,12 @@ msgstr ""
 "sua conta no Scratch. Se você não pediu uma alteração de senha, você pode "
 "ignorar esta mensagem."
 
-#: templates/registration/password_reset_email.html:27
+#: templates/registration/password_reset_email.html:28
 #: templates/registration/password_reset_email.txt:18
 msgid "Here are the username(s) associated with this email address:"
 msgstr "Aqui estão os nomes de usuário associados com esse endereço de e-mail:"
 
-#: templates/registration/password_reset_email.html:32
+#: templates/registration/password_reset_email.html:34
 #: templates/registration/password_reset_email.txt:23
 msgid "Go here to change the password:"
 msgstr "Acesse aqui para alterar a senha:"
@@ -15646,8 +17033,8 @@ msgid "Send me a password reset link!"
 msgstr "Envie-me um link de redefinição de senha!"
 
 #: templates/registration/welcome_email_message.html:8
-#, python-format
-msgid "Welcome to Scratch, <strong>%(user.username)s</strong>!"
+#, fuzzy, python-format
+msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
 msgstr "Bem-vindo ao Scratch, <strong>%(user.username)s</strong>!"
 
 #: templates/registration/welcome_email_message.html:10
@@ -15690,72 +17077,57 @@ msgstr "Quer saber mais?"
 #: templates/registration/welcome_email_message.html:24
 #, python-format
 msgid ""
-"\n"
-"    Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a href="
+"Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a href="
 "\"%(faq_url)s\">Frequently Asked Questions</a>, and <a href=\"%(discuss_url)s"
-"\">Discussion Forums</a>, to learn more about Scratch. Going forward, you "
-"will also receive occasional updates from the Scratch team and Code-to-Learn "
-"Foundation with coding tips, inspirational stories, project ideas, and more. "
-"The Code-to-Learn Foundation is a non-profit that supports Scratch "
-"educational initiatives. You can unsubscribe from within the updates or by "
-"clicking below:\n"
+"\">Discussion Forums</a>, to learn more about Scratch."
 msgstr ""
-"\n"
-"    Confira nossas páginas <a href=\"%(about_url)s\">Sobre o Scratch</a>, <a "
-"href=\"%(faq_url)s\">Perguntas Frequentes</a> e nossos <a href=\""
-"%(discuss_url)s\">Fóruns de Discussão</a> para saber mais sobre o Scratch. "
-"Além disso, você também vai receber atualizações da equipe Scratch e da "
-"Fundação Code-to-Learn, com dicas de programação, histórias inspiradoras, "
-"ideias de projeto e muito mais. A Fundação Code-to-Learn é uma entidade sem "
-"fins lucrativos que apoia as iniciativas educacionais do Scratch. Você pode "
-"cancelar sua assinatura nas atualizações ou clicando abaixo:\n"
 
-#: templates/registration/welcome_email_message.html:28
-#: templates/registration/welcome_email_message.txt:23
+#: templates/registration/welcome_email_message.html:27
 msgid ""
-"\n"
-"    Check out our About Scratch page, Frequently Asked Questions, and "
-"Discussion Forums, to learn more about Scratch. Going forward, you will also "
-"receive occasional updates from the Scratch team with coding tips, "
-"inspirational stories, project ideas, and more. You can unsubscribe from "
-"within the updates or by clicking below:\n"
+"Going forward, you will also receive occasional updates from the Scratch "
+"Team and Code-to-Learn Foundation with coding tips, inspirational stories, "
+"project ideas, and more. The Code-to-Learn Foundation is a non-profit that "
+"supports Scratch educational initiatives. You can unsubscribe from within "
+"the updates or by clicking below:"
 msgstr ""
-"\n"
-"    \n"
-"    Confira nossas páginas Sobre o Scratch, Perguntas Frequentes e nossos "
-"Fóruns de Discussão para saber mais sobre o Scratch. Além disso, você também "
-"vai receber atualizações da equipe Scratch e da Fundação Code-to-Learn, com "
-"dicas de programação, histórias inspiradoras, ideias de projeto e muito "
-"mais. Você pode cancelar sua assinatura nas atualizações ou clicando abaixo:"
-"\n"
+
+#: templates/registration/welcome_email_message.html:29
+msgid ""
+"Going forward, you will also receive occasional updates from the Scratch "
+"team with coding tips, inspirational stories, project ideas, and more. You "
+"can unsubscribe from within the updates or by clicking below:"
+msgstr ""
 
 #: templates/registration/welcome_email_message.txt:4
-#, python-format
-msgid "Welcome to Scratch, %(user.username)s!"
+#, fuzzy, python-format
+msgid "Welcome to Scratch, %(username)s!"
 msgstr "Bem-vindo ao Scratch, %(user.username)s!"
 
 #: templates/registration/welcome_email_message.txt:19
 #, python-format
 msgid ""
-"\n"
-"    Check out our About Scratch page (%(about_url)s),Frequently Asked "
-"Questions (%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn "
-"more about Scratch. Going forward, you will also receive occasional updates "
-"from the Scratch team and Code-to-Learn Foundation with coding tips, "
-"inspirational stories, project ideas, and more. The Code-to-Learn Foundation "
-"is a non-profit that supports Scratch educational initiatives. You can "
-"unsubscribe from within the updates or by clicking below:\n"
+"Check out our About Scratch page (%(about_url)s),Frequently Asked Questions "
+"(%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn more about "
+"Scratch."
 msgstr ""
-"\n"
-"    \n"
-"    Confira nossas páginas Sobre o Scratch (%(about_url)s), as Perguntas "
-"Frequentes (%(faq_url)s) e os Fóruns de Discussão (%(discuss_url)s) para "
-"saber mais sobre o Scratch. Além disso, você também vai receber atualizações "
-"da equipe Scratch e da Fundação Code-to-Learn, com dicas de programação, "
-"histórias inspiradoras, ideias de projeto e muito mais. A Fundação Code-to-"
-"Learn é uma entidade sem fins lucrativos que apoia as iniciativas "
-"educacionais do Scratch. Você pode cancelar sua assinatura nas atualizações "
-"ou clicando abaixo:\n"
+
+#: templates/registration/welcome_email_message.txt:22
+msgid ""
+"Going forward, you will also receive occasional updates from the Scratch "
+"team and Code-to-Learn Foundation with coding tips, inspirational stories, "
+"project ideas, and more. The Code-to-Learn Foundation is a non-profit that "
+"supports Scratch educational initiatives. You can unsubscribe from within "
+"the updates or by clicking below:"
+msgstr ""
+
+#: templates/registration/welcome_email_message.txt:24
+msgid ""
+"Check out our About Scratch page, Frequently Asked Questions, and Discussion "
+"Forums, to learn more about Scratch. Going forward, you will also receive "
+"occasional updates from the Scratch team with coding tips, inspirational "
+"stories, project ideas, and more. You can unsubscribe from within the "
+"updates or by clicking below:"
+msgstr ""
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format
@@ -15784,10 +17156,6 @@ msgstr "Páginas de suporte"
 #: templates/search/includes/tabs.html:5
 msgid "All Results"
 msgstr "Todos os resultados"
-
-#: templates/search/includes/tabs.html:20
-msgid "Forums"
-msgstr "Fóruns"
 
 #: templates/search/includes/projects/filters.html:8
 msgid "Most recent"
@@ -15985,10 +17353,6 @@ msgstr "Adicionar a"
 msgid "Unshare"
 msgstr "Cancelar compartilhamento"
 
-#: templates/studio/studio.html:141
-msgid "Delete"
-msgstr "Apagar"
-
 #: templates/studio/includes/galleries_action_bar.html:8
 msgid "View:"
 msgstr "Exibir:"
@@ -16058,6 +17422,154 @@ msgstr "Minhas coisas favoritas"
 #: userprofiles/models.py:92
 msgid "Why I Scratch"
 msgstr "Por que eu uso Scratch"
+
+#~ msgid "Invalid username"
+#~ msgstr "Nome de usuário inválido."
+
+#~ msgid "Hmm, that looks inappropriate"
+#~ msgstr "Hmm, isso parece inapropriado"
+
+# the password is tested against the word "password" and not "senha"
+# 82%
+#
+#~ msgid "Your password cannot be \\\\\\'password\\\\\\'"
+#~ msgstr "Sua senha não pode ser \\\\\\'senha\\\\\\'"
+
+# 97%
+#
+#~ msgid "You must select a birth month and year"
+#~ msgstr "Você deve selecionar mês e ano de nascimento"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/"
+#~ "step2.png\" alt=\"Step 2\">\n"
+#~ "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
+#~ "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
+#~ "sa/Scratch-432.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/download.png\" alt=\"Download \"></a> <br>\n"
+#~ "\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
+#~ "static/sa/Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+#~ "offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
+#~ "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
+#~ "sa/Scratch-432.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/download.png\" alt=\"Download \"></a> <br>\n"
+#~ "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
+#~ "Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/download.png\" alt=\"Download \"></a>\n"
+#~ "\t\t\t\t</p>\n"
+#~ "\t\t\t\t"
+#~ msgstr ""
+#~ "\n"
+#~ "\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-"
+#~ "editor/step2.png\" alt=\"Step 2\">\n"
+#~ "\t\t\t\t<p>Em seguida, baixe e instale o <br>Editor offline Scratch 2.0</p>\n"
+#~ "\t\t\t\t<p>Mac OS X - <a href=\""
+#~ "http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.dmg\">Baixar<img "
+#~ "src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+#~ "\"></a> <br>\n"
+#~ "\t\t\t\tMac OS 10.5 e anteriores - <a href=\""
+#~ "http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.air\">Baixar<img "
+#~ "src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+#~ "\"></a> <br>\n"
+#~ "\t\t\t\t   Windows - <a href=\""
+#~ "http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.exe\">Baixar<img "
+#~ "src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+#~ "\"></a> <br>\n"
+#~ "\t\t\t\t   Linux - <a href=\""
+#~ "http://cdn.scratch.mit.edu/scratchr2/static/sa/Scratch-432.air\">Baixar<img "
+#~ "src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download "
+#~ "\"></a>\n"
+#~ "\t\t\t\t</p>\n"
+#~ "\t\t\t\t"
+
+#~ msgid ""
+#~ "Since the Scratch Team is responsible for moderation, we have access to all "
+#~ "content stored on the Scratch website - including unshared projects. If you "
+#~ "prefer to work on projects in complete privacy, you can use  either the <a "
+#~ "href=\"/scratch2download\">Scratch 2 offline editor (beta)</a> or <a href ="
+#~ "\"/scratch_1.4\">Scratch 1.4</a>.\n"
+#~ "  "
+#~ msgstr ""
+#~ "Como a Equipe do Scratch é responsável pela moderação, temos acesso a todo "
+#~ "conteúdo armazenado no site do Scratch - inclusive projetos não "
+#~ "compartilhados. Se você preferir trabalhar nos projetos com total "
+#~ "privacidade, você pode usar o <a href=\"/scratch2download\">editor offline "
+#~ "Scratch 2 (beta)</a> ou o <a href =\"/scratch_1.4\">Scratch 1.4</a>.\n"
+#~ "  "
+
+#~ msgid "Make a Valentine's Day card to share with your friends."
+#~ msgstr "Faça um cartão para compartilhar com seus amigos."
+
+#, python-format
+#~ msgid "Welcome to Scratch, <strong>%(user.username)s</strong>!"
+#~ msgstr "Bem-vindo ao Scratch, <strong>%(user.username)s</strong>!"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "    Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a href="
+#~ "\"%(faq_url)s\">Frequently Asked Questions</a>, and <a href=\"%(discuss_url)s"
+#~ "\">Discussion Forums</a>, to learn more about Scratch. Going forward, you "
+#~ "will also receive occasional updates from the Scratch team and Code-to-Learn "
+#~ "Foundation with coding tips, inspirational stories, project ideas, and more. "
+#~ "The Code-to-Learn Foundation is a non-profit that supports Scratch "
+#~ "educational initiatives. You can unsubscribe from within the updates or by "
+#~ "clicking below:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    Confira nossas páginas <a href=\"%(about_url)s\">Sobre o Scratch</a>, <a "
+#~ "href=\"%(faq_url)s\">Perguntas Frequentes</a> e nossos <a href=\""
+#~ "%(discuss_url)s\">Fóruns de Discussão</a> para saber mais sobre o Scratch. "
+#~ "Além disso, você também vai receber atualizações da equipe Scratch e da "
+#~ "Fundação Code-to-Learn, com dicas de programação, histórias inspiradoras, "
+#~ "ideias de projeto e muito mais. A Fundação Code-to-Learn é uma entidade sem "
+#~ "fins lucrativos que apoia as iniciativas educacionais do Scratch. Você pode "
+#~ "cancelar sua assinatura nas atualizações ou clicando abaixo:\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "    Check out our About Scratch page, Frequently Asked Questions, and "
+#~ "Discussion Forums, to learn more about Scratch. Going forward, you will also "
+#~ "receive occasional updates from the Scratch team with coding tips, "
+#~ "inspirational stories, project ideas, and more. You can unsubscribe from "
+#~ "within the updates or by clicking below:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    \n"
+#~ "    Confira nossas páginas Sobre o Scratch, Perguntas Frequentes e nossos "
+#~ "Fóruns de Discussão para saber mais sobre o Scratch. Além disso, você também "
+#~ "vai receber atualizações da equipe Scratch e da Fundação Code-to-Learn, com "
+#~ "dicas de programação, histórias inspiradoras, ideias de projeto e muito "
+#~ "mais. Você pode cancelar sua assinatura nas atualizações ou clicando abaixo:"
+#~ "\n"
+
+#, python-format
+#~ msgid "Welcome to Scratch, %(user.username)s!"
+#~ msgstr "Bem-vindo ao Scratch, %(user.username)s!"
+
+#, python-format
+#~ msgid ""
+#~ "\n"
+#~ "    Check out our About Scratch page (%(about_url)s),Frequently Asked "
+#~ "Questions (%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn "
+#~ "more about Scratch. Going forward, you will also receive occasional updates "
+#~ "from the Scratch team and Code-to-Learn Foundation with coding tips, "
+#~ "inspirational stories, project ideas, and more. The Code-to-Learn Foundation "
+#~ "is a non-profit that supports Scratch educational initiatives. You can "
+#~ "unsubscribe from within the updates or by clicking below:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "    \n"
+#~ "    Confira nossas páginas Sobre o Scratch (%(about_url)s), as Perguntas "
+#~ "Frequentes (%(faq_url)s) e os Fóruns de Discussão (%(discuss_url)s) para "
+#~ "saber mais sobre o Scratch. Além disso, você também vai receber atualizações "
+#~ "da equipe Scratch e da Fundação Code-to-Learn, com dicas de programação, "
+#~ "histórias inspiradoras, ideias de projeto e muito mais. A Fundação Code-to-"
+#~ "Learn é uma entidade sem fins lucrativos que apoia as iniciativas "
+#~ "educacionais do Scratch. Você pode cancelar sua assinatura nas atualizações "
+#~ "ou clicando abaixo:\n"
 
 #~ msgid "Would you like to:"
 #~ msgstr "Você gostaria de:"
@@ -16216,967 +17728,6 @@ msgstr "Por que eu uso Scratch"
 #~ "esses requisitos, você pode tentar baixar e instalar o <a href =\"/scratch_1."
 #~ "4\">Scratch 1.4</a>, que ainda pode ser usado para compartilhar projetos no "
 #~ "site do Scratch 2."
-
-#~ msgid "subscribers"
-#~ msgstr "membros"
-
-#~ msgid "Latest posts on forum"
-#~ msgstr "Publicações mais recentes no fórum"
-
-#~ msgid "Latest topics on forum"
-#~ msgstr "Tópicos mais recentes no fórum"
-
-#, python-format
-#~ msgid "Latest posts on %s"
-#~ msgstr "Publicações mais recentes em %s"
-
-#, python-format
-#~ msgid "Latest posts on the topic \"%s\""
-#~ msgstr "Publicações mais recentes no tópico \"%s\""
-
-#, python-format
-#~ msgid "Latest posts on the forum \"%s\""
-#~ msgstr "Publicações mais recentes no fórum \"%s\""
-
-#, python-format
-#~ msgid "Latest posts on the category \"%s\""
-#~ msgstr "Publicações mais recentes na categoria \"%s\""
-
-#~ msgid "Registered"
-#~ msgstr "Inscrito"
-
-#~ msgid "Number of posts"
-#~ msgstr "Número de publicações"
-
-#~ msgid "Post time"
-#~ msgstr "Horário de publicação"
-
-#~ msgid "Author"
-#~ msgstr "Autor"
-
-#~ msgid "Subject"
-#~ msgstr "Assunto"
-
-#~ msgid "Forum"
-#~ msgstr "Fórum"
-
-#~ msgid "Ascending"
-#~ msgstr "Ascendente"
-
-#~ msgid "Descending"
-#~ msgstr "Descendente"
-
-#~ msgid "Topics"
-#~ msgstr "Tópicos"
-
-# 80%
-#~ msgid "Posts"
-#~ msgstr "Publicações"
-
-#~ msgid "Message text and topic subject"
-#~ msgstr "Texto da mensagem e assunto do tópico"
-
-#~ msgid "Message text only"
-#~ msgstr "Apenas o texto da mensagem"
-
-#~ msgid "Topic subject only"
-#~ msgstr "Apenas o assunto do tópico"
-
-#~ msgid "Attachment"
-#~ msgstr "Anexo"
-
-#~ msgid "Subscribe"
-#~ msgstr "Inscrever-se"
-
-# 87%
-#~ msgid "Subscribe to this topic."
-#~ msgstr "Inscrever-se neste tópico."
-
-#~ msgid "Can't be empty nor contain only whitespace characters"
-#~ msgstr "Este campo não pode estar vazio nem conter apenas espaços"
-
-#~ msgid ""
-#~ "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
-#~ "Scratch, so your account has been muted for the rest of the day. :/"
-#~ msgstr ""
-#~ "Hmm, o filterbot classificou seus últimos comentários como inadequados para "
-#~ "o Scratch, portanto sua conta não tem autorização para publicar comentários "
-#~ "até o final do dia. :/"
-
-#, python-format
-#~ msgid "Sorry, you have to wait %d seconds between posts."
-#~ msgstr "Desculpe, você deve esperar %d segundos entre publicações sucessivas."
-
-#~ msgid "Attachment is too big"
-#~ msgstr "O anexo é muito grande"
-
-#~ msgid "Silent edit?"
-#~ msgstr "Edição silenciosa?"
-
-# 83%
-#
-#~ msgid "E-mail"
-#~ msgstr "E-mail"
-
-#~ msgid "Real name"
-#~ msgstr "Nome verdadeiro"
-
-#~ msgid "Sort order"
-#~ msgstr "Critério de ordem"
-
-#~ msgid "Keyword search"
-#~ msgstr "Pesquisa por palavra-chave"
-
-#~ msgid "Author search"
-#~ msgstr "Pesquisa por autor"
-
-#~ msgid "Search in"
-#~ msgstr "Pesquisar em"
-
-#~ msgid "Show results as"
-#~ msgstr "Mostrar resultados como"
-
-#, python-format
-#~ msgid "User \"%s\" does not exist"
-#~ msgstr "O usuário \"%s\" não existe"
-
-#~ msgid "You already voted for this post"
-#~ msgstr "Você já votou nesta publicação"
-
-#~ msgid "This post does't belong to that user"
-#~ msgstr "Esta publicação não pertence a esse usuário"
-
-# 87%
-#~ msgid "Message"
-#~ msgstr "Mensagem"
-
-#, python-format
-#~ msgid "You have selected too many choices. You may only select %i."
-#~ msgstr "Você selecionou muitas opções. Você só pode selecionar %i."
-
-#~ msgid "Write each answer on a new line."
-#~ msgstr "Escreva cada resposta em uma nova linha."
-
-#~ msgid ""
-#~ "Number of days for this poll to run. Leave empty for an indefinite poll."
-#~ msgstr ""
-#~ "O número de dias que a pesquisa durará. Deixe vazio para uma pesquisa de "
-#~ "duração indefinida."
-
-#~ msgid "There is no valid answer."
-#~ msgstr "Não há resposta válida."
-
-#~ msgid "One of the answers is too long."
-#~ msgstr "Uma das respostas é muito longa."
-
-#~ msgid "Display your e-mail address."
-#~ msgstr "Exibir seu e-mail."
-
-#~ msgid "Hide your e-mail address but allow form e-mail."
-#~ msgstr ""
-#~ "Ocultar seu e-mail, mas permitir o envio de mensagens através de formulário."
-
-#~ msgid "Hide your e-mail address and disallow form e-mail."
-#~ msgstr ""
-#~ "Ocultar seu e-mail e não permitir o envio de mensagens através de formulário."
-
-#~ msgid "Name"
-#~ msgstr "Nome"
-
-#~ msgid "Groups"
-#~ msgstr "Grupos"
-
-#~ msgid "Only users from these groups can see this category"
-#~ msgstr "Apenas os usuários destes grupos podem ver esta categoria"
-
-#~ msgid "Position"
-#~ msgstr "Posição"
-
-#~ msgid "Category"
-#~ msgstr "Categoria"
-
-#~ msgid "Categories"
-#~ msgstr "Categorias"
-
-#~ msgid "New topics by moderators only"
-#~ msgstr "Somente os moderadores podem criar novos tópicos"
-
-# 90%
-#~ msgid "Description"
-#~ msgstr "Descrição"
-
-#~ msgid "Moderators"
-#~ msgstr "Moderadores"
-
-#~ msgid "Updated"
-#~ msgstr "Atualizado"
-
-#~ msgid "Post count"
-#~ msgstr "Número de publicações"
-
-#~ msgid "Topic count"
-#~ msgstr "Número de tópicos"
-
-# 75%
-# 87%
-#~ msgid "Created"
-#~ msgstr "Criado"
-
-#~ msgid "Views count"
-#~ msgstr "Número de visualizações"
-
-#~ msgid "Sticky"
-#~ msgstr "Persistente"
-
-# 83%
-#~ msgid "Closed"
-#~ msgstr "Fechado"
-
-#~ msgid "Subscribers"
-#~ msgstr "Inscritos"
-
-#~ msgid "Topic"
-#~ msgstr "Tópico"
-
-#~ msgid "Updated by"
-#~ msgstr "Atualizado por"
-
-#~ msgid "Markup"
-#~ msgstr "Marcação"
-
-#~ msgid "HTML version"
-#~ msgstr "Versão HTML"
-
-#~ msgid "User IP"
-#~ msgstr "IP do usuário"
-
-#~ msgid "From"
-#~ msgstr "De"
-
-#~ msgid "To"
-#~ msgstr "Para"
-
-#~ msgid "Sign"
-#~ msgstr "Assinar"
-
-#~ msgid "Reason"
-#~ msgstr "Motivo"
-
-#~ msgid "Reputation"
-#~ msgstr "Reputação"
-
-#~ msgid "Reputations"
-#~ msgstr "Reputações"
-
-#~ msgid "Status"
-#~ msgstr "Estado"
-
-#~ msgid "Site"
-#~ msgstr "Site"
-
-#~ msgid "Jabber"
-#~ msgstr "Jabber"
-
-#~ msgid "ICQ"
-#~ msgstr "ICQ"
-
-#~ msgid "MSN"
-#~ msgstr "Skype (antigo MSN)"
-
-#~ msgid "AIM"
-#~ msgstr "AIM"
-
-#~ msgid "Yahoo"
-#~ msgstr "Yahoo"
-
-#~ msgid "Location"
-#~ msgstr "Localização"
-
-#~ msgid "Signature"
-#~ msgstr "Assinatura"
-
-#~ msgid "Time zone"
-#~ msgstr "Fuso horário"
-
-# 87%
-#~ msgid "Language"
-#~ msgstr "Idioma"
-
-#~ msgid "Avatar"
-#~ msgstr "Avatar"
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
-
-#~ msgid "Show avatar"
-#~ msgstr "Mostrar avatar"
-
-#~ msgid "Show signatures"
-#~ msgstr "Mostrar assinaturas"
-
-#~ msgid "Show smilies"
-#~ msgstr "Mostrar smilies"
-
-#~ msgid "Privacy permission"
-#~ msgstr "Permissão de privacidade"
-
-#~ msgid "Auto subscribe"
-#~ msgstr "Inscrição automática"
-
-#~ msgid "Auto subscribe all topics you have created or reply."
-#~ msgstr ""
-#~ "Inscrição automática a todos os tópicos que eu tiver criado ou respondido."
-
-#~ msgid "Default markup"
-#~ msgstr "Marcação predefinida"
-
-# 87%
-#~ msgid "Profiles"
-#~ msgstr "Perfis"
-
-#~ msgid "Post tracking"
-#~ msgstr "Acompanhamento de publicações"
-
-#~ msgid "Reported by"
-#~ msgstr "Sinalizado por"
-
-#~ msgid "Zapped"
-#~ msgstr "Destruído"
-
-#~ msgid "Zapped by"
-#~ msgstr "Destruído por"
-
-# 85%
-#~ msgid "Reports"
-#~ msgstr "Denúncias"
-
-#~ msgid "Banned user"
-#~ msgstr "Usuário banido"
-
-#~ msgid "Ban start"
-#~ msgstr "Início do banimento"
-
-#~ msgid "Ban end"
-#~ msgstr "Fim do banimento"
-
-#~ msgid "Ban"
-#~ msgstr "Banimento"
-
-#~ msgid "Bans"
-#~ msgstr "Banimentos"
-
-# 75%
-#~ msgid "Size"
-#~ msgstr "Tamanho"
-
-#~ msgid "Content type"
-#~ msgstr "Tipo do conteúdo"
-
-#~ msgid "Path"
-#~ msgstr "Caminho"
-
-#~ msgid "Hash"
-#~ msgstr "Hash"
-
-#~ msgid "How many choices are allowed simultaneously."
-#~ msgstr "Quantas escolhas simultâneas são permitidas?"
-
-#~ msgid "Can users vote to this poll or just see the result?"
-#~ msgstr "Os usuários podem votar nesta pesquisa ou podem apenas ver o resultado?"
-
-#~ msgid "Point of time after this poll would be automatic deactivated"
-#~ msgstr "Data após a qual esta pesquisa deve ser automaticamente desativada"
-
-#~ msgid "Users who has voted this poll."
-#~ msgstr "Usuários que votaram nesta pesquisa."
-
-#, python-format
-#~ msgid ""
-#~ "Sorry, you need to host your images with a service like imageshack.com. "
-#~ "Please update your image links or remove all BB code [img] tags. Bad image "
-#~ "url: %s"
-#~ msgstr ""
-#~ "Desculpe, você deve hospedar suas imagens com um serviço como o "
-#~ "imageshack.com. Atualize seus links de imagem ou remova todas as tags [img] "
-#~ "do código BB. URL da imagem errada: %s"
-
-#~ msgid "Topics deleted."
-#~ msgstr "Tópicos excluídos."
-
-#~ msgid "Topics opened."
-#~ msgstr "Tópicos abertos."
-
-#~ msgid "Topics closed."
-#~ msgstr "Tópicos fechados."
-
-#, python-format
-#~ msgid "Found %i posts."
-#~ msgstr "Encontradas %i publicações."
-
-#, python-format
-#~ msgid "Found %i topics."
-#~ msgstr "Encontrados %i tópicos."
-
-#~ msgid "Marked all topics as read."
-#~ msgstr "Todos os tópicos marcados como lidos."
-
-#~ msgid "Post reported."
-#~ msgstr "Publicação denunciada"
-
-#~ msgid "Email sent."
-#~ msgstr "E-mail enviado."
-
-#~ msgid "Email could not be sent."
-#~ msgstr "O e-mail não pôde ser enviado."
-
-#~ msgid "Reply saved."
-#~ msgstr "Resposta salva."
-
-#~ msgid "This poll is not active."
-#~ msgstr "Esta pesquisa não está ativa."
-
-#~ msgid "You already voted on this poll."
-#~ msgstr "Você já votou nesta pesquisa."
-
-#~ msgid "Vote saved."
-#~ msgstr "Voto registrado."
-
-#~ msgid "Topic with poll saved."
-#~ msgstr "Tópico com votação salvo."
-
-#~ msgid "Topic saved."
-#~ msgstr "Tópico salvo."
-
-#~ msgid "Avatar uploaded."
-#~ msgstr "Avatar carregado."
-
-#~ msgid "Please sign in."
-#~ msgstr "Cadastre-se."
-
-#~ msgid "Profile saved."
-#~ msgstr "Perfil salvo."
-
-#~ msgid "Reputation deleted."
-#~ msgstr "Reputação removida."
-
-#~ msgid "Reputation saved."
-#~ msgstr "Reputação salva."
-
-#~ msgid "You don't have permission to edit this post."
-#~ msgstr "Você não tem permissão para editar esta publicação."
-
-# 76%
-#~ msgid "Post updated."
-#~ msgstr "Publicação atualizada."
-
-#~ msgid "Post deleted."
-#~ msgstr "Publicação removida."
-
-#~ msgid "The topic ID must be an integer."
-#~ msgstr "O ID do tópico deve ser um inteiro."
-
-#~ msgid "That thread doesn't exist."
-#~ msgstr "Essa conversa não existe."
-
-#~ msgid "Posts moved."
-#~ msgstr "Publicações movidas."
-
-#~ msgid "Topic moved."
-#~ msgstr "Tópico movido."
-
-#~ msgid "Topic stickied."
-#~ msgstr "Tópico tornado persistente."
-
-#~ msgid "Topic unstickied."
-#~ msgstr "Tópico tornado não persistente."
-
-#~ msgid "You don't have permission to delete this post."
-#~ msgstr "Você não tem autorização para remover esta publicação."
-
-# 90%
-#~ msgid "You don't have permission to mark this post."
-#~ msgstr "Você não tem autorização para marcar esta publicação."
-
-#~ msgid "There was not enough data collected to mark this post."
-#~ msgstr "Não havia dados suficientes coletados para marcar esta publicação."
-
-#~ msgid "Post marked as spam."
-#~ msgstr "Publicação marcada como spam."
-
-#~ msgid "This post is not in the right state to be marked as spam."
-#~ msgstr "Esta publicação não pode ser marcada como spam."
-
-#~ msgid "Post un-marked as spam."
-#~ msgstr "Publicação desmarcada como spam."
-
-#~ msgid "This post is not in the right state to be un-marked as spam."
-#~ msgstr "Esta publicação não pode ser desmarcada como spam."
-
-#~ msgid "Topic closed."
-#~ msgstr "Tópico fechado."
-
-#~ msgid "Topic opened."
-#~ msgstr "Tópico aberto."
-
-#~ msgid "Unsubscribed from topic."
-#~ msgstr "Inscrição ao tópico cancelada."
-
-#~ msgid "Subscribed to topic."
-#~ msgstr "Inscrito ao tópico."
-
-#~ msgid "New Topic"
-#~ msgstr "Novo Tópico"
-
-#~ msgid "Discuss Scratch"
-#~ msgstr "Discuta sobre o Scratch"
-
-#~ msgid "Notice"
-#~ msgstr "Notificação"
-
-#, python-format
-#~ msgid "Delete Posts - %(name)s"
-#~ msgstr "Remover Publicações - %(name)s"
-
-#~ msgid "Delete Posts"
-#~ msgstr "Remover Publicações"
-
-#, python-format
-#~ msgid "Last edited by %(user)s (%(time)s)"
-#~ msgstr "Editado pela última vez por %(user)s (%(time)s)"
-
-#~ msgid "Select"
-#~ msgstr "Selecionar"
-
-#~ msgid "Go back"
-#~ msgstr "Voltar"
-
-#, python-format
-#~ msgid "Edit Post - %(name)s"
-#~ msgstr "Editar Publicação - %(name)s"
-
-#~ msgid "Edit Post"
-#~ msgstr "Editar Publicação"
-
-#~ msgid "Edit post"
-#~ msgstr "Editar publicação"
-
-#~ msgid "Silent edit (don't display 'Edited by ...' in topic view)"
-#~ msgstr ""
-#~ "Edição silenciosa (não mostra \"Editado por ...\" na visualização do tópico)"
-
-#~ msgid "Save"
-#~ msgstr "Salvar"
-
-#~ msgid ""
-#~ "Can't find an answer to your question? Click here to ask it in a new thread."
-#~ msgstr ""
-#~ "Não consegue encontrar uma resposta para sua pergunta? Clique aqui para "
-#~ "perguntá-la em uma nova conversa."
-
-#~ msgid "New topic"
-#~ msgstr "Novo tópico"
-
-#~ msgid "Replies"
-#~ msgstr "Respostas"
-
-#~ msgid "Last Post"
-#~ msgstr "Última Publicação"
-
-#~ msgid "Sticky:"
-#~ msgstr "Persistente:"
-
-#~ msgid "(New Posts)"
-#~ msgstr "(Novas Publicações)"
-
-#~ msgid "Forum is empty."
-#~ msgstr "O fórum está vazio."
-
-#~ msgid "Moderate forum"
-#~ msgstr "Moderar fórum"
-
-#~ msgid "Show new posts since last visit"
-#~ msgstr "Mostrar novas publicações desde a última visita"
-
-#~ msgid "Discussion Home"
-#~ msgstr "Início das Discussões"
-
-#, python-format
-#~ msgid "Reports (%(report_count)s)"
-#~ msgstr "(%(report_count)s) denúncias"
-
-#~ msgid "Show your"
-#~ msgstr "Mostrar o seu"
-
-#~ msgid "topics"
-#~ msgstr "tópicos"
-
-#~ msgid "posts"
-#~ msgstr "publicações"
-
-#~ msgid "Change your signature"
-#~ msgstr "Alterar sua assinatura"
-
-#~ msgid "Show recent posts"
-#~ msgstr "Mostrar publicações recentes"
-
-#~ msgid "Show unanswered posts"
-#~ msgstr "Mostrar publicações sem resposta"
-
-#~ msgid "Mark all topics as read"
-#~ msgstr "Marcar todos os tópicos como lidos"
-
-#~ msgid "Send e-mail to"
-#~ msgstr "Enviar e-mail para"
-
-#~ msgid "Write and submit your e-mail message"
-#~ msgstr "Escreva e envie sua mensagem de e-mail"
-
-#~ msgid ""
-#~ "Please note that by using this form, your e-mail address will be disclosed "
-#~ "to the recipient."
-#~ msgstr ""
-#~ "Atenção: ao usar este formulário, seu e-mail será revelado ao destinatário."
-
-#, python-format
-#~ msgid "Moderate - %(name)s"
-#~ msgstr "Moderar - %(name)s"
-
-#~ msgid "Moderate Forum"
-#~ msgstr "Moderar Fórum"
-
-#~ msgid "Open"
-#~ msgstr "Abrir"
-
-#~ msgid "Moderated by"
-#~ msgstr "Moderado por"
-
-#, python-format
-#~ msgid "Move Posts - %(name)s"
-#~ msgstr "Mover Publicações - %(name)s"
-
-#~ msgid "Move Posts"
-#~ msgstr "Mover Publicações"
-
-#~ msgid "All posts (original topic will be deleted)"
-#~ msgstr "Todas as publicações (os tópicos originais serão removidos)"
-
-#~ msgid "Topic ID or URL"
-#~ msgstr "ID ou URL do tópico"
-
-#~ msgid "Move Topic"
-#~ msgstr "Mover Tópico"
-
-#~ msgid "Move to"
-#~ msgstr "Mover para"
-
-#~ msgid "Pages"
-#~ msgstr "Páginas"
-
-#~ msgid "Report Post"
-#~ msgstr "Denunciar Publicação"
-
-#~ msgid "Please enter a short reason why you are reporting this post."
-#~ msgstr ""
-#~ "Justifique, em um texto breve, porque está a denunciando esta publicação."
-
-#~ msgid "Reputation of the user"
-#~ msgstr "Reputação do usuário"
-
-#~ msgid "From user"
-#~ msgstr "Do usuário"
-
-#~ msgid "For post in topic"
-#~ msgstr "Para publicação no tópico"
-
-#~ msgid "Estimation"
-#~ msgstr "Estimativa"
-
-# 80%
-#~ msgid "Date"
-#~ msgstr "Data"
-
-#~ msgid "Are you sure"
-#~ msgstr "Tem certeza"
-
-#~ msgid "Please, fill the form"
-#~ msgstr "Preencha o formulário"
-
-#~ msgid "Your name:"
-#~ msgstr "Seu nome:"
-
-#~ msgid "To whom we change a reputation:"
-#~ msgstr "A quem alteramos a reputação:"
-
-#~ msgid "Method:"
-#~ msgstr "Método:"
-
-#~ msgid "Add of a reputation"
-#~ msgstr "Acréscimo de uma reputação"
-
-#~ msgid "Reduction of a reputation"
-#~ msgstr "Redução de uma reputação"
-
-#~ msgid "(Dustbin all posts and topics)"
-#~ msgstr "(Enviar todas as publicações e tópicos para a lixeira)"
-
-#~ msgid ""
-#~ "To search by keyword, enter a term or terms to search for. Separate terms "
-#~ "with spaces. To search by author enter the username of the author whose "
-#~ "posts you wish to search for."
-#~ msgstr ""
-#~ "Para pesquisar por palavra-chave, introduza um termo ou vários termos a "
-#~ "procurar. Separe os termos por espaços. Para procurar por autor, introduza o "
-#~ "nome de usuário do autor cujas publicações quer procurar."
-
-#~ msgid "All forums"
-#~ msgstr "Todos os fóruns"
-
-#~ msgid ""
-#~ "Choose in which forum you would like to search and if you want to search in "
-#~ "topic subjects, message text or both."
-#~ msgstr ""
-#~ "Escolha em que fórum deseja pesquisar e se deseja pesquisar nos assuntos, no "
-#~ "texto das mensagens ou em ambos."
-
-#~ msgid "You can choose how you wish to sort and show your results."
-#~ msgstr "Você pode escolher como deseja ordenar e exibir seus resultados."
-
-#~ msgid "Search Results"
-#~ msgstr "Resultados da Pesquisa"
-
-#~ msgid "Show results as topic list."
-#~ msgstr "Mostrar resultados como lista de tópicos."
-
-#~ msgid "Info"
-#~ msgstr "Informações"
-
-#~ msgid "Your search returned no hits."
-#~ msgstr "Sua pesquisa não teve nenhum resultado."
-
-#~ msgid "Search links"
-#~ msgstr "Pesquisar links"
-
-#~ msgid "Show your subscribed topics"
-#~ msgstr "Mostrar os tópicos que está seguindo"
-
-#~ msgid "Show your topics"
-#~ msgstr "Mostrar seus tópicos"
-
-#~ msgid "Show results as post list."
-#~ msgstr "Mostrar os resultados como uma lista de publicações."
-
-#~ msgid "loading..."
-#~ msgstr "carregando..."
-
-#~ msgid "There was an error :( Try again?"
-#~ msgstr "Ocorreu um erro :( Tentar novamente?"
-
-#~ msgid "Follow this discussion to get a message when there's a new post"
-#~ msgstr ""
-#~ "Siga esta discussão para receber uma mensagem quando houver uma nova "
-#~ "publicação"
-
-#~ msgid "Follow Discussion"
-#~ msgstr "Seguir Discussão"
-
-#~ msgid "Stop getting messages about new posts to this discussion"
-#~ msgstr "Deixar de receber mensagens sobre novas publicações nesta discussão"
-
-#~ msgid "Unfollow Discussion"
-#~ msgstr "Deixar de seguir esta Discussão"
-
-#~ msgid "Poll"
-#~ msgstr "Pesquisa"
-
-#, python-format
-#~ msgid "(%(count)s answers allows.)"
-#~ msgstr "(%(count)s respostas permitidas.)"
-
-#~ msgid "Vote"
-#~ msgstr "Votar"
-
-#~ msgid "1000+ posts"
-#~ msgstr "Mais de 1.000 publicações"
-
-#~ msgid "500+ posts"
-#~ msgstr "Mais de 500 publicações "
-
-#~ msgid "100+ posts"
-#~ msgstr "Mais de 100 publicações"
-
-#~ msgid "1 post"
-#~ msgstr "1 publicação"
-
-# 83%
-#~ msgid " posts"
-#~ msgstr "   publicações"
-
-#~ msgid "From:"
-#~ msgstr "De:"
-
-#~ msgid "Registered:"
-#~ msgstr "Registrado:"
-
-#~ msgid "Posts:"
-#~ msgstr "Publicações:"
-
-#~ msgid "IP:"
-#~ msgstr "IP:"
-
-#~ msgid "Really delete all posts, and ban user? This is hard to reverse."
-#~ msgstr ""
-#~ "Tem certeza que deseja apagar todas as mensagens e banir o usuário? Esta "
-#~ "ação é difícil de ser revertida."
-
-#~ msgid "(Edit Signature)"
-#~ msgstr "(Editar Assinatura)"
-
-#~ msgid "Are you sure you want to mark this as spam?"
-#~ msgstr "Tem certeza de que deseja marcar como spam?"
-
-#~ msgid "Mark as Spam"
-#~ msgstr "Marcar como Spam"
-
-#~ msgid "Are you sure you want to unmark this as spam?"
-#~ msgstr "Tem certeza de que deseja desmarcar como spam?"
-
-#~ msgid "Un-mark as Spam"
-#~ msgstr "Desmarcar como Spam"
-
-#~ msgid "Are you sure you want to delete this post?"
-#~ msgstr "Tem certeza de que quer remover esta publicação?"
-
-#~ msgid "Edit"
-#~ msgstr "Editar"
-
-#~ msgid "Insert a quotation of this post in your reply."
-#~ msgstr "Inserir uma citação desta publicação na sua resposta."
-
-# 83%
-#~ msgid "Quote"
-#~ msgstr "Citação"
-
-#~ msgid "Jump to"
-#~ msgstr "Saltar para"
-
-#~ msgid "Moderator control"
-#~ msgstr "Controle do moderador"
-
-#~ msgid "Delete multiple posts"
-#~ msgstr "Remover várias publicações"
-
-#~ msgid "Move multiple posts"
-#~ msgstr "Mover várias publicações"
-
-#~ msgid "Move topic"
-#~ msgstr "Mover tópico"
-
-#~ msgid "Open topic"
-#~ msgstr "Abrir tópico"
-
-#~ msgid "Close topic"
-#~ msgstr "Fechar tópico"
-
-#~ msgid "Unstick topic"
-#~ msgstr "Eliminar persistência do tópico"
-
-#~ msgid "Stick topic"
-#~ msgstr "Colocar tópico em destaque"
-
-#~ msgid "Upload avatar"
-#~ msgstr "Carregar avatar"
-
-#~ msgid "Enter an avatar file to upload"
-#~ msgstr "Selecione um arquivo de avatar para carregar"
-
-#, python-format
-#~ msgid ""
-#~ "An avatar is a small image that will be displayed under your username in "
-#~ "your posts. It must not be any bigger than %(avatar_width)s x "
-#~ "%(avatar_height)s pixels "
-#~ msgstr ""
-#~ "Um avatar é uma pequena imagem que será mostrada com seu nome de usuário nas "
-#~ "suas publicações. Não pode ser maior do que %(avatar_width)s x "
-#~ "%(avatar_height)s píxels "
-
-#~ msgid "Upload"
-#~ msgstr "Carregar"
-
-#~ msgid "YouTube Video"
-#~ msgstr "Vídeo do YouTube"
-
-#~ msgid "Video Not Found"
-#~ msgstr "Vídeo Não Encontrado"
-
-#~ msgid "Why do I see this page?"
-#~ msgstr "Por que estou vendo esta página?"
-
-#~ msgid ""
-#~ "Links to YouTube videos on the forums are automatically converted to links "
-#~ "to this page, to hide comments and other content."
-#~ msgstr ""
-#~ "Os links para vídeos do YouTube usados nos fóruns são automaticamente "
-#~ "transformados em links para esta página, para ocultar comentários e outro "
-#~ "conteúdo."
-
-#~ msgid "New Reply"
-#~ msgstr "Nova Resposta"
-
-#~ msgid "Create a poll"
-#~ msgstr "Criar uma pesquisa"
-
-#~ msgid "Replies:"
-#~ msgstr "Respostas:"
-
-#, python-format
-#~ msgid "Signed in as <strong>%(user)s</strong>"
-#~ msgstr "Autenticado como <strong>%(user)s</strong>"
-
-# 85%
-#~ msgid "Sign In"
-#~ msgstr "Entrar"
-
-#, python-format
-#~ msgid "%(posts)s post"
-#~ msgid_plural "%(posts)s posts"
-#~ msgstr[0] "%(posts)s publicação"
-#~ msgstr[1] "%(posts)s publicações"
-
-#~ msgid "No posts."
-#~ msgstr "Nenhuma publicação."
-
-#, python-format
-#~ msgid "%(replies)s reply"
-#~ msgid_plural "%(replies)s replies"
-#~ msgstr[0] "%(replies)s resposta"
-#~ msgstr[1] "%(replies)s respostas"
-
-#~ msgid "No topics."
-#~ msgstr "Nenhum tópico."
-
-#, python-format
-#~ msgid "Settings (%(name)s)"
-#~ msgstr "Preferências (%(name)s)"
-
-#~ msgid ""
-#~ "A signature is a small piece of text that is attached to your posts. In it, "
-#~ "you can enter just about anything you like. Perhaps you would like to enter "
-#~ "your favourite quote or your star sign. It's up to you! In your signature "
-#~ "you can use BBCode if it is allowed in this particular forum. You can see "
-#~ "the features that are allowed/enabled listed below whenever you edit your "
-#~ "signature."
-#~ msgstr ""
-#~ "Uma assinatura é um fragmento de texto associado a suas publicações. Você "
-#~ "pode colocar o que quiser na assinatura, como sua citação favorita ou seu "
-#~ "signo. Você pode criar à vontade! Na sua assinatura, você pode usar o "
-#~ "BBCode, caso seja permitido no fórum. Veja abaixo quais recursos são "
-#~ "permitidos ou não ao editar sua assinatura."
-
-#~ msgid "No signature currently stored in profile."
-#~ msgstr "Seu perfil não tem nenhuma assinatura associada."
-
-#~ msgid "When you update your profile, you will be redirected back to this page."
-#~ msgstr "Quando atualizar o seu perfil, será redirecionado para esta página."
 
 #~ msgid ""
 #~ "First, download any projects that you want to keep. \n"

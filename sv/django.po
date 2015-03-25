@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-27 11:45+0000\n"
+"POT-Creation-Date: 2015-03-20 14:16+0000\n"
 "PO-Revision-Date: 2015-02-13 09:50+0000\n"
 "Last-Translator: Anders <anders.berggren@smedjebacken.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,65 +26,82 @@ msgstr "Ditt meddelande har skickats. Vi svarar inom 3 dagar."
 msgid "Please correct the errors below."
 msgstr "Var snäll och rätta till nedanstående fel."
 
+#: authentication/forms.py:29
+msgid "username exists"
+msgstr ""
+
+#: authentication/forms.py:36
+#, fuzzy
+msgid "invalid username"
+msgstr "Ogiltigt användarnamn"
+
+#: authentication/forms.py:50
+msgid "invalid gender choice"
+msgstr ""
+
+#: authentication/forms.py:52
+msgid "invalid password"
+msgstr ""
+
 # 96%
-#: authentication/forms.py:90 authentication/forms.py:116
+#: authentication/forms.py:92 authentication/forms.py:118
 #, fuzzy
 msgid "You must enter your password."
 msgstr "Du måste ange ett lösenord"
 
-#: authentication/forms.py:91 authentication/forms.py:117
+#: authentication/forms.py:93 authentication/forms.py:119
 msgid "Wrong password, try again."
 msgstr ""
 
-#: authentication/forms.py:94
+#: authentication/forms.py:96
 msgid "Enter your password to confirm"
 msgstr "Skriv in ditt lösenord för att bekräfta"
 
-#: authentication/forms.py:118 authentication/forms.py:319
+#: authentication/forms.py:120 authentication/forms.py:322
 msgid "Incorrect captcha, please try again."
 msgstr ""
 
-#: authentication/forms.py:129
+#: authentication/forms.py:131
 msgid "Keep my projects, but disable all comments"
 msgstr ""
 
-#: authentication/forms.py:130
+#: authentication/forms.py:132
 msgid "Delete my projects"
 msgstr ""
 
-#: authentication/forms.py:138
+#: authentication/forms.py:140
 msgid "Looks like that isn't a valid email format"
 msgstr "Det ser ut som om det är ett ogiltigt e-postformat"
 
-#: authentication/forms.py:144
+#: authentication/forms.py:146
 msgid "The two password fields didn't match."
 msgstr "De två lösenordsfälten innehöll inte samma lösenord."
 
-#: authentication/forms.py:145 authentication/forms.py:166
+#: authentication/forms.py:147 authentication/forms.py:168
 msgid "Your password must be at least 6 characters long."
 msgstr "Ditt lösenord måste vara minst 6 tecken långt."
 
-#: authentication/forms.py:146 authentication/forms.py:167
+#: authentication/forms.py:148 authentication/forms.py:169
 msgid "Your password cannot be 'password'."
 msgstr "Ditt lösenord får inte vara 'lösenord'."
 
-#: authentication/forms.py:147 authentication/forms.py:168
+#: authentication/forms.py:149 authentication/forms.py:170
 msgid "Your password cannot be the same as your username."
 msgstr "Ditt lösenord får inte vara samma som ditt användarnamn."
 
-#: authentication/forms.py:188
+#: authentication/forms.py:190
 msgid "Sorry we don't have an account with that email address"
 msgstr "Tyvärr, vi har inget konto med den e-postadressen"
 
-#: authentication/forms.py:189
+#: authentication/forms.py:191
 msgid "Sorry we don't have an account with that username"
 msgstr "Tyvärr, vi har inget konto med det användarnamnet"
 
-#: authentication/forms.py:190
+#: authentication/forms.py:192
 msgid "You must provide an email or username"
 msgstr "Du måste ange en e-postadress eller ett användarnamn"
 
-#: authentication/forms.py:195 templates/accounts/account_settings.html:10
+#: authentication/forms.py:197 templates/accounts/account_settings.html:10
 #: templates/accounts/email_change.html:10
 #: templates/accounts/password_change_form.html:10
 #: templates/accounts/deletion/confirmation.html:8
@@ -93,32 +110,32 @@ msgstr "Du måste ange en e-postadress eller ett användarnamn"
 msgid "Email"
 msgstr "E-post"
 
-#: authentication/forms.py:294 authentication/forms.py:315
+#: authentication/forms.py:297 authentication/forms.py:318
 #, fuzzy
 msgid "Incorrect username or password."
 msgstr "Glömt användarnamn eller lösenord?"
 
-#: authentication/forms.py:295 authentication/forms.py:316
+#: authentication/forms.py:298 authentication/forms.py:319
 msgid "Please enable cookies on your browser."
 msgstr ""
 
-#: authentication/forms.py:296 authentication/forms.py:317
+#: authentication/forms.py:299 authentication/forms.py:320
 msgid "This account is inactive."
 msgstr ""
 
-#: authentication/forms.py:297 authentication/forms.py:318
+#: authentication/forms.py:300 authentication/forms.py:321
 msgid "This account is deleted!"
 msgstr ""
 
-#: authentication/forms.py:329
+#: authentication/forms.py:332
 msgid "Send me Scratch Updates & Newsletters"
 msgstr ""
 
-#: authentication/views.py:590
+#: authentication/views.py:598
 msgid "Unsubscribe me from Scratch updates"
 msgstr ""
 
-#: authentication/views.py:591
+#: authentication/views.py:599
 msgid "Unsubscribe me from Code-to-Learn Foundation updates"
 msgstr ""
 
@@ -162,6 +179,1513 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s sedan"
 
+#: djangobb_forum/admin.py:31
+msgid "subscribers"
+msgstr "prenumeranter"
+
+#: djangobb_forum/feeds.py:27 djangobb_forum/feeds.py:28
+#: djangobb_forum/templates/djangobb_forum/base.html:14
+msgid "Latest posts on forum"
+msgstr "Senaste inläggen i forumet"
+
+#: djangobb_forum/feeds.py:46 djangobb_forum/feeds.py:47
+#: djangobb_forum/templates/djangobb_forum/base.html:15
+msgid "Latest topics on forum"
+msgstr "Senaste ämnena i forumet"
+
+#: djangobb_forum/feeds.py:75 djangobb_forum/feeds.py:100
+#: djangobb_forum/feeds.py:125
+#, python-format
+msgid "Latest posts on %s"
+msgstr "Senaste inläggen i %s"
+
+# Kolla om det är pluralis posts - inläggen?
+#: djangobb_forum/feeds.py:83
+#, python-format
+msgid "Latest posts on the topic \"%s\""
+msgstr "Senaste inläggen i ämnet \"%s\""
+
+#: djangobb_forum/feeds.py:108
+#, python-format
+msgid "Latest posts on the forum \"%s\""
+msgstr "Senaste inläggen i forumet \"%s\""
+
+#: djangobb_forum/feeds.py:128
+#, python-format
+msgid "Latest posts on the category \"%s\""
+msgstr "Senaste inläggen i kategorin \"%s\""
+
+#: djangobb_forum/forms.py:27 djangobb_forum/forms.py:227
+#: djangobb_forum/forms.py:365 templates/base.html:214
+#: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
+msgid "Username"
+msgstr "Användarnamn"
+
+#: djangobb_forum/forms.py:28
+msgid "Registered"
+msgstr "Registrerad"
+
+#: djangobb_forum/forms.py:29
+msgid "Number of posts"
+msgstr "Antal inlägg"
+
+#: djangobb_forum/forms.py:33
+msgid "Post time"
+msgstr "Inlägg skapat"
+
+#: djangobb_forum/forms.py:34
+msgid "Author"
+msgstr "Författare"
+
+#: djangobb_forum/forms.py:35 djangobb_forum/forms.py:58
+#: djangobb_forum/forms.py:186 djangobb_forum/forms.py:458
+#: djangobb_forum/models.py:160
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:31
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
+msgid "Subject"
+msgstr "Ämne"
+
+#: djangobb_forum/forms.py:36 djangobb_forum/forms.py:401
+#: djangobb_forum/models.py:130 djangobb_forum/models.py:159
+#: djangobb_forum/templates/djangobb_forum/index.html:55
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:26
+msgid "Forum"
+msgstr "Forum"
+
+#: djangobb_forum/forms.py:40
+msgid "Ascending"
+msgstr "Stigande"
+
+#: djangobb_forum/forms.py:41
+msgid "Descending"
+msgstr "Fallande"
+
+#: djangobb_forum/forms.py:45 djangobb_forum/models.py:175
+#: djangobb_forum/templates/djangobb_forum/index.html:56
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
+msgid "Topics"
+msgstr "Ämnen"
+
+# 80%
+#: djangobb_forum/forms.py:46 djangobb_forum/models.py:275
+#: djangobb_forum/templates/djangobb_forum/index.html:57
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
+msgid "Posts"
+msgstr "Inlägg"
+
+#: djangobb_forum/forms.py:50
+msgid "Message text and topic subject"
+msgstr "Meddelandetext och ämnesrubrik"
+
+#: djangobb_forum/forms.py:51
+msgid "Message text only"
+msgstr "Bara meddelandetext"
+
+#: djangobb_forum/forms.py:52
+msgid "Topic subject only"
+msgstr "Endast ämnesrubrik"
+
+#: djangobb_forum/forms.py:60
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
+msgid "Attachment"
+msgstr "Bilaga"
+
+#: djangobb_forum/forms.py:61
+msgid "Subscribe"
+msgstr "Prenumerera"
+
+#: djangobb_forum/forms.py:61
+msgid "Subscribe to this topic."
+msgstr "Prenumerera på detta ämne."
+
+#: djangobb_forum/forms.py:91
+msgid "Can't be empty nor contain only whitespace characters"
+msgstr "Kan varken vara tomt eller bara innehålla blanksteg"
+
+#: djangobb_forum/forms.py:101
+msgid ""
+"Hmm, the filterbot is pretty sure your recent comments weren't ok for "
+"Scratch, so your account has been muted for the rest of the day. :/"
+msgstr ""
+"Hmm, filterroboten är ganska säker på att dina senaste kommentarer inte var "
+"ok för Scratch, så ditt konto har stängts av för resten av dagen. :/"
+
+#: djangobb_forum/forms.py:130 djangobb_forum/forms.py:134
+#, python-format
+msgid "Sorry, you have to wait %d seconds between posts."
+msgstr "Tyvärr, du måste vänta %d sekunder mellan inläggen."
+
+#: djangobb_forum/forms.py:143
+msgid "Attachment is too big"
+msgstr "Bilagan är för stor"
+
+#: djangobb_forum/forms.py:188
+msgid "Silent edit?"
+msgstr "Tyst redigering?"
+
+# 83%
+#: djangobb_forum/forms.py:228
+msgid "E-mail"
+msgstr "E-post"
+
+#: djangobb_forum/forms.py:259
+msgid "Real name"
+msgstr "Riktigt namn"
+
+#: djangobb_forum/forms.py:367 djangobb_forum/forms.py:403
+#: templates/includes/sort-projects-dropdown.html:4
+#: templates/studio/includes/sort-galleries-dropdown.html:19
+#: templates/studio/includes/sort-projects-dropdown.html:4
+msgid "Sort by"
+msgstr "Sortera efter"
+
+#: djangobb_forum/forms.py:368 djangobb_forum/forms.py:404
+msgid "Sort order"
+msgstr "Sorteringsordning"
+
+#: djangobb_forum/forms.py:397
+msgid "Keyword search"
+msgstr "Nyckelordssökning"
+
+#: djangobb_forum/forms.py:399
+msgid "Author search"
+msgstr "Författarsökning"
+
+#: djangobb_forum/forms.py:402
+msgid "Search in"
+msgstr "Sök i"
+
+#: djangobb_forum/forms.py:405
+msgid "Show results as"
+msgstr "Visa resultat som"
+
+#: djangobb_forum/forms.py:430
+#, python-format
+msgid "User \"%s\" does not exist"
+msgstr "Användare \"%s \" finns inte"
+
+#: djangobb_forum/forms.py:440
+msgid "You already voted for this post"
+msgstr "Du har redan röstat på inlägget"
+
+#: djangobb_forum/forms.py:444
+msgid "This post does't belong to that user"
+msgstr "Detta inlägg tillhör inte den användaren"
+
+# 87%
+#: djangobb_forum/forms.py:460 djangobb_forum/models.py:266
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:36
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
+msgid "Message"
+msgstr "Meddelande"
+
+#: djangobb_forum/forms.py:513
+#, python-format
+msgid "You have selected too many choices. You may only select %i."
+msgstr "Du har gjort för många val. Du får bara välja %i."
+
+#: djangobb_forum/forms.py:520
+msgid "Write each answer on a new line."
+msgstr "Skriv varje svar på en ny rad"
+
+#: djangobb_forum/forms.py:523
+msgid ""
+"Number of days for this poll to run. Leave empty for an indefinite poll."
+msgstr "Antal dagar för omröstningen. Lämna tomt för obestämd tid."
+
+#: djangobb_forum/forms.py:540
+msgid "There is no valid answer."
+msgstr "Det finns inget giltigt svar."
+
+#: djangobb_forum/forms.py:546
+msgid "One of the answers is too long."
+msgstr "Ett av svaren är för långt."
+
+#: djangobb_forum/models.py:46
+msgid "Display your e-mail address."
+msgstr "Visa din e-postadress."
+
+#: djangobb_forum/models.py:47
+msgid "Hide your e-mail address but allow form e-mail."
+msgstr "Dölj din e-postadress men tillåt e-post via formulär."
+
+#: djangobb_forum/models.py:48
+msgid "Hide your e-mail address and disallow form e-mail."
+msgstr "Dölj din e-postadress och tillåt inte e-post via formulär."
+
+#: djangobb_forum/models.py:81 djangobb_forum/models.py:119
+#: djangobb_forum/models.py:489
+msgid "Name"
+msgstr "Namn"
+
+#: djangobb_forum/models.py:82
+msgid "Groups"
+msgstr "Grupper"
+
+#: djangobb_forum/models.py:82
+msgid "Only users from these groups can see this category"
+msgstr "Endast användare från dessa grupper kan se kategorin"
+
+#: djangobb_forum/models.py:83 djangobb_forum/models.py:120
+msgid "Position"
+msgstr "Position"
+
+#: djangobb_forum/models.py:87 djangobb_forum/models.py:117
+msgid "Category"
+msgstr "Kategori"
+
+#: djangobb_forum/models.py:88
+msgid "Categories"
+msgstr "Kategorier"
+
+#: djangobb_forum/models.py:118
+msgid "New topics by moderators only"
+msgstr "Nya ämnen enbart genom moderatorer"
+
+# 90%
+#: djangobb_forum/models.py:121
+msgid "Description"
+msgstr "Beskrivning"
+
+#: djangobb_forum/models.py:122
+msgid "Moderators"
+msgstr "Moderatorer"
+
+#: djangobb_forum/models.py:123 djangobb_forum/models.py:162
+#: djangobb_forum/models.py:263
+msgid "Updated"
+msgstr "Uppdaterad"
+
+# Post ska ev. vara inlägg, kolla upp detta så att det blir enhetligt.
+#: djangobb_forum/models.py:124 djangobb_forum/models.py:168
+#: djangobb_forum/models.py:409
+msgid "Post count"
+msgstr "Antal inlägg"
+
+# ämne eller ämnen?
+#: djangobb_forum/models.py:125
+msgid "Topic count"
+msgstr "Antal ämnen"
+
+# Fora är möjligt, men är det för svårt för yngre barn? Forum funkar också i pluralis?
+#: djangobb_forum/models.py:131 templates/search/includes/tabs.html:20
+msgid "Forums"
+msgstr "Forum"
+
+# 87%
+#: djangobb_forum/models.py:161 djangobb_forum/models.py:262
+#: djangobb_forum/models.py:450
+msgid "Created"
+msgstr "Skapad"
+
+#: djangobb_forum/models.py:163 djangobb_forum/models.py:261
+#: djangobb_forum/models.py:388 templates/cloudmonitor/monitor.html:67
+msgid "User"
+msgstr "Användare"
+
+#: djangobb_forum/models.py:164
+msgid "Views count"
+msgstr "Antal visningar"
+
+# Inlägg som är kvar först. I Facebook kallas det fastnålade inlägg. Kolla upp mer.
+#: djangobb_forum/models.py:165
+msgid "Sticky"
+msgstr "Fastnålad"
+
+# 83%
+#: djangobb_forum/models.py:166
+msgid "Closed"
+msgstr "Stängd"
+
+#: djangobb_forum/models.py:167
+msgid "Subscribers"
+msgstr "Prenumeranter"
+
+#: djangobb_forum/models.py:174 djangobb_forum/models.py:260
+#: djangobb_forum/templates/djangobb_forum/forum.html:35
+#: djangobb_forum/templates/djangobb_forum/moderate.html:31
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:25
+msgid "Topic"
+msgstr "Ämne"
+
+#: djangobb_forum/models.py:264
+msgid "Updated by"
+msgstr "Uppdaterad av"
+
+# I vilket sammanhang finns ordet? Kolla upp och ändra.
+#: djangobb_forum/models.py:265
+msgid "Markup"
+msgstr "Markera"
+
+#: djangobb_forum/models.py:267
+msgid "HTML version"
+msgstr "HTML-version"
+
+# Blir ev. för lång. Kanske Användar-IP?
+#: djangobb_forum/models.py:268
+msgid "User IP"
+msgstr "Användarens IP-adress"
+
+#: djangobb_forum/models.py:274 djangobb_forum/models.py:361
+#: djangobb_forum/models.py:447 djangobb_forum/models.py:485
+#: templates/comments/comment-module.html:40
+#: templates/comments/comment_module.html:17
+#: templates/comments/comment_module.html:67
+#: templates/includes/backbone-templates.html:62
+msgid "Post"
+msgstr "Skicka"
+
+#: djangobb_forum/models.py:359
+msgid "From"
+msgstr "Från"
+
+#: djangobb_forum/models.py:360
+msgid "To"
+msgstr "Till"
+
+#: djangobb_forum/models.py:362 templates/cloudmonitor/monitor.html:71
+msgid "Time"
+msgstr "Tid"
+
+# Vilket sammanhang?
+#: djangobb_forum/models.py:363
+msgid "Sign"
+msgstr "Underskrift"
+
+#: djangobb_forum/models.py:364 djangobb_forum/models.py:451
+#: djangobb_forum/models.py:464
+#: djangobb_forum/templates/djangobb_forum/report.html:29
+#: djangobb_forum/templates/djangobb_forum/reputation.html:25
+msgid "Reason"
+msgstr "Anledning"
+
+#: djangobb_forum/models.py:367
+msgid "Reputation"
+msgstr "Omdöme"
+
+#: djangobb_forum/models.py:368
+msgid "Reputations"
+msgstr "Ömdömen"
+
+#: djangobb_forum/models.py:389
+msgid "Status"
+msgstr "Status"
+
+# 75%
+#: djangobb_forum/models.py:390
+msgid "Site"
+msgstr "Sajt"
+
+#: djangobb_forum/models.py:391
+msgid "Jabber"
+msgstr "Jabber"
+
+#: djangobb_forum/models.py:392
+msgid "ICQ"
+msgstr "ICQ"
+
+#: djangobb_forum/models.py:393
+msgid "MSN"
+msgstr "MSN"
+
+#: djangobb_forum/models.py:394
+msgid "AIM"
+msgstr "AIM"
+
+#: djangobb_forum/models.py:395
+msgid "Yahoo"
+msgstr "Yahoo"
+
+#: djangobb_forum/models.py:396
+msgid "Location"
+msgstr "Plats"
+
+#: djangobb_forum/models.py:397 djangobb_forum/models.py:398
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:5
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:19
+msgid "Signature"
+msgstr "Underskrift"
+
+#: djangobb_forum/models.py:399
+msgid "Time zone"
+msgstr "Tidszon"
+
+# 87%
+#: djangobb_forum/models.py:400
+msgid "Language"
+msgstr "Språk"
+
+#: djangobb_forum/models.py:401
+msgid "Avatar"
+msgstr "Avatar"
+
+#: djangobb_forum/models.py:402
+msgid "Theme"
+msgstr "Tema"
+
+#: djangobb_forum/models.py:403
+msgid "Show avatar"
+msgstr "Visa avatar"
+
+#: djangobb_forum/models.py:404
+msgid "Show signatures"
+msgstr "Visa underskrifter"
+
+#: djangobb_forum/models.py:405
+msgid "Show smilies"
+msgstr "Visa smileys"
+
+# I vilket sammanhang?
+#: djangobb_forum/models.py:406
+msgid "Privacy permission"
+msgstr "Integritet"
+
+#: djangobb_forum/models.py:407
+msgid "Auto subscribe"
+msgstr "Prenumerera automatiskt"
+
+#: djangobb_forum/models.py:407
+msgid "Auto subscribe all topics you have created or reply."
+msgstr "Prenumerera på alla ämnen som du skapat eller svarat på."
+
+# Kolla upp Markup
+#: djangobb_forum/models.py:408
+msgid "Default markup"
+msgstr "Standardmärkning"
+
+#: djangobb_forum/models.py:414 templates/base.html:244
+msgid "Profile"
+msgstr "Profil"
+
+# 87%
+#: djangobb_forum/models.py:415
+msgid "Profiles"
+msgstr "Profiler"
+
+#: djangobb_forum/models.py:439 djangobb_forum/models.py:440
+msgid "Post tracking"
+msgstr "Spåra inlägg"
+
+#: djangobb_forum/models.py:446
+msgid "Reported by"
+msgstr "Rapporterat av"
+
+# Osäkert vilken betydelse. Kolla upp
+#: djangobb_forum/models.py:448
+msgid "Zapped"
+msgstr "Attackerad"
+
+#: djangobb_forum/models.py:449
+msgid "Zapped by"
+msgstr "Attackerad av"
+
+#: djangobb_forum/models.py:454
+#: djangobb_forum/templates/djangobb_forum/topic.html:159
+#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
+msgid "Report"
+msgstr "Rapport"
+
+# 85%
+#: djangobb_forum/models.py:455
+#: djangobb_forum/templates/djangobb_forum/header.html:28
+#: djangobb_forum/templates/djangobb_forum/reports.html:6
+msgid "Reports"
+msgstr "Rapporter"
+
+# Bättre ord?
+#: djangobb_forum/models.py:461
+msgid "Banned user"
+msgstr "Avstängd användare"
+
+#: djangobb_forum/models.py:462
+msgid "Ban start"
+msgstr "Avstängning startar"
+
+#: djangobb_forum/models.py:463
+msgid "Ban end"
+msgstr "Avstängning slutar"
+
+#: djangobb_forum/models.py:467
+msgid "Ban"
+msgstr "Avstängning"
+
+#: djangobb_forum/models.py:468
+msgid "Bans"
+msgstr "Avstängningar"
+
+# 75%
+#: djangobb_forum/models.py:486
+msgid "Size"
+msgstr "Storlek"
+
+#: djangobb_forum/models.py:487
+msgid "Content type"
+msgstr "Typ av innehåll"
+
+# I vilket sammanhang?
+#: djangobb_forum/models.py:488
+msgid "Path"
+msgstr "Stig"
+
+#: djangobb_forum/models.py:490
+msgid "Hash"
+msgstr "Hash"
+
+#: djangobb_forum/models.py:517
+msgid "How many choices are allowed simultaneously."
+msgstr "Hur många val är tillåtna samtidigt."
+
+#: djangobb_forum/models.py:520
+msgid "Can users vote to this poll or just see the result?"
+msgstr "Kan användarna rösta eller bara se resultatet?"
+
+# Kolla upp detta!
+#: djangobb_forum/models.py:523
+msgid "Point of time after this poll would be automatic deactivated"
+msgstr "Tidpunkt efter att den här omröstningen stängs av automatiskt"
+
+#: djangobb_forum/models.py:526
+msgid "Users who has voted this poll."
+msgstr "Användare som har röstat."
+
+#: djangobb_forum/util.py:273
+#, python-format
+msgid ""
+"Sorry, you need to host your images with a service like imageshack.com. "
+"Please update your image links or remove all BB code [img] tags. Bad image "
+"url: %s"
+msgstr ""
+"Tyvärr, du måste spara dina bilder på en tjänst som imageshack.com. "
+"Uppdatera dina bildlänkar eller ta bort alla BB-kod [img] taggar. Felaktig "
+"bild URL: %s"
+
+#: djangobb_forum/views.py:94
+msgid "Topics deleted."
+msgstr "Ämnet borttaget."
+
+#: djangobb_forum/views.py:99
+msgid "Topics opened."
+msgstr "Ämnet öppnat."
+
+#: djangobb_forum/views.py:104
+msgid "Topics closed."
+msgstr "Ämnet avslutat."
+
+# Meddelande eller inlägg?
+#: djangobb_forum/views.py:297
+#, python-format
+msgid "Found %i posts."
+msgstr "Hittade %i inlägg."
+
+#: djangobb_forum/views.py:301
+#, python-format
+msgid "Found %i topics."
+msgstr "Hittade %i ämnen."
+
+#: djangobb_forum/views.py:315
+msgid "Marked all topics as read."
+msgstr "Markerade alla ämnen som lästa."
+
+#: djangobb_forum/views.py:325
+msgid "Post reported."
+msgstr "Inlägget rapporterat."
+
+#: djangobb_forum/views.py:342
+msgid "Email sent."
+msgstr "E-post skickad."
+
+#: djangobb_forum/views.py:344
+msgid "Email could not be sent."
+msgstr "E-post kunde inte skickas."
+
+#: djangobb_forum/views.py:439 djangobb_forum/views.py:1157
+msgid "Reply saved."
+msgstr "Svar sparat."
+
+#: djangobb_forum/views.py:485
+msgid "This poll is not active."
+msgstr "Omröstningen är inte aktiv."
+
+#: djangobb_forum/views.py:488
+msgid "You already voted on this poll."
+msgstr "Du har redan röstat."
+
+#: djangobb_forum/views.py:497
+msgid "Vote saved."
+msgstr "Omröstning är sparad."
+
+#: djangobb_forum/views.py:596
+msgid "Topic with poll saved."
+msgstr "Ämnet med omröstning är sparad."
+
+#: djangobb_forum/views.py:598
+msgid "Topic saved."
+msgstr "Ämnet är sparat."
+
+#: djangobb_forum/views.py:633
+msgid "Avatar uploaded."
+msgstr "Avatar uppladdad."
+
+#: djangobb_forum/views.py:642
+msgid "Please sign in."
+msgstr "Logga in."
+
+#: djangobb_forum/views.py:656
+msgid "Profile saved."
+msgstr "Profil sparad."
+
+#: djangobb_forum/views.py:691
+msgid "Reputation deleted."
+msgstr "Omdöme borttaget."
+
+#: djangobb_forum/views.py:697
+msgid "Reputation saved."
+msgstr "Omdöme sparat."
+
+#: djangobb_forum/views.py:739
+msgid "You don't have permission to edit this post."
+msgstr "Du har inte tillåtelse att redigera inlägget."
+
+# 76%
+#: djangobb_forum/views.py:749
+msgid "Post updated."
+msgstr "Inlägget uppdaterat."
+
+#: djangobb_forum/views.py:774 djangobb_forum/views.py:971
+msgid "Post deleted."
+msgstr "Inlägget borttaget."
+
+#: djangobb_forum/views.py:819
+msgid "The topic ID must be an integer."
+msgstr "Ämnets ID måste vara ett heltal."
+
+#: djangobb_forum/views.py:825
+msgid "That thread doesn't exist."
+msgstr "Tråden finns inte."
+
+# Se över om det ska vara meddelande eller inlägg. Relaterat till ett forum!
+#: djangobb_forum/views.py:866
+msgid "Posts moved."
+msgstr "Inlägg har flyttats."
+
+#: djangobb_forum/views.py:931
+msgid "Topic moved."
+msgstr "Ämnet flyttat."
+
+#: djangobb_forum/views.py:947
+msgid "Topic stickied."
+msgstr "Ämnet fastnålat."
+
+#: djangobb_forum/views.py:949
+msgid "Topic unstickied."
+msgstr "Ämnet inte fastnålat."
+
+#: djangobb_forum/views.py:967
+msgid "You don't have permission to delete this post."
+msgstr "Du har inte tillåtelse att ta bort inlägget."
+
+# 90%
+#: djangobb_forum/views.py:994 djangobb_forum/views.py:1026
+msgid "You don't have permission to mark this post."
+msgstr "Du har inte tillåtelse att markera inlägget."
+
+#: djangobb_forum/views.py:998 djangobb_forum/views.py:1030
+msgid "There was not enough data collected to mark this post."
+msgstr "Det finns inte tillräckligt med data för att markera detta inlägg."
+
+#: djangobb_forum/views.py:1003
+msgid "Post marked as spam."
+msgstr "Inlägget markerat som spam."
+
+#: djangobb_forum/views.py:1005
+msgid "This post is not in the right state to be marked as spam."
+msgstr "Inlägget har inte rättigheter att markeras som spam."
+
+# 86%
+#: djangobb_forum/views.py:1035
+msgid "Post un-marked as spam."
+msgstr "Inlägget avmarkerat som spam."
+
+#: djangobb_forum/views.py:1037
+msgid "This post is not in the right state to be un-marked as spam."
+msgstr "Inlägget har inte rättigheter att avmarkeras som spam."
+
+#: djangobb_forum/views.py:1051
+msgid "Topic closed."
+msgstr "Ämnet stängt."
+
+#: djangobb_forum/views.py:1054
+msgid "Topic opened."
+msgstr "Ämnet öppnat."
+
+#: djangobb_forum/views.py:1076
+msgid "Unsubscribed from topic."
+msgstr "Prenumerationen avbruten."
+
+#: djangobb_forum/views.py:1088
+msgid "Subscribed to topic."
+msgstr "Prenumererar på ämnet."
+
+#: djangobb_forum/templates/djangobb_forum/add_topic.html:5
+#: djangobb_forum/templates/djangobb_forum/add_topic.html:13
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
+#: djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:10
+msgid "New Topic"
+msgstr "Nytt ämne"
+
+#: djangobb_forum/templates/djangobb_forum/add_topic.html:11
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:15
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:11
+#: djangobb_forum/templates/djangobb_forum/forum.html:15
+#: djangobb_forum/templates/djangobb_forum/forum.html:77
+#: djangobb_forum/templates/djangobb_forum/moderate.html:14
+#: djangobb_forum/templates/djangobb_forum/moderate.html:72
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:19
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:65
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:10
+#: djangobb_forum/templates/djangobb_forum/report.html:11
+#: djangobb_forum/templates/djangobb_forum/topic.html:27
+#: djangobb_forum/templates/djangobb_forum/topic.html:189
+#: templates/base.html:339
+msgid "Discussion Forums"
+msgstr "Diskussionsforum"
+
+#: djangobb_forum/templates/djangobb_forum/base.html:5
+#: djangobb_forum/templates/djangobb_forum/index.html:5
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:6
+msgid "Discuss Scratch"
+msgstr "Diskutera Scratch"
+
+#: djangobb_forum/templates/djangobb_forum/base.html:126
+#: djangobb_forum/templates/djangobb_forum/header.html:40
+msgid "Notice"
+msgstr "Notifiering"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:7
+#, python-format
+msgid "Delete Posts - %(name)s"
+msgstr "Ta bort inlägg - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:18
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:68
+msgid "Delete Posts"
+msgstr "Ta bort inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:46
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:48
+#: djangobb_forum/templates/djangobb_forum/topic.html:130
+#, python-format
+msgid "Last edited by %(user)s (%(time)s)"
+msgstr "Senast redigerad av %(user)s (%(time)s)"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:51
+#: djangobb_forum/templates/djangobb_forum/moderate.html:35
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:52
+msgid "Select"
+msgstr "Välj"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:72
+#: djangobb_forum/templates/djangobb_forum/moderate.html:85
+#: djangobb_forum/templates/djangobb_forum/reputation.html:29
+#: djangobb_forum/templates/djangobb_forum/topic.html:168
+#: templates/studio/studio.html:141
+msgid "Delete"
+msgstr "Radera"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:73
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:48
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:23
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:90
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:41
+#: djangobb_forum/templates/djangobb_forum/report.html:35
+#: djangobb_forum/templates/djangobb_forum/reputation.html:66
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:41
+#: djangobb_forum/templates/djangobb_forum/search_form.html:74
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:30
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:65
+msgid "Go back"
+msgstr "Tillbaka"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:5
+#, python-format
+msgid "Edit Post - %(name)s"
+msgstr "Redigerat inlägg - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:14
+msgid "Edit Post"
+msgstr "Redigera inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:22
+msgid "Edit post"
+msgstr "Redigera inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:43
+msgid "Silent edit (don't display 'Edited by ...' in topic view)"
+msgstr "Osynlig redigering (visa inte 'Redigerad av...' i ämnesvyn)"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:47
+msgid "Save"
+msgstr "Spara"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:24
+msgid ""
+"Can't find an answer to your question? Click here to ask it in a new thread."
+msgstr ""
+"Kan inte hitta ett svar på din fråga? Klicka här för att ställa frågan i en "
+"ny tråd."
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:24
+msgid "New topic"
+msgstr "Nytt ämne"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:36
+#: djangobb_forum/templates/djangobb_forum/moderate.html:32
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:27
+msgid "Replies"
+msgstr "Svar"
+
+# 80%
+#: djangobb_forum/templates/djangobb_forum/forum.html:37
+#: djangobb_forum/templates/djangobb_forum/moderate.html:33
+#: templates/includes/sort-projects-dropdown.html:10
+#: templates/studio/includes/sort-projects-dropdown.html:10
+msgid "Views"
+msgstr "Visningar"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:38
+#: djangobb_forum/templates/djangobb_forum/index.html:58
+#: djangobb_forum/templates/djangobb_forum/moderate.html:34
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:28
+msgid "Last Post"
+msgstr "Senaste inlägget"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:53
+#: djangobb_forum/templates/djangobb_forum/moderate.html:47
+msgid "Sticky:"
+msgstr "Fastnålat:"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:56
+#: djangobb_forum/templates/djangobb_forum/forum.html:63
+#: djangobb_forum/templates/djangobb_forum/forum_row.html:40
+#: djangobb_forum/templates/djangobb_forum/moderate.html:50
+#: djangobb_forum/templates/djangobb_forum/moderate.html:56
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:39
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:45
+#: templates/carousel/includes/project-thumb.html:26
+#: templates/carousel/includes/project-thumb.html:28
+#: templates/explore/explore2.html:54
+#: templates/explore/includes/related_projects.html:17
+#: templates/explore/includes/related_projects.html:32
+#: templates/explore/includes/related_projects.html:46
+#: templates/explore/includes/related_projects.html:75
+#: templates/explore/includes/related_projects2.html:8
+#: templates/galleries/includes/activity_list.html:96
+#: templates/galleries/includes/project-thumb.html:22
+#: templates/galleries/includes/project-thumb.html:24
+#: templates/projects/base.html:104 templates/projects/base.html.py:366
+#: templates/projects/includes/project_list.html:11
+msgid "by"
+msgstr "av"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:57
+msgid "(New Posts)"
+msgstr "(Nya inlägg)"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:67
+#: djangobb_forum/templates/djangobb_forum/moderate.html:61
+msgid "Forum is empty."
+msgstr "Forumet är tomt."
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:107
+msgid "Moderate forum"
+msgstr "Modererat forum"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:15
+msgid "Show new posts since last visit"
+msgstr "Visa nya inlägg sedan ditt senaste besök"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:20
+msgid "Discussion Home"
+msgstr "Diskussion Hem"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:21
+#: djangobb_forum/templates/djangobb_forum/search_form.html:5
+#: djangobb_forum/templates/djangobb_forum/search_form.html:18
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:20
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
+#: templates/404.html:21 templates/base.html:191 templates/contact-us.html:92
+msgid "Search"
+msgstr "Sök"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:26
+#, python-format
+msgid "Reports (%(report_count)s)"
+msgstr "Rapporter (%(report_count)s)"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:77
+msgid "Show your"
+msgstr "Visa din"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:77
+msgid "topics"
+msgstr "ämnen"
+
+# 80%
+#: djangobb_forum/templates/djangobb_forum/index.html:77
+msgid "posts"
+msgstr "meddelanden"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:78
+msgid "Change your signature"
+msgstr "Ändra din signatur"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:82
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:43
+msgid "Show recent posts"
+msgstr "Visa senaste inläggen"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:83
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:44
+msgid "Show unanswered posts"
+msgstr "Visa obesvarade inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:85
+msgid "Mark all topics as read"
+msgstr "Markera alla ämnen som lästa"
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:7
+msgid "Send e-mail to"
+msgstr "Skicka e-post till"
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:13
+msgid "Write and submit your e-mail message"
+msgstr "Skriv och skicka ditt e-postmeddelande"
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:19
+msgid ""
+"Please note that by using this form, your e-mail address will be disclosed "
+"to the recipient."
+msgstr ""
+"Observera, när du använder formuläret kommer din e-postadress att visas för "
+"mottagaren."
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:23
+#: djangobb_forum/templates/djangobb_forum/report.html:34
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:41
+#: djangobb_forum/templates/djangobb_forum/search_form.html:73
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:64
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:59
+#: djangobb_forum/templates/djangobb_forum/mobile/includes/post_form.html:16
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:31
+#: templates/extensions/terms_of_use.html:40
+msgid "Submit"
+msgstr "Skicka"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:7
+#, python-format
+msgid "Moderate - %(name)s"
+msgstr "Moderera - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:16
+#: djangobb_forum/templates/djangobb_forum/moderate.html:74
+#: djangobb_forum/templates/djangobb_forum/moderate.html:80
+msgid "Moderate Forum"
+msgstr "Modererat Forum"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:84
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:89
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:40
+#: templates/info/help/studio/tips/howto/hoc-4a.html:18
+#: templates/info/help/studio/tips/howto/hoc-intro.html:38
+msgid "Move"
+msgstr "Flytta"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:86
+msgid "Open"
+msgstr "Öppna"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:87
+#: templates/modal-registration.html:200
+#: templates/accounts/email_verification/includes/verify_email_popup.html:27
+msgid "Close"
+msgstr "Stäng"
+
+#: djangobb_forum/templates/djangobb_forum/moderators.html:3
+msgid "Moderated by"
+msgstr "Modererat av"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:7
+#, python-format
+msgid "Move Posts - %(name)s"
+msgstr "Flytta meddelanden - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:22
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:68
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:74
+msgid "Move Posts"
+msgstr "Flytta meddelanden"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:82
+msgid "All posts (original topic will be deleted)"
+msgstr "Alla inlägg (originalämnet kommer att tas bort)"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:85
+msgid "Topic ID or URL"
+msgstr "Ämnes ID eller URL"
+
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:5
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:11
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:17
+msgid "Move Topic"
+msgstr "Flytta ämnet"
+
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:26
+msgid "Move to"
+msgstr "Flytta till"
+
+#: djangobb_forum/templates/djangobb_forum/pagination.html:3
+msgid "Pages"
+msgstr "Sidor"
+
+#: djangobb_forum/templates/djangobb_forum/report.html:5
+#: djangobb_forum/templates/djangobb_forum/report.html:14
+#: djangobb_forum/templates/djangobb_forum/report.html:22
+msgid "Report Post"
+msgstr "Flagga post"
+
+#: djangobb_forum/templates/djangobb_forum/report.html:32
+msgid "Please enter a short reason why you are reporting this post."
+msgstr "Ange en kort anledning till varför du rapporterar detta inlägg."
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:17
+msgid "Reputation of the user"
+msgstr "Omdöme om användaren"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:23
+msgid "From user"
+msgstr "Från användare"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:24
+msgid "For post in topic"
+msgstr "För inlägg i ämnet"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:26
+msgid "Estimation"
+msgstr "Uppskattning"
+
+# 80%
+#: djangobb_forum/templates/djangobb_forum/reputation.html:27
+msgid "Date"
+msgstr "Datum"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:64
+msgid "Are you sure"
+msgstr "Är du säker"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:7
+msgid "Please, fill the form"
+msgstr "Fyll i formuläret"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:17
+msgid "Your name:"
+msgstr "Ditt namn:"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:21
+msgid "To whom we change a reputation:"
+msgstr "För vem vi ändrar omdömet:"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:29
+msgid "Method:"
+msgstr "Metod:"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:32
+msgid "Add of a reputation"
+msgstr "Lägg till omdöme"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:34
+msgid "Reduction of a reputation"
+msgstr "Ta bort ett omdöme"
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:32
+msgid "(Dustbin all posts and topics)"
+msgstr "(Papperskorg alla inlägg och ämnen)"
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:37
+msgid ""
+"To search by keyword, enter a term or terms to search for. Separate terms "
+"with spaces. To search by author enter the username of the author whose "
+"posts you wish to search for."
+msgstr ""
+"För att söka efter ord, ange ett eller flera sökord. Separata villkor med "
+"mellanslag. För att söka efter författare ange användarnamnet på författaren "
+"vars inlägg du vill söka efter."
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:42
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:30
+msgid "All forums"
+msgstr "Alla forum"
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:56
+msgid ""
+"Choose in which forum you would like to search and if you want to search in "
+"topic subjects, message text or both."
+msgstr ""
+"Välj i vilket forum du vill söka och om du vill söka i ämnesrubrik, "
+"meddelandetext eller båda."
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:70
+msgid "You can choose how you wish to sort and show your results."
+msgstr "Du kan välja hur du vill sortera och visa dina resultat"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:6
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:7
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:19
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:10
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:10
+msgid "Search Results"
+msgstr "Sökresultat"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:12
+msgid "Show results as topic list."
+msgstr "Visa resultat som ämneslista."
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:26
+msgid "Info"
+msgstr "Information"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:29
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:49
+msgid "Your search returned no hits."
+msgstr "Din sökning gav inga träffar."
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:42
+msgid "Search links"
+msgstr "Söklänkar"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:46
+msgid "Show your subscribed topics"
+msgstr "Visa ämnen som du prenumererar på"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:47
+msgid "Show your topics"
+msgstr "Visa din ämnen"
+
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:13
+msgid "Show results as post list."
+msgstr "Visa resultat som inläggslista"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:16
+#: djangobb_forum/templates/djangobb_forum/topic.html:198
+msgid "loading..."
+msgstr "laddar..."
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:17
+#: djangobb_forum/templates/djangobb_forum/topic.html:199
+msgid "There was an error :( Try again?"
+msgstr "Det blev ett fel :( Försök igen?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:18
+#: djangobb_forum/templates/djangobb_forum/topic.html:200
+msgid "Follow this discussion to get a message when there's a new post"
+msgstr ""
+"Följ denna diskussionen för att få ett meddelande när nytt inlägg skickas"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:18
+#: djangobb_forum/templates/djangobb_forum/topic.html:200
+msgid "Follow Discussion"
+msgstr "Följ diskussionen"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:19
+#: djangobb_forum/templates/djangobb_forum/topic.html:201
+msgid "Stop getting messages about new posts to this discussion"
+msgstr "Stoppa meddelanden om nya inlägg i den här diskussionen"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:19
+#: djangobb_forum/templates/djangobb_forum/topic.html:201
+msgid "Unfollow Discussion"
+msgstr "Följ inte diskussionen"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:35
+msgid "Poll"
+msgstr "Omröstning"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:43
+#, python-format
+msgid "(%(count)s answers allows.)"
+msgstr "(%(count)s svar tillåtna.)"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:46
+msgid "Vote"
+msgstr "Rösta"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:97
+msgid "1000+ posts"
+msgstr "1000+ inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:99
+msgid "500+ posts"
+msgstr "500+ inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:101
+msgid "100+ posts"
+msgstr "100+ inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:103
+msgid "1 post"
+msgstr "1 inlägg"
+
+# 80%
+# 83%
+#: djangobb_forum/templates/djangobb_forum/topic.html:105
+msgid " posts"
+msgstr " inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:111
+msgid "From:"
+msgstr "Från:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:113
+msgid "Registered:"
+msgstr "Registrerad:"
+
+# 80%
+# 83%
+#: djangobb_forum/templates/djangobb_forum/topic.html:114
+msgid "Posts:"
+msgstr "Inlägg:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:115
+msgid "IP:"
+msgstr "IP-adress:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:120
+msgid "Really delete all posts, and ban user? This is hard to reverse."
+msgstr ""
+"Är du säker på att alla inlägg tas bort och användaren stoppas? Svårt att "
+"återkalla detta."
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:137
+msgid "(Edit Signature)"
+msgstr "(Redigera signatur)"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:161
+msgid "Are you sure you want to mark this as spam?"
+msgstr "Är du säker på att markera detta som spam?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:161
+msgid "Mark as Spam"
+msgstr "Markera som spam"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:164
+msgid "Are you sure you want to unmark this as spam?"
+msgstr "Är du säker på att avmarkera detta som spam?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:164
+msgid "Un-mark as Spam"
+msgstr "Avmarkera som spam"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:168
+msgid "Are you sure you want to delete this post?"
+msgstr "Är du säker på att du vill ta bort detta inlägg?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:172
+msgid "Edit"
+msgstr "Redigera"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:175
+msgid "Insert a quotation of this post in your reply."
+msgstr "Infoga ett citat från inlägget i ditt svar."
+
+# 83%
+#: djangobb_forum/templates/djangobb_forum/topic.html:175
+msgid "Quote"
+msgstr "Citat"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:220
+msgid "Jump to"
+msgstr "Hoppa till"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:231
+#: templates/explore/projects.html:26
+msgid "Go"
+msgstr "Gå"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:236
+msgid "Moderator control"
+msgstr "Moderatkontroll"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:237
+msgid "Delete multiple posts"
+msgstr "Ta bort flera inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:238
+msgid "Move multiple posts"
+msgstr "Flytta flera inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:239
+msgid "Move topic"
+msgstr "Flytta ämne"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:241
+#: djangobb_forum/templates/djangobb_forum/topic.html:253
+msgid "Open topic"
+msgstr "Öppna ämnet"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:243
+#: djangobb_forum/templates/djangobb_forum/topic.html:256
+msgid "Close topic"
+msgstr "Stäng ämnet"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:246
+msgid "Unstick topic"
+msgstr "Nåla inte fast ämnet"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:248
+msgid "Stick topic"
+msgstr "Nåla fast inlägget"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:7
+msgid "Upload avatar"
+msgstr "Ladda upp avatar"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:13
+msgid "Enter an avatar file to upload"
+msgstr "Skriv in en avatar-fil att ladda upp"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:19
+#, python-format
+msgid ""
+"An avatar is a small image that will be displayed under your username in "
+"your posts. It must not be any bigger than %(avatar_width)s x "
+"%(avatar_height)s pixels "
+msgstr ""
+"En avatar är en liten bild som visas under ditt användarnamn i dina inlägg. "
+"Den får inte vara större än %(avatar_width)s x %(avatar_height)s pixlar "
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
+msgid "Upload"
+msgstr "Ladda upp"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:5
+msgid "YouTube Video"
+msgstr "Youtube video"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:22
+msgid "Video Not Found"
+msgstr "Videon hittas inte"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:33
+msgid "Why do I see this page?"
+msgstr "Varför ser jag denna sidan?"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:36
+msgid ""
+"Links to YouTube videos on the forums are automatically converted to links "
+"to this page, to hide comments and other content."
+msgstr ""
+"Länkar till YouTube-videor på forumet konverteras automatiskt till länkar "
+"till denna sidan, för att dölja kommentarer och annat innehåll."
+
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
+msgid "New Reply"
+msgstr "Nytt svar"
+
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:22
+msgid "Create a poll"
+msgstr "Skapa en omröstning"
+
+#: djangobb_forum/templates/djangobb_forum/includes/post_in_search_page.html:14
+msgid "Replies:"
+msgstr "Svar:"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:8
+#: djangobb_forum/templates/djangobb_forum/mobile/forum.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/index.html:5
+#: djangobb_forum/templates/djangobb_forum/mobile/reply.html:8
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
+#: djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
+#: templates/base.html:184
+msgid "Discuss"
+msgstr "Diskutera"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:23
+#, python-format
+msgid "Signed in as <strong>%(user)s</strong>"
+msgstr "Inloggad som <strong>%(user)s</strong>"
+
+# 85%
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:25
+#: djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:7
+#: djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:25
+msgid "Sign In"
+msgstr "Logga in"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/index.html:16
+#, python-format
+msgid "%(posts)s post"
+msgid_plural "%(posts)s posts"
+msgstr[0] "%(posts)s inlägg"
+msgstr[1] "%(posts)s inlägg"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/reply.html:11
+#: templates/comments/comment.html:59
+#: templates/comments/comment_module.html:31
+#: templates/comments/comment_module.html:48
+#: templates/comments/includes/comment.html:12
+msgid "Reply"
+msgstr "Svara"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:22
+msgid "No posts."
+msgstr "Inga inlägg."
+
+#: djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:7
+#, python-format
+msgid "%(replies)s reply"
+msgid_plural "%(replies)s replies"
+msgstr[0] "%(replies)s svar"
+msgstr[1] "%(replies)s svar"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:10
+msgid "No topics."
+msgstr "Inga ämnen."
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:12
+#, python-format
+msgid "Settings (%(name)s)"
+msgstr "Inställningar (%(name)s)"
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:22
+msgid ""
+"A signature is a small piece of text that is attached to your posts. In it, "
+"you can enter just about anything you like. Perhaps you would like to enter "
+"your favourite quote or your star sign. It's up to you! In your signature "
+"you can use BBCode if it is allowed in this particular forum. You can see "
+"the features that are allowed/enabled listed below whenever you edit your "
+"signature."
+msgstr ""
+"En signatur är en kort text som är kopplad till dina inlägg. I den kan du "
+"skriva precis vad som helst som du vill. Kanske vill du ange ditt "
+"favoritcitat eller ditt stjärntecken. Det är upp till dig! I din signatur "
+"kan du använda BBCode om det är tillåtet i det forumet. Du kan se vilka "
+"funktioner som är tillåtna/aktiverade när du redigerar din signatur."
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:27
+msgid "No signature currently stored in profile."
+msgstr "Ingen signatur är sparad i din profil."
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:32
+msgid "When you update your profile, you will be redirected back to this page."
+msgstr ""
+"När du uppdaterar din profil kommer du att bli omdirigerad tillbaka till "
+"denna sidan."
+
 #: projects/views.py:501
 msgid "This tag has too many projects to load"
 msgstr "Taggen har för många projekt att ladda"
@@ -196,10 +1720,6 @@ msgstr ""
 msgid "You can try searching for what you're looking for here:"
 msgstr "Du kan prova att söka efter det du letar efter här:"
 
-#: templates/404.html:21 templates/base.html:186 templates/contact-us.html:92
-msgid "Search"
-msgstr "Sök"
-
 #: templates/500.html:40
 msgid "Looks like we are having issues with our servers!"
 msgstr ""
@@ -222,39 +1742,30 @@ msgstr "Scratch"
 msgid "Imagine, Program, Share"
 msgstr "Tänk, Programmera, Dela"
 
-#: templates/base.html:177
+#: templates/base.html:182
 msgid "Create"
 msgstr "Skapa"
 
-#: templates/base.html:178 templates/explore/explore2.html:40
+#: templates/base.html:183 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Utforska"
 
-#: templates/base.html:179
-msgid "Discuss"
-msgstr "Diskutera"
-
-#: templates/base.html:180
+#: templates/base.html:185
 msgid "Help"
 msgstr "Hjälp"
 
 # 83%
-#: templates/base.html:200 templates/modal-registration.html:6
+#: templates/base.html:205 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Gå med Scratch"
 
-#: templates/base.html:203 templates/base.html.py:214 templates/base.html:224
+#: templates/base.html:208 templates/base.html.py:219 templates/base.html:229
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Logga in"
 
-#: templates/base.html:209 templates/modal-login.html:14
-#: templates/includes/backbone-templates.html:19
-msgid "Username"
-msgstr "Användarnamn"
-
-#: templates/base.html:211 templates/modal-login.html:21
+#: templates/base.html:216 templates/modal-login.html:21
 #: templates/accounts/account_settings.html:9
 #: templates/accounts/email_change.html:9
 #: templates/accounts/deletion/confirmation.html:7
@@ -263,156 +1774,148 @@ msgstr "Användarnamn"
 msgid "Password"
 msgstr "Lösenord"
 
-#: templates/base.html:215
+#: templates/base.html:220
 msgid "Forgot password?"
 msgstr "Glömt lösenord?"
 
-#: templates/base.html:231
+#: templates/base.html:236
 msgid "messages - updates and notices"
 msgstr "meddelande - uppdateringar och notiser"
 
-#: templates/base.html:232
+#: templates/base.html:237
 msgid "my stuff - manage projects and studios"
 msgstr "mina grejor - hantera projekt och studior"
 
-#: templates/base.html:239
-msgid "Profile"
-msgstr "Profil"
-
-#: templates/base.html:240 templates/explore/base.html:24
+#: templates/base.html:245 templates/explore/base.html:24
 #: templates/studio/base.html:21
 msgid "My Stuff"
 msgstr "Mina grejor"
 
-#: templates/base.html:241
+#: templates/base.html:246
 msgid "Account settings"
 msgstr "Kontoinställningar"
 
-#: templates/base.html:242
+#: templates/base.html:247
 msgid "Sign out"
 msgstr "Logga ut"
 
-#: templates/base.html:320
+#: templates/base.html:325
 msgid "About"
 msgstr "Om"
 
-#: templates/base.html:322 templates/info/about.html:13
-#: templates/info/help/index.html:92 templates/mail/base.html:49
+#: templates/base.html:327 templates/info/about.html:13
+#: templates/info/help/index.html:92 templates/mail/base.html:57
 msgid "About Scratch"
 msgstr "Om Scratch"
 
-#: templates/base.html:323 templates/info/parents.html:12
+#: templates/base.html:328 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "För Föräldrar"
 
-#: templates/base.html:324 templates/info/educators.html:12
+#: templates/base.html:329 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "För pedagoger"
 
-#: templates/base.html:325
+#: templates/base.html:330
 msgid "Credits"
 msgstr ""
 
-#: templates/base.html:326
+#: templates/base.html:331
 msgid "Jobs"
 msgstr "Arbete"
 
-#: templates/base.html:327
+#: templates/base.html:332
 msgid "Press"
 msgstr ""
 
-#: templates/base.html:331 templates/info/parents.html:72
+#: templates/base.html:336 templates/info/parents.html:72
 msgid "Community"
 msgstr "Community"
 
-#: templates/base.html:333
+#: templates/base.html:338
 msgid "Community Guidelines"
 msgstr "Användarvillkor"
 
-#: templates/base.html:334
-msgid "Discussion Forums"
-msgstr "Diskussionsforum"
-
-#: templates/base.html:335 templates/info/help/index.html:113
+#: templates/base.html:340 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
-#: templates/base.html:336
+#: templates/base.html:341
 msgid "Statistics"
 msgstr "Statistik"
 
-#: templates/base.html:340 templates/search/includes/tabs.html:17
+#: templates/base.html:345 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr "Support"
 
-#: templates/base.html:342
+#: templates/base.html:347
 msgid "Help Page"
 msgstr "Hjälpsida"
 
-#: templates/base.html:343
+#: templates/base.html:348
 msgid "FAQ"
 msgstr "FAQ"
 
-#: templates/base.html:344
+#: templates/base.html:349
 msgid "Offline Editor"
 msgstr "Offline-redigerare"
 
 # 90%
-#: templates/base.html:345 templates/contact-us-success.html:12
+#: templates/base.html:350 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Kontakta oss"
 
-#: templates/base.html:346
+#: templates/base.html:351
 msgid "Donate"
 msgstr "Donera"
 
-#: templates/base.html:350
+#: templates/base.html:355
 msgid "Legal"
 msgstr "Laglig"
 
-#: templates/base.html:352
+#: templates/base.html:357
 msgid "Terms of Use"
 msgstr "Användarvillkor"
 
-#: templates/base.html:353 templates/info/help/faq.html:28
-#: templates/info/help/faq.html.py:80 templates/mail/base.html:48
+#: templates/base.html:358 templates/info/help/faq.html:28
+#: templates/info/help/faq.html.py:80 templates/mail/base.html:56
 msgid "Privacy Policy"
 msgstr "Sekretess"
 
-#: templates/base.html:354 templates/info/DMCA.html:10
+#: templates/base.html:359 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:358
+#: templates/base.html:363
 msgid "Scratch Family"
 msgstr "Scratch-familjen"
 
 # 77%
-#: templates/base.html:360
+#: templates/base.html:365
 msgid "ScratchEd"
 msgstr "ScratchED"
 
 # 77%
 # 88%
-#: templates/base.html:361
+#: templates/base.html:366
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
 # 75%
-#: templates/base.html:362
+#: templates/base.html:367
 msgid "Scratch Day"
 msgstr "Scratchdagen"
 
-#: templates/base.html:363
+#: templates/base.html:368
 msgid "Scratch Conference"
 msgstr "Scratchkonferens"
 
-#: templates/base.html:364
+#: templates/base.html:369
 msgid "Code-to-Learn Foundation"
 msgstr "Code-to-Learnstiftelsen"
 
-#: templates/base.html:379
+#: templates/base.html:384
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
@@ -824,11 +2327,6 @@ msgstr "Nästa"
 msgid "OK Lets Go!"
 msgstr "OK, då kör vi!"
 
-#: templates/modal-registration.html:200
-#: templates/accounts/email_verification/includes/verify_email_popup.html:27
-msgid "Close"
-msgstr "Stäng"
-
 #: templates/modal-registration.html:213
 msgid "Your username must be between 3 and 20 characters"
 msgstr "Ditt användarnamn måste vara mellan 3 till 20 tecken"
@@ -836,14 +2334,6 @@ msgstr "Ditt användarnamn måste vara mellan 3 till 20 tecken"
 #: templates/modal-registration.html:214
 msgid "Sorry, that username already exists"
 msgstr "Användarnamnet finns redan"
-
-#: templates/modal-registration.html:215
-msgid "Invalid username"
-msgstr "Ogiltigt användarnamn"
-
-#: templates/modal-registration.html:216
-msgid "Hmm, that looks inappropriate"
-msgstr "Hmm, det verkar olämpligt"
 
 #: templates/modal-registration.html:217
 msgid "You must enter a username"
@@ -855,10 +2345,10 @@ msgstr ""
 "Ditt användarnamn får bara innehålla bokstäver, nummer, bindestreck och "
 "understreck."
 
-# 82%
 #: templates/modal-registration.html:219
-msgid "Your password cannot be \\\\\\'password\\\\\\'"
-msgstr "Ditt lösenord får inte vara \\\\\\'password\\\\\\'"
+#, fuzzy
+msgid "Your password cannot be \\'password\\'"
+msgstr "Ditt lösenord får inte vara 'lösenord'."
 
 # 87%
 #: templates/modal-registration.html:220
@@ -878,11 +2368,6 @@ msgstr "Lösenorden matchar inte"
 #: templates/modal-registration.html:223
 msgid "Your password cannot match your username"
 msgstr "Ditt lösenord får inte vara likadant som ditt användarnamn"
-
-# 97%
-#: templates/modal-registration.html:224
-msgid "You must select a birth month and year"
-msgstr "Du måste ange födelsemånad och år"
 
 #: templates/modal-registration.html:225
 msgid "You must specify a gender"
@@ -1192,13 +2677,13 @@ msgstr ""
 msgid "Delete account &amp; Sign out"
 msgstr ""
 
-#: templates/accounts/email_verification/change_email_verification_email.html:8
+#: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
 #: templates/accounts/email_verification/verification_email_plain.html:4
 msgid "Greetings from the Scratch Team at MIT!"
 msgstr ""
 
-#: templates/accounts/email_verification/change_email_verification_email.html:10
+#: templates/accounts/email_verification/change_email_verification_email.html:11
 #, python-format
 msgid ""
 "\n"
@@ -1207,34 +2692,34 @@ msgid ""
 "address by clicking the button below:\n"
 msgstr ""
 
-#: templates/accounts/email_verification/change_email_verification_email.html:16
+#: templates/accounts/email_verification/change_email_verification_email.html:17
 #: templates/accounts/email_verification/verification_email.html:26
 #, fuzzy
 msgid "Confirm my email address"
 msgstr "Bekräfta e-postadressen"
 
-#: templates/accounts/email_verification/change_email_verification_email.html:22
+#: templates/accounts/email_verification/change_email_verification_email.html:23
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:12
 msgid ""
 "If you didn’t request an email change, don’t worry - you can just ignore "
 "this message."
 msgstr ""
 
-#: templates/accounts/email_verification/change_email_verification_email.html:25
+#: templates/accounts/email_verification/change_email_verification_email.html:26
 #: templates/accounts/email_verification/verification_email.html:43
-#: templates/registration/welcome_email_message.html:41
-#: templates/registration/welcome_email_message.txt:32
+#: templates/registration/welcome_email_message.html:45
+#: templates/registration/welcome_email_message.txt:36
 #, fuzzy
 msgid "Scratch On!"
 msgstr "Scratchlogga"
 
 # 75%
-#: templates/accounts/email_verification/change_email_verification_email.html:26
+#: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
 #: templates/accounts/email_verification/verification_email.html:45
 #: templates/accounts/email_verification/verification_email_plain.html:31
-#: templates/registration/welcome_email_message.html:43
-#: templates/registration/welcome_email_message.txt:33
+#: templates/registration/welcome_email_message.html:47
+#: templates/registration/welcome_email_message.txt:37
 #, fuzzy
 msgid "The Scratch Team"
 msgstr "Scratch Team"
@@ -1457,7 +2942,7 @@ msgstr ""
 msgid "Your email address has been unsubscribed."
 msgstr ""
 
-#: templates/accounts/subscription/unsubscribe_email_verification_success.html:22
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:23
 #, python-format
 msgid ""
 "\n"
@@ -1466,7 +2951,7 @@ msgid ""
 "            "
 msgstr ""
 
-#: templates/accounts/subscription/unsubscribe_email_verification_success.html:26
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:28
 msgid "Take me back to Scratch!"
 msgstr ""
 
@@ -1492,22 +2977,6 @@ msgstr "Inga objekt"
 msgid "in"
 msgstr "in"
 
-#: templates/carousel/includes/project-thumb.html:26
-#: templates/carousel/includes/project-thumb.html:28
-#: templates/explore/explore2.html:54
-#: templates/explore/includes/related_projects.html:17
-#: templates/explore/includes/related_projects.html:32
-#: templates/explore/includes/related_projects.html:46
-#: templates/explore/includes/related_projects.html:75
-#: templates/explore/includes/related_projects2.html:8
-#: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-thumb.html:22
-#: templates/galleries/includes/project-thumb.html:24
-#: templates/projects/base.html:104 templates/projects/base.html.py:366
-#: templates/projects/includes/project_list.html:11
-msgid "by"
-msgstr "av"
-
 #: templates/cas/login.html:9
 msgid "Log in to your account"
 msgstr "Logga in på ditt konto"
@@ -1515,10 +2984,6 @@ msgstr "Logga in på ditt konto"
 #: templates/cloudmonitor/monitor.html:59
 msgid "Cloud data history"
 msgstr "Datahistorik från molnet"
-
-#: templates/cloudmonitor/monitor.html:67
-msgid "User"
-msgstr "Användare"
 
 #: templates/cloudmonitor/monitor.html:68
 msgid "Data Name"
@@ -1531,10 +2996,6 @@ msgstr "Handling"
 #: templates/cloudmonitor/monitor.html:70
 msgid "Data Value"
 msgstr "Datavärde"
-
-#: templates/cloudmonitor/monitor.html:71
-msgid "Time"
-msgstr "Tid"
 
 #: templates/comments/comment-module.html:26
 #: templates/comments/comment_module.html:11
@@ -1557,13 +3018,6 @@ msgstr ""
 msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr "Du har <span id=\"chars-left\">500</span> tecken kvar."
 
-#: templates/comments/comment-module.html:40
-#: templates/comments/comment_module.html:17
-#: templates/comments/comment_module.html:67
-#: templates/includes/backbone-templates.html:62
-msgid "Post"
-msgstr "Skicka"
-
 # 83%
 #: templates/comments/comment-module.html:45
 msgid "Sorry, comment posting has been turned off for this"
@@ -1585,17 +3039,6 @@ msgstr ""
 #: templates/comments/comment-module.html:53
 msgid "Comments loading..."
 msgstr "Kommentarer laddas..."
-
-#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
-msgid "Report"
-msgstr "Rapport"
-
-#: templates/comments/comment.html:59
-#: templates/comments/comment_module.html:31
-#: templates/comments/comment_module.html:48
-#: templates/comments/includes/comment.html:12
-msgid "Reply"
-msgstr "Svara"
 
 #: templates/comments/comment_module.html:36
 #: templates/comments/comment_module.html:54
@@ -1686,10 +3129,6 @@ msgstr "Berättelser"
 msgid "Tag:"
 msgstr "Etikett:"
 
-#: templates/explore/projects.html:26
-msgid "Go"
-msgstr "Gå"
-
 #: templates/explore/projects.html:38 templates/projects/project_list.html:32
 #: templates/studio/includes/project_action_bar.html:15
 msgid "Shared"
@@ -1754,10 +3193,6 @@ msgstr "Studio:"
 #: templates/extensions/terms_of_use.html:13
 msgid "Extension Developer Terms of Use"
 msgstr "Användarvillkor för utvecklare av anslutningar"
-
-#: templates/extensions/terms_of_use.html:40
-msgid "Submit"
-msgstr "Skicka"
 
 #: templates/galleries/activity.html:19
 #: templates/notifications/notifications.html:31
@@ -2087,12 +3522,6 @@ msgstr ""
 msgid "Submit Password"
 msgstr ""
 
-#: templates/includes/sort-projects-dropdown.html:4
-#: templates/studio/includes/sort-galleries-dropdown.html:19
-#: templates/studio/includes/sort-projects-dropdown.html:4
-msgid "Sort by"
-msgstr "Sortera efter"
-
 #: templates/includes/sort-projects-dropdown.html:9
 #: templates/studio/includes/project_action_bar.html:22
 #: templates/studio/includes/project_action_bar.html:27
@@ -2100,12 +3529,6 @@ msgstr "Sortera efter"
 #: templates/studio/includes/sort-projects-dropdown.html:9
 msgid "Last modified"
 msgstr "Senast ändrad"
-
-# 80%
-#: templates/includes/sort-projects-dropdown.html:10
-#: templates/studio/includes/sort-projects-dropdown.html:10
-msgid "Views"
-msgstr "Visningar"
 
 #: templates/includes/sort-projects-dropdown.html:11
 #: templates/studio/includes/sort-projects-dropdown.html:11
@@ -3315,16 +4738,16 @@ msgid ""
 "step2.png\" alt=\"Step 2\">\n"
 "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-432.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-434.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
-"static/sa/Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+"static/sa/Scratch-434.air\">Download<img src=\"%(STATIC_URL)simages/help/"
 "offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-432.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-434.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
-"Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"Scratch-434.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
@@ -4033,16 +5456,10 @@ msgid ""
 "Since the Scratch Team is responsible for moderation, we have access to all "
 "content stored on the Scratch website - including unshared projects. If you "
 "prefer to work on projects in complete privacy, you can use  either the <a "
-"href=\"/scratch2download\">Scratch 2 offline editor (beta)</a> or <a href ="
-"\"/scratch_1.4\">Scratch 1.4</a>.\n"
+"href=\"/scratch2download\">Scratch 2 offline editor</a> or <a href =\"/"
+"scratch_1.4\">Scratch 1.4</a>.\n"
 "  "
 msgstr ""
-"Eftersom Scratchteamet är ansvariga för att moderera webbplatsen, har vi "
-"tillgång till allt som är sparat på Scratchsajten - inklusive ej delade "
-"projekt. Om du föredrar att arbeta med projekt helt utan insyn, kan du "
-"använda antingen <a href=\"/scratch2download\">Scratch 2 offlineredigeraren "
-"(beta)</a> eller <a href =\"/scratch_1.4\">Scratch 1.4</a>.\n"
-"  "
 
 #: templates/info/help/faq.html:109
 msgid "What is a remix?"
@@ -11439,11 +12856,6 @@ msgstr ""
 msgid "4A of 9"
 msgstr "4 av 9"
 
-#: templates/info/help/studio/tips/howto/hoc-4a.html:18
-#: templates/info/help/studio/tips/howto/hoc-intro.html:38
-msgid "Move"
-msgstr "Flytta"
-
 #: templates/info/help/studio/tips/howto/hoc-4a.html:25
 #, python-format
 msgid ""
@@ -13128,7 +14540,7 @@ msgstr ""
 "precis nedanför blocket med gröna flaggan."
 
 #: templates/info/help/studio/tips/howto/valentine-intro.html:20
-msgid "Make a Valentine's Day card to share with your friends."
+msgid "Make a Valentine's Day card to share with your friends!"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/valentine-intro.html:23
@@ -14016,7 +15428,7 @@ msgstr ""
 msgid "Paint Editor"
 msgstr ""
 
-#: templates/mail/base.html:37
+#: templates/mail/base.html:41
 #, python-format
 msgid ""
 "\n"
@@ -14026,7 +15438,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/mail/base.html:43
+#: templates/mail/base.html:46
 #, python-format
 msgid ""
 "\n"
@@ -14035,7 +15447,16 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/mail/base.html:50
+#: templates/mail/base.html:51
+msgid ""
+"\n"
+"            If you are receiving multiple copies of this email, please let "
+"us know by emailing <a href=\"mailto:help@scratch.mit.edu\">help@scratch.mit."
+"edu</a>.\n"
+"        "
+msgstr ""
+
+#: templates/mail/base.html:58
 msgid "Make a Donation"
 msgstr ""
 
@@ -14679,7 +16100,7 @@ msgstr "Ändra mitt lösenord"
 msgid "Password reset email sent..."
 msgstr "Återställning av lösenord har skickats..."
 
-#: templates/registration/password_reset_email.html:13
+#: templates/registration/password_reset_email.html:14
 #: templates/registration/password_reset_email.txt:7
 msgid ""
 "You're receiving this email because you requested a password reset for your "
@@ -14687,12 +16108,12 @@ msgid ""
 "just ignore this message."
 msgstr ""
 
-#: templates/registration/password_reset_email.html:17
+#: templates/registration/password_reset_email.html:18
 #: templates/registration/password_reset_email.txt:9
 msgid "Please go to the following page and choose a new password:"
 msgstr ""
 
-#: templates/registration/password_reset_email.html:24
+#: templates/registration/password_reset_email.html:25
 #: templates/registration/password_reset_email.txt:16
 msgid ""
 "You're receiving this e-mail because you requested a password reset for your "
@@ -14700,12 +16121,12 @@ msgid ""
 "just ignore this message."
 msgstr ""
 
-#: templates/registration/password_reset_email.html:27
+#: templates/registration/password_reset_email.html:28
 #: templates/registration/password_reset_email.txt:18
 msgid "Here are the username(s) associated with this email address:"
 msgstr ""
 
-#: templates/registration/password_reset_email.html:32
+#: templates/registration/password_reset_email.html:34
 #: templates/registration/password_reset_email.txt:23
 msgid "Go here to change the password:"
 msgstr ""
@@ -14732,7 +16153,7 @@ msgstr "Skicka en länk för återställning av lösenord!"
 
 #: templates/registration/welcome_email_message.html:8
 #, python-format
-msgid "Welcome to Scratch, <strong>%(user.username)s</strong>!"
+msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
 msgstr ""
 
 #: templates/registration/welcome_email_message.html:10
@@ -14771,44 +16192,56 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:24
 #, python-format
 msgid ""
-"\n"
-"    Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a href="
+"Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a href="
 "\"%(faq_url)s\">Frequently Asked Questions</a>, and <a href=\"%(discuss_url)s"
-"\">Discussion Forums</a>, to learn more about Scratch. Going forward, you "
-"will also receive occasional updates from the Scratch team and Code-to-Learn "
-"Foundation with coding tips, inspirational stories, project ideas, and more. "
-"The Code-to-Learn Foundation is a non-profit that supports Scratch "
-"educational initiatives. You can unsubscribe from within the updates or by "
-"clicking below:\n"
+"\">Discussion Forums</a>, to learn more about Scratch."
 msgstr ""
 
-#: templates/registration/welcome_email_message.html:28
-#: templates/registration/welcome_email_message.txt:23
+#: templates/registration/welcome_email_message.html:27
 msgid ""
-"\n"
-"    Check out our About Scratch page, Frequently Asked Questions, and "
-"Discussion Forums, to learn more about Scratch. Going forward, you will also "
-"receive occasional updates from the Scratch team with coding tips, "
-"inspirational stories, project ideas, and more. You can unsubscribe from "
-"within the updates or by clicking below:\n"
+"Going forward, you will also receive occasional updates from the Scratch "
+"Team and Code-to-Learn Foundation with coding tips, inspirational stories, "
+"project ideas, and more. The Code-to-Learn Foundation is a non-profit that "
+"supports Scratch educational initiatives. You can unsubscribe from within "
+"the updates or by clicking below:"
+msgstr ""
+
+#: templates/registration/welcome_email_message.html:29
+msgid ""
+"Going forward, you will also receive occasional updates from the Scratch "
+"team with coding tips, inspirational stories, project ideas, and more. You "
+"can unsubscribe from within the updates or by clicking below:"
 msgstr ""
 
 #: templates/registration/welcome_email_message.txt:4
 #, python-format
-msgid "Welcome to Scratch, %(user.username)s!"
+msgid "Welcome to Scratch, %(username)s!"
 msgstr ""
 
 #: templates/registration/welcome_email_message.txt:19
 #, python-format
 msgid ""
-"\n"
-"    Check out our About Scratch page (%(about_url)s),Frequently Asked "
-"Questions (%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn "
-"more about Scratch. Going forward, you will also receive occasional updates "
-"from the Scratch team and Code-to-Learn Foundation with coding tips, "
-"inspirational stories, project ideas, and more. The Code-to-Learn Foundation "
-"is a non-profit that supports Scratch educational initiatives. You can "
-"unsubscribe from within the updates or by clicking below:\n"
+"Check out our About Scratch page (%(about_url)s),Frequently Asked Questions "
+"(%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn more about "
+"Scratch."
+msgstr ""
+
+#: templates/registration/welcome_email_message.txt:22
+msgid ""
+"Going forward, you will also receive occasional updates from the Scratch "
+"team and Code-to-Learn Foundation with coding tips, inspirational stories, "
+"project ideas, and more. The Code-to-Learn Foundation is a non-profit that "
+"supports Scratch educational initiatives. You can unsubscribe from within "
+"the updates or by clicking below:"
+msgstr ""
+
+#: templates/registration/welcome_email_message.txt:24
+msgid ""
+"Check out our About Scratch page, Frequently Asked Questions, and Discussion "
+"Forums, to learn more about Scratch. Going forward, you will also receive "
+"occasional updates from the Scratch team with coding tips, inspirational "
+"stories, project ideas, and more. You can unsubscribe from within the "
+"updates or by clicking below:"
 msgstr ""
 
 #: templates/scratch_admin/admin_profile_view.html:46
@@ -14837,11 +16270,6 @@ msgstr "Supportsidor"
 #: templates/search/includes/tabs.html:5
 msgid "All Results"
 msgstr "Alla resultat"
-
-# Fora är möjligt, men är det för svårt för yngre barn? Forum funkar också i pluralis?
-#: templates/search/includes/tabs.html:20
-msgid "Forums"
-msgstr "Forum"
 
 #: templates/search/includes/projects/filters.html:8
 msgid "Most recent"
@@ -15018,10 +16446,6 @@ msgstr "Lägg till"
 msgid "Unshare"
 msgstr "Dela inte"
 
-#: templates/studio/studio.html:141
-msgid "Delete"
-msgstr "Radera"
-
 #: templates/studio/includes/galleries_action_bar.html:8
 msgid "View:"
 msgstr "Visa:"
@@ -15091,6 +16515,35 @@ msgstr ""
 #: userprofiles/models.py:92
 msgid "Why I Scratch"
 msgstr ""
+
+#~ msgid "Invalid username"
+#~ msgstr "Ogiltigt användarnamn"
+
+#~ msgid "Hmm, that looks inappropriate"
+#~ msgstr "Hmm, det verkar olämpligt"
+
+# 82%
+#~ msgid "Your password cannot be \\\\\\'password\\\\\\'"
+#~ msgstr "Ditt lösenord får inte vara \\\\\\'password\\\\\\'"
+
+# 97%
+#~ msgid "You must select a birth month and year"
+#~ msgstr "Du måste ange födelsemånad och år"
+
+#~ msgid ""
+#~ "Since the Scratch Team is responsible for moderation, we have access to all "
+#~ "content stored on the Scratch website - including unshared projects. If you "
+#~ "prefer to work on projects in complete privacy, you can use  either the <a "
+#~ "href=\"/scratch2download\">Scratch 2 offline editor (beta)</a> or <a href ="
+#~ "\"/scratch_1.4\">Scratch 1.4</a>.\n"
+#~ "  "
+#~ msgstr ""
+#~ "Eftersom Scratchteamet är ansvariga för att moderera webbplatsen, har vi "
+#~ "tillgång till allt som är sparat på Scratchsajten - inklusive ej delade "
+#~ "projekt. Om du föredrar att arbeta med projekt helt utan insyn, kan du "
+#~ "använda antingen <a href=\"/scratch2download\">Scratch 2 offlineredigeraren "
+#~ "(beta)</a> eller <a href =\"/scratch_1.4\">Scratch 1.4</a>.\n"
+#~ "  "
 
 #~ msgid "Would you like to:"
 #~ msgstr "Skulle du vilja:"
@@ -15203,977 +16656,6 @@ msgstr ""
 
 #~ msgid "Design a Holiday Card"
 #~ msgstr "Designa ett julkort"
-
-#~ msgid "subscribers"
-#~ msgstr "prenumeranter"
-
-#~ msgid "Latest posts on forum"
-#~ msgstr "Senaste inläggen i forumet"
-
-#~ msgid "Latest topics on forum"
-#~ msgstr "Senaste ämnena i forumet"
-
-#, python-format
-#~ msgid "Latest posts on %s"
-#~ msgstr "Senaste inläggen i %s"
-
-# Kolla om det är pluralis posts - inläggen?
-#, python-format
-#~ msgid "Latest posts on the topic \"%s\""
-#~ msgstr "Senaste inläggen i ämnet \"%s\""
-
-#, python-format
-#~ msgid "Latest posts on the forum \"%s\""
-#~ msgstr "Senaste inläggen i forumet \"%s\""
-
-#, python-format
-#~ msgid "Latest posts on the category \"%s\""
-#~ msgstr "Senaste inläggen i kategorin \"%s\""
-
-#~ msgid "Registered"
-#~ msgstr "Registrerad"
-
-#~ msgid "Number of posts"
-#~ msgstr "Antal inlägg"
-
-#~ msgid "Post time"
-#~ msgstr "Inlägg skapat"
-
-#~ msgid "Author"
-#~ msgstr "Författare"
-
-#~ msgid "Subject"
-#~ msgstr "Ämne"
-
-#~ msgid "Forum"
-#~ msgstr "Forum"
-
-#~ msgid "Ascending"
-#~ msgstr "Stigande"
-
-#~ msgid "Descending"
-#~ msgstr "Fallande"
-
-#~ msgid "Topics"
-#~ msgstr "Ämnen"
-
-# 80%
-#~ msgid "Posts"
-#~ msgstr "Inlägg"
-
-#~ msgid "Message text and topic subject"
-#~ msgstr "Meddelandetext och ämnesrubrik"
-
-#~ msgid "Message text only"
-#~ msgstr "Bara meddelandetext"
-
-#~ msgid "Topic subject only"
-#~ msgstr "Endast ämnesrubrik"
-
-#~ msgid "Attachment"
-#~ msgstr "Bilaga"
-
-#~ msgid "Subscribe"
-#~ msgstr "Prenumerera"
-
-#~ msgid "Subscribe to this topic."
-#~ msgstr "Prenumerera på detta ämne."
-
-#~ msgid "Can't be empty nor contain only whitespace characters"
-#~ msgstr "Kan varken vara tomt eller bara innehålla blanksteg"
-
-#~ msgid ""
-#~ "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
-#~ "Scratch, so your account has been muted for the rest of the day. :/"
-#~ msgstr ""
-#~ "Hmm, filterroboten är ganska säker på att dina senaste kommentarer inte var "
-#~ "ok för Scratch, så ditt konto har stängts av för resten av dagen. :/"
-
-#, python-format
-#~ msgid "Sorry, you have to wait %d seconds between posts."
-#~ msgstr "Tyvärr, du måste vänta %d sekunder mellan inläggen."
-
-#~ msgid "Attachment is too big"
-#~ msgstr "Bilagan är för stor"
-
-#~ msgid "Silent edit?"
-#~ msgstr "Tyst redigering?"
-
-# 83%
-#~ msgid "E-mail"
-#~ msgstr "E-post"
-
-#~ msgid "Real name"
-#~ msgstr "Riktigt namn"
-
-#~ msgid "Sort order"
-#~ msgstr "Sorteringsordning"
-
-#~ msgid "Keyword search"
-#~ msgstr "Nyckelordssökning"
-
-#~ msgid "Author search"
-#~ msgstr "Författarsökning"
-
-#~ msgid "Search in"
-#~ msgstr "Sök i"
-
-#~ msgid "Show results as"
-#~ msgstr "Visa resultat som"
-
-#, python-format
-#~ msgid "User \"%s\" does not exist"
-#~ msgstr "Användare \"%s \" finns inte"
-
-#~ msgid "You already voted for this post"
-#~ msgstr "Du har redan röstat på inlägget"
-
-#~ msgid "This post does't belong to that user"
-#~ msgstr "Detta inlägg tillhör inte den användaren"
-
-# 87%
-#~ msgid "Message"
-#~ msgstr "Meddelande"
-
-#, python-format
-#~ msgid "You have selected too many choices. You may only select %i."
-#~ msgstr "Du har gjort för många val. Du får bara välja %i."
-
-#~ msgid "Write each answer on a new line."
-#~ msgstr "Skriv varje svar på en ny rad"
-
-#~ msgid ""
-#~ "Number of days for this poll to run. Leave empty for an indefinite poll."
-#~ msgstr "Antal dagar för omröstningen. Lämna tomt för obestämd tid."
-
-#~ msgid "There is no valid answer."
-#~ msgstr "Det finns inget giltigt svar."
-
-#~ msgid "One of the answers is too long."
-#~ msgstr "Ett av svaren är för långt."
-
-#~ msgid "Display your e-mail address."
-#~ msgstr "Visa din e-postadress."
-
-#~ msgid "Hide your e-mail address but allow form e-mail."
-#~ msgstr "Dölj din e-postadress men tillåt e-post via formulär."
-
-#~ msgid "Hide your e-mail address and disallow form e-mail."
-#~ msgstr "Dölj din e-postadress och tillåt inte e-post via formulär."
-
-#~ msgid "Name"
-#~ msgstr "Namn"
-
-#~ msgid "Groups"
-#~ msgstr "Grupper"
-
-#~ msgid "Only users from these groups can see this category"
-#~ msgstr "Endast användare från dessa grupper kan se kategorin"
-
-#~ msgid "Position"
-#~ msgstr "Position"
-
-#~ msgid "Category"
-#~ msgstr "Kategori"
-
-#~ msgid "Categories"
-#~ msgstr "Kategorier"
-
-#~ msgid "New topics by moderators only"
-#~ msgstr "Nya ämnen enbart genom moderatorer"
-
-# 90%
-#~ msgid "Description"
-#~ msgstr "Beskrivning"
-
-#~ msgid "Moderators"
-#~ msgstr "Moderatorer"
-
-#~ msgid "Updated"
-#~ msgstr "Uppdaterad"
-
-# Post ska ev. vara inlägg, kolla upp detta så att det blir enhetligt.
-#~ msgid "Post count"
-#~ msgstr "Antal inlägg"
-
-# ämne eller ämnen?
-#~ msgid "Topic count"
-#~ msgstr "Antal ämnen"
-
-# 87%
-#~ msgid "Created"
-#~ msgstr "Skapad"
-
-#~ msgid "Views count"
-#~ msgstr "Antal visningar"
-
-# Inlägg som är kvar först. I Facebook kallas det fastnålade inlägg. Kolla upp mer.
-#~ msgid "Sticky"
-#~ msgstr "Fastnålad"
-
-# 83%
-#~ msgid "Closed"
-#~ msgstr "Stängd"
-
-#~ msgid "Subscribers"
-#~ msgstr "Prenumeranter"
-
-#~ msgid "Topic"
-#~ msgstr "Ämne"
-
-#~ msgid "Updated by"
-#~ msgstr "Uppdaterad av"
-
-# I vilket sammanhang finns ordet? Kolla upp och ändra.
-#~ msgid "Markup"
-#~ msgstr "Markera"
-
-#~ msgid "HTML version"
-#~ msgstr "HTML-version"
-
-# Blir ev. för lång. Kanske Användar-IP?
-#~ msgid "User IP"
-#~ msgstr "Användarens IP-adress"
-
-#~ msgid "From"
-#~ msgstr "Från"
-
-#~ msgid "To"
-#~ msgstr "Till"
-
-# Vilket sammanhang?
-#~ msgid "Sign"
-#~ msgstr "Underskrift"
-
-#~ msgid "Reason"
-#~ msgstr "Anledning"
-
-#~ msgid "Reputation"
-#~ msgstr "Omdöme"
-
-#~ msgid "Reputations"
-#~ msgstr "Ömdömen"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
-# 75%
-#~ msgid "Site"
-#~ msgstr "Sajt"
-
-#~ msgid "Jabber"
-#~ msgstr "Jabber"
-
-#~ msgid "ICQ"
-#~ msgstr "ICQ"
-
-#~ msgid "MSN"
-#~ msgstr "MSN"
-
-#~ msgid "AIM"
-#~ msgstr "AIM"
-
-#~ msgid "Yahoo"
-#~ msgstr "Yahoo"
-
-#~ msgid "Location"
-#~ msgstr "Plats"
-
-#~ msgid "Signature"
-#~ msgstr "Underskrift"
-
-#~ msgid "Time zone"
-#~ msgstr "Tidszon"
-
-# 87%
-#~ msgid "Language"
-#~ msgstr "Språk"
-
-#~ msgid "Avatar"
-#~ msgstr "Avatar"
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
-
-#~ msgid "Show avatar"
-#~ msgstr "Visa avatar"
-
-#~ msgid "Show signatures"
-#~ msgstr "Visa underskrifter"
-
-#~ msgid "Show smilies"
-#~ msgstr "Visa smileys"
-
-# I vilket sammanhang?
-#~ msgid "Privacy permission"
-#~ msgstr "Integritet"
-
-#~ msgid "Auto subscribe"
-#~ msgstr "Prenumerera automatiskt"
-
-#~ msgid "Auto subscribe all topics you have created or reply."
-#~ msgstr "Prenumerera på alla ämnen som du skapat eller svarat på."
-
-# Kolla upp Markup
-#~ msgid "Default markup"
-#~ msgstr "Standardmärkning"
-
-# 87%
-#~ msgid "Profiles"
-#~ msgstr "Profiler"
-
-#~ msgid "Post tracking"
-#~ msgstr "Spåra inlägg"
-
-#~ msgid "Reported by"
-#~ msgstr "Rapporterat av"
-
-# Osäkert vilken betydelse. Kolla upp
-#~ msgid "Zapped"
-#~ msgstr "Attackerad"
-
-#~ msgid "Zapped by"
-#~ msgstr "Attackerad av"
-
-# 85%
-#~ msgid "Reports"
-#~ msgstr "Rapporter"
-
-# Bättre ord?
-#~ msgid "Banned user"
-#~ msgstr "Avstängd användare"
-
-#~ msgid "Ban start"
-#~ msgstr "Avstängning startar"
-
-#~ msgid "Ban end"
-#~ msgstr "Avstängning slutar"
-
-#~ msgid "Ban"
-#~ msgstr "Avstängning"
-
-#~ msgid "Bans"
-#~ msgstr "Avstängningar"
-
-# 75%
-#~ msgid "Size"
-#~ msgstr "Storlek"
-
-#~ msgid "Content type"
-#~ msgstr "Typ av innehåll"
-
-# I vilket sammanhang?
-#~ msgid "Path"
-#~ msgstr "Stig"
-
-#~ msgid "Hash"
-#~ msgstr "Hash"
-
-#~ msgid "How many choices are allowed simultaneously."
-#~ msgstr "Hur många val är tillåtna samtidigt."
-
-#~ msgid "Can users vote to this poll or just see the result?"
-#~ msgstr "Kan användarna rösta eller bara se resultatet?"
-
-# Kolla upp detta!
-#~ msgid "Point of time after this poll would be automatic deactivated"
-#~ msgstr "Tidpunkt efter att den här omröstningen stängs av automatiskt"
-
-#~ msgid "Users who has voted this poll."
-#~ msgstr "Användare som har röstat."
-
-#, python-format
-#~ msgid ""
-#~ "Sorry, you need to host your images with a service like imageshack.com. "
-#~ "Please update your image links or remove all BB code [img] tags. Bad image "
-#~ "url: %s"
-#~ msgstr ""
-#~ "Tyvärr, du måste spara dina bilder på en tjänst som imageshack.com. "
-#~ "Uppdatera dina bildlänkar eller ta bort alla BB-kod [img] taggar. Felaktig "
-#~ "bild URL: %s"
-
-#~ msgid "Topics deleted."
-#~ msgstr "Ämnet borttaget."
-
-#~ msgid "Topics opened."
-#~ msgstr "Ämnet öppnat."
-
-#~ msgid "Topics closed."
-#~ msgstr "Ämnet avslutat."
-
-# Meddelande eller inlägg?
-#, python-format
-#~ msgid "Found %i posts."
-#~ msgstr "Hittade %i inlägg."
-
-#, python-format
-#~ msgid "Found %i topics."
-#~ msgstr "Hittade %i ämnen."
-
-#~ msgid "Marked all topics as read."
-#~ msgstr "Markerade alla ämnen som lästa."
-
-#~ msgid "Post reported."
-#~ msgstr "Inlägget rapporterat."
-
-#~ msgid "Email sent."
-#~ msgstr "E-post skickad."
-
-#~ msgid "Email could not be sent."
-#~ msgstr "E-post kunde inte skickas."
-
-#~ msgid "Reply saved."
-#~ msgstr "Svar sparat."
-
-#~ msgid "This poll is not active."
-#~ msgstr "Omröstningen är inte aktiv."
-
-#~ msgid "You already voted on this poll."
-#~ msgstr "Du har redan röstat."
-
-#~ msgid "Vote saved."
-#~ msgstr "Omröstning är sparad."
-
-#~ msgid "Topic with poll saved."
-#~ msgstr "Ämnet med omröstning är sparad."
-
-#~ msgid "Topic saved."
-#~ msgstr "Ämnet är sparat."
-
-#~ msgid "Avatar uploaded."
-#~ msgstr "Avatar uppladdad."
-
-#~ msgid "Please sign in."
-#~ msgstr "Logga in."
-
-#~ msgid "Profile saved."
-#~ msgstr "Profil sparad."
-
-#~ msgid "Reputation deleted."
-#~ msgstr "Omdöme borttaget."
-
-#~ msgid "Reputation saved."
-#~ msgstr "Omdöme sparat."
-
-#~ msgid "You don't have permission to edit this post."
-#~ msgstr "Du har inte tillåtelse att redigera inlägget."
-
-# 76%
-#~ msgid "Post updated."
-#~ msgstr "Inlägget uppdaterat."
-
-#~ msgid "Post deleted."
-#~ msgstr "Inlägget borttaget."
-
-#~ msgid "The topic ID must be an integer."
-#~ msgstr "Ämnets ID måste vara ett heltal."
-
-#~ msgid "That thread doesn't exist."
-#~ msgstr "Tråden finns inte."
-
-# Se över om det ska vara meddelande eller inlägg. Relaterat till ett forum!
-#~ msgid "Posts moved."
-#~ msgstr "Inlägg har flyttats."
-
-#~ msgid "Topic moved."
-#~ msgstr "Ämnet flyttat."
-
-#~ msgid "Topic stickied."
-#~ msgstr "Ämnet fastnålat."
-
-#~ msgid "Topic unstickied."
-#~ msgstr "Ämnet inte fastnålat."
-
-#~ msgid "You don't have permission to delete this post."
-#~ msgstr "Du har inte tillåtelse att ta bort inlägget."
-
-# 90%
-#~ msgid "You don't have permission to mark this post."
-#~ msgstr "Du har inte tillåtelse att markera inlägget."
-
-#~ msgid "There was not enough data collected to mark this post."
-#~ msgstr "Det finns inte tillräckligt med data för att markera detta inlägg."
-
-#~ msgid "Post marked as spam."
-#~ msgstr "Inlägget markerat som spam."
-
-#~ msgid "This post is not in the right state to be marked as spam."
-#~ msgstr "Inlägget har inte rättigheter att markeras som spam."
-
-# 86%
-#~ msgid "Post un-marked as spam."
-#~ msgstr "Inlägget avmarkerat som spam."
-
-#~ msgid "This post is not in the right state to be un-marked as spam."
-#~ msgstr "Inlägget har inte rättigheter att avmarkeras som spam."
-
-#~ msgid "Topic closed."
-#~ msgstr "Ämnet stängt."
-
-#~ msgid "Topic opened."
-#~ msgstr "Ämnet öppnat."
-
-#~ msgid "Unsubscribed from topic."
-#~ msgstr "Prenumerationen avbruten."
-
-#~ msgid "Subscribed to topic."
-#~ msgstr "Prenumererar på ämnet."
-
-#~ msgid "New Topic"
-#~ msgstr "Nytt ämne"
-
-#~ msgid "Discuss Scratch"
-#~ msgstr "Diskutera Scratch"
-
-#~ msgid "Notice"
-#~ msgstr "Notifiering"
-
-#, python-format
-#~ msgid "Delete Posts - %(name)s"
-#~ msgstr "Ta bort inlägg - %(name)s"
-
-#~ msgid "Delete Posts"
-#~ msgstr "Ta bort inlägg"
-
-#, python-format
-#~ msgid "Last edited by %(user)s (%(time)s)"
-#~ msgstr "Senast redigerad av %(user)s (%(time)s)"
-
-#~ msgid "Select"
-#~ msgstr "Välj"
-
-#~ msgid "Go back"
-#~ msgstr "Tillbaka"
-
-#, python-format
-#~ msgid "Edit Post - %(name)s"
-#~ msgstr "Redigerat inlägg - %(name)s"
-
-#~ msgid "Edit Post"
-#~ msgstr "Redigera inlägg"
-
-#~ msgid "Edit post"
-#~ msgstr "Redigera inlägg"
-
-#~ msgid "Silent edit (don't display 'Edited by ...' in topic view)"
-#~ msgstr "Osynlig redigering (visa inte 'Redigerad av...' i ämnesvyn)"
-
-#~ msgid "Save"
-#~ msgstr "Spara"
-
-#~ msgid ""
-#~ "Can't find an answer to your question? Click here to ask it in a new thread."
-#~ msgstr ""
-#~ "Kan inte hitta ett svar på din fråga? Klicka här för att ställa frågan i en "
-#~ "ny tråd."
-
-#~ msgid "New topic"
-#~ msgstr "Nytt ämne"
-
-#~ msgid "Replies"
-#~ msgstr "Svar"
-
-#~ msgid "Last Post"
-#~ msgstr "Senaste inlägget"
-
-#~ msgid "Sticky:"
-#~ msgstr "Fastnålat:"
-
-#~ msgid "(New Posts)"
-#~ msgstr "(Nya inlägg)"
-
-#~ msgid "Forum is empty."
-#~ msgstr "Forumet är tomt."
-
-#~ msgid "Moderate forum"
-#~ msgstr "Modererat forum"
-
-#~ msgid "Show new posts since last visit"
-#~ msgstr "Visa nya inlägg sedan ditt senaste besök"
-
-#~ msgid "Discussion Home"
-#~ msgstr "Diskussion Hem"
-
-#, python-format
-#~ msgid "Reports (%(report_count)s)"
-#~ msgstr "Rapporter (%(report_count)s)"
-
-#~ msgid "Show your"
-#~ msgstr "Visa din"
-
-#~ msgid "topics"
-#~ msgstr "ämnen"
-
-# 80%
-#~ msgid "posts"
-#~ msgstr "meddelanden"
-
-#~ msgid "Change your signature"
-#~ msgstr "Ändra din signatur"
-
-#~ msgid "Show recent posts"
-#~ msgstr "Visa senaste inläggen"
-
-#~ msgid "Show unanswered posts"
-#~ msgstr "Visa obesvarade inlägg"
-
-#~ msgid "Mark all topics as read"
-#~ msgstr "Markera alla ämnen som lästa"
-
-#~ msgid "Send e-mail to"
-#~ msgstr "Skicka e-post till"
-
-#~ msgid "Write and submit your e-mail message"
-#~ msgstr "Skriv och skicka ditt e-postmeddelande"
-
-#~ msgid ""
-#~ "Please note that by using this form, your e-mail address will be disclosed "
-#~ "to the recipient."
-#~ msgstr ""
-#~ "Observera, när du använder formuläret kommer din e-postadress att visas för "
-#~ "mottagaren."
-
-#, python-format
-#~ msgid "Moderate - %(name)s"
-#~ msgstr "Moderera - %(name)s"
-
-#~ msgid "Moderate Forum"
-#~ msgstr "Modererat Forum"
-
-#~ msgid "Open"
-#~ msgstr "Öppna"
-
-#~ msgid "Moderated by"
-#~ msgstr "Modererat av"
-
-#, python-format
-#~ msgid "Move Posts - %(name)s"
-#~ msgstr "Flytta meddelanden - %(name)s"
-
-#~ msgid "Move Posts"
-#~ msgstr "Flytta meddelanden"
-
-#~ msgid "All posts (original topic will be deleted)"
-#~ msgstr "Alla inlägg (originalämnet kommer att tas bort)"
-
-#~ msgid "Topic ID or URL"
-#~ msgstr "Ämnes ID eller URL"
-
-#~ msgid "Move Topic"
-#~ msgstr "Flytta ämnet"
-
-#~ msgid "Move to"
-#~ msgstr "Flytta till"
-
-#~ msgid "Pages"
-#~ msgstr "Sidor"
-
-#~ msgid "Report Post"
-#~ msgstr "Flagga post"
-
-#~ msgid "Please enter a short reason why you are reporting this post."
-#~ msgstr "Ange en kort anledning till varför du rapporterar detta inlägg."
-
-#~ msgid "Reputation of the user"
-#~ msgstr "Omdöme om användaren"
-
-#~ msgid "From user"
-#~ msgstr "Från användare"
-
-#~ msgid "For post in topic"
-#~ msgstr "För inlägg i ämnet"
-
-#~ msgid "Estimation"
-#~ msgstr "Uppskattning"
-
-# 80%
-#~ msgid "Date"
-#~ msgstr "Datum"
-
-#~ msgid "Are you sure"
-#~ msgstr "Är du säker"
-
-#~ msgid "Please, fill the form"
-#~ msgstr "Fyll i formuläret"
-
-#~ msgid "Your name:"
-#~ msgstr "Ditt namn:"
-
-#~ msgid "To whom we change a reputation:"
-#~ msgstr "För vem vi ändrar omdömet:"
-
-#~ msgid "Method:"
-#~ msgstr "Metod:"
-
-#~ msgid "Add of a reputation"
-#~ msgstr "Lägg till omdöme"
-
-#~ msgid "Reduction of a reputation"
-#~ msgstr "Ta bort ett omdöme"
-
-#~ msgid "(Dustbin all posts and topics)"
-#~ msgstr "(Papperskorg alla inlägg och ämnen)"
-
-#~ msgid ""
-#~ "To search by keyword, enter a term or terms to search for. Separate terms "
-#~ "with spaces. To search by author enter the username of the author whose "
-#~ "posts you wish to search for."
-#~ msgstr ""
-#~ "För att söka efter ord, ange ett eller flera sökord. Separata villkor med "
-#~ "mellanslag. För att söka efter författare ange användarnamnet på författaren "
-#~ "vars inlägg du vill söka efter."
-
-#~ msgid "All forums"
-#~ msgstr "Alla forum"
-
-#~ msgid ""
-#~ "Choose in which forum you would like to search and if you want to search in "
-#~ "topic subjects, message text or both."
-#~ msgstr ""
-#~ "Välj i vilket forum du vill söka och om du vill söka i ämnesrubrik, "
-#~ "meddelandetext eller båda."
-
-#~ msgid "You can choose how you wish to sort and show your results."
-#~ msgstr "Du kan välja hur du vill sortera och visa dina resultat"
-
-#~ msgid "Search Results"
-#~ msgstr "Sökresultat"
-
-#~ msgid "Show results as topic list."
-#~ msgstr "Visa resultat som ämneslista."
-
-#~ msgid "Info"
-#~ msgstr "Information"
-
-#~ msgid "Your search returned no hits."
-#~ msgstr "Din sökning gav inga träffar."
-
-#~ msgid "Search links"
-#~ msgstr "Söklänkar"
-
-#~ msgid "Show your subscribed topics"
-#~ msgstr "Visa ämnen som du prenumererar på"
-
-#~ msgid "Show your topics"
-#~ msgstr "Visa din ämnen"
-
-#~ msgid "Show results as post list."
-#~ msgstr "Visa resultat som inläggslista"
-
-#~ msgid "loading..."
-#~ msgstr "laddar..."
-
-#~ msgid "There was an error :( Try again?"
-#~ msgstr "Det blev ett fel :( Försök igen?"
-
-#~ msgid "Follow this discussion to get a message when there's a new post"
-#~ msgstr ""
-#~ "Följ denna diskussionen för att få ett meddelande när nytt inlägg skickas"
-
-#~ msgid "Follow Discussion"
-#~ msgstr "Följ diskussionen"
-
-#~ msgid "Stop getting messages about new posts to this discussion"
-#~ msgstr "Stoppa meddelanden om nya inlägg i den här diskussionen"
-
-#~ msgid "Unfollow Discussion"
-#~ msgstr "Följ inte diskussionen"
-
-#~ msgid "Poll"
-#~ msgstr "Omröstning"
-
-#, python-format
-#~ msgid "(%(count)s answers allows.)"
-#~ msgstr "(%(count)s svar tillåtna.)"
-
-#~ msgid "Vote"
-#~ msgstr "Rösta"
-
-#~ msgid "1000+ posts"
-#~ msgstr "1000+ inlägg"
-
-#~ msgid "500+ posts"
-#~ msgstr "500+ inlägg"
-
-#~ msgid "100+ posts"
-#~ msgstr "100+ inlägg"
-
-#~ msgid "1 post"
-#~ msgstr "1 inlägg"
-
-# 80%
-# 83%
-#~ msgid " posts"
-#~ msgstr " inlägg"
-
-#~ msgid "From:"
-#~ msgstr "Från:"
-
-#~ msgid "Registered:"
-#~ msgstr "Registrerad:"
-
-# 80%
-# 83%
-#~ msgid "Posts:"
-#~ msgstr "Inlägg:"
-
-#~ msgid "IP:"
-#~ msgstr "IP-adress:"
-
-#~ msgid "Really delete all posts, and ban user? This is hard to reverse."
-#~ msgstr ""
-#~ "Är du säker på att alla inlägg tas bort och användaren stoppas? Svårt att "
-#~ "återkalla detta."
-
-#~ msgid "(Edit Signature)"
-#~ msgstr "(Redigera signatur)"
-
-#~ msgid "Are you sure you want to mark this as spam?"
-#~ msgstr "Är du säker på att markera detta som spam?"
-
-#~ msgid "Mark as Spam"
-#~ msgstr "Markera som spam"
-
-#~ msgid "Are you sure you want to unmark this as spam?"
-#~ msgstr "Är du säker på att avmarkera detta som spam?"
-
-#~ msgid "Un-mark as Spam"
-#~ msgstr "Avmarkera som spam"
-
-#~ msgid "Are you sure you want to delete this post?"
-#~ msgstr "Är du säker på att du vill ta bort detta inlägg?"
-
-#~ msgid "Edit"
-#~ msgstr "Redigera"
-
-#~ msgid "Insert a quotation of this post in your reply."
-#~ msgstr "Infoga ett citat från inlägget i ditt svar."
-
-# 83%
-#~ msgid "Quote"
-#~ msgstr "Citat"
-
-#~ msgid "Jump to"
-#~ msgstr "Hoppa till"
-
-#~ msgid "Moderator control"
-#~ msgstr "Moderatkontroll"
-
-#~ msgid "Delete multiple posts"
-#~ msgstr "Ta bort flera inlägg"
-
-#~ msgid "Move multiple posts"
-#~ msgstr "Flytta flera inlägg"
-
-#~ msgid "Move topic"
-#~ msgstr "Flytta ämne"
-
-#~ msgid "Open topic"
-#~ msgstr "Öppna ämnet"
-
-#~ msgid "Close topic"
-#~ msgstr "Stäng ämnet"
-
-#~ msgid "Unstick topic"
-#~ msgstr "Nåla inte fast ämnet"
-
-#~ msgid "Stick topic"
-#~ msgstr "Nåla fast inlägget"
-
-#~ msgid "Upload avatar"
-#~ msgstr "Ladda upp avatar"
-
-#~ msgid "Enter an avatar file to upload"
-#~ msgstr "Skriv in en avatar-fil att ladda upp"
-
-#, python-format
-#~ msgid ""
-#~ "An avatar is a small image that will be displayed under your username in "
-#~ "your posts. It must not be any bigger than %(avatar_width)s x "
-#~ "%(avatar_height)s pixels "
-#~ msgstr ""
-#~ "En avatar är en liten bild som visas under ditt användarnamn i dina inlägg. "
-#~ "Den får inte vara större än %(avatar_width)s x %(avatar_height)s pixlar "
-
-#~ msgid "Upload"
-#~ msgstr "Ladda upp"
-
-#~ msgid "YouTube Video"
-#~ msgstr "Youtube video"
-
-#~ msgid "Video Not Found"
-#~ msgstr "Videon hittas inte"
-
-#~ msgid "Why do I see this page?"
-#~ msgstr "Varför ser jag denna sidan?"
-
-#~ msgid ""
-#~ "Links to YouTube videos on the forums are automatically converted to links "
-#~ "to this page, to hide comments and other content."
-#~ msgstr ""
-#~ "Länkar till YouTube-videor på forumet konverteras automatiskt till länkar "
-#~ "till denna sidan, för att dölja kommentarer och annat innehåll."
-
-#~ msgid "New Reply"
-#~ msgstr "Nytt svar"
-
-#~ msgid "Create a poll"
-#~ msgstr "Skapa en omröstning"
-
-#~ msgid "Replies:"
-#~ msgstr "Svar:"
-
-#, python-format
-#~ msgid "Signed in as <strong>%(user)s</strong>"
-#~ msgstr "Inloggad som <strong>%(user)s</strong>"
-
-# 85%
-#~ msgid "Sign In"
-#~ msgstr "Logga in"
-
-#, python-format
-#~ msgid "%(posts)s post"
-#~ msgid_plural "%(posts)s posts"
-#~ msgstr[0] "%(posts)s inlägg"
-#~ msgstr[1] "%(posts)s inlägg"
-
-#~ msgid "No posts."
-#~ msgstr "Inga inlägg."
-
-#, python-format
-#~ msgid "%(replies)s reply"
-#~ msgid_plural "%(replies)s replies"
-#~ msgstr[0] "%(replies)s svar"
-#~ msgstr[1] "%(replies)s svar"
-
-#~ msgid "No topics."
-#~ msgstr "Inga ämnen."
-
-#, python-format
-#~ msgid "Settings (%(name)s)"
-#~ msgstr "Inställningar (%(name)s)"
-
-#~ msgid ""
-#~ "A signature is a small piece of text that is attached to your posts. In it, "
-#~ "you can enter just about anything you like. Perhaps you would like to enter "
-#~ "your favourite quote or your star sign. It's up to you! In your signature "
-#~ "you can use BBCode if it is allowed in this particular forum. You can see "
-#~ "the features that are allowed/enabled listed below whenever you edit your "
-#~ "signature."
-#~ msgstr ""
-#~ "En signatur är en kort text som är kopplad till dina inlägg. I den kan du "
-#~ "skriva precis vad som helst som du vill. Kanske vill du ange ditt "
-#~ "favoritcitat eller ditt stjärntecken. Det är upp till dig! I din signatur "
-#~ "kan du använda BBCode om det är tillåtet i det forumet. Du kan se vilka "
-#~ "funktioner som är tillåtna/aktiverade när du redigerar din signatur."
-
-#~ msgid "No signature currently stored in profile."
-#~ msgstr "Ingen signatur är sparad i din profil."
-
-#~ msgid "When you update your profile, you will be redirected back to this page."
-#~ msgstr ""
-#~ "När du uppdaterar din profil kommer du att bli omdirigerad tillbaka till "
-#~ "denna sidan."
 
 #~ msgid ""
 #~ "First, download any projects that you want to keep. \n"

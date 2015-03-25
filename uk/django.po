@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-27 11:45+0000\n"
+"POT-Creation-Date: 2015-03-20 14:16+0000\n"
 "PO-Revision-Date: 2015-02-08 15:38+0000\n"
 "Last-Translator: Григорій <ggromko@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,64 +27,81 @@ msgstr "Ваше повідомлення надіслано. Ми надішл�
 msgid "Please correct the errors below."
 msgstr "Будь ласка, виправте помилки нижче."
 
+#: authentication/forms.py:29
+msgid "username exists"
+msgstr ""
+
+#: authentication/forms.py:36
+#, fuzzy
+msgid "invalid username"
+msgstr "Помилкове ім’я"
+
+#: authentication/forms.py:50
+msgid "invalid gender choice"
+msgstr ""
+
+#: authentication/forms.py:52
+msgid "invalid password"
+msgstr ""
+
 # 96%
-#: authentication/forms.py:90 authentication/forms.py:116
+#: authentication/forms.py:92 authentication/forms.py:118
 msgid "You must enter your password."
 msgstr "Вам слід ввести пароль"
 
-#: authentication/forms.py:91 authentication/forms.py:117
+#: authentication/forms.py:93 authentication/forms.py:119
 msgid "Wrong password, try again."
 msgstr "Неправильний пароль, спробуйте ще раз."
 
-#: authentication/forms.py:94
+#: authentication/forms.py:96
 msgid "Enter your password to confirm"
 msgstr "Введіть ваш пароль для підтвердження"
 
-#: authentication/forms.py:118 authentication/forms.py:319
+#: authentication/forms.py:120 authentication/forms.py:322
 msgid "Incorrect captcha, please try again."
 msgstr "Неправильний код. спробуйте ще раз."
 
-#: authentication/forms.py:129
+#: authentication/forms.py:131
 msgid "Keep my projects, but disable all comments"
 msgstr "Залишити мої проекти, але вимкнути коментування"
 
-#: authentication/forms.py:130
+#: authentication/forms.py:132
 msgid "Delete my projects"
 msgstr "Вилучити мої проекти"
 
-#: authentication/forms.py:138
+#: authentication/forms.py:140
 msgid "Looks like that isn't a valid email format"
 msgstr "Схоже, що це не є допустимим форматом e-mail"
 
-#: authentication/forms.py:144
+#: authentication/forms.py:146
 msgid "The two password fields didn't match."
 msgstr "Введені паролі не збігаються."
 
-#: authentication/forms.py:145 authentication/forms.py:166
+#: authentication/forms.py:147 authentication/forms.py:168
 msgid "Your password must be at least 6 characters long."
 msgstr "Ваш пароль має містити не менше 6 символів."
 
-#: authentication/forms.py:146 authentication/forms.py:167
+#: authentication/forms.py:148 authentication/forms.py:169
 msgid "Your password cannot be 'password'."
 msgstr "Ваш пароль не може бути 'password'."
 
-#: authentication/forms.py:147 authentication/forms.py:168
+#: authentication/forms.py:149 authentication/forms.py:170
 msgid "Your password cannot be the same as your username."
 msgstr "Ваш пароль повинен відрізнятися від імені користувача."
 
-#: authentication/forms.py:188
+#: authentication/forms.py:190
 msgid "Sorry we don't have an account with that email address"
 msgstr "Вибачте, але облікового запису з такою поштовою адресою немає"
 
-#: authentication/forms.py:189
+#: authentication/forms.py:191
 msgid "Sorry we don't have an account with that username"
 msgstr "Вибачте, але облікового запису з таким ім'ям немає"
 
-#: authentication/forms.py:190
+#: authentication/forms.py:192
 msgid "You must provide an email or username"
 msgstr "Ви повинні ввести пошту чи ім’я користувача"
 
-#: authentication/forms.py:195 templates/accounts/account_settings.html:10
+#: authentication/forms.py:197 templates/accounts/account_settings.html:10
 #: templates/accounts/email_change.html:10
 #: templates/accounts/password_change_form.html:10
 #: templates/accounts/deletion/confirmation.html:8
@@ -93,31 +110,31 @@ msgstr "Ви повинні ввести пошту чи ім’я корист�
 msgid "Email"
 msgstr "Пошта"
 
-#: authentication/forms.py:294 authentication/forms.py:315
+#: authentication/forms.py:297 authentication/forms.py:318
 msgid "Incorrect username or password."
 msgstr "Неправильні ім'я користувача або пароль"
 
-#: authentication/forms.py:295 authentication/forms.py:316
+#: authentication/forms.py:298 authentication/forms.py:319
 msgid "Please enable cookies on your browser."
 msgstr "Увімкніть \"куки\" у вашому веб-переглядачі"
 
-#: authentication/forms.py:296 authentication/forms.py:317
+#: authentication/forms.py:299 authentication/forms.py:320
 msgid "This account is inactive."
 msgstr "Цей обліковий запис неактивний"
 
-#: authentication/forms.py:297 authentication/forms.py:318
+#: authentication/forms.py:300 authentication/forms.py:321
 msgid "This account is deleted!"
 msgstr "Цей обліковий запис вилучено!"
 
-#: authentication/forms.py:329
+#: authentication/forms.py:332
 msgid "Send me Scratch Updates & Newsletters"
 msgstr ""
 
-#: authentication/views.py:590
+#: authentication/views.py:598
 msgid "Unsubscribe me from Scratch updates"
 msgstr ""
 
-#: authentication/views.py:591
+#: authentication/views.py:599
 msgid "Unsubscribe me from Code-to-Learn Foundation updates"
 msgstr ""
 
@@ -164,6 +181,1496 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s тому"
 
+#: djangobb_forum/admin.py:31
+msgid "subscribers"
+msgstr "підписники"
+
+#: djangobb_forum/feeds.py:27 djangobb_forum/feeds.py:28
+#: djangobb_forum/templates/djangobb_forum/base.html:14
+msgid "Latest posts on forum"
+msgstr "Останні повідомлення на форумі"
+
+#: djangobb_forum/feeds.py:46 djangobb_forum/feeds.py:47
+#: djangobb_forum/templates/djangobb_forum/base.html:15
+msgid "Latest topics on forum"
+msgstr "Останні теми форуму"
+
+#: djangobb_forum/feeds.py:75 djangobb_forum/feeds.py:100
+#: djangobb_forum/feeds.py:125
+#, python-format
+msgid "Latest posts on %s"
+msgstr "Останні повідомлення з %s"
+
+#: djangobb_forum/feeds.py:83
+#, python-format
+msgid "Latest posts on the topic \"%s\""
+msgstr "Останні повідомлення з теми \"%s\""
+
+#: djangobb_forum/feeds.py:108
+#, python-format
+msgid "Latest posts on the forum \"%s\""
+msgstr "Останні повідомлення з форуму \"%s\""
+
+#: djangobb_forum/feeds.py:128
+#, python-format
+msgid "Latest posts on the category \"%s\""
+msgstr "Останні повідомлення з категорії \"%s\""
+
+#: djangobb_forum/forms.py:27 djangobb_forum/forms.py:227
+#: djangobb_forum/forms.py:365 templates/base.html:214
+#: templates/modal-login.html:14 templates/includes/backbone-templates.html:19
+msgid "Username"
+msgstr "Ім'я користувача"
+
+#: djangobb_forum/forms.py:28
+msgid "Registered"
+msgstr "Зареєстровано"
+
+#: djangobb_forum/forms.py:29
+msgid "Number of posts"
+msgstr "Кількість повідомлень"
+
+#: djangobb_forum/forms.py:33
+msgid "Post time"
+msgstr "Час повідомлення"
+
+#: djangobb_forum/forms.py:34
+msgid "Author"
+msgstr "Автор"
+
+#: djangobb_forum/forms.py:35 djangobb_forum/forms.py:58
+#: djangobb_forum/forms.py:186 djangobb_forum/forms.py:458
+#: djangobb_forum/models.py:160
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:31
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:35
+msgid "Subject"
+msgstr "Тема"
+
+#: djangobb_forum/forms.py:36 djangobb_forum/forms.py:401
+#: djangobb_forum/models.py:130 djangobb_forum/models.py:159
+#: djangobb_forum/templates/djangobb_forum/index.html:55
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:26
+msgid "Forum"
+msgstr "Форум"
+
+#: djangobb_forum/forms.py:40
+msgid "Ascending"
+msgstr "По зростанню"
+
+#: djangobb_forum/forms.py:41
+msgid "Descending"
+msgstr "По спаданню"
+
+#: djangobb_forum/forms.py:45 djangobb_forum/models.py:175
+#: djangobb_forum/templates/djangobb_forum/index.html:56
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
+msgid "Topics"
+msgstr "Теми"
+
+# 80%
+#: djangobb_forum/forms.py:46 djangobb_forum/models.py:275
+#: djangobb_forum/templates/djangobb_forum/index.html:57
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:14
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:14
+msgid "Posts"
+msgstr "Повідомлення"
+
+#: djangobb_forum/forms.py:50
+msgid "Message text and topic subject"
+msgstr "Текст та заголовок повідомлення"
+
+#: djangobb_forum/forms.py:51
+msgid "Message text only"
+msgstr "Тільки текст повідомлення"
+
+#: djangobb_forum/forms.py:52
+msgid "Topic subject only"
+msgstr "Тільки назви тем"
+
+#: djangobb_forum/forms.py:60
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
+msgid "Attachment"
+msgstr "Долучення"
+
+#: djangobb_forum/forms.py:61
+msgid "Subscribe"
+msgstr "Підписка"
+
+# 87%
+#: djangobb_forum/forms.py:61
+msgid "Subscribe to this topic."
+msgstr "Підписка на цю тему."
+
+#: djangobb_forum/forms.py:91
+msgid "Can't be empty nor contain only whitespace characters"
+msgstr "Не може бути порожнім або містити тільки символи пропуску"
+
+#: djangobb_forum/forms.py:101
+msgid ""
+"Hmm, the filterbot is pretty sure your recent comments weren't ok for "
+"Scratch, so your account has been muted for the rest of the day. :/"
+msgstr ""
+"Хмм... щось ваші останні коментарі не відповідали правилам спільноти "
+"Скретчу, так що ваш акаунт був відключений решту дня. :/"
+
+#: djangobb_forum/forms.py:130 djangobb_forum/forms.py:134
+#, python-format
+msgid "Sorry, you have to wait %d seconds between posts."
+msgstr "На жаль, вам доведеться чекати  %d секунд між повідомленнями."
+
+#: djangobb_forum/forms.py:143
+msgid "Attachment is too big"
+msgstr "Долучення занадто велике"
+
+#: djangobb_forum/forms.py:188
+msgid "Silent edit?"
+msgstr "Повідомлення про редагування?"
+
+# 83%
+#: djangobb_forum/forms.py:228
+msgid "E-mail"
+msgstr "Пошта"
+
+#: djangobb_forum/forms.py:259
+msgid "Real name"
+msgstr "Справжнє ім’я"
+
+#: djangobb_forum/forms.py:367 djangobb_forum/forms.py:403
+#: templates/includes/sort-projects-dropdown.html:4
+#: templates/studio/includes/sort-galleries-dropdown.html:19
+#: templates/studio/includes/sort-projects-dropdown.html:4
+msgid "Sort by"
+msgstr "Впорядкувати"
+
+#: djangobb_forum/forms.py:368 djangobb_forum/forms.py:404
+msgid "Sort order"
+msgstr "Порядок впорядкування"
+
+#: djangobb_forum/forms.py:397
+msgid "Keyword search"
+msgstr "Шукати по вмісту"
+
+#: djangobb_forum/forms.py:399
+msgid "Author search"
+msgstr "Шукати по автору"
+
+#: djangobb_forum/forms.py:402
+msgid "Search in"
+msgstr "Шукати в"
+
+#: djangobb_forum/forms.py:405
+msgid "Show results as"
+msgstr "Показати результати як"
+
+#: djangobb_forum/forms.py:430
+#, python-format
+msgid "User \"%s\" does not exist"
+msgstr "Користувач \"%s\" не існує"
+
+#: djangobb_forum/forms.py:440
+msgid "You already voted for this post"
+msgstr "Ви вже голосували за це повідомлення"
+
+#: djangobb_forum/forms.py:444
+msgid "This post does't belong to that user"
+msgstr "Це повідомлення не належить цьому користувачу"
+
+# 87%
+#: djangobb_forum/forms.py:460 djangobb_forum/models.py:266
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:36
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:41
+msgid "Message"
+msgstr "Повідомлення"
+
+#: djangobb_forum/forms.py:513
+#, python-format
+msgid "You have selected too many choices. You may only select %i."
+msgstr "Ви обрали занадто багато варіантів. Ви можете обрати тільки %i."
+
+#: djangobb_forum/forms.py:520
+msgid "Write each answer on a new line."
+msgstr "Пишіть кожну відповідь у новому рядку."
+
+#: djangobb_forum/forms.py:523
+msgid ""
+"Number of days for this poll to run. Leave empty for an indefinite poll."
+msgstr ""
+"Кількість днів для проведення цього опитування. Залиште порожнім для "
+"невизначеного терміну."
+
+#: djangobb_forum/forms.py:540
+msgid "There is no valid answer."
+msgstr "Це не є правильною відповіддю."
+
+#: djangobb_forum/forms.py:546
+msgid "One of the answers is too long."
+msgstr "Одна з відповідей занадто довга."
+
+#: djangobb_forum/models.py:46
+msgid "Display your e-mail address."
+msgstr "Показати ваш e-mail."
+
+#: djangobb_forum/models.py:47
+msgid "Hide your e-mail address but allow form e-mail."
+msgstr "Приховати адресу електронної пошти, але дозволити надсилати пошту."
+
+#: djangobb_forum/models.py:48
+msgid "Hide your e-mail address and disallow form e-mail."
+msgstr "Приховати адресу електронної пошти та заборонити надсилати пошту."
+
+#: djangobb_forum/models.py:81 djangobb_forum/models.py:119
+#: djangobb_forum/models.py:489
+msgid "Name"
+msgstr "Ім’я"
+
+#: djangobb_forum/models.py:82
+msgid "Groups"
+msgstr "Групи"
+
+#: djangobb_forum/models.py:82
+msgid "Only users from these groups can see this category"
+msgstr "Тільки користувачі з цих груп можуть бачити цю категорію"
+
+#: djangobb_forum/models.py:83 djangobb_forum/models.py:120
+msgid "Position"
+msgstr "Позиція"
+
+#: djangobb_forum/models.py:87 djangobb_forum/models.py:117
+msgid "Category"
+msgstr "Категорія"
+
+#: djangobb_forum/models.py:88
+msgid "Categories"
+msgstr "Категорії"
+
+#: djangobb_forum/models.py:118
+msgid "New topics by moderators only"
+msgstr "Нові теми тільки модераторами"
+
+# 90%
+#: djangobb_forum/models.py:121
+msgid "Description"
+msgstr "Опис"
+
+#: djangobb_forum/models.py:122
+msgid "Moderators"
+msgstr "Модератори"
+
+#: djangobb_forum/models.py:123 djangobb_forum/models.py:162
+#: djangobb_forum/models.py:263
+msgid "Updated"
+msgstr "Оновлено"
+
+#: djangobb_forum/models.py:124 djangobb_forum/models.py:168
+#: djangobb_forum/models.py:409
+msgid "Post count"
+msgstr "Кількість повідломлень"
+
+#: djangobb_forum/models.py:125
+msgid "Topic count"
+msgstr "Кількість тем"
+
+#: djangobb_forum/models.py:131 templates/search/includes/tabs.html:20
+msgid "Forums"
+msgstr "Форуми"
+
+# 87%
+#: djangobb_forum/models.py:161 djangobb_forum/models.py:262
+#: djangobb_forum/models.py:450
+msgid "Created"
+msgstr "Створено"
+
+#: djangobb_forum/models.py:163 djangobb_forum/models.py:261
+#: djangobb_forum/models.py:388 templates/cloudmonitor/monitor.html:67
+msgid "User"
+msgstr "Користувач"
+
+#: djangobb_forum/models.py:164
+msgid "Views count"
+msgstr "Кількість переглядів"
+
+#: djangobb_forum/models.py:165
+msgid "Sticky"
+msgstr "Sticky"
+
+# 83%
+#: djangobb_forum/models.py:166
+msgid "Closed"
+msgstr "Закриті"
+
+#: djangobb_forum/models.py:167
+msgid "Subscribers"
+msgstr "Підписники"
+
+#: djangobb_forum/models.py:174 djangobb_forum/models.py:260
+#: djangobb_forum/templates/djangobb_forum/forum.html:35
+#: djangobb_forum/templates/djangobb_forum/moderate.html:31
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:25
+msgid "Topic"
+msgstr "Тема"
+
+#: djangobb_forum/models.py:264
+msgid "Updated by"
+msgstr "Оновлено"
+
+#: djangobb_forum/models.py:265
+msgid "Markup"
+msgstr "Позначено"
+
+#: djangobb_forum/models.py:267
+msgid "HTML version"
+msgstr "версія HTML"
+
+#: djangobb_forum/models.py:268
+msgid "User IP"
+msgstr "ІР користувача"
+
+#: djangobb_forum/models.py:274 djangobb_forum/models.py:361
+#: djangobb_forum/models.py:447 djangobb_forum/models.py:485
+#: templates/comments/comment-module.html:40
+#: templates/comments/comment_module.html:17
+#: templates/comments/comment_module.html:67
+#: templates/includes/backbone-templates.html:62
+msgid "Post"
+msgstr "Надіслати"
+
+#: djangobb_forum/models.py:359
+msgid "From"
+msgstr "Від"
+
+#: djangobb_forum/models.py:360
+msgid "To"
+msgstr "Для"
+
+#: djangobb_forum/models.py:362 templates/cloudmonitor/monitor.html:71
+msgid "Time"
+msgstr "Час"
+
+#: djangobb_forum/models.py:363
+msgid "Sign"
+msgstr "Вхід"
+
+#: djangobb_forum/models.py:364 djangobb_forum/models.py:451
+#: djangobb_forum/models.py:464
+#: djangobb_forum/templates/djangobb_forum/report.html:29
+#: djangobb_forum/templates/djangobb_forum/reputation.html:25
+msgid "Reason"
+msgstr "Причина"
+
+#: djangobb_forum/models.py:367
+msgid "Reputation"
+msgstr "Репутація"
+
+#: djangobb_forum/models.py:368
+msgid "Reputations"
+msgstr "Репутації"
+
+#: djangobb_forum/models.py:389
+msgid "Status"
+msgstr "Статус"
+
+#: djangobb_forum/models.py:390
+msgid "Site"
+msgstr "Сайт"
+
+#: djangobb_forum/models.py:391
+msgid "Jabber"
+msgstr "Jabber"
+
+#: djangobb_forum/models.py:392
+msgid "ICQ"
+msgstr "ICQ"
+
+#: djangobb_forum/models.py:393
+msgid "MSN"
+msgstr "MSN"
+
+#: djangobb_forum/models.py:394
+msgid "AIM"
+msgstr "AIM"
+
+#: djangobb_forum/models.py:395
+msgid "Yahoo"
+msgstr "Yahoo"
+
+#: djangobb_forum/models.py:396
+msgid "Location"
+msgstr "Розміщення"
+
+#: djangobb_forum/models.py:397 djangobb_forum/models.py:398
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:5
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:19
+msgid "Signature"
+msgstr "Підпис"
+
+#: djangobb_forum/models.py:399
+msgid "Time zone"
+msgstr "Часовий пояс"
+
+# 87%
+#: djangobb_forum/models.py:400
+msgid "Language"
+msgstr "Мова"
+
+#: djangobb_forum/models.py:401
+msgid "Avatar"
+msgstr "Аватар"
+
+#: djangobb_forum/models.py:402
+msgid "Theme"
+msgstr "Тема"
+
+#: djangobb_forum/models.py:403
+msgid "Show avatar"
+msgstr "Показати аватар"
+
+#: djangobb_forum/models.py:404
+msgid "Show signatures"
+msgstr "Показати підпис"
+
+#: djangobb_forum/models.py:405
+msgid "Show smilies"
+msgstr "Показати смайли"
+
+#: djangobb_forum/models.py:406
+msgid "Privacy permission"
+msgstr "Права конфіденційності"
+
+#: djangobb_forum/models.py:407
+msgid "Auto subscribe"
+msgstr "Автоматична підписка"
+
+#: djangobb_forum/models.py:407
+msgid "Auto subscribe all topics you have created or reply."
+msgstr "Автоматично підписатися на всі теми, які ви створили або відповідали."
+
+#: djangobb_forum/models.py:408
+msgid "Default markup"
+msgstr "Позначка за замовчуванням"
+
+#: djangobb_forum/models.py:414 templates/base.html:244
+msgid "Profile"
+msgstr "Профіль"
+
+# 87%
+#: djangobb_forum/models.py:415
+msgid "Profiles"
+msgstr "Профілі"
+
+#: djangobb_forum/models.py:439 djangobb_forum/models.py:440
+msgid "Post tracking"
+msgstr "Трекінг повідомлення"
+
+#: djangobb_forum/models.py:446
+msgid "Reported by"
+msgstr "Повідомляє"
+
+#: djangobb_forum/models.py:448
+msgid "Zapped"
+msgstr "Затерто"
+
+#: djangobb_forum/models.py:449
+msgid "Zapped by"
+msgstr "Затерто"
+
+#: djangobb_forum/models.py:454
+#: djangobb_forum/templates/djangobb_forum/topic.html:159
+#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
+msgid "Report"
+msgstr "Звіт"
+
+# 85%
+#: djangobb_forum/models.py:455
+#: djangobb_forum/templates/djangobb_forum/header.html:28
+#: djangobb_forum/templates/djangobb_forum/reports.html:6
+msgid "Reports"
+msgstr "Звіти"
+
+#: djangobb_forum/models.py:461
+msgid "Banned user"
+msgstr "Блокований користувач"
+
+#: djangobb_forum/models.py:462
+msgid "Ban start"
+msgstr "Заблоковано"
+
+#: djangobb_forum/models.py:463
+msgid "Ban end"
+msgstr "Розблоковано"
+
+#: djangobb_forum/models.py:467
+msgid "Ban"
+msgstr "Блоковано"
+
+#: djangobb_forum/models.py:468
+msgid "Bans"
+msgstr "Блоковані"
+
+# 75%
+#: djangobb_forum/models.py:486
+msgid "Size"
+msgstr "Розмір"
+
+#: djangobb_forum/models.py:487
+msgid "Content type"
+msgstr "Тип вмісту"
+
+#: djangobb_forum/models.py:488
+msgid "Path"
+msgstr "Шлях"
+
+#: djangobb_forum/models.py:490
+msgid "Hash"
+msgstr "Хеш"
+
+#: djangobb_forum/models.py:517
+msgid "How many choices are allowed simultaneously."
+msgstr "Забагато варіантів дозволено одночасно."
+
+#: djangobb_forum/models.py:520
+msgid "Can users vote to this poll or just see the result?"
+msgstr ""
+"Чи можуть користувачі голосувати у цьому опитуванні або просто побачити "
+"результат?"
+
+#: djangobb_forum/models.py:523
+msgid "Point of time after this poll would be automatic deactivated"
+msgstr "Момент часу після якого опитування буде відключено автоматично"
+
+#: djangobb_forum/models.py:526
+msgid "Users who has voted this poll."
+msgstr "Користувачі, які проголосували цьому опитуванні."
+
+#: djangobb_forum/util.py:273
+#, python-format
+msgid ""
+"Sorry, you need to host your images with a service like imageshack.com. "
+"Please update your image links or remove all BB code [img] tags. Bad image "
+"url: %s"
+msgstr ""
+"На жаль, потрібно щоб ваші зображення знаходились на сервісі, такому як "
+"imageshack.com. Будь ласка, поновіть ваші посилання на зображення або "
+"видаліть весь BB-код  [IMG] тегів. Неправильний URL зображення: %s"
+
+#: djangobb_forum/views.py:94
+msgid "Topics deleted."
+msgstr "Теми вилучено."
+
+#: djangobb_forum/views.py:99
+msgid "Topics opened."
+msgstr "Теми відкрито."
+
+#: djangobb_forum/views.py:104
+msgid "Topics closed."
+msgstr "Теми закрито."
+
+#: djangobb_forum/views.py:297
+#, python-format
+msgid "Found %i posts."
+msgstr "Знайдено %i повідомлень."
+
+#: djangobb_forum/views.py:301
+#, python-format
+msgid "Found %i topics."
+msgstr "Знайдено %i тем."
+
+#: djangobb_forum/views.py:315
+msgid "Marked all topics as read."
+msgstr "Позначити усі теми, як прочитані."
+
+#: djangobb_forum/views.py:325
+msgid "Post reported."
+msgstr "Повідомлення надіслано."
+
+#: djangobb_forum/views.py:342
+msgid "Email sent."
+msgstr "Email надіслано."
+
+#: djangobb_forum/views.py:344
+msgid "Email could not be sent."
+msgstr "Email не може бути відправлено."
+
+#: djangobb_forum/views.py:439 djangobb_forum/views.py:1157
+msgid "Reply saved."
+msgstr "Відповідь збережено."
+
+#: djangobb_forum/views.py:485
+msgid "This poll is not active."
+msgstr "Це опитування не є активним."
+
+#: djangobb_forum/views.py:488
+msgid "You already voted on this poll."
+msgstr "Ви вже голосували у цьому опитуванні."
+
+#: djangobb_forum/views.py:497
+msgid "Vote saved."
+msgstr "Голос збережено."
+
+#: djangobb_forum/views.py:596
+msgid "Topic with poll saved."
+msgstr "Тему з опитуванням збережено."
+
+#: djangobb_forum/views.py:598
+msgid "Topic saved."
+msgstr "Тему збережено."
+
+#: djangobb_forum/views.py:633
+msgid "Avatar uploaded."
+msgstr "Аватар завантажено."
+
+#: djangobb_forum/views.py:642
+msgid "Please sign in."
+msgstr "Здійсніть вхід."
+
+#: djangobb_forum/views.py:656
+msgid "Profile saved."
+msgstr "Профіль збережено."
+
+#: djangobb_forum/views.py:691
+msgid "Reputation deleted."
+msgstr "Репутацію вилучено."
+
+#: djangobb_forum/views.py:697
+msgid "Reputation saved."
+msgstr "Репутацію збережено."
+
+#: djangobb_forum/views.py:739
+msgid "You don't have permission to edit this post."
+msgstr "Ви не маєте прав на зміну цього повідомлення."
+
+# 76%
+#: djangobb_forum/views.py:749
+msgid "Post updated."
+msgstr "Повідомлення оновлено."
+
+#: djangobb_forum/views.py:774 djangobb_forum/views.py:971
+msgid "Post deleted."
+msgstr "Повідомлення вилучено."
+
+#: djangobb_forum/views.py:819
+msgid "The topic ID must be an integer."
+msgstr "ID теми повинен бути цілим числом."
+
+#: djangobb_forum/views.py:825
+msgid "That thread doesn't exist."
+msgstr "Ця тема не існує."
+
+#: djangobb_forum/views.py:866
+msgid "Posts moved."
+msgstr "Повідомлення переміщено."
+
+#: djangobb_forum/views.py:931
+msgid "Topic moved."
+msgstr "Тему переміщено."
+
+#: djangobb_forum/views.py:947
+msgid "Topic stickied."
+msgstr "Тему закріплено."
+
+#: djangobb_forum/views.py:949
+msgid "Topic unstickied."
+msgstr "Тему розкріплено."
+
+#: djangobb_forum/views.py:967
+msgid "You don't have permission to delete this post."
+msgstr "Ви не маєте прав на вилучення цього повідомлення."
+
+# 90%
+#: djangobb_forum/views.py:994 djangobb_forum/views.py:1026
+msgid "You don't have permission to mark this post."
+msgstr "Ви не маєте прав на зміну цього повідомлення."
+
+#: djangobb_forum/views.py:998 djangobb_forum/views.py:1030
+msgid "There was not enough data collected to mark this post."
+msgstr "Там не було достатньої кількості даних, зібраних по цьому повідомленню."
+
+#: djangobb_forum/views.py:1003
+msgid "Post marked as spam."
+msgstr "Повідомлення позначено як спам."
+
+#: djangobb_forum/views.py:1005
+msgid "This post is not in the right state to be marked as spam."
+msgstr "Це повідомлення не може бути поміченим як спам."
+
+#: djangobb_forum/views.py:1035
+msgid "Post un-marked as spam."
+msgstr "Повідомлення не помічені як спам."
+
+#: djangobb_forum/views.py:1037
+msgid "This post is not in the right state to be un-marked as spam."
+msgstr ""
+"Це повідомлення не в правильному стані, щоб бути просто не позначене як спам."
+
+#: djangobb_forum/views.py:1051
+msgid "Topic closed."
+msgstr "Тему закрито."
+
+#: djangobb_forum/views.py:1054
+msgid "Topic opened."
+msgstr "Тему відкрито."
+
+#: djangobb_forum/views.py:1076
+msgid "Unsubscribed from topic."
+msgstr "Відписатися від теми."
+
+#: djangobb_forum/views.py:1088
+msgid "Subscribed to topic."
+msgstr "Підписатися на тему."
+
+#: djangobb_forum/templates/djangobb_forum/add_topic.html:5
+#: djangobb_forum/templates/djangobb_forum/add_topic.html:13
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
+#: djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:10
+msgid "New Topic"
+msgstr "Нова тема"
+
+#: djangobb_forum/templates/djangobb_forum/add_topic.html:11
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:15
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:11
+#: djangobb_forum/templates/djangobb_forum/forum.html:15
+#: djangobb_forum/templates/djangobb_forum/forum.html:77
+#: djangobb_forum/templates/djangobb_forum/moderate.html:14
+#: djangobb_forum/templates/djangobb_forum/moderate.html:72
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:19
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:65
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:10
+#: djangobb_forum/templates/djangobb_forum/report.html:11
+#: djangobb_forum/templates/djangobb_forum/topic.html:27
+#: djangobb_forum/templates/djangobb_forum/topic.html:189
+#: templates/base.html:339
+msgid "Discussion Forums"
+msgstr "Форуми обговорення"
+
+#: djangobb_forum/templates/djangobb_forum/base.html:5
+#: djangobb_forum/templates/djangobb_forum/index.html:5
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:6
+msgid "Discuss Scratch"
+msgstr "Обговорення Скретчу"
+
+#: djangobb_forum/templates/djangobb_forum/base.html:126
+#: djangobb_forum/templates/djangobb_forum/header.html:40
+msgid "Notice"
+msgstr "Повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:7
+#, python-format
+msgid "Delete Posts - %(name)s"
+msgstr "Вилучення повідомлень - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:18
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:68
+msgid "Delete Posts"
+msgstr "Вилучення повідомленнь"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:46
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:48
+#: djangobb_forum/templates/djangobb_forum/topic.html:130
+#, python-format
+msgid "Last edited by %(user)s (%(time)s)"
+msgstr "Останні зміни від %(user)s (%(time)s)"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:51
+#: djangobb_forum/templates/djangobb_forum/moderate.html:35
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:52
+msgid "Select"
+msgstr "Обрати"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:72
+#: djangobb_forum/templates/djangobb_forum/moderate.html:85
+#: djangobb_forum/templates/djangobb_forum/reputation.html:29
+#: djangobb_forum/templates/djangobb_forum/topic.html:168
+#: templates/studio/studio.html:141
+msgid "Delete"
+msgstr "Вилучити"
+
+#: djangobb_forum/templates/djangobb_forum/delete_posts.html:73
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:48
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:23
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:90
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:41
+#: djangobb_forum/templates/djangobb_forum/report.html:35
+#: djangobb_forum/templates/djangobb_forum/reputation.html:66
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:41
+#: djangobb_forum/templates/djangobb_forum/search_form.html:74
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:30
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:65
+msgid "Go back"
+msgstr "Повернутися"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:5
+#, python-format
+msgid "Edit Post - %(name)s"
+msgstr "Змінити повідомлення - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:14
+msgid "Edit Post"
+msgstr "Зміна повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:22
+msgid "Edit post"
+msgstr "Зміна повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:43
+msgid "Silent edit (don't display 'Edited by ...' in topic view)"
+msgstr "\"Тиха\" зміна (без \"Змінено ...\" в перегляді теми)"
+
+#: djangobb_forum/templates/djangobb_forum/edit_post.html:47
+msgid "Save"
+msgstr "Збереження"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:24
+msgid ""
+"Can't find an answer to your question? Click here to ask it in a new thread."
+msgstr "Не знайшли відповідь на питання? Клацніть тут щоб створити нову тему."
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:24
+msgid "New topic"
+msgstr "Нова тема"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:36
+#: djangobb_forum/templates/djangobb_forum/moderate.html:32
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:27
+msgid "Replies"
+msgstr "Відповіді"
+
+# 80%
+#: djangobb_forum/templates/djangobb_forum/forum.html:37
+#: djangobb_forum/templates/djangobb_forum/moderate.html:33
+#: templates/includes/sort-projects-dropdown.html:10
+#: templates/studio/includes/sort-projects-dropdown.html:10
+msgid "Views"
+msgstr "Перегляди"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:38
+#: djangobb_forum/templates/djangobb_forum/index.html:58
+#: djangobb_forum/templates/djangobb_forum/moderate.html:34
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:28
+msgid "Last Post"
+msgstr "Останнє повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:53
+#: djangobb_forum/templates/djangobb_forum/moderate.html:47
+msgid "Sticky:"
+msgstr "Важливо:"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:56
+#: djangobb_forum/templates/djangobb_forum/forum.html:63
+#: djangobb_forum/templates/djangobb_forum/forum_row.html:40
+#: djangobb_forum/templates/djangobb_forum/moderate.html:50
+#: djangobb_forum/templates/djangobb_forum/moderate.html:56
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:39
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:45
+#: templates/carousel/includes/project-thumb.html:26
+#: templates/carousel/includes/project-thumb.html:28
+#: templates/explore/explore2.html:54
+#: templates/explore/includes/related_projects.html:17
+#: templates/explore/includes/related_projects.html:32
+#: templates/explore/includes/related_projects.html:46
+#: templates/explore/includes/related_projects.html:75
+#: templates/explore/includes/related_projects2.html:8
+#: templates/galleries/includes/activity_list.html:96
+#: templates/galleries/includes/project-thumb.html:22
+#: templates/galleries/includes/project-thumb.html:24
+#: templates/projects/base.html:104 templates/projects/base.html.py:366
+#: templates/projects/includes/project_list.html:11
+msgid "by"
+msgstr "від"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:57
+msgid "(New Posts)"
+msgstr "(Нові повідомлення)"
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:67
+#: djangobb_forum/templates/djangobb_forum/moderate.html:61
+msgid "Forum is empty."
+msgstr "Форум порожній."
+
+#: djangobb_forum/templates/djangobb_forum/forum.html:107
+msgid "Moderate forum"
+msgstr "Модерувати форум"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:15
+msgid "Show new posts since last visit"
+msgstr "Показати нові повідомлення з часу останнього візиту"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:20
+msgid "Discussion Home"
+msgstr "Домівка обговорень"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:21
+#: djangobb_forum/templates/djangobb_forum/search_form.html:5
+#: djangobb_forum/templates/djangobb_forum/search_form.html:18
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:20
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:10
+#: templates/404.html:21 templates/base.html:191 templates/contact-us.html:92
+msgid "Search"
+msgstr "Пошук"
+
+#: djangobb_forum/templates/djangobb_forum/header.html:26
+#, python-format
+msgid "Reports (%(report_count)s)"
+msgstr "Звіти (%(report_count)s)"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:77
+msgid "Show your"
+msgstr "Ваші"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:77
+msgid "topics"
+msgstr "теми"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:77
+msgid "posts"
+msgstr "повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:78
+msgid "Change your signature"
+msgstr "Змінити підпис"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:82
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:43
+msgid "Show recent posts"
+msgstr "Показати останні"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:83
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:44
+msgid "Show unanswered posts"
+msgstr "Повідомлення без відповіді"
+
+#: djangobb_forum/templates/djangobb_forum/index.html:85
+msgid "Mark all topics as read"
+msgstr "Позначити все як прочитане"
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:7
+msgid "Send e-mail to"
+msgstr "Послати e-mail для"
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:13
+msgid "Write and submit your e-mail message"
+msgstr "Написати та відіслати e-mail"
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:19
+msgid ""
+"Please note that by using this form, your e-mail address will be disclosed "
+"to the recipient."
+msgstr ""
+"Завважте, що використовуючи цю форму вашу адресу буде відомо отримувачу."
+
+#: djangobb_forum/templates/djangobb_forum/mail_to.html:23
+#: djangobb_forum/templates/djangobb_forum/report.html:34
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:41
+#: djangobb_forum/templates/djangobb_forum/search_form.html:73
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:64
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:59
+#: djangobb_forum/templates/djangobb_forum/mobile/includes/post_form.html:16
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:31
+#: templates/extensions/terms_of_use.html:40
+msgid "Submit"
+msgstr "Надіслати"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:7
+#, python-format
+msgid "Moderate - %(name)s"
+msgstr "Модерувати - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:16
+#: djangobb_forum/templates/djangobb_forum/moderate.html:74
+#: djangobb_forum/templates/djangobb_forum/moderate.html:80
+msgid "Moderate Forum"
+msgstr "Модерувати форум"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:84
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:89
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:40
+#: templates/info/help/studio/tips/howto/hoc-4a.html:18
+#: templates/info/help/studio/tips/howto/hoc-intro.html:38
+msgid "Move"
+msgstr "Перемістити"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:86
+msgid "Open"
+msgstr "Відкрити"
+
+#: djangobb_forum/templates/djangobb_forum/moderate.html:87
+#: templates/modal-registration.html:200
+#: templates/accounts/email_verification/includes/verify_email_popup.html:27
+msgid "Close"
+msgstr "Закрити"
+
+#: djangobb_forum/templates/djangobb_forum/moderators.html:3
+msgid "Moderated by"
+msgstr "Модеровано"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:7
+#, python-format
+msgid "Move Posts - %(name)s"
+msgstr "Перемістити повідомлення - %(name)s"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:22
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:68
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:74
+msgid "Move Posts"
+msgstr "Перемістити повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:82
+msgid "All posts (original topic will be deleted)"
+msgstr "Усі повідомлення (оригінали буде вилучено)"
+
+#: djangobb_forum/templates/djangobb_forum/move_posts.html:85
+msgid "Topic ID or URL"
+msgstr "ID чи URL повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:5
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:11
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:17
+msgid "Move Topic"
+msgstr "Перемістити повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/move_topic.html:26
+msgid "Move to"
+msgstr "Перемістити до"
+
+#: djangobb_forum/templates/djangobb_forum/pagination.html:3
+msgid "Pages"
+msgstr "Сторінки"
+
+#: djangobb_forum/templates/djangobb_forum/report.html:5
+#: djangobb_forum/templates/djangobb_forum/report.html:14
+#: djangobb_forum/templates/djangobb_forum/report.html:22
+msgid "Report Post"
+msgstr "Звіт"
+
+#: djangobb_forum/templates/djangobb_forum/report.html:32
+msgid "Please enter a short reason why you are reporting this post."
+msgstr "Ввідіть причини чому ви повідомляєте про цей пост."
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:17
+msgid "Reputation of the user"
+msgstr "Репутація користувача"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:23
+msgid "From user"
+msgstr "Від користувача"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:24
+msgid "For post in topic"
+msgstr "Для повідомлення в темі"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:26
+msgid "Estimation"
+msgstr "Оцінка"
+
+# 80%
+#: djangobb_forum/templates/djangobb_forum/reputation.html:27
+msgid "Date"
+msgstr "Дата"
+
+#: djangobb_forum/templates/djangobb_forum/reputation.html:64
+msgid "Are you sure"
+msgstr "Ви впевнені"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:7
+msgid "Please, fill the form"
+msgstr "Заповніть цю форму"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:17
+msgid "Your name:"
+msgstr "Ваше ім’я:"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:21
+msgid "To whom we change a reputation:"
+msgstr "Кому ми міняємо репутацію:"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:29
+msgid "Method:"
+msgstr "Метод:"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:32
+msgid "Add of a reputation"
+msgstr "Додати до репутації"
+
+#: djangobb_forum/templates/djangobb_forum/reputation_form.html:34
+msgid "Reduction of a reputation"
+msgstr "Відняти від репутації"
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:32
+msgid "(Dustbin all posts and topics)"
+msgstr "(Смітник: всі повідомлення і теми)"
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:37
+msgid ""
+"To search by keyword, enter a term or terms to search for. Separate terms "
+"with spaces. To search by author enter the username of the author whose "
+"posts you wish to search for."
+msgstr ""
+"Для пошуку за ключовим словом, введіть одне або декілька умов для пошуку. "
+"Окремі слова розділяйте пропуском. Для пошуку по автору, введіть ім'я "
+"користувача - автора повідомлення якого ви бажаєте знайти."
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:42
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:30
+msgid "All forums"
+msgstr "Усі форуми"
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:56
+msgid ""
+"Choose in which forum you would like to search and if you want to search in "
+"topic subjects, message text or both."
+msgstr ""
+"Оберіть в якому форумі ви бажаєте шукати і якщо ви хочете - назву теми, "
+"текстові повідомлення або обоє."
+
+#: djangobb_forum/templates/djangobb_forum/search_form.html:70
+msgid "You can choose how you wish to sort and show your results."
+msgstr "Ви можете обрати, як ви хочете впорядкувати та відображати результат."
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:6
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:7
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:19
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:10
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:10
+msgid "Search Results"
+msgstr "Результат пошуку"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:12
+msgid "Show results as topic list."
+msgstr "Відображати результати у вигляді списку тем."
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:26
+msgid "Info"
+msgstr "Інфо"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:29
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:49
+msgid "Your search returned no hits."
+msgstr "Ваш пошук нічого не дав."
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:42
+msgid "Search links"
+msgstr "Пошук посилань"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:46
+msgid "Show your subscribed topics"
+msgstr "Показати ваші теми на які підписувались"
+
+#: djangobb_forum/templates/djangobb_forum/search_posts.html:47
+msgid "Show your topics"
+msgstr "Показати ваші теми"
+
+#: djangobb_forum/templates/djangobb_forum/search_topics.html:13
+msgid "Show results as post list."
+msgstr "Відображати результати у вигляді списку."
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:16
+#: djangobb_forum/templates/djangobb_forum/topic.html:198
+msgid "loading..."
+msgstr "завантаження..."
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:17
+#: djangobb_forum/templates/djangobb_forum/topic.html:199
+msgid "There was an error :( Try again?"
+msgstr "Була помилка :( Спробувати ще раз?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:18
+#: djangobb_forum/templates/djangobb_forum/topic.html:200
+msgid "Follow this discussion to get a message when there's a new post"
+msgstr ""
+"Слідкувати за цією дискусією, щоб дізнаватись, коли є у ній нове повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:18
+#: djangobb_forum/templates/djangobb_forum/topic.html:200
+msgid "Follow Discussion"
+msgstr "Слідкувати за дискусією"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:19
+#: djangobb_forum/templates/djangobb_forum/topic.html:201
+msgid "Stop getting messages about new posts to this discussion"
+msgstr "Не отримувати сповіщення про нові повідомлення в дискусії"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:19
+#: djangobb_forum/templates/djangobb_forum/topic.html:201
+msgid "Unfollow Discussion"
+msgstr "Не слідкувати за дискусією"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:35
+msgid "Poll"
+msgstr "Опитування"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:43
+#, python-format
+msgid "(%(count)s answers allows.)"
+msgstr "(%(count)s дозволених відповідей.)"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:46
+msgid "Vote"
+msgstr "Голос"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:97
+msgid "1000+ posts"
+msgstr "1000+ дописів"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:99
+msgid "500+ posts"
+msgstr "500+ дописів"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:101
+msgid "100+ posts"
+msgstr "100+ дописів"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:103
+msgid "1 post"
+msgstr "1 допис"
+
+# 83%
+#: djangobb_forum/templates/djangobb_forum/topic.html:105
+msgid " posts"
+msgstr "повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:111
+msgid "From:"
+msgstr "Від:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:113
+msgid "Registered:"
+msgstr "Зареєстровано:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:114
+msgid "Posts:"
+msgstr "Повідомленнь:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:115
+msgid "IP:"
+msgstr "IP:"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:120
+msgid "Really delete all posts, and ban user? This is hard to reverse."
+msgstr ""
+"Ви дійсно хочете видалити всі повідомлення, і заблокувати користувача? Це "
+"важко повернути назад."
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:137
+msgid "(Edit Signature)"
+msgstr "(Правка підпису)"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:161
+msgid "Are you sure you want to mark this as spam?"
+msgstr "Ви впевнені, що хочете позначити це як спам?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:161
+msgid "Mark as Spam"
+msgstr "Позначити як спам"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:164
+msgid "Are you sure you want to unmark this as spam?"
+msgstr "Ви впевнені, що хочете зняти позначку це як спам?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:164
+msgid "Un-mark as Spam"
+msgstr "Зняти позначку спаму"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:168
+msgid "Are you sure you want to delete this post?"
+msgstr "Ви впевнені що бажаєте вилучити це повідомлення?"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:172
+msgid "Edit"
+msgstr "Правка"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:175
+msgid "Insert a quotation of this post in your reply."
+msgstr "Вставити цитату з повідомлення у відповідь."
+
+# 83%
+#: djangobb_forum/templates/djangobb_forum/topic.html:175
+msgid "Quote"
+msgstr "Цитата"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:220
+msgid "Jump to"
+msgstr "Перейти до"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:231
+#: templates/explore/projects.html:26
+msgid "Go"
+msgstr "Перехід"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:236
+msgid "Moderator control"
+msgstr "Керування модератора"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:237
+msgid "Delete multiple posts"
+msgstr "Вилучити повторювані повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:238
+msgid "Move multiple posts"
+msgstr "Перемістити повторювані повідомлення"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:239
+msgid "Move topic"
+msgstr "Перемістити тему"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:241
+#: djangobb_forum/templates/djangobb_forum/topic.html:253
+msgid "Open topic"
+msgstr "Відкрити тему"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:243
+#: djangobb_forum/templates/djangobb_forum/topic.html:256
+msgid "Close topic"
+msgstr "Закрити тему"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:246
+msgid "Unstick topic"
+msgstr "Unstick"
+
+#: djangobb_forum/templates/djangobb_forum/topic.html:248
+msgid "Stick topic"
+msgstr "Stick"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:7
+msgid "Upload avatar"
+msgstr "Вивантажити аватар"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:13
+msgid "Enter an avatar file to upload"
+msgstr "Введіть який файл аватару слід вивантажити"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:19
+#, python-format
+msgid ""
+"An avatar is a small image that will be displayed under your username in "
+"your posts. It must not be any bigger than %(avatar_width)s x "
+"%(avatar_height)s pixels "
+msgstr ""
+"Аватар є маленьким зображенням, яке відображається поруч вашого імені "
+"користувача у ваших повідомленнях. Воно не може бути більшим ніж "
+"%(avatar_width)s x %(avatar_height)s пікселів"
+
+#: djangobb_forum/templates/djangobb_forum/upload_avatar.html:23
+msgid "Upload"
+msgstr "Вивантажити"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:5
+msgid "YouTube Video"
+msgstr "Відео YouTube"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:22
+msgid "Video Not Found"
+msgstr "Відео не знайдено"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:33
+msgid "Why do I see this page?"
+msgstr "Чому я бачу цю сторінку?"
+
+#: djangobb_forum/templates/djangobb_forum/youtube.html:36
+msgid ""
+"Links to YouTube videos on the forums are automatically converted to links "
+"to this page, to hide comments and other content."
+msgstr ""
+"Посилання на  відео з YouTube на форумах автоматично перетворюються у "
+"посилання на цю сторінку, щоб приховати коментарі та інші матеріали."
+
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
+msgid "New Reply"
+msgstr "Нова відповідь"
+
+#: djangobb_forum/templates/djangobb_forum/includes/post_form.html:22
+msgid "Create a poll"
+msgstr "Створити опитування"
+
+#: djangobb_forum/templates/djangobb_forum/includes/post_in_search_page.html:14
+msgid "Replies:"
+msgstr "Відповіді:"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/add_topic.html:8
+#: djangobb_forum/templates/djangobb_forum/mobile/forum.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/index.html:5
+#: djangobb_forum/templates/djangobb_forum/mobile/reply.html:8
+#: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/search_topics.html:9
+#: djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:6
+#: djangobb_forum/templates/djangobb_forum/mobile/topic.html:10
+#: templates/base.html:184
+msgid "Discuss"
+msgstr "Обговорити"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:23
+#, python-format
+msgid "Signed in as <strong>%(user)s</strong>"
+msgstr "Ви увійшли як <strong>%(user)s</strong>"
+
+# 85%
+#: djangobb_forum/templates/djangobb_forum/mobile/base.html:25
+#: djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:7
+#: djangobb_forum/templates/djangobb_forum/mobile/sign_in.html:25
+msgid "Sign In"
+msgstr "Увійти"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/index.html:16
+#, python-format
+msgid "%(posts)s post"
+msgid_plural "%(posts)s posts"
+msgstr[0] "%(posts)s повідомлення"
+msgstr[1] "%(posts)s повідомлення"
+msgstr[2] "%(posts)s повідомлень"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/reply.html:11
+#: templates/comments/comment.html:59
+#: templates/comments/comment_module.html:31
+#: templates/comments/comment_module.html:48
+#: templates/comments/includes/comment.html:12
+msgid "Reply"
+msgstr "Відповісти"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/search_posts.html:22
+msgid "No posts."
+msgstr "Немає повідомлень"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:7
+#, python-format
+msgid "%(replies)s reply"
+msgid_plural "%(replies)s replies"
+msgstr[0] "%(replies)s відповідь"
+msgstr[1] "%(replies)s відповіді"
+msgstr[2] "%(replies)s відповідей"
+
+#: djangobb_forum/templates/djangobb_forum/mobile/includes/topic_list.html:10
+msgid "No topics."
+msgstr "Немає тем."
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:12
+#, python-format
+msgid "Settings (%(name)s)"
+msgstr "Налаштування (%(name)s)"
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:22
+msgid ""
+"A signature is a small piece of text that is attached to your posts. In it, "
+"you can enter just about anything you like. Perhaps you would like to enter "
+"your favourite quote or your star sign. It's up to you! In your signature "
+"you can use BBCode if it is allowed in this particular forum. You can see "
+"the features that are allowed/enabled listed below whenever you edit your "
+"signature."
+msgstr ""
+"Підпис являє собою невеликий фрагмент тексту, який додається до вашого "
+"повідомлення. У ньому ви можете ввести будь що, з того що вам подобається. "
+"Може бути, ви хотіли написати улюблену цитату або ваш знак зодіаку. Це "
+"залежить від вас! У вашому підпису можна використовувати BBCode, якщо це "
+"дозволено в даному форумі. Ви можете побачити особливості, які дозволено/ "
+"включено перераховані нижче при редагуванні вашого підпису."
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:27
+msgid "No signature currently stored in profile."
+msgstr "Немає збереженого підпису у профілі"
+
+#: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:32
+msgid "When you update your profile, you will be redirected back to this page."
+msgstr "Оновивши свій профіль, ви маєте повернутися на цю сторінку."
+
 #: projects/views.py:501
 msgid "This tag has too many projects to load"
 msgstr "Цей тег має занадто багато проектів, щоб завантажити"
@@ -197,10 +1704,6 @@ msgstr ""
 msgid "You can try searching for what you're looking for here:"
 msgstr "Ви можете пошукати тут:"
 
-#: templates/404.html:21 templates/base.html:186 templates/contact-us.html:92
-msgid "Search"
-msgstr "Пошук"
-
 #: templates/500.html:40
 msgid "Looks like we are having issues with our servers!"
 msgstr "Схоже ми маємо проблеми з нашими серверами!"
@@ -225,39 +1728,30 @@ msgstr "Скретч"
 msgid "Imagine, Program, Share"
 msgstr "Уяви, програмуй, поділись"
 
-#: templates/base.html:177
+#: templates/base.html:182
 msgid "Create"
 msgstr "Створити"
 
-#: templates/base.html:178 templates/explore/explore2.html:40
+#: templates/base.html:183 templates/explore/explore2.html:40
 #: templates/explore/projects.html:34 templates/explore/studios.html:25
 msgid "Explore"
 msgstr "Вивчати"
 
-#: templates/base.html:179
-msgid "Discuss"
-msgstr "Обговорити"
-
-#: templates/base.html:180
+#: templates/base.html:185
 msgid "Help"
 msgstr "Допомога"
 
 # 83%
-#: templates/base.html:200 templates/modal-registration.html:6
+#: templates/base.html:205 templates/modal-registration.html:6
 msgid "Join Scratch"
 msgstr "Приєднатись"
 
-#: templates/base.html:203 templates/base.html.py:214 templates/base.html:224
+#: templates/base.html:208 templates/base.html.py:219 templates/base.html:229
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 msgid "Sign in"
 msgstr "Увійти"
 
-#: templates/base.html:209 templates/modal-login.html:14
-#: templates/includes/backbone-templates.html:19
-msgid "Username"
-msgstr "Ім'я користувача"
-
-#: templates/base.html:211 templates/modal-login.html:21
+#: templates/base.html:216 templates/modal-login.html:21
 #: templates/accounts/account_settings.html:9
 #: templates/accounts/email_change.html:9
 #: templates/accounts/deletion/confirmation.html:7
@@ -266,157 +1760,149 @@ msgstr "Ім'я користувача"
 msgid "Password"
 msgstr "Пароль"
 
-#: templates/base.html:215
+#: templates/base.html:220
 msgid "Forgot password?"
 msgstr "Забули пароль?"
 
-#: templates/base.html:231
+#: templates/base.html:236
 msgid "messages - updates and notices"
 msgstr "повідомлення - оновлення та сповіщення"
 
-#: templates/base.html:232
+#: templates/base.html:237
 msgid "my stuff - manage projects and studios"
 msgstr "мої доробки - керувати проектами та студіями"
 
-#: templates/base.html:239
-msgid "Profile"
-msgstr "Профіль"
-
-#: templates/base.html:240 templates/explore/base.html:24
+#: templates/base.html:245 templates/explore/base.html:24
 #: templates/studio/base.html:21
 msgid "My Stuff"
 msgstr "Мої проекти"
 
-#: templates/base.html:241
+#: templates/base.html:246
 msgid "Account settings"
 msgstr "Налаштування облікового запису"
 
-#: templates/base.html:242
+#: templates/base.html:247
 msgid "Sign out"
 msgstr "Вийти"
 
-#: templates/base.html:320
+#: templates/base.html:325
 msgid "About"
 msgstr "Про Скретч"
 
-#: templates/base.html:322 templates/info/about.html:13
-#: templates/info/help/index.html:92 templates/mail/base.html:49
+#: templates/base.html:327 templates/info/about.html:13
+#: templates/info/help/index.html:92 templates/mail/base.html:57
 msgid "About Scratch"
 msgstr "Про Скретч"
 
-#: templates/base.html:323 templates/info/parents.html:12
+#: templates/base.html:328 templates/info/parents.html:12
 msgid "For Parents"
 msgstr "Для батьків"
 
-#: templates/base.html:324 templates/info/educators.html:12
+#: templates/base.html:329 templates/info/educators.html:12
 msgid "For Educators"
 msgstr "Для вчителів"
 
-#: templates/base.html:325
+#: templates/base.html:330
 msgid "Credits"
 msgstr "Про розробників"
 
-#: templates/base.html:326
+#: templates/base.html:331
 msgid "Jobs"
 msgstr "Вакансії"
 
-#: templates/base.html:327
+#: templates/base.html:332
 msgid "Press"
 msgstr "Преса"
 
-#: templates/base.html:331 templates/info/parents.html:72
+#: templates/base.html:336 templates/info/parents.html:72
 msgid "Community"
 msgstr "Спільнота"
 
-#: templates/base.html:333
+#: templates/base.html:338
 msgid "Community Guidelines"
 msgstr "Правила спільноти"
 
-#: templates/base.html:334
-msgid "Discussion Forums"
-msgstr "Форуми обговорення"
-
-#: templates/base.html:335 templates/info/help/index.html:113
+#: templates/base.html:340 templates/info/help/index.html:113
 msgid "Scratch Wiki"
 msgstr "Вікі Скретчу"
 
-#: templates/base.html:336
+#: templates/base.html:341
 msgid "Statistics"
 msgstr "Статистика"
 
-#: templates/base.html:340 templates/search/includes/tabs.html:17
+#: templates/base.html:345 templates/search/includes/tabs.html:17
 msgid "Support"
 msgstr "Підтримка"
 
-#: templates/base.html:342
+#: templates/base.html:347
 msgid "Help Page"
 msgstr "Сторінка допомоги"
 
-#: templates/base.html:343
+#: templates/base.html:348
 msgid "FAQ"
 msgstr "Що запитують?"
 
-#: templates/base.html:344
+#: templates/base.html:349
 msgid "Offline Editor"
 msgstr "Автономний редактор"
 
 # 90%
-#: templates/base.html:345 templates/contact-us-success.html:12
+#: templates/base.html:350 templates/contact-us-success.html:12
 #: templates/contact-us.html:73
 msgid "Contact Us"
 msgstr "Зв'язок з нами"
 
-#: templates/base.html:346
+#: templates/base.html:351
 msgid "Donate"
 msgstr "Пожертва"
 
-#: templates/base.html:350
+#: templates/base.html:355
 msgid "Legal"
 msgstr "Законність"
 
-#: templates/base.html:352
+#: templates/base.html:357
 msgid "Terms of Use"
 msgstr "Умови використання"
 
-#: templates/base.html:353 templates/info/help/faq.html:28
-#: templates/info/help/faq.html.py:80 templates/mail/base.html:48
+#: templates/base.html:358 templates/info/help/faq.html:28
+#: templates/info/help/faq.html.py:80 templates/mail/base.html:56
 msgid "Privacy Policy"
 msgstr "Політика конфіденційності"
 
-#: templates/base.html:354 templates/info/DMCA.html:10
+#: templates/base.html:359 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:358
+#: templates/base.html:363
 msgid "Scratch Family"
 msgstr "Родина Скретч"
 
 # 77%
-#: templates/base.html:360
+#: templates/base.html:365
 msgid "ScratchEd"
 msgstr "Скретч Вчителі"
 
 # 77%
 # 88%
-#: templates/base.html:361
+#: templates/base.html:366
 msgid "ScratchJr"
 msgstr "Скретч Малюкам"
 
 # 75%
 # 100%
-#: templates/base.html:362
+#: templates/base.html:367
 msgid "Scratch Day"
 msgstr "День Скретчу"
 
-#: templates/base.html:363
+#: templates/base.html:368
 msgid "Scratch Conference"
 msgstr "Конференція Скретчу"
 
-#: templates/base.html:364
+#: templates/base.html:369
 msgid "Code-to-Learn Foundation"
 msgstr "Фундація Code-to-Learn"
 
-#: templates/base.html:379
+#: templates/base.html:384
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr "Скретч є проектом Lifelong Kindergarten Group від MIT Media Lab"
@@ -825,11 +2311,6 @@ msgstr "Далі"
 msgid "OK Lets Go!"
 msgstr "Гаразд, вперед!"
 
-#: templates/modal-registration.html:200
-#: templates/accounts/email_verification/includes/verify_email_popup.html:27
-msgid "Close"
-msgstr "Закрити"
-
 #: templates/modal-registration.html:213
 msgid "Your username must be between 3 and 20 characters"
 msgstr "Ім’я користувача повинно мати від 3 до 20 символів"
@@ -837,14 +2318,6 @@ msgstr "Ім’я користувача повинно мати від 3 до 2
 #: templates/modal-registration.html:214
 msgid "Sorry, that username already exists"
 msgstr "Вибачте, таке ім’я вже існує"
-
-#: templates/modal-registration.html:215
-msgid "Invalid username"
-msgstr "Помилкове ім’я"
-
-#: templates/modal-registration.html:216
-msgid "Hmm, that looks inappropriate"
-msgstr "Хм, це виглядає неприпустимим"
 
 #: templates/modal-registration.html:217
 msgid "You must enter a username"
@@ -854,10 +2327,10 @@ msgstr "Вам необхідно ввести ім’я користувача"
 msgid "Your username may only contain letters, numbers, - and _"
 msgstr "Ім’я користувача може мати літери, цифри, - і _"
 
-# 82%
 #: templates/modal-registration.html:219
-msgid "Your password cannot be \\\\\\'password\\\\\\'"
-msgstr "Ваш пароль не може бути \\\\\\'password\\\\\\'"
+#, fuzzy
+msgid "Your password cannot be \\'password\\'"
+msgstr "Ваш пароль не може бути 'password'."
 
 # 87%
 #: templates/modal-registration.html:220
@@ -877,11 +2350,6 @@ msgstr "Ваші паролі не збігаються"
 #: templates/modal-registration.html:223
 msgid "Your password cannot match your username"
 msgstr "Ваш пароль не може містити ім’я користувача"
-
-# 97%
-#: templates/modal-registration.html:224
-msgid "You must select a birth month and year"
-msgstr "Ви маєте обрати місяць та рік народження"
 
 #: templates/modal-registration.html:225
 msgid "You must specify a gender"
@@ -1186,13 +2654,13 @@ msgstr "Так, наступний крок"
 msgid "Delete account &amp; Sign out"
 msgstr "Вилучення облікового запису &amp; Вихід"
 
-#: templates/accounts/email_verification/change_email_verification_email.html:8
+#: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
 #: templates/accounts/email_verification/verification_email_plain.html:4
 msgid "Greetings from the Scratch Team at MIT!"
 msgstr ""
 
-#: templates/accounts/email_verification/change_email_verification_email.html:10
+#: templates/accounts/email_verification/change_email_verification_email.html:11
 #, python-format
 msgid ""
 "\n"
@@ -1201,35 +2669,35 @@ msgid ""
 "address by clicking the button below:\n"
 msgstr ""
 
-#: templates/accounts/email_verification/change_email_verification_email.html:16
+#: templates/accounts/email_verification/change_email_verification_email.html:17
 #: templates/accounts/email_verification/verification_email.html:26
 #, fuzzy
 msgid "Confirm my email address"
 msgstr "Підтвердження електронної пошти"
 
-#: templates/accounts/email_verification/change_email_verification_email.html:22
+#: templates/accounts/email_verification/change_email_verification_email.html:23
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:12
 msgid ""
 "If you didn’t request an email change, don’t worry - you can just ignore "
 "this message."
 msgstr ""
 
-#: templates/accounts/email_verification/change_email_verification_email.html:25
+#: templates/accounts/email_verification/change_email_verification_email.html:26
 #: templates/accounts/email_verification/verification_email.html:43
-#: templates/registration/welcome_email_message.html:41
-#: templates/registration/welcome_email_message.txt:32
+#: templates/registration/welcome_email_message.html:45
+#: templates/registration/welcome_email_message.txt:36
 #, fuzzy
 msgid "Scratch On!"
 msgstr "Зі Скретчем!"
 
 # 75%
 # 100%
-#: templates/accounts/email_verification/change_email_verification_email.html:26
+#: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
 #: templates/accounts/email_verification/verification_email.html:45
 #: templates/accounts/email_verification/verification_email_plain.html:31
-#: templates/registration/welcome_email_message.html:43
-#: templates/registration/welcome_email_message.txt:33
+#: templates/registration/welcome_email_message.html:47
+#: templates/registration/welcome_email_message.txt:37
 msgid "The Scratch Team"
 msgstr "Команда Скретчу"
 
@@ -1449,7 +2917,7 @@ msgstr ""
 msgid "Your email address has been unsubscribed."
 msgstr ""
 
-#: templates/accounts/subscription/unsubscribe_email_verification_success.html:22
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:23
 #, python-format
 msgid ""
 "\n"
@@ -1458,7 +2926,7 @@ msgid ""
 "            "
 msgstr ""
 
-#: templates/accounts/subscription/unsubscribe_email_verification_success.html:26
+#: templates/accounts/subscription/unsubscribe_email_verification_success.html:28
 msgid "Take me back to Scratch!"
 msgstr ""
 
@@ -1484,22 +2952,6 @@ msgstr "Нічого немає"
 msgid "in"
 msgstr "в"
 
-#: templates/carousel/includes/project-thumb.html:26
-#: templates/carousel/includes/project-thumb.html:28
-#: templates/explore/explore2.html:54
-#: templates/explore/includes/related_projects.html:17
-#: templates/explore/includes/related_projects.html:32
-#: templates/explore/includes/related_projects.html:46
-#: templates/explore/includes/related_projects.html:75
-#: templates/explore/includes/related_projects2.html:8
-#: templates/galleries/includes/activity_list.html:96
-#: templates/galleries/includes/project-thumb.html:22
-#: templates/galleries/includes/project-thumb.html:24
-#: templates/projects/base.html:104 templates/projects/base.html.py:366
-#: templates/projects/includes/project_list.html:11
-msgid "by"
-msgstr "від"
-
 #: templates/cas/login.html:9
 msgid "Log in to your account"
 msgstr "Увійти до свого облікового запису"
@@ -1507,10 +2959,6 @@ msgstr "Увійти до свого облікового запису"
 #: templates/cloudmonitor/monitor.html:59
 msgid "Cloud data history"
 msgstr "Історія \"хмарних\" даних"
-
-#: templates/cloudmonitor/monitor.html:67
-msgid "User"
-msgstr "Користувач"
 
 #: templates/cloudmonitor/monitor.html:68
 msgid "Data Name"
@@ -1523,10 +2971,6 @@ msgstr "Дія"
 #: templates/cloudmonitor/monitor.html:70
 msgid "Data Value"
 msgstr "Значення"
-
-#: templates/cloudmonitor/monitor.html:71
-msgid "Time"
-msgstr "Час"
 
 #: templates/comments/comment-module.html:26
 #: templates/comments/comment_module.html:11
@@ -1548,13 +2992,6 @@ msgstr ""
 msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr "Залишилось <span id=\"chars-left\">500</span> символів."
 
-#: templates/comments/comment-module.html:40
-#: templates/comments/comment_module.html:17
-#: templates/comments/comment_module.html:67
-#: templates/includes/backbone-templates.html:62
-msgid "Post"
-msgstr "Надіслати"
-
 # 83%
 #: templates/comments/comment-module.html:45
 msgid "Sorry, comment posting has been turned off for this"
@@ -1574,17 +3011,6 @@ msgstr ""
 #: templates/comments/comment-module.html:53
 msgid "Comments loading..."
 msgstr "Коментарі завантажуються..."
-
-#: templates/comments/comment.html:32 templates/comments/comment.html.py:34
-msgid "Report"
-msgstr "Звіт"
-
-#: templates/comments/comment.html:59
-#: templates/comments/comment_module.html:31
-#: templates/comments/comment_module.html:48
-#: templates/comments/includes/comment.html:12
-msgid "Reply"
-msgstr "Відповісти"
 
 #: templates/comments/comment_module.html:36
 #: templates/comments/comment_module.html:54
@@ -1675,10 +3101,6 @@ msgstr "Історії"
 msgid "Tag:"
 msgstr "Мітка:"
 
-#: templates/explore/projects.html:26
-msgid "Go"
-msgstr "Перехід"
-
 #: templates/explore/projects.html:38 templates/projects/project_list.html:32
 #: templates/studio/includes/project_action_bar.html:15
 msgid "Shared"
@@ -1743,10 +3165,6 @@ msgstr "Студія:"
 #: templates/extensions/terms_of_use.html:13
 msgid "Extension Developer Terms of Use"
 msgstr "Правила для розробників Розширень"
-
-#: templates/extensions/terms_of_use.html:40
-msgid "Submit"
-msgstr "Надіслати"
 
 #: templates/galleries/activity.html:19
 #: templates/notifications/notifications.html:31
@@ -2075,12 +3493,6 @@ msgstr ""
 msgid "Submit Password"
 msgstr ""
 
-#: templates/includes/sort-projects-dropdown.html:4
-#: templates/studio/includes/sort-galleries-dropdown.html:19
-#: templates/studio/includes/sort-projects-dropdown.html:4
-msgid "Sort by"
-msgstr "Впорядкувати"
-
 #: templates/includes/sort-projects-dropdown.html:9
 #: templates/studio/includes/project_action_bar.html:22
 #: templates/studio/includes/project_action_bar.html:27
@@ -2088,12 +3500,6 @@ msgstr "Впорядкувати"
 #: templates/studio/includes/sort-projects-dropdown.html:9
 msgid "Last modified"
 msgstr "Востаннє змінено"
-
-# 80%
-#: templates/includes/sort-projects-dropdown.html:10
-#: templates/studio/includes/sort-projects-dropdown.html:10
-msgid "Views"
-msgstr "Перегляди"
 
 #: templates/includes/sort-projects-dropdown.html:11
 #: templates/studio/includes/sort-projects-dropdown.html:11
@@ -3303,16 +4709,16 @@ msgid ""
 "step2.png\" alt=\"Step 2\">\n"
 "\t\t\t\t<p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
 "\t\t\t\t<p>Mac OS X - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-432.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-434.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\tMac OS 10.5 & Older - <a href=\"http://cdn.scratch.mit.edu/scratchr2/"
-"static/sa/Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/"
+"static/sa/Scratch-434.air\">Download<img src=\"%(STATIC_URL)simages/help/"
 "offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Windows - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/"
-"sa/Scratch-432.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"sa/Scratch-434.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a> <br>\n"
 "\t\t\t\t   Linux - <a href=\"http://cdn.scratch.mit.edu/scratchr2/static/sa/"
-"Scratch-432.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
+"Scratch-434.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-"
 "editor/download.png\" alt=\"Download \"></a>\n"
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
@@ -3986,15 +5392,10 @@ msgid ""
 "Since the Scratch Team is responsible for moderation, we have access to all "
 "content stored on the Scratch website - including unshared projects. If you "
 "prefer to work on projects in complete privacy, you can use  either the <a "
-"href=\"/scratch2download\">Scratch 2 offline editor (beta)</a> or <a href ="
-"\"/scratch_1.4\">Scratch 1.4</a>.\n"
+"href=\"/scratch2download\">Scratch 2 offline editor</a> or <a href =\"/"
+"scratch_1.4\">Scratch 1.4</a>.\n"
 "  "
 msgstr ""
-"Команда Скретчу має доступ до усіх матеріалів, що розміщені на сайті "
-"Скретчу, включаючи і неопубліковані проекти. Якщо ви бажаєте зберігати "
-"конфіденційність - використовуйте  <a href=\"/scratch2download\">офлайновий "
-"редактор проектів (бета)</a> чи <a href =\"/scratch_1.4\">Скретч 1.4</a>.\n"
-"  "
 
 #: templates/info/help/faq.html:109
 msgid "What is a remix?"
@@ -10764,11 +12165,6 @@ msgstr ""
 msgid "4A of 9"
 msgstr ""
 
-#: templates/info/help/studio/tips/howto/hoc-4a.html:18
-#: templates/info/help/studio/tips/howto/hoc-intro.html:38
-msgid "Move"
-msgstr "Перемістити"
-
 #: templates/info/help/studio/tips/howto/hoc-4a.html:25
 #, python-format
 msgid ""
@@ -12367,7 +13763,7 @@ msgstr ""
 "трохи нижче блоку з зеленим прапором."
 
 #: templates/info/help/studio/tips/howto/valentine-intro.html:20
-msgid "Make a Valentine's Day card to share with your friends."
+msgid "Make a Valentine's Day card to share with your friends!"
 msgstr ""
 
 #: templates/info/help/studio/tips/howto/valentine-intro.html:23
@@ -13235,7 +14631,7 @@ msgstr ""
 msgid "Paint Editor"
 msgstr ""
 
-#: templates/mail/base.html:37
+#: templates/mail/base.html:41
 #, python-format
 msgid ""
 "\n"
@@ -13245,7 +14641,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/mail/base.html:43
+#: templates/mail/base.html:46
 #, python-format
 msgid ""
 "\n"
@@ -13254,7 +14650,16 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/mail/base.html:50
+#: templates/mail/base.html:51
+msgid ""
+"\n"
+"            If you are receiving multiple copies of this email, please let "
+"us know by emailing <a href=\"mailto:help@scratch.mit.edu\">help@scratch.mit."
+"edu</a>.\n"
+"        "
+msgstr ""
+
+#: templates/mail/base.html:58
 msgid "Make a Donation"
 msgstr ""
 
@@ -13895,7 +15300,7 @@ msgstr "Змінити мій пароль"
 msgid "Password reset email sent..."
 msgstr "Лист для скидання паролю надіслано..."
 
-#: templates/registration/password_reset_email.html:13
+#: templates/registration/password_reset_email.html:14
 #: templates/registration/password_reset_email.txt:7
 msgid ""
 "You're receiving this email because you requested a password reset for your "
@@ -13903,12 +15308,12 @@ msgid ""
 "just ignore this message."
 msgstr ""
 
-#: templates/registration/password_reset_email.html:17
+#: templates/registration/password_reset_email.html:18
 #: templates/registration/password_reset_email.txt:9
 msgid "Please go to the following page and choose a new password:"
 msgstr ""
 
-#: templates/registration/password_reset_email.html:24
+#: templates/registration/password_reset_email.html:25
 #: templates/registration/password_reset_email.txt:16
 msgid ""
 "You're receiving this e-mail because you requested a password reset for your "
@@ -13916,12 +15321,12 @@ msgid ""
 "just ignore this message."
 msgstr ""
 
-#: templates/registration/password_reset_email.html:27
+#: templates/registration/password_reset_email.html:28
 #: templates/registration/password_reset_email.txt:18
 msgid "Here are the username(s) associated with this email address:"
 msgstr ""
 
-#: templates/registration/password_reset_email.html:32
+#: templates/registration/password_reset_email.html:34
 #: templates/registration/password_reset_email.txt:23
 msgid "Go here to change the password:"
 msgstr ""
@@ -13948,7 +15353,7 @@ msgstr "Надіслати посилання на скидання паролю
 
 #: templates/registration/welcome_email_message.html:8
 #, python-format
-msgid "Welcome to Scratch, <strong>%(user.username)s</strong>!"
+msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
 msgstr ""
 
 #: templates/registration/welcome_email_message.html:10
@@ -13987,44 +15392,56 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:24
 #, python-format
 msgid ""
-"\n"
-"    Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a href="
+"Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a href="
 "\"%(faq_url)s\">Frequently Asked Questions</a>, and <a href=\"%(discuss_url)s"
-"\">Discussion Forums</a>, to learn more about Scratch. Going forward, you "
-"will also receive occasional updates from the Scratch team and Code-to-Learn "
-"Foundation with coding tips, inspirational stories, project ideas, and more. "
-"The Code-to-Learn Foundation is a non-profit that supports Scratch "
-"educational initiatives. You can unsubscribe from within the updates or by "
-"clicking below:\n"
+"\">Discussion Forums</a>, to learn more about Scratch."
 msgstr ""
 
-#: templates/registration/welcome_email_message.html:28
-#: templates/registration/welcome_email_message.txt:23
+#: templates/registration/welcome_email_message.html:27
 msgid ""
-"\n"
-"    Check out our About Scratch page, Frequently Asked Questions, and "
-"Discussion Forums, to learn more about Scratch. Going forward, you will also "
-"receive occasional updates from the Scratch team with coding tips, "
-"inspirational stories, project ideas, and more. You can unsubscribe from "
-"within the updates or by clicking below:\n"
+"Going forward, you will also receive occasional updates from the Scratch "
+"Team and Code-to-Learn Foundation with coding tips, inspirational stories, "
+"project ideas, and more. The Code-to-Learn Foundation is a non-profit that "
+"supports Scratch educational initiatives. You can unsubscribe from within "
+"the updates or by clicking below:"
+msgstr ""
+
+#: templates/registration/welcome_email_message.html:29
+msgid ""
+"Going forward, you will also receive occasional updates from the Scratch "
+"team with coding tips, inspirational stories, project ideas, and more. You "
+"can unsubscribe from within the updates or by clicking below:"
 msgstr ""
 
 #: templates/registration/welcome_email_message.txt:4
 #, python-format
-msgid "Welcome to Scratch, %(user.username)s!"
+msgid "Welcome to Scratch, %(username)s!"
 msgstr ""
 
 #: templates/registration/welcome_email_message.txt:19
 #, python-format
 msgid ""
-"\n"
-"    Check out our About Scratch page (%(about_url)s),Frequently Asked "
-"Questions (%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn "
-"more about Scratch. Going forward, you will also receive occasional updates "
-"from the Scratch team and Code-to-Learn Foundation with coding tips, "
-"inspirational stories, project ideas, and more. The Code-to-Learn Foundation "
-"is a non-profit that supports Scratch educational initiatives. You can "
-"unsubscribe from within the updates or by clicking below:\n"
+"Check out our About Scratch page (%(about_url)s),Frequently Asked Questions "
+"(%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn more about "
+"Scratch."
+msgstr ""
+
+#: templates/registration/welcome_email_message.txt:22
+msgid ""
+"Going forward, you will also receive occasional updates from the Scratch "
+"team and Code-to-Learn Foundation with coding tips, inspirational stories, "
+"project ideas, and more. The Code-to-Learn Foundation is a non-profit that "
+"supports Scratch educational initiatives. You can unsubscribe from within "
+"the updates or by clicking below:"
+msgstr ""
+
+#: templates/registration/welcome_email_message.txt:24
+msgid ""
+"Check out our About Scratch page, Frequently Asked Questions, and Discussion "
+"Forums, to learn more about Scratch. Going forward, you will also receive "
+"occasional updates from the Scratch team with coding tips, inspirational "
+"stories, project ideas, and more. You can unsubscribe from within the "
+"updates or by clicking below:"
 msgstr ""
 
 #: templates/scratch_admin/admin_profile_view.html:46
@@ -14053,10 +15470,6 @@ msgstr "Сторінки підтримки"
 #: templates/search/includes/tabs.html:5
 msgid "All Results"
 msgstr "Усі результати"
-
-#: templates/search/includes/tabs.html:20
-msgid "Forums"
-msgstr "Форуми"
 
 #: templates/search/includes/projects/filters.html:8
 msgid "Most recent"
@@ -14234,10 +15647,6 @@ msgstr "Додати до"
 msgid "Unshare"
 msgstr "Тільки для мене"
 
-#: templates/studio/studio.html:141
-msgid "Delete"
-msgstr "Вилучити"
-
 #: templates/studio/includes/galleries_action_bar.html:8
 msgid "View:"
 msgstr "Перегляд:"
@@ -14306,6 +15715,34 @@ msgstr ""
 #: userprofiles/models.py:92
 msgid "Why I Scratch"
 msgstr ""
+
+#~ msgid "Invalid username"
+#~ msgstr "Помилкове ім’я"
+
+#~ msgid "Hmm, that looks inappropriate"
+#~ msgstr "Хм, це виглядає неприпустимим"
+
+# 82%
+#~ msgid "Your password cannot be \\\\\\'password\\\\\\'"
+#~ msgstr "Ваш пароль не може бути \\\\\\'password\\\\\\'"
+
+# 97%
+#~ msgid "You must select a birth month and year"
+#~ msgstr "Ви маєте обрати місяць та рік народження"
+
+#~ msgid ""
+#~ "Since the Scratch Team is responsible for moderation, we have access to all "
+#~ "content stored on the Scratch website - including unshared projects. If you "
+#~ "prefer to work on projects in complete privacy, you can use  either the <a "
+#~ "href=\"/scratch2download\">Scratch 2 offline editor (beta)</a> or <a href ="
+#~ "\"/scratch_1.4\">Scratch 1.4</a>.\n"
+#~ "  "
+#~ msgstr ""
+#~ "Команда Скретчу має доступ до усіх матеріалів, що розміщені на сайті "
+#~ "Скретчу, включаючи і неопубліковані проекти. Якщо ви бажаєте зберігати "
+#~ "конфіденційність - використовуйте  <a href=\"/scratch2download\">офлайновий "
+#~ "редактор проектів (бета)</a> чи <a href =\"/scratch_1.4\">Скретч 1.4</a>.\n"
+#~ "  "
 
 #~ msgid "Would you like to:"
 #~ msgstr "Хотіли б ви:"
@@ -14421,961 +15858,6 @@ msgstr ""
 #~ "вимогам, спробуйте <a href=\"http://info.scratch.mit.edu/Scratch_1.4_ \""
 #~ ">завантажити</a>  та встановити <a href =\"/scratch_1.4\">Скретч 1.4</a>, "
 #~ "який також може публікувати розроблені проекти на сайті Скретчу 2."
-
-#~ msgid "subscribers"
-#~ msgstr "підписники"
-
-#~ msgid "Latest posts on forum"
-#~ msgstr "Останні повідомлення на форумі"
-
-#~ msgid "Latest topics on forum"
-#~ msgstr "Останні теми форуму"
-
-#, python-format
-#~ msgid "Latest posts on %s"
-#~ msgstr "Останні повідомлення з %s"
-
-#, python-format
-#~ msgid "Latest posts on the topic \"%s\""
-#~ msgstr "Останні повідомлення з теми \"%s\""
-
-#, python-format
-#~ msgid "Latest posts on the forum \"%s\""
-#~ msgstr "Останні повідомлення з форуму \"%s\""
-
-#, python-format
-#~ msgid "Latest posts on the category \"%s\""
-#~ msgstr "Останні повідомлення з категорії \"%s\""
-
-#~ msgid "Registered"
-#~ msgstr "Зареєстровано"
-
-#~ msgid "Number of posts"
-#~ msgstr "Кількість повідомлень"
-
-#~ msgid "Post time"
-#~ msgstr "Час повідомлення"
-
-#~ msgid "Author"
-#~ msgstr "Автор"
-
-#~ msgid "Subject"
-#~ msgstr "Тема"
-
-#~ msgid "Forum"
-#~ msgstr "Форум"
-
-#~ msgid "Ascending"
-#~ msgstr "По зростанню"
-
-#~ msgid "Descending"
-#~ msgstr "По спаданню"
-
-#~ msgid "Topics"
-#~ msgstr "Теми"
-
-# 80%
-#~ msgid "Posts"
-#~ msgstr "Повідомлення"
-
-#~ msgid "Message text and topic subject"
-#~ msgstr "Текст та заголовок повідомлення"
-
-#~ msgid "Message text only"
-#~ msgstr "Тільки текст повідомлення"
-
-#~ msgid "Topic subject only"
-#~ msgstr "Тільки назви тем"
-
-#~ msgid "Attachment"
-#~ msgstr "Долучення"
-
-#~ msgid "Subscribe"
-#~ msgstr "Підписка"
-
-# 87%
-#~ msgid "Subscribe to this topic."
-#~ msgstr "Підписка на цю тему."
-
-#~ msgid "Can't be empty nor contain only whitespace characters"
-#~ msgstr "Не може бути порожнім або містити тільки символи пропуску"
-
-#~ msgid ""
-#~ "Hmm, the filterbot is pretty sure your recent comments weren't ok for "
-#~ "Scratch, so your account has been muted for the rest of the day. :/"
-#~ msgstr ""
-#~ "Хмм... щось ваші останні коментарі не відповідали правилам спільноти "
-#~ "Скретчу, так що ваш акаунт був відключений решту дня. :/"
-
-#, python-format
-#~ msgid "Sorry, you have to wait %d seconds between posts."
-#~ msgstr "На жаль, вам доведеться чекати  %d секунд між повідомленнями."
-
-#~ msgid "Attachment is too big"
-#~ msgstr "Долучення занадто велике"
-
-#~ msgid "Silent edit?"
-#~ msgstr "Повідомлення про редагування?"
-
-# 83%
-#~ msgid "E-mail"
-#~ msgstr "Пошта"
-
-#~ msgid "Real name"
-#~ msgstr "Справжнє ім’я"
-
-#~ msgid "Sort order"
-#~ msgstr "Порядок впорядкування"
-
-#~ msgid "Keyword search"
-#~ msgstr "Шукати по вмісту"
-
-#~ msgid "Author search"
-#~ msgstr "Шукати по автору"
-
-#~ msgid "Search in"
-#~ msgstr "Шукати в"
-
-#~ msgid "Show results as"
-#~ msgstr "Показати результати як"
-
-#, python-format
-#~ msgid "User \"%s\" does not exist"
-#~ msgstr "Користувач \"%s\" не існує"
-
-#~ msgid "You already voted for this post"
-#~ msgstr "Ви вже голосували за це повідомлення"
-
-#~ msgid "This post does't belong to that user"
-#~ msgstr "Це повідомлення не належить цьому користувачу"
-
-# 87%
-#~ msgid "Message"
-#~ msgstr "Повідомлення"
-
-#, python-format
-#~ msgid "You have selected too many choices. You may only select %i."
-#~ msgstr "Ви обрали занадто багато варіантів. Ви можете обрати тільки %i."
-
-#~ msgid "Write each answer on a new line."
-#~ msgstr "Пишіть кожну відповідь у новому рядку."
-
-#~ msgid ""
-#~ "Number of days for this poll to run. Leave empty for an indefinite poll."
-#~ msgstr ""
-#~ "Кількість днів для проведення цього опитування. Залиште порожнім для "
-#~ "невизначеного терміну."
-
-#~ msgid "There is no valid answer."
-#~ msgstr "Це не є правильною відповіддю."
-
-#~ msgid "One of the answers is too long."
-#~ msgstr "Одна з відповідей занадто довга."
-
-#~ msgid "Display your e-mail address."
-#~ msgstr "Показати ваш e-mail."
-
-#~ msgid "Hide your e-mail address but allow form e-mail."
-#~ msgstr "Приховати адресу електронної пошти, але дозволити надсилати пошту."
-
-#~ msgid "Hide your e-mail address and disallow form e-mail."
-#~ msgstr "Приховати адресу електронної пошти та заборонити надсилати пошту."
-
-#~ msgid "Name"
-#~ msgstr "Ім’я"
-
-#~ msgid "Groups"
-#~ msgstr "Групи"
-
-#~ msgid "Only users from these groups can see this category"
-#~ msgstr "Тільки користувачі з цих груп можуть бачити цю категорію"
-
-#~ msgid "Position"
-#~ msgstr "Позиція"
-
-#~ msgid "Category"
-#~ msgstr "Категорія"
-
-#~ msgid "Categories"
-#~ msgstr "Категорії"
-
-#~ msgid "New topics by moderators only"
-#~ msgstr "Нові теми тільки модераторами"
-
-# 90%
-#~ msgid "Description"
-#~ msgstr "Опис"
-
-#~ msgid "Moderators"
-#~ msgstr "Модератори"
-
-#~ msgid "Updated"
-#~ msgstr "Оновлено"
-
-#~ msgid "Post count"
-#~ msgstr "Кількість повідломлень"
-
-#~ msgid "Topic count"
-#~ msgstr "Кількість тем"
-
-# 87%
-#~ msgid "Created"
-#~ msgstr "Створено"
-
-#~ msgid "Views count"
-#~ msgstr "Кількість переглядів"
-
-#~ msgid "Sticky"
-#~ msgstr "Sticky"
-
-# 83%
-#~ msgid "Closed"
-#~ msgstr "Закриті"
-
-#~ msgid "Subscribers"
-#~ msgstr "Підписники"
-
-#~ msgid "Topic"
-#~ msgstr "Тема"
-
-#~ msgid "Updated by"
-#~ msgstr "Оновлено"
-
-#~ msgid "Markup"
-#~ msgstr "Позначено"
-
-#~ msgid "HTML version"
-#~ msgstr "версія HTML"
-
-#~ msgid "User IP"
-#~ msgstr "ІР користувача"
-
-#~ msgid "From"
-#~ msgstr "Від"
-
-#~ msgid "To"
-#~ msgstr "Для"
-
-#~ msgid "Sign"
-#~ msgstr "Вхід"
-
-#~ msgid "Reason"
-#~ msgstr "Причина"
-
-#~ msgid "Reputation"
-#~ msgstr "Репутація"
-
-#~ msgid "Reputations"
-#~ msgstr "Репутації"
-
-#~ msgid "Status"
-#~ msgstr "Статус"
-
-#~ msgid "Site"
-#~ msgstr "Сайт"
-
-#~ msgid "Jabber"
-#~ msgstr "Jabber"
-
-#~ msgid "ICQ"
-#~ msgstr "ICQ"
-
-#~ msgid "MSN"
-#~ msgstr "MSN"
-
-#~ msgid "AIM"
-#~ msgstr "AIM"
-
-#~ msgid "Yahoo"
-#~ msgstr "Yahoo"
-
-#~ msgid "Location"
-#~ msgstr "Розміщення"
-
-#~ msgid "Signature"
-#~ msgstr "Підпис"
-
-#~ msgid "Time zone"
-#~ msgstr "Часовий пояс"
-
-# 87%
-#~ msgid "Language"
-#~ msgstr "Мова"
-
-#~ msgid "Avatar"
-#~ msgstr "Аватар"
-
-#~ msgid "Theme"
-#~ msgstr "Тема"
-
-#~ msgid "Show avatar"
-#~ msgstr "Показати аватар"
-
-#~ msgid "Show signatures"
-#~ msgstr "Показати підпис"
-
-#~ msgid "Show smilies"
-#~ msgstr "Показати смайли"
-
-#~ msgid "Privacy permission"
-#~ msgstr "Права конфіденційності"
-
-#~ msgid "Auto subscribe"
-#~ msgstr "Автоматична підписка"
-
-#~ msgid "Auto subscribe all topics you have created or reply."
-#~ msgstr "Автоматично підписатися на всі теми, які ви створили або відповідали."
-
-#~ msgid "Default markup"
-#~ msgstr "Позначка за замовчуванням"
-
-# 87%
-#~ msgid "Profiles"
-#~ msgstr "Профілі"
-
-#~ msgid "Post tracking"
-#~ msgstr "Трекінг повідомлення"
-
-#~ msgid "Reported by"
-#~ msgstr "Повідомляє"
-
-#~ msgid "Zapped"
-#~ msgstr "Затерто"
-
-#~ msgid "Zapped by"
-#~ msgstr "Затерто"
-
-# 85%
-#~ msgid "Reports"
-#~ msgstr "Звіти"
-
-#~ msgid "Banned user"
-#~ msgstr "Блокований користувач"
-
-#~ msgid "Ban start"
-#~ msgstr "Заблоковано"
-
-#~ msgid "Ban end"
-#~ msgstr "Розблоковано"
-
-#~ msgid "Ban"
-#~ msgstr "Блоковано"
-
-#~ msgid "Bans"
-#~ msgstr "Блоковані"
-
-# 75%
-#~ msgid "Size"
-#~ msgstr "Розмір"
-
-#~ msgid "Content type"
-#~ msgstr "Тип вмісту"
-
-#~ msgid "Path"
-#~ msgstr "Шлях"
-
-#~ msgid "Hash"
-#~ msgstr "Хеш"
-
-#~ msgid "How many choices are allowed simultaneously."
-#~ msgstr "Забагато варіантів дозволено одночасно."
-
-#~ msgid "Can users vote to this poll or just see the result?"
-#~ msgstr ""
-#~ "Чи можуть користувачі голосувати у цьому опитуванні або просто побачити "
-#~ "результат?"
-
-#~ msgid "Point of time after this poll would be automatic deactivated"
-#~ msgstr "Момент часу після якого опитування буде відключено автоматично"
-
-#~ msgid "Users who has voted this poll."
-#~ msgstr "Користувачі, які проголосували цьому опитуванні."
-
-#, python-format
-#~ msgid ""
-#~ "Sorry, you need to host your images with a service like imageshack.com. "
-#~ "Please update your image links or remove all BB code [img] tags. Bad image "
-#~ "url: %s"
-#~ msgstr ""
-#~ "На жаль, потрібно щоб ваші зображення знаходились на сервісі, такому як "
-#~ "imageshack.com. Будь ласка, поновіть ваші посилання на зображення або "
-#~ "видаліть весь BB-код  [IMG] тегів. Неправильний URL зображення: %s"
-
-#~ msgid "Topics deleted."
-#~ msgstr "Теми вилучено."
-
-#~ msgid "Topics opened."
-#~ msgstr "Теми відкрито."
-
-#~ msgid "Topics closed."
-#~ msgstr "Теми закрито."
-
-#, python-format
-#~ msgid "Found %i posts."
-#~ msgstr "Знайдено %i повідомлень."
-
-#, python-format
-#~ msgid "Found %i topics."
-#~ msgstr "Знайдено %i тем."
-
-#~ msgid "Marked all topics as read."
-#~ msgstr "Позначити усі теми, як прочитані."
-
-#~ msgid "Post reported."
-#~ msgstr "Повідомлення надіслано."
-
-#~ msgid "Email sent."
-#~ msgstr "Email надіслано."
-
-#~ msgid "Email could not be sent."
-#~ msgstr "Email не може бути відправлено."
-
-#~ msgid "Reply saved."
-#~ msgstr "Відповідь збережено."
-
-#~ msgid "This poll is not active."
-#~ msgstr "Це опитування не є активним."
-
-#~ msgid "You already voted on this poll."
-#~ msgstr "Ви вже голосували у цьому опитуванні."
-
-#~ msgid "Vote saved."
-#~ msgstr "Голос збережено."
-
-#~ msgid "Topic with poll saved."
-#~ msgstr "Тему з опитуванням збережено."
-
-#~ msgid "Topic saved."
-#~ msgstr "Тему збережено."
-
-#~ msgid "Avatar uploaded."
-#~ msgstr "Аватар завантажено."
-
-#~ msgid "Please sign in."
-#~ msgstr "Здійсніть вхід."
-
-#~ msgid "Profile saved."
-#~ msgstr "Профіль збережено."
-
-#~ msgid "Reputation deleted."
-#~ msgstr "Репутацію вилучено."
-
-#~ msgid "Reputation saved."
-#~ msgstr "Репутацію збережено."
-
-#~ msgid "You don't have permission to edit this post."
-#~ msgstr "Ви не маєте прав на зміну цього повідомлення."
-
-# 76%
-#~ msgid "Post updated."
-#~ msgstr "Повідомлення оновлено."
-
-#~ msgid "Post deleted."
-#~ msgstr "Повідомлення вилучено."
-
-#~ msgid "The topic ID must be an integer."
-#~ msgstr "ID теми повинен бути цілим числом."
-
-#~ msgid "That thread doesn't exist."
-#~ msgstr "Ця тема не існує."
-
-#~ msgid "Posts moved."
-#~ msgstr "Повідомлення переміщено."
-
-#~ msgid "Topic moved."
-#~ msgstr "Тему переміщено."
-
-#~ msgid "Topic stickied."
-#~ msgstr "Тему закріплено."
-
-#~ msgid "Topic unstickied."
-#~ msgstr "Тему розкріплено."
-
-#~ msgid "You don't have permission to delete this post."
-#~ msgstr "Ви не маєте прав на вилучення цього повідомлення."
-
-# 90%
-#~ msgid "You don't have permission to mark this post."
-#~ msgstr "Ви не маєте прав на зміну цього повідомлення."
-
-#~ msgid "There was not enough data collected to mark this post."
-#~ msgstr "Там не було достатньої кількості даних, зібраних по цьому повідомленню."
-
-#~ msgid "Post marked as spam."
-#~ msgstr "Повідомлення позначено як спам."
-
-#~ msgid "This post is not in the right state to be marked as spam."
-#~ msgstr "Це повідомлення не може бути поміченим як спам."
-
-#~ msgid "Post un-marked as spam."
-#~ msgstr "Повідомлення не помічені як спам."
-
-#~ msgid "This post is not in the right state to be un-marked as spam."
-#~ msgstr ""
-#~ "Це повідомлення не в правильному стані, щоб бути просто не позначене як спам."
-
-#~ msgid "Topic closed."
-#~ msgstr "Тему закрито."
-
-#~ msgid "Topic opened."
-#~ msgstr "Тему відкрито."
-
-#~ msgid "Unsubscribed from topic."
-#~ msgstr "Відписатися від теми."
-
-#~ msgid "Subscribed to topic."
-#~ msgstr "Підписатися на тему."
-
-#~ msgid "New Topic"
-#~ msgstr "Нова тема"
-
-#~ msgid "Discuss Scratch"
-#~ msgstr "Обговорення Скретчу"
-
-#~ msgid "Notice"
-#~ msgstr "Повідомлення"
-
-#, python-format
-#~ msgid "Delete Posts - %(name)s"
-#~ msgstr "Вилучення повідомлень - %(name)s"
-
-#~ msgid "Delete Posts"
-#~ msgstr "Вилучення повідомленнь"
-
-#, python-format
-#~ msgid "Last edited by %(user)s (%(time)s)"
-#~ msgstr "Останні зміни від %(user)s (%(time)s)"
-
-#~ msgid "Select"
-#~ msgstr "Обрати"
-
-#~ msgid "Go back"
-#~ msgstr "Повернутися"
-
-#, python-format
-#~ msgid "Edit Post - %(name)s"
-#~ msgstr "Змінити повідомлення - %(name)s"
-
-#~ msgid "Edit Post"
-#~ msgstr "Зміна повідомлення"
-
-#~ msgid "Edit post"
-#~ msgstr "Зміна повідомлення"
-
-#~ msgid "Silent edit (don't display 'Edited by ...' in topic view)"
-#~ msgstr "\"Тиха\" зміна (без \"Змінено ...\" в перегляді теми)"
-
-#~ msgid "Save"
-#~ msgstr "Збереження"
-
-#~ msgid ""
-#~ "Can't find an answer to your question? Click here to ask it in a new thread."
-#~ msgstr "Не знайшли відповідь на питання? Клацніть тут щоб створити нову тему."
-
-#~ msgid "New topic"
-#~ msgstr "Нова тема"
-
-#~ msgid "Replies"
-#~ msgstr "Відповіді"
-
-#~ msgid "Last Post"
-#~ msgstr "Останнє повідомлення"
-
-#~ msgid "Sticky:"
-#~ msgstr "Важливо:"
-
-#~ msgid "(New Posts)"
-#~ msgstr "(Нові повідомлення)"
-
-#~ msgid "Forum is empty."
-#~ msgstr "Форум порожній."
-
-#~ msgid "Moderate forum"
-#~ msgstr "Модерувати форум"
-
-#~ msgid "Show new posts since last visit"
-#~ msgstr "Показати нові повідомлення з часу останнього візиту"
-
-#~ msgid "Discussion Home"
-#~ msgstr "Домівка обговорень"
-
-#, python-format
-#~ msgid "Reports (%(report_count)s)"
-#~ msgstr "Звіти (%(report_count)s)"
-
-#~ msgid "Show your"
-#~ msgstr "Ваші"
-
-#~ msgid "topics"
-#~ msgstr "теми"
-
-#~ msgid "posts"
-#~ msgstr "повідомлення"
-
-#~ msgid "Change your signature"
-#~ msgstr "Змінити підпис"
-
-#~ msgid "Show recent posts"
-#~ msgstr "Показати останні"
-
-#~ msgid "Show unanswered posts"
-#~ msgstr "Повідомлення без відповіді"
-
-#~ msgid "Mark all topics as read"
-#~ msgstr "Позначити все як прочитане"
-
-#~ msgid "Send e-mail to"
-#~ msgstr "Послати e-mail для"
-
-#~ msgid "Write and submit your e-mail message"
-#~ msgstr "Написати та відіслати e-mail"
-
-#~ msgid ""
-#~ "Please note that by using this form, your e-mail address will be disclosed "
-#~ "to the recipient."
-#~ msgstr ""
-#~ "Завважте, що використовуючи цю форму вашу адресу буде відомо отримувачу."
-
-#, python-format
-#~ msgid "Moderate - %(name)s"
-#~ msgstr "Модерувати - %(name)s"
-
-#~ msgid "Moderate Forum"
-#~ msgstr "Модерувати форум"
-
-#~ msgid "Open"
-#~ msgstr "Відкрити"
-
-#~ msgid "Moderated by"
-#~ msgstr "Модеровано"
-
-#, python-format
-#~ msgid "Move Posts - %(name)s"
-#~ msgstr "Перемістити повідомлення - %(name)s"
-
-#~ msgid "Move Posts"
-#~ msgstr "Перемістити повідомлення"
-
-#~ msgid "All posts (original topic will be deleted)"
-#~ msgstr "Усі повідомлення (оригінали буде вилучено)"
-
-#~ msgid "Topic ID or URL"
-#~ msgstr "ID чи URL повідомлення"
-
-#~ msgid "Move Topic"
-#~ msgstr "Перемістити повідомлення"
-
-#~ msgid "Move to"
-#~ msgstr "Перемістити до"
-
-#~ msgid "Pages"
-#~ msgstr "Сторінки"
-
-#~ msgid "Report Post"
-#~ msgstr "Звіт"
-
-#~ msgid "Please enter a short reason why you are reporting this post."
-#~ msgstr "Ввідіть причини чому ви повідомляєте про цей пост."
-
-#~ msgid "Reputation of the user"
-#~ msgstr "Репутація користувача"
-
-#~ msgid "From user"
-#~ msgstr "Від користувача"
-
-#~ msgid "For post in topic"
-#~ msgstr "Для повідомлення в темі"
-
-#~ msgid "Estimation"
-#~ msgstr "Оцінка"
-
-# 80%
-#~ msgid "Date"
-#~ msgstr "Дата"
-
-#~ msgid "Are you sure"
-#~ msgstr "Ви впевнені"
-
-#~ msgid "Please, fill the form"
-#~ msgstr "Заповніть цю форму"
-
-#~ msgid "Your name:"
-#~ msgstr "Ваше ім’я:"
-
-#~ msgid "To whom we change a reputation:"
-#~ msgstr "Кому ми міняємо репутацію:"
-
-#~ msgid "Method:"
-#~ msgstr "Метод:"
-
-#~ msgid "Add of a reputation"
-#~ msgstr "Додати до репутації"
-
-#~ msgid "Reduction of a reputation"
-#~ msgstr "Відняти від репутації"
-
-#~ msgid "(Dustbin all posts and topics)"
-#~ msgstr "(Смітник: всі повідомлення і теми)"
-
-#~ msgid ""
-#~ "To search by keyword, enter a term or terms to search for. Separate terms "
-#~ "with spaces. To search by author enter the username of the author whose "
-#~ "posts you wish to search for."
-#~ msgstr ""
-#~ "Для пошуку за ключовим словом, введіть одне або декілька умов для пошуку. "
-#~ "Окремі слова розділяйте пропуском. Для пошуку по автору, введіть ім'я "
-#~ "користувача - автора повідомлення якого ви бажаєте знайти."
-
-#~ msgid "All forums"
-#~ msgstr "Усі форуми"
-
-#~ msgid ""
-#~ "Choose in which forum you would like to search and if you want to search in "
-#~ "topic subjects, message text or both."
-#~ msgstr ""
-#~ "Оберіть в якому форумі ви бажаєте шукати і якщо ви хочете - назву теми, "
-#~ "текстові повідомлення або обоє."
-
-#~ msgid "You can choose how you wish to sort and show your results."
-#~ msgstr "Ви можете обрати, як ви хочете впорядкувати та відображати результат."
-
-#~ msgid "Search Results"
-#~ msgstr "Результат пошуку"
-
-#~ msgid "Show results as topic list."
-#~ msgstr "Відображати результати у вигляді списку тем."
-
-#~ msgid "Info"
-#~ msgstr "Інфо"
-
-#~ msgid "Your search returned no hits."
-#~ msgstr "Ваш пошук нічого не дав."
-
-#~ msgid "Search links"
-#~ msgstr "Пошук посилань"
-
-#~ msgid "Show your subscribed topics"
-#~ msgstr "Показати ваші теми на які підписувались"
-
-#~ msgid "Show your topics"
-#~ msgstr "Показати ваші теми"
-
-#~ msgid "Show results as post list."
-#~ msgstr "Відображати результати у вигляді списку."
-
-#~ msgid "loading..."
-#~ msgstr "завантаження..."
-
-#~ msgid "There was an error :( Try again?"
-#~ msgstr "Була помилка :( Спробувати ще раз?"
-
-#~ msgid "Follow this discussion to get a message when there's a new post"
-#~ msgstr ""
-#~ "Слідкувати за цією дискусією, щоб дізнаватись, коли є у ній нове повідомлення"
-
-#~ msgid "Follow Discussion"
-#~ msgstr "Слідкувати за дискусією"
-
-#~ msgid "Stop getting messages about new posts to this discussion"
-#~ msgstr "Не отримувати сповіщення про нові повідомлення в дискусії"
-
-#~ msgid "Unfollow Discussion"
-#~ msgstr "Не слідкувати за дискусією"
-
-#~ msgid "Poll"
-#~ msgstr "Опитування"
-
-#, python-format
-#~ msgid "(%(count)s answers allows.)"
-#~ msgstr "(%(count)s дозволених відповідей.)"
-
-#~ msgid "Vote"
-#~ msgstr "Голос"
-
-#~ msgid "1000+ posts"
-#~ msgstr "1000+ дописів"
-
-#~ msgid "500+ posts"
-#~ msgstr "500+ дописів"
-
-#~ msgid "100+ posts"
-#~ msgstr "100+ дописів"
-
-#~ msgid "1 post"
-#~ msgstr "1 допис"
-
-# 83%
-#~ msgid " posts"
-#~ msgstr "повідомлення"
-
-#~ msgid "From:"
-#~ msgstr "Від:"
-
-#~ msgid "Registered:"
-#~ msgstr "Зареєстровано:"
-
-#~ msgid "Posts:"
-#~ msgstr "Повідомленнь:"
-
-#~ msgid "IP:"
-#~ msgstr "IP:"
-
-#~ msgid "Really delete all posts, and ban user? This is hard to reverse."
-#~ msgstr ""
-#~ "Ви дійсно хочете видалити всі повідомлення, і заблокувати користувача? Це "
-#~ "важко повернути назад."
-
-#~ msgid "(Edit Signature)"
-#~ msgstr "(Правка підпису)"
-
-#~ msgid "Are you sure you want to mark this as spam?"
-#~ msgstr "Ви впевнені, що хочете позначити це як спам?"
-
-#~ msgid "Mark as Spam"
-#~ msgstr "Позначити як спам"
-
-#~ msgid "Are you sure you want to unmark this as spam?"
-#~ msgstr "Ви впевнені, що хочете зняти позначку це як спам?"
-
-#~ msgid "Un-mark as Spam"
-#~ msgstr "Зняти позначку спаму"
-
-#~ msgid "Are you sure you want to delete this post?"
-#~ msgstr "Ви впевнені що бажаєте вилучити це повідомлення?"
-
-#~ msgid "Edit"
-#~ msgstr "Правка"
-
-#~ msgid "Insert a quotation of this post in your reply."
-#~ msgstr "Вставити цитату з повідомлення у відповідь."
-
-# 83%
-#~ msgid "Quote"
-#~ msgstr "Цитата"
-
-#~ msgid "Jump to"
-#~ msgstr "Перейти до"
-
-#~ msgid "Moderator control"
-#~ msgstr "Керування модератора"
-
-#~ msgid "Delete multiple posts"
-#~ msgstr "Вилучити повторювані повідомлення"
-
-#~ msgid "Move multiple posts"
-#~ msgstr "Перемістити повторювані повідомлення"
-
-#~ msgid "Move topic"
-#~ msgstr "Перемістити тему"
-
-#~ msgid "Open topic"
-#~ msgstr "Відкрити тему"
-
-#~ msgid "Close topic"
-#~ msgstr "Закрити тему"
-
-#~ msgid "Unstick topic"
-#~ msgstr "Unstick"
-
-#~ msgid "Stick topic"
-#~ msgstr "Stick"
-
-#~ msgid "Upload avatar"
-#~ msgstr "Вивантажити аватар"
-
-#~ msgid "Enter an avatar file to upload"
-#~ msgstr "Введіть який файл аватару слід вивантажити"
-
-#, python-format
-#~ msgid ""
-#~ "An avatar is a small image that will be displayed under your username in "
-#~ "your posts. It must not be any bigger than %(avatar_width)s x "
-#~ "%(avatar_height)s pixels "
-#~ msgstr ""
-#~ "Аватар є маленьким зображенням, яке відображається поруч вашого імені "
-#~ "користувача у ваших повідомленнях. Воно не може бути більшим ніж "
-#~ "%(avatar_width)s x %(avatar_height)s пікселів"
-
-#~ msgid "Upload"
-#~ msgstr "Вивантажити"
-
-#~ msgid "YouTube Video"
-#~ msgstr "Відео YouTube"
-
-#~ msgid "Video Not Found"
-#~ msgstr "Відео не знайдено"
-
-#~ msgid "Why do I see this page?"
-#~ msgstr "Чому я бачу цю сторінку?"
-
-#~ msgid ""
-#~ "Links to YouTube videos on the forums are automatically converted to links "
-#~ "to this page, to hide comments and other content."
-#~ msgstr ""
-#~ "Посилання на  відео з YouTube на форумах автоматично перетворюються у "
-#~ "посилання на цю сторінку, щоб приховати коментарі та інші матеріали."
-
-#~ msgid "New Reply"
-#~ msgstr "Нова відповідь"
-
-#~ msgid "Create a poll"
-#~ msgstr "Створити опитування"
-
-#~ msgid "Replies:"
-#~ msgstr "Відповіді:"
-
-#, python-format
-#~ msgid "Signed in as <strong>%(user)s</strong>"
-#~ msgstr "Ви увійшли як <strong>%(user)s</strong>"
-
-# 85%
-#~ msgid "Sign In"
-#~ msgstr "Увійти"
-
-#, python-format
-#~ msgid "%(posts)s post"
-#~ msgid_plural "%(posts)s posts"
-#~ msgstr[0] "%(posts)s повідомлення"
-#~ msgstr[1] "%(posts)s повідомлення"
-#~ msgstr[2] "%(posts)s повідомлень"
-
-#~ msgid "No posts."
-#~ msgstr "Немає повідомлень"
-
-#, python-format
-#~ msgid "%(replies)s reply"
-#~ msgid_plural "%(replies)s replies"
-#~ msgstr[0] "%(replies)s відповідь"
-#~ msgstr[1] "%(replies)s відповіді"
-#~ msgstr[2] "%(replies)s відповідей"
-
-#~ msgid "No topics."
-#~ msgstr "Немає тем."
-
-#, python-format
-#~ msgid "Settings (%(name)s)"
-#~ msgstr "Налаштування (%(name)s)"
-
-#~ msgid ""
-#~ "A signature is a small piece of text that is attached to your posts. In it, "
-#~ "you can enter just about anything you like. Perhaps you would like to enter "
-#~ "your favourite quote or your star sign. It's up to you! In your signature "
-#~ "you can use BBCode if it is allowed in this particular forum. You can see "
-#~ "the features that are allowed/enabled listed below whenever you edit your "
-#~ "signature."
-#~ msgstr ""
-#~ "Підпис являє собою невеликий фрагмент тексту, який додається до вашого "
-#~ "повідомлення. У ньому ви можете ввести будь що, з того що вам подобається. "
-#~ "Може бути, ви хотіли написати улюблену цитату або ваш знак зодіаку. Це "
-#~ "залежить від вас! У вашому підпису можна використовувати BBCode, якщо це "
-#~ "дозволено в даному форумі. Ви можете побачити особливості, які дозволено/ "
-#~ "включено перераховані нижче при редагуванні вашого підпису."
-
-#~ msgid "No signature currently stored in profile."
-#~ msgstr "Немає збереженого підпису у профілі"
-
-#~ msgid "When you update your profile, you will be redirected back to this page."
-#~ msgstr "Оновивши свій профіль, ви маєте повернутися на цю сторінку."
 
 #~ msgid ""
 #~ "First, download any projects that you want to keep. \n"
