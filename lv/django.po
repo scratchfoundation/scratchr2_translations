@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2015-03-23 16:38+0000\n"
-"Last-Translator: Kalvis <kalvis.kincis@r6vsk.lv>\n"
+"PO-Revision-Date: 2015-04-02 13:44+0000\n"
+"Last-Translator: raimondious <ray@scratch.mit.edu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);"
 "\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1427128737.000000\n"
+"X-POOTLE-MTIME: 1427982254.000000\n"
 
 #: views.py:322
 msgid "Your message has been sent. We will respond within 3 days."
@@ -149,7 +149,7 @@ msgstr[2] "dienas"
 #, python-format, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
-msgstr[0] "pirms 1 minūtes"
+msgstr[0] "pirms %(minutes)d minūtes"
 msgstr[1] "pirms %(minutes)d minūtēm"
 msgstr[2] "pirms %(minutes)d minūtēm"
 
@@ -161,7 +161,7 @@ msgstr "nupat"
 #, python-format
 msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
-msgstr[0] "pirms 1 stundas"
+msgstr[0] "pirms %(hours)d stundas"
 msgstr[1] "pirms %(hours)d stundām"
 msgstr[2] "pirms %(hours)d stundām"
 
@@ -2837,6 +2837,7 @@ msgstr ""
 "\n"
 "    Pirms dažādm minūtēm Jūsu bērns reģistrēja jaunu kontu Scratch "
 "(%(scratch_url)s. Lūdzu apstipriniet šo epastu klikšķinot uz pogas zemāk:\n"
+"    "
 
 #: templates/accounts/email_verification/verification_email_plain.html:11
 #, python-format
@@ -2847,8 +2848,9 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Tu nupat reģistrētji jaunu kontu Scratch (%(scratch_url)s. Lūdzu apstiprini "
-"šo epastu klikšķinot uz pogas zemāk:\n"
+"    Tu nupat reģistrētji jaunu kontu Scratch (%(scratch_url)s). Lūdzu "
+"apstiprini šo epastu klikšķinot uz pogas zemāk:\n"
+"    "
 
 #: templates/accounts/email_verification/verification_email_plain.html:19
 #, python-format
@@ -2865,6 +2867,7 @@ msgstr ""
 "bērni var veidot interaktīvus stāstus, spēles un animācijas. Apstiprinot šo "
 "epastu, Jūsu bērns saņems pilnu pieeju komentēšanai un koplietošanai Scratch "
 "kopienā. Uzziniet vairāk %(about_url)s.\n"
+"    "
 
 #: templates/accounts/email_verification/verification_email_plain.html:23
 #, python-format
@@ -2881,6 +2884,7 @@ msgstr ""
 "kurā vari veidot savus interaktīvos stāstus, spēles un animācijas. Epasta "
 "adreses apstiprināšana dos tev pilnu pieeju iespējai dalīties un komentēt "
 "Scratch kopienā. Uzzini vairāk %(about_url)s.\n"
+"    "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:6
 msgid "Want to Share Projects, Comment, and Post in the Discussion Forums?"
@@ -2897,9 +2901,10 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"Klikšķini uz siates epastā, ko tev nosūtījām:\n"
-"<br/>\n"
-"<strong>%(email_address)s</strong>\n"
+"        Klikšķini uz siates epastā, ko tev nosūtījām:\n"
+"        <br/>\n"
+"        <strong>%(email_address)s</strong>\n"
+"      "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:16
 #, python-format
@@ -2913,6 +2918,7 @@ msgstr ""
 "\n"
 "Nesaņem epastus? Pārliecinies, ka epasta adrese ir pareiza. Adresi vari "
 "nomainīt <a href=\"%(settings_url)s\">Konta iestatījumos</a>.\n"
+"      "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:22
 msgid "Before resending, check your spam folder."
@@ -3864,6 +3870,7 @@ msgstr ""
 "Vēlies uzzināt vairāk par mācīšanos ar Scratch?<br/> Lasi par to <a href=\""
 "http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd tiešsaistes "
 "kopienā</a>.\n"
+"    "
 
 #: templates/info/educators.html:26
 msgid ""
@@ -4084,6 +4091,7 @@ msgid ""
 msgstr ""
 "Lasi mūsu<a href=\"http://scratched.gse.harvard.edu/hoc\">piezīmes "
 "skolotājiem</a>ScratchEd mājaslapā.\n"
+"  "
 
 #: templates/info/hoc2014.html:49
 msgid "Scratch: Imagine, Program, Share"
@@ -4499,14 +4507,15 @@ msgid ""
 "and I thank you wholeheartedly. \n"
 "\""
 msgstr ""
-"<b>Mana ļoti kautrīgā, bet ar tehnisko domāšanu apveltītā meita šo projektu "
-"uzskata par fantastisku un drošu iespēju savam radošumam.</b> Viņa pavada "
-"savu brīvo laiku veidojot arvien sarežģītākas animācijas un kopīgojot tās ar "
-"Scratch kopienu. Forumos viņa satikusi grupu ar līdzīgi domājošajiem, ar "
-"kuriem var uzturēt sarunas... Tagad viņai šķiet, ka dators, grafiskais "
+"<b>\"Mana ļoti kautrīgā, bet ar tehnisko domāšanu apveltītā meita šo "
+"projektu uzskata par fantastisku un drošu iespēju savam radošumam.</b> Viņa "
+"pavada savu brīvo laiku veidojot arvien sarežģītākas animācijas un kopīgojot "
+"tās ar Scratch kopienu. Forumos viņa satikusi grupu ar līdzīgi domājošajiem, "
+"ar kuriem var uzturēt sarunas... Tagad viņai šķiet, ka dators, grafiskais "
 "dizains un animācija ir kas tāds, ar ko viņa vēlas saistīt nākotni. Jūsu "
 "programma manai meitai ir atvērusi jaunu pasauli dažādos veidos, par ko es "
 "jums no visas sirds pateicos. \n"
+"\""
 
 #: templates/info/parents.html:58
 msgid ""
@@ -5579,6 +5588,7 @@ msgstr ""
 "projektiem. Ja vēlies strādāt ar projektiem pilnīgi privāti, vari izmantot "
 "vai nu <a href=\"/scratch2download\">Scratch 2 bezsaistes redaktoru</a> vai <"
 "a href =\"/scratch_1.4\">Scratch 1.4</a>.\n"
+"  "
 
 #: templates/info/help/faq.html:109
 msgid "What is a remix?"
@@ -6428,6 +6438,7 @@ msgstr ""
 "Pēc <strong>Iesācēju ceļveža</strong>, izvēliem <a href=\"#Introductory "
 "Tutorials\">Iesācēju pamācības</a> vai <a href=\"#Paint Editor Tips\">"
 "Grafiskā redaktora padomus</a>.\n"
+"        "
 
 #: templates/info/help/videos.html:39
 msgid "Introductory Tutorials"
@@ -8185,6 +8196,7 @@ msgstr ""
 "sarakstā. Izvēloties \n"
 "   \"pēdējais\" ievietos vienumu saraksta beigās. Saraksta garums palielinās "
 "par 1.\n"
+"  "
 
 #: templates/info/help/studio/tips/blocks/insert-list.html:21
 #, python-format
@@ -9609,6 +9621,7 @@ msgstr ""
 "png\" />gaidīs kamēr izpildīsies visas programmas, kas sākas ar <img src=\""
 "%(STATIC_URL)s/images/help/when-backdrop-switches-to-backdrop1.png\" /> un "
 "tad pāries uz nākamo bloku.   \n"
+" "
 
 #: templates/info/help/studio/tips/blocks/switch-backdrop.html:7
 msgid "Switch to the specified backdrop"
