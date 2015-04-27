@@ -108,7 +108,7 @@ msgstr "Devi indicare una email o uno username"
 #: templates/accounts/password_change_form.html:10
 #: templates/accounts/deletion/confirmation.html:8
 #: templates/accounts/deletion/nostalgia.html:7
-#: templates/info/educators.html:52
+#: templates/info/educators.html:52 templates/info/educators.html:60
 msgid "Email"
 msgstr "Email"
 
@@ -1820,16 +1820,17 @@ msgstr "Info"
 #: templates/base.html:327 templates/info/about.html:13
 #: templates/info/help/index.html:92 templates/mail/base.html:57
 #: templates/base.html:328 templates/info/layout/index.html:92
+#: templates/info/index.html:92
 msgid "About Scratch"
 msgstr "Info"
 
 #: templates/base.html:328 templates/info/parents.html:12
-#: templates/base.html:329
+#: templates/base.html:329 templates/info/parents.html:14
 msgid "For Parents"
 msgstr "Per i Genitori"
 
 #: templates/base.html:329 templates/info/educators.html:12
-#: templates/base.html:330
+#: templates/base.html:330 templates/info/educators.html:14
 msgid "For Educators"
 msgstr "Per Educatori"
 
@@ -1846,7 +1847,7 @@ msgid "Press"
 msgstr "Stampa"
 
 #: templates/base.html:336 templates/info/parents.html:72
-#: templates/base.html:337
+#: templates/base.html:337 templates/info/parents.html:78
 msgid "Community"
 msgstr "Comunità"
 
@@ -1856,6 +1857,7 @@ msgstr "Linee Guida della Comunità"
 
 #: templates/base.html:340 templates/info/help/index.html:113
 #: templates/base.html:341 templates/info/layout/index.html:113
+#: templates/info/index.html:113
 msgid "Scratch Wiki"
 msgstr "Il Wiki di Scratch"
 
@@ -1902,7 +1904,8 @@ msgstr "Condizioni di uso"
 #: templates/base.html:358 templates/info/help/faq.html:28
 #: templates/info/help/faq.html.py:80 templates/mail/base.html:56
 #: templates/base.html:359 templates/info/layout/faq.html:28
-#: templates/info/layout/faq.html.py:80
+#: templates/info/layout/faq.html.py:80 templates/info/faq.html:34
+#: templates/info/faq.html.py:83
 msgid "Privacy Policy"
 msgstr "Politica della Privacy"
 
@@ -1958,18 +1961,6 @@ msgstr "Disponibile tra pochissimo"
 #: templates/info/scratch2download.html:27
 msgid "Account Blocked"
 msgstr "Account Bloccato"
-
-#: templates/contact-us.html:86 templates/contact-us.html:92
-msgid ""
-"The Scratch Team receives a large number of messages each day. "
-"Unfortunately, we do not have time to answer all of them. Luckily, you can "
-"find answers to most questions about Scratch on our  <a href=\"/help/faq/"
-"\">Frequently Asked Questions</a> page."
-msgstr ""
-"Il Team di Scratch riceve moltissimi messaggi ogni giorno. Sfortunatamente, "
-"non abbiamo il tempo di rispondere a tutti. Ma, fortunatamente, puoi trovare "
-"molte risposte alle tue domande nella nostra pagina <a href=\"/help/faq/"
-"\">Domande Frequenti</a>."
 
 #: templates/contact-us.html:88 templates/contact-us.html:94
 msgid ""
@@ -3780,11 +3771,11 @@ msgstr ""
 "<a href=\"/parents\">INFORMAZIONI PER I GENITORI</a> | <a href=\"/educators"
 "\">INFORMAZIONI PER GLI EDUCATORI</a>"
 
-#: templates/info/about.html:35
+#: templates/info/about.html:35 templates/info/about.html:37
 msgid "Who Uses Scratch?"
 msgstr "Chi usa Scratch?"
 
-#: templates/info/about.html:38
+#: templates/info/about.html:38 templates/info/about.html:40
 msgid ""
 "Scratch is designed especially for ages 8 to 16, but is used by people of "
 "all ages. Millions of people are creating Scratch projects in a wide variety "
@@ -3796,31 +3787,15 @@ msgstr ""
 "con Scratch a casa, a scuola ma anche in musei, biblioteche e centri "
 "ricreativi."
 
-#: templates/info/about.html:40
+#: templates/info/about.html:40 templates/info/about.html:42
 msgid "Around the World"
 msgstr "Nel Mondo"
 
-#: templates/info/about.html:43
-msgid ""
-"Scratch is used in more than 150 different countries and available in more "
-"than 40 languages. To change languages, click the menu at the bottom of the "
-"page. Or, in the Project Editor, click the globe at the top of the page. To "
-"add or improve a translation, \n"
-"  see the <a href=\"http://wiki.scratch.mit.edu/wiki/How_to_Translate_Scratch"
-"\">translation</a> page."
-msgstr ""
-"Scratch è usato in più di 150 nazioni ed è disponibile in più di 40 lingue "
-"diverse. Per cambiare lingua, usa il menu in fondo alla pgina. Oppure, "
-"nell'Editor dei Progetti, clicca sul simbolo del mondo in cima alla pagina. "
-"Per aggiungere o migliorare una traduzione, \n"
-"  vai alla pagina <a href=\"http://wiki.scratch.mit.edu/wiki/"
-"How_to_Translate_Scratch\">traduzioni</a>."
-
-#: templates/info/about.html:46
+#: templates/info/about.html:46 templates/info/about.html:48
 msgid "Quotes"
 msgstr "Citazioni"
 
-#: templates/info/about.html:48
+#: templates/info/about.html:48 templates/info/about.html:50
 msgid ""
 "The Scratch Team has received many emails from youth, parents, and educators "
 "expressing thanks for Scratch. Want to see what people are saying? You can "
@@ -3831,109 +3806,29 @@ msgstr ""
 "persone dicono di Scratch? Puoi leggere una breve raccolta di <a href=\"/"
 "info/quotes\">citazioni</a> che abbiamo ricevuto. "
 
-#: templates/info/about.html:50
+#: templates/info/about.html:50 templates/info/about.html:52
 msgid "Learn More About Scratch"
 msgstr "Impara tutto su Scratch"
 
-#: templates/info/about.html:53
-msgid ""
-"\n"
-"    <li><a href=\"../help/\">Scratch Help Page</a></li>\n"
-"    <li><a href=\"../help/faq/\">Frequently Asked Questions</a></li>\n"
-"    <li><a href=\"../parents/\">Information for Parents</a></li>\n"
-"    <li><a href=\"/info/credits/\">Scratch Credits</a></li>\n"
-"    "
-msgstr ""
-"\n"
-"    <li><a href=\"../help/\">Pagina dell'Aiuto di Scratch</a></li>\n"
-"    <li><a href=\"../help/faq/\">Domande Frequenti</a></li>\n"
-"    <li><a href=\"../parents/\">Informazioni per i Genitori</a></li>\n"
-"    <li><a href=\"/info/credits/\">Crediti di Scratch</a></li>\n"
-"    "
-
 #: templates/info/about.html:70 templates/info/hoc2014.html:58
+#: templates/info/about.html:67
 msgid "Learn to Code, Code to Learn"
 msgstr "Impara a Programmare, Programma per Imparare"
 
-#: templates/info/about.html:73
-msgid ""
-"\n"
-"  The ability to code computer programs is an important part of literacy in "
-"today’s society. When people learn to code in Scratch, they learn important "
-"strategies for solving problems, designing projects, and communicating "
-"ideas.\n"
-msgstr ""
-"\n"
-"  La capacità di creare programmi con un computer è una conoscenza "
-"importante nella società moderna. Quando qualcuno impara a programmare con "
-"Scratch impara allo stesso tempo importanti strategie per risolvere "
-"problemi,   creare progetti e comunicare le proprie idee.\n"
-
-#: templates/info/about.html:77
+#: templates/info/about.html:77 templates/info/about.html:74
 msgid "Scratch in Schools"
 msgstr "Scratch nelle Scuole"
 
-#: templates/info/about.html:80
-msgid ""
-"\n"
-"  Students are learning with Scratch at all levels (from elementary school "
-"to college) and across disciplines (such as math, computer science, language "
-"arts, social studies). Educators share stories, exchange resources, ask "
-"questions, and find people on the <a href=\"http://scratched.gse.harvard.edu/"
-"\">ScratchEd website</a>.\n"
-msgstr ""
-"\n"
-"  Scratch viene usato da studenti di tutti i livelli (dalla scuola "
-"elementare fino all'università) e per tutte le discipline (matematica, "
-"informatica, lingue, scienze sociali). Gli educatori sono condividere le "
-"loro storie, scambiare risorse, fare domande e trovare persone sul <a href="
-"\"http://scratched.gse.harvard.edu/\">sito ScratchEd</a>.\n"
-
-#: templates/info/about.html:84
+#: templates/info/about.html:84 templates/info/about.html:81
 msgid "Research"
 msgstr "Cerca"
 
-#: templates/info/about.html:87
-msgid ""
-"The MIT Scratch Team and collaborators are researching how people use and "
-"learn with Scratch (for an introduction, see <a href=\"http://web.media.mit."
-"edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). "
-"Find out more about <a href=\"/info/research\">Scratch research</a> and <a "
-"href=\"/statistics\">statistics about Scratch</a>.\n"
-msgstr ""
-"Il Team di Scratch del MIT e i suoi collaboratori stanno portando avanti "
-"delle ricerche sul modo in cui le persone utilizzano e imparano con Scratch "
-"(per un'introduzione, vedi <a href=\"http://web.media.mit.edu/~mres/papers/"
-"Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). Trova altre "
-"informazioni sulla <a href=\"/info/research\">Ricerca su Scratch</a> e sulle "
-"<a href=\"/statistics\">statistiche di Scratch</a>.\n"
-
-#: templates/info/about.html:90
+#: templates/info/about.html:90 templates/info/about.html:87
 msgid "Support and Funding"
 msgstr "Sostegno e Finanziamenti"
 
-#: templates/info/about.html:92
-msgid ""
-"\n"
-"The Scratch project, initiated in 2003, has received generous support from "
-"the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), "
-"Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Code-to-"
-"Learn Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab "
-"research consortia. If you'd like to support Scratch, please see our \n"
-"<a href=\"https://secure.donationpay.org/codetolearn/\">donate page</a>, or "
-"contact us at donate@scratch.mit.edu.\n"
-msgstr ""
-"\n"
-"Il progetto Scratch, avviato nel 2003, ha ricevuto generosi finanziamenti "
-"dalla National Science Foundation (borse 0325828, 1002713, 1027848, "
-"1019396), Intel Foundation, Microsoft, MacArthur Foundation, LEGO "
-"Foundation, Code-to-Learn Foundation, Google, Dell, Fastly, Inversoft e dal "
-"consorzio di ricerca MIT Media Lab. Se vuoi supportare Scratch vai alla "
-"nostra \n"
-"<a href=\"https://secure.donationpay.org/codetolearn/\">pagina delle "
-"donazioni</a>, or contact us at donate@scratch.mit.edu.\n"
-
 #: templates/info/characterscamp.html:9 templates/info/characterscamp.html:16
+#: templates/info/characterscamp.html:198
 msgid "Creative Characters Camp"
 msgstr "Creative Characters Camp"
 
@@ -3993,139 +3888,32 @@ msgstr "Il Team di Scratch del MIT"
 msgid "Scratch - For Educators"
 msgstr "Scratch - Per Educatori"
 
-#: templates/info/educators.html:15
-msgid ""
-"Scratch is designed with learning and education in mind. A wide variety of "
-"educators have been supporting Scratch creators since 2007, in both formal "
-"and informal learning environments &ndash; K-12 classroom teachers, "
-"educational and computer science researchers, librarians, museum educators, "
-"and parents.<br/><br/>\n"
-"Want to learn more about learning with Scratch?<br/>Check out the <a href="
-"\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd online "
-"community</a>.\n"
-"    "
-msgstr ""
-"Scratch è stato progetto avendo come obiettivi principali l'apprendimento e "
-"la didattica. Educatori di molte diverse provenienze hanno supportato i "
-"creatori di Scratch sin dal 2007, sia in ambienti di apprendimento formali "
-"che informali &ndash; insegnanti della scuola primaria e secondaria, "
-"ricercatori di didattica e informatica, bibliotecari, animatori di musei e "
-"genitori.<br/><br/>\n"
-"Vuoi saperne di più su come imparare con Scratch?<br/>Dai un'occhiata alla "
-"<a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">comunità "
-"online di ScratchEd</a>.\n"
-"    "
-
-#: templates/info/educators.html:26
-msgid ""
-"\n"
-" <h3>What is ScratchEd?</h3>\n"
-"\t      <p>Launched in July 2009, <a href=\"http://scratched.gse.harvard.edu"
-"\" target=\"_blank\">ScratchEd</a> is an online community where Scratch "
-"educators share stories, exchange resources, ask questions, and find people."
-"</p>\n"
-"\t      <p>Since its launch, more than 7500 educators from all around the "
-"world have joined the community, sharing hundreds of resources and engaging "
-"in thousands of discussions.</p>\n"
-"\t      <p>Join the ScratchEd community for free at <a href=\"http://"
-"scratched.gse.harvard.edu\" target=\"_blank\">scratched.gse.harvard.edu</a>."
-"<p>\n"
-"\t      "
-msgstr ""
-"\n"
-" <h3>Cosa è ScratchEd?</h3>\n"
-"\t      <p>Lanciato nel Luglio 2009, <a href=\"http://scratched.gse.harvard."
-"edu\" target=\"_blank\">ScratchEd</a> è una comunità online dove chi insegna "
-"Scratch può condividere storie, scambiare risorse, fare domande e trovare "
-"altre persone.</p>\n"
-"\t      <p>Da quanto è stato lanciato più di 7500 educatori provenienti da "
-"tutto il mondo si sono uniti alla comunità, condividendo centinaia di "
-"risorse e impegnandosi in migliaia di discussioni.</p>\n"
-"\t      <p>Unisciti gratuitamente alla comunità di ScratchEd su <a href="
-"\"http://scratched.gse.harvard.edu\" target=\"_blank\">scratched.gse.harvard."
-"edu</a>.<p>\n"
-"\t      "
-
-#: templates/info/educators.html:32
-msgid ""
-"\n"
-"\t      <h3>How can I learn more about what educators are doing with Scratch "
-"&ndash; and how I might use it?</h3>\n"
-"\t      <p>Not sure what might be possible with Scratch?</p>\n"
-"\t      <p><a href=\"http://scratched.gse.harvard.edu/stories\" target="
-"\"_blank\">Read a story</a> about how educators have been including Scratch "
-"activities in a wide range of learning environments.</a></p>\n"
-"\t      <p>Or <a href=\"http://scratched.gse.harvard.edu/resources/all\" "
-"target=\"_blank\">explore resources</a> across ages, disciplines, and "
-"settings. <a href=\"http://scratched.gse.harvard.edu/resources/new-scratch\" "
-"target=\"_blank\">Watch webinars</a> and review documents like the <a href="
-"\"http://scratched.gse.harvard.edu/resources/scratch-curriculum-guide-draft"
-"\" target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
-"\t      <p>In addition to exploring the <a href=\"http://scratched.gse."
-"harvard.edu\" target=\"_blank\">ScratchEd</a> online community and its "
-"resources, you can engage with the ScratchEd Team and other Scratch "
-"educators via <a href=\"http://twitter.com/scratchedteam\" target=\"_blank>"
-"\">Twitter</a>, <a href=\"http://www.facebook.com/ScratchEdTeam\" target="
-"\"_blank>\">Facebook</a>, <a href=\"http://www.edmodo.com/publisher/"
-"scratcheducation\" target=\"_blank>\">Edmodo</a>, <a href=\"http://scratched."
-"gse.harvard.edu/discussions/scratched-weekly-roundup\" target=\"_blank>"
-"\">weekly roundups</a>, and our <a href=\"http://scratched.gse.harvard.edu/"
-"events\" target=\"_blank>\">quarterly newsletter</a>.<p>\n"
-"\t      "
-msgstr ""
-"\n"
-"\t      <h3>Come posso saperne di più su cosa stanno facendo gli educatori "
-"con Scratch &ndash; e su come posso usarlo?</h3>\n"
-"\t      <p>Non sei sicuro di aver chiaro cosa sia possibile fare con Scratch?"
-"</p>\n"
-"\t      <p><a href=\"http://scratched.gse.harvard.edu/stories\" target="
-"\"_blank\">Leggi una storia</a> su come altri educatori stanno includendo "
-"attività basate su Scratch in ambienti diversi.</a></p>\n"
-"\t      <p>Oppure <a href=\"http://scratched.gse.harvard.edu/resources/all\" "
-"target=\"_blank\">esplora le risorse</a> disponibili per età, discipline e "
-"ambienti diversi. <a href=\"http://scratched.gse.harvard.edu/resources/new-"
-"scratch\" target=\"_blank\">Guarda dei webinar</a> e consulta la "
-"documentazione come ad esempio la <a href=\"http://scratched.gse.harvard.edu/"
-"resources/scratch-curriculum-guide-draft\" target=\"_blank\">guida al "
-"curriculum Scratch </a>.</p>\n"
-"\t      <p>In addition to exploring the <a href=\"http://scratched.gse."
-"harvard.edu\" target=\"_blank\">ScratchEd</a> online community and its "
-"resources, you can engage with the ScratchEd Team and other Scratch "
-"educators via <a href=\"http://twitter.com/scratchedteam\" target=\"_blank>"
-"\">Twitter</a>, <a href=\"http://www.facebook.com/ScratchEdTeam\" target="
-"\"_blank>\">Facebook</a>, <a href=\"http://www.edmodo.com/publisher/"
-"scratcheducation\" target=\"_blank>\">Edmodo</a>, <a href=\"http://scratched."
-"gse.harvard.edu/discussions/scratched-weekly-roundup\" target=\"_blank>"
-"\">weekly roundups</a>, and our <a href=\"http://scratched.gse.harvard.edu/"
-"events\" target=\"_blank>\">quarterly newsletter</a>.<p>\n"
-"\t      "
-
 # 83%
-#: templates/info/educators.html:44
+#: templates/info/educators.html:44 templates/info/educators.html:51
 msgid "Connect with ScratchEd"
 msgstr "Entra in contatto con i membri della comunità ScratchEd"
 
-#: templates/info/educators.html:46
+#: templates/info/educators.html:46 templates/info/educators.html:54
 msgid "Online Community"
 msgstr "Comunità Online"
 
-#: templates/info/educators.html:47
+#: templates/info/educators.html:47 templates/info/educators.html:55
 msgid "Twitter"
 msgstr "Twitter"
 
-#: templates/info/educators.html:48
+#: templates/info/educators.html:48 templates/info/educators.html:56
 msgid "Facebook"
 msgstr "Facebook"
 
-#: templates/info/educators.html:49
+#: templates/info/educators.html:49 templates/info/educators.html:57
 msgid "Edmodo"
 msgstr "Edmodo"
 
-#: templates/info/educators.html:50
+#: templates/info/educators.html:50 templates/info/educators.html:58
 msgid "Weekly Roundups"
 msgstr "Incontri Settimanali"
 
-#: templates/info/educators.html:51
+#: templates/info/educators.html:51 templates/info/educators.html:59
 msgid "Quarterly Newsletter"
 msgstr "Newsletter Trimestrale"
 
@@ -4501,7 +4289,7 @@ msgstr ""
 msgid "Scratch - For Parents"
 msgstr "Scratch - Per i Genitori"
 
-#: templates/info/parents.html:15
+#: templates/info/parents.html:15 templates/info/parents.html:17
 msgid ""
 "Scratch is a programming language and an online community where children can "
 "program and share interactive media such as stories, games, and animation "
@@ -4518,11 +4306,11 @@ msgstr ""
 "in modo sistematico. Scratch è progettato e supportato dal Lifelong "
 "Kindergarten group dei Media Lab del MIT. "
 
-#: templates/info/parents.html:24
+#: templates/info/parents.html:24 templates/info/parents.html:28
 msgid "What is the age range for Scratch?"
 msgstr "Qual è l'eta giusta per iniziare con Scratch?"
 
-#: templates/info/parents.html:26
+#: templates/info/parents.html:26 templates/info/parents.html:30
 msgid ""
 "While Scratch is primarily designed for 8 to 16 year olds, it is also used "
 "by people of all ages, including younger children with their parents."
@@ -4531,33 +4319,15 @@ msgstr ""
 "Scratch è usato in realtà da persone di ogni età, inclusi bambini più "
 "piccoli supportati dai loro genitori."
 
-#: templates/info/parents.html:29
+#: templates/info/parents.html:29 templates/info/parents.html:33
 msgid "What resources are available for learning Scratch?"
 msgstr "Quali sono le risorse disponibili per imparare Scratch?"
 
-#: templates/info/parents.html:31
-#, python-format
-msgid ""
-"If you’re just getting started, there’s a <a href=\"/projects/editor/?"
-"tip_bar=getStarted\">step-by-step guide</a> available inside Scratch, or you "
-"can download the <a href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-"
-"Scratch2.pdf\">Getting Started guide (PDF)</a>. The <a href=\"/help/cards/"
-"\">Scratch Cards</a> provide a fun way to learn more. For an overview of "
-"Scratch resources, see <a href=\"/help/\">Scratch Help</a>."
-msgstr ""
-"Se sei agli inizi, trovi una <a href=\"/projects/editor/?tip_bar=getStarted"
-"\">guida passo-passo</a> disponibile all'interno di Scratch o puoi scaricare "
-"la <a href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-Scratch2.pdf"
-"\">Guida per Iniziare (PDF)</a>. Le <a href=\"/help/cards/\">Schede di "
-"Scratch</a> forniscono un modo divertente per saperne di più. Per una "
-"panoramica sulle risorse di Scratch, vai alla pagina di<a href=\"/help/"
-"\">Aiuto di Scratch</a>."
-
-#: templates/info/parents.html:34
+#: templates/info/parents.html:34 templates/info/parents.html:38
 msgid "What is the Scratch online community?"
 msgstr "Cos'è la comunità online di Scratch?"
 
-#: templates/info/parents.html:36
+#: templates/info/parents.html:36 templates/info/parents.html:40
 msgid ""
 "When participating in the Scratch online community, members can explore and "
 "experiment in an open learning community with other Scratch members from all "
@@ -4570,80 +4340,24 @@ msgstr ""
 "culture, età e interessi diversi. I membri possono inoltre condividere i "
 "propri lavori, richiedere suggerimenti e imparare gli uni dagli altri."
 
-#: templates/info/parents.html:38
+#: templates/info/parents.html:38 templates/info/parents.html:42
 msgid "What are the guidelines for the Scratch online community?"
 msgstr "Quali sono le linee guida della comunità online di Scratch?"
 
-#: templates/info/parents.html:40
-msgid ""
-"The MIT Scratch Team works with the community to maintain a friendly and "
-"respectful environment for people of all ages, races, ethnicities, "
-"religions, sexual orientations, and gender identities. You can help your "
-"child learn how to participate by reviewing the <a href=\"/"
-"community_guidelines\">community guidelines</a> together. Members are asked "
-"to comment constructively and to help keep the website friendly by reporting "
-"any content that does not follow the community guidelines. The Scratch Team "
-"works each day to manage activity on the site and respond to reports, with "
-"the help of tools such as the <a href=\"http://www.inversoft.com/features/"
-"profanity-filter/\">CleanSpeak</a> profanity filter. \n"
-msgstr ""
-"Il Team di Scratch del MIT lavora insieme alla comunità per mantenere "
-"Scratch un luogo amichevole e rispettoso per le persone di tutte le età, "
-"origini,  etnie, religioni, orientamenti sessuali e identità di genere. Puoi "
-"insegnare al tuo bambino come partecipare grazie alle <a href=\"/"
-"community_guidelines\" >linee guida della comunità</a>. I membri della "
-"comunità sono invitati a commentare in modo costruttivo in modo da aiutare a "
-"mantenere il sito web amichevole, segnalando tutti quei contenuti che non "
-"seguono le linee guida della comunità. Il Team di Scratch lavora ogni giorno "
-"per gestire le attività del sito e per rispondere alle segnalazioni, grazie "
-"all'aiuto fornito da filtri automatici come <a  href=\"http://www.inversoft."
-"com/features/profanity-filter/\" >CleanSpeak</a> che individua il linguaggio "
-"non appropriato. \n"
-
-#: templates/info/parents.html:44
+#: templates/info/parents.html:44 templates/info/parents.html:48
 msgid "What is your privacy policy?"
 msgstr "Qual è la politica della privacy seguita da Scratch?"
 
-#: templates/info/parents.html:45
-msgid ""
-"To protect children's online privacy, we limit what we collect during the "
-"signup process, and what we make public on the website. We don't sell or "
-"rent account information to anyone. You can find out more about our privacy "
-"policy on our <a href=\"/help/faq/#privacy\">frequently asked questions "
-"page</a>."
-msgstr ""
-"Al fine di proteggere la privacy online dei ragazzi, limitiamo al massimo le "
-"informazioni che raccogliamo durante il procedimento di iscrizione e quelle "
-"che rendiamo pubbliche sul sito web. Non rivendiamo le informazioni degli "
-"account a nessun altro. Per saperne di più della nostra politica della "
-"privacy policy vai alla pagina delle <a href=\"/help/faq/#privacy\">domande "
-"frequenti</a>."
-
-#: templates/info/parents.html:48
+#: templates/info/parents.html:48 templates/info/parents.html:52
 msgid "Is there a way to use Scratch without participating online?"
 msgstr ""
 "Esiste un modo per usare Scratch senza iscriversi alla comunità online? "
 
-#: templates/info/parents.html:49
-msgid ""
-"Yes, the Scratch offline editor lets you create projects without joining or "
-"accessing the online community. Visit the <a href=\"/scratch2download"
-"\">Scratch 2.0 offline editor</a> download page for instructions on how to "
-"install it on your computer.  (If your computer does not support the latest "
-"version, try the <a href=\"/scratch_1.4/\">Scratch 1.4 offline editor</a>.)\n"
-msgstr ""
-"Sì, usando l'editor offline di Scratch puoi creare i tuoi progetti senza "
-"registrarti e senza accedere alla comunità online. Visita la pagina per "
-"scaricare l'<a href=\"/scratch2download\">editor offline di Scratch 2.0</a> "
-"e segui le istruzioni per installarlo sul tuo computer. (Se il tuo computer "
-"non supporta l'ultima versione, puoi provare a scaricare l'<a href=\"/"
-"scratch_1.4/\">editor offline di Scratch 1.4</a>.)\n"
-
-#: templates/info/parents.html:53
+#: templates/info/parents.html:53 templates/info/parents.html:57
 msgid "What are parents saying about Scratch?"
 msgstr "Cosa dicono di Scratch i genitori?"
 
-#: templates/info/parents.html:54
+#: templates/info/parents.html:54 templates/info/parents.html:58
 msgid ""
 "We often receive emails from parents thanking us for Scratch. Here are some "
 "examples: "
@@ -4651,7 +4365,7 @@ msgstr ""
 "Riceviamo molto spesso email da genitori che ci ringraziano per aver creato "
 "Scratch. Eccone alcuni esempi:"
 
-#: templates/info/parents.html:55
+#: templates/info/parents.html:55 templates/info/parents.html:59
 msgid ""
 "\"<b>I just want to thank you all for making Scratch, and for providing it "
 "for free.</b> My kids are doing amazing things that they see as fun yet I "
@@ -4663,30 +4377,7 @@ msgstr ""
 "contempo educative, ricche di valore e... tutto tempo ben speso. Grazie "
 "mille!!!\""
 
-#: templates/info/parents.html:56
-msgid ""
-"<b>\"My very shy but technical minded daughter has found this to be a "
-"fantastic, safe outlet for her creativity.</b> She spends her free time "
-"creating ever more difficult animations and sharing them with the scratch "
-"community. The forums provide her with a group of like-minded individuals "
-"with which she can hold on a conversation... She now feels that computers, "
-"graphic design and animation are something she would like to pursue in the "
-"future. Your program has opened a whole new world to her in so many ways, "
-"and I thank you wholeheartedly. \n"
-"\""
-msgstr ""
-"<b>\"Ho una figlia molto timida ma dotata di una mentalità tecnica che ha "
-"scoperto Scratch come un fantastico e al contempo sicuro sfogo per la sua "
-"creatività.</b> Passa il suo tempo libero a creare animazioni sempre più "
-"complesse e a condividerle con la comunità. I forum le offrono un gruppo di "
-"persone che pensano come lei e con le quali può intrattenere "
-"conversazioni... Ora sente che i computer, il design grafico e l'animazioni "
-"sono qualcosa di cui le piacerebbe occuparsi in futuro. Il vostro software "
-"le ha aperto un nuovo mondo dotato di tantissime prospettive, per il quale "
-"vi ringrazio di cuore. \n"
-"\""
-
-#: templates/info/parents.html:58
+#: templates/info/parents.html:58 templates/info/parents.html:62
 msgid ""
 "\"<b>My son is learning more than I can imagine from your tool.</b> He is "
 "not a natural logical thinker but loves LEGO. Your LEGO-like building block "
@@ -4705,11 +4396,11 @@ msgstr ""
 "il nostro tempo tra padre e figlio. E' davvero incredibile. Grazie mille a "
 "voi e al MIT.\""
 
-#: templates/info/parents.html:63
+#: templates/info/parents.html:63 templates/info/parents.html:69
 msgid "Learning"
 msgstr "Apprendimento"
 
-#: templates/info/parents.html:65
+#: templates/info/parents.html:65 templates/info/parents.html:72
 msgid ""
 "For a one-page overview of what young people learn with Scratch, see <a href="
 "\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Learning with "
@@ -4719,7 +4410,7 @@ msgstr ""
 "<a href=\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf"
 "\">Imparare con Scratch</a>."
 
-#: templates/info/parents.html:66
+#: templates/info/parents.html:66 templates/info/parents.html:73
 msgid ""
 "Read an article on the <a href=\"http://www.edutopia.org/kindergarten-"
 "creativity-collaboration-lifelong-learning\">creative learning approach</a>."
@@ -4728,7 +4419,7 @@ msgstr ""
 "creativity-collaboration-lifelong-learning\">approccio all'apprendimento "
 "creativo</a>."
 
-#: templates/info/parents.html:74
+#: templates/info/parents.html:74 templates/info/parents.html:81
 msgid ""
 "We ask all participants on the site to follow the <a href=\"/"
 "community_guidelines\">Community Guidelines</a>."
@@ -4736,30 +4427,13 @@ msgstr ""
 "Chiediamo a tutti i partecipanti di seguire le <a href=\"/"
 "community_guidelines\">Linee Guida della Comunità</a>."
 
-#: templates/info/parents.html:75
-msgid ""
-"We do not make private account information available to anyone. For more "
-"information, please see the <a href=\"/help/faq/#privacy\">Privacy Policy</"
-"a>."
-msgstr ""
-"Le informazioni private degli account non vengono rese disponibili a "
-"nessuno. Per ulteriori informazioni vai alla pagina sulla nostra <a href=\"/"
-"help/faq/#privacy\">Politica della Privacy</a>."
-
 #: templates/info/parents.html:81 templates/info/help/index.html:97
-#: templates/info/layout/index.html:97
+#: templates/info/layout/index.html:97 templates/info/index.html:97
+#: templates/info/parents.html:87
 msgid "Questions?"
 msgstr "Domande?"
 
-#: templates/info/parents.html:83
-msgid ""
-"To find out more about Scratch, please see <a href=\"/help/faq/\">Frequently "
-"Asked Questions</a>."
-msgstr ""
-"Per saperne di più su Scratch vai alla pagina delle <a href=\"/help/faq/"
-"\">Domande Frequenti</a>."
-
-#: templates/info/parents.html:84
+#: templates/info/parents.html:84 templates/info/parents.html:91
 msgid ""
 "You can also ask questions in the <a href=\"/discuss/\">discussion forums</"
 "a>."
@@ -4767,7 +4441,7 @@ msgstr ""
 "Puoi anche fare tutte le domande che ti interessano nei <a href=\"/discuss/"
 "\">forum di discussione</a>."
 
-#: templates/info/parents.html:86
+#: templates/info/parents.html:86 templates/info/parents.html:93
 #, python-format
 msgid ""
 "If you need to contact our staff team directly, click <a href="
@@ -5264,10 +4938,12 @@ msgstr "Aiuto di Scratch"
 
 #: templates/info/help/cards.html:9 templates/info/help/index.html:59
 #: templates/info/layout/cards.html:9 templates/info/layout/index.html:59
+#: templates/info/cards.html:11 templates/info/index.html:59
 msgid "Scratch Cards"
 msgstr "Le Schede di Scratch"
 
 #: templates/info/help/cards.html:12 templates/info/layout/cards.html:12
+#: templates/info/cards.html:14
 msgid "Scratch cards provide a quick way to learn new Scratch code."
 msgstr ""
 "Le schede di Scratch forniscono un modo semplice e veloce per imparare a "
@@ -5275,16 +4951,20 @@ msgstr ""
 
 #: templates/info/help/cards.html:18 templates/info/help/cards.html.py:20
 #: templates/info/layout/cards.html:18 templates/info/layout/cards.html:20
+#: templates/info/cards.html:20 templates/info/cards.html.py:22
 msgid "Get all the Cards"
 msgstr "Scarica tutte le Schede"
 
 #: templates/info/help/cards.html:18 templates/info/help/cards.html.py:20
 #: templates/info/help/index.html:45 templates/info/layout/cards.html:18
 #: templates/info/layout/cards.html:20 templates/info/layout/index.html:45
+#: templates/info/cards.html:20 templates/info/cards.html.py:22
+#: templates/info/index.html:45
 msgid "English"
 msgstr "Inglese"
 
 #: templates/info/help/cards.html:23 templates/info/layout/cards.html:23
+#: templates/info/cards.html:25
 msgid ""
 "Looking for Scratch Cards in your language? Check <a href=\"http://wiki."
 "scratch.mit.edu/wiki/Scratch_Support_Materials\">Scratch Wiki</a>."
@@ -5297,7 +4977,7 @@ msgstr ""
 #: templates/info/help/studio/tips/howto/get-started-intro.html:40
 #: templates/info/help/studio/tips/howto/hoc-4d.html:17
 #: templates/info/help/studio/tips/howto/hoc-intro.html:41
-#: templates/info/layout/cards.html:31
+#: templates/info/layout/cards.html:31 templates/info/cards.html:37
 msgid "Change Color"
 msgstr "Cambia Colore"
 
@@ -5313,14 +4993,22 @@ msgstr "Cambia Colore"
 #: templates/info/layout/cards.html:63 templates/info/layout/cards.html:68
 #: templates/info/layout/cards.html:73 templates/info/layout/cards.html:78
 #: templates/info/layout/cards.html:83 templates/info/layout/cards.html:88
+#: templates/info/cards.html:39 templates/info/cards.html.py:44
+#: templates/info/cards.html:49 templates/info/cards.html.py:54
+#: templates/info/cards.html:59 templates/info/cards.html.py:64
+#: templates/info/cards.html:69 templates/info/cards.html.py:74
+#: templates/info/cards.html:79 templates/info/cards.html.py:84
+#: templates/info/cards.html:89 templates/info/cards.html.py:94
 msgid "View Card"
 msgstr "Visualizza la scheda"
 
 #: templates/info/help/cards.html:36 templates/info/layout/cards.html:36
+#: templates/info/cards.html:42
 msgid "Move to a Beat"
 msgstr "Spostarsi a Ritmo"
 
 #: templates/info/help/cards.html:41 templates/info/layout/cards.html:41
+#: templates/info/cards.html:47
 msgid "Key Moves"
 msgstr "I Tasti di Movimento"
 
@@ -5329,77 +5017,93 @@ msgstr "I Tasti di Movimento"
 #: templates/info/help/studio/tips/howto/get-started-intro.html:38
 #: templates/info/help/studio/tips/howto/hoc-4b.html:17
 #: templates/info/help/studio/tips/howto/hoc-intro.html:39
-#: templates/info/layout/cards.html:46
+#: templates/info/layout/cards.html:46 templates/info/cards.html:52
 msgid "Say Something"
 msgstr "Dire Qualcosa"
 
 #: templates/info/help/cards.html:51 templates/info/layout/cards.html:51
+#: templates/info/cards.html:57
 msgid "Glide"
 msgstr "Scivolare"
 
 #: templates/info/help/cards.html:56 templates/info/layout/cards.html:56
+#: templates/info/cards.html:62
 msgid "Follow the Mouse"
 msgstr "Seguire il Mouse"
 
 #: templates/info/help/cards.html:61 templates/info/layout/cards.html:61
+#: templates/info/cards.html:67
 msgid "Dance Twist"
 msgstr "Ballare il Twist"
 
 #: templates/info/help/cards.html:66 templates/info/layout/cards.html:66
+#: templates/info/cards.html:72
 msgid "Interactive Whirl"
 msgstr "Vortice Interattivo"
 
 #: templates/info/help/cards.html:71 templates/info/layout/cards.html:71
+#: templates/info/cards.html:77
 msgid "Animate It"
 msgstr "Animazione"
 
 #: templates/info/help/cards.html:76 templates/info/layout/cards.html:76
+#: templates/info/cards.html:82
 msgid "Moving Animation"
 msgstr "Animazione in Movimento"
 
 #: templates/info/help/cards.html:81 templates/info/layout/cards.html:81
+#: templates/info/cards.html:87
 msgid "Surprise Button"
 msgstr "Pulsante a Sorpresa"
 
 #: templates/info/help/cards.html:86 templates/info/layout/cards.html:86
+#: templates/info/cards.html:92
 msgid "Keep Score"
 msgstr "Tenere il Punteggio"
 
 #: templates/info/help/faq.html:27 templates/info/help/faq.html.py:47
 #: templates/info/layout/faq.html:27 templates/info/layout/faq.html.py:47
+#: templates/info/faq.html:33 templates/info/faq.html.py:50
 msgid "General Questions"
 msgstr "Domande Generali"
 
 #: templates/info/help/faq.html:31 templates/info/help/faq.html.py:108
 #: templates/info/layout/faq.html:31 templates/info/layout/faq.html.py:108
+#: templates/info/faq.html:37 templates/info/faq.html.py:111
 msgid "Remixing and Copying"
 msgstr "Remixare e Copiare"
 
 #: templates/info/help/faq.html:32 templates/info/help/faq.html.py:125
 #: templates/info/layout/faq.html:32 templates/info/layout/faq.html.py:125
+#: templates/info/faq.html:38 templates/info/faq.html.py:128
 msgid "Accounts"
 msgstr "Gli Account"
 
 #: templates/info/help/faq.html:35 templates/info/help/faq.html.py:167
 #: templates/info/layout/faq.html:35 templates/info/layout/faq.html.py:167
+#: templates/info/faq.html:41 templates/info/faq.html.py:170
 msgid "Licensing and Permissions"
 msgstr "Licenza e Permessi"
 
 #: templates/info/help/faq.html:36 templates/info/help/faq.html.py:195
 #: templates/info/layout/faq.html:36 templates/info/layout/faq.html.py:195
+#: templates/info/faq.html:42 templates/info/faq.html.py:198
 msgid "Inappropriate Content"
 msgstr "Contenuti Inappropriati"
 
 #: templates/info/help/faq.html:39 templates/info/help/faq.html.py:217
 #: templates/info/layout/faq.html:39 templates/info/layout/faq.html.py:217
+#: templates/info/faq.html:45 templates/info/faq.html.py:220
 msgid "Cloud Data"
 msgstr "Dati Cloud"
 
 #: templates/info/help/faq.html:49 templates/info/layout/faq.html:49
+#: templates/info/faq.html:52
 msgid "What is Scratch, and what can I do with it?"
 msgstr "Cos'è Scratch e cosa posso realizzare usando Scratch?"
 
 #: templates/info/help/faq.html:50 templates/info/layout/faq.html:50
+#: templates/info/faq.html:53
 msgid ""
 "Scratch is a programming language and online community where you can create "
 "your own interactive stories, games, and animations -- and share your "
@@ -5417,10 +5121,12 @@ msgstr ""
 "\">Informazioni su Scratch</a>."
 
 #: templates/info/help/faq.html:52 templates/info/layout/faq.html:52
+#: templates/info/faq.html:55
 msgid "How do I make a game or animation with Scratch?"
 msgstr "Come si fa a creare un gioco o un'animazione con Scratch?"
 
 #: templates/info/help/faq.html:53 templates/info/layout/faq.html:53
+#: templates/info/faq.html:56
 msgid ""
 "Check out the <a href=\"/help\">help page</a> to see lots of ways to get "
 "started with Scratch. Or just <a href=\"/projects/editor/?tip_bar=getStarted"
@@ -5431,10 +5137,12 @@ msgstr ""
 "tip_bar=getStarted\">tuffati subito</a> nel nuovo Editor dei Progetti."
 
 #: templates/info/help/faq.html:55 templates/info/layout/faq.html:55
+#: templates/info/faq.html:58
 msgid "What are the system requirements for Scratch?"
 msgstr "Quali sono i requisiti di sistema per poter usare Scratch?"
 
 #: templates/info/help/faq.html:56 templates/info/layout/faq.html:56
+#: templates/info/faq.html:59
 msgid ""
 "To run Scratch 2, you need a relatively recent web browser (<a href=\"http://"
 "google.com/chrome/\">Chrome</a> 35 or later, <a href=\"http://www.mozilla."
@@ -5456,6 +5164,7 @@ msgstr ""
 "progetti sul nuovo sito."
 
 #: templates/info/help/faq.html:58 templates/info/layout/faq.html:58
+#: templates/info/faq.html:61
 msgid ""
 "Do you have an downloadable version so I can create and view projects "
 "offline?"
@@ -5464,6 +5173,7 @@ msgstr ""
 "offline?"
 
 #: templates/info/help/faq.html:59 templates/info/layout/faq.html:59
+#: templates/info/faq.html:62
 msgid ""
 "The <a href=\"/scratch2download/\">Scratch 2 offline editor (beta version)</"
 "a> is now available. You can also still use <a href =\"/"
@@ -5476,6 +5186,7 @@ msgstr ""
 "contemporaneamente sul tuo computer sia Scratch 1.4 che Scratch 2."
 
 #: templates/info/help/faq.html:62 templates/info/layout/faq.html:62
+#: templates/info/faq.html:65
 msgid ""
 "Can I still upload projects created with older versions of Scratch to the "
 "website?"
@@ -5484,6 +5195,7 @@ msgstr ""
 "Scratch?"
 
 #: templates/info/help/faq.html:63 templates/info/layout/faq.html:63
+#: templates/info/faq.html:66
 msgid ""
 "Yes - you can share or upload projects made with earlier versions of "
 "Scratch, and they will be visible and playable. (However, you can’t download "
@@ -5501,10 +5213,12 @@ msgstr ""
 "a> non è in grado di leggere progetti nel formato .sb2.)"
 
 #: templates/info/help/faq.html:66 templates/info/layout/faq.html:66
+#: templates/info/faq.html:69
 msgid "Can I make a video with Scratch and upload it to YouTube?"
 msgstr "Posso creare un video con Scratch e poi caricarlo su YouTube?"
 
 #: templates/info/help/faq.html:67 templates/info/layout/faq.html:67
+#: templates/info/faq.html:70
 msgid ""
 "To make a video of your Scratch project, you can use screen capture software "
 "like <a href=\"http://camstudio.org/\">CamStudio</a>. But keep in mind, some "
@@ -5525,10 +5239,12 @@ msgstr ""
 "sono esattamente la stessa cosa."
 
 #: templates/info/help/faq.html:69 templates/info/layout/faq.html:69
+#: templates/info/faq.html:72
 msgid "How much does Scratch cost? Do I need a license?"
 msgstr "Quando costa Scratch? Mi occorre una licenza?"
 
 #: templates/info/help/faq.html:70 templates/info/layout/faq.html:70
+#: templates/info/faq.html:73
 msgid ""
 "Scratch is and always will be free. You don’t need a license to use Scratch "
 "in your school, home, or anywhere else. The development and maintenance of "
@@ -5542,10 +5258,12 @@ msgstr ""
 "href=\"#\">Pagina delle Donazioni</a>."
 
 #: templates/info/help/faq.html:72 templates/info/layout/faq.html:72
+#: templates/info/faq.html:75
 msgid "Who created Scratch?"
 msgstr "Chi ha creato Scratch?"
 
 #: templates/info/help/faq.html:74 templates/info/layout/faq.html:74
+#: templates/info/faq.html:77
 msgid ""
 "Scratch is developed and maintained by the Scratch Team at the <a href="
 "\"http://llk.media.mit.edu/\">Lifelong Kindergarten group</a> at <a href="
@@ -5556,10 +5274,12 @@ msgstr ""
 "\"http://www.media.mit.edu/\">MIT Media Lab</a>."
 
 #: templates/info/help/faq.html:81 templates/info/layout/faq.html:81
+#: templates/info/faq.html:84
 msgid "What information do you ask for during account registration?"
 msgstr "Quali informazioni vengono richieste durante la registrazione?"
 
 #: templates/info/help/faq.html:82 templates/info/layout/faq.html:82
+#: templates/info/faq.html:85
 msgid ""
 "To protect the privacy of our community members, we limit what we collect "
 "and what we publish on the website. During the registration process, we ask "
@@ -5570,6 +5290,7 @@ msgstr ""
 "registrazione dei nuovi utenti chiediamo le seguenti informazioni:"
 
 #: templates/info/help/faq.html:84 templates/info/layout/faq.html:84
+#: templates/info/faq.html:87
 msgid ""
 "username - We ask that users avoid using their real names or other "
 "identifying information."
@@ -5578,10 +5299,12 @@ msgstr ""
 "altre informazioni che li possano identificare."
 
 #: templates/info/help/faq.html:85 templates/info/layout/faq.html:85
+#: templates/info/faq.html:88
 msgid "country"
 msgstr "nazione"
 
 #: templates/info/help/faq.html:86 templates/info/layout/faq.html:86
+#: templates/info/faq.html:89
 msgid ""
 "birth month and year - We use this to confirm ownership of the account if "
 "the owner loses the password and email, or writes to ask us to close the "
@@ -5592,10 +5315,12 @@ msgstr ""
 "richiedere la chiusura del proprio account."
 
 #: templates/info/help/faq.html:87 templates/info/layout/faq.html:87
+#: templates/info/faq.html:90
 msgid "gender"
 msgstr "genere"
 
 #: templates/info/help/faq.html:88 templates/info/layout/faq.html:88
+#: templates/info/faq.html:91
 msgid ""
 "contact email address - If the account holder is younger than 13, we ask for "
 "the email address of their parent or guardian. We do not send email to this "
@@ -5607,6 +5332,7 @@ msgstr ""
 "azzerare la password dell'account."
 
 #: templates/info/help/faq.html:90 templates/info/layout/faq.html:90
+#: templates/info/faq.html:93
 msgid ""
 "The username and country of the account holder are displayed publicly on "
 "their profile page. The birth month / year, email address, and gender "
@@ -5623,10 +5349,12 @@ msgstr ""
 "rivendiamo queste informazioni sui nostri utenti a nessun altro."
 
 #: templates/info/help/faq.html:92 templates/info/layout/faq.html:92
+#: templates/info/faq.html:95
 msgid "What data is collected from people while they use the website?"
 msgstr "Quali dati vengono raccolti durante le visite al sito?"
 
 #: templates/info/help/faq.html:93 templates/info/layout/faq.html:93
+#: templates/info/faq.html:96
 msgid ""
 "When a user logs in, the Scratch website asks their browser to put an <a "
 "href=\"http://en.wikipedia.org/wiki/HTTP_cookie\">http cookie</a> on their "
@@ -5644,6 +5372,7 @@ msgstr ""
 "ci aiutano a migliorare il sito web."
 
 #: templates/info/help/faq.html:95 templates/info/layout/faq.html:95
+#: templates/info/faq.html:98
 msgid ""
 "Some of the information and data collected on the Scratch website are used "
 "in research studies intended to improve our understanding of how people "
@@ -5659,6 +5388,7 @@ msgstr ""
 "\">pagina della Ricerca</a>."
 
 #: templates/info/help/faq.html:97 templates/info/layout/faq.html:97
+#: templates/info/faq.html:100
 msgid ""
 "Does the Scratch Team sell or rent information about users of Scratch to "
 "anyone?"
@@ -5667,36 +5397,24 @@ msgstr ""
 "qualcun altro?"
 
 #: templates/info/help/faq.html:98 templates/info/layout/faq.html:98
+#: templates/info/faq.html:101
 msgid "No."
 msgstr "No."
 
 #: templates/info/help/faq.html:100 templates/info/layout/faq.html:100
+#: templates/info/faq.html:103
 msgid "Can the Scratch Team view unshared projects on my 'My Stuff' page?"
 msgstr ""
 "Lo Scratch Team può vedere i miei progetti non condivisi nella pagine de 'Le "
 "Mie Cose\"?"
 
-#: templates/info/help/faq.html:101 templates/info/layout/faq.html:101
-msgid ""
-"Since the Scratch Team is responsible for moderation, we have access to all "
-"content stored on the Scratch website - including unshared projects. If you "
-"prefer to work on projects in complete privacy, you can use  either the <a "
-"href=\"/scratch2download\">Scratch 2 offline editor</a> or <a href =\"/"
-"scratch_1.4\">Scratch 1.4</a>.\n"
-"  "
-msgstr ""
-"Poichè il Team di Scratch è responsabile delle moderazione, abbiamo accesso "
-"a tutti i contenuti del sito di Scratch - inclusi i progetti non condivisi. "
-"Se preferisci lavorare su un progetto in completa privacy, puoi usare l'<a "
-"href=\"/scratch2download\">editor offline di Scratch 2</a> o <a href =\"/"
-"scratch_1.4\">Scratch 1.4</a>.\n"
-"  "
-
 #: templates/info/help/faq.html:109 templates/info/layout/faq.html:109
+#: templates/info/faq.html:112
 msgid "What is a remix?"
 msgstr "Cos'è un remix?"
 
 #: templates/info/help/faq.html:110 templates/info/layout/faq.html:110
+#: templates/info/faq.html:113
 msgid ""
 "When a Scratcher makes a copy of someone else’s project and modifies it to "
 "add their own ideas (for example, by changing scripts or costumes), the "
@@ -5714,11 +5432,13 @@ msgstr ""
 "abbiano apportato contributi significativi al remix."
 
 #: templates/info/help/faq.html:112 templates/info/layout/faq.html:112
+#: templates/info/faq.html:115
 msgid "Why does the Scratch Team require that all projects be “remixable”?"
 msgstr ""
 "Perchè il Team di Scratch richiede che tutti i progetti siano \"remixabili\"?"
 
 #: templates/info/help/faq.html:113 templates/info/layout/faq.html:113
+#: templates/info/faq.html:116
 msgid ""
 "We believe that viewing and remixing interesting projects is a great way to "
 "learn to program, and leads to cool new ideas. That’s why the source code is "
@@ -5730,10 +5450,12 @@ msgstr ""
 "condiviso sul sito di Scratch è liberamente visibile."
 
 #: templates/info/help/faq.html:115 templates/info/layout/faq.html:115
+#: templates/info/faq.html:118
 msgid "What if I don’t want others to remix my projects?"
 msgstr "Cosa devo fare se non voglio che altri remixino i miei progetti?"
 
 #: templates/info/help/faq.html:116 templates/info/layout/faq.html:116
+#: templates/info/faq.html:119
 msgid ""
 "By publishing your project on the Scratch website, you agree to license it "
 "under a <a href=\"http://creativecommons.org/licenses/by-sa/2.0/deed.en"
@@ -5746,12 +5468,14 @@ msgstr ""
 "creazioni, non condividerle sul sito di Scratch."
 
 #: templates/info/help/faq.html:118 templates/info/layout/faq.html:118
+#: templates/info/faq.html:121
 msgid "Can I use images / sounds / media from the internet in my projects?"
 msgstr ""
 "Posso usare all'interno dei miei progetti immagini, suoni e altri media che "
 "ho trovato su Internet?"
 
 #: templates/info/help/faq.html:119 templates/info/layout/faq.html:119
+#: templates/info/faq.html:122
 msgid ""
 "It's important to respect the original creator’s wishes regarding remixing. "
 "If you choose to integrate someone else’s work into your own, be sure to "
@@ -5769,22 +5493,27 @@ msgstr ""
 "di <a href=\"http://search.creativecommons.org/\">Creative Commons</a>."
 
 #: templates/info/help/faq.html:127 templates/info/layout/faq.html:127
+#: templates/info/faq.html:130
 msgid "What is a “confirmed” Scratch account?"
 msgstr "Cos'è un account di Scratch “confermato”?"
 
 #: templates/info/help/faq.html:130 templates/info/layout/faq.html:130
+#: templates/info/faq.html:133
 msgid "How do I confirm my account?"
 msgstr "Come faccio a confermare il mio account?"
 
 #: templates/info/help/faq.html:133 templates/info/layout/faq.html:133
+#: templates/info/faq.html:136
 msgid "Do I have to confirm my account?"
 msgstr "Devo confermare il mio account?"
 
 #: templates/info/help/faq.html:136 templates/info/layout/faq.html:136
+#: templates/info/faq.html:139
 msgid "I forgot my password, how can I reset it?"
 msgstr "Ho dimenticato la mia password. Come faccio ad azzerarla?"
 
 #: templates/info/help/faq.html:137 templates/info/layout/faq.html:137
+#: templates/info/faq.html:140
 msgid ""
 "Enter your account name on the <a href=\"/accounts/password_reset/"
 "\">password reset page</a>. The website will send an email to the address "
@@ -5797,10 +5526,12 @@ msgstr ""
 "usare per azzerare la tua password."
 
 #: templates/info/help/faq.html:139 templates/info/layout/faq.html:139
+#: templates/info/faq.html:142
 msgid "How do I change my password?"
 msgstr "Come faccio a cambiare la mia password?"
 
 #: templates/info/help/faq.html:140 templates/info/layout/faq.html:140
+#: templates/info/faq.html:143
 msgid ""
 "Go to the Scratch website, login, and then click your username in the upper "
 "right corner of the window. Choose \"account settings\", and click the link "
@@ -5811,10 +5542,12 @@ msgstr ""
 "dell'account\" nel menu e scegli \"Cambia password\" nel menu a sinistra."
 
 #: templates/info/help/faq.html:142 templates/info/layout/faq.html:142
+#: templates/info/faq.html:145
 msgid "How do I change my email address?"
 msgstr "Come faccio a cambiare il mio indirizzo email?"
 
 #: templates/info/help/faq.html:143 templates/info/layout/faq.html:143
+#: templates/info/faq.html:146
 msgid ""
 "Go to the Scratch website, login, and then click your username in the upper "
 "right corner of the window. Choose \"account settings\", and click the link "
@@ -5825,12 +5558,14 @@ msgstr ""
 "\"Configurazione account\", e clicca il link per cambiare la tua email."
 
 #: templates/info/help/faq.html:145 templates/info/layout/faq.html:145
+#: templates/info/faq.html:148
 msgid "How do I transition from 'New Scratcher' to 'Scratcher'?"
 msgstr ""
 "Come posso cambiare il mio stato da \"Nuovo membro di Scratch\" a \"Membro "
 "della comunità di Scratch\"?"
 
 #: templates/info/help/faq.html:146 templates/info/layout/faq.html:146
+#: templates/info/faq.html:149
 msgid ""
 "Make and share projects, comment helpfully on other Scratcher's projects, "
 "and be patient! After a few weeks of being active, a link will appear on "
@@ -5846,10 +5581,12 @@ msgstr ""
 "richiesta - neanche se veniamo corrotti con dei cioccolatini.)"
 
 #: templates/info/help/faq.html:148 templates/info/layout/faq.html:148
+#: templates/info/faq.html:151
 msgid "Can I have more than one account?"
 msgstr "Posso avere più di un account?"
 
 #: templates/info/help/faq.html:149 templates/info/layout/faq.html:149
+#: templates/info/faq.html:152
 msgid ""
 "It's fine to have a few accounts on the Scratch website, as long as none of "
 "them are used to break the Community Guidelines. In that case, all related "
@@ -5862,12 +5599,14 @@ msgstr ""
 
 # 96%
 #: templates/info/help/faq.html:151 templates/info/layout/faq.html:151
+#: templates/info/faq.html:154
 msgid "Is it OK to have more than one person logged into an account?"
 msgstr ""
 "E' permesso che più persone accedano al sito di Scratch usando uno stesso "
 "account?"
 
 #: templates/info/help/faq.html:152 templates/info/layout/faq.html:152
+#: templates/info/faq.html:155
 msgid ""
 "This is discouraged, because the website and project editor can easily get "
 "confused when more than one person is logged into the same account."
@@ -5877,10 +5616,12 @@ msgstr ""
 "Progetti possono facilmente confondersi."
 
 #: templates/info/help/faq.html:154 templates/info/layout/faq.html:154
+#: templates/info/faq.html:157
 msgid "Can I change my username?"
 msgstr "Posso cambiare il mio username?"
 
 #: templates/info/help/faq.html:155 templates/info/layout/faq.html:155
+#: templates/info/faq.html:158
 msgid ""
 "The structure of the Scratch website depends on having a consistent account "
 "name, so it’s not possible to change your username. If you really need to, "
@@ -5892,10 +5633,12 @@ msgstr ""
 "creare un nuovo account - ma dovrai copiare personalmente i tuoi progetti."
 
 #: templates/info/help/faq.html:157 templates/info/layout/faq.html:157
+#: templates/info/faq.html:160
 msgid "What information can I share on / with my account?"
 msgstr "Quali informazioni posso condividere nel mio account?"
 
 #: templates/info/help/faq.html:158 templates/info/layout/faq.html:158
+#: templates/info/faq.html:161
 msgid ""
 "Please don’t share personal contact information, such as your physical "
 "address, email, phone number, or anything else that can be used to make "
@@ -5913,10 +5656,12 @@ msgstr ""
 "politica sulla privacy."
 
 #: templates/info/help/faq.html:160 templates/info/layout/faq.html:160
+#: templates/info/faq.html:163
 msgid "How do I delete my account?"
 msgstr "Come faccio a cancellare il mio account?"
 
 #: templates/info/help/faq.html:161 templates/info/layout/faq.html:161
+#: templates/info/faq.html:164
 msgid ""
 "Log in to Scratch, and then click your username in the top right-hand "
 "corner. Select “Account Settings,” then click the <em>“I want to delete my "
@@ -5927,10 +5672,12 @@ msgstr ""
 "cancellare il mio account”</em> in fondo alla pagina."
 
 #: templates/info/help/faq.html:169 templates/info/layout/faq.html:169
+#: templates/info/faq.html:172
 msgid "Is Scratch free?"
 msgstr "Scratch è gratuito?"
 
 #: templates/info/help/faq.html:170 templates/info/layout/faq.html:170
+#: templates/info/faq.html:173
 msgid ""
 "Yes! Scratch is available free of charge. You can use it in your school, and "
 "you can teach a course about it (even a course that costs money). You don't "
@@ -5941,12 +5688,14 @@ msgstr ""
 "acquistare una licenza - è gratis."
 
 #: templates/info/help/faq.html:172 templates/info/layout/faq.html:172
+#: templates/info/faq.html:175
 msgid ""
 "Can I use Scratch and / or screenshots of Scratch in a textbook or a CD?"
 msgstr ""
 "Posso usare Scratch o immagini di Scratch in un libro di testo o in un CD?"
 
 #: templates/info/help/faq.html:173 templates/info/layout/faq.html:173
+#: templates/info/faq.html:176
 msgid ""
 "Yes, you can even write a book or chapter about Scratch. You may also use "
 "the Scratch logo when referring to Scratch. You may create screenshots / "
@@ -5967,6 +5716,7 @@ msgstr ""
 "MIT. Vedi http://scratch.mit.edu\"."
 
 #: templates/info/help/faq.html:175 templates/info/layout/faq.html:175
+#: templates/info/faq.html:178
 msgid ""
 "Can I include a description of Scratch and the Scratch logo in brochures or "
 "other materials?"
@@ -5975,6 +5725,7 @@ msgstr ""
 "o in altri materiali?"
 
 #: templates/info/help/faq.html:176 templates/info/layout/faq.html:176
+#: templates/info/faq.html:179
 msgid ""
 "Sure! We recommend the following description: \"Scratch is a programming "
 "language and online community where you can create your own interactive "
@@ -5995,10 +5746,12 @@ msgstr ""
 "sito http://scratch.mit.edu\""
 
 #: templates/info/help/faq.html:178 templates/info/layout/faq.html:178
+#: templates/info/faq.html:181
 msgid "Can I present Scratch at a conference?"
 msgstr "Posso presentare Scratch a una conferenza?"
 
 #: templates/info/help/faq.html:179 templates/info/layout/faq.html:179
+#: templates/info/faq.html:182
 msgid ""
 "Please feel free to make presentations about Scratch to educators or other "
 "groups. We grant our permission to make presentations."
@@ -6007,6 +5760,7 @@ msgstr ""
 "garantito il permesso di fare qualunque presentazione."
 
 #: templates/info/help/faq.html:181 templates/info/layout/faq.html:181
+#: templates/info/faq.html:184
 msgid ""
 "May I use / remix Scratch support materials, sprites, images, sounds or "
 "sample projects I’ve found on the website?"
@@ -6015,6 +5769,7 @@ msgstr ""
 "suoni o i progetti di esempi che ho trovato sul sito di Scratch?"
 
 #: templates/info/help/faq.html:182 templates/info/layout/faq.html:182
+#: templates/info/faq.html:185
 msgid ""
 "Yes - Scratch support materials made available on the Scratch website by the "
 "Scratch Team are available under the <a href=\"http://creativecommons.org/"
@@ -6029,10 +5784,12 @@ msgstr ""
 "Scratch, e Gobo (i marchi registrati di Scratch)."
 
 #: templates/info/help/faq.html:184 templates/info/layout/faq.html:184
+#: templates/info/faq.html:187
 msgid "Can I sell my Scratch projects?"
 msgstr "Posso vendere i progetti che creo con Scratch?"
 
 #: templates/info/help/faq.html:185 templates/info/layout/faq.html:185
+#: templates/info/faq.html:188
 msgid ""
 "Certainly - your project is your creation. Keep in mind that once you share "
 "your project on Scratch, everyone is free to download, remix, and reuse it "
@@ -6048,10 +5805,12 @@ msgstr ""
 "Scratch."
 
 #: templates/info/help/faq.html:187 templates/info/layout/faq.html:187
+#: templates/info/faq.html:190
 msgid "Where can I find the source code for Scratch?"
 msgstr "Dove trovo il codice sorgente di Scratch?"
 
 #: templates/info/help/faq.html:188 templates/info/layout/faq.html:188
+#: templates/info/faq.html:191
 msgid ""
 "The source code for Scratch 2 (website and editor) is not yet available. The "
 "source code for <a href =\"/scratch_1.4\">Scratch 1.4</a>, written in "
@@ -6068,12 +5827,14 @@ msgstr ""
 "svn/scratchr/\">su Assembla</a>."
 
 #: templates/info/help/faq.html:196 templates/info/layout/faq.html:196
+#: templates/info/faq.html:199
 msgid "How do I know what is or isn’t okay to share on the Scratch website?"
 msgstr ""
 "Come posso sapere cosa può e cosa non può essere condiviso sul sito di "
 "Scratch?"
 
 #: templates/info/help/faq.html:197 templates/info/layout/faq.html:197
+#: templates/info/faq.html:200
 msgid ""
 "Check out the <a href=\"/community_guidelines\">Scratch community "
 "guidelines</a> - they’re brief and don’t include a lot of legal stuff. "
@@ -6084,10 +5845,12 @@ msgstr ""
 "legale. Trovi un link in fondo ad ognuna delle pagine del sito di Scratch."
 
 #: templates/info/help/faq.html:199 templates/info/layout/faq.html:199
+#: templates/info/faq.html:202
 msgid "What do I do if I see something that’s inappropriate?"
 msgstr "Cosa devo fare se vedo qualcosa che considero inappropriato?"
 
 #: templates/info/help/faq.html:200 templates/info/layout/faq.html:200
+#: templates/info/faq.html:203
 msgid ""
 "You can click the link that says “report” on any project, comment, "
 "discussion post, or user page where you think something isn't ok for "
@@ -6102,10 +5865,12 @@ msgstr ""
 "che puoi, insieme ai link alle pagine rilevanti."
 
 #: templates/info/help/faq.html:202 templates/info/layout/faq.html:202
+#: templates/info/faq.html:205
 msgid "What do I do if I see someone being mean or disrespectful?"
 msgstr "Cosa devo fare se vedo qualcosa di meschino o irrispettoso?"
 
 #: templates/info/help/faq.html:203 templates/info/layout/faq.html:203
+#: templates/info/faq.html:206
 msgid ""
 "Don’t add to the flames! Responding to mean comments with more mean comments "
 "just makes things worse, and could result in your account being blocked. "
@@ -6121,10 +5886,12 @@ msgstr ""
 "volte al giorno - puoi quindi essere sicuro che risolveremo la cosa."
 
 #: templates/info/help/faq.html:205 templates/info/layout/faq.html:205
+#: templates/info/faq.html:208
 msgid "What does the Scratch team do when something is reported or flagged?"
 msgstr "Cosa fa lo Scratch team quando viene qualcosa viene segnalato?"
 
 #: templates/info/help/faq.html:206 templates/info/layout/faq.html:206
+#: templates/info/faq.html:209
 msgid ""
 "The Scratch Team reviews reported comments and projects every day. If "
 "something breaks the Scratch community guidelines, we may remove it and send "
@@ -6140,10 +5907,12 @@ msgstr ""
 "reti che sono state usate per condividerla."
 
 #: templates/info/help/faq.html:208 templates/info/layout/faq.html:208
+#: templates/info/faq.html:211
 msgid "What happens when an account is blocked?"
 msgstr "Cosa succede quando un account viene bloccato?"
 
 #: templates/info/help/faq.html:209 templates/info/layout/faq.html:209
+#: templates/info/faq.html:212
 msgid ""
 "When an account is blocked, the owner can no longer access it, or use it to "
 "create projects or comments. When they login, they see a page that explains "
@@ -6168,6 +5937,7 @@ msgstr ""
 "persona) potrebbero essere bloccati in modo permanente."
 
 #: templates/info/help/faq.html:211 templates/info/layout/faq.html:211
+#: templates/info/faq.html:214
 msgid ""
 "My mean brother / Kaj / some other bad guy stole my account and got it "
 "banned, what do I do?"
@@ -6176,6 +5946,7 @@ msgstr ""
 "l'account è stato bloccato. Cosa debbo fare?"
 
 #: templates/info/help/faq.html:212 templates/info/layout/faq.html:212
+#: templates/info/faq.html:215
 msgid ""
 "You are responsible for keeping your password secure. If someone in real "
 "life takes control of your account and does bad stuff, tell the adults in "
@@ -6196,10 +5967,12 @@ msgstr ""
 "non potremo sbloccare il tuo account."
 
 #: templates/info/help/faq.html:219 templates/info/layout/faq.html:219
+#: templates/info/faq.html:222
 msgid "What is cloud data?"
 msgstr "Cosa sono i dati cloud?"
 
 #: templates/info/help/faq.html:220 templates/info/layout/faq.html:220
+#: templates/info/faq.html:223
 msgid ""
 "Cloud data is a feature in Scratch 2 that allows for data from a project to "
 "be saved and shared online. You can use cloud data to make surveys and other "
@@ -6211,10 +5984,12 @@ msgstr ""
 "un'esecuzione all'altra."
 
 #: templates/info/help/faq.html:222 templates/info/layout/faq.html:222
+#: templates/info/faq.html:225
 msgid "Who can see the data stored in cloud data?"
 msgstr "Chi può vedere i dati memorizzati nei dati cloud?"
 
 #: templates/info/help/faq.html:223 templates/info/layout/faq.html:223
+#: templates/info/faq.html:226
 msgid ""
 "When you interact with a project using cloud data blocks, your information "
 "can be stored along with your username, and others can view it. Each project "
@@ -6226,6 +6001,7 @@ msgstr ""
 "che è stato condiviso."
 
 #: templates/info/help/faq.html:225 templates/info/layout/faq.html:225
+#: templates/info/faq.html:228
 msgid ""
 "Why is cloud data currently limited to only numbers -- with no strings or "
 "lists? "
@@ -6234,6 +6010,7 @@ msgstr ""
 "liste?"
 
 #: templates/info/help/faq.html:226 templates/info/layout/faq.html:226
+#: templates/info/faq.html:229
 msgid ""
 "The current site is limited to numbers in variables as an initial step to "
 "work out any issues with their use on the site. We plan to roll out cloud "
@@ -6248,6 +6025,7 @@ msgstr ""
 "stringhe, ecc)."
 
 #: templates/info/help/faq.html:228 templates/info/layout/faq.html:228
+#: templates/info/faq.html:231
 msgid ""
 "If I see someone post inappropriate content using cloud data, how do I "
 "report it?"
@@ -6256,6 +6034,7 @@ msgstr ""
 "come faccio a segnalarlo?"
 
 #: templates/info/help/faq.html:229 templates/info/layout/faq.html:229
+#: templates/info/faq.html:232
 msgid ""
 "Click the \"Report this\" button (under on the project player) to report "
 "inappropriate content in cloud data. The report form includes a link to a "
@@ -6272,10 +6051,12 @@ msgstr ""
 "segnalazione."
 
 #: templates/info/help/faq.html:231 templates/info/layout/faq.html:231
+#: templates/info/faq.html:234
 msgid "Can I make chat rooms with cloud data?"
 msgstr "Posso creare delle chat room usando i dati cloud?"
 
 #: templates/info/help/faq.html:232 templates/info/layout/faq.html:232
+#: templates/info/faq.html:235
 msgid ""
 "While it is technically possible to create chat rooms with cloud data, they "
 "are not currently allowed. We will reconsider this policy once we have a "
@@ -6288,10 +6069,12 @@ msgstr ""
 "report dei dati cloud."
 
 #: templates/info/help/faq.html:234 templates/info/layout/faq.html:234
+#: templates/info/faq.html:237
 msgid "How do I add a cloud variable when I'm making a project?"
 msgstr "Come si fa a creare una variabile cloud all'interno di un progetto?"
 
 #: templates/info/help/faq.html:235 templates/info/layout/faq.html:235
+#: templates/info/faq.html:238
 msgid ""
 "When you make a variable, you can check the box that says \"Cloud variable."
 "\" Any data you store will be saved on the server and visible to others."
@@ -6301,10 +6084,12 @@ msgstr ""
 "salvati sul server e saranno visibili a tutti."
 
 #: templates/info/help/faq.html:237 templates/info/layout/faq.html:237
+#: templates/info/faq.html:240
 msgid "Who can change the information in a cloud variable?"
 msgstr "Chi può modificare le informazioni memorizzate in una variabile cloud?"
 
 #: templates/info/help/faq.html:238 templates/info/layout/faq.html:238
+#: templates/info/faq.html:241
 msgid ""
 "Only your project can store data in its cloud variable. If people change or "
 "remix your code, it creates a different variable in their project with the "
@@ -6315,6 +6100,7 @@ msgstr ""
 "diversa variabile cloud con lo stesso nome."
 
 #: templates/info/help/faq.html:240 templates/info/layout/faq.html:240
+#: templates/info/faq.html:243
 msgid ""
 "I am logged in, but I still cannot use projects with cloud data. What is "
 "going on?"
@@ -6323,6 +6109,7 @@ msgstr ""
 "progetti che usino le variabili cloud. Per quale motivo?"
 
 #: templates/info/help/faq.html:241 templates/info/layout/faq.html:241
+#: templates/info/faq.html:244
 msgid ""
 "You need to have become a \"Scratcher\" on the website to have access to "
 "cloud data. You can become a Scratcher through actively participating on the "
@@ -6333,10 +6120,12 @@ msgstr ""
 "parte attiva alla vita del sito."
 
 #: templates/info/help/faq.html:243 templates/info/layout/faq.html:243
+#: templates/info/faq.html:246
 msgid "Is it possible to make multiplayer games with cloud data?"
 msgstr "Con i dati cloud è possibile creare un gioco multiplayer?"
 
 #: templates/info/help/faq.html:244 templates/info/layout/faq.html:244
+#: templates/info/faq.html:247
 msgid ""
 "Multiplayer games may be difficult to create, due to network speed and "
 "synchronization issues. However, some Scratchers are coming up with creative "
@@ -6348,11 +6137,13 @@ msgstr ""
 "a turni o di altro tipo."
 
 #: templates/info/help/faq.html:246 templates/info/layout/faq.html:246
+#: templates/info/faq.html:249
 msgid "How long does it take for cloud data to reach another Scratcher?"
 msgstr ""
 "Quanto tempo impiega un dato cloud a raggiungere un altro utente giocatore?"
 
 #: templates/info/help/faq.html:247 templates/info/layout/faq.html:247
+#: templates/info/faq.html:250
 msgid ""
 "It depends. If both Scratchers have a reasonably fast Internet connection "
 "(DSL/Cable), and there are no restrictive firewalls on the computers/"
@@ -6372,64 +6163,76 @@ msgstr ""
 
 # 81%
 #: templates/info/help/faq_layout.html:6
-#: templates/info/layout/faq_layout.html:6
+#: templates/info/layout/faq_layout.html:6 templates/info/faq.html:24
 msgid "Frequently Asked Questions (FAQ)"
 msgstr "Domande Frequenti"
 
 #: templates/info/help/faq_layout.html:24
-#: templates/info/layout/faq_layout.html:24
+#: templates/info/layout/faq_layout.html:24 templates/info/faq.html:30
 msgid "Browse FAQ"
 msgstr "Sfoglia le Domande Frequenti"
 
 #: templates/info/help/index.html:9 templates/info/layout/index.html:9
+#: templates/info/index.html:9
 msgid "Get Started with Scratch"
 msgstr "Come Iniziare con Scratch"
 
 #: templates/info/help/index.html:16 templates/info/layout/index.html:16
+#: templates/info/index.html:16
 msgid "Try out the</br> step-by-step intro"
 msgstr "Prova</br> l'introduzione passo-passo"
 
 # 82%
 #: templates/info/help/index.html:25 templates/info/layout/index.html:25
+#: templates/info/index.html:25
 msgid "Explore these</br> starter projects"
 msgstr "Prova questi</br> progetti per iniziare"
 
 #: templates/info/help/index.html:31 templates/info/layout/index.html:31
+#: templates/info/index.html:31
 msgid "Watch the Getting Started video"
 msgstr "Guarda il video Come Iniziare"
 
 #: templates/info/help/index.html:36 templates/info/layout/index.html:36
+#: templates/info/index.html:36
 msgid "Scratch Guides"
 msgstr "Le Guide di Scratch"
 
 #: templates/info/help/index.html:38 templates/info/layout/index.html:38
+#: templates/info/index.html:38
 msgid "Here are some guides to help you learn Scratch:"
 msgstr "Qui trovi alcune guide che ti aiuteranno ad imparare Scratch:"
 
 #: templates/info/help/index.html:45 templates/info/layout/index.html:45
+#: templates/info/index.html:45
 msgid "Getting Started Guide"
 msgstr "Guida per Iniziare"
 
 #: templates/info/help/index.html:48 templates/info/layout/index.html:48
+#: templates/info/index.html:48
 msgid "This step-by-step guide (PDF) provides an easy introduction to Scratch."
 msgstr ""
 "Questa guida passo-passo (PDF) fornisce una semplice introduzione a Scratch."
 
 #: templates/info/help/index.html:52 templates/info/layout/index.html:52
+#: templates/info/index.html:52
 #, python-format
 msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
 msgstr "Scarica la <a href=\"%(enguide)s\">versione inglese.</a>"
 
 #: templates/info/help/index.html:61 templates/info/layout/index.html:61
+#: templates/info/index.html:61
 msgid "Each of these cards shows something you can do in Scratch."
 msgstr "Ognuna di queste schede mostra qualcosa che puoi fare con Scratch."
 
 #: templates/info/help/index.html:66 templates/info/help/videos.html:19
 #: templates/info/layout/index.html:66 templates/info/layout/videos.html:19
+#: templates/info/index.html:66 templates/info/videos.html:19
 msgid "Video Tutorials"
 msgstr "Tutorial Video"
 
 #: templates/info/help/index.html:68 templates/info/layout/index.html:68
+#: templates/info/index.html:68
 msgid ""
 "These videos include tips on using the paint editor, and introduce how to "
 "program games and animations in Scratch."
@@ -6438,10 +6241,12 @@ msgstr ""
 "introdurranno alla programmazione di giochi e di animazioni con Scratch."
 
 #: templates/info/help/index.html:73 templates/info/layout/index.html:73
+#: templates/info/index.html:73
 msgid "Explore the Scratch Community"
 msgstr "Esplora la Comunità di Scratch"
 
 #: templates/info/help/index.html:76 templates/info/layout/index.html:76
+#: templates/info/index.html:76
 msgid ""
 "<a href=\"../explore\">Explore</a> projects and studios Scratchers are making"
 msgstr ""
@@ -6449,14 +6254,17 @@ msgstr ""
 "utenti stanno creando"
 
 #: templates/info/help/index.html:77 templates/info/layout/index.html:77
+#: templates/info/index.html:77
 msgid "Search for projects about:"
 msgstr "Cerca progetti su:"
 
 #: templates/info/help/index.html:82 templates/info/layout/index.html:82
+#: templates/info/index.html:82
 msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
 msgstr "<a href=\"/discuss/6/\">Presentati</a> nei forum di Scratch"
 
 #: templates/info/help/index.html:83 templates/info/layout/index.html:83
+#: templates/info/index.html:83
 #, python-format
 msgid ""
 "Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
@@ -6466,18 +6274,22 @@ msgstr ""
 "in qualunque profilo utente o galleria per ricevere gli aggiornamenti"
 
 #: templates/info/help/index.html:89 templates/info/layout/index.html:89
+#: templates/info/index.html:89
 msgid "What is Scratch?"
 msgstr "Cosa è Scratch?"
 
 #: templates/info/help/index.html:93 templates/info/layout/index.html:93
+#: templates/info/index.html:93
 msgid "For <a href=\"/parents\">Parents</a>"
 msgstr "Per i <a href=\"/parents\">Genitori</a>"
 
 #: templates/info/help/index.html:94 templates/info/layout/index.html:94
+#: templates/info/index.html:94
 msgid "For <a href=\"/educators\">Educators</a>"
 msgstr "Per gli <a href=\"/educators\">Educatori</a>"
 
 #: templates/info/help/index.html:99 templates/info/layout/index.html:99
+#: templates/info/index.html:99
 msgid ""
 "Browse for answers on: </br><a href=\"/help/faq\">Frequently Asked "
 "Questions</a>"
@@ -6486,24 +6298,29 @@ msgstr ""
 "\">Domande Frequenti</a>"
 
 #: templates/info/help/index.html:101 templates/info/layout/index.html:101
+#: templates/info/index.html:101
 msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
 msgstr "Oppure visita i <a href=\"/discuss\">forum di discussione</a>:"
 
 # 92%
 #: templates/info/help/index.html:102 templates/info/layout/index.html:102
+#: templates/info/index.html:102
 msgid "- Questions about Scratch"
 msgstr "- Domande su Scratch"
 
 # 89%
 #: templates/info/help/index.html:103 templates/info/layout/index.html:103
+#: templates/info/index.html:103
 msgid "- Help with Scripts"
 msgstr "- Aiuto con gli Script"
 
 #: templates/info/help/index.html:106 templates/info/layout/index.html:106
+#: templates/info/index.html:106
 msgid "Resources"
 msgstr "Risorse"
 
 #: templates/info/help/index.html:109 templates/info/layout/index.html:109
+#: templates/info/index.html:109
 msgid ""
 "An online community for educators using Scratch, with stories, discussions, "
 "and resources, such as the Scratch curriculum guide."
@@ -6512,6 +6329,7 @@ msgstr ""
 "discussioni e risorse come ad esempio la guida al curriculum Scratch."
 
 #: templates/info/help/index.html:115 templates/info/layout/index.html:115
+#: templates/info/index.html:115
 msgid ""
 "The Scratch Wiki contains a wide variety of articles by Scratchers for "
 "Scratchers, including advanced topics and tutorials."
@@ -6522,30 +6340,37 @@ msgstr ""
 # 87%
 # 77%
 #: templates/info/help/index.html:118 templates/info/layout/index.html:118
+#: templates/info/index.html:118
 msgid "Scratch 2 Offline Editor "
 msgstr "Editor Offline di Scratch 2 "
 
 #: templates/info/help/index.html:120 templates/info/layout/index.html:120
+#: templates/info/index.html:120
 msgid "Download the Scratch 2 offline editor."
 msgstr "Scarica l'editor offline di Scratch 2."
 
 #: templates/info/help/index.html:122 templates/info/layout/index.html:122
+#: templates/info/index.html:122
 msgid "Scratch 1.4 Download"
 msgstr "Download di Scratch 1.4"
 
 #: templates/info/help/index.html:124 templates/info/layout/index.html:124
+#: templates/info/index.html:124
 msgid "Links and information on the previous version of Scratch."
 msgstr "Collegamenti e informazioni per la precedente versione di Scratch."
 
 #: templates/info/help/index.html:127 templates/info/layout/index.html:127
+#: templates/info/index.html:127
 msgid "Scratch Statistics"
 msgstr "Le Statistiche di Scratch"
 
 #: templates/info/help/index.html:129 templates/info/layout/index.html:129
+#: templates/info/index.html:129
 msgid "Explore up-to-date statistics about the Scratch online community."
 msgstr "Esplora le statistiche aggiornate sulla comunità online di Scratch."
 
 #: templates/info/help/index.html:132 templates/info/layout/index.html:132
+#: templates/info/index.html:132
 msgid ""
 "<a href=\"http://wiki.scratch.mit.edu/wiki/"
 "How_to_connect_to_the_physical_world\">Scratch and the Physical World</a>"
@@ -6554,6 +6379,7 @@ msgstr ""
 "How_to_connect_to_the_physical_world\">Scratch e il Mondo Reale</a>"
 
 #: templates/info/help/index.html:134 templates/info/layout/index.html:134
+#: templates/info/index.html:134
 msgid ""
 "Connect your Scratch projects to the physical world with <a href = \"http://"
 "www.makeymakey.com/\">MaKey MaKey</a>, <a href=\"http://info.scratch.mit.edu/"
@@ -6566,15 +6392,18 @@ msgstr ""
 "products/10311\">PicoBoard</a>."
 
 #: templates/info/help/index.html:137 templates/info/layout/index.html:137
+#: templates/info/index.html:137
 msgid "Scratch Logo"
 msgstr "Il Logo di Scratch"
 
 #: templates/info/help/index.html:139 templates/info/layout/index.html:139
+#: templates/info/index.html:139
 msgid "Access the Scratch logo and other media files."
 msgstr "Scarica il logo di Scratch e altri file multimediali."
 
 # 75%
 #: templates/info/help/videos.html:4 templates/info/layout/videos.html:4
+#: templates/info/videos.html:4
 msgid "Scratch - Videos"
 msgstr "Scratch - I Video"
 
@@ -6582,11 +6411,12 @@ msgstr "Scratch - I Video"
 #: templates/info/help/videos.html:26
 #: templates/info/help/studio/tips/home.html:5
 #: templates/info/help/studio/tips/howto/get-started-intro.html:19
-#: templates/info/layout/videos.html:26
+#: templates/info/layout/videos.html:26 templates/info/videos.html:26
 msgid "Getting Started with Scratch"
 msgstr "Come Iniziare con Scratch"
 
 #: templates/info/help/videos.html:29 templates/info/layout/videos.html:29
+#: templates/info/videos.html:29
 msgid ""
 "After <strong>Getting Started</strong>, choose from <a href=\"#Introductory "
 "Tutorials\">Introductory Tutorials</a> or <a href=\"#Paint Editor Tips"
@@ -6599,99 +6429,122 @@ msgstr ""
 "        "
 
 #: templates/info/help/videos.html:39 templates/info/layout/videos.html:39
+#: templates/info/videos.html:39
 msgid "Introductory Tutorials"
 msgstr "Tutorial Introduttivi"
 
 #: templates/info/help/videos.html:47 templates/info/layout/videos.html:47
+#: templates/info/videos.html:47
 msgid "Make your sprite move forward"
 msgstr "Fai muovere lo sprite in avanti"
 
 # 80%
 #: templates/info/help/videos.html:52 templates/info/layout/videos.html:52
+#: templates/info/videos.html:52
 msgid "Make your sprite spin"
 msgstr "Fai ruotare lo sprite"
 
 #: templates/info/help/videos.html:57 templates/info/layout/videos.html:57
+#: templates/info/videos.html:57
 msgid "Make your sprite change color"
 msgstr "Fai cambiare colore allo sprite"
 
 # 80%
 # 81%
 #: templates/info/help/videos.html:64 templates/info/layout/videos.html:64
+#: templates/info/videos.html:64
 msgid "Make your sprite dance"
 msgstr "Fai danzare lo sprite"
 
 #: templates/info/help/videos.html:69 templates/info/layout/videos.html:69
+#: templates/info/videos.html:69
 msgid "Make your sprite follow the mouse"
 msgstr "Fai seguire il mouse allo sprite"
 
 # 80%
 # 77%
 #: templates/info/help/videos.html:74 templates/info/layout/videos.html:74
+#: templates/info/videos.html:74
 msgid "Make your sprite glide"
 msgstr "Fai scivolare lo sprite"
 
 #: templates/info/help/videos.html:81 templates/info/layout/videos.html:81
+#: templates/info/videos.html:81
 msgid "Make your sprite jump when you clap"
 msgstr "Fai saltare lo sprite quando batti le mani"
 
 #: templates/info/help/videos.html:86 templates/info/layout/videos.html:86
+#: templates/info/videos.html:86
 msgid "Make your sprite spin when you say something"
 msgstr "Fai ruotare lo sprite quando dici qualcosa"
 
 #: templates/info/help/videos.html:91 templates/info/layout/videos.html:91
+#: templates/info/videos.html:91
 msgid "Make a simple game"
 msgstr "Crea un gioco semplice"
 
 #: templates/info/help/videos.html:98 templates/info/layout/videos.html:98
+#: templates/info/videos.html:98
 msgid "Make a story"
 msgstr "Crea una storia"
 
 #: templates/info/help/videos.html:110 templates/info/layout/videos.html:110
+#: templates/info/videos.html:110
 msgid "Paint Editor Tips"
 msgstr "Suggerimenti per l'Editor di Immagini"
 
 #: templates/info/help/videos.html:119 templates/info/layout/videos.html:119
+#: templates/info/videos.html:119
 msgid "Change the cat or other characters"
 msgstr "Cambia il gatto o gli altri personaggi"
 
 #: templates/info/help/videos.html:124 templates/info/layout/videos.html:124
+#: templates/info/videos.html:124
 msgid "Differences between vector and bitmap"
 msgstr "Differenze tra grafica vettoriale e bitmap"
 
 #: templates/info/help/videos.html:129 templates/info/layout/videos.html:129
+#: templates/info/videos.html:129
 msgid "Switching between vector and bitmap"
 msgstr "Passare da grafica vettoriale a grafica bitmap"
 
 #: templates/info/help/videos.html:138 templates/info/layout/videos.html:138
+#: templates/info/videos.html:138
 msgid "Fill a vector shape"
 msgstr "Riempire una forma vettoriale"
 
 #: templates/info/help/videos.html:143 templates/info/layout/videos.html:143
+#: templates/info/videos.html:143
 msgid "Erasing in vector mode"
 msgstr "Cancellare in modalità vettoriale"
 
 #: templates/info/help/videos.html:148 templates/info/layout/videos.html:148
+#: templates/info/videos.html:148
 msgid "Drawing with reshape"
 msgstr "Disegnare con \"cambia forma\""
 
 #: templates/info/help/videos.html:157 templates/info/layout/videos.html:157
+#: templates/info/videos.html:157
 msgid "Smoothing"
 msgstr "Arrotondare"
 
 #: templates/info/help/videos.html:162 templates/info/layout/videos.html:162
+#: templates/info/videos.html:162
 msgid "Grouping"
 msgstr "Raggruppare"
 
 #: templates/info/help/videos.html:167 templates/info/layout/videos.html:167
+#: templates/info/videos.html:167
 msgid "Layers"
 msgstr "Livelli"
 
 #: templates/info/help/videos.html:176 templates/info/layout/videos.html:176
+#: templates/info/videos.html:176
 msgid "Backdrop into Sprite"
 msgstr "Da sfondo a Sprite"
 
 #: templates/info/help/videos.html:181 templates/info/layout/videos.html:181
+#: templates/info/videos.html:181
 msgid "Center of Costume"
 msgstr "Centro di un Costume"
 
