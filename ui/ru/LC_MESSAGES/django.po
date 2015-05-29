@@ -7,17 +7,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2015-04-02 13:50+0000\n"
-"Last-Translator: raimondious <ray@scratch.mit.edu>\n"
+"PO-Revision-Date: 2015-05-29 14:40+0000\n"
+"Last-Translator: mewtaylor <mataylor@media.mit.edu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1427982638.000000\n"
+"X-POOTLE-MTIME: 1432910446.000000\n"
 
 #: views.py:322 views.py:332
 msgid "Your message has been sent. We will respond within 3 days."
@@ -29,30 +29,28 @@ msgstr "Пожалуйста, исправьте следующие ошибки
 
 #: authentication/forms.py:29
 msgid "username exists"
-msgstr ""
+msgstr "это имя уже занято"
 
 #: authentication/forms.py:36
-#, fuzzy
 msgid "invalid username"
-msgstr "Неправильное имя"
+msgstr "Недопустимое имя пользователя"
 
 #: authentication/forms.py:50
 msgid "invalid gender choice"
-msgstr ""
+msgstr "Недопустимый выбор пола"
 
 #: authentication/forms.py:52
 msgid "invalid password"
-msgstr ""
+msgstr "Неверный пароль"
 
 # 96%
 #: authentication/forms.py:92 authentication/forms.py:118
-#, fuzzy
 msgid "You must enter your password."
-msgstr "Вы должны ввести пароль"
+msgstr "Необходимо ввести пароль"
 
 #: authentication/forms.py:93 authentication/forms.py:119
 msgid "Wrong password, try again."
-msgstr "Неправильный пароль. Попробуйте снова:"
+msgstr "Неправильный пароль. Попробуйте снова."
 
 #: authentication/forms.py:96
 msgid "Enter your password to confirm"
@@ -60,11 +58,11 @@ msgstr "Наберите пароль для подтверждения"
 
 #: authentication/forms.py:120 authentication/forms.py:322
 msgid "Incorrect captcha, please try again."
-msgstr "Символы каптчи введены неправильно. Попробуйте ещё раз."
+msgstr "Символы каптчи введены неправильно, попробуйте ещё раз."
 
 #: authentication/forms.py:131
 msgid "Keep my projects, but disable all comments"
-msgstr "Оставить мои проекты, но отключить все комментарии."
+msgstr "Оставить мои проекты, но отключить все комментарии"
 
 #: authentication/forms.py:132
 msgid "Delete my projects"
@@ -84,7 +82,7 @@ msgstr "В пароле должно быть не менее 6 символов
 
 #: authentication/forms.py:148 authentication/forms.py:169
 msgid "Your password cannot be 'password'."
-msgstr "Пароль не должен быть таким простым."
+msgstr "Паролем не должен быть слово 'пароль'."
 
 #: authentication/forms.py:149 authentication/forms.py:170
 msgid "Your password cannot be the same as your username."
@@ -109,15 +107,15 @@ msgstr "Нужно ввести почту или логин"
 #: templates/accounts/deletion/nostalgia.html:7
 #: templates/info/educators.html:52 templates/info/educators.html:60
 msgid "Email"
-msgstr "Почта"
+msgstr "Электронная почта"
 
 #: authentication/forms.py:297 authentication/forms.py:318
 msgid "Incorrect username or password."
-msgstr "Неверный логин или пароль!"
+msgstr "Неверный логин или пароль."
 
 #: authentication/forms.py:298 authentication/forms.py:319
 msgid "Please enable cookies on your browser."
-msgstr "Включите cookies в вашем браузере!"
+msgstr "Включите cookies в Вашем браузере"
 
 #: authentication/forms.py:299 authentication/forms.py:320
 msgid "This account is inactive."
@@ -129,15 +127,15 @@ msgstr "Эта учётная запись удалена!"
 
 #: authentication/forms.py:332
 msgid "Send me Scratch Updates & Newsletters"
-msgstr ""
+msgstr "Подписаться на Scratch Updates & Newsletters"
 
 #: authentication/views.py:598
 msgid "Unsubscribe me from Scratch updates"
-msgstr ""
+msgstr "Отписаться от новостей об обновлениях Scratch"
 
 #: authentication/views.py:599
 msgid "Unsubscribe me from Code-to-Learn Foundation updates"
-msgstr ""
+msgstr "Отписаться от новостей Code-to-Learn Foundation"
 
 #: base_comments/templatetags/scratch_text_filters.py:110
 #: base_comments/templatetags/scratch_text_filters.py:114
@@ -153,7 +151,7 @@ msgstr[2] "дней"
 #, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
-msgstr[0] "%(minutes)d минуту назад"
+msgstr[0] "%(minutes)d минут назад"
 msgstr[1] "%(minutes)d минуты назад"
 msgstr[2] "%(minutes)d минут назад"
 
@@ -207,12 +205,12 @@ msgstr "Последние темы на форуме"
 #: djangobb_forum/feeds.py:125
 #, python-format
 msgid "Latest posts on %s"
-msgstr "Последние сообщения в %s"
+msgstr "Последние сообщения на %s"
 
 #: djangobb_forum/feeds.py:83
 #, python-format
 msgid "Latest posts on the topic \"%s\""
-msgstr "Последние сообщения в теме \"%s\""
+msgstr "Последние сообщения по теме \"%s\""
 
 #: djangobb_forum/feeds.py:108
 #, python-format
@@ -264,11 +262,11 @@ msgstr "Форум"
 
 #: djangobb_forum/forms.py:40
 msgid "Ascending"
-msgstr "По возрастанию"
+msgstr "В порядке возрастания"
 
 #: djangobb_forum/forms.py:41
 msgid "Descending"
-msgstr "По убыванию"
+msgstr "В порядке убывания"
 
 #: djangobb_forum/forms.py:45 djangobb_forum/models.py:175
 #: djangobb_forum/templates/djangobb_forum/index.html:56
@@ -300,7 +298,7 @@ msgstr "Только название темы"
 #: djangobb_forum/forms.py:60
 #: djangobb_forum/templates/djangobb_forum/includes/post_form.html:53
 msgid "Attachment"
-msgstr "Приложение"
+msgstr "Вложение"
 
 #: djangobb_forum/forms.py:61
 msgid "Subscribe"
@@ -329,7 +327,7 @@ msgstr "Вы должны подождать %d секунд между сооб
 
 #: djangobb_forum/forms.py:143
 msgid "Attachment is too big"
-msgstr "Приложение слишком большое"
+msgstr "Вложение слишком большое"
 
 #: djangobb_forum/forms.py:188
 msgid "Silent edit?"
@@ -376,7 +374,7 @@ msgstr "Показывать результаты как"
 #: djangobb_forum/forms.py:430
 #, python-format
 msgid "User \"%s\" does not exist"
-msgstr "Пользователя \"%s\" не существует"
+msgstr "Участника \"%s\" не существует"
 
 #: djangobb_forum/forms.py:440
 msgid "You already voted for this post"
@@ -655,7 +653,7 @@ msgstr "Автоматическая подписка"
 #: djangobb_forum/models.py:407
 msgid "Auto subscribe all topics you have created or reply."
 msgstr ""
-"Автоматическая подписка на все темы, которые вы создали или в которых "
+"Автоматическая подписка на все темы, которые Вы создали или в которых "
 "отвечали."
 
 #: djangobb_forum/models.py:408
@@ -681,11 +679,11 @@ msgstr "Сообщил участник"
 
 #: djangobb_forum/models.py:448
 msgid "Zapped"
-msgstr "Стерто"
+msgstr "Удалено"
 
 #: djangobb_forum/models.py:449
 msgid "Zapped by"
-msgstr "Стерто участником"
+msgstr "Удалено участником"
 
 #: djangobb_forum/models.py:454
 #: djangobb_forum/templates/djangobb_forum/topic.html:159
@@ -763,17 +761,17 @@ msgid ""
 "Please update your image links or remove all BB code [img] tags. Bad image "
 "url: %s"
 msgstr ""
-"К сожалению, ваше изображение дожно храниться на сервисе типа imageshack."
-"com. Пожалуйста, обновите ссылки на ваши изображения, либо удалите все [img] "
-"теги. Некорректная ссылка: %s"
+"Извините, но Вы должны хранить свои ваши картинки на внешнем сервисе типа "
+"imageshack.com. Пожалуйста, обновите ссылки на ваши изображения, либо "
+"удалите все [img] теги. Некорректная ссылка на изображение: %s"
 
 #: djangobb_forum/views.py:94
 msgid "Topics deleted."
-msgstr "Тема удалена."
+msgstr "Темы удалены."
 
 #: djangobb_forum/views.py:99
 msgid "Topics opened."
-msgstr "Тема открыта."
+msgstr "Открытые темы."
 
 #: djangobb_forum/views.py:104
 msgid "Topics closed."
@@ -836,7 +834,7 @@ msgstr "Фото загружено."
 
 #: djangobb_forum/views.py:642
 msgid "Please sign in."
-msgstr "Представься пожалуйста."
+msgstr "Авторизуйтесь, пожалуйста."
 
 #: djangobb_forum/views.py:656
 msgid "Profile saved."
@@ -852,7 +850,7 @@ msgstr "Репутация сохранена."
 
 #: djangobb_forum/views.py:739
 msgid "You don't have permission to edit this post."
-msgstr "Ты не можешь редактировать это сообщение."
+msgstr "Вы не можете редактировать это сообщение."
 
 # 76%
 #: djangobb_forum/views.py:749
@@ -889,11 +887,11 @@ msgstr "Тема откреплена."
 
 #: djangobb_forum/views.py:967
 msgid "You don't have permission to delete this post."
-msgstr "Ты не можешь удалить это сообщение."
+msgstr "Вы не можете удалить это сообщение."
 
 #: djangobb_forum/views.py:994 djangobb_forum/views.py:1026
 msgid "You don't have permission to mark this post."
-msgstr "Ты не можешь отметить это сообщение."
+msgstr "Вы не можете отметить это сообщение."
 
 #: djangobb_forum/views.py:998 djangobb_forum/views.py:1030
 msgid "There was not enough data collected to mark this post."
@@ -910,7 +908,7 @@ msgstr "Это сообщение не может быть отмечено ка
 # 86%
 #: djangobb_forum/views.py:1035
 msgid "Post un-marked as spam."
-msgstr "Отметка сообщения как спам отменена"
+msgstr "Отметка сообщения как спам отменена."
 
 #: djangobb_forum/views.py:1037
 msgid "This post is not in the right state to be un-marked as spam."
@@ -961,12 +959,12 @@ msgstr "Форумы"
 #: djangobb_forum/templates/djangobb_forum/index.html:5
 #: djangobb_forum/templates/djangobb_forum/mobile/base.html:6
 msgid "Discuss Scratch"
-msgstr "Форумы Скретч"
+msgstr "Обсуждение Scratch"
 
 #: djangobb_forum/templates/djangobb_forum/base.html:126
 #: djangobb_forum/templates/djangobb_forum/header.html:40
 msgid "Notice"
-msgstr "Замечание"
+msgstr "Сообщение"
 
 #: djangobb_forum/templates/djangobb_forum/delete_posts.html:7
 #, python-format
@@ -1040,7 +1038,7 @@ msgstr "Сохранить"
 #: djangobb_forum/templates/djangobb_forum/forum.html:24
 msgid ""
 "Can't find an answer to your question? Click here to ask it in a new thread."
-msgstr "Не можешь найти ответ? Нажми чтобы задать вопрос в новой теме."
+msgstr "Не можешь найти ответ? Нажми, чтобы задать вопрос в новой теме."
 
 #: djangobb_forum/templates/djangobb_forum/forum.html:24
 msgid "New topic"
@@ -1109,7 +1107,7 @@ msgstr "Форум пуст."
 
 #: djangobb_forum/templates/djangobb_forum/forum.html:107
 msgid "Moderate forum"
-msgstr "Модерировать форум"
+msgstr "Модерируемый форум"
 
 #: djangobb_forum/templates/djangobb_forum/header.html:15
 msgid "Show new posts since last visit"
@@ -1168,17 +1166,19 @@ msgstr "Пометить все темы как прочитанные"
 
 #: djangobb_forum/templates/djangobb_forum/mail_to.html:7
 msgid "Send e-mail to"
-msgstr ""
+msgstr "Отправить письмо"
 
 #: djangobb_forum/templates/djangobb_forum/mail_to.html:13
 msgid "Write and submit your e-mail message"
-msgstr ""
+msgstr "Написать и отправить письмо по почте"
 
 #: djangobb_forum/templates/djangobb_forum/mail_to.html:19
 msgid ""
 "Please note that by using this form, your e-mail address will be disclosed "
 "to the recipient."
 msgstr ""
+"Обратите внимание, что использование этой формы, открывает получателю адрес "
+"Вашей электронной почты."
 
 #: djangobb_forum/templates/djangobb_forum/mail_to.html:23
 #: djangobb_forum/templates/djangobb_forum/report.html:34
@@ -1224,7 +1224,7 @@ msgstr "Закрыть"
 
 #: djangobb_forum/templates/djangobb_forum/moderators.html:3
 msgid "Moderated by"
-msgstr "Модератор"
+msgstr "Модерируется"
 
 # 78%
 #: djangobb_forum/templates/djangobb_forum/move_posts.html:7
@@ -1293,7 +1293,7 @@ msgstr "Дата"
 
 #: djangobb_forum/templates/djangobb_forum/reputation.html:64
 msgid "Are you sure"
-msgstr "Вы уверены"
+msgstr "Вы уверены?"
 
 #: djangobb_forum/templates/djangobb_forum/reputation_form.html:7
 msgid "Please, fill the form"
@@ -1305,7 +1305,7 @@ msgstr "Имя:"
 
 #: djangobb_forum/templates/djangobb_forum/reputation_form.html:21
 msgid "To whom we change a reputation:"
-msgstr ""
+msgstr "Чью репутацию изменяем:"
 
 #: djangobb_forum/templates/djangobb_forum/reputation_form.html:29
 msgid "Method:"
@@ -1329,6 +1329,8 @@ msgid ""
 "with spaces. To search by author enter the username of the author whose "
 "posts you wish to search for."
 msgstr ""
+"Для поиска по словам введите термин или термины. Разделяйте термины "
+"пробелами. Для поиска участника введите его имя."
 
 #: djangobb_forum/templates/djangobb_forum/search_form.html:42
 #: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:30
@@ -1340,8 +1342,8 @@ msgid ""
 "Choose in which forum you would like to search and if you want to search in "
 "topic subjects, message text or both."
 msgstr ""
-"Выбери форум для поиска и отметь, что искать: названия тем, сообщения, или "
-"всё сразу."
+"Выберите форум для поиска и отметьте, где искать: в названиях тем, "
+"сообщениях, или во всём сразу."
 
 #: djangobb_forum/templates/djangobb_forum/search_form.html:70
 msgid "You can choose how you wish to sort and show your results."
@@ -1473,6 +1475,8 @@ msgstr "IP:"
 #: djangobb_forum/templates/djangobb_forum/topic.html:120
 msgid "Really delete all posts, and ban user? This is hard to reverse."
 msgstr ""
+"Действительно удалить все сообщения и заблокировать участника? Эти изменения "
+"будет трудно отменить. "
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:137
 msgid "(Edit Signature)"
@@ -1480,7 +1484,7 @@ msgstr "(Редактировать подпись)"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:161
 msgid "Are you sure you want to mark this as spam?"
-msgstr ""
+msgstr "Вы уверены, что хотите отметить это как спам?"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:161
 msgid "Mark as Spam"
@@ -1488,15 +1492,15 @@ msgstr "Отметить как спам"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:164
 msgid "Are you sure you want to unmark this as spam?"
-msgstr ""
+msgstr "Вы уверены, что хотите отменить отметку спама?"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:164
 msgid "Un-mark as Spam"
-msgstr ""
+msgstr "Отменить отметку Спама"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:168
 msgid "Are you sure you want to delete this post?"
-msgstr "Ты точно хочешь удалить сообщение?"
+msgstr "Вы точно хотите удалить это сообщение?"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:172
 msgid "Edit"
@@ -1522,7 +1526,7 @@ msgstr "Вперед!"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:236
 msgid "Moderator control"
-msgstr ""
+msgstr "Контроль модератора"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:237
 msgid "Delete multiple posts"
@@ -1548,19 +1552,19 @@ msgstr "Закрыть тему"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:246
 msgid "Unstick topic"
-msgstr ""
+msgstr "Отделить тему"
 
 #: djangobb_forum/templates/djangobb_forum/topic.html:248
 msgid "Stick topic"
-msgstr ""
+msgstr "Прикрепить тему"
 
 #: djangobb_forum/templates/djangobb_forum/upload_avatar.html:7
 msgid "Upload avatar"
-msgstr "Загрузить фото"
+msgstr "Загрузить аватар"
 
 #: djangobb_forum/templates/djangobb_forum/upload_avatar.html:13
 msgid "Enter an avatar file to upload"
-msgstr "Файл фото для загрузки"
+msgstr "Файл аватара для загрузки"
 
 #: djangobb_forum/templates/djangobb_forum/upload_avatar.html:19
 #, python-format
@@ -1594,8 +1598,8 @@ msgid ""
 "Links to YouTube videos on the forums are automatically converted to links "
 "to this page, to hide comments and other content."
 msgstr ""
-"На форуме, ссылки на видео YouTube автоматически изменяются, чтобы убрать "
-"лишнее (комментарии и прочее)."
+"На форумах ссылки на видео YouTube автоматически изменяются на ссылки на эту "
+"страницу, чтобы убрать лишнее (комментарии и прочее)."
 
 #: djangobb_forum/templates/djangobb_forum/includes/post_form.html:4
 msgid "New Reply"
@@ -1626,7 +1630,7 @@ msgstr "Обсуждай"
 #: djangobb_forum/templates/djangobb_forum/mobile/base.html:23
 #, python-format
 msgid "Signed in as <strong>%(user)s</strong>"
-msgstr "Твоё имя <strong>%(user)s</strong>"
+msgstr "Подписано <strong>%(user)s</strong>"
 
 # 85%
 #: djangobb_forum/templates/djangobb_forum/mobile/base.html:25
@@ -1682,14 +1686,16 @@ msgid ""
 "the features that are allowed/enabled listed below whenever you edit your "
 "signature."
 msgstr ""
+"Подпись - небольшой фрагмент текст, прикрепляемый к Вашим сообщениям. Вы "
+"можете добавить туда все, что хотите - любимую цитату или изображение."
 
 #: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:27
 msgid "No signature currently stored in profile."
-msgstr ""
+msgstr "В этом профайле пока нет подписи."
 
 #: djangobb_forum/templates/djangobb_forum/profile/profile_personality.html:32
 msgid "When you update your profile, you will be redirected back to this page."
-msgstr ""
+msgstr "Когда Вы заполните профайл, то будете перенаправлены на эту страницу."
 
 #: projects/views.py:501 projects/views.py:500
 msgid "This tag has too many projects to load"
@@ -1697,7 +1703,6 @@ msgstr "С этим тегом связано слишком много прое
 
 # 97%
 #: templates/403.html:12
-#, fuzzy
 msgid "403. Oh noes! Our server is Scratch'ing its head"
 msgstr "404. О нет! Что-то не так с нашим сервером"
 
@@ -1706,10 +1711,11 @@ msgid ""
 "We couldn't authorize you to view this page. If you need to get in touch "
 "with us about this, send us an email at "
 msgstr ""
+"Мы не можем показать Вам эту страницу. Если Вы хотите обсудить это, то "
+"можете послать электронное письмо по адресу"
 
 # 97%
 #: templates/404.html:16
-#, fuzzy
 msgid "Whoops! Our server is Scratch'ing its head"
 msgstr "404. О нет! Что-то не так с нашим сервером"
 
@@ -1727,17 +1733,19 @@ msgstr "Вы можете указать здесь, что ищете:"
 
 #: templates/500.html:40
 msgid "Looks like we are having issues with our servers!"
-msgstr ""
+msgstr "Похоже у нас проблемы с серверами!"
 
 #: templates/500.html:45
 msgid "Try refreshing in a few minutes"
-msgstr ""
+msgstr "Попробуйте обновить страницу через несколько минут."
 
 #: templates/500.html:47
 msgid ""
 "You can still <a href=\"/scratch2download/\">Download Scratch</a> and make "
 "projects."
 msgstr ""
+"Как и раньше Вы можете  <a href=\"/scratch2download/\">Скачать Scratch</a> и "
+"создавать проекты."
 
 #: templates/base.html:18
 msgid "Scratch"
@@ -1827,7 +1835,7 @@ msgstr "Для учителей"
 
 #: templates/base.html:330 templates/base.html:331
 msgid "Credits"
-msgstr ""
+msgstr "Создатели"
 
 #: templates/base.html:331 templates/base.html:332
 msgid "Jobs"
@@ -1835,7 +1843,7 @@ msgstr "Вакансии"
 
 #: templates/base.html:332 templates/base.html:333
 msgid "Press"
-msgstr ""
+msgstr "Пресса"
 
 #: templates/base.html:336 templates/info/parents.html:72
 #: templates/base.html:337 templates/info/parents.html:78
@@ -1853,7 +1861,7 @@ msgstr "Скретч Вики"
 
 #: templates/base.html:341 templates/base.html:342
 msgid "Statistics"
-msgstr ""
+msgstr "Статистика"
 
 #: templates/base.html:345 templates/search/includes/tabs.html:17
 #: templates/base.html:346
@@ -1870,7 +1878,7 @@ msgstr "ЧаВО"
 
 #: templates/base.html:349 templates/base.html:350
 msgid "Offline Editor"
-msgstr ""
+msgstr "Несетевой Редактор"
 
 # 90%
 #: templates/base.html:350 templates/contact-us-success.html:12
@@ -1885,7 +1893,7 @@ msgstr "Пожертвовать"
 
 #: templates/base.html:355 templates/base.html:356
 msgid "Legal"
-msgstr ""
+msgstr "Права"
 
 #: templates/base.html:357 templates/base.html:358
 msgid "Terms of Use"
@@ -1900,7 +1908,7 @@ msgstr "Политика личных данных"
 
 #: templates/base.html:359 templates/info/DMCA.html:10 templates/base.html:360
 msgid "DMCA"
-msgstr "DMCA"
+msgstr "Закон DMCA"
 
 #: templates/base.html:363 templates/base.html:364
 msgid "Scratch Family"
@@ -1908,30 +1916,27 @@ msgstr "Семейство Скретч"
 
 # 77%
 #: templates/base.html:365 templates/base.html:366
-#, fuzzy
 msgid "ScratchEd"
-msgstr "Скретч"
+msgstr "ScratchEd"
 
 # 77%
 # 88%
 #: templates/base.html:366 templates/base.html:367
-#, fuzzy
 msgid "ScratchJr"
-msgstr "Скретч"
+msgstr "ScratchJr"
 
 # 75%
 #: templates/base.html:367 templates/base.html:368
-#, fuzzy
 msgid "Scratch Day"
 msgstr "Команда Скретча"
 
 #: templates/base.html:368 templates/base.html:369
 msgid "Scratch Conference"
-msgstr ""
+msgstr "Конференции Scratch"
 
 #: templates/base.html:369 templates/base.html:370
 msgid "Code-to-Learn Foundation"
-msgstr ""
+msgstr "Организация Code-to-Learn"
 
 #: templates/base.html:384 templates/base.html:385
 msgid ""
@@ -1949,13 +1954,15 @@ msgstr "Аккаунт заблокирован"
 msgid ""
 "You can also try searching the Scratch <a href=\"/discuss\">Discussion "
 "forums</a>:"
-msgstr "Ты также можешь поискать на <a href=\"/discuss\">форумах</a>:"
+msgstr "Вы также можете поискать на <a href=\"/discuss\">форумах</a>:"
 
 #: templates/contact-us.html:94 templates/contact-us.html:100
 msgid ""
 "If you can't find an answer, post a new topic on the <a href=\"/discuss"
 "\">Discussion forums.</a> There are many experienced Scratchers who can help!"
 msgstr ""
+"Если Вы не смогли найти ответ, создайте новую тему на <a href=\"/discuss\""
+">форумах.</a> Там много опытных участников, которые могут Вам помочь."
 
 # 95%
 #: templates/contact-us.html:97 templates/contact-us.html:103
@@ -1975,6 +1982,8 @@ msgid ""
 "If you need to contact us, please choose from one of the options below. We "
 "get a lot of mail, so we may not be able to respond to your message."
 msgstr ""
+"Если Вам нужно связаться с нами, то выберите одну из опций, указанных ниже. "
+"Мы получаем множество писем и не всегда успеваем отвечать."
 
 #: templates/contact-us.html:107 templates/contact-us.html:113
 msgid "Select a topic"
@@ -1982,7 +1991,7 @@ msgstr "Выберите тему"
 
 #: templates/contact-us.html:108 templates/contact-us.html:114
 msgid "Report something inappropriate..."
-msgstr ""
+msgstr "Пожаловаться на неуместное..."
 
 #: templates/contact-us.html:109 templates/contact-us.html:115
 msgid "Report a problem with the website..."
@@ -2048,13 +2057,13 @@ msgstr "Самые используемые"
 #: templates/modal-login.html:29
 #: templates/includes/password_required_form.html:17
 msgid "Please enter the text below"
-msgstr ""
+msgstr "Пожалуйста, введите текст"
 
 # 83%
 # 80%
 #: templates/modal-login.html:57
 msgid "Or Join Scratch"
-msgstr "Или зарегистрируйся"
+msgstr "Или зарегистрируйтесь"
 
 #: templates/modal-registration.html:12
 msgid "Uh oh"
@@ -2201,40 +2210,44 @@ msgid ""
 "Enter your email address and we will send you an email to confirm your "
 "account."
 msgstr ""
+"Введите адрес электронной почты и мы пошлем сообщение с подтверждением "
+"аккаунта."
 
 #: templates/modal-registration.html:142
 msgid ""
 "Enter your parent's or guardian's email address and we will send them an "
 "email to confirm this account."
 msgstr ""
+"Введите адрес электронной почты одного из родителей или опекуна и мы вышлем "
+"подтверждение аккаунта на их электронную почту."
 
 #: templates/modal-registration.html:147
 msgid "Email address"
 msgstr "Электронная почта"
 
 #: templates/modal-registration.html:148
-#, fuzzy
 msgid "Parent's or guardian's email address"
 msgstr "Электронная почта родителя или опекуна"
 
 #: templates/modal-registration.html:156
 msgid "Confirm email address"
-msgstr ""
+msgstr "Подтвердить адрес"
 
 #: templates/modal-registration.html:170
-#, fuzzy
 msgid "Welcome to Scratch,"
-msgstr "Добро пожаловать в Скретч!"
+msgstr "Добро пожаловать в Скретч,"
 
 #: templates/modal-registration.html:171
 msgid "You're now logged in! You can start exploring and creating projects."
-msgstr ""
+msgstr "Вы вошли и можете создавать собственные проекты."
 
 #: templates/modal-registration.html:173
 msgid ""
 "If you want to share and comment, simply click the link in the email we sent "
 "you at <strong><span class=\"email-welcome\"></span></strong>"
 msgstr ""
+"Если Вы хотите делиться и комментировать, просто щелкните по ссылке, которую "
+"мы Вам послали в <strong><span class=\"email-welcome\"></span></strong>"
 
 #: templates/modal-registration.html:177
 #, python-format
@@ -2242,6 +2255,8 @@ msgid ""
 "Wrong email? Change your email address in <a href=\"%(settings_url)s"
 "\">Account Settings</a>"
 msgstr ""
+"Неверная почта? Измените свой адрес в  <a href=\"%(settings_url)s\">"
+"Настройках аккаунта</a>"
 
 #: templates/modal-registration.html:191
 #: templates/info/help/studio/tips/howto/cardtip1.html:13
@@ -2333,9 +2348,8 @@ msgid "Your username may only contain letters, numbers, - and _"
 msgstr "Ваше имя может содержать буквы, цифры, тире и подчеркивания"
 
 #: templates/modal-registration.html:219 templates/modal-registration.html:224
-#, fuzzy
 msgid "Your password cannot be \\'password\\'"
-msgstr "Пароль не должен быть таким простым."
+msgstr "Пароль не должен быть словом \\'пароль\\'"
 
 # 87%
 #: templates/modal-registration.html:220 templates/modal-registration.html:225
@@ -2377,7 +2391,7 @@ msgstr "Вы должны записать действующую электро
 
 #: templates/modal-registration.html:229 templates/modal-registration.html:234
 msgid "Whoops, emails do not match"
-msgstr ""
+msgstr "Ох, адреса не совпадают"
 
 #: templates/password_required_login.html:31
 #: src/django-password-required/password_required/templates/password_required_login.html:31
@@ -2386,7 +2400,7 @@ msgstr "Войти"
 
 #: templates/privacy_policy.html:29
 msgid "Scratch Privacy Policy"
-msgstr ""
+msgstr "Политика конфиденциальности"
 
 #: templates/temporarily-disabled.html:6
 msgid "We'll be Back Soon-  Scratch"
@@ -2400,20 +2414,19 @@ msgstr "Скоро вернёмся..."
 
 #: templates/terms_of_use.html:27
 msgid "Scratch Terms of Use"
-msgstr ""
+msgstr "Правила использования"
 
 #: templates/accounts/account_settings.html:8
 #: templates/accounts/email_change.html:8
 #: templates/accounts/password_change_form.html:8
 #: templates/accounts/deletion/confirmation.html:6
 #: templates/accounts/deletion/nostalgia.html:5
-#, fuzzy
 msgid "Account"
-msgstr "Аккаунты"
+msgstr "Аккаунт"
 
 #: templates/accounts/account_settings.html:38
 msgid "Save my Changes"
-msgstr ""
+msgstr "Сохранить изменения"
 
 #: templates/accounts/banned-response.html:32
 msgid "The Scratch Team decided to block the account:"
@@ -2500,6 +2513,8 @@ msgid ""
 "The new project player will appear automatically on the project page. If you "
 "see a bug, click 'Beta Bug?' on the project page to report it."
 msgstr ""
+"Проигрыватель проекта появляется на странице проекта автоматически. Если "
+"заметили ошибку, щелкните кнопку 'Beta Bug?'"
 
 # 85%
 #: templates/accounts/beta_optin.html:33
@@ -2509,7 +2524,7 @@ msgstr "Обновить"
 #: templates/accounts/email_change.html:18
 #: templates/accounts/email_change.html:30
 msgid "Your email address is unconfirmed"
-msgstr ""
+msgstr "Ваша почте не подтверждена"
 
 #: templates/accounts/email_change.html:19
 msgid ""
@@ -2520,7 +2535,7 @@ msgstr ""
 #: templates/accounts/email_change.html:23
 #: templates/accounts/email_change.html:34
 msgid "Your new email address is unconfirmed"
-msgstr ""
+msgstr "Новый почтовый адрес не подвержден"
 
 #: templates/accounts/email_change.html:25
 msgid ""
@@ -2599,34 +2614,33 @@ msgstr "Изменить пароль"
 #: templates/accounts/deletion/confirmation.html:12
 #: templates/accounts/deletion/nostalgia.html:11
 msgid "Delete my account"
-msgstr ""
+msgstr "Удалить учётную запись"
 
 #: templates/accounts/deletion/nostalgia.html:15
 msgid "Whoops, go back"
-msgstr ""
+msgstr "Ох, вернитесь"
 
 #: templates/accounts/deletion/nostalgia.html:17
-#, fuzzy
 msgid "Are you sure you want to delete your account?"
-msgstr "Ты точно хочешь удалить сообщение?"
+msgstr "Вы действительно хотите удалить свою учётную запись?"
 
 #: templates/accounts/deletion/nostalgia.html:22
 #, python-format
 msgid "You joined the Scratch community %(years_ago)s years ago."
-msgstr ""
+msgstr "Вы присоединились к сообществу %(years_ago)s лет назад"
 
 #: templates/accounts/deletion/nostalgia.html:24
 msgid "You joined the Scratch community a year ago."
-msgstr ""
+msgstr "Вы вошли в сообщество Scratch год назад."
 
 #: templates/accounts/deletion/nostalgia.html:26
 #, python-format
 msgid "You joined the Scratch community %(months_ago)s months ago."
-msgstr ""
+msgstr "Вы присоединились к сообществу Scratch %(months_ago)s месяцев назад."
 
 #: templates/accounts/deletion/nostalgia.html:28
 msgid "You joined the Scratch community a month ago."
-msgstr ""
+msgstr "Вы присоединились к сообществу Scratch месяц назад. "
 
 #: templates/accounts/deletion/nostalgia.html:33
 #, python-format
@@ -2634,10 +2648,12 @@ msgid ""
 "You've created %(num_projects)s projects and have %(num_followers)s "
 "followers."
 msgstr ""
+"Вы создали %(num_projects)s проектов и у Вас %(num_followers)s "
+"последователей."
 
 #: templates/accounts/deletion/nostalgia.html:41
 msgid "Some of your projects"
-msgstr ""
+msgstr "Некоторые Ваши проекты"
 
 # 92%
 #: templates/accounts/deletion/nostalgia.html:42
@@ -2681,14 +2697,14 @@ msgstr ""
 #: templates/accounts/email_verification/change_email_verification_email.html:17
 #: templates/accounts/email_verification/verification_email.html:26
 msgid "Confirm my email address"
-msgstr ""
+msgstr "Подтвердить почтовый адрес"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:23
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:12
 msgid ""
 "If you didn’t request an email change, don’t worry - you can just ignore "
 "this message."
-msgstr ""
+msgstr "Не реагируйте, если Вы не запрашивали изменений адреса почты."
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
 #: templates/accounts/email_verification/verification_email.html:43
@@ -2706,9 +2722,8 @@ msgstr "Логотип Скретч"
 #: templates/registration/welcome_email_message.html:47
 #: templates/registration/welcome_email_message.txt:37
 #: templates/accounts/email_verification/verification_email_plain.html:33
-#, fuzzy
 msgid "The Scratch Team"
-msgstr "Команда Скретча"
+msgstr "Команда Scratch"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:5
 #, python-format
