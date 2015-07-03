@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2015-05-18 05:44+0000\n"
+"PO-Revision-Date: 2015-06-07 19:04+0000\n"
 "Last-Translator: Torbjorn <torbjorn.skauli@ffi.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nb\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1431927859.000000\n"
+"X-POOTLE-MTIME: 1433703857.000000\n"
 
 #: views.py:322 views.py:332
 msgid "Your message has been sent. We will respond within 3 days."
@@ -149,7 +149,7 @@ msgstr[1] "dager"
 #, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
-msgstr[0] "for 1 minutt siden"
+msgstr[0] "for %(minutes)d minutt siden"
 msgstr[1] "for %(minutes)d minuttter siden"
 
 #: base_comments/templatetags/scratch_text_filters.py:120
@@ -162,7 +162,7 @@ msgstr "akkurat nå"
 #, python-format
 msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
-msgstr[0] "for 1 time siden"
+msgstr[0] "for %(hours)d time siden"
 msgstr[1] "for %(hours)d timer siden"
 
 #: base_comments/templatetags/scratch_text_filters.py:126
@@ -1687,7 +1687,7 @@ msgstr "Ikke plass til å lese inn alle prosjekter med dette nøkkelordet"
 # 97%
 #: templates/403.html:12
 msgid "403. Oh noes! Our server is Scratch'ing its head"
-msgstr "403. Nei å nei! Det er noe som ikke virker som det skal."
+msgstr "403. Nei å nei! Det er noe som ikke virker som det skal"
 
 #: templates/403.html:15
 msgid ""
@@ -1911,7 +1911,7 @@ msgstr "ScratchJr"
 # 75%
 #: templates/base.html:367 templates/base.html:368
 msgid "Scratch Day"
-msgstr "Scratch Day"
+msgstr "Scratch-dagen"
 
 #: templates/base.html:368 templates/base.html:369
 msgid "Scratch Conference"
@@ -1945,8 +1945,8 @@ msgid ""
 "If you can't find an answer, post a new topic on the <a href=\"/discuss"
 "\">Discussion forums.</a> There are many experienced Scratchers who can help!"
 msgstr ""
-"Hvis du ikke finner noe svar kan du skrive et nytt innlegg i <a href=\"/"
-"discuss\">forumet</a>. Det er mange erfarne Scratchere som kan hjelpe deg!"
+"Hvis du ikke finner svar kan du skrive et nytt innlegg i <a href=\"/discuss\""
+">forumet</a>. Det er mange erfarne Scratchere som kan hjelpe deg!"
 
 # 95%
 #: templates/contact-us.html:97 templates/contact-us.html:103
@@ -2334,7 +2334,7 @@ msgstr "Brukernavnet må bestå av bokstaver, tall, - og _, men ikke norske tegn
 
 #: templates/modal-registration.html:219 templates/modal-registration.html:224
 msgid "Your password cannot be \\'password\\'"
-msgstr "Passordet ditt kan ikke være 'password'."
+msgstr "Passordet ditt kan ikke være \\'password\\'"
 
 # 87%
 #: templates/modal-registration.html:220 templates/modal-registration.html:225
@@ -2803,8 +2803,8 @@ msgid ""
 "Success! You have confirmed your email address, <strong>"
 "%(request.GET.username)s</strong>."
 msgstr ""
-"Det er i orden! Du har bekreftet epostadressen,<strong>"
-"%(request.GET.username)s</strong>."
+"Det er i orden! Du har bekreftet epostadressen, "
+"<strong>%(request.GET.username)s</strong>."
 
 #: templates/accounts/email_verification/passed_verification.html:57
 msgid ""
@@ -3909,20 +3909,20 @@ msgstr ""
 "robotsett, når Scratch kjører i nettleseren. (Senere kommer en versjon som "
 "også støtter PicoBoard.)\n"
 "</p><p>\n"
-"<b>Merk:</b> Dette er en foreløpig (beta) testversjon av programtillegget "
+"<b>Merk:</b> Dette er en foreløpig testversjon (beta) av programtillegget "
 "som bare virker på Mac OS X og Windows.\n"
 "</p><p>\n"
-"For å prøve Scratch-utvidelsen, last ned installasjonsfilen for <a href="
-"\"%(STATIC_URL)sext/ScratchDevicePlugin.dmg\">Mac</a> eller <a href="
-"\"%(STATIC_URL)sext/ScratchDevicePlugin.msi\">Windows</a>.\n"
+"For å prøve tilleggsfunksjonen, last ned installasjonsfilen for <a href=\""
+"%(STATIC_URL)sext/ScratchDevicePlugin.dmg\">Mac</a> eller <a href=\""
+"%(STATIC_URL)sext/ScratchDevicePlugin.msi\">Windows</a>.\n"
 "</p><p>\n"
 "For å bruke WeDo-klossene, start først nettleseren på nytt. Klikk på "
 "kategorien \"Flere klosser\" <strong>mens du holder shift-knappen</strong>. "
-"Klikk på knappen for å hente inn et tillegg. Dialogboksen for utvidelser "
-"åpnes.\n"
+"Klikk på knappen for å legge inn en tilleggsfunksjon. Dialogboksen for "
+"tilleggsfunksjoner åpnes.\n"
 "</p><p>\n"
-"Velg \"WeDo\"-utvidelsen og klikk OK. WeDo-klossene vises i kategorien "
-"\"Flere klosser\".\n"
+"Velg tilleggsfunksjonen for \"WeDo\" og klikk OK. WeDo-klossene vises i "
+"kategorien \"Flere klosser\".\n"
 "</p><p>\n"
 "Hvis programtillegget ble riktig installert vises en grønn eller gul "
 "indikator ved siden av overskriften \"WeDo\".\n"
@@ -3932,7 +3932,7 @@ msgstr ""
 "sensorverdier (hvis en sensor er tilkoblet).\n"
 "</p><p>\n"
 " Gul betyr at det er noe som ikke virker. Hold musepekeren over indikatoren "
-"for å se hva som er galt.. \n"
+"for å se hva som er galt. \n"
 "           </p><p>\n"
 "           Gå til denne siden igjen senere for å se etter oppdateringer av "
 "programtillegget!\n"
@@ -4381,12 +4381,12 @@ msgid ""
 "something creative and new.<span class=\"quotes\">&rdquo;</span> - 13-year-"
 "old </p>\n"
 msgstr ""
-"Jeg liker Scratch bedre enn Facebook og blogger fordi vi lager "
-"interessante \n"
-" \t prosjekter og morsomme spill. Jeg liker ikke å bare prate med andre på "
+"Jeg liker Scratch bedre enn Facebook og blogger fordi vi lager interessante "
+"\n"
+" \tprosjekter og morsomme spill. Jeg liker ikke å bare prate med andre på "
 "nettet, jeg vil snakke om noe \n"
-" \t som er kreativt og nytt. <span class=\"quotes\">&rdquo;</span> - 13-"
-"åring </p>\n"
+" \tsom er kreativt og nytt. <span class=\"quotes\">&rdquo;</span> - 13-åring "
+"</p>\n"
 
 #: templates/info/quotes.html:26
 msgid ""
@@ -4801,7 +4801,7 @@ msgstr "Fem fakta om meg"
 
 #: templates/info/starter_projects.html:151
 msgid "Introducing Howler! Remix"
-msgstr "Introducing Howler! Remix"
+msgstr "Introducing Howler! Remiks"
 
 #: templates/info/starter_projects.html:155
 msgid "Teens at the Castle"
@@ -5228,7 +5228,7 @@ msgstr "Nei."
 #: templates/info/help/faq.html:100 templates/info/faq.html:103
 msgid "Can the Scratch Team view unshared projects on my 'My Stuff' page?"
 msgstr ""
-"Har administratorene på Scratch sitt nettsted tilgang til prosjekter som jeg "
+"Har administratorene på Scratch-nettstedet tilgang til prosjekter som jeg "
 "ikke har lagt ut?"
 
 #: templates/info/help/faq.html:109 templates/info/faq.html:112
@@ -5611,7 +5611,7 @@ msgid ""
 "explain. Be sure to include as much detail as you can, with links to "
 "relevant pages."
 msgstr ""
-"Du kan klikke på linken \"meld\" i prosjekter, kommentarer, innlegg eller "
+"Du kan klikke på linken “meld” i prosjekter, kommentarer, innlegg eller "
 "brukersider som inneholder ting du ikke synes er OK. Du kan også bruke "
 "linken \"kontakt oss\" for å melde inn problematiske og upassende ting. Pass "
 "på å forklare godt hva du mener, helst på engelsk, og ta med linker til de "
@@ -6276,9 +6276,9 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"            <a href=\"%(scratch_url)s\">Scratch</a> Scratch er et prosjekt "
-"fra \"Lifelong Kindergarten Group\" ved MIT Media Lab. Med Scratch kan barna "
-"lage interaktive fortellinger, spill og animasjoner.\n"
+"            <a href=\"%(scratch_url)s\">Scratch</a> er et prosjekt fra \""
+"Lifelong Kindergarten Group\" ved MIT Media Lab. Med Scratch kan barna lage "
+"interaktive fortellinger, spill og animasjoner.\n"
 "        "
 
 #: templates/mail/base.html:46
@@ -6847,7 +6847,7 @@ msgid ""
 "This project is not shared -- so only you can see it. Click share to let "
 "everyone see it!"
 msgstr ""
-"Dette prosjektet er ikke lagt ut, bare du kan se det. Klikk \"legg ut\" for "
+"Dette prosjektet er ikke lagt ut. Bare du kan se det. Klikk \"legg ut\" for "
 "å la alle se det!"
 
 #: templates/projects/unshared-owner.html:36
@@ -7041,12 +7041,12 @@ msgstr "Lære å lage et nytt prosjekt"
 #: templates/registration/welcome_email_message.html:16
 #: templates/registration/welcome_email_message.txt:11
 msgid "Get inspired with a starter project"
-msgstr ""
+msgstr "Start her: begynnerprosjekter"
 
 #: templates/registration/welcome_email_message.html:22
 #: templates/registration/welcome_email_message.txt:17
 msgid "Want to learn more?"
-msgstr ""
+msgstr "Vil du lære mer?"
 
 #: templates/registration/welcome_email_message.html:24
 #, python-format
@@ -7055,6 +7055,9 @@ msgid ""
 "\"%(faq_url)s\">Frequently Asked Questions</a>, and <a href=\"%(discuss_url)s"
 "\">Discussion Forums</a>, to learn more about Scratch."
 msgstr ""
+"Du kan finne ut mer <a href=\"%(about_url)s\">Om Scratch</a>, lese <a href=\""
+"%(faq_url)s\">Spørsmål og svar</a> eller se på <a href=\"%(discuss_url)s\""
+">Forumet</a> for å komme videre med Scratch."
 
 #: templates/registration/welcome_email_message.html:27
 msgid ""
@@ -7064,6 +7067,9 @@ msgid ""
 "supports Scratch educational initiatives. You can unsubscribe from within "
 "the updates or by clicking below:"
 msgstr ""
+"Vi vil av og til sende epost med nyheter om Scratch og ideer til prosjekter "
+"du kan ha lyst til å prøve deg på. Du kan når som helst avslutte "
+"abonnementet via en link i epostene eller ved å klikke nedenfor:"
 
 #: templates/registration/welcome_email_message.html:29
 msgid ""
@@ -7071,11 +7077,14 @@ msgid ""
 "team with coding tips, inspirational stories, project ideas, and more. You "
 "can unsubscribe from within the updates or by clicking below:"
 msgstr ""
+"Vi vil av og til sende epost med nyheter om Scratch og ideer til prosjekter "
+"du kan ha lyst til å prøve deg på. Du kan når som helst avslutte "
+"abonnementet via en link i epostene eller ved å klikke nedenfor:"
 
 #: templates/registration/welcome_email_message.txt:4
 #, python-format
 msgid "Welcome to Scratch, %(username)s!"
-msgstr ""
+msgstr "Velkommen til Scratch, %(username)s!"
 
 #: templates/registration/welcome_email_message.txt:19
 #, python-format
@@ -7084,6 +7093,8 @@ msgid ""
 "(%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn more about "
 "Scratch."
 msgstr ""
+"Ta en titt på sidene Om Scratch (%(about_url)s), Spørsmål og Svar "
+"(%(faq_url)s), og Forumet (%(discuss_url)s), for å lære mer om Scratch."
 
 #: templates/registration/welcome_email_message.txt:22
 msgid ""
@@ -7093,6 +7104,9 @@ msgid ""
 "supports Scratch educational initiatives. You can unsubscribe from within "
 "the updates or by clicking below:"
 msgstr ""
+"Vi vil av og til sende epost med nyheter om Scratch og ideer til prosjekter "
+"du kan ha lyst til å prøve deg på. Du kan når som helst avslutte "
+"abonnementet via en link i epostene eller ved å klikke nedenfor:"
 
 #: templates/registration/welcome_email_message.txt:24
 msgid ""
@@ -7102,6 +7116,10 @@ msgid ""
 "stories, project ideas, and more. You can unsubscribe from within the "
 "updates or by clicking below:"
 msgstr ""
+"Se på sidene Om Scratch, les våre Spørsmål og Svar eller se på Forumet for å "
+"lære mer om Scratch. Vi vil av og til sende epost med nyheter om Scratch og "
+"ideer til prosjekter du kan ha lyst til å prøve deg på. Du kan når som helst "
+"avslutte abonnementet via en link i epostene eller ved å klikke nedenfor:"
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format
@@ -7376,7 +7394,7 @@ msgstr "Hvorfor jeg Scratcher"
 
 #: templates/contact-us.html:116
 msgid "Problems with email confirmation..."
-msgstr ""
+msgstr "Det er problemer med bekreftelse av epostadressen..."
 
 #: templates/modal-registration.html:181
 #, python-format
@@ -7384,6 +7402,7 @@ msgid ""
 "Having problems? <a href=\"%(contact_url)s?confirmation=1\">Please give us "
 "feedback</a>"
 msgstr ""
+"Har du problemer? <a href=\"%(contact_url)s?confirmation=1\">Si fra her</a>"
 
 #: templates/homepage/index.html:150
 #, python-format
@@ -7391,6 +7410,8 @@ msgid ""
 "A creative learning community with <span class=\"projcount\">"
 "%(PROJECT_COUNT)s</span> projects shared"
 msgstr ""
+"Et nettsamfunn for kreativ læring der <span class=\"projcount\""
+">%(PROJECT_COUNT)s</span> prosjekter er lagt ut"
 
 #: templates/info/scratch2download.html:50
 #, python-format
@@ -7415,6 +7436,27 @@ msgid ""
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
+"\n"
+"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-"
+"editor/step1.png\" alt=\"Step 1\">\n"
+"\t\t\t\t<p>Hvis du ikke har gjort det allerede, last ned siste versjon av <a "
+"href=\"http://get.adobe.com/air/\">Adobe AIR</a></p>\n"
+"\t\t\t\tMac OS X - <a href=\"http://get.adobe.com/air/\">Download<img src=\""
+"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \""
+"></a>\n"
+"\t\t\t\t<p>Mac OS 10.5 og eldre - <a href=\""
+"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.zip\">Download<"
+"img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\""
+"Download \"></a> <br>\n"
+"\t\t\t\t   Windows - <a href=\"http://get.adobe.com/air/\">Download<img src="
+"\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \""
+"></a> <br>\n"
+"\t\t\t\t   Linux - <a href=\""
+"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin\""
+">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" "
+"alt=\"Download \"></a>\n"
+"\t\t\t\t</p>\n"
+"\t\t\t\t"
 
 #: templates/info/scratch2download.html:63
 #, python-format
@@ -7443,6 +7485,29 @@ msgid ""
 "                </p>\n"
 "                "
 msgstr ""
+"\n"
+"                <img class=\"lg-num\" src=\"%(STATIC_URL)simages/help"
+"/offline-editor/step2.png\" alt=\"Step 2\">\n"
+"                <p>Last ned og installer <br>Scratch 2.0 for maskiner uten "
+"nettforbindelse</p>\n"
+"                    <p>Mac OS X - <a class=\"editor-link\" href=\""
+"/scratchr2/static/sa/Scratch-EDITOR_VERSION.dmg\">Download<img src=\""
+"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \""
+"></a> <br>\n"
+"                    Mac OS 10.5 og eldre - <a class=\"editor-link\" href=\""
+"/scratchr2/static/sa/Scratch-EDITOR_VERSION.air\">Download<img src=\""
+"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \""
+"></a> <br>\n"
+"                    Windows - <a class=\"editor-link\" href=\""
+"/scratchr2/static/sa/Scratch-EDITOR_VERSION.exe\">Download<img src=\""
+"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \""
+"></a> <br>\n"
+"                    Linux - <a class=\"editor-link\" href=\""
+"/scratchr2/static/sa/Scratch-EDITOR_VERSION.air\">Download<img src=\""
+"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \""
+"></a>\n"
+"                </p>\n"
+"                "
 
 #: templates/info/scratch2download.html:76
 #, python-format
@@ -7464,6 +7529,23 @@ msgid ""
 "\t\t\t\t</p>\t\n"
 "\t\t\t\t"
 msgstr ""
+"\n"
+"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-"
+"editor/step3.png\" alt=\"Step \">\n"
+"\t\t\t\t<p>Vil du ha hjelp til å komme i gang? <br>Her er noen ting du kan "
+"begynne med.</p>\n"
+"\t\t\t\t<p>Eksempelprosjekter - <a href=\""
+"/scratchr2/static/sa/Scratch2StarterProjects.zip\">Last ned<img src=\""
+"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \""
+"></a> <br>\n"
+"\t\t\t\t   Startveiledning - <a href=\"%(STATIC_URL)spdfs/help/Getting-"
+"Started-Guide-Scratch2.pdf\">Last ned<img src=\"%(STATIC_URL)simages/help"
+"/offline-editor/pdf.png\" alt=\"PDF Download \"></a> <br>\n"
+"\t\t\t\t   Scratch-kort - <a href=\"%(STATIC_URL)spdfs/help/Scratch2Cards."
+"pdf\">Last ned<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" "
+"alt=\"PDF Download \"></a>\n"
+"\t\t\t\t</p>\t\n"
+"\t\t\t\t"
 
 #: templates/stats/index.html:12
 msgid ""
@@ -7479,18 +7561,28 @@ msgid ""
 "                <li>&hellip;and growing!</li>\n"
 "                "
 msgstr ""
+"\n"
+"                <li class=\"data\"><span class=\"value\" id=\"numproject\""
+"></span> prosjekter lagt ut,</li>\n"
+"                <li class=\"data\"><span class=\"value\" id=\"numusers\""
+"></span> registrerte brukere,</li>\n"
+"                <li class=\"data\"><span class=\"value\" id=\"numcomments\""
+"></span> kommentarer,</li>\n"
+"                <li class=\"data\"><span class=\"value\" id=\"numstudios\""
+"></span> gallerier</li>\n"
+"                <li>&hellip;og det øker fortsatt!</li>\n"
+"                "
 
 #: templates/stats/index.html:23 templates/stats/index.html.py:70
 #: templates/stats/index.html:89 templates/stats/index.html.py:108
 #: templates/stats/index.html:127 templates/stats/index.html.py:146
 #: templates/stats/index.html:165 templates/stats/index.html.py:185
-#, fuzzy
 msgid "Data generated on:"
 msgstr "Data generert:"
 
 #: templates/stats/index.html:31
 msgid "Website traffic last month"
-msgstr ""
+msgstr "Trafikk på nettstedet den siste måneden"
 
 #: templates/stats/index.html:39
 #, python-format
@@ -7501,10 +7593,15 @@ msgid ""
 "                <li class=\"data\">%(visitors)s unique visitors</li>\n"
 "                "
 msgstr ""
+"\n"
+"                <li class=\"data\">%(pageviews)s sidevisninger</li>\n"
+"                <li class=\"data\">%(visits)s besøk</li>\n"
+"                <li class=\"data\">%(visitors)s unike brukere</li>\n"
+"                "
 
 #: templates/stats/index.html:49
 msgid "Data generated from Google Analytics on:"
-msgstr ""
+msgstr "Data fra Google Analytics "
 
 #: templates/base.html:264
 #, python-format
@@ -7512,11 +7609,14 @@ msgid ""
 "<a id=\"confirm-email-popup\" href=\"#\">Confirm your email</a> to enable "
 "sharing. <a href=\"%(faq_url)s#accounts\">Having trouble?</a>"
 msgstr ""
+"<a id=\"confirm-email-popup\" href=\"#\">Bekreft epostadressen din</a> for å "
+"få legge ut prosjekter. <a href=\"%(faq_url)s#accounts\">Får du det ikke "
+"til?</a>"
 
 #: templates/stats/index.html:173
 msgid "Scratch Block Usage (last one month)"
-msgstr ""
+msgstr "Bruk av Scratch-klosser (siste måned)"
 
 #: templates/stats/index.html:181
 msgid "Click on a cell to zoom in or out"
-msgstr ""
+msgstr "Klikk på en celle for å zoome inn eller ut"
