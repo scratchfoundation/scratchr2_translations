@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2015-06-13 19:05+0000\n"
+"PO-Revision-Date: 2015-07-03 15:27+0000\n"
 "Last-Translator: Kirsten <kirstendampedersen@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1434222330.000000\n"
+"X-POOTLE-MTIME: 1435937260.000000\n"
 
 #: djangobb_forum/templates/djangobb_forum/moderate.html:84
 #: djangobb_forum/templates/djangobb_forum/move_posts.html:89
@@ -337,14 +337,12 @@ msgid "set size to"
 msgstr "sæt størrelse til"
 
 #: templates/help/studio/tips/home.html:170
-#, fuzzy
 msgid "go to front"
 msgstr "gå til forsiden"
 
 #: templates/help/studio/tips/home.html:171
-#, fuzzy
 msgid "go back _ layers"
-msgstr "gå tilbage _lag"
+msgstr "gå _ lag tilbage"
 
 #: templates/help/studio/tips/home.html:172
 msgid "costume #"
@@ -517,17 +515,17 @@ msgstr "slet _"
 # what is the context? Can you give an example?
 #: templates/help/studio/tips/home.html:231
 msgid "insert _ at _ of"
-msgstr ""
+msgstr "indsæt _ på _ af"
 
 # Context?
 #: templates/help/studio/tips/home.html:232
 msgid "replace item _ of _ with"
-msgstr ""
+msgstr "erstat ting _ af _ med"
 
 # Context? 
 #: templates/help/studio/tips/home.html:233
 msgid "item _ of"
-msgstr ""
+msgstr "ting _ af"
 
 #: templates/help/studio/tips/home.html:234
 #: templates/help/studio/tips/home.html:318
@@ -684,11 +682,11 @@ msgstr "video _ på _"
 
 #: templates/help/studio/tips/home.html:290
 msgid "turn video"
-msgstr ""
+msgstr "drej video"
 
 #: templates/help/studio/tips/home.html:291
 msgid "set video transparency to"
-msgstr ""
+msgstr "sæt video gennemsigtighed til "
 
 #: templates/help/studio/tips/home.html:292
 msgid "timer"
@@ -979,6 +977,10 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/backdrop-name.png\" />\n"
 "  </p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/backdrop-name-ex.png\"/>\n"
+"<p>Titlen ved siden af baggrunden i listen er <img src=\""
+"%(STATIC_URL)s/images/help/backdrop-name.png\" />\n"
+"</p>"
 
 #: templates/help/studio/tips/blocks/backdrop-number.html:8
 #, python-format
@@ -993,7 +995,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:7
 msgid "Sends a message to all sprites and waits"
-msgstr ""
+msgstr "Sender en besked til alle sprites og venter"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:14
 #, python-format
@@ -1013,10 +1015,23 @@ msgid ""
 "  </p>\n"
 "  "
 msgstr ""
+"\n"
+"<p>\n"
+"Du kan bruge <img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait.png\" "
+"/> til at sende en besked til alle sprites for at fortælle dem noget, og "
+"vente indtil de alle er færdige før det fortsætter. \n"
+"</p>\n"
+"\n"
+"<p>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait-ex2.png\" "
+"/><br/>\n"
+"<br>Klik for at vælge hvilken besked der skal sendes. Vælg \"ny\" for at "
+"taste din egen besked. <br/>\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/broadcast.html:7
 msgid "Sends a message to all sprites"
-msgstr ""
+msgstr "Sender en besked til alle sprites"
 
 #: templates/help/studio/tips/blocks/broadcast.html:15
 #, python-format
@@ -1029,10 +1044,17 @@ msgid ""
 "\"../when-i-receive/\"><img src=\"%(STATIC_URL)s/images/help/when-i-receive."
 "png\"/></a></p>\n"
 msgstr ""
+"\n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/broadcast.png\"/> sender en besked "
+"til alle sprites (og baggrunden). Det er brugbart hvis du vil fortælle andre "
+"sprites, hvornår de skal gøre noget.</p> \n"
+"<p> Hvad vil du have dem til at gøre, når de modtager beskeden? Se <a href=\""
+"../when-i-receive/\"><img src=\"%(STATIC_URL)s/images/help/when-i-receive."
+"png\"/></a></p>\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
-msgstr ""
+msgstr "Ændrer den grafiske effekt på en sprite"
 
 #: templates/help/studio/tips/blocks/change-effect.html:17
 #, python-format
@@ -1043,6 +1065,11 @@ msgid ""
 "Try these effects with numbers such as 10, 35, or 100. Or try negative "
 "numbers, such as -50.\n"
 msgstr ""
+"\n"
+"Klik for at vælge en effekt fra menuen:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/change-effect-ex2.png\"/><br>\n"
+"Prøv disse effekter med tallene 10, 35, eller 100. Eller prøv med negative "
+"tal, som -50.\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:23
 #, python-format
@@ -1052,14 +1079,18 @@ msgid ""
 "all graphic effects. Or, use <img src=\"%(STATIC_URL)s/images/help/clear-"
 "graphic-effects.png\"/>\n"
 msgstr ""
+"\n"
+"Klik stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> for at "
+"slette alle grafiske effekter. Eller, brug <img src=\""
+"%(STATIC_URL)s/images/help/clear-graphic-effects.png\"/>\n"
 
 #: templates/help/studio/tips/blocks/change-size.html:8
 msgid "Changes sprite's size by specified amount"
-msgstr ""
+msgstr "Ændrer størrelsen på spriten med et bestemt tal"
 
 #: templates/help/studio/tips/blocks/change-tempo.html:8
 msgid "Changes sprite's tempo by specified amount"
-msgstr ""
+msgstr "Ændrer spritens tempo med et bestemt tal"
 
 #: templates/help/studio/tips/blocks/change-tempo.html:14
 msgid ""
@@ -1069,16 +1100,24 @@ msgid ""
 "play. The larger the tempo value, the faster the notes and drums will play.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Tempo er den hastighed (bpm = slag pr minut) som Scratch noder og trommer "
+"vil spille med. Jo højere tempo værdi, jo hurtigere vil noderne og trommerne "
+"spille\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/change-variable.html:7
 msgid "Changes the variable by specified amount"
-msgstr ""
+msgstr "Ændrer variablen med et bestemt tal"
 
 #: templates/help/studio/tips/blocks/change-variable.html:9
 msgid ""
 "If you have more \n"
 "than one variable, use the pull-down menu to select the variable name."
 msgstr ""
+"Hvis du har mere \n"
+"end en variabel, brug træk-ned menuen for at vælge variablens navn."
 
 #: templates/help/studio/tips/blocks/change-volume.html:7
 msgid "Changes sprite's sound volume by specified amount"
@@ -1142,10 +1181,18 @@ msgid ""
 "<b>Note: If the pen shade is 0, then the pen color will be close to black. "
 "If the pen shade is 100, the pen color will be close to white.</b>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Pennens skygge går fra 0 til 100. 50 er standard.\n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/changeshadeex2.png\" /> \n"
+"<p>\n"
+"<b>Note: Hvis pennens skygge er 0, er pennens farve tæt på sort. Hvis "
+"pennens skygge er 100, er pennens farve tæt på hvid.</b>\n"
 
 #: templates/help/studio/tips/blocks/clear-graphic-effects.html:7
 msgid "Clears all graphic effects for a sprite"
-msgstr ""
+msgstr "Sletter alle grafiske effekter for en sprite"
 
 #: templates/help/studio/tips/blocks/clear-graphic-effects.html:17
 #, python-format
@@ -1154,20 +1201,25 @@ msgid ""
 "<p><img src=\"%(STATIC_URL)s/images/help/clear-graphic-effects.png\" /> "
 "clears all the graphic effects for this sprite.</p>\n"
 msgstr ""
+"\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/clear-graphic-effects.png\" /> "
+"sletter alle grafiske effekter for denne sprite.</p>\n"
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
-msgstr ""
+msgstr "Sletter alle pen mærker og stempler fra Scenen"
 
 #: templates/help/studio/tips/blocks/clear.html:14
 msgid ""
 "Note: The pen marks and stamps are not part of the backdrops, therefore, "
 "clear does not change the backdrop."
 msgstr ""
+"Note: Pen mærkerne og stemplerne er ikke en del af baggrundene, derfor, når "
+"man sletter, så ændrer det ikke baggrunden."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:6
 msgid "Tells a clone what to do once it is created"
-msgstr ""
+msgstr "Fortæller en klon hvad den skal gøre, når den er lavet"
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 #, python-format
@@ -1178,16 +1230,23 @@ msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are "
 "created.\n"
 msgstr ""
+"\n"
+"Koden er aktiv, så snart klonen er lavet.\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /></p>\n"
+"Kloner svarer også til alle \"når...\" brikker, som er aktive efter at de er "
+"blevet lavet.\n"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
-msgstr ""
+msgstr "Rapporterer sandt hvis første farve rører ved anden farve"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:11
 msgid ""
 "The first color is within the sprite, while the second is from the "
 "background or another sprite."
 msgstr ""
+"Den første farve er i spriten, mens den anden er fra baggrunden eller en "
+"anden sprite."
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:20
 msgid ""
