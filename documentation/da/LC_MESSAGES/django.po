@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2015-09-11 14:42+0000\n"
+"PO-Revision-Date: 2015-10-09 17:22+0000\n"
 "Last-Translator: mewtaylor <mataylor@media.mit.edu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1441982520.000000\n"
+"X-POOTLE-MTIME: 1444411334.000000\n"
 
 #: djangobb_forum/templates/djangobb_forum/moderate.html:84
 #: djangobb_forum/templates/djangobb_forum/move_posts.html:89
@@ -1121,9 +1121,8 @@ msgstr ""
 "end en variabel, brug træk-ned menuen for at vælge variablens navn."
 
 #: templates/help/studio/tips/blocks/change-volume.html:7
-#, fuzzy
 msgid "Changes sprite's sound volume by specified amount"
-msgstr "Ændrer størrelsen på spriten med et bestemt tal"
+msgstr "Ændrer spritens lydstyrke med et bestemt tal"
 
 #: templates/help/studio/tips/blocks/change-volume.html:14
 msgid ""
@@ -1136,43 +1135,50 @@ msgid ""
 "with different volumes, use two sprites.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Lydstyrken går fra 0 til 100, med 100 som udgangspunkt\n"
+"</p>\n"
+"<p>\n"
+"Du kan sætte lydstyrken for hver sprite. For at spille to lyde på samme tid "
+"med forskellig lydstyrke, skal du bruge to sprites.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/change-x.html:6
 msgid "Change the x position by this amount"
-msgstr ""
+msgstr "Flyt x positionen så langt"
 
 #: templates/help/studio/tips/blocks/change-x.html:13
 msgid "A positive number shifts the sprite to the <b>right</b>."
-msgstr ""
+msgstr "Et positivt tal sender spriten mod <b>højre</b>"
 
 #: templates/help/studio/tips/blocks/change-x.html:14
 msgid "A negative number shifts the sprite to the <b>left</b>."
-msgstr ""
+msgstr "Et negativt tal sender spriten mod <b>venstre</b>"
 
 #: templates/help/studio/tips/blocks/change-y.html:7
-#, fuzzy
 msgid "Changes sprite's y-position by specified amount."
-msgstr "Ændrer størrelsen på spriten med et bestemt tal"
+msgstr "Ændrer spritens y-position med en bestemt værdi"
 
 #: templates/help/studio/tips/blocks/change-y.html:15
 msgid ""
 "Change y by a <b>positive</b> number to move the sprite <b>up</b>. \n"
 "Change y by a <b>negative</b> number to move the sprite <b>down</b>."
 msgstr ""
+"læg et <b>positivt</b> tal til y for at flytte spriten <b>op</b>. \n"
+"læg et <b>negativt</b> tal til y for at flytte spriten <b>ned</b>."
 
 #: templates/help/studio/tips/blocks/changecolor.html:9
-#, fuzzy
 msgid "Changes pen's color by specified amount"
-msgstr "Ændrer spritens tempo med et bestemt tal"
+msgstr "Ændrer pennens farve med en bestemt værdi"
 
 #: templates/help/studio/tips/blocks/changepensize.html:9
 msgid "Changes pen's thickness."
-msgstr ""
+msgstr "Ændrer pennens tykkelse"
 
 #: templates/help/studio/tips/blocks/changeshadeby.html:7
-#, fuzzy
 msgid "Changes pen's shade by specified amount"
-msgstr "Ændrer størrelsen på spriten med et bestemt tal"
+msgstr "Ændrer pennens skygge med en bestemt værdi"
 
 #: templates/help/studio/tips/blocks/changeshadeby.html:16
 #, python-format
@@ -1259,22 +1265,25 @@ msgid ""
 "eye dropper to click on the color you want. The color will appear in the "
 "square."
 msgstr ""
+"For at vælge en farve, skal du have få fat i drypperen ved at klikke på "
+"firkanten. Brug drypperen til at klikke på den farve du vil have. Farven "
+"dukker så op i firkanten."
 
 #: templates/help/studio/tips/blocks/computefunction.html:8
 msgid "Computes a function"
-msgstr ""
+msgstr "Udregner en funktion"
 
 #: templates/help/studio/tips/blocks/computefunction.html:14
 msgid "Choose different functions from the drop-down menu."
-msgstr ""
+msgstr "Vælg forskellige funktioner fra drop-down menuen."
 
 #: templates/help/studio/tips/blocks/costume-number.html:3
 msgid "Reports sprite's current costume number"
-msgstr ""
+msgstr "Vis spritens nuværende kostumenummer"
 
 #: templates/help/studio/tips/blocks/create-clone.html:6
 msgid "Creates a clone (temporary duplicate) of the specified sprite"
-msgstr ""
+msgstr "Skaber en klon (en midlertidig kopi) af den valgte sprite"
 
 #: templates/help/studio/tips/blocks/create-clone.html:10
 #, python-format
@@ -1290,6 +1299,16 @@ msgid ""
 "<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/create-clone-example.png\" />"
 msgstr ""
+"\n"
+"<p>\n"
+"Vælg hvilken sprite du vil klone fra drop-down menuen.\n"
+"<br>\n"
+"Brug <img src=\"%(STATIC_URL)s/images/help/clone-startup.png\" /> til at "
+"fortælle klonen hvad den skal gøre, når først den er skabt.\n"
+"</p>\n"
+"Prøve på et script:\n"
+"<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/create-clone-example.png\" />"
 
 #: templates/help/studio/tips/blocks/create-clone.html:22
 #, python-format
@@ -1307,10 +1326,23 @@ msgid ""
 "</p>\n"
 "</div>\n"
 msgstr ""
+"\n"
+"Problemløsning:\n"
+"<br>\n"
+"Hvis du ikke kan se klonen, så flyt den så den originale sprite ikke dækker "
+"den. Klonen kommer først til syne på samme sted som originalen.\n"
+"<br/>\n"
+"<br>Du skal være sikker på at du har valgt den sprite du vil kopiere fra "
+"menuen i <img src=\"%(STATIC_URL)s/images/help/create-clone-of.png\" /> "
+"brikken.\n"
+" <br/>\n"
+"Bemærk: Klonen findes kun så længe projektet kører.\n"
+"</p>\n"
+"</div>\n"
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
-msgstr ""
+msgstr "Viser den aktuelle tid"
 
 #: templates/help/studio/tips/blocks/current-time.html:14
 #, python-format
@@ -1327,14 +1359,25 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/current-time-checkbox.png\" />\n"
 "</p>"
 msgstr ""
+"<p>\n"
+"Du kan vælge i menuen hvad du vil have fat i\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/current-time-ex2.png\" /><br/>\n"
+"</p>\n"
+"\n"
+"\n"
+"<p>\n"
+"For at få vist tiden skal du klikke i kassen ved siden af den aktuelle "
+"tid<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/current-time-checkbox.png\" />\n"
+"</p>"
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
-msgstr ""
+msgstr "Viser antallet af dage der er gået siden 1. januar 2000"
 
 #: templates/help/studio/tips/blocks/define.html:9
 msgid "Defines what the custom block will do"
-msgstr ""
+msgstr "Definerer hvad den tilpassede brik skal gøre"
 
 #: templates/help/studio/tips/blocks/define.html:13
 #, python-format
@@ -1397,7 +1440,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:7
 msgid "Deletes the current clone"
-msgstr ""
+msgstr "Sletter den aktuelle klon"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:11
 #, python-format
@@ -1416,7 +1459,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
-msgstr ""
+msgstr "Viser en sprites aktuelle retning"
 
 #: templates/help/studio/tips/blocks/direction.html:14
 #, python-format
@@ -5451,7 +5494,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/valentine9.html:7
 #: templates/help/studio/tips/howto/vptip10.html:7
 msgid "Type a title for your project."
-msgstr ""
+msgstr "Skriv en titel til dit projekt."
 
 #: templates/help/studio/tips/howto/dance9.html:11
 #: templates/help/studio/tips/howto/nametip8.html:12
@@ -5462,6 +5505,8 @@ msgid ""
 "When you are ready to share your project with others, click the “Share” "
 "button at the top of the screen."
 msgstr ""
+"Når du er klar til at dele dit projekt med andre, klik på \"Del\"-knappen "
+"øverst på skærmen."
 
 #: templates/help/studio/tips/howto/dance9.html:12
 #: templates/help/studio/tips/howto/nametip8.html:13
@@ -5479,7 +5524,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/valentine9.html:17
 #: templates/help/studio/tips/howto/vptip10.html:17
 msgid "To add notes and credits, click:"
-msgstr ""
+msgstr "For at tilføje noter og tak til andre, klik på:"
 
 #: templates/help/studio/tips/howto/dance9.html:18
 #: templates/help/studio/tips/howto/nametip8.html:19
@@ -5487,7 +5532,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/valentine9.html:19
 #: templates/help/studio/tips/howto/vptip10.html:19
 msgid "Here's a video on how to edit the project page:"
-msgstr ""
+msgstr "Her er en video, der viser hvordan man retter projekt-siden:"
 
 #: templates/help/studio/tips/howto/nametip8.html:26
 msgid ""
@@ -5520,9 +5565,8 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance-intro.html:17
 #: templates/help/studio/tips/howto/pgame-intro.html:17
-#, fuzzy
 msgid "First, choose a backdrop"
-msgstr "Dernæst, vælg en baggrund"
+msgstr "Først vælg en baggrund"
 
 #: tips_config.py:78 tips_config.py:94 tips_config.py:101
 #: templates/help/studio/tips/howto/dance-intro.html:22
@@ -5647,6 +5691,8 @@ msgid ""
 "//player.vimeo.com/video/108273389?title=0&amp;byline=0&amp;portrait=0;"
 "hd_off=0&"
 msgstr ""
+"/player.vimeo.com/video/108273389?title=0&amp;byline=0&amp;portrait=0;hd_off="
+"0&"
 
 #: templates/help/studio/tips/howto/pgametip11.html:28
 msgid ""
@@ -6842,7 +6888,7 @@ msgstr "Afspil musikken"
 #: help/tips_config.py:34
 #: templates/help/studio/tips/howto/dance-intro.html:26
 msgid "Code the Dance"
-msgstr "Kod dansen"
+msgstr "Programmér dansen"
 
 #: help/tips_config.py:35
 #: templates/help/studio/tips/howto/dance-intro.html:27
@@ -6896,15 +6942,15 @@ msgstr "Dans, dans, dans"
 
 #: templates/help/studio/tips/home.html:10
 msgid "Step-by-Step"
-msgstr ""
+msgstr "Trin-for-trin"
 
 #: templates/help/studio/tips/home.html:18
 msgid "Follow these tutorials to get started with your project."
-msgstr ""
+msgstr "Prøv disse tutorials for at komme i gang med dit projekt."
 
 #: templates/help/studio/tips/home.html:64
 msgid "Learn more about how to make specific things for your project."
-msgstr ""
+msgstr "Lær mere om hvordan du kan lave bestemte ting i dit projekt."
 
 #: templates/help/studio/tips/home.html:122
 msgid ""
@@ -6912,6 +6958,8 @@ msgid ""
 "      or use the ? button in the editor to click on individual blocks to "
 "learn more."
 msgstr ""
+"Grav dybere her for at finde ud af mere om hver brik, /neller klik med højre "
+"musetast og vælg hjælp for at lære mere."
 
 #: templates/help/studio/tips/howto/cardtip-intro.html:14
 #: templates/help/studio/tips/howto/dance-intro.html:20
@@ -6920,11 +6968,11 @@ msgstr ""
 #: templates/help/studio/tips/howto/valentine-intro.html:13
 #: templates/help/studio/tips/howto/vptip-intro.html:13
 msgid "List of Steps"
-msgstr ""
+msgstr "Liste over trin"
 
 #: templates/help/studio/tips/howto/dance-intro.html:6
 msgid "Make an interactive dance scene, combining music and dance moves."
-msgstr ""
+msgstr "Lav en interaktiv danse-scene ved at kombinere musik og dansetrin."
 
 #: templates/help/studio/tips/howto/dance-intro.html:10
 msgid ""
@@ -6934,16 +6982,18 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance1.html:6
 msgid "Where do you want to dance?"
-msgstr ""
+msgstr "Hvor vil du gerne danse?"
 
 #: templates/help/studio/tips/howto/dance1.html:13
 msgid ""
 "Then choose the backdrop you want (such as graffiti or basketball-court):"
 msgstr ""
+"Så vælger du den baggrund som du vil have (det kunne være grafitti eller "
+"basketball-banen):"
 
 #: templates/help/studio/tips/howto/dance1.html:15
 msgid "Next, add a dancer"
-msgstr ""
+msgstr "Derefter tilføj en danser"
 
 #: templates/help/studio/tips/howto/dance2.html:7
 msgid ""
@@ -6956,6 +7006,8 @@ msgstr ""
 msgid ""
 "Click the 'Music and Dance' theme. Select a Hip-Hop or other Dance sprite:"
 msgstr ""
+"Klik på 'Musik og dans' -temaet. Vælg en Hip-Hop danser eller en anden danse "
+"sprite:"
 
 #: templates/help/studio/tips/howto/dance2.html:21
 msgid "Or, use the right-click menu (Shift+click on Mac), and choose 'delete'."
@@ -6981,7 +7033,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance3.html:21
 msgid "Choose dance music (such as 'dance celebrate' or 'dance funky')."
-msgstr ""
+msgstr "Vælg dansemusik (det kunne være 'dance celebrate' eller 'dance funky')."
 
 #: templates/help/studio/tips/howto/dance3.html:27
 #, python-format
@@ -6997,7 +7049,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance3.html:33
 msgid "Next, play the music"
-msgstr ""
+msgstr "Derefter spil musikken"
 
 #: templates/help/studio/tips/howto/dance4.html:9
 #: templates/help/studio/tips/howto/dance5.html:20
@@ -7007,6 +7059,9 @@ msgid ""
 "\tClick the <span class=\"tab-ref\">Scripts</span> tab.\n"
 "\t"
 msgstr ""
+"\n"
+"\tKlik på <span class=\"tab-ref\">Script-</span>fanen.\n"
+"\t"
 
 #: templates/help/studio/tips/howto/dance4.html:14
 msgid ""
@@ -7014,6 +7069,9 @@ msgid ""
 "\tClick the <span class=\"soundcolor\">Sound</span> category.\n"
 "\t"
 msgstr ""
+"\n"
+"\tKlik på <span class=\"soundcolor\">kategorien</span> med lyd.\n"
+"\t"
 
 #: templates/help/studio/tips/howto/dance4.html:19
 msgid ""
@@ -7021,18 +7079,22 @@ msgid ""
 "\tDrag out a <span class=\"soundcolor\">play sound until done</span> block:\n"
 "\t"
 msgstr ""
+"\n"
+"\tTræk en  <span class=\"soundcolor\">spil lyden indtil færdig</span> brik "
+"ud:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/dance4.html:23
 msgid "Click the block to play the sound."
-msgstr ""
+msgstr "Klik på brikken for at afspille lyden."
 
 #: templates/help/studio/tips/howto/dance4.html:28
 msgid "Now, make the sound repeat."
-msgstr ""
+msgstr "Gør nu, så lyden gentager sig."
 
 #: templates/help/studio/tips/howto/dance4.html:29
 msgid "Click the <span class=\"controlcolor\">Control</span> category.\n"
-msgstr ""
+msgstr "Klik på <span class=\"controlcolor\">kategorien</span> med styring.\n"
 
 #: templates/help/studio/tips/howto/dance4.html:31
 msgid ""
@@ -7041,17 +7103,23 @@ msgid ""
 "around:\n"
 " "
 msgstr ""
+"\n"
+"Træk en<span class=\"control color\"> gentag</span> brik ud, og sæt den "
+"rundt om:\n"
+" "
 
 #: templates/help/studio/tips/howto/dance4.html:35
 #: templates/help/studio/tips/howto/dance6.html:15
 msgid "You can change the number of times it repeats."
-msgstr ""
+msgstr "Du kan selv vælge hvor mange gange den skal gentages."
 
 #: templates/help/studio/tips/howto/dance4.html:40
 msgid ""
 "\n"
 "Click the <span class=\"eventscolor\">Events</span> category.\n"
 msgstr ""
+"\n"
+"Klik på <span class=\"eventscolor\">kategorien</span> med hændelser.\n"
 
 #: templates/help/studio/tips/howto/dance4.html:44
 #, python-format
@@ -7061,23 +7129,28 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap "
 "it on top.\n"
 msgstr ""
+"\n"
+"Træk en <span class=\"eventscolor\">når <img class=\"intext\" src = \""
+"%(STATIC_URL)s/images/help/green-flag.png\"> </span> du klikker på det "
+"grønne flag brik og sæt den på i toppen.\n"
 
 #: templates/help/studio/tips/howto/dance4.html:51
 msgid ""
 "Play your music! Your script will start whenever you click the green flag:"
 msgstr ""
+"Spil din musik! Dit script starter hver gang du klikker på det grønne flag:"
 
 #: templates/help/studio/tips/howto/dance4.html:53
 msgid "Click the stop sign if you want it to stop."
-msgstr ""
+msgstr "Klik på stopskiltet, hvis du vil have det til at stoppe."
 
 #: templates/help/studio/tips/howto/dance4.html:55
 msgid "Next, code the dance"
-msgstr ""
+msgstr "Dernæst programmér dansen"
 
 #: templates/help/studio/tips/howto/dance5.html:7
 msgid "Tell the dancer which moves to make."
-msgstr ""
+msgstr "Fortæl danseren hvilke trin han/hun skal lave."
 
 #: templates/help/studio/tips/howto/dance5.html:10
 #: templates/help/studio/tips/howto/dance8.html:27
@@ -7086,10 +7159,13 @@ msgid ""
 "\tClick the <span class=\"tab-ref\">Costumes</span> tab.\n"
 "\t"
 msgstr ""
+"\n"
+"\tKlik på fanen med <span class=\"tab-ref\">kostumer</span>.\n"
+"\t"
 
 #: templates/help/studio/tips/howto/dance5.html:14
 msgid "Each costume has a different dance move."
-msgstr ""
+msgstr "Hvert kostume har et forskelligt dansetrin."
 
 #: templates/help/studio/tips/howto/dance5.html:24
 msgid ""
@@ -7098,14 +7174,18 @@ msgid ""
 "<span class=\"lookscolor\">switch costume to</span> block.\n"
 "\t"
 msgstr ""
+"\n"
+"\tKlik på kategorien med<span class=\"lookscolor\">udseende</span>, og træk "
+"en <span class=\"lookscolor\">skift kostume til</span> brik ud.\n"
+"\t"
 
 #: templates/help/studio/tips/howto/dance5.html:28
 msgid "Choose a costume from the drop-down menu."
-msgstr ""
+msgstr "Vælg et kostume fra drop-down menuen."
 
 #: templates/help/studio/tips/howto/dance5.html:32
 msgid "Build up a dance script by switching to different costumes."
-msgstr ""
+msgstr "Byg et danse script ved at skifte imellem forskellige kostumer."
 
 #: templates/help/studio/tips/howto/dance5.html:34
 msgid ""
@@ -7114,10 +7194,15 @@ msgid ""
 "\"controlcolor\">Control</span> category) to pause between moves.\n"
 "\t"
 msgstr ""
+"\n"
+"\tBrug en <span class=\"controlcolor\">vent</span> brik (fra kategorien <"
+"span class=\"controlcolor\">styring</span>) for at holde en pause imellem "
+"trinene.\n"
+"\t"
 
 #: templates/help/studio/tips/howto/dance5.html:38
 msgid "Click anywhere on your script to try it."
-msgstr ""
+msgstr "Klik hvor du vil på dit script for at afprøve det."
 
 #: templates/help/studio/tips/howto/dance5.html:42
 #, python-format
@@ -7127,18 +7212,22 @@ msgid ""
 "src = \"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block on "
 "top of the script.\n"
 msgstr ""
+"\n"
+"Vær sikker på at du har en <span class=\"eventscolor\"><img class=\"intext\" "
+"src = \"%(STATIC_URL)s/images/help/green-flag.png\"> når du klikker på</span>"
+" brik i toppen af scriptet.\n"
 
 #: templates/help/studio/tips/howto/dance5.html:46
 msgid "Then, click the green flag to play your scripts:"
-msgstr ""
+msgstr "Derefter klik på det grønne flag for at afspille dine scripts:"
 
 #: templates/help/studio/tips/howto/dance5.html:49
 msgid "Next, dance to the music"
-msgstr ""
+msgstr "Derefter dans til musikken"
 
 #: templates/help/studio/tips/howto/dance6.html:7
 msgid "Adjust the dance moves so they coordinate with the music."
-msgstr ""
+msgstr "Tilpas dansetrinene så de passer til musikken."
 
 #: templates/help/studio/tips/howto/dance6.html:11
 msgid ""
@@ -7147,18 +7236,22 @@ msgid ""
 "to repeat:\n"
 " "
 msgstr ""
+"\n"
+"Sæt en <span class=\"controlcolor\">gentag</span> rundt om alle de brikker, "
+"som du gerne vil have gentaget:\n"
+" "
 
 #: templates/help/studio/tips/howto/dance6.html:21
 msgid "Adjust the wait times to sync with the music."
-msgstr ""
+msgstr "Tilpas ventetiderne til musikken."
 
 #: templates/help/studio/tips/howto/dance6.html:23
 msgid "Next, enhance your dance"
-msgstr ""
+msgstr "Derefter gør din dans endnu bedre"
 
 #: templates/help/studio/tips/howto/dance7.html:7
 msgid "Amp up your dance with these ideas."
-msgstr ""
+msgstr "Fyr op under din dans med disse ideer."
 
 #: templates/help/studio/tips/howto/dance7.html:10
 msgid "Want to change the scene? Choose a new backdrop or add your own photo."
@@ -7170,11 +7263,13 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance7.html:16
 msgid "Choose the backdrop name from the menu."
-msgstr ""
+msgstr "Vælg navnet på baggrunden fra menuen."
 
 #: templates/help/studio/tips/howto/dance7.html:21
 msgid "If you want your backdrop to change color, click the Stage thumbnail."
 msgstr ""
+"Hvis du vil have at din baggrund skal skifte farve, skal du klikke på det "
+"lille billede med scenen."
 
 #: templates/help/studio/tips/howto/dance7.html:23
 #: templates/help/studio/tips/howto/dance8.html:36
@@ -7182,10 +7277,12 @@ msgid ""
 "\n"
 "Click the <span class=\"tab-ref\">Scripts</span> tab.\n"
 msgstr ""
+"\n"
+"Klik på <span class=\"tab-ref\">Script</span> fanen.\n"
 
 #: templates/help/studio/tips/howto/dance7.html:26
 msgid "Then, add a script like this:"
-msgstr ""
+msgstr "Derefter tilføj et script som dette:"
 
 #: templates/help/studio/tips/howto/dance7.html:32
 msgid ""
@@ -7406,83 +7503,83 @@ msgstr ""
 #: tips_config.py:160
 #: templates/help/studio/tips/home.html:36
 msgid "Favorite Things"
-msgstr ""
+msgstr "Yndlings ting"
 
 #: tips_config.py:40
 #: templates/help/studio/tips/howto/favorite-intro.html:18
 msgid "Choose a Thing You Like"
-msgstr ""
+msgstr "Vælg en ting som du kan lide"
 
 #: tips_config.py:41
 #: templates/help/studio/tips/howto/favorite-intro.html:19
 msgid "Say What You Like About It"
-msgstr ""
+msgstr "Fortæl hvad du synes om det"
 
 #: tips_config.py:42
 #: templates/help/studio/tips/howto/favorite-intro.html:20
 msgid "Record Your Voice"
-msgstr ""
+msgstr "Optag din stemme"
 
 #: tips_config.py:43
 #: templates/help/studio/tips/howto/favorite-intro.html:21
 msgid "Add More Favorite Things"
-msgstr ""
+msgstr "Tilføj flere ting som du kan lide"
 
 #: tips_config.py:44
 #: templates/help/studio/tips/howto/favorite-intro.html:22
 msgid "Add Effects and Movement"
-msgstr ""
+msgstr "Tilføj effekter og bevægelser"
 
 #: tips_config.py:84
 #: tips_config.py:178
 msgid "Ode to Code Dance"
-msgstr ""
+msgstr "Hyldest til Dans med Programmering"
 
 #: tips_config.py:105
 #: tips_config.py:190
 msgid "Race to the Finish"
-msgstr ""
+msgstr "Kør om kap til målstregen"
 
 #: tips_config.py:106
 msgid "Choose a Backdrop for the Race"
-msgstr ""
+msgstr "Vælg en baggrund til løbet"
 
 #: tips_config.py:108
 msgid "Move by Pressing a Key"
-msgstr ""
+msgstr "Ryk når der trykkes på en tast"
 
 #: tips_config.py:109
 #: templates/help/studio/tips/howto/racegame-intro.html:27
 msgid "Draw a Finish Line"
-msgstr ""
+msgstr "Tegn en målstreg"
 
 #: tips_config.py:110
 #: templates/help/studio/tips/howto/racegame-intro.html:28
 msgid "If You Reach the Finish Line"
-msgstr ""
+msgstr "Hvis du når til målstregen"
 
 #: tips_config.py:111
 msgid "Go to Your Starting Point"
-msgstr ""
+msgstr "Gå til starten"
 
 #: tips_config.py:112
 #: templates/help/studio/tips/howto/racegame-intro.html:30
 msgid "Add Another Sprite to Race"
-msgstr ""
+msgstr "Tilføj en anden sprite til løbet"
 
 #: tips_config.py:113
 #: templates/help/studio/tips/howto/racegame-intro.html:31
 msgid "Personalize Your Game"
-msgstr ""
+msgstr "Gør dit spil personligt"
 
 #: tips_config.py:114
 #: templates/help/studio/tips/howto/racegame-intro.html:32
 msgid "Save and Share Your Project"
-msgstr ""
+msgstr "Gem og del dit projekt"
 
 #: templates/help/studio/tips/home.html:101
 msgid "Soccer remix tips"
-msgstr ""
+msgstr "Fodbold remix tips"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:11
 msgid ""
@@ -7538,6 +7635,10 @@ msgid ""
 "library.png\">  to choose a new sprite:</p>\n"
 "\t "
 msgstr ""
+"\n"
+"\t <p>Klik på <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-"
+"library.png\"> for at vælge en ny sprite:</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/favorite-intro.html:6
 msgid ""
@@ -7855,18 +7956,20 @@ msgid ""
 "//player.vimeo.com/video/138923972?title=0&amp;byline=0&amp;portrait=0;hd_off"
 "=0&"
 msgstr ""
+"/player.vimeo.com/video/138923972?title=0&amp;byline=0&amp;portrait=0;hd_off="
+"0&"
 
 #: templates/help/studio/tips/howto/odetocode-intro.html:37
 msgid "Created for Europe Code Week 2015"
-msgstr ""
+msgstr "Lavet til Europe Code Week 2015"
 
 #: templates/help/studio/tips/howto/odetocode-intro.html:39
 msgid "Developed in partnership with"
-msgstr ""
+msgstr "Udviklet i samarbejde med"
 
 #: templates/help/studio/tips/howto/odetocode-intro.html:41
 msgid "Ode to Code music by Brendan D. Paolini"
-msgstr ""
+msgstr "Ode to Code musik af Brendan D. Paolini"
 
 #: templates/help/studio/tips/howto/odetocode1.html:11
 msgid ""
@@ -7874,14 +7977,17 @@ msgid ""
 "Click the Stage, then click the <span class=\"tab-ref\">Backdrops</span> tab."
 "\n"
 msgstr ""
+"\n"
+"Klik på scenen, og bagefter klik på fanen med<span class=\"tab-ref\"> "
+"baggrunde</span>.\n"
 
 #: templates/help/studio/tips/howto/odetocode1.html:15
 msgid "Choose the backdrop you want from the list:"
-msgstr ""
+msgstr "Vælg den baggrund, som du vil have, fra listen:"
 
 #: templates/help/studio/tips/howto/odetocode1.html:20
 msgid "Want to add a different backdrop?"
-msgstr ""
+msgstr "Vil du have en anden baggrund?"
 
 #: templates/help/studio/tips/howto/odetocode1.html:22
 msgid ""
@@ -7890,28 +7996,34 @@ msgid ""
 "%(STATIC_URL)s/images/help/landscape-icon.png\"> icon to open the Backdrop "
 "library:\t\n"
 msgstr ""
+"\n"
+"Klik på <img class=\"intext\" style=\"top:0\" src = \""
+"%(STATIC_URL)s/images/help/landscape-icon.png\"> ikonet for at åbne "
+"biblioteket med baggrunde:\t\n"
 
 #: templates/help/studio/tips/howto/odetocode1.html:30
 msgid "Next, add music"
-msgstr ""
+msgstr "Derefter tilføj musik"
 
 #: templates/help/studio/tips/howto/odetocode2.html:8
 msgid ""
 "\n"
 "To select music, click the <span class=\"tab-ref\">Sounds</span> tab. \n"
 msgstr ""
+"\n"
+"For at vælge musik, klik på fanen med<span class=\"tab-ref\"> lyde</span>. \n"
 
 #: templates/help/studio/tips/howto/odetocode2.html:12
 msgid "Click to listen to the sounds."
-msgstr ""
+msgstr "Klik for at lytte til lydene."
 
 #: templates/help/studio/tips/howto/odetocode2.html:14
 msgid "Think about which one you want for your dance."
-msgstr ""
+msgstr "Tænk over hvilken en du vil bruge til din dans."
 
 #: templates/help/studio/tips/howto/odetocode2.html:19
 msgid "Want a different sound?"
-msgstr ""
+msgstr "Vil du have en anden lyd?"
 
 #: templates/help/studio/tips/howto/odetocode2.html:20
 msgid ""
@@ -7920,42 +8032,50 @@ msgid ""
 "%(STATIC_URL)s/images/help/speaker-icon.png\"> to select from the Sound "
 "library.\n"
 msgstr ""
+"\n"
+"Klik på <img class=\"intext\" style=\"top:0\" src = \""
+"%(STATIC_URL)s/images/help/speaker-icon.png\"> for at vælge fra biblioteket "
+"med lyde.\n"
 
 #: templates/help/studio/tips/howto/odetocode3.html:40
 msgid "Add an easy way to start your program."
-msgstr ""
+msgstr "Tilføj en nem måde til at starte dit program."
 
 #: templates/help/studio/tips/howto/odetocode4.html:7
 msgid "Each object in Scratch is called a sprite."
-msgstr ""
+msgstr "Hver ting i Scratch kaldes for en sprite."
 
 #: templates/help/studio/tips/howto/odetocode4.html:20
 msgid ""
 "You will now see your dance sprite appear on the Stage. You can drag to move "
 "it where you want."
 msgstr ""
+"Nu kan du se din danse sprite på scenen. Du kan flytte rundt med den, som du "
+"har lyst til."
 
 #: templates/help/studio/tips/howto/odetocode4.html:22
 msgid ""
 "Tip: Make your dance sprite bigger by clicking on it with the grow tool. Or "
 "make it smaller using the shrink tool:"
 msgstr ""
+"Tip: Gør din danse sprite større ved at klikke på værktøjet med forstør. "
+"Eller gøre den mindre ved at vælge værktøjet med formindsk:"
 
 #: templates/help/studio/tips/howto/odetocode7.html:11
 msgid "Want to switch between backdrops?"
-msgstr ""
+msgstr "Vil du skifte imellem baggrunde?"
 
 #: templates/help/studio/tips/howto/odetocode7.html:12
 msgid "Add this block to your program:"
-msgstr ""
+msgstr "Tilføj denne brik til dit program:"
 
 #: templates/help/studio/tips/howto/odetocode7.html:31
 msgid "Want to add more dancers to your scene?"
-msgstr ""
+msgstr "Vil du tilføje flere dansere til din scene?"
 
 #: templates/help/studio/tips/howto/odetocode7.html:32
 msgid "Click one of these buttons to add a new sprite:"
-msgstr ""
+msgstr "Klik på en af disse knapper for at tilføje en ny sprite:"
 
 #: templates/help/studio/tips/howto/odetocode7.html:35
 msgid ""
@@ -7970,57 +8090,71 @@ msgid ""
 "\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite."
 "png\"> Take a picture (from a webcam)</p>\n"
 msgstr ""
+"\n"
+"\t<h4>Ny sprite knapper</h4>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite."
+"png\"> Vælg sprite fra biblioteket</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite."
+"png\"> Tegn ny sprite</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite."
+"png\"> Upload sprite fra fil</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite."
+"png\"> Ny sprite fra kamera</p>\n"
 
 #: templates/help/studio/tips/howto/odetocode7.html:50
 msgid ""
 "You can explore and experiment to add to your project. Here are some ideas:"
-msgstr ""
+msgstr "Du kan tilføje flere sjove ting til dit projekt. Her er nogle ideer:"
 
 #: templates/help/studio/tips/howto/odetocode7.html:52
 msgid "Find and import a picture of your city"
-msgstr ""
+msgstr "Find og indsæt et billede fra din by"
 
 #: templates/help/studio/tips/howto/odetocode7.html:53
 msgid "Draw your own dancer with costumes"
-msgstr ""
+msgstr "Tegn din egen danser med kostumer"
 
 #: templates/help/studio/tips/howto/odetocode7.html:54
 msgid "Draw a new backdrop"
-msgstr ""
+msgstr "Tegn en ny baggrund"
 
 #: templates/help/studio/tips/howto/odetocode7.html:56
 msgid "Now, share your project"
-msgstr ""
+msgstr "Nu er det tid til at dele dit projekt"
 
 #: templates/help/studio/tips/howto/odetocode8.html:6
-#, fuzzy
 msgid "Save Your Project"
-msgstr "Del dit projekt"
+msgstr "Gem dit projekt"
 
 #: templates/help/studio/tips/howto/odetocode8.html:7
 msgid ""
 "Click the Remix button (near the top of the screen) to save your version of "
 "the project."
 msgstr ""
+"Klik på Remix-knappen (tæt på toppen af skærmen) for at gemme din version af "
+"projektet."
 
 #: templates/help/studio/tips/howto/odetocode8.html:9
 msgid "You'll need to join Scratch or sign in to save your project online."
 msgstr ""
+"Du skal tilmelde dig som medlem til Scratch eller at være logget på, for at "
+"du kan gemme dit projekt online."
 
 #: templates/help/studio/tips/howto/odetocode8.html:10
 msgid ""
 "(Or, to save a copy to your local drive, go to the File menu and choose "
 "'Download to your computer'.)"
 msgstr ""
+"(Eller, for at gemme en kopi på din egen computer, gå til Fil-menuen og vælg "
+"'Download til din computer'.)"
 
 #: templates/help/studio/tips/howto/odetocode8.html:14
-#, fuzzy
 msgid "Name Your Project"
-msgstr "Del dit projekt"
+msgstr "Giv dit projekt et navn"
 
 #: templates/help/studio/tips/howto/odetocode8.html:28
 msgid "Share Your Project in a Studio"
-msgstr ""
+msgstr "Del dit projekt i et studie"
 
 #: templates/help/studio/tips/howto/odetocode8.html:29
 msgid ""
@@ -8028,10 +8162,13 @@ msgid ""
 "http://scratch.mit.edu/studios/1517362/\" target=\"_blank\">Ode to Code "
 "studio</a>:"
 msgstr ""
+"Nu kan du tilføje dit projekt til<a href=\""
+"http://scratch.mit.edu/studios/1517362/\" target=\"_blank\"> studiet Ode to "
+"Code</a>:"
 
 #: templates/help/studio/tips/howto/odetocode8.html:37
 msgid "Keep Creating"
-msgstr ""
+msgstr "Fortsæt med at være kreativ"
 
 #: templates/help/studio/tips/howto/odetocode8.html:38
 msgid ""
@@ -8040,6 +8177,10 @@ msgid ""
 "../../home/\"><img class=\"intext\" style=\"top: 0px\" src = \""
 "%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">All Tips</a>.\n"
 msgstr ""
+"\n"
+"For flere tips og ideer til projekter som du kan lave, klik på <a href=\""
+"../../home/\"><img class=\"intext\" style=\"top: 0px\" src = \""
+"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">Alle Tips</a>.\n"
 
 #: templates/help/studio/tips/howto/racegame-intro.html:6
 msgid "Make a game where two characters race each other."
