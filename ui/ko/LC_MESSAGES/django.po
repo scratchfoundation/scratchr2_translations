@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2016-03-03 16:13+0000\n"
+"PO-Revision-Date: 2016-03-11 13:49+0000\n"
 "Last-Translator: ha9yoon <ha9yoon@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1457021586.000000\n"
+"X-POOTLE-MTIME: 1457704166.000000\n"
 
 #: views.py:322 views.py:332
 msgid "Your message has been sent. We will respond within 3 days."
@@ -138,13 +138,13 @@ msgid "day"
 msgid_plural "days"
 msgstr[0] "일"
 
-# 84%
+# 단수와 복수 2가지를 구분해서 넣어야 함
 #: base_comments/templatetags/scratch_text_filters.py:116
 #: base_comments/templatetags/scratch_text_filters.py:120
 #, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
-msgstr[0] "%(minutes)d 분 전"
+msgstr[0] "1분 전%(minutes)d 분 전"
 
 #: base_comments/templatetags/scratch_text_filters.py:120
 #: base_comments/templatetags/scratch_text_filters.py:124
@@ -3213,11 +3213,11 @@ msgstr ""
 
 #: templates/galleries/includes/activity_list.html:55
 msgid "added the project"
-msgstr "이(가) 프로젝트를 추가했다. - "
+msgstr "이(가) 프로젝트를 추가했습니다 "
 
 #: templates/galleries/includes/activity_list.html:67
 msgid "left a"
-msgstr "이(가) 남겼다. - "
+msgstr "이(가) 남겼습니다"
 
 #: templates/galleries/includes/activity_list.html:77
 msgid "accepted an invitation"
@@ -3347,7 +3347,7 @@ msgstr "스크래치 가입"
 
 #: templates/homepage/index.html:144 templates/homepage/index.html:145
 msgid "it's free"
-msgstr "무료!"
+msgstr "무료입니다"
 
 #: templates/homepage/index.html:148 templates/homepage/index.html:154
 msgid "ABOUT SCRATCH"
@@ -3377,7 +3377,7 @@ msgstr "더 알아보기"
 
 #: templates/homepage/index.html:199 templates/homepage/index.html:205
 msgid "Projects Curated by"
-msgstr "큐레이트 된 프로젝트 by"
+msgstr "특별히 뽑힌 프로젝트. 고른 사람 "
 
 #: templates/homepage/index.html:216 templates/homepage/index.html:222
 msgid "Visit the studio"
@@ -3760,7 +3760,7 @@ msgstr ""
 
 #: templates/info/hoc2014.html:49
 msgid "Scratch: Imagine, Program, Share"
-msgstr ""
+msgstr "스크래치: 상상, 프로그래밍, 공유"
 
 #: templates/info/hoc2014.html:52
 msgid ""
@@ -3871,8 +3871,7 @@ msgid ""
 "Find out more about the <a href=\"http://info.scratch.mit.edu/prototype"
 "\">new Scratch blocks</a>."
 msgstr ""
-"<a href=\"http://info.scratch.mit.edu/prototype\">새 스크래치 블럭</a>에 대"
-"해 자세히 알아보기"
+"<a href=\"http://info.scratch.mit.edu/prototype\">새 스크래치 블록</a>에 대해 자세히 알아보기"
 
 #: templates/info/overview.html:57
 #, python-format
@@ -4083,10 +4082,12 @@ msgid "Quotes - Scratch"
 msgstr ""
 
 #: templates/info/quotes.html:16
+#, fuzzy
 msgid "What <b>Youth</b> are Saying about Scratch"
-msgstr ""
+msgstr "스크래치에 대한 <b>청소년</b>들의 소감"
 
 #: templates/info/quotes.html:19
+#, fuzzy
 msgid ""
 "I like Scratch better than blogs or social networking sites like Facebook "
 "because \n"
@@ -4096,8 +4097,13 @@ msgid ""
 "something creative and new.<span class=\"quotes\">&rdquo;</span> - 13-year-"
 "old </p>\n"
 msgstr ""
+"저는 스크래치가 페이스북 같은 SNS나 블로그보다 더 좋아요. \n"
+"\t 재미있는 게임이나 즐겁게 놀고 구경하고 다운로드할 수 있는 프로젝트들을 만들고 있기 때문이죠. \n"
+"\t온라인에서 다른 사람들과 그냥 이야기하는 것은 별로구요, 뭔가 창의적이고 새로운 것에 대해 이야기하는 것이 좋아요.<span "
+"class=\"quotes\">&rdquo;</span> - 13세</p>\n"
 
 #: templates/info/quotes.html:26
+#, fuzzy
 msgid ""
 "<span class=\"quotes\">&ldquo;</span>My 8-year-old brother and I have been "
 "active participants of the Scratch Online Community for over a year. \n"
@@ -4106,8 +4112,14 @@ msgid ""
 "and when you work together, you can build a much better project than you can "
 "alone.<span class=\"quotes\">&rdquo;</span> - 13-year-old"
 msgstr ""
+"<span class=\"quotes\">&ldquo;</span> 8살짜리 제 동생과 저는 스크래치 온라인 커뮤니티에 1년 이상 열심히 "
+"참여하고 있어요. \n"
+"다른 아이들과 게임이나 애니메이션 만드는 게 좋은데요, 왜냐하면 사람들마다 잘 하는 게 다르고, \n"
+"서로 협동하면 혼자 할 때보다 프로젝트를 훨씬 더 잘 만들어 낼 수 있거든요..<span class=\"quotes\""
+">&rdquo;</span> - 13세"
 
 #: templates/info/quotes.html:30
+#, fuzzy
 msgid ""
 "<span class=\"quotes\">&ldquo;</span>Making games is something I've always "
 "thought would be fun,\n"
@@ -4118,8 +4130,14 @@ msgid ""
 "\"quotes\">&rdquo;</span>\n"
 "  - 17-year-old "
 msgstr ""
+"<span class=\"quotes\">&ldquo;</span>게임을 만드는 것은 재미있을 것같다고 항상 생각해 왔지만,\n"
+" 정말 복잡한 프로그래밍 언어를 배우고 싶지는 않았어요. 처음에는스크래치도 복잡해 보였지만, 얼마동안 붙잡고 있다보니, 놀라운 게임을 "
+"만들 수 있게 되었습니다. 게다가 프로젝트를 그렇게 쉽게 공유할 수 있으니 더 좋구요. 스크래치는 대단해요!<span class=\""
+"quotes\">&rdquo;</span>\n"
+"  - 17세"
 
 #: templates/info/quotes.html:36
+#, fuzzy
 msgid ""
 "<span class=\"quotes\">&ldquo;</span>Using a set of about 100 commands that "
 "can be snapped together visually, you can create just about anything and "
@@ -4128,6 +4146,9 @@ msgid ""
 "and gladly help you with your questions.<span class=\"quotes\">&rdquo;</"
 "span> - 14-year-old"
 msgstr ""
+"<span class=\"quotes\">&ldquo;</span>100개쯤 되는 명령어를 눈으로 보면서 끼워맞추다보면, 어떤 것이든지 "
+"만들 수 있구요, 더 어려운 언어의 기초를 배울 수 있어요. 게다가, 온라인 커뮤니티에 있는 사람들은 프로젝트에 대해 의견을 주고, "
+"질문을 하면 기꺼이 도와줘요.<span class=\"quotes\">&rdquo;</span> - 14세"
 
 #: templates/info/research.html:4 templates/info/research.html.py:15
 msgid "Research on Scratch"
@@ -6184,12 +6205,12 @@ msgstr "초안"
 #: templates/projects/shared-other.html:26
 #: templates/projects/includes/owner/editable-instructions.html:3
 msgid "Instructions"
-msgstr "사용설명서"
+msgstr "사용 방법"
 
 #: templates/projects/shared-other.html:42
 #: templates/projects/includes/owner/editable-notes.html:5
 msgid "Notes and Credits"
-msgstr "기록 및 기여자"
+msgstr "참고사항 및 참여자"
 
 #: templates/projects/shared-other.html:42
 #: templates/projects/includes/owner/editable-notes.html:5
@@ -6533,27 +6554,27 @@ msgstr ""
 #: templates/stats/country.html:33 templates/stats/index.html:34
 #: templates/stats/index.html.py:60 templates/stats/index.html:59
 msgid "Monthly Activity Trends"
-msgstr ""
+msgstr "월별 활동량 추세"
 
 #: templates/stats/country.html:36 templates/stats/index.html:37
 #: templates/stats/index.html.py:79 templates/stats/index.html:78
 msgid "Monthly Active Users"
-msgstr ""
+msgstr "월별 활동 사용자"
 
 #: templates/stats/country.html:39 templates/stats/index.html:40
 #: templates/stats/index.html.py:98 templates/stats/index.html:97
 msgid "Age Distribution of New Scratchers"
-msgstr ""
+msgstr "신규 스크래처의 연령 분포"
 
 #: templates/stats/country.html:42 templates/stats/index.html:46
 #: templates/stats/index.html.py:136 templates/stats/index.html:135
 msgid "Monthly Project Shares"
-msgstr "월간 프로젝트 공유"
+msgstr "월별 프로젝트 공유"
 
 #: templates/stats/country.html:45 templates/stats/index.html:49
 #: templates/stats/index.html.py:155 templates/stats/index.html:154
 msgid "Monthly Comment Activity"
-msgstr ""
+msgstr "월별 댓글 활동"
 
 #: templates/stats/country.html:56
 msgid "Monthly Activity Trends from Brazil"
@@ -6577,12 +6598,12 @@ msgstr ""
 
 #: templates/stats/index.html:9
 msgid "Community statistics at a glance"
-msgstr ""
+msgstr "한 눈에 보는 커뮤니티 통계"
 
 #: templates/stats/index.html:43 templates/stats/index.html.py:117
 #: templates/stats/index.html:116
 msgid "Scratchers Worldwide"
-msgstr ""
+msgstr "국가별 스크래처 분포"
 
 #: templates/studio/studio.html:6 templates/mystuff/mystuff.html:6
 #, python-format
@@ -6749,6 +6770,8 @@ msgid ""
 "A creative learning community with <span class=\"projcount\">"
 "%(PROJECT_COUNT)s</span> projects shared"
 msgstr ""
+"<span class=\"projcount\">%(PROJECT_COUNT)s</span> 개 프로젝트가 공유되고 있는 창의적 학습 "
+"커뮤니티입니다"
 
 #: templates/info/scratch2download.html:50
 #, python-format
@@ -6837,6 +6860,17 @@ msgid ""
 "                <li>&hellip;and growing!</li>\n"
 "                "
 msgstr ""
+"\n"
+"                <li class=\"data\"><span class=\"value\" id=\"numproject\""
+"></span> 개의 프로젝트가 공유되었고,</li>\n"
+"                <li class=\"data\"><span class=\"value\" id=\"numusers\""
+"></span>명의 사용자가 등록되었고,</li>\n"
+"                <li class=\"data\"><span class=\"value\" id=\"numcomments\""
+"></span> 개의 댓글이 게시되었고,</li>\n"
+"                <li class=\"data\"><span class=\"value\" id=\"numstudios\""
+"></span> 개의 스튜디오가 만들어졌습니다.</li>\n"
+"                <li>&hellip;그리고 지금도 계속 늘어나고 있습니다!</li>\n"
+"                "
 
 #: templates/stats/index.html:23 templates/stats/index.html.py:70
 #: templates/stats/index.html:89 templates/stats/index.html.py:108
@@ -6847,7 +6881,7 @@ msgstr ""
 
 #: templates/stats/index.html:31
 msgid "Website traffic last month"
-msgstr ""
+msgstr "지난 달의 웹사이트 트래픽"
 
 #: templates/stats/index.html:39
 #, python-format
@@ -6858,6 +6892,11 @@ msgid ""
 "                <li class=\"data\">%(visitors)s unique visitors</li>\n"
 "                "
 msgstr ""
+"\n"
+"                <li class=\"data\">페이지뷰 %(pageviews)s </li>\n"
+"                <li class=\"data\">방문수 %(visits)s </li>\n"
+"                <li class=\"data\">순방문자 수 %(visitors)s</li>\n"
+"                "
 
 #: templates/stats/index.html:49
 msgid "Data generated from Google Analytics on:"
@@ -6876,7 +6915,7 @@ msgstr ""
 
 #: templates/stats/index.html:181
 msgid "Click on a cell to zoom in or out"
-msgstr ""
+msgstr "각 칸을 누르시면 확대 축소 됩니다"
 
 #: authentication/forms.py:57
 msgid "no gender provided"
@@ -7337,9 +7376,8 @@ msgid "commented on the studio "
 msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:488
-#, fuzzy
 msgid "added the project "
-msgstr "이(가) 프로젝트를 추가했다. - "
+msgstr "이(가) 프로젝트를 추가했습니다"
 
 # 77%
 #: templates/educators/includes/stuff/backbone-templates.html:497
@@ -7359,9 +7397,8 @@ msgid "reshared the project "
 msgstr "이(가) 이 프로젝트를 공유했다! - "
 
 #: templates/educators/includes/stuff/backbone-templates.html:517
-#, fuzzy
 msgid "tagged the project "
-msgstr "이(가) 프로젝트를 추가했다. - "
+msgstr "이(가) 프로젝트를 태그했습니다 "
 
 #: templates/educators/includes/stuff/backbone-templates.html:522
 msgid "updated the studio "
@@ -7500,7 +7537,7 @@ msgstr ""
 
 #: templates/explore/projects.html:20
 msgid "Created in"
-msgstr ""
+msgstr "작품 언어 "
 
 #: templates/info/about.html:45
 msgid ""
@@ -9000,6 +9037,10 @@ msgid ""
 "research\">research</a> and <a href=\"/statistics\">statistics</a> about "
 "Scratch."
 msgstr ""
+"스크래치를 사람들이 어떻게 사용하고 학습에 어떻게 활용하고 있는지를 MIT 스크래치팀과 그 외 여러 사람들이 연구하고 있습니다(개요는 <"
+"a href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\""
+">Scratch: Programming for All</a>에서 보실 수 있습니다). 더 자세한 내용은 스크래치 <a href=\""
+"/info/research\">연구</a>와 스크래치 관련 <a href=\"/statistics\">통계</a>를 참고하세요."
 
 #: .about.aroundTheWorldDescription
 msgid ""
@@ -9171,7 +9212,7 @@ msgstr ""
 
 #: templates/stats/index.html:173
 msgid "Scratch Block Usage (random sample)"
-msgstr ""
+msgstr "스크래치 블록 사용 (임의 표본 조사)"
 
 #: educators/forms.py:64
 msgid "Already exists"
