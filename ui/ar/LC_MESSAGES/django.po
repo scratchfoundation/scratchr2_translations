@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2016-07-22 15:45+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
+"PO-Revision-Date: 2016-07-31 13:48+0000\n"
+"Last-Translator: adlogi <adlogi@media.mit.edu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1469202324.000000\n"
+"X-POOTLE-MTIME: 1469972881.000000\n"
 
 #: views.py:322 views.py:332
 msgid "Your message has been sent. We will respond within 3 days."
@@ -42,7 +42,7 @@ msgstr ""
 
 #: authentication/forms.py:52
 msgid "invalid password"
-msgstr ""
+msgstr "كلمة مرور غير مقبولة"
 
 #: authentication/forms.py:92 authentication/forms.py:118
 msgid "You must enter your password."
@@ -58,11 +58,11 @@ msgstr "أدخل كلمة المرور للتأكيد"
 
 #: authentication/forms.py:120 authentication/forms.py:322
 msgid "Incorrect captcha, please try again."
-msgstr "النص الذي أدخلته غير صحيح. أعد المحاولة."
+msgstr "النص الذي أدخلته غير صحيح، أعد المحاولة رجاءً."
 
 #: authentication/forms.py:131
 msgid "Keep my projects, but disable all comments"
-msgstr ""
+msgstr "أبقِ على مشاريعي، ولكن عطِّل كل التعليقات"
 
 #: authentication/forms.py:132
 msgid "Delete my projects"
@@ -119,7 +119,7 @@ msgstr ""
 
 #: authentication/forms.py:299 authentication/forms.py:320
 msgid "This account is inactive."
-msgstr ""
+msgstr "هذا الحساب غير فعال."
 
 #: authentication/forms.py:300 authentication/forms.py:321
 msgid "This account is deleted!"
@@ -1930,9 +1930,7 @@ msgstr "مؤتمر سكراتش"
 #: templates/base.html:384 templates/base.html:385
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
-msgstr ""
-"سكراتش هي أحد مشاريع مجموعة Lifelong Kindergarten في جامعة ماستشوستس "
-"للتكنولوجيا"
+msgstr "سكراتش هي أحد مشاريع مجموعة Lifelong Kindergarten في MIT Media Lab"
 
 #: templates/contact-us.html:67 templates/accounts/banned-response.html:12
 #: templates/info/ext_download.html:11 templates/info/scratch2download.html:12
@@ -2758,9 +2756,8 @@ msgstr "جرب مشاريع للمبتدئين"
 #: templates/registration/welcome_email_message.html:17
 #: templates/registration/welcome_email_message.txt:12
 #: templates/homepage/index.html:56
-#, fuzzy
 msgid "Connect with other Scratchers"
-msgstr "تتواصل مع مستخدم لسكراتش"
+msgstr "تواصل مع مستخدمي سكراتش"
 
 #: templates/accounts/email_verification/passed_verification.html:52
 msgid "All set to go!"
@@ -3990,13 +3987,16 @@ msgstr ""
 
 #: templates/info/parents.html:24 templates/info/parents.html:28
 msgid "What is the age range for Scratch?"
-msgstr ""
+msgstr "ما هي الفئة العمرية المناسبة لسكراتش؟"
 
 #: templates/info/parents.html:26 templates/info/parents.html:30
 msgid ""
 "While Scratch is primarily designed for 8 to 16 year olds, it is also used "
 "by people of all ages, including younger children with their parents."
 msgstr ""
+"في حين أن سكراتش مصممةٌ في المقام الأول ليستخدمها النشء بين عمر 8 إلى 16 "
+"عامًا، إلا أنه يمكن استخدامها من قبل الناس من مختلف الأعمار، بما في ذلك "
+"الأطفال الأصغر سنًا مع والديهم."
 
 #: templates/info/parents.html:29 templates/info/parents.html:33
 msgid "What resources are available for learning Scratch?"
@@ -5425,11 +5425,11 @@ msgstr ""
 
 #: templates/info/help/index.html:118 templates/info/index.html:118
 msgid "Scratch 2 Offline Editor "
-msgstr ""
+msgstr "برنامج سكراتش ٢ للحاسب"
 
 #: templates/info/help/index.html:120 templates/info/index.html:120
 msgid "Download the Scratch 2 offline editor."
-msgstr ""
+msgstr "تنزيل برنامج سكراتش ٢ إلى جهازك."
 
 #: templates/info/help/index.html:122 templates/info/index.html:122
 msgid "Scratch 1.4 Download"
@@ -5453,7 +5453,7 @@ msgid ""
 "How_to_connect_to_the_physical_world\">Scratch and the Physical World</a>"
 msgstr ""
 "<a href=\"http://wiki.scratch.mit.edu/wiki/"
-"How_to_connect_to_the_physical_world\">سكراتش والعالم الملموس</a>"
+"How_to_connect_to_the_physical_world\">سكراتش والعالم الحقيقي</a>"
 
 #~ msgid ""
 #~ "Connect your Scratch projects to the physical world with <a href = \"http://"
@@ -5494,6 +5494,10 @@ msgid ""
 "\">Paint Editor Tips</a>.\n"
 "        "
 msgstr ""
+"بعد <strong>البدء باستخدام سكراتش</strong>، اختر من <a href=\"#Introductory "
+"Tutorials\">الدروس التمهيدية</a> أو <a href=\"#Paint Editor Tips\">الإرشادات "
+"لاستخدام الرسام</a>.\n"
+"        "
 
 #: templates/info/help/videos.html:39 templates/info/videos.html:39
 msgid "Introductory Tutorials"
@@ -5557,11 +5561,11 @@ msgstr "التغيير بين الصور المتجهة و النقطية"
 
 #: templates/info/help/videos.html:138 templates/info/videos.html:138
 msgid "Fill a vector shape"
-msgstr ""
+msgstr "تلوين شكل متجه"
 
 #: templates/info/help/videos.html:143 templates/info/videos.html:143
 msgid "Erasing in vector mode"
-msgstr ""
+msgstr "مسح الصور المتجهة"
 
 #: templates/info/help/videos.html:148 templates/info/videos.html:148
 msgid "Drawing with reshape"
@@ -5569,23 +5573,23 @@ msgstr ""
 
 #: templates/info/help/videos.html:157 templates/info/videos.html:157
 msgid "Smoothing"
-msgstr ""
+msgstr "التنعيم"
 
 #: templates/info/help/videos.html:162 templates/info/videos.html:162
 msgid "Grouping"
-msgstr ""
+msgstr "التجميع"
 
 #: templates/info/help/videos.html:167 templates/info/videos.html:167
 msgid "Layers"
-msgstr ""
+msgstr "الطبقات"
 
 #: templates/info/help/videos.html:176 templates/info/videos.html:176
 msgid "Backdrop into Sprite"
-msgstr ""
+msgstr "تحويل الخلفية إلى كائن"
 
 #: templates/info/help/videos.html:181 templates/info/videos.html:181
 msgid "Center of Costume"
-msgstr ""
+msgstr "مركز المظهر"
 
 #: templates/info/help/studio/tips/howto/cardtip-intro.html:9
 #: templates/info/help/studio/tips/howto/cardtip1.html:9
@@ -5695,7 +5699,7 @@ msgstr ""
 
 #: templates/notifications/notifications.html:9
 msgid "Messages"
-msgstr ""
+msgstr "الرسائل"
 
 #: templates/notifications/notifications.html:15
 msgid "All Messages"
@@ -6635,7 +6639,6 @@ msgstr "معرض جديد"
 #: templates/studio/studio.html:49 templates/studio/studio.html.py:71
 #: templates/studio/studio.html:84 templates/mystuff/mystuff.html:49
 #: templates/mystuff/mystuff.html.py:71 templates/mystuff/mystuff.html:84
-#, fuzzy
 msgid "Load More"
 msgstr "عرض المزيد"
 
@@ -6891,7 +6894,7 @@ msgstr ""
 
 #: authentication/forms.py:57
 msgid "no gender provided"
-msgstr ""
+msgstr "لم يتم تحديد الجنس"
 
 #: authentication/tasks.py:26
 msgid ""
@@ -6935,11 +6938,11 @@ msgstr ""
 #: templates/educators/base.html:23
 #: templates/educators/includes/stuff/backbone-templates.html:11
 msgid "My Classes"
-msgstr ""
+msgstr "فصولي"
 
 #: templates/base.html:359
 msgid "Scratch Foundation"
-msgstr ""
+msgstr "مؤسسة سكراتش"
 
 #: templates/contact-us.html:92
 msgid ""
@@ -7801,7 +7804,7 @@ msgstr ""
 #: templates/info/hoc2014.html:19
 #: templates/info/hoc2015br.html:32
 msgid "Animate Your Name"
-msgstr ""
+msgstr "حرِّك اسمك"
 
 #: templates/info/hoc2014.html:25
 msgid "Design a Holiday Card"
@@ -7809,7 +7812,7 @@ msgstr ""
 
 #: templates/info/hoc2014.html:31
 msgid "Create a Pong Game"
-msgstr ""
+msgstr "إنشاء لعبة بونغ"
 
 #: templates/info/hoc2015br.html:19
 msgid "Race to the Finish"
@@ -7972,6 +7975,8 @@ msgid ""
 "Scratch is not allowed to send email to the address associated with this "
 "username. <a href='/contact-us/'>Contact us for support</a>."
 msgstr ""
+"لا يمكن لسكراتش إرسال رسالة إلى عنوان البريد الإلكتروني المرتبط بهذا "
+"المستخدم. <a href='/contact-us/'>تواصل معنا للمساعدة</a>."
 
 #: authentication/forms.py:323
 msgid "Class has ended. Account not available."
@@ -8205,7 +8210,7 @@ msgstr ""
 #: templates/info/dance-prototype.html:103
 #: templates/info/hoc2015br.html:26
 msgid "Dance, Dance, Dance"
-msgstr ""
+msgstr "ارقص... ارقص..."
 
 #: templates/info/educators.html:30
 msgid ""
@@ -8763,7 +8768,7 @@ msgstr ""
 
 #: .general.tipsWindow
 msgid "Tips Window"
-msgstr ""
+msgstr "نافذة التلميحات"
 
 #: .hoc.studioWeBareBears
 msgid "We Bare Bears Studio"
@@ -8811,7 +8816,7 @@ msgstr "هل نسيت كلمة المرور؟"
 
 #: .general.tipsGetStarted
 msgid "Getting Started"
-msgstr ""
+msgstr "البدء باستخدام سكراتش"
 
 #: .hoc.moreDescription
 msgid ""
@@ -8831,7 +8836,6 @@ msgid ""
 msgstr ""
 
 #: .general.viewAll
-#, fuzzy
 msgid "View All"
 msgstr "عرض الكل"
 
@@ -8894,7 +8898,7 @@ msgstr ""
 
 #: .general.collaborators
 msgid "Collaborators"
-msgstr ""
+msgstr "المتعاونون"
 
 #: .hoc.activityCardsInfo1
 msgid ""
@@ -9212,6 +9216,11 @@ msgid ""
 "A2_Construction_Set\">LEGO WeDo</a>, or <a href=\""
 "https://www.sparkfun.com/products/10311\">PicoBoard</a>."
 msgstr ""
+"اربط مشاريع سكراتش بالعالم الحقيقي باستخدام <a href = \""
+"http://www.makeymakey.com/\">لوح MaKey MaKey</a>، أو <a href=\""
+"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%"
+"A2_Construction_Set\">مجموعة LEGO WeDo</a>، أو <a href=\""
+"https://www.sparkfun.com/products/10311\">لوح PicoBoard</a>."
 
 #: templates/registration/password_reset_email.html:15
 #: templates/registration/password_reset_email.txt:9
@@ -9328,7 +9337,7 @@ msgstr ""
 
 #: templates/projects/includes/backbone-templates.html:49
 msgid "Other"
-msgstr ""
+msgstr "غير ذلك"
 
 #: .jobs.openings
 msgid "Current Job Openings"
@@ -9531,7 +9540,7 @@ msgstr ""
 
 #: templates/base.html:252
 msgid "My Class"
-msgstr ""
+msgstr "فصلي"
 
 #: .about.supportDescription
 msgid ""
@@ -9639,6 +9648,8 @@ msgid ""
 "A creative learning community with <span class=\"project-count\"> over 14 "
 "million </span>projects shared"
 msgstr ""
+"مجتمع للتعلم الإبداعي فيه <span class=\"project-count\"> أكثر من ١٤ مليون "
+"</span> مشروع مشارك"
 
 #: .cnbanner.flyDescription
 msgid ""
@@ -9760,16 +9771,16 @@ msgstr ""
 
 #: .general.confirmEmail
 msgid "Confirm Email"
-msgstr ""
+msgstr "تأكيد عنوان البريد الإلكتروني"
 
 #: .registration.lastStepTitle
 msgid "Thank you for requesting a Scratch Teacher Account"
-msgstr ""
+msgstr "شكرًا لطلبك حساب سكراتش للمعلمين"
 
 #: .general.notRequired
 #: .teacherRegistration.notRequired
 msgid "Not Required"
-msgstr ""
+msgstr "غير مطلوب"
 
 #: .registration.checkOutResources
 msgid "Get Started with Resources"
@@ -9784,7 +9795,7 @@ msgstr ""
 
 #: .general.website
 msgid "Website"
-msgstr ""
+msgstr "الموقع"
 
 #: .registration.waitForApprovalDescription
 msgid ""
@@ -9796,7 +9807,7 @@ msgstr ""
 #: .general.forDevelopers
 #: templates/base.html:323
 msgid "For Developers"
-msgstr ""
+msgstr "للمطورين"
 
 #: .registration.confirmYourEmail
 msgid "Confirm Your Email"
@@ -9804,17 +9815,16 @@ msgstr ""
 
 #: .general.emailAddress
 #: .teacherRegistration.emailStepTitle
-#, fuzzy
 msgid "Email Address"
 msgstr "البريد الإلكتروني"
 
 #: .general.birthYear
 msgid "Birth Year"
-msgstr ""
+msgstr "سنة الميلاد"
 
 #: .general.validationEmail
 msgid "Please enter a valid email address"
-msgstr ""
+msgstr "الرجاء إدخال عنوان بريد إلكتروني صالح"
 
 #: .registration.confirmYourEmailDescription
 msgid ""
@@ -9824,16 +9834,16 @@ msgstr ""
 
 #: .general.results
 msgid "Results"
-msgstr ""
+msgstr "النتائج"
 
 #: .general.birthMonth
 msgid "Birth Month"
-msgstr ""
+msgstr "شهر الميلاد"
 
 #: .general.validationEmailMatch
 #: .teacherRegistration.validationEmailMatch
 msgid "The emails do not match"
-msgstr ""
+msgstr "عنوانا البريد الإلكتروني غير متطابقين"
 
 #: .registration.lastStepDescription
 msgid "We are currently processing your application. "
@@ -10489,7 +10499,7 @@ msgstr ""
 
 #: .teacherbanner.greeting
 msgid "Hi"
-msgstr ""
+msgstr "مرحبًا"
 
 #: templates/contact-us.html:94
 msgid ""
@@ -10503,7 +10513,7 @@ msgstr[0] ""
 
 #: .general.teacherAccounts
 msgid "Teacher Accounts"
-msgstr ""
+msgstr "حسابات المعلمين"
 
 #: .registration.createUsername
 msgid "Create a Username"
@@ -10578,7 +10588,7 @@ msgstr ""
 
 #: .general.getStarted
 msgid "Get Started"
-msgstr ""
+msgstr "ابدأ باستخدام سكراتش"
 
 #: .registration.welcomeStepDescription
 msgid ""
@@ -10620,6 +10630,7 @@ msgid ""
 "<b>Grade Levels:</b> elementary, middle, and high school (and some colleges "
 "too!)"
 msgstr ""
+"<b>مستويات الفصول:</b> الابتدائية والمتوسطة والثانوية (وبعض الجامعات كذلك!)"
 
 #: .teacherlanding.scratchEdDescription
 msgid ""
@@ -10636,7 +10647,7 @@ msgstr ""
 
 #: .teacherlanding.generalUsageSettings
 msgid "<b>Settings:</b> schools, museums, libraries, community centers"
-msgstr ""
+msgstr "<b>الأماكن:</b> المدارس، والمتاحف، والمكتبات، ومراكز المجتمع"
 
 #: .teacherlanding.title
 msgid "Scratch for Educators"
@@ -10720,6 +10731,8 @@ msgid ""
 "<b>Subject Areas:</b> language arts, science, social studies, math, computer "
 "science, foreign languages, and the arts"
 msgstr ""
+"<b>مجالات المواد:</b> مهارات وفنون اللغة، والعلوم، والدراسات الاجتماعية، "
+"والرياضيات، وعلوم الحاسب، واللغات الأجنبية، والفنون."
 
 #: .faq.edBody
 msgid ""
