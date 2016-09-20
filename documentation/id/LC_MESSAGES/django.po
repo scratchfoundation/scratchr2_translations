@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2016-08-23 05:13+0000\n"
+"PO-Revision-Date: 2016-09-19 11:05+0000\n"
 "Last-Translator: Emmanuella <emma.rumanti@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: id\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1471929192.000000\n"
+"X-POOTLE-MTIME: 1474283116.000000\n"
 
 #: djangobb_forum/templates/djangobb_forum/moderate.html:84
 #: djangobb_forum/templates/djangobb_forum/move_posts.html:89
@@ -2315,6 +2315,10 @@ msgid ""
 "set_tempo.png\" />.\n"
 "</p>\n"
 msgstr ""
+"<p>\n"
+"Panjang ketukan dapat diatur menggunakan <img src=\""
+"%(STATIC_URL)s/images/help/set_tempo.png\" />.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/playsound.html:7
 #, python-format
@@ -2345,6 +2349,18 @@ msgid ""
 "</p>\n"
 "\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Pilih suara dari menu:\n"
+"<img src=\"%(STATIC_URL)s/images/help/soundmenu.png\" />\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Untuk menambahkan sebuah suara, buka tab Suara:\n"
+"<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/sounds.png\" /> \n"
+"</p>\n"
+"\n"
 
 #: templates/help/studio/tips/blocks/playsound.html:37
 #, python-format
@@ -2356,6 +2372,12 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> waits until "
 "the sound is finished playing before continuing to the next block."
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/> mulai memainkan "
+"sebuah suara dan kemudian langsung lanjut ke balok berikutnya.\n"
+"</p>\n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> menunggu "
+"sampai suaranya selesai dimainkan sebelum lanjut ke balok berikutnya."
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:8
 #, python-format
@@ -2363,6 +2385,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
 "<h3>Plays a sound and waits until the sound is finished </h3>\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
+"<h3>Mainkan sebuah suara dan menunggu sampai suaranya selesai </h3>\n"
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:18
 #, python-format
@@ -2370,6 +2394,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/>\n"
 "starts playing a sound and continues to the next block immediately."
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/>\n"
+"memainkan sebuah suara dan kemudian langsung lanjut ke balok berikutnya."
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:23
 #, python-format
@@ -2378,6 +2404,9 @@ msgid ""
 "waits until the sound is finished playing before continuing to the next "
 "block."
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
+"menunggu sampai suaranya selesai dimainkan sebelum lanjut ke balok "
+"berikutnya."
 
 #: templates/help/studio/tips/blocks/point-direction.html:7
 msgid "Set the direction of the current sprite"
@@ -2398,6 +2427,17 @@ msgid ""
 "images/help/info.gif\"/><br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 msgstr ""
+"Klik untuk memilih dari menu:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\""
+"/><br/>\n"
+"\n"
+"<p>Atau ketik sebuah angka:<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/point-in-direction-45.png\"/></p>\n"
+"\n"
+"\n"
+"<p>Untuk melihat arah sprite sekarang, klik <img src=\""
+"%(STATIC_URL)s/images/help/info.gif\"/><br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 
 #: templates/help/studio/tips/blocks/point-towards.html:7
 msgid "Points sprite towards mouse-pointer or another sprite"
@@ -2891,7 +2931,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/timer.html:7
 msgid "Reports the value of the timer in seconds"
-msgstr ""
+msgstr "Melaporkan nilai timer dalam wujud detik"
 
 #: templates/help/studio/tips/blocks/timer.html:15
 #, python-format
@@ -2902,14 +2942,12 @@ msgid ""
 msgstr ""
 
 #: templates/help/studio/tips/blocks/timestamp.html:8
-#, fuzzy
 msgid "Reports the number of days since 2000"
-msgstr "Melaporkan jumlah dari hari-hari sejak tanggal 1 Januari, 2000"
+msgstr "Melaporkan jumlah hari-hari sejak 2000"
 
 #: templates/help/studio/tips/blocks/touching-color.html:7
-#, fuzzy
 msgid "Reports true if sprite is touching specified color"
-msgstr "Laporkan ya jika sprite bersentuhan dengan warna yang dispesifikasi"
+msgstr "Melaporkan benar jika sprite menyentuh warna yang dikhususkan"
 
 #: templates/help/studio/tips/blocks/touching-color.html:16
 #, python-format
@@ -2927,6 +2965,8 @@ msgstr ""
 msgid ""
 "Reports true if sprite is touching specified sprite, edge, or mouse-pointer"
 msgstr ""
+"Melaporkan benar jika sprite menyentuh sprite yang dikhususkan, pinggir, "
+"atau pointer-mouse"
 
 #: templates/help/studio/tips/blocks/touching.html:16
 #, python-format
@@ -2943,6 +2983,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/turn-left-block.png\">\n"
 "  <h3>Turn to the left</h3>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/turn-left-block.png\">\n"
+"  <h3>Putar ke kiri</h3>"
 
 #: templates/help/studio/tips/blocks/turn-left.html:14
 msgid ""
@@ -7777,6 +7819,15 @@ msgid ""
 "sound, or broadcast.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Balok benda ini melaporkan nilai dari benda pada tempat yang diminta di "
+"daftar.\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/item-of-list-menu.png\" /><br/>\n"
+"Kamu dapat memasukkan sebuah blok benda dengan balok lainnya, misalnya: "
+"katakan, ganti kostum, mainkan\n"
+"suara, atau siarkan.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/replace-list.html:11
 msgid ""
