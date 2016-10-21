@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2016-09-17 20:31+0000\n"
+"PO-Revision-Date: 2016-10-13 21:32+0000\n"
 "Last-Translator: Torbjorn <torbjorn.skauli@ffi.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nb\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1474144303.000000\n"
+"X-POOTLE-MTIME: 1476394345.000000\n"
 
 #: views.py:322 views.py:332
 msgid "Your message has been sent. We will respond within 3 days."
@@ -12483,6 +12483,9 @@ msgid ""
 "email addresses, links to social media sites or websites with unmoderated "
 "chat."
 msgstr ""
+"For sikkerhets skyld, ikke legg ut informasjon som kan brukes til å kontakte "
+"deg privat - for eksempel etternavn, telefonnummer, adresser, epostadresser "
+"eller linker til sosiale medier."
 
 #: .faq.requirementsBody
 msgid ""
@@ -12499,6 +12502,18 @@ msgid ""
 "installing <a href=\"/scratch_1.4\">Scratch 1.4</a>, which you can still use "
 "to share projects to the Scratch 2 website."
 msgstr ""
+"For å kjøre Scratch 2 trenger du (1) en Mac-, Linux- eller Windows-"
+"datamaskin, (2) en versjon av <a href= \" \">Adobe Flash Player</a> nyere "
+"enn 15. juni 2016 og (3) en moderne nettleser: en av de to siste versjonene "
+"av <a href=\"http://google.com/chrome/\">Chrome</a>, <a href=\""
+"http://www.mozilla.org/en-US/firefox/new/\">Firefox</a>, <a href=\""
+"https://support.apple.com/downloads/safari\">Safari</a> (Mac eller Windows), "
+"<a href=\"https://www.microsoft.com/EN-US/windows/microsoft-edge\">Edge</a> ("
+"bare Windows) eller <a href=\"https://www.microsoft.com/en-us/download"
+"/internet-explorer.aspx\">Internet Explorer 10+</a> (bare Windows). Hvis "
+"maskinen din ikke oppfyller disse kravene kan du prøve å installere <a href="
+"\"/scratch_1.4\">Scratch 1.4</a>, som fortsatt kan brukes til å legge ut "
+"programmer på nettstedet til Scratch."
 
 #: .faq.sourceCodeBody
 msgid ""
@@ -12509,14 +12524,20 @@ msgid ""
 "information on development projects relating to the Scratch website, please "
 "visit our <a href=\"/developers\">Developer Page</a>."
 msgstr ""
+"Kildekoden for offline-versjonen av Scratch 2 ligger på <a href=\""
+"https://github.com/LLK/scratch-flash\">GitHub</a>. Kildekoden for <a href =\""
+"/scratch_1.4\">Scratch 1.4</a>, som er skrevet i Squeak, er også tilgjengelg "
+"på <a href=\"https://github.com/LLK/Scratch_1.4\">GitHub</a>. Informasjon om "
+"videreutvikling av nettstedet finner du på <a href=\"/developers\">siden for "
+"utviklere</a>."
 
 #: .hoc.tipsMakeMusicTitle
 msgid "Make Music"
-msgstr ""
+msgstr "Lag musikk"
 
 #: .hoc.tipsMakeItFlyTitle
 msgid "Make it Fly"
-msgstr ""
+msgstr "Få den til å fly"
 
 #: templates/educators/classroom_detail.html:96
 #: templates/educators/includes/stuff/backbone-templates.html:206
@@ -12525,19 +12546,22 @@ msgid ""
 "Describe this class. This will be publicly visible, so please avoid using "
 "identifiable information, like names."
 msgstr ""
+"Skriv litt om klassen. Dette vil ligge åpent på nettet, så ikke bruk navn "
+"eller annen personlig informasjon."
 
 #: templates/educators/classroom_detail.html:125
 #: templates/educators/includes/stuff/backbone-templates.html:228
 #: templates/educators/includes/stuff/backbone-templates.html:236
-#, fuzzy
 msgid "Describe what the class is doing."
-msgstr "Beskriv hva klassen gjør"
+msgstr "Skriv litt om hva hva klassen gjør."
 
 #: templates/educators/register_student_modal.html:38
 msgid ""
 "These accounts will be publicly visible. Please do not choose usernames that "
 "contain personal identifiers, such as real names or schools."
 msgstr ""
+"Disse brukerkontoene vil være synlige for alle. Ikke velg brukernavn som "
+"inneholder personlig informasjon, for eksempel navn på personer eller skoler."
 
 #: templates/educators/includes/stuff/backbone-templates.html:754
 msgid ""
@@ -12546,6 +12570,10 @@ msgid ""
 "contain personal identifiers, such as real names or schools. Please use the "
 "following format:"
 msgstr ""
+"Last opp en .CSV fil som inneholder inntil 50 brukernavn og passord for "
+"elever. Kontoene vil være synlige for alle, så ikke velg brukernavn som "
+"inneholder personlig informasjon, for eksempel navn på personer eller "
+"skoler. Bruk dette formatet:"
 
 #: templates/galleries/comments.html:27
 #: templates/includes/backbone-templates.html:73
@@ -12553,6 +12581,7 @@ msgid ""
 "You have <span id=\"chars-left-<%%- comment_id %%>\">500</span> characters "
 "left."
 msgstr ""
+"Du har <span id=\"chars-left-<%%- comment_id %%>\">500</span> tegn igjen."
 
 #: templates/projects/base.html:120
 msgid ""
@@ -12561,10 +12590,14 @@ msgid ""
 ">%(username)s</a> for:\n"
 "                "
 msgstr ""
+"\n"
+"                  Takk til <a href=\"%(remix_profile_url)s\">%(username)s</a>"
+" for:\n"
+"                "
 
 #: templates/projects/base.html:126
 msgid "Project Remixed"
-msgstr ""
+msgstr "Prosjekt remikset"
 
 #: templates/projects/base.html:137
 msgid ""
@@ -12573,35 +12606,38 @@ msgid ""
 "for:\n"
 "                "
 msgstr ""
+"\n"
+"                  Takk til <a href=\"%(og_profile_url)s\">%(username)s</a> "
+"for:\n"
+"                "
 
 #: templates/projects/base.html:143
-#, fuzzy
 msgid "Original Project"
-msgstr "Originalt prosjekt:"
+msgstr "Opprinnelig prosjekt"
 
 #: templates/projects/includes/backbone-init-data.html:48
 msgid ""
 "Please say the name of the sprite or the backdrop with the inappropriate "
 "image"
-msgstr ""
+msgstr "Skriv navnet på figuren eller bakgrunnen som har et upassende bilde"
 
 #: templates/projects/includes/backbone-templates.html:44
 msgid "Exact Copy of Project"
-msgstr ""
+msgstr "Eksakt kopi av prosjektet"
 
 #: templates/projects/includes/backbone-templates.html:45
 msgid "Uses Image/Music Without Credit"
-msgstr ""
+msgstr "Bruker bilde eller musikk uten å angi opphav"
 
 #: templates/projects/includes/backbone-templates.html:49
 msgid "Inappropriate Images"
-msgstr ""
+msgstr "Upassende bilder"
 
 #: templates/projects/includes/owner/editable-notes.html:10
 msgid "How did you make the project?"
-msgstr ""
+msgstr "Hvordan lagde du prosjektet?"
 
 #: templates/projects/includes/owner/editable-notes.html:12
 msgid ""
 "Did you use ideas, scripts, or artwork from other people? Thank them here."
-msgstr ""
+msgstr "Brukte du ideer, skript eller grafikk fra andre? Gi takk til dem her."
