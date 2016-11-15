@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2016-10-31 15:56+0000\n"
-"Last-Translator: Kumiko <kuranjp@gmail.com>\n"
+"PO-Revision-Date: 2016-11-15 07:55+0000\n"
+"Last-Translator: Kazuhiro <abee@squeakland.jp>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1477929416.000000\n"
+"X-POOTLE-MTIME: 1479196504.000000\n"
 
 #: views.py:322 views.py:332
 msgid "Your message has been sent. We will respond within 3 days."
@@ -2949,7 +2949,7 @@ msgstr ""
 msgid ""
 "If you continue to have issues, contact the <a href=\"%(contact_url)s"
 "\">Scratch Team</a>."
-msgstr ""
+msgstr "繰り返し問題が発生する場合は、<a href=\"%(contact_url)s\">Scratchチーム</a>までご連絡ください。"
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:16
 msgid "Unsubscribed"
@@ -5973,7 +5973,7 @@ msgstr "共有されたプロジェクト"
 #: templates/notifications/includes/user-feed.html:147
 #, python-format
 msgid "%(time)s ago"
-msgstr "%(time)s 日前"
+msgstr "%(time)s 前"
 
 #: templates/notifications/includes/friend-feed.html:47
 #: templates/notifications/includes/user-feed.html:70
@@ -6506,9 +6506,8 @@ msgstr "スタジオにプロジェクトを加える"
 
 # 83%
 #: templates/projects/includes/shared/shared-project-actions.html:9
-#, fuzzy
 msgid "Embed project on other websites"
-msgstr "他のWebサイトでプロジェクトを共有"
+msgstr "他のウェブサイトで埋め込みプロジェクト"
 
 #: templates/projects/includes/shared/shared-project-actions.html:15
 msgid "Report project as inappropriate"
@@ -7477,7 +7476,7 @@ msgstr "クラスへ行く"
 
 #: templates/educators/student-modal-registration.html:57
 msgid "Thanks for joining Scratch!"
-msgstr ""
+msgstr "Scratchへのご参加、ありがとうございます。"
 
 #: templates/educators/student-modal-registration.html:61
 msgid "Would you like to:"
@@ -7921,6 +7920,13 @@ msgid ""
 "community</a>.\n"
 "\t\t    "
 msgstr ""
+"Scratchは学習・教育を主眼として開発されました。2007年以来、さまざまな組織に在籍する教育関係者が、Scratch制作陣をサポートしてくれています"
+"（小学校〜高校までの生徒を担当する教師、教育、IT系研究者、図書館司書、美術・博物館学芸員、子どもたちの保護者など、公的教育機関から私的機関、各家庭まで、"
+"さまざまな場面で教育に携わる方々の協力を得てきました<br/><br/>\n"
+"）\t\tScratchを用いた学習についてよりくわしい情報を知りたい場合は、<br/><a href=\""
+"http://scratched.gse.harvard.edu\" target=\"_blank\""
+">ScratchEdオンラインコミュニティ</a>を参照してください。\n"
+"\t\t "
 
 #: templates/info/educators.html:36
 msgid ""
@@ -8249,6 +8255,8 @@ msgid ""
 "visible on the website, but it will still exist in the student's My Stuff. "
 "The Scratch Moderation Team will also be alerted."
 msgstr ""
+"このプロジェクトを削除する理由を入力してください。今後、このプロジェクトはScratchウェブサイトでは閲覧できなくなりますが、当該生徒の「私の作品」欄に"
+"は残ります。さらに、Scratchチームのコミュニティ管理担当に通知が届きます。"
 
 #: templates/projects/includes/backbone-templates.html:27
 msgid "The project has been unshared and reported to the Scratch Team."
@@ -8256,7 +8264,7 @@ msgstr ""
 
 #: templates/projects/includes/backbone-templates.html:30
 msgid "Report as inappropriate"
-msgstr ""
+msgstr "不適切な表現についての報告"
 
 #: templates/projects/includes/backbone-templates.html:34
 msgid ""
@@ -8271,10 +8279,12 @@ msgid ""
 "you can view the <a href=\"%(cloud_data_url)s\">list of all Cloud Data "
 "operations</a> for this project."
 msgstr ""
+"他人を傷つけたり、不適切な表現があるという報告が、クラウドデータの使用に関するものである場合は、当該プロジェクトの<a href=\""
+"%(cloud_data_url)s\">クラウドデータ操作のリスト</a>をご覧いただくことも可能です。"
 
 #: templates/projects/includes/shared/shared-project-actions.html:16
 msgid "Report and Unshare this project"
-msgstr ""
+msgstr "このプロジェクトを報告して、共有を取り消す"
 
 #: templates/stats/country.html:12
 msgid ""
@@ -8315,7 +8325,7 @@ msgstr ""
 
 #: mail/validators.py:10
 msgid "Scratch is not allowed to send email to this address"
-msgstr ""
+msgstr "Scratchからこのアドレスへのメール送信は許可されていません。"
 
 #: projects/models.py:137
 msgid "project"
@@ -8721,6 +8731,12 @@ msgid ""
 "\">contact us</a> if you have questions.\n"
 "                    "
 msgstr ""
+"\n"
+"                        このアドレスの持ち主がアドレスを削除するようにリクエストしました。<a onClick=\""
+"redirectParent('%(settings_url)s');\" href=\"#\""
+">新しいアドレスに変更</a>してください。もし疑問があれば<a onClick=\""
+"redirectParent('%(contact_us_url)s');\" href=\"#\">Scratchチームに連絡</a>してください。\n"
+"                    "
 
 #: templates/accounts/email_verification/verify_email_standalone.html:102
 msgid ""
@@ -9077,6 +9093,8 @@ msgid ""
 "inappropriate for all ages, or otherwise breaks the Scratch community "
 "guidelines."
 msgstr ""
+"このプロジェクトは、「他人を嫌な気持ちにさせる」「すべての世代の人が見るには不適切」など、Scratchコミュニティガイドラインに反すると判断されたため、"
+"Scratchチームにより削除されました。"
 
 #: templates/projects/censored.html:13
 msgid "It cannot be reshared at any time in the future."
@@ -9676,7 +9694,7 @@ msgstr ""
 
 #: templates/projects/includes/backbone-init-data.html:84
 msgid "Limit of 3 tags."
-msgstr ""
+msgstr "タグは3個までです。"
 
 #: templates/projects/includes/backbone-init-data.html:85
 msgid "Server error when editing tag.  Please reload the page to see updates."
@@ -9691,7 +9709,7 @@ msgstr ""
 
 #: templates/projects/includes/backbone-init-data.html:87
 msgid "Please choose a reason for reporting this project from the dropdown."
-msgstr ""
+msgstr "ドロップダウンリストから、このプロジェクトを報告する理由を選んでください。"
 
 #: templates/projects/includes/backbone-templates.html:34
 msgid ""
@@ -9700,10 +9718,13 @@ msgid ""
 "%(community_guidelines_url)s\" target=\"_blank\">Scratch Community "
 "Guidelines.</a>"
 msgstr ""
+"次のドロップダウンリストから、このプロジェクトが「他人を傷つける」「不適切な表現を含んでいる」などの <a href=\""
+"%(community_guidelines_url)s\" target=\"_blank\""
+">Scratchコミュニティガイドライン</a>に反するものであると判断した理由を選んでください。"
 
 #: templates/projects/includes/backbone-templates.html:42
 msgid "Select a reason"
-msgstr ""
+msgstr "理由を選択してください"
 
 #: templates/projects/includes/backbone-templates.html:43
 msgid "Copied Project"
@@ -9719,11 +9740,11 @@ msgstr ""
 
 #: templates/projects/includes/backbone-templates.html:46
 msgid "Inappropriate Language"
-msgstr ""
+msgstr "不適切な表現が含まれる"
 
 #: templates/projects/includes/backbone-templates.html:47
 msgid "Inappropriate Music"
-msgstr ""
+msgstr "不適切な音楽が使用されている"
 
 #: templates/projects/includes/backbone-templates.html:48
 msgid "Sharing Personal Contact Info"
@@ -9858,9 +9879,8 @@ msgid "Which version do you have?"
 msgstr "どのバージョンをお使いですか？"
 
 #: templates/educators/add_class_modal.html:50
-#, fuzzy
 msgid "This text looks inappropriate"
-msgstr "よくない言葉が使われているようです"
+msgstr "不適切な内容が含まれているようです。"
 
 #: templates/educators/classroom_detail.html:205
 msgid ""
@@ -9887,31 +9907,33 @@ msgstr ""
 
 #: templates/projects/includes/backbone-init-data.html:43
 msgid "Please say why the project is too violent or scary"
-msgstr ""
+msgstr "当プロジェクトが暴力的または恐怖心をあおるものである理由を教えてください。"
 
 #: templates/projects/includes/backbone-init-data.html:44
 msgid ""
 "Please say where the inappropriate language occurs in the project (For "
 "example: Notes & Credits, sprite name, project text, etc.)"
 msgstr ""
+"不適切な言葉がこのプロジェクトのどこにあるのかを教えてください（たとえば、「覚書と作品への貢献」「スプライトの名前」「プロジェクト内のテキスト」など）"
 
 #: templates/projects/includes/backbone-init-data.html:45
 msgid "Please say the name of the audio file with the inappropriate music"
-msgstr ""
+msgstr "不適切な音楽がふくまれるオーディオファイルの名称を教えてください。"
 
 #: templates/projects/includes/backbone-init-data.html:46
 msgid ""
 "Please say where the personal contact information is shared (For example: "
 "Notes & Credits, sprite name, project text, etc.)"
 msgstr ""
+"どこに個人情報（連絡先情報）が記載されているか教えてください（たとえば、「メモと作品への貢献」「スプライトの名前」「プロジェクト内のテキスト」など）"
 
 #: templates/projects/includes/backbone-templates.html:45
 msgid "Too Violent or Scary"
-msgstr ""
+msgstr "過度に暴力的だったり恐怖心をあおる"
 
 #: templates/projects/includes/backbone-templates.html:48
 msgid "Sharing Personal Contact Information"
-msgstr ""
+msgstr "個人的な連絡先情報が公開されている"
 
 #: userprofiles/views.py:367
 msgid ""
@@ -10004,7 +10026,7 @@ msgstr "プロジェクトを共有したり、コメントを投稿するとき
 
 #: .guidelines.privacyheader
 msgid "Keep personal info private."
-msgstr "個人情報は公開しないでください。"
+msgstr "個人情報を公開しないこと。"
 
 #: .guidelines.constructivebody
 msgid ""
@@ -10038,13 +10060,12 @@ msgstr "敬意をしめそう。"
 
 # 83%
 #: .guidelines.shareheader
-#, fuzzy
 msgid "Share."
-msgstr "共有"
+msgstr "共有すること。"
 
 #: .guidelines.friendlyheader
 msgid "Help keep the site friendly."
-msgstr "このサイトが友好的であるために手を貸してください。"
+msgstr "サイトを心地よい場所にすること。"
 
 #: .guidelines.honestyheader
 msgid "Be honest."
@@ -10093,6 +10114,10 @@ msgid ""
 "downloading it to your computer using the button here. You may also ​<a href="
 "\"%(contact_url)s?confirmation=1\">contact us​</a> for additional help."
 msgstr ""
+"ログインするときに問題が発生しました。ログインでは、アカウント作成時に指定したユーザー名とパスワードを正確に入力する必要があります。正しいユーザー名とパス"
+"ワードを入力しているのにログインできないときは、 "
+"このボタンを使用してプロジェクトを使用中のコンピューターにダウンロードしてください。さらに、必要に応じて、<a href=\""
+"%(contact_url)s?confirmation=1\">こちらから</a>ご連絡ください。"
 
 #: templates/modal-registration.html:230
 msgid "Download project"
@@ -10365,7 +10390,7 @@ msgstr ""
 
 #: .teacherfaq.teacherWaitTitle
 msgid "Why do I have to wait 24 hours for my account?"
-msgstr ""
+msgstr "なぜ自分のアカウントが使えるようになるまで24時間待たなければならないのですか？"
 
 #: .teacherfaq.commWhoTitle
 msgid "Who can my students interact with on Scratch?"
@@ -10412,11 +10437,11 @@ msgstr ""
 
 #: .teacherfaq.teacherPersonalTitle
 msgid "Why do you need to know my personal information during registration?"
-msgstr ""
+msgstr "なぜ登録時に個人情報を入力する必要があるのですか？"
 
 #: .teacherfaq.studentEndTitle
 msgid "What happens when I \"end\" my class?"
-msgstr ""
+msgstr "私のクラスを「終了」するとどうなりますか？"
 
 #: .teacherfaq.studentForgetBody
 msgid ""
@@ -10705,7 +10730,7 @@ msgstr ""
 
 #: .teacherRegistration.selectCountry
 msgid "select country"
-msgstr ""
+msgstr "国を選択してください"
 
 #: .teacherRegistration.orgChoiceLibrary
 msgid "Library"
@@ -10775,9 +10800,8 @@ msgstr ""
 
 # 87%
 #: .teacherRegistration.validationPasswordLength
-#, fuzzy
 msgid "Passwords must be at least six characters"
-msgstr "パスワードは６文字以上にしてください。"
+msgstr "パスワードは6文字以上にしてください。"
 
 #: .teacherRegistration.city
 msgid "City"
@@ -10808,9 +10832,8 @@ msgid "State"
 msgstr ""
 
 #: .teacherRegistration.showPassword
-#, fuzzy
 msgid "Show password"
-msgstr "新しいパスワード"
+msgstr "パスワードを表示"
 
 #: .teacherRegistration.usernameStepTitle
 msgid "Request a Teacher Account"
@@ -11205,7 +11228,7 @@ msgstr ""
 
 #: .studentRegistration.classroomApiGeneralError
 msgid "Sorry, we could not find the registration information for this class"
-msgstr ""
+msgstr "申し訳ありませんが、このクラスの登録情報を見つけることができませんでした"
 
 #: authentication/views.py:774
 #, fuzzy
@@ -11478,27 +11501,27 @@ msgstr ""
 
 #: .general.error
 msgid "Oops! Something went wrong"
-msgstr ""
+msgstr "うわっ! 何か問題が発生しました。"
 
 #: .registration.validationMaxLength
 msgid "Sorry, you have exceeded the maximum character limit."
-msgstr ""
+msgstr "申し訳ありませんが、あなたは最大文字制限を超えました。"
 
 #: .registration.invitedBy
 msgid "invited by"
-msgstr ""
+msgstr "次の人に招待されました。"
 
 #: .registration.classroomInviteExistingStudentStepDescription
 msgid "you have been invited to join the class:"
-msgstr ""
+msgstr "あなたは への参加の招待を受け取りました"
 
 #: .registration.notYou
 msgid "Not you? Log in as another user"
-msgstr ""
+msgstr "あなたではありませんか。他のユーザーでログイン"
 
 #: .teacherfaq.teacherEdTitle
 msgid "Are Scratch Teacher accounts linked to ScratchEd accounts?"
-msgstr ""
+msgstr "Scratchの先生はScratchEdのアカウントに紐づいていますか？"
 
 #: .teacherfaq.teacherWhatBody
 msgid ""
@@ -11514,10 +11537,11 @@ msgid ""
 "To request a Teacher Account, go to the teacher account <a href=\"/educators/"
 "register\">request form</a>."
 msgstr ""
+"教員アカウントを申請するには、教員アカウント<a href=\"/educators/register\">申請フォーム</a>に行ってください。"
 
 #: .teacherfaq.teacherSignUpTitle
 msgid "How do I request a teacher account?"
-msgstr ""
+msgstr "教員アカウントを申請する方法は？"
 
 #: .teacherfaq.teacherEdBody
 msgid ""
@@ -11606,8 +11630,8 @@ msgid ""
 "email addresses, links to social media sites or websites with unmoderated "
 "chat."
 msgstr ""
-"安全上の理由から、個人情報を公開しないでください。これには、苗字や電話番号、住所、電子メールアドレス、適切に管理されていないSNSやチャットへのリンクなど"
-"が含まれます。"
+"安全上の理由から、個人情報を公開しないでください。これには、苗字や電話番号、住所、電子メールアドレス、適切に管理されていないチャットのあるWebサイトやS"
+"NSへのリンクなどが含まれます。"
 
 #: .faq.requirementsBody
 msgid ""
@@ -11686,7 +11710,7 @@ msgid ""
 "                "
 msgstr ""
 "\n"
-"<a href=\"%(remix_profile_url)s\">%(username)s</a>さん、ありがとうございます。 \n"
+" <a href=\"%(remix_profile_url)s\">%(username)s</a> さん、ありがとうございます。 \n"
 "                "
 
 #: templates/projects/base.html:126
@@ -11712,28 +11736,28 @@ msgstr "原作"
 msgid ""
 "Please say the name of the sprite or the backdrop with the inappropriate "
 "image"
-msgstr ""
+msgstr "不適切な画像のあるスプライトや背景の名前を教えて下さい"
 
 #: templates/projects/includes/backbone-templates.html:44
 msgid "Exact Copy of Project"
-msgstr ""
+msgstr "他のプロジェクトの完全なコピー"
 
 #: templates/projects/includes/backbone-templates.html:45
 msgid "Uses Image/Music Without Credit"
-msgstr ""
+msgstr "クレジットのない画像/音楽を使用しています"
 
 #: templates/projects/includes/backbone-templates.html:49
 msgid "Inappropriate Images"
-msgstr ""
+msgstr "不適切な画像"
 
 #: templates/projects/includes/owner/editable-notes.html:10
 msgid "How did you make the project?"
-msgstr ""
+msgstr "どうやってこのプロジェクトを作成しましたか?"
 
 #: templates/projects/includes/owner/editable-notes.html:12
 msgid ""
 "Did you use ideas, scripts, or artwork from other people? Thank them here."
-msgstr ""
+msgstr "他の人のアイデアやスクリプト、画像などを使ったなら、ここに、それらへの感謝を書きましょう。"
 
 #: templates/accounts/password_changed_email/message.html:7
 #: templates/accounts/password_changed_email/message.txt:2
