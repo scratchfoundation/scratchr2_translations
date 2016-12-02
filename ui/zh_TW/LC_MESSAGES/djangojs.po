@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-04 13:08+0000\n"
-"PO-Revision-Date: 2016-11-11 02:38+0000\n"
-"Last-Translator: a06a03 <a06a03@clps.tyc.edu.tw>\n"
+"PO-Revision-Date: 2016-12-02 14:23+0000\n"
+"Last-Translator: mewtaylor <mataylor@media.mit.edu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
@@ -17,13 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1478831925.000000\n"
+"X-POOTLE-MTIME: 1480688636.000000\n"
 
 #: static/admin/js/SelectFilter2.js:45
-#, c-format, fuzzy
+#, c-format
 msgid "Available %s"
-msgstr "可用 %s"
+msgstr "可用的 %s"
 
+# This needs the variable "%s" to be added somewhere
 #: static/admin/js/SelectFilter2.js:46
 #, c-format
 msgid ""
@@ -31,6 +32,7 @@ msgid ""
 "the box below and then clicking the \"Choose\" arrow between the two boxes."
 msgstr ""
 
+# This needs the variable "%s" to be added
 #: static/admin/js/SelectFilter2.js:53
 #, c-format
 msgid "Type into this box to filter down the list of available %s."
@@ -58,10 +60,11 @@ msgid "Remove"
 msgstr "移除"
 
 #: static/admin/js/SelectFilter2.js:75
-#, c-format, fuzzy
+#, c-format
 msgid "Chosen %s"
-msgstr "選擇 %s"
+msgstr "已選的%s"
 
+# This needs the variable "%s" to be added.
 #: static/admin/js/SelectFilter2.js:76
 #, c-format
 msgid ""
@@ -81,27 +84,27 @@ msgstr "你可以按下按鍵一次刪除所有已選取的變數%s"
 #: static/admin/js/actions.js:18 static/admin/js/actions.min.js:1
 msgid "%(sel)s of %(cnt)s selected"
 msgid_plural "%(sel)s of %(cnt)s selected"
-msgstr[0] ""
+msgstr[0] "%(sel)s 的％ %(cnt)s 選擇"
 
 #: static/admin/js/actions.js:109 static/admin/js/actions.min.js:5
 msgid ""
 "You have unsaved changes on individual editable fields. If you run an "
 "action, your unsaved changes will be lost."
-msgstr ""
+msgstr "你有些欄位尚未儲存變更，如果你執行其他操作，這些內容將會遺失。"
 
 #: static/admin/js/actions.js:121 static/admin/js/actions.min.js:6
 msgid ""
 "You have selected an action, but you haven't saved your changes to "
 "individual fields yet. Please click OK to save. You'll need to re-run the "
 "action."
-msgstr ""
+msgstr "你已選擇了一個執行操作，但你還沒有儲存變更的欄位。請點擊確定以儲存內容，然後重新執行後續操作。"
 
 #: static/admin/js/actions.js:123 static/admin/js/actions.min.js:6
 msgid ""
 "You have selected an action, and you haven't made any changes on individual "
 "fields. You're probably looking for the Go button rather than the Save "
 "button."
-msgstr ""
+msgstr "你已選擇了一個執行操作，系統偵測到你的欄位並沒有修改過，我想你可能是要使用「開始」按鈕而不是「保存」按鈕。"
 
 #: static/admin/js/calendar.js:26
 msgid ""
@@ -110,7 +113,6 @@ msgid ""
 msgstr "一月 二月 三月 四月 五月 六月 七月 八月 九月 十月 十一月 十二月"
 
 #: static/admin/js/calendar.js:27
-#, fuzzy
 msgid "S M T W T F S"
 msgstr "日 一 二 三 四 五 六"
 
@@ -129,7 +131,6 @@ msgid "Now"
 msgstr "現在"
 
 #: static/admin/js/admin/DateTimeShortcuts.js:53
-#, fuzzy
 msgid "Clock"
 msgstr "時間"
 
@@ -160,13 +161,12 @@ msgid "Today"
 msgstr "今天"
 
 #: static/admin/js/admin/DateTimeShortcuts.js:148
-#, fuzzy
 msgid "Calendar"
 msgstr "日曆"
 
 #: static/admin/js/admin/DateTimeShortcuts.js:195
 msgid "Yesterday"
-msgstr ""
+msgstr "昨天"
 
 #: static/admin/js/admin/DateTimeShortcuts.js:199
 msgid "Tomorrow"
@@ -182,7 +182,7 @@ msgstr "明天"
 #  be placed in the msgstr below.
 #: static/js/lib/jquery.timeago.settings.js:2
 msgid " "
-msgstr ""
+msgstr " "
 
 #  If "from now" is at the beginning of a phrase
 #  rather than the end for this language, please
@@ -194,7 +194,7 @@ msgstr ""
 #  be placed in the msgstr below.
 #: static/js/lib/jquery.timeago.settings.js:3
 msgid "  "
-msgstr ""
+msgstr "  "
 
 #  If "ago" is at the end of a phrase rather than
 #  the beginning for this language, please put the
@@ -203,7 +203,7 @@ msgstr ""
 #  If no translation is present, leave an empty string.
 #: static/js/lib/jquery.timeago.settings.js:4
 msgid "ago"
-msgstr ""
+msgstr "前"
 
 #  If "from now" is at the end of a phrase rather
 #  than the beginning for this language, please put
@@ -212,60 +212,60 @@ msgstr ""
 #  If no translation is present, leave an empty string.
 #: static/js/lib/jquery.timeago.settings.js:5
 msgid "from now"
-msgstr ""
+msgstr "至今"
 
 #: static/js/lib/jquery.timeago.settings.js:7
 msgid "less than a minute"
-msgstr ""
+msgstr "不到 1 分鐘"
 
 #: static/js/lib/jquery.timeago.settings.js:8
 msgid "about a minute"
-msgstr ""
+msgstr "大約 1 分鐘"
 
 #: static/js/lib/jquery.timeago.settings.js:9
 #, c-format
 msgid "%d minutes"
-msgstr ""
+msgstr "%d 分鐘"
 
 #: static/js/lib/jquery.timeago.settings.js:10
 msgid "about an hour"
-msgstr ""
+msgstr "大約 1 小時"
 
 #: static/js/lib/jquery.timeago.settings.js:11
 #, c-format
 msgid "about %d hours"
-msgstr ""
+msgstr "大約 %d 小時"
 
 #: static/js/lib/jquery.timeago.settings.js:12
 msgid "a day"
-msgstr ""
+msgstr "1 天"
 
 #: static/js/lib/jquery.timeago.settings.js:13
 #, c-format
 msgid "%d days"
-msgstr ""
+msgstr "%d 天"
 
 #: static/js/lib/jquery.timeago.settings.js:14
 msgid "about a month"
-msgstr ""
+msgstr "大約 1 個月"
 
 #: static/js/lib/jquery.timeago.settings.js:15
 #, c-format
 msgid "%d months"
-msgstr ""
+msgstr "%d 個月"
 
 #: static/js/lib/jquery.timeago.settings.js:16
 msgid "about a year"
-msgstr ""
+msgstr "大約 1 年"
 
 #: static/js/lib/jquery.timeago.settings.js:17
 #, c-format
 msgid "%d years"
-msgstr ""
+msgstr "%d 年"
 
 #: static/js/lib/jquery.timeago.settings.js:6
 msgid "any moment now"
-msgstr ""
+msgstr "不久"
 
 #: static/js/global.js:89
 msgid "Want to share on Scratch?"
@@ -281,39 +281,47 @@ msgstr "刪除我的帳號"
 
 #: static/js/apps/project/main.js:57
 msgid "Would you like to leave the editor anyway?"
-msgstr ""
+msgstr "確定要關閉編輯器？"
 
 #: static/js/apps/project/scratch_app.js:159
 msgid ""
 "Your changes are NOT SAVED!\n"
 "To save, stay on this page, then log in."
 msgstr ""
+"你變更的內容尚未儲存！\n"
+"若要保存，請留在此頁，先登入帳戶。"
 
 #: static/js/apps/project/scratch_app.js:164
 msgid ""
 "Your changes are NOT SAVED!\n"
 "To save, stay on this page, then click “Remix”."
 msgstr ""
+"你變更的內容尚未儲存！\n"
+"若要保存，請留在此頁，並點擊「改編」。"
 
 #: static/js/apps/project/scratch_app.js:166
 msgid ""
 "Your changes are NOT SAVED!\n"
 "To save, stay on this page, click “See inside”, then click “Remix”."
 msgstr ""
+"你變更的內容尚未儲存！\n"
+"若要保存，請留在此頁，點擊「以編輯器開啟」，再點擊「改編」。"
 
 #: static/js/apps/project/scratch_app.js:181
 msgid ""
 "Your changes are NOT SAVED!\n"
 "To save, stay on this page, then click “Save now.”"
 msgstr ""
+"你變更的內容尚未儲存！\n"
+"若要保存，請留在此頁，並點擊檔案選單中的「儲存」。"
 
 #: static/js/apps/project/scratch_app.js:330
 msgid "on Scratch"
-msgstr ""
+msgstr "在 Scratch 上"
 
 #: static/js/apps/project/views.js:494
 msgid ""
 "Are you sure this project is disrespectful or inappropriate, and breaks the "
 "community guidelines? If not, click cancel, and then click the community "
 "guidelines link at the bottom of the page to learn more."
-msgstr ""
+msgstr "你確定此專案有不當內容，或是破壞社群準則的事情嗎？如果沒有，請點擊取消，若你還不知道社群準則，可以從頁面最下方找到該頁面連結。"

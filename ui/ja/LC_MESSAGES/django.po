@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-20 14:16+0000\n"
-"PO-Revision-Date: 2016-11-15 07:55+0000\n"
-"Last-Translator: Kazuhiro <abee@squeakland.jp>\n"
+"PO-Revision-Date: 2016-11-23 11:03+0000\n"
+"Last-Translator: Kumiko <kuranjp@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1479196504.000000\n"
+"X-POOTLE-MTIME: 1479898999.000000\n"
 
 #: views.py:322 views.py:332
 msgid "Your message has been sent. We will respond within 3 days."
@@ -109,7 +109,7 @@ msgstr "Eメールアドレス"
 
 #: authentication/forms.py:297 authentication/forms.py:318
 msgid "Incorrect username or password."
-msgstr "ユーザー名やパスワードを忘れましたか?"
+msgstr "ユーザー名またはパスワードが間違っています"
 
 #: authentication/forms.py:298 authentication/forms.py:319
 msgid "Please enable cookies on your browser."
@@ -1097,8 +1097,9 @@ msgid "Forum is empty."
 msgstr ""
 
 #: djangobb_forum/templates/djangobb_forum/forum.html:107
+#, fuzzy
 msgid "Moderate forum"
-msgstr ""
+msgstr "フォーラムをモデレートする"
 
 #: djangobb_forum/templates/djangobb_forum/header.html:15
 msgid "Show new posts since last visit"
@@ -1237,8 +1238,9 @@ msgstr ""
 #: djangobb_forum/templates/djangobb_forum/move_topic.html:5
 #: djangobb_forum/templates/djangobb_forum/move_topic.html:11
 #: djangobb_forum/templates/djangobb_forum/move_topic.html:17
+#, fuzzy
 msgid "Move Topic"
-msgstr ""
+msgstr "トピックを移動"
 
 #: djangobb_forum/templates/djangobb_forum/move_topic.html:26
 msgid "Move to"
@@ -1317,6 +1319,8 @@ msgid ""
 "with spaces. To search by author enter the username of the author whose "
 "posts you wish to search for."
 msgstr ""
+"単語を入力するとキーワードで検索できます。複数の単語を入力するときは空白文字で単語を区切ってください。投稿者のユーザー名で検索すると、その投稿者の投稿を検"
+"索できます。"
 
 #: djangobb_forum/templates/djangobb_forum/search_form.html:42
 #: djangobb_forum/templates/djangobb_forum/mobile/search_form.html:30
@@ -2090,8 +2094,8 @@ msgid ""
 "Scratch, and to confirm that you are the owner of the account if you contact "
 "us.  Your birth month and year will not be made public."
 msgstr ""
-"この情報は、Scratchを使う人たちの年齢層を計算するためと、あなたがScratchチームにあなたのアカウントについて問い合わせるとき本人確認するために"
-"使用されます。  あなたの生まれた年と月がインターネット上で公開されることはありません。"
+"この情報は、「Scratchを使う人たちの年齢層を計算するため」と「Scratchチームに自分のアカウントについてあなたからの問い合わせがあったとき、本人"
+"であることを確認するため」に使用されます。  あなたの生まれた年と月がインターネット上で公開されることはありません。"
 
 # 83%
 #: templates/modal-registration.html:76 templates/modal-registration.html:110
@@ -2302,7 +2306,7 @@ msgstr "さあ、はじめよう！"
 
 #: templates/modal-registration.html:213 templates/modal-registration.html:218
 msgid "Your username must be between 3 and 20 characters"
-msgstr ""
+msgstr "ユーザー名は3文字から20文字にしてください"
 
 #: templates/modal-registration.html:214 templates/modal-registration.html:219
 msgid "Sorry, that username already exists"
@@ -2336,7 +2340,6 @@ msgid "Your passwords do not match"
 msgstr "パスワードが一致していません"
 
 #: templates/modal-registration.html:223 templates/modal-registration.html:228
-#, fuzzy
 msgid "Your password cannot match your username"
 msgstr "ユーザー名とまったく同じパスワードは使用できません。"
 
@@ -2354,7 +2357,7 @@ msgstr "電子メールアドレスを入力してください。"
 
 #: templates/modal-registration.html:228 templates/modal-registration.html:233
 msgid "You must provide valid email address"
-msgstr "正しい電子メールアドレスを入力してください。"
+msgstr "正しい電子メールアドレスを入力してください"
 
 #: templates/modal-registration.html:229 templates/modal-registration.html:234
 msgid "Whoops, emails do not match"
@@ -2442,9 +2445,7 @@ msgstr ""
 msgid ""
 "<b>Keep personal info private.</b> For safety reasons, don't use real names "
 "or post contact info like phone numbers or addresses."
-msgstr ""
-"<b>個人情報に気をつけること。</b> 安全上の理由から、絶対に、本名、電話番号や"
-"住所など連絡先の情報を投稿しないようにしましょう。"
+msgstr "<b>個人情報を公開しないこと。</b> 安全上の理由から、絶対に、本名、電話番号や住所など連絡先の情報を投稿しないようにしましょう。"
 
 #: templates/accounts/banned-response.html:62
 #: templates/info/community_guidelines.html:26
@@ -2795,8 +2796,8 @@ msgid ""
 "username:\n"
 msgstr ""
 "\n"
-"MITのScratchチームからのご挨拶! あなたのお子様は<a href=\"%(scratch_url)s"
-"\">Scratch</a>に以下のユーザー名で新しいアカウントをサインアップしました:\n"
+"MITのScratchチームからのご挨拶。あなたのお子様が<a href=\"%(scratch_url)s\""
+">Scratch</a>に新しいアカウントを作成しました。ユーザー名は次のとおりです。:\n"
 
 #: templates/accounts/email_verification/verification_email.html:16
 #, python-format
@@ -2806,8 +2807,8 @@ msgid ""
 "on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
 "\n"
-"MITのScratchチームからのご挨拶! あなたは<a href=\"%(scratch_url)s\">Scratch</"
-"a>に以下のユーザー名で新しいアカウントを作成しました:\n"
+"MITのScratchチームからのご挨拶。あなたは<a href=\"%(scratch_url)s\""
+">Scratch</a>に新しいアカウントを作成しました。ユーザー名は次のとおりです。:\n"
 
 #: templates/accounts/email_verification/verification_email.html:22
 msgid "Please confirm this email address by clicking the button below:"
@@ -3605,9 +3606,7 @@ msgstr ""
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media "
 "Lab. It is provided free of charge."
-msgstr ""
-"ScratchはMITメディアラボ ライフロングキンダーガーテングループのプロジェクトで"
-"す。これは無償で提供されます。"
+msgstr "ScratchはMITメディアラボのライフロングキンダーガーテングループのプロジェクトで、無償で提供されています。"
 
 #: templates/info/about.html:26
 msgid ""
@@ -3711,7 +3710,7 @@ msgstr "Scratchのクレジット"
 
 #: templates/info/credits.html:98
 msgid "Scratch Credits and Contributors"
-msgstr ""
+msgstr "Scratchの製作者と製作に貢献した人"
 
 # 75%
 #: templates/info/credits.html:101
@@ -4077,7 +4076,7 @@ msgstr ""
 
 #: templates/info/parents.html:38 templates/info/parents.html:42
 msgid "What are the guidelines for the Scratch online community?"
-msgstr ""
+msgstr "Scratchオンライン・コミュニティのガイドラインとは何ですか？"
 
 #: templates/info/parents.html:44 templates/info/parents.html:48
 msgid "What is your privacy policy?"
@@ -5095,6 +5094,8 @@ msgid ""
 "you can make a new account - but you'll have to copy your projects over on "
 "your own."
 msgstr ""
+"Scratchウェブサイトの構造は、ユーザー名が変更されないことを前提に設計されています。そのため、ユーザー名の変更は不可能です。どうしてもユーザー名を変"
+"更したいときは、新しいアカウントを作成してください。ただし、作成したプロジェクトは自分で新しいアカウントにコピーする必要があります。"
 
 #: templates/info/help/faq.html:157 templates/info/faq.html:160
 msgid "What information can I share on / with my account?"
@@ -5477,7 +5478,7 @@ msgstr ""
 
 #: templates/info/help/faq.html:243 templates/info/faq.html:246
 msgid "Is it possible to make multiplayer games with cloud data?"
-msgstr "クラウドデータでマルチプレイヤーゲームを作れますか?"
+msgstr "クラウドデータを利用して、マルチプレイヤーゲームを作ることはできますか?"
 
 #: templates/info/help/faq.html:244 templates/info/faq.html:247
 msgid ""
@@ -6207,7 +6208,7 @@ msgstr ""
 
 #: templates/profiles/scratcher_promotion_modal.html:30
 msgid "We give credit."
-msgstr ""
+msgstr "Scratcherはクレジットをつけます。"
 
 #: templates/profiles/scratcher_promotion_modal.html:31
 msgid ""
@@ -6227,6 +6228,8 @@ msgid ""
 "Scratch is a fun and friendly place because Scratchers make it that way. If "
 "you see a project or comment that’s mean, click Report. "
 msgstr ""
+"Scratchが楽しくてやさしい場所なのは、Scratcherたちがそうなるよう努力しているからです。もしもいじわるなコメントやプロジェクトを見つけたら、"
+"「報告」ボタンを押してください。"
 
 #: templates/profiles/scratcher_promotion_modal.html:45
 msgid "We invite you to become a Scratcher."
@@ -6242,6 +6245,8 @@ msgid ""
 "strong>, <strong>give credit</strong>, and <strong>help keep the site "
 "friendly</strong>, click \"I agree!\""
 msgstr ""
+"もしあなたが互いに<strong>敬意</strong>を持ち、<strong>建設的</strong>な議論ができて、<strong>クレジット</st"
+"rong>をつけ、このサイトを<strong>親しみやすく</strong>してくれるなら、「賛成！」をクリックしてください。"
 
 #: templates/profiles/scratcher_promotion_modal.html:50
 msgid ""
@@ -6258,6 +6263,8 @@ msgid ""
 "Congratulations! You’ll notice that the word \"Scratcher\" now appears on "
 "your profile page, and under your user icon on forum posts. "
 msgstr ""
+"おめでとうございます！今からあなたのプロフィールページには \"Scratcher\" "
+"と書かれ、フォーラムへの投稿についているユーザーアイコンの下にもそう表示されます。 "
 
 #: templates/profiles/scratcher_promotion_modal.html:66
 msgid "I agree!"
@@ -6470,6 +6477,8 @@ msgid ""
 "decide whether or not it should stay on the site based on the <a href='/"
 "community_guidelines'>Scratch Community Guidelines</a>."
 msgstr ""
+"報告を受け取りました。Scratchチームは、ご連絡いただいたプロジェクトを精査して、<a href='/community_guidelines'>Sc"
+"ratchコミュニティガイドライン</a>に基づいて、このプロジェクトをサイトに残すべきかどうか判断します。"
 
 #: templates/projects/includes/explore-bar.html:7
 msgid "More projects by"
@@ -6618,7 +6627,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:14
 #: templates/registration/welcome_email_message.txt:9
 msgid "Read our Community Guidelines"
-msgstr ""
+msgstr "コミュニティ・ガイドラインを読む"
 
 #: templates/registration/welcome_email_message.html:15
 #: templates/registration/welcome_email_message.txt:10
@@ -6971,8 +6980,7 @@ msgid ""
 "Having problems? <a href=\"%(contact_url)s?confirmation=1\">Please give us "
 "feedback</a>"
 msgstr ""
-"何かお困りですか？<a href=\"%(contact_url)s?confirmation=1\""
-">質問、意見、感想などはこちらからお寄せください</a>"
+"何かお困りでしたら、<a href=\"%(contact_url)s?confirmation=1\">フィードバックをお待ちしております</a>"
 
 #: templates/homepage/index.html:150
 #, python-format
@@ -7195,8 +7203,8 @@ msgid ""
 "to <a href='%(email_change_url)s'>change the email</a> associated with your "
 "account to one you own."
 msgstr ""
-"あなたが入力した電子メールアドレスは、ほかの人が使用しているようです。 <a href='%(email_change_url)s'>メールアドレスを変更"
-"</a>して、アカウントにあなたが使用しているメールアドレスを登録してください。"
+"あなたが入力したメールアドレスは別の人のもののようです。あなたのアカウントに紐付けるメールアドレスは、<a "
+"href='%(email_change_url)s'>あなた自身のものに変更してください</a>。"
 
 #: djangobb_forum/util.py:284
 msgid ""
@@ -7264,6 +7272,8 @@ msgid ""
 "lists. Please change your address to a new one or <a href=\"%(contact_us_url)"
 "s\">contact us</a> if you have questions."
 msgstr ""
+"このアドレスの持ち主から、アドレスを削除してほしいという要望がありました。メールアドレスを新しいものに変更してください。もし何か疑問があれば<a "
+"href=\"%(contact_us_url)s\">こちらまで</a>。"
 
 #: templates/accounts/email_change.html:88
 msgid "Email Confirmed"
@@ -7695,7 +7705,7 @@ msgstr "が以下の管理者になりました。"
 
 #: templates/educators/includes/stuff/backbone-templates.html:546
 msgid "made a profile update. <em>"
-msgstr ""
+msgstr "がプロファイルを更新しました。 <em>"
 
 #: templates/educators/includes/stuff/backbone-templates.html:551
 msgid "performed an action. <em>"
@@ -7734,7 +7744,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:630
 msgid "Change Password for %(username)s"
-msgstr ""
+msgstr "%(username)s のパスワードを変更する"
 
 #: templates/educators/includes/stuff/backbone-templates.html:634
 #, fuzzy
@@ -7747,7 +7757,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:661
 msgid "Remove Icon"
-msgstr ""
+msgstr "アイコンの削除"
 
 #: templates/educators/includes/stuff/backbone-templates.html:666
 msgid "Force a password reset at next login"
@@ -7767,7 +7777,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:694
 msgid "Generate"
-msgstr ""
+msgstr "作成"
 
 #: templates/educators/includes/stuff/backbone-templates.html:697
 msgid "Type CTRL+C on Windows or CMD+C on Mac to copy the link."
@@ -7956,6 +7966,30 @@ msgid ""
 "newsletter</a>.<p>\n"
 "\t  "
 msgstr ""
+"\n"
+"\t\t<h3>教育関係者がScratchを使ってどんなことをしているのか、Scratchを使ってどんなことができるのか、もっとくわしく知るにはどうすれば"
+"よいですか？</h3>\n"
+"\t\t<p>Scratchで何ができるのか、わかりにくいとお感じですか？</p>\n"
+"\t\t<p>教育関係者たちが幅広い学習環境でScratchを活用した事例をまとめた<a href=\""
+"http://scratched.gse.harvard.edu/stories\" target=\"_blank\">事例集をがあります/a>。 "
+"</a></p>\n"
+"\t\t<p>幅広い年齢層、学科、状況に対応した<a href=\"http://scratched.gse.harvard.edu/resources/"
+"all\" target=\"_blank\">教材も用意されています</a>。<a href=\""
+"http://scratched.gse.harvard.edu/resources/new-scratch\" target=\"_blank\""
+">Webセミナー</a>、<a href=\"http://scratched.gse.harvard.edu/resources/scratch-"
+"curriculum-guide-draft\" target=\"_blank\""
+">Scratchカリキュラムガイド</a>などのドキュメントもご参照ください。</p>\n"
+"\t\t<p>さらに<a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\""
+">ScratchEd</a> "
+"オンラインコミュニティとここに記載された資料もご覧いただけます。ScratchEdチームとその他のScratch教育関係者には次の方法で交流できます：<"
+"a href=\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>、<"
+"a href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\""
+">Facebook</a>、<a href=\"http://www.edmodo.com/publisher/scratcheducation\" "
+"target=\"_blank>\">Edmodo</a>、<a href=\""
+"http://scratched.gse.harvard.edu/discussions/scratched-weekly-roundup\" "
+"target=\"_blank>\">今週のまとめ</a>、<a href=\"http://scratched.gse.harvard.edu/"
+"events\" target=\"_blank>\">Scratchニュースレター（定期刊行）</a>。<p>\n"
+"\t  "
 
 #: templates/info/educators.html:89
 msgid "Educator"
@@ -8247,7 +8281,7 @@ msgstr ""
 #: templates/projects/includes/backbone-templates.html:17
 #: templates/projects/includes/shared/shared-project-actions.html:17
 msgid "Report and Unshare"
-msgstr ""
+msgstr "報告と共有の取消し"
 
 #: templates/projects/includes/backbone-templates.html:19
 msgid ""
@@ -8260,7 +8294,7 @@ msgstr ""
 
 #: templates/projects/includes/backbone-templates.html:27
 msgid "The project has been unshared and reported to the Scratch Team."
-msgstr ""
+msgstr "プロジェクトの共有が取り消され、その旨がScratchチームに報告されました。"
 
 #: templates/projects/includes/backbone-templates.html:30
 msgid "Report as inappropriate"
@@ -8279,8 +8313,8 @@ msgid ""
 "you can view the <a href=\"%(cloud_data_url)s\">list of all Cloud Data "
 "operations</a> for this project."
 msgstr ""
-"他人を傷つけたり、不適切な表現があるという報告が、クラウドデータの使用に関するものである場合は、当該プロジェクトの<a href=\""
-"%(cloud_data_url)s\">クラウドデータ操作のリスト</a>をご覧いただくことも可能です。"
+"他人を傷つけたり、不適切な表現があるという報告が、クラウドデータの使用に関するものである場合は、そのプロジェクトの<a href=\""
+"%(cloud_data_url)s\">クラウドデータ操作のリスト</a>を見ることもできます。"
 
 #: templates/projects/includes/shared/shared-project-actions.html:16
 msgid "Report and Unshare this project"
@@ -8362,8 +8396,9 @@ msgid "Class Description"
 msgstr ""
 
 #: templates/educators/add_class_modal.html:35
+#, fuzzy
 msgid "Add Class"
-msgstr ""
+msgstr "クラスへ行く"
 
 #: templates/educators/classroom_detail.html:61
 msgid "Class page"
@@ -8391,7 +8426,7 @@ msgstr ""
 
 #: templates/educators/educator-modal-registration.html:134
 msgid "Congrats! educator.username"
-msgstr ""
+msgstr "おめでとう！ educator.username"
 
 #: templates/educators/educator-modal-registration.html:146
 msgid "Set up Classes"
@@ -8837,17 +8872,19 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:674
 msgid "Prompt student to change password on next login"
-msgstr ""
+msgstr "次回ログイン時に、生徒にパスワードの変更を促す"
 
 #: templates/educators/includes/stuff/backbone-templates.html:675
 msgid ""
 "This student's password will be reset to your username, %(username)s. After "
 "the student logs in, they will be prompted to choose a new password."
 msgstr ""
+"この生徒のパスワードはリセットされてあなたのユーザー名「%(username)s」になります。次回この生徒がログインしたときに、新しいパスワードを選ぶよう"
+"画面に表示されます。"
 
 #: templates/educators/includes/stuff/backbone-templates.html:693
 msgid "Sign-up Link"
-msgstr ""
+msgstr "アカウント作成リンク"
 
 #: templates/educators/includes/stuff/backbone-templates.html:696
 msgid ""
@@ -8858,7 +8895,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:699
 msgid "Generate a sign-up link"
-msgstr ""
+msgstr "アカウント作成リンクを作成する"
 
 #: templates/educators/includes/stuff/backbone-templates.html:704
 msgid "Type CTRL+C on Windows or &#8984;+C on Mac to copy the link."
@@ -8929,6 +8966,14 @@ msgid ""
 "computational fluency</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t\t <p><strong>設計目標</strong>：興味・関心がコンピュータ・リテラシーに結びつくことをサポートする技術基盤の基本設計を確立し、開"
+"発すること</p>\n"
+"<p><strong>展開目標</strong>：現在、コンピュータ業界の中心から遠くにいる若者たちに対して、興味・関心事をコンピュータ・リテラシーに昇華"
+"できるようにするための糸口をより多く提供すること</p>\n"
+"<p><strong>調査目標</strong>：若者たちが自身の興味・関心事をコンピュータリテラシーに昇華させる過程の根源的理解に貢献すること\n"
+"computational fluency</p>\n"
+"\t"
 
 #: templates/info/codingforall.html:48
 msgid ""
@@ -9108,12 +9153,16 @@ msgid ""
 "before resharing it.\n"
 "      "
 msgstr ""
+"\n"
+"      <a href=\"/community_guidelines/\""
+">コミュニティガイドライン</a>を読んで、もう一度共有する前に、かならず人を嫌な気持ちにさせないようにプロジェクトを編集してください。\n"
+"      "
 
 #: templates/projects/includes/backbone-templates.html:63
 msgid ""
 "This has been permanently unshared because of the way it violated the "
 "Community Guidelines."
-msgstr ""
+msgstr "こちらは、コミュニティガイドラインに違反しているため、無期限で共有が取り消されました。"
 
 msgid "Tips Window"
 msgstr "Tips ウィンドウ"
@@ -9533,8 +9582,9 @@ msgid "Fashion Microworld Prototype"
 msgstr ""
 
 #: templates/info/codingforall.html:113
+#, fuzzy
 msgid "Related Posts"
-msgstr ""
+msgstr "投稿を削除"
 
 #: templates/stats/index.html:173
 msgid "Scratch Block Usage (random sample)"
@@ -9662,11 +9712,11 @@ msgstr "上記から、理由を選択してください"
 
 #: templates/projects/includes/backbone-init-data.html:41
 msgid "Please provide a link to the original project"
-msgstr ""
+msgstr "元のプロジェクトのリンクを記入してください"
 
 #: templates/projects/includes/backbone-init-data.html:42
 msgid "Please provide links to the uncredited content"
-msgstr ""
+msgstr "クレジットがないコンテンツのリンクを記入してください"
 
 #: templates/projects/includes/backbone-init-data.html:43
 msgid "Please say why it is too scary"
@@ -9686,7 +9736,7 @@ msgstr ""
 msgid ""
 "Please be specific about why this project does not follow our Community "
 "Guidelines"
-msgstr ""
+msgstr "このプロジェクトがコミュニティガイドラインに反していると思う理由を明らかにしてください。"
 
 #: templates/projects/includes/backbone-init-data.html:82
 msgid "Added to studio"
@@ -9894,7 +9944,7 @@ msgstr "終了したクラス数（<span data-content=\"closed-count\">%(closed_
 
 #: templates/educators/includes/stuff/backbone-templates.html:42
 msgid "Welcome, %(username)s"
-msgstr ""
+msgstr "ようこそ %(username)s さん"
 
 #: templates/educators/includes/stuff/backbone-templates.html:43
 msgid ""
@@ -9907,14 +9957,14 @@ msgstr ""
 
 #: templates/projects/includes/backbone-init-data.html:43
 msgid "Please say why the project is too violent or scary"
-msgstr "当プロジェクトが暴力的または恐怖心をあおるものである理由を教えてください。"
+msgstr "このプロジェクトが暴力的または恐怖心をあおっていると思う理由を教えてください。"
 
 #: templates/projects/includes/backbone-init-data.html:44
 msgid ""
 "Please say where the inappropriate language occurs in the project (For "
 "example: Notes & Credits, sprite name, project text, etc.)"
 msgstr ""
-"不適切な言葉がこのプロジェクトのどこにあるのかを教えてください（たとえば、「覚書と作品への貢献」「スプライトの名前」「プロジェクト内のテキスト」など）"
+"不適切な言葉がこのプロジェクトのどこにあるのかを教えてください（たとえば、「メモと作品への貢献」「スプライトの名前」「プロジェクト内のテキスト」など）"
 
 #: templates/projects/includes/backbone-init-data.html:45
 msgid "Please say the name of the audio file with the inappropriate music"
@@ -9941,9 +9991,8 @@ msgid ""
 "longer between following people."
 msgstr ""
 
-#: .cards.story
-msgid "Animate a Story"
-msgstr "ストーリーを動かす"
+#~ msgid "Animate a Story"
+#~ msgstr "ストーリーを動かす"
 
 #: .cards.starter
 msgid "Starter Cards"
@@ -10161,7 +10210,7 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:630
 msgid ""
 "%(project)s by %(target_username)s was reviewed by a Scratch Administrator."
-msgstr ""
+msgstr "%(project)s （作成者：%(target_username)s）がScratch管理者によって調査されました。"
 
 #: templates/educators/includes/stuff/backbone-templates.html:632
 msgid ""
@@ -10174,7 +10223,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:638
 msgid "%(gallery)s was reviewed by a Scratch Administrator."
-msgstr ""
+msgstr "%(gallery)s がScratch管理者によって調査されました。"
 
 #: templates/educators/includes/stuff/backbone-templates.html:640
 msgid "%(gallery)s was deleted by a Scratch Administrator."
@@ -10339,6 +10388,8 @@ msgid ""
 "the ability to create student accounts, organize student projects into "
 "studios, and monitor student comments."
 msgstr ""
+"Scratch教師用アカウントを使用すると、生徒用アカウントの作成機能、スタジオ内での生徒のプロジェクトの管理機能、生徒の投稿したコメントのモニターなどの"
+"機能を使って、教師やその他の指導的立場の人が、Scratchに参加する生徒を管理できるようになります。"
 
 #: .teacherfaq.studentMultipleBody
 msgid ""
@@ -10610,8 +10661,9 @@ msgstr ""
 "https://secure.donationpay.org/scratchfoundation/\">寄付のページ</a>を参照してください。"
 
 #: .faq.requestTitle
+#, fuzzy
 msgid "How do I request a Scratch Teacher Account?"
-msgstr ""
+msgstr "教員アカウントを申請する方法は？"
 
 #~ msgid ""
 #~ "To run Scratch 2, you need a relatively recent web browser (<a href= \""
@@ -11480,6 +11532,8 @@ msgid ""
 "address you provided, or the email associated with your account. If you "
 "don't receive it shortly, be sure to check your spam folder."
 msgstr ""
+"私たちは、あなたが提供する電子メールアドレス、またはアカウントに関連付けられたメールにパスワードをリセットするための電子メールで指示をしました。あなたはす"
+"ぐにそれを受信しない場合は、迷惑メールフォルダを確認してください。"
 
 #: templates/registration/welcome_email_message.html:27
 msgid ""
@@ -11744,7 +11798,7 @@ msgstr "他のプロジェクトの完全なコピー"
 
 #: templates/projects/includes/backbone-templates.html:45
 msgid "Uses Image/Music Without Credit"
-msgstr "クレジットのない画像/音楽を使用しています"
+msgstr "クレジットのない画像や音楽を使っている"
 
 #: templates/projects/includes/backbone-templates.html:49
 msgid "Inappropriate Images"
@@ -11762,7 +11816,7 @@ msgstr "他の人のアイデアやスクリプト、画像などを使ったな
 #: templates/accounts/password_changed_email/message.html:7
 #: templates/accounts/password_changed_email/message.txt:2
 msgid "Hi %(username)s!"
-msgstr ""
+msgstr "こんにちは、%(username)s!"
 
 #: templates/accounts/password_changed_email/message.html:10
 #: templates/accounts/password_changed_email/message.txt:4
@@ -11781,3 +11835,419 @@ msgid ""
 "Browse for answers on: </br><a href=\"/info/faq\">Frequently Asked "
 "Questions</a>"
 msgstr ""
+
+#: .cards.pet
+#: .ttt.VirtualPetTitle
+msgid "Virtual Pet"
+msgstr ""
+
+#: .cards.pong
+#: .ttt.PongTitle
+msgid "Pong Game"
+msgstr ""
+
+#: .cards.catch
+#: .ttt.CatchTitle
+msgid "Catch Game"
+msgstr ""
+
+#: .cards.story
+#: .ttt.StoryTitle
+msgid "Create a Story"
+msgstr ""
+
+#: .cards.dance
+#: .ttt.DanceTitle
+msgid "Let's Dance"
+msgstr ""
+
+#: .cards.dressup
+#: .ttt.FashionTitle
+msgid "Fashion Game"
+msgstr ""
+
+#: .ttt.HideAndSeekDescription
+msgid "Make a hide-and-seek game with characters that appear and disappear."
+msgstr ""
+
+#: .ttt.DanceDescription
+msgid "Design an animated dance scene with music and dance moves."
+msgstr ""
+
+#: .ttt.PongDescription
+msgid "Make a bouncing ball game with sounds, points, and other effects."
+msgstr ""
+
+#: .ttt.educatorSubtitle
+msgid "Use this educator guide to plan and lead a one-hour Scratch workshop."
+msgstr ""
+
+#: .tile.guides
+msgid "See Cards and Guides"
+msgstr ""
+
+#: .ttt.tutorialSubtitle
+msgid ""
+"Find out how to make this project using a step-by-step tutorial in Scratch."
+msgstr ""
+
+#: .ttt.subTitle
+msgid ""
+"You can get started with Scratch in a variety of ways. Click a picture to "
+"try a <b>Tutorial</b>. You can also download a set of <b>Activity Cards</b> "
+"and <b>Educator Guide</b> for each theme."
+msgstr ""
+
+#: .ttt.activitySubtitle
+msgid ""
+"Explore new coding ideas using this set of illustrated cards you can print "
+"out."
+msgstr ""
+
+#: .ttt.FashionDescription
+msgid "Dress up a character with different clothes and styles."
+msgstr ""
+
+#: .ttt.AnimateYourNameDescription
+msgid "Animate the letters of your name, initials, or favorite word."
+msgstr ""
+
+#: .ttt.download
+msgid "Download"
+msgstr ""
+
+#: .ttt.MakeItFlyDescription
+msgid "Animate the Scratch Cat, The Powerpuff Girls, or even a taco!"
+msgstr ""
+
+#: .ttt.StoryDescription
+msgid "Choose characters, add conversation, and bring your story to life."
+msgstr ""
+
+#: .ttt.VirtualPetDescription
+msgid "Create an interactive pet that can eat, drink, and play."
+msgstr ""
+
+#: .ttt.tryIt
+msgid "Try It"
+msgstr ""
+
+#: .ttt.MakeMusicDescription
+msgid "Choose instruments, add sounds, and press keys to play music."
+msgstr ""
+
+#: .ttt.tutorialTitle
+msgctxt ".ttt.tutorialTitle"
+msgid "Tutorial"
+msgstr ""
+
+#: .ttt.educatorTitle
+msgid "Educator Guide"
+msgstr ""
+
+#: .ttt.CatchDescription
+msgid "Make a game where you catch things falling from the sky."
+msgstr ""
+
+#: .tile.tutorial
+msgctxt ".tile.tutorial"
+msgid "Tutorial"
+msgstr ""
+
+#: .ttt.placeholder
+msgid "Placeholder text"
+msgstr ""
+
+#: .ttt.RaceDescription
+msgid "Make a game where two characters race each other."
+msgstr ""
+
+#: .developers.faqCollabTitle
+msgid "I’d like to collaborate. How do I get in touch?"
+msgstr ""
+
+#: .developers.learningPrinciplesPeersBody
+msgid ""
+"Learning flourishes as a social activity, with people sharing ideas, "
+"collaborating on projects, and building on one another's work."
+msgstr ""
+
+#: .developers.scratchBlocksTitle
+msgid "Scratch Blocks"
+msgstr ""
+
+#: .developers.designPrinciplesRoomTitle
+msgid "Low Floor & Wide Walls"
+msgstr ""
+
+#: .developers.learningPrinciplesProjectsTitle
+msgctxt ".developers.learningPrinciplesProjectsTitle"
+msgid "Projects"
+msgstr "作品"
+
+#: .developers.donateIntro
+msgid ""
+"We are pleased to provide Scratch free of charge. If you enjoy using "
+"Scratch, please consider <a href=\""
+"https://secure.donationpay.org/scratchfoundation/\">making a donation to "
+"support Scratch</a>. Donations of any size are appreciated."
+msgstr ""
+
+#: .developers.scratchBlocksIntro
+msgid ""
+"Scratch Blocks is a new development project for the next generation of "
+"graphical programming blocks, based on a collaboration between Google and "
+"MIT’s Scratch Team — building on Google’s <a href=\""
+"https://developers.google.com/blockly/\">Blockly technology</a> and informed "
+"by the Scratch Team’s expertise in developing creative learning tools for "
+"young people. Scratch Blocks will provide a framework for building "
+"programming blocks in both vertical (text-based) and horizontal (icon-based) "
+"formats. You can access the code (currently as a developer-preview) and "
+"documentation <a href=\"https://github.com/llk/scratch-blocks\">here</a>."
+msgstr ""
+
+#: .developers.faqDifferencesTitle
+msgid "What’s the difference between Blockly and Scratch Blocks?"
+msgstr ""
+
+#: .developers.faqAboutBody
+msgid ""
+"Scratch is a free programming language and online community where young "
+"people can create their own interactive stories, games, and animations. "
+"Scratch is a project of the <a href=\"https://llk.media.mit.edu/\">Lifelong "
+"Kindergarten</a> Group at the <a href=\"http://media.mit.edu/\">MIT Media "
+"Lab</a>. You can learn more about Scratch <a href=\"/about\">here</a>."
+msgstr ""
+
+#: .developers.wwwTitle
+#, fuzzy
+msgid "Scratch WWW"
+msgstr "Scratch Wiki"
+
+#: .developers.designPrinciplesTinkerTitle
+msgid "Design for Tinkerability"
+msgstr ""
+
+#: .developers.faqNameBody
+msgid ""
+"If you wish, you can publicly state that your application is powered by "
+"Scratch Blocks. If you do so, we would also encourage you to link back to "
+"the code repository."
+msgstr ""
+
+#: .developers.faqNameTitle
+msgid ""
+"Am I allowed to use the name \"Scratch Blocks\" in the description of my app "
+"and other public messaging?"
+msgstr ""
+
+#: .developers.projectsIntro
+msgid "The following projects are open source and available for any purpose."
+msgstr ""
+
+#: .developers.learningPrinciplesPassionBody
+msgid ""
+"When people focus on things they care about, they work longer and harder, "
+"persist in the face of challenges, and learn more in the process."
+msgstr ""
+
+#: .developers.faqRulesBody
+msgid ""
+"You may use this code in accordance with the license which governs each "
+"project. We also strongly encourage you to consider the learning and design "
+"principles (above, on this page) when building creative learning experiences "
+"for kids of all ages."
+msgstr ""
+
+#: .developers.faqCollabBody
+msgid ""
+"You can reach us over on <a href=\"https://github.com/LLK/\">github</a> or "
+"you can send an email to <a href=\"mailto:help@scratch.mit.edu\""
+">help@scratch.mit.edu.</a> We look forward to hearing from you!"
+msgstr ""
+
+#: .developers.learningPrinciplesPlayBody
+msgid ""
+"Learning involves playful experimentation — trying new things, tinkering "
+"with materials, testing boundaries, taking risks, iterating again and again."
+msgstr ""
+
+#: .developers.designPrinciplesRoomBody
+msgid ""
+"In order to encourage a varied and diverse set of interactions, we "
+"explicitly include elements and features that are easy for kids to "
+"understand (low floor), but general enough to support diverse uses (wide "
+"walls)."
+msgstr ""
+
+#: .developers.partnersIntro
+msgid ""
+"The creation and maintenance of this open source code would not be possible "
+"without generous technical and financial support from our partners:"
+msgstr ""
+
+#: .developers.learningPrinciplesProjectsBody
+msgid ""
+"People learn best when they are actively working on projects — generating "
+"new ideas, designing prototypes, making improvements and creating final "
+"products."
+msgstr ""
+
+#: .developers.faqAboutTitle
+msgid "Where can I learn more about Scratch?"
+msgstr ""
+
+#: .developers.learningPrinciplesPeersTitle
+msgid "Peers"
+msgstr ""
+
+#: .developers.wwwIntro
+msgid ""
+"Scratch-www is a standalone web client for the Scratch Community, built "
+"using React and Redux. Access the code and documentation <a href=\""
+"https://github.com/LLK/scratch-www\">here</a>."
+msgstr ""
+
+#: .developers.faqDifferencesBody
+msgid ""
+"Scratch Blocks builds upon the Blockly code base, and is specifically "
+"designed with our principles in mind to support creative learning "
+"experiences."
+msgstr ""
+
+#: .developers.title
+msgid "Scratch for Developers"
+msgstr ""
+
+#: .developers.designPrinciplesGlobalTitle
+msgid "Many Paths, Many Styles"
+msgstr ""
+
+#: .developers.designPrinciplesGlobalBody
+msgid ""
+"Many math and science activities have traditionally been biased towards "
+"specific populations. By paying special attention to creating accessible and "
+"appealing technologies, we are working to close the gap."
+msgstr ""
+
+#: .developers.faqRulesTitle
+msgid "Are there rules to using this code in my application?"
+msgstr ""
+
+#: .developers.projectsTitle
+msgctxt ".developers.projectsTitle"
+msgid "Projects"
+msgstr "作品"
+
+#: .developers.learningPrinciplesTitle
+msgid "Learning Principles"
+msgstr ""
+
+#: .developers.designPrinciplesTitle
+msgid "Design Principles"
+msgstr ""
+
+#: .developers.faqReleasesBody
+msgid ""
+"We plan to open source additional code relating to the Scratch programming "
+"language over the next few months. Keep an eye on this page!"
+msgstr ""
+
+#: .developers.partnersTitle
+msgid "Partners"
+msgstr ""
+
+#: .developers.scratchBlocksBody
+msgid ""
+"This first release includes code for Scratch’s Horizontal Grammar. Looking "
+"ahead, we plan to release additional code including but not limited to the "
+"Vertical Grammar (currently used by Scratch), a new Rendering Engine to "
+"support sprites and graphic effects, and a new Audio Engine to support "
+"creation with sound and music."
+msgstr ""
+
+#: .developers.designPrinciplesSimpleTitle
+msgid "Make it as Simple as Possible — And Maybe Even Simpler"
+msgstr ""
+
+#: .developers.designPrinciplesTinkerBody
+msgid ""
+"We believe that the learning process is inherently iterative. Tinkerers "
+"start by exploring and experimenting, then revising and refining their goals "
+"and creations. To support this style of interaction, we design our "
+"interfaces to encourage quick experimentation and rapid cycles of iteration."
+msgstr ""
+
+#: .developers.donateBody
+msgid ""
+"Your donation to the Scratch Foundation will be used to support future "
+"development of Scratch software and the Scratch website."
+msgstr ""
+
+#: .developers.intro
+msgid ""
+"On this page, you’ll find information about open source projects created and "
+"maintained by the <a href=\"/info/credits\">Scratch Team at MIT</a>, as well "
+"as our thoughts on best practices for designing learning experiences for "
+"children."
+msgstr ""
+
+#: .developers.principlesIntro
+msgid ""
+"We created Scratch to empower young people to think creatively, reason "
+"systematically, and work collaboratively. We are guided by a set of <b>"
+"Learning Principles</b> and <b>Design Principles</b> that we hope you will "
+"follow as you develop new tools and technologies with Scratch Blocks."
+msgstr ""
+
+#: .developers.principlesTitle
+msgid "Principles"
+msgstr ""
+
+#: .developers.donateThanks
+#, fuzzy
+msgid "Thanks for supporting Scratch!"
+msgstr "Scratchへのご参加、ありがとうございます。"
+
+#: .developers.learningPrinciplesPassionTitle
+msgid "Passion"
+msgstr ""
+
+#: .developers.designPrinciplesSimpleBody
+msgid ""
+"Despite the common drive to add more features to software products, we have "
+"found that reducing the number of features often improves the user "
+"experience. What initially seems like a constraint or limitation can foster "
+"new forms of creativity."
+msgstr ""
+
+#: .developers.learningPrinciplesPlayTitle
+msgid "Play"
+msgstr ""
+
+#: .developers.faqReleasesTitle
+msgid "Are you releasing more code and when?"
+msgstr ""
+
+#: templates/429-email.html:17
+msgid "Whoops! You're sending too much mail."
+msgstr ""
+
+#: templates/429-email.html:19
+msgid ""
+"You are performing actions on the site that send mail too much. Try again "
+"later."
+msgstr ""
+
+#: templates/429.html:16
+msgid "Whoops! You're making too many requests."
+msgstr ""
+
+#: templates/429.html:18
+msgid "You are performing actions on the site too frequently. Try again later."
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:46
+#, fuzzy
+msgid "Your must enter a password"
+msgstr "必ずパスワードを入力してください"
