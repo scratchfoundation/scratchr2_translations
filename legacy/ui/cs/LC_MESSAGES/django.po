@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-16 12:18-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Chris Garrity <chrisg@media.mit.edu>, 2016\n"
+"Last-Translator: Benjamin Swart <Benjaminswart@email.cz>, 2017\n"
 "Language-Team: Czech (https://www.transifex.com/llk/teams/60938/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,11 +20,11 @@ msgstr ""
 
 #: authentication/forms.py:74
 msgid "no gender provided"
-msgstr ""
+msgstr "žádné pohlaví není uvedeno"
 
 #: authentication/forms.py:75
 msgid "invalid password"
-msgstr ""
+msgstr "neplatné heslo"
 
 #: authentication/forms.py:114 authentication/forms.py:140
 msgid "You must enter your password."
@@ -83,6 +83,8 @@ msgid ""
 "Scratch is not allowed to send email to the address associated with this "
 "username. <a href='/contact-us/'>Contact us for support</a>."
 msgstr ""
+"Scratch nemá povolení posílat e-mail na adresy přidružené s tímto jménem "
+"uživatele. <a href='/contact-us/'>Kontaktuj nás pro pro podporu</a>."
 
 #: authentication/forms.py:242
 msgid "You must provide an email or username"
@@ -115,11 +117,11 @@ msgstr "Tento účet je smazán!"
 
 #: authentication/forms.py:365
 msgid "Class has ended. Account not available."
-msgstr ""
+msgstr "Třída skončila. Účet není dostupný."
 
 #: authentication/forms.py:401
 msgid "Send me Scratch Updates & Newsletters"
-msgstr ""
+msgstr "Pošlete mi Scratch akualizace + novinky"
 
 #: authentication/tasks.py:30
 #, python-format
@@ -128,18 +130,21 @@ msgid ""
 " to <a href='%(email_change_url)s'>change the email</a> associated with your"
 " account to one you own."
 msgstr ""
+"Zdá se, že tebou poskytnutý e-mail patří někomu jinému. Prosím ubezpeč se, "
+"že chceš <a href='%(email_change_url)s'>změnit e-mail</a> přiřazený k tvému "
+"účtu na takový, který ti patří."
 
 #: authentication/views.py:116
 msgid "Already logged in"
-msgstr ""
+msgstr "Již přihlášen/a/"
 
 #: authentication/views.py:752
 msgid "Unsubscribe me from Scratch updates"
-msgstr ""
+msgstr "Zruš můj odběr aktualizací Scratch"
 
 #: authentication/views.py:753
 msgid "Unsubscribe me from Scratch Foundation updates"
-msgstr ""
+msgstr "Zruš můj odběr aktualizací nadace Scratch"
 
 #: base_comments/templatetags/scratch_text_filters.py:127
 msgid "day"
@@ -185,50 +190,55 @@ msgstr "%(number)d %(type)s staré"
 
 #: educators/forms.py:87
 msgid "Already exists"
-msgstr ""
+msgstr "Již existuje"
 
 #: educators/forms.py:88
 msgid "Contains invalid characters. Use letters and numbers only."
-msgstr ""
+msgstr "Obsahuje neplatné znaky. Používej pouze písmena a číslice."
 
 #: educators/forms.py:89
 msgid "Contains inappropriate words"
-msgstr ""
+msgstr "Obsahuje neslušná slova"
 
 #: educators/forms.py:90
 #, python-format
 msgid "Shorter than minimum length of %d characters"
-msgstr ""
+msgstr "Kratší než minimální délka %d znaků"
 
 #: educators/forms.py:91
 #, python-format
 msgid "Longer than maximum length of %d characters"
-msgstr ""
+msgstr "Delší než maximální délka %d znaků"
 
 #: educators/models.py:87
 msgid "class"
-msgstr ""
+msgstr "třída"
 
 #: educators/models.py:88
 msgid "classes"
-msgstr ""
+msgstr "třídy"
 
 #: educators/views.py:508
 msgid ""
 "Please update the CSV file to address the issues above and reload the file."
 msgstr ""
+"Prosím oprav CSV soubor, aby zohlednil problémy výše a nahraj soubor znovu."
 
 #: educators/views.py:522
 msgid ""
 "Errors occurred while creating accounts. All accounts other than those "
 "specified here were created."
 msgstr ""
+"Nastaly chyby během vytváření účtů. Všechny účty jiné, než ty zde uvedené, "
+"byly vytvořeny."
 
 #: educators/views.py:596
 msgid ""
 "After changing this student's password, you will need to share the new "
 "password with your student directly so that they can log back into Scratch."
 msgstr ""
+"Po změně hesla tohoto studenta budeš potřebovat se s ním hned o heslo "
+"podělit, aby se mohl opět přihlásit do Scratch webu."
 
 #: galleries/models.py:240
 msgid "studio"
@@ -240,11 +250,11 @@ msgstr "studia"
 
 #: lib/fields.py:137
 msgid "Tiny Integer"
-msgstr ""
+msgstr "Nová e-mailová adresa"
 
 #: mail/validators.py:10
 msgid "Scratch is not allowed to send email to this address"
-msgstr ""
+msgstr "Scratch nemá povolené posílat e-mail na tuto adresu"
 
 #: projects/models.py:141
 msgid "project"
@@ -256,13 +266,15 @@ msgstr "projekty"
 
 #: projects/models.py:257
 msgid "Permanently Censored Project cannot be reshared."
-msgstr ""
+msgstr "Trvale cenzurovaný projekt nemůže být opět sdílen."
 
 #: projects/models.py:264
 msgid ""
 "This project has been censored and must be reviewed before it can be "
 "reshared."
 msgstr ""
+"Tento projekt je cenzurován a musí být prověřen než bude moci být opět "
+"sdílen."
 
 #: projects/views.py:500
 msgid "This tag has too many projects to load"
@@ -286,7 +298,7 @@ msgid ""
 "with us about this, send us an email at "
 msgstr ""
 "Přístup na tuto stránku byl odepřen. Pokud nás kvůli tomu chceš kontaktovat,"
-" pošli nám email na "
+" pošli nám e-mail na "
 
 #: templates/404.html:16
 msgid "Whoops! Our server is Scratch'ing its head"
@@ -310,30 +322,32 @@ msgstr "Hledání"
 
 #: templates/429-email.html:17
 msgid "Whoops! You're sending too much mail."
-msgstr ""
+msgstr "Běda! Posíláš příliš mnoho pošty."
 
 #: templates/429-email.html:19
 msgid ""
 "You are performing actions on the site that send mail too much. Try again "
 "later."
 msgstr ""
+"Provádíš na tomto serveru akce, které posílají příliš mnoho mailů. Zkus to "
+"znovu později."
 
 #: templates/429.html:16
 msgid "Whoops! You're making too many requests."
-msgstr ""
+msgstr "Běda! Děláš příliš mnoho požadavků."
 
 #: templates/429.html:18
 msgid ""
 "You are performing actions on the site too frequently. Try again later."
-msgstr ""
+msgstr "Provádíš akce na tomto serveru příliš často. Zkus to znovu později."
 
 #: templates/500.html:69
 msgid "The Scratch Team is making some changes to the website."
-msgstr ""
+msgstr "Tým Scratch právě provádí změny na tomto webovém serveru."
 
 #: templates/500.html:72
 msgid "Try reloading this page in a few minutes."
-msgstr ""
+msgstr "Zkus obnovit tuto stránku za několik minut."
 
 #: templates/500.html:75
 msgid ""
@@ -361,11 +375,11 @@ msgstr "Heslo"
 
 #: templates/accounts/account_settings.html:18
 msgid "You have updated your account settings."
-msgstr ""
+msgstr "Nastavení svého účtu máš teď aktualizované."
 
 #: templates/accounts/account_settings.html:21
 msgid "Edit your account settings"
-msgstr ""
+msgstr "Změnit nastavení svého účtu"
 
 #: templates/accounts/account_settings.html:26 templates/base.html:211
 #: templates/educators/register_student_modal.html:29
@@ -383,7 +397,7 @@ msgstr "Uložit moje změny"
 
 #: templates/accounts/account_settings.html:45
 msgid "I want to delete my account"
-msgstr ""
+msgstr "Chci zrušit svůj účet"
 
 #: templates/accounts/banned-response.html:12 templates/contact-us.html:73
 #: templates/info/ext_download.html:11 templates/info/scratch2download.html:27
@@ -444,6 +458,8 @@ msgid ""
 "<b>Be honest.</b> Don’t try to impersonate other Scratchers, spread rumors, "
 "or otherwise try to trick the community."
 msgstr ""
+"<b>Buď čestný.</b> Nezkoušej se vydávat za jiné Scratchery, šířit fámy, nebo"
+" se jinak pokoušet oklamat tuto komunitu."
 
 #: templates/accounts/banned-response.html:63
 #: templates/info/community_guidelines.html:26
@@ -473,7 +489,7 @@ msgstr "Změna hesla"
 
 #: templates/accounts/beta_optin.html:9
 msgid "Change email"
-msgstr "Změna emailu"
+msgstr "Změnit e-mail"
 
 #: templates/accounts/beta_optin.html:10
 msgid "Change country"
@@ -502,7 +518,7 @@ msgstr "Zrušit můj účet"
 
 #: templates/accounts/deletion/includes/deletion_form.html:15
 msgid "Delete account &amp; Sign out"
-msgstr ""
+msgstr "Zrušit účet  &amp; Odhlásit se"
 
 #: templates/accounts/deletion/nostalgia.html:15
 msgid "Whoops, go back"
@@ -536,10 +552,12 @@ msgid ""
 "You've created %(num_projects)s projects and have %(num_followers)s "
 "followers."
 msgstr ""
+"Vytvořil/a/ jsi %(num_projects)s projektů a máš %(num_followers)s "
+"následovníků."
 
 #: templates/accounts/deletion/nostalgia.html:41
 msgid "Some of your projects"
-msgstr ""
+msgstr "Některé tvoje projekty"
 
 #: templates/accounts/deletion/nostalgia.html:42
 msgid "Your projects"
@@ -547,7 +565,7 @@ msgstr "Tvé projekty"
 
 #: templates/accounts/deletion/nostalgia.html:63
 msgid "Some of your followers"
-msgstr ""
+msgstr "Někteří tvoji následovníci"
 
 #: templates/accounts/deletion/nostalgia.html:64
 msgid "Your followers"
@@ -555,7 +573,7 @@ msgstr "Tví následovníci"
 
 #: templates/accounts/deletion/nostalgia.html:81
 msgid "Yes, next step"
-msgstr ""
+msgstr "Ano, další krok"
 
 #: templates/accounts/email_change.html:18
 #: templates/accounts/email_change.html:30
@@ -567,6 +585,8 @@ msgid ""
 "If you want to share and comment, simply click the link in the email sent to"
 " you at:"
 msgstr ""
+"Pokud chceš sdílet komentář, stačí kliknout na odkaz v tobě poslaném mailu "
+"na:"
 
 #: templates/accounts/email_change.html:23
 #: templates/accounts/email_change.html:34
@@ -578,31 +598,38 @@ msgid ""
 "If you would like to change the email address - have your parent (or "
 "guardian) simply click the link in the message sent to their address."
 msgstr ""
+"Kdybys chtěl/a/ změnit emailovou adresu - požádej rodiče (nebo opatrovníka) "
+"ať kliknou odkaz ve zprávě poslané na jejich adresu."
 
 #: templates/accounts/email_change.html:27
 msgid ""
 "If you would like to change your email address - simply click the link in "
 "the message sent to your new address."
 msgstr ""
+"Kdybys chtěl/a/ změnit svou emailovou adresu - stačí kliknout na odkaz ve "
+"zprávě poslané na tvoji novou adresu."
 
 #: templates/accounts/email_change.html:31
 msgid ""
 "To confirm your current email address, click \"Send\"  below and follow the "
 "instructions in the email sent to you at:"
 msgstr ""
+"Pro potvrzení tvé současné emailové adresy klikni na \"Odeslat\" níže a "
+"postupuj podle návodu v tobě poslaném mailu na:"
 
 #: templates/accounts/email_change.html:35
 msgid ""
 "To change your email, simply click the link in the email sent to you at:"
 msgstr ""
+"Pro změnu svého mailu stačí kliknout na adresu tobě poslanému mailu na:"
 
 #: templates/accounts/email_change.html:40
 msgid "New Email Address"
-msgstr ""
+msgstr "Nová e-mailová adresa"
 
 #: templates/accounts/email_change.html:46
 msgid "Current Email Address"
-msgstr ""
+msgstr "Současná e-mailová adresa"
 
 #: templates/accounts/email_change.html:52
 #, python-format
@@ -611,14 +638,17 @@ msgid ""
 "lists. Please change your address to a new one or <a "
 "href=\"%(contact_us_url)s\">contact us</a> if you have questions."
 msgstr ""
+"Majitel této adresy požadoval svou adresu odstranit z našeho seznamu. Prosím"
+" změň svoji adresu na novou nebo <a href=\"%(contact_us_url)s\">nás "
+"kontaktuj</a>, pokud máš dotazy."
 
 #: templates/accounts/email_change.html:61
 msgid "Can't find the confirmation email? Check your spam folder"
-msgstr ""
+msgstr "Nemůžeš najít potvrzovací e-mail? Zkontroluj svou složku pro spam"
 
 #: templates/accounts/email_change.html:62
 msgid "Resend"
-msgstr ""
+msgstr "Znovuodeslání"
 
 #: templates/accounts/email_change.html:78
 msgid "Current Email"
@@ -626,22 +656,22 @@ msgstr "Současný e-mail"
 
 #: templates/accounts/email_change.html:82
 msgid "Email Confirmed"
-msgstr ""
+msgstr "E-mail potvrzen"
 
 #: templates/accounts/email_change.html:96
 msgid "Change Email"
-msgstr "Změna emailu"
+msgstr "Změnit e-mail"
 
 #: templates/accounts/email_change.html:109
 msgid "Update Subscription"
-msgstr ""
+msgstr "Přihlášení k odběru aktualizací"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
 #: templates/accounts/email_verification/verification_email_plain.html:6
 #: templates/educators/email_verification/verification_email_plain.html:5
 msgid "Greetings from the Scratch Team at MIT!"
-msgstr ""
+msgstr "Zdraví tě tým Scratch z MIT!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:11
 #, python-format
@@ -649,6 +679,8 @@ msgid ""
 "\n"
 "    A few minutes ago, you requested to link this email address to the Scratch account <strong>%(username)s</strong>. Please confirm your email address by clicking the button below:\n"
 msgstr ""
+"\n"
+"    Před několika minutami jsi požádal/a o propojení této e-mailové adresy se Scratch účtem <strong>%(username)s</strong>. Prosím potvrď svou e-mailovou adresu kliknutím na tlačítko níže:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:17
 #: templates/accounts/email_verification/verification_email.html:26
@@ -717,7 +749,7 @@ msgstr "Směle na Scratch!"
 
 #: templates/accounts/email_verification/failed_verification.html:20
 msgid "Uh oh! Something went wrong with your email confirmation."
-msgstr "Ach jo! Něco se pokazilo při ověření tvého emailu."
+msgstr "Ach jo! Něco se pokazilo při ověření tvého e-mailu."
 
 #: templates/accounts/email_verification/failed_verification.html:21
 msgid ""
@@ -734,7 +766,7 @@ msgstr "Nastavení mého účtu"
 #: templates/accounts/email_verification/includes/verify_email_popup.html:11
 #, python-format
 msgid "We sent a verification email to <strong>%(email_address)s</strong>."
-msgstr ""
+msgstr "Poslali jsme ověřovací e-mail na <strong>%(email_address)s</strong>."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:14
 #, python-format
@@ -744,6 +776,9 @@ msgid ""
 "one</a> or <a href=\"%(contact_us_url)s\">contact us</a> if you have "
 "questions."
 msgstr ""
+"Majitel této adresy požadoval svou adresu odstranit z našich seznamů. Prosím"
+" <a href=\"%(settings_url)s\">změň svou adresu na novou</a> nebo <a "
+"href=\"%(contact_us_url)s\">nás kontaktuj</a>, pokud máš dotazy."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:19
 #, python-format
@@ -754,21 +789,26 @@ msgid ""
 "        <strong>%(email_address)s</strong>\n"
 "      "
 msgstr ""
+"\n"
+"        Zkontroluj si ověřovací zprávu, kterou jsme poslali na:\n"
+"        <br/>\n"
+"        <strong>%(email_address)s</strong>\n"
+"      "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:27
 #: templates/accounts/email_verification/verify_email_standalone.html:108
 msgid "Can't find confirmation message?"
-msgstr ""
+msgstr "Nemůžeš najít ověřovací zprávu?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:30
 #: templates/accounts/email_verification/verify_email_standalone.html:110
 msgid "Wait for ten minutes. The message may take a while to arrive."
-msgstr ""
+msgstr "Počkej deset minut. Doručení zprávy může chvíli trvat."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:31
 #: templates/accounts/email_verification/verify_email_standalone.html:111
 msgid "Check your spam folder."
-msgstr ""
+msgstr "Zkontroluj svoji složku pro spam."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:32
 #, python-format
@@ -776,20 +816,22 @@ msgid ""
 "Make sure your email address is correct (see <a "
 "href=\"%(settings_url)s\">Account Settings</a>)."
 msgstr ""
+"Ujisti se, že tvoje e-mailová adresa je správně (viz <a "
+"href=\"%(settings_url)s\">Nastavení účtu</a>)."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Still can't find the message?"
-msgstr ""
+msgstr "Pořád nemůžeš najít tu zprávu?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Resend Confirmation"
-msgstr ""
+msgstr "Znovuodeslání potvrzení"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:44
 msgid "OK, back to Scratch"
-msgstr ""
+msgstr "Dobře, zpátky na Scratch"
 
 #: templates/accounts/email_verification/passed_verification.html:21
 #: templates/registration/welcome_email_subject.html:1
@@ -823,7 +865,7 @@ msgstr "Spoj se s ostatními Scratchery"
 
 #: templates/accounts/email_verification/passed_verification.html:52
 msgid "All set to go!"
-msgstr ""
+msgstr "Vše nastaveno pro použití!"
 
 #: templates/accounts/email_verification/passed_verification.html:56
 #, python-format
@@ -831,15 +873,19 @@ msgid ""
 "Success! You have confirmed your email address, "
 "<strong>%(username)s</strong>."
 msgstr ""
+"Úspěch! Potvrdil/a/ jsi svou e-mailovou adresu, uživatele "
+"<strong>%(username)s</strong>."
 
 #: templates/accounts/email_verification/passed_verification.html:57
 msgid ""
 "Jump into Scratch to create new projects and share them with the community!"
 msgstr ""
+"Vrhni se na program Scratch pro vytvoření nových projektů a sdílej je s "
+"komunitou!"
 
 #: templates/accounts/email_verification/passed_verification.html:59
 msgid "OK, let's go!"
-msgstr ""
+msgstr "Dobrá, jdeme na to!"
 
 #: templates/accounts/email_verification/verification_email.html:12
 #, python-format
@@ -847,6 +893,8 @@ msgid ""
 "\n"
 "Greetings from the Scratch Team at MIT! A few minutes ago, your child signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"Zdravíme vás z týmu Scratch na MIT! Před několika minutami vaše dítě požádalo o nový účet na <a href=\"%(scratch_url)s\">Scratch</a> se jménem uživatele:\n"
 
 #: templates/accounts/email_verification/verification_email.html:16
 #, python-format
@@ -854,10 +902,12 @@ msgid ""
 "\n"
 "Greetings from the Scratch Team at MIT! You just signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"Zdravíme tě z týmu Scratch na MIT! Právě jsi požádal o nový účet na <a href=\"%(scratch_url)s\">Scratch</a> se jménem uživatele:\n"
 
 #: templates/accounts/email_verification/verification_email.html:22
 msgid "Please confirm this email address by clicking the button below:"
-msgstr ""
+msgstr "Prosíme o potvrzení této e-mailové adresy kliknutím na tlačítko níže:"
 
 #: templates/accounts/email_verification/verification_email.html:33
 #, python-format
@@ -880,6 +930,9 @@ msgid ""
 "    A few minutes ago, your child signed up for a new account on Scratch (%(scratch_url)s. Please confirm this email address by clicking the button below:\n"
 "    "
 msgstr ""
+"\n"
+"    Před několika minutami vaše dítě požádalo o nový účet na Scratch (%(scratch_url)s. Prosím potvrďte tuto e-mailovou adresu kliknutím na tlačítko níže:\n"
+"    "
 
 #: templates/accounts/email_verification/verification_email_plain.html:13
 #, python-format
@@ -888,6 +941,9 @@ msgid ""
 "    You just signed up for a new account on Scratch (%(scratch_url)s). Please confirm your email address by clicking the button below:\n"
 "    "
 msgstr ""
+"\n"
+"    Právě jsi požádal o nový účet na on Scratch (%(scratch_url)s). Prosím potvrď svou e-mailovou adresu kliknutím na tlačítko níže:\n"
+"    "
 
 #: templates/accounts/email_verification/verification_email_plain.html:21
 #, python-format
@@ -1772,7 +1828,7 @@ msgstr ""
 #: templates/educators/educator-modal-registration.html:111
 #: templates/modal-registration.html:152
 msgid "Email address"
-msgstr "Emailová adresa"
+msgstr "E-mailová adresa"
 
 #: templates/educators/educator-modal-registration.html:112
 #: templates/modal-registration.html:153
@@ -3864,7 +3920,7 @@ msgid ""
 "We often receive emails from parents thanking us for Scratch. Here are some "
 "examples: "
 msgstr ""
-"Často dostáváme emaily od rodičů s poděkováním za Scratch. Tady je několik "
+"Často dostáváme maily od rodičů s poděkováním za Scratch. Tady je několik "
 "příkladů: "
 
 #: templates/info/parents.html:59
@@ -5792,7 +5848,7 @@ msgstr ""
 
 #: templates/registration/password_reset_done.html:8
 msgid "Password reset email sent..."
-msgstr "Reset hesla odeslán emailem..."
+msgstr "Reset hesla odeslán e-mailem..."
 
 #: templates/registration/password_reset_done.html:18
 msgid ""
@@ -5869,7 +5925,7 @@ msgstr "Zadej jméno uživatele"
 
 #: templates/registration/password_reset_form.html:35
 msgid "Email address you registered with"
-msgstr "Email adresa, s kterou se registruješ"
+msgstr "E-mail adresa, s kterou se registruješ"
 
 #: templates/registration/password_reset_form.html:39
 msgid "Send me a password reset link!"
