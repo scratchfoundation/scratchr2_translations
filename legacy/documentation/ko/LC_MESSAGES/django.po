@@ -74,7 +74,7 @@ msgstr "두 수를 더합니다."
 
 #: templates/help/studio/tips/blocks/and.html:7
 msgid "Reports true if both conditions are true"
-msgstr ""
+msgstr "두 조건 모두 참이면 참을 반환합니다."
 
 #: templates/help/studio/tips/blocks/answer.html:6
 #, python-format
@@ -82,6 +82,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/answer.png\" />\n"
 "  <h3>Reports keyboard input from the most recent use of <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\"/></h3>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/answer.png\" />\n"
+"<h3><img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\"/>의 최근 사용에서의 키보드 입력을 반환합니다.</h3>"
 
 #: templates/help/studio/tips/blocks/answer.html:15
 #, python-format
@@ -96,6 +98,15 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/answer-checkbox.png\" />\n"
 "</p>"
 msgstr ""
+"\n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />는 사용자에게 묻고 키보드 입력을 <img src=\"%(STATIC_URL)s/images/help/answer.png\" />에 저장합니다. 대답은 모든 스프라이트에서 공유됩니다. </p>\n"
+"<p>만약 현재의 대답을 저장하고 싶다면, 그것을 변수 또는 리스트에 저장할 수 있습니다. 예를 들면, <img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/> \n"
+"</p>\n"
+"\n"
+"<p>\n"
+"대답을 보려면, 대답 블록 옆에 있는 체크박스를 클릭하세요.<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/answer-checkbox.png\" />\n"
+"</p>"
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:7
 #, python-format
@@ -103,12 +114,14 @@ msgid ""
 "Asks a question on the screen and stores keyboard input in the <img "
 "src=\"%(STATIC_URL)simages/help/answer.png\" />"
 msgstr ""
+"화면에서 사용자에게 묻고 <img src=\"%(STATIC_URL)simages/help/answer.png\" />에 키보드 입력을 "
+"저장합니다."
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:11
 msgid ""
 "After receiving an answer, causes the program to wait until the Enter key is"
 " pressed or check mark is clicked."
-msgstr ""
+msgstr "답을 받은 뒤에, 프로그램이 Enter 키가 눌러지거나 체크 표시가 클릭될 때까지 기다리게 만듭니다."
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:18
 #, python-format
@@ -117,10 +130,13 @@ msgid ""
 "<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> asks a question and stores the keyboard input in  <img src=\"%(STATIC_URL)s/images/help/answer.png\" />. The question appears in a voice balloon on the screen. The program waits as the user types in a response, until the Enter key is pressed or the check mark is clicked. \n"
 "</p>"
 msgstr ""
+"\n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />는 사용자에게 묻고 키보드 입력을 <img src=\"%(STATIC_URL)s/images/help/answer.png\" />에 저장합니다. 물음은 화면에 있는 말풍선에 나타납니다. 프로그램은 사용자가 대답을 입력하고, Enter 키가 눌러지거나 체크 표시가 클릭될 때까지 기다립니다.\n"
+"</p>"
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:7
 msgid "Reports Stage's current backdrop name"
-msgstr ""
+msgstr "무대의 현재 배경 이름을 반환합니다."
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:15
 #, python-format
@@ -129,6 +145,9 @@ msgid ""
 "  <p>The title next to the backdrop in the list is the <img src=\"%(STATIC_URL)s/images/help/backdrop-name.png\" />\n"
 "  </p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/backdrop-name-ex.png\"/>\n"
+"<p>목록에 있는 배경 옆의 제목이 <img src=\"%(STATIC_URL)s/images/help/backdrop-name.png\" />입니다.\n"
+"</p>"
 
 #: templates/help/studio/tips/blocks/backdrop-number.html:8
 #, python-format
@@ -136,10 +155,12 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/backdrop-number-ex2.png\"/>\n"
 "  <p>The number next to the backdrop in the list is the <img src=\"%(STATIC_URL)s/images/help/backdrop-number.png\" />  </p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/backdrop-number-ex2.png\"/>\n"
+"<p>목록에 있는 배경 옆의 숫자가 <img src=\"%(STATIC_URL)s/images/help/backdrop-number.png\" />입니다. </p>"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:7
 msgid "Sends a message to all sprites and waits"
-msgstr ""
+msgstr "모든 스프라이트에게 메시지를 보내고 기다립니다."
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:14
 #, python-format
@@ -155,6 +176,15 @@ msgid ""
 "  </p>\n"
 "  "
 msgstr ""
+"\n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait.png\" />를 사용하여 모든 스프라이트에게 어떤 일을 하라는 메시지를 보내고, 계속하기 전에 모두가 끝낼 때까지 기다릴 수 있습니다.\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/broadcast-and-wait-ex2.png\" /><br/>\n"
+"<br>어떤 메시지를 보낼지 선택하려면 클릭하세요. 당신만의 메시지를 입력하려면 \"새 메시지\"를 선택하세요. <br/>\n"
+"</p>"
 
 #: templates/help/studio/tips/blocks/broadcast.html:7
 msgid "Sends a message to all sprites"
