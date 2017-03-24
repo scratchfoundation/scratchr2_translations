@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-16 12:18-0500\n"
+"POT-Creation-Date: 2017-03-23 10:12-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: p-and-a <panda.program123@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/llk/teams/60938/ja/)\n"
@@ -26,59 +26,59 @@ msgstr "性別を入力してください"
 msgid "invalid password"
 msgstr "無効なパスワードです"
 
-#: authentication/forms.py:114 authentication/forms.py:140
+#: authentication/forms.py:115 authentication/forms.py:141
 msgid "You must enter your password."
 msgstr "パスワードを入力する必要があります。"
 
-#: authentication/forms.py:115 authentication/forms.py:141
+#: authentication/forms.py:116 authentication/forms.py:142
 msgid "Wrong password, try again."
 msgstr "パスワードが間違っています。もう一度入力してください。"
 
-#: authentication/forms.py:118
+#: authentication/forms.py:119
 msgid "Enter your password to confirm"
 msgstr "確認のためパスワードを入力してください。"
 
-#: authentication/forms.py:142 authentication/forms.py:392
+#: authentication/forms.py:143 authentication/forms.py:393
 msgid "Incorrect captcha, please try again."
 msgstr "Captchaが間違っています。やり直してください。"
 
-#: authentication/forms.py:153
+#: authentication/forms.py:154
 msgid "Keep my projects, but disable all comments"
 msgstr "プロジェクトを残してコメントを無効にします"
 
-#: authentication/forms.py:154
+#: authentication/forms.py:155
 msgid "Delete my projects"
 msgstr "プロジェクトを削除"
 
-#: authentication/forms.py:163
+#: authentication/forms.py:164
 msgid "Looks like that isn't a valid email format"
 msgstr "正しいEメールアドレスではありません。"
 
-#: authentication/forms.py:169
+#: authentication/forms.py:170
 msgid "The two password fields didn't match."
 msgstr "二つのパスワードが一致しません。"
 
-#: authentication/forms.py:170 authentication/forms.py:191
+#: authentication/forms.py:171 authentication/forms.py:192
 msgid "Your password must be at least 6 characters long."
 msgstr "パスワードは６文字以上にしてください。"
 
-#: authentication/forms.py:171 authentication/forms.py:192
+#: authentication/forms.py:172 authentication/forms.py:193
 msgid "Your password cannot be 'password'."
 msgstr "パスワードに'password'は使えません。"
 
-#: authentication/forms.py:172 authentication/forms.py:193
+#: authentication/forms.py:173 authentication/forms.py:194
 msgid "Your password cannot be the same as your username."
 msgstr "パスワードはユーザー名と同じではいけません。"
 
-#: authentication/forms.py:237
+#: authentication/forms.py:238
 msgid "Sorry we don't have an account with that email address"
 msgstr "申し訳ありませんが、そのEメールアドレスのアカウントは見つかりません"
 
-#: authentication/forms.py:238
+#: authentication/forms.py:239
 msgid "Sorry we don't have an account with that username"
 msgstr "申し訳ありませんが、そのユーザー名のアカウントは見つかりません"
 
-#: authentication/forms.py:240
+#: authentication/forms.py:241
 msgid ""
 "Scratch is not allowed to send email to the address associated with this "
 "username. <a href='/contact-us/'>Contact us for support</a>."
@@ -86,11 +86,11 @@ msgstr ""
 "Scratchは、このユーザ名に関連付けられたアドレスに電子メールを送信することはできません。お問い合わせは<a href='/contact-"
 "us/'>こちら</a>。"
 
-#: authentication/forms.py:242
+#: authentication/forms.py:243
 msgid "You must provide an email or username"
 msgstr "Eメールアドレスかユーザー名を入力してください"
 
-#: authentication/forms.py:247 templates/accounts/account_settings.html:10
+#: authentication/forms.py:248 templates/accounts/account_settings.html:10
 #: templates/accounts/deletion/confirmation.html:8
 #: templates/accounts/deletion/nostalgia.html:7
 #: templates/accounts/email_change.html:10
@@ -99,29 +99,37 @@ msgstr "Eメールアドレスかユーザー名を入力してください"
 msgid "Email"
 msgstr "Eメールアドレス"
 
-#: authentication/forms.py:361
+#: authentication/forms.py:362
 msgid "Incorrect username or password."
 msgstr "ユーザー名またはパスワードが間違っています"
 
-#: authentication/forms.py:362
+#: authentication/forms.py:363
 msgid "Please enable cookies on your browser."
 msgstr "ブラウザーのクッキーを有効にしてください。"
 
-#: authentication/forms.py:363
+#: authentication/forms.py:364
 msgid "This account is inactive."
 msgstr "このアカウントはアクティブではありません。"
 
-#: authentication/forms.py:364
+#: authentication/forms.py:365
 msgid "This account is deleted!"
 msgstr "このアカウントは削除されています！"
 
-#: authentication/forms.py:365
+#: authentication/forms.py:366
 msgid "Class has ended. Account not available."
 msgstr "クラスは終了しました。利用できないアカウントです。"
 
-#: authentication/forms.py:401
-msgid "Send me Scratch Updates & Newsletters"
-msgstr "更新情報とお知らせを受け取る"
+#: authentication/forms.py:402
+msgid "Occasional updates from the Scratch Team"
+msgstr ""
+
+#: authentication/forms.py:403
+msgid "Activity ideas for using Scratch at home"
+msgstr ""
+
+#: authentication/forms.py:404
+msgid "Product updates for using Scratch in educational settings"
+msgstr ""
 
 #: authentication/tasks.py:30
 #, python-format
@@ -133,16 +141,30 @@ msgstr ""
 "あなたが入力したメールアドレスは別の人のもののようです。あなたのアカウントに紐付けるメールアドレスは、<a "
 "href='%(email_change_url)s'>あなた自身のものに変更してください</a>。"
 
-#: authentication/views.py:116
+#: authentication/views.py:117
 msgid "Already logged in"
 msgstr "既にサインインしています"
 
-#: authentication/views.py:752
-msgid "Unsubscribe me from Scratch updates"
-msgstr "Scratchのアップデートを解除する"
+#: authentication/views.py:726 authentication/views.py:755
+msgid ""
+"Whoops! There was an error while updating your email settings. Please try "
+"again."
+msgstr ""
 
-#: authentication/views.py:753
-msgid "Unsubscribe me from Scratch Foundation updates"
+#: authentication/views.py:799
+msgid "Unsubscribe me from Scratch news & updates"
+msgstr ""
+
+#: authentication/views.py:800
+msgid "Unsubscribe me from Scratch project and activity ideas"
+msgstr ""
+
+#: authentication/views.py:801
+msgid "Unsubscribe me from tips for educational settings"
+msgstr ""
+
+#: authentication/views.py:1103
+msgid "Please check your email for a confirmation message."
 msgstr ""
 
 #: base_comments/templatetags/scratch_text_filters.py:127
@@ -181,24 +203,24 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s 前"
 
-#: educators/forms.py:87
+#: educators/forms.py:89
 msgid "Already exists"
 msgstr "すでに存在します"
 
-#: educators/forms.py:88
+#: educators/forms.py:90
 msgid "Contains invalid characters. Use letters and numbers only."
 msgstr "無効な文字列を含んでいます。アルファベットと数字のみを使って下さい。"
 
-#: educators/forms.py:89
+#: educators/forms.py:91
 msgid "Contains inappropriate words"
 msgstr "不適切な言葉を含んでいます"
 
-#: educators/forms.py:90
+#: educators/forms.py:92
 #, python-format
 msgid "Shorter than minimum length of %d characters"
 msgstr "%d 文字より長くしてください"
 
-#: educators/forms.py:91
+#: educators/forms.py:93
 #, python-format
 msgid "Longer than maximum length of %d characters"
 msgstr "%d 文字より短くしてください"
@@ -620,8 +642,8 @@ msgstr "メールによる認証が完了しました"
 msgid "Change Email"
 msgstr "メールアドレスを変更"
 
-#: templates/accounts/email_change.html:109
-msgid "Update Subscription"
+#: templates/accounts/email_change.html:102
+msgid "I’d like to receive email updates about: "
 msgstr ""
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
@@ -1067,7 +1089,7 @@ msgstr "Scratchに参加しよう"
 
 #: templates/base.html:205 templates/base.html.py:216 templates/base.html:226
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
-#: templates/modal-registration.html:227
+#: templates/modal-registration.html:234
 msgid "Sign in"
 msgstr "サインイン"
 
@@ -1494,91 +1516,91 @@ msgstr "スタジオの説明"
 
 #: templates/educators/add_gallery_modal.html:42
 #: templates/educators/register_student_modal.html:58
-#: templates/modal-registration.html:247
+#: templates/modal-registration.html:254
 msgid "Your username must be between 3 and 20 characters"
 msgstr "ユーザー名は3文字から20文字にしてください"
 
 #: templates/educators/add_gallery_modal.html:43
 #: templates/educators/register_student_modal.html:59
-#: templates/modal-registration.html:248
+#: templates/modal-registration.html:255
 msgid "Sorry, that username already exists"
 msgstr "申し訳ありませんが、そのユーザー名は既に使われています。"
 
 #: templates/educators/add_gallery_modal.html:44
 #: templates/educators/register_student_modal.html:60
-#: templates/modal-registration.html:249
+#: templates/modal-registration.html:256
 msgid "Invalid username"
 msgstr "無効なユーザー名"
 
 #: templates/educators/add_gallery_modal.html:45
 #: templates/educators/register_student_modal.html:61
-#: templates/modal-registration.html:250
+#: templates/modal-registration.html:257
 msgid "Hmm, that looks inappropriate"
 msgstr "よくない言葉が使われているようです"
 
 #: templates/educators/add_gallery_modal.html:46
 #: templates/educators/register_student_modal.html:62
-#: templates/modal-registration.html:251
+#: templates/modal-registration.html:258
 msgid "You must enter a username"
 msgstr "必ずユーザー名を入力してください"
 
 #: templates/educators/add_gallery_modal.html:47
 #: templates/educators/register_student_modal.html:63
-#: templates/modal-registration.html:252
+#: templates/modal-registration.html:259
 msgid "Your username may only contain letters, numbers, - and _"
 msgstr "ユーザー名に半角英数字やアンダーバー(_)以外が含まれています。"
 
 #: templates/educators/add_gallery_modal.html:48
-#: templates/modal-registration.html:253
+#: templates/modal-registration.html:260
 #: templates/registration/password_reset_confirm.html:44
 msgid "Your password cannot be 'password'"
 msgstr "パスワードに'password'は使えません"
 
 #: templates/educators/add_gallery_modal.html:49
-#: templates/modal-registration.html:254
+#: templates/modal-registration.html:261
 #: templates/registration/password_reset_confirm.html:45
 msgid "Your password must be at least 6 characters"
 msgstr "パスワードは6文字以上でなければなりません"
 
 #: templates/educators/add_gallery_modal.html:50
-#: templates/modal-registration.html:255
+#: templates/modal-registration.html:262
 msgid "You must enter a password"
 msgstr "必ずパスワードを入力してください"
 
 #: templates/educators/add_gallery_modal.html:51
-#: templates/modal-registration.html:256
+#: templates/modal-registration.html:263
 #: templates/registration/password_reset_confirm.html:47
 msgid "Your passwords do not match"
 msgstr "パスワードが一致していません"
 
 #: templates/educators/add_gallery_modal.html:52
-#: templates/modal-registration.html:257
+#: templates/modal-registration.html:264
 #: templates/registration/password_reset_confirm.html:48
 msgid "Your password cannot match your username"
 msgstr "ユーザー名とまったく同じパスワードは使用できません。"
 
 #: templates/educators/add_gallery_modal.html:53
-#: templates/modal-registration.html:258
+#: templates/modal-registration.html:265
 msgid "You must select a birth month and year"
 msgstr ""
 
 #: templates/educators/add_gallery_modal.html:54
-#: templates/modal-registration.html:259
+#: templates/modal-registration.html:266
 msgid "You must specify a gender"
 msgstr "必ず性別を設定してください"
 
 #: templates/educators/add_gallery_modal.html:55
-#: templates/modal-registration.html:260
+#: templates/modal-registration.html:267
 msgid "You must select a country"
 msgstr "必ず国を選んでください"
 
 #: templates/educators/add_gallery_modal.html:56
-#: templates/modal-registration.html:261
+#: templates/modal-registration.html:268
 msgid "You must provide an email address"
 msgstr "電子メールアドレスを入力してください。"
 
 #: templates/educators/add_gallery_modal.html:57
-#: templates/modal-registration.html:262
+#: templates/modal-registration.html:269
 msgid "You must provide valid email address"
 msgstr "正しい電子メールアドレスを入力してください"
 
@@ -2286,7 +2308,7 @@ msgstr "少しの変更"
 #: templates/educators/includes/stuff/backbone-templates.html:742
 #: templates/educators/includes/stuff/backbone-templates.html:788
 #: templates/educators/student-modal-registration.html:90
-#: templates/modal-registration.html:233
+#: templates/modal-registration.html:240
 msgid "Close"
 msgstr "閉じる"
 
@@ -2587,13 +2609,13 @@ msgid "Connect with a Scratcher"
 msgstr "Scratcherとつながる"
 
 #: templates/educators/student-modal-registration.html:81
-#: templates/modal-registration.html:218
+#: templates/modal-registration.html:225
 #: templates/profiles/scratcher_promotion_modal.html:65
 msgid "Next"
 msgstr "次へ"
 
 #: templates/educators/student-modal-registration.html:86
-#: templates/modal-registration.html:223
+#: templates/modal-registration.html:230
 msgid "OK Lets Go!"
 msgstr "さあ、はじめよう！"
 
@@ -4019,7 +4041,7 @@ msgstr ""
 msgid "Research Papers &amp; Presentations"
 msgstr ""
 
-#: templates/info/research.html:81
+#: templates/info/research.html:80
 msgid "National Science Foundation Grants"
 msgstr ""
 
@@ -4624,15 +4646,19 @@ msgid ""
 "email to confirm this account."
 msgstr "親または保護者のメールアドレスを入力してください。入力されたアドレスに、このアカウントの認証に必要なメールを送信します。"
 
-#: templates/modal-registration.html:178
+#: templates/modal-registration.html:170
+msgid "Receive updates from the Scratch Team"
+msgstr ""
+
+#: templates/modal-registration.html:185
 msgid "Welcome to Scratch,"
 msgstr "Scratchへようこそ!"
 
-#: templates/modal-registration.html:179
+#: templates/modal-registration.html:186
 msgid "You're now logged in! You can start exploring and creating projects."
 msgstr "無事にログインできました！ それでは、他の人のプロジェクトを見て回ったり、自分のプロジェクトを作成してみましょう。"
 
-#: templates/modal-registration.html:181
+#: templates/modal-registration.html:188
 msgid ""
 "If you want to share and comment, simply click the link in the email we sent"
 " you at <strong><span class=\"email-welcome\"></span></strong>"
@@ -4640,7 +4666,7 @@ msgstr ""
 "作品を共有したり、コメントしたいときは、あなたのアドレス<strong><span class=\"email-"
 "welcome\"></span></strong>に送信した電子メールのリンクをクリックしてください。"
 
-#: templates/modal-registration.html:185
+#: templates/modal-registration.html:192
 #, python-format
 msgid ""
 "Wrong email? Change your email address in <a "
@@ -4648,7 +4674,7 @@ msgid ""
 msgstr ""
 "電子メールが間違っていますか? 電子メールアドレスは<a href=\"%(settings_url)s\">アカウント設定</a>から変更できます。"
 
-#: templates/modal-registration.html:189
+#: templates/modal-registration.html:196
 #, python-format
 msgid ""
 "Having problems? <a href=\"%(contact_url)s?confirmation=1\">Please give us "
@@ -4656,7 +4682,7 @@ msgid ""
 msgstr ""
 "何かお困りでしたら、<a href=\"%(contact_url)s?confirmation=1\">フィードバックをお待ちしております</a>"
 
-#: templates/modal-registration.html:207
+#: templates/modal-registration.html:214
 #, python-format
 msgid ""
 "Oops we could not log you in. Please log in with the username and password "
@@ -4666,7 +4692,7 @@ msgstr ""
 "ログインするときに問題が発生しました。ログインでは、アカウント作成時に指定したユーザー名とパスワードを正確に入力する必要があります。正しいユーザー名とパスワードを入力しているのにログインできないときは、"
 " <a href=\"%(contact_url)s?confirmation=1\">こちらから</a>ご連絡ください。"
 
-#: templates/modal-registration.html:212
+#: templates/modal-registration.html:219
 #, python-format
 msgid ""
 "Oops we could not log you in. Please log in with the username and password "
@@ -4678,11 +4704,11 @@ msgstr ""
 " このボタンを使用してプロジェクトを使用中のコンピューターにダウンロードしてください。さらに、必要に応じて、<a "
 "href=\"%(contact_url)s?confirmation=1\">こちらから</a>ご連絡ください。"
 
-#: templates/modal-registration.html:228
+#: templates/modal-registration.html:235
 msgid "Download project"
 msgstr "プロジェクトをダウンロードする"
 
-#: templates/modal-registration.html:263
+#: templates/modal-registration.html:270
 msgid "Whoops, emails do not match"
 msgstr "あれ、電子メールアドレスが一致しません。"
 
@@ -5707,10 +5733,6 @@ msgid ""
 "Congratulations on sharing your project! Other people can now try it out, "
 "give comments, and remix it."
 msgstr "おめでとうございます！プロジェクトが共有されました。誰でも試したり、コメントしたり、リミックスできるようになりました。"
-
-#: templates/projects/unshared-other.html:10
-msgid "Sorry this project is not shared"
-msgstr "このプロジェクトは共有されていません。"
 
 #: templates/projects/unshared-owner.html:19
 msgid ""
