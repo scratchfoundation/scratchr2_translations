@@ -20,7 +20,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/add-an-extension.html:9
 msgid "Add blocks that extend what you can do in Scratch"
-msgstr "添加更多的模块让你在 Scratch 上扩充应用"
+msgstr "添加扩展 Scratch 能力的积木"
 
 #: templates/help/studio/tips/blocks/add-an-extension.html:13
 #: templates/help/studio/tips/ui/extensions.html:7
@@ -64,7 +64,7 @@ msgid ""
 "Use this block if you want to add an item to the end of a list.\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/add-to-list-ex2.png\" /><br/>"
 msgstr ""
-"这个模块可以让你把新的项目添加到列表最后面。\n"
+"这个积木可以让你在列表最后增加一项。\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/add-to-list-ex2.png\" /><br/>"
 
 #: templates/help/studio/tips/blocks/add-to-list.html:24
@@ -73,7 +73,7 @@ msgid ""
 "Can't find the list blocks? You need to first make a list:\n"
 "<img src=\"%(STATIC_URL)s/images/help/make-a-list.png\" />"
 msgstr ""
-"找不到清单模块？你必须先建立一个列表后才会显示相关模块：\n"
+"找不到列表积木？你需要事先建立一个列表：\n"
 "<img src=\"%(STATIC_URL)s/images/help/make-a-list.png\" />"
 
 #: templates/help/studio/tips/blocks/add.html:7
@@ -107,12 +107,12 @@ msgid ""
 "</p>"
 msgstr ""
 "\n"
-"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> 用来发问，并将使用者输入的答案暂存在  <img src=\"%(STATIC_URL)s/images/help/answer.png\" />裡，所有的角色都可以利用它。 </p>\n"
-"<p>你可以利用变量（或列表）来转存这些内容， 示例如下：<img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/> \n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" /> 用来向使用者提问，并把键盘输入的答案存放在  <img src=\"%(STATIC_URL)s/images/help/answer.png\" />里。答案可供所有角色使用。 </p>\n"
+"<p>要保留当前的答案，你可以把它存放在一个变量（或列表）里。例如：<img src=\"%(STATIC_URL)s/images/help/answer-ex2.png\"/> \n"
 "</p>\n"
 "\n"
 "<p>\n"
-"若要在舞台上直接显示答案，可以勾选模块旁的方块。<br>\n"
+"要在舞台上显示答案内容，可以点击答案积木旁的勾选框。<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/answer-checkbox.png\" />\n"
 "</p>"
 
@@ -380,9 +380,9 @@ msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are created.\n"
 msgstr ""
 "\n"
-"此程序可以在建立某个角色的分身时被触发。\n"
+"以下脚本会在某个角色的克隆产生时被触发。\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/clone-startup-example.png\" /></p>\n"
-"相当于，一个分身被建立时广播了消息，而分身接收到消息以后开始执行某段程序。\n"
+"克隆产生后，会响应所有的“当……”积木。\n"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
@@ -457,11 +457,11 @@ msgstr ""
 "\n"
 "问题排除：\n"
 "<br>\n"
-"如果你无法看到分身，通常是因为本尊复盖在上方，让分身稍微移动一下就可以找到它了。\n"
+"如果你无法看到克隆，通常是因为原来的角色盖住了它，让克隆稍微移动一下就可以找到它了。克隆最开始的位置和原来的角色是相同的。\n"
 "<br/>\n"
-"<br>确定你已经选取了要建立分身的角色，模块中有下拉清单可以选取 <img src=\"%(STATIC_URL)s/images/help/create-clone-of.png\" /> 。\n"
+"<br>确定在<img src=\"%(STATIC_URL)s/images/help/create-clone-of.png\" /> 积木的菜单中选好了要克隆的角色。\n"
 "<br/>\n"
-"注意：分身仅会在项目运行时持续。\n"
+"注意：克隆只会在项目运行时存在。\n"
 "</p>\n"
 "</div>\n"
 
@@ -500,7 +500,7 @@ msgstr "回传从2000年1月1日开始算起，与目前日期相隔的天数。
 
 #: templates/help/studio/tips/blocks/define.html:9
 msgid "Defines what the custom block will do"
-msgstr "定义函式模块要做些什麽"
+msgstr "定义自制积木会做些什么"
 
 #: templates/help/studio/tips/blocks/define.html:13
 #, python-format
@@ -510,7 +510,7 @@ msgid ""
 "<p><img src=\"%(STATIC_URL)s/images/help/make-block-script-ex.png\" /></p>\n"
 msgstr ""
 "\n"
-" <strong>定义</strong>程序用来告诉函式模块要做些什麽：</br>\n"
+" <strong>定义</strong>脚本描述了自制积木会做些什么：</br>\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/make-block-script-ex.png\" /></p>\n"
 
 #: templates/help/studio/tips/blocks/define.html:21
@@ -526,11 +526,11 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"如果你的模块有输入，它们会显示为浅紫色的圆形模块。 \n"
-"要想使用它们，把复制的输入模块拖入定义脚本的其他模块里\n"
+"如果积木带有输入，它们会显示为圆形的浅紫色积木。 \n"
+"要使用它们，拖动输入积木，把它们的副本放到定义脚本的其他积木里。\n"
 "</p>\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\"/></p>\n"
-"注意：输入模块<strong>只能</strong> 用于定义脚本。\n"
+"注意：输入积木<strong>只能</strong> 用于它所在的定义脚本。\n"
 "\n"
 "\n"
 
@@ -656,7 +656,7 @@ msgstr "是否第一个数值等于第二个，如果是，就回传 true。"
 
 #: templates/help/studio/tips/blocks/forever.html:7
 msgid "Runs the blocks inside over and over"
-msgstr "执行包含在裡头的模块堆，无限次数。"
+msgstr "一遍接一遍地执行装在里面的积木。"
 
 #: templates/help/studio/tips/blocks/getattribute.html:8
 msgid "Reports an attribute of the sprite or stage"
@@ -666,7 +666,7 @@ msgstr "回传角色或舞台的属性。"
 msgid ""
 "Choose different attributes from the drop-down menu and combine with other "
 "blocks, such as operators."
-msgstr "从模块裡的下拉菜单可以选择指定角色要回传的属性，像是 座标值、显示尺寸等。"
+msgstr "从下拉菜单中选择不同属性，和其他积木（例如运算）进行组合。"
 
 #: templates/help/studio/tips/blocks/glide.html:7
 msgid "Glide over time to this <b>x y</b> position"
@@ -693,7 +693,7 @@ msgstr "改变 <b>滑动秒数</b> 以调整角色在舞台上的滑动速度。
 msgid ""
 "You can see <b>x</b> and <b>y</b> update in the Motion blocks palette when "
 "you drag a sprite to another point."
-msgstr "当你在舞台上拖放角色的同时，面板上指令模块的 <b>x</b> 和 <b>y</b> 值也会跟着改变。"
+msgstr "当你在舞台上拖动角色时，运动积木抽屉中积木上的 <b>x</b> 和 <b>y</b> 也会跟着改变。"
 
 #: templates/help/studio/tips/blocks/go-back-layer.html:7
 msgid "Go back a certain number of layers"
@@ -757,10 +757,10 @@ msgid ""
 "<p>Then, click the block.</p>\n"
 "<p>The current sprite will jump to the <b>x y</b> location of the mouse-pointer or of the sprite you choose.</p>"
 msgstr ""
-"<p>从下拉菜单选择：<br/>\n"
-"<img src=\"%(STATIC_URL)s/images/help/go-to-dropdown.png\"></p>\n"
-"<p>接着，点击模块试试看。</p>\n"
-"<p>目前的角色将会跑到鼠标所在的 <b>x y</b> 座标位置。</p>"
+"<p>从下拉菜单：<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/go-to-dropdown.png\">中选择。</p>\n"
+"<p>接着，点击积木试试看。</p>\n"
+"<p>当前的角色将会跑到鼠标或者你选择的角色所在的 <b>x y</b> 座标位置。</p>"
 
 #: templates/help/studio/tips/blocks/greater-than.html:7
 msgid "Reports true if first value is greater than second"
@@ -782,13 +782,13 @@ msgstr "让角色在舞台上消失。"
 msgid ""
 "Note: When a sprite is hidden, other sprites cannot detect it with touching?"
 " blocks."
-msgstr "注意：当角色隐藏时，其他的角色自然就无法透过「碰到 {…} ？」模块与他互动了。"
+msgstr "注意：当角色隐藏时，其他的角色将无法通过「碰到？」积木探测到它。"
 
 #: templates/help/studio/tips/blocks/if-else.html:7
 msgid ""
 "If condition is true, runs the blocks inside the <b>if</b> portion; if not, "
 "runs the blocks inside the <b>else</b> portion"
-msgstr "如果状况在判别后符合条件，就开始执行当中的程序（A），不然就执行另一段程式（B）。"
+msgstr "如果条件成立，就运行装进<b>如果</b>部分的积木；否则，就运行装进<b>否则</b>部分的积木。"
 
 #: templates/help/studio/tips/blocks/if-on-edge-bounce.html:7
 msgid "If touching the edge of the stage, then bounce away"
@@ -802,7 +802,7 @@ msgstr "角色在碰到舞台的<b>上部</b>、<b>下部</b>、<b>二侧</b>而
 
 #: templates/help/studio/tips/blocks/if.html:7
 msgid "If condition is true, runs the blocks inside"
-msgstr "如果状况在判别后符合条件，就开始执行当中的程式。"
+msgstr "如果条件成立，就运行装在其中的积木。"
 
 #: templates/help/studio/tips/blocks/insert-list.html:7
 msgid "Inserts an item at the specified position in the list"
@@ -873,9 +873,9 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"这个模块会回传清单中指定的项目内容。\n"
+"这个积木告诉你列表中某一项的内容是什么。\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/item-of-list-menu.png\" /><br/>\n"
-"你可以善用这个模块，例如，把它嵌入说出 […] […] 秒、造型换为 {…}、播放音效 {…}、广播讯息 {…} 等积木中。\n"
+"你可以把这个积木嵌入到别的积木里，例如：换成造型、播放声音，或者广播。\n"
 "</p>\n"
 
 #: templates/help/studio/tips/blocks/join.html:7
@@ -914,12 +914,12 @@ msgid ""
 "</p>\n"
 msgstr ""
 "<p>\n"
-"这个模块会回传有列表中有多少的项目。\n"
+"这个积木告诉你列表有多少项。\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/length-mylist.png\" /><br/>\n"
 "</p>\n"
 "\n"
 "<p>\n"
-"在监控面板的底部也会显示列表项目数量。\n"
+"这个数字和列表观察器下面显示的长度是一样的。\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/length-mylist2.png\" /><br/>\n"
 "</p>\n"
 
@@ -986,18 +986,18 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"勾选模块旁的方块后，会在舞台上显示监控面板：\n"
+"勾选积木旁的勾选框后，会在舞台上显示观察器：\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/list-ex2.png\" /><br/>\n"
 "</p>\n"
 "\n"
 "<p>\n"
-" <img src=\"%(STATIC_URL)s/images/help/list.png\" /> 会回传列表中的所有项目内容，\n"
-"若只要回传指定的一项内容，可以使用： \n"
+" <img src=\"%(STATIC_URL)s/images/help/list.png\" /> 会报告列表中所有的项。\n"
+"要报告某一项内容，可以使用： \n"
 "<img src=\"%(STATIC_URL)s/images/help/item-of-list.png\" />\n"
 "</p>\n"
 "\n"
 "<p>\n"
-"若要删除列表中的某个项目，请使用下方的模块：\n"
+"若要删除一个列表或者给它改名，请用鼠标右击列表：\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/delete-list.png\" <br/>\n"
 "</p>\n"
 
@@ -1016,9 +1016,9 @@ msgid ""
 "Note: Your computer must have a working microphone in order for this block to work.\n"
 msgstr ""
 "\n"
-"若要知道角色当前的音量大小，可以勾选模块旁的方块。\n"
+"若要知道角色当前的音量大小，可以勾选积木旁的勾选框。\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/loudness-ex2.png\"/><br/>\n"
-"注意：你的电脑必须要有麦克风装置，这个模块才会发生作用。\n"
+"注意：你的电脑必须要有麦克风装置，这个积木才会发生作用。\n"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:6
 #, python-format
@@ -1026,7 +1026,7 @@ msgid ""
 "<h3>You can create a custom block with inputs, for example: <img "
 "src=\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
 msgstr ""
-"<h3>你可以建立一个裡头有输入方块的自订模块，例如： <img "
+"<h3>你可以制作一个带有输入的自制积木，例如： <img "
 "src=\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:11
@@ -1039,9 +1039,9 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/jump-height-input.png\" /> \n"
 msgstr ""
 "\n"
-"点击「添加函式模块」后会出现对话框：<br>\n"
+"点击「制作新的积木」后会出现对话框：<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/newblock.png\" /> \n"
-"<p>点击 <strong>Options</strong>就以在模块上添加输入方块了，例如下图是建立一个数字输入方块。</p>\n"
+"<p>点击 <strong>选项</strong>可以在模块上添加输入项。例如下图是添加一个数字输入项。</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/jump-height-input.png\" /> \n"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:20
@@ -1055,11 +1055,11 @@ msgid ""
 "Note: The input blocks can <strong>only</strong> be used in the define script.\n"
 msgstr ""
 "\n"
-"在 <strong>定义</strong> 模块中，输入方块是较浅的紫色。 \n"
-"若要使用这个内容，只要将这个输入方块拖曳到程式内的其他模块中。\n"
+"在 <strong>定义</strong> 积木中，输入项显示为圆形的浅紫色积木。\n"
+"要使用它们，拖动输入积木，把它们的副本放到定义脚本的其他积木里。 \n"
 "</p>\n"
 "<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\"/></p>\n"
-"注意：这个输入方块只可以被用在定义程式中。\n"
+"注意：输入积木<strong>只能</strong> 用于它所在的定义脚本。\n"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:30
 msgid ""
@@ -1067,11 +1067,11 @@ msgid ""
 "See also: <a href=\"../make-a-block/\">Make a Block</a>\n"
 msgstr ""
 "\n"
-"相关内容： <a href=\"../make-a-block/\">添加函式模块</a>\n"
+"相关内容： <a href=\"../make-a-block/\">制作新的积木</a>\n"
 
 #: templates/help/studio/tips/blocks/make-a-block.html:9
 msgid "Creates a custom block"
-msgstr "添加函式模块"
+msgstr "创作一个自制积木"
 
 #: templates/help/studio/tips/blocks/make-a-block.html:13
 #, python-format
@@ -1087,11 +1087,11 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"点击「添加函式模块」后会显示一个对话框：\n"
+"点击「制作新的积木」后会显示一个对话框：\n"
 "<br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/newblock.png\" /> \n"
 "<p>\n"
-"在模块裡的方块输入这个模块的名称。\n"
+"点击积木中间，填写它的名字。\n"
 "</p>\n"
 
 #: templates/help/studio/tips/blocks/make-a-block.html:25
