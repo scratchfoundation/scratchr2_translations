@@ -20,7 +20,7 @@ msgstr ""
 
 #: authentication/forms.py:74
 msgid "no gender provided"
-msgstr "нет пола"
+msgstr "пол не указан"
 
 #: authentication/forms.py:75
 msgid "invalid password"
@@ -28,23 +28,23 @@ msgstr "неверный пароль"
 
 #: authentication/forms.py:115 authentication/forms.py:141
 msgid "You must enter your password."
-msgstr "Нужно ввести свой пароль."
+msgstr "Вы должны ввести пароль."
 
 #: authentication/forms.py:116 authentication/forms.py:142
 msgid "Wrong password, try again."
-msgstr "Неверный пароль, попробуй снова."
+msgstr "Неверный пароль, повторите попытку."
 
 #: authentication/forms.py:119
 msgid "Enter your password to confirm"
-msgstr "Введи свой пароль для подтверждения"
+msgstr "Введите пароль для подтверждения."
 
 #: authentication/forms.py:143 authentication/forms.py:393
 msgid "Incorrect captcha, please try again."
-msgstr "Неверно разгадана Captcha, попробуй снова"
+msgstr "Неправильная captcha, повторите попытку."
 
 #: authentication/forms.py:154
 msgid "Keep my projects, but disable all comments"
-msgstr "Сохранить мои проекты, но закрыть комментирование"
+msgstr "Сохранить мои проекты, но отключить все комментарии"
 
 #: authentication/forms.py:155
 msgid "Delete my projects"
@@ -52,41 +52,44 @@ msgstr "Удалить мои проекты"
 
 #: authentication/forms.py:164
 msgid "Looks like that isn't a valid email format"
-msgstr "Похоже, электронная почта неверна"
+msgstr "Похоже, недопустимый адрес электронной почты"
 
 #: authentication/forms.py:170
 msgid "The two password fields didn't match."
-msgstr "Поля с паролем не совпадают друг с другом."
+msgstr "Пароль и подтверждение пароля не совпадают."
 
 #: authentication/forms.py:171 authentication/forms.py:192
 msgid "Your password must be at least 6 characters long."
-msgstr "Твой пароль должен быть длиннее 6 символов."
+msgstr "Ваш пароль должен содержать не менее 6 символов."
 
 #: authentication/forms.py:172 authentication/forms.py:193
 msgid "Your password cannot be 'password'."
-msgstr "Твой пароль не может быть «password»."
+msgstr "Ваш пароль не может быть «password»."
 
 #: authentication/forms.py:173 authentication/forms.py:194
 msgid "Your password cannot be the same as your username."
-msgstr "Твой пароль не должен совпадать с твоим именем пользователя."
+msgstr "Ваш пароль не может совпадать с вашим именем пользователя."
 
 #: authentication/forms.py:238
 msgid "Sorry we don't have an account with that email address"
-msgstr "Извини, но пользователя с такой электронной почтой нет"
+msgstr "Извините, у нас нет аккаунта с этим адресом электронной почты"
 
 #: authentication/forms.py:239
 msgid "Sorry we don't have an account with that username"
-msgstr "Извини, но пользователя с таким именем нет"
+msgstr "Извините, у нас нет аккаунта с этим именем пользователя"
 
 #: authentication/forms.py:241
 msgid ""
 "Scratch is not allowed to send email to the address associated with this "
 "username. <a href='/contact-us/'>Contact us for support</a>."
 msgstr ""
+"Scratch не позволяет отправлять письма по адресу, связанному с этим именем "
+"пользователя. <a href='/contact-us/'>Свяжитесь с нами для получения "
+"поддержки</a>."
 
 #: authentication/forms.py:243
 msgid "You must provide an email or username"
-msgstr "Нужно ввести электронную почту или имя пользователя"
+msgstr "Вы должны указать адрес электронной почты или имя пользователя"
 
 #: authentication/forms.py:248 templates/accounts/account_settings.html:10
 #: templates/accounts/deletion/confirmation.html:8
@@ -103,7 +106,7 @@ msgstr "Неверное имя пользователя или пароль."
 
 #: authentication/forms.py:363
 msgid "Please enable cookies on your browser."
-msgstr "Пожалуйста, включи cookies в браузере."
+msgstr "Пожалуйста, включите cookies в своем браузере."
 
 #: authentication/forms.py:364
 msgid "This account is inactive."
@@ -119,15 +122,15 @@ msgstr "Класс закрыт. Аккаунт не доступен."
 
 #: authentication/forms.py:402
 msgid "Occasional updates from the Scratch Team"
-msgstr ""
+msgstr "Периодические обновления от команды Scratch"
 
 #: authentication/forms.py:403
 msgid "Activity ideas for using Scratch at home"
-msgstr ""
+msgstr "Идеи для использования Scratch дома"
 
 #: authentication/forms.py:404
 msgid "Product updates for using Scratch in educational settings"
-msgstr ""
+msgstr "Обновления по использованию Scratch в образовательных проектах"
 
 #: authentication/tasks.py:30
 #, python-format
@@ -136,32 +139,39 @@ msgid ""
 " to <a href='%(email_change_url)s'>change the email</a> associated with your"
 " account to one you own."
 msgstr ""
+"Похоже, что предоставленный вами адрес электронной почты принадлежит другому"
+" лицу. Обязательно <a href='%(email_change_url)s'>измените адрес электронной"
+" почты</a>, связанный с вашим аккаунтом, на ваш собственный."
 
 #: authentication/views.py:117
 msgid "Already logged in"
-msgstr "Уже на сайте"
+msgstr "Уже в системе"
 
 #: authentication/views.py:726 authentication/views.py:755
 msgid ""
 "Whoops! There was an error while updating your email settings. Please try "
 "again."
 msgstr ""
+"Упс! При обновлении настроек электронной почты произошла ошибка. Пожалуйста,"
+" попробуйте еще раз."
 
 #: authentication/views.py:799
 msgid "Unsubscribe me from Scratch news & updates"
-msgstr ""
+msgstr "Отказаться от подписки на новости и обновления Scratch"
 
 #: authentication/views.py:800
 msgid "Unsubscribe me from Scratch project and activity ideas"
-msgstr ""
+msgstr "Отказаться от подписки на идеи для проектов Scratch"
 
 #: authentication/views.py:801
 msgid "Unsubscribe me from tips for educational settings"
-msgstr ""
+msgstr "Отказаться от подписки на идеи для образовательных проектов Scratch"
 
 #: authentication/views.py:1103
 msgid "Please check your email for a confirmation message."
 msgstr ""
+"Проверьте вашу почту на которую было отправлено электронное письмо с "
+"подтверждением."
 
 #: base_comments/templatetags/scratch_text_filters.py:163
 msgid "day"
@@ -178,7 +188,7 @@ msgid_plural "%(minutes)d minutes ago"
 msgstr[0] "1 минуту назад"
 msgstr[1] "%(minutes)d минут назад"
 msgstr[2] "%(minutes)d минут назад"
-msgstr[3] " %(minutes)d минут назад"
+msgstr[3] " %(minutes)d минут(ы) назад"
 
 #: base_comments/templatetags/scratch_text_filters.py:173
 msgid "just now"
@@ -191,7 +201,7 @@ msgid_plural "%(hours)d hours ago"
 msgstr[0] "1 час назад"
 msgstr[1] "%(hours)d часов назад"
 msgstr[2] "%(hours)d часов назад"
-msgstr[3] "%(hours)d часов назад"
+msgstr[3] "%(hours)d час(а)(ов) назад"
 
 #: base_comments/templatetags/scratch_text_filters.py:179
 #, python-format
@@ -214,11 +224,11 @@ msgstr "Уже существует"
 
 #: educators/forms.py:103
 msgid "Contains invalid characters. Use letters and numbers only."
-msgstr "Содержит неверные символы. Используй буквы и цифры."
+msgstr "Содержит недопустимые символы. Используйте только буквы и цифры."
 
 #: educators/forms.py:104
 msgid "Contains inappropriate words"
-msgstr "Содержит цензурные слова"
+msgstr "Содержит неприемлимые слова"
 
 #: educators/forms.py:105
 #, python-format
@@ -242,18 +252,24 @@ msgstr "классы"
 msgid ""
 "Please update the CSV file to address the issues above and reload the file."
 msgstr ""
+"Обновите файл CSV, чтобы устранить перечисленные выше проблемы и "
+"перезагрузите файл."
 
 #: educators/views.py:523
 msgid ""
 "Errors occurred while creating accounts. All accounts other than those "
 "specified here were created."
 msgstr ""
+"При создании учетных записей произошли ошибки. Были созданы все учетные "
+"записи, за исключением указанных здесь."
 
 #: educators/views.py:597
 msgid ""
 "After changing this student's password, you will need to share the new "
 "password with your student directly so that they can log back into Scratch."
 msgstr ""
+"После изменения ученического пароля, вам необходимо сообщить новый пароль "
+"ученику, чтобы он мог вновь войти на сайт Scratch."
 
 #: galleries/models.py:253
 msgid "studio"
@@ -265,11 +281,11 @@ msgstr "студии"
 
 #: lib/fields.py:100
 msgid "Tiny Integer"
-msgstr "Маленькое целое число"
+msgstr " Очень малое целое число"
 
 #: mail/validators.py:10
 msgid "Scratch is not allowed to send email to this address"
-msgstr ""
+msgstr "Scratch не позволяет отправлять письма по этому адресу"
 
 #: projects/models.py:140
 msgid "project"
@@ -281,55 +297,59 @@ msgstr "проекты"
 
 #: projects/models.py:278
 msgid "Permanently Censored Project cannot be reshared."
-msgstr "Навсегда зацензуренный проект не может быть опубликован снова."
+msgstr ""
+"Подвергнутый на постоянной основе цензуре проект не может быть опубликован."
 
 #: projects/models.py:285
 msgid ""
 "This project has been censored and must be reviewed before it can be "
 "reshared."
 msgstr ""
-"Этот проект подвергся цензуре и должен быть проверен перед следующей "
-"публикацией."
+"Этот проект подвергся цензуре и должен быть проверен перед его публикацией."
 
 #: projects/views.py:500
 msgid "This tag has too many projects to load"
-msgstr "Этот тег используют слишком много проектов, чтобы загрузить их все"
+msgstr "В этом теге слишком много проектов для загрузки"
 
 #: scratchr2/views.py:328
 msgid "You're not allowed to appeal this ban."
-msgstr ""
+msgstr "Вы не можете обжаловать этот запрет."
 
 #: scratchr2/views.py:337
 msgid "Your message has been sent. We will respond within 3 days."
-msgstr "Твоё сообщение было отослано. Ответ придёт в течение 3 дней."
+msgstr "Ваше сообщение было отправлено. Мы ответим в течение 3 дней."
 
 #: scratchr2/views.py:343 scratchr2/views.py:387
 msgid "Please correct the errors below."
-msgstr ""
+msgstr "Пожалуйста, исправьте ошибки ниже."
 
 #: templates/403.html:12
 msgid "403. Oh noes! Our server is Scratch'ing its head"
-msgstr "403. О нет! Сервера Скретч упали"
+msgstr "403. О нет!  Наш сервер в недоумении"
 
 #: templates/403.html:15
 msgid ""
 "We couldn't authorize you to view this page. If you need to get in touch "
 "with us about this, send us an email at "
 msgstr ""
+"У вас нет прав для просмотра этой страницы. Если вам нужно связаться с нами "
+"по этому поводу, пришлите нам электронное письмо по адресу"
 
 #: templates/404.html:16
 msgid "Whoops! Our server is Scratch'ing its head"
-msgstr ""
+msgstr "Ой!  Наш сервер в недоумении"
 
 #: templates/404.html:18
 msgid ""
 "We couldn't find the page you're looking for. Check to make sure you've "
 "typed the url correctly."
 msgstr ""
+"Мы не смогли найти страницу, которую вы ищете. Убедитесь, что вы правильно "
+"набрали адрес."
 
 #: templates/404.html:19
 msgid "You can try searching for what you're looking for here:"
-msgstr ""
+msgstr "Вы можете попробовать найти то, что вы ищете здесь:"
 
 #: templates/404.html:21 templates/base.html:192
 msgid "Search"
@@ -337,36 +357,41 @@ msgstr "Поиск"
 
 #: templates/429-email.html:17
 msgid "Whoops! You're sending too much mail."
-msgstr ""
+msgstr "Упс! Вы отправляете слишком много писем."
 
 #: templates/429-email.html:19
 msgid ""
 "You are performing actions on the site that send mail too much. Try again "
 "later."
 msgstr ""
+"Вы выполняете действия на сайте, которые приводят к отправке большого "
+"количества писем. Повторите попытку позже."
 
 #: templates/429.html:16
 msgid "Whoops! You're making too many requests."
-msgstr ""
+msgstr "Упс! Вы делаете слишком много запросов."
 
 #: templates/429.html:18
 msgid ""
 "You are performing actions on the site too frequently. Try again later."
 msgstr ""
+"Вы выполняете действия на сайте слишком часто. Повторите попытку позже."
 
 #: templates/500.html:69
 msgid "The Scratch Team is making some changes to the website."
-msgstr ""
+msgstr "Команда Scratch вносит изменения на сайт."
 
 #: templates/500.html:72
 msgid "Try reloading this page in a few minutes."
-msgstr ""
+msgstr "Попробуйте перезагрузить эту страницу через несколько минут."
 
 #: templates/500.html:75
 msgid ""
 "You can still <a href=\"/scratch2download/\">Download Scratch</a> and make "
 "projects."
 msgstr ""
+"Вы по прежнему можете <a href=\"/scratch2download/\">загрузить Scratch</a> и"
+" создавать проекты."
 
 #: templates/accounts/account_settings.html:8
 #: templates/accounts/deletion/confirmation.html:6
@@ -386,7 +411,7 @@ msgstr "Пароль"
 
 #: templates/accounts/account_settings.html:18
 msgid "You have updated your account settings."
-msgstr "Ты обновил настройки аккаунта."
+msgstr "Вы обновили настройки аккаунта."
 
 #: templates/accounts/account_settings.html:21
 msgid "Edit your account settings"
@@ -418,7 +443,7 @@ msgstr "Аккаунт заблокирован"
 
 #: templates/accounts/banned-response.html:32
 msgid "The Scratch Team decided to block the account:"
-msgstr "Команда Скретч рассказала, почему заблокировала аккаунт:"
+msgstr "Команда Scratch решила заблокировать аккаунт:"
 
 #: templates/accounts/banned-response.html:34
 msgid "Date:"
@@ -426,7 +451,7 @@ msgstr "Дата:"
 
 #: templates/accounts/banned-response.html:38
 msgid "Your account will be automatically unblocked on"
-msgstr ""
+msgstr "Ваш аккаунт будет автоматически разблокирован"
 
 #: templates/accounts/banned-response.html:58
 #: templates/info/community_guidelines.html:21
@@ -435,12 +460,17 @@ msgid ""
 "that people of many different ages and backgrounds will see what you’ve "
 "shared."
 msgstr ""
+"<b>Будьте уважительны.</b> При размещении проектов или написании "
+"комментариев помните, что самые разные люди разного возраста и из разных "
+"стран увидят сделанное и написанное вами."
 
 #: templates/accounts/banned-response.html:59
 msgid ""
 "<b>Be constructive.</b> When commenting on other’s projects, say something "
 "you like about it and offer suggestions."
 msgstr ""
+"<b>Будьте конструктивны.</b> Когда вы комментируете чужие проекты, сообщите,"
+" что вам нравится в них, и внесите предложения."
 
 #: templates/accounts/banned-response.html:60
 #: templates/info/community_guidelines.html:23
@@ -449,6 +479,9 @@ msgid ""
 "else you find on Scratch – and anyone can use anything that you share. Be "
 "sure to give credit when you remix."
 msgstr ""
+"<b>Делитесь.</b>Вы можете свободно делать ремикс проектов, идей, изображений"
+" или чего-нибудь еще, что вы найдете на Scratch. Обязательно упоминайте "
+"авторов при создании ремикса."
 
 #: templates/accounts/banned-response.html:61
 #: templates/info/community_guidelines.html:24
@@ -456,6 +489,9 @@ msgid ""
 "<b>Keep personal info private.</b> For safety reasons, don't use real names "
 "or post contact info like phone numbers or addresses."
 msgstr ""
+"<b>Держите личную информацию в секрете.</b> По соображениям безопасности не "
+"используйте настоящие имена или контактные данные, такие как номера "
+"телефонов или адреса."
 
 #: templates/accounts/banned-response.html:62
 #: templates/info/community_guidelines.html:25
@@ -463,6 +499,8 @@ msgid ""
 "<b>Be honest.</b> Don’t try to impersonate other Scratchers, spread rumors, "
 "or otherwise try to trick the community."
 msgstr ""
+"<b>Будьте честны.</b>Не пытайтесь выдавать себя за других Скретчеров, "
+"распространять слухи или иным образом пытаться обмануть сообщество."
 
 #: templates/accounts/banned-response.html:63
 #: templates/info/community_guidelines.html:26
@@ -471,6 +509,9 @@ msgid ""
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
 "let us know about it."
 msgstr ""
+"<b>Помогите сохранить сайт дружелюбным.</b>Если вы думаете, что проект или "
+"комментарий является подлым, оскорбительным, слишком грубым или иным образом"
+" неприемлемым, нажмите на кнопку «Пожаловаться», чтобы сообщить нам о нём."
 
 #: templates/accounts/banned-response.html:80
 #: templates/accounts/email_change.html:64 templates/contact-us.html:121
@@ -504,6 +545,8 @@ msgid ""
 "The new project player will appear automatically on the project page. If you"
 " see a bug, click 'Beta Bug?' on the project page to report it."
 msgstr ""
+"Новый плеер появится автоматически на странице проекта. Если вы видите "
+"ошибку, нажмите «Бета-ошибка?» на странице проекта, чтобы сообщить об этом."
 
 #: templates/accounts/beta_optin.html:33
 msgid "Update"
@@ -516,7 +559,7 @@ msgstr "Удалить мой аккаунт"
 
 #: templates/accounts/deletion/includes/deletion_form.html:15
 msgid "Delete account &amp; Sign out"
-msgstr "Удалить аккаунт и выйти"
+msgstr "Удалить аккаунт &amp; Выход"
 
 #: templates/accounts/deletion/nostalgia.html:15
 msgid "Whoops, go back"
@@ -524,25 +567,27 @@ msgstr "Упс, вернуться назад"
 
 #: templates/accounts/deletion/nostalgia.html:17
 msgid "Are you sure you want to delete your account?"
-msgstr "Ты действительно хочешь удалить аккаунт?"
+msgstr "Вы действительно хотите удалить аккаунт?"
 
 #: templates/accounts/deletion/nostalgia.html:22
 #, python-format
 msgid "You joined the Scratch community %(years_ago)s years ago."
-msgstr "Ты в сообществе Скретч уже %(years_ago)s лет"
+msgstr ""
+"Вы присоединились к сообществу Scratch %(years_ago)s год(а)/лет назад."
 
 #: templates/accounts/deletion/nostalgia.html:24
 msgid "You joined the Scratch community a year ago."
-msgstr "Ты в сообществе Скретч уже год."
+msgstr "Вы присоединились к сообществу Scratch год назад."
 
 #: templates/accounts/deletion/nostalgia.html:26
 #, python-format
 msgid "You joined the Scratch community %(months_ago)s months ago."
-msgstr "Ты в сообществе Скретч уже %(months_ago)s месяцев."
+msgstr ""
+"Вы присоединились к сообществу Scratch %(months_ago)s месяц(а)(ев) назад."
 
 #: templates/accounts/deletion/nostalgia.html:28
 msgid "You joined the Scratch community a month ago."
-msgstr "Ты в сообществе Скретч уже месяц."
+msgstr "Вы присоединились к сообществу Scratch месяц назад."
 
 #: templates/accounts/deletion/nostalgia.html:33
 #, python-format
@@ -550,74 +595,87 @@ msgid ""
 "You've created %(num_projects)s projects and have %(num_followers)s "
 "followers."
 msgstr ""
-"Ты создал %(num_projects)s проектов и получил %(num_followers)s подписчиков."
+"Вы создали %(num_projects)s проект(а)(ов) и у вас %(num_followers)s "
+"подписчик(а)(ов)"
 
 #: templates/accounts/deletion/nostalgia.html:41
 msgid "Some of your projects"
-msgstr "Некоторые из твоих проектов"
+msgstr "Некоторые из ваших проектов"
 
 #: templates/accounts/deletion/nostalgia.html:42
 msgid "Your projects"
-msgstr "Твои проекты"
+msgstr "Ваши проекты"
 
 #: templates/accounts/deletion/nostalgia.html:63
 msgid "Some of your followers"
-msgstr "Некоторые из твоих подписчиков"
+msgstr "Некоторые из ваших подписчиков"
 
 #: templates/accounts/deletion/nostalgia.html:64
 msgid "Your followers"
-msgstr "Твои подписчики"
+msgstr "Ваши подписчики"
 
 #: templates/accounts/deletion/nostalgia.html:81
 msgid "Yes, next step"
-msgstr "Да, идти дальше"
+msgstr "Да, следующий шаг"
 
 #: templates/accounts/email_change.html:18
 #: templates/accounts/email_change.html:30
 msgid "Your email address is unconfirmed"
-msgstr "Твоя электронная почта не подтверждена"
+msgstr "Ваш адрес электронной почты не подтвержден"
 
 #: templates/accounts/email_change.html:19
 msgid ""
 "If you want to share and comment, simply click the link in the email sent to"
 " you at:"
 msgstr ""
+"Если вы хотите делиться и комментировать, просто перейдите по ссылке в "
+"электронном письме, отправленном вам по адресу:"
 
 #: templates/accounts/email_change.html:23
 #: templates/accounts/email_change.html:34
 msgid "Your new email address is unconfirmed"
-msgstr ""
+msgstr "Ваш новый адрес электронной почты не подтвержден"
 
 #: templates/accounts/email_change.html:25
 msgid ""
 "If you would like to change the email address - have your parent (or "
 "guardian) simply click the link in the message sent to their address."
 msgstr ""
+"Если вы хотите изменить адрес электронной почты, попросите одного из "
+"родителей (или опекуна) перейдите по ссылке в электронном письме, "
+"отправленном по их адресу. "
 
 #: templates/accounts/email_change.html:27
 msgid ""
 "If you would like to change your email address - simply click the link in "
 "the message sent to your new address."
 msgstr ""
+"Если вы хотите  изменить адрес электронной почты, просто перейдите по ссылке"
+" в электронном письме, отправленном вам по новому адресу:"
 
 #: templates/accounts/email_change.html:31
 msgid ""
 "To confirm your current email address, click \"Send\"  below and follow the "
 "instructions in the email sent to you at:"
 msgstr ""
+"Чтобы подтвердить свой текущий адрес электронной почты, нажмите «Отправить» "
+"ниже и следуйте инструкциям в электронном письме, отправленном вам по "
+"адресу:"
 
 #: templates/accounts/email_change.html:35
 msgid ""
 "To change your email, simply click the link in the email sent to you at:"
 msgstr ""
+"Чтобы изменить адрес электронной почты, просто нажмите ссылку в электронном "
+"письме, отправленном вам по адресу:"
 
 #: templates/accounts/email_change.html:40
 msgid "New Email Address"
-msgstr "Новая электронная почта"
+msgstr "Новый адрес электронной почты"
 
 #: templates/accounts/email_change.html:46
 msgid "Current Email Address"
-msgstr ""
+msgstr "Текущий адрес электронной почты"
 
 #: templates/accounts/email_change.html:52
 #, python-format
@@ -626,30 +684,34 @@ msgid ""
 "lists. Please change your address to a new one or <a "
 "href=\"%(contact_us_url)s\">contact us</a> if you have questions."
 msgstr ""
+"Владелец этого адреса попросил удалить свой адрес из наших списков. "
+"Пожалуйста, измените свой адрес на новый или <a "
+"href=\"%(contact_us_url)s\">свяжитесь с нами</a>, если у вас есть вопросы."
 
 #: templates/accounts/email_change.html:61
 msgid "Can't find the confirmation email? Check your spam folder"
 msgstr ""
+"Не можете найти электронное письмо с подтверждением? Проверьте папку «Спам»"
 
 #: templates/accounts/email_change.html:62
 msgid "Resend"
-msgstr ""
+msgstr "Отправить повторно"
 
 #: templates/accounts/email_change.html:78
 msgid "Current Email"
-msgstr ""
+msgstr "Текущая электронная почта"
 
 #: templates/accounts/email_change.html:82
 msgid "Email Confirmed"
-msgstr ""
+msgstr "Электронная почта подтверждена"
 
 #: templates/accounts/email_change.html:96
 msgid "Change Email"
-msgstr ""
+msgstr "Изменить электронную почту"
 
 #: templates/accounts/email_change.html:102
 msgid "I’d like to receive email updates about: "
-msgstr ""
+msgstr "Я хочу получать обновления по электронной почте о:"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
@@ -657,6 +719,7 @@ msgstr ""
 #: templates/educators/email_verification/verification_email_plain.html:5
 msgid "Greetings from the Scratch Team at MIT!"
 msgstr ""
+"Привет от команды Scratch Массачусетского технологического института (MIT)!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:11
 #, python-format
@@ -664,12 +727,14 @@ msgid ""
 "\n"
 "    A few minutes ago, you requested to link this email address to the Scratch account <strong>%(username)s</strong>. Please confirm your email address by clicking the button below:\n"
 msgstr ""
+"\n"
+"Несколько минут назад вы попросили привязать этот адрес электронной почты к аккаунту Scratch <strong>%(username)s</strong>. Подтвердите свой адрес электронной почты, нажав кнопку ниже:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:17
 #: templates/accounts/email_verification/verification_email.html:26
 #: templates/educators/email_verification/verification_email.html:20
 msgid "Confirm my email address"
-msgstr ""
+msgstr "Подтвердить мой адрес электронной почты"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:23
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:12
@@ -677,6 +742,8 @@ msgid ""
 "If you didn’t request an email change, don’t worry - you can just ignore "
 "this message."
 msgstr ""
+"Если вы не запрашивали изменения электронной почты, не волнуйтесь - вы "
+"можете просто проигнорировать это сообщение."
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
 #: templates/accounts/email_verification/verification_email.html:43
@@ -690,7 +757,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:45
 #: templates/registration/welcome_email_message.txt:36
 msgid "Scratch On!"
-msgstr ""
+msgstr "За Scratch!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
@@ -709,7 +776,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:47
 #: templates/registration/welcome_email_message.txt:37
 msgid "The Scratch Team"
-msgstr ""
+msgstr "Команда Scratch"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:5
 #, python-format
@@ -717,6 +784,8 @@ msgid ""
 "\n"
 "A few minutes ago, you requested to link this email address to the Scratch account %(username)s. Please confirm your email address by clicking the button below:\n"
 msgstr ""
+"\n"
+"Несколько минут назад вы попросили привязать этот адрес электронной почты к аккаунту Scratch %(username)s. Подтвердите свой адрес электронной почты, нажав кнопку ниже:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:14
 #: templates/accounts/email_verification/verification_email_plain.html:31
@@ -724,26 +793,29 @@ msgstr ""
 #: templates/educators/registration/password_reset_email.html:15
 #: templates/educators/registration/password_reset_email.txt:9
 msgid "Scratch on!"
-msgstr ""
+msgstr "За Scratch!"
 
 #: templates/accounts/email_verification/failed_verification.html:20
 msgid "Uh oh! Something went wrong with your email confirmation."
-msgstr ""
+msgstr "О, нет! Что-то пошло не так с подтверждением вашей электронной почты."
 
 #: templates/accounts/email_verification/failed_verification.html:21
 msgid ""
 "To try again, log into your Scratch Account Settings to request another "
 "link."
 msgstr ""
+"Чтобы повторить попытку, войдите в настройки аккаунта Scratch, чтобы "
+"запросить другую ссылку."
 
 #: templates/accounts/email_verification/failed_verification.html:23
 msgid "My Account Settings"
-msgstr ""
+msgstr "Настройки аккаунта"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:11
 #, python-format
 msgid "We sent a verification email to <strong>%(email_address)s</strong>."
 msgstr ""
+"Мы отправили письмо с подтверждением на <strong>%(email_address)s</strong>."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:14
 #, python-format
@@ -753,6 +825,10 @@ msgid ""
 "one</a> or <a href=\"%(contact_us_url)s\">contact us</a> if you have "
 "questions."
 msgstr ""
+"Владелец этого адреса попросил удалить свой адрес из наших списков. "
+"Пожалуйста, <a href=\"%(settings_url)s\">измените свой адрес на новый</a> "
+"или <a href=\"%(contact_us_url)s\">свяжитесь с нами</a>, если у вас есть "
+"вопросы."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:19
 #, python-format
@@ -767,17 +843,18 @@ msgstr ""
 #: templates/accounts/email_verification/includes/verify_email_popup.html:27
 #: templates/accounts/email_verification/verify_email_standalone.html:108
 msgid "Can't find confirmation message?"
-msgstr ""
+msgstr "Не можете найти электронное письмо с подтверждением?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:30
 #: templates/accounts/email_verification/verify_email_standalone.html:110
 msgid "Wait for ten minutes. The message may take a while to arrive."
 msgstr ""
+"Подождите десять минут. Получение сообщения может занять некоторое время."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:31
 #: templates/accounts/email_verification/verify_email_standalone.html:111
 msgid "Check your spam folder."
-msgstr ""
+msgstr "Проверьте папку «Спам»."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:32
 #, python-format
@@ -785,25 +862,27 @@ msgid ""
 "Make sure your email address is correct (see <a "
 "href=\"%(settings_url)s\">Account Settings</a>)."
 msgstr ""
+"Убедитесь, что ваш адрес электронной почты указан правильно (см. <a "
+"href=\"%(settings_url)s\">Настройки аккаунта</a>)."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Still can't find the message?"
-msgstr ""
+msgstr "Все еще не можете найти электронное письмо с подтверждением?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Resend Confirmation"
-msgstr ""
+msgstr "Отправить подтверждение повторно"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:44
 msgid "OK, back to Scratch"
-msgstr ""
+msgstr "Хорошо, обратно в Scratch"
 
 #: templates/accounts/email_verification/passed_verification.html:21
 #: templates/registration/welcome_email_subject.html:1
 msgid "Welcome to Scratch!"
-msgstr ""
+msgstr "Добро пожаловать в Scratch!"
 
 #: templates/accounts/email_verification/passed_verification.html:24
 #: templates/educators/student-modal-registration.html:59
@@ -812,24 +891,27 @@ msgid ""
 "projects and comments are <a target=\"_blank\" "
 "href=\"/community_guidelines\">respectful and friendly</a>."
 msgstr ""
+"Scratch - это сообщество людей всех возрастов, со всего мира. Убедитесь, что"
+" ваши проекты и комментарии <a target=\"_blank\" "
+"href=\"/community_guidelines\">уважительны и дружелюбны</a>."
 
 #: templates/accounts/email_verification/passed_verification.html:27
 msgid "Learn how to make a project in Scratch"
-msgstr ""
+msgstr "Узнайте, как создавать проекты в Scratch"
 
 #: templates/accounts/email_verification/passed_verification.html:33
 msgid "Try out starter projects"
-msgstr ""
+msgstr "Попробуйте проекты для новичков"
 
 #: templates/accounts/email_verification/passed_verification.html:39
 #: templates/registration/welcome_email_message.html:17
 #: templates/registration/welcome_email_message.txt:12
 msgid "Connect with other Scratchers"
-msgstr ""
+msgstr "Общайтесь с другими Скретчерами"
 
 #: templates/accounts/email_verification/passed_verification.html:52
 msgid "All set to go!"
-msgstr ""
+msgstr "Все готово к работе!"
 
 #: templates/accounts/email_verification/passed_verification.html:56
 #, python-format
@@ -837,15 +919,19 @@ msgid ""
 "Success! You have confirmed your email address, "
 "<strong>%(username)s</strong>."
 msgstr ""
+"Отлично! Вы подтвердили свой адрес электронной почты, "
+"<strong>%(username)s</strong>."
 
 #: templates/accounts/email_verification/passed_verification.html:57
 msgid ""
 "Jump into Scratch to create new projects and share them with the community!"
 msgstr ""
+"Перейдите в Scratch, чтобы создавать новые проекты и делиться ими с "
+"сообществом!"
 
 #: templates/accounts/email_verification/passed_verification.html:59
 msgid "OK, let's go!"
-msgstr ""
+msgstr "Отлично, за дело!"
 
 #: templates/accounts/email_verification/verification_email.html:12
 #, python-format
@@ -853,6 +939,8 @@ msgid ""
 "\n"
 "Greetings from the Scratch Team at MIT! A few minutes ago, your child signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"Привет от команды Scratch Массачусетского технологического института (MIT)! Несколько минут назад ваш ребенок создал аккаунт на <a href=\"%(scratch_url)s\">Scratch</a> с именем пользователя:\n"
 
 #: templates/accounts/email_verification/verification_email.html:16
 #, python-format
@@ -860,10 +948,13 @@ msgid ""
 "\n"
 "Greetings from the Scratch Team at MIT! You just signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"Привет от команды Scratch Массачусетского технологического института (MIT)! Вы только что создали аккаунт на <a href=\"%(scratch_url)s\">Scratch</a> с именем пользователя:\n"
 
 #: templates/accounts/email_verification/verification_email.html:22
 msgid "Please confirm this email address by clicking the button below:"
 msgstr ""
+"Пожалуйста, подтвердите этот адрес электронной почты, нажав кнопку ниже:"
 
 #: templates/accounts/email_verification/verification_email.html:33
 #, python-format
@@ -871,6 +962,8 @@ msgid ""
 "\n"
 "    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 msgstr ""
+"\n"
+"Scratch - бесплатный язык программирования и онлайн-сообщество, где дети и подростки могут создавать интерактивные истории, игры и анимацию. Подтверждение этого электронного письма предоставит вашему ребенку полный доступ для размещения проектов и комментирования в онлайн-сообществе Scratch. Узнайте больше на <a href=\"%(about_url)s\">%(about_url)s</a>\n"
 
 #: templates/accounts/email_verification/verification_email.html:37
 #, python-format
@@ -1026,7 +1119,7 @@ msgstr ""
 
 #: templates/base.html:19
 msgid "Scratch"
-msgstr "Скретч"
+msgstr "Scratch"
 
 #: templates/base.html:19
 msgid "Imagine, Program, Share"
@@ -1046,7 +1139,7 @@ msgstr ""
 
 #: templates/base.html:186 templates/base.html.py:317
 msgid "About"
-msgstr "О Скретч"
+msgstr "Подробнее"
 
 #: templates/base.html:201 templates/info/educators.html:76
 #: templates/modal-registration.html:8
@@ -1090,7 +1183,7 @@ msgstr ""
 
 #: templates/base.html:248
 msgid "Account settings"
-msgstr "Настройки учётной записи"
+msgstr "Настройки аккаунта"
 
 #: templates/base.html:252
 msgid "Sign out"
@@ -1106,7 +1199,7 @@ msgstr ""
 #: templates/base.html:319 templates/info/about.html:13
 #: templates/info/index.html:92 templates/mail/base.html:61
 msgid "About Scratch"
-msgstr "О Скретче"
+msgstr "О Scratch"
 
 #: templates/base.html:320 templates/info/parents.html:14
 msgid "For Parents"
@@ -1948,14 +2041,14 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:70
 #: templates/educators/includes/stuff/backbone-templates.html:141
 msgid "Settings"
-msgstr ""
+msgstr "Настройки"
 
 #: templates/educators/includes/stuff/backbone-templates.html:72
 #: templates/educators/includes/stuff/backbone-templates.html:147
 #: templates/projects/base.html:347
 #: templates/projects/includes/shared/shared-project-actions.html:5
 msgid "Studios"
-msgstr ""
+msgstr "Студии"
 
 #: templates/educators/includes/stuff/backbone-templates.html:73
 #: templates/educators/includes/stuff/backbone-templates.html:150
@@ -1971,7 +2064,7 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:185
 #: templates/galleries/base.html:55
 msgid "Change"
-msgstr ""
+msgstr "Изменить"
 
 #: templates/educators/includes/stuff/backbone-templates.html:225
 msgid "What the Class is working on"
