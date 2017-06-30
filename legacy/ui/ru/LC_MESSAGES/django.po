@@ -1045,6 +1045,8 @@ msgid ""
 "                        Check for the confirmation message we sent to: <strong>%(email_address)s</strong>\n"
 "                    "
 msgstr ""
+"\n"
+"Проверьте письмо с подтверждением, отправленное на:<strong>%(email_address)s</strong>"
 
 #: templates/accounts/email_verification/verify_email_standalone.html:112
 #, python-format
@@ -1053,6 +1055,9 @@ msgid ""
 "onClick=\"redirectParent('%(settings_url)s');\" href=\"#\">Account "
 "Settings</a>)."
 msgstr ""
+"Убедитесь, что ваш адрес электронной почты указан правильно (см. <a "
+"onClick=\"redirectParent('%(settings_url)s');\" href=\"#\">Настройки "
+"аккаунта</a>)."
 
 #: templates/accounts/email_verification/verify_email_standalone.html:123
 msgid "Ok, back to Scratch"
@@ -1060,7 +1065,7 @@ msgstr "OK, обратно в Scratch"
 
 #: templates/accounts/includes/backbone-init-data.html:5
 msgid "Subscription update successful."
-msgstr ""
+msgstr "Подписка успешно обновлена."
 
 #: templates/accounts/password_change_form.html:9
 msgid "Password "
@@ -1069,22 +1074,22 @@ msgstr "Пароль"
 #: templates/accounts/password_change_form.html:15
 #, python-format
 msgid "Account Settings for %(username)s"
-msgstr ""
+msgstr "Настройки аккаунта для %(username)s"
 
 #: templates/accounts/password_change_form.html:26
 msgid "After changing your password, you will be prompted to log back in."
-msgstr ""
+msgstr "После изменения пароля вам будет предложено снова войти в систему."
 
 #: templates/accounts/password_change_form.html:36
 #: templates/educators/includes/stuff/backbone-templates.html:672
 msgid "Change Password"
-msgstr ""
+msgstr "Изменить пароль"
 
 #: templates/accounts/password_changed_email/message.html:7
 #: templates/accounts/password_changed_email/message.txt:2
 #, python-format
 msgid "Hi %(username)s!"
-msgstr ""
+msgstr "Привет, %(username)s!"
 
 #: templates/accounts/password_changed_email/message.html:10
 #: templates/accounts/password_changed_email/message.txt:4
@@ -1094,14 +1099,18 @@ msgid ""
 " you can ignore this email. Otherwise, please contact the Scratch Team at "
 "%(help_email)s."
 msgstr ""
+"Ваш пароль на сайте Scratch был недавно изменен. Если вы запрашивали "
+"изменение, просто проигнорируйте это письмо. В противном случае, пожалуйста,"
+" свяжитесь с командой Scratch по адресу %(help_email)s."
 
 #: templates/accounts/password_changed_email/subject.txt:1
 msgid "Your Scratch account password was changed"
-msgstr ""
+msgstr "Пароль аккаунта Scratch был изменен"
 
 #: templates/accounts/subscription/unsubscribe_email_verification_failure.html:20
 msgid "Oops! There has been a problem unsubscribing your email address."
 msgstr ""
+"К сожалению, не удалось отменить подписку на ваш адрес электронной почты."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_failure.html:22
 #, python-format
@@ -1109,15 +1118,17 @@ msgid ""
 "If you continue to have issues, contact the <a "
 "href=\"%(contact_url)s\">Scratch Team</a>."
 msgstr ""
+"Если эта проблема будет возникать в дальнейшем, свяжитесь с <a "
+"href=\"%(contact_url)s\">командой Scratch</a>."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:16
 #: templates/mail/blacklist/blacklist_success.html:16
 msgid "Unsubscribed"
-msgstr ""
+msgstr "Подписка отменена"
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:20
 msgid "Your email address has been unsubscribed."
-msgstr ""
+msgstr "Вы успешно отписались от рассылки."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:23
 #, python-format
@@ -1126,10 +1137,12 @@ msgid ""
 "                You can manage your subscription to Scratch updates from the Email tab of your <a href=\"%(account_url)s\">Account Settings</a>.\n"
 "            "
 msgstr ""
+"\n"
+"Вы можете управлять подпиской на обновления во вкладке «Электронная почта» в <a href=\"%(account_url)s\">настройках аккаунта</a>."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:28
 msgid "Take me back to Scratch!"
-msgstr ""
+msgstr "Вернуться на сайт Scratch!"
 
 #: templates/base.html:19
 msgid "Scratch"
@@ -1137,19 +1150,19 @@ msgstr "Scratch"
 
 #: templates/base.html:19
 msgid "Imagine, Program, Share"
-msgstr ""
+msgstr "Фантазируйте, Программируйте, Делитесь"
 
 #: templates/base.html:183
 msgid "Create"
-msgstr "Создавай"
+msgstr "Создавайте"
 
 #: templates/base.html:184
 msgid "Explore"
-msgstr "Исследуй"
+msgstr "Исследуйте"
 
 #: templates/base.html:185
 msgid "Tips"
-msgstr ""
+msgstr "Подсказки"
 
 #: templates/base.html:186 templates/base.html.py:317
 msgid "About"
@@ -1158,13 +1171,13 @@ msgstr "Подробнее"
 #: templates/base.html:201 templates/info/educators.html:76
 #: templates/modal-registration.html:8
 msgid "Join Scratch"
-msgstr "Присоединяйся"
+msgstr "Присоединяйтесь"
 
 #: templates/base.html:204 templates/base.html.py:215 templates/base.html:225
 #: templates/modal-login.html:9 templates/modal-login.html.py:55
 #: templates/modal-registration.html:234
 msgid "Sign in"
-msgstr "Вход"
+msgstr "Войти"
 
 #: templates/base.html:216
 msgid "Need help?"
@@ -1172,11 +1185,11 @@ msgstr "Нужна помощь?"
 
 #: templates/base.html:232
 msgid "messages - updates and notices"
-msgstr ""
+msgstr "сообщения - обновления и уведомления"
 
 #: templates/base.html:233
 msgid "my stuff - manage projects and studios"
-msgstr ""
+msgstr "мои работы- управлять проектами и студиями"
 
 #: templates/base.html:240
 msgid "Profile"
@@ -1184,16 +1197,16 @@ msgstr "Профиль"
 
 #: templates/base.html:241 templates/mystuff/base.html:21
 msgid "My Stuff"
-msgstr ""
+msgstr "Мои работы"
 
 #: templates/base.html:243 templates/educators/base.html:23
 #: templates/educators/includes/stuff/backbone-templates.html:11
 msgid "My Classes"
-msgstr ""
+msgstr "Мои классы"
 
 #: templates/base.html:246
 msgid "My Class"
-msgstr ""
+msgstr "Мой класс"
 
 #: templates/base.html:248
 msgid "Account settings"
@@ -1209,6 +1222,9 @@ msgid ""
 "<a id=\"confirm-email-popup\" href=\"#\">Confirm your email</a> to enable "
 "sharing. <a href=\"%(faq_url)s#accounts\">Having trouble?</a>"
 msgstr ""
+"<a id=\"confirm-email-popup\" href=\"#\">Подтвердите адрес электронной "
+"почты</a>, чтобы делиться своими работами. <a "
+"href=\"%(faq_url)s#accounts\">Возникли проблемы?</a>"
 
 #: templates/base.html:319 templates/info/about.html:13
 #: templates/info/index.html:92 templates/mail/base.html:61
@@ -1229,105 +1245,107 @@ msgstr "Для разработчиков"
 
 #: templates/base.html:323
 msgid "Credits"
-msgstr ""
+msgstr "Благодарности"
 
 #: templates/base.html:324
 msgid "Jobs"
-msgstr ""
+msgstr "Вакансии"
 
 #: templates/base.html:325
 msgid "Press"
-msgstr ""
+msgstr "Пресса"
 
 #: templates/base.html:329 templates/info/parents.html:78
 msgid "Community"
-msgstr ""
+msgstr "Сообщество"
 
 #: templates/base.html:331
 msgid "Community Guidelines"
-msgstr ""
+msgstr "Правила сообщества"
 
 #: templates/base.html:332
 msgid "Discussion Forums"
-msgstr ""
+msgstr "Форумы"
 
 #: templates/base.html:333 templates/info/index.html:113
 msgid "Scratch Wiki"
-msgstr ""
+msgstr "Вики Scratch"
 
 #: templates/base.html:334
 msgid "Statistics"
-msgstr ""
+msgstr "Статистика"
 
 #: templates/base.html:338 templates/info/codingforall.html:73
 msgid "Support"
-msgstr ""
+msgstr "Поддержка"
 
 #: templates/base.html:340
 msgid "Help Page"
-msgstr ""
+msgstr "Помощь"
 
 #: templates/base.html:341
 msgid "FAQ"
-msgstr ""
+msgstr "ЧаВО"
 
 #: templates/base.html:342
 msgid "Offline Editor"
-msgstr ""
+msgstr "Офлайн-редактор"
 
 #: templates/base.html:343 templates/contact-us-success.html:12
 #: templates/contact-us.html:79
 msgid "Contact Us"
-msgstr ""
+msgstr "Связаться с нами"
 
 #: templates/base.html:344
 msgid "Donate"
-msgstr ""
+msgstr "Пожертвовать"
 
 #: templates/base.html:348
 msgid "Legal"
-msgstr ""
+msgstr "Правовая информация"
 
 #: templates/base.html:350
 msgid "Terms of Use"
-msgstr ""
+msgstr "Условия использования"
 
 #: templates/base.html:351 templates/mail/base.html:60
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Политика конфиденциальности"
 
 #: templates/base.html:352 templates/info/DMCA.html:10
 msgid "DMCA"
-msgstr ""
+msgstr "Закон об авторском праве в цифровую эпоху"
 
 #: templates/base.html:356
 msgid "Scratch Family"
-msgstr ""
+msgstr "Семейство Scratch"
 
 #: templates/base.html:358
 msgid "ScratchEd"
-msgstr ""
+msgstr "ScratchEd"
 
 #: templates/base.html:359
 msgid "ScratchJr"
-msgstr ""
+msgstr "ScratchJr"
 
 #: templates/base.html:360
 msgid "Scratch Day"
-msgstr ""
+msgstr "День Scratch"
 
 #: templates/base.html:361
 msgid "Scratch Conference"
-msgstr ""
+msgstr "Конференция Scratch"
 
 #: templates/base.html:362
 msgid "Scratch Foundation"
-msgstr ""
+msgstr "Фонд Scratch"
 
 #: templates/base.html:377
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
+"Scratch - это проект группы Lifelong Kindergarten междисциплинарной "
+"исследовательской лаборатории Массачусетского технологического института"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14
@@ -1347,11 +1365,11 @@ msgstr ""
 #: templates/scratch_admin/admin_profile_view.html:150
 #: templates/scratch_admin/admin_profile_view.html:166
 msgid "View all"
-msgstr ""
+msgstr "Посмотреть все"
 
 #: templates/carousel/carousel.html:36
 msgid "No items"
-msgstr ""
+msgstr "Пусто"
 
 #: templates/carousel/includes/project-thumb.html:23
 msgid "in"
@@ -1374,60 +1392,62 @@ msgstr ""
 
 #: templates/cas/login.html:9
 msgid "Log in to your account"
-msgstr ""
+msgstr "Войдите в свой аккаунт"
 
 #: templates/cloudmonitor/monitor-soft.html:73
 #: templates/cloudmonitor/monitor.html:59
 msgid "Cloud data history"
-msgstr ""
+msgstr "История облачных данных"
 
 #: templates/cloudmonitor/monitor-soft.html:81
 #: templates/cloudmonitor/monitor.html:67
 msgid "User"
-msgstr ""
+msgstr "Пользователь"
 
 #: templates/cloudmonitor/monitor-soft.html:82
 #: templates/cloudmonitor/monitor.html:68
 msgid "Data Name"
-msgstr ""
+msgstr "Название данных"
 
 #: templates/cloudmonitor/monitor-soft.html:83
 #: templates/cloudmonitor/monitor.html:69
 msgid "Action"
-msgstr ""
+msgstr "Действие"
 
 #: templates/cloudmonitor/monitor-soft.html:84
 #: templates/cloudmonitor/monitor.html:70
 msgid "Data Value"
-msgstr ""
+msgstr "Значение данных"
 
 #: templates/cloudmonitor/monitor-soft.html:85
 #: templates/cloudmonitor/monitor.html:71
 msgid "Time"
-msgstr ""
+msgstr "Время"
 
 #: templates/comments/comment-module.html:15
 msgid "Turn off commenting"
-msgstr ""
+msgstr "Отключить комментирование"
 
 #: templates/comments/comment-module.html:26
 msgid "Leave a comment"
-msgstr ""
+msgstr "Оставить комментарий"
 
 #: templates/comments/comment-module.html:31
 msgid ""
 "Remember that this project may have been made by someone new to programming.\n"
 "                            Make sure your comments are friendly and respectful."
 msgstr ""
+"Помните, что этот проект, возможно, сделал новичок в программировании.\n"
+"Убедитесь, что ваши комментарии дружелюбны и уважительны."
 
 #: templates/comments/comment-module.html:37
 msgid "You have <span id=\"chars-left\">500</span> characters left."
-msgstr ""
+msgstr "У вас осталось <span id=\"chars-left\">500</span> символ(а)(ов)."
 
 #: templates/comments/comment-module.html:40
 #: templates/includes/backbone-templates.html:80
 msgid "Post"
-msgstr ""
+msgstr "Опубликовать"
 
 #: templates/comments/comment-module.html:41
 #: templates/educators/add_class_modal.html:35
@@ -1436,56 +1456,57 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:814
 #: templates/includes/backbone-templates.html:81
 msgid "Cancel"
-msgstr ""
+msgstr "Отменить"
 
 #: templates/comments/comment-module.html:47
 #, python-format
 msgid "Sorry, comment posting has been turned off for this %(tType)s"
-msgstr ""
+msgstr "Извините, комментарии отключены для %(tType)s"
 
 #: templates/comments/comment-module.html:51
 msgid ""
 "Sorry comment posting is not available right now. It should be back soon!"
 msgstr ""
+"Добавление комментариев сейчас недоступно. Скоро все должно снова работать!"
 
 #: templates/comments/comment-module.html:57
 msgid "Comments loading..."
-msgstr ""
+msgstr "Загрузка комментариев…"
 
 #: templates/comments/comment.html:24 templates/comments/comment.html.py:27
 #: templates/educators/includes/stuff/backbone-templates.html:321
 #: templates/includes/backbone-templates.html:19
 #: templates/mystuff/mystuff.html:157
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 #: templates/comments/comment.html:36 templates/comments/comment.html.py:38
 #: templates/includes/backbone-templates.html:21
 msgid "Report"
-msgstr ""
+msgstr "Пожаловаться"
 
 #: templates/comments/comment.html:62
 #: templates/comments/includes/comment.html:12
 msgid "Reply"
-msgstr ""
+msgstr "Ответить"
 
 #: templates/comments/includes/comment.html:8
 msgid "Report comment as inappropriate"
-msgstr ""
+msgstr "Сообщить о неприемлемом комментарии"
 
 #: templates/comments/includes/comment.html:27
 #, python-format
 msgid "%(comment.datetime_created|timesince)s ago"
-msgstr ""
+msgstr "%(comment.datetime_created|timesince) тому назад"
 
 #: templates/comments/list.html:18
 #, python-format
 msgid "See all %(len)s replies"
-msgstr ""
+msgstr "Просмотреть все %(len)s ответ(а)(ов)"
 
 #: templates/comments/list.html:24
 msgid "Load more"
-msgstr ""
+msgstr "Загрузить ещё"
 
 #: templates/contact-us.html:92
 msgid ""
@@ -1494,11 +1515,15 @@ msgid ""
 "find answers to most questions about Scratch on our  <a "
 "href=\"/info/faq/\">Frequently Asked Questions</a> page."
 msgstr ""
+"Команда Scratch получает большое количество сообщений каждый день. К "
+"сожалению, у нас нет времени, чтобы ответить на все. К счастью, вы можете "
+"найти ответы на большинство вопросов о Scratch на странице <a "
+"href=\"/info/faq/\">Часто задаваемые вопросы</a>."
 
 #: templates/contact-us.html:94
 msgid ""
 "You can also look at the Scratch <a href=\"/discuss\">Discussion forums</a>."
-msgstr ""
+msgstr "Вы также можете ознакомиться с <a href=\"/discuss\">форумом</a> Scratch."
 
 #: templates/contact-us.html:95
 msgid ""
@@ -1506,44 +1531,49 @@ msgid ""
 "href=\"/discuss\">Discussion forums.</a> There are many experienced "
 "Scratchers who can help!"
 msgstr ""
+"Если вы не можете найти ответ на свой вопрос, опубликуйте новую тему на <a "
+"href=\"/discuss\">форуме</a>. Есть много опытных Скретчеров, готовых помочь!"
 
 #: templates/contact-us.html:98
 msgid "Questions About Scratch"
-msgstr ""
+msgstr "Вопросы о Scratch"
 
 #: templates/contact-us.html:99
 msgid "Help with Scripts"
-msgstr ""
+msgstr "Помощь со скриптами"
 
 #: templates/contact-us.html:100
 msgid "Bugs and Glitches"
-msgstr ""
+msgstr "Ошибки и неправильная работа"
 
 #: templates/contact-us.html:103
 msgid ""
 "If you need to contact us, please choose from one of the options below. We "
 "get a lot of mail, so we may not be able to respond to your message."
 msgstr ""
+"Если вам нужно связаться с нами, пожалуйста, выберите тему из вариантов "
+"ниже. Мы получаем большое количество писем, поэтому возможно мы не ответим "
+"на ваше сообщение."
 
 #: templates/contact-us.html:108
 msgid "Select a topic"
-msgstr ""
+msgstr "Выберите тему"
 
 #: templates/contact-us.html:109
 msgid "Report something inappropriate..."
-msgstr ""
+msgstr "Сообщить о чем-то недопустимом..."
 
 #: templates/contact-us.html:110
 msgid "Report a problem with the website..."
-msgstr ""
+msgstr "Сообщить о проблеме с веб-сайтом..."
 
 #: templates/contact-us.html:111
 msgid "Problems with email confirmation..."
-msgstr ""
+msgstr "Проблемы с подтверждением электронной почты..."
 
 #: templates/contact-us.html:112
 msgid "Other..."
-msgstr ""
+msgstr "Прочее..."
 
 #: templates/educators/add_class_modal.html:6
 msgid "Add a New Class"
@@ -3662,7 +3692,7 @@ msgstr ""
 
 #: templates/info/index.html:45
 msgid "English"
-msgstr ""
+msgstr "Английский язык"
 
 #: templates/info/index.html:48
 msgid ""
@@ -3676,7 +3706,7 @@ msgstr ""
 
 #: templates/info/index.html:59
 msgid "Scratch Cards"
-msgstr ""
+msgstr "Карточки Scratch"
 
 #: templates/info/index.html:61
 msgid "Each of these cards shows something you can do in Scratch."
@@ -4545,59 +4575,59 @@ msgstr ""
 
 #: templates/modal-registration.html:88
 msgid "Month"
-msgstr ""
+msgstr "Месяц"
 
 #: templates/modal-registration.html:89
 msgid "January"
-msgstr ""
+msgstr "Январь"
 
 #: templates/modal-registration.html:90
 msgid "February"
-msgstr ""
+msgstr "Февраль"
 
 #: templates/modal-registration.html:91
 msgid "March"
-msgstr ""
+msgstr "Март"
 
 #: templates/modal-registration.html:92
 msgid "April"
-msgstr ""
+msgstr "Апрель"
 
 #: templates/modal-registration.html:93
 msgid "May"
-msgstr ""
+msgstr "Май"
 
 #: templates/modal-registration.html:94
 msgid "June"
-msgstr ""
+msgstr "Июнь"
 
 #: templates/modal-registration.html:95
 msgid "July"
-msgstr ""
+msgstr "Июль"
 
 #: templates/modal-registration.html:96
 msgid "August"
-msgstr ""
+msgstr "Август"
 
 #: templates/modal-registration.html:97
 msgid "September"
-msgstr ""
+msgstr "Сентябрь"
 
 #: templates/modal-registration.html:98
 msgid "October"
-msgstr ""
+msgstr "Октябрь"
 
 #: templates/modal-registration.html:99
 msgid "November"
-msgstr ""
+msgstr "Ноябрь"
 
 #: templates/modal-registration.html:100
 msgid "December"
-msgstr ""
+msgstr "Декабрь"
 
 #: templates/modal-registration.html:103
 msgid "Year"
-msgstr ""
+msgstr "Год"
 
 #: templates/modal-registration.html:112
 msgid "Male"
@@ -4623,7 +4653,7 @@ msgstr ""
 
 #: templates/modal-registration.html:185
 msgid "Welcome to Scratch,"
-msgstr ""
+msgstr "Добро пожаловать в Scratch,"
 
 #: templates/modal-registration.html:186
 msgid "You're now logged in! You can start exploring and creating projects."
@@ -4701,7 +4731,7 @@ msgstr ""
 #: templates/mystuff/includes/project_action_bar.html:14
 #: templates/mystuff/includes/sort-galleries-dropdown.html:6
 msgid "All"
-msgstr ""
+msgstr "Все"
 
 #: templates/mystuff/includes/project_action_bar.html:15
 #: templates/projects/project_list.html:32
@@ -4941,7 +4971,7 @@ msgstr ""
 
 #: templates/notifications/notifications.html:9
 msgid "Messages"
-msgstr ""
+msgstr "Сообщения"
 
 #: templates/notifications/notifications.html:15
 msgid "All Messages"
@@ -5294,15 +5324,15 @@ msgstr ""
 
 #: templates/profiles/scratcher_promotion_modal.html:61
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 #: templates/profiles/scratcher_promotion_modal.html:66
 msgid "I agree!"
-msgstr ""
+msgstr "Согласен!"
 
 #: templates/profiles/scratcher_promotion_modal.html:67
 msgid "OK!"
-msgstr ""
+msgstr "OK!"
 
 #: templates/projects/base.html:83
 msgid "scripts"
@@ -5328,7 +5358,7 @@ msgstr ""
 
 #: templates/projects/base.html:143
 msgid "Original Project"
-msgstr ""
+msgstr "Исходный проект"
 
 #: templates/projects/base.html:157
 msgid "not shared"
@@ -5349,7 +5379,7 @@ msgstr ""
 
 #: templates/projects/base.html:209
 msgid "Total views"
-msgstr ""
+msgstr "Всего просмотров"
 
 #: templates/projects/base.html:213
 msgid "View the remix tree"
@@ -5379,7 +5409,7 @@ msgstr ""
 #: templates/projects/base.html:280 templates/projects/censored.html:24
 #: templates/projects/unshared-owner.html:24
 msgid "Share"
-msgstr ""
+msgstr "Поделиться"
 
 #: templates/projects/base.html:394
 msgid "OK, Got it."
@@ -5387,7 +5417,7 @@ msgstr ""
 
 #: templates/projects/base.html:413
 msgid "All Tips"
-msgstr ""
+msgstr "Все подсказки"
 
 #: templates/projects/censored.html:11
 msgid ""
@@ -5546,7 +5576,7 @@ msgstr ""
 
 #: templates/projects/includes/backbone-templates.html:51
 msgid "Other"
-msgstr ""
+msgstr "Прочее"
 
 #: templates/projects/includes/backbone-templates.html:75
 msgid ""
@@ -5597,7 +5627,7 @@ msgstr ""
 #: templates/projects/includes/owner/editable-wip.html:4
 #: templates/projects/shared-other.html:17
 msgid "Draft"
-msgstr ""
+msgstr "Черновик"
 
 #: templates/projects/includes/project_list.html:10
 #, python-format
@@ -5638,7 +5668,7 @@ msgstr ""
 
 #: templates/projects/project_list.html:16
 msgid "Featured Projects"
-msgstr ""
+msgstr "Избранные проекты"
 
 #: templates/projects/project_list.html:20
 #: templates/projects/project_list.html:24
@@ -5700,7 +5730,7 @@ msgstr ""
 
 #: templates/registration/login.html:39
 msgid "Login"
-msgstr ""
+msgstr "Войти"
 
 #: templates/registration/login.html:40
 msgid "Forgot username or password?"
@@ -5713,15 +5743,15 @@ msgstr ""
 
 #: templates/registration/password_reset_confirm.html:26
 msgid "New Password"
-msgstr ""
+msgstr "Новый пароль"
 
 #: templates/registration/password_reset_confirm.html:35
 msgid "Change my password"
-msgstr ""
+msgstr "Изменить пароль"
 
 #: templates/registration/password_reset_confirm.html:46
 msgid "Your must enter a password"
-msgstr ""
+msgstr "Вы должны ввести пароль."
 
 #: templates/registration/password_reset_done.html:8
 msgid "Password reset email sent..."
@@ -6018,7 +6048,7 @@ msgstr ""
 
 #: userprofiles/models.py:117
 msgid "Featured Project"
-msgstr ""
+msgstr "Избранный проект"
 
 #: userprofiles/models.py:118
 msgid "Featured Tutorial"
