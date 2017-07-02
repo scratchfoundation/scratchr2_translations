@@ -78,11 +78,11 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/add.html:7
 msgid "Adds two numbers"
-msgstr "2つの数を足します"
+msgstr "2つの数値を加算します。"
 
 #: templates/help/studio/tips/blocks/and.html:7
 msgid "Reports true if both conditions are true"
-msgstr "両方の条件が真のとき、真を返します"
+msgstr "両方の条件が真であるなら真が通知されます"
 
 #: templates/help/studio/tips/blocks/answer.html:6
 #, python-format
@@ -253,7 +253,7 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"テンポとは、音符やドラムを鳴らす時の速さのことです(BPM＝一分間に鳴るの拍の数)。この値が大きい時、音符やドラムのなる速さは速くなります。\n"
+"テンポとは、音符やドラムを鳴らす時の速さのことです(BPM＝一分間に鳴るの拍の数)。この値が大きいと音符やドラムの演奏の速さが速くなります。\n"
 "</p>\n"
 
 #: templates/help/studio/tips/blocks/change-variable.html:7
@@ -284,10 +284,10 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"ボリュームは0から100の間で変わります。初期値は100です。\n"
+"音量は0から100の範囲です。デフォルトの音量は100です。\n"
 "</p>\n"
 "<p>\n"
-"ボリュームはスプライトそれぞれに設定することができます。一度に二つの音を違うボリュームで鳴らしたいときは、二つのスプライトを使ってください。\n"
+"ボリュームはスプライトそれぞれに設定することができます。同時に二つの音を異なるボリュームで鳴らすには、二つのスプライトが必要です。\n"
 "</p>\n"
 
 #: templates/help/studio/tips/blocks/change-x.html:6
@@ -360,7 +360,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
-msgstr "ステージからペンマークとスタンプを全てクリアします。"
+msgstr "ステージからペンで書いた線やスタンプ（ハンコ）を全部消します。"
 
 #: templates/help/studio/tips/blocks/clear.html:14
 msgid ""
@@ -401,7 +401,8 @@ msgid ""
 "eye dropper to click on the color you want. The color will appear in the "
 "square."
 msgstr ""
-"色を選択するには、四角の部分をクリックして色選択ツールに切り替えます。この状態で使用したい色の上にマウスポインターを移動し、クリックしてください。選択した色が四角部分に反映されます。"
+"色を選択するには、四角をクリックして目薬(?)を入手してください。 目薬(?)を使って、あなたが望む色をクリックしてください。 "
+"正方形に色が表示されます。?はスポイトでは"
 
 #: templates/help/studio/tips/blocks/computefunction.html:8
 msgid "Computes a function"
@@ -613,7 +614,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
-msgstr "現在のスプライトの向きを返します"
+msgstr "現在、スプライトが向いている方向が通知されます"
 
 #: templates/help/studio/tips/blocks/direction.html:14
 #, python-format
@@ -1245,17 +1246,19 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/pendown.html:9
 msgid "Puts down sprite's pen, so the sprite will draw as it moves"
-msgstr ""
+msgstr "動くとスプライトが線を描けるよう、ペンを下します。"
 
 #: templates/help/studio/tips/blocks/pendown.html:18
 msgid ""
 "\n"
 "<p>The pen will leave a trail as soon as the sprite moves.</p>\n"
 msgstr ""
+"\n"
+"<p>スプライトが動くとすぐに、ペンは跡（線）を残します。</p>\n"
 
 #: templates/help/studio/tips/blocks/penup.html:9
 msgid "Pulls up sprite's pen, so it won't draw as it moves"
-msgstr ""
+msgstr "動いても線を描かないよう、ペンを上げます。"
 
 #: templates/help/studio/tips/blocks/pick-random.html:7
 msgid "Picks a random integer within the specified range"
@@ -1274,7 +1277,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/play_drum.html:8
 msgid "Plays a drum sound for a specified number of beats"
-msgstr ""
+msgstr "指定した拍数のドラム音を鳴らします。"
 
 #: templates/help/studio/tips/blocks/play_drum.html:16
 #, python-format
@@ -1332,6 +1335,9 @@ msgid ""
 "<h3>\n"
 "Plays a sound</h3>\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/>\n"
+"<h3>\n"
+"音を鳴らします。</h3>\n"
 
 #: templates/help/studio/tips/blocks/playsound.html:19
 #, python-format
@@ -1358,6 +1364,10 @@ msgid ""
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> waits until the sound is finished playing before continuing to the next block."
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/>は、サウンドの再生を開始するとすぐに次のブロックに進みます。\n"
+"</p>\n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>は、サウンドの再生が終了するのを待って次のブロックに進みます。"
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:8
 #, python-format
@@ -1365,6 +1375,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
 "<h3>Plays a sound and waits until the sound is finished </h3>\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
+"<h3>音を鳴らし、サウンドが終了するを待ちます。Plays a sound and waits until the sound is finished </h3>\n"
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:18
 #, python-format
@@ -1372,6 +1384,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/>\n"
 "starts playing a sound and continues to the next block immediately."
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/>\n"
+"は、サウンドの再生を開始するとすぐに次のブロックに進みます。"
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:23
 #, python-format
@@ -1379,6 +1393,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
 "waits until the sound is finished playing before continuing to the next block."
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
+"は、サウンドの再生が終了するのを待って次のブロックに進みます。"
 
 #: templates/help/studio/tips/blocks/point-direction.html:7
 msgid "Set the direction of the current sprite"
@@ -1453,6 +1469,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/rest.png\"/>\n"
 "<h3>Rests (plays nothing) for specified number of beats</h3></div>\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/rest.png\"/>\n"
+"<h3>Rests (plays nothing) for specified number of beats</h3></div>\n"
 
 #: templates/help/studio/tips/blocks/round.html:7
 msgid "Reports closest integer to a number"
@@ -1553,7 +1571,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/set-tempo.html:9
 msgid "Sets sprite's tempo to specified value in beats per minute"
-msgstr ""
+msgstr "スプライトのテンプを指定されたBPM（一分間に鳴るの拍の数）にセットします。"
 
 #: templates/help/studio/tips/blocks/set-tempo.html:16
 #: templates/help/studio/tips/blocks/tempo.html:14
@@ -1561,6 +1579,7 @@ msgid ""
 "Tempo is the speed (bpm = beats per minute) at which Scratch notes and drums"
 " play. The larger the tempo value, the faster the notes and drums will play."
 msgstr ""
+"テンポとは、音符やドラムを鳴らす時の速さのことです(BPM＝一分間に鳴るの拍の数)。この値が大きいと音符やドラムの演奏の速さが速くなります。"
 
 #: templates/help/studio/tips/blocks/set-variable.html:7
 msgid "Sets the variable to specified value"
@@ -1578,7 +1597,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/set-volume.html:9
 msgid "Sets sprite's sound volume to specified value"
-msgstr ""
+msgstr "スプライトの音量を指定された値にセットします。"
 
 #: templates/help/studio/tips/blocks/set-volume.html:15
 msgid ""
@@ -1589,6 +1608,12 @@ msgid ""
 "To play two sounds at once with different volumes, use two sprites.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"それぞれのスプライトの音量レベルをセットできます。 \n"
+"<br>\n"
+"同時に異なる音量で二つのサウンドを鳴らすには、二つのスプライトが必要です。\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/set-x.html:7
 msgid "Set the x position of a sprite"
@@ -1627,6 +1652,9 @@ msgid ""
 "<h3>Sets the type of instrument that the sprite uses for\n"
 "<b>play note</b> blocks</h3></div>\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/set_instrument.png\"/>\n"
+"<h3><b>～の音符を～拍鳴らす</b>ブロックで使用する楽器の種類をセットします。\n"
+"</div>\n"
 
 #: templates/help/studio/tips/blocks/setinstrument.html:16
 #, python-format
@@ -1640,10 +1668,18 @@ msgid ""
 "<br><img src=\"%(STATIC_URL)s/images/help/set_instrument_ex2.png\" /> <br/>\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"各スプライトに独自の楽器を持たせておきます。\n"
+"</p>\n"
+"<p>\n"
+"クリックしてメニューから選択するか、１から２１の番号を入力してください。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/set_instrument_ex2.png\" /> <br/>\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/setpencolor.html:8
 msgid "Sets pen's color, based on choice from color picker"
-msgstr ""
+msgstr "ペンの色をセットします。色はカラ―ピッカーから選んでおきます。"
 
 #: templates/help/studio/tips/blocks/setpencolor.html:16
 #, python-format
@@ -1658,10 +1694,19 @@ msgid ""
 "Picking the color also changes the pen shade.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"色を選択するには、四角をクリックして目薬機能を起動します。目薬を使って好みの色クリックします。四角の中に色が表示されます。\n"
+"\n"
+"</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/setcolorex2.png\"/> <br/>\n"
+"<p>\n"
+"Picking the color also changes the pen shade.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:7
 msgid "Sets pen's color to specified value"
-msgstr ""
+msgstr "ペンの色を指定した値にセットします。"
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:10
 #, python-format
@@ -1676,10 +1721,19 @@ msgid ""
 "Pen_color=0 at red end of rainbow, pen_color=100 at blue end of rainbow. Ranges from 0 to 200 to go around the color wheel.\n"
 "</div>\n"
 msgstr ""
+"\n"
+"<img src=\"%(STATIC_URL)s/images/help/setcolortoex.png\" /> \n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/setcolortoex1.png\"/> \n"
+"<p>\n"
+"ペンの色を<img src=\"%(STATIC_URL)s/images/help/y-position.png\" />のような変数か数値で設定できます。例えば数値0は <font color = red>赤</font>色、数値70は<font color = green>緑</font>色、数値130は<font color = blue>青</font>色、そして数値170は<font color = magenta>マゼンタ</font>色です。\n"
+"<p>\n"
+"虹の端の赤でPen_colorが0で、虹の反対端の青でpen_colorが100です。0から200の範囲は、色相環を一回りします。\n"
+"</div>\n"
 
 #: templates/help/studio/tips/blocks/setpensize.html:9
 msgid "Sets pen's thickness"
-msgstr ""
+msgstr "ペンの太さをセットします。"
 
 #: templates/help/studio/tips/blocks/setrotation.html:8
 msgid "Sets the sprite's rotation style"
@@ -1724,7 +1778,7 @@ msgstr "ドロップダウンメニューから\"回転しない\"を選択す�
 
 #: templates/help/studio/tips/blocks/setshade.html:8
 msgid "Sets pen's shade to specified amount"
-msgstr "数値を指定してペンの色合いをセットします。"
+msgstr "数値を指定してペンの濃さをセットします。"
 
 #: templates/help/studio/tips/blocks/setshade.html:17
 #, python-format
@@ -1738,6 +1792,14 @@ msgid ""
 "If the pen shade is 0, then the pen color will be close to black. If the pen shade is 100, the pen color will be close to white.\n"
 "\n"
 msgstr ""
+"\n"
+"<p>\n"
+"ペンの濃さは0から100の範囲で設定できます。デフォルト値は50です。\n"
+"<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/changeshadeex2.png\" />\n"
+"<p>\n"
+"ペンの濃さは0にすると黒、100にすると白になります。\n"
+"\n"
 
 #: templates/help/studio/tips/blocks/show-list.html:7
 msgid "Shows the list monitor on the stage"
@@ -1790,7 +1852,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/stamp.html:8
 msgid "Stamps the sprite's image onto the Stage"
-msgstr ""
+msgstr "ステージ上にスプライト画像のスタンプ（ハンコ）を押します。"
 
 #: templates/help/studio/tips/blocks/stamp.html:11
 #, python-format
@@ -1803,6 +1865,13 @@ msgid ""
 "<p>\n"
 "A stamp cannot move and cannot hold scripts.\n"
 msgstr ""
+"\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/stampex.png\" /></p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/stampex1.png\" /> </p>\n"
+"<p>\n"
+"スタンプはステージに描かれた一時的な画像にすぎません。上書きしたり、<img src=\"%(STATIC_URL)s/images/help/clear.png\" />ブロックで消すことができます。\n"
+"<p>\n"
+"スタンプで押したスプライトは、動かすこともスクリプトを持つこともできません。\n"
 
 #: templates/help/studio/tips/blocks/stop.html:7
 msgid "Stops all scripts in all sprites"
@@ -1814,11 +1883,11 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/stopsound.html:9
 msgid "Stops all sounds"
-msgstr ""
+msgstr "すべての音を止めます。"
 
 #: templates/help/studio/tips/blocks/stopsound.html:18
 msgid "Stop other sounds before playing a new sound."
-msgstr ""
+msgstr "新しいサウンドを再生する前に他のサウンドを止めておきます。"
 
 #: templates/help/studio/tips/blocks/subtract.html:7
 msgid "Subtracts second number from first number"
@@ -1877,7 +1946,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/tempo.html:8
 msgid "Reports sprite's tempo in beats per minute"
-msgstr ""
+msgstr "スプライトのテンポをBPMで通知します。"
 
 #: templates/help/studio/tips/blocks/think-for-seconds.html:8
 msgid "Displays words in a thought bubble for a number of seconds"
@@ -2087,13 +2156,13 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/volume.html:9
 msgid "Reports sprite's sound volume"
-msgstr ""
+msgstr "スプライトの音量を通知します。"
 
 #: templates/help/studio/tips/blocks/volume.html:16
 msgid ""
 "You can set the volume level for each sprite. To play two sounds at once "
 "with different volumes, use two sprites."
-msgstr ""
+msgstr "それぞれのスプライトに音量レベルをセットできます。同時に異なる音量で二つのサウンドを鳴らすには、二つのスプライトが必要です。"
 
 #: templates/help/studio/tips/blocks/wait-secs.html:7
 msgid "Waits specified number of seconds, then continues with next block"
