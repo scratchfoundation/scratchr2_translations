@@ -82,7 +82,7 @@ msgstr "2つの数値を加算します。"
 
 #: templates/help/studio/tips/blocks/and.html:7
 msgid "Reports true if both conditions are true"
-msgstr "両方の条件が真であるなら真が通知されます"
+msgstr "両方の条件が真であるなら真が通知されます。"
 
 #: templates/help/studio/tips/blocks/answer.html:6
 #, python-format
@@ -139,7 +139,7 @@ msgid ""
 "</p>"
 msgstr ""
 "\n"
-"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />は、質問し、キーボード入力された答えを<img src=\"%(STATIC_URL)s/images/help/answer.png\" />に保管します。質問は画面上の吹き出しに表示されます。Enterキーが押されるか、チェックマークをクリックされるまで、プログラムはユーザーの応答を待ちます。\n"
+"<p> <img src=\"%(STATIC_URL)s/images/help/ask-and-wait.png\" />は、質問し、キーボード入力された答えを<img src=\"%(STATIC_URL)s/images/help/answer.png\" />に保管します。質問は画面上の吹き出しに表示されます。Enterキーが押されるか、チェックマークがクリックされるまで、プログラムはユーザーの応答を待ちます。\n"
 "</p>"
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:7
@@ -387,13 +387,13 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
-msgstr "一番目の色が二番目の色に触れると真が通知されます"
+msgstr "1番目の色が2番目の色に触れると真が通知されます"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:11
 msgid ""
 "The first color is within the sprite, while the second is from the "
 "background or another sprite."
-msgstr "一番目の色はスプライトに含まれ、2番目の色は背景または別のスプライトの色です。"
+msgstr "1番目の色はスプライトに含まれ、2番目の色は背景または別のスプライトの色です。"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:20
 msgid ""
@@ -401,11 +401,11 @@ msgid ""
 "eye dropper to click on the color you want. The color will appear in the "
 "square."
 msgstr ""
-"色を選択するには、四角をクリックしてアイドロッパー（指先マーク）にします。アイドロッパーを使って好みの色をクリックしてください。四角にに色が表示されます。"
+"色を選択するには、四角をクリックしてアイドロッパー（指先マーク）にします。アイドロッパーを使って好みの色をクリックしてください。四角に色が表示されます。"
 
 #: templates/help/studio/tips/blocks/computefunction.html:8
 msgid "Computes a function"
-msgstr ""
+msgstr "関数計算します。"
 
 #: templates/help/studio/tips/blocks/computefunction.html:14
 msgid "Choose different functions from the drop-down menu."
@@ -538,7 +538,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:7
 msgid "Deletes one or all items from a list"
-msgstr "リストから1つまたはすべての項目を削除します。"
+msgstr "リストから1つまたはすべての要素を削除します。"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:11
 msgid ""
@@ -546,8 +546,9 @@ msgid ""
 "  number. Choosing \"last\" deletes the last item in the list. Choosing \"all\" deletes everything \n"
 "  from the list. Deleting decreases the length of the list.</p>"
 msgstr ""
-"<p>削除する項目は、プルダウンメニューから選択するか、数字を入力して指定してください。「最後」を選択すると、リストの最後の項目 が削除されます。「すべて」を選択すると、リストのすべての項目が削除されます。\n"
-"これらの削除によって、リストの長さは小さくなります。</p>"
+"<p>プルダウンメニューから選択するか、番号を入力して削除する要素を指定できます。\n"
+"”最後”を選択すると、リストの最後の項目が削除されます。\"すべて\"を選択すると、リストのすべての要素が削除されます。 \n"
+" 削除すると、リストの長さが短くなります。</p>"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:20
 #, python-format
@@ -775,7 +776,7 @@ msgstr "リストモニタをステージから隠す"
 
 #: templates/help/studio/tips/blocks/hide-variable.html:6
 msgid "Hides the variable monitor so it is not visible on the stage"
-msgstr "変数ステージモニターをステージから隠す"
+msgstr "ステージ上に表示されないように変数モニタを隠します。"
 
 #: templates/help/studio/tips/blocks/hide.html:8
 msgid "Makes sprite disappear from the Stage"
@@ -819,6 +820,11 @@ msgid ""
 "  \"last\" adds the item to the end of the list. The length of the list increases by 1.\n"
 "  "
 msgstr ""
+"\n"
+"  プルダウンメニューから選択するか、番号を入力することで、要素を挿入する場所を指定できます。\n"
+"  \"ランダム\"を選択すると、リスト内のランダムな場所に挿入されます。\n"
+"  \"最後\"を選択すると、リストの末尾に項目が追加されます。リストの長さが1増えます。\n"
+"  "
 
 #: templates/help/studio/tips/blocks/insert-list.html:21
 #, python-format
@@ -835,10 +841,23 @@ msgid ""
 "in the list.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"\n"
+"<p>\n"
+"リスト内で要素を追加する場所を指定できます。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/insert-scoreboard.png\" />は、要素を\n"
+"リストの指定した場所に追加します。<br/>\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/insert-greetings.png\" />は、要素をリストのランダムな場所に\n"
+"追加します。\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:7
 msgid "Reports the item at the specifed position in the list"
-msgstr ""
+msgstr "リスト内の指定された位置の要素が通知されます。"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:11
 msgid ""
@@ -846,6 +865,9 @@ msgid ""
 "  You can specify which item to report by choosing from the pull-down menu or typing \n"
 "  in a number. Choosing \"random\" reports a random item in the list.\n"
 msgstr ""
+"\n"
+"プルダウンメニューから選択するか、番号を入力して、通知する要素を指定することができます。 \n"
+"\"ランダム\"を選択すると、リスト内のランダムな要素が通知されます。\n"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:20
 #, python-format
@@ -894,6 +916,16 @@ msgid ""
 "<br><img src=\"%(STATIC_URL)s/images/help/length-mylist2.png\" /><br/>\n"
 "</p>\n"
 msgstr ""
+"<p>\n"
+"このブロックは、現在リスト内にあるアイテムの数を通知します。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/length-mylist.png\" /><br/>\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"通知される番号は、リストモニターの下に表示されている長さと\n"
+"同じです。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/length-mylist2.png\" /><br/>\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/length-of.html:7
 msgid "Reports the number of letters in a string"
@@ -913,7 +945,7 @@ msgstr "リストに特定の要素が含まれている時に真を返す"
 
 #: templates/help/studio/tips/blocks/list-contains.html:10
 msgid "The item must match exactly to report true."
-msgstr ""
+msgstr "真が通知されるためには、要素が正確に一致していなければなりません。"
 
 #: templates/help/studio/tips/blocks/list-contains.html:16
 #, python-format
@@ -923,16 +955,22 @@ msgid ""
 "item is in a list. If the item matches exactly, then it reports true. If not, it\n"
 "reports false. "
 msgstr ""
+"\n"
+"<img src=\"%(STATIC_URL)s/images/help/list-contains-thing.png\" />は、要素がリストにあるかどうかを報告します。\n"
+"要素が正確に一致しているなら、真が通知され、\n"
+"そうでなければ、偽が通知されます。"
 
 #: templates/help/studio/tips/blocks/list.html:7
 msgid "Reports all the items in the list"
-msgstr ""
+msgstr "リストのすべての要素が通知されます。"
 
 #: templates/help/studio/tips/blocks/list.html:10
 msgid ""
 "(The items are separated by \n"
 "spaces. However, if the items are individual letters or digits, spaces are omitted.) "
 msgstr ""
+"(要素はスペースで区切られています。 \n"
+"だし、要素が単一の文字または数字である場合、スペースは省略されます。) "
 
 #: templates/help/studio/tips/blocks/list.html:17
 #, python-format
@@ -1066,7 +1104,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/make-a-list.html:7
 msgid "Click to create and name a new list"
-msgstr ""
+msgstr "クリックして新しいリストを作り、名前を付けます。"
 
 #: templates/help/studio/tips/blocks/make-a-list.html:11
 msgid ""
@@ -1074,6 +1112,9 @@ msgid ""
 "the first time, the list blocks will appear. You can choose whether the list is for all \n"
 "sprites (global) or just for one sprite (local).\n"
 msgstr ""
+"リストを作成した初回だけ、リストブロックが表示されます。\n"
+"リストが、すべてのスプライト用か、ひとつのスプライト用（このスプライトのみ）\n"
+"のものか選べます。 \n"
 
 #: templates/help/studio/tips/blocks/make-a-list.html:17
 #, python-format
@@ -1082,6 +1123,9 @@ msgid ""
 "<br>You have the option to make the variable available to all sprites or to just the\n"
 "selected sprite. <br/>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/new-list.png\" />\n"
+"<br>変数をすべてのスプライトで使用可能かするか、選択中のスプライトにのみで使用可能にするか\n"
+"の選択肢があります。<br/>"
 
 #: templates/help/studio/tips/blocks/make-a-list.html:23
 #, python-format
@@ -1090,10 +1134,13 @@ msgid ""
 "Once you create a list, eight blocks will appear.\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/make-list-ex.png\" /><br/>\n"
 msgstr ""
+"\n"
+"リストを作成すると、8つのブロックが表示されます。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/make-list-ex.png\" /><br/>\n"
 
 #: templates/help/studio/tips/blocks/make-a-variable.html:7
 msgid "Click to create and name a new variable"
-msgstr ""
+msgstr "クリックして新しい変数を作り、名前を付けます。"
 
 #: templates/help/studio/tips/blocks/make-a-variable.html:17
 #, python-format
@@ -1108,10 +1155,12 @@ msgid ""
 "<p> When you make a variable, you can choose for it to be available to all sprites (global) or to just the\n"
 "selected sprite (local).\n"
 msgstr ""
+"\n"
+"<p>変数を作成する時、すべてのスプライト（すべてのスプライト用）か、選択中のスプライト（このスプライトのみ）にするかを選びます。\n"
 
 #: templates/help/studio/tips/blocks/mod.html:7
 msgid "Reports remainder from division of first number by second number"
-msgstr ""
+msgstr "1番目の数字を2番目の数字で割り算した余りが通知されます。"
 
 #: templates/help/studio/tips/blocks/mod.html:15
 #, python-format
@@ -1120,6 +1169,9 @@ msgid ""
 "two numbers. For example, <img src=\"%(STATIC_URL)s/images/help/mod-ex2.png\" /> is 5 (143 \n"
 "divided by 6 is 23, and the remainder is 5).\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/mod.png\" />は、2つの数字の割り算の余りを\n"
+"通知します。例: <img src=\"%(STATIC_URL)s/images/help/mod-ex2.png\" />は、5（143を\n"
+"6で割ると商が23、余り5）になります。 \n"
 
 #: templates/help/studio/tips/blocks/mouse-down.html:7
 msgid "Reports true if mouse button is pressed"
@@ -1197,7 +1249,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/multiply.html:7
 msgid "Multiplies two numbers"
-msgstr ""
+msgstr "2つの数値をかけ算します。"
 
 #: templates/help/studio/tips/blocks/next-costume.html:7
 #, python-format
@@ -1258,11 +1310,11 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/not.html:7
 msgid "Reports true if condition is false; reports false if condition is true"
-msgstr ""
+msgstr "条件が偽（満たされない）なら真が、条件が真なら偽が通知されます。"
 
 #: templates/help/studio/tips/blocks/or.html:7
 msgid "Reports true if either condition is true"
-msgstr ""
+msgstr "どちらかの条件が真であるなら真が通知されます。"
 
 #: templates/help/studio/tips/blocks/pendown.html:9
 msgid "Puts down sprite's pen, so the sprite will draw as it moves"
@@ -1282,7 +1334,7 @@ msgstr "動いても線を描かないよう、ペンを上げます。"
 
 #: templates/help/studio/tips/blocks/pick-random.html:7
 msgid "Picks a random integer within the specified range"
-msgstr ""
+msgstr "指定された範囲内の数字（整数）をランダムに選びます。"
 
 #: templates/help/studio/tips/blocks/pick-random.html:14
 #, python-format
@@ -1294,6 +1346,12 @@ msgid ""
 "<br>Click to have a sprite say a random number. Click again to get another random number.<br/>\n"
 "\n"
 msgstr ""
+"\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/pick-random-ex2.png\" />は、1から10の番号をランダムに選びます。<br/>\n"
+"\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/pick-random-ex3.png\" /><br/>\n"
+"<br>クリックしてランダムな数字をスプライトに言わせましょう。別のランダムな数字を得るにはもう一度クリックしてください。<br/>\n"
+"\n"
 
 #: templates/help/studio/tips/blocks/play_drum.html:8
 msgid "Plays a drum sound for a specified number of beats"
@@ -1340,6 +1398,8 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/playnote.png\"/>\n"
 "<h3>Plays a musical note for specified number of beats</h3>"
 msgstr ""
+" <img src=\"%(STATIC_URL)s/images/help/playnote.png\"/>\n"
+"<h3>指定した拍数の間、音符を鳴らします。</h3>"
 
 #: templates/help/studio/tips/blocks/playnote.html:17
 #, python-format
@@ -1353,6 +1413,14 @@ msgid ""
 "Use higher numbers for higher pitches\n"
 "</p>"
 msgstr ""
+"\n"
+"<p>\n"
+"０から127の数値を入力します、(60がミドルC（中央ハ）です。）\n"
+"<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/playnote_highlighted.png\" /> \n"
+"<br>\n"
+"音のピッチを高めるには、より大きな値を使います。\n"
+"</p>"
 
 #: templates/help/studio/tips/blocks/playnote.html:28
 #, python-format
@@ -1361,6 +1429,9 @@ msgid ""
 "The length of a beat can be set with <img src=\"%(STATIC_URL)s/images/help/set_tempo.png\" />.\n"
 "</p>\n"
 msgstr ""
+"<p>\n"
+"拍の長さは<img src=\"%(STATIC_URL)s/images/help/set_tempo.png\" />でセットできます。.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/playsound.html:7
 #, python-format
@@ -1496,7 +1567,7 @@ msgid ""
 "Checks to see if condition is false; if so, runs blocks inside and checks condition again. If condition is true, \n"
 "goes on to the blocks that follow."
 msgstr ""
-"条件が満たされていないか調べ、満たされていないならブロックを実行し、再び条件をチェックします。条件が真いなっていたら続くブロックに進みます。"
+"条件が満たされていないか調べ、満たされていないならブロックを実行し、再び条件をチェックします。条件が真になっていたら続くブロックに進みます。"
 
 #: templates/help/studio/tips/blocks/repeat.html:7
 msgid "Runs the blocks inside a specified number of times"
@@ -1504,7 +1575,7 @@ msgstr "ブロックを指定された回数分実行します。"
 
 #: templates/help/studio/tips/blocks/replace-list.html:7
 msgid "Replaces an item in the list with the specified value"
-msgstr ""
+msgstr "リスト内の要素を指定された値に置き換えます。"
 
 #: templates/help/studio/tips/blocks/replace-list.html:11
 msgid ""
@@ -1512,6 +1583,9 @@ msgid ""
 "  typing in a number. Choosing \"random\" replaces a random item in the list.  The length \n"
 "  of the list does not change."
 msgstr ""
+"プルダウンメニューから選択するか、番号を入力することで、置き換える要素を指定できます。\n"
+"\"ランダム\"を選択すると、リスト内のランダムなアイテムが置き換えられます。\n"
+"リストの長さは変わりません。"
 
 #: templates/help/studio/tips/blocks/replace-list.html:21
 #, python-format
@@ -1535,7 +1609,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/round.html:7
 msgid "Reports closest integer to a number"
-msgstr ""
+msgstr "数字に最も近い整数を通知します。（四捨五入された整数）"
 
 #: templates/help/studio/tips/blocks/round.html:14
 #, python-format
@@ -1593,7 +1667,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
-msgstr "Scratchが開始された日（2007年5月17日）からの日数を返す"
+msgstr "Scratchの開始日（2007年5月15日）からの日数を通知します。"
 
 #: templates/help/studio/tips/blocks/set-effect.html:9
 msgid "Sets the graphic effect of a sprite to a specific number"
@@ -1644,7 +1718,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/set-variable.html:7
 msgid "Sets the variable to specified value"
-msgstr ""
+msgstr "指定された値を変数にセットします。"
 
 #: templates/help/studio/tips/blocks/set-video-transparency.html:7
 msgid "Sets the video transparency"
@@ -1864,11 +1938,11 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/show-list.html:7
 msgid "Shows the list monitor on the stage"
-msgstr ""
+msgstr "ステージにリストモニターを表示します。"
 
 #: templates/help/studio/tips/blocks/show-variable.html:7
 msgid "Shows the variable monitor on the stage"
-msgstr ""
+msgstr "ステージに変数モニターを表示します。"
 
 #: templates/help/studio/tips/blocks/show.html:8
 msgid "Makes sprite appear on the Stage"
@@ -1894,7 +1968,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/square.html:7
 msgid "Reports result of selected function"
-msgstr ""
+msgstr "選択した関数の結果が通知されます。"
 
 #: templates/help/studio/tips/blocks/square.html:10
 msgid ""
@@ -1910,6 +1984,10 @@ msgid ""
 "<br>This block performs a mathematical function. Choose the math functions from the block's \n"
 "drop down menu.<br/>\n"
 msgstr ""
+"\n"
+"<img src=\"%(STATIC_URL)s/images/help/square-menu.png\" /> \n"
+"<br>このブロックは数学・三角関数を実行します。ブロックのドロップダウンメニューから数学・三角関数\n"
+"を選択します。 <br/>\n"
 
 #: templates/help/studio/tips/blocks/stamp.html:8
 msgid "Stamps the sprite's image onto the Stage"
@@ -1952,7 +2030,7 @@ msgstr "新しいサウンドを再生する前に他のサウンドを止めて
 
 #: templates/help/studio/tips/blocks/subtract.html:7
 msgid "Subtracts second number from first number"
-msgstr ""
+msgstr "1番目の数値から2番目の数値を引き算します。"
 
 #: templates/help/studio/tips/blocks/switch-backdrop-and-wait.html:7
 msgid "Switch to the specified backdrop and wait for its scripts to finish"
@@ -2123,7 +2201,7 @@ msgstr "ビデオカメラをオンにします。"
 
 #: templates/help/studio/tips/blocks/usedefine.html:7
 msgid "Runs the custom block"
-msgstr ""
+msgstr "カスタムブロックを実行します。"
 
 #: templates/help/studio/tips/blocks/usedefine.html:11
 #, python-format
@@ -2176,7 +2254,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/variable.html:7
 msgid "Reports value of the variable"
-msgstr ""
+msgstr "変数の値が通知されます。"
 
 #: templates/help/studio/tips/blocks/variable.html:14
 #, python-format
@@ -2328,7 +2406,7 @@ msgstr "指定されたキーが押されたらスクリプトを実行します
 
 #: templates/help/studio/tips/blocks/when-key-pressed.html:12
 msgid "Once the specified key is pressed, the script will run."
-msgstr ""
+msgstr "指定したキーを押すと、スクリプトが実行されます。"
 
 #: templates/help/studio/tips/blocks/when-loudness.html:7
 msgid ""
@@ -2379,7 +2457,7 @@ msgstr "スプライトがクリックされたら下のスクリプトを実行
 
 #: templates/help/studio/tips/blocks/x-position-sprite.html:7
 msgid "Reports a property or variable of another sprite"
-msgstr ""
+msgstr "他のスプライトのプロパティや変数（x座標、ｙ座標、向き等）を通知します。"
 
 #: templates/help/studio/tips/blocks/x-position-sprite.html:11
 #, python-format
@@ -2392,6 +2470,13 @@ msgid ""
 "  </p>\n"
 "  "
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex.png\"/> \n"
+" \n"
+"  <p>\n"
+"  ゴーストのx座標はGoboのx座標に設定されています。\n"
+"  <br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex2.png\"/><br/>\n"
+"  </p>\n"
+"  "
 
 #: templates/help/studio/tips/blocks/x-position-sprite.html:21
 #, python-format
@@ -2399,6 +2484,8 @@ msgid ""
 "Use this block to access various properties from other sprites and use that information in the current sprite's scripts.\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>\n"
 msgstr ""
+"このブロックを使用して、他のスプライトのさまざまなプロパティにアクセスし、現在のスプライトのスクリプトでその情報を使用しましょう。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/x-position-sprite-ex3.png\"/><br/>\n"
 
 #: templates/help/studio/tips/blocks/x-position.html:7
 msgid "Reports the <b>x</b> position of a sprite"
@@ -2767,8 +2854,7 @@ msgid ""
 "<p>To use <b>set direction</b>, you need WeDo motor(s) connected to your "
 "computer via a LEGO WeDo hub.</p>"
 msgstr ""
-"<p>「<b>set direction</b>」を使うには、LEGO "
-"WeDoハブ経由でコンピュータにWeDoのモーターを接続する必要があります。</p>"
+"<p><b>set direction</b>を使うには、LEGO WeDoハブ経由でコンピュータにWeDoのモーターを接続する必要があります。</p>"
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:7
 msgid ""
@@ -2803,8 +2889,7 @@ msgid ""
 "<p>To use <b>set power</b>, you need WeDo motor(s) or lights connected to "
 "your computer via a LEGO WeDo hub.</p>"
 msgstr ""
-"<p>「<b>set power</b>」を使うには、LEGO "
-"WeDoハブ経由でコンピュータに接続されたWeDoモーターまたはライトが必要です。</p>"
+"<p><b>~のパワーを~にする</b>を使うには、LEGO WeDoハブ経由でコンピュータに接続されたWeDoモーターまたはライトが必要です。</p>"
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:6
 msgid "Report the tilt (from 0 to 4) detected by the LEGO WeDo tilt sensor"
@@ -2817,7 +2902,7 @@ msgid ""
 "  <p><b>tilt</b> reports a value of 1-4 when the sensor is tilted, and 0 otherwise.</p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/wedo-tilt-ex1.png\">\n"
-"  <p><b>傾き</b>センサーが傾斜しているときは1〜4の値が、それ以外のときは0が通知されます。</p>"
+"  <p><b>チルト</b>センサーが傾斜しているときは1〜4の値が、それ以外のときは0が通知されます。</p>"
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:14
 #, python-format
@@ -2836,7 +2921,7 @@ msgstr ""
 msgid ""
 "<p>To use <b>tilt</b>, you need a tilt sensor connected to your computer via"
 " a LEGO WeDo hub.</p>"
-msgstr "<p>「<b>tilt</b>」を使うには、LEGO WeDoハブ経由でコンピュータに接続されたチルトセンサーが必要です。</p>"
+msgstr "<p><b>傾き(tilt)</b>を使うには、LEGO WeDoハブ経由でコンピュータに接続されたチルトセンサーが必要です。</p>"
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:7
 msgid "Turn motors or lights off."
@@ -2869,7 +2954,7 @@ msgid ""
 "<p>To use <b>turn off</b>, you need WeDo motor(s) or lights connected to "
 "your computer via a LEGO WeDo hub.</p>"
 msgstr ""
-"<p>「<b>オフにする</b>」を使うには、LEGO WeDoハブ経由でコンピュータに接続されたWeDoのモーターまたはライトが必要です。</p>"
+"<p><b>~をオフにする</b>を使うには、LEGO WeDoハブ経由でコンピュータに接続されたWeDoのモーターまたはライトが必要です。</p>"
 
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:7
 msgid "Turn motors or lights on for a specified period of time."
@@ -2902,7 +2987,7 @@ msgid ""
 "<p>To use <b>turn on for</b>, you need WeDo motor(s) or lights connected to "
 "your computer via a LEGO WeDo hub.</p>"
 msgstr ""
-"<p>「<b>オンにする</b>」を使うには、LEGO WeDoハブ経由でコンピュータに接続されたWeDoのモーターまたはライトが必要です。</p>"
+"<p><b>~オンにする</b>を使うには、LEGO WeDoハブ経由でコンピュータに接続されたWeDoのモーターまたはライトが必要です。</p>"
 
 #: templates/help/studio/tips/ext/wedo-turn-on.html:7
 msgid "Turn motors or lights on."
@@ -2927,7 +3012,7 @@ msgstr ""
 msgid ""
 "To use <b>turn on</b>, you need WeDo motor(s) or lights connected to your "
 "computer via a LEGO WeDo hub."
-msgstr "「<b>オンにする</b>」を使うには、LEGO WeDoハブ経由でコンピュータに接続されたWeDoのモーターまたはライトが必要です。"
+msgstr "<b>をオンにする</b>を使うには、LEGO WeDoハブ経由でコンピュータに接続されたWeDoのモーターまたはライトが必要です。"
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:7
 msgid ""
@@ -2952,14 +3037,14 @@ msgid ""
 " <p>The distance sensor detects the surrounding brightness to report distance, so you can actually use it to detect light and motion in addition to distance.</p>"
 msgstr ""
 "<img src=\"%(STATIC_URL)s/images/help/wedo-when-distance-dropdown.png\"/>\n"
-" <br>ドロップダウンメニューから<i>大きい</i>か<i>小さい</i>かの比較子を選択できます。<br/>\n"
+" <br>ドロップダウンメニューから<i>＞（大きい）</i>または<i>＜（小さい）</i>の比較子を選択できます。<br/>\n"
 " <p>距離に加えて光と動きを検出した値を実際に使っているので、距離センサーは周囲の明るさを検出し、距離を通知できます。</p>"
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:22
 msgid ""
 "<p>To use <b>when distance</b>, you need a distance sensor connected to your"
 " computer via a LEGO WeDo hub.</p>"
-msgstr "<p>「<b>距離が・・のとき</b>」を使うには、LEGO WeDoハブ経由でコンピュータに接続された距離センサーが必要です。</p>"
+msgstr "<p><b>距離が~のとき</b>を使うには、LEGO WeDoハブ経由でコンピュータに接続された距離センサーが必要です。</p>"
 
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:6
 msgid "Run a script when the tilt sensor changes position"
@@ -2986,7 +3071,7 @@ msgid ""
 "To use <b>when tilt</b>, you need a tilt sensor connected to your computer "
 "via a LEGO WeDo hub."
 msgstr ""
-"<p>「<b>when tilted</b>」を使うには、LEGO WeDoハブ経由でコンピュータに接続されたチルトセンサーが必要です。</p>"
+"<p><b>when tilted</b>を使うには、LEGO WeDoハブ経由でコンピュータに接続されたチルトセンサーが必要です。</p>"
 
 #: templates/help/studio/tips/ext/wedo1.html:6
 msgid "LEGO WeDo 1.0 Scratch Extension Setup"
@@ -3041,7 +3126,7 @@ msgstr "例"
 
 #: templates/help/studio/tips/ext/wedo2-distance.html:13
 msgid "Set the sprite's horizontal position to the value of the distance."
-msgstr ""
+msgstr "スプライトの水平位置を距離の値にセットします。"
 
 #: templates/help/studio/tips/ext/wedo2-distance.html:17
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:17
@@ -3094,7 +3179,7 @@ msgid ""
 "To use <b>set direction</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
 msgstr ""
-"「 <b>set direction</b>」を使用するには、LEGO WeDo2のハブ経由でコンピュータに接続されたLEGO "
+"<b>set direction</b>を使用するには、LEGO WeDo2のハブ経由でコンピュータに接続されたLEGO "
 "WeDo2のモーターが必要です。"
 
 #: templates/help/studio/tips/ext/wedo2-set-light-color-to.html:7
@@ -3111,14 +3196,14 @@ msgstr ""
 
 #: templates/help/studio/tips/ext/wedo2-set-light-color-to.html:18
 msgid "Numbers larger than 100 loop through the same color range."
-msgstr ""
+msgstr "100を超える数値を指定すると、同じ色の範囲が繰り返されます。"
 
 #: templates/help/studio/tips/ext/wedo2-set-light-color-to.html:22
 msgid ""
 "To use <b>set light color to</b>, you need a LEGO WeDo 2.0 hub connected "
 "(via Bluetooth) to your computer."
 msgstr ""
-"<p>「<b>Set light color to</b>」を使うには、LEGO "
+"<p><b>Set light color to</b>を使うには、LEGO "
 "WeDoハブをコンピュータに（Bluetoothで）接続する必要があります。</p>"
 
 #: templates/help/studio/tips/ext/wedo2-set-power.html:7
@@ -3150,7 +3235,7 @@ msgid ""
 "To use <b>set power</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
 msgstr ""
-"「<b>Set power</b>」を使うには、LEGO WeDo2ハブ経由でコンピュータに接続されたLEGO WeDo2モーターが必要です。"
+"<b>~のパワーを~にする</b>」を使うには、LEGO WeDo2ハブ経由でコンピュータに接続されたLEGO WeDo2モーターが必要です。"
 
 #: templates/help/studio/tips/ext/wedo2-turn-off.html:7
 msgid "Turn off a motor."
@@ -3175,7 +3260,7 @@ msgid ""
 "To use <b>turn off</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
 msgstr ""
-"「<b>オフにする</b>」を使うには、LEGO WeDo2のハブ経由でコンピューターに接続されたLEGO WeDo2のモーターが必要です。"
+"<b>~をオフにする</b>を使うには、LEGO WeDo2のハブ経由でコンピューターに接続されたLEGO WeDo2のモーターが必要です。"
 
 #: templates/help/studio/tips/ext/wedo2-turn-on-for-secs.html:7
 msgid "Turn a motor on for a specified number of seconds."
@@ -3202,7 +3287,7 @@ msgid ""
 "To use <b>turn on for</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
 msgstr ""
-"<p><b>・・をオンにする</b>を使うには、LEGO WeDo2のハブ経由でコンピュータに接続されたWeDo2のモーターが必要です。</p>"
+"<p><b>~を~秒オンにする</b>を使うには、LEGO WeDo2のハブ経由でコンピュータに接続されたWeDo2のモーターが必要です。</p>"
 
 #: templates/help/studio/tips/ext/wedo2-turn-on-for.html:7
 msgid "Turn motors on for a specified period of time."
@@ -3217,7 +3302,7 @@ msgstr "左右の矢印キーを押すと、指定のモーターを1秒間動�
 msgid ""
 "To use <b>turn on for</b>, you need a WeDo motor connected to your computer "
 "via a LEGO WeDo hub."
-msgstr "「<b>turn ...on for</b>」するには、LEGO WeDoハブ経由でコンピュータに接続されたWeDoモーターが必要です。"
+msgstr "<b>~を~秒オンにする</b>を使用するには、LEGO WeDoハブ経由でコンピュータに接続されたWeDoモーターが必要です。"
 
 #: templates/help/studio/tips/ext/wedo2-turn-on.html:7
 msgid "Turn on a motor."
@@ -3242,7 +3327,8 @@ msgstr ""
 msgid ""
 "To use <b>turn on</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
-msgstr "<p><b>オンにする</b>を使うには、LEGO WeDo2のハブ経由でコンピュータに接続されたWeDo2のモーターが必要です。</p>"
+msgstr ""
+"<p><b>~をオンにする</b>を使うには、LEGO WeDo2のハブ経由でコンピュータに接続されたWeDo2のモーターが必要です。</p>"
 
 #: templates/help/studio/tips/ext/wedo2.html:5
 msgid "About the LEGO WeDo 2.0 Extension"
@@ -4862,7 +4948,7 @@ msgstr "あなた自身のスクリプトを作ってみましょう。これら
 
 #: templates/help/studio/tips/howto/bdaycard9.html:27
 msgid "TRY DIFFERENT EFFECTS!"
-msgstr ""
+msgstr "他の効果を試してみよう！"
 
 #: templates/help/studio/tips/howto/bdaycard9.html:28
 msgid "Click on the Stage:"
@@ -4880,12 +4966,13 @@ msgstr "出来上がったカードを共有する用意ができましたか？
 msgid ""
 "Create an animated story that features bears and any other characters you "
 "choose."
-msgstr ""
+msgstr "クマや好みのキャラクター主演のアニメーションストーリーを作りましょう。"
 
 #: templates/help/studio/tips/howto/bearstory-intro.html:10
 msgid ""
 "//player.vimeo.com/video/144273929?title=0&amp;byline=0&amp;portrait=0;hd_off=0&"
 msgstr ""
+"//player.vimeo.com/video/144273929?title=0&amp;byline=0&amp;portrait=0;hd_off=0&"
 
 #: templates/help/studio/tips/howto/bearstory-intro.html:24
 #: templates/help/studio/tips/howto/get-started-intro.html:16
@@ -4953,7 +5040,7 @@ msgstr "スクリプトエリアに<span class=\"motioncolor\">~歩動かす</sp
 #: templates/help/studio/tips/howto/racegame2.html:14
 #: templates/help/studio/tips/howto/racegame2.html:19
 msgid "drag move block to Scripts area"
-msgstr ""
+msgstr "\"動く\"ブロックをスクリプトエリアにドラッグします。"
 
 #: templates/help/studio/tips/howto/bearstory1.html:24
 msgid "Then, click on that block to make the Bearstack move:"
@@ -4968,7 +5055,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory1.html:34
 msgid "Try pressing the space key on your keyboard."
-msgstr ""
+msgstr "キーボードのスペースキーを押してみてください。"
 
 #: templates/help/studio/tips/howto/bearstory1.html:38
 msgid ""
@@ -4978,7 +5065,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory1.html:40
 msgid "Now press that key to move."
-msgstr ""
+msgstr "今度はそのキーを押して移動してください。"
 
 #: templates/help/studio/tips/howto/bearstory1.html:41
 msgid "Next, choose a starting point"
@@ -4986,7 +5073,7 @@ msgstr "スタート地点の選択へ"
 
 #: templates/help/studio/tips/howto/bearstory2.html:7
 msgid "First, drag the bears to where you want them to start."
-msgstr ""
+msgstr "最初にクマを開始したい場所にドラッグします。"
 
 #: templates/help/studio/tips/howto/bearstory2.html:9
 msgid ""
@@ -4994,6 +5081,9 @@ msgid ""
 "\t\tThen, click the <span class=\"motioncolor\">Motion</span> category. \n"
 "\t"
 msgstr ""
+"\n"
+"\t\t次に<span class=\"motioncolor\">動き</span>カテゴリーをクリックしてください。 \n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory2.html:11
 msgid ""
@@ -5010,6 +5100,9 @@ msgid ""
 "\tClick the <span class=\"eventscolor\">Events</span> category.\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"eventscolor\">イベント</span>カテゴリーをクリックします。\n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory2.html:22
 #: templates/help/studio/tips/howto/bearstory7.html:92
@@ -12319,7 +12412,7 @@ msgid ""
 "In any project, click the <strong>More Blocks</strong> category and choose "
 "<strong>Add an Extension</strong>."
 msgstr ""
-"いかなるプロジェクトでも、<strong>その他のブロック</strong>カテゴリをクリックし、<strong>拡張機能の追加</strong>を選択します。"
+"あらゆるプロジェクトで、<strong>その他</strong>カテゴリをクリックし、<strong>拡張機能の追加</strong>を選択します。"
 
 #: templates/help/studio/tips/howto/wedo2mac-3.html:12
 #: templates/help/studio/tips/howto/wedo2win-5.html:13
