@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-22 09:59-0400\n"
+"POT-Creation-Date: 2017-07-20 08:00-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chris Garrity (ML) <chrisg@media.mit.edu>, 2016\n"
 "Language-Team: Norwegian Nynorsk (https://www.transifex.com/llk/teams/60938/nn/)\n"
@@ -1149,7 +1149,7 @@ msgstr "Lag"
 msgid "Explore"
 msgstr "Utforsk"
 
-#: templates/base.html:185
+#: templates/base.html:185 templates/base.html.py:340
 msgid "Tips"
 msgstr ""
 
@@ -1216,7 +1216,7 @@ msgstr ""
 " til?</a>"
 
 #: templates/base.html:319 templates/info/about.html:13
-#: templates/info/index.html:92 templates/mail/base.html:61
+#: templates/mail/base.html:61
 msgid "About Scratch"
 msgstr "Om Scratch"
 
@@ -1256,7 +1256,7 @@ msgstr "Retningslinjer for nettstaden"
 msgid "Discussion Forums"
 msgstr "Diskusjonsforum"
 
-#: templates/base.html:333 templates/info/index.html:113
+#: templates/base.html:333
 msgid "Scratch Wiki"
 msgstr "Scratch-wiki"
 
@@ -1267,10 +1267,6 @@ msgstr "Statistikk"
 #: templates/base.html:338 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "Hjelp"
-
-#: templates/base.html:340
-msgid "Help Page"
-msgstr "Hjelpeside"
 
 #: templates/base.html:341
 msgid "FAQ"
@@ -1286,50 +1282,54 @@ msgid "Contact Us"
 msgstr "Kontakt oss"
 
 #: templates/base.html:344
+msgid "Scratch Store"
+msgstr ""
+
+#: templates/base.html:345
 msgid "Donate"
 msgstr "Gje pengegåve"
 
-#: templates/base.html:348
+#: templates/base.html:349
 msgid "Legal"
 msgstr "Reglar og vilkår"
 
-#: templates/base.html:350
+#: templates/base.html:351
 msgid "Terms of Use"
 msgstr "Bruksvilkår"
 
-#: templates/base.html:351 templates/mail/base.html:60
+#: templates/base.html:352 templates/mail/base.html:60
 msgid "Privacy Policy"
 msgstr "Personvern"
 
-#: templates/base.html:352 templates/info/DMCA.html:10
+#: templates/base.html:353 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:356
+#: templates/base.html:357
 msgid "Scratch Family"
 msgstr "Scratch-familien"
 
-#: templates/base.html:358
+#: templates/base.html:359
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:359
+#: templates/base.html:360
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
-#: templates/base.html:360
+#: templates/base.html:361
 msgid "Scratch Day"
 msgstr "Scratch-dagen"
 
-#: templates/base.html:361
+#: templates/base.html:362
 msgid "Scratch Conference"
 msgstr "Scratch-konferanse"
 
-#: templates/base.html:362
+#: templates/base.html:363
 msgid "Scratch Foundation"
 msgstr "Scratch-stiftinga"
 
-#: templates/base.html:377
+#: templates/base.html:378
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
@@ -2476,14 +2476,11 @@ msgstr "Last opp CSV"
 #: templates/educators/includes/stuff/backbone-templates.html:754
 msgid ""
 "Upload a .csv file containing up to 50 student usernames and passwords. "
-"These accounts will be publicly visible, so do not choose usernames that "
-"contain personal identifiers, such as real names or schools. Please use the "
-"following format:"
+"These accounts will be publicly visible. Please do not choose usernames that"
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons. Please use the following format:"
 msgstr ""
-"Last opp ei .csv-fil med opptil 50 brukarnamn og passord for elevar. Desse "
-"kontoane vil vera synlege for alle, så unngå identifiserande informasjon i "
-"brukarnamnet, for eksempel namn på personar eller skular. Bruk dette "
-"formatet:"
 
 #: templates/educators/includes/stuff/backbone-templates.html:761
 msgid "Download example"
@@ -2559,10 +2556,10 @@ msgstr "Melde inn i ein klasse"
 #: templates/educators/register_student_modal.html:38
 msgid ""
 "These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools."
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons."
 msgstr ""
-"Desse kontoane vil vera synlege for alle, så unngå identifiserande "
-"informasjon i brukarnamnet, for eksempel namn på personar eller skular."
 
 #: templates/educators/registration/approval_email_message.html:7
 #: templates/educators/registration/approval_email_message.txt:2
@@ -3433,7 +3430,7 @@ msgstr ""
 msgid "Collaborating Organizations"
 msgstr "Samarbeidsorganisasjonar"
 
-#: templates/info/codingforall.html:95 templates/info/index.html:106
+#: templates/info/codingforall.html:95
 msgid "Resources"
 msgstr "Lærestoff"
 
@@ -3874,205 +3871,6 @@ msgstr ""
 "          I Brasil vert satsinga leia av <a href=\"http://programae.org.br\">Programaê</a>.\n"
 "          "
 
-#: templates/info/index.html:9
-msgid "Get Started with Scratch"
-msgstr "Kom i gang med Scratch"
-
-#: templates/info/index.html:16
-msgid "Try out the</br> step-by-step intro"
-msgstr "Kjapp og enkel<br /> innføring i Scratch"
-
-#: templates/info/index.html:25
-msgid "Explore these</br> starter projects"
-msgstr "Prøv desse<br /> nybyrjarprosjekta"
-
-#: templates/info/index.html:31
-msgid "Watch the Getting Started video"
-msgstr "Sjå ein video for nybyrjarar"
-
-#: templates/info/index.html:36
-msgid "Scratch Guides"
-msgstr "Rettleiingar"
-
-#: templates/info/index.html:38
-msgid "Here are some guides to help you learn Scratch:"
-msgstr "Her er nokre rettleiingar for å hjelpa deg å læra Scratch:"
-
-#: templates/info/index.html:45
-msgid "Getting Started Guide"
-msgstr "Innføring"
-
-#: templates/info/index.html:45
-msgid "English"
-msgstr "engelsk"
-
-#: templates/info/index.html:48
-msgid ""
-"This step-by-step guide (PDF) provides an easy introduction to Scratch."
-msgstr ""
-"Denne rettleiinga (PDF-format) viser deg korleis du kjem i gang med Scratch."
-
-#: templates/info/index.html:52
-#, python-format
-msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
-msgstr "Last ned <a href=\"%(enguide)s\">den engelske versjonen</a>."
-
-#: templates/info/index.html:59
-msgid "Scratch Cards"
-msgstr "Scratch-kort"
-
-#: templates/info/index.html:61
-msgid "Each of these cards shows something you can do in Scratch."
-msgstr "Kvart kort viser deg ein ny ting du kan få til i Scratch."
-
-#: templates/info/index.html:66 templates/info/videos.html:19
-msgid "Video Tutorials"
-msgstr "Instruksjonsvideoar"
-
-#: templates/info/index.html:68
-msgid ""
-"These videos include tips on using the paint editor, and introduce how to "
-"program games and animations in Scratch."
-msgstr ""
-"Videoane forklarer blant anna korleis du brukar teikneprogrammet i Scratch "
-"og korleis du lagar spel og animasjonar."
-
-#: templates/info/index.html:73
-msgid "Explore the Scratch Community"
-msgstr "Utforsk nettsamfunnet til Scratch"
-
-#: templates/info/index.html:76
-msgid ""
-"<a href=\"../explore\">Explore</a> projects and studios Scratchers are "
-"making"
-msgstr ""
-"<a href=\"../explore\">Utforsk</a> prosjekt og galleri som andre har laga."
-
-#: templates/info/index.html:77
-msgid "Search for projects about:"
-msgstr "Søk etter prosjekt om:"
-
-#: templates/info/index.html:82
-msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
-msgstr "<a href=\"/discuss/6/\">Presenter</a> deg sjølv på Scratch-forumet."
-
-#: templates/info/index.html:83
-#, python-format
-msgid ""
-"Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
-"any profile or studio to receive updates"
-msgstr ""
-"Trykk på <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> "
-"på ein brukarprofil eller i eit galleri for å abonnera på oppdateringar."
-
-#: templates/info/index.html:89
-msgid "What is Scratch?"
-msgstr "Kva er Scratch?"
-
-#: templates/info/index.html:93
-msgid "For <a href=\"/parents\">Parents</a>"
-msgstr "For <a href=\"/parents\">foreldre</a>"
-
-#: templates/info/index.html:94
-msgid "For <a href=\"/educators\">Educators</a>"
-msgstr "For <a href=\"/educators\">lærarar</a>"
-
-#: templates/info/index.html:97 templates/info/parents.html:87
-msgid "Questions?"
-msgstr "Spørsmål?"
-
-#: templates/info/index.html:99
-msgid ""
-"Browse for answers on: </br><a href=\"/info/faq\">Frequently Asked "
-"Questions</a>"
-msgstr ""
-"Kanskje finn du svaret her: <br /><a href=\"/info/faq\">Spørsmål og svar</a>"
-
-#: templates/info/index.html:101
-msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
-msgstr "Eller du kan du prøva <a href=\"/discuss\">forumet</a>:"
-
-#: templates/info/index.html:102
-msgid "- Questions about Scratch"
-msgstr "– Spørsmål om Scratch"
-
-#: templates/info/index.html:103
-msgid "- Help with Scripts"
-msgstr "– Hjelp med skript"
-
-#: templates/info/index.html:109
-msgid ""
-"An online community for educators using Scratch, with stories, discussions, "
-"and resources, such as the Scratch curriculum guide."
-msgstr ""
-"Eit nettsamfunn for lærarar som brukar Scratch, der du finn erfaringar, "
-"lærestoff og undervisningsplanar."
-
-#: templates/info/index.html:115
-msgid ""
-"The Scratch Wiki contains a wide variety of articles by Scratchers for "
-"Scratchers, including advanced topics and tutorials."
-msgstr ""
-"Scratch-wikien inneheld mange typar artiklar av og for scratcharar, blant "
-"anna rettleiingar og informasjon om avansert bruk av Scratch."
-
-#: templates/info/index.html:118
-msgid "Scratch 2 Offline Editor "
-msgstr "Scratch 2 for maskiner utan nettsamband "
-
-#: templates/info/index.html:120
-msgid "Download the Scratch 2 offline editor."
-msgstr "Last ned Scratch 2 for maskiner utan nettsamband."
-
-#: templates/info/index.html:122
-msgid "Scratch 1.4 Download"
-msgstr "Last ned Scratch 1.4"
-
-#: templates/info/index.html:124
-msgid "Links and information on the previous version of Scratch."
-msgstr "Nedlasting og informasjon om førre versjon av Scratch."
-
-#: templates/info/index.html:127
-msgid "Scratch Statistics"
-msgstr "Scratch-statistikk"
-
-#: templates/info/index.html:129
-msgid "Explore up-to-date statistics about the Scratch online community."
-msgstr "Sjå oppdatert statistikk over aktiviteten på Scratch-nettstaden."
-
-#: templates/info/index.html:132
-msgid ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Scratch"
-" and the Physical World</a>"
-msgstr ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Kopla"
-" Scratch til den fysiske verda</a>"
-
-#: templates/info/index.html:134
-#, python-format
-msgid ""
-"Connect your Scratch projects to the physical world with <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO"
-" WeDo</a>, or <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
-msgstr ""
-"Kopla Scratch-prosjekta til den fysiske verda med <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO"
-" WeDo</a> og <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
-
-#: templates/info/index.html:137
-msgid "Scratch Logo"
-msgstr "Scratch-logo"
-
-#: templates/info/index.html:139
-msgid "Access the Scratch logo and other media files."
-msgstr "Scratch-logoen og andre mediefiler."
-
 #: templates/info/layout/base.html:4 templates/info/layout/help_layout.html:7
 msgid "Scratch Help"
 msgstr "Scratch-hjelp"
@@ -4276,6 +4074,10 @@ msgid ""
 msgstr ""
 "Me gjev aldri ut personopplysningar om brukarane. Sjå <a "
 "href=\"/info/faq/#privacy\">personvernsida</a>."
+
+#: templates/info/parents.html:87
+msgid "Questions?"
+msgstr "Spørsmål?"
 
 #: templates/info/parents.html:90
 msgid ""
@@ -4762,6 +4564,10 @@ msgstr "Pizzakokk"
 #: templates/info/videos.html:4
 msgid "Scratch - Videos"
 msgstr "Scratch – videoar"
+
+#: templates/info/videos.html:19
+msgid "Video Tutorials"
+msgstr "Instruksjonsvideoar"
 
 #: templates/info/videos.html:26
 msgid "Getting Started with Scratch"

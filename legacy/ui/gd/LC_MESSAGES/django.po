@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-22 09:59-0400\n"
+"POT-Creation-Date: 2017-07-20 08:00-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: GunChleoc <fios@foramnagaidhlig.net>, 2016\n"
 "Language-Team: Gaelic, Scottish (https://www.transifex.com/llk/teams/60938/gd/)\n"
@@ -1171,7 +1171,7 @@ msgstr "Cruthaich"
 msgid "Explore"
 msgstr "Rùraich"
 
-#: templates/base.html:185
+#: templates/base.html:185 templates/base.html.py:340
 msgid "Tips"
 msgstr ""
 
@@ -1238,7 +1238,7 @@ msgstr ""
 "trioblaid agad?</a>"
 
 #: templates/base.html:319 templates/info/about.html:13
-#: templates/info/index.html:92 templates/mail/base.html:61
+#: templates/mail/base.html:61
 msgid "About Scratch"
 msgstr "Mu Scratch"
 
@@ -1278,7 +1278,7 @@ msgstr "Riaghailtean giùlain"
 msgid "Discussion Forums"
 msgstr "Bòrd-brath"
 
-#: templates/base.html:333 templates/info/index.html:113
+#: templates/base.html:333
 msgid "Scratch Wiki"
 msgstr "Uicidh Scratch"
 
@@ -1289,10 +1289,6 @@ msgstr "Stadastaireachd"
 #: templates/base.html:338 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "Taic"
-
-#: templates/base.html:340
-msgid "Help Page"
-msgstr "Duilleag na cobharach"
 
 #: templates/base.html:341
 msgid "FAQ"
@@ -1308,50 +1304,54 @@ msgid "Contact Us"
 msgstr "Cuir fios thugainn"
 
 #: templates/base.html:344
+msgid "Scratch Store"
+msgstr ""
+
+#: templates/base.html:345
 msgid "Donate"
 msgstr "Thoir tìodhlac dhuinn"
 
-#: templates/base.html:348
+#: templates/base.html:349
 msgid "Legal"
 msgstr "Nòtaichean laghail"
 
-#: templates/base.html:350
+#: templates/base.html:351
 msgid "Terms of Use"
 msgstr "Teirmichean a’ chleachdaidh"
 
-#: templates/base.html:351 templates/mail/base.html:60
+#: templates/base.html:352 templates/mail/base.html:60
 msgid "Privacy Policy"
 msgstr "Poileasaidh na prìobhaideachd"
 
-#: templates/base.html:352 templates/info/DMCA.html:10
+#: templates/base.html:353 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:356
+#: templates/base.html:357
 msgid "Scratch Family"
 msgstr "Teaghlach Scratch"
 
-#: templates/base.html:358
+#: templates/base.html:359
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:359
+#: templates/base.html:360
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
-#: templates/base.html:360
+#: templates/base.html:361
 msgid "Scratch Day"
 msgstr "Latha Scratch"
 
-#: templates/base.html:361
+#: templates/base.html:362
 msgid "Scratch Conference"
 msgstr "Co-labhairt Scratch"
 
-#: templates/base.html:362
+#: templates/base.html:363
 msgid "Scratch Foundation"
 msgstr "Fonndas Scratch"
 
-#: templates/base.html:377
+#: templates/base.html:378
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
@@ -2470,9 +2470,10 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:754
 msgid ""
 "Upload a .csv file containing up to 50 student usernames and passwords. "
-"These accounts will be publicly visible, so do not choose usernames that "
-"contain personal identifiers, such as real names or schools. Please use the "
-"following format:"
+"These accounts will be publicly visible. Please do not choose usernames that"
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons. Please use the following format:"
 msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:761
@@ -2550,7 +2551,9 @@ msgstr "Cuir ris a’ chlas"
 #: templates/educators/register_student_modal.html:38
 msgid ""
 "These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools."
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons."
 msgstr ""
 
 #: templates/educators/registration/approval_email_message.html:7
@@ -3391,7 +3394,7 @@ msgstr ""
 msgid "Collaborating Organizations"
 msgstr ""
 
-#: templates/info/codingforall.html:95 templates/info/index.html:106
+#: templates/info/codingforall.html:95
 msgid "Resources"
 msgstr "Goireasan"
 
@@ -3791,206 +3794,6 @@ msgid ""
 "          "
 msgstr ""
 
-#: templates/info/index.html:9
-msgid "Get Started with Scratch"
-msgstr "Toiseach tòiseachaidh le Scratch"
-
-#: templates/info/index.html:16
-msgid "Try out the</br> step-by-step intro"
-msgstr "Feuch an</br> treòir ceum air ceum"
-
-#: templates/info/index.html:25
-msgid "Explore these</br> starter projects"
-msgstr "Rùraich na</br>pròiseactan tòiseachaidh seo"
-
-#: templates/info/index.html:31
-msgid "Watch the Getting Started video"
-msgstr "Coimhead air video toiseach tòiseachaidh Scratch"
-
-#: templates/info/index.html:36
-msgid "Scratch Guides"
-msgstr "Treòirean Scratch"
-
-#: templates/info/index.html:38
-msgid "Here are some guides to help you learn Scratch:"
-msgstr "Seo treòirean a chuidicheas ach an ionnsaich thu Scratch:"
-
-#: templates/info/index.html:45
-msgid "Getting Started Guide"
-msgstr "Treòir toiseach tòiseachaidh"
-
-#: templates/info/index.html:45
-msgid "English"
-msgstr "Beurla"
-
-#: templates/info/index.html:48
-msgid ""
-"This step-by-step guide (PDF) provides an easy introduction to Scratch."
-msgstr ""
-"Bheir an treòir ceum air ceum (PDF) seo tòiseachadh furasta air Scratch "
-"dhut."
-
-#: templates/info/index.html:52
-#, python-format
-msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
-msgstr "Luchdaich a-nuas an <a href=\"%(enguide)s\">tionndadh sa Bheurla.</a>"
-
-#: templates/info/index.html:59
-msgid "Scratch Cards"
-msgstr "Cairtean Scratch"
-
-#: templates/info/index.html:61
-msgid "Each of these cards shows something you can do in Scratch."
-msgstr ""
-"Seallaidh gach cairt seo dhut rudeigin as urrainn dhut dèanamh le Scratch."
-
-#: templates/info/index.html:66 templates/info/videos.html:19
-msgid "Video Tutorials"
-msgstr "Oideachadh video"
-
-#: templates/info/index.html:68
-msgid ""
-"These videos include tips on using the paint editor, and introduce how to "
-"program games and animations in Scratch."
-msgstr ""
-"Am measg nan videothan seo, gheibh thu oidheaman air mar a chleachdas tu an "
-"deasaiche peanta agus air mar a nì thu prògramachadh air geamannan is "
-"beòthachaidhean ann an Scratch."
-
-#: templates/info/index.html:73
-msgid "Explore the Scratch Community"
-msgstr "Rùraich coimhearsnachd Scratch"
-
-#: templates/info/index.html:76
-msgid ""
-"<a href=\"../explore\">Explore</a> projects and studios Scratchers are "
-"making"
-msgstr ""
-"<a href=\"../explore\">Rùraich</a> na pròiseactan is stiùideothan a rinn "
-"Luchd-Scratch"
-
-#: templates/info/index.html:77
-msgid "Search for projects about:"
-msgstr "Lorg airson pròiseactan mu dhèidhinn:"
-
-#: templates/info/index.html:82
-msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
-msgstr "Innis dhuinn <a href=\"/discuss/6/\">cò thusa</a> air bòrd-brath Scratch"
-
-#: templates/info/index.html:83
-#, python-format
-msgid ""
-"Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
-"any profile or studio to receive updates"
-msgstr ""
-"Briog air <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> "
-"air pròifil no stiùideo sam bith gus naidheachdan fhaighinn"
-
-#: templates/info/index.html:89
-msgid "What is Scratch?"
-msgstr "Dè th’ ann an Scratch?"
-
-#: templates/info/index.html:93
-msgid "For <a href=\"/parents\">Parents</a>"
-msgstr "Do <a href=\"/parents\">phàrantan</a>"
-
-#: templates/info/index.html:94
-msgid "For <a href=\"/educators\">Educators</a>"
-msgstr "Don <a href=\"/educators\">luchd-foghlaim</a>"
-
-#: templates/info/index.html:97 templates/info/parents.html:87
-msgid "Questions?"
-msgstr "Ceist sam bith agad?"
-
-#: templates/info/index.html:99
-msgid ""
-"Browse for answers on: </br><a href=\"/info/faq\">Frequently Asked "
-"Questions</a>"
-msgstr ""
-
-#: templates/info/index.html:101
-msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
-msgstr "No tadhail air a’ <a href=\"/discuss\">bhòrd-bhrath</a>:"
-
-#: templates/info/index.html:102
-msgid "- Questions about Scratch"
-msgstr "- Ceistean mu Scratch"
-
-#: templates/info/index.html:103
-msgid "- Help with Scripts"
-msgstr "- Cobhair le sgriobtaichean"
-
-#: templates/info/index.html:109
-msgid ""
-"An online community for educators using Scratch, with stories, discussions, "
-"and resources, such as the Scratch curriculum guide."
-msgstr ""
-"Coimhearsnachd air loidhne airson luchd-foghlaim a chleachdas Scratch le "
-"sgeòil, deasbadan agus goireasan a leithid treòir clàr-teagaisg Scratch."
-
-#: templates/info/index.html:115
-msgid ""
-"The Scratch Wiki contains a wide variety of articles by Scratchers for "
-"Scratchers, including advanced topics and tutorials."
-msgstr ""
-"Ann an uicidh Scratch, gheibh thu roghainn farsaing de dh’aistidhean a "
-"chaidh a sgrìobhadh le Luchd-Scratch dhan Luchd-Scratch, a’ gabhail a-steach"
-" oideachadh is cuspairean adhartach."
-
-#: templates/info/index.html:118
-msgid "Scratch 2 Offline Editor "
-msgstr "Deasaiche far loidhne Scratch 2 "
-
-#: templates/info/index.html:120
-msgid "Download the Scratch 2 offline editor."
-msgstr "Luchdaich a-nuas deasaiche Scratch 2 far loidhne."
-
-#: templates/info/index.html:122
-msgid "Scratch 1.4 Download"
-msgstr "Luchdadh a-nuas Scratch 1.4"
-
-#: templates/info/index.html:124
-msgid "Links and information on the previous version of Scratch."
-msgstr "Ceanglaichean is fiosrachadh mun tionndadh roimhe de Scratch."
-
-#: templates/info/index.html:127
-msgid "Scratch Statistics"
-msgstr "Stadastaireachd Scratch"
-
-#: templates/info/index.html:129
-msgid "Explore up-to-date statistics about the Scratch online community."
-msgstr ""
-"Rùraich stadastaireachd mun choimhearsnachd Scratch a tha cho ùr ’s a "
-"ghabhas."
-
-#: templates/info/index.html:132
-msgid ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Scratch"
-" and the Physical World</a>"
-msgstr ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Scratch"
-" agus an saoghal fiosaigeach</a>"
-
-#: templates/info/index.html:134
-#, python-format
-msgid ""
-"Connect your Scratch projects to the physical world with <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO"
-" WeDo</a>, or <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
-msgstr ""
-
-#: templates/info/index.html:137
-msgid "Scratch Logo"
-msgstr "Suaicheantas Scratch"
-
-#: templates/info/index.html:139
-msgid "Access the Scratch logo and other media files."
-msgstr "Faigh suaicheantas Scratch agus faidhlichean meadhain eile."
-
 #: templates/info/layout/base.html:4 templates/info/layout/help_layout.html:7
 msgid "Scratch Help"
 msgstr "Cobhair le Scratch"
@@ -4182,6 +3985,10 @@ msgid ""
 "information, please see the <a href=\"/info/faq/#privacy\">Privacy "
 "Policy</a>."
 msgstr ""
+
+#: templates/info/parents.html:87
+msgid "Questions?"
+msgstr "Ceist sam bith agad?"
 
 #: templates/info/parents.html:90
 msgid ""
@@ -4668,6 +4475,10 @@ msgstr "Còcaire pizza"
 #: templates/info/videos.html:4
 msgid "Scratch - Videos"
 msgstr "Scratch - Videothan"
+
+#: templates/info/videos.html:19
+msgid "Video Tutorials"
+msgstr "Oideachadh video"
 
 #: templates/info/videos.html:26
 msgid "Getting Started with Scratch"

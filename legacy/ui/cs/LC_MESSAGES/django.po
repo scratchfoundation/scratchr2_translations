@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-22 09:59-0400\n"
+"POT-Creation-Date: 2017-07-20 08:00-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Dan Lessner <daniel.lessner@jsi.cz>, 2017\n"
 "Language-Team: Czech (https://www.transifex.com/llk/teams/60938/cs/)\n"
@@ -1152,7 +1152,7 @@ msgstr "Tvořit"
 msgid "Explore"
 msgstr "Prozkoumat"
 
-#: templates/base.html:185
+#: templates/base.html:185 templates/base.html.py:340
 msgid "Tips"
 msgstr ""
 
@@ -1218,7 +1218,7 @@ msgstr ""
 "povolení sdílení. <a href=\"%(faq_url)s#accounts\">Máš potíže?</a>"
 
 #: templates/base.html:319 templates/info/about.html:13
-#: templates/info/index.html:92 templates/mail/base.html:61
+#: templates/mail/base.html:61
 msgid "About Scratch"
 msgstr "O Scratchi"
 
@@ -1258,7 +1258,7 @@ msgstr "Pravidla společenství"
 msgid "Discussion Forums"
 msgstr "Diskuzní fóra"
 
-#: templates/base.html:333 templates/info/index.html:113
+#: templates/base.html:333
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
@@ -1269,10 +1269,6 @@ msgstr "Statistiky"
 #: templates/base.html:338 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "Podpora"
-
-#: templates/base.html:340
-msgid "Help Page"
-msgstr "Nápověda"
 
 #: templates/base.html:341
 msgid "FAQ"
@@ -1288,50 +1284,54 @@ msgid "Contact Us"
 msgstr "Kontaktujte nás"
 
 #: templates/base.html:344
+msgid "Scratch Store"
+msgstr ""
+
+#: templates/base.html:345
 msgid "Donate"
 msgstr "Sponzorovat"
 
-#: templates/base.html:348
+#: templates/base.html:349
 msgid "Legal"
 msgstr "Legální"
 
-#: templates/base.html:350
+#: templates/base.html:351
 msgid "Terms of Use"
 msgstr "Podmínky užití"
 
-#: templates/base.html:351 templates/mail/base.html:60
+#: templates/base.html:352 templates/mail/base.html:60
 msgid "Privacy Policy"
 msgstr "Politika soukromí"
 
-#: templates/base.html:352 templates/info/DMCA.html:10
+#: templates/base.html:353 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "Autorská práva"
 
-#: templates/base.html:356
+#: templates/base.html:357
 msgid "Scratch Family"
 msgstr "Rodina Scratch"
 
-#: templates/base.html:358
+#: templates/base.html:359
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:359
+#: templates/base.html:360
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
-#: templates/base.html:360
+#: templates/base.html:361
 msgid "Scratch Day"
 msgstr "Den Scratch"
 
-#: templates/base.html:361
+#: templates/base.html:362
 msgid "Scratch Conference"
 msgstr "Konference Scratch"
 
-#: templates/base.html:362
+#: templates/base.html:363
 msgid "Scratch Foundation"
 msgstr "Nadace Scratch"
 
-#: templates/base.html:377
+#: templates/base.html:378
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr ""
@@ -2474,14 +2474,11 @@ msgstr "Nahrání CSV souboru"
 #: templates/educators/includes/stuff/backbone-templates.html:754
 msgid ""
 "Upload a .csv file containing up to 50 student usernames and passwords. "
-"These accounts will be publicly visible, so do not choose usernames that "
-"contain personal identifiers, such as real names or schools. Please use the "
-"following format:"
+"These accounts will be publicly visible. Please do not choose usernames that"
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons. Please use the following format:"
 msgstr ""
-"Nahrajte .csv soubor obsahující až 50 studentských uživatelských jmen a "
-"hesel. Tyto účty budou veřejně viditelné, takže nevybírejte uživatelská "
-"jména obsahující osobní identifikátory jako skutečná jména nebo školy. "
-"Používejte následující formát:"
 
 #: templates/educators/includes/stuff/backbone-templates.html:761
 msgid "Download example"
@@ -2557,10 +2554,10 @@ msgstr "Přidat do třídy"
 #: templates/educators/register_student_modal.html:38
 msgid ""
 "These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools."
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons."
 msgstr ""
-"Tyto účty budou veřejně viditelné. Prosím nevolte uživatelská jména, která "
-"obsahují osobní identifikátory, jako jsou skutečná jména nebo školy. "
 
 #: templates/educators/registration/approval_email_message.html:7
 #: templates/educators/registration/approval_email_message.txt:2
@@ -3435,7 +3432,7 @@ msgstr ""
 msgid "Collaborating Organizations"
 msgstr "Spolupracující organizace"
 
-#: templates/info/codingforall.html:95 templates/info/index.html:106
+#: templates/info/codingforall.html:95
 msgid "Resources"
 msgstr "Zdroje"
 
@@ -3881,207 +3878,6 @@ msgstr ""
 "          V Brazílii je tato iniciativa propagovaná od <a href=\"http://programae.org.br\">Programa&ecirc;</a>.\n"
 "          "
 
-#: templates/info/index.html:9
-msgid "Get Started with Scratch"
-msgstr "Začínáme se Scratchem"
-
-#: templates/info/index.html:16
-msgid "Try out the</br> step-by-step intro"
-msgstr "Vyzkoušej</br> úvod krok-za-krokem"
-
-#: templates/info/index.html:25
-msgid "Explore these</br> starter projects"
-msgstr "Vyzkoušej tyto</br> počáteční projekty"
-
-#: templates/info/index.html:31
-msgid "Watch the Getting Started video"
-msgstr "Shlédni video Začínáme"
-
-#: templates/info/index.html:36
-msgid "Scratch Guides"
-msgstr "Scratch průvodci"
-
-#: templates/info/index.html:38
-msgid "Here are some guides to help you learn Scratch:"
-msgstr "Zde je několik rad které ti pomohou naučit se Scratch:"
-
-#: templates/info/index.html:45
-msgid "Getting Started Guide"
-msgstr "Příručka začátečníka"
-
-#: templates/info/index.html:45
-msgid "English"
-msgstr "Anglicky"
-
-#: templates/info/index.html:48
-msgid ""
-"This step-by-step guide (PDF) provides an easy introduction to Scratch."
-msgstr ""
-"Tato příručka krok-za-krokem (PDF) poskytuje jednoduchý úvod do Scratche."
-
-#: templates/info/index.html:52
-#, python-format
-msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
-msgstr "Stažení <a href=\"%(enguide)s\">anglické verze.</a>"
-
-#: templates/info/index.html:59
-msgid "Scratch Cards"
-msgstr "Scratch karty"
-
-#: templates/info/index.html:61
-msgid "Each of these cards shows something you can do in Scratch."
-msgstr "Každá z těchto karet ukazuje něco, co můžeš dělat ve Scratchi."
-
-#: templates/info/index.html:66 templates/info/videos.html:19
-msgid "Video Tutorials"
-msgstr "Video návody"
-
-#: templates/info/index.html:68
-msgid ""
-"These videos include tips on using the paint editor, and introduce how to "
-"program games and animations in Scratch."
-msgstr ""
-"Tato videa obsahují tipy pro používání editoru kreslení a úvod jak ve "
-"Scratchi programovat hry a animace."
-
-#: templates/info/index.html:73
-msgid "Explore the Scratch Community"
-msgstr "Prozkoumat Scratch komunitu"
-
-#: templates/info/index.html:76
-msgid ""
-"<a href=\"../explore\">Explore</a> projects and studios Scratchers are "
-"making"
-msgstr ""
-"<a href=\"../explore\">Prozkoumat</a> projecty a studia vytvářená Scratch-"
-"ery"
-
-#: templates/info/index.html:77
-msgid "Search for projects about:"
-msgstr "Hledat projekty které:"
-
-#: templates/info/index.html:82
-msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
-msgstr "<a href=\"/discuss/6/\">Představit se</a> ve Scratch fórech"
-
-#: templates/info/index.html:83
-#, python-format
-msgid ""
-"Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
-"any profile or studio to receive updates"
-msgstr ""
-"Klikni na <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> "
-"v jakémkoli profilu nebo studiu pro přijímání aktualizací"
-
-#: templates/info/index.html:89
-msgid "What is Scratch?"
-msgstr "Co je Scratch?"
-
-#: templates/info/index.html:93
-msgid "For <a href=\"/parents\">Parents</a>"
-msgstr "Pro <a href=\"/parents\">rodiče</a>"
-
-#: templates/info/index.html:94
-msgid "For <a href=\"/educators\">Educators</a>"
-msgstr "Pro <a href=\"/educators\">lektory</a>"
-
-#: templates/info/index.html:97 templates/info/parents.html:87
-msgid "Questions?"
-msgstr "Otázky?"
-
-#: templates/info/index.html:99
-msgid ""
-"Browse for answers on: </br><a href=\"/info/faq\">Frequently Asked "
-"Questions</a>"
-msgstr ""
-"Prohlížej pro odpovědi na: </br><a href=\"/info/faq\">Často kladené "
-"otázky</a>"
-
-#: templates/info/index.html:101
-msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
-msgstr "Nebo navštiv <a href=\"/discuss\">diskuzní fóra</a>:"
-
-#: templates/info/index.html:102
-msgid "- Questions about Scratch"
-msgstr "- Dotazy ke Scratchi"
-
-#: templates/info/index.html:103
-msgid "- Help with Scripts"
-msgstr "- Pomoc se scénáři"
-
-#: templates/info/index.html:109
-msgid ""
-"An online community for educators using Scratch, with stories, discussions, "
-"and resources, such as the Scratch curriculum guide."
-msgstr ""
-"Online komunita pro učitele používající Scratch, s příběhy, diskuzemi a "
-"zdroji, jako jsou učební osnovy Scratch."
-
-#: templates/info/index.html:115
-msgid ""
-"The Scratch Wiki contains a wide variety of articles by Scratchers for "
-"Scratchers, including advanced topics and tutorials."
-msgstr ""
-"Scratch Wiki obsahuje široké spektrum článků od uživatelů Scratch pro "
-"uživatele, včetně pokročilých témat a návodů."
-
-#: templates/info/index.html:118
-msgid "Scratch 2 Offline Editor "
-msgstr "Scratch 2 offline editor "
-
-#: templates/info/index.html:120
-msgid "Download the Scratch 2 offline editor."
-msgstr "Stažení Scratch 2 offline editoru."
-
-#: templates/info/index.html:122
-msgid "Scratch 1.4 Download"
-msgstr "Stažení Scratch 1.4"
-
-#: templates/info/index.html:124
-msgid "Links and information on the previous version of Scratch."
-msgstr "Odkazy a informace o předchozích verzích Scratch."
-
-#: templates/info/index.html:127
-msgid "Scratch Statistics"
-msgstr "Scratch Statistiky"
-
-#: templates/info/index.html:129
-msgid "Explore up-to-date statistics about the Scratch online community."
-msgstr "Prozkoumej aktuální statistiky o Scratch online společenství"
-
-#: templates/info/index.html:132
-msgid ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Scratch"
-" and the Physical World</a>"
-msgstr ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Scratch"
-" a fyzický svět</a>"
-
-#: templates/info/index.html:134
-#, python-format
-msgid ""
-"Connect your Scratch projects to the physical world with <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO"
-" WeDo</a>, or <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
-msgstr ""
-"Připoj svůj Scratch projekt k fyzickému světu s <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO"
-" WeDo</a> nebo <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoardem</a>."
-
-#: templates/info/index.html:137
-msgid "Scratch Logo"
-msgstr "Scratch Logo"
-
-#: templates/info/index.html:139
-msgid "Access the Scratch logo and other media files."
-msgstr "Přístup ke Scratch logu a dalším mediálním souborům."
-
 #: templates/info/layout/base.html:4 templates/info/layout/help_layout.html:7
 msgid "Scratch Help"
 msgstr "Scratch pomoc"
@@ -4282,6 +4078,10 @@ msgstr ""
 "Informace o soukromém účtu nikomu neposkytujeme. Pro více informací si "
 "prohlédněte <a href=\"/info/faq/#privacy\">Zásady ochrany osobních "
 "údajů</a>. "
+
+#: templates/info/parents.html:87
+msgid "Questions?"
+msgstr "Otázky?"
 
 #: templates/info/parents.html:90
 msgid ""
@@ -4762,6 +4562,10 @@ msgstr "Šéfkuchař pizzy"
 #: templates/info/videos.html:4
 msgid "Scratch - Videos"
 msgstr "Scratch - Videa"
+
+#: templates/info/videos.html:19
+msgid "Video Tutorials"
+msgstr "Video návody"
 
 #: templates/info/videos.html:26
 msgid "Getting Started with Scratch"

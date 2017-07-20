@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-22 09:59-0400\n"
+"POT-Creation-Date: 2017-07-20 08:00-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: dnowba <d.now.ba@gmail.com>, 2016\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/llk/teams/60938/zh_TW/)\n"
@@ -1076,7 +1076,7 @@ msgstr "創造"
 msgid "Explore"
 msgstr "探索"
 
-#: templates/base.html:185
+#: templates/base.html:185 templates/base.html.py:340
 msgid "Tips"
 msgstr "技巧"
 
@@ -1142,7 +1142,7 @@ msgstr ""
 "href=\"%(faq_url)s#accounts\">有問題嗎？</a>"
 
 #: templates/base.html:319 templates/info/about.html:13
-#: templates/info/index.html:92 templates/mail/base.html:61
+#: templates/mail/base.html:61
 msgid "About Scratch"
 msgstr "關於 Scratch"
 
@@ -1182,7 +1182,7 @@ msgstr "社群規範"
 msgid "Discussion Forums"
 msgstr "討論區"
 
-#: templates/base.html:333 templates/info/index.html:113
+#: templates/base.html:333
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
@@ -1193,10 +1193,6 @@ msgstr "統計"
 #: templates/base.html:338 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "支援"
-
-#: templates/base.html:340
-msgid "Help Page"
-msgstr "幫助頁面"
 
 #: templates/base.html:341
 msgid "FAQ"
@@ -1212,50 +1208,54 @@ msgid "Contact Us"
 msgstr "聯絡我們"
 
 #: templates/base.html:344
+msgid "Scratch Store"
+msgstr ""
+
+#: templates/base.html:345
 msgid "Donate"
 msgstr "贊助"
 
-#: templates/base.html:348
+#: templates/base.html:349
 msgid "Legal"
 msgstr "法律"
 
-#: templates/base.html:350
+#: templates/base.html:351
 msgid "Terms of Use"
 msgstr "使用條款"
 
-#: templates/base.html:351 templates/mail/base.html:60
+#: templates/base.html:352 templates/mail/base.html:60
 msgid "Privacy Policy"
 msgstr "隱私權政策"
 
-#: templates/base.html:352 templates/info/DMCA.html:10
+#: templates/base.html:353 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "數位千禧年著作權法案"
 
-#: templates/base.html:356
+#: templates/base.html:357
 msgid "Scratch Family"
 msgstr "Scratch 家族"
 
-#: templates/base.html:358
+#: templates/base.html:359
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:359
+#: templates/base.html:360
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
-#: templates/base.html:360
+#: templates/base.html:361
 msgid "Scratch Day"
 msgstr "Scratch 日"
 
-#: templates/base.html:361
+#: templates/base.html:362
 msgid "Scratch Conference"
 msgstr "Scratch 會議"
 
-#: templates/base.html:362
+#: templates/base.html:363
 msgid "Scratch Foundation"
 msgstr "Scratch 基金會"
 
-#: templates/base.html:377
+#: templates/base.html:378
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr "Scratch 是麻省理工學院終生幼兒園團隊底下的一個計畫"
@@ -2353,12 +2353,11 @@ msgstr "上傳 CSV 檔"
 #: templates/educators/includes/stuff/backbone-templates.html:754
 msgid ""
 "Upload a .csv file containing up to 50 student usernames and passwords. "
-"These accounts will be publicly visible, so do not choose usernames that "
-"contain personal identifiers, such as real names or schools. Please use the "
-"following format:"
+"These accounts will be publicly visible. Please do not choose usernames that"
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons. Please use the following format:"
 msgstr ""
-"上傳學生清單，清單中最多 50 名學生，內容包含用戶名稱及密碼，格式為 "
-"CSV。用戶名稱會公開顯示，所以切記名稱中不要加上易被利用的資料，像是真實姓名、學校名稱…等。檔案範例如下："
 
 #: templates/educators/includes/stuff/backbone-templates.html:761
 msgid "Download example"
@@ -2432,8 +2431,10 @@ msgstr "新增班級"
 #: templates/educators/register_student_modal.html:38
 msgid ""
 "These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools."
-msgstr "這些資料會公開顯示，請不要使用包含容易被識別的方式當作用戶名稱，像是真實姓名或學校名稱。"
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons."
+msgstr ""
 
 #: templates/educators/registration/approval_email_message.html:7
 #: templates/educators/registration/approval_email_message.txt:2
@@ -3263,7 +3264,7 @@ msgstr "這個項目中所表達的任何意見、發現、結論或建議，與
 msgid "Collaborating Organizations"
 msgstr "合作組織"
 
-#: templates/info/codingforall.html:95 templates/info/index.html:106
+#: templates/info/codingforall.html:95
 msgid "Resources"
 msgstr "資源"
 
@@ -3674,195 +3675,6 @@ msgstr ""
 "          <strong>Hour of Code</strong>&#8482; 是由 <a href=\"http://code.org\">Code.org</a> 推行的一個國際活動，目的在將數百萬學生引進電腦科學和計算機程式領域。在巴西，該計畫受 <a href=\"http://programae.org.br\">Programa&ecirc;</a>大力推廣。\n"
 "          "
 
-#: templates/info/index.html:9
-msgid "Get Started with Scratch"
-msgstr "開始使用 Scratch"
-
-#: templates/info/index.html:16
-msgid "Try out the</br> step-by-step intro"
-msgstr "試一試</br> 基礎步驟教學"
-
-#: templates/info/index.html:25
-msgid "Explore these</br> starter projects"
-msgstr "探索這些</br>入門專案"
-
-#: templates/info/index.html:31
-msgid "Watch the Getting Started video"
-msgstr "觀看入門影片"
-
-#: templates/info/index.html:36
-msgid "Scratch Guides"
-msgstr "Scratch 指南"
-
-#: templates/info/index.html:38
-msgid "Here are some guides to help you learn Scratch:"
-msgstr "這裡有些指引能幫助您學習 Scratch："
-
-#: templates/info/index.html:45
-msgid "Getting Started Guide"
-msgstr "初學者指南"
-
-#: templates/info/index.html:45
-msgid "English"
-msgstr "English"
-
-#: templates/info/index.html:48
-msgid ""
-"This step-by-step guide (PDF) provides an easy introduction to Scratch."
-msgstr "基礎步驟指引（PDF）可以讓你對 Scratch 有初步的認識。"
-
-#: templates/info/index.html:52
-#, python-format
-msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
-msgstr "下載 <a href=\"%(enguide)s\">英文版本</a>。"
-
-#: templates/info/index.html:59
-msgid "Scratch Cards"
-msgstr "Scratch 卡片"
-
-#: templates/info/index.html:61
-msgid "Each of these cards shows something you can do in Scratch."
-msgstr "每一張卡片上都會寫出你可以在 Scratch 上怎麼做。"
-
-#: templates/info/index.html:66 templates/info/videos.html:19
-msgid "Video Tutorials"
-msgstr "影片教學"
-
-#: templates/info/index.html:68
-msgid ""
-"These videos include tips on using the paint editor, and introduce how to "
-"program games and animations in Scratch."
-msgstr "這些影片包含了在 Scratch 上使用繪圖編輯器的技巧，以及如何規劃設計遊戲和動畫等等的提示。"
-
-#: templates/info/index.html:73
-msgid "Explore the Scratch Community"
-msgstr "探索 Scratch 社群"
-
-#: templates/info/index.html:76
-msgid ""
-"<a href=\"../explore\">Explore</a> projects and studios Scratchers are "
-"making"
-msgstr "<a href=\"../explore\">探索</a> Scratch 上的人正在製作的專案和創作坊"
-
-#: templates/info/index.html:77
-msgid "Search for projects about:"
-msgstr "搜尋專案："
-
-#: templates/info/index.html:82
-msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
-msgstr "在 Scratch 論壇中<a href=\"/discuss/6/\">介紹</a>你自己"
-
-#: templates/info/index.html:83
-#, python-format
-msgid ""
-"Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
-"any profile or studio to receive updates"
-msgstr ""
-"在任何的個人資訊或者創作坊上點擊<img src=\"%(STATIC_URL)s/images/help/follow-button-"
-"small.png\"/>即可持續關注"
-
-#: templates/info/index.html:89
-msgid "What is Scratch?"
-msgstr "Scratch 是什麼？"
-
-#: templates/info/index.html:93
-msgid "For <a href=\"/parents\">Parents</a>"
-msgstr "致<a href=\"/parents\">家長</a>"
-
-#: templates/info/index.html:94
-msgid "For <a href=\"/educators\">Educators</a>"
-msgstr "致<a href=\"/educators\">教師</a>"
-
-#: templates/info/index.html:97 templates/info/parents.html:87
-msgid "Questions?"
-msgstr "有疑問嗎？"
-
-#: templates/info/index.html:99
-msgid ""
-"Browse for answers on: </br><a href=\"/info/faq\">Frequently Asked "
-"Questions</a>"
-msgstr "也許這裡可以找到解答：</br><a href=\"/info/faq\">常見問答</a>"
-
-#: templates/info/index.html:101
-msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
-msgstr "或是前往<a href=\"/discuss\">論壇</a>："
-
-#: templates/info/index.html:102
-msgid "- Questions about Scratch"
-msgstr "- 關於 Scratch 的問題"
-
-#: templates/info/index.html:103
-msgid "- Help with Scripts"
-msgstr "- 關於程式的幫助"
-
-#: templates/info/index.html:109
-msgid ""
-"An online community for educators using Scratch, with stories, discussions, "
-"and resources, such as the Scratch curriculum guide."
-msgstr "為了 Scratch 的教師而成立的線上社群，裡面有許多的故事、討論、以及資源，像是 Scratch 課程指引等等。"
-
-#: templates/info/index.html:115
-msgid ""
-"The Scratch Wiki contains a wide variety of articles by Scratchers for "
-"Scratchers, including advanced topics and tutorials."
-msgstr "Scratch Wiki 是 Scratchers 為使用者所編寫的百科，內容層面很廣，包含了進階的主題和教學。"
-
-#: templates/info/index.html:118
-msgid "Scratch 2 Offline Editor "
-msgstr "Scratch 2 離線編輯器"
-
-#: templates/info/index.html:120
-msgid "Download the Scratch 2 offline editor."
-msgstr "下載 Scratch 2 離線編輯器。"
-
-#: templates/info/index.html:122
-msgid "Scratch 1.4 Download"
-msgstr "Scratch 1.4 下載"
-
-#: templates/info/index.html:124
-msgid "Links and information on the previous version of Scratch."
-msgstr "關於 Scratch 舊版本的連結和資訊。"
-
-#: templates/info/index.html:127
-msgid "Scratch Statistics"
-msgstr "Scratch 統計"
-
-#: templates/info/index.html:129
-msgid "Explore up-to-date statistics about the Scratch online community."
-msgstr "探索 Scratch 線上社群的最新統計資料。"
-
-#: templates/info/index.html:132
-msgid ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Scratch"
-" and the Physical World</a>"
-msgstr ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Scratch"
-" 與真實世界</a>"
-
-#: templates/info/index.html:134
-#, python-format
-msgid ""
-"Connect your Scratch projects to the physical world with <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO"
-" WeDo</a>, or <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
-msgstr ""
-"用 <a href = \"http://www.makeymakey.com/\">MaKey MaKey</a>、 <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO"
-" WeDo</a>、<a href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a> "
-"將你的 Scratch 專案與真實世界串接在一起。"
-
-#: templates/info/index.html:137
-msgid "Scratch Logo"
-msgstr "Scratch Logo"
-
-#: templates/info/index.html:139
-msgid "Access the Scratch logo and other media files."
-msgstr "取得 Scratch Logo 和其他的媒體檔案。"
-
 #: templates/info/layout/base.html:4 templates/info/layout/help_layout.html:7
 msgid "Scratch Help"
 msgstr "Scratch 幫助"
@@ -4043,6 +3855,10 @@ msgid ""
 "information, please see the <a href=\"/info/faq/#privacy\">Privacy "
 "Policy</a>."
 msgstr "我們不會向任何人提供私人帳戶信息，若要進一步瞭解，請參見<a href=\"/info/faq/#privacy\">隱私政策</a>。"
+
+#: templates/info/parents.html:87
+msgid "Questions?"
+msgstr "有疑問嗎？"
 
 #: templates/info/parents.html:90
 msgid ""
@@ -4509,6 +4325,10 @@ msgstr "披薩師傅"
 #: templates/info/videos.html:4
 msgid "Scratch - Videos"
 msgstr "Scratch - 影片"
+
+#: templates/info/videos.html:19
+msgid "Video Tutorials"
+msgstr "影片教學"
 
 #: templates/info/videos.html:26
 msgid "Getting Started with Scratch"

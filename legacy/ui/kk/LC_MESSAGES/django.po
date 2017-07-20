@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-22 09:59-0400\n"
+"POT-Creation-Date: 2017-07-20 08:00-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Almas Kabyken <scratchkz135@gmail.com>, 2017\n"
 "Language-Team: Kazakh (https://www.transifex.com/llk/teams/60938/kk/)\n"
@@ -1152,7 +1152,7 @@ msgstr "Жасау"
 msgid "Explore"
 msgstr "Зерттеу"
 
-#: templates/base.html:185
+#: templates/base.html:185 templates/base.html.py:340
 msgid "Tips"
 msgstr ""
 
@@ -1219,7 +1219,7 @@ msgstr ""
 "Қандай да бір мәселелер?</a>"
 
 #: templates/base.html:319 templates/info/about.html:13
-#: templates/info/index.html:92 templates/mail/base.html:61
+#: templates/mail/base.html:61
 msgid "About Scratch"
 msgstr "Scratch туралы"
 
@@ -1259,7 +1259,7 @@ msgstr "Қоғамдық әдістемелік ұсыныстар"
 msgid "Discussion Forums"
 msgstr "Талқылау Форумдары"
 
-#: templates/base.html:333 templates/info/index.html:113
+#: templates/base.html:333
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
@@ -1270,10 +1270,6 @@ msgstr "Статистика"
 #: templates/base.html:338 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "Қолдау"
-
-#: templates/base.html:340
-msgid "Help Page"
-msgstr "Анықтама бет"
 
 #: templates/base.html:341
 msgid "FAQ"
@@ -1289,50 +1285,54 @@ msgid "Contact Us"
 msgstr "Бізбен байланысу"
 
 #: templates/base.html:344
+msgid "Scratch Store"
+msgstr ""
+
+#: templates/base.html:345
 msgid "Donate"
 msgstr "Қию"
 
-#: templates/base.html:348
+#: templates/base.html:349
 msgid "Legal"
 msgstr "Жария"
 
-#: templates/base.html:350
+#: templates/base.html:351
 msgid "Terms of Use"
 msgstr "Қолдану шарттары"
 
-#: templates/base.html:351 templates/mail/base.html:60
+#: templates/base.html:352 templates/mail/base.html:60
 msgid "Privacy Policy"
 msgstr "Құпиялылық саясаты"
 
-#: templates/base.html:352 templates/info/DMCA.html:10
+#: templates/base.html:353 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:356
+#: templates/base.html:357
 msgid "Scratch Family"
 msgstr "Scratch Отбасы"
 
-#: templates/base.html:358
+#: templates/base.html:359
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:359
+#: templates/base.html:360
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
-#: templates/base.html:360
+#: templates/base.html:361
 msgid "Scratch Day"
 msgstr "Scratch Күні"
 
-#: templates/base.html:361
+#: templates/base.html:362
 msgid "Scratch Conference"
 msgstr "Scratch Конференциясы"
 
-#: templates/base.html:362
+#: templates/base.html:363
 msgid "Scratch Foundation"
 msgstr "Scratch Қоры"
 
-#: templates/base.html:377
+#: templates/base.html:378
 msgid ""
 "Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab"
 msgstr "Скретч Lifelong Kindergarten Group-тің MIT Media Lab-тағы жобасы"
@@ -2486,14 +2486,11 @@ msgstr "CSV орнату"
 #: templates/educators/includes/stuff/backbone-templates.html:754
 msgid ""
 "Upload a .csv file containing up to 50 student usernames and passwords. "
-"These accounts will be publicly visible, so do not choose usernames that "
-"contain personal identifiers, such as real names or schools. Please use the "
-"following format:"
+"These accounts will be publicly visible. Please do not choose usernames that"
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons. Please use the following format:"
 msgstr ""
-"50 студент қолданушы есімдері мен құпия сөздерді қамтитын csv файлын орнату."
-" Бұл аккаунттар қоғамға көрінеді, сол себепті жеке бас ақпараты бар "
-"қолданушы есімін таңдамаңыз, мысалы, шын есімдер немесе мектептер. Өтінемін,"
-" берілген форматты қолданыңыз:"
 
 #: templates/educators/includes/stuff/backbone-templates.html:761
 msgid "Download example"
@@ -2569,10 +2566,10 @@ msgstr "Классқа қосу"
 #: templates/educators/register_student_modal.html:38
 msgid ""
 "These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools."
+" contain personal identifiers, such as real names or schools. Accounts with "
+"usernames containing personal identifiers will be permanently deleted for "
+"safety and privacy reasons."
 msgstr ""
-"Бұл аккаунттар қоғамда көрінеді. Өтінемін, жеке бас ақпаратты қолданушы "
-"есімін қолданбаңыз мысалы, шын есіміңіз немесе мектебіңіз."
 
 #: templates/educators/registration/approval_email_message.html:7
 #: templates/educators/registration/approval_email_message.txt:2
@@ -3476,7 +3473,7 @@ msgstr ""
 msgid "Collaborating Organizations"
 msgstr "Бірлесіп жұмыс істейтін ұйымдар"
 
-#: templates/info/codingforall.html:95 templates/info/index.html:106
+#: templates/info/codingforall.html:95
 msgid "Resources"
 msgstr "Ресурстар"
 
@@ -3925,209 +3922,6 @@ msgstr ""
 " <strong>Кодтың сағаты </strong>&#8482;бұл халықаралық қозғалыс <a href=\"http://code.org\">Code.org</a>арқылы миллиондаған студенттерді компьютер ғылымы мен компьютер бағдарламасының бір сағатымен таныстыру.\n"
 "Бразиялияда бастамаға ықпал жасады арқылы <a href=\"http://programae.org.br\">Programa&ecirc;</a>."
 
-#: templates/info/index.html:9
-msgid "Get Started with Scratch"
-msgstr "Скретчпен жұмысты бастаңыз"
-
-#: templates/info/index.html:16
-msgid "Try out the</br> step-by-step intro"
-msgstr "</br> қадамдық енуді тексеріңіз"
-
-#: templates/info/index.html:25
-msgid "Explore these</br> starter projects"
-msgstr "Осы </br> сөре жобаларды зерттеңіз"
-
-#: templates/info/index.html:31
-msgid "Watch the Getting Started video"
-msgstr "Жұмысты Бастау видеосын қараңыз"
-
-#: templates/info/index.html:36
-msgid "Scratch Guides"
-msgstr "Скретч Нұсқаулықтары"
-
-#: templates/info/index.html:38
-msgid "Here are some guides to help you learn Scratch:"
-msgstr "Мұнда Скретчті меңгеруге көмектесетін кейбір нұсқаулықтар бар: "
-
-#: templates/info/index.html:45
-msgid "Getting Started Guide"
-msgstr "Жұмысты Бастау Нұсқаулығы"
-
-#: templates/info/index.html:45
-msgid "English"
-msgstr "Ағылшын тілі"
-
-#: templates/info/index.html:48
-msgid ""
-"This step-by-step guide (PDF) provides an easy introduction to Scratch."
-msgstr ""
-"Бұл қадамдық нұсқаулық (PDF) Скретчке жеңіл кіріспені қамтамасыз етеді."
-
-#: templates/info/index.html:52
-#, python-format
-msgid "Download the <a href=\"%(enguide)s\">English version.</a>"
-msgstr "Жүктеу <a href=\"%(enguide)s\"> Ағылшын нұсқасы. </a>"
-
-#: templates/info/index.html:59
-msgid "Scratch Cards"
-msgstr "Скретч-карталары"
-
-#: templates/info/index.html:61
-msgid "Each of these cards shows something you can do in Scratch."
-msgstr ""
-"Осы карточкалардың кез келгені Скретчте не істей алатындғыңыз жайлы "
-"көрсетеді"
-
-#: templates/info/index.html:66 templates/info/videos.html:19
-msgid "Video Tutorials"
-msgstr "Видео Сабақтар"
-
-#: templates/info/index.html:68
-msgid ""
-"These videos include tips on using the paint editor, and introduce how to "
-"program games and animations in Scratch."
-msgstr ""
-"Бұл видеолар бояу редакторын қолдануға көмектеседі және Скретчте ойындар мен"
-" анимацияларды қалай бағдарламалау керек екеніне кіріспе жасайды."
-
-#: templates/info/index.html:73
-msgid "Explore the Scratch Community"
-msgstr "Скретч Қоғамдастығын зерттеңіз"
-
-#: templates/info/index.html:76
-msgid ""
-"<a href=\"../explore\">Explore</a> projects and studios Scratchers are "
-"making"
-msgstr ""
-"Скретчерлер жасап жүрген жобалар мен студияларды <a "
-"href=\"../explore\">зерттеңіз</a>"
-
-#: templates/info/index.html:77
-msgid "Search for projects about:"
-msgstr "Туралы жобаларды іздеңіз:"
-
-#: templates/info/index.html:82
-msgid "<a href=\"/discuss/6/\">Introduce</a> yourself in the Scratch forums"
-msgstr "Скретч форумдарында өзіңізді <a href=\"/discuss/6/\">таныстырыңыз</a>"
-
-#: templates/info/index.html:83
-#, python-format
-msgid ""
-"Click <img src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/> on "
-"any profile or studio to receive updates"
-msgstr ""
-"Жаңартылымдарды алу үшін кез келген профильдегі немесе студиядағы <img "
-"src=\"%(STATIC_URL)s/images/help/follow-button-small.png\"/>-ны басыңыз "
-
-#: templates/info/index.html:89
-msgid "What is Scratch?"
-msgstr "Scratch дегеніміз не?"
-
-#: templates/info/index.html:93
-msgid "For <a href=\"/parents\">Parents</a>"
-msgstr "Арнайы <a href=\"/parents\"> Ата-аналарға </a>"
-
-#: templates/info/index.html:94
-msgid "For <a href=\"/educators\">Educators</a>"
-msgstr "Арнайы <a href=\"/educators\"> Тәрбиешілерге </a>"
-
-#: templates/info/index.html:97 templates/info/parents.html:87
-msgid "Questions?"
-msgstr "Сұрақтар бар ма?"
-
-#: templates/info/index.html:99
-msgid ""
-"Browse for answers on: </br><a href=\"/info/faq\">Frequently Asked "
-"Questions</a>"
-msgstr ""
-"</br><a href=\"/info/faq\">Жиі Қойылатын Сұрақтарға</a> жауаптарды іздеңіз"
-
-#: templates/info/index.html:101
-msgid "Or visit the <a href=\"/discuss\">discussion forums</a>:"
-msgstr "Немесе <a href=\"/discuss\">талқылау форумдарына</a> кіріп шығыңыз:"
-
-#: templates/info/index.html:102
-msgid "- Questions about Scratch"
-msgstr "Scratch туралы сұрақтар"
-
-#: templates/info/index.html:103
-msgid "- Help with Scripts"
-msgstr "Скриптермен көмек"
-
-#: templates/info/index.html:109
-msgid ""
-"An online community for educators using Scratch, with stories, discussions, "
-"and resources, such as the Scratch curriculum guide."
-msgstr ""
-"Әңгімелер, талқылаулар және Скретч оқу жоспары нұсқаулығы секілді ресурстар "
-"бар, Скретчті қолданатын оқытушыларға арналған онлайн қоғамдастық."
-
-#: templates/info/index.html:115
-msgid ""
-"The Scratch Wiki contains a wide variety of articles by Scratchers for "
-"Scratchers, including advanced topics and tutorials."
-msgstr ""
-"Скретч Викиде алдыңғы қатарлы тақырыптар мен оқулықтарды қосқанда "
-"Скретчерлердің басқа Скретчерлерге арналған кең алуан түрлі мақалалары бар."
-
-#: templates/info/index.html:118
-msgid "Scratch 2 Offline Editor "
-msgstr "Скретч 2 Офлайн редактор"
-
-#: templates/info/index.html:120
-msgid "Download the Scratch 2 offline editor."
-msgstr "Скретч 2 офлайн редакторын жүктеу"
-
-#: templates/info/index.html:122
-msgid "Scratch 1.4 Download"
-msgstr "Скретч 1.4 жүктеу"
-
-#: templates/info/index.html:124
-msgid "Links and information on the previous version of Scratch."
-msgstr "Скретчтің өткен нұсқасы туралы сілтемелер және ақпарат"
-
-#: templates/info/index.html:127
-msgid "Scratch Statistics"
-msgstr "Скретч Статистикасы"
-
-#: templates/info/index.html:129
-msgid "Explore up-to-date statistics about the Scratch online community."
-msgstr "Скретч онлайн қоғамдастығы туралы ең соңғы статистикасын зерттеңіз."
-
-#: templates/info/index.html:132
-msgid ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Scratch"
-" and the Physical World</a>"
-msgstr ""
-"<a "
-"href=\"http://wiki.scratch.mit.edu/wiki/How_to_connect_to_the_physical_world\">Скретч"
-" және Физикалық Әлем</a>"
-
-#: templates/info/index.html:134
-#, python-format
-msgid ""
-"Connect your Scratch projects to the physical world with <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>, <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO"
-" WeDo</a>, or <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>."
-msgstr ""
-"Скретч жобаларыңызды физикалық әлемге <a href = "
-"\"http://www.makeymakey.com/\">MaKey MaKey</a>-мен, <a "
-"href=\"http://wiki.scratch.mit.edu/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO"
-" WeDo</a>-мен немесе <a "
-"href=\"https://www.sparkfun.com/products/10311\">PicoBoard</a>-мен жалғаңыз."
-"  "
-
-#: templates/info/index.html:137
-msgid "Scratch Logo"
-msgstr "Scratch-тың логотибы"
-
-#: templates/info/index.html:139
-msgid "Access the Scratch logo and other media files."
-msgstr "Скретч логотипіне және басқа медиа файлдарға қол жеткізіңіз."
-
 #: templates/info/layout/base.html:4 templates/info/layout/help_layout.html:7
 msgid "Scratch Help"
 msgstr "Скретч Көмек"
@@ -4354,6 +4148,10 @@ msgstr ""
 "Біз жеке бас аккаунтының ақпаратының барлығына қол жетімді қыла алмаймыз. "
 "Көбірек ақпарат алу үшін, көріңіз өтініш <a "
 "href=\"/info/faq/#privacy\">Құпиялылық саясаты</a>."
+
+#: templates/info/parents.html:87
+msgid "Questions?"
+msgstr "Сұрақтар бар ма?"
 
 #: templates/info/parents.html:90
 msgid ""
@@ -4845,6 +4643,10 @@ msgstr "Пиццаның шеф-повары"
 #: templates/info/videos.html:4
 msgid "Scratch - Videos"
 msgstr "Скретч - Видео"
+
+#: templates/info/videos.html:19
+msgid "Video Tutorials"
+msgstr "Видео Сабақтар"
 
 #: templates/info/videos.html:26
 msgid "Getting Started with Scratch"
