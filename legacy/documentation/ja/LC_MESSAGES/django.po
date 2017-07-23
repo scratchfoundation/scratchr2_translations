@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-20 08:00-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: fujix <fujiwara@ie.akita-u.ac.jp>, 2017\n"
+"Last-Translator: Bigbear Dobbs <drdobbsbigbear@gmail.com>, 2017\n"
 "Language-Team: Japanese (https://www.transifex.com/llk/teams/60938/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,7 +73,7 @@ msgid ""
 "Can't find the list blocks? You need to first make a list:\n"
 "<img src=\"%(STATIC_URL)s/images/help/make-a-list.png\" />"
 msgstr ""
-"リストブロックが見つからない場合は、リストを作る必要があります。\n"
+"リスト用のブロックが見つからない場合は、まずリストを作る必要があります。\n"
 "<img src=\"%(STATIC_URL)s/images/help/make-a-list.png\" />"
 
 #: templates/help/studio/tips/blocks/add.html:7
@@ -571,17 +571,17 @@ msgid ""
 msgstr ""
 "\n"
 "<p>\n"
-"削除する項目は、数字で指定することができます。たとえば次のようにします：\n"
+"削除したい要素の番号を指定できます。例:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/delete-2-mylist.png\" /><br/>\n"
 "</p>\n"
 "\n"
 "<p>\n"
-"リストの最後の項目を削除するときは、プルダウンメニューから「最後」を選択します：\n"
+"リストの最後の要素を削除するには、プルダウンメニューから\"最後\"を選択してください。:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/delete-last-mylist.png\" /><br/>\n"
 "</p>\n"
 "\n"
 "<p>\n"
-"リストのすべての項目を削除することもできます：\n"
+"You can also choose to delete everything in the list:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/delete-all-mylist.png\" /><br/>\n"
 "</p>\n"
 
@@ -880,6 +880,13 @@ msgid ""
 "sound, or broadcast.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"リストブロックは、リストの指定された場所にある要素の値を通知します。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/item-of-list-menu.png\" /><br/>\n"
+"リストブロックを他のブロック（例：~と言う、コスチュームを~にする、~の音を鳴らす、~を送る）\n"
+"に組み込むことができます。\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/join.html:7
 msgid "Concatenates (combines) strings"
@@ -992,6 +999,22 @@ msgid ""
 "<br><img src=\"%(STATIC_URL)s/images/help/delete-list.png\" <br/>\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"チェックボックス（ブロックの横）をクリックしてステージにモニターを表示させます。:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/list-ex2.png\" /><br/>\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/list.png\" />ブロックは、リスト中の要素をすべて通知します。\n"
+"単一の要素の通知には、このブロック: \n"
+"<img src=\"%(STATIC_URL)s/images/help/item-of-list.png\" />を使用してください。\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"リストの削除または名前を変更するには、リストを右クリックします。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/delete-list.png\" <br/>\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/loudness.html:7
 msgid ""
@@ -1018,6 +1041,8 @@ msgid ""
 "<h3>You can create a custom block with inputs, for example: <img "
 "src=\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
 msgstr ""
+"<h3>引数付きのカスタムブロックを作成できます。例: <img "
+"src=\"%(STATIC_URL)s/images/help/jump-10.png\"/></h3>\n"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:11
 #, python-format
@@ -1028,6 +1053,11 @@ msgid ""
 "<p>Click <strong>Options</strong> to add inputs. For example, add a number input:</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/jump-height-input.png\" /> \n"
 msgstr ""
+"\n"
+" \"ブロックを作る\"をクリックしてダイアログボックスを表示します。:<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/newblock.png\" /> \n"
+"<p><strong>オプション</strong>をクリックして引数を追加してください。 例えば、数値の引数を追加します。:</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/jump-height-input.png\" /> \n"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:20
 #, python-format
@@ -1039,12 +1069,20 @@ msgid ""
 "<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\"/></p>\n"
 "Note: The input blocks can <strong>only</strong> be used in the define script.\n"
 msgstr ""
+"\n"
+"<strong>定義</strong>ブロック中に引数が丸みをおびたうすい紫色のブロックとして表示されます。 \n"
+"引数ブロックのコピーを定義のスクリプトの中の他のブロックにドラッグして使います。\n"
+"</p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/make-block-input-jump-script.png\"/></p>\n"
+"注意: 引数ブロックは定義用のスクリプトの中<strong>だけ</strong>で使用可能です。\n"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:30
 msgid ""
 "\n"
 "See also: <a href=\"../make-a-block/\">Make a Block</a>\n"
 msgstr ""
+"\n"
+"参照: <a href=\"../make-a-block/\">ブロックを作る</a>\n"
 
 #: templates/help/studio/tips/blocks/make-a-block.html:9
 msgid "Creates a custom block"
@@ -1148,6 +1186,8 @@ msgid ""
 "Once you create a variable, five blocks will appear:</br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/variable-ex2.png\" /><p>\n"
 msgstr ""
+"変数を作成すると、5つのブロックが表示されます。:</br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/variable-ex2.png\" /><p>\n"
 
 #: templates/help/studio/tips/blocks/make-a-variable.html:23
 msgid ""
@@ -1593,6 +1633,8 @@ msgid ""
 "You can choose where in a list to put an item. For example:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/replace-list-ex2.png\" /><br/> "
 msgstr ""
+"リスト内で要素を置く場所を選択できます。例:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/replace-list-ex2.png\" /><br/> "
 
 #: templates/help/studio/tips/blocks/reset-timer.html:7
 msgid "Sets the timer to zero"
@@ -1620,6 +1662,11 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/round-5.1.png\" /> is 5, and \n"
 "<img src=\"%(STATIC_URL)s/images/help/round-5.6.png\" /> is 6.\n"
 msgstr ""
+"\n"
+"<img src=\"%(STATIC_URL)s/images/help/round.png\" />は、数字の四捨五入した値を通知します。\n"
+"自然数を最も近い整数に変換することを意味します。例: \n"
+"<img src=\"%(STATIC_URL)s/images/help/round-5.1.png\" />は、5となり、 \n"
+"<img src=\"%(STATIC_URL)s/images/help/round-5.6.png\" /> は、6となります。\n"
 
 #: templates/help/studio/tips/blocks/say-for-seconds.html:8
 msgid "Say words in a speech bubble for a number of seconds"
@@ -1667,7 +1714,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
-msgstr "Scratchの開始日（2007年5月15日）からの日数を通知します。"
+msgstr "Scratchの開始日(2007年5月15日)からの日数を通知します。"
 
 #: templates/help/studio/tips/blocks/set-effect.html:9
 msgid "Sets the graphic effect of a sprite to a specific number"
@@ -1685,9 +1732,9 @@ msgid ""
 "<br><img src=\"%(STATIC_URL)s/images/help/set-effect-ex.png\" /><br/></p>\n"
 msgstr ""
 "\n"
-"メニューから効果を選択します。:\n"
+"クリックしてメニューから効果を選択します。:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/set-effect-menu.png\" /><br/>\n"
-"<p>-100から100の数値を試してみてください。(効果のいくつかは0〜100の範囲です。)\n"
+"<p>-100から100の異なる数値(効果の一部は0〜100の範囲)を試してみてください。\n"
 "\n"
 "\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/set-effect-ex.png\" /><br/></p>\n"
@@ -1975,6 +2022,8 @@ msgid ""
 "The function options are: abs, sqrt, sin, cos, tan, asin, \n"
 "acos, atan, ln, log, e^, 10^, applied to the specified number."
 msgstr ""
+"関数の選択肢は、絶対値、平方根、sin、cos、tan、asin、\n"
+"acos、 atan、 ln、 log、 e^, 10^で、指定した数字に適用されます。 "
 
 #: templates/help/studio/tips/blocks/square.html:19
 #, python-format
@@ -2074,7 +2123,7 @@ msgstr "コスチュームを切り替えてスプライトの見た目を変え
 
 #: templates/help/studio/tips/blocks/switch-costume.html:12
 msgid "This script switches costumes to animate:"
-msgstr "このスクリプトはコスチュームを切り替えてアニメーションにしています。"
+msgstr "このスクリプトはコスチュームを切り替えてアニメ化しています。"
 
 #: templates/help/studio/tips/blocks/switch-costume.html:18
 #, python-format
@@ -2230,6 +2279,29 @@ msgid ""
 "</div>\n"
 "\n"
 msgstr ""
+"\n"
+"<p>\n"
+"カスタムブロックは、ブロックの名前と一致する<strong>定義</strong>スクリプトを呼び出すことによって実行されます。\n"
+"</p>\n"
+"<p>Custom blocks can make your scripts more organized and modular:\n"
+"</p>\n"
+"\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/usedefineex.png\" /> </p>\n"
+"\n"
+"If your block has an input, you can type in it:\n"
+"</p>\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/usedefineex1.png\"/></p>\n"
+"\n"
+"</div>\n"
+"\n"
+"<div class=\"example\">\n"
+"To edit the block, right-click (Ctrl+click on Mac) on the block and choose \"edit\" from the menu.\n"
+"</div>\n"
+"\n"
+"<div class=\"example\">\n"
+"See also: <a href=\"../make-a-block/\">Make a Block</a> and <a href=\"../define/\">Define Block</a> \n"
+"</div>\n"
+"\n"
 
 #: templates/help/studio/tips/blocks/username.html:7
 msgid "Reports username of the viewer"
@@ -2273,6 +2345,19 @@ msgid ""
 "<br><img src=\"%(STATIC_URL)s/images/help/delete-variable.png\" <br/>\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"変数の値を確認するにはブロックの横のチェックボックスをクリックしてください。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/check-variable.png\" /><br/>\n"
+"\n"
+"<p>\n"
+"右クリックで表示方法（普通の表示、大きく表示、スライダー、隠す）を変えられます。:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/variable-menu.png\" <br/>\n"
+"\n"
+"<p>\n"
+"変数を右クリックすると、変数を複写したり、削除したりできます。\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/delete-variable.png\" <br/>\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/video-motion.html:6
 #, python-format
@@ -2530,7 +2615,7 @@ msgstr ""
 #: templates/help/studio/tips/ext/ext1.html:14
 #: templates/help/studio/tips/ext/wedo1.html:20
 msgid "IMPORTANT: Install the Plug-In"
-msgstr ""
+msgstr "重要: プラグインのインストール"
 
 #: templates/help/studio/tips/ext/PicoBoard.html:17
 msgid ""
@@ -2544,12 +2629,12 @@ msgstr ""
 #: templates/help/studio/tips/ext/wedo1.html:27
 #: templates/help/studio/tips/ext/wedo2.html:17
 msgid "Blocks:"
-msgstr ""
+msgstr "ブロック: "
 
 #: templates/help/studio/tips/ext/PicoBoard.html:32
 #: templates/help/studio/tips/ext/wedo1.html:41
 msgid "Components:"
-msgstr ""
+msgstr "構成要素:"
 
 #: templates/help/studio/tips/ext/PicoBoard.html:33
 #, python-format
@@ -2566,6 +2651,8 @@ msgid ""
 "href=\"http://wiki.scratch.mit.edu/wiki/PicoBoard\" "
 "target=\"_blank\">PicoBoard</a> page on the Scratch wiki.</p>"
 msgstr ""
+"<p>詳細は、Scratch wikiの<a href=\"http://wiki.scratch.mit.edu/wiki/PicoBoard\" "
+"target=\"_blank\">PicoBoard</a>のページを参照してください。</p>"
 
 #: templates/help/studio/tips/ext/PicoBoard.html:42
 #: templates/help/studio/tips/ext/wedo1.html:56
@@ -2618,10 +2705,24 @@ msgid ""
 "</ul>\n"
 "<p>You will need administrator access on your computer to install the plugin.</p>\n"
 msgstr ""
+"<p>\n"
+"LEGO WeDo 1.0 やPicoboardをScratchで使うにはプラグインをインストールする必要があります。 \n"
+"Scratchに使用するコンピュータとWebブラウザ用のプラグインを選択してダウンロードしてください。 \n"
+"Chrome以外のブラウザを使用する場合は、次の2つのオプションのいずれかを選択します。:\n"
+"<ul>\n"
+"<li><a href=\"%(STATIC_URL)s/ext/ScratchDevicePlugin.msi\">Windows (その他のブラウザー)</a></li>\n"
+"<li><a href=\"%(STATIC_URL)s/ext/ScratchDevicePlugin.dmg\">Mac (その他のブラウザー)</a></li>\n"
+"</ul>\n"
+"<p>ブラウザのChromeを使用する場合、次の2つのソフトウェアをダウンロードしてインストールする必要があります。:</p>\n"
+"<ul>\n"
+"<li><a href=\"%(STATIC_URL)s/ext/ScratchDevicePluginChrome.msi\">Windows (Chrome)</a>プラグインヘルパー<a target=\"_blank\" href=\"https://chrome.google.com/webstore/detail/scratch-device-plugin-hel/clmabinlolakdafkoajkfjjengcdmnpm\">（こちら）</a></li>\n"
+"<li><a href=\"%(STATIC_URL)s/ext//ScratchDevicePluginChrome.dmg\">Mac (Chrome)</a>プラグインヘルパー<a target=\"_blank\" href=\"https://chrome.google.com/webstore/detail/scratch-device-plugin-hel/clmabinlolakdafkoajkfjjengcdmnpm\">（こちら）</a></li>\n"
+"</ul>\n"
+"<p>プラグインをインストールするには、あなたのコンピュータの管理者アクセス権が必要です。</p>\n"
 
 #: templates/help/studio/tips/ext/ext1.html:34
 msgid "Status: Hardware Devices"
-msgstr ""
+msgstr "ステータス: ハードウエア装置"
 
 #: templates/help/studio/tips/ext/ext1.html:36
 #, python-format
@@ -2666,6 +2767,16 @@ msgid ""
 "<li>Make sure the hardware is plugged in.</li>\n"
 "</ul>\n"
 msgstr ""
+"\n"
+"動作しない場合は、試してみましょう。:\n"
+"\n"
+"<ul>\n"
+"<li>お使いのコンピュータとブラウザ用の正しいプラグインファイルがインストールしていることを確認します。</li>\n"
+"<li>プラグインを実行できるようにブラウザの設定でアクセス権を設定していることを確認します。</li>\n"
+"<li>ブラウザを再起動します。</li>\n"
+"<li>別のタブまたはブラウザでScratchを開いていないことを確認します。</li>\n"
+"<li>ハードウェアが接続されていることを確認します。</li>\n"
+"</ul>\n"
 
 #: templates/help/studio/tips/ext/pico-sensor-button-pressed.html:6
 msgid ""
@@ -2848,6 +2959,15 @@ msgid ""
 " <img src=\"%(STATIC_URL)s/images/help/wedo-set-direction-dropdown2.png\"/>\n"
 " <p>You can select the direction from the second dropdown menu.</p>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-set-direction-dropdown1.png\"/>\n"
+" <br>最初のドロップダウンメニューからWeDoモーターを選択可能です。:<br/>\n"
+" <ul>\n"
+" \t<li>モーターがひとつだけの場合、\"motor\"プションを使います。WeDoハブに接続されている場所に関係なく、モーターの方向を設定します。</li>\n"
+" \t<li>2つのモーターを別々に制御したい場合、 一方を\"motor A\"と、もう一方を \"motor B\"と一緒に使用可能です。</li>\n"
+" \t<li>\"all motors\"はすべての接続済みのモーターの方向を設定します。</li>\n"
+" </ul>\n"
+" <img src=\"%(STATIC_URL)s/images/help/wedo-set-direction-dropdown2.png\"/>\n"
+" <p>2番目のドラップダウンメニューから方向を選択可能です。</p>"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:28
 msgid ""
@@ -2883,6 +3003,14 @@ msgid ""
 " \t<li>\"everything\" sets the power for all the connected motors and lights.</li>\n"
 " </ul>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-set-power-dropdown.png\"/>\n"
+" <br>ドロップダウンメニューからLEGO-WeDo対応デバイスを選択可能です。:<br/>\n"
+" <ul>\n"
+" \t<li>モーターが1つのみの場合、\"motor\"オプションを使用します。WeDoハブに接続されている場所に関係なくモーターのパワーを設定します。</li>\n"
+" \t<li>別々に制御したい2つのモーターを持っている場合、一方を\"motor A\"と、もう一方を \"motor B\"と一緒に使用可能です。</li>\n"
+" \t<li>\"lights\"は、WeDoハブに接続されている場所にかかわらず、ライトのパワーを設定します。</li>\n"
+" \t<li>\"everything\"は、接続されているすべてのモーターとライトのパワーを設定します。</li>\n"
+" </ul>"
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:27
 msgid ""
@@ -2948,6 +3076,14 @@ msgid ""
 " \t<li>\"everything\" turns off all the connected motors and lights.</li>\n"
 " </ul>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-turn-off-dropdown.png\"/>\n"
+" <br>ドロップダウンメニューからLEGO-WeDo対応デバイスを選択可能です。:<br/>\n"
+" <ul>\n"
+" \t<li>モーターが1つのみの場合、\"motor\"オプションを使用します。WeDoハブに接続されている場所に関係なくモーターをオンにします。</li>\n"
+" \t<li>別々に制御したい2つのモーターを持っている場合、一方を\"motor A\"と、もう一方を \"motor B\"と一緒に使用可能です。</li>\n"
+" \t<li>\"lights\"は、WeDoハブに接続されている場所にかかわらず、ライトをオンにします。</li>\n"
+" \t<li>\"everything\"は、接続されているすべてのモーターとライトのをオフにします。</li>\n"
+" </ul>"
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:27
 msgid ""
@@ -2981,6 +3117,14 @@ msgid ""
 " \t<li>\"everything\" turns on all the connected motors and lights.</li>\n"
 " </ul>"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/wedo-turn-on-for-dropdown.png\"/>\n"
+" <br>ドロップダウンメニューからLEGO-WeDo対応デバイスを選択可能です。:<br/>\n"
+" <ul>\n"
+" \t<li>モーターが1つのみの場合、\"motor\"オプションを使用します。WeDoハブに接続されている場所に関係なくモーターをオンにします。</li>\n"
+" \t<li>別々に制御したい2つのモーターを持っている場合、一方を\"motor A\"と、もう一方を \"motor B\"と一緒に使用可能です。</li>\n"
+" \t<li>\"lights\"は、WeDoハブに接続されている場所にかかわらず、ライトをオンにします。</li>\n"
+" \t<li>\"everything\"は、接続されているすべてのモーターとライトのをオフにします。</li>\n"
+" </ul>"
 
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:27
 msgid ""
@@ -3007,6 +3151,9 @@ msgid ""
 "separately, you can use 'motor A' and 'motor B'. Note: LEGO recommends only "
 "connecting one motor to the hub to limit power consumption."
 msgstr ""
+"ドロップダウンメニューからLEGO-WeDo対応デバイスを選択可能です。: "
+"’motor'は、WebDoハブのすべてのモーターをオンにします。別々に2つのモーターを制御するには、'motor A' と 'motor "
+"B'を使用します。注意: LEGOは、1台のモーターをハブに接続して消費電力を制限することを推奨しています。"
 
 #: templates/help/studio/tips/ext/wedo-turn-on.html:21
 msgid ""
@@ -3105,6 +3252,13 @@ msgid ""
 " \t\t<li>Tilt Sensor: It reports the direction it is tilted. The tilt sensor detects changes within five different positions: no tilt, right, left, up, and down.<p><img src=\"%(STATIC_URL)s/images/help/wedo-tilt-sensor.png\" /></p></li>\n"
 " \t</ul>"
 msgstr ""
+"<ul>\n"
+" \t\t<li>WeDoハブ: WeDoセンサーとモーターをコンピュータとの接続装置です。<p><img src=\"%(STATIC_URL)s/images/help/wedo-hub.png\" /></p></li>\n"
+" \t\t<li>モーター: いろんな方向に回転させたり、パワーを変えて動かすことをプログラム可能です。WeｂDoハブのぽーとに接続して。２つのモーターを別々に制御することができます。<p><img src=\"%(STATIC_URL)s/images/help/wedo-motor.png\" /></p></li>\n"
+" \t\t<li>ライト: ２つの明るいLEDライトで、WebDoハブに接続可能です。ライトはLEGO WeDoキットの一部ではなく、LEGO Powerの機能です。<p><img src=\"%(STATIC_URL)s/images/help/wedo-lights.png\" /></p></li>\n"
+" \t\t<li>距離センサー: 物体のデザインによりますが、15cm（およそ6インチ）の範囲内の物体を検知します。<p><img src=\"%(STATIC_URL)s/images/help/wedo-distance-sensor.png\" /></p></li>\n"
+" \t\t<li>チルトセンサー: 傾いている向きを通知します。チルトセンサーは５種類の状況変化を検知します。: 傾いていない、右、左、上、および下<p><img src=\"%(STATIC_URL)s/images/help/wedo-tilt-sensor.png\" /></p></li>\n"
+" \t</ul>"
 
 #: templates/help/studio/tips/ext/wedo1.html:52
 msgid ""
@@ -3112,6 +3266,9 @@ msgid ""
 "href=\"http://wiki.scratch.mit.edu/wiki/LEGO_WeDo_Construction_Set\" "
 "target=\"_blank\">LEGO WeDo</a> page on the Scratch wiki.</p>"
 msgstr ""
+"<p>詳細は、Scratch wiki.の<a "
+"href=\"http://wiki.scratch.mit.edu/wiki/LEGO_WeDo_Construction_Set\" "
+"target=\"_blank\">LEGO WeDo</a>のページを参照してください。</p>"
 
 #: templates/help/studio/tips/ext/wedo2-distance.html:11
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:11
@@ -3168,7 +3325,7 @@ msgstr ""
 msgid ""
 "Note: LEGO recommends only connecting one motor to the hub to limit power "
 "consumption."
-msgstr ""
+msgstr "注意: LEGOは、1台のモーターをハブに接続して消費電力を制限することを推奨しています。"
 
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:22
 msgid "You can select the direction from the second menu."
@@ -3193,6 +3350,8 @@ msgid ""
 "include: 3=orange, 7=yellow, 33=green, 50=teal, 66=blue, 80=purple, "
 "90=magenta."
 msgstr ""
+"スペースキーを押すと、ライトが黄色に変わります。 色の範囲は、1（orangish-red）から100（red）です。 "
+"他の色には次のものがあります。:3 =オレンジ、7 =黄色、33 =緑色、50 =青緑色、66 =青色、80 =紫色、90 =マゼンタ"
 
 #: templates/help/studio/tips/ext/wedo2-set-light-color-to.html:18
 msgid "Numbers larger than 100 loop through the same color range."
@@ -3254,6 +3413,9 @@ msgid ""
 "separately, you can use 'motor A' and 'motor B'. Note: LEGO recommends only "
 "connecting one motor to the hub to limit power consumption."
 msgstr ""
+"ドロップダウンメニューからLEGO-WeDoのモーターを選択可能です。: "
+"’motor'を選択し、WebDoハブのすべてのモーターをオンにします。別々に2つのモーターを制御するには、'motor A' と 'motor "
+"B'を使用します。注意: LEGOは、1台のモーターをハブに接続して消費電力を制限することを推奨しています。"
 
 #: templates/help/studio/tips/ext/wedo2-turn-off.html:23
 msgid ""
@@ -3349,6 +3511,8 @@ msgid ""
 "\n"
 "<strong>Important:</strong> To setup the WeDo 2.0, see the <strong><a href=\"../../howto/wedo2setup-intro/\">Extension Setup</a></strong> page.\n"
 msgstr ""
+"\n"
+"<strong>重要:</strong>WeDo 2.0をセットアップするには、<strong><a href=\"../../howto/wedo2setup-intro/\">拡張機能のセットアップ</a></strong> のページを参照してください。\n"
 
 #: templates/help/studio/tips/home.html:10
 msgid "Step-by-Step"
@@ -3379,7 +3543,7 @@ msgstr "バースディカードを作ろう"
 #: templates/help/studio/tips/home.html:36 tips_config.py:174
 #: tips_config.py:359
 msgid "Animate A Name"
-msgstr ""
+msgstr "名前を動かそう"
 
 #: templates/help/studio/tips/home.html:43 tips_config.py:99
 #: tips_config.py:329
@@ -4224,7 +4388,7 @@ msgstr "クリックして始める"
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:17
 #: templates/help/studio/tips/howto/wedo2win-intro.html:20
 msgid "List of Steps"
-msgstr ""
+msgstr "手順"
 
 #: templates/help/studio/tips/howto/bdaycard-intro.html:19
 #: templates/help/studio/tips/howto/bearstory-intro.html:24
@@ -4592,7 +4756,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bdaycard1.html:11
 msgid "Then choose the backdrop you want (such as ‘party’ or 'light'):"
-msgstr " 次に好みの背景を選びます。（‘party’ や'light'とか):"
+msgstr " 次に好みの背景（‘party’ や'light'のような)を選びます。:"
 
 #: templates/help/studio/tips/howto/bdaycard1.html:13
 msgid "You’ll see your backdrop appear on the Stage."
@@ -4684,7 +4848,7 @@ msgstr "プロジェクトに名前をつけよう。"
 #: templates/help/studio/tips/howto/fly10.html:14
 #: templates/help/studio/tips/howto/hide11.html:24
 msgid "Here's a video about sharing on Scratch:"
-msgstr "Scratch上の共有ついてのビデオはこちらから。:"
+msgstr "Scratchでの共有に関するビデオはこちら:"
 
 #: templates/help/studio/tips/howto/bdaycard10.html:16
 #: templates/help/studio/tips/howto/catch10.html:13
@@ -4818,7 +4982,7 @@ msgstr "ステージ上のスプライトをクリックして音楽が流れる
 
 #: templates/help/studio/tips/howto/bdaycard5.html:23
 msgid "Tip: You can choose a new sound from the Sound library."
-msgstr "ヒント：サウンドライブラリーから新しい音楽を選べます。"
+msgstr "ヒント：サウンドライブラリーから新しいサウンドを選ぶことが可能です。"
 
 #: templates/help/studio/tips/howto/bdaycard5.html:24
 #, python-format
@@ -5015,7 +5179,7 @@ msgstr "保存して共有する"
 
 #: templates/help/studio/tips/howto/bearstory1.html:7
 msgid "Click the Bearstack:"
-msgstr ""
+msgstr "Bearstack（馬乗りのクマ）をクリックします。"
 
 #: templates/help/studio/tips/howto/bearstory1.html:10
 msgid ""
@@ -5023,6 +5187,9 @@ msgid ""
 "\t\t<span class=\"reminder\">Tip: If you only see a cat, <a href=\"https://scratch.mit.edu/projects/85963324/?tip_bar=bearstory1#editor\" target=\"blank\">open the bears project</a>.</span>\n"
 "\t \t"
 msgstr ""
+"\n"
+"\t\t<span class=\"reminder\">ヒント: ネコだけを見たいなら、<a href=\"https://scratch.mit.edu/projects/85963324/?tip_bar=bearstory1#editor\" target=\"blank\">Bearstack Storyプロジェクト</a>を開いてください。</span>\n"
+"\t \t"
 
 #: templates/help/studio/tips/howto/bearstory1.html:21
 #: templates/help/studio/tips/howto/get-started-1.html:9
@@ -5044,7 +5211,7 @@ msgstr "\"動く\"ブロックをスクリプトエリアにドラッグしま�
 
 #: templates/help/studio/tips/howto/bearstory1.html:24
 msgid "Then, click on that block to make the Bearstack move:"
-msgstr ""
+msgstr "次にそのブロックをクリックしてBearstackを動かします。:"
 
 #: templates/help/studio/tips/howto/bearstory1.html:30
 msgid ""
@@ -5052,6 +5219,9 @@ msgid ""
 "\tClick the <span class=\"eventscolor\">Events</span> category. Drag out a <span class=\"eventscolor\">when this key pressed</span> block and snap it on top: \n"
 "\t"
 msgstr ""
+"\t\n"
+"\t<span class=\"eventscolor\">イベント</span>カテゴリーをクリックして<span class=\"eventscolor\">~キーが押されたとき</span>ブロックをドラッグし、一番上にくっつけます。: \n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory1.html:34
 msgid "Try pressing the space key on your keyboard."
@@ -5061,7 +5231,7 @@ msgstr "キーボードのスペースキーを押してみてください。"
 msgid ""
 "You can use the pull-down menu to select a different key (such as 'right "
 "arrow'):"
-msgstr ""
+msgstr "プルダウンメニューを使用して、別のキー（”右矢印”のような）を選択できます。:"
 
 #: templates/help/studio/tips/howto/bearstory1.html:40
 msgid "Now press that key to move."
@@ -5091,6 +5261,9 @@ msgid ""
 "\t\tDrag a <span class=\"motioncolor\">go to x y</span> block into the Scripts area: \n"
 "\t"
 msgstr ""
+"\n"
+"\t\t<span class=\"motioncolor\">x座標を～に、y座標を～にする</span>ブロックをスクリプトエリアにドラックします。\n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory2.html:19
 #: templates/help/studio/tips/howto/bearstory7.html:89
@@ -5120,7 +5293,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/bearstory2.html:28
 msgid ""
 "Now when you click the green flag, the bears will go to the starting point:"
-msgstr ""
+msgstr "グリーンフラッグをクリックしたら、クマは開始点に移動します。:"
 
 #: templates/help/studio/tips/howto/bearstory2.html:31
 msgid "Next, switch backdrops"
@@ -5142,6 +5315,9 @@ msgid ""
 "\t\tDrag out a <span class=\"lookscolor\">switch backdrop</span> block. Snap it below the <span class=\"motioncolor\">go to</span> block, and choose 'next backdrop':\n"
 "\t"
 msgstr ""
+"\n"
+"\t\t<span class=\"lookscolor\">背景を~にする</span>ブロックをドラックします。そのブロックを<span class=\"motioncolor\">x,y座標を~にする</span>ブロックの下にくっつけ、'次の背景'を選択します。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory3.html:18
 msgid ""
@@ -5151,11 +5327,11 @@ msgstr "さあ、Bearstackがステージの端に着いた時、背景を変え
 
 #: templates/help/studio/tips/howto/bearstory3.html:19
 msgid "Here's how you can build that script:"
-msgstr ""
+msgstr "スクリプトの作成方法はこちら："
 
 #: templates/help/studio/tips/howto/bearstory3.html:23
 msgid "Build your script to look like this: "
-msgstr ""
+msgstr "以下のようにスクリプトを作成します。:"
 
 #: templates/help/studio/tips/howto/bearstory3.html:26
 msgid ""
@@ -5163,6 +5339,9 @@ msgid ""
 "\t<span class=\"reminder\">Tip: Make sure the <span class=\"motioncolor\">go to</span> block snaps just below the <span class=\"lookscolor\">switch backdrop</span> block.</span>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"reminder\">ヒント: span class=\"motioncolor\">x,y座標を~にする</span>ブロックが <span class=\"lookscolor\">背景を~にする</span>ブロックの下にくっついているか確認しましょう。</span>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory3.html:30
 msgid ""
@@ -5233,6 +5412,9 @@ msgid ""
 "\tAdd a <span class=\"eventscolor\">when this key pressed</span> block on top and build this script: \n"
 "\t"
 msgstr ""
+"\t\n"
+"\t<span class=\"eventscolor\">~キーが押されたとき</span>ブロックを一番上に追加し、スクリプトを完成させます。: \n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory4.html:32
 msgid ""
@@ -5240,6 +5422,9 @@ msgid ""
 "\t <span class=\"reminder\">Tip: Choose the same key as in the first step so the Bearstack switches costumes as it moves.</span>\n"
 "\t "
 msgstr ""
+"\n"
+"\t <span class=\"reminder\">ヒント:最初の段階では、Bearstackが動くとコスチュームが変わるよう、同じキーを選びます。</span>\n"
+"\t "
 
 #: templates/help/studio/tips/howto/bearstory4.html:35
 msgid "Now press the key to try it."
@@ -5251,13 +5436,15 @@ msgstr "散歩のアニメ化するへ"
 
 #: templates/help/studio/tips/howto/bearstory5.html:8
 msgid "Add more costumes to animate the walk, like this:"
-msgstr ""
+msgstr "さらにコスチュームを追加して、このように歩きをアニメ化します。:"
 
 #: templates/help/studio/tips/howto/bearstory5.html:14
 msgid ""
 "\n"
 "\tTo make the bearstack move each time it changes costume, add a <span class=\"controlcolor\">repeat</span> and a <span class=\"controlcolor\">wait</span> block to the move script, like this:\n"
 msgstr ""
+"\n"
+"\tコスチュームを変えるたびに、Bearstackに動作させるよう、 <span class=\"controlcolor\">~回繰返す</span>ブロックと<span class=\"controlcolor\">~秒待つ</span>ブロックを動きのスクリプトに追加します。以下のとおり。:\n"
 
 #: templates/help/studio/tips/howto/bearstory5.html:18
 msgid "Type in the same value in the wait block as in the earlier step."
@@ -5286,7 +5473,7 @@ msgid ""
 "\t "
 msgstr ""
 "\n"
-"\tまた、<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-library.png\">をクリックして新しくスプライトを選択します。:</p>\n"
+"\tまた、<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-library.png\">をクリックして新しいスプライトを選択します。:</p>\n"
 "\t "
 
 #: templates/help/studio/tips/howto/bearstory6.html:19
@@ -5319,7 +5506,7 @@ msgstr "キーを押した時、キャラクターを登場させましょう。
 #: templates/help/studio/tips/howto/soccer.html:81
 #: templates/help/studio/tips/howto/story4.html:17
 msgid "Add a script like this:"
-msgstr "このようなスクリプトを追加します："
+msgstr "以下のようにスクリプトを追加します。"
 
 #: templates/help/studio/tips/howto/bearstory6.html:31
 msgid "Select which key you want to use."
@@ -5340,7 +5527,7 @@ msgstr "サムネイルをクリックしてBearstackを選んでください。
 
 #: templates/help/studio/tips/howto/bearstory6.html:39
 msgid "Now add a script for the Bearstack like this:"
-msgstr ""
+msgstr "さあ、Bearstack用のスクリプトを以下のように追加しよう。:"
 
 #: templates/help/studio/tips/howto/bearstory6.html:41
 msgid "Try pressing the key again."
@@ -5384,6 +5571,9 @@ msgid ""
 "\tOr, click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\"> icon to choose a new sound:\n"
 "\t"
 msgstr ""
+"\n"
+"\tあるいは、<img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">アイコンをクリックして、新しいサウンドを選びます。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory7.html:19
 #: templates/help/studio/tips/howto/hoops10.html:20
@@ -5402,7 +5592,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/hoops10.html:25
 #: templates/help/studio/tips/howto/racegame8.html:22
 msgid "Snap that sound block into the script, like this:"
-msgstr ""
+msgstr "スクリプトの中に\"音を鳴らす\"ブロックをこのように貼りつけてください。"
 
 #: templates/help/studio/tips/howto/bearstory7.html:26
 msgid "Press the key to try it out."
@@ -5419,7 +5609,7 @@ msgstr "背景が変わったときに、物や他のスプライトを表示さ
 
 #: templates/help/studio/tips/howto/bearstory7.html:32
 msgid "Choose a sprite, or draw your own:"
-msgstr "スプライトを選ぶか、自分で描きます："
+msgstr "スプライトを選択するか、スプライトを描いてください。:"
 
 #: templates/help/studio/tips/howto/bearstory7.html:34
 msgid ""
@@ -5435,12 +5625,12 @@ msgstr ""
 msgid ""
 "Add scripts to tell this sprite when you want it to show and when to hide, "
 "like this:"
-msgstr ""
+msgstr "スプライトを表示したいとき、隠したいときに、スプライトに指示するスクリプトを追加します。"
 
 #: templates/help/studio/tips/howto/bearstory7.html:39
 msgid ""
 "To make sure it's hiding at the beginning of the story, add this script:"
-msgstr ""
+msgstr "必ずお話しの始めに隠れているようにするために、このスクリプトを追加してください。:"
 
 #: templates/help/studio/tips/howto/bearstory7.html:42
 msgid "You can also make the bears respond."
@@ -5448,7 +5638,7 @@ msgstr "クマに返事をさせることもできます。"
 
 #: templates/help/studio/tips/howto/bearstory7.html:45
 msgid "Add a script for the Bearstack like this:"
-msgstr ""
+msgstr "このようなBearstack用のスクリプトを追加してください。:"
 
 #: templates/help/studio/tips/howto/bearstory7.html:47
 msgid "To see it work, keep moving the bears until they get to this backdrop."
@@ -5475,6 +5665,9 @@ msgid ""
 "\tTo choose a sound, click <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\tサウンドを選ぶには、<img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">をクリックしてください。\n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory7.html:62
 msgid "Choose music (such as 'dance celebrate' or 'dance magic')."
@@ -5516,6 +5709,9 @@ msgid ""
 "\tDrag out a <span class=\"soundcolor\">play sound until done</span> block:\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"soundcolor\">終わるまで~の音を鳴らす</span>ブロックをドラッグします。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/bearstory7.html:80
 #: templates/help/studio/tips/howto/dance4.html:23
@@ -5543,6 +5739,9 @@ msgid ""
 " \tDrag out a <span class=\"controlcolor\">repeat</span> block, and wrap it around:\n"
 " \t"
 msgstr ""
+"\n"
+" \t<span class=\"controlcolor\">~回繰り返す</span>ブロックをドラッグし、周りを包みこんでください。:\n"
+" \t"
 
 #: templates/help/studio/tips/howto/bearstory7.html:88
 #: templates/help/studio/tips/howto/dance4.html:35
@@ -5557,7 +5756,7 @@ msgstr "繰り返す回数を変更することができます。"
 #: templates/help/studio/tips/howto/odetocode3.html:52
 msgid ""
 "Play your music! Your script will start whenever you click the green flag:"
-msgstr ""
+msgstr "あなたの音楽を演奏しましょう！グリーンフラッグをクリックするたびにスクリプトがスタートします。:"
 
 #: templates/help/studio/tips/howto/bearstory7.html:98
 #: templates/help/studio/tips/howto/catch4.html:18
@@ -5659,7 +5858,7 @@ msgstr "メモと作品への貢献のため、以下をクリック:"
 #: templates/help/studio/tips/howto/valentine9.html:19
 #: templates/help/studio/tips/howto/vptip10.html:19
 msgid "Here's a video on how to edit the project page:"
-msgstr "プロジェクトページの編集方法のビデオはこちらです。"
+msgstr "プロジェクトページの編集方法のビデオはこちら:"
 
 #: templates/help/studio/tips/howto/bearstory8.html:31
 #: templates/help/studio/tips/howto/dance9.html:19
@@ -5709,10 +5908,12 @@ msgid ""
 "\n"
 "For more tips and ideas for projects you can create, click <a href=\"../../home/\"><img class=\"intext\" style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">All Tips</a>.\n"
 msgstr ""
+"\n"
+"創造できるプロジェクトに向けてのヒントやアイデアについては、<a href=\"../../home/\"><img class=\"intext\" style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">すべてのTips</a>クリックしてください。\n"
 
 #: templates/help/studio/tips/howto/bounce-around.html:11
 msgid "To make a sprite bounce around the Stage, try this script:"
-msgstr "スプライトをステージ上で弾ませるには、次のスクリプトを試してみましょう。:"
+msgstr "スプライトをステージ上でバウンドさせるには、次のスクリプトを試してみましょう。:"
 
 #: templates/help/studio/tips/howto/bounce-around.html:13
 msgid ""
@@ -5811,6 +6012,10 @@ msgid ""
 "\t<img src=\"%(STATIC_URL)s/images/help/select-cat-sprite.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>クリックしてネコを選択します。: </p>\n"
+"\t<img src=\"%(STATIC_URL)s/images/help/select-cat-sprite.png\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip1.html:14
 #, python-format
@@ -5821,6 +6026,11 @@ msgid ""
 "\t<img src=\"%(STATIC_URL)s/images/help/sayhappybirthday3.gif\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"lookscolor\">見た目</span>カテゴリーをクリックし、 \n"
+"\t次にスクリプトエリアに<span class=\"lookscolor\">Hello!と2秒言う</span>ブロックドラッグします。 :</p>\n"
+"\t<img src=\"%(STATIC_URL)s/images/help/sayhappybirthday3.gif\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip1.html:22
 #, python-format
@@ -5830,6 +6040,10 @@ msgid ""
 "\t<img src=\"%(STATIC_URL)s/images/help/sayhappybirthday2.gif\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>\"ハッピーバースディ！\"やあなた自身の言葉でお祝いを入力しよう。:</p>\n"
+"\t<img src=\"%(STATIC_URL)s/images/help/sayhappybirthday2.gif\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip1.html:29
 #, python-format
@@ -5891,6 +6105,14 @@ msgid ""
 "\t<p>Click the balloons in your card to see the color change.</p>\t\n"
 "\t"
 msgstr ""
+" \n"
+"\t<h4>Add effects!</h4>\n"
+"\t<p>ステージをクリックします。:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/stage-thumb.png\"></p>\n"
+"\t<p><span class=\"tab-ref\">スクリプト</span>タブをクリックして、このスクリプトを試してみましょう。:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/whenclickrepeatcolor.png\"></p>\n"
+"\t<p>カードの中の風船をクリックして、色が変わるのを見てみましょう。</p>\t\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip10.html:32
 msgid "Next, share your greeting!"
@@ -5916,6 +6138,9 @@ msgid ""
 "\t<p>Click <img style=\"margin-bottom:-17px\" src = \"%(STATIC_URL)s/images/help/12b-share.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p><img style=\"margin-bottom:-17px\" src = \"%(STATIC_URL)s/images/help/12b-share.png\">をクリックします。</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip11.html:20
 msgid ""
@@ -5991,6 +6216,13 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/create.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>新規プロジェクトの開始</h4>\n"
+"\t<p>ファイルをクリックして、次に新規を選択します。:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/file-new.png\"></p>\n"
+"\t<p>あるいは、Scratchウェブサイトから作るをクリックしてください。:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/create.png\"></p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip12.html:21
 #, python-format
@@ -6008,6 +6240,18 @@ msgid ""
 "\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>もっと詳しく知ろう！</h4>\n"
+"\t<p>ScratchビデオのGetting Startedを参照してください。:</a></p>\n"
+" <iframe src=\"//player.vimeo.com/video/80961102?title=0&amp;byline=0&amp;portrait=0\" width=\"291\" height=\"164\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
+"  </p>\n"
+"  \t<p>もっとアイディアが欲しいなら、<a href=\"../../home/\"><img class=\"intext\" style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">すべてのTips</a>をクリックしてください。</p>\n"
+"\n"
+"\t<br />\n"
+"\t\t<p align=\"center\"><img src=\"%(STATIC_URL)s/images/help/scratch-logo-white.png\"> </p>\n"
+"\t\t<a href=\"https://www.madewithcode.com/\" target=\"_blank\"><p id=\"made-with-code\" align=\"center\"><img src = \"%(STATIC_URL)s/images/help/made-with-code-logo.png\"></p></a>\n"
+"\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip2.html:6
 #, python-format
@@ -6018,6 +6262,11 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/flagsay2.gif\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p><span class=\"eventscolor\">イベント</span>カテゴリーをクリックします。</p>\n"
+"\t<p><span class=\"eventscolor\"><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\">がクリックされたとき</span>ブロックをドラッグし、以下のように一番上にくっつけます。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/flagsay2.gif\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip2.html:13
 #, python-format
@@ -6027,6 +6276,10 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/6c-green-flag.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>さあ、グリーンフラッグ<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\">をクリックして、カードで遊んでみましょう！:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/6c-green-flag.png\"></p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip2.html:17
 msgid "Next, add a party scene"
@@ -6044,6 +6297,10 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/int-new-backdrop.gif\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p><img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/landscape-icon.png\">アイコンをクリックします。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/int-new-backdrop.gif\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip3.html:14
 msgid ""
@@ -6051,6 +6308,9 @@ msgid ""
 "\t<p>Choose \"party\" or another backdrop:</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>\"party\"やその他の背景を選びましょう。:</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip3.html:22
 #, python-format
@@ -6060,6 +6320,10 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/partybackgroundcat.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>さあ、あなたのカードはこんな風に見えます。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/partybackgroundcat.png\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip3.html:27
 msgid "Next, add a cake to your card"
@@ -6073,6 +6337,10 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>ケーキを追加するには<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png\">アイコンをクリックします。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip4.html:14
 #, python-format
@@ -6110,6 +6378,10 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/cursor-tools-grow-shrink.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>ヒント: 拡大ツールや縮小ツールをクリックするとスプライトを拡大したり縮小したりできます。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/cursor-tools-grow-shrink.png\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip4.html:34
 msgid "Next, add music to your card!"
@@ -6152,6 +6424,10 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/sound-library-birthday.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>\"birthday\"か他のサウンドを選びます。:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/sound-library-birthday.png\"></p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip5.html:29
 #, python-format
@@ -6161,6 +6437,10 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/play-sound-birthday.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p><span class=\"tab-ref\">スクリト</span>タブを選択して、<span class=\"soundcolor\">音</span>カテゴリーをクリックします。<span class=\"soundcolor\">~の音を鳴らす</span>ブロック</p>をドラッグしてください。:\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/play-sound-birthday.png\"></p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip5.html:37
 #, python-format
@@ -6171,6 +6451,11 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/clickplaysound(3).gif\">\n"
 "\t"
 msgstr ""
+"\n"
+" \t<p>次に<span class=\"eventscolor\">このスプライトがクリックされたとき</span>ブロックをドラッグし、\n"
+"\t一番上にくっつけます。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/clickplaysound(3).gif\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip5.html:46
 msgid ""
@@ -6212,6 +6497,24 @@ msgid ""
 "\t\t<p>Make sure to select \"cake-a\" (lit candles) from the pull-down menu.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p><span class=\"tab-ref\">コスチューム</span>タブ</p>をクリックしてください。\n"
+"\t<p>ケーキ用のコスチュームが2つ表示されます。:</p>\n"
+"\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/cake-candles.png\">\n"
+"</div>\t\n"
+"\n"
+"<div class=\"steps\">\t\n"
+"\t\t<p>Click the <span class=\"tab-ref\">Scripts</span> tab, then click the <span class=\"lookscolor\">Looks</span> category.\n"
+"\t\tDrag out a <span class=\"lookscolor\">switch costume</span> block, and snap it on the script:</p>\n"
+"\t\t<img src = \"%(STATIC_URL)s/images/help/whenclickplayswitch.png\">\n"
+"</div>\t\t\n"
+"\t\t\n"
+"<div class=\"steps last\">\n"
+"\t\t<p>Now, add a different script that will light the candles whenever you click the green flag:\n"
+"\t\t<img src = \"%(STATIC_URL)s/images/help/whenclickswitchdrop.png\">\n"
+"\t\t<p>Make sure to select \"cake-a\" (lit candles) from the pull-down menu.</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip6.html:26
 msgid "Next, make a dance party"
@@ -6227,6 +6530,12 @@ msgid ""
 "\t <p><img src = \"%(STATIC_URL)s/images/help/sprite-library-dance.png\"></p>\n"
 "\t "
 msgstr ""
+"\n"
+"\t <p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png\">をクリックして新しいスプライトを選びます。:</p>\n"
+"\t <p><img src = \"%(STATIC_URL)s/images/help/spritelibrary.png\"></p>\n"
+"\t <p>\"Cassy Dance\"やダンスのコスチュームがついているスプライトを選びましょう。:</p>\n"
+"\t <p><img src = \"%(STATIC_URL)s/images/help/sprite-library-dance.png\"></p>\n"
+"\t "
 
 #: templates/help/studio/tips/howto/cardtip7.html:16
 #, python-format
@@ -6237,6 +6546,11 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/whenclickednext.png\"></p>\t\n"
 "\t"
 msgstr ""
+"\t\n"
+"\t<p><span class=\"lookscolor\">見た目</span>カテゴリーをクリックして、<span class=\"lookscolor\">次のコスチュームにする</span>ブロックをドラッグします。</p>\t\n"
+"\t<p><span class=\"eventscolor\">イベント</span>カテゴリーをクリックして、<span class=\"eventscolor\">このスプライトがクリックされたとき</span> ブロックをドラックして一番上にくっつけてください。:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/whenclickednext.png\"></p>\t\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip7.html:24
 msgid ""
@@ -6265,6 +6579,11 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/whenclickedforevercostume.gif\">\n"
 "\t"
 msgstr ""
+"\t\n"
+"\t<p><span class=\"controlcolor\">制御</span>カテゴリーをクリックして、<span class=\"controlcolor\">ずっと</span>ブロックをドラックします。</p>\n"
+"\t<p><span class=\"controlcolor\">~秒待つ</span>ブロックを以下のように追加してダンスの速さをコントロールします。:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/whenclickedforevercostume.gif\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip8.html:16
 #, python-format
@@ -6274,6 +6593,10 @@ msgid ""
 "\t<p>Tip: To stop, click the stop sign <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/stop-sign-small.png\"> (above the Stage).</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>カードのダンサーをクリックしてアニメーションを開始しましょう。</p>\n"
+"\t<p>ヒント: ダンスをやめさせるにはストップボタン<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/stop-sign-small.png\"> （ステージ上部）をクリックします。</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip8.html:21
 msgid "Next, get your party started!"
@@ -6287,6 +6610,10 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/name-click-things.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>操作説明を追加するためにネコを2回クリックしてください。そして<span class=\"soundcolor\">~と言う</span>ブロックを追加します。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/name-click-things.png\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip9.html:14
 #, python-format
@@ -6296,6 +6623,10 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/partyinstructions.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>カードは次のようになります。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/partyinstructions.png\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip9.html:18
 msgid "Next, make it your own"
@@ -6373,7 +6704,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/catch1.html:9
 msgid "Choose the object you want to fall (such as 'Apple' or 'Basketball'):"
-msgstr "落としたい物('Apple'や 'Basketball'ような)を選びます。"
+msgstr "落としたい物('Apple'や 'Basketball'のような)を選びます。"
 
 #: templates/help/studio/tips/howto/catch1.html:11
 msgid "In Scratch, characters and objects are called ‘sprites.'"
@@ -6470,7 +6801,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/catch4.html:16
 #: templates/help/studio/tips/howto/catch8.html:18
 msgid "Click the green flag to run your script: "
-msgstr "グリーンフラグをクリックしてスクリプトを実行します。"
+msgstr "グリーンフラッグをクリックしてスクリプトを実行します。"
 
 #: templates/help/studio/tips/howto/catch4.html:20
 msgid "Next, reset your game"
@@ -6773,7 +7104,7 @@ msgid ""
 " "
 msgstr ""
 "\n"
-" <span class=\"controlcolor\">~回繰り返す</span>ブロックをドラッグして、 ’~の音を鳴らす’を包みこみます。:"
+" <span class=\"controlcolor\">~回繰り返す</span>ブロックをドラッグして、 ’~の音を鳴らす’を包みこんでください。:"
 
 #: templates/help/studio/tips/howto/dance4.html:40
 #: templates/help/studio/tips/howto/odetocode3.html:41
@@ -6874,7 +7205,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance5.html:46
 #: templates/help/studio/tips/howto/odetocode5.html:46
 msgid "Then, click the green flag to play your scripts:"
-msgstr "次にグリーンフラグをクリックしてスクリプトを動かします。"
+msgstr "次にグリーンフラッグをクリックしてスクリプトを動かします。"
 
 #: templates/help/studio/tips/howto/dance5.html:49
 #: templates/help/studio/tips/howto/odetocode5.html:49
@@ -6894,7 +7225,7 @@ msgid ""
 " "
 msgstr ""
 "\n"
-"いくつかのブロックの周りを<span class=\"controlcolor\">~回繰り返す</span>ブロックで包み込みます。:"
+"いくつかのブロックの周りを<span class=\"controlcolor\">~回繰り返す</span>ブロックで包みこんでください。:"
 
 #: templates/help/studio/tips/howto/dance6.html:21
 #: templates/help/studio/tips/howto/odetocode6.html:21
@@ -7040,6 +7371,14 @@ msgid ""
 "\n"
 "</div>\n"
 msgstr ""
+"サウンドを編集したいなら、音のセクションを選んで、: <br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound.png\"><br/>\n"
+"次に編集メニューから編集方法を選択します。:<br/>\n"
+" <img src=\"%(STATIC_URL)s/images/help/edit-sound-menu.png\">\n"
+" <p>あるいは、効果を選択します。:<br/>\n"
+"  <img src=\"%(STATIC_URL)s/images/help/effects-menu.png\">\n"
+"\n"
+"</div>\n"
 
 #: templates/help/studio/tips/howto/fashion-intro.html:6
 msgid "Make a dress-up game where you choose a character and clothes."
@@ -7356,7 +7695,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/favorite1.html:14
 msgid "For example, you could choose your favorite animal:"
-msgstr ""
+msgstr "例えば、お気に入りの動物を選ぶことができます。"
 
 #: templates/help/studio/tips/howto/favorite1.html:16
 #, python-format
@@ -7383,10 +7722,13 @@ msgid ""
 "\tClick the <span class=\"lookscolor\">Looks</span> category, then drag a <span class=\"lookscolor\">say Hello! for 2 secs</span> block to the Scripts area:\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"lookscolor\">見た目</span>カテゴリーをクリックして、次に<span class=\"lookscolor\">Hello!と2秒言う</span>ブロックをスクリプトエリアにドラックします。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/favorite2.html:22
 msgid "Type in what you want it to say:"
-msgstr ""
+msgstr "話して欲しいことをインプットしてください。:"
 
 #: templates/help/studio/tips/howto/favorite2.html:24
 msgid "You can click on that block to try it."
@@ -7412,6 +7754,9 @@ msgid ""
 "\tDrag out a <span class=\"eventscolor\">when this sprite clicked</span> block and snap it on top: \n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"eventscolor\">このスプライトがクリックされたとき</span>ブロックをドラッグし、一番上にくっつけます。: \n"
+"\t"
 
 #: templates/help/studio/tips/howto/favorite2.html:38
 msgid "Now, you can click on your sprite to see it talk."
@@ -7444,7 +7789,7 @@ msgstr "次に丸いボタンを押して、録音します。"
 
 #: templates/help/studio/tips/howto/favorite3.html:17
 msgid "Tip: You may need to click 'Allow' to record."
-msgstr ""
+msgstr "ヒント: 録音するには、'許可'をクリックする必要があります。"
 
 #: templates/help/studio/tips/howto/favorite3.html:18
 msgid "Record yourself saying what you like about this favorite thing."
@@ -7487,7 +7832,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/favorite3.html:42
 msgid "Drag that sound block into the script, like this:"
-msgstr ""
+msgstr "スクリプトに\"音を鳴らす\"ブロックを以下のようにドラックします。:"
 
 #: templates/help/studio/tips/howto/favorite3.html:45
 msgid ""
@@ -7495,10 +7840,13 @@ msgid ""
 "\tTip: Put the <span class=\"soundcolor\">play sound</span> block before the <span class=\"lookscolor\">say block</span> so the sound plays at the same time that the talk bubble appears.\n"
 "\t"
 msgstr ""
+"\n"
+"\tヒント: 吹き出しが現れるのと同時にサウンドが再生されるよう、<span class=\"lookscolor\">\"~と言う\"ブロック</span>の前に<span class=\"soundcolor\">~の音を鳴らす</span>ブロックを置きます。\n"
+"\t"
 
 #: templates/help/studio/tips/howto/favorite3.html:54
 msgid "Click on your sprite to see and hear what it says:"
-msgstr ""
+msgstr "スプライトをクリックして、何を言うのか聞いてみましょう。:"
 
 #: templates/help/studio/tips/howto/favorite3.html:57
 msgid "Add another favorite thing"
@@ -7604,6 +7952,7 @@ msgid ""
 "Tip: If it's a vector image, you can select it, then click the Ungroup icon "
 "to change the parts:"
 msgstr ""
+"ヒント: ベクタイメージのスプライトを選択するとグループ解除アイコンが表示されます。グループ解除アイコンをクリックするとパーツに分かれます。:"
 
 #: templates/help/studio/tips/howto/favorite5.html:37
 msgid ""
@@ -7617,13 +7966,15 @@ msgstr "グライド（≒移動する）"
 
 #: templates/help/studio/tips/howto/favorite5.html:43
 msgid "Make a sprite glide when you click it:"
-msgstr ""
+msgstr "クリックしたら、スプライトを移動します。:"
 
 #: templates/help/studio/tips/howto/favorite5.html:46
 msgid ""
 "\n"
 "Tip: When you drag a sprite to a point on the Stage, the <span class=\"motioncolor\">go to x: y:</span> and <span class=\"motioncolor\">glide</span> blocks will update to the sprite’s new x-y position.\n"
 msgstr ""
+"\n"
+"ヒント: ステージ上のある場所にスプライトをドラッグすると、<span class=\"motioncolor\">x,y座標を~にする</span>と<span class=\"motioncolor\">~秒でx,y座標を~に変える</span>ブロックはスプライトのx-y座標を変更します。\n"
 
 #: templates/help/studio/tips/howto/favorite5.html:55
 #: templates/help/studio/tips/howto/pgametip1.html:9
@@ -7645,7 +7996,7 @@ msgstr "次に好みの背景を選びます。"
 
 #: templates/help/studio/tips/howto/favorite5.html:61
 msgid "Tip: You can edit it using the paint tools."
-msgstr ""
+msgstr "ヒント: ペイントツールを使って編集可能です。"
 
 #: templates/help/studio/tips/howto/favorite5.html:65
 msgid "When you're ready, you can share your favorite things."
@@ -7861,11 +8212,11 @@ msgstr "浮かせるには、次のようなスクリプトを作成します。
 #: templates/help/studio/tips/howto/fly8.html:20
 #: templates/help/studio/tips/howto/pgametip7.html:21
 msgid "Click the green flag to try it out: "
-msgstr "グリーンフラグをクリックして試してみよう。："
+msgstr "グリーンフラッグをクリックして試してみよう。："
 
 #: templates/help/studio/tips/howto/fly8.html:22
 msgid "Here's an example with clouds floating across:"
-msgstr "浮雲が横切るサンプルです。:"
+msgstr "横切る浮雲のサンプルはこちら:"
 
 #: templates/help/studio/tips/howto/fly9.html:11
 msgid "Move left and right"
@@ -7941,9 +8292,9 @@ msgstr ""
 "\n"
 "\t<h4>新しいスプライト</h4>\n"
 "\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png\"> スプライトをライブラリーから選択</p>\n"
-"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> 新しいスプライトを描く</p>\n"
-"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> ファイルから新しいスプライトをアップロード</p>\n"
-"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\">カメラから新しいすくらいとを作る</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> スプライトを描く</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> 画像やスプライトをアップロード</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> 写真を撮影（Webcam）</p>\n"
 "</div>\n"
 "\n"
 "<div class=\"steps last\">\n"
@@ -8001,7 +8352,7 @@ msgid ""
 msgstr ""
 "\n"
 "\t<h4>アニメーション</h4>\n"
-"\t<p><span class=\"tab-ref\">コスチューム</span>タブをクリックしてスプライトのコスチュームを見てみましょう。コスチュームを交互に切り替えることでアニメーションにすることができます。</p>\n"
+"\t<p><span class=\"tab-ref\">コスチューム</span>タブをクリックしてスプライトのコスチュームを見てみましょう。コスチュームを交互に切り替えることでアニメ化できます。</p>\n"
 "\t<p><span class=\"tab-ref\">スクリプト</span>タブをクリックし、コスチュームを切り替えるスクリプトを作成します。:</p>\n"
 "\t<img src = \"%(STATIC_URL)s/images/help/11-animate-script.png\">\n"
 "\t"
@@ -8073,7 +8424,7 @@ msgid ""
 msgstr ""
 "\n"
 "\t\n"
-"\t<p>もっと知りたいなら、<a href=\"../../home/\"><img class=\"intext\" style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">すべてのTips</a>を閲覧して下さい。</p>\n"
+"\t<p>詳細は、<a href=\"../../home/\"><img class=\"intext\" style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">すべてのTips</a>を閲覧して下さい。</p>\n"
 "\t"
 
 #: templates/help/studio/tips/howto/get-started-2.html:9
@@ -8203,7 +8554,7 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t<p>グリーンフラグ<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\">がクリックされるたびにスクリプトが開始します。: </p>\n"
+"\t<p>グリーンフラッグ<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\">がクリックされるたびにスクリプトが開始します。: </p>\n"
 "\t<p><img src = \"%(STATIC_URL)s/images/help/6c-green-flag.png\"></p>\n"
 "\t<p>停止させるにはストップボタン<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/stop-sign-small.png\">をクリックします。: </p>\n"
 "\t"
@@ -8527,10 +8878,13 @@ msgid ""
 "href=\"../../home/\"><img class=\"intext\" style=\"top: 0px\" src = "
 "\"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">All Tips</a>."
 msgstr ""
+"創造できるプロジェクトに向けてのヒントやアイデアについては、<a href=\"../../home/\"><img class=\"intext\" "
+"style=\"top: 0px\" src = \"%(STATIC_URL)s/images/tipbar/nav-home-"
+"blue.png\">すべてのTips</a>をクリックしてください。 ."
 
 #: templates/help/studio/tips/howto/hide2.html:9
 msgid "Choose the sprite you want for your game:"
-msgstr ""
+msgstr "ゲームに好みのスプライトを選んでください。:"
 
 #: templates/help/studio/tips/howto/hide2.html:12
 msgid ""
@@ -8584,7 +8938,7 @@ msgid ""
 "this:"
 msgstr ""
 "<span class=\"controlcolor\">制御</span>カテゴリーをクリックして<span "
-"class=\"controlcolor\">ずっと</span>のループを追加します。それから以下のように繰り返すスクリプトを包み込みます。:"
+"class=\"controlcolor\">ずっと</span>のループを追加します。それから以下のように繰り返すスクリプトを包みこみます。:"
 
 #: templates/help/studio/tips/howto/hide5.html:10
 msgid "Click the <span class=\"eventscolor\">Events</span> category."
@@ -8724,6 +9078,10 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-3-add-sprite.png\"></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>カードにスプライトを追加する4つの方法があります。 スプライトを追加するには、次のいずれかのボタンをクリックします。</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-3-add-sprite.png\"></p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoc-3.html:18
 #, python-format
@@ -8735,6 +9093,12 @@ msgid ""
 "\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> Upload your own image or sprite</p>\n"
 "\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> Take a picture (from a webcam)</p>\n"
 msgstr ""
+"\n"
+"\t<h4>各ボタンの意味は次のとおりです。:</h4>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png\"> スプライトをライブラリーから選択</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> スプライトを描く</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> 画像やスプライトをアップロード</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> 写真を撮影（Webcam）</p>\n"
 
 #: templates/help/studio/tips/howto/hoc-3.html:26
 msgid "Next, let's make your sprites interactive."
@@ -8762,6 +9126,15 @@ msgid ""
 "\t\t<li><a href=\"../hoc-4e/\"><div class=\"index-num\">E</div>Change Costume</a></li>\n"
 "\t</ul>\n"
 msgstr ""
+"\n"
+"\t<p>さまざまなカテゴリのブロックで遊んでみましょう。あるいは以下のアイデアの1つを調べて、あなたオリジナルのスプライトを作ってください。:</p>\n"
+"\t<ul class=\"step-index\" style=\"top: 2px;\">\n"
+"\t\t<li><a href=\"../hoc-4a/\"><div class=\"index-num\">A</div>~歩動かす</a></li>\n"
+"\t\t<li><a href=\"../hoc-4b/\"><div class=\"index-num\">B</div>~と言う</a></li>\n"
+"\t\t<li><a href=\"../hoc-4c/\"><div class=\"index-num\">C</div>~の音を鳴らす</a></li>\n"
+"\t\t<li><a href=\"../hoc-4d/\"><div class=\"index-num\">D</div>色の効果を~ずつ変える</a></li>\n"
+"\t\t<li><a href=\"../hoc-4e/\"><div class=\"index-num\">E</div>コスチュームを~にする</a></li>\n"
+"\t</ul>\n"
 
 #: templates/help/studio/tips/howto/hoc-4.html:29
 msgid "Next, let's add a background image to your holiday card."
@@ -8776,6 +9149,11 @@ msgid ""
 "\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-a-move.png\"></p>\n"
 "</div>\t\n"
 msgstr ""
+"\n"
+"\t<p><span class=\"motioncolor\">動き</span>パレットのブロックを使ってスプライトを動かします。</p>\n"
+"\t以下のコードを追加して、スプライトの1つを前後動くにダンスにしてみよう。：\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-a-move.png\"></p>\n"
+"</div>\t\n"
 
 #: templates/help/studio/tips/howto/hoc-4a.html:19
 msgid "What other ways can you get your sprites moving?"
@@ -8800,6 +9178,13 @@ msgid ""
 "\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p><span class=\"lookscolor\">見た目</span>パレット</p>のブロックを使ってスプライトに何か言わせましょう。\n"
+"\n"
+"\t<p>Try adding this code to have one of your sprites share holiday greetings:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-b-say.png\"></p>\n"
+"\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoc-4b.html:21
 msgid "What wishes for the holiday season will your sprites share?"
@@ -8814,6 +9199,11 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-c-sound.png\">\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>スクラッチライブラリのサウンドを使用したり、コンピュータからサウンドをアップロードしたり、マイクで自分のサウンドを録音したりすることで、ホリデーカードにサウンドを追加することを探りましょう。</p>\n"
+"\t<p>以下のサウンド関連のいくつかのブロックを試して、スプライトに音楽とサウンドを追加してください。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-c-sound.png\">\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoc-4c.html:19
 msgid "What interesting holiday sounds can you add to your card?"
@@ -8832,6 +9222,15 @@ msgid ""
 "\t<img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-d-color.png\">\t\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>グラフィック効果のブロックを使ってホリデーカードの画像で遊びましょう。:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-d-effects.png\"></p>\n"
+"</div>\n"
+"\n"
+"<div class=\"steps\">\n"
+"\t<p>Try adding this code to add a colorful effect to a dancing sprite:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-d-color.png\">\t\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoc-4d.html:23
 msgid "What cool image effects will you add to your card?"
@@ -8853,6 +9252,18 @@ msgid ""
 "\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>スプライトは、演劇の俳優が異なる服を着る方法と同じようにいろいろなビジュアルの、異なった\"コスチューム\"を持つことができます。</p>\n"
+"\n"
+"\t<p>スプライトにコスチュームを追加してみよう:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-e-costumes-panel.png\"></p>\n"
+"</div>\n"
+"\n"
+"<div class=\"steps\">\n"
+"\t<p>And switch between costumes using the “switch costume” block:</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/hoc-4-interactive-e-costumes.png\"></p>\n"
+"\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoc-4e.html:26
 msgid "How can costumes add animation to your holiday card?"
@@ -8875,6 +9286,19 @@ msgid ""
 "\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/hoc-5d-add-backdrop-camera.png\"> Take a picture (if you have a webcam)</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>カードに背景画像を追加する4つの方法があります。 背景を追加するには、次のいずれかのボタンをクリックします。:</p>\n"
+"\t<img src = \"%(STATIC_URL)s/images/help/hoc-5-add-backdrop.png\">\n"
+"</div>\n"
+"\n"
+"<div class=\"steps last\">\t\n"
+"\t<h4>各ボタンの意味は次のとおりです。:</h4>\n"
+"\t\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/hoc-5a-add-backdrop-library.png\"> 背景をライブラリーから選択</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/hoc-5b-add-backdrop-paint.png\"> 背景を描く</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/hoc-5c-add-backdrop-upload.png\"> コンピュータから画像をアップロード</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/hoc-5d-add-backdrop-camera.png\"> 写真を撮影（Webcamがある時）</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoc-5.html:25
 msgid "Next, let's add some background music to your holiday card."
@@ -8970,6 +9394,14 @@ msgid ""
 "\t<p>Thank you for imagining, programming, and sharing your holiday card with Scratch -- <a href=\"http://www.google.com/url?q=http%%3A%%2F%%2Fcode.org%%2Fapi%%2Fhour%%2Ffinish&sa=D&sntz=1&usg=AFQjCNHVv1dbiUd4Qt7PzlQfXFPXN8uFpg\" target=\"_blank\">you completed the Hour of Code Scratch activity!</a></p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>あなたのホリデーカードを、世界中の人々と共有して、プロジェクトをHour of Code スタジオに追加してください。</p>\n"
+"\n"
+"\t<p>まず、<a href=\"http://scratch.mit.edu/studios/279432/\" target=\"_blank\">Hour of Codeスタジオ</a>に行き、\n"
+"次にページの上にある “プロジェクトの追加” ボタンをクリックしてホリデーカードをスタジオに追加しましょう。</p>\n"
+"\n"
+"\t<p>Scratchで想像したり、プログラミングしたり、ホリデーカードを共有してくれてありがとう。-- <a href=\"http://www.google.com/url?q=http%%3A%%2F%%2Fcode.org%%2Fapi%%2Fhour%%2Ffinish&sa=D&sntz=1&usg=AFQjCNHVv1dbiUd4Qt7PzlQfXFPXN8uFpg\" target=\"_blank\">完了したHour of Code Scratch活動!</a></p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoc-9.html:22
 #, python-format
@@ -8990,6 +9422,10 @@ msgid ""
 "\t<p>To get started, watch this intro video:</p>\n"
 "\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
 msgstr ""
+"\n"
+"\t<p>この活動で、友達や家族と共有できるインタラクティブなホリデーカードを作成しましょう。</p>\n"
+"\t<p>始めるには、この紹介ビデオを見てください。:</p>\n"
+"\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
 
 #: templates/help/studio/tips/howto/hoc-intro.html:12
 msgid "Let's begin!"
@@ -9051,6 +9487,10 @@ msgid ""
 "introduce millions of students to one hour of computer science and computer "
 "programming."
 msgstr ""
+"このチュートリアルは、何百万人もの学生をone hour of computer science and computer "
+"programmingに導くために、<a href=\"http://csedweek.org\" target=\"_blank\">Computer"
+" Science Education Week</a>と<a href=\"http://code.org\" "
+"target=\"_blank\">Code.org</a>による全国的なイニシアチブであるCode of Hourのために作成されたものです。"
 
 #: templates/help/studio/tips/howto/hoops-intro.html:6
 msgid "Make a basketball game featuring your friends from We Bare Bears."
@@ -9110,6 +9550,9 @@ msgid ""
 "\t\t<span class=\"reminder\">Tip: If you only see a cat, <a href=\"https://scratch.mit.edu/projects/85974074/?tip_bar=hoops1#editor\" target=\"blank\">open the basketball project</a>.</span>\n"
 "\t \t"
 msgstr ""
+"\n"
+"\t\t<span class=\"reminder\">ヒント: ネコが見えたら、<a href=\"https://scratch.mit.edu/projects/85974074/?tip_bar=hoops1#editor\" target=\"blank\">バスケットボール・プロジェクト</a>を開こう。</span>\n"
+"\t \t"
 
 #: templates/help/studio/tips/howto/hoops1.html:20
 msgid ""
@@ -9117,6 +9560,9 @@ msgid ""
 "\t Then drag out a <span class=\"motioncolor\">go to x y</span> block:\n"
 "\t "
 msgstr ""
+"\n"
+"\t 次に<span class=\"motioncolor\">x, y座標を~にする</span>ブロックをドラックします。:\n"
+"\t "
 
 #: templates/help/studio/tips/howto/hoops1.html:26
 msgid "When you click on that block, the ball will go to the starting point."
@@ -9156,7 +9602,7 @@ msgstr ""
 msgid ""
 "Insert it in your script to add a point each time the ball goes through the "
 "hoop:"
-msgstr ""
+msgstr "そのブロックをスクリプトに挿入して、ボールがゴールネットを通過するたびにポイントを加算するようにします。"
 
 #: templates/help/studio/tips/howto/hoops10.html:39
 msgid ""
@@ -9164,6 +9610,9 @@ msgid ""
 "\tTo reset the score when you start the game, drag out a <span class=\"datacolor\">set score to 0 </span> block. Add a <span class=\"eventscolor\">when green flag clicked</span> block on top:\n"
 "\t"
 msgstr ""
+"\n"
+"\tゲームを開始するときにスコアをリセットするには、<span class=\"datacolor\">スコアを0にする</span>ブロックをドラックします。一番上に<span class=\"eventscolor\">グリーンフラッグがクリックされたとき＜/span>ブロックを追加します。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops10.html:50
 #: templates/help/studio/tips/howto/pgame-intro.html:31 tips_config.py:201
@@ -9180,6 +9629,9 @@ msgid ""
 "\tClick the <span class=\"operatorscolor\">Operators</span> category and add a <span class=\"operatorscolor\">pick random</span> block:\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"operatorscolor\">演算</span>カテゴリーをクリックして<span class=\"operatorscolor\">~から~までの乱数</span>ブロックを追加してください。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops10.html:56
 msgid "You can type in different numbers to adjust how long it waits."
@@ -9211,6 +9663,9 @@ msgid ""
 "\t<span class=\"reminder\">Tip: Any thing you can move in Scratch (like the ball) is called a 'sprite'.</span>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"reminder\">ヒント: Scratchでは、（ボールのように）動かせるものを\"スプライト\"と呼んでいます。</span>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops2.html:25
 msgid "Next, move the ball to the net"
@@ -9242,10 +9697,13 @@ msgid ""
 "\tClick the <span class=\"controlcolor\">Control</span> category. Drag out a <span class=\"controlcolor\">repeat</span> block and wrap it around the <span class=\"motioncolor\">move</span> block: \n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"controlcolor\">制御</span>カテゴリーをクリックして<span class=\"controlcolor\">~回繰り返す</span>ブロックをドラックし、 <span class=\"motioncolor\">~歩動かす</span>ブロックの周りを包みこみます。: \n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops3.html:24
 msgid "The script should look like this:"
-msgstr ""
+msgstr "スクリプトは以下のようになります。:"
 
 #: templates/help/studio/tips/howto/hoops3.html:26
 msgid "You can type in numbers to adjust the values."
@@ -9269,6 +9727,9 @@ msgid ""
 "\tClick the <span class=\"soundcolor\">Sound</span> category, and drag out a <span class=\"soundcolor\">play sound</span> block. Then snap it onto your script:\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"soundcolor\">音</span>カテゴリーをクリックして<span class=\"soundcolor\">play sound</span>ブロックをドラックし、次にスクリプトの上にくっつけます。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops4.html:18
 msgid "Next, glide through the hoop"
@@ -9285,6 +9746,10 @@ msgid ""
 "\tThen click the <span class=\"motioncolor\">Motion</span> category. Drag out a <span class=\"motioncolor\">glide</span> block and snap it below:\n"
 "\t"
 msgstr ""
+"\n"
+"\t\n"
+"\t次に<span class=\"motioncolor\">動き</span>カテゴリーをクリックして<span class=\"motioncolor\">x,y座標を~に変える</span>ブロックをドラッグし、下にくっつけます。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops5.html:24
 msgid ""
@@ -9306,6 +9771,9 @@ msgid ""
 "\t<span class=\"reminder\">Tip: <span class=\"motioncolor\">go to x y</span> tells a sprite where to go on the Stage. x is the position on the Stage from left to right. y is the position on the Stage from top to bottom.</span> \n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"reminder\">ヒント: <span class=\"motioncolor\">x,y座標を~にする</span>は、ステージ上の行く場所をスプライトに指示しています。x座標はステージの左右の位置で、y座標はステージの上下の位置を表しています。</span> \n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops5.html:35
 msgid "Next, defend the net"
@@ -9341,6 +9809,9 @@ msgid ""
 "\tNow make it move up. Drag out a <span class=\"motioncolor\">change y</span> block. Then drag out a <span class=\"controlcolor\">repeat</span> block and snap it around the <span class=\"motioncolor\">change y</span> block:\n"
 "\t"
 msgstr ""
+"\n"
+"\tでは、上に動かしましょう。<span class=\"motioncolor\">y座標を~ずつ変える</span>ブロックをドラックします。次に <span class=\"controlcolor\">~回繰り返す</span>ブロックをドラッグして<span class=\"motioncolor\">y座標を~ずつ変える</span>ブロックの周りを包みこみます。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops6.html:34
 msgid "Click on the stack of blocks to try it out."
@@ -9348,7 +9819,7 @@ msgstr "ブロックのかたまりをクリックして、試してみましょ
 
 #: templates/help/studio/tips/howto/hoops6.html:38
 msgid "Now make it go back down by adding these blocks:"
-msgstr ""
+msgstr "次に以下のようなブロックを追加して下に戻します。"
 
 #: templates/help/studio/tips/howto/hoops6.html:41
 msgid "Click on the stack to try it."
@@ -9368,6 +9839,9 @@ msgid ""
 "\tClick the <span class=\"controlcolor\">Control</span> category and drag out a <span class=\"controlcolor\">forever</span> loop, and wrap it around the <span class=\"controlcolor\">repeat</span> blocks, like this:\n"
 "\t "
 msgstr ""
+"\n"
+"\t<span class=\"controlcolor\">制御</span>カテゴリーをクリックして<span class=\"controlcolor\">ずっと</span>ブロックをドラックします。そして以下のように<span class=\"controlcolor\">~回繰り返す</span>ブロックを包みこみます。:\n"
+"\t "
 
 #: templates/help/studio/tips/howto/hoops7.html:20
 msgid ""
@@ -9386,7 +9860,7 @@ msgstr "プログラムを開始するへ"
 #: templates/help/studio/tips/howto/hoops8.html:20
 #: templates/help/studio/tips/howto/pgametip4.html:31
 msgid "Your script will start whenever you click the green flag: "
-msgstr ""
+msgstr "グリーンフラッグをクリックすると、スクリプトが開始します。:"
 
 #: templates/help/studio/tips/howto/hoops8.html:24
 msgid "Next, bounce off the defender"
@@ -9410,6 +9884,9 @@ msgid ""
 "   Drag out a <span class=\"motioncolor\">glide</span> block and add it to the script:\n"
 "   "
 msgstr ""
+"\n"
+"   <span class=\"motioncolor\">~秒でx,y座標を~に変える</span>ブロックをドラックし、スクリプトに追加します。:\n"
+"   "
 
 #: templates/help/studio/tips/howto/hoops9.html:20
 msgid ""
@@ -9427,10 +9904,13 @@ msgid ""
 "\tClick the <span class=\"controlcolor\">Control</span> category. Drag out a <span class=\"controlcolor\">stop</span> block, and choose 'this script' from the drop-down menu:\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"controlcolor\">制御</span>カテゴリーをクリックして<span class=\"controlcolor\">~を止める</span>ブロックをドラッグします。ドロップダウンメニューから\"このスクリプト\"を選択してください。\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops9.html:33
 msgid "Add this script inside the repeat block:"
-msgstr ""
+msgstr "繰り返しのブロックに内側にこのスクリプトを追加してください。:"
 
 #: templates/help/studio/tips/howto/hoops9.html:35
 msgid "You can experiment to see what happens if you remove the stop block."
@@ -9442,6 +9922,9 @@ msgid ""
 "\t<span class=\"reminder\">Tip: Any blocks you add after 'stop this script' will not run.</span> \n"
 " "
 msgstr ""
+"\n"
+"\t<span class=\"reminder\">ヒント: \"このスクリプトを停める\"の後に追加されたブロックは実行されません。</span> \n"
+" "
 
 #: templates/help/studio/tips/howto/hoops9.html:42
 msgid "Next, enhance and customize"
@@ -9561,7 +10044,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/keep-score.html:20
 msgid "Here's an example script for keeping score:"
-msgstr "スコア記録用のスクリプトの例を次に示します。:"
+msgstr "スコア記録用のスクリプトのサンプルはこちら:"
 
 #: templates/help/studio/tips/howto/makey-intro.html:6
 msgid ""
@@ -9603,7 +10086,7 @@ msgstr "実験と創造"
 
 #: templates/help/studio/tips/howto/makey-intro.html:32 tips_config.py:159
 msgid "Extra Tip: Quick Keys"
-msgstr ""
+msgstr "おまけのヒント：クイックキー"
 
 #: templates/help/studio/tips/howto/makey1.html:7
 msgid "Plug the MaKey MaKey into the computer using the USB cable."
@@ -9663,6 +10146,8 @@ msgid ""
 "\n"
 "For more troubleshooting tips, see the <a href=\"http://makeymakey.com/howto.php#troubleshooting\" target=\"blank\">MaKey MaKey how-to tips</a>.\n"
 msgstr ""
+"\n"
+"その他のトラブルシューティングのヒントについては、<a href=\"http://makeymakey.com/howto.php#troubleshooting\" target=\"blank\">MaKey MaKey how-to tips</a>を参照してください。\n"
 
 #: templates/help/studio/tips/howto/makey4.html:20
 msgid "Next, code and customize"
@@ -9675,7 +10160,7 @@ msgstr "Scratchで何をしたいですか？"
 #: templates/help/studio/tips/howto/makey5.html:8
 msgid ""
 "If you’re in a blank project (with just the cat), try a script like this:"
-msgstr ""
+msgstr "（ネコだけの）新規プロジェクトの状態なら、次のようなスクリプトを試してみましょう。:"
 
 #: templates/help/studio/tips/howto/makey5.html:13
 msgid ""
@@ -9721,6 +10206,8 @@ msgid ""
 "\n"
 "See the <a href=\"http://makeymakey.com\" target=\"_blank\">MaKey MaKey video</a> and <a href=\"http://makeymakey.com/gallery\" target=\"_blank\">project gallery</a> for examples.\n"
 msgstr ""
+"\n"
+"サンプルについては、<a href=\"http://makeymakey.com\" target=\"_blank\">MaKey MaKey video</a>と<a href=\"http://makeymakey.com/gallery\" target=\"_blank\">project gallery</a>を参照してください。.\n"
 
 #: templates/help/studio/tips/howto/makey7.html:18
 msgid "Next, see the extra tip"
@@ -9730,7 +10217,7 @@ msgstr "おまけのヒントの参照へ"
 msgid ""
 "If you want your script to play as soon as you press the key, try this "
 "combination blocks:"
-msgstr ""
+msgstr "キーを押すとすぐにプレイするスクリプトが欲しいなら、次のブロックの組合せを試してみましょう。："
 
 #: templates/help/studio/tips/howto/makey8.html:15
 msgid ""
@@ -9784,7 +10271,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/move.html:17
 msgid ""
 "If you type in a <b>negative</b> number, the sprite will move backward:"
-msgstr ""
+msgstr "<b>負</b>の数字を入力すると、スプライトは後方に移動します。"
 
 #: templates/help/studio/tips/howto/move.html:25
 msgid ""
@@ -9893,7 +10380,7 @@ msgstr "反復進行（シーケンス）を作成します。例:"
 
 #: templates/help/studio/tips/howto/music10.html:21
 msgid "Or, add a script that plays a random sound:"
-msgstr "また、ランダムに演奏するスクリプトを追加します。"
+msgstr "あるいは、ランダムに演奏するスクリプトを追加します。"
 
 #: templates/help/studio/tips/howto/music10.html:25
 msgid "Next, record sounds"
@@ -10007,7 +10494,7 @@ msgstr "‘speaker’ や他のスプライトを選択します。:"
 
 #: templates/help/studio/tips/howto/music12.html:42
 msgid "Choose a drum loop from the Sound library:"
-msgstr "音ライブラリーからドラムのループを選択します。:"
+msgstr "サウンドライブラリーからドラム・ループを選択します。:"
 
 #: templates/help/studio/tips/howto/music12.html:45
 msgid "Loop your sound by adding a script like this:"
@@ -10519,7 +11006,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode1.html:15
 msgid "Choose the backdrop you want from the list:"
-msgstr ""
+msgstr "一覧から好みの背景を選びます。:"
 
 #: templates/help/studio/tips/howto/odetocode1.html:20
 msgid "Want to add a different backdrop?"
@@ -10564,6 +11051,8 @@ msgid ""
 "\n"
 "Click <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\"> to select from the Sound library.\n"
 msgstr ""
+"\n"
+"<img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">をクリックして音ライブラリーから選んで下さい。\n"
 
 #: templates/help/studio/tips/howto/odetocode3.html:40
 msgid "Add an easy way to start your program."
@@ -10576,7 +11065,7 @@ msgstr "Scratchの各オブジェクトはスプライトと呼ばれていま�
 #: templates/help/studio/tips/howto/odetocode4.html:13
 msgid ""
 "Click the 'Music and Dance' theme. Select a Hip-Hop or other Dance sprite:"
-msgstr ""
+msgstr "テーマの\"音楽\"と\"ダンス\"をクリックして、Hip-Hopや他のダンスのスプライトを選びます。:"
 
 #: templates/help/studio/tips/howto/odetocode4.html:20
 msgid ""
@@ -10588,7 +11077,7 @@ msgstr "ダンスのスプライトがステージ上に表示されます。ド
 msgid ""
 "Tip: Make your dance sprite bigger by clicking on it with the grow tool. Or "
 "make it smaller using the shrink tool:"
-msgstr ""
+msgstr "ヒント: 拡大ツールでクリックするとダンスのスプライトが大きくすることができます。また縮小ツールを使って小さくすることができます。:"
 
 #: templates/help/studio/tips/howto/odetocode7.html:11
 msgid "Want to switch between backdrops?"
@@ -10596,7 +11085,7 @@ msgstr "背景を切り替えたいですか？"
 
 #: templates/help/studio/tips/howto/odetocode7.html:12
 msgid "Add this block to your program:"
-msgstr ""
+msgstr "このブロックをプログラムに追加します。:"
 
 #: templates/help/studio/tips/howto/odetocode7.html:31
 msgid "Want to add more dancers to your scene?"
@@ -10604,7 +11093,7 @@ msgstr "場面にさらにダンサーを加えたいですか？"
 
 #: templates/help/studio/tips/howto/odetocode7.html:32
 msgid "Click one of these buttons to add a new sprite:"
-msgstr ""
+msgstr "これらのボタンの１つをクリックして新しいスプライトを追加します。:"
 
 #: templates/help/studio/tips/howto/odetocode7.html:35
 #, python-format
@@ -10626,7 +11115,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/odetocode7.html:50
 msgid ""
 "You can explore and experiment to add to your project. Here are some ideas:"
-msgstr ""
+msgstr "探検したり実験して、プロジェクトに追加できます。 ここにいくつかのアイデアがあります。:"
 
 #: templates/help/studio/tips/howto/odetocode7.html:52
 msgid "Find and import a picture of your city"
@@ -10733,7 +11222,7 @@ msgstr "ポイントの追加"
 msgid ""
 "You can also change what happens when the ball touches the bottom. For "
 "example:"
-msgstr "ボールが床についてしまった時に起こるか事を変えることもできます。 例えば:"
+msgstr "ボールが床についてしまった時に起こるか事を変えることもできます。 例:"
 
 #: templates/help/studio/tips/howto/pgametip11.html:28
 msgid ""
@@ -10741,7 +11230,7 @@ msgid ""
 "Now you can add your project to the <a href=\"http://scratch.mit.edu/studios/644508\" target=\"_blank\">Pong Game studio</a>:\n"
 msgstr ""
 "\n"
-"<a href=\"http://scratch.mit.edu/studios/644508\" target=\"_blank\">「Pong Game」ポンゲーム・スタジオ</a>にあなたのプロジェクトを出品できます。::\n"
+"<a href=\"http://scratch.mit.edu/studios/644508\" target=\"_blank\">「Pong Game」ピンポンゲーム・スタジオ</a>にあなたのプロジェクトを出品できます。::\n"
 
 #: templates/help/studio/tips/howto/pgametip2.html:9
 msgid "Then select a ball for your game:"
@@ -10864,7 +11353,7 @@ msgstr "次に以下のスクリプトを作成します。:"
 
 #: templates/help/studio/tips/howto/pgametip6.html:17
 msgid "Click the green flag to start your scripts: "
-msgstr "グリーンフラグをクリックしてスクリプトを開始しよう。:"
+msgstr "グリーンフラッグをクリックしてスクリプトを開始しよう。:"
 
 #: templates/help/studio/tips/howto/pgametip6.html:18
 msgid ""
@@ -11076,7 +11565,7 @@ msgstr "好みのゲームにする"
 
 #: templates/help/studio/tips/howto/racegame1.html:13
 msgid "Then choose the backdrop you want (such as 'track' or 'beach rio'):"
-msgstr "次に'track' や 'beach rio' などの好みの背景を選ぼう。:"
+msgstr "次に好みの背景（'track' や 'beach rio' のような）を選びます。:"
 
 #: templates/help/studio/tips/howto/racegame1.html:15
 msgid "Next, start moving"
@@ -11465,7 +11954,7 @@ msgstr "使いたいボールを選びます。"
 
 #: templates/help/studio/tips/howto/soccer.html:28
 msgid "You can use the paint tools to change color:"
-msgstr "描画ツールを使って色を変えましょう。"
+msgstr "ペイントツールを使って色を変えましょう。"
 
 #: templates/help/studio/tips/howto/soccer.html:38
 msgid ""
@@ -11723,7 +12212,7 @@ msgstr ""
 msgid ""
 "Choose the character you want for your story (such as Abby or Devin or any "
 "other character):"
-msgstr ""
+msgstr "物語に好みのキャラクター（Abby、Devin、他のキャラクターのような）を選択してください。:"
 
 #: templates/help/studio/tips/howto/story2.html:16
 msgid "In Scratch, characters are called sprites."
@@ -11881,7 +12370,7 @@ msgid ""
 " <br/>\n"
 " <p><img src=\"%(STATIC_URL)s/images/help/switch-backdrop-animation.gif\"></p>"
 msgstr ""
-"以下に例を示します。:<br/>\n"
+"サンプルはこちら:<br/>\n"
 " <img src=\"%(STATIC_URL)s/images/help/switch-backdrop-ex.png\"><br/>\n"
 " <br/>\n"
 " <p><img src=\"%(STATIC_URL)s/images/help/switch-backdrop-animation.gif\"></p>"
@@ -11928,7 +12417,7 @@ msgstr ""
 "マイク<img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\">をクリックして言葉を録音します。</p>\n"
 "スクリプトに以下を追加します。:<br/>\n"
 "<img src=\"%(STATIC_URL)s/images/help/play-sound-block.png\"><br/>\n"
-"グリーンフラグのブロックのすぐ下です。"
+"グリーンフラッグのブロックのすぐ下です。"
 
 #: templates/help/studio/tips/howto/valentine-intro.html:7
 msgid "Make a Valentine's Day card to share with your friends!"
@@ -11965,7 +12454,7 @@ msgstr "開始して、カード用のハートを選びます。"
 #: templates/help/studio/tips/howto/valentine1.html:14
 msgid ""
 "Click the 'Things' category, then select a heart from the Sprite library:"
-msgstr ""
+msgstr "カテゴリーの\"もの\"をクリックし、次にスプライトライブラリーからハートを選びます。:"
 
 #: templates/help/studio/tips/howto/valentine1.html:17
 msgid ""
@@ -11995,6 +12484,9 @@ msgid ""
 "\tDrag a <span class=\"lookscolor\">change size by</span> block to the Scripts area:\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"lookscolor\">大きさを~ずつ変える</span>ブロックをスクリプトエリアにドラッグします。:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/valentine2.html:15
 msgid "Click the block to try it."
@@ -12010,11 +12502,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine2.html:21
 msgid "Snap the blocks together, like this:"
-msgstr ""
+msgstr "このようにブロックを一緒にくっつけます。:"
 
 #: templates/help/studio/tips/howto/valentine2.html:26
 msgid "Add these blocks to complete your beat:"
-msgstr ""
+msgstr "これらのブロックを追加して鼓動を完成させます。"
 
 #: templates/help/studio/tips/howto/valentine2.html:28
 msgid "Type in a negative number (like -10) to make the heart smaller."
@@ -12040,6 +12532,10 @@ msgid ""
 "\tDrag out a <span class=\"controlcolor\">repeat</span> block and snap it around the other blocks:</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<span class=\"controlcolor\">制御</span>カテゴリーをクリックします。\n"
+"\t<span class=\"controlcolor\">repeat</span>ブロックをドラッグし、他のブロックの周りを囲みます。:</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/valentine3.html:18
 msgid ""
@@ -12072,6 +12568,10 @@ msgid ""
 "\t<p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap it on top:</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p><span class=\"eventscolor\">イベント</span>カテゴリーをクリックします。</p>\n"
+"\t<p><span class=\"eventscolor\"><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\">がクリックされたとき</span> ブロックｗｐドラッグして一番上にくっつけます。:</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/valentine4.html:14
 #, python-format
@@ -12094,10 +12594,12 @@ msgid ""
 "\n"
 "\t<p>To add a backdrop to the Stage, click the <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/landscape-icon.png\"> icon:</p>\t\n"
 msgstr ""
+"\n"
+"\t<p>ステージに背景を追加し、<img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/landscape-icon.png\">アイコンをクリックします。:</p>\t\n"
 
 #: templates/help/studio/tips/howto/valentine5.html:15
 msgid "Then choose the backdrop you want (such as doily or hearts):"
-msgstr ""
+msgstr "次に好みの背景（doily や heartsのような）を選びます。"
 
 #: templates/help/studio/tips/howto/valentine5.html:20
 msgid "Your card will now have a backdrop and a sprite"
@@ -12109,6 +12611,9 @@ msgid ""
 "\t\tIf you want the backdrop to change colors, click the <span class=\"tab-ref\">Scripts</span> tab. Then, build a script like this:</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t\t背景の色を変えたいなら、<span class=\"tab-ref\">スクリプト</span>タブをクリックし、次に以下のようなスクリプトを作成します。:</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/valentine5.html:29
 msgid "Next, add a message"
@@ -12120,7 +12625,7 @@ msgstr "バレンタインを迎えるためのメッセージを追加します
 
 #: templates/help/studio/tips/howto/valentine6.html:13
 msgid "Click the 'Things' category, and choose the sprite named 'Text':"
-msgstr ""
+msgstr "カテゴリーの\"もの\"をクリックして\"Text\"という名前のついたスプライトを選びます。:"
 
 #: templates/help/studio/tips/howto/valentine6.html:18
 msgid ""
@@ -12134,7 +12639,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine6.html:22
 msgid "Choose the 'Happy Valentine's Day' costume:"
-msgstr ""
+msgstr "コスチュームの'Happy Valentine's Day'を選びます。:"
 
 #: templates/help/studio/tips/howto/valentine6.html:27
 msgid "You can use the Text tool to type your own text."
@@ -12162,13 +12667,15 @@ msgstr ""
 #: templates/help/studio/tips/howto/valentine7.html:23
 msgid ""
 "Click the 'Music Loops' category. Choose 'dance celebrate' or another sound:"
-msgstr ""
+msgstr "カテゴリーの\"音楽のループ\"をクリックし、'dance celebrate' か 他のサウンドを選びます。:"
 
 #: templates/help/studio/tips/howto/valentine7.html:28
 msgid ""
 "\n"
 "\t<p>Select the <span class=\"tab-ref\">Scripts</span> tab, and click the <span class=\"soundcolor\">Sound</span> category. Drag out a <span class=\"soundcolor\">play sound until done</span> block:</p>\n"
 msgstr ""
+"\n"
+"\t<p><span class=\"tab-ref\">スクリプト</span>タブをクリックして<span class=\"soundcolor\">音</span>カテゴリーをクリックし、<span class=\"soundcolor\">終わるまで~の音を鳴らす</span>ブロックをドラッグします。 block:</p>\n"
 
 #: templates/help/studio/tips/howto/valentine7.html:36
 #, python-format
@@ -12177,6 +12684,9 @@ msgid ""
 " <p>Drag out a <span class=\"eventscolor\">when <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap it on top:</p>\n"
 "\t"
 msgstr ""
+"\n"
+" <p><span class=\"eventscolor\"><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\">がクリックされたとき</span>ブロックをドラッグして一番上にくっつけます。:</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/valentine7.html:44
 #, python-format
@@ -12205,7 +12715,7 @@ msgstr "画像の追加"
 
 #: templates/help/studio/tips/howto/valentine8.html:10
 msgid "To add a sprite, click one of these buttons:"
-msgstr ""
+msgstr "スプライトを追加するには、以下のボタンの1つをクリックします。"
 
 #: templates/help/studio/tips/howto/valentine8.html:11
 #, python-format
@@ -12226,7 +12736,7 @@ msgstr ""
 msgid ""
 "Tip: Make any sprite bigger by clicking on it with the grow tool. Or make it"
 " smaller using the shrink tool:"
-msgstr ""
+msgstr "ヒント: 拡大ツールでクリックするとスプライトを大きくしたり、縮小ツールで小さくすることができます。:"
 
 #: templates/help/studio/tips/howto/valentine8.html:25
 msgid "MAKE IT SPIN"
@@ -12234,7 +12744,7 @@ msgstr "文字の回転"
 
 #: templates/help/studio/tips/howto/valentine8.html:26
 msgid "To make a sprite spin, select the sprite, then add a script like this:"
-msgstr ""
+msgstr "スプライトを回転させるには、スプライドを選択し、次に以下のようにスクリプトを追加します。:"
 
 #: templates/help/studio/tips/howto/valentine8.html:28
 msgid "Type in different numbers to adjust the spin."
@@ -12242,12 +12752,12 @@ msgstr "異なる数字を入力して回転を調整します。"
 
 #: templates/help/studio/tips/howto/valentine8.html:31
 msgid "To reset a sprite so it faces to the right, click this block:"
-msgstr ""
+msgstr "スプライトを右に向けてリセットするには、次のブロックをクリックします。:"
 
 #: templates/help/studio/tips/howto/valentine8.html:36
 msgid ""
 "Explore and experiment! Here are some other blocks you may want to try:"
-msgstr ""
+msgstr "探検と実験です！ 試してみたくなるブロックをいくつか紹介します。:"
 
 #: templates/help/studio/tips/howto/valentine9.html:26
 msgid ""
@@ -12755,7 +13265,7 @@ msgstr "あなたのMacに Bluetooth Low Energyが搭載されていますか？
 
 #: templates/help/studio/tips/howto/wedo2mac-7.html:22
 msgid "Here's how to check if your Mac can use the LEGO WeDo 2.0 extension."
-msgstr "MacでLEGO WeDo 2.0拡張機能を使用できるかどうかを確認する方法は次のとおりです。"
+msgstr "MacでLEGO WeDo 2.0拡張機能を使用可能か確認する方法は次のとおりです。"
 
 #: templates/help/studio/tips/howto/wedo2mac-7.html:23
 msgid "1. Go to the Apple menu and select 'About This Mac'"
@@ -13090,7 +13600,7 @@ msgstr "ペイントエディタのマップ"
 #: templates/help/studio/tips/ui/image-editor-map.html:7
 #: templates/help/studio/tips/ui/interface-map.html:25
 msgid "Here's a map of the paint editor:"
-msgstr ""
+msgstr "ペイントエディタのマップはこちら:"
 
 #: templates/help/studio/tips/ui/image-editor-map.html:12
 #: templates/help/studio/tips/ui/interface-map.html:30
@@ -13109,28 +13619,28 @@ msgstr "魔法の杖ツールを使って、残したい写真の部分を選択
 
 #: templates/help/studio/tips/ui/magicwand.html:11
 msgid "Here are the two steps:"
-msgstr ""
+msgstr "2ステップあります。:"
 
 #: templates/help/studio/tips/ui/magicwand.html:13
 msgid ""
 "<strong>1) Select</strong>:  Draw on the parts of the image you want to "
 "keep.  Continue until you’ve selected everything you want to keep."
-msgstr ""
+msgstr "<strong>1) 選択</strong>:  保持したい画像の部分に描画します。 保持したいものすべてを選択するまで続行します。"
 
 #: templates/help/studio/tips/ui/magicwand.html:15
 msgid ""
 "<strong>2) Remove</strong>: Click away (or on another tool) to remove the "
 "unselected parts of the image."
-msgstr ""
+msgstr "<strong>2) 削除</strong>: クリックして（または他のツールで）クリックして、選択されていない部分を削除します。"
 
 #: templates/help/studio/tips/ui/magicwand.html:18
 msgid "Tip: You can click the Undo button to restore your original image:"
-msgstr ""
+msgstr "ヒント: 取り消しボタンをクリックすると、元のイメージを復元できます。"
 
 #: templates/help/studio/tips/ui/magicwand.html:20
 msgid ""
 "After you remove the background, you can touch-up with the Eraser tool: "
-msgstr ""
+msgstr "背景を削除した後、削除ツールで小さい修正ができます。"
 
 #: templates/help/studio/tips/ui/magicwand.html:22
 msgid ""
@@ -13148,7 +13658,7 @@ msgstr "Scratchのプロジェクトエディタのツアーに参加してく�
 
 #: templates/help/studio/tips/ui/tour-intro.html:21
 msgid "Here's are some of the main parts:"
-msgstr ""
+msgstr "主なパーツはこちら:"
 
 #: templates/help/studio/tips/ui/tour-intro.html:23
 msgid "Start the tour"
