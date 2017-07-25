@@ -1487,6 +1487,9 @@ msgid ""
 "The length of a beat can be set with <img src=\"%(STATIC_URL)s/images/help/set_tempo.png\" />.\n"
 "</p>\n"
 msgstr ""
+"<p>\n"
+"Mae modd gosod hyd y cyriad gyda <img src=\"%(STATIC_URL)s/images/help/set_tempo.png\" />.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/playsound.html:7
 #, python-format
@@ -1496,6 +1499,10 @@ msgid ""
 "<h3>\n"
 "Plays a sound</h3>\n"
 msgstr ""
+"  \n"
+"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/>\n"
+"<h3>\n"
+"Yn chwarae sain</h3>\n"
 
 #: templates/help/studio/tips/blocks/playsound.html:19
 #, python-format
@@ -1513,6 +1520,18 @@ msgid ""
 "</p>\n"
 "\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Choose a sound from the menu:\n"
+"<img src=\"%(STATIC_URL)s/images/help/soundmenu.png\" />\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Dewiswch sain o'r ddewislen:\n"
+"<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/sounds.png\" /> \n"
+"</p>\n"
+"\n"
 
 #: templates/help/studio/tips/blocks/playsound.html:37
 #, python-format
@@ -1522,6 +1541,9 @@ msgid ""
 "<p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/> waits until the sound is finished playing before continuing to the next block."
 msgstr ""
+"Mae <img src=\"%(STATIC_URL)s/images/help/playsound.png\">yn dechrau chwarae sain ac yn parhau i'r bloc nesaf ar unwaith.<p>\n"
+"<p>\n"
+"Mae <img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\">yn aros hyd nes bod y sain wedi gorffen chwarae cyn parhau i'r bloc nesaf."
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:8
 #, python-format
@@ -1529,6 +1551,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
 "<h3>Plays a sound and waits until the sound is finished </h3>\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
+"<h3>Yn chwarae sain ac yn aros nes bod y sain wedi gorffen </h3>\n"
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:18
 #, python-format
@@ -1536,6 +1560,8 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/>\n"
 "starts playing a sound and continues to the next block immediately."
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound.png\"/>\n"
+"yn cychwyn chwarae sain ac yn parhau i'r bloc nesaf yn syth."
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:23
 #, python-format
@@ -1543,10 +1569,12 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
 "waits until the sound is finished playing before continuing to the next block."
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/playsound_tildone.png\"/>\n"
+"yn aros nes i'r sain orffen chwarae cyn parhau i'r bloc nesaf."
 
 #: templates/help/studio/tips/blocks/point-direction.html:7
 msgid "Set the direction of the current sprite"
-msgstr ""
+msgstr "Gosodwch gyfeiriad y corlun cyfredol"
 
 #: templates/help/studio/tips/blocks/point-direction.html:15
 #, python-format
@@ -1561,10 +1589,19 @@ msgid ""
 "<p>To see a sprite's current direction, click the <img src=\"%(STATIC_URL)s/images/help/info.gif\"/><br>\n"
 "<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 msgstr ""
+"Cliciwch i ddewis o'r ddewislen:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/point-in-direction-menu.png\"/><br/>\n"
+"\n"
+"<p>Neu, deipio rhif:<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/point-in-direction-45.png\"/></p>\n"
+"\n"
+"\n"
+"<p>I weld cyfeiriad cyfredol corlun, cliciwch y <img src=\"%(STATIC_URL)s/images/help/info.gif\"/><br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/direction-90-monitor.png\"/></p>"
 
 #: templates/help/studio/tips/blocks/point-towards.html:7
 msgid "Points sprite towards mouse-pointer or another sprite"
-msgstr ""
+msgstr "Yn pwyntio corlun tuag at pwyntydd llygoden neu gorlun arall"
 
 #: templates/help/studio/tips/blocks/point-towards.html:15
 #, python-format
@@ -1574,24 +1611,30 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/point-towards-menu.png\">.<br/>\n"
 "The menu includes any other sprites in the project."
 msgstr ""
+"<p><b>pwyntiwch tuag at</b> yn newid cyfeiriad y corlun cyfredol.</p>\n"
+"<p>Gallwch ddewis o'r ddewislen:<br/>\n"
+"<img src=\"%(STATIC_URL)s/images/help/point-towards-menu.png\">.<br/>\n"
+"Mae'r ddewislen yn cynnwys unrhyw gorlun arall yn y project."
 
 #: templates/help/studio/tips/blocks/repeat-until.html:7
 msgid "Repeat blocks that follow until condition is true"
-msgstr ""
+msgstr "Ailadrodd blociau sy'n dilyn nes bod y cyflwr yn true"
 
 #: templates/help/studio/tips/blocks/repeat-until.html:11
 msgid ""
 "Checks to see if condition is false; if so, runs blocks inside and checks condition again. If condition is true, \n"
 "goes on to the blocks that follow."
 msgstr ""
+"Yn gwirio i weld os yw'r cyflwr yn false, os felly, mae'n rhedeg blociau o fewn ac yn gwirio'r cyflwr eto.\n"
+"Os yw'r cyflwr yn true, mae'n mynd ymlaen i'r blociau sy'n dilyn."
 
 #: templates/help/studio/tips/blocks/repeat.html:7
 msgid "Runs the blocks inside a specified number of times"
-msgstr ""
+msgstr "Yn rhedeg y blociau y tu mewn nifer penodol o weithiau"
 
 #: templates/help/studio/tips/blocks/replace-list.html:7
 msgid "Replaces an item in the list with the specified value"
-msgstr ""
+msgstr "Yn amnewid eitem sydd ar y rhestr gyda gwerth penodol"
 
 #: templates/help/studio/tips/blocks/replace-list.html:11
 msgid ""
@@ -1599,6 +1642,8 @@ msgid ""
 "  typing in a number. Choosing \"random\" replaces a random item in the list.  The length \n"
 "  of the list does not change."
 msgstr ""
+"Gallwch bennu pa eitem i'w ddisodli gan ddewis o'r cwymplen neu deipio rhif.\n"
+" Mae dewis \"hap\" yn disodli eitem ar hap yn y rhestr.  Nid yw hyd y rhestr yn newid."
 
 #: templates/help/studio/tips/blocks/replace-list.html:21
 #, python-format
@@ -1606,10 +1651,12 @@ msgid ""
 "You can choose where in a list to put an item. For example:\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/replace-list-ex2.png\" /><br/> "
 msgstr ""
+"Gallwch ddewis o ble yn y rhestr i roi eitem. Er enghraifft:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/replace-list-ex2.png\"><br>"
 
 #: templates/help/studio/tips/blocks/reset-timer.html:7
 msgid "Sets the timer to zero"
-msgstr ""
+msgstr "Yn gosod yr amserydd i sero"
 
 #: templates/help/studio/tips/blocks/rest.html:8
 #, python-format
@@ -1617,10 +1664,12 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/rest.png\"/>\n"
 "<h3>Rests (plays nothing) for specified number of beats</h3></div>\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/rest.png\">\n"
+"<h3>Yn gorffwys (chwarae dim) ar gyfer nifer penodol o guriadau</h3></div>\n"
 
 #: templates/help/studio/tips/blocks/round.html:7
 msgid "Reports closest integer to a number"
-msgstr ""
+msgstr "Yn dangos y cyfanrif agosaf i rif"
 
 #: templates/help/studio/tips/blocks/round.html:14
 #, python-format
@@ -1631,25 +1680,32 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/round-5.1.png\" /> is 5, and \n"
 "<img src=\"%(STATIC_URL)s/images/help/round-5.6.png\" /> is 6.\n"
 msgstr ""
+"\n"
+"<img src=\"%(STATIC_URL)s/images/help/round.png\">yn rhoi gwerth talgrwn rhif.\n"
+"Mae hynny'n golygu ei fod yn troi'n rhif degol i'r cyfanrif agosaf. Er enghraifft:\n"
+"<img src=\"%(STATIC_URL)s/images/help/round-5.1.png\"> yw 5, a \n"
+"<img src=\"%(STATIC_URL)s/images/help/round-5.6.png\"> yw 6.\n"
 
 #: templates/help/studio/tips/blocks/say-for-seconds.html:8
 msgid "Say words in a speech bubble for a number of seconds"
-msgstr ""
+msgstr "Dweud geiriau mewn swigen siarad am nifer o eiliadau"
 
 #: templates/help/studio/tips/blocks/say-for-seconds.html:16
 msgid "You can type in any words to say."
-msgstr ""
+msgstr "Gallwch deipio unrhyw air i'w ddweud."
 
 #: templates/help/studio/tips/blocks/say-for-seconds.html:17
 msgid ""
 "The number of seconds tells the speech bubble how long to show. The script "
 "waits that long before continuing."
 msgstr ""
+"Mae'r nifer yr eiliadau yn dweud pa mor hir i ddangos y swigen. Mae'r sgript"
+" yn aros cyn hired cyn parhau."
 
 #: templates/help/studio/tips/blocks/say-text.html:7
 #: templates/help/studio/tips/blocks/say.html:8
 msgid "Say words in a speech bubble"
-msgstr ""
+msgstr "Dweud geiriau mewn swigen siarad"
 
 #: templates/help/studio/tips/blocks/say-text.html:14
 #, python-format
@@ -1658,11 +1714,15 @@ msgid ""
 "\n"
 "To remove the speech bubble, delete the text and click <img src=\"%(STATIC_URL)s/images/help/say.png\" />."
 msgstr ""
+"<p>Gallwch deipio unrhyw destun. Bydd y geiriau'n ymddangos mewn swigen siarad.</p>\n"
+"\n"
+"I gael gwared ar y swigen, dilëwch y testun a chliciwch <img src=\"%(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/help/studio/tips/blocks/say.html:16
 #: templates/help/studio/tips/blocks/think.html:18
 msgid "You can type in any text. The words will appear in a speech bubble."
 msgstr ""
+"Gallwch deipio unrhyw destun. Bydd y geiriau'n ymddangos mewn swigen siarad."
 
 #: templates/help/studio/tips/blocks/say.html:18
 #, python-format
@@ -1670,14 +1730,16 @@ msgid ""
 "To remove the speech bubble, click an empty say block: <img "
 "src=\"%(STATIC_URL)s/images/help/say.png\" />."
 msgstr ""
+"I gael gwared ar y swigen siarad, cliciwch bloc dweud gwag: <img "
+"src=\"%(STATIC_URL)s/images/help/say.png\" />."
 
 #: templates/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
-msgstr ""
+msgstr "Yn dangos y nifer o ddyddiau ers dechrau Scratch (Mai 15, 2007)"
 
 #: templates/help/studio/tips/blocks/set-effect.html:9
 msgid "Sets the graphic effect of a sprite to a specific number"
-msgstr ""
+msgstr "Yn pennu effaith graffig corlun i rif penodol"
 
 #: templates/help/studio/tips/blocks/set-effect.html:13
 #, python-format
@@ -1690,11 +1752,18 @@ msgid ""
 "\n"
 "<br><img src=\"%(STATIC_URL)s/images/help/set-effect-ex.png\" /><br/></p>\n"
 msgstr ""
+"\n"
+"Cliciwch i ddewis yr effaith o'r ddewislen:\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/set-effect-menu.png\" /><br/>\n"
+"<p>Ceisiwch deipio rhifau gwahanol rhwng -100 a 100. (Mae rhai o'r effeithiau yn amrywio o 0 i 100.)\n"
+"\n"
+"\n"
+"<br><img src=\"%(STATIC_URL)s/images/help/set-effect-ex.png\" /><br/></p>\n"
 
 #: templates/help/studio/tips/blocks/set-size.html:7
 #, python-format
 msgid "Sets sprite's size to specified %% of original size"
-msgstr ""
+msgstr "Yn gosod maint y corlun penodedig i %% o'r maint gwreiddiol"
 
 #: templates/help/studio/tips/blocks/set-size.html:17
 msgid ""
@@ -1702,10 +1771,13 @@ msgid ""
 "Experiment with different numbers to see how small or big you can make "
 "it.</b>"
 msgstr ""
+"<b>Sylwch: Ceir cyfyngiadau i pa mor fawr neu fach y gallwch wneud corlun. "
+"Arbrofwch gyda rhifau gwahanol i weld pa mor fach neu fawr gallwch ei "
+"wneud.</b>"
 
 #: templates/help/studio/tips/blocks/set-tempo.html:9
 msgid "Sets sprite's tempo to specified value in beats per minute"
-msgstr ""
+msgstr "Yn gosod tempo corlun i werth penodedig mewn curiad y funud"
 
 #: templates/help/studio/tips/blocks/set-tempo.html:16
 #: templates/help/studio/tips/blocks/tempo.html:14
@@ -1713,24 +1785,29 @@ msgid ""
 "Tempo is the speed (bpm = beats per minute) at which Scratch notes and drums"
 " play. The larger the tempo value, the faster the notes and drums will play."
 msgstr ""
+"Tempo yw'r cyflymder (bpm = beats per minute) y mae nodau a drymiau Scratch "
+"yn chwarae. Y mwyaf yw gwerth y tempo, y cyflymaf y mae'r nodau a'r "
+"drymiau'n chwarae."
 
 #: templates/help/studio/tips/blocks/set-variable.html:7
 msgid "Sets the variable to specified value"
-msgstr ""
+msgstr "Yn gosod y newidyn i werth penodol"
 
 #: templates/help/studio/tips/blocks/set-video-transparency.html:7
 msgid "Sets the video transparency"
-msgstr ""
+msgstr "Yn gosod tryloywder fideo"
 
 #: templates/help/studio/tips/blocks/set-video-transparency.html:11
 msgid ""
 "Enter a number from 0-100. Higher numbers make the video more transparent "
 "(lighter), while lower numbers make it less transparent (darker)"
 msgstr ""
+"Rhowch rhif 0-100. Mae rhifau uwch yn gwneud y fideo yn fwy tryloyw "
+"(goleuach), tra bod rhifau is yn ei gwneud yn llai tryloyw (tywyllach)"
 
 #: templates/help/studio/tips/blocks/set-volume.html:9
 msgid "Sets sprite's sound volume to specified value"
-msgstr ""
+msgstr "Yn gosod maint sain corlun i werth penodol"
 
 #: templates/help/studio/tips/blocks/set-volume.html:15
 msgid ""
@@ -1741,10 +1818,15 @@ msgid ""
 "To play two sounds at once with different volumes, use two sprites.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Gallwch osod maint y sain ar gyfer pob corlun.\n"
+"<br>\n"
+"I chwarae dwy sain ar yr un pryd gyda maint sain gwahanol, defnyddiwch ddau gorlun. </p>\n"
 
 #: templates/help/studio/tips/blocks/set-x.html:7
 msgid "Set the x position of a sprite"
-msgstr ""
+msgstr "Gosod safle x corlun"
 
 #: templates/help/studio/tips/blocks/set-x.html:14
 #, python-format
@@ -1753,10 +1835,13 @@ msgid ""
 "<p></p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/set-x-diagram.png\">"
 msgstr ""
+"<p> <b>Set x</b> yn gosod corlun ar draws y Llwyfan (safle llorweddol). </p>\n"
+"<p></p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/set-x-diagram.png\">"
 
 #: templates/help/studio/tips/blocks/set-y.html:7
 msgid "Set the <b>y</b> position of a sprite"
-msgstr ""
+msgstr "Yn gosod safle <b>y</b> corlun"
 
 #: templates/help/studio/tips/blocks/set-y.html:14
 #, python-format
@@ -1765,6 +1850,9 @@ msgid ""
 "<p></p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/y-position-diagram.png\">"
 msgstr ""
+"<p> <b>Gosod y</b> gosod corlun i fyny neu i lawr (safle fertigol).\n"
+"</p><p></p\n"
+"<img src=\"%(STATIC_URL)s/images/help/y-position-diagram.png\">"
 
 #: templates/help/studio/tips/blocks/setinstrument.html:7
 #, python-format
@@ -1773,6 +1861,9 @@ msgid ""
 "<h3>Sets the type of instrument that the sprite uses for\n"
 "<b>play note</b> blocks</h3></div>\n"
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/set_instrument.png\"/>\n"
+"<h3> Yn gosod y math o offeryn y mae'r corlun yn ei ddefnyddio\n"
+" ar gyfer blociau <b>nodyn chwarae</b> </h3></div>\n"
 
 #: templates/help/studio/tips/blocks/setinstrument.html:16
 #, python-format
@@ -1786,10 +1877,17 @@ msgid ""
 "<br><img src=\"%(STATIC_URL)s/images/help/set_instrument_ex2.png\" /> <br/>\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Mae gan bob corlun ei offeryn ei hun.\n"
+" </p>\n"
+"<p>\n"
+" Cliciwch i ddewis o'r ddewislen. Neu, deipiwch rhif rhwng 1 i 21.\n"
+" <br><img src=\"%(STATIC_URL)s/images/help/set_instrument_ex2.png\" /><br/></p>\n"
 
 #: templates/help/studio/tips/blocks/setpencolor.html:8
 msgid "Sets pen's color, based on choice from color picker"
-msgstr ""
+msgstr "Yn gosod lliw pen, yn seiliedig ar ddewis o dewisiwr lliw"
 
 #: templates/help/studio/tips/blocks/setpencolor.html:16
 #, python-format
@@ -1804,10 +1902,19 @@ msgid ""
 "Picking the color also changes the pen shade.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"I ddewis lliw, estynnwch y dewisiwr drwy glicio ar y sgwâr. Defnyddiwch y dewisiwr i glicio ar y lliw rydych ei eisiau. Bydd y lliw yn ymddangos yn y sgwâr.\n"
+"\n"
+"</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/setcolorex2.png\"><br>\n"
+"<p>\n"
+"Mae dewis lliw hefyd yn newid y cysgod y pen.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:7
 msgid "Sets pen's color to specified value"
-msgstr ""
+msgstr "Yn gosod lliw'r pen i werth penodol"
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:10
 #, python-format
@@ -1825,11 +1932,11 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/setpensize.html:9
 msgid "Sets pen's thickness"
-msgstr ""
+msgstr "Yn gosod trwch y pen"
 
 #: templates/help/studio/tips/blocks/setrotation.html:8
 msgid "Sets the sprite's rotation style"
-msgstr ""
+msgstr "Yn gosod steil cylchdro'r corlun"
 
 #: templates/help/studio/tips/blocks/setrotation.html:11
 #, python-format
@@ -1848,16 +1955,31 @@ msgid ""
 "<img src=\"%(STATIC_URL)s/images/help/setrotate-around.gif\"/> <br/>\n"
 "\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Dewiswch \"chwith-dde\" o'r gwymplen i wneud i'r corlun gylchdroi'n llorweddol yn unig.\n"
+" </p>\n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/setrotation-ex.png\" /><br/>\n"
+"</p>\n"
+"\n"
+"<p>\n"
+"Dewiswch \"o amgylch i gyd\" o'r gwymplen i wneud i'r  corlun fflipio'n fertigol.\n"
+"</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/setrotate-around.gif\"/><br/>\n"
+"\n"
 
 #: templates/help/studio/tips/blocks/setrotation.html:27
 msgid ""
 "Select \"don't rotate\" from the drop-down menu to make the sprite face only"
 " one direction."
 msgstr ""
+"Dewiswch \"peidio cylchdro\" o'r ddewislen i wneud i'r corlun wynebu un "
+"cyfeiriad yn unig."
 
 #: templates/help/studio/tips/blocks/setshade.html:8
 msgid "Sets pen's shade to specified amount"
-msgstr ""
+msgstr "Yn gosod cysgod y pin i faint penodol"
 
 #: templates/help/studio/tips/blocks/setshade.html:17
 #, python-format
@@ -1871,23 +1993,31 @@ msgid ""
 "If the pen shade is 0, then the pen color will be close to black. If the pen shade is 100, the pen color will be close to white.\n"
 "\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Mae cysgod y pin yn mynd o 0 i 100. Y rhagosodedig yw 50.<br>\n"
+"<br>\n"
+"<img src=\"%(STATIC_URL)s/images/help/changeshadeex2.png\">\n"
+"<p>\n"
+"Os bydd y cysgod y pin yn 0, yna bydd lliw y pin yn agos at ddu. Os bydd cysgod y pin yn 100, bydd lliw y pin yn agos at wyn.\n"
+"<p>\n"
 
 #: templates/help/studio/tips/blocks/show-list.html:7
 msgid "Shows the list monitor on the stage"
-msgstr ""
+msgstr "Yn dangos y rhestr monitor ar y llwyfan"
 
 #: templates/help/studio/tips/blocks/show-variable.html:7
 msgid "Shows the variable monitor on the stage"
-msgstr ""
+msgstr "Yn dangos y amrywiolyn monitor ar y llwyfan"
 
 #: templates/help/studio/tips/blocks/show.html:8
 msgid "Makes sprite appear on the Stage"
-msgstr ""
+msgstr "Yn gwneud i gorlun ymddangos ar y Llwyfan"
 
 #: templates/help/studio/tips/blocks/size.html:7
 #, python-format
 msgid "Reports sprite's size, as %% of original size"
-msgstr ""
+msgstr "Yn dangos maint y corlun, fel %% o'r maint gwreiddiol"
 
 #: templates/help/studio/tips/blocks/size.html:14
 #, python-format
@@ -1897,16 +2027,22 @@ msgid ""
 "<p>To view the value of size, click the checkbox next to the block in the palette.</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/size-ex2.png\" />"
 msgstr ""
+"\n"
+"<p><img src=\"%(STATIC_URL)s/images/help/size.png\">yn dangos %%  maint gwreiddiol y gwrthrych</p>\n"
+"<p>I weld gwerth maint, cliciwch y blwch ticio nesaf at y bloc yn y palet.</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/size-ex2.png\">"
 
 #: templates/help/studio/tips/blocks/square.html:7
 msgid "Reports result of selected function"
-msgstr ""
+msgstr "Yn dangos canlyniad y swyddogaeth dan sylw"
 
 #: templates/help/studio/tips/blocks/square.html:10
 msgid ""
 "The function options are: abs, sqrt, sin, cos, tan, asin, \n"
 "acos, atan, ln, log, e^, 10^, applied to the specified number."
 msgstr ""
+"Opsiynau'r swyddogaeth yw: abs, sqrt, pechod, SE, tan, asin,\n"
+"acos, atan, ln, log, e ^, 10 ^, wedi eu gosod i rif penodedig."
 
 #: templates/help/studio/tips/blocks/square.html:19
 #, python-format
@@ -1916,10 +2052,15 @@ msgid ""
 "<br>This block performs a mathematical function. Choose the math functions from the block's \n"
 "drop down menu.<br/>\n"
 msgstr ""
+"\n"
+"<img src=\"%(STATIC_URL)s/images/help/square-menu.png\"> \n"
+"<br>Mae'r bloc hwn yn cyflawni swyddogaeth fathemategol. Dewiswch y swyddogaethau\n"
+"mathemateg o gwymplen y bloc.<br/\n"
+">\n"
 
 #: templates/help/studio/tips/blocks/stamp.html:8
 msgid "Stamps the sprite's image onto the Stage"
-msgstr ""
+msgstr "Yn stampio delwedd y corlun ar i'r Llwyfan"
 
 #: templates/help/studio/tips/blocks/stamp.html:11
 #, python-format
