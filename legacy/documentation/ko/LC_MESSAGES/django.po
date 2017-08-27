@@ -62,11 +62,11 @@ msgstr "추가할 항목은 숫자 또는 글자와 다른 부호의 문자열�
 
 #: templates/help/studio/tips/blocks/add-to-list.html:19
 msgid "Use this block if you want to add an item to the end of a list."
-msgstr ""
+msgstr "만약 리스트의 끝에 항목을 추가하고 싶다면 이 블록을 사용하세요."
 
 #: templates/help/studio/tips/blocks/add-to-list.html:24
 msgid "Can't find the list blocks? You need to first make a list:"
-msgstr ""
+msgstr "리스트 블록을 찾을 수 없나요? 리스트를 먼저 만들어야 합니다:"
 
 #: templates/help/studio/tips/blocks/add.html:7
 msgid "Adds two numbers"
@@ -81,7 +81,7 @@ msgstr "두 조건 모두 참이면 참을 반환합니다."
 msgid ""
 "Reports keyboard input from the most recent use of <img "
 "src=\"%(url_ask_and_wait)s\"/>"
-msgstr ""
+msgstr "<img src=\"%(url_ask_and_wait)s\"/>의 최근 사용에서의 키보드 입력을 반환합니다."
 
 #: templates/help/studio/tips/blocks/answer.html:18
 #, python-format
@@ -90,6 +90,8 @@ msgid ""
 " input in <img src=\"%(url_answer)s\" />. The answer is shared by all "
 "sprites."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" />는 사용자에게 묻고 키보드 입력을 <img "
+"src=\"%(url_answer)s\" />에 저장합니다. 대답은 모든 스프라이트에서 사용할 수 있습니다."
 
 #: templates/help/studio/tips/blocks/answer.html:22
 #, python-format
@@ -97,18 +99,20 @@ msgid ""
 "If you want to save the current answer, you can store it in a variable or "
 "list. For example, <img src=\"%(url_answer_ex2)s\"/>"
 msgstr ""
+"현재의 대답을 저장하고 싶다면, 변수 또는 리스트에 대답을 보관할 수 있습니다. 예를 들면, <img "
+"src=\"%(url_answer_ex2)s\"/>"
 
 #: templates/help/studio/tips/blocks/answer.html:25
 msgid ""
 "To view the value of answer, click the checkbox next to the answer block."
-msgstr ""
+msgstr "대답을 보려면, 대답 블록 옆의 체크박스를 클릭하세요."
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:10
 #, python-format
 msgid ""
 "Asks a question on the screen and stores keyboard input in the <img "
 "src=\"%(url_answer)s\" />"
-msgstr ""
+msgstr "화면에서 사용자에게 묻고 <img src=\"%(url_answer)s\" />에 키보드 입력을 저장합니다."
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:14
 msgid ""
@@ -124,6 +128,9 @@ msgid ""
 "balloon on the screen. The program waits as the user types in a response, "
 "until the Enter key is pressed or the check mark is clicked."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" />는 사용자에게 묻고 키보드 입력을 <img "
+"src=\"%(url_answer)s\" />에 저장합니다. 물음은 화면에 있는 말풍선에 나타납니다. 프로그램은 사용자가 대답을 "
+"입력하고, Enter 키가 눌러지거나 체크 표시가 클릭될 때까지 기다립니다."
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:9
 msgid "Reports Stage's current backdrop name"
@@ -134,14 +141,14 @@ msgstr "무대의 현재 배경 이름을 반환합니다."
 msgid ""
 "The title next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_name)s\" />"
-msgstr ""
+msgstr "목록에 있는 배경 옆의 제목이 <img src=\"%(url_backdrop_name)s\" />입니다."
 
 #: templates/help/studio/tips/blocks/backdrop-number.html:17
 #, python-format
 msgid ""
 "The number next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_number)s\" />"
-msgstr ""
+msgstr "목록에 있는 배경 옆의 숫자가 <img src=\"%(url_backdrop_number)s\" />입니다."
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:9
 msgid "Sends a message to all sprites and waits"
@@ -154,12 +161,14 @@ msgid ""
 "all sprites to tell them to do something, and wait until they all finish "
 "before continuing."
 msgstr ""
+"<img src=\"%(url_broadcast_and_wait)s\" />를 사용하여 모든 스프라이트에게 어떤 일을 하라는 메시지를 "
+"보내고, 계속하기 전에 모두가 끝낼 때까지 기다릴 수 있습니다."
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:22
 msgid ""
 "Click to choose which message gets sent. Choose \"new\" to type in your own "
 "message."
-msgstr ""
+msgstr "어떤 메시지를 보낼지 선택하려면 클릭하세요. 새로운 메시지를 입력하려면 \"새 메시지\"를 선택하세요. "
 
 #: templates/help/studio/tips/blocks/broadcast.html:9
 msgid "Sends a message to all sprites"
@@ -172,6 +181,8 @@ msgid ""
 " background). This is useful if you want to tell other sprites when to do "
 "something."
 msgstr ""
+"<img src=\"%(url_broadcast)s\"/>는 모든 스프라이트(무대 포함)에게 메시지를 보냅니다. 이것은 다른 "
+"스프라이트에게 어떤 일을 언제 해야 하는지 알려줄 때 유용합니다."
 
 #: templates/help/studio/tips/blocks/broadcast.html:22
 #, python-format
@@ -179,6 +190,8 @@ msgid ""
 "What do you want them to do when they receive the message? See <a "
 "href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 msgstr ""
+"스프라이트가 메시지를 받을 때 어떤 일을 하기를 원하나요? <a href=\"../when-i-receive/\"><img "
+"src=\"%(url_when_i_receive)s\"/></a>를 참조하세요."
 
 #: templates/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
@@ -192,6 +205,10 @@ msgid ""
 "<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
 "Try these effects with numbers such as 10, 35, or 100. Or try negative numbers, such as -50.\n"
 msgstr ""
+"\n"
+"클릭하여 목록에서 효과를 고르세요: \n"
+"<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
+"이 효과들을 10, 35, 또는 100과 같은 수로 시험해 보세요. 아니면 -50처럼 음수를 넣어 보세요.\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:25
 #, python-format
@@ -199,6 +216,8 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> to clear "
 "all graphic effects. Or, use <img src=\"%(url_clear_graphic_effects)s\"/>"
 msgstr ""
+"모든 그래픽 효과를 지우려면 멈추기<img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/>를 "
+"클릭하세요. 아니면, <img src=\"%(url_clear_graphic_effects)s\"/>를 사용하세요."
 
 #: templates/help/studio/tips/blocks/change-size.html:8
 msgid "Changes sprite's size by specified amount"
@@ -230,7 +249,7 @@ msgid ""
 "than one variable, use the pull-down menu to select the variable name."
 msgstr ""
 "만약 한 개보다 많은 변수가 있다면,\n"
-"풀다운 메뉴를 사용하여 변수 이름을 선택하세요."
+"드롭다운 메뉴를 사용하여 변수 이름을 선택하세요."
 
 #: templates/help/studio/tips/blocks/change-volume.html:7
 msgid "Changes sprite's sound volume by specified amount"
@@ -318,7 +337,7 @@ msgstr "스프라이트의 모든 그래픽 효과를 지웁니다."
 msgid ""
 "<img src=\"%(url_clear_graphic_effects)s/\" /> clears all the graphic "
 "effects for this sprite."
-msgstr ""
+msgstr "<img src=\"%(url_clear_graphic_effects)s/\" />는 이 스프라이트의 모든 그래픽 효과를 지웁니다."
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
@@ -336,13 +355,13 @@ msgstr "복제본이 생성되면 복제본이 무엇을 할지 알려줍니다.
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 msgid "The script is triggered as soon as the clone is created."
-msgstr ""
+msgstr "복제본이 생성되자마자 이 스크립트가 활성화됩니다."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:12
 msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are "
 "created."
-msgstr ""
+msgstr "복제본은 생성된 뒤에 활성화되는 모든 \"... 때\" 블록에도 반응합니다."
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
@@ -383,7 +402,7 @@ msgstr "지정한 스프라이트의 복제본(임시의 사본)을 생성합니
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
-msgstr ""
+msgstr "드롭다운 메뉴에서 어떤 스프라이트를 복제할지 고르세요. "
 
 #: templates/help/studio/tips/blocks/create-clone.html:14
 #, python-format
@@ -391,25 +410,29 @@ msgid ""
 "Use <img src=\"%(url_clone_startup)s\" /> to tell the clone what to do once "
 "it's created."
 msgstr ""
+"복제본이 생성되었을 때 어떤 일을 할지 복제본에게 알려주려면 <img src=\"%(url_clone_startup)s\" />를 "
+"사용하세요."
 
 #: templates/help/studio/tips/blocks/create-clone.html:16
 #: templates/help/studio/tips/blocks/delete-this-clone.html:16
 #: templates/help/studio/tips/blocks/video-motion.html:26
 msgid "Sample Script:"
-msgstr ""
+msgstr "예시 스크립트:"
 
 #: templates/help/studio/tips/blocks/create-clone.html:23
 #: templates/help/studio/tips/blocks/video-motion.html:32
 #: templates/help/studio/tips/ext/PicoBoard.html:42
 #: templates/help/studio/tips/ext/wedo1.html:56
 msgid "Troubleshooting:"
-msgstr ""
+msgstr "문제 해결:"
 
 #: templates/help/studio/tips/blocks/create-clone.html:25
 msgid ""
 "If you can't see the clone, move it so the original sprite doesn't cover it."
 " The clone appears in the same location as the sprite initially."
 msgstr ""
+"만약 복제본을 볼 수 없다면, 원래의 스프라이트가 가리지 않도록 복제본을 움직이세요. 복제본은 처음에 원래의 스프라이트와 같은 위치에 "
+"나타납니다."
 
 #: templates/help/studio/tips/blocks/create-clone.html:29
 #, python-format
@@ -417,10 +440,11 @@ msgid ""
 "Make sure you've chosen the sprite you want to clone from the menu in the "
 "<img src=\"%(url_create_clone_of)s\" /> block."
 msgstr ""
+"<img src=\"%(url_create_clone_of)s\" /> 블록의 메뉴에서 복제하고 싶은 스프라이트를 선택했는지 확인하세요."
 
 #: templates/help/studio/tips/blocks/create-clone.html:31
 msgid "Note: The clone only lasts while the project is running."
-msgstr ""
+msgstr "참고: 복제본은 프로젝트가 실행되는 동안에만 존재합니다."
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
@@ -428,13 +452,13 @@ msgstr "현재 시간을 반환합니다."
 
 #: templates/help/studio/tips/blocks/current-time.html:15
 msgid "You can select  from the menu to indicate which item you want."
-msgstr ""
+msgstr "어떤 항목을 원하는지는 메뉴에서 선택할 수 있습니다."
 
 #: templates/help/studio/tips/blocks/current-time.html:20
 msgid ""
 "To view the value of the current time, click the checkbox next to the "
 "current time."
-msgstr ""
+msgstr "현재 시간 값을 보기 위해서는, 현재 시간 블록 옆에 있는 체크박스를 클릭하세요."
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
@@ -446,7 +470,7 @@ msgstr "추가 블록이 어떤 일을 할 것인지 정의합니다."
 
 #: templates/help/studio/tips/blocks/define.html:11
 msgid "The <strong>define</strong> script tells a custom block what to do:"
-msgstr ""
+msgstr "<strong>정의하기</strong> 스크립트는 추가 블록에게 무엇을 할지 알려줍니다:"
 
 #: templates/help/studio/tips/blocks/define.html:17
 msgid ""
@@ -454,13 +478,15 @@ msgid ""
 "To use them, drag copies of the input blocks into other blocks within the "
 "define script."
 msgstr ""
+"만약 추가 블록에 입력값이 있다면, 입력값은 둥근, 연보라색 블록으로 나타날 것입니다. 입력값을 사용하려면, 정의하기 스크립트 안에서 "
+"다른 블록으로 입력값 블록의 복사본을 드래그하세요."
 
 #: templates/help/studio/tips/blocks/define.html:22
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:25
 msgid ""
 "Note: The input blocks can <strong>only</strong> be used in the define "
 "script."
-msgstr ""
+msgstr "참고: 입력값 블록들은 <strong>오직</strong> 정의하기 스크립트 안에서만 사용될 수 있습니다."
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:7
 msgid "Deletes one or all items from a list"
@@ -478,62 +504,62 @@ msgstr ""
 #: templates/help/studio/tips/blocks/delete-from-list.html:21
 msgid ""
 "You can specify the number of the item you want to delete. For example:"
-msgstr ""
+msgstr "삭제하고 싶은 항목의 번호를 지정할 수 있습니다. 예를 들어:"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:26
 msgid ""
 "To delete the last item in the list, choose \"last\" from the pull-down "
 "menu:"
-msgstr ""
+msgstr "리스트에 있는 마지막 항목을 삭제하려면, 드롭다운 메뉴에서 \"마지막\"을 선택하세요:"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:31
 msgid "You can also choose to delete everything in the list:"
-msgstr ""
+msgstr "리스트에 있는 모든 항목을 삭제하는 것을 고를 수도 있습니다: "
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:7
 msgid "Deletes the current clone"
-msgstr "현제 복제본을 삭제 합니다."
+msgstr "현제 복제본을 삭제합니다."
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:11
 msgid "Place this block in a script after the clone is done its actions."
-msgstr ""
+msgstr "복제본이 실행을 끝낸 뒤 스크립트에 이 블록을 넣으세요."
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:14
 msgid "All clones are automatically deleted when the program is stopped."
-msgstr ""
+msgstr "모든 복제본은 프로그램이 멈출 때 자동으로 삭제됩니다."
 
 #: templates/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
-msgstr ""
+msgstr "스프라이트의 현재 방향을 반환합니다."
 
 #: templates/help/studio/tips/blocks/direction.html:15
 msgid "<b>direction</b> tells which way the sprite is heading."
-msgstr ""
+msgstr "<b>방향</b>은 스프라이트가 어느 길로 가는지 알려줍니다."
 
 #: templates/help/studio/tips/blocks/direction.html:17
 #, python-format
 msgid ""
 "To see a sprite's direction, click <img "
 "src=\"%(STATIC_URL)s/images/help/info.gif\">:"
-msgstr ""
+msgstr "스프라이트의 방향을 보려면, <img src=\"%(STATIC_URL)s/images/help/info.gif\">를 클릭하세요:"
 
 #: templates/help/studio/tips/blocks/direction.html:20
 msgid "You can drag the blue line to change direction."
-msgstr ""
+msgstr "파란 선을 드래그하여 방향을 바꿀 수 있습니다."
 
 #: templates/help/studio/tips/blocks/direction.html:24
 msgid ""
 "To display a sprite's direction on the Stage, click the checkbox in the "
 "palette:"
-msgstr ""
+msgstr "무대에 스프라이트의 방향을 표시하려면, 블록 팔레트의 체크박스를 클릭하세요:"
 
 #: templates/help/studio/tips/blocks/distance-to.html:7
 msgid "Reports distance from the specified sprite or mouse-pointer"
-msgstr ""
+msgstr "지정한 스프라이트 또는 마우스 포인터에서의 거리를 반환합니다."
 
 #: templates/help/studio/tips/blocks/distance-to.html:15
 msgid "Select from the pull-down menu to choose"
-msgstr ""
+msgstr "대상을 고르려면 드롭다운 메뉴에서 선택하세요."
 
 #: templates/help/studio/tips/blocks/divide.html:7
 msgid "Divides first number by second number"
@@ -541,7 +567,7 @@ msgstr "첫 번째 수를 두 번째 수로 나눕니다."
 
 #: templates/help/studio/tips/blocks/equal.html:7
 msgid "Reports true if two values are equal"
-msgstr ""
+msgstr "두 값이 같으면 참을 반환합니다."
 
 #: templates/help/studio/tips/blocks/forever.html:7
 msgid "Runs the blocks inside over and over"
@@ -549,33 +575,33 @@ msgstr "안에 있는 블록을 계속 실행합니다"
 
 #: templates/help/studio/tips/blocks/getattribute.html:8
 msgid "Reports an attribute of the sprite or stage"
-msgstr ""
+msgstr "스프라이트 또는 무대의 속성을 반환합니다."
 
 #: templates/help/studio/tips/blocks/getattribute.html:14
 msgid ""
 "Choose different attributes from the drop-down menu and combine with other "
 "blocks, such as operators."
-msgstr ""
+msgstr "드롭다운 메뉴에서 다양한 속성을 고르고 연산 블록 같은 다른 블록과 연결하세요."
 
 #: templates/help/studio/tips/blocks/glide.html:7
 msgid "Glide over time to this <b>x y</b> position"
-msgstr ""
+msgstr "시간 동안 이 <b>x y</b> 좌표로 이동합니다."
 
 #: templates/help/studio/tips/blocks/glide.html:13
 msgid "The sprite starts at one point, and then glides to the other points."
-msgstr ""
+msgstr "스프라이트는 어떤 위치에서 출발한 뒤, 서서히 다른 곳으로 이동합니다."
 
 #: templates/help/studio/tips/blocks/glide.html:18
 msgid ""
 "Use <b>glide</b> to move a sprite smoothly to an <b>x y</b> position on the "
 "Stage."
-msgstr ""
+msgstr "어떤 스프라이트를 무대의 <b>x y</b> 좌표로 서서히 이동시키려면 <b>시간 동안 움직이기</b>를 사용하세요."
 
 #: templates/help/studio/tips/blocks/glide.html:20
 msgid ""
 "You can see <b>x</b> and <b>y</b> update in the Motion blocks palette when "
 "you drag a sprite to another point."
-msgstr ""
+msgstr "스프라이트를 다른 곳으로 옮길 때 동작 블록 팔레트에서 <b>x</b>와 <b>y</b>좌표가 바뀌는 것을 볼 수 있습니다."
 
 #: templates/help/studio/tips/blocks/go-back-layer.html:7
 msgid "Go back a certain number of layers"
