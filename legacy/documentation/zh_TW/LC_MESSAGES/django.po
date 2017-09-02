@@ -64,7 +64,7 @@ msgstr "這個積木可以讓你把新的項目添加到清單最後面。"
 
 #: templates/help/studio/tips/blocks/add-to-list.html:24
 msgid "Can't find the list blocks? You need to first make a list:"
-msgstr ""
+msgstr "找不到清單積木？你必須先建立一個清單後才會顯示相關積木："
 
 #: templates/help/studio/tips/blocks/add.html:7
 msgid "Adds two numbers"
@@ -79,7 +79,7 @@ msgstr "是否二者皆符合條件，如果是，則回傳 true。"
 msgid ""
 "Reports keyboard input from the most recent use of <img "
 "src=\"%(url_ask_and_wait)s\"/>"
-msgstr ""
+msgstr "用來回傳從 <img src=\"%(url_ask_and_wait)s\"/> 積木中所輸入的內容。"
 
 #: templates/help/studio/tips/blocks/answer.html:18
 #, python-format
@@ -88,18 +88,20 @@ msgid ""
 " input in <img src=\"%(url_answer)s\" />. The answer is shared by all "
 "sprites."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" /> 積木會發問一個問題，接著把透過鍵盤輸入的答案給存在 <img "
+"src=\"%(url_answer)s\" /> 裡，所有的角色都可以使用它。"
 
 #: templates/help/studio/tips/blocks/answer.html:22
 #, python-format
 msgid ""
 "If you want to save the current answer, you can store it in a variable or "
 "list. For example, <img src=\"%(url_answer_ex2)s\"/>"
-msgstr ""
+msgstr "如果你想儲存目前的答案，你可以用變數或清單的方式把它留下來，例如：<img src=\"%(url_answer_ex2)s\"/>"
 
 #: templates/help/studio/tips/blocks/answer.html:25
 msgid ""
 "To view the value of answer, click the checkbox next to the answer block."
-msgstr ""
+msgstr "若要檢視回答的值，可以將答案積木旁的方塊打勾。"
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:10
 #, python-format
@@ -9648,13 +9650,13 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/nametip6.html:14
 msgid "Try different numbers to adjust the spin."
-msgstr ""
+msgstr "輸入不同的數字以調整轉速。"
 
 #: templates/help/studio/tips/howto/nametip6.html:18
 msgid ""
 "Tip: To reset the sprite's angle, click this block in the <span "
 "class=\"motioncolor\">Motion</span> category:"
-msgstr ""
+msgstr "1"
 
 #: templates/help/studio/tips/howto/nametip6.html:21
 msgid "Next, finish your name"
@@ -9662,7 +9664,7 @@ msgstr "下一步，完成你的名字"
 
 #: templates/help/studio/tips/howto/nametip7.html:7
 msgid "Add and animate the other letters in your name."
-msgstr ""
+msgstr "添加其它的字母，讓它們也動起來吧！"
 
 #: templates/help/studio/tips/howto/nametip7.html:12
 msgid ""
@@ -9678,7 +9680,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/nametip7.html:21
 msgid "Make your letter glide when you click it:"
-msgstr ""
+msgstr "讓字母在被點擊時滑行："
 
 #: templates/help/studio/tips/howto/nametip7.html:24
 msgid ""
@@ -10233,6 +10235,9 @@ msgid ""
 "the library <img src=\"%(STATIC_URL)s/images/help/speaker-icon.png\"> or "
 "upload a file <img src=\"%(STATIC_URL)s/images/help/upload-icon.png\">."
 msgstr ""
+"切換到「音效」頁籤 <img src=\"%(url_sounds_tab)s\">。點擊 <img "
+"src=\"%(STATIC_URL)s/images/help/speaker-icon.png\"> 從範例庫中選擇要使用的音效，或是用 <img "
+"src=\"%(STATIC_URL)s/images/help/upload-icon.png\"> 從電腦匯入音效檔案。"
 
 #: templates/help/studio/tips/howto/play-music.html:13
 msgid "This script will keep playing music in the background:"
@@ -10242,13 +10247,15 @@ msgstr "下方這個程式會持續播放背景音樂："
 msgid ""
 "Does your music get interrupted? Make sure to use the block that plays sound"
 " until done:"
-msgstr ""
+msgstr "音樂突然中斷？確定你使用的積木是「播放音效 {…} 到底」： "
 
 #: templates/help/studio/tips/howto/play-music.html:21
 msgid ""
 "Want the music to stop at the end of your program? Add this block to the "
 "last script:"
 msgstr ""
+"想要在程式結束的同時也停止播放音樂？可以在程式最後加上「停止 {全部}」積木：<img src=\"%(STATIC_URL)s/images/help"
+"/stop-all.png\">"
 
 #: templates/help/studio/tips/howto/play-with-effects.html:12
 msgid "Choose a sprite with lots of color, such as:"
@@ -10621,19 +10628,21 @@ msgid ""
 "microphone <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\">. "
 "Then, click the record button:"
 msgstr ""
+"若要錄製聲音，可以切換到音效頁籤 <img src=\"%(url_sounds_tab)s\">，<br/>然後使用錄音工具 <img "
+"src=\"%(STATIC_URL)s/images/help/microphone-icon.png\"> ，在音效編輯器上按下錄音按鈕："
 
 #: templates/help/studio/tips/howto/record-sounds.html:19
 msgid "Type in a name for your sound:"
-msgstr ""
+msgstr "為你的音效命名："
 
 #: templates/help/studio/tips/howto/record-sounds.html:25
 #, python-format
 msgid "Then, click <img src=\"%(url_scripts_tab)s\"> and use this block:"
-msgstr ""
+msgstr "接著，切換到 <img src=\"%(url_scripts_tab)s\"> 頁籤並使用這個積木："
 
 #: templates/help/studio/tips/howto/record-sounds.html:27
 msgid "Choose the sound name from the drop-down menu."
-msgstr ""
+msgstr "從下拉清單裡選擇音效的名稱。"
 
 #: templates/help/studio/tips/howto/soccer.html:8
 msgid "MAKE YOUR OWN SOCCER GAME"
@@ -11064,11 +11073,11 @@ msgstr "y 是舞台從上到下的垂直位置。"
 #: templates/help/studio/tips/howto/switch-backdrop.html:10
 #, python-format
 msgid "You can change backdrops using <img src=\"%(url_switch_backdrop_to)s\">"
-msgstr ""
+msgstr "你可以用積木 <img src=\"%(url_switch_backdrop_to)s\"> 來變換場景"
 
 #: templates/help/studio/tips/howto/switch-backdrop.html:13
 msgid "Here's an example:"
-msgstr ""
+msgstr "這兒有個例子："
 
 #: templates/help/studio/tips/howto/switch-backdrop.html:19
 #, python-format
@@ -11077,6 +11086,8 @@ msgid ""
 "/choose-backdrop-icon.png\">. Then, select each backdrop name from the drop-"
 "down menu:"
 msgstr ""
+"首先，從 <img src=\"%(STATIC_URL)s/images/help/choose-backdrop-icon.png\"> "
+"挑選你要使用的舞台背景。 接著從積木裡頭的下拉清單中選擇它："
 
 #: templates/help/studio/tips/howto/switch-happy.html:13
 msgid "Pick a new sprite that has more than one costume, such as:"
@@ -11105,13 +11116,15 @@ msgid ""
 "microphone <img src=\"%(STATIC_URL)s/images/help/microphone-icon.png\"> to "
 "record the words."
 msgstr ""
+"若要錄製聲音，可以切換到音效頁籤 <img src=\"%(url_sounds_tab)s\">，<br/>然後使用錄音工具 <img "
+"src=\"%(STATIC_URL)s/images/help/microphone-icon.png\"> ，在音效編輯器上按下錄音按鈕："
 
 #: templates/help/studio/tips/howto/talking-sprite.html:27
 #, python-format
 msgid ""
 "Add this to your script:<br/><img src=\"%(url_play_sound_block)s\"><br/>just"
 " below the green flag block.<br/>"
-msgstr ""
+msgstr "將下列程式添加到綠旗積木後：<br/><img src=\"%(url_play_sound_block)s\"><br/><br/>"
 
 #: templates/help/studio/tips/howto/valentine-intro.html:7
 msgid "Make a Valentine's Day card to share with your friends!"
@@ -11349,7 +11362,7 @@ msgstr "在卡片裡加上音樂。"
 
 #: templates/help/studio/tips/howto/valentine7.html:8
 msgid "First, click the heart sprite to select it."
-msgstr ""
+msgstr "首先，點擊以選取這個角色。"
 
 #: templates/help/studio/tips/howto/valentine7.html:19
 msgid ""
