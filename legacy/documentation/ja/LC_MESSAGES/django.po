@@ -60,11 +60,11 @@ msgstr "アイテムには数字、文字列、記号を設定できます。"
 
 #: templates/help/studio/tips/blocks/add-to-list.html:19
 msgid "Use this block if you want to add an item to the end of a list."
-msgstr ""
+msgstr "要素をリストの最後に追加するには、このブロックを使います。"
 
 #: templates/help/studio/tips/blocks/add-to-list.html:24
 msgid "Can't find the list blocks? You need to first make a list:"
-msgstr ""
+msgstr "リストのブロックが見つけられないですか？最初にリストを作成しておく必要があります。:"
 
 #: templates/help/studio/tips/blocks/add.html:7
 msgid "Adds two numbers"
@@ -79,7 +79,7 @@ msgstr "両方の条件が真であるなら真が通知されます。"
 msgid ""
 "Reports keyboard input from the most recent use of <img "
 "src=\"%(url_ask_and_wait)s\"/>"
-msgstr ""
+msgstr "直前に使用した<img src=\"%(url_ask_and_wait)s\"/>からのキーボード入力を通知します。"
 
 #: templates/help/studio/tips/blocks/answer.html:18
 #, python-format
@@ -88,25 +88,27 @@ msgid ""
 " input in <img src=\"%(url_answer)s\" />. The answer is shared by all "
 "sprites."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" /> は、質問し、<img src=\"%(url_answer)s\" "
+"/>.のキーボード入力を保存します。答えはすべてのスプライトで共有されます。"
 
 #: templates/help/studio/tips/blocks/answer.html:22
 #, python-format
 msgid ""
 "If you want to save the current answer, you can store it in a variable or "
 "list. For example, <img src=\"%(url_answer_ex2)s\"/>"
-msgstr ""
+msgstr "現在の答えを取っておきたいなら、変数やリストに保存できます。例えば、<img src=\"%(url_answer_ex2)s\"/>です。"
 
 #: templates/help/studio/tips/blocks/answer.html:25
 msgid ""
 "To view the value of answer, click the checkbox next to the answer block."
-msgstr ""
+msgstr "答えの値を表示するには、答えのブロックに横のチェックボックスをクリックします。"
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:10
 #, python-format
 msgid ""
 "Asks a question on the screen and stores keyboard input in the <img "
 "src=\"%(url_answer)s\" />"
-msgstr ""
+msgstr "画面上で質問し、キーボード入力を<img src=\"%(url_answer)s\" />に保存します。"
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:14
 msgid ""
@@ -132,14 +134,14 @@ msgstr "現在のステージの背景の名前を返す"
 msgid ""
 "The title next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_name)s\" />"
-msgstr ""
+msgstr "リスト内の背景の下にあるタイトルが、<img src=\"%(url_backdrop_name)s\" />です。"
 
 #: templates/help/studio/tips/blocks/backdrop-number.html:17
 #, python-format
 msgid ""
 "The number next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_number)s\" />"
-msgstr ""
+msgstr "リスト内の背景の横の番号は、<img src=\"%(url_backdrop_number)s\" />です。"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:9
 msgid "Sends a message to all sprites and waits"
@@ -152,12 +154,14 @@ msgid ""
 "all sprites to tell them to do something, and wait until they all finish "
 "before continuing."
 msgstr ""
+"<img src=\"%(url_broadcast_and_wait)s\" "
+"/>を使用すると、すべてのスプライトに何かを指示するメッセージを送信して、すべて完了するまで待機させることができます。"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:22
 msgid ""
 "Click to choose which message gets sent. Choose \"new\" to type in your own "
 "message."
-msgstr ""
+msgstr "クリックして送信済みメッセージを選択します。自身のメッセージを入力するには\"新しいメッセージ\"を選択します。"
 
 #: templates/help/studio/tips/blocks/broadcast.html:9
 msgid "Sends a message to all sprites"
@@ -170,6 +174,8 @@ msgid ""
 " background). This is useful if you want to tell other sprites when to do "
 "something."
 msgstr ""
+"<img "
+"src=\"%(url_broadcast)s\"/>は、すべてのスプライト（および背景）にメッセージを送ります。他のスプライトに、いつ何かするかを伝えたい場合に便利です。"
 
 #: templates/help/studio/tips/blocks/broadcast.html:22
 #, python-format
@@ -177,6 +183,8 @@ msgid ""
 "What do you want them to do when they receive the message? See <a "
 "href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 msgstr ""
+"他のスプライトがメッセージを受け取った時、何をして欲しいですか？<a href=\"../when-i-receive/\"><img "
+"src=\"%(url_when_i_receive)s\"/></a>を参照してみてください。"
 
 #: templates/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
@@ -190,6 +198,10 @@ msgid ""
 "<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
 "Try these effects with numbers such as 10, 35, or 100. Or try negative numbers, such as -50.\n"
 msgstr ""
+"\n"
+"クリックしてメニューから効果を選択します。:\n"
+"<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
+"10, 35または100のような値を使って効果を試してください。あるいは、-50のような負の値も試しましょう。\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:25
 #, python-format
@@ -197,6 +209,9 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> to clear "
 "all graphic effects. Or, use <img src=\"%(url_clear_graphic_effects)s\"/>"
 msgstr ""
+"ストップボタン<img src=\"%(STATIC_URL)s/images/help/stop-"
+"sign.png\"/>をクリックしてすべてのグラフィック効果をクリアします。または<img "
+"src=\"%(url_clear_graphic_effects)s\"/>を使います。"
 
 #: templates/help/studio/tips/blocks/change-size.html:8
 msgid "Changes sprite's size by specified amount"
@@ -316,7 +331,7 @@ msgstr "スプライトのすべてのグラフィック効果をクリア"
 msgid ""
 "<img src=\"%(url_clear_graphic_effects)s/\" /> clears all the graphic "
 "effects for this sprite."
-msgstr ""
+msgstr "<img src=\"%(url_clear_graphic_effects)s/\" /> スプライトのすべてのグラフィック効果をクリア"
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
@@ -334,13 +349,13 @@ msgstr "クローンが作成された時に一度だけやりたいことを伝
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 msgid "The script is triggered as soon as the clone is created."
-msgstr ""
+msgstr "クローンが作成されたらすぐにスクリプトが実行されます。"
 
 #: templates/help/studio/tips/blocks/clone-startup.html:12
 msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are "
 "created."
-msgstr ""
+msgstr "クローンが作成された後、クローンも\"クローンされたとき\"ブロックに反応して実行されます。"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
@@ -380,7 +395,7 @@ msgstr "特定のスプライトのクローンを作成(temporary duplicate)"
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
-msgstr ""
+msgstr "ドロップダウンメニューからクローンするスクリプトを選択します。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:14
 #, python-format
@@ -388,12 +403,13 @@ msgid ""
 "Use <img src=\"%(url_clone_startup)s\" /> to tell the clone what to do once "
 "it's created."
 msgstr ""
+"クローンが作成されたら何をするのか、クローンに通知するには、<img src=\"%(url_clone_startup)s\" />を使用します。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:16
 #: templates/help/studio/tips/blocks/delete-this-clone.html:16
 #: templates/help/studio/tips/blocks/video-motion.html:26
 msgid "Sample Script:"
-msgstr ""
+msgstr "スクリプトの例:"
 
 #: templates/help/studio/tips/blocks/create-clone.html:23
 #: templates/help/studio/tips/blocks/video-motion.html:32
@@ -407,6 +423,7 @@ msgid ""
 "If you can't see the clone, move it so the original sprite doesn't cover it."
 " The clone appears in the same location as the sprite initially."
 msgstr ""
+"クローンが見つからない場合、オリジナルのスプライトがクローンをおおい隠さないように移動します。クローンは、最初、オリジナルのスプライトと同じ場所に現れます。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:29
 #, python-format
@@ -414,10 +431,12 @@ msgid ""
 "Make sure you've chosen the sprite you want to clone from the menu in the "
 "<img src=\"%(url_create_clone_of)s\" /> block."
 msgstr ""
+"<img src=\"%(url_create_clone_of)s\" "
+"/>ブロックのメニューから、クローンするスプライトを選択しているか確認してください。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:31
 msgid "Note: The clone only lasts while the project is running."
-msgstr ""
+msgstr "注釈: プロジェクトが実行中はクローンは存続します。"
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
@@ -425,13 +444,13 @@ msgstr "現在の時刻を返す"
 
 #: templates/help/studio/tips/blocks/current-time.html:15
 msgid "You can select  from the menu to indicate which item you want."
-msgstr ""
+msgstr "メニューから選択して、好みの項目を（好みの形式で）表示させます。"
 
 #: templates/help/studio/tips/blocks/current-time.html:20
 msgid ""
 "To view the value of the current time, click the checkbox next to the "
 "current time."
-msgstr ""
+msgstr "現在の時刻を表示するには、”現在の~”ブロックの横のチェックボックスをクリックします。"
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
@@ -443,7 +462,7 @@ msgstr "カスタムブロックを定義する"
 
 #: templates/help/studio/tips/blocks/define.html:11
 msgid "The <strong>define</strong> script tells a custom block what to do:"
-msgstr ""
+msgstr "定義スクリプトはカスタムブロックに何をすべきかを指示します。"
 
 #: templates/help/studio/tips/blocks/define.html:17
 msgid ""
@@ -451,13 +470,14 @@ msgid ""
 "To use them, drag copies of the input blocks into other blocks within the "
 "define script."
 msgstr ""
+"ブロックに引数がある場合、丸味を帯びた、薄い紫色のブロックとして表示されます。定義スクリプトの中で引数を使用するには他のブロックの引数のコピーをドラッグします。"
 
 #: templates/help/studio/tips/blocks/define.html:22
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:25
 msgid ""
 "Note: The input blocks can <strong>only</strong> be used in the define "
 "script."
-msgstr ""
+msgstr "注釈：引数ブロックは定義スクリプトの中<strong>のみ</strong> で使用可能ます。"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:7
 msgid "Deletes one or all items from a list"
@@ -476,17 +496,17 @@ msgstr ""
 #: templates/help/studio/tips/blocks/delete-from-list.html:21
 msgid ""
 "You can specify the number of the item you want to delete. For example:"
-msgstr ""
+msgstr "削除したい要素の番号を指定できます。例えば:"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:26
 msgid ""
 "To delete the last item in the list, choose \"last\" from the pull-down "
 "menu:"
-msgstr ""
+msgstr "リスト中の最後の要素を削除するには、プルダウンメニューから”最後”を選択します。"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:31
 msgid "You can also choose to delete everything in the list:"
-msgstr ""
+msgstr "リスト中の全ての要素を削除することも可能です。"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:7
 msgid "Deletes the current clone"
@@ -498,7 +518,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:14
 msgid "All clones are automatically deleted when the program is stopped."
-msgstr ""
+msgstr "プログラムが停止すると、すべてのクローンは自動的に削除されます。"
 
 #: templates/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
@@ -506,7 +526,7 @@ msgstr "スプライトが現在向いている方向が通知されます。"
 
 #: templates/help/studio/tips/blocks/direction.html:15
 msgid "<b>direction</b> tells which way the sprite is heading."
-msgstr ""
+msgstr "<b>方向</b>は、スプライトが向いている方向を通知します。"
 
 #: templates/help/studio/tips/blocks/direction.html:17
 #, python-format
@@ -514,16 +534,18 @@ msgid ""
 "To see a sprite's direction, click <img "
 "src=\"%(STATIC_URL)s/images/help/info.gif\">:"
 msgstr ""
+"スプライトがいる方向を調べるには、<img "
+"src=\"%(STATIC_URL)s/images/help/info.gif\">をクリックしてください。:"
 
 #: templates/help/studio/tips/blocks/direction.html:20
 msgid "You can drag the blue line to change direction."
-msgstr ""
+msgstr "青い線をドラックすると方向を変えられます。"
 
 #: templates/help/studio/tips/blocks/direction.html:24
 msgid ""
 "To display a sprite's direction on the Stage, click the checkbox in the "
 "palette:"
-msgstr ""
+msgstr "ステージ上のスプライトがいる方向を表示するには、パレット上のチェックボックスをクリックします。"
 
 #: templates/help/studio/tips/blocks/distance-to.html:7
 msgid "Reports distance from the specified sprite or mouse-pointer"
@@ -531,7 +553,7 @@ msgstr "指定されたスプライトまたはマウスポインターからの
 
 #: templates/help/studio/tips/blocks/distance-to.html:15
 msgid "Select from the pull-down menu to choose"
-msgstr ""
+msgstr "プルダウンメニューから選択します。"
 
 #: templates/help/studio/tips/blocks/divide.html:7
 msgid "Divides first number by second number"
@@ -561,7 +583,7 @@ msgstr "決められた時間で<b>x y</b>座標に移動します"
 
 #: templates/help/studio/tips/blocks/glide.html:13
 msgid "The sprite starts at one point, and then glides to the other points."
-msgstr ""
+msgstr "スプライトはある位置からスタートして他の位置に移動します。"
 
 #: templates/help/studio/tips/blocks/glide.html:18
 msgid ""
@@ -594,7 +616,7 @@ msgstr ""
 msgid ""
 "To make the crab hide behind the rock, tell it to <img "
 "src=\"%(url_go_back_1layer)s\" />"
-msgstr ""
+msgstr "カニを岩の後ろに隠すためは、<img src=\"%(url_go_back_1layer)s\" />ことを通知します。"
 
 #: templates/help/studio/tips/blocks/go-to-front.html:7
 msgid "Moves sprite in front of all other sprites"
@@ -625,17 +647,17 @@ msgstr "マウスポインターや他のスプライトのいる位置に動か
 
 #: templates/help/studio/tips/blocks/go-to.html:16
 msgid "Choose from the menu:"
-msgstr ""
+msgstr "メニューから選択:"
 
 #: templates/help/studio/tips/blocks/go-to.html:20
 msgid "Then, click the block."
-msgstr ""
+msgstr "次にブロックをクリックします。"
 
 #: templates/help/studio/tips/blocks/go-to.html:23
 msgid ""
 "The current sprite will jump to the <b>x y</b> location of the mouse-pointer"
 " or of the sprite you choose."
-msgstr ""
+msgstr "現在のスプライトはマウスポインターか選択したスプライトのxy座標にジャンプします。"
 
 #: templates/help/studio/tips/blocks/greater-than.html:7
 msgid "Reports true if first value is greater than second"
@@ -699,21 +721,21 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/insert-list.html:23
 msgid "You can indicate where in the list you want to add an item."
-msgstr ""
+msgstr "リスト内でアイテムを追加する場所を指定できます。"
 
 #: templates/help/studio/tips/blocks/insert-list.html:26
 #, python-format
 msgid ""
 "<img src=\"%(url_insert_scoreboard)s\" /> inserts item at the specified "
 "place in the list."
-msgstr ""
+msgstr "<img src=\"%(url_insert_scoreboard)s\" />は、リスト中の指定した場所に要素を挿入します。"
 
 #: templates/help/studio/tips/blocks/insert-list.html:32
 #, python-format
 msgid ""
 "<img src=\"%(url_insert_greetings)s\" /> inserts item at a random place in "
 "the list."
-msgstr ""
+msgstr "<img src=\"%(url_insert_greetings)s\" />は、リスト中のランダムな位置に要素を挿入します。"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:7
 msgid "Reports the item at the specifed position in the list"
@@ -733,7 +755,7 @@ msgstr ""
 msgid ""
 "The item block reports the value of the item at the specified place on the "
 "list."
-msgstr ""
+msgstr "\"~番目（~）\"ブロックは、リスト中の指定した場所の要素の値を通知します。"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:24
 msgid ""
@@ -763,13 +785,13 @@ msgstr "リストの要素数を返す"
 
 #: templates/help/studio/tips/blocks/length-of-list.html:15
 msgid "This block reports how many items are currently in a list."
-msgstr ""
+msgstr "このブロックは、現在リスト中にある要素数を通知します。"
 
 #: templates/help/studio/tips/blocks/length-of-list.html:20
 msgid ""
 "The number is the same as the length shown at the bottom of the list "
 "monitor."
-msgstr ""
+msgstr "値は、リストモニターの下に表示されている長さと同じ値です。"
 
 #: templates/help/studio/tips/blocks/length-of.html:7
 msgid "Reports the number of letters in a string"
