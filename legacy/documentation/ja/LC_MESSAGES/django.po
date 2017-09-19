@@ -1494,12 +1494,15 @@ msgid ""
 " number 130 is <font color = blue>blue</font>, and number 170 is <font color"
 " = magenta>magenta</font>."
 msgstr ""
+"ペンの色を<img src=\"%(url_y_position)s\" />のような変数や数字に設定できます。例えば、数字の0は<font color"
+" = red>赤</font>で、数字の70は<font color = green>グリーン</font>、数字の130は <font color ="
+" blue>青</font>、数字の170は <font color = magenta>マゼンタ</font>です。"
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:17
 msgid ""
 "Pen_color=0 at red end of rainbow, pen_color=100 at blue end of rainbow. "
 "Ranges from 0 to 200 to go around the color wheel."
-msgstr ""
+msgstr "ペンの色（Pen_color）は、虹の赤色の終わりの所で0、虹の青色の終わりの所で100です。色相環の一周は、0から200の範囲です。"
 
 #: templates/help/studio/tips/blocks/setpensize.html:9
 msgid "Sets pen's thickness"
@@ -1513,13 +1516,13 @@ msgstr "スプライトの回転方法をセットします。"
 msgid ""
 "Select \"left-right\" from the drop-down menu to make the sprite only rotate"
 " horizontally."
-msgstr "ドロップダウンメニューから「左右のみ」を選ぶと、スプライトを水平方向にのみ回転させます。"
+msgstr "ドロップダウンメニューから、”左右”を選択すると、スプライトは水平方向だけで向きを変えます。"
 
 #: templates/help/studio/tips/blocks/setrotation.html:18
 msgid ""
 "Select \"all around\" from the drop-down menu to make the sprite flip "
 "vertically."
-msgstr ""
+msgstr "ドロップダウンメニューから\"全て回転\"を選択すると、スプライトは垂直方向に回転します。"
 
 #: templates/help/studio/tips/blocks/setrotation.html:22
 msgid ""
@@ -1574,7 +1577,7 @@ msgstr "元の大きさの倍率%%でスプライトの大きさが通知され�
 msgid ""
 "<img src=\"%(url_size)s\" /> reports the %% of the original size of the "
 "object"
-msgstr ""
+msgstr "<img src=\"%(url_size)s\" />は、オブジェクトの元の大きさの%%を通知します。"
 
 #: templates/help/studio/tips/blocks/size.html:21
 msgid ""
@@ -1611,10 +1614,12 @@ msgid ""
 "It can be drawn over or cleared using the <img src=\"%(url_clear)s\" /> "
 "block."
 msgstr ""
+"スタンプはステージ上に描かれたスプライトの一時的な画像にすぎません。 <img src=\"%(url_clear)s\" "
+"/>ブロックを使うと描画がおわるかクリアされます。"
 
 #: templates/help/studio/tips/blocks/stamp.html:17
 msgid "A stamp cannot move and cannot hold scripts."
-msgstr ""
+msgstr "スタンプは移動できないし、スクリプトを持つこともできません。"
 
 #: templates/help/studio/tips/blocks/stop.html:7
 msgid "Stops all scripts in all sprites"
@@ -1642,7 +1647,7 @@ msgstr "指定した背景に切り替え、スクリプトが終了するのを
 
 #: templates/help/studio/tips/blocks/switch-backdrop-and-wait.html:12
 msgid "The script controls switching of scenes from the Stage."
-msgstr ""
+msgstr "スクリプトはステージからのシーンの切り替えをコントロールします。"
 
 #: templates/help/studio/tips/blocks/switch-backdrop-and-wait.html:17
 #, python-format
@@ -1652,6 +1657,9 @@ msgid ""
 "src=\"%(url_when_backdrop_switches_to_backdrop1)s\" /> to finish before "
 "going to the next block."
 msgstr ""
+"<img src=\"%(url_switch_backdrop_to_backdrop1_and_wait)s\" "
+"/>は、次のブロックに進む前に<img src=\"%(url_when_backdrop_switches_to_backdrop1)s\" "
+"/>で始まるすべてのスクリプトが終了するのを待ちます。"
 
 #: templates/help/studio/tips/blocks/switch-backdrop.html:7
 msgid "Switch to the specified backdrop"
@@ -1676,11 +1684,11 @@ msgstr "このスクリプトはコスチュームを切り替えてアニメ化
 #: templates/help/studio/tips/blocks/switch-costume.html:20
 #, python-format
 msgid "To see a sprite's costumes, click <img src=\"%(url_costumes_tab)s\" />"
-msgstr ""
+msgstr "スプライトのコスチュームを確認するには、<img src=\"%(url_costumes_tab)s\" />をクリックします。"
 
 #: templates/help/studio/tips/blocks/switch-costume.html:22
 msgid "Choose a costume name from the pull-down menu."
-msgstr ""
+msgstr "プルダウンメニューからコスチューム名を選択します。"
 
 #: templates/help/studio/tips/blocks/tempo.html:8
 msgid "Reports sprite's tempo in beats per minute"
@@ -1715,7 +1723,7 @@ msgstr "タイマーの値が秒単位で通知されます。"
 msgid ""
 "To see the value of timer, click the checkbox next to the block. The timer "
 "is always running."
-msgstr ""
+msgstr "タイマーの値を参照するには、ブロックの横のチェックボックスをクリックします。タイマーはいつも動いています。"
 
 #: templates/help/studio/tips/blocks/timestamp.html:8
 msgid "Reports the number of days since 2000"
@@ -1740,7 +1748,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/turn-left.html:7
 msgid "Turn to the left"
-msgstr ""
+msgstr "左に回転させる"
 
 #: templates/help/studio/tips/blocks/turn-left.html:14
 msgid ""
@@ -1754,7 +1762,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/turn-right.html:7
 msgid "Turn to the right"
-msgstr "右に回転させます。"
+msgstr "右に回転させる"
 
 #: templates/help/studio/tips/blocks/turn-right.html:15
 msgid "Type in the number of degrees you want the sprite to rotate."
@@ -1778,7 +1786,7 @@ msgstr "カスタムブロックを実行します。"
 msgid ""
 "The custom block runs by calling the <strong>define</strong> script that "
 "matches the name on the block."
-msgstr ""
+msgstr "カスタムブロックは、ブロックの名前と一致した<strong>定義</strong>スクリプトを呼び出すことにより、実行されます。"
 
 #: templates/help/studio/tips/blocks/usedefine.html:15
 msgid "Custom blocks can make your scripts more organized and modular:"
@@ -1792,7 +1800,7 @@ msgstr ""
 msgid ""
 "To edit the block, right-click (Ctrl+click on Mac) on the block and choose "
 "\"edit\" from the menu."
-msgstr ""
+msgstr "ブロックを編集するには、ブロックを右クリック(MacではCRTLを押しながらクリック)してメニューから\"編集\"を選択します。"
 
 #: templates/help/studio/tips/blocks/usedefine.html:27
 msgid ""
@@ -1802,12 +1810,12 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/username.html:7
 msgid "Reports username of the viewer"
-msgstr "視聴者のユーザー名が通知されます。"
+msgstr "参照者のユーザー名が通知されます。"
 
 #: templates/help/studio/tips/blocks/username.html:15
 msgid ""
 "This block will show the username of the user currently viewing the project."
-msgstr ""
+msgstr "このブロックは、現在、プロジェクトを参照しているユーザー名を表示します。"
 
 #: templates/help/studio/tips/blocks/username.html:19
 #, python-format
@@ -1815,6 +1823,7 @@ msgid ""
 "If you want to save the current username, you can store it in a variable or "
 "list. For example, <img src=\"%(url_username_ex2)s\"/>"
 msgstr ""
+"現在のユーザー名を保存したい場合、変数かリストに保存することができます。例  <img src=\"%(url_username_ex2)s\"/>"
 
 #: templates/help/studio/tips/blocks/variable.html:7
 msgid "Reports value of the variable"
@@ -1823,7 +1832,7 @@ msgstr "変数の値が通知されます。"
 #: templates/help/studio/tips/blocks/variable.html:15
 msgid ""
 "To see the value of the variable, click the checkbox next to the block."
-msgstr ""
+msgstr "変数の値を確認するには、ブロックの横のチェックボックスをクリックします。"
 
 #: templates/help/studio/tips/blocks/variable.html:18
 msgid "Right-click on readout to get different views:"
@@ -1831,13 +1840,13 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/variable.html:21
 msgid "To delete or rename a variable, right click on the variable."
-msgstr ""
+msgstr "変数を削除したり、名前を変更するには、変数を右クリックします。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:9
 msgid ""
 "Senses how much <b>motion</b> or <b>direction</b> is currently in the video "
 "image"
-msgstr ""
+msgstr " ビデオ画像上の<b>モーション</b>や<b>向き</b>の量を検知します。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:13
 msgid "How to Use It:"
@@ -1845,7 +1854,7 @@ msgstr "使い方:"
 
 #: templates/help/studio/tips/blocks/video-motion.html:15
 msgid "Requires webcam."
-msgstr ""
+msgstr "ウェブカメラが必要です。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:16
 #, python-format
@@ -1853,13 +1862,15 @@ msgid ""
 "Use <img src=\"%(url_video_motion_this_sprite)s\" /> to check the amount of "
 "motion in the video under the current sprite."
 msgstr ""
+"<img src=\"%(url_video_motion_this_sprite)s\" "
+"/>を使用して現在のスプライトの下のビデオ中のモーション（動き）の量を確認します。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:18
 #, python-format
 msgid ""
 "Use <img src=\"%(url_video_motion_stage)s\" /> to check the amount of motion"
 " over the entire video image."
-msgstr ""
+msgstr "<img src=\"%(url_video_motion_stage)s\" />を使用してビデオ画像全体のモーション（動き）の量を確認します。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:20
 #, python-format
@@ -1867,23 +1878,25 @@ msgid ""
 "Use <img src=\"%(url_video_direction_this_sprite)s\" /> to check the "
 "direction of motion in the video under the current sprite."
 msgstr ""
+"<img src=\"%(url_video_direction_this_sprite)s\" "
+"/>を使用して現在のスプライトの下のビデオ中の向きの量を確認します。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:22
 #, python-format
 msgid ""
 "Use <img src=\"%(url_video_direction_stage)s\" />  to check the direction of"
 " motion in the video image."
-msgstr ""
+msgstr "<img src=\"%(url_video_direction_stage)s\" />を使用してビデオ画像の向きの量を確認します。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:34
 msgid "Make sure the video camera is on."
-msgstr ""
+msgstr "ビデオカメラがオンになっていることを確認します。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:35
 #, python-format
 msgid ""
 "Adjust the %% of motion or direction to get it to respond more or less."
-msgstr ""
+msgstr "モーション（動き）や方向の%%を調整して、まずまずの反応が得られるようにします。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:36
 msgid "Click the checkbox to see the current value:"
@@ -1914,6 +1927,8 @@ msgid ""
 "src=\"%(url_wait_until)s\" /> to keep checking, put the whole stack inside a"
 " forever block."
 msgstr ""
+"すべてのかたまりは、一度だけ実行されます。  <img src=\"%(url_wait_until)s\" "
+"/>にチェックを続けさせたい場合、すべてのかたまりを\"ずっと\"ブロックの中に入れてください。"
 
 #: templates/help/studio/tips/blocks/when-backdrop-switches.html:7
 msgid "Runs a script when backdrop switches to a certain background"
@@ -1921,7 +1936,7 @@ msgstr "背景が特定の背景に切り替わったらスクリプトを実行
 
 #: templates/help/studio/tips/blocks/when-backdrop-switches.html:13
 msgid "Once the background switches to kitchen, the sprite will say \"Now I"
-msgstr ""
+msgstr "背景がキッチンに変わると、スプライトは\"今、私はキッチンにいるよ！\"と言います。"
 
 #: templates/help/studio/tips/blocks/when-flag-clicked.html:7
 msgid "Runs the script when the green flag is clicked"
@@ -1937,6 +1952,8 @@ msgid ""
 "<img src=\"%(url_when_i_receive_jump)s\"/></br>waits for the "
 "message</br><img src=\"%(url_broadcast_ex)s\"/>"
 msgstr ""
+"<img src=\"%(url_when_i_receive_jump)s\"/></br>は、メッセージを待ちます。</br><img "
+"src=\"%(url_broadcast_ex)s\"/>"
 
 #: templates/help/studio/tips/blocks/when-key-pressed.html:7
 msgid "Runs a script when a specified key is pressed"
@@ -1954,16 +1971,16 @@ msgstr "選択された属性（音の大きさ、タイマー、ビデオモー
 
 #: templates/help/studio/tips/blocks/when-loudness.html:12
 msgid "You can select any of the attributes from the dropdown menu."
-msgstr ""
+msgstr "ドロップダウンメニューから属性を選択できます。"
 
 #: templates/help/studio/tips/blocks/when-loudness.html:19
 msgid "After the timer reaches 10 seconds, the script will run."
-msgstr ""
+msgstr "タイマーが10秒になった後、スクリプトが実行されます。"
 
 #: templates/help/studio/tips/blocks/when-loudness.html:26
 msgid ""
 "When the video motion on the sprite goes above 10, the script will run."
-msgstr ""
+msgstr "スプライトのビデオ・モーションが10を超えた時、スクリプトが実行されます。"
 
 #: templates/help/studio/tips/blocks/when-this-sprite-clicked.html:7
 msgid "Runs script below when sprite is clicked"
@@ -1975,17 +1992,17 @@ msgstr "他のスプライトのプロパティや変数（x座標、ｙ座標�
 
 #: templates/help/studio/tips/blocks/x-position-sprite.html:13
 msgid "The x position of the ghost is set to the x position of Gobo."
-msgstr ""
+msgstr "ゴーストのx座標は、Goboのx座標に設定されています。"
 
 #: templates/help/studio/tips/blocks/x-position-sprite.html:19
 msgid ""
 "Use this block to access various properties from other sprites and use that "
 "information in the current sprite's scripts."
-msgstr ""
+msgstr "このブロックを使用して他のスプライトのさまざまなプロパティにアクセスし、その情報を現在のスプライトのスクリプト中で使用します。"
 
 #: templates/help/studio/tips/blocks/x-position.html:7
 msgid "Reports the <b>x</b> position of a sprite"
-msgstr "スプライトのいる x 座標が通知されます。"
+msgstr "スプライトのいる<b>x</b>座標が通知されます。"
 
 #: templates/help/studio/tips/blocks/x-position.html:15
 msgid ""
@@ -1995,7 +2012,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/y-position.html:7
 msgid "Reports the <b>y</b> position of a sprite"
-msgstr "スプライトのいる y 座標が通知されます。"
+msgstr "スプライトのいる<b>y</b>座標が通知されます。"
 
 #: templates/help/studio/tips/blocks/y-position.html:17
 msgid ""
@@ -2047,6 +2064,7 @@ msgid ""
 "slider, as well as 4 additional inputs that can sense electrical resistance "
 "via included cables."
 msgstr ""
+"PicoBoardには、光センサー、音センサー、ボタン、スライダー、同様にケーブル経由で電気抵抗を感知可能な4つの追加の入力端子が組み込まれています。"
 
 #: templates/help/studio/tips/ext/PicoBoard.html:38
 msgid ""
@@ -2179,23 +2197,23 @@ msgstr ""
 #: templates/help/studio/tips/ext/pico-sensor-button-pressed.html:6
 msgid ""
 "Report whether the button is pressed or one of the inputs A-D is connected."
-msgstr "ボタンが押されているか、入力端子A~Dのひとつが接続されているかどうかが通知されます。"
+msgstr "ボタンが押されているかどうかが通知されるか、あるいは入力端子AからDのひとつが接続されているかどうかが通知されます。"
 
 #: templates/help/studio/tips/ext/pico-sensor-button-pressed.html:11
 msgid "The sprite will spin as long as the button is pressed."
-msgstr ""
+msgstr "ボタンが押されている間、スプライトが回転します。"
 
 #: templates/help/studio/tips/ext/pico-sensor-button-pressed.html:15
 #: templates/help/studio/tips/ext/pico-slider-sensor-value.html:15
 msgid ""
 "To view the value of the sensor, click the checkbox next to the block in the"
 " palette."
-msgstr ""
+msgstr "センサーの値を表示するには、パレット上のブロックの横にあるチェックボックスをクリックします。"
 
 #: templates/help/studio/tips/ext/pico-sensor-button-pressed.html:21
 #: templates/help/studio/tips/ext/pico-when-button-pressed.html:17
 msgid "You can select the button or one of the four inputs numbered A-D."
-msgstr ""
+msgstr "ボタンか、AからDの番号の4つの入力端子の1つを選択できます。"
 
 #: templates/help/studio/tips/ext/pico-sensor-button-pressed.html:22
 #: templates/help/studio/tips/ext/pico-when-button-pressed.html:18
@@ -2204,6 +2222,8 @@ msgid ""
 "into the inputs A-D. An input is connected if there is a good electrical "
 "connection between the metal ends of the clips."
 msgstr ""
+"PicoBoardには、入力AからDに接続可能な4対のワニ口クリップが付属しています。 "
+"クリップの金属端の間に良好な電気的接続がある場合、入力が接続される。"
 
 #: templates/help/studio/tips/ext/pico-slider-sensor-value.html:6
 msgid ""
@@ -2213,14 +2233,14 @@ msgstr "PicoBoardのセンサーのひとつから検知された値が０から
 
 #: templates/help/studio/tips/ext/pico-slider-sensor-value.html:11
 msgid "Make the sprite move up and down using the slider."
-msgstr ""
+msgstr "スライダを使ってスプライトを上下に移動させます。"
 
 #: templates/help/studio/tips/ext/pico-slider-sensor-value.html:21
 #: templates/help/studio/tips/ext/pico-when-slider.html:17
 msgid ""
 "You can select one of the seven PicoBoard sensors. Each reports a value in "
 "the range from 0 to 100."
-msgstr ""
+msgstr "7つのPicoBoardセンサーの1つを選択できます。 それぞれのセンサーは、0から100の範囲の値を通知します。"
 
 #: templates/help/studio/tips/ext/pico-slider-sensor-value.html:22
 msgid ""
@@ -2229,16 +2249,18 @@ msgid ""
 " to 100, depending on how much electrical resistance there is between the "
 "metal ends of the alligator clips."
 msgstr ""
+"PicoBoardには、入力AからDに接続可能な4対のワニ口クリップが付属しています。”～のセンサの値\"ブロックは、ワニ口クリップの金属端間の電気抵抗に応じて、0〜100の値を通知します。"
 
 #: templates/help/studio/tips/ext/pico-when-button-pressed.html:7
 msgid ""
 "Run a script when the button is pressed or the ends of the alligator clips "
 "plugged into one of the four inputs (A-D) are connected."
-msgstr "ボタンを押すか、4つの入力端子(A〜D)のひとつのプラグに差し込まれたワニ口クリップの終端が接続されている場合にスクリプトが実行されます。"
+msgstr ""
+"ボタンが押されている時か、あるいは、4つの入力端子(A〜D)のひとつのプラグに差し込まれたワニ口クリップの終端が接続されている時に、スクリプトが実行されます。"
 
 #: templates/help/studio/tips/ext/pico-when-button-pressed.html:12
 msgid "When the button is pressed, the script will run."
-msgstr ""
+msgstr "ボタンを押された時、スクリプトが実行されます。"
 
 #: templates/help/studio/tips/ext/pico-when-slider.html:7
 msgid ""
@@ -2248,7 +2270,7 @@ msgstr "ひとつのPicoBoardのセンサーの値が指定値よりも大きく
 
 #: templates/help/studio/tips/ext/pico-when-slider.html:12
 msgid "Change the sprite's costume each time you clap."
-msgstr ""
+msgstr "拍手する度にスプライトのコスチュームを変えます。"
 
 #: templates/help/studio/tips/ext/pico-when-slider.html:18
 msgid ""
@@ -2257,12 +2279,13 @@ msgid ""
 "electrical resistance there is between the metal ends of the alligator "
 "clips."
 msgstr ""
+"PicoBoardには、入力A〜Dに接続できる4対のワニ口クリップが付属しています。抵抗センサの値は、ワニ口クリップの金属終端の間の電気抵抗の量に依存します。"
 
 #: templates/help/studio/tips/ext/pico-when-slider.html:20
 msgid ""
 "You can also select a <i>greater</i> or <i>less than</i> comparison from the"
 " second dropdown menu."
-msgstr ""
+msgstr "2番目のドロップダウンメニューから<i>＞（大きい）</ i>または<i>＜（小さい）</ i>を選択可能です。"
 
 #: templates/help/studio/tips/ext/wedo-distance.html:6
 #: templates/help/studio/tips/ext/wedo2-distance.html:7
@@ -2315,7 +2338,7 @@ msgstr ""
 msgid ""
 "If you have only one motor, use the \"motor\" option, which will set the "
 "motor"
-msgstr ""
+msgstr "モーターが1つしかない場合は、\"motor\"オプションを使用して、モーターを設定します。"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:20
 #: templates/help/studio/tips/ext/wedo-set-power.html:20
@@ -2324,15 +2347,15 @@ msgstr ""
 msgid ""
 "If you have two motors which you want to control separately, you can use "
 "\"motor A\" with one and \"motor B\" with the other."
-msgstr ""
+msgstr "2つのモーターを別々に制御したい場合は、\"motor A\"と\"motor B\"を別々に使用することができます。"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:21
 msgid "\"all motors\" sets the direction for all the connected motors."
-msgstr ""
+msgstr "\"all motors\"は、接続されているすべてのモーターの方向を設定します。"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:24
 msgid "You can select the direction from the second dropdown menu."
-msgstr ""
+msgstr "2番目のドロップダウンメニューから方向を選択できます。"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:28
 msgid ""
@@ -2360,11 +2383,11 @@ msgstr ""
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:21
 msgid "\"lights\" sets the lights"
-msgstr ""
+msgstr "\"lights\"はライトを設定します。"
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:22
 msgid "\"everything\" sets the power for all the connected motors and lights."
-msgstr ""
+msgstr "\"everything\"は、接続されているすべてのモーターとライトの電源を設定します。"
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:27
 msgid ""
@@ -2381,7 +2404,7 @@ msgstr "LEGO WeDoのチルトセンサーで検出された傾斜（0〜4）が�
 msgid ""
 "<b>tilt</b> reports a value of 1-4 when the sensor is tilted, and 0 "
 "otherwise."
-msgstr ""
+msgstr "<b>tilt（傾き）</ b>は、センサーが傾いている場合、1〜4の値を通知し、そうでない場合、0を通知します。"
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:14
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:15
@@ -2394,7 +2417,7 @@ msgstr "チルトセンサーは、0から4.0までの数値を通知します�
 msgid ""
 "To view the value of tilt, click the checkbox next to the block in the "
 "palette."
-msgstr ""
+msgstr "傾きの値を表示するには、パレットのブロックの横にあるチェックボックスをクリックします。"
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:20
 msgid ""
@@ -2410,23 +2433,23 @@ msgstr "モーターとライトをオフにします。"
 msgid ""
 "Turn the lights on for 2 seconds when the space key is pressed, then turn "
 "them off."
-msgstr ""
+msgstr "スペースキーが押された時、2秒間点灯し、消灯します。"
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:19
 msgid ""
 "If you have only one motor, use the \"motor\" option, which will turn the "
 "motor off regardless of where it is connected on the WeDo hub."
-msgstr ""
+msgstr "モーターが1つしかない場合は、\"motor\"オプションを使用して、WeDoハブに接続されている場所に関係なくモーターをオフにします。"
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:21
 msgid ""
 "\"lights\" turn the lights off regardless of where they are connected on the"
 " WeDo hub."
-msgstr ""
+msgstr "\"lights\"は、WeDoハブに接続されている場所に関係なく、ライトを消灯します。"
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:22
 msgid "\"everything\" turns off all the connected motors and lights."
-msgstr ""
+msgstr "\"everything\"は、接続されているすべてのモーターとライトをオフにします。"
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:27
 msgid ""
@@ -2449,17 +2472,17 @@ msgstr "左右の矢印キーを押すと、指定のモーターを1秒間動�
 msgid ""
 "If you have only one motor, use the \"motor\" option, which will turn the "
 "motor on regardless of where it is connected on the WeDo hub."
-msgstr ""
+msgstr "モーターが1つしかない場合は、\"motor\"オプションを使用して、WeDoハブに接続されている場所に関係なくモーターをオンにします。"
 
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:21
 msgid ""
 "\"lights\" turn the lights on regardless of where they are connected on the "
 "WeDo hub."
-msgstr ""
+msgstr "\"lights\"は、WeDoハブに接続されている場所に関係なくライトを点灯させます。"
 
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:22
 msgid "\"everything\" turns on all the connected motors and lights."
-msgstr ""
+msgstr "\"everything\"は、接続されているすべてのモーターとライトをオンにします。"
 
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:27
 msgid ""
@@ -2504,13 +2527,13 @@ msgstr "LEGO WeDoの距離センサーで検出された距離が指定値より
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:12
 msgid "When the distance goes under 20, the script will run."
-msgstr ""
+msgstr "距離が20を下回ると、スクリプトが実行されます。"
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:17
 msgid ""
 "You can select a <i>greater</i> or <i>less than</i> comparison from the "
 "dropdown menu."
-msgstr ""
+msgstr "ドロップダウンメニューから<i>＞（大きい）</ i>または<i>＜（小さい）</ i>を選択できます。"
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:22
 msgid ""
@@ -5329,7 +5352,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip1.html:23
 msgid "Then, click on your block to see the cat talk."
-msgstr ""
+msgstr "次にブロックをクリックして、ネコがおしゃべりするのを確認します。"
 
 #: templates/help/studio/tips/howto/cardtip1.html:25
 msgid "Next, add a way to start your card"
@@ -5347,23 +5370,23 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip10.html:9
 msgid "Add a picture"
-msgstr ""
+msgstr "絵を追加する"
 
 #: templates/help/studio/tips/howto/cardtip10.html:11
 msgid "Draw a picture."
-msgstr ""
+msgstr "絵を描きます。"
 
 #: templates/help/studio/tips/howto/cardtip10.html:12
 msgid "Add an image from your computer."
-msgstr ""
+msgstr "コンピュータから画像を追加します。"
 
 #: templates/help/studio/tips/howto/cardtip10.html:13
 msgid "Take a picture."
-msgstr "写真を撮る。"
+msgstr "写真と撮影する。"
 
 #: templates/help/studio/tips/howto/cardtip10.html:18
 msgid "Add effects!"
-msgstr ""
+msgstr "効果を加える！"
 
 #: templates/help/studio/tips/howto/cardtip10.html:21
 msgid "Click the <span class=\"tab-ref\">Scripts</span> tab. Try this script:"
@@ -5371,7 +5394,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip10.html:23
 msgid "Click the balloons in your card to see the color change."
-msgstr ""
+msgstr "カード上の風船をクリックして、色の変化を確認してください。"
 
 #: templates/help/studio/tips/howto/cardtip10.html:27
 msgid "Next, share your greeting!"
@@ -5416,11 +5439,11 @@ msgstr "次に何を作りたいですか？"
 
 #: templates/help/studio/tips/howto/cardtip12.html:5
 msgid "Now you can make another greeting card, or start a new project!"
-msgstr ""
+msgstr "すぐに、別のグリーティングカードを作ったり、新しいプロジェクトを始めることができます。"
 
 #: templates/help/studio/tips/howto/cardtip12.html:9
 msgid "Start a new project"
-msgstr "新しいプロジェクトを作る"
+msgstr "新しいプロジェクトを開始する"
 
 #: templates/help/studio/tips/howto/cardtip12.html:10
 msgid "Click File, then select New:"
@@ -5432,7 +5455,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip12.html:17
 msgid "Learn more!"
-msgstr ""
+msgstr "もっと学ぼう！"
 
 #: templates/help/studio/tips/howto/cardtip12.html:18
 msgid "Watch the Getting Started with Scratch video:"
@@ -5509,11 +5532,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip4.html:12
 msgid "Then select the \"Cake\" sprite and click OK."
-msgstr ""
+msgstr "次に\"Cake\"のスプライトを選んで、OKをクリックします。"
 
 #: templates/help/studio/tips/howto/cardtip4.html:14
 msgid "In Scratch, any character or object is called a sprite."
-msgstr ""
+msgstr "Scratchでは、キャラクターや物のことをスプライト（妖精)と呼びます。"
 
 #: templates/help/studio/tips/howto/cardtip4.html:18
 #, python-format
@@ -5545,7 +5568,7 @@ msgstr "ケーキをクリックすると再生する音楽を追加します。
 
 #: templates/help/studio/tips/howto/cardtip5.html:7
 msgid "First, click to select the cake."
-msgstr ""
+msgstr "まず、クリックしてケーキを選択します。"
 
 #: templates/help/studio/tips/howto/cardtip5.html:13
 #: templates/help/studio/tips/howto/valentine7.html:14
@@ -5554,6 +5577,8 @@ msgid ""
 "Click the <span class=\"tab-ref\">Sounds</span> tab, then click <img "
 "class=\"intext\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">."
 msgstr ""
+" <span class=\"tab-ref\">音</span>タブをクリックして、次に<img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/speaker-icon.png\">をクリックします。"
 
 #: templates/help/studio/tips/howto/cardtip5.html:18
 msgid "Choose \"birthday\" or another sound:"
@@ -5614,7 +5639,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip6.html:21
 msgid "Make sure to select \"cake-a\" (lit candles) from the pull-down menu."
-msgstr ""
+msgstr "プルダウンメニューから \"cake-a\"（ろうそくの火が点灯している）を選択してください。"
 
 #: templates/help/studio/tips/howto/cardtip6.html:23
 msgid "Next, make a dance party"
@@ -5636,6 +5661,8 @@ msgid ""
 "Click the <span class=\"lookscolor\">Looks</span> category. Drag a <span "
 "class=\"lookscolor\">next costume</span> block."
 msgstr ""
+"<span class=\"lookscolor\">見た目</span>カテゴリーをクリックし、<span "
+"class=\"lookscolor\">次のコスチューム</span>ブロックをドラッグします。"
 
 #: templates/help/studio/tips/howto/cardtip7.html:15
 msgid ""
@@ -5667,6 +5694,8 @@ msgid ""
 "Click the <span class=\"controlcolor\">Control</span> category. Drag out a "
 "<span class=\"controlcolor\">forever</span> block."
 msgstr ""
+"<span class=\"controlcolor\">制御</span>カテゴリーをクリックし、<span "
+"class=\"controlcolor\">ずっと</span>ブロックをドラッグします。"
 
 #: templates/help/studio/tips/howto/cardtip8.html:9
 msgid ""
@@ -7347,6 +7376,13 @@ msgid ""
 "\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> Take a picture (from a webcam)</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>新しいスプライトのボタン</h4>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png\"> スプライトをライブラリーから選択</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> 新しいスプライトを描く</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> ファイルから新しいスプライトをアップロード</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> カメラから新しいスプライトを作る(webcamから)</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/get-started-10.html:23
 #, python-format
@@ -7357,7 +7393,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/get-started-10.html:25
 msgid "Drag the characters to where you want them on the Stage."
-msgstr ""
+msgstr "ステージ上の好みの場所にキャラクターをドラッグします。"
 
 #: templates/help/studio/tips/howto/get-started-10.html:27
 msgid "Now, explore sound or animation."
@@ -7526,6 +7562,8 @@ msgid ""
 "Click <span class=lookscolor>looks</span> and drag out a <span "
 "class=lookscolor>say</span> block."
 msgstr ""
+"<span class=lookscolor>見た目</span>をクリックして<span "
+"class=lookscolor>～と言う</span>ブロックをドラッグします。"
 
 #: templates/help/studio/tips/howto/get-started-5.html:13
 msgid "Type in the block to change the words:"
@@ -7533,7 +7571,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/get-started-5.html:18
 msgid "Then snap it on top of the stack. Click on the stack to run."
-msgstr ""
+msgstr "次にかたまりの一番上にくっつけます。かたまりをクリックして実行します。"
 
 #: templates/help/studio/tips/howto/get-started-5.html:21
 msgid "Now, add a way to start."
@@ -9932,11 +9970,12 @@ msgid ""
 "\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> Take a picture (from a webcam)</p>\n"
 msgstr ""
 "\n"
-"\t<h4>新規スプライトのボタン </h4>\n"
+"\t<h4>新しいスプライトのボタン </h4>\n"
 "\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png\"> スプライトをライブラリーから選択</p>\n"
-"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> スプライトを描く</p>\n"
-"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> 画像やスプライトをアップロード</p>\n"
-"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> 写真を撮影（Webcam）</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> 新しいスプライトを描く</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> ファイルから新しいスプライトをアップロード</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> カメラから新しいスプライトを作る(webcamから)</p>\n"
+"\t\n"
 
 #: templates/help/studio/tips/howto/odetocode7.html:50
 msgid ""
@@ -11501,9 +11540,9 @@ msgid ""
 msgstr ""
 "\n"
 " <p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png\"> スプライトをライブラリーから選択</p>\n"
-"  <p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> スプライトを描く</p>\n"
-"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> 画像やスプライトをアップロード</p>\n"
-"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> 写真を撮影（Webcam）</p>\n"
+"  <p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> 新しいスプライトを描く</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> ファイルから新しいスプライトをアップロード</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\">  カメラから新しいスプライトを作る(webcamから)</p>\n"
 
 #: templates/help/studio/tips/howto/valentine8.html:25
 msgid "MAKE IT SPIN"
