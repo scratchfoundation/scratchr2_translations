@@ -60,11 +60,11 @@ msgstr "该项目可以是一个数字或一串字母或其他字符。"
 
 #: templates/help/studio/tips/blocks/add-to-list.html:19
 msgid "Use this block if you want to add an item to the end of a list."
-msgstr ""
+msgstr "用这个积木在列表最后增加一项。"
 
 #: templates/help/studio/tips/blocks/add-to-list.html:24
 msgid "Can't find the list blocks? You need to first make a list:"
-msgstr ""
+msgstr "找不到列表积木？你需要事先建立一个列表："
 
 #: templates/help/studio/tips/blocks/add.html:7
 msgid "Adds two numbers"
@@ -79,7 +79,7 @@ msgstr "是否二者皆符合条件，如果是，则回传 true。"
 msgid ""
 "Reports keyboard input from the most recent use of <img "
 "src=\"%(url_ask_and_wait)s\"/>"
-msgstr ""
+msgstr "报告最近一次使用<img src=\"%(url_ask_and_wait)s\"/>获得的键盘输入内容"
 
 #: templates/help/studio/tips/blocks/answer.html:18
 #, python-format
@@ -88,25 +88,27 @@ msgid ""
 " input in <img src=\"%(url_answer)s\" />. The answer is shared by all "
 "sprites."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" /> 提出一个问题并把键盘的输入内容存放到 <img "
+"src=\"%(url_answer)s\" /> 中。所有角色都可以使用这个答案。"
 
 #: templates/help/studio/tips/blocks/answer.html:22
 #, python-format
 msgid ""
 "If you want to save the current answer, you can store it in a variable or "
 "list. For example, <img src=\"%(url_answer_ex2)s\"/>"
-msgstr ""
+msgstr "要保存这个答案，可以把它存放到变量或者列表中。例如，<img src=\"%(url_answer_ex2)s\"/>"
 
 #: templates/help/studio/tips/blocks/answer.html:25
 msgid ""
 "To view the value of answer, click the checkbox next to the answer block."
-msgstr ""
+msgstr "要观察答案的内容，可以点建设答案积木旁边的勾选框。"
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:10
 #, python-format
 msgid ""
 "Asks a question on the screen and stores keyboard input in the <img "
 "src=\"%(url_answer)s\" />"
-msgstr ""
+msgstr "在屏幕上显示一个问题，并把键盘输入的内容存放到<img src=\"%(url_answer)s\" />中"
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:14
 msgid ""
@@ -122,6 +124,8 @@ msgid ""
 "balloon on the screen. The program waits as the user types in a response, "
 "until the Enter key is pressed or the check mark is clicked."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" />用来发问，并把键盘输入的内容存放到<img "
+"src=\"%(url_answer)s\" />中。问题以对话泡泡的方式出现在屏幕上。程序会等待用户键入答复，直到按下回车键或点击了对勾。"
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:9
 msgid "Reports Stage's current backdrop name"
@@ -132,14 +136,14 @@ msgstr "回传舞台目前使用背景的名称。"
 msgid ""
 "The title next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_name)s\" />"
-msgstr ""
+msgstr "背景下面的标题就是<img src=\"%(url_backdrop_name)s\" />"
 
 #: templates/help/studio/tips/blocks/backdrop-number.html:17
 #, python-format
 msgid ""
 "The number next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_number)s\" />"
-msgstr ""
+msgstr "背景旁边的数字就是<img src=\"%(url_backdrop_number)s\" />"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:9
 msgid "Sends a message to all sprites and waits"
@@ -151,13 +155,13 @@ msgid ""
 "You can use <img src=\"%(url_broadcast_and_wait)s\" /> to send a message to "
 "all sprites to tell them to do something, and wait until they all finish "
 "before continuing."
-msgstr ""
+msgstr "<img src=\"%(url_broadcast_and_wait)s\" />用来给所有角色发送消息，告诉他们做某事，并一直等待到事情做完。"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:22
 msgid ""
 "Click to choose which message gets sent. Choose \"new\" to type in your own "
 "message."
-msgstr ""
+msgstr "点击选择要发送的消息。选择“新消息”来键入新的消息。"
 
 #: templates/help/studio/tips/blocks/broadcast.html:9
 msgid "Sends a message to all sprites"
@@ -169,7 +173,7 @@ msgid ""
 "<img src=\"%(url_broadcast)s\"/> sends a message to all the sprites (and the"
 " background). This is useful if you want to tell other sprites when to do "
 "something."
-msgstr ""
+msgstr "<img src=\"%(url_broadcast)s\"/>给所有角色（及背景）发送消息。可以用来告诉其他角色现在该做某事了。"
 
 #: templates/help/studio/tips/blocks/broadcast.html:22
 #, python-format
@@ -177,6 +181,8 @@ msgid ""
 "What do you want them to do when they receive the message? See <a "
 "href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 msgstr ""
+"他们收到消息时你想让他们做什么？参见<a href=\"../when-i-receive/\"><img "
+"src=\"%(url_when_i_receive)s\"/></a>"
 
 #: templates/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
@@ -190,6 +196,10 @@ msgid ""
 "<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
 "Try these effects with numbers such as 10, 35, or 100. Or try negative numbers, such as -50.\n"
 msgstr ""
+"\n"
+"从下拉菜单中选择要使用的图形效果：\n"
+"<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
+"试试不同数字，例如10、35或100的效果。还可以试试负数，例如 -50。\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:25
 #, python-format
@@ -197,6 +207,8 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> to clear "
 "all graphic effects. Or, use <img src=\"%(url_clear_graphic_effects)s\"/>"
 msgstr ""
+"点击 <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> 或者 <img "
+"src=\"%(url_clear_graphic_effects)s\"/> 可清除所有的图形效果。"
 
 #: templates/help/studio/tips/blocks/change-size.html:8
 msgid "Changes sprite's size by specified amount"
@@ -317,7 +329,7 @@ msgstr "用来清除角色上所有添加的图形效果。"
 msgid ""
 "<img src=\"%(url_clear_graphic_effects)s/\" /> clears all the graphic "
 "effects for this sprite."
-msgstr ""
+msgstr "<img src=\"%(url_clear_graphic_effects)s/\" /> 清除该角色的所有图形效果。"
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
@@ -335,13 +347,13 @@ msgstr "当分身被建立时，告诉分身要做些什麽。"
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 msgid "The script is triggered as soon as the clone is created."
-msgstr ""
+msgstr "克隆一产生，就会立即触发下面的脚本。"
 
 #: templates/help/studio/tips/blocks/clone-startup.html:12
 msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are "
 "created."
-msgstr ""
+msgstr "克隆产生之后，会响应所有的“当……”积木。"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
@@ -380,20 +392,20 @@ msgstr "用来建立指定角色的分身。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
-msgstr ""
+msgstr "从下拉菜单中选择要克隆的角色。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:14
 #, python-format
 msgid ""
 "Use <img src=\"%(url_clone_startup)s\" /> to tell the clone what to do once "
 "it's created."
-msgstr ""
+msgstr "<img src=\"%(url_clone_startup)s\" />用来告诉克隆产生之后要做什么。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:16
 #: templates/help/studio/tips/blocks/delete-this-clone.html:16
 #: templates/help/studio/tips/blocks/video-motion.html:26
 msgid "Sample Script:"
-msgstr ""
+msgstr "示例脚本："
 
 #: templates/help/studio/tips/blocks/create-clone.html:23
 #: templates/help/studio/tips/blocks/video-motion.html:32
@@ -406,18 +418,18 @@ msgstr "问题排除："
 msgid ""
 "If you can't see the clone, move it so the original sprite doesn't cover it."
 " The clone appears in the same location as the sprite initially."
-msgstr ""
+msgstr "克隆最初出现在和角色相同的位置。如果看不到克隆，移动一下，避免原有角色盖住它。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:29
 #, python-format
 msgid ""
 "Make sure you've chosen the sprite you want to clone from the menu in the "
 "<img src=\"%(url_create_clone_of)s\" /> block."
-msgstr ""
+msgstr "确保你在<img src=\"%(url_create_clone_of)s\" />积木的下拉菜单中选择了你想克隆的角色。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:31
 msgid "Note: The clone only lasts while the project is running."
-msgstr ""
+msgstr "注意：克隆仅存续于项目运行期间。"
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
@@ -425,13 +437,13 @@ msgstr "回传目前的时间。"
 
 #: templates/help/studio/tips/blocks/current-time.html:15
 msgid "You can select  from the menu to indicate which item you want."
-msgstr ""
+msgstr "你可以从菜单中选择你想要那一项。"
 
 #: templates/help/studio/tips/blocks/current-time.html:20
 msgid ""
 "To view the value of the current time, click the checkbox next to the "
 "current time."
-msgstr ""
+msgstr "要观察当前时间，请点击当前时间旁边的勾选框。"
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
@@ -443,21 +455,21 @@ msgstr "说明自定义积木会做些什么"
 
 #: templates/help/studio/tips/blocks/define.html:11
 msgid "The <strong>define</strong> script tells a custom block what to do:"
-msgstr ""
+msgstr "<strong>定义</strong>脚本描述了自制积木会做些什么："
 
 #: templates/help/studio/tips/blocks/define.html:17
 msgid ""
 "If your block has inputs, they will appear as rounded, light purple blocks. "
 "To use them, drag copies of the input blocks into other blocks within the "
 "define script."
-msgstr ""
+msgstr "如果积木带有输入项，它们会显示为圆形的浅紫色积木。要使用它们，拖动输入项积木，把它们的副本放到定义脚本的其他积木里。"
 
 #: templates/help/studio/tips/blocks/define.html:22
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:25
 msgid ""
 "Note: The input blocks can <strong>only</strong> be used in the define "
 "script."
-msgstr ""
+msgstr "注意：输入项积木<strong>仅能</strong>在定义脚本中使用。"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:7
 msgid "Deletes one or all items from a list"
@@ -474,17 +486,17 @@ msgstr ""
 #: templates/help/studio/tips/blocks/delete-from-list.html:21
 msgid ""
 "You can specify the number of the item you want to delete. For example:"
-msgstr ""
+msgstr "你可以指定要删除的那一项的序号。例如："
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:26
 msgid ""
 "To delete the last item in the list, choose \"last\" from the pull-down "
 "menu:"
-msgstr ""
+msgstr "要删除列表中的最后一项，请从下拉菜单中选择“末尾”："
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:31
 msgid "You can also choose to delete everything in the list:"
-msgstr ""
+msgstr "你可以选择删除列表中的所有项："
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:7
 msgid "Deletes the current clone"
@@ -492,11 +504,11 @@ msgstr "删除目前的分身"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:11
 msgid "Place this block in a script after the clone is done its actions."
-msgstr ""
+msgstr "把这个积木放在克隆要执行的脚本之后。"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:14
 msgid "All clones are automatically deleted when the program is stopped."
-msgstr ""
+msgstr "程序停止时会自动删除所有克隆。"
 
 #: templates/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
@@ -504,24 +516,24 @@ msgstr "回传角色当前的面朝方向角度。"
 
 #: templates/help/studio/tips/blocks/direction.html:15
 msgid "<b>direction</b> tells which way the sprite is heading."
-msgstr ""
+msgstr "<b>方向</b>指出角色的朝向。"
 
 #: templates/help/studio/tips/blocks/direction.html:17
 #, python-format
 msgid ""
 "To see a sprite's direction, click <img "
 "src=\"%(STATIC_URL)s/images/help/info.gif\">:"
-msgstr ""
+msgstr "要查看角色的方向，点击<img src=\"%(STATIC_URL)s/images/help/info.gif\">："
 
 #: templates/help/studio/tips/blocks/direction.html:20
 msgid "You can drag the blue line to change direction."
-msgstr ""
+msgstr "你可以拖动蓝线改变方向。"
 
 #: templates/help/studio/tips/blocks/direction.html:24
 msgid ""
 "To display a sprite's direction on the Stage, click the checkbox in the "
 "palette:"
-msgstr ""
+msgstr "要在舞台上显示角色的方向，请点击抽屉中积木旁的勾选框："
 
 #: templates/help/studio/tips/blocks/distance-to.html:7
 msgid "Reports distance from the specified sprite or mouse-pointer"
@@ -529,7 +541,7 @@ msgstr "回传与鼠标（或指定角色）之间的距离值。"
 
 #: templates/help/studio/tips/blocks/distance-to.html:15
 msgid "Select from the pull-down menu to choose"
-msgstr ""
+msgstr "从下拉菜单中选择"
 
 #: templates/help/studio/tips/blocks/divide.html:7
 msgid "Divides first number by second number"
@@ -559,7 +571,7 @@ msgstr "让角色在指定时间内滑动到指定的<b>x y</b>坐标位置。"
 
 #: templates/help/studio/tips/blocks/glide.html:13
 msgid "The sprite starts at one point, and then glides to the other points."
-msgstr ""
+msgstr "角色从一点开始，滑向另外一点。"
 
 #: templates/help/studio/tips/blocks/glide.html:18
 msgid ""
@@ -592,7 +604,7 @@ msgstr ""
 msgid ""
 "To make the crab hide behind the rock, tell it to <img "
 "src=\"%(url_go_back_1layer)s\" />"
-msgstr ""
+msgstr "使用<img src=\"%(url_go_back_1layer)s\" /> 让螃蟹隐藏到石块后面"
 
 #: templates/help/studio/tips/blocks/go-to-front.html:7
 msgid "Moves sprite in front of all other sprites"
@@ -623,11 +635,11 @@ msgstr "将角色定位到鼠标位置，或是其他角色位置。"
 
 #: templates/help/studio/tips/blocks/go-to.html:16
 msgid "Choose from the menu:"
-msgstr ""
+msgstr "从菜单中选择："
 
 #: templates/help/studio/tips/blocks/go-to.html:20
 msgid "Then, click the block."
-msgstr ""
+msgstr "接着，点击积木。"
 
 #: templates/help/studio/tips/blocks/go-to.html:23
 msgid ""
