@@ -72,7 +72,7 @@ msgstr "两数相加"
 
 #: templates/help/studio/tips/blocks/and.html:7
 msgid "Reports true if both conditions are true"
-msgstr "是否二者皆符合条件，如果是，则回传 true。"
+msgstr "如果两个条件都成立，则报告条件成立。"
 
 #: templates/help/studio/tips/blocks/answer.html:10
 #, python-format
@@ -129,7 +129,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:9
 msgid "Reports Stage's current backdrop name"
-msgstr "回传舞台目前使用背景的名称。"
+msgstr "报告舞台当前的背景名称。"
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:19
 #, python-format
@@ -244,7 +244,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/change-volume.html:7
 msgid "Changes sprite's sound volume by specified amount"
-msgstr "用来改变角色的音效音量。"
+msgstr "用来改变角色声音的音量。"
 
 #: templates/help/studio/tips/blocks/change-volume.html:14
 msgid ""
@@ -261,7 +261,7 @@ msgstr ""
 "音量的范围值是 0 到 100，100 是预设的音量值。\n"
 "</p>\n"
 "<p>\n"
-"你可以为不同的角色分别设定音效音量；若要在同一时间内播放二个不同的音效（音量），则要建立第二个角色。\n"
+"你可以为不同的角色分别设定音量；要在同一时间内以不同音量播放两个不同的声音，需要使用两个角色。\n"
 "</p>\n"
 
 #: templates/help/studio/tips/blocks/change-x.html:6
@@ -343,7 +343,7 @@ msgstr "注意：笔迹不是背景的一部分，因此，清除笔迹时并不
 
 #: templates/help/studio/tips/blocks/clone-startup.html:6
 msgid "Tells a clone what to do once it is created"
-msgstr "当分身被建立时，告诉分身要做些什麽。"
+msgstr "告诉一个克隆产生后要做些什么。"
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 msgid "The script is triggered as soon as the clone is created."
@@ -357,7 +357,7 @@ msgstr "克隆产生之后，会响应所有的“当……”积木。"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
-msgstr "是否指定的第一个颜色碰到了第二个颜色，如果是，就回传 true。"
+msgstr "如果第一个颜色碰到了第二个颜色则报告条件成立"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:11
 msgid ""
@@ -380,15 +380,15 @@ msgstr "用来运算一些函数。"
 
 #: templates/help/studio/tips/blocks/computefunction.html:13
 msgid "Choose different functions from the drop-down menu."
-msgstr "你可以从模块中的下拉菜单选取要使用的函数。"
+msgstr "从下拉菜单中选取要使用的函数。"
 
 #: templates/help/studio/tips/blocks/costume-number.html:3
 msgid "Reports sprite's current costume number"
-msgstr "回传当前角色造型在列表中的编号。"
+msgstr "报告角色当前造型的编号。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:6
 msgid "Creates a clone (temporary duplicate) of the specified sprite"
-msgstr "用来建立指定角色的分身。"
+msgstr "创建一个指定角色的克隆（暂时复制品）"
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
@@ -433,7 +433,7 @@ msgstr "注意：克隆仅存续于项目运行期间。"
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
-msgstr "回传目前的时间。"
+msgstr "报告当前的时间"
 
 #: templates/help/studio/tips/blocks/current-time.html:15
 msgid "You can select  from the menu to indicate which item you want."
@@ -447,7 +447,7 @@ msgstr "要观察当前时间，请点击当前时间旁边的勾选框。"
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
-msgstr "回传从2000年1月1日开始算起，与目前日期相隔的天数。"
+msgstr "报告从2000年1月1日到现在的天数"
 
 #: templates/help/studio/tips/blocks/define.html:7
 msgid "Defines what the custom block will do"
@@ -500,7 +500,7 @@ msgstr "你可以选择删除列表中的所有项："
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:7
 msgid "Deletes the current clone"
-msgstr "删除目前的分身"
+msgstr "删除当前克隆"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:11
 msgid "Place this block in a script after the clone is done its actions."
@@ -512,7 +512,7 @@ msgstr "程序停止时会自动删除所有克隆。"
 
 #: templates/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
-msgstr "回传角色当前的面朝方向角度。"
+msgstr "报告角色当前的方向。"
 
 #: templates/help/studio/tips/blocks/direction.html:15
 msgid "<b>direction</b> tells which way the sprite is heading."
@@ -537,7 +537,7 @@ msgstr "要在舞台上显示角色的方向，请点击抽屉中积木旁的勾
 
 #: templates/help/studio/tips/blocks/distance-to.html:7
 msgid "Reports distance from the specified sprite or mouse-pointer"
-msgstr "回传与鼠标（或指定角色）之间的距离值。"
+msgstr "报告与鼠标（或指定角色）之间的距离"
 
 #: templates/help/studio/tips/blocks/distance-to.html:15
 msgid "Select from the pull-down menu to choose"
@@ -545,11 +545,11 @@ msgstr "从下拉菜单中选择"
 
 #: templates/help/studio/tips/blocks/divide.html:7
 msgid "Divides first number by second number"
-msgstr "回传两数相除的结果"
+msgstr "用第一个数字除以第二个数字"
 
 #: templates/help/studio/tips/blocks/equal.html:7
 msgid "Reports true if two values are equal"
-msgstr "是否第一个数值等于第二个，如果是，就回传 true。"
+msgstr "如果两个值相等则报告条件成立"
 
 #: templates/help/studio/tips/blocks/forever.html:7
 msgid "Runs the blocks inside over and over"
@@ -557,7 +557,7 @@ msgstr "一遍接一遍地执行装在里面的积木。"
 
 #: templates/help/studio/tips/blocks/getattribute.html:8
 msgid "Reports an attribute of the sprite or stage"
-msgstr "回传角色或舞台的属性。"
+msgstr "报告角色或舞台的某项属性。"
 
 #: templates/help/studio/tips/blocks/getattribute.html:14
 msgid ""
@@ -596,7 +596,7 @@ msgid ""
 "</p>"
 msgstr ""
 "\n"
-"<p>利用这个模块可以让指定的图层藏在其他角色的后方。\n"
+"<p>把角色向后移动若干层，这样可以把它藏在其他角色后面。\n"
 "</p>"
 
 #: templates/help/studio/tips/blocks/go-back-layer.html:20
@@ -649,7 +649,7 @@ msgstr "当前角色会跳到鼠标或者你选择的角色的<b>x y</b>位置�
 
 #: templates/help/studio/tips/blocks/greater-than.html:7
 msgid "Reports true if first value is greater than second"
-msgstr "是否第一个数值大于第二个，如果是，就回传 true。"
+msgstr "如果第一个值比第二个大则报告条件成立"
 
 #: templates/help/studio/tips/blocks/hide-list.html:7
 msgid "Hides the list monitor from the stage"
@@ -726,7 +726,7 @@ msgstr "<img src=\"%(url_insert_greetings)s\" />在列表的随机位置插入�
 
 #: templates/help/studio/tips/blocks/item-of-list.html:7
 msgid "Reports the item at the specifed position in the list"
-msgstr "回传项目在列表中的排序位置。"
+msgstr "报告列表中指定的项"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:11
 msgid ""
@@ -735,8 +735,8 @@ msgid ""
 "  in a number. Choosing \"random\" reports a random item in the list.\n"
 msgstr ""
 "\n"
-"  你可以从模块裡的下拉清单选择要回传哪个项目内容，或是直接输入其序位数。 \n"
-"  若选择「随机」则会回传列表里的某个项目。\n"
+"  你可以从下拉菜单中选择要报告哪一项，或直接键入序号。 \n"
+"  若选择「随机」则会随机报告列表里的某一项。\n"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:22
 msgid ""
@@ -756,7 +756,7 @@ msgstr "组合指定的二个字串。"
 
 #: templates/help/studio/tips/blocks/key-pressed.html:9
 msgid "Reports true if specified key is pressed"
-msgstr "是否指定键被按下，如果是，就回传 true。"
+msgstr "如果指定按键被按下则报告条件成立"
 
 #: templates/help/studio/tips/blocks/key-pressed.html:18
 #, python-format
@@ -784,23 +784,23 @@ msgstr "该数字和列表监视器底部显示的长度相同。"
 
 #: templates/help/studio/tips/blocks/length-of.html:7
 msgid "Reports the number of letters in a string"
-msgstr "回传指定字串总共的字数。"
+msgstr "报告字符串中字符的数量"
 
 #: templates/help/studio/tips/blocks/less-than.html:7
 msgid "Reports true if first value is less than second"
-msgstr "是否第一个数值小于第二个，如果是，就回传 true。"
+msgstr "如果第一个值小于第二个则报告条件成立"
 
 #: templates/help/studio/tips/blocks/letter-of.html:7
 msgid "Reports the letter at the specified position in a string"
-msgstr "回传字串中指定位置的字。"
+msgstr "报告字符串中指定位置的字符"
 
 #: templates/help/studio/tips/blocks/list-contains.html:7
 msgid "Reports true if the list contains the specified item"
-msgstr "是否列表项目中包含了指定项目，如果是，就回传 true。"
+msgstr "如果列表包含指定项目则报告条件成立"
 
 #: templates/help/studio/tips/blocks/list-contains.html:10
 msgid "The item must match exactly to report true."
-msgstr "这个项目必须与字串相符才会回传 true。"
+msgstr "项目必须精确匹配才报告条件成立。"
 
 #: templates/help/studio/tips/blocks/list-contains.html:18
 #, python-format
@@ -813,7 +813,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/list.html:7
 msgid "Reports all the items in the list"
-msgstr "回传列表中的所有的项目。"
+msgstr "报告列表中的所有项"
 
 #: templates/help/studio/tips/blocks/list.html:10
 msgid ""
@@ -961,7 +961,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/mod.html:9
 msgid "Reports remainder from division of first number by second number"
-msgstr "回传二数相除之后的馀数。"
+msgstr "报告第一个数字除以第二个数字后的余数"
 
 #: templates/help/studio/tips/blocks/mod.html:18
 #, python-format
@@ -1047,7 +1047,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/multiply.html:7
 msgid "Multiplies two numbers"
-msgstr "回传两数相乘的结果"
+msgstr "将两个数字相乘"
 
 #: templates/help/studio/tips/blocks/next-costume.html:10
 msgid "Switches to the next costume in the sprite's costume list"
@@ -1099,15 +1099,15 @@ msgstr "当<img src=\"%(url_nextbackdrop)s\" />到达列表的底端，它会回
 
 #: templates/help/studio/tips/blocks/not.html:7
 msgid "Reports true if condition is false; reports false if condition is true"
-msgstr "是否不符合条件，如果不符合条件，就回传 true。"
+msgstr "如果条件不成立则报告条件成立；如果条件成立则报告条件不成立"
 
 #: templates/help/studio/tips/blocks/or.html:7
 msgid "Reports true if either condition is true"
-msgstr "是否二者之间有一个符合条件，如果是，就回传 true。"
+msgstr "任一条件成立时则报告条件成立"
 
 #: templates/help/studio/tips/blocks/pendown.html:9
 msgid "Puts down sprite's pen, so the sprite will draw as it moves"
-msgstr "把角色当作是笔，加上此模块，角色移动时就会在背景上留下笔迹。"
+msgstr "把角色当作画笔，角色移动时会在背景上留下笔迹。"
 
 #: templates/help/studio/tips/blocks/pendown.html:18
 msgid ""
@@ -1119,7 +1119,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/penup.html:9
 msgid "Pulls up sprite's pen, so it won't draw as it moves"
-msgstr "若已使用起笔模块，加上此模块，角色移动时就不会再留下笔迹。"
+msgstr "抬起角色的画笔，角色移动时不会再留下笔迹。"
 
 #: templates/help/studio/tips/blocks/pick-random.html:7
 msgid "Picks a random integer within the specified range"
@@ -1277,7 +1277,7 @@ msgstr "休止（停止播放任何声音）指定拍数。"
 
 #: templates/help/studio/tips/blocks/round.html:9
 msgid "Reports closest integer to a number"
-msgstr "回传最接近该数值的整数。"
+msgstr "报告最接近该数值的整数"
 
 #: templates/help/studio/tips/blocks/round.html:19
 #, python-format
@@ -1389,7 +1389,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/set-volume.html:9
 msgid "Sets sprite's sound volume to specified value"
-msgstr "用来设定角色上音效播放时的音量。"
+msgstr "用来设定角色的音量。"
 
 #: templates/help/studio/tips/blocks/set-volume.html:15
 msgid ""
@@ -1546,7 +1546,7 @@ msgstr "让角色显示在舞台上"
 #: templates/help/studio/tips/blocks/size.html:9
 #, python-format
 msgid "Reports sprite's size, as %% of original size"
-msgstr "回传角色目前的显示尺寸（与原尺寸相比的比例）"
+msgstr "报告角色目前的显示尺寸（与原尺寸相比的%%）"
 
 #: templates/help/studio/tips/blocks/size.html:18
 #, python-format
@@ -1563,7 +1563,7 @@ msgstr "要观察大小的取值，在抽屉中点击积木旁边的勾选框。
 
 #: templates/help/studio/tips/blocks/square.html:7
 msgid "Reports result of selected function"
-msgstr "回传指定函数的结果。"
+msgstr "报告所选函数的计算结果"
 
 #: templates/help/studio/tips/blocks/square.html:10
 msgid ""
@@ -1605,15 +1605,15 @@ msgstr "你可以从积木的下拉菜单选择停止全部脚本，或是当前
 
 #: templates/help/studio/tips/blocks/stopsound.html:9
 msgid "Stops all sounds"
-msgstr "停止播放所有的音效。"
+msgstr "停止播放所有的声音。"
 
 #: templates/help/studio/tips/blocks/stopsound.html:18
 msgid "Stop other sounds before playing a new sound."
-msgstr "你可以在播放新的音效前加上它来强制让之前播放的音效停止。"
+msgstr "在播放新的声音之前停止其他声音。"
 
 #: templates/help/studio/tips/blocks/subtract.html:7
 msgid "Subtracts second number from first number"
-msgstr "回传两数相减的结果"
+msgstr "第一个数字减去第二个数字"
 
 #: templates/help/studio/tips/blocks/switch-backdrop-and-wait.html:7
 msgid "Switch to the specified backdrop and wait for its scripts to finish"
@@ -1654,7 +1654,7 @@ msgstr "用来改变角色的造型。"
 
 #: templates/help/studio/tips/blocks/switch-costume.html:12
 msgid "This script switches costumes to animate:"
-msgstr "透过此模块，可以製作角色的动画效果："
+msgstr "以下脚本通过切换造型实现动画效果："
 
 #: templates/help/studio/tips/blocks/switch-costume.html:20
 #, python-format
@@ -1667,7 +1667,7 @@ msgstr "从下拉菜单中选择造型名称。"
 
 #: templates/help/studio/tips/blocks/tempo.html:8
 msgid "Reports sprite's tempo in beats per minute"
-msgstr "回传角色的音乐速度（每分钟拍数）。"
+msgstr "报告角色的音乐速度（每分钟拍数）。"
 
 #: templates/help/studio/tips/blocks/think-for-seconds.html:8
 msgid "Displays words in a thought bubble for a number of seconds"
@@ -1702,16 +1702,16 @@ msgstr "要观察计时器的值，请点击积木旁边的勾选框。计时器
 
 #: templates/help/studio/tips/blocks/timestamp.html:8
 msgid "Reports the number of days since 2000"
-msgstr "回传从2000年开始算起，与目前日期相隔的天数。"
+msgstr "报告从2000年以来的天数"
 
 #: templates/help/studio/tips/blocks/touching-color.html:7
 msgid "Reports true if sprite is touching specified color"
-msgstr "是否角色碰到了指定颜色，如果是，就回传 true。"
+msgstr "如果角色碰到了指定颜色则报告条件成立"
 
 #: templates/help/studio/tips/blocks/touching.html:9
 msgid ""
 "Reports true if sprite is touching specified sprite, edge, or mouse-pointer"
-msgstr "是否角色碰到了指定的角色（或是边缘、或是鼠标），如果是，就回传 true。"
+msgstr "如果角色正在触碰指定的角色、边缘或鼠标，报告条件成立"
 
 #: templates/help/studio/tips/blocks/touching.html:19
 #, python-format
@@ -1785,7 +1785,7 @@ msgstr "相关内容：<a href=\"../make-a-block/\">制作新的积木</a>和<a 
 
 #: templates/help/studio/tips/blocks/username.html:7
 msgid "Reports username of the viewer"
-msgstr "回传浏览者的用户名称（该用户需要登入）。"
+msgstr "报告浏览者的用户名"
 
 #: templates/help/studio/tips/blocks/username.html:15
 msgid ""
@@ -1801,7 +1801,7 @@ msgstr "要保存当前的用户名，你可以把它存放到变量或列表中
 
 #: templates/help/studio/tips/blocks/variable.html:7
 msgid "Reports value of the variable"
-msgstr "回传变量当前数值"
+msgstr "报告变量的内容"
 
 #: templates/help/studio/tips/blocks/variable.html:15
 msgid ""
@@ -1874,13 +1874,13 @@ msgstr "点击勾选框观察当前的数值："
 
 #: templates/help/studio/tips/blocks/volume.html:9
 msgid "Reports sprite's sound volume"
-msgstr "回传角色所使用音效的音量。"
+msgstr "报告角色的音量。"
 
 #: templates/help/studio/tips/blocks/volume.html:16
 msgid ""
 "You can set the volume level for each sprite. To play two sounds at once "
 "with different volumes, use two sprites."
-msgstr "你可以为不同的角色分别设定音效音量；若要在同一时间内播放二个不同的音效（音量），则要建立第二个角色。"
+msgstr "你可以为不同的角色分别设定音量；要在同一时间内以不同音量播放两个不同的声音，需要使用两个角色。"
 
 #: templates/help/studio/tips/blocks/wait-secs.html:7
 msgid "Waits specified number of seconds, then continues with next block"
@@ -1921,7 +1921,7 @@ msgid ""
 "<img src=\"%(url_when_i_receive_jump)s\"/></br>waits for the "
 "message</br><img src=\"%(url_broadcast_ex)s\"/>"
 msgstr ""
-"<img src=\"%(url_when_i_receive_jump)s\"/></br>会等待由下方模块发送的消息</br><img "
+"<img src=\"%(url_when_i_receive_jump)s\"/></br>等待以下积木发出的消息</br><img "
 "src=\"%(url_broadcast_ex)s\"/>"
 
 #: templates/help/studio/tips/blocks/when-key-pressed.html:7
@@ -2195,7 +2195,7 @@ msgstr "PicoBoard配有4对鳄鱼夹，可以插入输入A-D。如果夹子的�
 msgid ""
 "Report the value detected by one of the PicoBoard sensors in the range from "
 "0 to 100."
-msgstr "回传从 PicoBoard  感测器上侦测到的数值（0 至 100）。"
+msgstr "报告从 PicoBoard  传感器上探测到的数值（0 至 100）。"
 
 #: templates/help/studio/tips/ext/pico-slider-sensor-value.html:11
 msgid "Make the sprite move up and down using the slider."
@@ -2255,7 +2255,7 @@ msgstr "你可以从第二个下拉菜单中选择<i>大于</i>或<i>小于</i>�
 msgid ""
 "Report the distance (from 0 to 100) detected by the LEGO WeDo distance "
 "sensor"
-msgstr "回传从  LEGO WeDo 距离感测器上侦测到的距离（0 至 100）。"
+msgstr "报告从  LEGO WeDo 距离传感器上探测到的距离（0 至 100）。"
 
 #: templates/help/studio/tips/ext/wedo-distance.html:12
 #: templates/help/studio/tips/ext/wedo-when-distance.html:18
@@ -2263,7 +2263,7 @@ msgid ""
 "The distance sensor detects the surrounding brightness to report distance, "
 "so you can actually use it to detect light and motion in addition to "
 "distance."
-msgstr "距离感测器是利用环境的亮度变化来侦测距离，所以你也可以用它来侦测亮度、动作的变化。"
+msgstr "距离传感器是利用环境的亮度变化来探测距离，所以除距离之外，你还可以用它来探测亮度、动作的变化。"
 
 #: templates/help/studio/tips/ext/wedo-distance.html:16
 #: templates/help/studio/tips/ext/wedo2-distance.html:18
@@ -2277,7 +2277,7 @@ msgstr "要观察距离值，请勾选抽屉中积木旁的方块。"
 msgid ""
 "To use <b>distance</b>, you need a distance sensor connected to your "
 "computer via a LEGO WeDo hub."
-msgstr "若要使用「设置方向」模块，你需要将 LEGO WeDo 马达接上  LEGO WeDo 主机。"
+msgstr "若要使用<b>距离</b>，你需要将距离传感器通过  LEGO WeDo 主机连接到电脑上。"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:7
 msgid ""
@@ -2324,7 +2324,7 @@ msgstr "你可以从第二个下拉菜单中选择方向。"
 msgid ""
 "<p>To use <b>set direction</b>, you need WeDo motor(s) connected to your "
 "computer via a LEGO WeDo hub.</p>"
-msgstr "<p>若要使用 <b>距离</b>相关模块，你必须将距离感测器串接到电脑上。</p>"
+msgstr "<p>若要使用 <b>设置方向</b>，你需要将WeDo马达通过LEGO WeDo主机连接到电脑上。</p>"
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:7
 msgid ""
@@ -2359,7 +2359,7 @@ msgstr "<p>要使用 <b>电源</b>，你需要将马达或灯通过LEGO WeDo主�
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:6
 msgid "Report the tilt (from 0 to 4) detected by the LEGO WeDo tilt sensor"
-msgstr "回传从  LEGO WeDo 倾斜感测器上侦测到的哪个方向倾斜了（0 至 4）。"
+msgstr "报告从  LEGO WeDo 倾斜传感器上探测到的倾斜方向（0 至 4）。"
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:11
 msgid ""
@@ -2372,7 +2372,7 @@ msgstr "传感器倾斜时<b>倾斜</b>报告1-4的数值，未倾斜时报告0�
 msgid ""
 "The tilt sensor reports a number from 0 to 4. 0 means not tilted, 1 tilted "
 "down, 2 tilted right, 3 tilted up, and 4 tilted left."
-msgstr "倾斜感测器会回传数字 0 到 4 ，0 =没有倾斜、1 =向下倾斜、2=向右倾斜、3=向上倾斜、4=向左倾斜。"
+msgstr "倾斜传感器会报告数字 0 到 4 ，0 =没有倾斜、1 =向下倾斜、2=向右倾斜、3=向上倾斜、4=向左倾斜。"
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:15
 msgid ""
@@ -2384,7 +2384,7 @@ msgstr "要查看倾斜的数值，请在抽屉中点击积木旁的勾选框。
 msgid ""
 "<p>To use <b>tilt</b>, you need a tilt sensor connected to your computer via"
 " a LEGO WeDo hub.</p>"
-msgstr "<p>若要使用 <b>倾斜</b>相关模块，你必须将倾斜感测器串接到电脑上。</p>"
+msgstr "<p>若要使用 <b>倾斜</b>，你需要将倾斜传感器通过 LEGO WeDo 主机连接到电脑上。</p>"
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:7
 msgid "Turn motors or lights off."
@@ -2458,7 +2458,7 @@ msgstr "开启马达或灯光。"
 msgid ""
 "Turn the lights on for 2 seconds when the space key is pressed, then turn it"
 " off."
-msgstr "当空白键被按下时开灯 2 秒，然后关闭。"
+msgstr "当空格键被按下时开灯 2 秒，然后关闭。"
 
 #: templates/help/studio/tips/ext/wedo-turn-on.html:17
 #: templates/help/studio/tips/ext/wedo2-turn-on-for.html:19
@@ -2475,7 +2475,7 @@ msgstr ""
 msgid ""
 "To use <b>turn on</b>, you need WeDo motor(s) or lights connected to your "
 "computer via a LEGO WeDo hub."
-msgstr "若要使用「开启」模块，你需要将马达、灯光接上  LEGO WeDo 主机。"
+msgstr "若要使用<b>开启</b>，你需要将马达、灯光通过  LEGO WeDo 主机连接到电脑上。"
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:7
 msgid ""
@@ -2497,7 +2497,7 @@ msgstr "你可以从下拉菜单中选择<i>大于</i>或<i>小于</i>。"
 msgid ""
 "<p>To use <b>when distance</b>, you need a distance sensor connected to your"
 " computer via a LEGO WeDo hub.</p>"
-msgstr "<p>若要使用 <b>距离</b>相关模块，你必须将距离感测器串接到电脑上。</p>"
+msgstr "<p>若要使用 <b>当距离</b>，你需要将距离传感器通过 LEGO WeDo 主机连接到电脑上。</p>"
 
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:6
 msgid "Run a script when the tilt sensor changes position"
@@ -2517,7 +2517,7 @@ msgstr "从下拉清单选择"
 msgid ""
 "To use <b>when tilt</b>, you need a tilt sensor connected to your computer "
 "via a LEGO WeDo hub."
-msgstr "若要使用「倾斜」相关模块，你需要将倾斜感测器接上  LEGO WeDo 主机。"
+msgstr "若要使用 <b>当倾斜</b>，你需要将倾斜传感器通过 LEGO WeDo 主机连接到电脑上。"
 
 #: templates/help/studio/tips/ext/wedo1.html:6
 msgid "LEGO WeDo 1.0 Scratch Extension Setup"
@@ -2552,11 +2552,11 @@ msgid ""
 " \t</ul>"
 msgstr ""
 "<ul>\n"
-" \t\t<li>WeDo 主机：用来串接 WeDo 感测器、马达和你的电脑。<p><img src=\"%(STATIC_URL)s/images/help/wedo-hub.png\" /></p></li>\n"
-" \t\t<li>马达： 可以透过指令改变它的旋转方向、动力大小。你可以连接 2 个马达到主机上，并可以分别控制它们。<p><img src=\"%(STATIC_URL)s/images/help/wedo-motor.png\" /></p></li>\n"
-" \t\t<li>灯光：主机可接上 2 个 LED 灯，这些灯并不包含在 LEGO WeDo 套件之内，而是在 LEGO Power Functions 套件中。<p><img src=\"%(STATIC_URL)s/images/help/wedo-lights.png\" /></p></li>\n"
-" \t\t<li>距离感测器：它最多能够感应出 15 公分（相当于 6 英吋）远的距离。<p><img src=\"%(STATIC_URL)s/images/help/wedo-distance-sensor.png\" /></p></li>\n"
-" \t\t<li>倾斜感测器：它能够感应哪个方位发生倾斜。<p><img src=\"%(STATIC_URL)s/images/help/wedo-tilt-sensor.png\" /></p></li>\n"
+" \t\t<li>WeDo 主机：用来把 WeDo 传感器和马达连接到你的电脑。<p><img src=\"%(STATIC_URL)s/images/help/wedo-hub.png\" /></p></li>\n"
+" \t\t<li>马达： 可以编程改变它的转向、动力大小。你可以连接 2 个马达到WeDo主机上，并可以分别控制它们。<p><img src=\"%(STATIC_URL)s/images/help/wedo-motor.png\" /></p></li>\n"
+" \t\t<li>灯光：WeDo主机可连接 2 个 LED 灯，这些灯并不包含在 LEGO WeDo 套件之内，而是在 LEGO Power Functions 套件中。<p><img src=\"%(STATIC_URL)s/images/help/wedo-lights.png\" /></p></li>\n"
+" \t\t<li>距离传感器：它最远能够探测到 15 公分（相当于 6 英吋）的物体。<p><img src=\"%(STATIC_URL)s/images/help/wedo-distance-sensor.png\" /></p></li>\n"
+" \t\t<li>倾斜传感器：它能够感应倾斜的方向。倾斜传感器可以探测5种姿态：无倾斜、右、左、上和下。<p><img src=\"%(STATIC_URL)s/images/help/wedo-tilt-sensor.png\" /></p></li>\n"
 " \t</ul>"
 
 #: templates/help/studio/tips/ext/wedo1.html:52
@@ -2598,7 +2598,7 @@ msgstr "注意"
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:7
 msgid ""
 "Sets the direction of the motor. It will not turn the motor on if it is off."
-msgstr "用来设定马达转动的方向（注意，若马达是关闭的，添加此模块并不会将它打开）。"
+msgstr "用来设定马达转动的方向（注意，若马达是关闭的，不会将它打开）。"
 
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:19
 msgid ""
@@ -2626,7 +2626,7 @@ msgstr "你可以从第二个下拉清单中选择方向。"
 msgid ""
 "To use <b>set direction</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
-msgstr "若要使用「设置方向」模块，你需要将 LEGO WeDo2 马达接上  LEGO WeDo2 主机。"
+msgstr "若要使用<b>设置方向</b>，你需要将 LEGO WeDo2 马达通过  LEGO WeDo2 主机连接到电脑上。"
 
 #: templates/help/studio/tips/ext/wedo2-set-light-color-to.html:7
 msgid "Set the color for the light on the WeDo hub."
@@ -2639,8 +2639,8 @@ msgid ""
 "include: 3=orange, 7=yellow, 33=green, 50=teal, 66=blue, 80=purple, "
 "90=magenta."
 msgstr ""
-"当空白键被按下，黄色灯号会亮起，颜色值的范围为 "
-"0（洋红）-100（红）。其他一些常用的颜色值为：3=橙、7=黄、33=绿、50=蓝绿、60=蓝、80=紫、90=品红。"
+"当按下空格键，灯会变成黄色。颜色值的范围为 0（橙红）到 "
+"100（红）。其他一些常用的颜色值为：3=橙、7=黄、33=绿、50=蓝绿、60=蓝、80=紫、90=品红。"
 
 #: templates/help/studio/tips/ext/wedo2-set-light-color-to.html:18
 msgid "Numbers larger than 100 loop through the same color range."
@@ -2650,7 +2650,7 @@ msgstr "数字超过 100 时，颜色范围会从头开始循环，所以 101 �
 msgid ""
 "To use <b>set light color to</b>, you need a LEGO WeDo 2.0 hub connected "
 "(via Bluetooth) to your computer."
-msgstr "若要使用「设置灯光」模块，你需要将 LEGO WeDo2 主机连上电脑。"
+msgstr "若要使用<b>设置灯光</b>，你需要将 LEGO WeDo 2.0 主机（通过蓝牙）连上电脑。"
 
 #: templates/help/studio/tips/ext/wedo2-set-power.html:7
 msgid "Set the power of a motor to a specified value and turn it on."
@@ -2675,7 +2675,7 @@ msgstr ""
 msgid ""
 "To use <b>set power</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
-msgstr "若要使用「设置动力」模块，你需要将 LEGO WeDo2 马达接上  LEGO WeDo2 主机。"
+msgstr "若要使用<b>设置电源</b>，你需要将 LEGO WeDo2 马达通过  LEGO WeDo2 主机连接到电脑上。"
 
 #: templates/help/studio/tips/ext/wedo2-turn-off.html:7
 msgid "Turn off a motor."
@@ -2701,7 +2701,7 @@ msgstr ""
 msgid ""
 "To use <b>turn off</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
-msgstr "若要使用「关闭」模块，你需要将 LEGO WeDo2 马达接上  LEGO WeDo2 主机。"
+msgstr "若要使用<b>关闭</b>，你需要将LEGO WeDo2 马达通过  LEGO WeDo2 主机连接到电脑上。"
 
 #: templates/help/studio/tips/ext/wedo2-turn-on-for-secs.html:7
 msgid "Turn a motor on for a specified number of seconds."
@@ -2725,7 +2725,7 @@ msgstr ""
 msgid ""
 "To use <b>turn on for</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
-msgstr "若要使用「开启」模块，你需要将 LEGO WeDo2 马达接上  LEGO WeDo2 主机。"
+msgstr "若要使用<b>开启...秒</b>，你需要将 LEGO WeDo2 马达通过  LEGO WeDo2 主机连接到电脑上。"
 
 #: templates/help/studio/tips/ext/wedo2-turn-on-for.html:7
 msgid "Turn motors on for a specified period of time."
@@ -2735,7 +2735,7 @@ msgstr "关闭马达或灯光一段时间。"
 msgid ""
 "To use <b>turn on for</b>, you need a WeDo motor connected to your computer "
 "via a LEGO WeDo hub."
-msgstr "若要使用「开启」模块，你需要将马达灯光接上  LEGO WeDo 主机。"
+msgstr "若要使用 <b>开启...秒</b>，你需要将 WeDo 马达或灯通过LEGO WeDo主机连接到电脑上。"
 
 #: templates/help/studio/tips/ext/wedo2-turn-on.html:7
 msgid "Turn on a motor."
@@ -2759,7 +2759,7 @@ msgstr ""
 msgid ""
 "To use <b>turn on</b>, you need a LEGO WeDo2 motor connected to your "
 "computer via a LEGO WeDo2 hub."
-msgstr "若要使用「开启」模块，你需要将 LEGO WeDo2  的马达接上  LEGO WeDo2 主机。"
+msgstr "若要使用<b>开启</b>，你需要将LEGO WeDo2 马达通过  LEGO WeDo2 主机连接到电脑上。"
 
 #: templates/help/studio/tips/ext/wedo2.html:5
 msgid "About the LEGO WeDo 2.0 Extension"
@@ -2970,12 +2970,12 @@ msgstr "导入你的音乐"
 #: templates/help/studio/tips/home.html:165
 #: templates/help/studio/tips/howto/record-sounds.html:7
 msgid "Record sounds"
-msgstr "录製音效"
+msgstr "录制声音"
 
 #: templates/help/studio/tips/home.html:166
 #: templates/help/studio/tips/howto/edit-sounds.html:7
 msgid "Edit sounds"
-msgstr "编辑音效"
+msgstr "编辑声音"
 
 #: templates/help/studio/tips/home.html:173
 msgid ""
@@ -3151,19 +3151,19 @@ msgstr "尺寸"
 
 #: templates/help/studio/tips/home.html:231
 msgid "Sound"
-msgstr "音效"
+msgstr "声音"
 
 #: templates/help/studio/tips/home.html:234
 msgid "play sound _"
-msgstr "播放音效 {…}"
+msgstr "播放声音 _"
 
 #: templates/help/studio/tips/home.html:235
 msgid "play sound _ until done"
-msgstr "播放音效 {…} 到底"
+msgstr "播放声音 _ 直到播放完毕"
 
 #: templates/help/studio/tips/home.html:236
 msgid "stop all sounds"
-msgstr "停播所有音效"
+msgstr "停播所有声音"
 
 #: templates/help/studio/tips/home.html:237
 msgid "play drum _ for _ beats"
@@ -3401,15 +3401,15 @@ msgstr "停止"
 
 #: templates/help/studio/tips/home.html:319
 msgid "when I start as a clone"
-msgstr "当分身产生"
+msgstr "当作为克隆产生时"
 
 #: templates/help/studio/tips/home.html:320
 msgid "create clone of"
-msgstr "分身 {…} 建立"
+msgstr "克隆"
 
 #: templates/help/studio/tips/home.html:321
 msgid "delete this clone"
-msgstr "分身删除"
+msgstr "删除该克隆"
 
 #: templates/help/studio/tips/home.html:326
 msgid "Sensing"
@@ -3445,7 +3445,7 @@ msgstr "{…} 键被按下？"
 
 #: templates/help/studio/tips/home.html:336
 msgid "mouse down?"
-msgstr "滑鼠键被按下？"
+msgstr "按下了鼠标？"
 
 #: templates/help/studio/tips/home.html:337
 msgid "mouse x"
@@ -4495,7 +4495,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory1.html:34
 msgid "Try pressing the space key on your keyboard."
-msgstr "试试按下键盘上的空白键。"
+msgstr "试试按下键盘上的空格键。"
 
 #: templates/help/studio/tips/howto/bearstory1.html:38
 msgid ""
@@ -4831,7 +4831,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory7.html:13
 msgid "Click the play button to preview the sounds in each character."
-msgstr "点击播放按钮以测试不同角色上的音效。"
+msgstr "点击播放按钮可以试听不同角色的声音。"
 
 #: templates/help/studio/tips/howto/bearstory7.html:14
 #: templates/help/studio/tips/howto/hoops10.html:15
@@ -4936,12 +4936,12 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t点击 <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">图示，从样本图中挑选音效。\n"
+"\t点击 <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">，从声音库中挑选声音。\n"
 "\t"
 
 #: templates/help/studio/tips/howto/bearstory7.html:62
 msgid "Choose music (such as 'dance celebrate' or 'dance magic')."
-msgstr "选择一个音效，例如 dance celebrate 或是 dance magic。"
+msgstr "选择一支乐曲，例如 dance celebrate 或 dance magic。"
 
 #: templates/help/studio/tips/howto/bearstory7.html:66
 #: templates/help/studio/tips/howto/dance4.html:9
@@ -4993,7 +4993,7 @@ msgstr "点击积木以播放声音。"
 #: templates/help/studio/tips/howto/dance4.html:28
 #: templates/help/studio/tips/howto/odetocode3.html:28
 msgid "Now, make the sound repeat."
-msgstr "接下来，让这段音效重複播放。"
+msgstr "接着，让这段声音重复播放。"
 
 #: templates/help/studio/tips/howto/bearstory7.html:82
 msgid ""
@@ -5557,7 +5557,7 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t<p>点击蛋糕就会开始播放音效。</p>\n"
+"\t<p>点击蛋糕就会开始播放声音。</p>\n"
 "\t"
 
 #: templates/help/studio/tips/howto/cardtip5.html:38
@@ -5832,7 +5832,7 @@ msgstr "编写脚本，让角色移动到舞台顶端的随机位置："
 #: templates/help/studio/tips/howto/hide7.html:12
 #: templates/help/studio/tips/howto/hide8.html:17
 msgid "Your script should look like this:"
-msgstr "你的模块堆应该会像下图所示："
+msgstr "你的脚本应该会像下图所示："
 
 #: templates/help/studio/tips/howto/catch3.html:17
 msgid "Next, make it fall"
@@ -5846,7 +5846,7 @@ msgstr "添加如下的积木堆，让你的角色从顶端落下："
 msgid ""
 "Type a negative number in <span class=\"motioncolor\">change y</span> to "
 "make the sprite move down."
-msgstr "在<span class=\"motioncolor\">将 y 坐标增加</span>的模块裡输入负数值，让角色往下移动。"
+msgstr "在<span class=\"motioncolor\">将 y 坐标增加</span>中键入负数，让角色往下移动。"
 
 #: templates/help/studio/tips/howto/catch4.html:16
 #: templates/help/studio/tips/howto/catch8.html:18
@@ -5889,7 +5889,7 @@ msgstr "使用方向键来控制你的容器运动方向。"
 #: templates/help/studio/tips/howto/nametip2.html:10
 #: templates/help/studio/tips/howto/nametip3.html:18
 msgid "Build a script like this:"
-msgstr "建立模块堆，示范如下："
+msgstr "编制如下脚本："
 
 #: templates/help/studio/tips/howto/catch7.html:15
 msgid "Try it! Press the arrow keys to move left and right."
@@ -5977,19 +5977,19 @@ msgid ""
 "<p>Have two sprites take turns saying something.</p>\n"
 "Try this code in one sprite:"
 msgstr ""
-"想要製作故事中角色间对话的剧本？<br/>\n"
-"<p>首先先建立 2  个角色，然后想好它们的台词。</p>\n"
-"接着在第一个角色上建立以下程式："
+"想要制作对话或者讲个笑话？<br/>\n"
+"<p>让两个角色轮流说话。</p>\n"
+"其中一个角色的脚本如下："
 
 #: templates/help/studio/tips/howto/conversation.html:14
 msgid "And this in another sprite:"
-msgstr "在第二个角色上建立以下程式："
+msgstr "另一个角色的脚本如下："
 
 #: templates/help/studio/tips/howto/conversation.html:20
 msgid ""
 "Broadcast a message to tell another sprite when to talk. When it receives "
 "the message, it can respond."
-msgstr "透过「广播」模块来告诉对方要接话了，那麽当对方接收到广播消息，就会做出回应。"
+msgstr "广播一条消息告诉对方要接话了，当对方接收到消息，就可以做出回应。"
 
 #: templates/help/studio/tips/howto/dance-intro.html:6
 #: templates/help/studio/tips/howto/odetocode-intro.html:6
@@ -6094,7 +6094,7 @@ msgstr "你可以使用剪刀工具删除角色，方法是先按剪刀图示，
 #: templates/help/studio/tips/howto/favorite1.html:26
 msgid ""
 "Or, use the right-click menu (Shift+click on Mac), and choose 'delete'."
-msgstr "或者，在物件区的角色上点击滑鼠右键开启快速选单（Mac 上是按着 Shift 点击），使用快显选单的「删除」工具。"
+msgstr "或者，点击鼠标右键（Mac 上是按着 Shift 点击），在菜单中选择「删除」。"
 
 #: templates/help/studio/tips/howto/dance2.html:22
 msgid "Next, add  music"
@@ -6115,7 +6115,7 @@ msgid ""
 "To choose a sound, click <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">\n"
 msgstr ""
 "\n"
-"点击图示 <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">以从范例库中挑选要使用的音效。\n"
+"点击 <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">挑选一个声音。\n"
 
 #: templates/help/studio/tips/howto/dance3.html:21
 #: templates/help/studio/tips/howto/odetocode2.html:24
@@ -6182,7 +6182,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance4.html:55
 #: templates/help/studio/tips/howto/odetocode4.html:25
 msgid "Next, code the dance"
-msgstr "下一步，编写舞蹈程式"
+msgstr "下一步，编写舞蹈脚本"
 
 #: templates/help/studio/tips/howto/dance5.html:7
 #: templates/help/studio/tips/howto/odetocode5.html:7
@@ -6226,7 +6226,7 @@ msgstr "从下拉清单中选取一个造型。"
 #: templates/help/studio/tips/howto/dance5.html:32
 #: templates/help/studio/tips/howto/odetocode5.html:32
 msgid "Build up a dance script by switching to different costumes."
-msgstr "透过切换数个造型来建立起程式模块堆。"
+msgstr "用切换造型的方式来编写舞蹈脚本。"
 
 #: templates/help/studio/tips/howto/dance5.html:34
 #: templates/help/studio/tips/howto/odetocode5.html:34
@@ -6242,7 +6242,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance5.html:38
 #: templates/help/studio/tips/howto/odetocode5.html:38
 msgid "Click anywhere on your script to try it."
-msgstr "点击你模块堆来试试效果如何。"
+msgstr "点击脚本任何一处试试看。"
 
 #: templates/help/studio/tips/howto/dance5.html:42
 #: templates/help/studio/tips/howto/odetocode5.html:42
@@ -6257,7 +6257,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance5.html:46
 #: templates/help/studio/tips/howto/odetocode5.html:46
 msgid "Then, click the green flag to play your scripts:"
-msgstr "接着，你就可以按下绿旗图示来执行你的程式："
+msgstr "接着，按下绿旗图示来运行你的脚本："
 
 #: templates/help/studio/tips/howto/dance5.html:49
 #: templates/help/studio/tips/howto/odetocode5.html:49
@@ -6306,7 +6306,7 @@ msgstr "接着，加入切换背景的积木到积木堆中："
 #: templates/help/studio/tips/howto/dance7.html:16
 #: templates/help/studio/tips/howto/odetocode7.html:14
 msgid "Choose the backdrop name from the menu."
-msgstr "在切换背景模块中可以透过下拉清单挑选要切换的背景。"
+msgstr "从菜单中选择背景名称。"
 
 #: templates/help/studio/tips/howto/dance7.html:21
 #: templates/help/studio/tips/howto/odetocode7.html:20
@@ -6329,7 +6329,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance7.html:26
 #: templates/help/studio/tips/howto/odetocode7.html:25
 msgid "Then, add a script like this:"
-msgstr "接着，添加一段程式，示范如下："
+msgstr "接着，添加如下所示的脚本："
 
 #: templates/help/studio/tips/howto/dance7.html:32
 msgid ""
@@ -6380,7 +6380,7 @@ msgstr "接下来你就可以开始编程你的动作了！"
 
 #: templates/help/studio/tips/howto/dance8.html:40
 msgid "Build a dance script, like you did for your other dancer."
-msgstr "建立一个舞蹈程式，像之前编写其他舞者那样。"
+msgstr "和之前的跳舞角色一样，编写一个舞蹈脚本。"
 
 #: templates/help/studio/tips/howto/dance8.html:45
 msgid "When you're ready, share your dance."
@@ -6713,7 +6713,7 @@ msgstr "谈谈喜爱它的原因"
 
 #: templates/help/studio/tips/howto/favorite-intro.html:20 tips_config.py:95
 msgid "Record Your Voice"
-msgstr "录製你的声音"
+msgstr "录制你的声音"
 
 #: templates/help/studio/tips/howto/favorite-intro.html:21 tips_config.py:96
 msgid "Add More Favorite Things"
@@ -6809,7 +6809,7 @@ msgstr "现在只要一点击角色就会看到它说话了。"
 
 #: templates/help/studio/tips/howto/favorite2.html:42
 msgid "Next, record your voice"
-msgstr "下一步，录製你的声音"
+msgstr "下一步，录制你的声音"
 
 #: templates/help/studio/tips/howto/favorite3.html:7
 msgid "Add your voice to bring your project to life!"
@@ -6838,11 +6838,11 @@ msgstr "提示：可能需要点击「允许」才能开始录制。"
 
 #: templates/help/studio/tips/howto/favorite3.html:18
 msgid "Record yourself saying what you like about this favorite thing."
-msgstr "录製时，就说说你为什麽会喜欢这个事物。"
+msgstr "录音时，就说说你为什么会喜欢这个事物。"
 
 #: templates/help/studio/tips/howto/favorite3.html:25
 msgid "Can't record?"
-msgstr "无法录製吗？"
+msgstr "无法录音？"
 
 #: templates/help/studio/tips/howto/favorite3.html:26
 #, python-format
@@ -6852,7 +6852,7 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t那就暂时用 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-speaker.png\"> 从音效样本库中选个音效吧。\n"
+"\t点击 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-speaker.png\"> 从声音库中选个声音吧。\n"
 "\t"
 
 #: templates/help/studio/tips/howto/favorite3.html:34
@@ -6964,7 +6964,7 @@ msgstr "让它动起来"
 msgid ""
 "If your sprite has more than one costume, you can animate it by switching "
 "costumes."
-msgstr "如果你的角色裡有一个以上的造型，你可以透过「切换造型」模块让它产生动画效果。"
+msgstr "如果角色有多个造型，可以通过切换造型实现动画效果。"
 
 #: templates/help/studio/tips/howto/favorite5.html:22
 msgid ""
@@ -6986,7 +6986,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/favorite5.html:30
 msgid "Want to add a costume? Click a costume with the Duplicate tool."
-msgstr "想要为角色添加不同造型？最简单的方式是用複製工具。"
+msgstr "想要为角色添加造型？最简单的方式是用复制工具。"
 
 #: templates/help/studio/tips/howto/favorite5.html:32
 msgid "Then use the drawing tools to edit it."
@@ -7156,14 +7156,14 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/fly2.html:7
 msgid "Build a script to tell your character to say something:"
-msgstr "建立程式，让角色说些话。"
+msgstr "编写脚本，让角色说些话。"
 
 #: templates/help/studio/tips/howto/fly2.html:12
 #: templates/help/studio/tips/howto/fly5.html:25
 #: templates/help/studio/tips/howto/hide5.html:14
 #: templates/help/studio/tips/howto/story3.html:13
 msgid "Click the green flag to start your script: "
-msgstr "按下预览区上方的绿旗图示开始执行你的程式："
+msgstr "按下绿旗开始运行你的脚本："
 
 #: templates/help/studio/tips/howto/fly3.html:9
 msgid ""
@@ -7188,7 +7188,7 @@ msgstr "让建筑物动起来，这样子你的角色看起来就会像是真的
 
 #: templates/help/studio/tips/howto/fly4.html:11
 msgid "Add a script like this to your building or scenery:"
-msgstr "建筑物的程式模块堆示例如下："
+msgstr "为建筑或景物添加如下脚本："
 
 #: templates/help/studio/tips/howto/fly4.html:19
 #: templates/help/studio/tips/howto/story9.html:20
@@ -7199,11 +7199,11 @@ msgstr "补充：x 坐标指的是舞台水平方向的位置；y 坐标则是�
 msgid ""
 " If your building or scenery has more than one costume, you can switch "
 "between looks."
-msgstr "如果你的建筑物有一个以上的造型，那麽你可以在程式中切换角色造型。"
+msgstr "如果建筑物或景物有多个造型，可以在不同外观之间进行切换。"
 
 #: templates/help/studio/tips/howto/fly5.html:9
 msgid "Add to your script like this:"
-msgstr "添加你的程式如下："
+msgstr "在脚本中添加如下的积木："
 
 #: templates/help/studio/tips/howto/fly5.html:14
 msgid ""
@@ -7236,7 +7236,7 @@ msgstr "当按下某个按钮，你的角色会移动。"
 
 #: templates/help/studio/tips/howto/fly7.html:14
 msgid "Add these scripts to make it move up and down:"
-msgstr "添加以下程式，让它可以上下移动："
+msgstr "添加以下脚本，让它可以上下移动："
 
 #: templates/help/studio/tips/howto/fly7.html:16
 msgid "Tip: Type a minus sign (-10) to move down."
@@ -7252,12 +7252,12 @@ msgstr "在天空中添加些漂浮的物件，像是云朵、爱心、独角色
 
 #: templates/help/studio/tips/howto/fly8.html:14
 msgid "To make it float, build a script like this:"
-msgstr "要让它有浮动感，可建立如下模块堆："
+msgstr "编制以下脚本让它飘动："
 
 #: templates/help/studio/tips/howto/fly8.html:20
 #: templates/help/studio/tips/howto/pgametip7.html:21
 msgid "Click the green flag to try it out: "
-msgstr "点击绿旗让程式运行看看："
+msgstr "点击绿旗让脚本运行看看："
 
 #: templates/help/studio/tips/howto/fly8.html:22
 msgid "Here's an example with clouds floating across:"
@@ -7271,7 +7271,7 @@ msgstr "左移右动"
 msgid ""
 "Add these scripts to move your character using the left and right arrow "
 "keys:"
-msgstr "加入下方的程式到你的角色中，你就可以透过使用方向键的向左、向右按键来移动角色："
+msgstr "在角色中加入下面的脚本，就可以使用左、右箭头按键来移动角色："
 
 #: templates/help/studio/tips/howto/fly9.html:17
 msgid "Collect Things"
@@ -7279,11 +7279,11 @@ msgstr "收集物品"
 
 #: templates/help/studio/tips/howto/fly9.html:18
 msgid "Make a sound every time you touch something."
-msgstr "当你碰到画面中的指定物件时，让程式播放音效。"
+msgstr "碰到物体时发出声音。"
 
 #: templates/help/studio/tips/howto/fly9.html:20
 msgid "Click the green flag to try it out."
-msgstr "点击绿旗让程式运行看看："
+msgstr "点击绿旗让脚本运行看看。"
 
 #: templates/help/studio/tips/howto/fly9.html:34
 msgid "Edit Your Character"
@@ -7305,7 +7305,7 @@ msgstr "接着，在积木上点一下，喵咪就会移动:"
 
 #: templates/help/studio/tips/howto/get-started-1.html:17
 msgid "Now, add a sound."
-msgstr "下一步，添加一个音效"
+msgstr "下一步，添加一个声音"
 
 #: templates/help/studio/tips/howto/get-started-10.html:7
 msgid ""
@@ -7338,7 +7338,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/get-started-10.html:27
 msgid "Now, explore sound or animation."
-msgstr "下一步，角色的音效与造型。"
+msgstr "下一步，探索声音和动画。"
 
 #: templates/help/studio/tips/howto/get-started-11.html:9
 #, python-format
@@ -7475,7 +7475,7 @@ msgstr "点击任意积木运行此指令序列："
 
 #: templates/help/studio/tips/howto/get-started-3.html:21
 msgid "Next, add a repeat."
-msgstr "下一步，让程式重複执行"
+msgstr "下一步，让脚本重复执行"
 
 #: templates/help/studio/tips/howto/get-started-4.html:8
 msgid ""
@@ -7487,7 +7487,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/get-started-4.html:14
 msgid "Click to run the stack:"
-msgstr "在模块堆上点击一下观看执行结果"
+msgstr "点击运行这堆积木："
 
 #: templates/help/studio/tips/howto/get-started-4.html:17
 msgid "Next, say something."
@@ -7607,7 +7607,7 @@ msgstr "各步骤列表"
 #: templates/help/studio/tips/howto/pgame-intro.html:30 tips_config.py:20
 #: tips_config.py:112 tips_config.py:177 tips_config.py:200
 msgid "Add a Sound"
-msgstr "添加一个音效"
+msgstr "添加一个声音"
 
 #: templates/help/studio/tips/howto/get-started-intro.html:18
 #: tips_config.py:113
@@ -7755,11 +7755,11 @@ msgstr "你可以把某个角色上的程序复制给其他角色使用。"
 msgid ""
 "To copy, drag each script over the other sprite’s thumbnail. When you let "
 "go, it copies the script:"
-msgstr "按着滑鼠键，将要複製的模块堆拖拉到物件区的角色缩图上。当你放开滑鼠键时时，该角色上就会套用该程式码："
+msgstr "要完成复制，用鼠标把每个脚本拖到另一个角色的缩略图上。松开鼠标后，脚本就复制过去了："
 
 #: templates/help/studio/tips/howto/hide10.html:27
 msgid "Or, if you’re logged in, you can use the Backpack to copy scripts."
-msgstr "或者，如果你在已登入的状态下，可以使用「背包」功能来複製程式码。"
+msgstr "另外，登录以后，可以使用「书包」复制脚本。"
 
 #: templates/help/studio/tips/howto/hide11.html:6
 #: templates/help/studio/tips/howto/hoops11.html:6
@@ -7794,8 +7794,8 @@ msgid ""
 "href=\"http://scratch.mit.edu/studios/1614974/\" target=\"_blank\">Hide-and-"
 "Seek studio</a>:"
 msgstr ""
-"现在，你可以将你的程式项目分享到创作坊 <a href=\"http://scratch.mit.edu/studios/1614974/\" "
-"target=\"_blank\">Hide-and-Seek studio</a>裡："
+"现在，你可以把项目分享到 <a href=\"http://scratch.mit.edu/studios/1614974/\" "
+"target=\"_blank\">捉迷藏创作坊</a>里："
 
 #: templates/help/studio/tips/howto/hide11.html:40
 #, python-format
@@ -7848,12 +7848,12 @@ msgstr "你的程序会像这样："
 
 #: templates/help/studio/tips/howto/hide3.html:17
 msgid "Click anywhere on the script to try it."
-msgstr "点击模块堆上任何一处看看程序执行情况。"
+msgstr "点击脚本任何一处看看。"
 
 #: templates/help/studio/tips/howto/hide4.html:5
 #: templates/help/studio/tips/howto/hide5.html:5
 msgid "Make your script keep going."
-msgstr "让你的程式码持续执行。"
+msgstr "让脚本持续运行。"
 
 #: templates/help/studio/tips/howto/hide4.html:8
 msgid ""
@@ -7861,8 +7861,8 @@ msgid ""
 "<span class=\"controlcolor\">forever</span> loop, and wrap it around, like "
 "this:"
 msgstr ""
-"从<span class=\"controlcolor\">控制</span>类指令中拖曳出<span "
-"class=\"controlcolor\">重复无限次</span>模块，包住当前程序，像这样："
+"点击<span class=\"controlcolor\">控制</span>类别，添加一个<span "
+"class=\"controlcolor\">重复执行</span>框，包住当前脚本，像这样："
 
 #: templates/help/studio/tips/howto/hide6.html:6
 msgid "Make your sprite react when it's clicked."
@@ -7870,7 +7870,7 @@ msgstr "让你的角色被点击时有所反应。"
 
 #: templates/help/studio/tips/howto/hide6.html:12
 msgid "Note: The sound may be different for your sprite."
-msgstr "注意：不同的角色内建了不同的音效，所以音效因你所选择的角色而有所不同。"
+msgstr "注意：声音可能因角色而异。"
 
 #: templates/help/studio/tips/howto/hide6.html:13
 msgid "Type in the words you want your sprite to say."
@@ -7938,7 +7938,7 @@ msgstr "使用<span class=\"datacolor\">变量 {…} 设为 […]</span>，让�
 
 #: templates/help/studio/tips/howto/hide9.html:19
 msgid "Your scripts will look something like this:"
-msgstr "你的程序代码（模块堆结构）看起来应该会像下图："
+msgstr "你的脚本会看起来像这样："
 
 #: templates/help/studio/tips/howto/hoc-1.html:11
 msgid ""
@@ -8012,8 +8012,8 @@ msgid ""
 "<p>With Scratch, your sprites can dance, sing, jump, talk, fly, and much more.</p>\n"
 msgstr ""
 "\n"
-"<p>加入指令（程式码）告诉角色们要做什麽事情，就可以让你的角色动起来。</p>\n"
-"<p>使用 Scratch，你的角色可以跳舞、唱歌、跳跃、讲话、飞行还有更多更多。</p>\n"
+"<p>加入指令（也叫计算机代码）告诉角色们要做什么事情，就可以让你的角色动起来。</p>\n"
+"<p>使用 Scratch，你的角色可以跳舞、唱歌、跳跃、讲话、飞行，还可以做更多事。</p>\n"
 
 #: templates/help/studio/tips/howto/hoc-4.html:18
 msgid ""
@@ -8093,7 +8093,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoc-4c.html:17
 msgid "What interesting holiday sounds can you add to your card?"
-msgstr "节日卡片中可以加入什麽有趣的音效呢？"
+msgstr "你会在节日卡片中加入什么有趣的声音呢？"
 
 #: templates/help/studio/tips/howto/hoc-4d.html:11
 msgid ""
@@ -8171,7 +8171,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoc-6.html:18
 msgid "What sounds will your card make?"
-msgstr "你的卡片会发出什麽样的音效呢？"
+msgstr "你的卡片会发出什么样的声音呢？"
 
 #: templates/help/studio/tips/howto/hoc-6.html:19
 msgid "Next, let's help people know how to interact with your card."
@@ -8243,12 +8243,12 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t<p>把你的項目加入到 Hour of Code 创作坊，与来自世界各地的所有人分享你的节日卡片。</p>\n"
+"\t<p>把你的项目加入到 Hour of Code 创作坊，与来自世界各地的人分享你的节日卡片。</p>\n"
 "\n"
-"\t<p>第一步，连到 <a href=\"http://scratch.mit.edu/studios/279432/\" target=\"_blank\">Hour of Code 创作坊</a>。\n"
-"接下来，点击画面上方的「新增項目」按钮来将你的节日卡片加入。(注：目前新增功能已关闭)</p>\n"
+"\t<p>第一步，打开 <a href=\"http://scratch.mit.edu/studios/279432/\" target=\"_blank\">Hour of Code 创作坊</a>。\n"
+"接下来，点击画面上方的「添加项目」按钮来将你的节日卡片加入。</p>\n"
 "\n"
-"\t<p>谢谢你使用 Scratch 来想像、创作、分享你的节日卡片 -- <a href=\"http://www.google.com/url?q=http%%3A%%2F%%2Fcode.org%%2Fapi%%2Fhour%%2Ffinish&sa=D&sntz=1&usg=AFQjCNHVv1dbiUd4Qt7PzlQfXFPXN8uFpg\" target=\"_blank\">你已经完成了一小時玩程式（Hour of Code）的活动！</a></p>\n"
+"\t<p>谢谢你使用 Scratch 来想像、创作、分享你的节日卡片 —— <a href=\"http://www.google.com/url?q=http%%3A%%2F%%2Fcode.org%%2Fapi%%2Fhour%%2Ffinish&sa=D&sntz=1&usg=AFQjCNHVv1dbiUd4Qt7PzlQfXFPXN8uFpg\" target=\"_blank\">你已经完成了编程一小时（Hour of Code）的活动！</a></p>\n"
 "\t"
 
 #: templates/help/studio/tips/howto/hoc-9.html:22
@@ -8300,7 +8300,7 @@ msgstr "移动"
 
 #: templates/help/studio/tips/howto/hoc-intro.html:24 tips_config.py:143
 msgid "Make a Sound"
-msgstr "制作一个音效"
+msgstr "发出声音"
 
 #: templates/help/studio/tips/howto/hoc-intro.html:26 tips_config.py:145
 msgid "Change Costume"
@@ -8312,7 +8312,7 @@ msgstr "添加一个背景影像"
 
 #: templates/help/studio/tips/howto/hoc-intro.html:28 tips_config.py:147
 msgid "Add Background Sound"
-msgstr "添加背景音效"
+msgstr "添加背景声音"
 
 #: templates/help/studio/tips/howto/hoc-intro.html:29 tips_config.py:148
 msgid "Set up the Project"
@@ -8417,7 +8417,7 @@ msgstr "当积木被点击，球就会返回到原点。"
 
 #: templates/help/studio/tips/howto/hoops1.html:32
 msgid "Next, press a key to start"
-msgstr "下一步，按下按键开始程式"
+msgstr "下一步，用按键启动脚本"
 
 #: templates/help/studio/tips/howto/hoops10.html:9
 msgid "Add More Sounds"
@@ -8425,7 +8425,7 @@ msgstr "添加更多声音"
 
 #: templates/help/studio/tips/howto/hoops10.html:13
 msgid "Click the play button to preview the sounds."
-msgstr "点击播放按钮以测试音效。"
+msgstr "点击播放按钮以试听声音。"
 
 #: templates/help/studio/tips/howto/hoops10.html:31
 msgid "Score Points"
@@ -8449,7 +8449,7 @@ msgstr ""
 msgid ""
 "Insert it in your script to add a point each time the ball goes through the "
 "hoop:"
-msgstr "将下列模块堆放到你的程序中，每投进一球就会得分："
+msgstr "在脚本中插入下列片段，球穿过篮筐就会得分："
 
 #: templates/help/studio/tips/howto/hoops10.html:39
 msgid ""
@@ -8502,7 +8502,7 @@ msgstr "试试将球拖曳到舞台上的任何位置。"
 msgid ""
 "When you press the space key on your keyboard, the ball will go to the "
 "starting point."
-msgstr "当你按下键盘上的空白键，球就会返回到原点。"
+msgstr "当你按下键盘上的空格键，球就会返回到起点。"
 
 #: templates/help/studio/tips/howto/hoops2.html:21
 msgid ""
@@ -8550,7 +8550,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops3.html:24
 msgid "The script should look like this:"
-msgstr "这段程式看起来应该像这样："
+msgstr "脚本如下所示："
 
 #: templates/help/studio/tips/howto/hoops3.html:26
 msgid "You can type in numbers to adjust the values."
@@ -8560,13 +8560,13 @@ msgstr "你可以输入不同的数字以调整。"
 #: templates/help/studio/tips/howto/hoops4.html:16
 #: templates/help/studio/tips/howto/hoops5.html:18
 msgid "Press the space key to try it out."
-msgstr "按下键盘上的空白键可以测试程式。"
+msgstr "按下空格键试试看。"
 
 #: templates/help/studio/tips/howto/hoops3.html:31
 #: templates/help/studio/tips/howto/nametip2.html:21
 #: templates/help/studio/tips/howto/pgametip7.html:22
 msgid "Next, add a sound"
-msgstr "下一步，添加一个音效"
+msgstr "下一步，添加一个声音"
 
 #: templates/help/studio/tips/howto/hoops4.html:8
 msgid ""
@@ -8610,7 +8610,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops5.html:27
 msgid "Use the same numbers as at the beginning of the script."
-msgstr "使用与程式一开始时相同的数量。"
+msgstr "使用和脚本开始处相同的一组数字。"
 
 #: templates/help/studio/tips/howto/hoops5.html:30
 msgid ""
@@ -8669,7 +8669,7 @@ msgstr "现在加上下方模土堆，让角色走回去："
 
 #: templates/help/studio/tips/howto/hoops6.html:41
 msgid "Click on the stack to try it."
-msgstr "点一下模块试试看。"
+msgstr "点击这堆积木试试。"
 
 #: templates/help/studio/tips/howto/hoops6.html:44
 msgid "Next, keep jumping"
@@ -8701,12 +8701,12 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops7.html:24
 msgid "Next, start your program"
-msgstr "下一步，开始编写你的程式"
+msgstr "下一步，启动你的程序"
 
 #: templates/help/studio/tips/howto/hoops8.html:20
 #: templates/help/studio/tips/howto/pgametip4.html:31
 msgid "Your script will start whenever you click the green flag: "
-msgstr "以后当你按下（预览区上的）绿旗图示的按钮，程式就会开始执行："
+msgstr "任何时候点击绿旗，脚本就会开始运行："
 
 #: templates/help/studio/tips/howto/hoops8.html:24
 msgid "Next, bounce off the defender"
@@ -8738,7 +8738,7 @@ msgstr ""
 msgid ""
 "Type in the same numbers as in the beginning of the script. This will make "
 "the ball glide back to the starting point."
-msgstr "输入与开头程式相同的数字，这样一来球就会返回原点。"
+msgstr "键入与脚本开头相同的一组数字，这样一来球就会返回起点。"
 
 #: templates/help/studio/tips/howto/hoops9.html:24
 msgid "Make the ball stop when it gets back to the starting point."
@@ -8787,7 +8787,7 @@ msgid ""
 "   a sound file from your computer (mp3, wav or aif format)."
 msgstr ""
 "使用<img src=\"%(STATIC_URL)s/images/help/upload-icon.png\">\n"
-"从你的计算机中汇入一个音效文件（格式可以是 mp3、wav 或 aif）"
+"从你的计算机中上传一个声音文件（格式可以是 mp3、wav 或 aif）"
 
 #: templates/help/studio/tips/howto/import-music.html:17
 msgid "Try these scripts:"
@@ -8795,7 +8795,7 @@ msgstr "试试使用下方程序："
 
 #: templates/help/studio/tips/howto/import-music.html:19
 msgid "Click the green flag to run at the same time."
-msgstr "点击绿旗就可以同时执行二个程式。"
+msgstr "点击绿旗就可以同时运行两个脚本。"
 
 #: templates/help/studio/tips/howto/import-music.html:23
 msgid "If you want to edit the song, select a section:"
@@ -8820,7 +8820,7 @@ msgstr "如果看到下面的提示，需点击<b>允许</b>后才能使用麦�
 
 #: templates/help/studio/tips/howto/interact-microphone.html:29
 msgid "Click the checkbox to see how loud it is:"
-msgstr "勾选「响度」模块可以检视声音大小："
+msgstr "点击勾选框看看声音有多大："
 
 #: templates/help/studio/tips/howto/interact-microphone.html:32
 #, python-format
@@ -8876,7 +8876,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/keep-score.html:23
 msgid "Here's an example script for keeping score:"
-msgstr "可以持续纪录分数的程式如下："
+msgstr "持续纪录分数的脚本如下："
 
 #: templates/help/studio/tips/howto/makey-intro.html:6
 msgid ""
@@ -8957,7 +8957,7 @@ msgstr "将两根导线的金属端接起就完成的电的通路。"
 msgid ""
 "You should see the tiny green light on the MaKey MaKey light up. Your "
 "computer will think the space key was pressed!"
-msgstr "你应该看到 MaKey MaKey 上有绿色灯号了。你的电脑已经知道空白键被按下了。"
+msgstr "你应该看到 MaKey MaKey 的小绿灯亮了。你的电脑认为空格键被按下了。"
 
 #: templates/help/studio/tips/howto/makey4.html:13
 msgid "Not working?"
@@ -9019,7 +9019,7 @@ msgstr "抓好从 EARTH 的导线自已接地，然后碰触金属夹的末端�
 #: templates/help/studio/tips/howto/makey6.html:14
 msgid ""
 "Add scripts that make something happen when the arrow keys are pressed."
-msgstr "添加一段程式：当方向按键被按下时，发生一些事。"
+msgstr "添加一段脚本：当方向按键被按下时，发生一些事。"
 
 #: templates/help/studio/tips/howto/makey6.html:18
 msgid "Next, experiment and create"
@@ -9109,14 +9109,14 @@ msgid ""
 "<p>To go to a certain spot on the screen, use “go to x y”</p>\n"
 "<p>To glide smoothly, use “glide to x y”</p>"
 msgstr ""
-"<p>要改变方向，可以使用面朝 {…} 向模块。<br/>\n"
-"又或者使用右转 […] 度、左转 […] 度的方式。</p>\n"
-"<p>若要在某个点出现，使用定位到 x:[…] y:[…]</p>\n"
-"<p>若要平滑移动，可以使用滑行 […] 秒到 x:[…] y:[…]</p>"
+"<p>要改变方向，可以使用「面向 ... 方向」。<br/>\n"
+"或者使用「左转」、「右转」。</p>\n"
+"<p>若要在某个点出现，使用「移到 x y」</p>\n"
+"<p>若要平滑移动，可以使用「在 ... 秒内滑行到 x y」</p>"
 
 #: templates/help/studio/tips/howto/music-intro.html:6
 msgid "Choose musical instruments, add sounds, and press keys to play music."
-msgstr "选一种乐器，添加音效，然后按下按键就可以播放音乐。"
+msgstr "选一种乐器，添加声音，然后按下按键就可以播放音乐。"
 
 #: templates/help/studio/tips/howto/music-intro.html:10
 msgid ""
@@ -9166,7 +9166,7 @@ msgstr "随机播放音阶"
 
 #: templates/help/studio/tips/howto/music-intro.html:34 tips_config.py:171
 msgid "Record Sounds"
-msgstr "录制音效"
+msgstr "录制声音"
 
 #: templates/help/studio/tips/howto/music-intro.html:35 tips_config.py:172
 msgid "Keep Playing"
@@ -9201,19 +9201,19 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music10.html:14
 msgid "Click the <b>Vocals</b> theme, then choose beatbox sounds."
-msgstr "找到样本库中的「人声」类，选择一个音效，例如 beatbox "
+msgstr "点击声音库中的「人声」类别，选择 beatbox 。"
 
 #: templates/help/studio/tips/howto/music10.html:18
 msgid "Make a sequence, for example:"
-msgstr "依播放顺序将建立起模块堆，示范如下："
+msgstr "制作一段旋律，例如："
 
 #: templates/help/studio/tips/howto/music10.html:21
 msgid "Or, add a script that plays a random sound:"
-msgstr "或是，添加一个随机播放音效的程式："
+msgstr "或是，添加一个播放随机声音的脚本："
 
 #: templates/help/studio/tips/howto/music10.html:25
 msgid "Next, record sounds"
-msgstr "下一步，录製音效"
+msgstr "下一步，录制声音"
 
 #: templates/help/studio/tips/howto/music11.html:7
 msgid "If you have a microphone, you can record your own sounds."
@@ -9238,14 +9238,14 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t点击麦克风图示<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/microphone-icon.png\"> 可以开始录製声音，你可使用它来录製一些声音片段，像是「吼」的感叹声、「疵疵疵」 的电流声、或是「哒啦嘀哒啦」的哼唱声。\n"
+"\t点击麦克风图表<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/microphone-icon.png\"> 可以开始录制一些自己的简短声音，像是「咪咪」、「啪啪」、「嗞嗞」。\n"
 "\t"
 
 #: templates/help/studio/tips/howto/music11.html:22
 msgid ""
 "Trim the sound so it's just one short syllable. To trim, highlight the part "
 "to delete, then press the ‘delete’ key."
-msgstr "修剪声音让它变成短音节，你可以在音轨上拖曳滑鼠选取要删除的区段，接着再按下「删除」。"
+msgstr "修剪声音让它变成短音节，你可以在音轨上拖曳鼠标选取要删除的部分，然后按「delete」键。"
 
 #: templates/help/studio/tips/howto/music11.html:29
 #, python-format
@@ -9255,14 +9255,14 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t点击图示 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/microphone-icon.png\"> 来录製其他的音效。\n"
+"\t再次点击 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/microphone-icon.png\"> 图标录制另一段声音。\n"
 "\t"
 
 #: templates/help/studio/tips/howto/music11.html:34
 msgid ""
 "You can also record sounds using objects around you, such as by tapping a "
 "table or dropping a coin."
-msgstr "除了人声，你也可以录製一些物品的音效，像是拍桌子、掷硬币…等。"
+msgstr "除了人声，你也可以用手边的物品录制声音，例如拍桌子、掷硬币等。"
 
 #: templates/help/studio/tips/howto/music11.html:36
 msgid "Next, keep playing"
@@ -9305,7 +9305,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music12.html:30
 msgid "Try a script like this:"
-msgstr "製作一则程式码，如下示范："
+msgstr "试试下面的脚本："
 
 #: templates/help/studio/tips/howto/music12.html:32
 msgid ""
@@ -9323,11 +9323,11 @@ msgstr "添加一个角色，像是「speaker」："
 
 #: templates/help/studio/tips/howto/music12.html:42
 msgid "Choose a drum loop from the Sound library:"
-msgstr "在音效范例库中的「音乐循环」类选择「drum」："
+msgstr "从声音库中的「循环音乐」类别中选择一种鼓声："
 
 #: templates/help/studio/tips/howto/music12.html:45
 msgid "Loop your sound by adding a script like this:"
-msgstr "要让音效持续播放，可以添加如下程式："
+msgstr "要循环播放声音，可以添加以下脚本："
 
 #: templates/help/studio/tips/howto/music12.html:54
 msgid "HAVE A MAKEY MAKEY?"
@@ -9367,12 +9367,12 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music2.html:6
 msgid "Build a script to play a drum sound:"
-msgstr "建立下方程式以播放节奏拍点："
+msgstr "编写一个脚本演奏鼓声："
 
 #: templates/help/studio/tips/howto/music2.html:10
 #: templates/help/studio/tips/howto/music3.html:22
 msgid "Press the space key to try it."
-msgstr "按下键盘上的空白键来测试程式。"
+msgstr "按下空格键试一下。"
 
 #: templates/help/studio/tips/howto/music2.html:14
 msgid "Click the Sounds tab to preview the sounds."
@@ -9384,7 +9384,7 @@ msgstr "下一步，製作一段节奏"
 
 #: templates/help/studio/tips/howto/music3.html:8
 msgid "Add more sounds to make a pattern."
-msgstr "添加更多的音效来组合成一段节奏。"
+msgstr "添加更多的声音来组合成一段节奏。"
 
 #: templates/help/studio/tips/howto/music3.html:9
 #: templates/help/studio/tips/howto/music7.html:9
@@ -9400,7 +9400,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/music3.html:15
 msgid ""
 "You can add more sounds and play with the timing to customize your rhythm."
-msgstr "在添加其他音效过程中，你随时可以播放试听，这方便你设计属于自己的节奏。"
+msgstr "添加更多声音时，可以调整播放时间，设计自己的节奏。"
 
 #: templates/help/studio/tips/howto/music3.html:25
 msgid "Next, make it repeat"
@@ -9444,7 +9444,7 @@ msgstr "在样本库中的「音乐」类中选一个乐器当角色，像是 Sa
 
 #: templates/help/studio/tips/howto/music6.html:19
 msgid "Build a script to play a sound when you press a key:"
-msgstr "建立一段程式，当按下键盘上某个按键时播放音效："
+msgstr "编写一段脚本，当按下某个按键时播放声音："
 
 #: templates/help/studio/tips/howto/music6.html:21
 msgid "Choose 'up arrow' or another key:"
@@ -9456,12 +9456,12 @@ msgstr "下一步，製作一段旋律"
 
 #: templates/help/studio/tips/howto/music7.html:7
 msgid "Add more sounds to make a melody."
-msgstr "添加更多的音效以製作成一段旋律。"
+msgstr "添加更多的声音，制作一段旋律。"
 
 #: templates/help/studio/tips/howto/music7.html:17
 msgid ""
 "You can add more sounds and play with the timing to customize your melody."
-msgstr "在添加其他音效过程中，你随时可以播放试听，这方便你设计属于自己的旋律。"
+msgstr "添加更多声音时，可以调整播放时间，设计自己的旋律。"
 
 #: templates/help/studio/tips/howto/music7.html:19
 msgid "Next, add a chord"
@@ -9469,7 +9469,7 @@ msgstr "下一步，添加和音"
 
 #: templates/help/studio/tips/howto/music8.html:7
 msgid "Play more than one sound at a time to make a chord, like this:"
-msgstr "在同一个时间内，播放一个以上的音效，以製作和音效果，如下："
+msgstr "同时播放多个声音，形成和弦，见下图："
 
 #: templates/help/studio/tips/howto/music8.html:9
 msgid "Use the dropdown menu to choose 'down arrow' or another key."
@@ -9507,8 +9507,8 @@ msgid ""
 "sounds are in your sprite. Type that number into the <span "
 "class=\"operatorscolor\">pick random</span> block.</span>"
 msgstr ""
-"提示：切换到 <span class=\"tab-ref\">声音</span>页签检视你的角色裡有几个声音。接着在 <span "
-"class=\"operatorscolor\">随机取数 _ 到 _</span> 积木裡输入相应的数字。</span>"
+"提示：点击 <span class=\"tab-ref\">声音</span>标签页看看你的角色有几个声音。接着在 <span "
+"class=\"operatorscolor\">在 _ 到 _ 间随机选一个数</span> 积木里输入这个数字。</span>"
 
 #: templates/help/studio/tips/howto/music9.html:25
 msgid "Next, add vocals"
@@ -9518,7 +9518,7 @@ msgstr "下一步，添加人声"
 msgid ""
 "Make your name come to life! Animate the letters by coding in Scratch. Add "
 "sound and music too."
-msgstr "让你的名字和你一样活泼！透过 Scratch 的程式模块可让文字产生动画效果，在其中也可以加入音效或音乐。"
+msgstr "让你的名字活动起来！用 Scratch 编程可让文字产生动画效果，还可以在其中加入声音或音乐。"
 
 #: templates/help/studio/tips/howto/nametip-intro.html:10
 msgid ""
@@ -9582,7 +9582,7 @@ msgid ""
 "\t"
 msgstr ""
 "\t\n"
-"\t<p>现在，你可以用滑鼠点击舞台上的字母，来看看颜色的变化：</p>\n"
+"\t<p>现在，你可以用鼠标点击舞台上的字母，来看看颜色的变化：</p>\n"
 "\t<img src = \"%(STATIC_URL)s/images/help/change-color-animated.gif\">\n"
 "\t"
 
@@ -9599,7 +9599,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/nametip3.html:11
 msgid "Select 'zoop' or another sound."
-msgstr "选择一个音效，像是「zoop」。"
+msgstr "选择「zoop」或者别的声音。"
 
 #: templates/help/studio/tips/howto/nametip3.html:15
 msgid ""
@@ -9618,7 +9618,7 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t<p>滑鼠点击字母以执行程式码：</p>\n"
+"\t<p>点击字母运行脚本：</p>\n"
 "\t<img src = \"%(STATIC_URL)s/images/help/change-color-animated.gif\">\n"
 "\t"
 
@@ -9684,7 +9684,7 @@ msgstr "下一步，让字母旋转"
 
 #: templates/help/studio/tips/howto/nametip6.html:7
 msgid "Build a script to make it spin:"
-msgstr "建立模块堆，示范如下："
+msgstr "编制脚本让它旋转起来："
 
 #: templates/help/studio/tips/howto/nametip6.html:12
 msgid "You can add a <span class=\"soundcolor\">play sound</span> block:"
@@ -9716,8 +9716,8 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t<h4>改变尺寸</h4>\n"
-"\t<p>加入以下程式码：当你按一下字母时，让字母变大然后再缩小：</p>\n"
+"\t<h4>改变大小</h4>\n"
+"\t<p>当你点击字母时，让它变大然后再缩小：</p>\n"
 "\t"
 
 #: templates/help/studio/tips/howto/nametip7.html:21
@@ -9832,7 +9832,7 @@ msgstr "选一个你想要的舞蹈动作。"
 
 #: templates/help/studio/tips/howto/odetocode2.html:19
 msgid "Want a different sound?"
-msgstr "想要使用不一样的音效？"
+msgstr "想要使用不一样的声音？"
 
 #: templates/help/studio/tips/howto/odetocode2.html:20
 #, python-format
@@ -9841,7 +9841,7 @@ msgid ""
 "Click <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\"> to select from the Sound library.\n"
 msgstr ""
 "\n"
-"点击 <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\"> 以从音效样本库中选择。\n"
+"点击 <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\"> 以从声音库中选择。\n"
 
 #: templates/help/studio/tips/howto/odetocode3.html:40
 msgid "Add an easy way to start your program."
@@ -9935,7 +9935,7 @@ msgstr ""
 msgid ""
 "Make a version of the bouncing ball game. Find out how to add sounds, "
 "points, or other effects. Then, challenge your friends to play."
-msgstr "创造一个弹跳球类型的游戏，了解如何添加音效、计分功能，还有学习其他效果。最后，和你的朋友一较高下。"
+msgstr "制作一个弹跳球类型的游戏，了解如何添加声音、计分功能，以及学习其他效果。最后，和你的朋友一较高下。"
 
 #: templates/help/studio/tips/howto/pgame-intro.html:10
 msgid ""
@@ -10026,7 +10026,7 @@ msgstr "接着选择一个游戏用球："
 #: templates/help/studio/tips/howto/pgametip2.html:17
 #: templates/help/studio/tips/howto/vptip1.html:17
 msgid "Or, use the right-click menu (Ctrl+click on Mac), and choose 'delete'."
-msgstr "或者，在物件区的角色上点击滑鼠右键开启快速选单（Mac 上是按着 Ctrl 点击），使用快显选单的「删除」工具。"
+msgstr "或者，点击鼠标右键（Mac 上是按着 Ctrl 点击），在菜单中选择「删除」。"
 
 #: templates/help/studio/tips/howto/pgametip2.html:18
 msgid "Next, make the ball move"
@@ -10074,7 +10074,7 @@ msgstr "点击积木堆任一处就可以执行看看效果如何。"
 
 #: templates/help/studio/tips/howto/pgametip4.html:15
 msgid "To stop, click the stop button: "
-msgstr "若要停止程式，可以按下（预览区上的）红灯图示按钮："
+msgstr "要停止脚本，点击停止按钮："
 
 #: templates/help/studio/tips/howto/pgametip4.html:19
 msgid ""
@@ -10103,7 +10103,7 @@ msgstr ""
 msgid ""
 "Tip: Want to change the speed of the ball? Type in a different number of "
 "steps:"
-msgstr "提示：想要改变球的运动速度？你可以在移动模块裡输入不同的移动间距："
+msgstr "提示：想要改变球的运动速度？可以键入不同的步数："
 
 #: templates/help/studio/tips/howto/pgametip4.html:39
 msgid "Now, choose your paddle"
@@ -10128,7 +10128,7 @@ msgstr "下一步，控制乒乓球拍"
 
 #: templates/help/studio/tips/howto/pgametip6.html:6
 msgid "Make it interactive! You can control the paddle with the mouse cursor."
-msgstr "让它可以与使用者互动！你可以用滑鼠游标来控制乒乓球拍。"
+msgstr "让它可以与使用者互动！你可以用鼠标指针来控制球拍。"
 
 #: templates/help/studio/tips/howto/pgametip6.html:9
 msgid "Select the paddle."
@@ -10136,11 +10136,11 @@ msgstr "在物件区选取乒乓球拍。"
 
 #: templates/help/studio/tips/howto/pgametip6.html:12
 msgid "Then build this script:"
-msgstr "接着建立它的程式，如下："
+msgstr "接着编写以下脚本："
 
 #: templates/help/studio/tips/howto/pgametip6.html:17
 msgid "Click the green flag to start your scripts: "
-msgstr "按下绿旗图示开始执行程式："
+msgstr "按下绿旗启动脚本："
 
 #: templates/help/studio/tips/howto/pgametip6.html:18
 msgid ""
@@ -10158,15 +10158,15 @@ msgstr "在物件区上点选角色球："
 
 #: templates/help/studio/tips/howto/pgametip7.html:12
 msgid "Add this script to make it bounce whenever it hits the paddle:"
-msgstr "添加如下模块堆让它一碰到球拍就反弹："
+msgstr "添加以下脚本，让它一碰到球拍就反弹："
 
 #: templates/help/studio/tips/howto/pgametip7.html:14
 msgid "Here’s how to build the script:"
-msgstr "以下是建立模块堆的示范："
+msgstr "如下编写你的脚本："
 
 #: templates/help/studio/tips/howto/pgametip8.html:7
 msgid "Make a sound when the ball hits the paddle."
-msgstr "设计当球反弹时的音效。"
+msgstr "当球碰到球拍时让它发出声音。"
 
 #: templates/help/studio/tips/howto/pgametip8.html:11
 #: templates/help/studio/tips/howto/vptip3.html:19
@@ -10180,7 +10180,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/pgametip8.html:21
 msgid "Choose the 'water drop' sound (in Effects):"
-msgstr "从音效样本库中的效果类别中挑选名为 water drop（水滴声）的音效："
+msgstr "从效果类别中挑选名为 water drop 的声音："
 
 #: templates/help/studio/tips/howto/pgametip8.html:26
 msgid ""
@@ -10200,7 +10200,7 @@ msgstr "下一步，添加挑战活动"
 
 #: templates/help/studio/tips/howto/pgametip9.html:7
 msgid "Make the game stop if the ball hits the bottom."
-msgstr "设计「当球碰到底部，比赛就终止」的程式。"
+msgstr "当球碰到底部，就让比赛终止。"
 
 #: templates/help/studio/tips/howto/pgametip9.html:11
 msgid "Click to select the Stage:"
@@ -10248,7 +10248,7 @@ msgid ""
 "Tip: Click inside the square box in the <span class=\"sensingcolor\">touching color</span> block. Then move your cursor to point and click on the bottom line color.\n"
 msgstr ""
 "\n"
-"提示：点击 <span class=\"sensingcolor\">碰到颜色</span> 积木中的色块可以指定颜色，接着移动滑鼠到刚画的底部的粗线上就可以快速拣色（挑选颜色）。\n"
+"提示：点击 <span class=\"sensingcolor\">碰到颜色</span> 积木中的色块，再把鼠标移动到刚画的底部的粗线上点一下，就可以快速指定颜色。\n"
 
 #: templates/help/studio/tips/howto/pgametip9.html:42
 msgid "Next, customize your game"
@@ -10260,11 +10260,11 @@ msgstr "若要演奏音阶，选择一个乐器（音色）以及一个音阶：
 
 #: templates/help/studio/tips/howto/play-instrument.html:13
 msgid "You can choose another instrument from the menu:"
-msgstr "你可以从「乐器设为 {…}」模块裡的下拉清单中挑选多种乐器："
+msgstr "你可以从菜单中选择其他乐器："
 
 #: templates/help/studio/tips/howto/play-instrument.html:16
 msgid "Try this script. Click the sprite to play:"
-msgstr "点击角色来测试一下程式："
+msgstr "试试以下脚本，点击角色运行它："
 
 #: templates/help/studio/tips/howto/play-instrument.html:20
 msgid "Add note blocks to play a short scale:"
@@ -10280,7 +10280,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/play-music.html:13
 msgid "This script will keep playing music in the background:"
-msgstr "下方这个程式会持续播放背景音乐："
+msgstr "下面的脚本会持续播放背景音乐："
 
 #: templates/help/studio/tips/howto/play-music.html:17
 msgid ""
@@ -10300,7 +10300,7 @@ msgstr "任选一个图形中带有很多颜色的角色，像是："
 
 #: templates/help/studio/tips/howto/play-with-effects.html:15
 msgid "Add this script and then press the space key:"
-msgstr "添加如下程式，接着按下空白键看看效果："
+msgstr "添加如下脚本，然后按下空格键看看："
 
 #: templates/help/studio/tips/howto/play-with-effects.html:22
 msgid "Choose from the menu to try a different effect:"
@@ -10371,7 +10371,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/racegame3.html:16
 msgid ""
 "Now the cat will move every time you press the spacebar on your keyboard."
-msgstr "现在当你按下键盘上的空白键时，小喵咪就会开始移动。"
+msgstr "现在每当你按下键盘上的空格键时，小喵就会开始移动。"
 
 #: templates/help/studio/tips/howto/racegame3.html:20
 msgid " You can choose a different key from the dropdown menu."
@@ -10427,7 +10427,7 @@ msgstr "提示：你可以使用 eraser（橡皮擦）工具把过长的线段�
 
 #: templates/help/studio/tips/howto/racegame4.html:31
 msgid "Do something if you reach the finish line"
-msgstr "下一步，到达终点时的程式"
+msgstr "下一步，到达终点时的脚本"
 
 #: templates/help/studio/tips/howto/racegame5.html:8
 msgid "Click to highlight the cat sprite."
@@ -10453,7 +10453,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/racegame5.html:21
 msgid "Snap it onto your script, like this:"
-msgstr "将它贴合到现有模块堆上，如下图所示："
+msgstr "把它粘到脚本上，如下图所示："
 
 #: templates/help/studio/tips/howto/racegame5.html:26
 msgid ""
@@ -10471,7 +10471,7 @@ msgid ""
 "Choose <span class=\"sensingcolor\">Sprite2</span> (the name of the finish line) from the pull-menu.\n"
 msgstr ""
 "\n"
-"在碰到模块中的下拉清单中选择 <span class=\"sensingcolor\">角色2</span>（终点线的角色名称）。\n"
+"在下拉菜单中选择 <span class=\"sensingcolor\">角色2</span>（终点线的角色名称）。\n"
 
 #: templates/help/studio/tips/howto/racegame5.html:37
 msgid "Now, make something happen when your cat reaches the finish line!"
@@ -10552,7 +10552,7 @@ msgstr "添加其他的角色："
 msgid ""
 "Now, code your sprite, like you did for the cat, choosing a different point "
 "to start and different key to press."
-msgstr "现在，为你的角色编程，就像在小喵咪上所撰写的程式一样，不同的是要为这个角色设置不同的起点位置，还有不同的动作对应按键。"
+msgstr "现在，给你的角色编程，就像小喵的脚本一样，不过要使用不同的起点和按键。"
 
 #: templates/help/studio/tips/howto/racegame7.html:16
 msgid "Personalize your game"
@@ -10723,7 +10723,7 @@ msgstr "试试看加更多的球，乐趣加倍。"
 
 #: templates/help/studio/tips/howto/soccer.html:48
 msgid "Click the Duplicate tool, then click on the ball."
-msgstr "点击複製图示，接着选取之前建立的球。"
+msgstr "点击复制工具，再点击之前的球。"
 
 #: templates/help/studio/tips/howto/soccer.html:54
 msgid "Make the ball change color each time you hit it."
@@ -10741,7 +10741,7 @@ msgstr "在角色列表中，建立并选择角色 Water Bottle（水壶）。"
 
 #: templates/help/studio/tips/howto/soccer.html:70
 msgid "Then build this script, like this:"
-msgstr "建立如下程式："
+msgstr "接着，编写以下脚本："
 
 #: templates/help/studio/tips/howto/soccer.html:72
 msgid "Now, click the water bottle (on the Stage) to see what happens."
@@ -10909,7 +10909,7 @@ msgid ""
 "\t"
 msgstr ""
 "\t\n"
-"\t\t<p>点击 <span class=\"tab-ref\">音效</span> 标签页。按下麦克风图标 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/microphone-icon.png\"> 录制你自己的声音。</p>\n"
+"\t\t<p>点击 <span class=\"tab-ref\">声音</span> 标签页。按下麦克风图标<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/mic-icon.png\"> 录制你自己的声音。</p>\n"
 "\t"
 
 #: templates/help/studio/tips/howto/story13.html:16
@@ -11012,7 +11012,7 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t\t<p>提示：要添加新的声音，电机<span class=\"tab-ref\">音效</span> 标签页，再点击 <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\"></p>\n"
+"\t\t<p>提示：要添加新的声音，点击<span class=\"tab-ref\">声音</span> 标签页，再点击 <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\"></p>\n"
 "\t"
 
 #: templates/help/studio/tips/howto/story4.html:30
@@ -11140,7 +11140,7 @@ msgstr "挑选一个角色，内建有开口和闭口造型，像是："
 
 #: templates/help/studio/tips/howto/talking-sprite.html:18
 msgid "Try this script:"
-msgstr "试试看这个程式："
+msgstr "试试以下脚本："
 
 #: templates/help/studio/tips/howto/talking-sprite.html:24
 #, python-format
@@ -11253,7 +11253,7 @@ msgstr "输入负值，例如 -10，可以让爱心变得比较小。"
 #: templates/help/studio/tips/howto/valentine2.html:29
 #: templates/help/studio/tips/howto/valentine3.html:14
 msgid "Click anywhere on the stack to run it."
-msgstr "点一下模块堆试试看。"
+msgstr "点击这堆积木任何一处试试。"
 
 #: templates/help/studio/tips/howto/valentine2.html:30
 msgid "Next, loop the beat"
@@ -11296,7 +11296,7 @@ msgstr "让它在点击绿旗时开始执行"
 
 #: templates/help/studio/tips/howto/valentine4.html:5
 msgid "Make your script run whenever you click the green flag."
-msgstr "以后当你按下（预览区上的）绿旗图示的按钮，程式就会开始执行。"
+msgstr "任何时候点击绿旗，脚本就会开始运行。"
 
 #: templates/help/studio/tips/howto/valentine4.html:7
 #, python-format
@@ -11385,7 +11385,7 @@ msgstr "你可以使用文字工具来输入一些内容。"
 
 #: templates/help/studio/tips/howto/valentine6.html:29
 msgid "Now, add music"
-msgstr "现在，加入音效"
+msgstr "现在，加入音乐"
 
 #: templates/help/studio/tips/howto/valentine7.html:5
 msgid "Add music to your valentine."
@@ -11398,7 +11398,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/valentine7.html:19
 msgid ""
 "Click the 'Music Loops' category. Choose 'dance celebrate' or another sound:"
-msgstr "从「音乐循环」类选择一个音效，例如「dance celebrate」："
+msgstr "从「音乐循环」类选择「dance celebrate」或者别的声音："
 
 #: templates/help/studio/tips/howto/valentine7.html:24
 msgid ""
@@ -11427,7 +11427,7 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t<p>现在你可以点击 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\"> 来启动你的程式。</p>\n"
+"\t<p>现在你可以点击绿旗 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\"> 来启动你的程序。</p>\n"
 "\t"
 
 #: templates/help/studio/tips/howto/valentine7.html:44
@@ -11469,7 +11469,7 @@ msgstr "让字母旋转"
 
 #: templates/help/studio/tips/howto/valentine8.html:26
 msgid "To make a sprite spin, select the sprite, then add a script like this:"
-msgstr "若要让角色旋转，可以编写下方程式："
+msgstr "要让角色旋转，先选择角色，然后添加以下脚本："
 
 #: templates/help/studio/tips/howto/valentine8.html:28
 msgid "Type in different numbers to adjust the spin."
@@ -11497,7 +11497,7 @@ msgstr ""
 msgid ""
 "Make a virtual pet. Find out how to add sounds, animations, or other "
 "effects."
-msgstr "用你的手创造来自虚拟世界的宠物，从中学习添加音效、动画等效果。"
+msgstr "用你的手创造来自虚拟世界的宠物，从中学习添加声音、动画等效果。"
 
 #: templates/help/studio/tips/howto/vptip-intro.html:10
 msgid "First, choose your pet"
@@ -11585,7 +11585,7 @@ msgstr "让你的宠物在被点击时发出一些声音。"
 
 #: templates/help/studio/tips/howto/vptip3.html:24
 msgid "Add a script that plays this sound when you click on your pet."
-msgstr "添加如下程式，如此当点击宠物时，就会播放音效。"
+msgstr "添加以下脚本，当点击宠物时，就会播放声音。"
 
 #: templates/help/studio/tips/howto/vptip3.html:29
 msgid "You can also have your pet say something when you click on it."
@@ -11617,7 +11617,7 @@ msgid ""
 "Tip: To add a costume to an animation, click with the Duplicate tool. Then use the drawing tools to edit it.</spanp>\n"
 msgstr ""
 "\n"
-"提示：要添加渐变式的造型来产生动画，可以使用複製的方式，并在複本上面稍微的用绘图工具修改。</spanp>\n"
+"提示：要添加渐变式的造型来产生动画，可以先使用复制工具，再用绘图工具进行修改。</spanp>\n"
 
 #: templates/help/studio/tips/howto/vptip4.html:24
 msgid "Now, tell your pet it's time to eat"
@@ -11649,7 +11649,7 @@ msgstr ""
 msgid ""
 "Now, whenever you click on the food sprite, it will send a message to your "
 "pet."
-msgstr "现在，只要你一点击食物角色，程式就会发送此讯息给你的宠物。"
+msgstr "现在，只要你一点击食物角色，它就会向你的宠物发送一条消息。"
 
 #: templates/help/studio/tips/howto/vptip5.html:28
 msgid ""
@@ -11730,7 +11730,7 @@ msgstr "点击以选择您的宠物"
 
 #: templates/help/studio/tips/howto/vptip7.html:21
 msgid "Here’s a script that glides to a trampoline and jumps:"
-msgstr "底下的模块堆示范的就是在蹦床上跳上跳下的程式："
+msgstr "以下是滑到蹦床上弹跳的脚本："
 
 #: templates/help/studio/tips/howto/vptip7.html:28
 msgid "Next, add more activities"
@@ -11752,7 +11752,7 @@ msgstr "用乐器演奏音乐："
 
 #: templates/help/studio/tips/howto/vptip8.html:14
 msgid "Choose a drum and add a script for your pet to play it:"
-msgstr "选择一张鼓，并加上一段程式让你的宠物使用它："
+msgstr "选择一种鼓，添加下面的脚本让宠物演奏鼓声："
 
 #: templates/help/studio/tips/howto/vptip8.html:20
 msgid "Drink some water:"
@@ -11772,17 +11772,17 @@ msgid ""
 "For example, to monitor if your pet is hungry, go to <span class=\"datacolor\">Data</span> and click on 'Make a Variable.' Type in something like 'Hungry.'</p>\n"
 msgstr ""
 "\n"
-"例如，监控你的宠物是不是肚子饿了。你可以从 <span class=\"datacolor\">数据</span> 中「建立一个变量」，名为「hungry」。</p>\n"
+"例如，监控你的宠物是不是肚子饿了。你可以在 <span class=\"datacolor\">数据</span> 中「建立一个变量」，名为「饥饿」。</p>\n"
 
 #: templates/help/studio/tips/howto/vptip9.html:14
 msgid ""
 "You can use a script like this so that your pet gets hungrier over time:"
-msgstr "你可以使用像下方示范的程式，如此你的宠物就会有飢饿感（随时间愈来愈饿）："
+msgstr "可以用如下的脚本让宠物的饥饿程度随时间增加："
 
 #: templates/help/studio/tips/howto/vptip9.html:16
 msgid ""
 "To make it less hungry, add this block to the 'when I receive food' script:"
-msgstr "要让你的宠物有「饱足感」，就添加如下的积木到「当接到消息 food 」的积木后："
+msgstr "要减少它的饥饿程度，就添加如下的积木到「当接收到食物 」的脚本中："
 
 #: templates/help/studio/tips/howto/vptip9.html:22
 msgid "You could also monitor if your pet is thirsty, sleepy, or bored."
@@ -11802,7 +11802,7 @@ msgstr "编写如下脚本："
 
 #: templates/help/studio/tips/howto/walking.html:18
 msgid "You can change how fast it moves by typing in other numbers."
-msgstr "你可以在模块裡输入不同的数字，以改变走路频率和步伐大小。"
+msgstr "键入其他数字，可以改变它移动的快慢。"
 
 #: templates/help/studio/tips/howto/walking.html:22
 #, python-format
