@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-26 08:09-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Štěpán Maňas <manas.stepan@gmail.com>, 2017\n"
+"Last-Translator: Jan Svěrák <sveraj01@pf.jcu.cz>, 2017\n"
 "Language-Team: Czech (https://www.transifex.com/llk/teams/60938/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,7 +67,7 @@ msgstr "Tento blok použijte, pokud chcete přidat položku na konec seznamu."
 
 #: templates/help/studio/tips/blocks/add-to-list.html:24
 msgid "Can't find the list blocks? You need to first make a list:"
-msgstr "Nelze najít blok seznam? Nejprve musíte seznam vytvořit:"
+msgstr "Nelze najít blok seznam? Nejprve musíš seznam vytvořit:"
 
 #: templates/help/studio/tips/blocks/add.html:7
 msgid "Adds two numbers"
@@ -91,6 +91,9 @@ msgid ""
 " input in <img src=\"%(url_answer)s\" />. The answer is shared by all "
 "sprites."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" /> zeptá se na otázku a uloží odpověď "
+"zadanou z klávesnice v <img src=\"%(url_answer)s\" />.Odpověď je přístupná "
+"pro všechny postavy"
 
 #: templates/help/studio/tips/blocks/answer.html:22
 #, python-format
@@ -113,6 +116,8 @@ msgid ""
 "Asks a question on the screen and stores keyboard input in the <img "
 "src=\"%(url_answer)s\" />"
 msgstr ""
+"Zobrazí otázku na obrazovce a uloží vstup z klávesnice do <img "
+"src=\"%(url_answer)s\" />"
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:14
 msgid ""
@@ -147,7 +152,7 @@ msgstr "Název vedle pozadí v seznamu je <img src=\"%(url_backdrop_name)s\" />"
 msgid ""
 "The number next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_number)s\" />"
-msgstr ""
+msgstr "Čislo vedle pozadí v listu je <img src=\"%(url_backdrop_number)s\" />"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:9
 msgid "Sends a message to all sprites and waits"
@@ -166,6 +171,8 @@ msgid ""
 "Click to choose which message gets sent. Choose \"new\" to type in your own "
 "message."
 msgstr ""
+"Vyber si, jaká zpráva má být poslána. Vyber \"nový\" pro vytvoření vlastní "
+"zprávy."
 
 #: templates/help/studio/tips/blocks/broadcast.html:9
 msgid "Sends a message to all sprites"
@@ -178,6 +185,8 @@ msgid ""
 " background). This is useful if you want to tell other sprites when to do "
 "something."
 msgstr ""
+"<img src=\"%(url_broadcast)s\"/> Odešle zprávu všem postavám (a pozadí). "
+"Toto je užitečné, když chceš říct ostatním postavám, kdy mají něco udělat"
 
 #: templates/help/studio/tips/blocks/broadcast.html:22
 #, python-format
@@ -185,6 +194,8 @@ msgid ""
 "What do you want them to do when they receive the message? See <a "
 "href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 msgstr ""
+"Co chceš aby dělali, když přijmou zprávu? Podívej se <a "
+"href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 
 #: templates/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
@@ -349,7 +360,7 @@ msgstr "Říká klonu co udělat jakmile je vytvořen"
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 msgid "The script is triggered as soon as the clone is created."
-msgstr ""
+msgstr "Skript bude přiřazen jakmile se vytvoří klon."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:12
 msgid ""
@@ -398,7 +409,7 @@ msgstr "Vytváří klon (dočasnou kopii) určené postavy"
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
-msgstr ""
+msgstr "Z rozbalovací nabídky vyber postavu, kterou chceš naklonovat."
 
 #: templates/help/studio/tips/blocks/create-clone.html:14
 #, python-format
@@ -406,6 +417,8 @@ msgid ""
 "Use <img src=\"%(url_clone_startup)s\" /> to tell the clone what to do once "
 "it's created."
 msgstr ""
+"Použij<img src=\"%(url_clone_startup)s\" />, abys řekl klonu, co má udělat, "
+"jakmile je vytvořen."
 
 #: templates/help/studio/tips/blocks/create-clone.html:16
 #: templates/help/studio/tips/blocks/delete-this-clone.html:16
@@ -432,10 +445,12 @@ msgid ""
 "Make sure you've chosen the sprite you want to clone from the menu in the "
 "<img src=\"%(url_create_clone_of)s\" /> block."
 msgstr ""
+"Ujisti se, jestli jsi vybral správnou postavu z menu v <img "
+"src=\"%(url_create_clone_of)s\" /> bloku."
 
 #: templates/help/studio/tips/blocks/create-clone.html:31
 msgid "Note: The clone only lasts while the project is running."
-msgstr ""
+msgstr "Poznámka: klon trvá pouze pokud je program spuštěný."
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
@@ -449,7 +464,7 @@ msgstr "Můžeš vybrat z z nabídky požadovanou položku. "
 msgid ""
 "To view the value of the current time, click the checkbox next to the "
 "current time."
-msgstr ""
+msgstr "Pro zobrazení aktuálního času klikni na zaškrtávací píčko vedle něj."
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
@@ -533,6 +548,8 @@ msgid ""
 "To see a sprite's direction, click <img "
 "src=\"%(STATIC_URL)s/images/help/info.gif\">:"
 msgstr ""
+"Pro zobrazení směru pohledu postavy, klikni <img "
+"src=\"%(STATIC_URL)s/images/help/info.gif\">:"
 
 #: templates/help/studio/tips/blocks/direction.html:20
 msgid "You can drag the blue line to change direction."
@@ -655,7 +672,7 @@ msgstr "Vyber z menu:"
 
 #: templates/help/studio/tips/blocks/go-to.html:20
 msgid "Then, click the block."
-msgstr "Potom, klikni na blok."
+msgstr "Potom klikni na blok."
 
 #: templates/help/studio/tips/blocks/go-to.html:23
 msgid ""
@@ -731,7 +748,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/insert-list.html:23
 msgid "You can indicate where in the list you want to add an item."
-msgstr ""
+msgstr "Můžeš uvést, kam chceš v tomto listu vložit položku."
 
 #: templates/help/studio/tips/blocks/insert-list.html:26
 #, python-format
@@ -739,6 +756,8 @@ msgid ""
 "<img src=\"%(url_insert_scoreboard)s\" /> inserts item at the specified "
 "place in the list."
 msgstr ""
+"<img src=\"%(url_insert_scoreboard)s\" /> vloží položku na konkrétní místo v"
+" seznamu."
 
 #: templates/help/studio/tips/blocks/insert-list.html:32
 #, python-format
@@ -746,6 +765,8 @@ msgid ""
 "<img src=\"%(url_insert_greetings)s\" /> inserts item at a random place in "
 "the list."
 msgstr ""
+"<img src=\"%(url_insert_greetings)s\" /> vloží položku na náhodné místo v "
+"seznamu."
 
 #: templates/help/studio/tips/blocks/item-of-list.html:7
 msgid "Reports the item at the specifed position in the list"
@@ -795,7 +816,7 @@ msgstr "Ohlásí kolik prvků je v seznamu"
 
 #: templates/help/studio/tips/blocks/length-of-list.html:15
 msgid "This block reports how many items are currently in a list."
-msgstr ""
+msgstr "Tento blok informuje, kolik je aktuálně položek v seznamu."
 
 #: templates/help/studio/tips/blocks/length-of-list.html:20
 msgid ""
@@ -858,7 +879,7 @@ msgstr ""
 #: templates/help/studio/tips/blocks/list.html:29
 msgid "To delete or rename a list, right click on the list."
 msgstr ""
-"Pro smazání nebo přejmenování seznamu, klikni pravým tlačítkem na seznam."
+"Pro smazání nebo přejmenování seznamu klikni pravým tlačítkem na seznam."
 
 #: templates/help/studio/tips/blocks/loudness.html:7
 msgid ""
@@ -884,6 +905,8 @@ msgid ""
 "You can create a custom block with inputs, for example: <img "
 "src=\"%(url_jump_10)s\"/>"
 msgstr ""
+"Můžeš vytvořit vlastní blok se vstupy, například <img "
+"src=\"%(url_jump_10)s\"/>"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:13
 msgid "Click \"Make a Block\" to see this dialog box:"
@@ -928,6 +951,8 @@ msgid ""
 "When you click OK, the new block will appear in <img "
 "src=\"%(url_more_blocks)s\" /> :"
 msgstr ""
+"Když stiskneš OK, nový blok se objeví v <img src=\"%(url_more_blocks)s\" /> "
+":"
 
 #: templates/help/studio/tips/blocks/make-a-block.html:29
 msgid ""
@@ -940,6 +965,8 @@ msgid ""
 "See also: <a href=\"../make-a-block-with-inputs/\">Make a Block with "
 "Inputs</a>"
 msgstr ""
+"Prohlédni si také: <a href=\"../make-a-block-with-inputs/\">Udělej blok se "
+"vstupy</a>"
 
 #: templates/help/studio/tips/blocks/make-a-list.html:7
 msgid "Click to create and name a new list"
@@ -963,7 +990,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/make-a-list.html:22
 msgid "Once you create a list, eight blocks will appear."
-msgstr ""
+msgstr "Jakmile vytvoříš seznam, objeví se osm bloků."
 
 #: templates/help/studio/tips/blocks/make-a-variable.html:7
 msgid "Click to create and name a new variable"
@@ -971,7 +998,7 @@ msgstr "Klikni pro vytvoření a pojmenování nové proměnné"
 
 #: templates/help/studio/tips/blocks/make-a-variable.html:15
 msgid "Once you create a variable, five blocks will appear:"
-msgstr "Jakmile vytvoříš proměnnou, pět bloků se objeví:"
+msgstr "Jakmile vytvoříš proměnnou, objeví se pět bloků:"
 
 #: templates/help/studio/tips/blocks/make-a-variable.html:20
 msgid ""
@@ -1074,18 +1101,18 @@ msgstr "Vynásobí spolu dvě čísla"
 
 #: templates/help/studio/tips/blocks/next-costume.html:10
 msgid "Switches to the next costume in the sprite's costume list"
-msgstr ""
+msgstr "Přepne na další kostým ze seznamu kostýmů postavy"
 
 #: templates/help/studio/tips/blocks/next-costume.html:21
 #, python-format
 msgid "To see a sprite's costumes, click <img src=\"%(url_costumes_tab)s\"/>."
-msgstr "K zobrazení kostýmů postavy, stiskni <img src=\"%(url_costumes_tab)s\"/>."
+msgstr "K zobrazení kostýmů postavy stiskni <img src=\"%(url_costumes_tab)s\"/>."
 
 #: templates/help/studio/tips/blocks/next-costume.html:24
 msgid ""
 "You can rearrange the order of the costumes in the list by dragging and "
 "dropping."
-msgstr ""
+msgstr "Potažením a puštěním můžeš měnit pořadí kostýmů v seznamu."
 
 #: templates/help/studio/tips/blocks/next-costume.html:29
 #, python-format
@@ -1093,6 +1120,8 @@ msgid ""
 "<p>When <img src=\"%(url_next_costume_block)s\" /> gets to the end of the "
 "list, it goes back to the top.</p>"
 msgstr ""
+"<p>Pokud se <img src=\"%(url_next_costume_block)s\" /> dostane na konec "
+"seznamu, vloží se zpět na vrchol seznamu. </p>"
 
 #: templates/help/studio/tips/blocks/nextbackdrop.html:10
 msgid ""
@@ -1106,7 +1135,7 @@ msgstr ""
 #, python-format
 msgid "To see a stage's backdrops, click <img src=\"%(url_backdrop_tab)s\"/>."
 msgstr ""
-"Pro zobrazení všech pozadí scény, stiskni <img "
+"Pro zobrazení všech pozadí scény stiskni <img "
 "src=\"%(url_backdrop_tab)s\"/>."
 
 #: templates/help/studio/tips/blocks/nextbackdrop.html:20
@@ -1168,11 +1197,11 @@ msgstr "Hraje na buben po určený počet taktů"
 
 #: templates/help/studio/tips/blocks/play_drum.html:19
 msgid "Choose a drum sound from the list"
-msgstr "Zvol bicí zvuk ze seznamu"
+msgstr "Zvol zvuk bicích ze seznamu"
 
 #: templates/help/studio/tips/blocks/play_drum.html:24
 msgid "Or, type in a number from 1 to 22"
-msgstr ""
+msgstr "Nebo, vepiš číslo od 1 do 22"
 
 #: templates/help/studio/tips/blocks/play_drum.html:30
 #, python-format
@@ -1186,7 +1215,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/playnote.html:21
 msgid "Use higher numbers for higher pitches"
-msgstr ""
+msgstr "Použij vyšší čísla pro vyšší tóny"
 
 #: templates/help/studio/tips/blocks/playnote.html:28
 #, python-format
@@ -1195,7 +1224,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/playsound.html:10
 msgid "Plays a sound"
-msgstr ""
+msgstr "Přehraje zvuk"
 
 #: templates/help/studio/tips/blocks/playsound.html:19
 msgid "Choose a sound from the menu:"
@@ -1203,7 +1232,7 @@ msgstr "Vyber zvuk z menu:"
 
 #: templates/help/studio/tips/blocks/playsound.html:23
 msgid "To add a sound, click the Sounds tab:"
-msgstr ""
+msgstr "Pro přidání zvuku klikni na záložku zvuky"
 
 #: templates/help/studio/tips/blocks/playsound.html:31
 #: templates/help/studio/tips/blocks/playsound_untildone.html:20
@@ -1212,6 +1241,8 @@ msgid ""
 "<img src=\"%(url_playsound)s\"/> starts playing a sound and continues to the"
 " next block immediately."
 msgstr ""
+"<img src=\"%(url_playsound)s\"/> spustí zvuk a okamžitě pokračuje do dalšího"
+" bloku."
 
 #: templates/help/studio/tips/blocks/playsound.html:35
 #: templates/help/studio/tips/blocks/playsound_untildone.html:24
@@ -1220,6 +1251,8 @@ msgid ""
 "<img src=\"%(url_playsound_tildone)s\"/> waits until the sound is finished "
 "playing before continuing to the next block."
 msgstr ""
+"<img src=\"%(url_playsound_tildone)s\"/> čeká, dokud zvuk nedohraje a až "
+"poté pokračuje do dalšího bloku."
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:11
 msgid "Plays a sound and waits until the sound is finished"
@@ -1235,7 +1268,7 @@ msgstr "Klikni pro výběr z menu:"
 
 #: templates/help/studio/tips/blocks/point-direction.html:19
 msgid "Or, type in a number:"
-msgstr ""
+msgstr "Nebo, vepiš číslo:"
 
 #: templates/help/studio/tips/blocks/point-direction.html:25
 #, python-format
@@ -1292,7 +1325,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/replace-list.html:21
 msgid "You can choose where in a list to put an item. For example:"
-msgstr ""
+msgstr "Můžeš vybrat, kam vložíš položku do seznamu. Například:"
 
 #: templates/help/studio/tips/blocks/reset-timer.html:7
 msgid "Sets the timer to zero"
@@ -1366,13 +1399,15 @@ msgstr "Nastaví grafický efekt postavě na určené číslo"
 
 #: templates/help/studio/tips/blocks/set-effect.html:12
 msgid "Click to choose an effect from the menu:"
-msgstr ""
+msgstr "Klikni pro výběr efektu z nabídky"
 
 #: templates/help/studio/tips/blocks/set-effect.html:15
 msgid ""
 "Try typing in different numbers between -100 and 100. (Some of the effects "
 "range from 0 to 100.)"
 msgstr ""
+"Zkus vepsat různá čísla v rozmezí -100 až 100. (Některé efekty jsou pouze v "
+"rozmezí 0 až 100.)"
 
 #: templates/help/studio/tips/blocks/set-size.html:7
 #, python-format
@@ -1476,11 +1511,11 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/setinstrument.html:16
 msgid "Each sprite has its own instrument."
-msgstr ""
+msgstr "Každá postava má svůj vlastní nástorj"
 
 #: templates/help/studio/tips/blocks/setinstrument.html:19
 msgid "Click to choose from the menu. Or, type in a number from 1 to 21."
-msgstr ""
+msgstr "Klikni pro výběr z menu, nebo vepiš číslo od 1 do 21."
 
 #: templates/help/studio/tips/blocks/setpencolor.html:8
 msgid "Sets pen's color, based on choice from color picker"
@@ -1488,7 +1523,7 @@ msgstr "Nastaví barvu pera, založenou na výběru z voliče barev"
 
 #: templates/help/studio/tips/blocks/setpencolor.html:21
 msgid "Picking the color also changes the pen shade."
-msgstr ""
+msgstr "Výběr barvy také změní odstín pera."
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:7
 msgid "Sets pen's color to specified value"
@@ -1503,6 +1538,11 @@ msgid ""
 " number 130 is <font color = blue>blue</font>, and number 170 is <font color"
 " = magenta>magenta</font>."
 msgstr ""
+"Můžete také nastavit barvu pera pomocí proměnné, jako <img "
+"src=\"%(url_y_position)s\" /> nebo číslo. Například, číslo 0 je barva <font "
+"color = red>červená</font>, číslo 70 je <font color = green>zelená</font>, "
+"číslo 130 je <font color = blue>modrá</font>, a číslo 170 je <font color = "
+"magenta>purpurová</font>."
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:17
 msgid ""
@@ -1686,6 +1726,7 @@ msgstr "Tento scénář přepíná kostýmy aby prováděl animaci:"
 #, python-format
 msgid "To see a sprite's costumes, click <img src=\"%(url_costumes_tab)s\" />"
 msgstr ""
+"Pro zobrazení kostýmů postavy, stiskni <img src=\"%(url_costumes_tab)s\" />"
 
 #: templates/help/studio/tips/blocks/switch-costume.html:22
 msgid "Choose a costume name from the pull-down menu."
@@ -1717,6 +1758,8 @@ msgid ""
 "To remove the speech bubble, use a blank block: <img "
 "src=\"%(url_think_blank)s\" />."
 msgstr ""
+"Pro odstranění bubliny s textem použij prázdný blok: <img "
+"src=\"%(url_think_blank)s\" />."
 
 #: templates/help/studio/tips/blocks/timer.html:7
 msgid "Reports the value of the timer in seconds"
@@ -1798,13 +1841,15 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/usedefine.html:18
 msgid "If your block has an input, you can type in it:"
-msgstr ""
+msgstr "Pokud má tvůj blok vstup, můžeš do něj psát:"
 
 #: templates/help/studio/tips/blocks/usedefine.html:23
 msgid ""
 "To edit the block, right-click (Ctrl+click on Mac) on the block and choose "
 "\"edit\" from the menu."
 msgstr ""
+"Pro úpravu bloku, klikni na blok pravým tlačítkem myši (Ctrl+klik pro Mac) a"
+" vyber \"upravit\" z nabídky."
 
 #: templates/help/studio/tips/blocks/usedefine.html:27
 msgid ""
@@ -1829,6 +1874,8 @@ msgid ""
 "If you want to save the current username, you can store it in a variable or "
 "list. For example, <img src=\"%(url_username_ex2)s\"/>"
 msgstr ""
+"Pokud chceš zachovat současné uživatelské jméno, můžeš jej uložit do "
+"proměnné nebo do seznamu. Například, <img src=\"%(url_username_ex2)s\"/>"
 
 #: templates/help/studio/tips/blocks/variable.html:7
 msgid "Reports value of the variable"
@@ -1846,7 +1893,7 @@ msgstr ""
 #: templates/help/studio/tips/blocks/variable.html:21
 msgid "To delete or rename a variable, right click on the variable."
 msgstr ""
-"Pro odstranění či přejmenování proměnné na ni stiskni pravým tlačítkem."
+"Pro odstranění či přejmenování proměnné na ni klikni pravým tlačítkem."
 
 #: templates/help/studio/tips/blocks/video-motion.html:9
 msgid ""
@@ -1977,7 +2024,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/when-loudness.html:19
 msgid "After the timer reaches 10 seconds, the script will run."
-msgstr ""
+msgstr "Skript se spustí, pokud dosáhne časovač 10 sekund."
 
 #: templates/help/studio/tips/blocks/when-loudness.html:26
 msgid ""
@@ -2334,14 +2381,14 @@ msgstr ""
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:17
 msgid "You can select WeDo motor(s) from the first dropdown menu:"
-msgstr ""
+msgstr "Vyber si WeDo motor(y) z prvního rozbalovacího menu:"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:19
 #: templates/help/studio/tips/ext/wedo-set-power.html:19
 msgid ""
 "If you have only one motor, use the \"motor\" option, which will set the "
 "motor"
-msgstr ""
+msgstr "Pokud máš pouze jeden motor, použij možnost \"motor\", která jej nastaví."
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:20
 #: templates/help/studio/tips/ext/wedo-set-power.html:20
@@ -2375,7 +2422,7 @@ msgstr ""
 #: templates/help/studio/tips/ext/wedo-set-power.html:12
 #: templates/help/studio/tips/ext/wedo2-set-power.html:13
 msgid "Change the speed of the motor using the up and down arrow keys."
-msgstr "Změň rychlost motoru použitím šipky nahoru nebo dolu."
+msgstr "Změň rychlost motoru použitím šipky nahoru nebo dolů."
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:17
 #: templates/help/studio/tips/ext/wedo-turn-off.html:17
@@ -2725,7 +2772,7 @@ msgstr ""
 
 #: templates/help/studio/tips/ext/wedo2-turn-on-for-secs.html:7
 msgid "Turn a motor on for a specified number of seconds."
-msgstr "Zapni motor na určitý počet sekund."
+msgstr "Zapni motor na určený počet sekund."
 
 #: templates/help/studio/tips/ext/wedo2-turn-on-for-secs.html:13
 msgid ""
@@ -3888,7 +3935,7 @@ msgstr "6"
 
 #: templates/help/studio/tips/howto/bdaycard-intro.html:24 tips_config.py:43
 msgid "Add an Animation"
-msgstr ""
+msgstr "Přidej animaci"
 
 #: templates/help/studio/tips/howto/bdaycard-intro.html:25
 #: templates/help/studio/tips/howto/bearstory-intro.html:30
@@ -4341,7 +4388,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bdaycard9.html:11
 msgid "ADD MORE THINGS"
-msgstr ""
+msgstr "PŘIDEJ VÍCE VĚCÍ"
 
 #: templates/help/studio/tips/howto/bdaycard9.html:12
 #, python-format
@@ -4363,7 +4410,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bdaycard9.html:27
 msgid "TRY DIFFERENT EFFECTS!"
-msgstr ""
+msgstr "VYZKOUŠEJ RŮZNÉ EFEKTY!"
 
 #: templates/help/studio/tips/howto/bdaycard9.html:28
 #: templates/help/studio/tips/howto/cardtip10.html:19
@@ -4470,7 +4517,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory1.html:34
 msgid "Try pressing the space key on your keyboard."
-msgstr ""
+msgstr "Zkus stisknout mezerník na své klávesnici."
 
 #: templates/help/studio/tips/howto/bearstory1.html:38
 msgid ""
@@ -4582,7 +4629,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory3.html:38
 msgid "Next, try different costumes"
-msgstr ""
+msgstr "Jako další zkus jiný kostým"
 
 #: templates/help/studio/tips/howto/bearstory4.html:5
 msgid "Now make the Bearstack switch costumes as it moves."
@@ -4679,7 +4726,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory6.html:19
 msgid "What do you want this character to say?"
-msgstr ""
+msgstr "Co chceš, aby tato postava řekla?"
 
 #: templates/help/studio/tips/howto/bearstory6.html:20
 msgid ""
@@ -4708,7 +4755,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory6.html:31
 msgid "Select which key you want to use."
-msgstr ""
+msgstr "Vyber kterou klávesu chceš použít."
 
 #: templates/help/studio/tips/howto/bearstory6.html:32
 msgid "Each time you press the key, your character will appear."
@@ -4729,7 +4776,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory6.html:41
 msgid "Try pressing the key again."
-msgstr ""
+msgstr "Zkus znovu stisknout klávesu."
 
 #: templates/help/studio/tips/howto/bearstory6.html:44
 msgid "Next, add to your story"
@@ -4797,7 +4844,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/bearstory7.html:32
 msgid "Choose a sprite, or draw your own:"
-msgstr ""
+msgstr "Vyber si postavu, nebo nakresli svou vlastní:"
 
 #: templates/help/studio/tips/howto/bearstory7.html:34
 msgid ""
@@ -4936,7 +4983,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/bearstory7.html:103
 #: templates/help/studio/tips/howto/hoops10.html:57
 msgid "Next, save and share your project"
-msgstr ""
+msgstr "Jako další krok ulož a sdílej svůj projekt"
 
 #: templates/help/studio/tips/howto/bearstory8.html:6
 msgid "Congratulations! You've coded your own interactive story!"
@@ -4949,7 +4996,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/odetocode8.html:6
 #: templates/help/studio/tips/howto/racegame9.html:12
 msgid "Save Your Project"
-msgstr ""
+msgstr "Ulož svůj projekt"
 
 #: templates/help/studio/tips/howto/bearstory8.html:13
 #: templates/help/studio/tips/howto/hoops11.html:13
@@ -5103,7 +5150,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip-intro.html:11
 msgid "Start with a greeting"
-msgstr ""
+msgstr "Začni s pozdravem"
 
 #: templates/help/studio/tips/howto/cardtip-intro.html:18
 #: templates/help/studio/tips/howto/hide-intro.html:28 tips_config.py:50
@@ -5162,7 +5209,7 @@ msgstr "Pokračuj v tvorbě!"
 #: templates/help/studio/tips/howto/cardtip1.html:7
 #: templates/help/studio/tips/howto/racegame2.html:8
 msgid "Click to select the cat:"
-msgstr ""
+msgstr "Klikni pro výběr kočky:"
 
 #: templates/help/studio/tips/howto/cardtip1.html:12
 msgid ""
@@ -5173,7 +5220,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip1.html:18
 msgid "Type \"Happy birthday!\" or your own greeting:"
-msgstr ""
+msgstr "Napiš \"Šťastné narozeniny!\" nebo svůj vlastní pozdrav:"
 
 #: templates/help/studio/tips/howto/cardtip1.html:23
 msgid "Then, click on your block to see the cat talk."
@@ -5189,22 +5236,25 @@ msgid ""
 "\t<p>Now add your own images and ideas.</p>\n"
 "\t"
 msgstr ""
+" \n"
+"\t<p>Teď přidej svoje obrázky a nápady.</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip10.html:9
 msgid "Add a picture"
-msgstr ""
+msgstr "Přidej obrázek"
 
 #: templates/help/studio/tips/howto/cardtip10.html:11
 msgid "Draw a picture."
-msgstr ""
+msgstr "Nakresli obrázek."
 
 #: templates/help/studio/tips/howto/cardtip10.html:12
 msgid "Add an image from your computer."
-msgstr ""
+msgstr "Přidej obrázek z počítače."
 
 #: templates/help/studio/tips/howto/cardtip10.html:13
 msgid "Take a picture."
-msgstr ""
+msgstr "Vyfoť."
 
 #: templates/help/studio/tips/howto/cardtip10.html:18
 msgid "Add effects!"
@@ -5220,13 +5270,13 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip10.html:27
 msgid "Next, share your greeting!"
-msgstr ""
+msgstr "Jako další krok sdílej svůj pozdrav!"
 
 #: templates/help/studio/tips/howto/cardtip11.html:13
 #: templates/help/studio/tips/howto/get-started-12.html:15
 #, python-format
 msgid "Click <img style=\"margin-bottom:-17px\" src = \"%(url_12b_share)s\">"
-msgstr ""
+msgstr "Klikni <img style=\"margin-bottom:-17px\" src = \"%(url_12b_share)s\">"
 
 #: templates/help/studio/tips/howto/cardtip11.html:17
 msgid ""
@@ -5251,19 +5301,19 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip11.html:38
 msgid "What do you want to make next?"
-msgstr ""
+msgstr "Co chceš dělat dál?"
 
 #: templates/help/studio/tips/howto/cardtip12.html:5
 msgid "Now you can make another greeting card, or start a new project!"
-msgstr ""
+msgstr "Nyní můžeš vytvořit další blahopřání nebo vytvořit nový projekt!"
 
 #: templates/help/studio/tips/howto/cardtip12.html:9
 msgid "Start a new project"
-msgstr ""
+msgstr "Začni nový projekt"
 
 #: templates/help/studio/tips/howto/cardtip12.html:10
 msgid "Click File, then select New:"
-msgstr ""
+msgstr "Klikni na soubor a poté na vyber nový:"
 
 #: templates/help/studio/tips/howto/cardtip12.html:12
 msgid "Or, from the Scratch website, click Create:"
@@ -5271,7 +5321,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip12.html:17
 msgid "Learn more!"
-msgstr ""
+msgstr "Nauč se víc!"
 
 #: templates/help/studio/tips/howto/cardtip12.html:18
 msgid "Watch the Getting Started with Scratch video:"
@@ -5303,7 +5353,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip3.html:5
 msgid "Choose a backdrop for your card."
-msgstr ""
+msgstr "Vyber si pozadí pro svojí kartu."
 
 #: templates/help/studio/tips/howto/cardtip3.html:7
 #, python-format
@@ -5311,6 +5361,8 @@ msgid ""
 "Click the <img class=\"intext\" style=\"top:0\" src = "
 "\"%(STATIC_URL)s/images/help/landscape-icon.png\"> icon:"
 msgstr ""
+"Klikni na <img class=\"intext\" style=\"top:0\" src = "
+"\"%(STATIC_URL)s/images/help/landscape-icon.png\"> ikonu:"
 
 #: templates/help/studio/tips/howto/cardtip3.html:12
 msgid ""
@@ -5338,6 +5390,8 @@ msgid ""
 "To add a cake, click on the <img class=\"intext\" src = "
 "\"%(STATIC_URL)s/images/help/10b-sprite.png\"> icon:"
 msgstr ""
+"Pro přidání dortu klikni na <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/10b-sprite.png\"> ikonu:"
 
 #: templates/help/studio/tips/howto/cardtip4.html:12
 msgid "Then select the \"Cake\" sprite and click OK."
@@ -5365,15 +5419,15 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip4.html:28
 msgid "Next, add music to your card!"
-msgstr ""
+msgstr "Jako další krok, přidej hudbu do své karty!"
 
 #: templates/help/studio/tips/howto/cardtip5.html:5
 msgid "Now, add music that plays when you click the cake."
-msgstr ""
+msgstr "Nyní přidej hudbu, která bude hrát, pokud klikneš na dort."
 
 #: templates/help/studio/tips/howto/cardtip5.html:7
 msgid "First, click to select the cake."
-msgstr ""
+msgstr "Nejprve si vyber dort."
 
 #: templates/help/studio/tips/howto/cardtip5.html:13
 #: templates/help/studio/tips/howto/valentine7.html:14
@@ -5385,7 +5439,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip5.html:18
 msgid "Choose \"birthday\" or another sound:"
-msgstr ""
+msgstr "Vyber \"narozeniny\" nebo jiný zvuk:"
 
 #: templates/help/studio/tips/howto/cardtip5.html:23
 msgid ""
@@ -5409,20 +5463,20 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip5.html:38
 msgid "Now, blow out the candles!"
-msgstr ""
+msgstr "Nyní sfoukni svíčky!"
 
 #: templates/help/studio/tips/howto/cardtip6.html:5
 msgid "Make the candles go out when you click the cake."
-msgstr ""
+msgstr "Nech svíčky zhasnout když klikneš na dort."
 
 #: templates/help/studio/tips/howto/cardtip6.html:7
 #: templates/help/studio/tips/howto/fly9.html:36
 msgid "Click the <span class=\"tab-ref\">Costumes</span> tab."
-msgstr ""
+msgstr "Klikni na <span class=\"tab-ref\">Kostýmy </span> záložku."
 
 #: templates/help/studio/tips/howto/cardtip6.html:8
 msgid "You can see two costumes for the cake:"
-msgstr ""
+msgstr "Můžeš vidět dva kostýmy pro dort:"
 
 #: templates/help/studio/tips/howto/cardtip6.html:14
 msgid ""
@@ -5443,7 +5497,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip6.html:23
 msgid "Next, make a dance party"
-msgstr ""
+msgstr "V dalším kroku, uspořádej taneční party"
 
 #: templates/help/studio/tips/howto/cardtip7.html:7
 #, python-format
@@ -5451,6 +5505,8 @@ msgid ""
 "Click on <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-"
 "sprite.png\"> to choose a new sprite:"
 msgstr ""
+"Klikni na <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-"
+"sprite.png\"> pro vybrání nové postavy:"
 
 #: templates/help/studio/tips/howto/cardtip7.html:9
 msgid "Select \"Cassy Dance\" or another sprite with dance costumes:"
@@ -5482,7 +5538,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip8.html:5
 msgid "Keep the dance going!"
-msgstr ""
+msgstr "Tancuj dál!"
 
 #: templates/help/studio/tips/howto/cardtip8.html:8
 msgid ""
@@ -5517,7 +5573,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip9.html:12
 msgid "The card will then look something like this:"
-msgstr ""
+msgstr "Tato karta bude vypadat nějak takto:"
 
 #: templates/help/studio/tips/howto/cardtip9.html:14
 msgid "Next, make it your own"
@@ -5525,7 +5581,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/catch-intro.html:6
 msgid "Make a game where you catch things falling from the sky."
-msgstr ""
+msgstr "Vytvoř hru, ve které budeš chytat věci padající z nebe."
 
 #: templates/help/studio/tips/howto/catch-intro.html:19 tips_config.py:62
 msgid "Choose an Object to Fall"
@@ -5577,7 +5633,7 @@ msgstr "Vylepši svou hru"
 #: templates/help/studio/tips/howto/pgame-intro.html:33 tips_config.py:71
 #: tips_config.py:203
 msgid "Share Your Game"
-msgstr ""
+msgstr "Sdílej svoji hru"
 
 #: templates/help/studio/tips/howto/catch1.html:7
 #: templates/help/studio/tips/howto/catch6.html:6
@@ -5590,14 +5646,18 @@ msgid ""
 "Click this icon <img class=\"intext\" src = \"%(STATIC_URL)s/images/help"
 "/int-library.png\"> to choose a new sprite:"
 msgstr ""
+"Klikni na tuto ikonu <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/int-library.png\"> pro vybrání nové postavy:"
 
 #: templates/help/studio/tips/howto/catch1.html:9
 msgid "Choose the object you want to fall (such as 'Apple' or 'Basketball'):"
 msgstr ""
+"Vyber objekt, který chceš nechat padat (jako např. 'Jablko' nebo "
+"'Basketbal'):"
 
 #: templates/help/studio/tips/howto/catch1.html:11
 msgid "In Scratch, characters and objects are called ‘sprites.'"
-msgstr ""
+msgstr "Ve Scratchi se postavy a objekty nazývají hromadně 'postavy.'"
 
 #: templates/help/studio/tips/howto/catch1.html:15
 #: templates/help/studio/tips/howto/fashion1.html:19
@@ -5619,12 +5679,12 @@ msgstr ""
 #: templates/help/studio/tips/howto/story2.html:23
 #: templates/help/studio/tips/howto/valentine1.html:23
 msgid "Click on the scissors, then click on the cat."
-msgstr ""
+msgstr "Klikni na nůžky, poté klikni na kočku."
 
 #: templates/help/studio/tips/howto/catch1.html:19
 #: templates/help/studio/tips/howto/vptip1.html:18
 msgid "Next, choose a backdrop"
-msgstr ""
+msgstr "V dalším kroku vyber pozadí"
 
 #: templates/help/studio/tips/howto/catch2.html:6
 #: templates/help/studio/tips/howto/dance1.html:9
@@ -5672,7 +5732,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/catch3.html:17
 msgid "Next, make it fall"
-msgstr ""
+msgstr "V dalším kroku to nech padat"
 
 #: templates/help/studio/tips/howto/catch4.html:6
 msgid "Make your sprite fall by adding these blocks:"
@@ -5691,7 +5751,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/catch4.html:20
 msgid "Next, reset your game"
-msgstr ""
+msgstr "Nyní resetuj svou hru"
 
 #: templates/help/studio/tips/howto/catch5.html:6
 msgid "Make your object go back to the top when it reaches the bottom:"
@@ -5713,7 +5773,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/catch6.html:17
 msgid "Next, move with arrow keys"
-msgstr ""
+msgstr "Dále, pohybuj šipkami"
 
 #: templates/help/studio/tips/howto/catch7.html:6
 msgid "Use arrow keys to move your catcher back and forth."
@@ -5725,15 +5785,15 @@ msgstr ""
 #: templates/help/studio/tips/howto/nametip2.html:10
 #: templates/help/studio/tips/howto/nametip3.html:18
 msgid "Build a script like this:"
-msgstr ""
+msgstr "Vytvoř scénář jako je tento:"
 
 #: templates/help/studio/tips/howto/catch7.html:15
 msgid "Try it! Press the arrow keys to move left and right."
-msgstr ""
+msgstr "Zkus to! Použij šipky pro pohyb vlevo a vpravo."
 
 #: templates/help/studio/tips/howto/catch7.html:17
 msgid "Next, catch the object"
-msgstr ""
+msgstr "Jako další uchop objekt"
 
 #: templates/help/studio/tips/howto/catch8.html:6
 msgid "Select the falling sprite by clicking on its thumbnail:"
@@ -5741,11 +5801,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/catch8.html:11
 msgid "Add a script to catch the object: "
-msgstr ""
+msgstr "Přidej skript na chycení objektu:"
 
 #: templates/help/studio/tips/howto/catch8.html:13
 msgid "That script will look like this:"
-msgstr ""
+msgstr "Ten scénář bude vypadat následovně:"
 
 #: templates/help/studio/tips/howto/catch8.html:15
 msgid "After touching the catcher, it will go back to the top."
@@ -5753,7 +5813,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/catch8.html:22
 msgid "Next, enhance your game"
-msgstr ""
+msgstr "Jako další krok vylepši svou hru"
 
 #: templates/help/studio/tips/howto/catch9.html:7
 #: templates/help/studio/tips/howto/hide10.html:7
@@ -5766,13 +5826,13 @@ msgstr ""
 #: templates/help/studio/tips/howto/catch9.html:11
 #: templates/help/studio/tips/howto/fly9.html:25
 msgid "Add Score"
-msgstr ""
+msgstr "Přidej Skóre"
 
 #: templates/help/studio/tips/howto/catch9.html:12
 #: templates/help/studio/tips/howto/fly9.html:26
 #: templates/help/studio/tips/howto/pgametip10.html:28
 msgid "Create a variable for keeping score."
-msgstr ""
+msgstr "Vytvoř proměnnou pro uchovávání skóre."
 
 #: templates/help/studio/tips/howto/catch9.html:14
 #: templates/help/studio/tips/howto/fly9.html:28
@@ -5782,7 +5842,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/catch9.html:19
 msgid "Make More Apples"
-msgstr ""
+msgstr "Vytvoř víc jablek"
 
 #: templates/help/studio/tips/howto/catch9.html:20
 msgid "Use the Duplicate tool to copy the apple sprite with its scripts."
@@ -5793,7 +5853,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/nametip7.html:36
 #: templates/help/studio/tips/howto/pgametip10.html:37
 msgid "Next, share your project"
-msgstr ""
+msgstr "Jako další krok sdílej svůj projekt"
 
 #: templates/help/studio/tips/howto/collide.html:7
 msgid "Make sprites react when they collide"
@@ -5816,7 +5876,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/conversation.html:14
 msgid "And this in another sprite:"
-msgstr ""
+msgstr "A toto je jiná postava:"
 
 #: templates/help/studio/tips/howto/conversation.html:20
 msgid ""
@@ -5895,7 +5955,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance1.html:13
 #: templates/help/studio/tips/howto/odetocode3.html:56
 msgid "Next, add a dancer"
-msgstr ""
+msgstr "Jako další krok přidej tančící postavu"
 
 #: templates/help/studio/tips/howto/dance2.html:7
 #: templates/help/studio/tips/howto/odetocode4.html:9
@@ -5906,6 +5966,9 @@ msgid ""
 "\t <p>Click on <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-library.png\">  to choose a new sprite:</p>\n"
 "\t "
 msgstr ""
+"\n"
+"\t <p>Klikni na <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-library.png\">  pro vybrání nové postavy:</p>\n"
+"\t "
 
 #: templates/help/studio/tips/howto/dance2.html:11
 msgid "Click the 'Dance' theme. Select a Hip-Hop or other Dance sprite:"
@@ -5927,7 +5990,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance2.html:22
 msgid "Next, add  music"
-msgstr ""
+msgstr "Jako další krok přidej muziku"
 
 #: templates/help/studio/tips/howto/dance3.html:8
 msgid ""
@@ -5941,6 +6004,8 @@ msgid ""
 "\n"
 "To choose a sound, click <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">\n"
 msgstr ""
+"\n"
+"Pro vybrání zvuku, klikni <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">\n"
 
 #: templates/help/studio/tips/howto/dance3.html:21
 #: templates/help/studio/tips/howto/odetocode2.html:24
@@ -5961,7 +6026,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance3.html:33
 #: templates/help/studio/tips/howto/odetocode2.html:26
 msgid "Next, play the music"
-msgstr ""
+msgstr "Jako další krok přehraj muziku"
 
 #: templates/help/studio/tips/howto/dance4.html:29
 #: templates/help/studio/tips/howto/odetocode3.html:29
@@ -6016,7 +6081,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance5.html:14
 #: templates/help/studio/tips/howto/odetocode5.html:14
 msgid "Each costume has a different dance move."
-msgstr ""
+msgstr "Každý kostým má jiný taneční pohyb"
 
 #: templates/help/studio/tips/howto/dance5.html:24
 #: templates/help/studio/tips/howto/odetocode5.html:24
@@ -6047,7 +6112,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance5.html:38
 #: templates/help/studio/tips/howto/odetocode5.html:38
 msgid "Click anywhere on your script to try it."
-msgstr ""
+msgstr "Kliknutím kamkoli na svůj scénář to vyzkoušíš"
 
 #: templates/help/studio/tips/howto/dance5.html:42
 #: templates/help/studio/tips/howto/odetocode5.html:42
@@ -6065,7 +6130,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance5.html:49
 #: templates/help/studio/tips/howto/odetocode5.html:49
 msgid "Next, dance to the music"
-msgstr ""
+msgstr "Jako další krok tanči do rytmu muziky"
 
 #: templates/help/studio/tips/howto/dance6.html:7
 #: templates/help/studio/tips/howto/odetocode6.html:7
@@ -6088,7 +6153,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance6.html:23
 #: templates/help/studio/tips/howto/odetocode6.html:23
 msgid "Next, enhance your dance"
-msgstr ""
+msgstr "Jako další krok vylepši svůj tanec"
 
 #: templates/help/studio/tips/howto/dance7.html:7
 #: templates/help/studio/tips/howto/odetocode7.html:7
@@ -6127,7 +6192,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/dance7.html:26
 #: templates/help/studio/tips/howto/odetocode7.html:25
 msgid "Then, add a script like this:"
-msgstr ""
+msgstr "Poté přidej scénář jako je tento:"
 
 #: templates/help/studio/tips/howto/dance7.html:32
 msgid ""
@@ -6137,7 +6202,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance7.html:38
 msgid "Add your own moves"
-msgstr ""
+msgstr "Přidej své vlastní pohyby"
 
 #: templates/help/studio/tips/howto/dance8.html:7
 msgid "Want to add yourself to the dance?"
@@ -6149,7 +6214,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance8.html:13
 msgid "Make a new sprite by uploading the photos into Scratch:"
-msgstr ""
+msgstr "Vytvoř novou postavu nahráním fotek do Scratche:"
 
 #: templates/help/studio/tips/howto/dance8.html:15
 #, python-format
@@ -6172,7 +6237,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance8.html:35
 msgid "Now you’re ready to code your moves!"
-msgstr ""
+msgstr "Teď jsi připraven/a programovat své pohyby!"
 
 #: templates/help/studio/tips/howto/dance8.html:40
 msgid "Build a dance script, like you did for your other dancer."
@@ -6180,11 +6245,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/dance8.html:45
 msgid "When you're ready, share your dance."
-msgstr ""
+msgstr "Až budeš připraven/a, sdílej svůj tanec."
 
 #: templates/help/studio/tips/howto/dance8.html:46
 msgid "Share your dance"
-msgstr ""
+msgstr "Sdílej svůj tanec"
 
 #: templates/help/studio/tips/howto/dance9.html:22
 msgid ""
@@ -6227,7 +6292,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/fashion-intro.html:23 tips_config.py:85
 msgid "Say Hello!"
-msgstr ""
+msgstr "Řekni Ahoj!"
 
 #: templates/help/studio/tips/howto/fashion-intro.html:24 tips_config.py:86
 msgid "Play with Colors"
@@ -6239,7 +6304,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/fashion-intro.html:26 tips_config.py:88
 msgid "Set the Starting Position"
-msgstr ""
+msgstr "Nastav startovní pozici"
 
 #: templates/help/studio/tips/howto/fashion-intro.html:27 tips_config.py:89
 msgid "Lay Out Your Clothes"
@@ -6256,7 +6321,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/fashion1.html:15
 #: templates/help/studio/tips/howto/music1.html:15
 msgid "In Scratch, characters and objects are called ‘sprites’."
-msgstr ""
+msgstr "Ve Scratchi se postavy a objekty nazývají \"postavy\"."
 
 #: templates/help/studio/tips/howto/fashion2.html:7
 #, python-format
@@ -6292,7 +6357,7 @@ msgstr "Můžeš zadat, co chceš, aby tvá postava říkala."
 
 #: templates/help/studio/tips/howto/fashion3.html:14
 msgid "Press the space key to try it!"
-msgstr "Zmáčkni mezerník pro vyzkoušení\""
+msgstr "Zmáčkni mezerník pro vyzkoušení!"
 
 #: templates/help/studio/tips/howto/fashion4.html:12
 msgid "Click the Dress-Up theme and select a shirt you like:"
@@ -6316,7 +6381,7 @@ msgid ""
 "\t"
 msgstr ""
 "\n"
-"\t\tZmáčkni <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/stop-sign.png\"> znak pro restart.\n"
+"\t\tZmáčkni znak <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/stop-sign.png\"> pro restart.\n"
 "\t"
 
 #: templates/help/studio/tips/howto/fashion5.html:7
@@ -6337,7 +6402,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/fashion5.html:19
 msgid "Press the ‘c’ key to try it."
-msgstr "Zmáčkni 'c' klávesu pro restart."
+msgstr "Zmáčkni klávesu 'c' pro vyzkoušení."
 
 #: templates/help/studio/tips/howto/fashion6.html:7
 msgid "Want to reset your character's position?"
@@ -6656,6 +6721,9 @@ msgid ""
 "\t Or click <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-import.png\"> to import an image.\n"
 "\t"
 msgstr ""
+"\n"
+"\t Nebo stiskni <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-import.png\"> k vložení obrázku.\n"
+"\t"
 
 #: templates/help/studio/tips/howto/favorite4.html:16
 msgid "Want to choose something instead?"
@@ -6695,6 +6763,8 @@ msgid ""
 "If your sprite has more than one costume, you can animate it by switching "
 "costumes."
 msgstr ""
+"Pokud má tvá postava více než jeden kostým, můžeš ji animovat tak, že budeš "
+"kostýmy měnit."
 
 #: templates/help/studio/tips/howto/favorite5.html:22
 msgid ""
@@ -6758,7 +6828,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/favorite5.html:59
 msgid "Then choose the backdrop you want."
-msgstr ""
+msgstr "Pak vyber pozadí, jaké chceš."
 
 #: templates/help/studio/tips/howto/favorite5.html:61
 msgid "Tip: You can edit it using the paint tools."
@@ -7256,11 +7326,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/get-started-8.html:16
 msgid "You can choose a different key from the menu:"
-msgstr ""
+msgstr "Z nabídky můžeš vybrat jinou klávesu:"
 
 #: templates/help/studio/tips/howto/get-started-8.html:19
 msgid "Now, choose a backdrop."
-msgstr ""
+msgstr "Teď vyber pozadí."
 
 #: templates/help/studio/tips/howto/get-started-9.html:6
 msgid "You can add new backdrops on the Stage."
@@ -7276,7 +7346,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/get-started-9.html:14
 msgid "Next, add a new sprite."
-msgstr ""
+msgstr "Dále, přidej novou postavu."
 
 #: templates/help/studio/tips/howto/get-started-intro.html:7
 msgid "Want to get started with Scratch? Try this!"
@@ -7363,7 +7433,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/glide-stage.html:19
 #, python-format
 msgid "Can't see your sprite? Use <img src=\"%(url_show)s\"> to make it appear."
-msgstr ""
+msgstr "Nevidíš svou postavu? Použij <img src=\"%(url_show)s\">, aby se ukázala."
 
 #: templates/help/studio/tips/howto/hide-intro.html:6
 msgid "Make a hide-and-seek game with characters that appear and disappear."
@@ -7376,11 +7446,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hide-intro.html:25 tips_config.py:126
 msgid "Choose a Sprite"
-msgstr ""
+msgstr "Vyber postavu"
 
 #: templates/help/studio/tips/howto/hide-intro.html:26 tips_config.py:127
 msgid "Hide Your Sprite"
-msgstr ""
+msgstr "Skryj svou postavu"
 
 #: templates/help/studio/tips/howto/hide-intro.html:27
 #: templates/help/studio/tips/howto/valentine-intro.html:18 tips_config.py:128
@@ -7390,7 +7460,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hide-intro.html:29 tips_config.py:130
 msgid "Click and Say"
-msgstr ""
+msgstr "Klikni a řekni"
 
 #: templates/help/studio/tips/howto/hide-intro.html:30 tips_config.py:131
 msgid "Play with the Timing"
@@ -7434,7 +7504,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hide10.html:22
 msgid "Add more sprites."
-msgstr ""
+msgstr "Přidej další postavy"
 
 #: templates/help/studio/tips/howto/hide10.html:23
 msgid "You can copy the scripts from one sprite to the other sprite."
@@ -7455,7 +7525,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/pgametip11.html:6
 #: templates/help/studio/tips/howto/racegame9.html:6
 msgid "Congratulations! You've coded your own game!"
-msgstr ""
+msgstr "Gratuluji! Naprogramoval jsi svou vlastní hru!"
 
 #: templates/help/studio/tips/howto/hide11.html:14
 msgid ""
@@ -7494,7 +7564,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hide2.html:9
 msgid "Choose the sprite you want for your game:"
-msgstr ""
+msgstr "Vyber si postavu, kterou chceš pro tvou hru"
 
 #: templates/help/studio/tips/howto/hide2.html:12
 msgid ""
@@ -7560,7 +7630,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/hide6.html:20
 #: templates/help/studio/tips/howto/hide9.html:21
 msgid "Click the green flag to start your game."
-msgstr ""
+msgstr "Klikni na zelenou vlajku pro spuštění tvé hry"
 
 #: templates/help/studio/tips/howto/hide6.html:22
 msgid "Now, click your sprite to see it react."
@@ -7599,7 +7669,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hide9.html:7
 msgid "Add a variable to keep score."
-msgstr ""
+msgstr "Přidej proměnnou pro zapamatování skóre"
 
 #: templates/help/studio/tips/howto/hide9.html:9
 msgid "Add a point each time the sprite is clicked:"
@@ -7628,7 +7698,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoc-1.html:20
 msgid "Let's start by deleting the cat."
-msgstr ""
+msgstr "Pojďme začít tím, že smažeš kočku"
 
 #: templates/help/studio/tips/howto/hoc-2.html:11
 msgid ""
@@ -7640,7 +7710,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoc-2.html:18
 msgid "Can you find another way to delete a sprite?"
-msgstr ""
+msgstr "Dokážeš najít další způsob, jak vymazat postavu?"
 
 #: templates/help/studio/tips/howto/hoc-2.html:20
 msgid "Next, let's add some holiday sprites to your card."
@@ -7693,6 +7763,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/hoc-4.html:29
 msgid "Next, let's add a background image to your holiday card."
 msgstr ""
+"A teď pojďme přidat nějaký obrázek, jako pozadí pro tvojí vánoční pohlednici"
 
 #: templates/help/studio/tips/howto/hoc-4a.html:11
 msgid ""
@@ -7760,7 +7831,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoc-4d.html:21
 msgid "What cool image effects will you add to your card?"
-msgstr ""
+msgstr "Jaké zajímavé efekty přidáš na svojí vánoční pohlednici?"
 
 #: templates/help/studio/tips/howto/hoc-4e.html:11
 msgid ""
@@ -7770,11 +7841,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoc-4e.html:12
 msgid "Try adding costumes to your sprite:"
-msgstr ""
+msgstr "Vyzkoušej přidávání kostýmů k tvojí postavě"
 
 #: templates/help/studio/tips/howto/hoc-4e.html:17
 msgid "And switch between costumes using the “switch costume” block:"
-msgstr ""
+msgstr "A přepínej kostýmy pomocí bloku \"změnit kostým\""
 
 #: templates/help/studio/tips/howto/hoc-4e.html:22
 msgid "How can costumes add animation to your holiday card?"
@@ -7792,7 +7863,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoc-5.html:18
 msgid "Choose a backdrop from the library"
-msgstr ""
+msgstr "Vyber pozadí z knihovny"
 
 #: templates/help/studio/tips/howto/hoc-5.html:19
 msgid "Draw your own backdrop"
@@ -7804,7 +7875,7 @@ msgstr "Nahraj obrázek ze svého počítače."
 
 #: templates/help/studio/tips/howto/hoc-5.html:21
 msgid "Take a picture (if you have a webcam)"
-msgstr ""
+msgstr "Pořiď fotografii (pokud máš webkameru)"
 
 #: templates/help/studio/tips/howto/hoc-5.html:23
 msgid "Next, let's add some background music to your holiday card."
@@ -7820,7 +7891,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoc-6.html:18
 msgid "What sounds will your card make?"
-msgstr ""
+msgstr "Jaké zvuky bude tvoje pohlednice vydávat? "
 
 #: templates/help/studio/tips/howto/hoc-6.html:19
 msgid "Next, let's help people know how to interact with your card."
@@ -7838,6 +7909,8 @@ msgid ""
 "Scratch projects start when the <img class=\"intext\" src = "
 "\"%(STATIC_URL)s/images/help/green-flag.png\"> is clicked."
 msgstr ""
+"Projekt Scratche se spustí, když klikneš na <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> "
 
 #: templates/help/studio/tips/howto/hoc-7.html:15
 #, python-format
@@ -7850,7 +7923,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoc-7.html:18
 msgid "Next, let's share your holiday card."
-msgstr ""
+msgstr "Jako další krok sdílej svou prázdninovou kartu."
 
 #: templates/help/studio/tips/howto/hoc-8.html:11
 msgid ""
@@ -8037,7 +8110,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops10.html:9
 msgid "Add More Sounds"
-msgstr ""
+msgstr "Přidej více zvuků"
 
 #: templates/help/studio/tips/howto/hoops10.html:13
 msgid "Click the play button to preview the sounds."
@@ -8074,7 +8147,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/hoops10.html:50
 #: templates/help/studio/tips/howto/pgame-intro.html:31 tips_config.py:201
 msgid "Add a Challenge"
-msgstr ""
+msgstr "Přidej Výzvu"
 
 #: templates/help/studio/tips/howto/hoops10.html:51
 msgid "Make the defender jump at random times."
@@ -8117,7 +8190,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops2.html:25
 msgid "Next, move the ball to the net"
-msgstr ""
+msgstr "Dále, přesuň míč k síti"
 
 #: templates/help/studio/tips/howto/hoops3.html:8
 msgid ""
@@ -8152,13 +8225,13 @@ msgstr ""
 #: templates/help/studio/tips/howto/hoops4.html:16
 #: templates/help/studio/tips/howto/hoops5.html:18
 msgid "Press the space key to try it out."
-msgstr ""
+msgstr "Pro vyzkoušení stiskni mezerník."
 
 #: templates/help/studio/tips/howto/hoops3.html:31
 #: templates/help/studio/tips/howto/nametip2.html:21
 #: templates/help/studio/tips/howto/pgametip7.html:22
 msgid "Next, add a sound"
-msgstr ""
+msgstr "Dále, přidej zvuk"
 
 #: templates/help/studio/tips/howto/hoops4.html:8
 msgid ""
@@ -8215,7 +8288,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops6.html:21
 msgid "Pick a starting point for the defender."
-msgstr ""
+msgstr "Vyber počáteční bod pro obránce"
 
 #: templates/help/studio/tips/howto/hoops6.html:22
 msgid ""
@@ -8268,7 +8341,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops7.html:24
 msgid "Next, start your program"
-msgstr ""
+msgstr "A dál, spusť tvůj program"
 
 #: templates/help/studio/tips/howto/hoops8.html:20
 #: templates/help/studio/tips/howto/pgametip4.html:31
@@ -8285,7 +8358,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops9.html:9
 msgid "Click to choose the ball."
-msgstr ""
+msgstr "Klikni pro vybrání míče"
 
 #: templates/help/studio/tips/howto/hoops9.html:11
 msgid "Add these blocks to check if ball is touching the panda."
@@ -8362,7 +8435,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/interact-microphone.html:14
 #, python-format
 msgid "Have a microphone? You can use <img src=\"%(url_loudness_small)s\">"
-msgstr ""
+msgstr "Máš mikrofon? Můžeš využít <img src=\"%(url_loudness_small)s\">"
 
 #: templates/help/studio/tips/howto/interact-microphone.html:18
 msgid "Make noise so your sprite will jump!"
@@ -8419,6 +8492,8 @@ msgid ""
 "Choose <img src=\"%(url_data_palette)s\"> and then <img "
 "src=\"%(url_make_variable_button)s\">"
 msgstr ""
+"Vyber <img src=\"%(url_data_palette)s\"> a pak <img "
+"src=\"%(url_make_variable_button)s\">"
 
 #: templates/help/studio/tips/howto/keep-score.html:14
 msgid "Type in the name \"Score\" and then click OK:"
@@ -8467,7 +8542,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/makey-intro.html:30 tips_config.py:157
 msgid "Add More Keys"
-msgstr ""
+msgstr "Přidej více kláves"
 
 #: templates/help/studio/tips/howto/makey-intro.html:31 tips_config.py:158
 msgid "Experiment and Create"
@@ -8504,11 +8579,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/makey3.html:12
 msgid "Next, try it"
-msgstr ""
+msgstr "A teď to vyzkoušej"
 
 #: templates/help/studio/tips/howto/makey4.html:7
 msgid "Touch the metal ends of both wires to complete the circuit."
-msgstr ""
+msgstr "Dotkni se kovových konců obou drátů pro vytvoření elektrického obvodu"
 
 #: templates/help/studio/tips/howto/makey4.html:8
 msgid ""
@@ -8542,7 +8617,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/makey5.html:7
 msgid "What do you want to happen in Scratch?"
-msgstr ""
+msgstr "Co chceš aby se ve Scratchi stalo?"
 
 #: templates/help/studio/tips/howto/makey5.html:8
 msgid ""
@@ -8557,7 +8632,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/makey5.html:15
 msgid "Next, add more keys"
-msgstr ""
+msgstr "A teď přidej více kláves"
 
 #: templates/help/studio/tips/howto/makey6.html:7
 msgid ""
@@ -8578,7 +8653,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/makey6.html:18
 msgid "Next, experiment and create"
-msgstr ""
+msgstr "A dál, experimentuj a tvoř"
 
 #: templates/help/studio/tips/howto/makey7.html:7
 msgid ""
@@ -8610,11 +8685,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/move-with-arrow-keys.html:7
 msgid "Move your sprite with arrow keys"
-msgstr ""
+msgstr "Pohybuj postavou pomocí šipek"
 
 #: templates/help/studio/tips/howto/move-with-arrow-keys.html:12
 msgid "Try this code:"
-msgstr ""
+msgstr "Zkus tenhle kód:"
 
 #: templates/help/studio/tips/howto/move-with-arrow-keys.html:14
 #, python-format
@@ -8672,7 +8747,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music-intro.html:24 tips_config.py:161
 msgid "Pick a Drum"
-msgstr ""
+msgstr "Vyber Buben"
 
 #: templates/help/studio/tips/howto/music-intro.html:25 tips_config.py:162
 msgid "Play the Drum"
@@ -8696,7 +8771,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music-intro.html:30 tips_config.py:167
 msgid "Make a Melody"
-msgstr ""
+msgstr "Vytvoř melodii"
 
 #: templates/help/studio/tips/howto/music-intro.html:31 tips_config.py:168
 msgid "Add a Chord"
@@ -8734,7 +8809,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music10.html:7
 msgid "Add any sprite you want!"
-msgstr ""
+msgstr "Přidej jakoukoli postavu chceš!"
 
 #: templates/help/studio/tips/howto/music10.html:12
 #, python-format
@@ -8753,15 +8828,15 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music10.html:21
 msgid "Or, add a script that plays a random sound:"
-msgstr ""
+msgstr "Nebo, přidej scénář, který přehrává náhodný zvuk:"
 
 #: templates/help/studio/tips/howto/music10.html:25
 msgid "Next, record sounds"
-msgstr ""
+msgstr "Dále, nahraj zvuky"
 
 #: templates/help/studio/tips/howto/music11.html:7
 msgid "If you have a microphone, you can record your own sounds."
-msgstr ""
+msgstr "Pokud máš mikrofon, můžeš nahrát svůj vlastní zvuk."
 
 #: templates/help/studio/tips/howto/music11.html:10
 #, python-format
@@ -8770,6 +8845,9 @@ msgid ""
 "\tClick the <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-library.png\"> to choose a new sprite:\n"
 "\t"
 msgstr ""
+"\n"
+"\tStiskni <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/int-library.png\"> pro vybrání nové postavy:\n"
+"\t"
 
 #: templates/help/studio/tips/howto/music11.html:17
 #, python-format
@@ -8792,12 +8870,17 @@ msgid ""
 "\tClick the <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/microphone-icon.png\"> icon again to record another sound.\n"
 "\t"
 msgstr ""
+"\n"
+"\tZnovu stiskni ikonu <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/microphone-icon.png\">, pokud chceš nahrát další zvuk.\n"
+"\t"
 
 #: templates/help/studio/tips/howto/music11.html:34
 msgid ""
 "You can also record sounds using objects around you, such as by tapping a "
 "table or dropping a coin."
 msgstr ""
+"Nahrát zvuky můžeš také pomocí předmětů kolem tebe, například ťukáním do "
+"stolu nebo upuštěním mince."
 
 #: templates/help/studio/tips/howto/music11.html:36
 msgid "Next, keep playing"
@@ -8805,7 +8888,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music12.html:9
 msgid "\tADD MORE SPRITES"
-msgstr ""
+msgstr "\tPŘIDEJ VÍCE POSTAV"
 
 #: templates/help/studio/tips/howto/music12.html:10
 msgid ""
@@ -8815,7 +8898,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music12.html:15
 msgid "ADD A BACKDROP"
-msgstr ""
+msgstr "PŘIDEJ POZADÍ"
 
 #: templates/help/studio/tips/howto/music12.html:17
 #, python-format
@@ -8823,6 +8906,8 @@ msgid ""
 "\n"
 "Click the  <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/landscape-icon.png\"> icon to open the Backdrop library:\n"
 msgstr ""
+"\n"
+"Stiskni ikonu  <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/landscape-icon.png\"> pro otevření knihovny s pozadími:\n"
 
 #: templates/help/studio/tips/howto/music12.html:26
 msgid "PLAY NOTES"
@@ -8836,17 +8921,19 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music12.html:30
 msgid "Try a script like this:"
-msgstr ""
+msgstr "Zkus scénář jako tenhle:"
 
 #: templates/help/studio/tips/howto/music12.html:32
 msgid ""
 "You can choose the instrument and notes you want. You can also change the "
 "timing."
 msgstr ""
+"Můžeš vybrat hudební nástroj a noty, jaké chceš. Také můžeš měnit délku "
+"trvání. "
 
 #: templates/help/studio/tips/howto/music12.html:37
 msgid "ADD A MUSIC LOOP"
-msgstr ""
+msgstr "PŘIDAT HUDEBNÍ SMIČKU "
 
 #: templates/help/studio/tips/howto/music12.html:38
 msgid "Choose ‘speaker’ or another sprite:"
@@ -8878,7 +8965,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music13.html:7
 msgid "Congratulations, you've coded your own music!"
-msgstr ""
+msgstr "Gratuluji, naprogramoval jsi svou vlastní hudbu!"
 
 #: templates/help/studio/tips/howto/music13.html:18
 #: templates/help/studio/tips/howto/racegame9.html:17
@@ -8899,7 +8986,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/music2.html:10
 #: templates/help/studio/tips/howto/music3.html:22
 msgid "Press the space key to try it."
-msgstr ""
+msgstr "Stiskni mezerník pro vyzkoušení."
 
 #: templates/help/studio/tips/howto/music2.html:14
 msgid "Click the Sounds tab to preview the sounds."
@@ -8928,7 +9015,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music3.html:25
 msgid "Next, make it repeat"
-msgstr ""
+msgstr "V dalším kroku to zopakuj"
 
 #: templates/help/studio/tips/howto/music4.html:8
 msgid ""
@@ -8965,19 +9052,19 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music6.html:19
 msgid "Build a script to play a sound when you press a key:"
-msgstr ""
+msgstr "Vytvoř scénář pro přehrání zvuku když stiskneš klávesu:"
 
 #: templates/help/studio/tips/howto/music6.html:21
 msgid "Choose 'up arrow' or another key:"
-msgstr ""
+msgstr "Vyber 'šipku nahoru' nebo jinou klávesu:"
 
 #: templates/help/studio/tips/howto/music6.html:26
 msgid "Next, make a melody"
-msgstr ""
+msgstr "Dále, vytvoř melodii"
 
 #: templates/help/studio/tips/howto/music7.html:7
 msgid "Add more sounds to make a melody."
-msgstr ""
+msgstr "Pro vytvoření melodie přidej další zvuky. "
 
 #: templates/help/studio/tips/howto/music7.html:17
 msgid ""
@@ -9002,7 +9089,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/music8.html:17
 msgid "Next, play random notes"
-msgstr ""
+msgstr "V dalším kroku hraj náhodné noty"
 
 #: templates/help/studio/tips/howto/music9.html:7
 #, python-format
@@ -9042,7 +9129,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/nametip-intro.html:23 tips_config.py:175
 msgid "Choose the First Letter"
-msgstr ""
+msgstr "Vyber první písmeno"
 
 #: templates/help/studio/tips/howto/nametip-intro.html:24 tips_config.py:176
 msgid "Add Color Effects"
@@ -9050,7 +9137,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/nametip-intro.html:27 tips_config.py:179
 msgid "Add Your Next Letter"
-msgstr ""
+msgstr "Přidej tvé další písmeno"
 
 #: templates/help/studio/tips/howto/nametip-intro.html:28 tips_config.py:180
 msgid "Make It Spin"
@@ -9059,7 +9146,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/nametip-intro.html:29
 #: templates/help/studio/tips/ui/tour-intro.html:35 tips_config.py:181
 msgid "Finish Your Name"
-msgstr ""
+msgstr "Dokonči tvé jméno"
 
 #: templates/help/studio/tips/howto/nametip1.html:7
 msgid ""
@@ -9081,7 +9168,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/nametip1.html:23
 msgid "Next, add color effects"
-msgstr ""
+msgstr "Dále, přidej barevné efekty"
 
 #: templates/help/studio/tips/howto/nametip2.html:6
 msgid "Make the letter change color whenever it's clicked."
@@ -9126,7 +9213,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/nametip3.html:28
 #: templates/help/studio/tips/howto/valentine4.html:18
 msgid "Next, add a backdrop"
-msgstr ""
+msgstr "Dále, přidej pozadí"
 
 #: templates/help/studio/tips/howto/nametip4.html:13
 msgid ""
@@ -9137,7 +9224,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/nametip4.html:18
 msgid "Now, add your next letter"
-msgstr ""
+msgstr "V dalším kroku přidej tvé další písmeno"
 
 #: templates/help/studio/tips/howto/nametip5.html:6
 msgid "To add the second letter of your name, make a new sprite."
@@ -9192,7 +9279,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/nametip6.html:21
 msgid "Next, finish your name"
-msgstr ""
+msgstr "V dalším kroku dokonči tvé jméno  "
 
 #: templates/help/studio/tips/howto/nametip7.html:7
 msgid "Add and animate the other letters in your name."
@@ -9246,7 +9333,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode-intro.html:17
 msgid "First, choose a backdrop"
-msgstr ""
+msgstr "Nejprve, vyber pozadí"
 
 #: templates/help/studio/tips/howto/odetocode-intro.html:37
 msgid "Created for Europe Code Week 2015"
@@ -9254,7 +9341,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode-intro.html:39
 msgid "Developed in partnership with"
-msgstr ""
+msgstr "Vytvořeno ve spolupráci s"
 
 #: templates/help/studio/tips/howto/odetocode-intro.html:41
 msgid "Ode to Code music by Brendan D. Paolini"
@@ -9268,11 +9355,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode1.html:15
 msgid "Choose the backdrop you want from the list:"
-msgstr ""
+msgstr "Vyber si pozadí které chceš ze seznamu:"
 
 #: templates/help/studio/tips/howto/odetocode1.html:20
 msgid "Want to add a different backdrop?"
-msgstr ""
+msgstr "Chceš přidat jiné pozadí?  "
 
 #: templates/help/studio/tips/howto/odetocode1.html:22
 #, python-format
@@ -9283,7 +9370,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode1.html:30
 msgid "Next, add music"
-msgstr ""
+msgstr "Dále, přidej hudbu"
 
 #: templates/help/studio/tips/howto/odetocode2.html:8
 msgid ""
@@ -9301,7 +9388,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode2.html:19
 msgid "Want a different sound?"
-msgstr ""
+msgstr "Chceš jiný zvuk?"
 
 #: templates/help/studio/tips/howto/odetocode2.html:20
 #, python-format
@@ -9316,7 +9403,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode4.html:7
 msgid "Each object in Scratch is called a sprite."
-msgstr ""
+msgstr "Každý objekt ve Scratchi se nazývá postava"
 
 #: templates/help/studio/tips/howto/odetocode4.html:13
 msgid ""
@@ -9341,7 +9428,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode7.html:12
 msgid "Add this block to your program:"
-msgstr ""
+msgstr "Přidej tento blok do tvého programu"
 
 #: templates/help/studio/tips/howto/odetocode7.html:31
 msgid "Want to add more dancers to your scene?"
@@ -9349,7 +9436,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode7.html:32
 msgid "Click one of these buttons to add a new sprite:"
-msgstr ""
+msgstr "Klikni na jedno z těchto tlačítek pro přidání nové postavy:"
 
 #: templates/help/studio/tips/howto/odetocode7.html:35
 #, python-format
@@ -9381,7 +9468,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/odetocode7.html:56
 msgid "Now, share your project"
-msgstr ""
+msgstr "Nyní sdílej tvůj projekt"
 
 #: templates/help/studio/tips/howto/odetocode8.html:29
 msgid ""
@@ -9403,7 +9490,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/pgame-intro.html:24 tips_config.py:194
 msgid "Choose a Ball"
-msgstr ""
+msgstr "Vyber míč"
 
 #: templates/help/studio/tips/howto/pgame-intro.html:25 tips_config.py:195
 msgid "Make the Ball Move"
@@ -9435,7 +9522,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/pgametip1.html:15
 msgid "Next, choose a ball"
-msgstr ""
+msgstr "V dalším kroku zvol míč"
 
 #: templates/help/studio/tips/howto/pgametip10.html:12
 msgid "Change the color of the ball when it hits the paddle."
@@ -9443,7 +9530,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/pgametip10.html:17
 msgid "Starting Position"
-msgstr ""
+msgstr "Startovní pozice"
 
 #: templates/help/studio/tips/howto/pgametip10.html:18
 msgid "You may want to set the ball’s starting position."
@@ -9474,7 +9561,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/pgametip2.html:9
 msgid "Then select a ball for your game:"
-msgstr ""
+msgstr "Potom vyber míč pro tvou hru:"
 
 #: templates/help/studio/tips/howto/pgametip2.html:17
 #: templates/help/studio/tips/howto/vptip1.html:17
@@ -9483,7 +9570,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/pgametip2.html:18
 msgid "Next, make the ball move"
-msgstr ""
+msgstr "V dalším kroku rozpohybuj míč"
 
 #: templates/help/studio/tips/howto/pgametip3.html:7
 msgid ""
@@ -10027,7 +10114,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/racegame8.html:57
 msgid "Save and share your project"
-msgstr ""
+msgstr "Ulož a sdílej svůj projekt"
 
 #: templates/help/studio/tips/howto/racegame9.html:40
 msgid ""
@@ -10067,7 +10154,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/soccer.html:12
 msgid "Click the green flag to play the game."
-msgstr ""
+msgstr "Hra začne, když klikneš na zelený praporek."
 
 #: templates/help/studio/tips/howto/soccer.html:14
 msgid "You'll need a webcam (click 'Allow')."
@@ -10270,7 +10357,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/story13.html:11
 msgid "ADD YOUR VOICE"
-msgstr ""
+msgstr "PŘIDEJ TVŮJ HLAS"
 
 #: templates/help/studio/tips/howto/story13.html:12
 #, python-format
@@ -10293,7 +10380,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/story13.html:24
 msgid "You can change what your character looks like."
-msgstr ""
+msgstr "Můžeš měnit, jak tvoje postava vypadá."
 
 #: templates/help/studio/tips/howto/story13.html:25
 msgid ""
@@ -10331,7 +10418,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/story3.html:7
 msgid "How will your story start?"
-msgstr ""
+msgstr "Jak bude tvůj příběh začínat?"
 
 #: templates/help/studio/tips/howto/story3.html:8
 #: templates/help/studio/tips/howto/story7.html:13
@@ -10402,7 +10489,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/story6.html:18
 msgid "Your script will look something like this: "
-msgstr ""
+msgstr "Tvůj scénář bude vypadat nějak takhle:"
 
 #: templates/help/studio/tips/howto/story7.html:7
 msgid "Have your character say something when the scene switches."
@@ -10410,11 +10497,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/story7.html:8
 msgid "Click to select your first character:"
-msgstr ""
+msgstr "Klikni pro výběr své první postavy:"
 
 #: templates/help/studio/tips/howto/story7.html:15
 msgid "You can type in your own words"
-msgstr ""
+msgstr "Můžeš zapsat svá vlastní slova"
 
 #: templates/help/studio/tips/howto/story7.html:22
 msgid ""
@@ -10455,11 +10542,11 @@ msgstr ""
 #: templates/help/studio/tips/howto/switch-backdrop.html:10
 #, python-format
 msgid "You can change backdrops using <img src=\"%(url_switch_backdrop_to)s\">"
-msgstr ""
+msgstr "Pozadí můžeš měnit použitím <img src=\"%(url_switch_backdrop_to)s\">"
 
 #: templates/help/studio/tips/howto/switch-backdrop.html:13
 msgid "Here's an example:"
-msgstr ""
+msgstr "Tady je příklad:"
 
 #: templates/help/studio/tips/howto/switch-backdrop.html:19
 #, python-format
@@ -10526,7 +10613,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine-intro.html:21 tips_config.py:234
 msgid "Add a Message"
-msgstr ""
+msgstr "Přidej zprávu"
 
 #: templates/help/studio/tips/howto/valentine-intro.html:23 tips_config.py:236
 msgid "Animate and Decorate"
@@ -10570,7 +10657,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine2.html:15
 msgid "Click the block to try it."
-msgstr ""
+msgstr "Klikni na blok pro vyzkoušení"
 
 #: templates/help/studio/tips/howto/valentine2.html:19
 msgid ""
@@ -10580,7 +10667,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine2.html:21
 msgid "Snap the blocks together, like this:"
-msgstr ""
+msgstr "Spoj bloky dohromady, jako zde:"
 
 #: templates/help/studio/tips/howto/valentine2.html:26
 msgid "Add these blocks to complete your beat:"
@@ -10601,7 +10688,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine3.html:6
 msgid "Make the heart keep beating."
-msgstr ""
+msgstr "Nech srdce bít dál"
 
 #: templates/help/studio/tips/howto/valentine3.html:9
 msgid ""
@@ -10650,7 +10737,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine5.html:5
 msgid "Choose a backdrop for your valentine."
-msgstr ""
+msgstr "Vyber pozadí pro svou valentýnku."
 
 #: templates/help/studio/tips/howto/valentine5.html:8
 #, python-format
@@ -10665,7 +10752,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine5.html:20
 msgid "Your card will now have a backdrop and a sprite"
-msgstr ""
+msgstr "Tvé přání teď bude obsahovat pozadí a postavu"
 
 #: templates/help/studio/tips/howto/valentine5.html:25
 msgid ""
@@ -10676,11 +10763,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine5.html:29
 msgid "Next, add a message"
-msgstr ""
+msgstr "Jako další krok přidej novou zprávu"
 
 #: templates/help/studio/tips/howto/valentine6.html:5
 msgid "Add a message to your valentine."
-msgstr ""
+msgstr "Přidej zprávu ke svému Valentinskému přání"
 
 #: templates/help/studio/tips/howto/valentine6.html:13
 msgid "Click the 'Things' category, and choose the sprite named 'Text':"
@@ -10703,11 +10790,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine6.html:29
 msgid "Now, add music"
-msgstr ""
+msgstr "Teď, přidej hudbu"
 
 #: templates/help/studio/tips/howto/valentine7.html:5
 msgid "Add music to your valentine."
-msgstr ""
+msgstr "Přidej hubu ke svému Valentýnskému přání"
 
 #: templates/help/studio/tips/howto/valentine7.html:8
 msgid "First, click the heart sprite to select it."
@@ -10752,11 +10839,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine8.html:9
 msgid "ADD IMAGES"
-msgstr ""
+msgstr "PŘIDEJ OBRÁZKY"
 
 #: templates/help/studio/tips/howto/valentine8.html:10
 msgid "To add a sprite, click one of these buttons:"
-msgstr ""
+msgstr "Pokud chceš přidat postavu, klikni na jedno z těchto tlačítek:"
 
 #: templates/help/studio/tips/howto/valentine8.html:11
 #, python-format
@@ -10804,23 +10891,23 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip-intro.html:10
 msgid "First, choose your pet"
-msgstr ""
+msgstr "Nepjprve si vyber svého mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip-intro.html:16 tips_config.py:239
 msgid "Choose Your Pet"
-msgstr ""
+msgstr "Vyber si svého mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip-intro.html:18 tips_config.py:241
 msgid "Introduce Your Pet"
-msgstr ""
+msgstr "Představ svého mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip-intro.html:19 tips_config.py:242
 msgid "Animate Your Pet"
-msgstr ""
+msgstr "Animuj svého mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip-intro.html:20 tips_config.py:243
 msgid "Time to Eat"
-msgstr ""
+msgstr "Čas na jídlo"
 
 #: templates/help/studio/tips/howto/vptip-intro.html:21 tips_config.py:244
 msgid "Eat Some Food"
@@ -10828,23 +10915,23 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip-intro.html:22 tips_config.py:245
 msgid "Time to Play"
-msgstr ""
+msgstr "Čas na hraní"
 
 #: templates/help/studio/tips/howto/vptip-intro.html:23 tips_config.py:246
 msgid "Add More Activities"
-msgstr ""
+msgstr "Přidej více aktivit"
 
 #: templates/help/studio/tips/howto/vptip-intro.html:24 tips_config.py:247
 msgid "Monitor Your Pet"
-msgstr ""
+msgstr "Sleduj svého Mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip-intro.html:25 tips_config.py:248
 msgid "Share Your Pet"
-msgstr ""
+msgstr "Sdílej svého mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip1.html:9
 msgid "Then, select your pet:"
-msgstr ""
+msgstr "Poté, vyber svého mazlíčka:"
 
 #: templates/help/studio/tips/howto/vptip10.html:6
 msgid "Now you can share your virtual pet with others!"
@@ -10852,7 +10939,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip2.html:6
 msgid "Choose where your pet will live."
-msgstr ""
+msgstr "Vyber, kde chceš aby tvůj mazlíček žil."
 
 #: templates/help/studio/tips/howto/vptip2.html:12
 msgid "Then choose the backdrop you want for your pet, such as garden rock:"
@@ -10860,7 +10947,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip2.html:14
 msgid "Next, introduce your pet"
-msgstr ""
+msgstr "Dále, představ svého mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip3.html:6
 msgid "Move your pet where you want it to start."
@@ -10893,7 +10980,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip3.html:31
 msgid "Next, animate your pet"
-msgstr ""
+msgstr "Dále, animuj svého mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip4.html:6
 msgid ""
@@ -10915,19 +11002,19 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip4.html:24
 msgid "Now, tell your pet it's time to eat"
-msgstr ""
+msgstr "Nyní řekni svému mazlíčkovi, že je čas k jídlu"
 
 #: templates/help/studio/tips/howto/vptip5.html:6
 msgid "Give your pet something to eat."
-msgstr ""
+msgstr "Dej svému mazličkovi něco k jídlu"
 
 #: templates/help/studio/tips/howto/vptip5.html:9
 msgid "Click to choose a new sprite:"
-msgstr ""
+msgstr "Klikni pro výběr nové postavy:"
 
 #: templates/help/studio/tips/howto/vptip5.html:12
 msgid "Then, select a food:"
-msgstr ""
+msgstr "Poté, vyber jídlo:"
 
 #: templates/help/studio/tips/howto/vptip5.html:17
 msgid ""
@@ -10983,7 +11070,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip6.html:30
 msgid "Next, give your pet something to play with"
-msgstr ""
+msgstr "Jako další krok dej mazlíčkovi něco na hraní"
 
 #: templates/help/studio/tips/howto/vptip7.html:7
 msgid "Choose something for your pet to play with, such as a trampoline."
@@ -11004,7 +11091,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip7.html:19
 msgid "Click to select your pet"
-msgstr ""
+msgstr "Klikni pro výběr svého mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip7.html:21
 msgid "Here’s a script that glides to a trampoline and jumps:"
@@ -11012,7 +11099,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip7.html:28
 msgid "Next, add more activities"
-msgstr ""
+msgstr "Dále, přidej více aktivit."
 
 #: templates/help/studio/tips/howto/vptip8.html:7
 msgid ""
@@ -11022,11 +11109,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip8.html:8
 msgid "Here are a couple of ideas. Feel free to experiment."
-msgstr ""
+msgstr "Zde je pár nápadů. Zkus experimentovat."
 
 #: templates/help/studio/tips/howto/vptip8.html:12
 msgid "Play a musical instrument:"
-msgstr ""
+msgstr "Hraj na hudební nástroj"
 
 #: templates/help/studio/tips/howto/vptip8.html:14
 msgid "Choose a drum and add a script for your pet to play it:"
@@ -11034,11 +11121,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip8.html:20
 msgid "Drink some water:"
-msgstr ""
+msgstr "Vypij trochu vody."
 
 #: templates/help/studio/tips/howto/vptip8.html:26
 msgid "Next, monitor your pet"
-msgstr ""
+msgstr "V dalším kroku zkontroluj tvého mazlíčka"
 
 #: templates/help/studio/tips/howto/vptip9.html:6
 msgid "You can use variable blocks to monitor how your pet is feeling."
@@ -11066,7 +11153,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip9.html:23
 msgid "Next, share your pet"
-msgstr ""
+msgstr "Jako další krok sdílej svého mazlíčka"
 
 #: templates/help/studio/tips/howto/walking.html:12
 msgid "Choose a sprite that has costumes with moving legs, such as:"
@@ -11074,11 +11161,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/walking.html:16
 msgid "Add a script to change costumes and move:"
-msgstr ""
+msgstr "Přidej skript pro změnu kostýmů a pohybu:"
 
 #: templates/help/studio/tips/howto/walking.html:18
 msgid "You can change how fast it moves by typing in other numbers."
-msgstr ""
+msgstr "Psaním dalších čísel můžeš měnit rychlost pohybu."
 
 #: templates/help/studio/tips/howto/walking.html:22
 #, python-format
@@ -11093,6 +11180,8 @@ msgid ""
 "\n"
 "<a href=\"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1084869222&mt=12\" target=\"_blank\">Install the Device Manager</a> from the Apple App Store.\n"
 msgstr ""
+"\n"
+"<a href=\"https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1084869222&mt=12\" target=\"_blank\">Instaluj Správce Zařízení</a> Z obchodu Apple Store.\n"
 
 #: templates/help/studio/tips/howto/wedo2mac-1.html:10
 msgid ""
@@ -11102,7 +11191,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/wedo2mac-1.html:17
 msgid "Next, Make Sure Bluetooth is On"
-msgstr ""
+msgstr "Dále se ujisti, že je zařízení Bluetooth zapnuté"
 
 #: templates/help/studio/tips/howto/wedo2mac-2.html:8
 msgid ""
@@ -11119,7 +11208,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-2.html:18
 #: templates/help/studio/tips/howto/wedo2win-4.html:13
 msgid "Next, Add the Extension"
-msgstr ""
+msgstr "Jako další krok přidej rozšíření"
 
 #: templates/help/studio/tips/howto/wedo2mac-3.html:7
 #: templates/help/studio/tips/ui/extensions.html:8
@@ -11131,12 +11220,12 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-3.html:12
 #: templates/help/studio/tips/howto/wedo2win-5.html:13
 msgid "From the menu, select <strong>LEGO WeDo 2.0</strong>."
-msgstr ""
+msgstr "Z menu, vyber <strong>LEGO WeDo 2.0</strong>."
 
 #: templates/help/studio/tips/howto/wedo2mac-3.html:15
 #: templates/help/studio/tips/howto/wedo2win-5.html:16
 msgid "Next, click 'Connect'"
-msgstr ""
+msgstr "Dále, stiskni 'Připojit'"
 
 #: templates/help/studio/tips/howto/wedo2mac-4.html:7
 #: templates/help/studio/tips/howto/wedo2win-6.html:7
@@ -11148,7 +11237,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-4.html:14
 #: templates/help/studio/tips/howto/wedo2win-6.html:14
 msgid "Next, press the WeDo button"
-msgstr ""
+msgstr "Dále stiskni tlačítko WeDo"
 
 #: templates/help/studio/tips/howto/wedo2mac-5.html:7
 #: templates/help/studio/tips/howto/wedo2win-7.html:7
@@ -11160,7 +11249,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-5.html:8
 #: templates/help/studio/tips/howto/wedo2win-7.html:8
 msgid "When connected, the Device Manager will look like this:"
-msgstr ""
+msgstr "Až bude připojeno, Správce Zařízení bude vypadat takto:"
 
 #: templates/help/studio/tips/howto/wedo2mac-5.html:10
 #: templates/help/studio/tips/howto/wedo2win-7.html:10
@@ -11170,7 +11259,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-5.html:16
 #: templates/help/studio/tips/howto/wedo2win-7.html:16
 msgid "Next, start creating!"
-msgstr ""
+msgstr "Dále, začni tvořit!"
 
 #: templates/help/studio/tips/howto/wedo2mac-6.html:7
 #: templates/help/studio/tips/howto/wedo2win-8.html:7
@@ -11193,7 +11282,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-7.html:7
 #: templates/help/studio/tips/howto/wedo2win-9.html:7
 msgid "If it's not working:"
-msgstr ""
+msgstr "Pokud to nefunguje:"
 
 #: templates/help/studio/tips/howto/wedo2mac-7.html:9
 #: templates/help/studio/tips/howto/wedo2win-9.html:9
@@ -11203,12 +11292,12 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-7.html:10
 #: templates/help/studio/tips/howto/wedo2win-9.html:11
 msgid "Make sure your WeDo 2.0 is turned on and ready to connect."
-msgstr ""
+msgstr "Ujisti se, zda je tvé WeDo 2.0 zapnuté a připravené k připojení."
 
 #: templates/help/studio/tips/howto/wedo2mac-7.html:11
 #: templates/help/studio/tips/howto/wedo2win-9.html:12
 msgid "Turn on Bluetooth on your computer."
-msgstr ""
+msgstr "Zapni Bluetooth na svém počítači."
 
 #: templates/help/studio/tips/howto/wedo2mac-7.html:12
 msgid "Make sure you have a Mac with Bluetooth Low-Energy (see below)."
@@ -11222,7 +11311,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-7.html:14
 #: templates/help/studio/tips/howto/wedo2win-9.html:15
 msgid "Restart your browser."
-msgstr ""
+msgstr "Restartuj prohlížeč"
 
 #: templates/help/studio/tips/howto/wedo2mac-7.html:15
 #: templates/help/studio/tips/howto/wedo2win-9.html:16
@@ -11277,7 +11366,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-7.html:33
 #: templates/help/studio/tips/howto/wedo2win-9.html:34
 msgid "Go to LEGO WeDo 2.0 Setup"
-msgstr ""
+msgstr "Spusť instalaci Lego WeDo 2.0"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:7
 msgid ""
@@ -11288,41 +11377,41 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:12
 #: templates/help/studio/tips/howto/wedo2win-intro.html:16
 msgid "Next, Install the Device Manager"
-msgstr ""
+msgstr "V dalším kroku nainstaluj Správce Zařízení"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:19
 #: templates/help/studio/tips/howto/wedo2win-intro.html:22 tips_config.py:251
 #: tips_config.py:259
 msgid "Install the Device Manager"
-msgstr ""
+msgstr "Nainstaluj Správce Zařízení"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:20 tips_config.py:252
 msgid "Make Sure Bluetooth is On"
-msgstr ""
+msgstr "Ujisti se, že je zařízení Bluetooth zapnuté"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:21
 #: templates/help/studio/tips/howto/wedo2win-intro.html:26 tips_config.py:253
 #: tips_config.py:263
 msgid "Add the Extension"
-msgstr ""
+msgstr "Přidej rozšíření"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:22
 #: templates/help/studio/tips/howto/wedo2win-intro.html:27 tips_config.py:254
 #: tips_config.py:264
 msgid "Click 'Connect'"
-msgstr ""
+msgstr "Klikni na tlačítko 'Připojit'"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:23
 #: templates/help/studio/tips/howto/wedo2win-intro.html:28 tips_config.py:255
 #: tips_config.py:265
 msgid "Press the WeDo Button"
-msgstr ""
+msgstr "Stiskni tlačítko WeDo"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:24
 #: templates/help/studio/tips/howto/wedo2win-intro.html:29 tips_config.py:256
 #: tips_config.py:266
 msgid "Create!"
-msgstr ""
+msgstr "Vytvoř!"
 
 #: templates/help/studio/tips/howto/wedo2setup-intro.html:6
 msgid "Use these steps to set up the LEGO WeDo 2.0 on Scratch."
@@ -11336,11 +11425,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/wedo2setup-intro.html:14
 msgid "I’m using a Mac computer"
-msgstr ""
+msgstr "Používám počítač s operačním systémem Mac."
 
 #: templates/help/studio/tips/howto/wedo2setup-intro.html:16
 msgid "I’m using a Windows computer"
-msgstr ""
+msgstr "Používám počítač s operačním systémem Windows."
 
 #: templates/help/studio/tips/howto/wedo2win-1.html:8
 msgid ""
@@ -11362,7 +11451,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/wedo2win-1.html:19
 msgid "Next, Open the Device Manager"
-msgstr ""
+msgstr "Dál, otevři Správce Zařízení"
 
 #: templates/help/studio/tips/howto/wedo2win-2.html:7
 msgid ""
@@ -11400,7 +11489,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/wedo2win-2.html:26
 msgid "Next, Pair your Device"
-msgstr ""
+msgstr "A dál, spáruj své Zařízení"
 
 #: templates/help/studio/tips/howto/wedo2win-3.html:7
 msgid ""
@@ -11434,7 +11523,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/wedo2win-3.html:19
 msgid "Next, Restart your Device"
-msgstr ""
+msgstr "Jako další krok restartuj tvé zařízení"
 
 #: templates/help/studio/tips/howto/wedo2win-4.html:7
 msgid ""
@@ -11450,6 +11539,8 @@ msgid ""
 "Each time you start a new project, you'll need to add the WeDo blocks and "
 "click <strong>Connect</strong> in the Device manager."
 msgstr ""
+"Pokaždé když začneš nový projekt, budeš potřebovat přidat WeDo bloky a "
+"stisknout <strong>Připojit</strong> ve Správci zařízení"
 
 #: templates/help/studio/tips/howto/wedo2win-9.html:10
 msgid ""
@@ -11467,7 +11558,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/wedo2win-9.html:21
 msgid "<strong>What if I can't see the Bluetooth menu?</strong>"
-msgstr ""
+msgstr "<strong>Co když se mi nezobrazí nabídka Bluetooth?</strong>"
 
 #: templates/help/studio/tips/howto/wedo2win-9.html:23
 msgid ""
@@ -11487,6 +11578,8 @@ msgid ""
 "\n"
 "<strong>Have a Mac computer?</strong> See the <a href=\"../wedo2mac-intro/\">Mac Setup Instructions</a>\n"
 msgstr ""
+"\n"
+"<strong>Používáš zařízení Mac?</strong> Shlédni <a href=\"../wedo2mac-intro/\">Instrukce pro instalaci na Mac</a>\n"
 
 #: templates/help/studio/tips/howto/wedo2win-intro.html:7
 msgid ""
@@ -11496,15 +11589,15 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/wedo2win-intro.html:23 tips_config.py:260
 msgid "Open the Device Manager"
-msgstr ""
+msgstr "Otevři Správce Zařízení"
 
 #: templates/help/studio/tips/howto/wedo2win-intro.html:24 tips_config.py:261
 msgid "Pair your Device"
-msgstr ""
+msgstr "Spáruj své Zařízení"
 
 #: templates/help/studio/tips/howto/wedo2win-intro.html:25 tips_config.py:262
 msgid "Restart your Device"
-msgstr ""
+msgstr "Restartuj své Zařízení"
 
 #: templates/help/studio/tips/ui/editor-map.html:5
 #: templates/help/studio/tips/ui/interface-map.html:5
@@ -11551,17 +11644,19 @@ msgstr ""
 
 #: templates/help/studio/tips/ui/magicwand.html:5
 msgid "Magic Wand Tool"
-msgstr ""
+msgstr "Nástroj Magická Hůlka"
 
 #: templates/help/studio/tips/ui/magicwand.html:7
 msgid ""
 "Use the magic wand to select parts of a photo you want to keep. (It will "
 "remove the rest.)"
 msgstr ""
+"Použij magickou hůlku pro výběr částí fotky, které chceš zachovat. (Zbytek "
+"bude vymazán.)"
 
 #: templates/help/studio/tips/ui/magicwand.html:11
 msgid "Here are the two steps:"
-msgstr ""
+msgstr "Zde jsou dva kroky:"
 
 #: templates/help/studio/tips/ui/magicwand.html:13
 msgid ""
@@ -11577,7 +11672,7 @@ msgstr ""
 
 #: templates/help/studio/tips/ui/magicwand.html:18
 msgid "Tip: You can click the Undo button to restore your original image:"
-msgstr ""
+msgstr "Tip: Použij tlačítko Vrátit zpět pro vrácení změn v původním obrázku:"
 
 #: templates/help/studio/tips/ui/magicwand.html:20
 msgid ""
@@ -11589,6 +11684,8 @@ msgid ""
 "For best results with the Magic wand, take photos with a solid, contrasting "
 "color in the background."
 msgstr ""
+"Pro dosažení nejlepších výsledků s magickou hůlkou, vyfoť fotografii s plnou"
+" kontrastní barvou na pozadí."
 
 #: templates/help/studio/tips/ui/tour-intro.html:17
 msgid "Tour the Scratch Editor"
@@ -11596,11 +11693,11 @@ msgstr ""
 
 #: templates/help/studio/tips/ui/tour-intro.html:20
 msgid "Take a tour of the Scratch project editor."
-msgstr ""
+msgstr "Vydej se na prohlídku editorem projektů Scratch"
 
 #: templates/help/studio/tips/ui/tour-intro.html:21
 msgid "Here's are some of the main parts:"
-msgstr ""
+msgstr "Zde jsou některé z hlavních částí:"
 
 #: templates/help/studio/tips/ui/tour-intro.html:23
 msgid "Start the tour"
@@ -11616,15 +11713,15 @@ msgstr "Scéna"
 
 #: templates/help/studio/tips/ui/tour-intro.html:30
 msgid "Blocks Palette"
-msgstr ""
+msgstr "Paleta bloků"
 
 #: templates/help/studio/tips/ui/tour-intro.html:31
 msgid "Scripts Area"
-msgstr ""
+msgstr "Oblast skriptů"
 
 #: templates/help/studio/tips/ui/tour-intro.html:32
 msgid "Sprite List"
-msgstr ""
+msgstr "Seznam postav"
 
 #: templates/help/studio/tips/ui/tour-intro.html:33
 msgid "Backpack"
@@ -11632,7 +11729,7 @@ msgstr "Batoh"
 
 #: templates/help/studio/tips/ui/tour-intro.html:34
 msgid "Paint Editor"
-msgstr ""
+msgstr "Editor barev"
 
 #: tips_config.py:16 tips_config.py:275
 msgid "B-Ball Hoops"
@@ -11640,7 +11737,7 @@ msgstr ""
 
 #: tips_config.py:28 tips_config.py:281
 msgid "Bearstack Story"
-msgstr ""
+msgstr "Přiběh medvědice"
 
 #: tips_config.py:48 tips_config.py:293
 msgid "Make a Greeting Card"
@@ -11648,11 +11745,11 @@ msgstr "Vytvoř pohlednici"
 
 #: tips_config.py:92 tips_config.py:323
 msgid "Favorite Things"
-msgstr ""
+msgstr "Oblíbené věci"
 
 #: tips_config.py:124 tips_config.py:335
 msgid "Hide and Seek Game"
-msgstr ""
+msgstr "Hra na schovávanou"
 
 #: tips_config.py:136 tips_config.py:341
 msgid "Holiday Card Tutorial"
@@ -11660,56 +11757,56 @@ msgstr "Prázdninová pohlednice"
 
 #: tips_config.py:141
 msgid "A"
-msgstr ""
+msgstr "A"
 
 #: tips_config.py:142
 msgid "B"
-msgstr ""
+msgstr "B"
 
 #: tips_config.py:143
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: tips_config.py:144
 msgid "D"
-msgstr ""
+msgstr "D"
 
 #: tips_config.py:145
 msgid "E"
-msgstr ""
+msgstr "E"
 
 #: tips_config.py:151 tips_config.py:347
 msgid "MaKey MaKey and Scratch"
-msgstr ""
+msgstr "MaKey MaKey a Scratch"
 
 #: tips_config.py:183 tips_config.py:365
 msgid "Ode to Code Dance"
-msgstr ""
+msgstr "Óda na kódový tanec"
 
 #: tips_config.py:205
 msgid "Choose a Backdrop for the Race"
-msgstr ""
+msgstr "Vyber pozadí pro závod"
 
 #: tips_config.py:207
 msgid "Move by Pressing a Key"
-msgstr ""
+msgstr "Pohybuj se zmáčknutím klávesy"
 
 #: tips_config.py:210
 msgid "Go to Your Starting Point"
-msgstr ""
+msgstr "Jdi na místo startu"
 
 #: tips_config.py:228 tips_config.py:389
 msgid "Design a Valentine"
-msgstr ""
+msgstr "Navrhni valentýnku"
 
 #: tips_config.py:249 tips_config.py:401
 msgid "LEGO WeDo 2.0 Extension Setup"
-msgstr ""
+msgstr "Nastavení rozšíření LEGO WeDo 2.0 "
 
 #: tips_config.py:250 tips_config.py:407
 msgid "LEGO WeDo 2.0 Setup for Mac"
-msgstr ""
+msgstr "Nastavení LEGO WeDo 2.0 pro Mac"
 
 #: tips_config.py:258 tips_config.py:413
 msgid "LEGO WeDo 2.0 Setup for Windows"
-msgstr ""
+msgstr "Nastavení LEGO WeDo 2.0 pro Windows"

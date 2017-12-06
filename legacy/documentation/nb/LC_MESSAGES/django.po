@@ -154,6 +154,8 @@ msgid ""
 "The title next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_name)s\" />"
 msgstr ""
+"Det som er skrevet ved bakgrunnsbildet i listen er <img "
+"src=\"%(url_backdrop_name)s\" />"
 
 #: templates/help/studio/tips/blocks/backdrop-number.html:17
 #, python-format
@@ -161,6 +163,8 @@ msgid ""
 "The number next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_number)s\" />"
 msgstr ""
+"Tallet ved bakgrunnsbildet i listen er <img src=\"%(url_backdrop_number)s\" "
+"/>"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:9
 msgid "Sends a message to all sprites and waits"
@@ -173,12 +177,17 @@ msgid ""
 "all sprites to tell them to do something, and wait until they all finish "
 "before continuing."
 msgstr ""
+"Du kan bruke <img src=\"%(url_broadcast_and_wait)s\" /> for å sende en "
+"melding til alle figurer og vente helt til skriptene som startes har kjørt "
+"ferdig."
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:22
 msgid ""
 "Click to choose which message gets sent. Choose \"new\" to type in your own "
 "message."
 msgstr ""
+"Klikk for å velge hvilken melding som sendes. Velg \"ny\" for å opprette en "
+"ny melding."
 
 #: templates/help/studio/tips/blocks/broadcast.html:9
 msgid "Sends a message to all sprites"
@@ -191,6 +200,9 @@ msgid ""
 " background). This is useful if you want to tell other sprites when to do "
 "something."
 msgstr ""
+"<img src=\"%(url_broadcast)s\"/> sender en melding til alle figurer (og til "
+"bakgrunnen). Dette er nyttig hvis du vil forgelle andre figurer når noe skal"
+" skje."
 
 #: templates/help/studio/tips/blocks/broadcast.html:22
 #, python-format
@@ -198,6 +210,8 @@ msgid ""
 "What do you want them to do when they receive the message? See <a "
 "href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 msgstr ""
+"Hva vil du at de skal gjøre når de mottar meldingen? Se <a "
+"href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 
 #: templates/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
@@ -211,6 +225,10 @@ msgid ""
 "<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
 "Try these effects with numbers such as 10, 35, or 100. Or try negative numbers, such as -50.\n"
 msgstr ""
+"\n"
+"Klikk for å velge en effekt fra menyen:\n"
+"<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
+"Prøv disse effektene med forskjellige tallverdier, for eksempel 10, 35 eller 100. Eller du kan prøve et negativt tall, for eksempel -50.\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:25
 #, python-format
@@ -218,6 +236,9 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> to clear "
 "all graphic effects. Or, use <img src=\"%(url_clear_graphic_effects)s\"/>"
 msgstr ""
+"Klikk stopp <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> for å ta"
+" bort alle grafiske effekter, eller bruk <img "
+"src=\"%(url_clear_graphic_effects)s\"/>"
 
 #: templates/help/studio/tips/blocks/change-size.html:8
 msgid "Changes sprite's size by specified amount"
@@ -338,6 +359,8 @@ msgid ""
 "<img src=\"%(url_clear_graphic_effects)s\" /> clears all the graphic effects"
 " for this sprite."
 msgstr ""
+"<img src=\"%(url_clear_graphic_effects)s\" /> tar bort alle grafiske "
+"effekter på figuren."
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
@@ -358,13 +381,13 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 msgid "The script is triggered as soon as the clone is created."
-msgstr ""
+msgstr "Skriptet starter med en gang en klon blir laget."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:12
 msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are "
 "created."
-msgstr ""
+msgstr "Kloner reagerer på alle \"når...\"-klosser etter at klonen er laget."
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
@@ -407,7 +430,7 @@ msgstr "Lager en klon (midlertidig kopi) av angitt figur"
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
-msgstr ""
+msgstr "Bruk menyen i klossen for å velge hvilken figur du vil klone."
 
 #: templates/help/studio/tips/blocks/create-clone.html:14
 #, python-format
@@ -415,12 +438,14 @@ msgid ""
 "Use <img src=\"%(url_clone_startup)s\" /> to tell the clone what to do once "
 "it's created."
 msgstr ""
+"Bruk <img src=\"%(url_clone_startup)s\" /> for å bestemme hva klonen skal "
+"gjøre når den lages."
 
 #: templates/help/studio/tips/blocks/create-clone.html:16
 #: templates/help/studio/tips/blocks/delete-this-clone.html:16
 #: templates/help/studio/tips/blocks/video-motion.html:26
 msgid "Sample Script:"
-msgstr ""
+msgstr "Eksempelskript:"
 
 #: templates/help/studio/tips/blocks/create-clone.html:23
 #: templates/help/studio/tips/blocks/video-motion.html:32
@@ -434,6 +459,8 @@ msgid ""
 "If you can't see the clone, move it so the original sprite doesn't cover it."
 " The clone appears in the same location as the sprite initially."
 msgstr ""
+"Hvis du ikke kan se klonen, så flytt den slik at den originale figuren ikke "
+"dekker den. Klonen starter på det stedet der den originale figuren står."
 
 #: templates/help/studio/tips/blocks/create-clone.html:29
 #, python-format
@@ -441,10 +468,12 @@ msgid ""
 "Make sure you've chosen the sprite you want to clone from the menu in the "
 "<img src=\"%(url_create_clone_of)s\" /> block."
 msgstr ""
+"Pass på at du har valgt den figuren du vil klone i menyen i <img "
+"src=\"%(url_create_clone_of)s\" />-klossen."
 
 #: templates/help/studio/tips/blocks/create-clone.html:31
 msgid "Note: The clone only lasts while the project is running."
-msgstr ""
+msgstr "Merk: Klonen eksisterer bare så lenge programmet kjører."
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
@@ -452,13 +481,15 @@ msgstr "Gir klokketiden nå"
 
 #: templates/help/studio/tips/blocks/current-time.html:15
 msgid "You can select  from the menu to indicate which item you want."
-msgstr ""
+msgstr "Bruk menyen i klossen for å velge."
 
 #: templates/help/studio/tips/blocks/current-time.html:20
 msgid ""
 "To view the value of the current time, click the checkbox next to the "
 "current time."
 msgstr ""
+"For å vise tiden akkurat nå på skjermen klikker du i ruten ved siden av "
+"klossen."
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
@@ -471,6 +502,8 @@ msgstr "Bestemmer hva din egen kloss skal gjøre"
 #: templates/help/studio/tips/blocks/define.html:11
 msgid "The <strong>define</strong> script tells a custom block what to do:"
 msgstr ""
+"Under <strong>definer</strong>-klossen lager du et skript som bestemmer hva "
+"din egen kloss skal gjøre."
 
 #: templates/help/studio/tips/blocks/define.html:17
 msgid ""
@@ -478,6 +511,9 @@ msgid ""
 "To use them, drag copies of the input blocks into other blocks within the "
 "define script."
 msgstr ""
+"Data som klossen din skal ta inn vises som lilla klosser med runde ender. Du"
+" kan dra kopier av disse klossene inn i andre klosser i skriptet ditt der "
+"dataverdiene skal brukes."
 
 #: templates/help/studio/tips/blocks/define.html:22
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:25
@@ -485,6 +521,8 @@ msgid ""
 "Note: The input blocks can <strong>only</strong> be used in the define "
 "script."
 msgstr ""
+"Merk: Klossene for inndata kan <strong>bare</strong> brukes i skriptet under"
+" definer-klossen."
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:7
 msgid "Deletes one or all items from a list"
@@ -503,17 +541,18 @@ msgstr ""
 #: templates/help/studio/tips/blocks/delete-from-list.html:21
 msgid ""
 "You can specify the number of the item you want to delete. For example:"
-msgstr ""
+msgstr "Du kan angi plassnummeret til elementet du vil slette. For eksempel:"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:26
 msgid ""
 "To delete the last item in the list, choose \"last\" from the pull-down "
 "menu:"
 msgstr ""
+"For å slette det siste elementet i en liste kan du velge \"siste\" i menyen:"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:31
 msgid "You can also choose to delete everything in the list:"
-msgstr ""
+msgstr "Du kan også velge å slette alt som er i listen:"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:7
 msgid "Deletes the current clone"
@@ -521,11 +560,11 @@ msgstr "Sletter denne figuren hvis den er en klon"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:11
 msgid "Place this block in a script after the clone is done its actions."
-msgstr ""
+msgstr "Bruk denne klossen etter at klonen er ferdig med det den skal gjøre."
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:14
 msgid "All clones are automatically deleted when the program is stopped."
-msgstr ""
+msgstr "Alle kloner slettes automatisk når programmet stopper."
 
 #: templates/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
@@ -533,7 +572,7 @@ msgstr "Gir figurens nåværende retning i grader"
 
 #: templates/help/studio/tips/blocks/direction.html:15
 msgid "<b>direction</b> tells which way the sprite is heading."
-msgstr ""
+msgstr "<b>retning</b> forteller hvilken vei figuren peker."
 
 #: templates/help/studio/tips/blocks/direction.html:17
 #, python-format
@@ -541,16 +580,20 @@ msgid ""
 "To see a sprite's direction, click <img "
 "src=\"%(STATIC_URL)s/images/help/info.gif\">:"
 msgstr ""
+"Du kan se figurens retning med <img "
+"src=\"%(STATIC_URL)s/images/help/info.gif\">:"
 
 #: templates/help/studio/tips/blocks/direction.html:20
 msgid "You can drag the blue line to change direction."
-msgstr ""
+msgstr "Du kan dra i den blå streken for å forandre retningen."
 
 #: templates/help/studio/tips/blocks/direction.html:24
 msgid ""
 "To display a sprite's direction on the Stage, click the checkbox in the "
 "palette:"
 msgstr ""
+"Du kan vise figurens retning på skjermen ved å klikke i ruten ved siden av "
+"klossen:"
 
 #: templates/help/studio/tips/blocks/distance-to.html:7
 msgid "Reports distance from the specified sprite or mouse-pointer"
@@ -558,7 +601,7 @@ msgstr "Gir avstanden fra musepekeren eller fra en annen figur"
 
 #: templates/help/studio/tips/blocks/distance-to.html:15
 msgid "Select from the pull-down menu to choose"
-msgstr ""
+msgstr "Velg fra menyen i klossen"
 
 #: templates/help/studio/tips/blocks/divide.html:7
 msgid "Divides first number by second number"
@@ -590,7 +633,7 @@ msgstr "Gli jevnt til denne <b>x-y</b>-posisjonen"
 
 #: templates/help/studio/tips/blocks/glide.html:13
 msgid "The sprite starts at one point, and then glides to the other points."
-msgstr ""
+msgstr "Figuren starter på første x-y posisjon og glir til den andre."
 
 #: templates/help/studio/tips/blocks/glide.html:18
 msgid ""
@@ -629,6 +672,8 @@ msgid ""
 "To make the crab hide behind the rock, tell it to <img "
 "src=\"%(url_go_back_1layer)s\" />"
 msgstr ""
+"For å få krabben til å gjemme seg bak steinen, bruk <img "
+"src=\"%(url_go_back_1layer)s\" />"
 
 #: templates/help/studio/tips/blocks/go-to-front.html:7
 msgid "Moves sprite in front of all other sprites"
@@ -662,17 +707,19 @@ msgstr "Gå til musepekeren eller til en annen figur"
 
 #: templates/help/studio/tips/blocks/go-to.html:16
 msgid "Choose from the menu:"
-msgstr ""
+msgstr "Velg fra menyen:"
 
 #: templates/help/studio/tips/blocks/go-to.html:20
 msgid "Then, click the block."
-msgstr ""
+msgstr "Klikk på klossen."
 
 #: templates/help/studio/tips/blocks/go-to.html:23
 msgid ""
 "The current sprite will jump to the <b>x y</b> location of the mouse-pointer"
 " or of the sprite you choose."
 msgstr ""
+"Figuren vil flytte seg til <b>x-y</b>-posisjonen til musepekeren eller til "
+"en figur du velger."
 
 #: templates/help/studio/tips/blocks/greater-than.html:7
 msgid "Reports true if first value is greater than second"
@@ -744,7 +791,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/insert-list.html:23
 msgid "You can indicate where in the list you want to add an item."
-msgstr ""
+msgstr "Du kan angi hvor i listen du vil sette inn et element."
 
 #: templates/help/studio/tips/blocks/insert-list.html:26
 #, python-format
@@ -752,6 +799,8 @@ msgid ""
 "<img src=\"%(url_insert_scoreboard)s\" /> inserts item at the specified "
 "place in the list."
 msgstr ""
+"<img src=\"%(url_insert_scoreboard)s\" /> setter inn elemeter på en bestemt "
+"plass i listen."
 
 #: templates/help/studio/tips/blocks/insert-list.html:32
 #, python-format
@@ -759,6 +808,8 @@ msgid ""
 "<img src=\"%(url_insert_greetings)s\" /> inserts item at a random place in "
 "the list."
 msgstr ""
+"<img src=\"%(url_insert_greetings)s\" /> setter inn elementet på en "
+"tilfeldig plass."
 
 #: templates/help/studio/tips/blocks/item-of-list.html:7
 msgid "Reports the item at the specifed position in the list"
@@ -779,12 +830,16 @@ msgid ""
 "The item block reports the value of the item at the specified place on the "
 "list."
 msgstr ""
+"Element-klossen gir verdien til elementet som står på den angitte plassen på"
+" listen."
 
 #: templates/help/studio/tips/blocks/item-of-list.html:24
 msgid ""
 "You can fit an item block into other blocks, for example: say, switch to "
 "costume, play sound, or broadcast."
 msgstr ""
+"Du kan sette element-klossen inn i andre klosser, for eksempel \"si\", "
+"\"bytt til drakt\", \"spill lyden\" eller \"send melding\""
 
 #: templates/help/studio/tips/blocks/join.html:7
 msgid "Concatenates (combines) strings"
@@ -801,6 +856,9 @@ msgid ""
 "src=\"%(url_when_key_pressed)s\" /> when you want to keep, for example, the "
 "space key pressed continuously."
 msgstr ""
+"Bruk <img src=\"%(url_key_pressed)s\" /> i stedet for <img "
+"src=\"%(url_when_key_pressed)s\" /> hvis skriptet skal merke akkurat hvor "
+"lenge en tast holdes nede."
 
 #: templates/help/studio/tips/blocks/length-of-list.html:7
 msgid "Reports how many items are in the list"
@@ -808,13 +866,13 @@ msgstr "Gir antall elementer i en liste"
 
 #: templates/help/studio/tips/blocks/length-of-list.html:15
 msgid "This block reports how many items are currently in a list."
-msgstr ""
+msgstr "Denne klossen gir antall elementer i listen."
 
 #: templates/help/studio/tips/blocks/length-of-list.html:20
 msgid ""
 "The number is the same as the length shown at the bottom of the list "
 "monitor."
-msgstr ""
+msgstr "Tallet er det samme som lengden som vises nederst i listevinduet."
 
 #: templates/help/studio/tips/blocks/length-of.html:7
 msgid "Reports the number of letters in a string"
@@ -844,6 +902,8 @@ msgid ""
 "list. If the item matches exactly, then it reports true. If not, it reports "
 "false."
 msgstr ""
+"Betingelsen <img src=\"%(url_list_contains_thing)s\" /> er oppfylt hvis "
+"listen inneholder en bestemt verdi."
 
 #: templates/help/studio/tips/blocks/list.html:7
 msgid "Reports all the items in the list"
@@ -861,6 +921,8 @@ msgstr ""
 msgid ""
 "Click the checkbox (next to the block) to show the monitor on the stage:"
 msgstr ""
+"Klikk i ruten (ved siden av klossen i klosslisten) for å vise listevinduet "
+"på scenen:"
 
 #: templates/help/studio/tips/blocks/list.html:24
 #, python-format
