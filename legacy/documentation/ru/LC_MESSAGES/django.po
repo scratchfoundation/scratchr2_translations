@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-26 08:09-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Andrew Sliwinski <ascii@media.mit.edu>, 2017\n"
+"Last-Translator: Сергей Бураков <burakov.lit@gmail.com>, 2018\n"
 "Language-Team: Russian (https://www.transifex.com/llk/teams/60938/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,6 +93,9 @@ msgid ""
 " input in <img src=\"%(url_answer)s\" />. The answer is shared by all "
 "sprites."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" /> задаёт вопрос и сохраняет введённый с "
+"клавиатуры ответ в <img src=\"%(url_answer)s\" />. Ответ доступен всем "
+"спрайтам."
 
 #: templates/help/studio/tips/blocks/answer.html:22
 #, python-format
@@ -134,10 +137,15 @@ msgid ""
 "balloon on the screen. The program waits as the user types in a response, "
 "until the Enter key is pressed or the check mark is clicked."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" />задаёт вопрос и сохраняет введённый с "
+"клавиатуры ответ в<img src=\"%(url_answer)s\" />. Вопрос отображается на "
+"экране в виде диалогового шара/реплики. Программа ожидает, пока пользователь"
+" введёт ответ. Ввод считается завершённым по нажатию клавиши Enter или при "
+"клике на галочку."
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:9
 msgid "Reports Stage's current backdrop name"
-msgstr ""
+msgstr "Сообщает имя текущего фона Сцены."
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:19
 #, python-format
@@ -145,6 +153,8 @@ msgid ""
 "The title next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_name)s\" />"
 msgstr ""
+"Следующим заголовком в списке после фона идёт <img "
+"src=\"%(url_backdrop_name)s\" />"
 
 #: templates/help/studio/tips/blocks/backdrop-number.html:17
 #, python-format
@@ -152,10 +162,12 @@ msgid ""
 "The number next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_number)s\" />"
 msgstr ""
+"Следующим номером за фоном в списке идёт <img "
+"src=\"%(url_backdrop_number)s\" />"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:9
 msgid "Sends a message to all sprites and waits"
-msgstr ""
+msgstr "Отправляет сообщение всем спрайтам и ждёт"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:17
 #, python-format
@@ -164,16 +176,21 @@ msgid ""
 "all sprites to tell them to do something, and wait until they all finish "
 "before continuing."
 msgstr ""
+"Вы можете использовать <img src=\"%(url_broadcast_and_wait)s\" />,  чтобы "
+"отправить сообщение всем спрайтам для того, чтобы они выполнили нужные "
+"действия; и дождаться окончания этих действий перед продолжением."
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:22
 msgid ""
 "Click to choose which message gets sent. Choose \"new\" to type in your own "
 "message."
 msgstr ""
+"Нажмите, чтобы выбрать сообщение, которое нужно отправить.\n"
+"Нажмите  \"new\"/новое, чтобы ввести Ваше собственное сообщение."
 
 #: templates/help/studio/tips/blocks/broadcast.html:9
 msgid "Sends a message to all sprites"
-msgstr ""
+msgstr "Отправляет сообщение всем спрайтам."
 
 #: templates/help/studio/tips/blocks/broadcast.html:18
 #, python-format
@@ -182,6 +199,9 @@ msgid ""
 " background). This is useful if you want to tell other sprites when to do "
 "something."
 msgstr ""
+"<img src=\"%(url_broadcast)s\"/> отправляет сообщение всем спрайтам (и "
+"фону). Это полезно, если Вы хотите сообщить другим спрайтам о моменте, когда"
+" они должны что-нибудь сделать."
 
 #: templates/help/studio/tips/blocks/broadcast.html:22
 #, python-format
@@ -189,10 +209,12 @@ msgid ""
 "What do you want them to do when they receive the message? See <a "
 "href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 msgstr ""
+"Что Вы хотите, чтобы они сделали при получении этого сообщения? Смотрите <a "
+"href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 
 #: templates/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
-msgstr ""
+msgstr "Изменить графический эффект для спрайта"
 
 #: templates/help/studio/tips/blocks/change-effect.html:18
 #, python-format
@@ -202,6 +224,10 @@ msgid ""
 "<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
 "Try these effects with numbers such as 10, 35, or 100. Or try negative numbers, such as -50.\n"
 msgstr ""
+"\n"
+"Нажмите, чтобы выбрать эффект из меню:\n"
+"<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
+"Попробуйте три эффекта с номерами: 10, 35, or 100. Или попробуйте эффекты с отрицательными значениями, например, -50.\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:25
 #, python-format
@@ -209,6 +235,9 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> to clear "
 "all graphic effects. Or, use <img src=\"%(url_clear_graphic_effects)s\"/>"
 msgstr ""
+"Нажмите стоп <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> для "
+"отмены всех графических эффектов. Или используйте <img "
+"src=\"%(url_clear_graphic_effects)s\"/>"
 
 #: templates/help/studio/tips/blocks/change-size.html:8
 msgid "Changes sprite's size by specified amount"
@@ -225,6 +254,10 @@ msgid ""
 "Tempo is the speed (bpm = beats per minute) at which Scratch notes and drums play. The larger the tempo value, the faster the notes and drums will play.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Tempo -- это темп (bpm = beats per minute/ударов в минуту), в котором Scratch проигрывает музыку. своих музыкальных инструментов. Чем больше значение темпа, тем быстрее играет музыка.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/change-variable.html:7
 msgid "Changes the variable by specified amount"
@@ -235,6 +268,8 @@ msgid ""
 "If you have more \n"
 "than one variable, use the pull-down menu to select the variable name."
 msgstr ""
+"Если у Вас больше, одной переменной, используйте выпадающее меню для выбора "
+"имени переменной."
 
 #: templates/help/studio/tips/blocks/change-volume.html:7
 msgid "Changes sprite's sound volume by specified amount"
@@ -250,6 +285,13 @@ msgid ""
 "You can set the volume level for each sprite. To play two sounds at once with different volumes, use two sprites.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Громкость принимает значения от 0 до 100. По умолчанию значение громкости равно 100.\n"
+"</p>\n"
+"<p>\n"
+"Вы можете выставить уровень громкости для каждого спрайта. Для проигрывания двух звуков одновременно с разной громкостью используйте два разных спрайта.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/change-x.html:6
 msgid "Change the x position by this amount"
@@ -266,12 +308,15 @@ msgstr "Отрицательное число сдвигает спрайт <b>�
 #: templates/help/studio/tips/blocks/change-y.html:7
 msgid "Changes sprite's y-position by specified amount."
 msgstr ""
+"Изменяет Y-координату положения спрайта на заданное количество единиц."
 
 #: templates/help/studio/tips/blocks/change-y.html:15
 msgid ""
 "Change y by a <b>positive</b> number to move the sprite <b>up</b>. \n"
 "Change y by a <b>negative</b> number to move the sprite <b>down</b>."
 msgstr ""
+"Изменяйте y на <b>положительное</b> количество единиц, для перемещения спрайта <b>вверх </b>. \n"
+"Изменяйте y на <b>отрицательное </b> количество единиц, для перемещения спрайта <b>вниз</b>."
 
 #: templates/help/studio/tips/blocks/changecolor.html:9
 msgid "Changes pen's color by specified amount"
@@ -279,11 +324,11 @@ msgstr "Изменяет цвет пера на указанную величи�
 
 #: templates/help/studio/tips/blocks/changepensize.html:9
 msgid "Changes pen's thickness."
-msgstr ""
+msgstr "Изменяет толщину пера."
 
 #: templates/help/studio/tips/blocks/changeshadeby.html:7
 msgid "Changes pen's shade by specified amount"
-msgstr ""
+msgstr "Изменяет затемнение пера в соответствии с заданным значением."
 
 #: templates/help/studio/tips/blocks/changeshadeby.html:16
 #, python-format
@@ -296,10 +341,17 @@ msgid ""
 "<p>\n"
 "<b>Note: If the pen shade is 0, then the pen color will be close to black. If the pen shade is 100, the pen color will be close to white.</b>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Значение для затемнения пера варьируется от 0 до 100. 50 -- значение по умолчанию.\n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/changeshadeex2.png\" /> \n"
+"<p>\n"
+"<b>Примечание: Если затемнение пера равно 0, то цвет пера будет близок к чёрному. Если затемнение пера равно 100, то цвет пера будет близок к белому.</b>\n"
 
 #: templates/help/studio/tips/blocks/clear-graphic-effects.html:9
 msgid "Clears all graphic effects for a sprite"
-msgstr ""
+msgstr "Очистить все графические эффекты для этого спрайта."
 
 #: templates/help/studio/tips/blocks/clear-graphic-effects.html:18
 #, python-format
@@ -307,40 +359,47 @@ msgid ""
 "<img src=\"%(url_clear_graphic_effects)s\" /> clears all the graphic effects"
 " for this sprite."
 msgstr ""
+"<img src=\"%(url_clear_graphic_effects)s\" /> очищает все графические "
+"эффекты для этого спрайта."
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
-msgstr ""
+msgstr "Удаляет со сцены все следы пера."
 
 #: templates/help/studio/tips/blocks/clear.html:14
 msgid ""
 "Note: The pen marks and stamps are not part of the backdrops, therefore, "
 "clear does not change the backdrop."
 msgstr ""
+"Примечание: Следы работы пера не являются частью фона, и таким образом их "
+"удаление не изменяет фон."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:6
 msgid "Tells a clone what to do once it is created"
-msgstr ""
+msgstr "Сообщает клону, что он должен делать, после того, как был создан."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 msgid "The script is triggered as soon as the clone is created."
-msgstr ""
+msgstr "Этот скрипт выполняется сразу же после создания клона."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:12
 msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are "
 "created."
 msgstr ""
+"Клоны также отвечают на все событийные блоки, которые срабатывают после "
+"их/клонов создания."
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
-msgstr ""
+msgstr "Возвращает true, если первый цвет касается второго."
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:11
 msgid ""
 "The first color is within the sprite, while the second is from the "
 "background or another sprite."
 msgstr ""
+"Первый цвет принадлежит спрайту, а второй -- фону или другому спрайту."
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:20
 #: templates/help/studio/tips/blocks/setpencolor.html:17
@@ -350,6 +409,8 @@ msgid ""
 "eye dropper to click on the color you want. The color will appear in the "
 "square."
 msgstr ""
+"Воспользуйтесь пипеткой для выбора цвета, кликнув на квадрат. Кликните "
+"пипеткой на желаемый цвет. Выбранный цвет появится в квадрате."
 
 #: templates/help/studio/tips/blocks/computefunction.html:7
 msgid "Computes a function"
@@ -361,7 +422,7 @@ msgstr "Выберите из различных функций в выпада�
 
 #: templates/help/studio/tips/blocks/costume-number.html:3
 msgid "Reports sprite's current costume number"
-msgstr ""
+msgstr "Возвращает номер текущего костюма спрайта"
 
 #: templates/help/studio/tips/blocks/create-clone.html:6
 msgid "Creates a clone (temporary duplicate) of the specified sprite"
@@ -369,7 +430,7 @@ msgstr "Создает клон (временный дубликат) указа
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
-msgstr ""
+msgstr "Выберите, какой спрайт клонировать, в выпадающем меню."
 
 #: templates/help/studio/tips/blocks/create-clone.html:14
 #, python-format
@@ -377,25 +438,29 @@ msgid ""
 "Use <img src=\"%(url_clone_startup)s\" /> to tell the clone what to do once "
 "it's created."
 msgstr ""
+"Используйте<img src=\"%(url_clone_startup)s\" />, чтобы сообщить клону, что "
+"ему нужно сделать, сразу же после создания."
 
 #: templates/help/studio/tips/blocks/create-clone.html:16
 #: templates/help/studio/tips/blocks/delete-this-clone.html:16
 #: templates/help/studio/tips/blocks/video-motion.html:26
 msgid "Sample Script:"
-msgstr ""
+msgstr "Пример скрипта:"
 
 #: templates/help/studio/tips/blocks/create-clone.html:23
 #: templates/help/studio/tips/blocks/video-motion.html:32
 #: templates/help/studio/tips/ext/PicoBoard.html:42
 #: templates/help/studio/tips/ext/wedo1.html:56
 msgid "Troubleshooting:"
-msgstr ""
+msgstr "Устранение проблем:"
 
 #: templates/help/studio/tips/blocks/create-clone.html:25
 msgid ""
 "If you can't see the clone, move it so the original sprite doesn't cover it."
 " The clone appears in the same location as the sprite initially."
 msgstr ""
+"Если Вы не видите клон, переместите его так, чтобы спрайт-оригинал не "
+"закрывал его. Клон появляется в том же месте, где был оригинал."
 
 #: templates/help/studio/tips/blocks/create-clone.html:29
 #, python-format
@@ -403,10 +468,12 @@ msgid ""
 "Make sure you've chosen the sprite you want to clone from the menu in the "
 "<img src=\"%(url_create_clone_of)s\" /> block."
 msgstr ""
+"Убедитесь, что Вы выбрали в меню блока <img src=\"%(url_create_clone_of)s\" "
+"/> спрайт, который Вы хотите клонировать."
 
 #: templates/help/studio/tips/blocks/create-clone.html:31
 msgid "Note: The clone only lasts while the project is running."
-msgstr ""
+msgstr "Примечание: Клон живёт только, пока проект выполняется."
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
@@ -414,13 +481,15 @@ msgstr "Сообщает текущее время"
 
 #: templates/help/studio/tips/blocks/current-time.html:15
 msgid "You can select  from the menu to indicate which item you want."
-msgstr ""
+msgstr "Вы можете выбрать из меню элемент, который Вы хотите."
 
 #: templates/help/studio/tips/blocks/current-time.html:20
 msgid ""
 "To view the value of the current time, click the checkbox next to the "
 "current time."
 msgstr ""
+"Для того, чтобы узнать значение текущего времени, нажмите на чек-бокс рядом "
+"с текущим временем. "
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
@@ -428,11 +497,13 @@ msgstr "Возвращает число дней, прошедших с 1 янв
 
 #: templates/help/studio/tips/blocks/define.html:7
 msgid "Defines what the custom block will do"
-msgstr ""
+msgstr "Определяет, что будет делать дополнительный блок"
 
 #: templates/help/studio/tips/blocks/define.html:11
 msgid "The <strong>define</strong> script tells a custom block what to do:"
 msgstr ""
+"<strong>Определяющий</strong> скрипт определяет, что должен делать "
+"дополнительный блок:"
 
 #: templates/help/studio/tips/blocks/define.html:17
 msgid ""
@@ -440,6 +511,9 @@ msgid ""
 "To use them, drag copies of the input blocks into other blocks within the "
 "define script."
 msgstr ""
+"Если в Вашем блоке есть входные параметры, то они будут отображены в виде "
+"округлых сиреневых блоков. Для их использования, перетащите их копии в "
+"другие блоки внутри определяющего скрипта."
 
 #: templates/help/studio/tips/blocks/define.html:22
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:25
@@ -447,6 +521,8 @@ msgid ""
 "Note: The input blocks can <strong>only</strong> be used in the define "
 "script."
 msgstr ""
+"Примечание: Входные параметры могут быть использованы "
+"<strong>только</strong> в определяющем скрипте."
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:7
 msgid "Deletes one or all items from a list"
@@ -458,21 +534,26 @@ msgid ""
 "  number. Choosing \"last\" deletes the last item in the list. Choosing \"all\" deletes everything \n"
 "  from the list. Deleting decreases the length of the list.</p>"
 msgstr ""
+"<p>Вы можете задать, какой элемент удалить, выбрав его в выпадающем меню или"
+" набрав его номер. Выбор варианта \"последний\" приведёт к удалению "
+"последнего элемента в списке. Удаление уменьшает длину списка.</p>"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:21
 msgid ""
 "You can specify the number of the item you want to delete. For example:"
-msgstr ""
+msgstr "Вы можете задать номер элемента, который хотите удалить. Например:"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:26
 msgid ""
 "To delete the last item in the list, choose \"last\" from the pull-down "
 "menu:"
 msgstr ""
+"Для удаления последнего элемента списка, выберите \"последний\" в выпадающем"
+" меню:"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:31
 msgid "You can also choose to delete everything in the list:"
-msgstr ""
+msgstr "Вы можете удалить все элементы списка:"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:7
 msgid "Deletes the current clone"
@@ -481,10 +562,11 @@ msgstr "Удаляет текущий клон"
 #: templates/help/studio/tips/blocks/delete-this-clone.html:11
 msgid "Place this block in a script after the clone is done its actions."
 msgstr ""
+"Вставьте этот блок в скрипт, после того, как клон выполнит свои действия."
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:14
 msgid "All clones are automatically deleted when the program is stopped."
-msgstr ""
+msgstr "Все клоны удаляются автоматически при остановке программы."
 
 #: templates/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
