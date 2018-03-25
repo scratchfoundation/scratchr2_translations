@@ -108,7 +108,7 @@ msgstr "若要檢視回答的值，可以將答案積木旁的方塊打勾。"
 msgid ""
 "Asks a question on the screen and stores keyboard input in the <img "
 "src=\"%(url_answer)s\" />"
-msgstr ""
+msgstr "問一個問題，並顯示在舞台上，使用者在輸入答案後，會把答案存在 <img src=\"%(url_answer)s\" />。"
 
 #: templates/help/studio/tips/blocks/ask-and-wait.html:14
 msgid ""
@@ -124,6 +124,9 @@ msgid ""
 "balloon on the screen. The program waits as the user types in a response, "
 "until the Enter key is pressed or the check mark is clicked."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" /> 用來發問，並儲存鍵盤輸入的內容到 <img "
+"src=\"%(url_answer)s\" /> 裡，問題會用對話框的方式出現在畫面上，並會自動側偵測使用者是否輸入內容，直到他們按下 Enter "
+"或是 勾取方塊後才會關閉對話視窗。"
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:9
 msgid "Reports Stage's current backdrop name"
@@ -134,14 +137,14 @@ msgstr "回傳舞台目前使用背景的名稱。"
 msgid ""
 "The title next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_name)s\" />"
-msgstr ""
+msgstr "背景列表裡，縮圖下方的標題字即為 <img src=\"%(url_backdrop_name)s\" />。"
 
 #: templates/help/studio/tips/blocks/backdrop-number.html:17
 #, python-format
 msgid ""
 "The number next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_number)s\" />"
-msgstr ""
+msgstr "背景列表裡，縮圖旁的數字即為 <img src=\"%(url_backdrop_number)s\" />。"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:9
 msgid "Sends a message to all sprites and waits"
@@ -154,12 +157,14 @@ msgid ""
 "all sprites to tell them to do something, and wait until they all finish "
 "before continuing."
 msgstr ""
+"你可以使用 <img src=\"%(url_broadcast_and_wait)s\" /> "
+"來發送訊息給全部的角色，告訴它們要做些事了。然後等待它們做完，後面的程式就會接續下去運行。"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:22
 msgid ""
 "Click to choose which message gets sent. Choose \"new\" to type in your own "
 "message."
-msgstr ""
+msgstr "從下拉清單中選擇要發送的訊息，或是選擇「新訊息…」來創建一個。"
 
 #: templates/help/studio/tips/blocks/broadcast.html:9
 msgid "Sends a message to all sprites"
@@ -172,6 +177,8 @@ msgid ""
 " background). This is useful if you want to tell other sprites when to do "
 "something."
 msgstr ""
+"<img src=\"%(url_broadcast)s\"/> "
+"用來發出訊息給所有的角色（還有背景）。如果你想要讓其它角色在某個時機做些事情的話，這個功能非常有用。"
 
 #: templates/help/studio/tips/blocks/broadcast.html:22
 #, python-format
@@ -194,6 +201,10 @@ msgid ""
 "<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
 "Try these effects with numbers such as 10, 35, or 100. Or try negative numbers, such as -50.\n"
 msgstr ""
+"\n"
+"點擊以從下拉清單選擇一個效果：\n"
+"<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
+"試著在積木中的方塊輸入一些數字，像是 10、35、100，或是輸入負值，例如 -50 。\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:25
 #, python-format
@@ -201,8 +212,8 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> to clear "
 "all graphic effects. Or, use <img src=\"%(url_clear_graphic_effects)s\"/>"
 msgstr ""
-"點擊停止旗號<img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/>清除所有特效。或者使用<img"
-" src=\"%(url_clear_graphic_effects)s\"/>"
+"點擊停止圖示 <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> 以清除所有特效。或者使用 "
+"<img src=\"%(url_clear_graphic_effects)s\"/>"
 
 #: templates/help/studio/tips/blocks/change-size.html:8
 msgid "Changes sprite's size by specified amount"
@@ -323,7 +334,7 @@ msgstr "用來清除角色上所有添加的圖形效果。"
 msgid ""
 "<img src=\"%(url_clear_graphic_effects)s\" /> clears all the graphic effects"
 " for this sprite."
-msgstr "<img src=\"%(url_clear_graphic_effects)s\" />清除這個角色的所有圖形特效"
+msgstr "<img src=\"%(url_clear_graphic_effects)s\" /> 可以清除這個角色的所有圖形效果。"
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
@@ -347,7 +358,7 @@ msgstr "當分身建立時，程式會立即被觸發。"
 msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are "
 "created."
-msgstr ""
+msgstr "分身也會回應給所有在創建之後觸發的「當…」積木。"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
@@ -386,7 +397,7 @@ msgstr "用來建立指定角色的分身。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
-msgstr "從下拉清單中選擇要建立哪一個角色的分身"
+msgstr "從下拉清單中選擇要建立哪一個角色的分身。"
 
 #: templates/help/studio/tips/blocks/create-clone.html:14
 #, python-format
@@ -423,7 +434,7 @@ msgstr "請確定您已經在 <img src=\"%(url_create_clone_of)s\" /> 積木的�
 
 #: templates/help/studio/tips/blocks/create-clone.html:31
 msgid "Note: The clone only lasts while the project is running."
-msgstr "注意：分身只有在專案執行期間才有效。"
+msgstr "注意：分身只有在專案運行期間才有效。"
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
@@ -437,7 +448,7 @@ msgstr "您可以從清單中選取您要的項目。"
 msgid ""
 "To view the value of the current time, click the checkbox next to the "
 "current time."
-msgstr ""
+msgstr "若要監控當前的時間，可以點擊積木旁的核選方塊。"
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
@@ -456,7 +467,7 @@ msgid ""
 "If your block has inputs, they will appear as rounded, light purple blocks. "
 "To use them, drag copies of the input blocks into other blocks within the "
 "define script."
-msgstr ""
+msgstr "在定義積木中，輸入方塊是較淺的紫色。若要使用這個內容，只要將這個輸入方塊拖曳到程式內的其他積木中。"
 
 #: templates/help/studio/tips/blocks/define.html:22
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:25
@@ -482,17 +493,17 @@ msgstr ""
 #: templates/help/studio/tips/blocks/delete-from-list.html:21
 msgid ""
 "You can specify the number of the item you want to delete. For example:"
-msgstr ""
+msgstr "你可以指定要刪除的項目的編號。例如："
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:26
 msgid ""
 "To delete the last item in the list, choose \"last\" from the pull-down "
 "menu:"
-msgstr ""
+msgstr "如果要刪除清單中最後一個項目，可以從下拉清單中選擇「末」："
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:31
 msgid "You can also choose to delete everything in the list:"
-msgstr ""
+msgstr "你也可以刪除清單中所有的項目："
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:7
 msgid "Deletes the current clone"
@@ -512,24 +523,24 @@ msgstr "回傳角色當前的面朝方向角度。"
 
 #: templates/help/studio/tips/blocks/direction.html:15
 msgid "<b>direction</b> tells which way the sprite is heading."
-msgstr ""
+msgstr "<b>方向</b> 可以告訴你當前角色所面對的方向。"
 
 #: templates/help/studio/tips/blocks/direction.html:17
 #, python-format
 msgid ""
 "To see a sprite's direction, click <img "
 "src=\"%(STATIC_URL)s/images/help/info.gif\">:"
-msgstr ""
+msgstr "如果要檢視角色的面向，點擊 <img src=\"%(STATIC_URL)s/images/help/info.gif\">："
 
 #: templates/help/studio/tips/blocks/direction.html:20
 msgid "You can drag the blue line to change direction."
-msgstr ""
+msgstr "你可以拖曳藍色線條來改變方向。"
 
 #: templates/help/studio/tips/blocks/direction.html:24
 msgid ""
 "To display a sprite's direction on the Stage, click the checkbox in the "
 "palette:"
-msgstr ""
+msgstr "如果要顯示角色在舞台上的方向，可以勾選積木旁的方塊："
 
 #: templates/help/studio/tips/blocks/distance-to.html:7
 msgid "Reports distance from the specified sprite or mouse-pointer"
@@ -537,7 +548,7 @@ msgstr "回傳與鼠標（或指定角色）之間的距離值。"
 
 #: templates/help/studio/tips/blocks/distance-to.html:15
 msgid "Select from the pull-down menu to choose"
-msgstr ""
+msgstr "從下拉清單中選取"
 
 #: templates/help/studio/tips/blocks/divide.html:7
 msgid "Divides first number by second number"
@@ -600,7 +611,7 @@ msgstr ""
 msgid ""
 "To make the crab hide behind the rock, tell it to <img "
 "src=\"%(url_go_back_1layer)s\" />"
-msgstr ""
+msgstr "要讓螃蟹藏在石頭後，可以使用 <img src=\"%(url_go_back_1layer)s\" />。"
 
 #: templates/help/studio/tips/blocks/go-to-front.html:7
 msgid "Moves sprite in front of all other sprites"
@@ -641,7 +652,7 @@ msgstr "再來，點擊該積木。"
 msgid ""
 "The current sprite will jump to the <b>x y</b> location of the mouse-pointer"
 " or of the sprite you choose."
-msgstr ""
+msgstr "當前的角色將會定位到鼠標所處位置，或者是定位到所選角色的 <b>x y</b> 座標上。"
 
 #: templates/help/studio/tips/blocks/greater-than.html:7
 msgid "Reports true if first value is greater than second"
@@ -703,21 +714,21 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/insert-list.html:23
 msgid "You can indicate where in the list you want to add an item."
-msgstr ""
+msgstr "你可以指定清單項目要添加的位置。"
 
 #: templates/help/studio/tips/blocks/insert-list.html:26
 #, python-format
 msgid ""
 "<img src=\"%(url_insert_scoreboard)s\" /> inserts item at the specified "
 "place in the list."
-msgstr ""
+msgstr "<img src=\"%(url_insert_scoreboard)s\" /> 插入一個項目到清單中的指定位置。"
 
 #: templates/help/studio/tips/blocks/insert-list.html:32
 #, python-format
 msgid ""
 "<img src=\"%(url_insert_greetings)s\" /> inserts item at a random place in "
 "the list."
-msgstr ""
+msgstr "<img src=\"%(url_insert_greetings)s\" /> 插入一個項目到清單中的任意位置。"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:7
 msgid "Reports the item at the specifed position in the list"
@@ -737,13 +748,13 @@ msgstr ""
 msgid ""
 "The item block reports the value of the item at the specified place on the "
 "list."
-msgstr ""
+msgstr "項目積木會回傳清單中指定位置的項目的值。"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:24
 msgid ""
 "You can fit an item block into other blocks, for example: say, switch to "
 "costume, play sound, or broadcast."
-msgstr ""
+msgstr "你可以將項目積木放到其它的積木中，像是角色、播放音效，或是廣播。"
 
 #: templates/help/studio/tips/blocks/join.html:7
 msgid "Concatenates (combines) strings"
@@ -760,6 +771,8 @@ msgid ""
 "src=\"%(url_when_key_pressed)s\" /> when you want to keep, for example, the "
 "space key pressed continuously."
 msgstr ""
+"若你想要持續的偵測，可使用 <img src=\"%(url_key_pressed)s\" /> 來取代 <img "
+"src=\"%(url_when_key_pressed)s\" /> 。"
 
 #: templates/help/studio/tips/blocks/length-of-list.html:7
 msgid "Reports how many items are in the list"
@@ -767,13 +780,13 @@ msgstr "回傳清單中的項目數量。"
 
 #: templates/help/studio/tips/blocks/length-of-list.html:15
 msgid "This block reports how many items are currently in a list."
-msgstr ""
+msgstr "這個積木會回傳清單中當前有多少的項目。"
 
 #: templates/help/studio/tips/blocks/length-of-list.html:20
 msgid ""
 "The number is the same as the length shown at the bottom of the list "
 "monitor."
-msgstr ""
+msgstr "這個數量會和清單監控視窗底部的數字一樣。"
 
 #: templates/help/studio/tips/blocks/length-of.html:7
 msgid "Reports the number of letters in a string"
@@ -802,6 +815,8 @@ msgid ""
 "list. If the item matches exactly, then it reports true. If not, it reports "
 "false."
 msgstr ""
+"<img src=\"%(url_list_contains_thing)s\" /> 回傳清單項目內容。如果其中有一項符合條件，就回傳 "
+"true，如果沒有符合的項目，就回傳 false。"
 
 #: templates/help/studio/tips/blocks/list.html:7
 msgid "Reports all the items in the list"
@@ -818,18 +833,18 @@ msgstr ""
 #: templates/help/studio/tips/blocks/list.html:18
 msgid ""
 "Click the checkbox (next to the block) to show the monitor on the stage:"
-msgstr ""
+msgstr "點擊核選方塊（在積木旁），就可以在舞台上顯示監控視窗："
 
 #: templates/help/studio/tips/blocks/list.html:24
 #, python-format
 msgid ""
 "The <img src=\"%(url_list)s\" /> block reports all the items in a list. For "
 "individual items, use this block:"
-msgstr ""
+msgstr "<img src=\"%(url_list)s\" /> 積木會回傳清單中的所有項目，若是要單個項目，可以使用這個積木："
 
 #: templates/help/studio/tips/blocks/list.html:29
 msgid "To delete or rename a list, right click on the list."
-msgstr "若要刪除或重新命名清單，請右鍵點擊清單"
+msgstr "若要刪除或重新命名清單，請右鍵點擊清單。"
 
 #: templates/help/studio/tips/blocks/loudness.html:7
 msgid ""
@@ -840,37 +855,37 @@ msgstr "回傳從麥克風裝置中測得的音量（1 至 100）。"
 #: templates/help/studio/tips/blocks/loudness.html:15
 msgid ""
 "To view the value of size, click the checkbox next to the loudness block."
-msgstr ""
+msgstr "如果要檢視值的大小，可以將聲音響度旁的方塊打勾。"
 
 #: templates/help/studio/tips/blocks/loudness.html:17
 msgid ""
 "Note: Your computer must have a working microphone in order for this block "
 "to work."
-msgstr ""
+msgstr "注意：你的電腦必須要有麥克風設備，這個積木才能正常運作。"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:8
 #, python-format
 msgid ""
 "You can create a custom block with inputs, for example: <img "
 "src=\"%(url_jump_10)s\"/>"
-msgstr ""
+msgstr "你可以建立一個裡頭有輸入方塊的自訂積木，例如： <img src=\"%(url_jump_10)s\"/>"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:13
 msgid "Click \"Make a Block\" to see this dialog box:"
-msgstr ""
+msgstr "點擊「添加函式積木」，就可以看到這個對話視窗："
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:16
 msgid ""
 "Click <strong>Options</strong> to add inputs. For example, add a number "
 "input:"
-msgstr ""
+msgstr "點擊<strong>選項</strong>以添加輸入，舉例來說，添加一個數字輸入方塊："
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:22
 msgid ""
 "In the <strong>define</strong> block, inputs will appear as rounded, light "
 "purple blocks. To use them, drag copies of the input blocks into other "
 "blocks within the define script."
-msgstr ""
+msgstr "在<strong>定義</strong>積木裡，輸入方塊是較淺的紫色。若要使用這個內容，只要將這個輸入方塊拖曳到程式內的其他積木中。"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:29
 msgid ""
@@ -886,30 +901,30 @@ msgstr "添加函式積木"
 
 #: templates/help/studio/tips/blocks/make-a-block.html:12
 msgid "Click \"Make a Block\" to get this dialog box:"
-msgstr ""
+msgstr "點擊「添加函式積木」，就可以看到這個對話視窗："
 
 #: templates/help/studio/tips/blocks/make-a-block.html:16
 msgid "Click inside the block to edit its name."
-msgstr ""
+msgstr "在積木裡頭點一下，就可以編輯它的名稱。"
 
 #: templates/help/studio/tips/blocks/make-a-block.html:23
 #, python-format
 msgid ""
 "When you click OK, the new block will appear in <img "
 "src=\"%(url_more_blocks)s\" /> :"
-msgstr ""
+msgstr "當你點擊了確定，新的積木就會出現在 <img src=\"%(url_more_blocks)s\" />："
 
 #: templates/help/studio/tips/blocks/make-a-block.html:29
 msgid ""
 "A <strong>define</strong> block will appear in Scripts. Use "
 "<strong>define</strong> to tell the custom block what to do:"
-msgstr ""
+msgstr "一個<strong>定義</strong>積木會在程式區出現。使用<strong>定義</strong>來命令自訂積木要執行些什麼："
 
 #: templates/help/studio/tips/blocks/make-a-block.html:35
 msgid ""
 "See also: <a href=\"../make-a-block-with-inputs/\">Make a Block with "
 "Inputs</a>"
-msgstr ""
+msgstr "相關內容請見：<a href=\"../make-a-block-with-inputs/\">添加函式積木</a>"
 
 #: templates/help/studio/tips/blocks/make-a-list.html:7
 msgid "Click to create and name a new list"
@@ -927,11 +942,11 @@ msgstr ""
 msgid ""
 "You have the option to make the variable available to all sprites or to just"
 " the selected sprite."
-msgstr ""
+msgstr "你可以設定是否允許變數套用在其他角色中。"
 
 #: templates/help/studio/tips/blocks/make-a-list.html:22
 msgid "Once you create a list, eight blocks will appear."
-msgstr ""
+msgstr "一旦你創建了一個清單，就會出現 8 個相關的積木。"
 
 #: templates/help/studio/tips/blocks/make-a-variable.html:7
 msgid "Click to create and name a new variable"
@@ -939,7 +954,7 @@ msgstr "點擊以建立一個新變數"
 
 #: templates/help/studio/tips/blocks/make-a-variable.html:15
 msgid "Once you create a variable, five blocks will appear:"
-msgstr ""
+msgstr "一旦你創建了一個變數，5 個相關的積木就會出現："
 
 #: templates/help/studio/tips/blocks/make-a-variable.html:20
 msgid ""
@@ -961,6 +976,8 @@ msgid ""
 "numbers. For example, <img src=\"%(url_mod_ex2)s\" /> is 5 (143 divided by 6"
 " is 23, and the remainder is 5)."
 msgstr ""
+"<img src=\"%(url_mod)s\" /> 用來計算二數相除之後的餘數。 例如 <img src=\"%(url_mod_ex2)s\" "
+"/> 會回傳 5 ，你可以用這個方式來判別是否整除。"
 
 #: templates/help/studio/tips/blocks/mouse-down.html:9
 msgid "Reports true if mouse button is pressed"
@@ -971,7 +988,7 @@ msgstr "是否滑鼠鍵被按下，如果是，就回傳 true。"
 msgid ""
 "<img src=\"%(url_mouse_down)s\" /> reports true if the mouse button is "
 "clicked anywhere on the screen."
-msgstr ""
+msgstr "<img src=\"%(url_mouse_down)s\" /> 會自動偵測滑鼠鍵是不是在舞台畫面上被點擊了。"
 
 #: templates/help/studio/tips/blocks/mouse-x.html:7
 #: templates/help/studio/tips/blocks/mouse-y.html:7
@@ -1040,18 +1057,18 @@ msgstr "回傳兩數相乘的結果"
 
 #: templates/help/studio/tips/blocks/next-costume.html:10
 msgid "Switches to the next costume in the sprite's costume list"
-msgstr ""
+msgstr "切換造型列表中的下一個造型"
 
 #: templates/help/studio/tips/blocks/next-costume.html:21
 #, python-format
 msgid "To see a sprite's costumes, click <img src=\"%(url_costumes_tab)s\"/>."
-msgstr ""
+msgstr "如果要檢視角色的造型，可以點擊 <img src=\"%(url_costumes_tab)s\"/>。"
 
 #: templates/help/studio/tips/blocks/next-costume.html:24
 msgid ""
 "You can rearrange the order of the costumes in the list by dragging and "
 "dropping."
-msgstr ""
+msgstr "直接在列表上拖曳縮圖，就可以重新排列角色造型的順序。"
 
 #: templates/help/studio/tips/blocks/next-costume.html:29
 #, python-format
@@ -1059,6 +1076,8 @@ msgid ""
 "<p>When <img src=\"%(url_next_costume_block)s\" /> gets to the end of the "
 "list, it goes back to the top.</p>"
 msgstr ""
+"</p>當使用 <img src=\"%(url_next_costume_block)s\" /> "
+"將角色的造型切換到最後一個時，它會自動從第一個造型繼續。</p>"
 
 #: templates/help/studio/tips/blocks/nextbackdrop.html:10
 msgid ""
@@ -1071,20 +1090,20 @@ msgstr ""
 #: templates/help/studio/tips/blocks/nextbackdrop.html:18
 #, python-format
 msgid "To see a stage's backdrops, click <img src=\"%(url_backdrop_tab)s\"/>."
-msgstr ""
+msgstr "如果要檢視舞台有哪些背景，可以點擊 <img src=\"%(url_backdrop_tab)s\"/>。"
 
 #: templates/help/studio/tips/blocks/nextbackdrop.html:20
 msgid ""
 "You can rearrange the order of the backdrops in the list by dragging and "
 "dropping."
-msgstr ""
+msgstr "直接在列表上拖曳縮圖，就可以重新排列舞台背景的順序。"
 
 #: templates/help/studio/tips/blocks/nextbackdrop.html:25
 #, python-format
 msgid ""
 "When <img src=\"%(url_nextbackdrop)s\" /> gets to the end of the list, it "
 "goes back to the top."
-msgstr ""
+msgstr "當使用 <img src=\"%(url_nextbackdrop)s\" /> 將舞台的背景切換到最後一個時，它會自動從第一個背景繼續。"
 
 #: templates/help/studio/tips/blocks/not.html:7
 msgid "Reports true if condition is false; reports false if condition is true"
@@ -1118,13 +1137,13 @@ msgstr "從指定的範圍內隨機挑選其中一個數值。"
 #, python-format
 msgid ""
 "<img src=\"%(url_pick_random_ex2)s\" /> picks a random number from 1 to 10."
-msgstr "<img src=\"%(url_pick_random_ex2)s\" />隨機取一個亂數從1到10"
+msgstr "<img src=\"%(url_pick_random_ex2)s\" /> 用來從 1 到 10 之間隨機取一個數。"
 
 #: templates/help/studio/tips/blocks/pick-random.html:20
 msgid ""
 "Click to have a sprite say a random number. Click again to get another "
 "random number."
-msgstr ""
+msgstr "點擊後角色就會說出一個隨機數字，再點擊一次的話，會說出另一個。"
 
 #: templates/help/studio/tips/blocks/play_drum.html:9
 msgid "Plays a drum sound for a specified number of beats"
@@ -1132,7 +1151,7 @@ msgstr "操作一個可以做拍點的樂器，並打出指定節拍。"
 
 #: templates/help/studio/tips/blocks/play_drum.html:19
 msgid "Choose a drum sound from the list"
-msgstr ""
+msgstr "從清單中選擇一個演奏樂器"
 
 #: templates/help/studio/tips/blocks/play_drum.html:24
 msgid "Or, type in a number from 1 to 22"
@@ -1142,20 +1161,20 @@ msgstr "或者是輸入一個介於1到22之間的數字"
 #, python-format
 msgid ""
 "Note: the length of a beat can be set with <img src=\"%(url_set_tempo)s\" />"
-msgstr ""
+msgstr "注意：拍子的長度可以透過 <img src=\"%(url_set_tempo)s\" /> 積木來調節。"
 
 #: templates/help/studio/tips/blocks/playnote.html:17
 msgid "Type in a number from 0 to 127 (60 is middle C)"
-msgstr ""
+msgstr "輸入一個數字，範圍介於 0 到 127（60 代表中音 C）"
 
 #: templates/help/studio/tips/blocks/playnote.html:21
 msgid "Use higher numbers for higher pitches"
-msgstr ""
+msgstr "數字愈大，音階愈高"
 
 #: templates/help/studio/tips/blocks/playnote.html:28
 #, python-format
 msgid "The length of a beat can be set with <img src=\"%(url_set_tempo)s\" />."
-msgstr ""
+msgstr "拍子的長度可以透過 <img src=\"%(url_set_tempo)s\" /> 積木來調節。"
 
 #: templates/help/studio/tips/blocks/playsound.html:10
 msgid "Plays a sound"
@@ -1167,7 +1186,7 @@ msgstr "從清單中選擇一個音效："
 
 #: templates/help/studio/tips/blocks/playsound.html:23
 msgid "To add a sound, click the Sounds tab:"
-msgstr ""
+msgstr "如果要添加一個聲音，可以點擊音效頁籤："
 
 #: templates/help/studio/tips/blocks/playsound.html:31
 #: templates/help/studio/tips/blocks/playsound_untildone.html:20
@@ -1175,7 +1194,7 @@ msgstr ""
 msgid ""
 "<img src=\"%(url_playsound)s\"/> starts playing a sound and continues to the"
 " next block immediately."
-msgstr ""
+msgstr "<img src=\"%(url_playsound)s\"/> 會播放音效，然後馬上接著執行下一個指令。"
 
 #: templates/help/studio/tips/blocks/playsound.html:35
 #: templates/help/studio/tips/blocks/playsound_untildone.html:24
@@ -1183,11 +1202,11 @@ msgstr ""
 msgid ""
 "<img src=\"%(url_playsound_tildone)s\"/> waits until the sound is finished "
 "playing before continuing to the next block."
-msgstr ""
+msgstr "<img src=\"%(url_playsound_tildone)s\"/> 則會等到播放的音效結束後，才會繼續下一個指令。"
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:11
 msgid "Plays a sound and waits until the sound is finished"
-msgstr ""
+msgstr "播放一個音效，然後等到這個聲音播放結束"
 
 #: templates/help/studio/tips/blocks/point-direction.html:7
 msgid "Set the direction of the current sprite"
@@ -1195,7 +1214,7 @@ msgstr "設定當前角色面對的方向"
 
 #: templates/help/studio/tips/blocks/point-direction.html:15
 msgid "Click to choose from the menu:"
-msgstr ""
+msgstr "點擊以從清單中選擇一個："
 
 #: templates/help/studio/tips/blocks/point-direction.html:19
 msgid "Or, type in a number:"
@@ -1206,7 +1225,7 @@ msgstr "或者是輸入一個數字："
 msgid ""
 "To see a sprite's current direction, click the <img "
 "src=\"%(STATIC_URL)s/images/help/info.gif\"/>"
-msgstr ""
+msgstr "如果要檢視角色的面向，點擊 <img src=\"%(STATIC_URL)s/images/help/info.gif\"/>"
 
 #: templates/help/studio/tips/blocks/point-towards.html:7
 msgid "Points sprite towards mouse-pointer or another sprite"
@@ -1214,7 +1233,7 @@ msgstr "讓角色始終面朝鼠標或是其他角色"
 
 #: templates/help/studio/tips/blocks/point-towards.html:16
 msgid "<b>point towards</b> changes the direction of the current sprite."
-msgstr ""
+msgstr "<b>面朝</b> 積木用來改變當前角色面對的方向。"
 
 #: templates/help/studio/tips/blocks/point-towards.html:19
 msgid "You can choose from the menu:"
@@ -1222,7 +1241,7 @@ msgstr "你可以從清單中選擇："
 
 #: templates/help/studio/tips/blocks/point-towards.html:23
 msgid "The menu includes any other sprites in the project."
-msgstr ""
+msgstr "該選單包含了專案中的所有角色。"
 
 #: templates/help/studio/tips/blocks/repeat-until.html:7
 msgid "Repeat blocks that follow until condition is true"
@@ -1254,7 +1273,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/replace-list.html:21
 msgid "You can choose where in a list to put an item. For example:"
-msgstr ""
+msgstr "你可以選擇要將項目放入哪個清單，例如："
 
 #: templates/help/studio/tips/blocks/reset-timer.html:7
 msgid "Sets the timer to zero"
@@ -1262,7 +1281,7 @@ msgstr "用來將計時器重置（重新歸零）。"
 
 #: templates/help/studio/tips/blocks/rest.html:8
 msgid "Rests (plays nothing) for specified number of beats"
-msgstr ""
+msgstr "演奏休息，就是什麼都不播放的意思，這樣一來就可以利用空拍來製作出節奏感"
 
 #: templates/help/studio/tips/blocks/round.html:9
 msgid "Reports closest integer to a number"
@@ -1276,6 +1295,8 @@ msgid ""
 "<img src=\"%(url_round_5_1)s\" /> is 5, and <img src=\"%(url_round_5_6)s\" "
 "/> is 6."
 msgstr ""
+"<img src=\"%(url_round)s\" /> 會將指定的數字取概數（四捨五入到整數），例如：<img "
+"src=\"%(url_round_5_1)s\" /> 會回傳 5，<img src=\"%(url_round_5_6)s\" /> 會回傳 6。"
 
 #: templates/help/studio/tips/blocks/say-for-seconds.html:8
 msgid "Say words in a speech bubble for a number of seconds"
@@ -1307,14 +1328,14 @@ msgstr "你可以在積木中輸入任何文字，這些內容會以對話泡泡
 msgid ""
 "To remove the speech bubble, delete the text and click <img "
 "src=\"%(url_say)s\" />."
-msgstr ""
+msgstr "如果要清除畫面上的對話泡泡，可以刪除積木裡的文字並點擊 <img src=\"%(url_say)s\" />。"
 
 #: templates/help/studio/tips/blocks/say.html:20
 #, python-format
 msgid ""
 "To remove the speech bubble, click an empty say block: <img "
 "src=\"%(url_say)s\" />."
-msgstr ""
+msgstr "如果要移除對話泡泡，可以點擊一個空的說出積木：<img src=\"%(url_say)s\" />。"
 
 #: templates/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
@@ -1332,7 +1353,7 @@ msgstr "點擊以從清單中選擇一個效果："
 msgid ""
 "Try typing in different numbers between -100 and 100. (Some of the effects "
 "range from 0 to 100.)"
-msgstr ""
+msgstr "試試輸入不同的數字，範圍是 -100 到 100（某些效果的範圍則是 0 到 100）。"
 
 #: templates/help/studio/tips/blocks/set-size.html:7
 #, python-format
@@ -1425,15 +1446,15 @@ msgstr ""
 #: templates/help/studio/tips/blocks/setinstrument.html:8
 msgid ""
 "Sets the type of instrument that the sprite uses for <b>play note</b> blocks"
-msgstr ""
+msgstr "若角色上用了<b>演奏音階</b>的積木時，就可以使用此積木設定要套用什麼樂器（音色）的音階。"
 
 #: templates/help/studio/tips/blocks/setinstrument.html:16
 msgid "Each sprite has its own instrument."
-msgstr ""
+msgstr "每個角色都能設定自己的演奏樂器。"
 
 #: templates/help/studio/tips/blocks/setinstrument.html:19
 msgid "Click to choose from the menu. Or, type in a number from 1 to 21."
-msgstr ""
+msgstr "點擊以從清單中選擇一個，或者是輸入一個介於 1 到 21 之間的數字。"
 
 #: templates/help/studio/tips/blocks/setpencolor.html:8
 msgid "Sets pen's color, based on choice from color picker"
@@ -1441,7 +1462,7 @@ msgstr "設定畫筆筆跡的色彩。"
 
 #: templates/help/studio/tips/blocks/setpencolor.html:21
 msgid "Picking the color also changes the pen shade."
-msgstr ""
+msgstr "在揀色時，同時也會改變筆跡的亮度。"
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:7
 msgid "Sets pen's color to specified value"
@@ -1456,12 +1477,17 @@ msgid ""
 " number 130 is <font color = blue>blue</font>, and number 170 is <font color"
 " = magenta>magenta</font>."
 msgstr ""
+"你也可以用變數來作為筆跡顏色的值，像是 <img src=\"%(url_y_position)s\" /> 或是某個數值。另外顏色值範圍為 0 至 "
+"200，包含整個色相環的顏色，其中， <font color = red>0 代表 紅</font>、 <font color = green>70 "
+"代表 綠</font>、 <font color = blue>130 代表 藍</font>、 <font color = magenta>170 "
+"代表品紅</font>。"
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:17
 msgid ""
 "Pen_color=0 at red end of rainbow, pen_color=100 at blue end of rainbow. "
 "Ranges from 0 to 200 to go around the color wheel."
 msgstr ""
+"pen_color=0 位於彩虹红色的一端，pen_color=100 位於彩虹藍色的一端。範圍 0 到 200 的數字代表色相環一圈不同的顏色。"
 
 #: templates/help/studio/tips/blocks/setpensize.html:9
 msgid "Sets pen's thickness"
@@ -1475,13 +1501,13 @@ msgstr "用來設定角色反彈時，角色造型的迴轉方式。"
 msgid ""
 "Select \"left-right\" from the drop-down menu to make the sprite only rotate"
 " horizontally."
-msgstr ""
+msgstr "從下拉清單中選擇「左-右」，角色反彈時會以水平向翻轉。"
 
 #: templates/help/studio/tips/blocks/setrotation.html:18
 msgid ""
 "Select \"all around\" from the drop-down menu to make the sprite flip "
 "vertically."
-msgstr ""
+msgstr "若選擇「不設限」，角色反彈時會依面對的方向直接翻轉。"
 
 #: templates/help/studio/tips/blocks/setrotation.html:22
 msgid ""
@@ -1536,13 +1562,13 @@ msgstr "回傳角色目前的顯示尺寸（與原尺寸相比的比例%%）"
 msgid ""
 "<img src=\"%(url_size)s\" /> reports the %% of the original size of the "
 "object"
-msgstr ""
+msgstr "<img src=\"%(url_size)s\" /> 會回傳物件原始尺寸的 %%"
 
 #: templates/help/studio/tips/blocks/size.html:21
 msgid ""
 "To view the value of size, click the checkbox next to the block in the "
 "palette."
-msgstr ""
+msgstr "若要監控尺寸值，可以勾選積木旁的方塊。"
 
 #: templates/help/studio/tips/blocks/square.html:7
 msgid "Reports result of selected function"
@@ -1560,7 +1586,7 @@ msgstr ""
 msgid ""
 "This block performs a mathematical function. Choose the math functions from "
 "the block's drop down menu."
-msgstr ""
+msgstr "這個積木用來計算數學函數，你可以從積木裡的下拉清單選擇用套用的函數。"
 
 #: templates/help/studio/tips/blocks/stamp.html:8
 msgid "Stamps the sprite's image onto the Stage"
@@ -1572,11 +1598,11 @@ msgid ""
 "A stamp is only a temporary image of the sprite that is drawn on the Stage. "
 "It can be drawn over or cleared using the <img src=\"%(url_clear)s\" /> "
 "block."
-msgstr ""
+msgstr "蓋章只是將角色的圖像暫時的繪製到舞台上。它可以被重複使用，或是用 <img src=\"%(url_clear)s\" /> 積木來清除。"
 
 #: templates/help/studio/tips/blocks/stamp.html:17
 msgid "A stamp cannot move and cannot hold scripts."
-msgstr ""
+msgstr "利用蓋章製作出來的圖像並不是角色，所以無法移動，也無法有自己的程式。"
 
 #: templates/help/studio/tips/blocks/stop.html:7
 msgid "Stops all scripts in all sprites"
@@ -1606,7 +1632,7 @@ msgstr "用來改變舞台的背景，並等待程式結束。"
 
 #: templates/help/studio/tips/blocks/switch-backdrop-and-wait.html:12
 msgid "The script controls switching of scenes from the Stage."
-msgstr ""
+msgstr "這個程式可以用來控制舞台上背景的切換。"
 
 #: templates/help/studio/tips/blocks/switch-backdrop-and-wait.html:17
 #, python-format
@@ -1616,6 +1642,8 @@ msgid ""
 "src=\"%(url_when_backdrop_switches_to_backdrop1)s\" /> to finish before "
 "going to the next block."
 msgstr ""
+"<img src=\"%(url_switch_backdrop_to_backdrop1_and_wait)s\" /> 將會等到所有在 <img "
+"src=\"%(url_when_backdrop_switches_to_backdrop1)s\" /> 之後的程式運行完後，才會開始繼續執行。  "
 
 #: templates/help/studio/tips/blocks/switch-backdrop.html:7
 msgid "Switch to the specified backdrop"
@@ -1628,6 +1656,8 @@ msgid ""
 "/choose-backdrop-icon.png\">. Then, select the backdrop name from the drop-"
 "down menu: <img src=\"%(url_switch_backdrop_to)s\">"
 msgstr ""
+"首先，使用 <img src=\"%(STATIC_URL)s/images/help/choose-backdrop-icon.png\"> "
+"選擇你要的背景。 接著，從積木裡的下拉清單可以挑選其背景名稱：<img src=\"%(url_switch_backdrop_to)s\">"
 
 #: templates/help/studio/tips/blocks/switch-costume.html:8
 msgid "Switch costumes to change the look of a sprite"
@@ -1640,11 +1670,11 @@ msgstr "透過此積木，可以製作角色的動畫效果："
 #: templates/help/studio/tips/blocks/switch-costume.html:20
 #, python-format
 msgid "To see a sprite's costumes, click <img src=\"%(url_costumes_tab)s\" />"
-msgstr ""
+msgstr "如果要檢視角色的造型，可以點擊 <img src=\"%(url_costumes_tab)s\" />"
 
 #: templates/help/studio/tips/blocks/switch-costume.html:22
 msgid "Choose a costume name from the pull-down menu."
-msgstr ""
+msgstr "從下拉清單中選取一個造型。"
 
 #: templates/help/studio/tips/blocks/tempo.html:8
 msgid "Reports sprite's tempo in beats per minute"
@@ -1669,7 +1699,7 @@ msgstr "用想像泡泡的圖形來顯示一些文字，表達心中所想。"
 msgid ""
 "To remove the speech bubble, use a blank block: <img "
 "src=\"%(url_think_blank)s\" />."
-msgstr ""
+msgstr "若要在畫面上清除想像泡泡，可以在積木裡的內容保持空白：<img src=\"%(url_think_blank)s\" />。"
 
 #: templates/help/studio/tips/blocks/timer.html:7
 msgid "Reports the value of the timer in seconds"
@@ -1679,7 +1709,7 @@ msgstr "回傳計時器目前計數（單位：秒）。"
 msgid ""
 "To see the value of timer, click the checkbox next to the block. The timer "
 "is always running."
-msgstr ""
+msgstr "若要在舞台上顯示當前計數，可以勾選積木旁的方塊。另外，計時器是在專案一開啟就自動在背後計時的。"
 
 #: templates/help/studio/tips/blocks/timestamp.html:8
 msgid "Reports the number of days since 2000"
@@ -1700,7 +1730,7 @@ msgid ""
 "You can use the <img src=\"%(url_touching)s\"/> block in three different "
 "ways. Select from the pull-down menu to choose. You can check if the sprite "
 "is:"
-msgstr ""
+msgstr "你可以在 <img src=\"%(url_touching)s\"/> 積木裡的下拉清單選擇不同的條件："
 
 #: templates/help/studio/tips/blocks/turn-left.html:7
 msgid "Turn to the left"
@@ -1742,27 +1772,29 @@ msgstr "執行自訂積木"
 msgid ""
 "The custom block runs by calling the <strong>define</strong> script that "
 "matches the name on the block."
-msgstr ""
+msgstr "藉由呼叫對應名稱的<strong>定義</strong>程式，就可以執行自訂的函式積木。"
 
 #: templates/help/studio/tips/blocks/usedefine.html:15
 msgid "Custom blocks can make your scripts more organized and modular:"
-msgstr ""
+msgstr "函式積木可以讓你的程式更有組織、更容易模組化："
 
 #: templates/help/studio/tips/blocks/usedefine.html:18
 msgid "If your block has an input, you can type in it:"
-msgstr ""
+msgstr "如果你的積木中有個輸入類方塊，你可以在裡頭輸入些內容："
 
 #: templates/help/studio/tips/blocks/usedefine.html:23
 msgid ""
 "To edit the block, right-click (Ctrl+click on Mac) on the block and choose "
 "\"edit\" from the menu."
-msgstr ""
+msgstr "如果要編輯這個積木，在積木上點擊滑鼠右鍵（Mac 上是按著 Ctrl 點擊），並從選單中點擊「編輯」。"
 
 #: templates/help/studio/tips/blocks/usedefine.html:27
 msgid ""
 "See also: <a href=\"../make-a-block/\">Make a Block</a> and <a "
 "href=\"../define/\">Define Block</a>"
 msgstr ""
+"相關內容請見：<a href=\"../make-a-block/\">添加函式積木</a>還有<a "
+"href=\"../define/\">定義積木</a>"
 
 #: templates/help/studio/tips/blocks/username.html:7
 msgid "Reports username of the viewer"
@@ -1771,14 +1803,14 @@ msgstr "回傳瀏覽者的使用者名稱（該用戶需要登入）。"
 #: templates/help/studio/tips/blocks/username.html:15
 msgid ""
 "This block will show the username of the user currently viewing the project."
-msgstr ""
+msgstr "這個積木會顯示目前檢視這個專案的用戶名稱。"
 
 #: templates/help/studio/tips/blocks/username.html:19
 #, python-format
 msgid ""
 "If you want to save the current username, you can store it in a variable or "
 "list. For example, <img src=\"%(url_username_ex2)s\"/>"
-msgstr ""
+msgstr "如果你想儲存目前的用戶名稱，你可以用變數或清單的方式把它留下來，例如：<img src=\"%(url_username_ex2)s\"/>"
 
 #: templates/help/studio/tips/blocks/variable.html:7
 msgid "Reports value of the variable"
@@ -1787,43 +1819,43 @@ msgstr "回傳變數當前數值"
 #: templates/help/studio/tips/blocks/variable.html:15
 msgid ""
 "To see the value of the variable, click the checkbox next to the block."
-msgstr ""
+msgstr "若要檢視變數的值，可以將積木旁的方塊打勾。"
 
 #: templates/help/studio/tips/blocks/variable.html:18
 msgid "Right-click on readout to get different views:"
-msgstr ""
+msgstr "右鍵單擊讀數以獲得不同的視圖："
 
 #: templates/help/studio/tips/blocks/variable.html:21
 msgid "To delete or rename a variable, right click on the variable."
-msgstr ""
+msgstr "如果要刪除或是重新命名一個變數，右鍵點擊這個變數。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:9
 msgid ""
 "Senses how much <b>motion</b> or <b>direction</b> is currently in the video "
 "image"
-msgstr ""
+msgstr "用來感測影片當前影像的 <b>動作</b> 或 <b>方向</b>。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:13
 msgid "How to Use It:"
-msgstr ""
+msgstr "如何使用它："
 
 #: templates/help/studio/tips/blocks/video-motion.html:15
 msgid "Requires webcam."
-msgstr ""
+msgstr "需要攝影裝置。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:16
 #, python-format
 msgid ""
 "Use <img src=\"%(url_video_motion_this_sprite)s\" /> to check the amount of "
 "motion in the video under the current sprite."
-msgstr ""
+msgstr "使用 <img src=\"%(url_video_motion_this_sprite)s\" /> 來檢查在當前角色下動作的值。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:18
 #, python-format
 msgid ""
 "Use <img src=\"%(url_video_motion_stage)s\" /> to check the amount of motion"
 " over the entire video image."
-msgstr ""
+msgstr "使用 <img src=\"%(url_video_motion_stage)s\" /> 來檢查整個影像的動作的值。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:20
 #, python-format
@@ -1837,11 +1869,11 @@ msgstr ""
 msgid ""
 "Use <img src=\"%(url_video_direction_stage)s\" />  to check the direction of"
 " motion in the video image."
-msgstr ""
+msgstr "使用 <img src=\"%(url_video_direction_stage)s\" /> 來檢查整個影像的方向的值。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:34
 msgid "Make sure the video camera is on."
-msgstr ""
+msgstr "確定攝影裝置是開啟的。"
 
 #: templates/help/studio/tips/blocks/video-motion.html:35
 #, python-format
@@ -1851,7 +1883,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/video-motion.html:36
 msgid "Click the checkbox to see the current value:"
-msgstr ""
+msgstr "點擊核選方塊（在積木旁），就可以檢視當前的值："
 
 #: templates/help/studio/tips/blocks/volume.html:9
 msgid "Reports sprite's sound volume"
@@ -1878,6 +1910,8 @@ msgid ""
 "src=\"%(url_wait_until)s\" /> to keep checking, put the whole stack inside a"
 " forever block."
 msgstr ""
+"注意 <img src=\"%(url_wait_until)s\" /> "
+"只會依循進行一次的判定，也就是說，如果一次不符合條件，那麼就不會執行之後的程式。若是你希望它能持續檢查，請在程式外頭額外加上「重複無限次」積木。"
 
 #: templates/help/studio/tips/blocks/when-backdrop-switches.html:7
 msgid "Runs a script when backdrop switches to a certain background"
@@ -1885,7 +1919,7 @@ msgstr "當切換到指定背景時開始執行程式。"
 
 #: templates/help/studio/tips/blocks/when-backdrop-switches.html:13
 msgid "Once the background switches to kitchen, the sprite will say \"Now I"
-msgstr ""
+msgstr "一旦背景切換到 kitchen（廚房），角色就會說出"
 
 #: templates/help/studio/tips/blocks/when-flag-clicked.html:7
 msgid "Runs the script when the green flag is clicked"
@@ -1901,6 +1935,8 @@ msgid ""
 "<img src=\"%(url_when_i_receive_jump)s\"/></br>waits for the "
 "message</br><img src=\"%(url_broadcast_ex)s\"/>"
 msgstr ""
+"<img src=\"%(url_when_i_receive_jump)s\"/></br>會等待由下方積木發送的訊息</br><img "
+"src=\"%(url_broadcast_ex)s\"/>"
 
 #: templates/help/studio/tips/blocks/when-key-pressed.html:7
 msgid "Runs a script when a specified key is pressed"
@@ -1918,11 +1954,11 @@ msgstr "當所選的屬性（響度、計時器、影像動作）的屬性值大
 
 #: templates/help/studio/tips/blocks/when-loudness.html:12
 msgid "You can select any of the attributes from the dropdown menu."
-msgstr ""
+msgstr " 你可以從下拉清單中選用其它屬性。"
 
 #: templates/help/studio/tips/blocks/when-loudness.html:19
 msgid "After the timer reaches 10 seconds, the script will run."
-msgstr ""
+msgstr "在計時器到 10 秒時，這個程式就會運行。"
 
 #: templates/help/studio/tips/blocks/when-loudness.html:26
 msgid ""
@@ -1939,7 +1975,7 @@ msgstr "回傳另一個角色的屬性或是變數。"
 
 #: templates/help/studio/tips/blocks/x-position-sprite.html:13
 msgid "The x position of the ghost is set to the x position of Gobo."
-msgstr ""
+msgstr "這個 ghost 的 x 座標被設為和 Gobo 的 x 座標一樣。"
 
 #: templates/help/studio/tips/blocks/x-position-sprite.html:19
 msgid ""
@@ -2160,7 +2196,7 @@ msgstr ""
 #: templates/help/studio/tips/ext/pico-sensor-button-pressed.html:21
 #: templates/help/studio/tips/ext/pico-when-button-pressed.html:17
 msgid "You can select the button or one of the four inputs numbered A-D."
-msgstr ""
+msgstr "你可以選擇按鈕，或是 A-D 四個輸入值的其中一個。"
 
 #: templates/help/studio/tips/ext/pico-sensor-button-pressed.html:22
 #: templates/help/studio/tips/ext/pico-when-button-pressed.html:18
@@ -2178,7 +2214,7 @@ msgstr "回傳從 PicoBoard  感測器上偵測到的數值（0 至 100）。"
 
 #: templates/help/studio/tips/ext/pico-slider-sensor-value.html:11
 msgid "Make the sprite move up and down using the slider."
-msgstr ""
+msgstr "使用滑杆來讓角色上下移動。"
 
 #: templates/help/studio/tips/ext/pico-slider-sensor-value.html:21
 #: templates/help/studio/tips/ext/pico-when-slider.html:17
@@ -2203,7 +2239,7 @@ msgstr "當按鍵被按下，或是鱷魚夾接上 A-D 其中一個埠時，開�
 
 #: templates/help/studio/tips/ext/pico-when-button-pressed.html:12
 msgid "When the button is pressed, the script will run."
-msgstr ""
+msgstr "當按鈕被按下時，這個程式就會運行。"
 
 #: templates/help/studio/tips/ext/pico-when-slider.html:7
 msgid ""
@@ -2221,13 +2257,13 @@ msgid ""
 "into the inputs A-D. The value of the resistance sensor depends on how much "
 "electrical resistance there is between the metal ends of the alligator "
 "clips."
-msgstr ""
+msgstr "PicoBoard 裡頭有 4 對鱷魚夾以和輸入埠 A-D 連接，電阻傳感器的值取決於鱷魚夾的金屬端之間存在多少電阻。"
 
 #: templates/help/studio/tips/ext/pico-when-slider.html:20
 msgid ""
 "You can also select a <i>greater</i> or <i>less than</i> comparison from the"
 " second dropdown menu."
-msgstr ""
+msgstr "你可以在第二個下拉清單選擇<i>大於</i>或是<i>小於</i>來進行比較。"
 
 #: templates/help/studio/tips/ext/wedo-distance.html:6
 #: templates/help/studio/tips/ext/wedo2-distance.html:7
@@ -2273,14 +2309,14 @@ msgstr "啟動馬達 10 秒，期間轉向每秒切換一次。"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:17
 msgid "You can select WeDo motor(s) from the first dropdown menu:"
-msgstr ""
+msgstr "你也可以從第一個下拉清單中選擇 WeDo 馬達："
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:19
 #: templates/help/studio/tips/ext/wedo-set-power.html:19
 msgid ""
 "If you have only one motor, use the \"motor\" option, which will set the "
 "motor"
-msgstr ""
+msgstr "如果你只有一個馬達，在馬達設置選項中可以設定"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:20
 #: templates/help/studio/tips/ext/wedo-set-power.html:20
@@ -2293,7 +2329,7 @@ msgstr ""
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:21
 msgid "\"all motors\" sets the direction for all the connected motors."
-msgstr ""
+msgstr "「所有馬達」可以設定所有已連接馬達的轉向。"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:24
 msgid "You can select the direction from the second dropdown menu."
@@ -2324,7 +2360,7 @@ msgstr ""
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:21
 msgid "\"lights\" sets the lights"
-msgstr ""
+msgstr "「燈」用來設定燈"
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:22
 msgid "\"everything\" sets the power for all the connected motors and lights."
@@ -2464,13 +2500,13 @@ msgstr "當距離感測器的數值變得比指定數字大（或小）時執行
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:12
 msgid "When the distance goes under 20, the script will run."
-msgstr ""
+msgstr "當距離不到 20 時，程式就會運行。"
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:17
 msgid ""
 "You can select a <i>greater</i> or <i>less than</i> comparison from the "
 "dropdown menu."
-msgstr ""
+msgstr "你可以從下拉清單選擇<i>大於</i>或<i>小於</i>來進行比較。"
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:22
 msgid ""
@@ -5264,14 +5300,16 @@ msgid ""
 "<span class=\"lookscolor\">say Hello! for 2 secs</span> block to the Scripts"
 " area:"
 msgstr ""
+"從 <span class=\"lookscolor\">外觀</span> 類指令中拖曳出 <span class=\"lookscolor\">說出"
+" Hello! 2 秒</span> 積木到程式工作區："
 
 #: templates/help/studio/tips/howto/cardtip1.html:18
 msgid "Type \"Happy birthday!\" or your own greeting:"
-msgstr ""
+msgstr "輸入 Happy birthday（生日快樂），或者，想一個祝福的話："
 
 #: templates/help/studio/tips/howto/cardtip1.html:23
 msgid "Then, click on your block to see the cat talk."
-msgstr ""
+msgstr "接著，點擊積木讓貓說話："
 
 #: templates/help/studio/tips/howto/cardtip1.html:25
 msgid "Next, add a way to start your card"
@@ -5289,31 +5327,31 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/cardtip10.html:9
 msgid "Add a picture"
-msgstr ""
+msgstr "添加圖畫"
 
 #: templates/help/studio/tips/howto/cardtip10.html:11
 msgid "Draw a picture."
-msgstr ""
+msgstr "自行繪製新圖畫。"
 
 #: templates/help/studio/tips/howto/cardtip10.html:12
 msgid "Add an image from your computer."
-msgstr ""
+msgstr "從電腦挑選一個圖像。"
 
 #: templates/help/studio/tips/howto/cardtip10.html:13
 msgid "Take a picture."
-msgstr ""
+msgstr "用攝影裝置錄製圖像。"
 
 #: templates/help/studio/tips/howto/cardtip10.html:18
 msgid "Add effects!"
-msgstr ""
+msgstr "添加一些效果！"
 
 #: templates/help/studio/tips/howto/cardtip10.html:21
 msgid "Click the <span class=\"tab-ref\">Scripts</span> tab. Try this script:"
-msgstr ""
+msgstr "切換到 <span class=\"tab-ref\">程式</span> 頁籤，接著添加這個程式。"
 
 #: templates/help/studio/tips/howto/cardtip10.html:23
 msgid "Click the balloons in your card to see the color change."
-msgstr ""
+msgstr "點擊卡片裡的氣球，看看顏色是不是有改變。"
 
 #: templates/help/studio/tips/howto/cardtip10.html:27
 msgid "Next, share your greeting!"
@@ -5323,7 +5361,7 @@ msgstr "下一步，分享你的賀卡！"
 #: templates/help/studio/tips/howto/get-started-12.html:15
 #, python-format
 msgid "Click <img style=\"margin-bottom:-17px\" src = \"%(url_12b_share)s\">"
-msgstr ""
+msgstr "點擊 <img style=\"margin-bottom:-17px\" src = \"%(url_12b_share)s\">"
 
 #: templates/help/studio/tips/howto/cardtip11.html:17
 msgid ""
@@ -5341,6 +5379,8 @@ msgid ""
 "href=\"http://scratch.mit.edu/studios/429363/\" target=\"_blank\">Greeting "
 "Card studio!</a>"
 msgstr ""
+"你可以把你的專案加入到 <a href=\"http://scratch.mit.edu/studios/429363/\" "
+"target=\"_blank\">Greeting Card studio!</a> 創作坊"
 
 #: templates/help/studio/tips/howto/cardtip11.html:33
 msgid ""
@@ -5358,27 +5398,27 @@ msgstr "下一步？靠你囉！"
 
 #: templates/help/studio/tips/howto/cardtip12.html:5
 msgid "Now you can make another greeting card, or start a new project!"
-msgstr ""
+msgstr "你可以試著製作更多節慶的賀卡或邀請卡片。"
 
 #: templates/help/studio/tips/howto/cardtip12.html:9
 msgid "Start a new project"
-msgstr ""
+msgstr "開始一個新的專案"
 
 #: templates/help/studio/tips/howto/cardtip12.html:10
 msgid "Click File, then select New:"
-msgstr ""
+msgstr "點擊檔案，然後選擇新建專案："
 
 #: templates/help/studio/tips/howto/cardtip12.html:12
 msgid "Or, from the Scratch website, click Create:"
-msgstr ""
+msgstr "或者，在 Scratch 的網站上，點擊創造："
 
 #: templates/help/studio/tips/howto/cardtip12.html:17
 msgid "Learn more!"
-msgstr ""
+msgstr "進一步瞭解！"
 
 #: templates/help/studio/tips/howto/cardtip12.html:18
 msgid "Watch the Getting Started with Scratch video:"
-msgstr ""
+msgstr "觀看 Scratch 入門的影片："
 
 #: templates/help/studio/tips/howto/cardtip2.html:6
 #: templates/help/studio/tips/howto/hide5.html:10
@@ -5392,6 +5432,8 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/green-flag.png\"> clicked</span> block and snap"
 " it on top, like this:"
 msgstr ""
+"拖拉出 <span class=\"eventscolor\">當 <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\"> 被點擊</span> 積木，並把它黏貼到最上方，像這樣："
 
 #: templates/help/studio/tips/howto/cardtip2.html:11
 #, python-format
@@ -5399,6 +5441,8 @@ msgid ""
 "Now you can click on the green flag <img class=\"intext\" src = "
 "\"%(STATIC_URL)s/images/help/green-flag.png\"> to play the card:"
 msgstr ""
+"現在你可以點擊綠旗 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-"
+"flag.png\"> 來欣賞你的卡片："
 
 #: templates/help/studio/tips/howto/cardtip2.html:13
 msgid "Next, add a party scene"
@@ -5414,6 +5458,8 @@ msgid ""
 "Click the <img class=\"intext\" style=\"top:0\" src = "
 "\"%(STATIC_URL)s/images/help/landscape-icon.png\"> icon:"
 msgstr ""
+"點擊 <img class=\"intext\" style=\"top:0\" src = \"%(STATIC_URL)s/images/help"
+"/landscape-icon.png\"> 圖示："
 
 #: templates/help/studio/tips/howto/cardtip3.html:12
 msgid ""
@@ -5448,14 +5494,16 @@ msgid ""
 "To add a cake, click on the <img class=\"intext\" src = "
 "\"%(STATIC_URL)s/images/help/10b-sprite.png\"> icon:"
 msgstr ""
+"若要添加一個蛋糕，點擊 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-"
+"sprite.png\"> 圖示："
 
 #: templates/help/studio/tips/howto/cardtip4.html:12
 msgid "Then select the \"Cake\" sprite and click OK."
-msgstr ""
+msgstr "接著選擇 Cake（蛋糕）這個角色，然後點擊確定。"
 
 #: templates/help/studio/tips/howto/cardtip4.html:14
 msgid "In Scratch, any character or object is called a sprite."
-msgstr ""
+msgstr "在 Scratch 中，我們稱所有物件為「角色」。"
 
 #: templates/help/studio/tips/howto/cardtip4.html:18
 #, python-format
@@ -5487,7 +5535,7 @@ msgstr "接下來，在點擊蛋糕時播放音樂"
 
 #: templates/help/studio/tips/howto/cardtip5.html:7
 msgid "First, click to select the cake."
-msgstr ""
+msgstr "首先，點擊以選取蛋糕。"
 
 #: templates/help/studio/tips/howto/cardtip5.html:13
 #: templates/help/studio/tips/howto/valentine7.html:14
@@ -5496,10 +5544,12 @@ msgid ""
 "Click the <span class=\"tab-ref\">Sounds</span> tab, then click <img "
 "class=\"intext\" src = \"%(STATIC_URL)s/images/help/speaker-icon.png\">."
 msgstr ""
+"切換到 <span class=\"tab-ref\">音效</span> 頁籤，點擊 <img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/speaker-icon.png\">。"
 
 #: templates/help/studio/tips/howto/cardtip5.html:18
 msgid "Choose \"birthday\" or another sound:"
-msgstr ""
+msgstr "選擇 birthday（生日）或是其它的音效。"
 
 #: templates/help/studio/tips/howto/cardtip5.html:23
 msgid ""
@@ -5507,12 +5557,17 @@ msgid ""
 "<span class=\"soundcolor\">Sound</span> category. Drag out a <span "
 "class=\"soundcolor\">play sound</span> block:"
 msgstr ""
+"切換到 <span class=\"tab-ref\">程式</span> 頁籤，從<span "
+"class=\"soundcolor\">音效</span> 類指令中拖曳出 <span "
+"class=\"soundcolor\">播放音效</span>積木："
 
 #: templates/help/studio/tips/howto/cardtip5.html:28
 msgid ""
 "Then, drag out a <span class=\"eventscolor\">when this sprite clicked</span>\n"
 "\tblock and snap it on top:"
 msgstr ""
+"接著，拖曳出 <span class=\"eventscolor\">當角色被點擊</span>積木，並把它放到現有程式上方： \n"
+"\t"
 
 #: templates/help/studio/tips/howto/cardtip5.html:34
 msgid ""
@@ -5539,7 +5594,7 @@ msgstr "點選 <span class=\"tab-ref\">程式</span> 分頁。"
 
 #: templates/help/studio/tips/howto/cardtip6.html:8
 msgid "You can see two costumes for the cake:"
-msgstr ""
+msgstr "你可以看到蛋糕這個角色有兩個造型："
 
 #: templates/help/studio/tips/howto/cardtip6.html:14
 msgid ""
@@ -5547,16 +5602,19 @@ msgid ""
 "class=\"lookscolor\">Looks</span> category. Drag out a <span "
 "class=\"lookscolor\">switch costume</span> block, and snap it on the script:"
 msgstr ""
+"切換到 <span class=\"tab-ref\">程式</span> 頁籤，從<span "
+"class=\"lookscolor\">外觀</span> 類指令中拖曳出 <span "
+"class=\"lookscolor\">造型換成</span>積木，然後把它放到程式裡頭："
 
 #: templates/help/studio/tips/howto/cardtip6.html:19
 msgid ""
 "Now, add a different script that will light the candles whenever you click "
 "the green flag:"
-msgstr ""
+msgstr "現在，加一些不一樣的程式，比方說，不管你是不是點擊綠旗，這些蠟燭都會被點亮。"
 
 #: templates/help/studio/tips/howto/cardtip6.html:21
 msgid "Make sure to select \"cake-a\" (lit candles) from the pull-down menu."
-msgstr ""
+msgstr "確定你在下拉清單中選擇了 cake-a 這個造型，也就是亮的蠟燭。"
 
 #: templates/help/studio/tips/howto/cardtip6.html:23
 msgid "Next, make a dance party"
@@ -5568,16 +5626,20 @@ msgid ""
 "Click on <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-"
 "sprite.png\"> to choose a new sprite:"
 msgstr ""
+"在 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png\">"
+" 上點一下以選擇新的角色："
 
 #: templates/help/studio/tips/howto/cardtip7.html:9
 msgid "Select \"Cassy Dance\" or another sprite with dance costumes:"
-msgstr ""
+msgstr "選擇 Cassy Dance 或是其它的帶有跳舞造型的角色："
 
 #: templates/help/studio/tips/howto/cardtip7.html:14
 msgid ""
 "Click the <span class=\"lookscolor\">Looks</span> category. Drag a <span "
 "class=\"lookscolor\">next costume</span> block."
 msgstr ""
+"切換到 <span class=\"lookscolor\">外觀</span>類指令並拖曳出 <span "
+"class=\"lookscolor\">造型換成下一個</span> 積木。"
 
 #: templates/help/studio/tips/howto/cardtip7.html:15
 msgid ""
@@ -5585,6 +5647,8 @@ msgid ""
 "<span class=\"eventscolor\">when this sprite clicked</span> block and snap "
 "it on top:"
 msgstr ""
+"點選 <span class=\"eventscolor\">事件</span> 類別。拖拉出一個 <span "
+"class=\"eventscolor\">當角色被點擊</span> 積木，並把它粘貼到程式的最上方："
 
 #: templates/help/studio/tips/howto/cardtip7.html:20
 msgid ""
@@ -5609,12 +5673,14 @@ msgid ""
 "Click the <span class=\"controlcolor\">Control</span> category. Drag out a "
 "<span class=\"controlcolor\">forever</span> block."
 msgstr ""
+"選擇 <span class=\"controlcolor\">控制</span> 指令類，拖曳出一個 <span "
+"class=\"controlcolor\">重複無限次</span> 積木。"
 
 #: templates/help/studio/tips/howto/cardtip8.html:9
 msgid ""
 "Add a <span class=\"controlcolor\">wait</span> block to control the speed of"
 " the dance, like this:"
-msgstr ""
+msgstr "添加 <span class=\"controlcolor\">等待</span> 積木，你可以修改數字調整跳舞的速度，像這樣： "
 
 #: templates/help/studio/tips/howto/cardtip8.html:14
 #, python-format
@@ -5637,11 +5703,11 @@ msgstr "下一步，舉辦個派對吧！"
 msgid ""
 "To add instructions, click twice on the cat, and add another <span "
 "class=\"soundcolor\">say</span> block:"
-msgstr ""
+msgstr "要加上說明，可以在舞台上雙擊小喵咪，然後在角色上加上另一個 <span class=\"soundcolor\">說出  </span> 積木："
 
 #: templates/help/studio/tips/howto/cardtip9.html:12
 msgid "The card will then look something like this:"
-msgstr ""
+msgstr "這張卡片看起來會像這樣："
 
 #: templates/help/studio/tips/howto/cardtip9.html:14
 msgid "Next, make it your own"
@@ -6375,16 +6441,16 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/edit-sounds.html:11
 msgid "If you want to edit a sound, select a section of the sound:"
-msgstr ""
+msgstr "如果你想要編輯這個音效，要先選取要修改的部分："
 
 #: templates/help/studio/tips/howto/edit-sounds.html:13
 #: templates/help/studio/tips/howto/import-music.html:25
 msgid "Then choose from the Edit menu:"
-msgstr ""
+msgstr "接著從編輯選單中選取："
 
 #: templates/help/studio/tips/howto/edit-sounds.html:15
 msgid "Or, choose Effects:"
-msgstr ""
+msgstr "或者，選用一些效果："
 
 #: templates/help/studio/tips/howto/fashion-intro.html:6
 msgid "Make a dress-up game where you choose a character and clothes."
@@ -7285,6 +7351,13 @@ msgid ""
 "\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> Take a picture (from a webcam)</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>新增角色的按鈕有：</h4>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-sprite.png\"> 從角色庫選擇一個角色</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10c-sprite.png\"> 畫出你自己的角色</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10d-sprite.png\"> 上傳你自己的圖像或角色</p>\n"
+"\t<p><img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10e-sprite.png\"> 拍一張照片 (從網路攝影機)</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/get-started-10.html:23
 #, python-format
@@ -7292,10 +7365,12 @@ msgid ""
 "To add this sprite, click <img class=\"intext\" src = "
 "\"%(STATIC_URL)s/images/help/10b-sprite.png\"> then select \"Cassy Dance\":"
 msgstr ""
+"如果要添加這個角色，點擊 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/10b-"
+"sprite.png\"> 並選擇 Cassy Dance："
 
 #: templates/help/studio/tips/howto/get-started-10.html:25
 msgid "Drag the characters to where you want them on the Stage."
-msgstr ""
+msgstr "拖曳你的角色到你想要放置的地方。"
 
 #: templates/help/studio/tips/howto/get-started-10.html:27
 msgid "Now, explore sound or animation."
@@ -7342,6 +7417,11 @@ msgid ""
 "\t<p>Click <span class=\"tab-ref\">Scripts</span> and make a script that switches between costumes:</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<h4>造型</h4>\n"
+"\t<p>從角色的程式頁籤切換到<span class=\"tab-ref\">造型</span> 頁籤， 你可以為角色添加多個造型。</p>\n"
+"\t<p>接著再切換回角色的<span class=\"tab-ref\">程式</span>頁籤，拖曳一個切換造型積木。這樣子程式在執行時就會切換造型達到動畫的效果。</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/get-started-11.html:34
 msgid "Share your project."
@@ -7384,6 +7464,12 @@ msgid ""
 "\t</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>你可以透過 Scratch 來製作很多形式的作品， 按下視窗左上方的<img style=\"margin-bottom:-10px\" src = \t\"%(STATIC_URL)s/images/help/scratch-logo-small.png\">圖示可以進一步的觀看其他人分享的作品。 </p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/gobo-friends.png\"></p>\n"
+"\t<p>若是你看到了很不錯的作品，可以透過 <img style=\"margin-bottom:-10px\" src = \"%(url_see_inside_smaller)s\"> 連結到該專案中，然後使用 <img style=\"margin-bottom:-10px\" src = \"%(url_remix_button)s\"> 按鈕建立這個專案的複本，這樣你就可以在別人的作品基礎上添加自已的創意。\n"
+"\t</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/get-started-13.html:18
 #, python-format
@@ -7464,11 +7550,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/get-started-5.html:13
 msgid "Type in the block to change the words:"
-msgstr ""
+msgstr "在積木的文字方塊裡輸入一些內容："
 
 #: templates/help/studio/tips/howto/get-started-5.html:18
 msgid "Then snap it on top of the stack. Click on the stack to run."
-msgstr ""
+msgstr "接著將積木貼合到之前的程式之下。點一下積木堆就可以預覽到執行結果。"
 
 #: templates/help/studio/tips/howto/get-started-5.html:21
 msgid "Now, add a way to start."
@@ -7491,7 +7577,7 @@ msgid ""
 "Your script will start whenever you click the green flag: <img "
 "class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\">"
 msgstr ""
-"當你按下綠旗：<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-"
+"當你點擊綠旗：<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-"
 "flag.png\">，你的程式就會開始。"
 
 #: templates/help/studio/tips/howto/get-started-6.html:16
@@ -7500,7 +7586,7 @@ msgid ""
 "To stop, click the stop button: <img class=\"intext\" src = "
 "\"%(STATIC_URL)s/images/help/stop-sign-small.png\">"
 msgstr ""
-"若要停止，按下停止按鈕：<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/stop-"
+"若要停止，點擊停止按鈕：<img class=\"intext\" src = \"%(STATIC_URL)s/images/help/stop-"
 "sign-small.png\">"
 
 #: templates/help/studio/tips/howto/get-started-6.html:18
@@ -7532,10 +7618,15 @@ msgid ""
 "\t<p>Now press the space bar on your keyboard and watch what happens.</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>將積木 <span class=\"eventscolor\">當按鍵被按下</span>拖放到前一個積木的上方。</p>\n"
+"\t<p><img src = \"%(url_8b_key_press)s\"></p>\n"
+"\t<p>現在，當按下鍵盤中的空白鍵時，你就可以看到這個積木堆的程式被執行了。</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/get-started-8.html:16
 msgid "You can choose a different key from the menu:"
-msgstr "你可以從選單選擇不同的案件："
+msgstr " 你可以從下拉清單中選用其他按鍵。"
 
 #: templates/help/studio/tips/howto/get-started-8.html:19
 msgid "Now, choose a backdrop."
@@ -7543,7 +7634,7 @@ msgstr "下一步，為舞台添加背景。"
 
 #: templates/help/studio/tips/howto/get-started-9.html:6
 msgid "You can add new backdrops on the Stage."
-msgstr ""
+msgstr "你可以為舞台添加新的背景。"
 
 #: templates/help/studio/tips/howto/get-started-9.html:11
 #, python-format
@@ -7552,6 +7643,9 @@ msgid ""
 "\"%(STATIC_URL)s/images/help/landscape-icon.png\"> to choose a New backdrop "
 "from the Library (such as \"Spotlight-Stage\"):"
 msgstr ""
+"點擊圖示 <img class=\"intext\" style=\"top: 0px\" src = "
+"\"%(STATIC_URL)s/images/help/landscape-icon.png\"> 就可以從範例庫中挑選背景（像是 "
+"\"Spotlight-Stage\"）："
 
 #: templates/help/studio/tips/howto/get-started-9.html:14
 msgid "Next, add a new sprite."
@@ -7629,20 +7723,20 @@ msgstr "下一步？靠你囉！"
 msgid ""
 "To make a sprite look like it's going off stage, glide to the end, and then "
 "hide it."
-msgstr ""
+msgstr "要讓你的角色看起來像是從舞台上消失，只要讓它滑動到角落，然後再把它藏起來。"
 
 #: templates/help/studio/tips/howto/glide-stage.html:12
 msgid "For example, try this script:"
-msgstr ""
+msgstr "例如，試試這個程式："
 
 #: templates/help/studio/tips/howto/glide-stage.html:14
 msgid "After the sprite glides, it then hides."
-msgstr ""
+msgstr "在角色滑動以後，接著它就會藏起來。"
 
 #: templates/help/studio/tips/howto/glide-stage.html:19
 #, python-format
 msgid "Can't see your sprite? Use <img src=\"%(url_show)s\"> to make it appear."
-msgstr ""
+msgstr "找不到你的角色了？可以用 <img src=\"%(url_show)s\"> 讓它出現。"
 
 #: templates/help/studio/tips/howto/hide-intro.html:6
 msgid "Make a hide-and-seek game with characters that appear and disappear."
@@ -7950,7 +8044,7 @@ msgstr "接下來，將一些節日角色加入到你的卡片裡面。"
 msgid ""
 "There are 4 ways to add a sprite to your card. To add a sprite, click on one"
 " of these buttons:"
-msgstr ""
+msgstr "在卡片上添加角色的方法有 4 種，你可以透過下列按鈕來進行："
 
 #: templates/help/studio/tips/howto/hoc-3.html:16
 #, python-format
@@ -8013,11 +8107,11 @@ msgstr "接下來，在你的節日卡片中加入一個背景影像。"
 msgid ""
 "Get your sprites moving with blocks from the <span "
 "class=\"motioncolor\">Motion</span> palette."
-msgstr ""
+msgstr "從 <span class=\"motioncolor\">動作</span> 類找出能讓你的角色移動的積木。"
 
 #: templates/help/studio/tips/howto/hoc-4a.html:12
 msgid "Try adding this code to have one of your sprites dance back and forth:"
-msgstr ""
+msgstr "試試這個代碼，讓你的角色來回跳舞："
 
 #: templates/help/studio/tips/howto/hoc-4a.html:17
 msgid "What other ways can you get your sprites moving?"
@@ -8035,12 +8129,12 @@ msgstr "一起探索其他類型的互動性吧..."
 msgid ""
 "Have your sprites say something with blocks from the <span "
 "class=\"lookscolor\">Looks</span> palette."
-msgstr ""
+msgstr "從 <span class=\"lookscolor\">外觀</span> 類找出能讓你的角色說話的積木。"
 
 #: templates/help/studio/tips/howto/hoc-4b.html:12
 msgid ""
 "Try adding this code to have one of your sprites share holiday greetings:"
-msgstr ""
+msgstr "試試添加這個代碼，讓祝福卡片上的另一個角色分享這個賀詞："
 
 #: templates/help/studio/tips/howto/hoc-4b.html:17
 msgid "What wishes for the holiday season will your sprites share?"
@@ -8051,13 +8145,13 @@ msgid ""
 "Explore adding sound to your holiday card by using sounds from the Scratch "
 "library, uploading sounds from your computer, or recording your own sounds "
 "with a microphone."
-msgstr ""
+msgstr "嘗試新增音效到你的節日卡片，可由「Scratch音效庫選擇」、「從你的電腦上傳音效檔案」、「從麥克風錄下你自己的聲音」。"
 
 #: templates/help/studio/tips/howto/hoc-4c.html:12
 msgid ""
 "Experiment with some of these sound-related blocks to add music and sound to"
 " your sprite:"
-msgstr ""
+msgstr "嘗試加入「音效」類別中的程式積木，來幫你的角色加入音樂或聲音："
 
 #: templates/help/studio/tips/howto/hoc-4c.html:17
 msgid "What interesting holiday sounds can you add to your card?"
@@ -8067,11 +8161,11 @@ msgstr "你會幫節日卡片加入什麼有趣的節日音效呢？"
 msgid ""
 "Play with the images in your holiday card by using the graphic effects "
 "blocks:"
-msgstr ""
+msgstr "使用不同的效果積木來裝飾你的生日卡片："
 
 #: templates/help/studio/tips/howto/hoc-4d.html:16
 msgid "Try adding this code to add a colorful effect to a dancing sprite:"
-msgstr ""
+msgstr "試試加入這個代碼來添加一些圖像效果給舞者："
 
 #: templates/help/studio/tips/howto/hoc-4d.html:21
 msgid "What cool image effects will you add to your card?"
@@ -8081,15 +8175,15 @@ msgstr "你會幫卡片加入什麼酷炫的影像效果呢？"
 msgid ""
 "Sprites can have different “costumes” -- different visuals, just like how an"
 " actor in a play can wear different outfits."
-msgstr ""
+msgstr "每個角色可以有多個不同的造型，造型指的是不同的外觀，就像一個遊戲中的人物可以穿戴不同的裝備一樣。"
 
 #: templates/help/studio/tips/howto/hoc-4e.html:12
 msgid "Try adding costumes to your sprite:"
-msgstr ""
+msgstr "試試為你的角色添加一些造型："
 
 #: templates/help/studio/tips/howto/hoc-4e.html:17
 msgid "And switch between costumes using the “switch costume” block:"
-msgstr ""
+msgstr "然後你可以利用「造型換成」的積木來切換這些造型："
 
 #: templates/help/studio/tips/howto/hoc-4e.html:22
 msgid "How can costumes add animation to your holiday card?"
@@ -8099,27 +8193,27 @@ msgstr "如何變化造型來幫你的節日卡片加入動畫效果呢？"
 msgid ""
 "There are 4 ways to add a background image (a.k.a. \"backdrop\") to your "
 "card. To add a backdrop, click on one of these buttons:"
-msgstr ""
+msgstr "要為卡片添加背景的方式共有 4 種，你可以透過這些按鈕來進行："
 
 #: templates/help/studio/tips/howto/hoc-5.html:16
 msgid "Here's what each button does:"
-msgstr ""
+msgstr "這裡是每個按鈕的用途："
 
 #: templates/help/studio/tips/howto/hoc-5.html:18
 msgid "Choose a backdrop from the library"
-msgstr ""
+msgstr "在範例庫中挑選背景"
 
 #: templates/help/studio/tips/howto/hoc-5.html:19
 msgid "Draw your own backdrop"
-msgstr ""
+msgstr "自己畫個背景"
 
 #: templates/help/studio/tips/howto/hoc-5.html:20
 msgid "Upload an image from your computer"
-msgstr ""
+msgstr "從電腦挑選一個圖像"
 
 #: templates/help/studio/tips/howto/hoc-5.html:21
 msgid "Take a picture (if you have a webcam)"
-msgstr ""
+msgstr "拍張照片（如果你有攝影裝置的話）"
 
 #: templates/help/studio/tips/howto/hoc-5.html:23
 msgid "Next, let's add some background music to your holiday card."
@@ -8149,7 +8243,7 @@ msgstr "接下來，讓別人知道要如何與你的卡片互動。"
 msgid ""
 "How will people learn how to interact with your holiday card? Give help by "
 "adding instructions that appear when someone starts your card."
-msgstr ""
+msgstr "要怎麼讓觀看的人知道這張卡片的互動方式呢？你可以添加一些指示，在某人開始這個專案時，顯示指示來幫助他們。"
 
 #: templates/help/studio/tips/howto/hoc-7.html:12
 #, python-format
@@ -8157,6 +8251,8 @@ msgid ""
 "Scratch projects start when the <img class=\"intext\" src = "
 "\"%(STATIC_URL)s/images/help/green-flag.png\"> is clicked."
 msgstr ""
+"當 <img class=\"intext\" src = \"%(STATIC_URL)s/images/help/green-flag.png\">"
+" 被點擊，Scratch 專案就會開始。"
 
 #: templates/help/studio/tips/howto/hoc-7.html:15
 #, python-format
@@ -8166,6 +8262,9 @@ msgid ""
 "<span class=\"soundcolor\">say</span> block to explain what the viewer "
 "should do."
 msgstr ""
+"試試添加一個 <span class=\"eventscolor\">當<img class=\"intext\" src = "
+"\"%(STATIC_URL)s/images/help/green-flag.png\">被點擊</span>積木，還有一個<span "
+"class=\"soundcolor\">說出</span>積木，用來說明這個專案要如何使用。"
 
 #: templates/help/studio/tips/howto/hoc-7.html:18
 msgid "Next, let's share your holiday card."
@@ -8768,12 +8867,12 @@ msgstr "點擊綠旗就可以同時執行二個程式。"
 
 #: templates/help/studio/tips/howto/import-music.html:23
 msgid "If you want to edit the song, select a section:"
-msgstr ""
+msgstr "如果要修改這首曲子，要先選取要編輯的部分："
 
 #: templates/help/studio/tips/howto/interact-microphone.html:14
 #, python-format
 msgid "Have a microphone? You can use <img src=\"%(url_loudness_small)s\">"
-msgstr ""
+msgstr "你有麥克風裝置嗎？試試 <img src=\"%(url_loudness_small)s\">"
 
 #: templates/help/studio/tips/howto/interact-microphone.html:18
 msgid "Make noise so your sprite will jump!"
@@ -8795,18 +8894,18 @@ msgstr "勾選「響度」積木可以檢視聲音大小："
 #, python-format
 msgid ""
 "The monitor will show on the Stage: <img src=\"%(url_loudness_monitor)s\">."
-msgstr ""
+msgstr "在舞台上就會顯示麥克風音量的監控面板：<img src=\"%(url_loudness_monitor)s\">。"
 
 #: templates/help/studio/tips/howto/interactive-effects.html:13
 #, python-format
 msgid ""
 "Insert <img src=\"%(url_mouse_x)s\"> into <img "
 "src=\"%(url_set_color_effect)s\">"
-msgstr ""
+msgstr "插入 <img src=\"%(url_mouse_x)s\"> 到 <img src=\"%(url_set_color_effect)s\">"
 
 #: templates/help/studio/tips/howto/interactive-effects.html:14
 msgid "Use this code to whirl as you move the mouse:"
-msgstr ""
+msgstr "使用這個代碼，當你移動滑鼠時就會旋轉："
 
 #: templates/help/studio/tips/howto/interactive-effects.html:20
 msgid "Try different effects by choosing the menu:"
@@ -8831,17 +8930,19 @@ msgid ""
 "Choose <img src=\"%(url_data_palette)s\"> and then <img "
 "src=\"%(url_make_variable_button)s\">"
 msgstr ""
+"選取 <img src=\"%(url_data_palette)s\">，然後再選 <img "
+"src=\"%(url_make_variable_button)s\">"
 
 #: templates/help/studio/tips/howto/keep-score.html:14
 msgid "Type in the name \"Score\" and then click OK:"
-msgstr ""
+msgstr "輸入名稱 Score（分數）然後點擊確定："
 
 #: templates/help/studio/tips/howto/keep-score.html:19
 #, python-format
 msgid ""
 "New blocks will appear and the variable Score will show on the Stage: <img "
 "src=\"%(url_score_monitor)s\">"
-msgstr ""
+msgstr "新的變數建立後，變數的監控面板會顯示在舞台：<img src=\"%(url_score_monitor)s\">"
 
 #: templates/help/studio/tips/howto/keep-score.html:23
 msgid "Here's an example script for keeping score:"
@@ -9030,7 +9131,7 @@ msgstr "使用方向鍵移動"
 
 #: templates/help/studio/tips/howto/move-with-arrow-keys.html:12
 msgid "Try this code:"
-msgstr ""
+msgstr "試試這些代碼："
 
 #: templates/help/studio/tips/howto/move-with-arrow-keys.html:14
 #, python-format
@@ -9040,6 +9141,10 @@ msgid ""
 "src=\"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img "
 "src=\"%(STATIC_URL)s/images/help/right-arrow-key.png\"> to trigger."
 msgstr ""
+"按下方向鍵 <img src=\"%(STATIC_URL)s/images/help/up-arrow-key.png\"> <img "
+"src=\"%(STATIC_URL)s/images/help/down-arrow-key.png\"> <img "
+"src=\"%(STATIC_URL)s/images/help/left-arrow-key.png\"> <img "
+"src=\"%(STATIC_URL)s/images/help/right-arrow-key.png\"> 來觸發程式。"
 
 #: templates/help/studio/tips/howto/move-with-arrow-keys.html:18
 msgid "To copy a stack of blocks, click at the top with the duplicate tool:"
@@ -9064,7 +9169,7 @@ msgstr "讓角色移動"
 msgid ""
 "Try typing in different numbers, such as <img src=\"%(url_move_1_step)s\"> "
 "to move a tiny bit or a bigger number to move further."
-msgstr ""
+msgstr "試著輸入不同的數字，像是 <img src=\"%(url_move_1_step)s\"> 以移動一些距離，或是大一點的數字以移動更遠。"
 
 #: templates/help/studio/tips/howto/move.html:20
 msgid ""
@@ -9621,8 +9726,8 @@ msgid ""
 "You can draw the letter by clicking the <img class=\"intext\" "
 "src=\"%(STATIC_URL)s/images/help/paint-tool.png\"> icon:"
 msgstr ""
-"你可以點擊<img class=\"intext\" src=\"%(STATIC_URL)s/images/help/paint-"
-"tool.png\">圖示來繪製字母"
+"你可以點擊 <img class=\"intext\" src=\"%(STATIC_URL)s/images/help/paint-"
+"tool.png\"> 圖示來繪製字母："
 
 #: templates/help/studio/tips/howto/nametip5.html:14
 #, python-format
@@ -9670,7 +9775,7 @@ msgstr "輸入不同的數字以調整轉速。"
 msgid ""
 "Tip: To reset the sprite's angle, click this block in the <span "
 "class=\"motioncolor\">Motion</span> category:"
-msgstr ""
+msgstr "提示：若要重新設定角色的角度，在 <span class=\"motioncolor\">動作</span>類中找到並點擊這個積木："
 
 #: templates/help/studio/tips/howto/nametip6.html:21
 msgid "Next, finish your name"
@@ -10261,15 +10366,13 @@ msgstr "下方這個程式會持續播放背景音樂："
 msgid ""
 "Does your music get interrupted? Make sure to use the block that plays sound"
 " until done:"
-msgstr "音樂突然中斷？確定你使用的積木是「播放音效 {…} 到底」： "
+msgstr "音樂突然中斷？確定你使用的積木是「播放音效到底」： "
 
 #: templates/help/studio/tips/howto/play-music.html:21
 msgid ""
 "Want the music to stop at the end of your program? Add this block to the "
 "last script:"
-msgstr ""
-"想要在程式結束的同時也停止播放音樂？可以在程式最後加上「停止 {全部}」積木：<img src=\"%(STATIC_URL)s/images/help"
-"/stop-all.png\">"
+msgstr "想要在程式結束的同時也停止播放音樂？可以在程式最後加上「停止全部」積木："
 
 #: templates/help/studio/tips/howto/play-with-effects.html:12
 msgid "Choose a sprite with lots of color, such as:"
