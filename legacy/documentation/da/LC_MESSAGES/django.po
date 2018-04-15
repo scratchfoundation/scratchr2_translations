@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-29 11:33-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Jens Hyllegaard <jens.hyllegaard@gmail.com>, 2017\n"
+"Last-Translator: Mads Remvig <mads.remvig@gmail.com>, 2018\n"
 "Language-Team: Danish (https://www.transifex.com/llk/teams/60938/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -84,6 +84,8 @@ msgid ""
 "Reports keyboard input from the most recent use of <img "
 "src=\"%(url_ask_and_wait)s\"/>"
 msgstr ""
+"Rapporterer input fra tastatur fra den seneste brug af <img "
+"src=\"%(url_ask_and_wait)s\"/>"
 
 #: templates/help/studio/tips/blocks/answer.html:18
 #, python-format
@@ -137,6 +139,10 @@ msgid ""
 "balloon on the screen. The program waits as the user types in a response, "
 "until the Enter key is pressed or the check mark is clicked."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" /> stiller et spørgsmål og gemmer inputtet"
+" fra tastaturet i <img src=\"%(url_answer)s\" />. Spørgsmålet vises i en "
+"taleboble på skærmen. Programmet venter på at brugeren indtaster et svar, "
+"indtil der klikkes på Returtasten eller afkrydsningsfeltet."
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:9
 msgid "Reports Stage's current backdrop name"
@@ -167,12 +173,17 @@ msgid ""
 "all sprites to tell them to do something, and wait until they all finish "
 "before continuing."
 msgstr ""
+"Du kan bruge <img src=\"%(url_broadcast_and_wait)s\" />  til at sende en "
+"besked til alle sprites, for at bede dem om at gøre noget, og vente indtil "
+"de alle er afsluttede før der forsættes."
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:22
 msgid ""
 "Click to choose which message gets sent. Choose \"new\" to type in your own "
 "message."
 msgstr ""
+"Klik for at vælge hvilken besked der skal sendes. Vælg \"ny\" for at skrive "
+"din egen besked."
 
 #: templates/help/studio/tips/blocks/broadcast.html:9
 msgid "Sends a message to all sprites"
@@ -185,6 +196,9 @@ msgid ""
 " background). This is useful if you want to tell other sprites when to do "
 "something."
 msgstr ""
+"<img src=\"%(url_broadcast)s\"/> sender en besked til alle sprites (og "
+"baggrunde). Dette kan bruges hvis du vil give besked til andre sprites om at"
+" gøre noget."
 
 #: templates/help/studio/tips/blocks/broadcast.html:22
 #, python-format
@@ -192,6 +206,8 @@ msgid ""
 "What do you want them to do when they receive the message? See <a "
 "href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 msgstr ""
+"Hvad ønsker du de skal gøre når de modtager beskeden? Se <a "
+"href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 
 #: templates/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
@@ -205,6 +221,10 @@ msgid ""
 "<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
 "Try these effects with numbers such as 10, 35, or 100. Or try negative numbers, such as -50.\n"
 msgstr ""
+"\n"
+"Klik for at vælge en effekt fra menuen:\n"
+"<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
+"Prøv disse effekter med tallene 10, 35, eller 100. Eller prøv med negative tal, som -50.\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:25
 #, python-format
@@ -212,6 +232,9 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> to clear "
 "all graphic effects. Or, use <img src=\"%(url_clear_graphic_effects)s\"/>"
 msgstr ""
+"Klik stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> for at "
+"slette alle grafiske effekter. Eller brug <img "
+"src=\"%(url_clear_graphic_effects)s\"/>"
 
 #: templates/help/studio/tips/blocks/change-size.html:8
 msgid "Changes sprite's size by specified amount"
@@ -332,6 +355,8 @@ msgid ""
 "<img src=\"%(url_clear_graphic_effects)s\" /> clears all the graphic effects"
 " for this sprite."
 msgstr ""
+"<img src=\"%(url_clear_graphic_effects)s\" /> sletter alle grafiske effekter"
+" for denne sprite"
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
@@ -351,13 +376,13 @@ msgstr "Fortæller en klon hvad den skal gøre, når den er lavet"
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 msgid "The script is triggered as soon as the clone is created."
-msgstr ""
+msgstr "Scriptet begynder så snart klonen er dannet."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:12
 msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are "
 "created."
-msgstr ""
+msgstr "Kloner reagerer også på alle \"when..\" blokke efter de er dannet."
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
@@ -401,7 +426,7 @@ msgstr "Skaber en klon (en midlertidig kopi) af den valgte sprite"
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
-msgstr ""
+msgstr "Vælg hvilken sprite der skal klones fra drop-down menuen."
 
 #: templates/help/studio/tips/blocks/create-clone.html:14
 #, python-format
@@ -409,25 +434,29 @@ msgid ""
 "Use <img src=\"%(url_clone_startup)s\" /> to tell the clone what to do once "
 "it's created."
 msgstr ""
+"Brug <img src=\"%(url_clone_startup)s\" /> til at give klonen besked, om "
+"hvad den skal gøre, når den dannes."
 
 #: templates/help/studio/tips/blocks/create-clone.html:16
 #: templates/help/studio/tips/blocks/delete-this-clone.html:16
 #: templates/help/studio/tips/blocks/video-motion.html:26
 msgid "Sample Script:"
-msgstr ""
+msgstr "Prøve script:"
 
 #: templates/help/studio/tips/blocks/create-clone.html:23
 #: templates/help/studio/tips/blocks/video-motion.html:32
 #: templates/help/studio/tips/ext/PicoBoard.html:42
 #: templates/help/studio/tips/ext/wedo1.html:56
 msgid "Troubleshooting:"
-msgstr ""
+msgstr "Fejlfinding"
 
 #: templates/help/studio/tips/blocks/create-clone.html:25
 msgid ""
 "If you can't see the clone, move it so the original sprite doesn't cover it."
 " The clone appears in the same location as the sprite initially."
 msgstr ""
+"Hvis du ikke kan se klonen, flyt den så den originale sprite ikke dækker "
+"den. Klonen vises på samme sted som den originale."
 
 #: templates/help/studio/tips/blocks/create-clone.html:29
 #, python-format
@@ -435,10 +464,12 @@ msgid ""
 "Make sure you've chosen the sprite you want to clone from the menu in the "
 "<img src=\"%(url_create_clone_of)s\" /> block."
 msgstr ""
+"Vær sikker på, at du har valgt den sprite du ønsker at klone fra menuen i "
+"<img src=\"%(url_create_clone_of)s\" /> blokken."
 
 #: templates/help/studio/tips/blocks/create-clone.html:31
 msgid "Note: The clone only lasts while the project is running."
-msgstr ""
+msgstr "Note: Alle kloner eksisterer kun så længe projektet kører."
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
@@ -446,7 +477,7 @@ msgstr "Viser den aktuelle tid"
 
 #: templates/help/studio/tips/blocks/current-time.html:15
 msgid "You can select  from the menu to indicate which item you want."
-msgstr ""
+msgstr "Du kan vælge i menuen hvilket objekt du vil bruge."
 
 #: templates/help/studio/tips/blocks/current-time.html:20
 msgid ""
@@ -465,6 +496,8 @@ msgstr "Definerer hvad den brugerdefinerede brik skal gøre"
 #: templates/help/studio/tips/blocks/define.html:11
 msgid "The <strong>define</strong> script tells a custom block what to do:"
 msgstr ""
+" <strong>definerer</strong> scriptet bestemmer hvad en brugerdefineret brik "
+"gør:"
 
 #: templates/help/studio/tips/blocks/define.html:17
 msgid ""
@@ -585,7 +618,7 @@ msgstr "Glid i en bestemt tid til denne<b>x y</b> position"
 
 #: templates/help/studio/tips/blocks/glide.html:13
 msgid "The sprite starts at one point, and then glides to the other points."
-msgstr ""
+msgstr "Spriten starter på et punkt, og glider til et andet."
 
 #: templates/help/studio/tips/blocks/glide.html:18
 msgid ""
@@ -655,7 +688,7 @@ msgstr "Gå til musens placering eller en anden sprite"
 
 #: templates/help/studio/tips/blocks/go-to.html:16
 msgid "Choose from the menu:"
-msgstr ""
+msgstr "Vælg fra menuen:"
 
 #: templates/help/studio/tips/blocks/go-to.html:20
 msgid "Then, click the block."
@@ -861,7 +894,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/list.html:29
 msgid "To delete or rename a list, right click on the list."
-msgstr ""
+msgstr "Højre-klik på listen, for at slette den eller ændre navn."
 
 #: templates/help/studio/tips/blocks/loudness.html:7
 msgid ""
@@ -875,12 +908,14 @@ msgstr ""
 msgid ""
 "To view the value of size, click the checkbox next to the loudness block."
 msgstr ""
+"For at se værdien af svaret, klik i afkrydsningsfeltet ved siden af højtaler"
+" blokken."
 
 #: templates/help/studio/tips/blocks/loudness.html:17
 msgid ""
 "Note: Your computer must have a working microphone in order for this block "
 "to work."
-msgstr ""
+msgstr "Obs: Din computer må have en mikrofon, for at denne blok virker"
 
 #: templates/help/studio/tips/blocks/make-a-block-with-inputs.html:8
 #, python-format
