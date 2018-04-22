@@ -2300,6 +2300,20 @@ msgid ""
 "</ul>\n"
 "<p>You will need administrator access on your computer to install the plugin.</p>\n"
 msgstr ""
+"<p>\n"
+"Namestiti boš moral/a vtičnik, da lahko uporabljaš Scratch skupaj z LEGO WeDo 1.0 ali Picoboard. \n"
+"Vtičnik za namestitev izbereš na podalgi tega, kateri operacijski sistem in kateri brskalnik uporabljaš za Scratch. \n"
+"Če uporabljaš brskalnik, ki ni Chrome, izberi nekaj od naštetega:\n"
+"<ul>\n"
+"<li><a href=\"%(STATIC_URL)s/ext/ScratchDevicePlugin.msi\">Windows (drugi brskalniki)</a></li>\n"
+"<li><a href=\"%(STATIC_URL)s/ext/ScratchDevicePlugin.dmg\">Mac (drugi brskalniki)</a></li>\n"
+"</ul>\n"
+"<p>Če uporabljaš brskalnik Chrome, je treba preneseti in namestiti dva programa:</p>\n"
+"<ul>\n"
+"<li><a href=\"%(STATIC_URL)s/ext/ScratchDevicePluginChrome.msi\">Windows (Chrome)</a> in pomočnik <a target=\"_blank\" href=\"https://chrome.google.com/webstore/detail/scratch-device-plugin-hel/clmabinlolakdafkoajkfjjengcdmnpm\">tukaj</a></li>\n"
+"<li><a href=\"%(STATIC_URL)s/ext//ScratchDevicePluginChrome.dmg\">Mac (Chrome)</a> in pomočnik <a target=\"_blank\" href=\"https://chrome.google.com/webstore/detail/scratch-device-plugin-hel/clmabinlolakdafkoajkfjjengcdmnpm\">tukaj</a></li>\n"
+"</ul>\n"
+"<p>Za namestitev vtičnikov boš potreboval/a administratorske pravice.</p>\n"
 
 #: templates/help/studio/tips/ext/ext1.html:34
 msgid "Status: Hardware Devices"
@@ -2318,6 +2332,15 @@ msgid ""
 " <p>Green light means the device is ready to go!</p>\n"
 " "
 msgstr ""
+"<img src=\"%(STATIC_URL)s/images/help/ext-status-red.png\" />\t\n"
+" <p>Rdeča luč pomeni, da v brskalniku ni nameščen vtičnik.</p>\n"
+" <p></p>\n"
+" <img src=\"%(STATIC_URL)s/images/help/ext-status-yellow.png\" />\t\n"
+"<p>Rumena luč pmeni, da naprava ni povezana ali zaznana.</p>\n"
+" <p></p>\n"
+" <img src=\"%(STATIC_URL)s/images/help/ext-status-green.png\" />\t\n"
+" <p>Zelena luč pomeni, da je naprava pripravljena za delo!</p>\n"
+" "
 
 #: templates/help/studio/tips/ext/ext1.html:49
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:25
@@ -2339,6 +2362,16 @@ msgid ""
 "<li>Make sure the hardware is plugged in.</li>\n"
 "</ul>\n"
 msgstr ""
+"\n"
+"If it's not working, try:\n"
+"\n"
+"<ul>\n"
+"<li>Prepričaj se, da si odprl in namestil pravi vtičnik za svoj računalnik in svoj brskalnik.</li>\n"
+"<li>Prepričaj se, da si nastavil dovoljenja  v svojem brskalniku, da dovoli zaogn vtičnika.</li>\n"
+"<li>Ponovno zaženi brskalnik.</li>\n"
+"<li>Prepričaj se, da Scratch ni odprt v katerem drugem zavihku ali oknu brskalnika.</li>\n"
+"<li>Prepričaj se, da je strojna oprema priključena.</li>\n"
+"</ul>\n"
 
 #: templates/help/studio/tips/ext/pico-sensor-button-pressed.html:6
 msgid ""
@@ -2389,6 +2422,8 @@ msgid ""
 "You can select one of the seven PicoBoard sensors. Each reports a value in "
 "the range from 0 to 100."
 msgstr ""
+"Izbereš lahko med sedmimi PicoBoard senzorji. Vsak javlja vrednosti med 0 in"
+" 100."
 
 #: templates/help/studio/tips/ext/pico-slider-sensor-value.html:22
 msgid ""
@@ -2397,6 +2432,9 @@ msgid ""
 " to 100, depending on how much electrical resistance there is between the "
 "metal ends of the alligator clips."
 msgstr ""
+"PicoBoard se dobavlja s štirimi pari krokodilčkov, ki jih lahko priključimo "
+"na vhode A-D. Senzor upornosti javlja vrednosti od 0 do 100, odvisno od tega"
+" kolikšna je upornost med kovinskima koncema krokodilčkov."
 
 #: templates/help/studio/tips/ext/pico-when-button-pressed.html:7
 msgid ""
@@ -2429,6 +2467,9 @@ msgid ""
 "electrical resistance there is between the metal ends of the alligator "
 "clips."
 msgstr ""
+"PicoBoard se dobavlja s štirimi pari krokodilčkov, ki jih lahko priključimo "
+"na vhode A-D. Vrednost na senzorju električne upornosti je odvisno od tega "
+"kolikšna je upornost med kovinskima koncema krokodilčkov."
 
 #: templates/help/studio/tips/ext/pico-when-slider.html:20
 msgid ""
@@ -2453,13 +2494,16 @@ msgid ""
 "so you can actually use it to detect light and motion in addition to "
 "distance."
 msgstr ""
+"Senzor razdalje zaznava svetlost okolice, da izračuna oddaljenost in ga "
+"lahko uporabljamo za zaznavanje svetlobe in gibanja poleg merjenja "
+"oddaljenosti."
 
 #: templates/help/studio/tips/ext/wedo-distance.html:16
 #: templates/help/studio/tips/ext/wedo2-distance.html:18
 msgid ""
 "To view the value of distance, click the checkbox next to the block in the "
 "palette."
-msgstr ""
+msgstr "Za prikaz oddaljenosti klikni na potrditveno polje v paleti."
 
 #: templates/help/studio/tips/ext/wedo-distance.html:21
 #: templates/help/studio/tips/ext/wedo2-distance.html:23
@@ -2467,6 +2511,8 @@ msgid ""
 "To use <b>distance</b>, you need a distance sensor connected to your "
 "computer via a LEGO WeDo hub."
 msgstr ""
+"Za uporabo <b>oddaljenosti</b>, moraš priključiti senzor odaljenosti na "
+"računalnik preko LEGO WeDo priključka."
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:7
 msgid ""
@@ -2480,11 +2526,11 @@ msgstr ""
 msgid ""
 "Run the motor for 10 seconds while switching the spinning direction every "
 "second."
-msgstr ""
+msgstr "Zaženi motor 10 sekund, kjer se vsako ekundo zamanja smer vrtenja."
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:17
 msgid "You can select WeDo motor(s) from the first dropdown menu:"
-msgstr ""
+msgstr "WeDo motor lahko izbereš iz prvega padajočega menija:"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:19
 #: templates/help/studio/tips/ext/wedo-set-power.html:19
@@ -2492,6 +2538,8 @@ msgid ""
 "If you have only one motor, use the \"motor\" option, which will set the "
 "motor"
 msgstr ""
+"Če uporabljaš samo en motor, uporabi možnost \"motor\" , kar bo nastavilo "
+"motor"
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:20
 #: templates/help/studio/tips/ext/wedo-set-power.html:20
@@ -2501,10 +2549,12 @@ msgid ""
 "If you have two motors which you want to control separately, you can use "
 "\"motor A\" with one and \"motor B\" with the other."
 msgstr ""
+"Če uporabljaš dva motorja, ki ju želiš nadzorovati ločeno, lahko uporabiš "
+"\"motor A\" za enega in \"motor B\" za drugega."
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:21
 msgid "\"all motors\" sets the direction for all the connected motors."
-msgstr ""
+msgstr "\"vsi motorji\" nastavi smer za vse povezane motorje."
 
 #: templates/help/studio/tips/ext/wedo-set-direction.html:24
 msgid "You can select the direction from the second dropdown menu."
@@ -2536,15 +2586,15 @@ msgstr "Spremeni hitrost motorja s pomočjo tipk gor in dol."
 #: templates/help/studio/tips/ext/wedo-turn-off.html:17
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:17
 msgid "You can select a LEGO-WeDo-compatible device from the dropdown menu:"
-msgstr ""
+msgstr "Iz padajočega menija lahko izbereš LEGO-WeDo-kompatibilne naprave:"
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:21
 msgid "\"lights\" sets the lights"
-msgstr ""
+msgstr "\"lights\" nastavlja luči"
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:22
 msgid "\"everything\" sets the power for all the connected motors and lights."
-msgstr ""
+msgstr "\"everything\" nastavi energijo za vse povezane motorje in luči."
 
 #: templates/help/studio/tips/ext/wedo-set-power.html:27
 msgid ""
@@ -2562,7 +2612,7 @@ msgstr "Sporoči naklon (med 0 in 4), ki ga zazna LEGO WeDo senzor naklona."
 msgid ""
 "<b>tilt</b> reports a value of 1-4 when the sensor is tilted, and 0 "
 "otherwise."
-msgstr ""
+msgstr "<b>nagib</b> javlja vrednosti 1-4, ko je senzor nagnjen in 0, ko ni."
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:14
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:15
@@ -2570,12 +2620,14 @@ msgid ""
 "The tilt sensor reports a number from 0 to 4. 0 means not tilted, 1 tilted "
 "down, 2 tilted right, 3 tilted up, and 4 tilted left."
 msgstr ""
+"Senzor nagiba javlja vrednosti med 0 in 4. 0 pomeni, da ni nagnjen, 1 je "
+"nagnjen naprej, 2 nagnjen desno, 3 nagnjen nezaj in  4 nagnjen levo."
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:15
 msgid ""
 "To view the value of tilt, click the checkbox next to the block in the "
 "palette."
-msgstr ""
+msgstr "Za ogled vrednosti nagiba klikni potrditveno polje ob bloku v paleti."
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:20
 msgid ""
@@ -2602,16 +2654,18 @@ msgid ""
 "If you have only one motor, use the \"motor\" option, which will turn the "
 "motor off regardless of where it is connected on the WeDo hub."
 msgstr ""
+"Če imaš samo en motor, uporabi možnost \"motor\" , ki bo nadzirala delovanje"
+" motorja ne ged ena to, kje je priključen na WeDo hub."
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:21
 msgid ""
 "\"lights\" turn the lights off regardless of where they are connected on the"
 " WeDo hub."
-msgstr ""
+msgstr "\"luči\" izključi lučke ne gled ena to, kje so priključene na WeDo hub."
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:22
 msgid "\"everything\" turns off all the connected motors and lights."
-msgstr ""
+msgstr "\"vse\" izključi vse priključene motorje in lučke."
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:27
 msgid ""
@@ -2638,12 +2692,14 @@ msgid ""
 "If you have only one motor, use the \"motor\" option, which will turn the "
 "motor on regardless of where it is connected on the WeDo hub."
 msgstr ""
+"Če imaš samo en motor, uporabi možnost \"motor\" , ki bo vključil motor ne "
+"gled ena to, kje je priključen na WeDo hub."
 
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:21
 msgid ""
 "\"lights\" turn the lights on regardless of where they are connected on the "
 "WeDo hub."
-msgstr ""
+msgstr "\"luči\" vključi lučke ne glede na to, kje so priključene na WeDo hub."
 
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:22
 msgid "\"everything\" turns on all the connected motors and lights."
@@ -2677,12 +2733,18 @@ msgid ""
 "separately, you can use 'motor A' and 'motor B'. Note: LEGO recommends only "
 "connecting one motor to the hub to limit power consumption."
 msgstr ""
+"Iz padajočega menija lahko izbereš LEGO-WeDo-kompatibilne naprave:  'motor' "
+"bo vklopil vse motorje priključene na WeDo hub. Za nadzor dveh motorjev "
+"ločeno, lahko uporabiš 'motor A' in 'motor B'. Opomba: LEGO priporoča "
+"povezovanej le enega motorja na hub, da zmanjašamo porabo energije."
 
 #: templates/help/studio/tips/ext/wedo-turn-on.html:21
 msgid ""
 "To use <b>turn on</b>, you need WeDo motor(s) or lights connected to your "
 "computer via a LEGO WeDo hub."
 msgstr ""
+"Za uporabo <b>vklopa</b>, moraš imeti WeDo motor(je) ali luči povezane na "
+"računalnik preko LEGO WeDo hub."
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:7
 msgid ""
@@ -2694,13 +2756,15 @@ msgstr ""
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:12
 msgid "When the distance goes under 20, the script will run."
-msgstr ""
+msgstr "Ko se bo razdalja zmanjšala pod 20, se skript zažene."
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:17
 msgid ""
 "You can select a <i>greater</i> or <i>less than</i> comparison from the "
 "dropdown menu."
 msgstr ""
+"Izbereš lahko primerjavo <i>večje</i> ali <i>manjše</i> iz padajočega "
+"menija."
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:22
 msgid ""
@@ -2716,19 +2780,23 @@ msgstr "Zaženi skripto, ko senzor naklona spremeni položaj."
 
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:11
 msgid "When the tilt sensor gets tilted, the script will run."
-msgstr ""
+msgstr "Ko se senzor nagiba nagne, se skript zažene."
 
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:17
 msgid ""
 "Use the dropdown menu to choose <b>= (equals)</b>  or <b>not = (not equal "
 "to)</b>, then type in a number from 0 to 4."
 msgstr ""
+"Uporabi padajoči meni za izbirp <b>= (je enako)</b> ali <b>not = (ni enako "
+"kot)</b>, nato vnesi število od 0 do 4."
 
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:21
 msgid ""
 "To use <b>when tilt</b>, you need a tilt sensor connected to your computer "
 "via a LEGO WeDo hub."
 msgstr ""
+"Za uporabo <b>ko nagib</b>, moraš imeti senzor nagiba priključen na "
+"računalnik preko LEGO WeDo huba."
 
 #: templates/help/studio/tips/ext/wedo1.html:6
 msgid "LEGO WeDo 1.0 Scratch Extension Setup"
@@ -2740,12 +2808,16 @@ msgid ""
 "<p>This extension works with the original LEGO WeDo kit.</p>\n"
 " <p><img src=\"%(STATIC_URL)s/images/help/wedo.png\" /></p>\n"
 msgstr ""
+"<p>Ta razširitev deluje z originalnim LEGO WeDo kompletom.</p>\n"
+" <p><img src=\"%(STATIC_URL)s/images/help/wedo.png\" /></p>\n"
 
 #: templates/help/studio/tips/ext/wedo1.html:21
 msgid ""
 "All hardware extensions need a plug-in to work. If the plug-in is not already installed, see the <a href=\"../../ext/ext1/\">extension setup</a> page for instructions.\n"
 "</p>"
 msgstr ""
+"Vsi strojni dodatki potrebujejo vtičnik zadelovanje. Če vtičnik ni nameščen, poglej stran <a href=\"../../ext/ext1/\">namestitev dodatkov</a> za navodila.\n"
+"</p>"
 
 #: templates/help/studio/tips/ext/wedo1.html:42
 #, python-format
@@ -2789,7 +2861,7 @@ msgstr "Primer"
 
 #: templates/help/studio/tips/ext/wedo2-distance.html:13
 msgid "Set the sprite's horizontal position to the value of the distance."
-msgstr ""
+msgstr "Nastavi likovo vodoravno pozicijo na vrednost razdalje."
 
 #: templates/help/studio/tips/ext/wedo2-distance.html:17
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:17
@@ -2823,6 +2895,8 @@ msgid ""
 "Note: LEGO recommends only connecting one motor to the hub to limit power "
 "consumption."
 msgstr ""
+"opomba: LEGO priporoča povezavo le enega motorja za zmanjšanje porabe "
+"energije."
 
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:22
 msgid "You can select the direction from the second menu."
