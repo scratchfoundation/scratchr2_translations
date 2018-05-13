@@ -1272,19 +1272,21 @@ msgstr "Або введіть число від 1 до 22"
 msgid ""
 "Note: the length of a beat can be set with <img src=\"%(url_set_tempo)s\" />"
 msgstr ""
+"Величину такту можна задати за допомогою <img src=\"%(url_set_tempo)s\" />"
 
 #: templates/help/studio/tips/blocks/playnote.html:17
 msgid "Type in a number from 0 to 127 (60 is middle C)"
-msgstr ""
+msgstr "Введіть число від 0 до 127 (60 означає До першої октави)"
 
 #: templates/help/studio/tips/blocks/playnote.html:21
 msgid "Use higher numbers for higher pitches"
-msgstr ""
+msgstr "Більші числа позначають вищі звуки"
 
 #: templates/help/studio/tips/blocks/playnote.html:28
 #, python-format
 msgid "The length of a beat can be set with <img src=\"%(url_set_tempo)s\" />."
 msgstr ""
+"Величину такту можна задати за допомогою <img src=\"%(url_set_tempo)s\" />"
 
 #: templates/help/studio/tips/blocks/playsound.html:10
 msgid "Plays a sound"
@@ -1305,6 +1307,8 @@ msgid ""
 "<img src=\"%(url_playsound)s\"/> starts playing a sound and continues to the"
 " next block immediately."
 msgstr ""
+"<img src=\"%(url_playsound)s\"/> починає відтворювати звук і зразу "
+"переходить до наступного блоку."
 
 #: templates/help/studio/tips/blocks/playsound.html:35
 #: templates/help/studio/tips/blocks/playsound_untildone.html:24
@@ -1313,10 +1317,12 @@ msgid ""
 "<img src=\"%(url_playsound_tildone)s\"/> waits until the sound is finished "
 "playing before continuing to the next block."
 msgstr ""
+"<img src=\"%(url_playsound_tildone)s\"/> чекає, доки звук закінчиться, а "
+"потім переходить до наступного блоку."
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:11
 msgid "Plays a sound and waits until the sound is finished"
-msgstr ""
+msgstr "Відтворює звук і чекає, поки він закінчиться"
 
 #: templates/help/studio/tips/blocks/point-direction.html:7
 msgid "Set the direction of the current sprite"
@@ -1345,7 +1351,7 @@ msgstr "Повертає спрайт до вказівника миші або 
 
 #: templates/help/studio/tips/blocks/point-towards.html:16
 msgid "<b>point towards</b> changes the direction of the current sprite."
-msgstr ""
+msgstr "<b>слідкувати за</b> змінює напрям поточного спрайту."
 
 #: templates/help/studio/tips/blocks/point-towards.html:19
 msgid "You can choose from the menu:"
@@ -1381,6 +1387,9 @@ msgid ""
 "  typing in a number. Choosing \"random\" replaces a random item in the list.  The length \n"
 "  of the list does not change."
 msgstr ""
+"Ви можете вказати елемент для заміни, вибравши зі списку або набравши\n"
+"номер. Якщо вибрати \"випадково\", буде замінено випадковий елемент списку.\n"
+"Довжина списку не змінюється."
 
 #: templates/help/studio/tips/blocks/replace-list.html:21
 msgid "You can choose where in a list to put an item. For example:"
@@ -1392,7 +1401,7 @@ msgstr "Встановити таймер у нуль"
 
 #: templates/help/studio/tips/blocks/rest.html:8
 msgid "Rests (plays nothing) for specified number of beats"
-msgstr ""
+msgstr "Пауза (відсутність звуку) задану кількість тактів"
 
 #: templates/help/studio/tips/blocks/round.html:9
 msgid "Reports closest integer to a number"
@@ -1406,6 +1415,10 @@ msgid ""
 "<img src=\"%(url_round_5_1)s\" /> is 5, and <img src=\"%(url_round_5_6)s\" "
 "/> is 6."
 msgstr ""
+"<img src=\"%(url_round)s\" /> дає округлене значення числа. Це означає, що з"
+" десяткового дробу буде отримано найближче ціле число. Наприклад: <img "
+"src=\"%(url_round_5_1)s\" /> дорівнює 5, and <img src=\"%(url_round_5_6)s\" "
+"/> дорівнює 6."
 
 #: templates/help/studio/tips/blocks/say-for-seconds.html:8
 msgid "Say words in a speech bubble for a number of seconds"
@@ -1440,6 +1453,8 @@ msgid ""
 "To remove the speech bubble, delete the text and click <img "
 "src=\"%(url_say)s\" />."
 msgstr ""
+"Щоб вилучити хмаринку повідомлення, видаліть текст і натисніть <img "
+"src=\"%(url_say)s\" />."
 
 #: templates/help/studio/tips/blocks/say.html:20
 #, python-format
@@ -1447,6 +1462,8 @@ msgid ""
 "To remove the speech bubble, click an empty say block: <img "
 "src=\"%(url_say)s\" />."
 msgstr ""
+"Щоб видалити хмаринку повідомлення, клацніть по порожньому блоку "
+"\"говорити\": <img src=\"%(url_say)s\" />."
 
 #: templates/help/studio/tips/blocks/scratch-days.html:7
 msgid "Reports the number of days since the start of Scratch (May 15th, 2007)"
@@ -1460,13 +1477,15 @@ msgstr "Встановити графічні ефекти для спрайту
 
 #: templates/help/studio/tips/blocks/set-effect.html:12
 msgid "Click to choose an effect from the menu:"
-msgstr ""
+msgstr "Клацніть, щоб вибрати ефект зі списку:"
 
 #: templates/help/studio/tips/blocks/set-effect.html:15
 msgid ""
 "Try typing in different numbers between -100 and 100. (Some of the effects "
 "range from 0 to 100.)"
 msgstr ""
+"Спробуйте вводити різні числа від -100 до 100. (Деякі ефекти змінюються від "
+"0 до 100)."
 
 #: templates/help/studio/tips/blocks/set-size.html:7
 #, python-format
@@ -1565,14 +1584,16 @@ msgstr ""
 msgid ""
 "Sets the type of instrument that the sprite uses for <b>play note</b> blocks"
 msgstr ""
+"Встановлює тип інструменту, який використовує спрайт для блоків <b>грати "
+"ноту</b>"
 
 #: templates/help/studio/tips/blocks/setinstrument.html:16
 msgid "Each sprite has its own instrument."
-msgstr ""
+msgstr "Кожен спрайт має свій власний інструмент."
 
 #: templates/help/studio/tips/blocks/setinstrument.html:19
 msgid "Click to choose from the menu. Or, type in a number from 1 to 21."
-msgstr ""
+msgstr "Натисніть, щоб вибрати зі списку. Або введіть число від 1 до 21."
 
 #: templates/help/studio/tips/blocks/setpencolor.html:8
 msgid "Sets pen's color, based on choice from color picker"
@@ -1580,7 +1601,7 @@ msgstr "Встановити колір олівця через вибір із 
 
 #: templates/help/studio/tips/blocks/setpencolor.html:21
 msgid "Picking the color also changes the pen shade."
-msgstr ""
+msgstr "Вибір кольору також змінює відтінок пера."
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:7
 msgid "Sets pen's color to specified value"
@@ -1595,12 +1616,19 @@ msgid ""
 " number 130 is <font color = blue>blue</font>, and number 170 is <font color"
 " = magenta>magenta</font>."
 msgstr ""
+"Ви можете встановити колір олівця змінною, подібно до <img "
+"src=\"%(url_y_position)s\" />, або числом. Наприклад, число 0 позначає <font"
+" color = red>червоний</font>, число 70 - <font color = green>зелений</font>,"
+" число 130 - <font color = blue>синій</font>, а число 170 - <font color = "
+"magenta>пурпуровий</font>."
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:17
 msgid ""
 "Pen_color=0 at red end of rainbow, pen_color=100 at blue end of rainbow. "
 "Ranges from 0 to 200 to go around the color wheel."
 msgstr ""
+"Колір_олівця=0 на червоному краю веселки, колір_олівця=100 на синьому краю "
+"веселки. Діапазон від 0 до 200 охоплює колірне колесо."
 
 #: templates/help/studio/tips/blocks/setpensize.html:9
 msgid "Sets pen's thickness"
@@ -1683,6 +1711,8 @@ msgid ""
 "To view the value of size, click the checkbox next to the block in the "
 "palette."
 msgstr ""
+"Щоб переглянути значення розміру, поставте прапорець поруч із блоком на "
+"палітрі."
 
 #: templates/help/studio/tips/blocks/square.html:7
 msgid "Reports result of selected function"
@@ -1701,6 +1731,8 @@ msgid ""
 "This block performs a mathematical function. Choose the math functions from "
 "the block's drop down menu."
 msgstr ""
+"Цей блок виконує математичну функцію. Виберіть математичну функцію зі списку"
+" блоку."
 
 #: templates/help/studio/tips/blocks/stamp.html:8
 msgid "Stamps the sprite's image onto the Stage"
@@ -1713,10 +1745,13 @@ msgid ""
 "It can be drawn over or cleared using the <img src=\"%(url_clear)s\" /> "
 "block."
 msgstr ""
+"Штамп - це лише тимчасовий образ спрайту, який малюється на сцені. Його "
+"можна намалювати чи очистити, використовуючи блок <img src=\"%(url_clear)s\""
+" />."
 
 #: templates/help/studio/tips/blocks/stamp.html:17
 msgid "A stamp cannot move and cannot hold scripts."
-msgstr ""
+msgstr "Штамп не може рухатися і не може мати скрипти."
 
 #: templates/help/studio/tips/blocks/stop.html:7
 msgid "Stops all scripts in all sprites"
@@ -1814,6 +1849,8 @@ msgid ""
 "To remove the speech bubble, use a blank block: <img "
 "src=\"%(url_think_blank)s\" />."
 msgstr ""
+"Щоб вилучити хмаринку, використайте порожній блок: <img "
+"src=\"%(url_think_blank)s\" />."
 
 #: templates/help/studio/tips/blocks/timer.html:7
 msgid "Reports the value of the timer in seconds"
@@ -1824,6 +1861,8 @@ msgid ""
 "To see the value of timer, click the checkbox next to the block. The timer "
 "is always running."
 msgstr ""
+"Щоб побачити значення таймера, поставте прапорець біля блока. Таймер завжди "
+"працює."
 
 #: templates/help/studio/tips/blocks/timestamp.html:8
 msgid "Reports the number of days since 2000"
@@ -1847,6 +1886,8 @@ msgid ""
 "ways. Select from the pull-down menu to choose. You can check if the sprite "
 "is:"
 msgstr ""
+"Ви можете використовувати блок <img src=\"%(url_touching)s\"/> трьома "
+"способами. Виберіть спосіб зі списку. Ви можете перевірити, чи є спрайт:"
 
 #: templates/help/studio/tips/blocks/turn-left.html:7
 msgid "Turn to the left"
@@ -1897,7 +1938,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/usedefine.html:18
 msgid "If your block has an input, you can type in it:"
-msgstr ""
+msgstr "Якщо ваш блок має вхід, ви можете написати в ньому:"
 
 #: templates/help/studio/tips/blocks/usedefine.html:23
 msgid ""
@@ -1918,7 +1959,7 @@ msgstr "Повідомляє який користувач переглядає"
 #: templates/help/studio/tips/blocks/username.html:15
 msgid ""
 "This block will show the username of the user currently viewing the project."
-msgstr ""
+msgstr "Цей блок покаже ім'я користувача, який переглядає проект."
 
 #: templates/help/studio/tips/blocks/username.html:19
 #, python-format
@@ -1926,6 +1967,8 @@ msgid ""
 "If you want to save the current username, you can store it in a variable or "
 "list. For example, <img src=\"%(url_username_ex2)s\"/>"
 msgstr ""
+"Якщо потрібно зберегти поточне ім'я користувача, помістіть його в змінну або"
+" список. Наприклад, <img src=\"%(url_username_ex2)s\"/>"
 
 #: templates/help/studio/tips/blocks/variable.html:7
 msgid "Reports value of the variable"
@@ -1934,7 +1977,7 @@ msgstr "Результатом є значення змінної"
 #: templates/help/studio/tips/blocks/variable.html:15
 msgid ""
 "To see the value of the variable, click the checkbox next to the block."
-msgstr ""
+msgstr "Щоб побачити значення змінної, натисніть прапорець біля блоку."
 
 #: templates/help/studio/tips/blocks/variable.html:18
 msgid "Right-click on readout to get different views:"
@@ -1943,6 +1986,7 @@ msgstr ""
 #: templates/help/studio/tips/blocks/variable.html:21
 msgid "To delete or rename a variable, right click on the variable."
 msgstr ""
+"Щоб видалити або перейменувати змінну, клацніть на ній правою кнопкою."
 
 #: templates/help/studio/tips/blocks/video-motion.html:9
 msgid ""
@@ -1988,7 +2032,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/video-motion.html:34
 msgid "Make sure the video camera is on."
-msgstr ""
+msgstr "Переконайтеся, що відеокамера увімкнена."
 
 #: templates/help/studio/tips/blocks/video-motion.html:35
 #, python-format
@@ -1998,7 +2042,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/video-motion.html:36
 msgid "Click the checkbox to see the current value:"
-msgstr ""
+msgstr "Натисніть прапорець, щоб побачити поточне значення:"
 
 #: templates/help/studio/tips/blocks/volume.html:9
 msgid "Reports sprite's sound volume"
@@ -2071,11 +2115,11 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/when-loudness.html:12
 msgid "You can select any of the attributes from the dropdown menu."
-msgstr ""
+msgstr "Ви можете вибрати будь-який з атрибутів зі списку."
 
 #: templates/help/studio/tips/blocks/when-loudness.html:19
 msgid "After the timer reaches 10 seconds, the script will run."
-msgstr ""
+msgstr "Як тільки таймер досягне 10 секунд, скрипт почне працювати."
 
 #: templates/help/studio/tips/blocks/when-loudness.html:26
 msgid ""
@@ -2099,6 +2143,8 @@ msgid ""
 "Use this block to access various properties from other sprites and use that "
 "information in the current sprite's scripts."
 msgstr ""
+"Використовуйте цей блок для доступу до різних властивостей з інших спрайтів "
+"та використання цієї інформації в скриптах поточного спрайта."
 
 #: templates/help/studio/tips/blocks/x-position.html:7
 msgid "Reports the <b>x</b> position of a sprite"
@@ -2179,11 +2225,12 @@ msgstr ""
 
 #: templates/help/studio/tips/ext/ext1.html:5
 msgid "LEGO WeDo 1.0 or PicoBoard Setup"
-msgstr ""
+msgstr "Встановлення LEGO WeDo 1.0 або PicoBoard"
 
 #: templates/help/studio/tips/ext/ext1.html:6
 msgid "Follow these steps to setup the Picoboard or the LEGO WeDo 1.0 kit."
 msgstr ""
+"Щоб налаштувати Picoboard або LEGO WeDo 1.0, виконайте наведені нижче дії."
 
 #: templates/help/studio/tips/ext/ext1.html:9
 #: templates/help/studio/tips/ext/wedo1.html:15
@@ -2192,6 +2239,9 @@ msgid ""
 "(If you have the newer LEGO WeDo 2.0 set, see <a href=\"../../howto/wedo2setup-intro/\">LEGO WeDo 2.0 Setup</a>)\n"
 "</span>"
 msgstr ""
+"\n"
+"(Якщо у вас є новіший набір LEGO WeDo 2.0, див. <a href=\"../../howto/wedo2setup-intro/\">Встановлення LEGO WeDo 2.0</a>)\n"
+"</span>"
 
 #: templates/help/studio/tips/ext/ext1.html:15
 #, python-format
@@ -2721,6 +2771,10 @@ msgid ""
 "include: 3=orange, 7=yellow, 33=green, 50=teal, 66=blue, 80=purple, "
 "90=magenta."
 msgstr ""
+"При натисканні клавіші пропуск світло стає жовтим. Кольори варіюються від "
+"значення 1 (жовтогарячий) до 100 (червоний). Деякі інші кольори включають: 3"
+" = помаранчевий, 7 = жовтий, 33 = зелений, 50 = синьо-зелений, 66 = синій, "
+"80 = фіолетовий, 90 = пурпуровий."
 
 #: templates/help/studio/tips/ext/wedo2-set-light-color-to.html:18
 msgid "Numbers larger than 100 loop through the same color range."
@@ -6690,6 +6744,9 @@ msgid ""
 "\tTip: Put the <span class=\"soundcolor\">play sound</span> block before the <span class=\"lookscolor\">say block</span> so the sound plays at the same time that the talk bubble appears.\n"
 "\t"
 msgstr ""
+"\n"
+"\tПорада: помістіть блок <span class=\"soundcolor\">відтворити звук</span> перед блоком <span class=\"lookscolor\">говорити</span>, щоб звук відтворювався одночасно з появою хмаринки.\n"
+"\t"
 
 #: templates/help/studio/tips/howto/favorite3.html:54
 msgid "Click on your sprite to see and hear what it says:"
