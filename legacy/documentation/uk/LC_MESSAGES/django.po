@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: templates/help/studio/tips/blocks/add-an-extension.html:9
 msgid "Add blocks that extend what you can do in Scratch"
@@ -1704,7 +1704,7 @@ msgstr "Повідомляє розмір спрайта, як %% від поч�
 msgid ""
 "<img src=\"%(url_size)s\" /> reports the %% of the original size of the "
 "object"
-msgstr ""
+msgstr "<img src=\"%(url_size)s\" /> повідомляє %% початкового розміру об'єкта"
 
 #: templates/help/studio/tips/blocks/size.html:21
 msgid ""
@@ -1789,6 +1789,10 @@ msgid ""
 "src=\"%(url_when_backdrop_switches_to_backdrop1)s\" /> to finish before "
 "going to the next block."
 msgstr ""
+"<img src=\"%(url_switch_backdrop_to_backdrop1_and_wait)s\" /> очікуватиме "
+"завершення всіх скриптів, запущених з <img "
+"src=\"%(url_when_backdrop_switches_to_backdrop1)s\" />, перш ніж перейти до "
+"наступного блока."
 
 #: templates/help/studio/tips/blocks/switch-backdrop.html:7
 msgid "Switch to the specified backdrop"
@@ -1891,7 +1895,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/turn-left.html:7
 msgid "Turn to the left"
-msgstr ""
+msgstr "Повернути вліво"
 
 #: templates/help/studio/tips/blocks/turn-left.html:14
 msgid ""
@@ -1931,10 +1935,12 @@ msgid ""
 "The custom block runs by calling the <strong>define</strong> script that "
 "matches the name on the block."
 msgstr ""
+"Власний блок запускається викликом скрипта <strong>define</strong>, з "
+"відповідною назвою блока."
 
 #: templates/help/studio/tips/blocks/usedefine.html:15
 msgid "Custom blocks can make your scripts more organized and modular:"
-msgstr ""
+msgstr "Власні блоки додають вашим скриптам організованості і модульності:"
 
 #: templates/help/studio/tips/blocks/usedefine.html:18
 msgid "If your block has an input, you can type in it:"
@@ -1945,6 +1951,8 @@ msgid ""
 "To edit the block, right-click (Ctrl+click on Mac) on the block and choose "
 "\"edit\" from the menu."
 msgstr ""
+"Щоб змінити блок, клацніть на ньому правою кнопкою (клацніть з Ctrl на Mac) "
+"і виберіть в меню \"змінити\"."
 
 #: templates/help/studio/tips/blocks/usedefine.html:27
 msgid ""
@@ -2078,7 +2086,7 @@ msgstr "Виконує скрипт, якщо тло перемкнеться н
 
 #: templates/help/studio/tips/blocks/when-backdrop-switches.html:13
 msgid "Once the background switches to kitchen, the sprite will say \"Now I"
-msgstr ""
+msgstr "Коли тло перемкнеться на кухню, спрайт скаже: \"Тепер я"
 
 #: templates/help/studio/tips/blocks/when-flag-clicked.html:7
 msgid "Runs the script when the green flag is clicked"
@@ -2136,7 +2144,7 @@ msgstr "Повідомляє властивість або змінну іншо
 
 #: templates/help/studio/tips/blocks/x-position-sprite.html:13
 msgid "The x position of the ghost is set to the x position of Gobo."
-msgstr ""
+msgstr "X-позиція привила встановлюється в x-позицію Gobo."
 
 #: templates/help/studio/tips/blocks/x-position-sprite.html:19
 msgid ""
@@ -2188,6 +2196,8 @@ msgid ""
 "All hardware extensions need a plug-in to work. If the plug-in is not already isntalled, check the <a href=\"../../ext/ext1/\">Extensions</a> page for instructions.\n"
 "</p>"
 msgstr ""
+"Для роботи кожного апаратного розширення потрібен плагін. Якщо плагін ще не встановлено, перегляньте сторінку <a href=\"../../ext/ext1/\">Розширення</a>.\n"
+"</p>"
 
 #: templates/help/studio/tips/ext/PicoBoard.html:23
 #: templates/help/studio/tips/ext/wedo1.html:27
@@ -2213,6 +2223,9 @@ msgid ""
 "wiki.info/wiki/PicoBoard\" target=\"_blank\">PicoBoard</a> page on the "
 "Scratch wiki.</p>"
 msgstr ""
+"<p>Щоб дізнатися більше, перегляньте сторінку <a href=\"https://en.scratch-"
+"wiki.info/wiki/PicoBoard\" target=\"_blank\">PicoBoard</a> на Scratch-"
+"вікі.</p>"
 
 #: templates/help/studio/tips/ext/PicoBoard.html:43
 #: templates/help/studio/tips/ext/wedo1.html:57
@@ -5757,24 +5770,28 @@ msgid ""
 "Then choose the backdrop you want (such as 'blue sky' or 'basketball "
 "court'):"
 msgstr ""
+"Потім виберіть потрібне тло (наприклад, \"синє небо\" або \"баскетбольний "
+"майданчик\"):"
 
 #: templates/help/studio/tips/howto/catch2.html:13
 msgid "Next, go to the top"
-msgstr ""
+msgstr "Далі перейдіть вгору"
 
 #: templates/help/studio/tips/howto/catch3.html:6
 #: templates/help/studio/tips/howto/fly7.html:8
 msgid "Select your sprite by clicking on its thumbnail:"
-msgstr ""
+msgstr "Виберіть свій спрайт, клацнувши його мініатюрі:"
 
 #: templates/help/studio/tips/howto/catch3.html:11
 #: templates/help/studio/tips/howto/fly5.html:19
 msgid "Click the <span class=\"tab-ref\">Scripts</span> tab."
-msgstr ""
+msgstr "Клацніть вкладку <span class=\"tab-ref\">Скрипти</span>."
 
 #: templates/help/studio/tips/howto/catch3.html:12
 msgid "Tell your sprite to go to a random position at the top of the screen:"
 msgstr ""
+"Скажіть своєму спрайту, щоб він перейшов до випадкової позиції у верхній "
+"частині екрана:"
 
 #: templates/help/studio/tips/howto/catch3.html:14
 #: templates/help/studio/tips/howto/catch4.html:8
@@ -5783,15 +5800,15 @@ msgstr ""
 #: templates/help/studio/tips/howto/hide7.html:12
 #: templates/help/studio/tips/howto/hide8.html:17
 msgid "Your script should look like this:"
-msgstr ""
+msgstr "Ваш скрипт повинен виглядати так:"
 
 #: templates/help/studio/tips/howto/catch3.html:17
 msgid "Next, make it fall"
-msgstr ""
+msgstr "Далі, змусьте його падати"
 
 #: templates/help/studio/tips/howto/catch4.html:6
 msgid "Make your sprite fall by adding these blocks:"
-msgstr ""
+msgstr "Зробіть, щоб спрайт падав, додавши такі блоки:"
 
 #: templates/help/studio/tips/howto/catch4.html:10
 msgid ""
@@ -7066,7 +7083,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/fly7.html:7
 msgid "Make your character move when you press a key."
-msgstr ""
+msgstr "Зробіть так, щоб персонаж рухався при натисканні клавіші."
 
 #: templates/help/studio/tips/howto/fly7.html:14
 msgid "Add these scripts to make it move up and down:"
@@ -7242,6 +7259,12 @@ msgid ""
 "\t</p>\n"
 "\t"
 msgstr ""
+"\n"
+"\t<p>Ви можете створити багато проектів різних типів з нуля. Щоб побачити приклади, клацніть <img style=\"margin-bottom:-10px\" src = \t\"%(STATIC_URL)s/images/help/scratch-logo-small.png\"> у верхній частині ліворуч, щоб вивчати проекти на домашній сторінці.</p>\n"
+"\t<p><img src = \"%(STATIC_URL)s/images/help/gobo-friends.png\"></p>\n"
+"\t<p>Якщо ви бачите потрібний вам проект, натисніть кнопку <img style=\"margin-bottom:-10px\" src = \"%(url_see_inside_smaller)s\">, а потім натисніть кнопку <img style=\"margin-bottom:-10px\" src = \"%(url_remix_button)s\">. Змініть проект, щоб зробити власний!\n"
+"\t</p>\n"
+"\t"
 
 #: templates/help/studio/tips/howto/get-started-13.html:18
 #, python-format
@@ -8008,6 +8031,9 @@ msgid ""
 "href=\"../../home/\"><img class=\"intext\" style=\"top: 0px\" src = "
 "\"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">All Tips</a>.</p>"
 msgstr ""
+"<p>Що ви будете створювати далі?</p><p>Щоб отримати більше ідей, натисніть "
+"кнопку <a href=\"../../home/\"><img class=\"intext\" style=\"top: 0px\" src "
+"= \"%(STATIC_URL)s/images/tipbar/nav-home-blue.png\">Всі поради</a>.</p>"
 
 #: templates/help/studio/tips/howto/hoc-intro.html:6
 msgid ""
@@ -8016,10 +8042,14 @@ msgid ""
 "\t<p>To get started, watch this intro video:</p>\n"
 "\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
 msgstr ""
+"\n"
+"\t<p>Виконавши цю вправу, ви створите інтерактивну святкову листівку, якою можна поділитися з друзями та родиною.</p>\n"
+"\t<p>Щоб розпочати, перегляньте це вступне відео:</p>\n"
+"\t<iframe src=\"//player.vimeo.com/video/78998915?title=0&amp;byline=0&amp;portrait=0;hd_off=1&\" width=\"295\" height=\"184\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n"
 
 #: templates/help/studio/tips/howto/hoc-intro.html:12
 msgid "Let's begin!"
-msgstr ""
+msgstr "Розпочнімо!"
 
 #: templates/help/studio/tips/howto/hoc-intro.html:18 tips_config.py:137
 msgid "Explore Ideas for Your Card"
@@ -8145,19 +8175,19 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops1.html:26
 msgid "When you click on that block, the ball will go to the starting point."
-msgstr ""
+msgstr "Коли ви клацнете на цьому блоці, м'яч перейде до початкової точки."
 
 #: templates/help/studio/tips/howto/hoops1.html:32
 msgid "Next, press a key to start"
-msgstr ""
+msgstr "Потім натисніть клавішу, щоб розпочати"
 
 #: templates/help/studio/tips/howto/hoops10.html:9
 msgid "Add More Sounds"
-msgstr ""
+msgstr "Додайте більше звуків"
 
 #: templates/help/studio/tips/howto/hoops10.html:13
 msgid "Click the play button to preview the sounds."
-msgstr ""
+msgstr "Натисніть кнопку відтворення, щоб прослухати звуки."
 
 #: templates/help/studio/tips/howto/hoops10.html:31
 msgid "Score Points"
@@ -8401,11 +8431,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hoops9.html:9
 msgid "Click to choose the ball."
-msgstr ""
+msgstr "Натисніть, щоб вибрати м'яч."
 
 #: templates/help/studio/tips/howto/hoops9.html:11
 msgid "Add these blocks to check if ball is touching the panda."
-msgstr ""
+msgstr "Додайте ці блоки, щоб перевірити, чи торкається м'яч до панди."
 
 #: templates/help/studio/tips/howto/hoops9.html:16
 msgid ""
@@ -8419,10 +8449,12 @@ msgid ""
 "Type in the same numbers as in the beginning of the script. This will make "
 "the ball glide back to the starting point."
 msgstr ""
+"Введіть ті ж цифри, що і в початку скрипту. Це змусить м'яч повернутись до "
+"початкової точки."
 
 #: templates/help/studio/tips/howto/hoops9.html:24
 msgid "Make the ball stop when it gets back to the starting point."
-msgstr ""
+msgstr "Зупиніть м'яч, коли він повернеться до початкової точки."
 
 #: templates/help/studio/tips/howto/hoops9.html:26
 msgid ""
@@ -8430,14 +8462,19 @@ msgid ""
 "\tClick the <span class=\"controlcolor\">Control</span> category. Drag out a <span class=\"controlcolor\">stop</span> block, and choose 'this script' from the drop-down menu:\n"
 "\t"
 msgstr ""
+"\n"
+"\tНатисніть категорію <span class=\"controlcolor\">Керування</span>. Перетягніть блок <span class=\"controlcolor\">зупинити</span> і виберіть зі списку 'цей скрипт':\n"
+"\t"
 
 #: templates/help/studio/tips/howto/hoops9.html:33
 msgid "Add this script inside the repeat block:"
-msgstr ""
+msgstr "Додайте цей скрипт всередині блоку повторення:"
 
 #: templates/help/studio/tips/howto/hoops9.html:35
 msgid "You can experiment to see what happens if you remove the stop block."
 msgstr ""
+"Ви можете експериментувати, щоб побачити, що станеться, якщо ви видалите "
+"блок зупинки."
 
 #: templates/help/studio/tips/howto/hoops9.html:37
 msgid ""
@@ -8445,10 +8482,13 @@ msgid ""
 "\t<span class=\"reminder\">Tip: Any blocks you add after 'stop this script' will not run.</span> \n"
 " "
 msgstr ""
+"\n"
+"\t<span class=\"reminder\">Порада: Блоки, додані після блока 'зупинити цей скрипт' не будуть виконані.</span> \n"
+" "
 
 #: templates/help/studio/tips/howto/hoops9.html:42
 msgid "Next, enhance and customize"
-msgstr ""
+msgstr "Потім покращуйте та налаштовуйте"
 
 #: templates/help/studio/tips/howto/import-music.html:11
 msgid "Select the Sounds tab"
@@ -8473,12 +8513,13 @@ msgstr "Клацніть Зелений прапор для негайного �
 
 #: templates/help/studio/tips/howto/import-music.html:23
 msgid "If you want to edit the song, select a section:"
-msgstr ""
+msgstr "Якщо ви хочете відредагувати мелодію, виберіть розділ:"
 
 #: templates/help/studio/tips/howto/interact-microphone.html:14
 #, python-format
 msgid "Have a microphone? You can use <img src=\"%(url_loudness_small)s\">"
 msgstr ""
+"У вас є мікрофон? Ви можете використати <img src=\"%(url_loudness_small)s\">"
 
 #: templates/help/studio/tips/howto/interact-microphone.html:18
 msgid "Make noise so your sprite will jump!"
@@ -8508,6 +8549,8 @@ msgid ""
 "Insert <img src=\"%(url_mouse_x)s\"> into <img "
 "src=\"%(url_set_color_effect)s\">"
 msgstr ""
+"Вставте <img src=\"%(url_mouse_x)s\"> в <img "
+"src=\"%(url_set_color_effect)s\">"
 
 #: templates/help/studio/tips/howto/interactive-effects.html:14
 msgid "Use this code to whirl as you move the mouse:"
@@ -8527,7 +8570,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/keep-score.html:10
 msgid "Make a variable to keep track of score."
-msgstr ""
+msgstr "Створіть змінну, щоб стежити за рахунком."
 
 #: templates/help/studio/tips/howto/keep-score.html:13
 #, python-format
@@ -8535,10 +8578,12 @@ msgid ""
 "Choose <img src=\"%(url_data_palette)s\"> and then <img "
 "src=\"%(url_make_variable_button)s\">"
 msgstr ""
+"Виберіть <img src=\"%(url_data_palette)s\">, а потім <img "
+"src=\"%(url_make_variable_button)s\">"
 
 #: templates/help/studio/tips/howto/keep-score.html:14
 msgid "Type in the name \"Score\" and then click OK:"
-msgstr ""
+msgstr "Введіть назву \"Оцінка\", а потім натисніть кнопку \"Гаразд\":"
 
 #: templates/help/studio/tips/howto/keep-score.html:19
 #, python-format
@@ -8546,10 +8591,12 @@ msgid ""
 "New blocks will appear and the variable Score will show on the Stage: <img "
 "src=\"%(url_score_monitor)s\">"
 msgstr ""
+"З'являться нові блоки, а змінна Рахунок буде показана на сцені: <img "
+"src=\"%(url_score_monitor)s\">"
 
 #: templates/help/studio/tips/howto/keep-score.html:23
 msgid "Here's an example script for keeping score:"
-msgstr ""
+msgstr "Ось приклад скрипту для збереження рахунку:"
 
 #: templates/help/studio/tips/howto/makey-intro.html:6
 msgid ""
@@ -8575,23 +8622,23 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/makey-intro.html:28 tips_config.py:155
 msgid "Try It!"
-msgstr ""
+msgstr "Випробуйте це!"
 
 #: templates/help/studio/tips/howto/makey-intro.html:29 tips_config.py:156
 msgid "Code and Customize"
-msgstr ""
+msgstr "Програмуйте і налаштовуйте"
 
 #: templates/help/studio/tips/howto/makey-intro.html:30 tips_config.py:157
 msgid "Add More Keys"
-msgstr ""
+msgstr "Додайте більше кнопок"
 
 #: templates/help/studio/tips/howto/makey-intro.html:31 tips_config.py:158
 msgid "Experiment and Create"
-msgstr ""
+msgstr "Експериментуйте і творіть"
 
 #: templates/help/studio/tips/howto/makey-intro.html:32 tips_config.py:159
 msgid "Extra Tip: Quick Keys"
-msgstr ""
+msgstr "Додаткова порада: швидкі клавіші"
 
 #: templates/help/studio/tips/howto/makey1.html:7
 msgid "Plug the MaKey MaKey into the computer using the USB cable."

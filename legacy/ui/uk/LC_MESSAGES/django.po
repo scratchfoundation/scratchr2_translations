@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: authentication/forms.py:74
 msgid "no gender provided"
@@ -179,6 +179,7 @@ msgid_plural "days"
 msgstr[0] "день"
 msgstr[1] "дні"
 msgstr[2] "днів"
+msgstr[3] "днів"
 
 #: base_comments/templatetags/scratch_text_filters.py:169
 #, python-format
@@ -187,6 +188,7 @@ msgid_plural "%(minutes)d minutes ago"
 msgstr[0] "%(minutes)d хвилину тому"
 msgstr[1] "%(minutes)d хвилини тому"
 msgstr[2] "%(minutes)d хвилин тому"
+msgstr[3] "%(minutes)d хвилин тому"
 
 #: base_comments/templatetags/scratch_text_filters.py:173
 msgid "just now"
@@ -199,6 +201,7 @@ msgid_plural "%(hours)d hours ago"
 msgstr[0] "%(hours)d година тому"
 msgstr[1] "%(hours)d години тому"
 msgstr[2] "%(hours)d годин тому"
+msgstr[3] "%(hours)d годин тому"
 
 #: base_comments/templatetags/scratch_text_filters.py:179
 #, python-format
@@ -263,6 +266,8 @@ msgid ""
 "After changing this student's password, you will need to share the new "
 "password with your student directly so that they can log back into Scratch."
 msgstr ""
+"Після змінення цього учнівського пароля вам доведеться передати новий пароль"
+" безпосередньо своїм учням, щоб вони могли увійти до Scratch."
 
 #: galleries/models.py:264
 msgid "studio"
@@ -760,7 +765,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:45
 #: templates/registration/welcome_email_message.txt:36
 msgid "Scratch On!"
-msgstr ""
+msgstr "Зі Scratch!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
@@ -800,7 +805,7 @@ msgstr "Зі Скретчем!"
 
 #: templates/accounts/email_verification/failed_verification.html:20
 msgid "Uh oh! Something went wrong with your email confirmation."
-msgstr ""
+msgstr "Ой! Щось пішло не так з підтвердженням вашої адреси."
 
 #: templates/accounts/email_verification/failed_verification.html:21
 msgid ""
@@ -829,6 +834,10 @@ msgid ""
 "one</a> or <a href=\"%(contact_us_url)s\">contact us</a> if you have "
 "questions."
 msgstr ""
+"Власник цієї адреси просить видалити її з наших списків. Будь ласка, <a "
+"href=\"%(settings_url)s\">змініть свою адресу</a> або <a "
+"href=\"%(contact_us_url)s\">зв'яжіться з нами</a>, якщо у вас виникли "
+"питання."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:19
 #, python-format
@@ -839,6 +848,11 @@ msgid ""
 "        <strong>%(email_address)s</strong>\n"
 "      "
 msgstr ""
+"\n"
+"        Перегляньте повідомлення про підтвердження, надіслане на:\n"
+"        <br/>\n"
+"        <strong>%(email_address)s</strong>\n"
+"      "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:27
 #: templates/accounts/email_verification/verify_email_standalone.html:108
@@ -867,16 +881,16 @@ msgstr ""
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Still can't find the message?"
-msgstr ""
+msgstr "Не вдається знайти повідомлення?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Resend Confirmation"
-msgstr ""
+msgstr "Надіслати повторно"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:44
 msgid "OK, back to Scratch"
-msgstr ""
+msgstr "Гаразд, повертайтеся до Scratch"
 
 #: templates/accounts/email_verification/passed_verification.html:21
 #: templates/registration/welcome_email_subject.html:1
@@ -910,7 +924,7 @@ msgstr "Спілкуватися з іншими скретчерами"
 
 #: templates/accounts/email_verification/passed_verification.html:52
 msgid "All set to go!"
-msgstr ""
+msgstr "Все налаштовано!"
 
 #: templates/accounts/email_verification/passed_verification.html:56
 #, python-format
@@ -918,15 +932,19 @@ msgid ""
 "Success! You have confirmed your email address, "
 "<strong>%(username)s</strong>."
 msgstr ""
+"Вітаємо! Ви підтвердили свою електронну адресу, "
+"<strong>%(username)s</strong>."
 
 #: templates/accounts/email_verification/passed_verification.html:57
 msgid ""
 "Jump into Scratch to create new projects and share them with the community!"
 msgstr ""
+"Перейдіть до Scratch, щоб створювати нові проекти та ділитися ними зі "
+"спільнотою!"
 
 #: templates/accounts/email_verification/passed_verification.html:59
 msgid "OK, let's go!"
-msgstr ""
+msgstr "Гаразд, вперед!"
 
 #: templates/accounts/email_verification/verification_email.html:12
 #, python-format
@@ -934,6 +952,8 @@ msgid ""
 "\n"
 "Greetings from the Scratch Team at MIT! A few minutes ago, your child signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"Вас вітає команда Scratch з MIT! Кілька хвилин тому ваша дитина зареєструвала новий обліковий запис у <a href=\"%(scratch_url)s\">Scratch</a> з ім'ям користувача:\n"
 
 #: templates/accounts/email_verification/verification_email.html:16
 #, python-format
@@ -941,10 +961,12 @@ msgid ""
 "\n"
 "Greetings from the Scratch Team at MIT! You just signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"Вас вітає команда Scratch з MIT! Ви зареєстрували новий обліковий запис у <a href=\"%(scratch_url)s\">Scratch</a> з ім'ям користувача:\n"
 
 #: templates/accounts/email_verification/verification_email.html:22
 msgid "Please confirm this email address by clicking the button below:"
-msgstr ""
+msgstr "Підтвердьте цю адресу, клацнувши кнопку внизу:"
 
 #: templates/accounts/email_verification/verification_email.html:33
 #, python-format
@@ -952,6 +974,8 @@ msgid ""
 "\n"
 "    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 msgstr ""
+"\n"
+"Scratch є вільною мовою програмування та інтернет-спільнотою, де діти можуть створювати власні інтерактивні історії, ігри та анімації. Підтвердження цієї адреси дасть вашій дитині повний доступ до поширення та коментування в інтернет-спільноті Scratch. Дізнатися більше про Scratch можна на сторінці <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
 #: templates/accounts/email_verification/verification_email.html:37
 #, python-format
@@ -959,6 +983,8 @@ msgid ""
 "\n"
 "    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 msgstr ""
+"\n"
+"Scratch є вільною мовою програмування та інтернет-спільнотою, де ви можете створювати власні інтерактивні історії, ігри та анімації. Підтвердження вашої адреси дасть вам повний доступ до поширення та коментування в інтернет-спільноті Scratch. Дізнатися більше про Scratch можна на сторінці <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
@@ -967,6 +993,9 @@ msgid ""
 "    A few minutes ago, your child signed up for a new account on Scratch (%(scratch_url)s. Please confirm this email address by clicking the button below:\n"
 "    "
 msgstr ""
+"\n"
+"    Кілька хвилин тому ваша дитина зареєструвала новий обліковий запис у Scratch (%(scratch_url)s). Будь ласка, підтвердьте цю адресу електронної пошти, натиснувши кнопку нижче. Please confirm this email address by clicking the button below:\n"
+"    "
 
 #: templates/accounts/email_verification/verification_email_plain.html:13
 #, python-format
@@ -975,6 +1004,9 @@ msgid ""
 "    You just signed up for a new account on Scratch (%(scratch_url)s). Please confirm your email address by clicking the button below:\n"
 "    "
 msgstr ""
+"\n"
+"    Ви щойно зареєстрували новий обліковий запис у Scratch (%(scratch_url)s). Будь ласка, підтвердьте вашу адресу електронної пошти, натиснувши кнопку нижче:\n"
+"    "
 
 #: templates/accounts/email_verification/verification_email_plain.html:21
 #, python-format
@@ -983,6 +1015,8 @@ msgid ""
 "    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
 "    "
 msgstr ""
+"\n"
+"Scratch є вільною мовою програмування та інтернет-спільнотою, де діти можуть створювати власні інтерактивні історії, ігри та анімації. Підтвердження цієї адреси дасть вашій дитині повний доступ до поширення та коментування в інтернет-спільноті Scratch. Дізнатися більше про Scratch можна на сторінці %(about_url)s."
 
 #: templates/accounts/email_verification/verification_email_plain.html:25
 #, python-format
@@ -991,6 +1025,9 @@ msgid ""
 "    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
 "    "
 msgstr ""
+"\n"
+"    Scratch є вільною мовою програмування та інтернет-спільнотою, де ви можете створювати власні інтерактивні історії, ігри та анімації. Підтвердження вашої адреси дасть вам повний доступ до поширення та коментування в інтернет-спільноті Scratch. Дізнатися більше про Scratch можна на сторінці %(about_url)s.\n"
+"    "
 
 #: templates/accounts/email_verification/verify_email_standalone.html:84
 msgid "Want to share on Scratch?"
@@ -1003,6 +1040,9 @@ msgid ""
 "                        We sent a verification email to <strong>%(email_address)s</strong>.\n"
 "                    "
 msgstr ""
+"\n"
+"                        Ми надіслали лист для підтвердження на <strong>%(email_address)s</strong>.\n"
+"                    "
 
 #: templates/accounts/email_verification/verify_email_standalone.html:96
 #, python-format
@@ -1011,6 +1051,8 @@ msgid ""
 "                        The owner of this address has requested their address be removed from our lists. Please <a onClick=\"redirectParent('%(settings_url)s');\" href=\"#\">change your address to a new one</a> or <a onClick=\"redirectParent('%(contact_us_url)s');\" href=\"#\">contact us</a> if you have questions.\n"
 "                    "
 msgstr ""
+"\n"
+" Власник цієї адреси просить видалити її з наших списків. Будь ласка, <a onClick=\"redirectParent('%(settings_url)s');\" href=\"#\">змініть свою адресу</a> або <a onClick=\"redirectParent('%(contact_us_url)s');\" href=\"#\">зв'яжіться з нами</a>, якщо у вас виникли питання."
 
 #: templates/accounts/email_verification/verify_email_standalone.html:102
 #, python-format
@@ -1019,6 +1061,9 @@ msgid ""
 "                        Check for the confirmation message we sent to: <strong>%(email_address)s</strong>\n"
 "                    "
 msgstr ""
+"\n"
+"                        Перегляньте повідомлення про підтвердження, надіслане на <strong>%(email_address)s</strong>\n"
+"                    "
 
 #: templates/accounts/email_verification/verify_email_standalone.html:112
 #, python-format
@@ -1033,11 +1078,11 @@ msgstr ""
 
 #: templates/accounts/email_verification/verify_email_standalone.html:123
 msgid "Ok, back to Scratch"
-msgstr ""
+msgstr "Гаразд, повертайтеся до Scratch"
 
 #: templates/accounts/includes/backbone-init-data.html:5
 msgid "Subscription update successful."
-msgstr ""
+msgstr "Підписку оновлено успішно."
 
 #: templates/accounts/password_change_form.html:9
 msgid "Password "
@@ -1061,7 +1106,7 @@ msgstr "Зміна паролю"
 #: templates/accounts/password_changed_email/message.txt:2
 #, python-format
 msgid "Hi %(username)s!"
-msgstr ""
+msgstr "Привіт, %(username)s!"
 
 #: templates/accounts/password_changed_email/message.html:10
 #: templates/accounts/password_changed_email/message.txt:4
@@ -1071,14 +1116,17 @@ msgid ""
 " you can ignore this email. Otherwise, please contact the Scratch Team at "
 "%(help_email)s."
 msgstr ""
+"Ваш пароль у Scratch недавно було змінено. Якщо це визробили запит на зміну,"
+" знехтуйте цим листом. В іншому разі зверніться до команди Scratch на "
+"%(help_email)s."
 
 #: templates/accounts/password_changed_email/subject.txt:1
 msgid "Your Scratch account password was changed"
-msgstr ""
+msgstr "Пароль вашого облікового запису Scratch було змінено"
 
 #: templates/accounts/subscription/unsubscribe_email_verification_failure.html:20
 msgid "Oops! There has been a problem unsubscribing your email address."
-msgstr ""
+msgstr "Ой! Виникла проблема під час відписування вашої адреси."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_failure.html:22
 #, python-format
@@ -1086,15 +1134,17 @@ msgid ""
 "If you continue to have issues, contact the <a "
 "href=\"%(contact_url)s\">Scratch Team</a>."
 msgstr ""
+"Якщо помилки виникатимуть знову, зверніться до<a "
+"href=\"%(contact_url)s\">команди Scratch</a>."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:16
 #: templates/mail/blacklist/blacklist_success.html:16
 msgid "Unsubscribed"
-msgstr ""
+msgstr "Відписано"
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:20
 msgid "Your email address has been unsubscribed."
-msgstr ""
+msgstr "Адресу вашої скриньки відписано."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:23
 #, python-format
@@ -2729,6 +2779,7 @@ msgid_plural "<span data-count=\"followers\">%(follow_count)s</span> Followers"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+msgstr[3] ""
 
 #: templates/galleries/base.html:114
 msgid "Projects ( <span data-count=\"projects\">100+</span> )"
