@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: cs\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 #: authentication/forms.py:74
 msgid "no gender provided"
@@ -176,6 +176,7 @@ msgid_plural "days"
 msgstr[0] "den"
 msgstr[1] "dny"
 msgstr[2] "dnů"
+msgstr[3] "dnů"
 
 #: base_comments/templatetags/scratch_text_filters.py:169
 #, python-format
@@ -184,6 +185,7 @@ msgid_plural "%(minutes)d minutes ago"
 msgstr[0] "před 1 minutou"
 msgstr[1] "před %(minutes)d minutami"
 msgstr[2] "před %(minutes)d minutami"
+msgstr[3] "před %(minutes)d minutami"
 
 #: base_comments/templatetags/scratch_text_filters.py:173
 msgid "just now"
@@ -196,6 +198,7 @@ msgid_plural "%(hours)d hours ago"
 msgstr[0] "před 1 hodinou"
 msgstr[1] "před %(hours)d hodinami"
 msgstr[2] "před %(hours)d hodinami"
+msgstr[3] "před %(hours)d hodinami"
 
 #: base_comments/templatetags/scratch_text_filters.py:179
 #, python-format
@@ -2866,6 +2869,7 @@ msgid_plural "<span data-count=\"followers\">%(follow_count)s</span> Followers"
 msgstr[0] "<span data-count=\"followers\">%(follow_count)s</span> následovník"
 msgstr[1] "<span data-count=\"followers\">%(follow_count)s</span> následovníci"
 msgstr[2] "<span data-count=\"followers\">%(follow_count)s</span> následovníků"
+msgstr[3] "<span data-count=\"followers\">%(follow_count)s</span> následovníků"
 
 #: templates/galleries/base.html:114
 msgid "Projects ( <span data-count=\"projects\">100+</span> )"
@@ -3224,7 +3228,7 @@ msgid ""
 "Scratch is used in more than 150 different countries and available in more than 40 languages. To change languages, click the menu at the bottom of the page. Or, in the Project Editor, click the globe at the top of the page. To add or improve a translation,\n"
 "          see the <a href=\"https://en.scratch-wiki.info/wiki/How_to_Translate_Scratch\">translation</a> page."
 msgstr ""
-"Scratch se používá ve více než 150 rozdílných zemích a je dostupný ve více než 40 jazycích. Aby sis mohl(a) změnit jazyk, klikni na menu na konci stránky. Nebo v editoru klikni na glóbus nahoře na stránce. Pro přidání nebo zlepšení překladu\n"
+"Scratch se používá ve více než 150 rozdílných zemích a je dostupný ve více než 40 jazycích. Aby sis mohl/a/ změnit jazyk, klikni na menu na konci stránky. Nebo v editoru klikni na glóbus nahoře na stránce. Pro přidání nebo zlepšení překladu\n"
 "se podívej na stránku <a href=\"https://en.scratch-wiki.info/wiki/How_to_Translate_Scratch\">překladů</a>."
 
 #: templates/info/about.html:48
