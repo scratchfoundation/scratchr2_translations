@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-05 16:22-0400\n"
+"POT-Creation-Date: 2018-08-23 15:28-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Григорій Громко <gr.gromko@gmail.com>, 2018\n"
 "Language-Team: Ukrainian (https://www.transifex.com/llk/teams/60938/uk/)\n"
@@ -2620,6 +2620,8 @@ msgid ""
 "<b>tilt</b> reports a value of 1-4 when the sensor is tilted, and 0 "
 "otherwise."
 msgstr ""
+"<b>нахил</b> повідомляє значення від 1 до 4, коли датчик нахилений, і 0 в "
+"іншому випадку."
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:14
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:15
@@ -2627,12 +2629,16 @@ msgid ""
 "The tilt sensor reports a number from 0 to 4. 0 means not tilted, 1 tilted "
 "down, 2 tilted right, 3 tilted up, and 4 tilted left."
 msgstr ""
+"Датчик нахилу повідомляє число від 0 до 4. 0 означає не нахилений, 1 "
+"нахилений вниз, 2 нахилений вправо, 3 нахилений вгору і 4 нахилений вліво."
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:15
 msgid ""
 "To view the value of tilt, click the checkbox next to the block in the "
 "palette."
 msgstr ""
+"Щоб переглянути значення нахилу, поставте прапорець поруч із блоком на "
+"палітрі."
 
 #: templates/help/studio/tips/ext/wedo-tilt.html:20
 msgid ""
@@ -2667,7 +2673,7 @@ msgid ""
 "\"lights\" turn the lights off regardless of where they are connected on the"
 " WeDo hub."
 msgstr ""
-"\"ліхтарі\" вимкне ліхтарі незалежно від того, де він підключений до "
+"\"ліхтарі\" вимкне ліхтарі незалежно від того, де вони підключені до "
 "концентратора WeDo."
 
 #: templates/help/studio/tips/ext/wedo-turn-off.html:22
@@ -2699,12 +2705,16 @@ msgid ""
 "If you have only one motor, use the \"motor\" option, which will turn the "
 "motor on regardless of where it is connected on the WeDo hub."
 msgstr ""
+"Якщо у вас є лише один двигун, скористайтеся опцією \"двигун\", яка увімкне "
+"двигун незалежно від того, де він підключений до концентратора WeDo."
 
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:21
 msgid ""
 "\"lights\" turn the lights on regardless of where they are connected on the "
 "WeDo hub."
 msgstr ""
+"\"ліхтарі\" увімкне ліхтарі незалежно від того, де вони підключені до "
+"концентратора WeDo."
 
 #: templates/help/studio/tips/ext/wedo-turn-on-for.html:22
 msgid "\"everything\" turns on all the connected motors and lights."
@@ -2715,6 +2725,8 @@ msgid ""
 "<p>To use <b>turn on for</b>, you need WeDo motor(s) or lights connected to "
 "your computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Щоб використати <b>увімкнути на</b>, потрібні двигуни або ліхтарі WeDo, "
+"підключені до комп'ютера через концентратор LEGO WeDo.</p>"
 
 #: templates/help/studio/tips/ext/wedo-turn-on.html:7
 msgid "Turn motors or lights on."
@@ -2725,6 +2737,7 @@ msgid ""
 "Turn the lights on for 2 seconds when the space key is pressed, then turn it"
 " off."
 msgstr ""
+"При натисканні клавіші пропуск вмикає ліхтарі на 2 секунди, а потім вимикає."
 
 #: templates/help/studio/tips/ext/wedo-turn-on.html:17
 #: templates/help/studio/tips/ext/wedo2-turn-on-for.html:19
@@ -2734,34 +2747,46 @@ msgid ""
 "separately, you can use 'motor A' and 'motor B'. Note: LEGO recommends only "
 "connecting one motor to the hub to limit power consumption."
 msgstr ""
+"Ви можете вибрати пристрій, сумісний з LEGO-WeDo, зі списку: 'двигун' "
+"вмикатиме всі двигуни, підключені до концентратора WeDo. Для керування двома"
+" двигунами окремо слід використати 'двигун A' і 'двигун B'. Примітка: LEGO "
+"рекомендує приєднувати лише один двигун до концентратора, щоб зменшити "
+"енергоспоживання."
 
 #: templates/help/studio/tips/ext/wedo-turn-on.html:21
 msgid ""
 "To use <b>turn on</b>, you need WeDo motor(s) or lights connected to your "
 "computer via a LEGO WeDo hub."
 msgstr ""
+"<p>Щоб використати <b>увімкнути</b>, потрібні двигуни або ліхтарі WeDo, "
+"підключені до комп'ютера через концентратор LEGO WeDo.</p>"
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:7
 msgid ""
 "Run a script when the distance detected by the LEGO WeDo distance sensor "
 "becomes greater (or less) than a specified value"
 msgstr ""
+"Запустіть скрипт, коли відстань, яка виявлена датчиком відстані LEGO WeDo "
+"стане більшою (або меншою) ніж задане значення."
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:12
 msgid "When the distance goes under 20, the script will run."
-msgstr ""
+msgstr "Скрипт буде запущено, якщо відстань перевищить 20."
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:17
 msgid ""
 "You can select a <i>greater</i> or <i>less than</i> comparison from the "
 "dropdown menu."
 msgstr ""
+"Зі списку можна вибрати операції порівняння <i>більше</i> або <i>менше</i>."
 
 #: templates/help/studio/tips/ext/wedo-when-distance.html:22
 msgid ""
 "<p>To use <b>when distance</b>, you need a distance sensor connected to your"
 " computer via a LEGO WeDo hub.</p>"
 msgstr ""
+"<p>Щоб використати <b>коли відстань</b>, потрібен датчик відстані, "
+"підключений до комп'ютера через концентратор LEGO WeDo.</p>"
 
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:6
 msgid "Run a script when the tilt sensor changes position"
@@ -2769,23 +2794,27 @@ msgstr "Запуск сценарію, коли датчик нахилу змі
 
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:11
 msgid "When the tilt sensor gets tilted, the script will run."
-msgstr ""
+msgstr "Коли датчик нахилу отримує сигнал, скрипт почне працювати."
 
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:17
 msgid ""
 "Use the dropdown menu to choose <b>= (equals)</b>  or <b>not = (not equal "
 "to)</b>, then type in a number from 0 to 4."
 msgstr ""
+"Виберіть зі списку <b>= (дорівнює)</b>  або <b>не = (не дорівнює)</b>, а "
+"потім введіть число від 0 до 4."
 
 #: templates/help/studio/tips/ext/wedo-when-tilt.html:21
 msgid ""
 "To use <b>when tilt</b>, you need a tilt sensor connected to your computer "
 "via a LEGO WeDo hub."
 msgstr ""
+"Щоб використати <b>коли нахилено</b>, вам потрібен датчик нахилу, "
+"підключений до комп'ютера через концентратор LEGO WeDo."
 
 #: templates/help/studio/tips/ext/wedo1.html:6
 msgid "LEGO WeDo 1.0 Scratch Extension Setup"
-msgstr ""
+msgstr "Встановлення розширення Scratch LEGO WeDo 1.0"
 
 #: templates/help/studio/tips/ext/wedo1.html:10
 #, python-format
@@ -2793,12 +2822,16 @@ msgid ""
 "<p>This extension works with the original LEGO WeDo kit.</p>\n"
 " <p><img src=\"%(STATIC_URL)s/images/help/wedo.png\" /></p>\n"
 msgstr ""
+"<p>Це розширення працює з оригінальним набором LEGO WeDo.</p>\n"
+" <p><img src=\"%(STATIC_URL)s/images/help/wedo.png\" /></p>\n"
 
 #: templates/help/studio/tips/ext/wedo1.html:21
 msgid ""
 "All hardware extensions need a plug-in to work. If the plug-in is not already installed, see the <a href=\"../../ext/ext1/\">extension setup</a> page for instructions.\n"
 "</p>"
 msgstr ""
+"Апаратні розширення для роботи потребують встановлення додатків. Якщо додаток ще не встановлено, ознайомтеся з інструкціями на сторінці <a href=\"../../ext/ext1/\">встановлення розширень</a>.\n"
+"</p>"
 
 #: templates/help/studio/tips/ext/wedo1.html:42
 #, python-format
@@ -2811,6 +2844,13 @@ msgid ""
 " \t\t<li>Tilt Sensor: It reports the direction it is tilted. The tilt sensor detects changes within five different positions: no tilt, right, left, up, and down.<p><img src=\"%(STATIC_URL)s/images/help/wedo-tilt-sensor.png\" /></p></li>\n"
 " \t</ul>"
 msgstr ""
+"<ul>\n"
+" \t\t<li>Концентратор WeDo Hub: з'єднує датчики WeDo і двигуни з комп'ютером.<p><img src=\"%(STATIC_URL)s/images/help/wedo-hub.png\" /></p></li>\n"
+" \t\t<li>Двигун: можна програмувати для обертання в один чи інший бік і з різною силою. До портів концентратора WeDo можна приєднати два двигуни і керувати ними окремо.<p><img src=\"%(STATIC_URL)s/images/help/wedo-motor.png\" /></p></li>\n"
+" \t\t<li>Ліхтарі: два яскраві світлодіоди, які можна приєднати до концентратора WeDo. Вони не є частиною набору LEGO WeDo, а відносяться до LEGO Power Functions.<p><img src=\"%(STATIC_URL)s/images/help/wedo-lights.png\" /></p></li>\n"
+" \t\t<li>Датчик відстані: визначає об'єкти, залежно від їхнього виду, на відстані до 15 сантиметрів (або до 6 дюймів).<p><img src=\"%(STATIC_URL)s/images/help/wedo-distance-sensor.png\" /></p></li>\n"
+" \t\t<li>Датчик нахилу: повідомляє, в який бік його нахилено. Датчик нахилу розрізняє 5 положень: без нахилу, вправо, вліво, вгору і вниз.<p><img src=\"%(STATIC_URL)s/images/help/wedo-tilt-sensor.png\" /></p></li>\n"
+" \t</ul>"
 
 #: templates/help/studio/tips/ext/wedo1.html:52
 msgid ""
@@ -2818,6 +2858,9 @@ msgid ""
 "wiki.info/wiki/LEGO_WeDo_Construction_Set\" target=\"_blank\">LEGO WeDo</a> "
 "page on the Scratch wiki.</p>"
 msgstr ""
+"<p>Дізнатись більше можна на сторінці <a href=\"https://en.scratch-"
+"wiki.info/wiki/LEGO_WeDo_Construction_Set\" target=\"_blank\">LEGO WeDo</a> "
+"в Scratch-вікі.</p>"
 
 #: templates/help/studio/tips/ext/wedo2-distance.html:11
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:11
@@ -2828,11 +2871,11 @@ msgstr ""
 #: templates/help/studio/tips/ext/wedo2-turn-on-for.html:11
 #: templates/help/studio/tips/ext/wedo2-turn-on.html:11
 msgid "Example"
-msgstr ""
+msgstr "Приклад"
 
 #: templates/help/studio/tips/ext/wedo2-distance.html:13
 msgid "Set the sprite's horizontal position to the value of the distance."
-msgstr ""
+msgstr "Встановіть горизонтальне положення спрайта рівним значенню відстані."
 
 #: templates/help/studio/tips/ext/wedo2-distance.html:17
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:17
@@ -2843,12 +2886,14 @@ msgstr ""
 #: templates/help/studio/tips/ext/wedo2-turn-on-for.html:17
 #: templates/help/studio/tips/ext/wedo2-turn-on.html:17
 msgid "Notes"
-msgstr ""
+msgstr "Примітки"
 
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:7
 msgid ""
 "Sets the direction of the motor. It will not turn the motor on if it is off."
 msgstr ""
+"Встановлює напрям обертання двигуна. Це не призведе до увімкнення двигуна, "
+"якщо він вимкнений."
 
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:19
 msgid ""
@@ -2857,6 +2902,9 @@ msgid ""
 "control separately, you can use 'motor A' with one and 'motor B' with the "
 "other."
 msgstr ""
+"Ви можете вибрати двигун зі списку. Виберіть 'двигун', щоб увімкнути всі "
+"двигуни, підключені до концентратора WeDo. Якщо ви маєте два двигуни, якими "
+"потрібно керувати окремо, то слід використати 'двигун A' або 'двигун B'."
 
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:20
 #: templates/help/studio/tips/ext/wedo2-set-power.html:21
@@ -2866,10 +2914,12 @@ msgid ""
 "Note: LEGO recommends only connecting one motor to the hub to limit power "
 "consumption."
 msgstr ""
+"Примітка: LEGO радить приєднувати лише один двигун до концентратора, щоб "
+"зменшити енергоспоживання."
 
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:22
 msgid "You can select the direction from the second menu."
-msgstr ""
+msgstr "Напрямок ви можете вибрати з другого списку."
 
 #: templates/help/studio/tips/ext/wedo2-set-direction.html:26
 msgid ""
@@ -9342,7 +9392,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/nametip-intro.html:28 tips_config.py:180
 msgid "Make It Spin"
-msgstr ""
+msgstr "Змусити обертатись"
 
 #: templates/help/studio/tips/howto/nametip-intro.html:29
 #: templates/help/studio/tips/ui/tour-intro.html:35 tips_config.py:181
