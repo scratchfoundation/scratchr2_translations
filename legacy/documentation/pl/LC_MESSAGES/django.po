@@ -12,6 +12,7 @@
 # Wiktor Poremba <wiktor.poremba@gmail.com>, 2018
 # Antoni Przybylik <wot.przybylik@wp.pl>, 2018
 # Francis Mudrak <rafael.ketchum.pokemon@gmail.com>, 2018
+# Michał Demski <mdemski@poczta.fm>, 2018
 # 
 #, fuzzy
 msgid ""
@@ -20,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-20 13:19-0500\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
-"Last-Translator: Francis Mudrak <rafael.ketchum.pokemon@gmail.com>, 2018\n"
+"Last-Translator: Michał Demski <mdemski@poczta.fm>, 2018\n"
 "Language-Team: Polish (https://www.transifex.com/llk/teams/60938/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -147,28 +148,32 @@ msgid ""
 "balloon on the screen. The program waits as the user types in a response, "
 "until the Enter key is pressed or the check mark is clicked."
 msgstr ""
+"<img src=\"%(url_ask_and_wait)s\" />zadaje pytanie i trzyma wejście z "
+"klawiatury w <img src=\"%(url_answer)s\" />. Pytanie się pojawia w balonie "
+"głosowym na ekranie. Program czeka na użytkownika piszącego odpowiedź, aż "
+"klawisz Enter jest naciśnięty bądź kliknięto znaczek."
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:9
 msgid "Reports Stage's current backdrop name"
-msgstr ""
+msgstr "Zgłasza aktualne imię tła Sceny"
 
 #: templates/help/studio/tips/blocks/backdrop-name.html:19
 #, python-format
 msgid ""
 "The title next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_name)s\" />"
-msgstr ""
+msgstr "Tytuł obok tła w liście to <img src=\"%(url_backdrop_name)s\" />"
 
 #: templates/help/studio/tips/blocks/backdrop-number.html:17
 #, python-format
 msgid ""
 "The number next to the backdrop in the list is the <img "
 "src=\"%(url_backdrop_number)s\" />"
-msgstr ""
+msgstr "Liczba obok tła w liście to <img src=\"%(url_backdrop_number)s\" />"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:9
 msgid "Sends a message to all sprites and waits"
-msgstr ""
+msgstr "Wysyła wiadomość do wszystkich duszków"
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:17
 #, python-format
@@ -177,16 +182,21 @@ msgid ""
 "all sprites to tell them to do something, and wait until they all finish "
 "before continuing."
 msgstr ""
+"Możesz użyć <img src=\"%(url_broadcast_and_wait)s\" />, aby wysłać wiadomość"
+" do wszystkich duszków, mówiąc im, aby zrobić coś, i poczekać, aż wszystkie "
+"skończą przed kontynuowaniem."
 
 #: templates/help/studio/tips/blocks/broadcast-wait.html:22
 msgid ""
 "Click to choose which message gets sent. Choose \"new\" to type in your own "
 "message."
 msgstr ""
+"Kliknij, by wybrać wiadomość do wysłania. Wybierz \"nowy komunikat...\", aby"
+" wpisać własną wiadomość."
 
 #: templates/help/studio/tips/blocks/broadcast.html:9
 msgid "Sends a message to all sprites"
-msgstr ""
+msgstr "Wysyła wiadomość do wszystkich duszków"
 
 #: templates/help/studio/tips/blocks/broadcast.html:18
 #, python-format
@@ -195,6 +205,9 @@ msgid ""
 " background). This is useful if you want to tell other sprites when to do "
 "something."
 msgstr ""
+"<img src=\"%(url_broadcast)s\"/>wysyła wiadomość do wszystkich duszków (i do"
+" Sceny). To jest użyteczne, gdy chcesz powiedzieć innym duszkom kiedy coś "
+"zrobić."
 
 #: templates/help/studio/tips/blocks/broadcast.html:22
 #, python-format
@@ -202,10 +215,12 @@ msgid ""
 "What do you want them to do when they receive the message? See <a "
 "href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 msgstr ""
+"Co chcesz, żeby zrobiły jak dostaną wiadomość? Zobacz <a "
+"href=\"../when-i-receive/\"><img src=\"%(url_when_i_receive)s\"/></a>"
 
 #: templates/help/studio/tips/blocks/change-effect.html:8
 msgid "Changes the graphic effect on a sprite"
-msgstr ""
+msgstr "Zmienia efekt graficzny duszka"
 
 #: templates/help/studio/tips/blocks/change-effect.html:18
 #, python-format
@@ -215,6 +230,10 @@ msgid ""
 "<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
 "Try these effects with numbers such as 10, 35, or 100. Or try negative numbers, such as -50.\n"
 msgstr ""
+"\n"
+"Kliknij, aby wybrać efekt z menu:\n"
+"<br><img src=\"%(url_change_effect_ex2)s\"/><br>\n"
+"Wypróbuj te efekty z liczbami n.p. 10, 35 lub 100, Albo spróbuj liczby ujemne, n.p. -50.\n"
 
 #: templates/help/studio/tips/blocks/change-effect.html:25
 #, python-format
@@ -222,14 +241,17 @@ msgid ""
 "Click stop <img src=\"%(STATIC_URL)s/images/help/stop-sign.png\"/> to clear "
 "all graphic effects. Or, use <img src=\"%(url_clear_graphic_effects)s\"/>"
 msgstr ""
+"Naciśnij przycisk stop <img src=\"%(STATIC_URL)s/images/help/stop-"
+"sign.png\"/>, aby wyczyścić wszystkie efekty graficzne, lub użyj <img "
+"src=\"%(url_clear_graphic_effects)s\"/>"
 
 #: templates/help/studio/tips/blocks/change-size.html:8
 msgid "Changes sprite's size by specified amount"
-msgstr ""
+msgstr "Zmienia wielkość duszka o określoną wartość"
 
 #: templates/help/studio/tips/blocks/change-tempo.html:8
 msgid "Changes sprite's tempo by specified amount"
-msgstr ""
+msgstr "Zmienia tempo duszka o określoną wartość"
 
 #: templates/help/studio/tips/blocks/change-tempo.html:14
 msgid ""
@@ -238,20 +260,25 @@ msgid ""
 "Tempo is the speed (bpm = beats per minute) at which Scratch notes and drums play. The larger the tempo value, the faster the notes and drums will play.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Tempo to szybkość (w uderzeniach na minutę) w której nuty i bębny Scratch grają. Im większa wartość tempa,tym szybciej będą grać nuty i bębny.\n"
 
 #: templates/help/studio/tips/blocks/change-variable.html:7
 msgid "Changes the variable by specified amount"
-msgstr ""
+msgstr "Zmienia zmienną o określoną wartość"
 
 #: templates/help/studio/tips/blocks/change-variable.html:9
 msgid ""
 "If you have more \n"
 "than one variable, use the pull-down menu to select the variable name."
 msgstr ""
+"Jeżeli masz więcej\n"
+"niż jedną zmienną, użyj menu do wybrania nazwy zmiennej. "
 
 #: templates/help/studio/tips/blocks/change-volume.html:7
 msgid "Changes sprite's sound volume by specified amount"
-msgstr ""
+msgstr "Zmienia głośność dźwięku w duszku o określoną wartość"
 
 #: templates/help/studio/tips/blocks/change-volume.html:14
 msgid ""
@@ -263,40 +290,49 @@ msgid ""
 "You can set the volume level for each sprite. To play two sounds at once with different volumes, use two sprites.\n"
 "</p>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Zakres głośności mieści się w zakresie od 0 do 100, przy czym domyślną głośnością jest 100.\n"
+"</p>\n"
+"<p>\n"
+"Możesz ustawić poziom głośności dla każdego duszka. Aby zagrać jednocześnie dwa dźwięki o różnych poziomach głośności, użyj dwóch duszków.\n"
+"</p>\n"
 
 #: templates/help/studio/tips/blocks/change-x.html:6
 msgid "Change the x position by this amount"
-msgstr ""
+msgstr "Zmienia pozycję X o określoną wartość"
 
 #: templates/help/studio/tips/blocks/change-x.html:13
 msgid "A positive number shifts the sprite to the <b>right</b>."
-msgstr ""
+msgstr "Liczba dodatnia przesuwa duszka w <b>prawo</b>."
 
 #: templates/help/studio/tips/blocks/change-x.html:14
 msgid "A negative number shifts the sprite to the <b>left</b>."
-msgstr ""
+msgstr "Liczba ujemna przesuwa duszka w <b>lewo</b>."
 
 #: templates/help/studio/tips/blocks/change-y.html:7
 msgid "Changes sprite's y-position by specified amount."
-msgstr ""
+msgstr "Zmienia pozycję Y duszka o określoną wartość"
 
 #: templates/help/studio/tips/blocks/change-y.html:15
 msgid ""
 "Change y by a <b>positive</b> number to move the sprite <b>up</b>. \n"
 "Change y by a <b>negative</b> number to move the sprite <b>down</b>."
 msgstr ""
+"Zmień y o liczbę <b>dodatnią</b>, aby przesunąć duszka <b>do góry</b>. \n"
+"Zmień y o liczbę <b>ujemną</b>, aby przesunąć duszka <b>w dół</b>."
 
 #: templates/help/studio/tips/blocks/changecolor.html:9
 msgid "Changes pen's color by specified amount"
-msgstr ""
+msgstr "Zmienia kolor pisaka o określoną wartość"
 
 #: templates/help/studio/tips/blocks/changepensize.html:9
 msgid "Changes pen's thickness."
-msgstr ""
+msgstr "Zmienia grubość pisaka."
 
 #: templates/help/studio/tips/blocks/changeshadeby.html:7
 msgid "Changes pen's shade by specified amount"
-msgstr ""
+msgstr "Zmienia odcień pióra o określoną wartość"
 
 #: templates/help/studio/tips/blocks/changeshadeby.html:16
 #, python-format
@@ -309,10 +345,17 @@ msgid ""
 "<p>\n"
 "<b>Note: If the pen shade is 0, then the pen color will be close to black. If the pen shade is 100, the pen color will be close to white.</b>\n"
 msgstr ""
+"\n"
+"<p>\n"
+"Odcień pisaka ma wartość od 0 do 100. Domyślnym ustawieniem jest 50. \n"
+"<p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/changeshadeex2.png\" /> \n"
+"<p>\n"
+"<b> Uwaga: jeśli odcień pisaka ma wartość 0, kolor będzie czarny. Jeśli odcień pisaka wynosi 100, kolor będzie zbliżony do białego</b>\n"
 
 #: templates/help/studio/tips/blocks/clear-graphic-effects.html:9
 msgid "Clears all graphic effects for a sprite"
-msgstr ""
+msgstr "Usuwa wszystkie efekty graficzne duszka"
 
 #: templates/help/studio/tips/blocks/clear-graphic-effects.html:18
 #, python-format
@@ -320,40 +363,46 @@ msgid ""
 "<img src=\"%(url_clear_graphic_effects)s\" /> clears all the graphic effects"
 " for this sprite."
 msgstr ""
+"<img src=\"%(url_clear_graphic_effects)s\" /> usuwa wszystkie efekty "
+"graficzne dla tego duszka."
 
 #: templates/help/studio/tips/blocks/clear.html:8
 msgid "Clears all pen marks and stamps from the Stage"
-msgstr ""
+msgstr "Usuwa wszystkie ślady pisaka i stemple ze sceny"
 
 #: templates/help/studio/tips/blocks/clear.html:14
 msgid ""
 "Note: The pen marks and stamps are not part of the backdrops, therefore, "
 "clear does not change the backdrop."
 msgstr ""
+"Uwaga: Ślady pisaka i pieczątki nie są częścią tła, dlatego czyszczenie nie "
+"zmienia tła."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:6
 msgid "Tells a clone what to do once it is created"
-msgstr ""
+msgstr "Mówi klonowi, co należy zrobić po jego utworzeniu"
 
 #: templates/help/studio/tips/blocks/clone-startup.html:10
 msgid "The script is triggered as soon as the clone is created."
-msgstr ""
+msgstr "Skrypt uruchamia się zaraz po utworzeniu klona."
 
 #: templates/help/studio/tips/blocks/clone-startup.html:12
 msgid ""
 "Clones also respond to all \"when...\" blocks triggered after they are "
 "created."
 msgstr ""
+"Klony odpowiadają również na wszystkie bloki \"kiedy...\" uruchomione po ich"
+" utworzeniu."
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:7
 msgid "Reports true if first color is touching second color"
-msgstr ""
+msgstr "Zwraca prawdę, jeśli pierwszy kolor dotyka drugiego koloru"
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:11
 msgid ""
 "The first color is within the sprite, while the second is from the "
 "background or another sprite."
-msgstr ""
+msgstr "Pierwszy kolor znajduje się w duszku, a drugi w tle lub innym duszku."
 
 #: templates/help/studio/tips/blocks/color-is-touching.html:20
 #: templates/help/studio/tips/blocks/setpencolor.html:17
@@ -363,6 +412,8 @@ msgid ""
 "eye dropper to click on the color you want. The color will appear in the "
 "square."
 msgstr ""
+"Aby wybrać kolor, wybierz kroplomierz, klikając kwadrat. Użyj kroplomierza "
+"do klikania na wybranym kolorze. Kolor pojawi się na kwadracie."
 
 #: templates/help/studio/tips/blocks/computefunction.html:7
 msgid "Computes a function"
@@ -370,19 +421,19 @@ msgstr "Oblicza funkcję."
 
 #: templates/help/studio/tips/blocks/computefunction.html:13
 msgid "Choose different functions from the drop-down menu."
-msgstr ""
+msgstr "Wybierz różne funkcje z menu rozwijanego."
 
 #: templates/help/studio/tips/blocks/costume-number.html:3
 msgid "Reports sprite's current costume number"
-msgstr ""
+msgstr "Zwraca aktualny numer stroju duszka"
 
 #: templates/help/studio/tips/blocks/create-clone.html:6
 msgid "Creates a clone (temporary duplicate) of the specified sprite"
-msgstr ""
+msgstr "Tworzy klon (tymczasowy duplikat) określonego duszka"
 
 #: templates/help/studio/tips/blocks/create-clone.html:11
 msgid "Choose which sprite to clone from the drop-down menu."
-msgstr ""
+msgstr "Wybierz duszka do sklonowania z rozwijanego menu."
 
 #: templates/help/studio/tips/blocks/create-clone.html:14
 #, python-format
@@ -390,25 +441,29 @@ msgid ""
 "Use <img src=\"%(url_clone_startup)s\" /> to tell the clone what to do once "
 "it's created."
 msgstr ""
+"Użyj <img src=\"%(url_clone_startup)s\" />, aby powiedzieć klonowi, co "
+"należy zrobić po jego utworzeniu."
 
 #: templates/help/studio/tips/blocks/create-clone.html:16
 #: templates/help/studio/tips/blocks/delete-this-clone.html:16
 #: templates/help/studio/tips/blocks/video-motion.html:26
 msgid "Sample Script:"
-msgstr ""
+msgstr "Przykładowy skrypt:"
 
 #: templates/help/studio/tips/blocks/create-clone.html:23
 #: templates/help/studio/tips/blocks/video-motion.html:32
 #: templates/help/studio/tips/ext/PicoBoard.html:42
 #: templates/help/studio/tips/ext/wedo1.html:56
 msgid "Troubleshooting:"
-msgstr ""
+msgstr "Rozwiązywanie problemów:"
 
 #: templates/help/studio/tips/blocks/create-clone.html:25
 msgid ""
 "If you can't see the clone, move it so the original sprite doesn't cover it."
 " The clone appears in the same location as the sprite initially."
 msgstr ""
+"Jeśli nie widzisz klona, przesuń go, aby oryginalny duszek go nie zasłonił. "
+"Klon pojawia się początkowo w tym samym miejscu co duszek."
 
 #: templates/help/studio/tips/blocks/create-clone.html:29
 #, python-format
@@ -416,28 +471,31 @@ msgid ""
 "Make sure you've chosen the sprite you want to clone from the menu in the "
 "<img src=\"%(url_create_clone_of)s\" /> block."
 msgstr ""
+"Upewnij się, że wybrałeś duszka, którego chcesz sklonować z menu w klocku "
+"<img src=\"%(url_create_clone_of)s\" />."
 
 #: templates/help/studio/tips/blocks/create-clone.html:31
 msgid "Note: The clone only lasts while the project is running."
-msgstr ""
+msgstr "Uwaga: Klon działa tylko podczas trwania projektu."
 
 #: templates/help/studio/tips/blocks/current-time.html:7
 msgid "Reports the current time"
-msgstr ""
+msgstr "Podaje aktualny czas"
 
 #: templates/help/studio/tips/blocks/current-time.html:15
 msgid "You can select  from the menu to indicate which item you want."
-msgstr ""
+msgstr "Możesz wybrać z menu, który element chcesz."
 
 #: templates/help/studio/tips/blocks/current-time.html:20
 msgid ""
 "To view the value of the current time, click the checkbox next to the "
 "current time."
 msgstr ""
+"Aby wyświetlić wartość bieżącego czasu, kliknij pole wyboru obok niego."
 
 #: templates/help/studio/tips/blocks/days-since-2000.html:7
 msgid "Reports the number of days since January 1, 2000"
-msgstr ""
+msgstr "Podaje liczbę dni od 1 stycznia 2000 roku"
 
 #: templates/help/studio/tips/blocks/define.html:7
 msgid "Defines what the custom block will do"
@@ -463,7 +521,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:7
 msgid "Deletes one or all items from a list"
-msgstr ""
+msgstr "Usuwa jeden lub wszystkie elementy z listy"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:11
 msgid ""
@@ -471,25 +529,30 @@ msgid ""
 "  number. Choosing \"last\" deletes the last item in the list. Choosing \"all\" deletes everything \n"
 "  from the list. Deleting decreases the length of the list.</p>"
 msgstr ""
+"<p>Możesz określić, który element chcesz usunąć, wybierając z menu "
+"rozwijanego lub wpisując liczbę . Wybranie \"ostatni\" usuwa ostatni element"
+" z listy. Wybranie \"wszystko\" usuwa wszystko z listy. Usunięcie zmniejsza "
+"długość listy.</p>"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:21
 msgid ""
 "You can specify the number of the item you want to delete. For example:"
-msgstr ""
+msgstr "Możesz określić numer elementu, który chcesz usunąć. Na przykład:"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:26
 msgid ""
 "To delete the last item in the list, choose \"last\" from the pull-down "
 "menu:"
 msgstr ""
+"Aby usunąć ostatni element z listy, wybierz \"ostatni\" z rozwijanego menu:"
 
 #: templates/help/studio/tips/blocks/delete-from-list.html:31
 msgid "You can also choose to delete everything in the list:"
-msgstr ""
+msgstr "Możesz również usunąć wszystko z listy:"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:7
 msgid "Deletes the current clone"
-msgstr ""
+msgstr "Usuwa bieżącego klona"
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:11
 msgid "Place this block in a script after the clone is done its actions."
@@ -497,15 +560,15 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/delete-this-clone.html:14
 msgid "All clones are automatically deleted when the program is stopped."
-msgstr ""
+msgstr "Wszystkie klony są automatycznie usuwane po zatrzymaniu programu."
 
 #: templates/help/studio/tips/blocks/direction.html:6
 msgid "Reports the current direction of a sprite"
-msgstr ""
+msgstr "Podaje aktualny kierunek duszka"
 
 #: templates/help/studio/tips/blocks/direction.html:15
 msgid "<b>direction</b> tells which way the sprite is heading."
-msgstr ""
+msgstr "<b>kierunek</b> mówi, w którą stronę zmierza sprite."
 
 #: templates/help/studio/tips/blocks/direction.html:17
 #, python-format
@@ -513,70 +576,79 @@ msgid ""
 "To see a sprite's direction, click <img "
 "src=\"%(STATIC_URL)s/images/help/info.gif\">:"
 msgstr ""
+"Aby zobaczyć kierunek duszka, kliknij <img "
+"src=\"%(STATIC_URL)s/images/help/info.gif\">:"
 
 #: templates/help/studio/tips/blocks/direction.html:20
 msgid "You can drag the blue line to change direction."
-msgstr ""
+msgstr "Możesz przeciągnąć niebieską linię, aby zmienić kierunek."
 
 #: templates/help/studio/tips/blocks/direction.html:24
 msgid ""
 "To display a sprite's direction on the Stage, click the checkbox in the "
 "palette:"
 msgstr ""
+"Aby wyświetlić kierunek duszka na scenie, kliknij pole wyboru w zakładce:"
 
 #: templates/help/studio/tips/blocks/distance-to.html:7
 msgid "Reports distance from the specified sprite or mouse-pointer"
-msgstr ""
+msgstr "Zwraca odległość od określonego duszka lub wskaźnika myszy"
 
 #: templates/help/studio/tips/blocks/distance-to.html:15
 msgid "Select from the pull-down menu to choose"
-msgstr ""
+msgstr "Wybierz z rozwijanego menu"
 
 #: templates/help/studio/tips/blocks/divide.html:7
 msgid "Divides first number by second number"
-msgstr ""
+msgstr "Dzieli pierwszą liczbę przez drugą liczbę"
 
 #: templates/help/studio/tips/blocks/equal.html:7
 msgid "Reports true if two values are equal"
-msgstr ""
+msgstr "Zwraca prawdę, jeśli dwie wartości są równe"
 
 #: templates/help/studio/tips/blocks/forever.html:7
 msgid "Runs the blocks inside over and over"
-msgstr ""
+msgstr "Uruchamia klocki w kółko"
 
 #: templates/help/studio/tips/blocks/getattribute.html:8
 msgid "Reports an attribute of the sprite or stage"
-msgstr ""
+msgstr "Zwraca właściwości duszka lub sceny"
 
 #: templates/help/studio/tips/blocks/getattribute.html:14
 msgid ""
 "Choose different attributes from the drop-down menu and combine with other "
 "blocks, such as operators."
 msgstr ""
+"Wybierz różne właściwości z rozwijanego menu i połącz z innymi blokami, na "
+"przykład operatorami"
 
 #: templates/help/studio/tips/blocks/glide.html:7
 msgid "Glide over time to this <b>x y</b> position"
-msgstr ""
+msgstr "Leć przez określony czas do punktu <b>x y</b>"
 
 #: templates/help/studio/tips/blocks/glide.html:13
 msgid "The sprite starts at one point, and then glides to the other points."
-msgstr ""
+msgstr "Duszek startuje z jednego punktu, a następnie leci do innego punktu."
 
 #: templates/help/studio/tips/blocks/glide.html:18
 msgid ""
 "Use <b>glide</b> to move a sprite smoothly to an <b>x y</b> position on the "
 "Stage."
 msgstr ""
+"Użyj <b>klocka Leć</b>, aby przesunąć płynnie duszka do pozycji <b>x y</b> "
+"na Scenie."
 
 #: templates/help/studio/tips/blocks/glide.html:20
 msgid ""
 "You can see <b>x</b> and <b>y</b> update in the Motion blocks palette when "
 "you drag a sprite to another point."
 msgstr ""
+"Możesz zobaczyć zaktualizowane <b>x</b> i <b>y</b> w zakładce Klocki ruchu "
+"po przeciągnięciu duszka do innego punktu."
 
 #: templates/help/studio/tips/blocks/go-back-layer.html:7
 msgid "Go back a certain number of layers"
-msgstr ""
+msgstr "Cofnij się o określoną liczbę warstw"
 
 #: templates/help/studio/tips/blocks/go-back-layer.html:11
 msgid ""
@@ -584,6 +656,9 @@ msgid ""
 "<p>Moves sprite back a specified number of layers, so that it can be hidden behind other sprites.\n"
 "</p>"
 msgstr ""
+"\n"
+"<p>Cofa duszka o określoną liczbę warstw, dzięki czemu można go ukryć za innymi duszkami.\n"
+"</p>"
 
 #: templates/help/studio/tips/blocks/go-back-layer.html:20
 #, python-format
@@ -591,20 +666,23 @@ msgid ""
 "To make the crab hide behind the rock, tell it to <img "
 "src=\"%(url_go_back_1layer)s\" />"
 msgstr ""
+"Aby krab ukrył się za skałą, powiedz <img src=\"%(url_go_back_1layer)s\" />"
 
 #: templates/help/studio/tips/blocks/go-to-front.html:7
 msgid "Moves sprite in front of all other sprites"
-msgstr ""
+msgstr "Przesuwa duszka na wierzch przed wszystkimi innymi duszkami"
 
 #: templates/help/studio/tips/blocks/go-to-xy.html:7
 msgid "Go to this position on the Stage"
-msgstr ""
+msgstr "Idź do tej pozycji na Scenie"
 
 #: templates/help/studio/tips/blocks/go-to-xy.html:16
 msgid ""
 "Type in a number for <b>x</b> and <b>y</b> to tell the sprite where to go to"
 " on the Stage."
 msgstr ""
+"Wpisz liczby <b>x</b> i <b>y</b>, aby powiedzieć duszkowi, dokąd ma się "
+"udać."
 
 #: templates/help/studio/tips/blocks/go-to-xy.html:19
 #, python-format
@@ -612,40 +690,44 @@ msgid ""
 "<p>Here are the <b>x y</b> coordinates of the Stage:</p>\n"
 "<img src=\"%(STATIC_URL)s/images/help/xy-grid.png\">"
 msgstr ""
+"<p>Tu są współrzędne <b>x y</b> Sceny:</p>\n"
+"<img src=\"%(STATIC_URL)s/images/help/xy-grid.png\">"
 
 #: templates/help/studio/tips/blocks/go-to.html:7
 msgid "Go to the location of the mouse-pointer or of another sprite"
-msgstr ""
+msgstr "Idź do wskaźnika myszy lub innego duszka"
 
 #: templates/help/studio/tips/blocks/go-to.html:16
 msgid "Choose from the menu:"
-msgstr ""
+msgstr "Wybierz z menu:"
 
 #: templates/help/studio/tips/blocks/go-to.html:20
 msgid "Then, click the block."
-msgstr ""
+msgstr "Następnie kliknij klocek."
 
 #: templates/help/studio/tips/blocks/go-to.html:23
 msgid ""
 "The current sprite will jump to the <b>x y</b> location of the mouse-pointer"
 " or of the sprite you choose."
 msgstr ""
+"Ten duszek przeskoczy do położenia <b>x y</b> wskaźnika myszy lub wybranego "
+"przez ciebie duszka."
 
 #: templates/help/studio/tips/blocks/greater-than.html:7
 msgid "Reports true if first value is greater than second"
-msgstr ""
+msgstr "Zwraca prawdę, jeśli pierwsza wartość jest większa niż druga"
 
 #: templates/help/studio/tips/blocks/hide-list.html:7
 msgid "Hides the list monitor from the stage"
-msgstr ""
+msgstr "Ukrywa listę"
 
 #: templates/help/studio/tips/blocks/hide-variable.html:6
 msgid "Hides the variable monitor so it is not visible on the stage"
-msgstr ""
+msgstr "Ukrywa zmienną, aby nie była widoczna na scenie"
 
 #: templates/help/studio/tips/blocks/hide.html:8
 msgid "Makes sprite disappear from the Stage"
-msgstr ""
+msgstr "Sprawia, że duszek znika ze sceny"
 
 #: templates/help/studio/tips/blocks/hide.html:16
 msgid ""
@@ -672,6 +754,8 @@ msgid ""
 "The sprite will bounce at an angle if it is touching the <b>side</b>, "
 "<b>top</b>, or <b>bottom</b> of the stage."
 msgstr ""
+"Duszek  odbija się pod kątem, jeśli dotyka <b>boku</b>, <b>góry</b>, lub "
+"<b>dołu</b> sceny."
 
 #: templates/help/studio/tips/blocks/if.html:7
 msgid "If condition is true, runs the blocks inside"
@@ -689,10 +773,15 @@ msgid ""
 "  \"last\" adds the item to the end of the list. The length of the list increases by 1.\n"
 "  "
 msgstr ""
+"\n"
+"  Możesz określić, gdzie umieścić element, wybierając z menu rozwijanego \n"
+"  lub wpisując liczbę. Wybierając \"losowe\" wstawia w losowym miejscu na liście. \n"
+"  Wybranie \"ostatni\" dodaje element na końcu listy. Długość listy zwiększa się o 1.\n"
+"  "
 
 #: templates/help/studio/tips/blocks/insert-list.html:23
 msgid "You can indicate where in the list you want to add an item."
-msgstr ""
+msgstr "Możesz wskazać, gdzie na liście chcesz dodać element."
 
 #: templates/help/studio/tips/blocks/insert-list.html:26
 #, python-format
@@ -700,6 +789,8 @@ msgid ""
 "<img src=\"%(url_insert_scoreboard)s\" /> inserts item at the specified "
 "place in the list."
 msgstr ""
+"<img src=\"%(url_insert_scoreboard)s\" /> wstawia element w określonym "
+"miejscu na liście."
 
 #: templates/help/studio/tips/blocks/insert-list.html:32
 #, python-format
@@ -707,10 +798,12 @@ msgid ""
 "<img src=\"%(url_insert_greetings)s\" /> inserts item at a random place in "
 "the list."
 msgstr ""
+"<img src=\"%(url_insert_greetings)s\" /> wstawia element w losowym miejscu "
+"na liście."
 
 #: templates/help/studio/tips/blocks/item-of-list.html:7
 msgid "Reports the item at the specifed position in the list"
-msgstr ""
+msgstr "Zwraca element z określonej pozycji na liście"
 
 #: templates/help/studio/tips/blocks/item-of-list.html:11
 msgid ""
@@ -723,7 +816,7 @@ msgstr ""
 msgid ""
 "The item block reports the value of the item at the specified place on the "
 "list."
-msgstr ""
+msgstr "Klocek zwraca wartość elementu z określonego miejsca na liście."
 
 #: templates/help/studio/tips/blocks/item-of-list.html:24
 msgid ""
@@ -737,7 +830,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/key-pressed.html:9
 msgid "Reports true if specified key is pressed"
-msgstr ""
+msgstr "Zwraca prawdę, jeśli zostanie naciśnięty określony klawisz"
 
 #: templates/help/studio/tips/blocks/key-pressed.html:18
 #, python-format
@@ -749,37 +842,37 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/length-of-list.html:7
 msgid "Reports how many items are in the list"
-msgstr ""
+msgstr "Zwraca liczbę elementów znajdujących się na liście"
 
 #: templates/help/studio/tips/blocks/length-of-list.html:15
 msgid "This block reports how many items are currently in a list."
-msgstr ""
+msgstr "Ten blok informuje, ile elementów znajduje się obecnie na liście."
 
 #: templates/help/studio/tips/blocks/length-of-list.html:20
 msgid ""
 "The number is the same as the length shown at the bottom of the list "
 "monitor."
-msgstr ""
+msgstr "Liczba jest taka sama jak długość pokazana na dole ekranu listy."
 
 #: templates/help/studio/tips/blocks/length-of.html:7
 msgid "Reports the number of letters in a string"
-msgstr ""
+msgstr "Podaje liczbę liter w łańcuchu"
 
 #: templates/help/studio/tips/blocks/less-than.html:7
 msgid "Reports true if first value is less than second"
-msgstr ""
+msgstr "Zwraca prawdę, jeśli pierwsza wartość jest mniejsza niż druga"
 
 #: templates/help/studio/tips/blocks/letter-of.html:7
 msgid "Reports the letter at the specified position in a string"
-msgstr ""
+msgstr "Zwraca literę z określonej pozycji w ciągu znaków"
 
 #: templates/help/studio/tips/blocks/list-contains.html:7
 msgid "Reports true if the list contains the specified item"
-msgstr ""
+msgstr "Zwraca prawdę, jeśli lista zawiera określony element"
 
 #: templates/help/studio/tips/blocks/list-contains.html:10
 msgid "The item must match exactly to report true."
-msgstr ""
+msgstr "Element musi pasować dokładnie, aby zwrócić prawdę."
 
 #: templates/help/studio/tips/blocks/list-contains.html:18
 #, python-format
@@ -791,7 +884,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/list.html:7
 msgid "Reports all the items in the list"
-msgstr ""
+msgstr "Zwraca wszystkie elementy na liście"
 
 #: templates/help/studio/tips/blocks/list.html:10
 msgid ""
@@ -2006,7 +2099,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2win-intro.html:30 tips_config.py:257
 #: tips_config.py:267
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Rozwiązywanie problemów"
 
 #: templates/help/studio/tips/ext/ext1.html:51
 msgid ""
@@ -5366,7 +5459,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/catch-intro.html:6
 msgid "Make a game where you catch things falling from the sky."
-msgstr ""
+msgstr "Stwórz grę, w której łapiesz spadające z nieba przedmioty."
 
 #: templates/help/studio/tips/howto/catch-intro.html:19 tips_config.py:62
 msgid "Choose an Object to Fall"
@@ -7302,7 +7395,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/hide-intro.html:6
 msgid "Make a hide-and-seek game with characters that appear and disappear."
-msgstr ""
+msgstr "Stwórz grę w chowanego z postaciami, które pojawiają się i znikają."
 
 #: templates/help/studio/tips/howto/hide-intro.html:10
 msgid ""
@@ -9746,7 +9839,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/racegame-intro.html:6
 msgid "Make a game where two characters race each other."
-msgstr ""
+msgstr "Stwórz grę, w której dwie postacie będą się ścigały."
 
 #: templates/help/studio/tips/howto/racegame-intro.html:7
 msgid "Get ready for the 2016 Olympic Games in Brazil!"
@@ -10718,7 +10811,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine6.html:29
 msgid "Now, add music"
-msgstr ""
+msgstr "Teraz dodaj muzykę"
 
 #: templates/help/studio/tips/howto/valentine7.html:5
 msgid "Add music to your valentine."
@@ -10767,7 +10860,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/valentine8.html:9
 msgid "ADD IMAGES"
-msgstr ""
+msgstr "DODAJ OBRAZKI"
 
 #: templates/help/studio/tips/howto/valentine8.html:10
 msgid "To add a sprite, click one of these buttons:"
@@ -10938,11 +11031,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip5.html:9
 msgid "Click to choose a new sprite:"
-msgstr ""
+msgstr "Kliknij, aby wybrać nowego duszka:"
 
 #: templates/help/studio/tips/howto/vptip5.html:12
 msgid "Then, select a food:"
-msgstr ""
+msgstr "Następnie wybierz jedzenie:"
 
 #: templates/help/studio/tips/howto/vptip5.html:17
 msgid ""
@@ -10965,7 +11058,7 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/vptip5.html:33
 msgid "Next, eat the food"
-msgstr ""
+msgstr "Następnie zjedz"
 
 #: templates/help/studio/tips/howto/vptip6.html:6
 msgid "Decide what your pet will do when it receives the 'food' message. "
@@ -11134,7 +11227,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-2.html:18
 #: templates/help/studio/tips/howto/wedo2win-4.html:13
 msgid "Next, Add the Extension"
-msgstr ""
+msgstr "Następnie dodaj rozszerzenie"
 
 #: templates/help/studio/tips/howto/wedo2mac-3.html:7
 #: templates/help/studio/tips/ui/extensions.html:8
@@ -11151,7 +11244,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-3.html:15
 #: templates/help/studio/tips/howto/wedo2win-5.html:16
 msgid "Next, click 'Connect'"
-msgstr ""
+msgstr "Następnie kliknij 'Połącz'"
 
 #: templates/help/studio/tips/howto/wedo2mac-4.html:7
 #: templates/help/studio/tips/howto/wedo2win-6.html:7
@@ -11185,7 +11278,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-5.html:16
 #: templates/help/studio/tips/howto/wedo2win-7.html:16
 msgid "Next, start creating!"
-msgstr ""
+msgstr "Następnie zacznij tworzyć!"
 
 #: templates/help/studio/tips/howto/wedo2mac-6.html:7
 #: templates/help/studio/tips/howto/wedo2win-8.html:7
@@ -11292,7 +11385,7 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2mac-7.html:33
 #: templates/help/studio/tips/howto/wedo2win-9.html:34
 msgid "Go to LEGO WeDo 2.0 Setup"
-msgstr ""
+msgstr "Przejdź do ustawień LEGO WeDo 2.0"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:7
 msgid ""
@@ -11319,25 +11412,25 @@ msgstr ""
 #: templates/help/studio/tips/howto/wedo2win-intro.html:26 tips_config.py:253
 #: tips_config.py:263
 msgid "Add the Extension"
-msgstr ""
+msgstr "Dodaj rozszerzenie"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:22
 #: templates/help/studio/tips/howto/wedo2win-intro.html:27 tips_config.py:254
 #: tips_config.py:264
 msgid "Click 'Connect'"
-msgstr ""
+msgstr "Kliknij 'Połącz'"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:23
 #: templates/help/studio/tips/howto/wedo2win-intro.html:28 tips_config.py:255
 #: tips_config.py:265
 msgid "Press the WeDo Button"
-msgstr ""
+msgstr "Naciśnij przycisk WeDi"
 
 #: templates/help/studio/tips/howto/wedo2mac-intro.html:24
 #: templates/help/studio/tips/howto/wedo2win-intro.html:29 tips_config.py:256
 #: tips_config.py:266
 msgid "Create!"
-msgstr ""
+msgstr "Stwórz!"
 
 #: templates/help/studio/tips/howto/wedo2setup-intro.html:6
 msgid "Use these steps to set up the LEGO WeDo 2.0 on Scratch."
@@ -11351,11 +11444,11 @@ msgstr ""
 
 #: templates/help/studio/tips/howto/wedo2setup-intro.html:14
 msgid "I’m using a Mac computer"
-msgstr ""
+msgstr "Używam komputera Mac"
 
 #: templates/help/studio/tips/howto/wedo2setup-intro.html:16
 msgid "I’m using a Windows computer"
-msgstr ""
+msgstr "Używam komputera z Windowsem"
 
 #: templates/help/studio/tips/howto/wedo2win-1.html:8
 msgid ""
