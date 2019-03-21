@@ -8,6 +8,7 @@
 # Любомир Василев, 2018
 # Emiliq Rujinova <gugpuh@gmail.com>, 2019
 # Dimitar Tonchev <dimitar.tonchev@gmail.com>, 2019
+# Stanislav Petrov <stanio.petrov@gmail.com>, 2019
 # Filip Filipov <f.filipov@dbs-soft.com>, 2019
 # 
 #, fuzzy
@@ -15,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-20 13:19-0500\n"
+"POT-Creation-Date: 2019-03-21 08:56-0400\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
 "Last-Translator: Filip Filipov <f.filipov@dbs-soft.com>, 2019\n"
 "Language-Team: Bulgarian (https://www.transifex.com/llk/teams/60938/bg/)\n"
@@ -47,7 +48,7 @@ msgstr "Въведи твоята порола, за да потвърдиш"
 
 #: authentication/forms.py:143 authentication/forms.py:393
 msgid "Incorrect captcha, please try again."
-msgstr ""
+msgstr "Неправилно captcha, моля, опитайте отново."
 
 #: authentication/forms.py:154
 msgid "Keep my projects, but disable all comments"
@@ -90,6 +91,8 @@ msgid ""
 "Scratch is not allowed to send email to the address associated with this "
 "username. <a href='/contact-us/'>Contact us for support</a>."
 msgstr ""
+"Scratch не може да изпраща имейл до адреса, свързан с това потребителско "
+"име. <a href='/contact-us/'>Свържете се с нас за подкрепа </a>."
 
 #: authentication/forms.py:243
 msgid "You must provide an email or username"
@@ -110,7 +113,7 @@ msgstr "Невалидно потребителско име и/или паро�
 
 #: authentication/forms.py:363
 msgid "Please enable cookies on your browser."
-msgstr ""
+msgstr "Моля, активирайте „бисквитките“ в браузъра си."
 
 #: authentication/forms.py:364
 msgid "This account is inactive."
@@ -122,11 +125,11 @@ msgstr "Този акаунт е изтрит."
 
 #: authentication/forms.py:366
 msgid "Class has ended. Account not available."
-msgstr ""
+msgstr "Класът е приключил. Профилът не е достъпен."
 
 #: authentication/forms.py:402
 msgid "Occasional updates from the Scratch Team"
-msgstr ""
+msgstr "Допълнителни актуализации от екипа на Scratch"
 
 #: authentication/forms.py:403
 msgid "Activity ideas for using Scratch at home"
@@ -135,6 +138,7 @@ msgstr "Идеи как да използвате Scratch у дома"
 #: authentication/forms.py:404
 msgid "Product updates for using Scratch in educational settings"
 msgstr ""
+"Актуализации на продукти за използване на Scratch в образователни настройки"
 
 #: authentication/tasks.py:30
 #, python-format
@@ -143,32 +147,37 @@ msgid ""
 " to <a href='%(email_change_url)s'>change the email</a> associated with your"
 " account to one you own."
 msgstr ""
+"Изглежда, че предоставеният от вас имейл е собственост на друго лице. Не "
+"забравяйте да <a href='%(email_change_url)s'> промените имейла</a>, свързан "
+"с профила Ви, към този, който притежавате."
 
 #: authentication/views.py:118
 msgid "Already logged in"
-msgstr ""
+msgstr "Вече сте влезли в системата"
 
 #: authentication/views.py:734 authentication/views.py:763
 msgid ""
 "Whoops! There was an error while updating your email settings. Please try "
 "again."
 msgstr ""
+"Опа! Възникна грешка при актуализирането на настройките за имейл. Моля, "
+"опитайте отново."
 
 #: authentication/views.py:807
 msgid "Unsubscribe me from Scratch news & updates"
-msgstr ""
+msgstr "Отпиши ме от Scratch новини и обновявания"
 
 #: authentication/views.py:808
 msgid "Unsubscribe me from Scratch project and activity ideas"
-msgstr ""
+msgstr "Отпишете ме от Scratch дейностите и проектите"
 
 #: authentication/views.py:809
 msgid "Unsubscribe me from tips for educational settings"
-msgstr ""
+msgstr "Отпишете ме от съвети за образователните настройки"
 
 #: authentication/views.py:1111
 msgid "Please check your email for a confirmation message."
-msgstr ""
+msgstr "Моля, проверете пощата си за съобщение за потвърждение"
 
 #: base_comments/templatetags/scratch_text_filters.py:163
 msgid "day"
@@ -215,7 +224,7 @@ msgstr "Вече съществува"
 
 #: educators/forms.py:106
 msgid "Contains invalid characters. Use letters and numbers only."
-msgstr ""
+msgstr "Съдържа невалидни символи. Използвайте само букви и числа."
 
 #: educators/forms.py:107
 msgid "Contains inappropriate words"
@@ -224,12 +233,12 @@ msgstr "Съдържа неуместни думи"
 #: educators/forms.py:108
 #, python-format
 msgid "Shorter than minimum length of %d characters"
-msgstr ""
+msgstr "По-къс от минималната дължина от %d знака"
 
 #: educators/forms.py:109
 #, python-format
 msgid "Longer than maximum length of %d characters"
-msgstr ""
+msgstr "По-дълъг от максималната дължина от %d знака"
 
 #: educators/models.py:87
 msgid "class"
@@ -243,18 +252,24 @@ msgstr "класове"
 msgid ""
 "Please update the CSV file to address the issues above and reload the file."
 msgstr ""
+"Моля, актуализирайте CSV файла, за да разрешите горепосочените проблеми и "
+"презаредете файла."
 
 #: educators/views.py:533
 msgid ""
 "Errors occurred while creating accounts. All accounts other than those "
 "specified here were created."
 msgstr ""
+"Възникнали са грешки при създаването на профили. Всички акаунти, различни от"
+" посочените тук, бяха създадени."
 
 #: educators/views.py:607
 msgid ""
 "After changing this student's password, you will need to share the new "
 "password with your student directly so that they can log back into Scratch."
 msgstr ""
+"След като промените паролата на този ученик, ще трябва да споделите новата "
+"парола директно с ученика си, така че да могат да влязат отново в Scratch."
 
 #: galleries/models.py:264
 msgid "studio"
@@ -269,20 +284,24 @@ msgid ""
 "Woah, seems like you're updating projects really quickly. Please wait a bit "
 "longer between updating projects."
 msgstr ""
+"Уау, изглежда, че обновявате проектите много бързо. Моля, изчакайте по-дълго"
+" преди да обновите проектите."
 
-#: galleries/views.py:698
+#: galleries/views.py:699
 msgid ""
 "Woah, seems like you're creating studios really quickly. Please wait a bit "
 "longer between creating studios."
 msgstr ""
+"Уау, изглежда, че създаваш студиа много бързо. Моля, изчакайте по-дълго "
+"преди да създадеш студио."
 
 #: lib/fields.py:100
 msgid "Tiny Integer"
-msgstr ""
+msgstr "Малко цяло число"
 
 #: mail/validators.py:12 mail/validators.py:19
 msgid "Scratch is not allowed to send email to this address."
-msgstr ""
+msgstr "На Scratch не е позволено да изпраща email до този адрес"
 
 #: projects/models.py:140
 msgid "project"
@@ -294,13 +313,15 @@ msgstr "проекти"
 
 #: projects/models.py:278
 msgid "Permanently Censored Project cannot be reshared."
-msgstr ""
+msgstr "Трайно цензурираният проект не може да бъде споделен отново."
 
 #: projects/models.py:285
 msgid ""
 "This project has been censored and must be reviewed before it can be "
 "reshared."
 msgstr ""
+"Този проект е цензуриран и трябва да бъде преразгледан, преди да може да "
+"бъде споделен отново."
 
 #: projects/views.py:560
 msgid "This tag has too many projects to load"
@@ -308,25 +329,27 @@ msgstr "Този таг съдържа твърде много проекти з
 
 #: scratchr2/views.py:346
 msgid "You're not allowed to appeal this ban."
-msgstr ""
+msgstr "Нямате право да обжалвате тази забрана."
 
 #: scratchr2/views.py:355
 msgid "Your message has been sent. We will respond within 3 days."
-msgstr ""
+msgstr "Съобщението ви е изпратено. Ще отговорим в рамките на 3 дни."
 
 #: scratchr2/views.py:361 scratchr2/views.py:405
 msgid "Please correct the errors below."
-msgstr ""
+msgstr "Моля коригирайте грешките по-долу."
 
 #: templates/403.html:12
 msgid "403. Oh noes! Our server is Scratch'ing its head"
-msgstr ""
+msgstr "403. О, не! Нашият сървър е недостъпен"
 
 #: templates/403.html:15
 msgid ""
 "We couldn't authorize you to view this page. If you need to get in touch "
 "with us about this, send us an email at "
 msgstr ""
+"Не можахме да ви разрешим да разглеждате тази страница. Ако искате да се "
+"свържете с нас относно тази страница, изпратете ни имейл на адрес"
 
 #: templates/404.html:16
 msgid "Whoops! Our server is Scratch'ing its head"
@@ -350,36 +373,41 @@ msgstr "Търсене"
 
 #: templates/429-email.html:17
 msgid "Whoops! You're sending too much mail."
-msgstr ""
+msgstr "Упс! Изпращате твърде много поща."
 
 #: templates/429-email.html:19
 msgid ""
 "You are performing actions on the site that send mail too much. Try again "
 "later."
 msgstr ""
+"Извършвате действия на сайта, които изпращат твърде много електронна поща. "
+"Опитайте отново по-късно."
 
 #: templates/429-projects.html:17
 msgid "Whoops! You're creating too many projects in a short time."
-msgstr ""
+msgstr "Упс! Създаване твърде много проекти за кракто време."
 
 #: templates/429-projects.html:19
 msgid ""
 "You are performing actions on the site that are creating too many projects "
 "in too short of a time period. Try again later."
 msgstr ""
+"Извършвате действия на сайта, които създават твърде много проекти за твърде "
+"кратък период от време. Опитайте отново по-късно."
 
 #: templates/429.html:16
 msgid "Whoops! You're making too many requests."
-msgstr ""
+msgstr "Упс! Създаване твърде много заявки."
 
 #: templates/429.html:18
 msgid ""
 "You are performing actions on the site too frequently. Try again later."
 msgstr ""
+"Прекалено често извършвате действия на сайта. Опитайте отново по-късно."
 
 #: templates/500.html:69
 msgid "The Scratch Team is making some changes to the website."
-msgstr ""
+msgstr "Екипът на Scratch прави някои промени в сайта."
 
 #: templates/500.html:72
 msgid "Try reloading this page in a few minutes."
@@ -390,6 +418,8 @@ msgid ""
 "You can still <a href=\"/scratch2download/\">Download Scratch</a> and make "
 "projects."
 msgstr ""
+"Все още можете да <a href=\"/scratch2download/\">изтеглите Scratch</a> и да "
+"направите проекти."
 
 #: templates/accounts/account_settings.html:8
 #: templates/accounts/deletion/confirmation.html:6
@@ -449,7 +479,7 @@ msgstr "Дата:"
 
 #: templates/accounts/banned-response.html:38
 msgid "Your account will be automatically unblocked on"
-msgstr ""
+msgstr "Вашият профил ще бъде автоматично деблокиран на"
 
 #: templates/accounts/banned-response.html:58
 #: templates/info/community_guidelines.html:21
@@ -498,6 +528,9 @@ msgid ""
 "<b>Be honest.</b> Don’t try to impersonate other Scratchers, spread rumors, "
 "or otherwise try to trick the community."
 msgstr ""
+"<b>Бъдете честни. </b> Не се опитвайте да се представяте за други хора, "
+"използващи Scratch, не разпространявайте слухове и не се опитвайте да мамите"
+" общността по какъвто и да е начин."
 
 #: templates/accounts/banned-response.html:63
 #: templates/info/community_guidelines.html:26
@@ -506,6 +539,10 @@ msgid ""
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
 "let us know about it."
 msgstr ""
+"<b>Помогнете да запазим сайта приятелски.</b> Ако смятате, че някой проект "
+"или коментар е груб, обиден, включва твърде много насилие, или е "
+"притеснителен по някакъв друг начин, натиснете „Докладване“, за да ни "
+"уведомите."
 
 #: templates/accounts/banned-response.html:80
 #: templates/accounts/email_change.html:64 templates/contact-us.html:121
@@ -532,17 +569,19 @@ msgstr "Промени държава"
 
 #: templates/accounts/beta_optin.html:11
 msgid "Beta testing"
-msgstr ""
+msgstr "Бета тестове"
 
 #: templates/accounts/beta_optin.html:24
 msgid ""
 "The new project player will appear automatically on the project page. If you"
 " see a bug, click 'Beta Bug?' on the project page to report it."
 msgstr ""
+"Новият играч на проекта ще се появи автоматично на страницата. Ако видите "
+"грешка, кликнете върху „Бета грешка?“, за да я докладвате."
 
 #: templates/accounts/beta_optin.html:33
 msgid "Update"
-msgstr ""
+msgstr "Обновявания"
 
 #: templates/accounts/deletion/confirmation.html:12
 #: templates/accounts/deletion/nostalgia.html:11
@@ -551,7 +590,7 @@ msgstr "Изтрий моя акаунт"
 
 #: templates/accounts/deletion/includes/deletion_form.html:15
 msgid "Delete account &amp; Sign out"
-msgstr ""
+msgstr "Изтриване на профил &amp; Отписване"
 
 #: templates/accounts/deletion/nostalgia.html:15
 msgid "Whoops, go back"
@@ -564,20 +603,21 @@ msgstr "Сигурен ли си, че искаш да изтриеш своя �
 #: templates/accounts/deletion/nostalgia.html:22
 #, python-format
 msgid "You joined the Scratch community %(years_ago)s years ago."
-msgstr ""
+msgstr "Преди %(years_ago)s години Вие се присъединихте към общността Scratch"
 
 #: templates/accounts/deletion/nostalgia.html:24
 msgid "You joined the Scratch community a year ago."
-msgstr ""
+msgstr "Преди една година Вие се присъединихте към общността Scratch"
 
 #: templates/accounts/deletion/nostalgia.html:26
 #, python-format
 msgid "You joined the Scratch community %(months_ago)s months ago."
 msgstr ""
+"Преди %(months_ago)s месеца Вие се присъединихте към общността Scratch"
 
 #: templates/accounts/deletion/nostalgia.html:28
 msgid "You joined the Scratch community a month ago."
-msgstr ""
+msgstr "Преди месец Вие се присъединихте към общността Scratch."
 
 #: templates/accounts/deletion/nostalgia.html:33
 #, python-format
@@ -585,6 +625,8 @@ msgid ""
 "You've created %(num_projects)s projects and have %(num_followers)s "
 "followers."
 msgstr ""
+"Вие създадохте %(num_projects)s проекти и имате %(num_followers)s "
+"последотатели."
 
 #: templates/accounts/deletion/nostalgia.html:41
 msgid "Some of your projects"
@@ -604,46 +646,57 @@ msgstr "Твоите последователи"
 
 #: templates/accounts/deletion/nostalgia.html:81
 msgid "Yes, next step"
-msgstr ""
+msgstr "Да, следваща стъпка"
 
 #: templates/accounts/email_change.html:18
 #: templates/accounts/email_change.html:30
 msgid "Your email address is unconfirmed"
-msgstr ""
+msgstr "Вашия email адрес не е потвърден"
 
 #: templates/accounts/email_change.html:19
 msgid ""
 "If you want to share and comment, simply click the link in the email sent to"
 " you at:"
 msgstr ""
+"Ако искате да споделите и коментирате, трябва само да кликнете върху "
+"връзката в имейла, изпратен до:"
 
 #: templates/accounts/email_change.html:23
 #: templates/accounts/email_change.html:34
 msgid "Your new email address is unconfirmed"
-msgstr ""
+msgstr "Вашия email адрес не е потвърден"
 
 #: templates/accounts/email_change.html:25
 msgid ""
 "If you would like to change the email address - have your parent (or "
 "guardian) simply click the link in the message sent to their address."
 msgstr ""
+"Ако искате да промените имейл адреса - родителя си (или настойника) трябва "
+"да потвърди като клине върху връзката в съобщението, изпратено на техния "
+"и-мейл адрес."
 
 #: templates/accounts/email_change.html:27
 msgid ""
 "If you would like to change your email address - simply click the link in "
 "the message sent to your new address."
 msgstr ""
+"Ако искате да промените имейл адреса си - просто кликнете върху връзката в "
+"съобщението, изпратено до новия ви адрес."
 
 #: templates/accounts/email_change.html:31
 msgid ""
 "To confirm your current email address, click \"Send\"  below and follow the "
 "instructions in the email sent to you at:"
 msgstr ""
+"За да потвърдите вашия имейл адрес, кликнете по-долу „Изпрати“ и следвайте "
+"инструкциите в имейла, изпратен до вас на адрес:"
 
 #: templates/accounts/email_change.html:35
 msgid ""
 "To change your email, simply click the link in the email sent to you at:"
 msgstr ""
+"За да промените имейла си, трябва само да кликнете върху връзката в имейла, "
+"изпратен до:"
 
 #: templates/accounts/email_change.html:40
 msgid "New Email Address"
@@ -660,14 +713,18 @@ msgid ""
 "lists. Please change your address to a new one or <a "
 "href=\"%(contact_us_url)s\">contact us</a> if you have questions."
 msgstr ""
+"Собственикът на този адрес е поискал адресът им да бъде премахнат от нашите "
+"списъци. Моля, променете адреса си или се <a "
+"href=\"%(contact_us_url)s\">свържете с нас</a>, ако имате въпроси."
 
 #: templates/accounts/email_change.html:61
 msgid "Can't find the confirmation email? Check your spam folder"
 msgstr ""
+"Не можете да намерите имейл за потвърждение? Проверете папката Ви за спам."
 
 #: templates/accounts/email_change.html:62
 msgid "Resend"
-msgstr ""
+msgstr "Изпрати отново"
 
 #: templates/accounts/email_change.html:78
 msgid "Current Email"
@@ -683,14 +740,14 @@ msgstr "Промяна на е-пощата"
 
 #: templates/accounts/email_change.html:102
 msgid "I’d like to receive email updates about: "
-msgstr ""
+msgstr "Искам да получавам имейл актуализации за:"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
 #: templates/accounts/email_verification/verification_email_plain.html:6
 #: templates/educators/email_verification/verification_email_plain.html:5
 msgid "Greetings from the Scratch Team at MIT!"
-msgstr ""
+msgstr "Поздрави от екипа на Scratch към Масачузетския технологичен институт!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:11
 #, python-format
@@ -698,6 +755,8 @@ msgid ""
 "\n"
 "    A few minutes ago, you requested to link this email address to the Scratch account <strong>%(username)s</strong>. Please confirm your email address by clicking the button below:\n"
 msgstr ""
+"\n"
+"Преди няколко минути поискахте да свържете този имейл адрес с акаунт за Scratch<strong>%(username)s</strong>. Моля, потвърдете имейл адреса си, като кликнете върху бутона по-долу:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:17
 #: templates/accounts/email_verification/verification_email.html:26
@@ -711,6 +770,8 @@ msgid ""
 "If you didn’t request an email change, don’t worry - you can just ignore "
 "this message."
 msgstr ""
+"Ако не сте поискали промяна в имейла, не се притеснявайте - можете просто да"
+" игнорирате това съобщение."
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
 #: templates/accounts/email_verification/verification_email.html:43
@@ -724,7 +785,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:45
 #: templates/registration/welcome_email_message.txt:36
 msgid "Scratch On!"
-msgstr ""
+msgstr "Scratch On!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
@@ -743,7 +804,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:47
 #: templates/registration/welcome_email_message.txt:37
 msgid "The Scratch Team"
-msgstr ""
+msgstr "Екипът на Scratch"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:5
 #, python-format
@@ -751,6 +812,8 @@ msgid ""
 "\n"
 "A few minutes ago, you requested to link this email address to the Scratch account %(username)s. Please confirm your email address by clicking the button below:\n"
 msgstr ""
+"\n"
+"Преди няколко минути поискахте да свържете този имейл адрес с акаунт за Scratch%(username)s. Моля, потвърдете имейл адреса си, като кликнете върху бутона по-долу:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:14
 #: templates/accounts/email_verification/verification_email_plain.html:31
@@ -758,26 +821,30 @@ msgstr ""
 #: templates/educators/registration/password_reset_email.html:15
 #: templates/educators/registration/password_reset_email.txt:9
 msgid "Scratch on!"
-msgstr ""
+msgstr "Scratch оn!"
 
 #: templates/accounts/email_verification/failed_verification.html:20
 msgid "Uh oh! Something went wrong with your email confirmation."
-msgstr ""
+msgstr "ми сега! Нещо се обърка при потвърждаване на Вашия имейл."
 
 #: templates/accounts/email_verification/failed_verification.html:21
 msgid ""
 "To try again, log into your Scratch Account Settings to request another "
 "link."
 msgstr ""
+"За да опитате отново, влезте в настройките на Scratch акаунт, за да поискате"
+" друга връзка."
 
 #: templates/accounts/email_verification/failed_verification.html:23
 msgid "My Account Settings"
-msgstr ""
+msgstr "Настройки на акаунта ми"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:11
 #, python-format
 msgid "We sent a verification email to <strong>%(email_address)s</strong>."
 msgstr ""
+"Изпратихме електронно писмо за потвърждение на адрес "
+"<strong>%(email_address)s</strong>. "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:14
 #, python-format
@@ -787,6 +854,9 @@ msgid ""
 "one</a> or <a href=\"%(contact_us_url)s\">contact us</a> if you have "
 "questions."
 msgstr ""
+"Собственикът на този адрес е поискал адресът им да бъде премахнат от нашите "
+"списъци. Моля, <a href=\"%(settings_url)s\">променете адреса си на нов</a> "
+"или<a href=\"%(contact_us_url)s\"> се свържете с нас</a>, ако имате въпроси."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:19
 #, python-format
@@ -797,21 +867,27 @@ msgid ""
 "        <strong>%(email_address)s</strong>\n"
 "      "
 msgstr ""
+"\n"
+"Проверете за потвърдителното съобщение, изпратено до:\n"
+"<br/>\n"
+"<strong>%(email_address)s</strong>\n"
+" "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:27
 #: templates/accounts/email_verification/verify_email_standalone.html:108
 msgid "Can't find confirmation message?"
-msgstr ""
+msgstr "Не можете да намерите съобщение за потвърждение?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:30
 #: templates/accounts/email_verification/verify_email_standalone.html:110
 msgid "Wait for ten minutes. The message may take a while to arrive."
 msgstr ""
+"Изчакайте десет минути. Може да отнем време докато съобщението пристигне."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:31
 #: templates/accounts/email_verification/verify_email_standalone.html:111
 msgid "Check your spam folder."
-msgstr ""
+msgstr "Проверете папката Ви за спам."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:32
 #, python-format
@@ -819,20 +895,22 @@ msgid ""
 "Make sure your email address is correct (see <a "
 "href=\"%(settings_url)s\">Account Settings</a>)."
 msgstr ""
+"Уверете се, че вашия email адрес е правилен (вижте <a "
+"href=\"%(settings_url)s\"> Настройки на профил </a>)."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Still can't find the message?"
-msgstr ""
+msgstr "Все още не можете да намерите съобщението?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Resend Confirmation"
-msgstr ""
+msgstr "Изпратете отново потвърждение"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:44
 msgid "OK, back to Scratch"
-msgstr ""
+msgstr "ОК, обратно в Scratch!"
 
 #: templates/accounts/email_verification/passed_verification.html:21
 #: templates/registration/welcome_email_subject.html:1
@@ -866,19 +944,21 @@ msgstr "Свързване със Scratcher"
 
 #: templates/accounts/email_verification/passed_verification.html:52
 msgid "All set to go!"
-msgstr ""
+msgstr "Всичко е готово!"
 
 #: templates/accounts/email_verification/passed_verification.html:56
 #, python-format
 msgid ""
 "Success! You have confirmed your email address, "
 "<strong>%(username)s</strong>."
-msgstr ""
+msgstr "Успех! Потвърдихте вашия имейл адрес,<strong>%(username)s</strong>."
 
 #: templates/accounts/email_verification/passed_verification.html:57
 msgid ""
 "Jump into Scratch to create new projects and share them with the community!"
 msgstr ""
+"Направете Scratch, за да създавате нови проекти и да ги споделяте с "
+"общността!"
 
 #: templates/accounts/email_verification/passed_verification.html:59
 msgid "OK, let's go!"
@@ -890,6 +970,8 @@ msgid ""
 "\n"
 "Greetings from the Scratch Team at MIT! A few minutes ago, your child signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"Поздрави от екипа на Scratch в MIT! Преди няколко минути детето ви се регистрира за нов профил на <a href=\"%(scratch_url)s\">Scratch</a> с потребителското име:\n"
 
 #: templates/accounts/email_verification/verification_email.html:16
 #, python-format
@@ -897,10 +979,13 @@ msgid ""
 "\n"
 "Greetings from the Scratch Team at MIT! You just signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
 msgstr ""
+"\n"
+"Поздрави от екипа на Scratch в MIT! Току-що се регистрирахте за нов профил на<a href=\"%(scratch_url)s\">Scratch</a> с потребителското име:\n"
 
 #: templates/accounts/email_verification/verification_email.html:22
 msgid "Please confirm this email address by clicking the button below:"
 msgstr ""
+"Моля, потвърдете този имейл адрес, като кликнете върху бутона по-долу:"
 
 #: templates/accounts/email_verification/verification_email.html:33
 #, python-format
@@ -908,6 +993,8 @@ msgid ""
 "\n"
 "    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 msgstr ""
+"\n"
+"Scratch е свободен език за програмиране и онлайн общност, където децата могат да създават интерактивни истории, игри и анимации. Потвърждаването на този имейл ще даде на детето ви пълен достъп до споделяне и коментар в онлайн общността на Scratch. Научете повече на адрес<a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
 #: templates/accounts/email_verification/verification_email.html:37
 #, python-format
@@ -915,6 +1002,8 @@ msgid ""
 "\n"
 "    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 msgstr ""
+"\n"
+"Scratch е свободен език за програмиране и онлайн общност, където можете да създавате свои интерактивни истории, игри и анимации. Потвърждаването на имейла ви ще ви даде пълен достъп да споделяте и коментирате в онлайн общността на Scratch. Научете повече на адрес<a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
@@ -983,14 +1072,17 @@ msgid ""
 "onClick=\"redirectParent('%(settings_url)s');\" href=\"#\">Account "
 "Settings</a>)."
 msgstr ""
+"Уверете се, че вашия email адрес е правилен (вижте <a "
+"onClick=\"redirectParent('%(settings_url)s');\" href=\"#\"> Настройки на "
+"профил </a>)."
 
 #: templates/accounts/email_verification/verify_email_standalone.html:123
 msgid "Ok, back to Scratch"
-msgstr ""
+msgstr "ОК, обратно в Scratch"
 
 #: templates/accounts/includes/backbone-init-data.html:5
 msgid "Subscription update successful."
-msgstr ""
+msgstr "Актуализацията на абонамента е успешна."
 
 #: templates/accounts/password_change_form.html:9
 msgid "Password "
@@ -999,7 +1091,7 @@ msgstr "Парола"
 #: templates/accounts/password_change_form.html:15
 #, python-format
 msgid "Account Settings for %(username)s"
-msgstr ""
+msgstr "Настройки на профила за %(username)s"
 
 #: templates/accounts/password_change_form.html:26
 msgid "After changing your password, you will be prompted to log back in."
@@ -1027,7 +1119,7 @@ msgstr ""
 
 #: templates/accounts/password_changed_email/subject.txt:1
 msgid "Your Scratch account password was changed"
-msgstr ""
+msgstr "Паролата на профила Ви в Scratch е променена"
 
 #: templates/accounts/subscription/unsubscribe_email_verification_failure.html:20
 msgid "Oops! There has been a problem unsubscribing your email address."
@@ -1043,11 +1135,11 @@ msgstr ""
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:16
 #: templates/mail/blacklist/blacklist_success.html:16
 msgid "Unsubscribed"
-msgstr ""
+msgstr "Отписахте се"
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:20
 msgid "Your email address has been unsubscribed."
-msgstr ""
+msgstr "Вашия email адрес вече не е абониран. "
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:23
 #, python-format
@@ -1056,10 +1148,12 @@ msgid ""
 "                You can manage your subscription to Scratch updates from the Email tab of your <a href=\"%(account_url)s\">Account Settings</a>.\n"
 "            "
 msgstr ""
+"\n"
+"Можете да управлявате вашето вписване в Scratch updates от Email раздела от вашите <a href=\"%(account_url)s\">Настройки на профил </a>."
 
 #: templates/accounts/subscription/unsubscribe_email_verification_success.html:28
 msgid "Take me back to Scratch!"
-msgstr ""
+msgstr "Върни ме обратно в Scratch!"
 
 #: templates/base.html:19
 msgid "Scratch"
@@ -1366,6 +1460,7 @@ msgstr "Отказ"
 #, python-format
 msgid "Sorry, comment posting has been turned off for this %(tType)s"
 msgstr ""
+"Съжаляваме, публикуването на коментари беше изключено за този %(tType)s"
 
 #: templates/comments/comment-module.html:51
 msgid ""
@@ -1423,6 +1518,8 @@ msgstr ""
 msgid ""
 "You can also look at the Scratch <a href=\"/discuss\">Discussion forums</a>."
 msgstr ""
+"Можете също така да погледнете <a href=\"/discuss\">форумите за дискусии "
+"</a>на Scratch."
 
 #: templates/contact-us.html:95
 msgid ""
@@ -1430,6 +1527,9 @@ msgid ""
 "href=\"/discuss\">Discussion forums.</a> There are many experienced "
 "Scratchers who can help!"
 msgstr ""
+"Ако не можете да намерите отговор, публикувайте нова тема във <a "
+"href=\"/discuss\">форумите за дискусии.</a> Има много опитни Scratcher-и, "
+"които могат да помогнат!"
 
 #: templates/contact-us.html:98
 msgid "Questions About Scratch"
@@ -1437,7 +1537,7 @@ msgstr "Въпроси за Scratch"
 
 #: templates/contact-us.html:99
 msgid "Help with Scripts"
-msgstr ""
+msgstr "Помощ със Скриптовете"
 
 #: templates/contact-us.html:100
 msgid "Bugs and Glitches"
@@ -1448,22 +1548,25 @@ msgid ""
 "If you need to contact us, please choose from one of the options below. We "
 "get a lot of mail, so we may not be able to respond to your message."
 msgstr ""
+"Ако искате да се свържете с нас, моля изберете една от опциите по-долу. "
+"Получаваме много поща, така че може да не можем да отговорим на съобщението "
+"ви."
 
 #: templates/contact-us.html:108
 msgid "Select a topic"
-msgstr ""
+msgstr "Изберете тема"
 
 #: templates/contact-us.html:109
 msgid "Report something inappropriate..."
-msgstr ""
+msgstr "Подаване на сигнал за нещо неподходящо ..."
 
 #: templates/contact-us.html:110
 msgid "Report a problem with the website..."
-msgstr ""
+msgstr "Подаване на сигнал за проблем със сайта ..."
 
 #: templates/contact-us.html:111
 msgid "Problems with email confirmation..."
-msgstr ""
+msgstr "Проблеми с потвърждаването на имейла ..."
 
 #: templates/contact-us.html:112
 msgid "Other..."
@@ -1495,19 +1598,19 @@ msgstr "Трябва да въведеш име на класа"
 
 #: templates/educators/add_class_modal.html:50
 msgid "This text looks inappropriate"
-msgstr ""
+msgstr "Този текст изглежда неподходящ"
 
 #: templates/educators/add_gallery_modal.html:5
 msgid "Add a New Class Studio "
-msgstr ""
+msgstr "Добавете Студио от Нов Клас"
 
 #: templates/educators/add_gallery_modal.html:10
 msgid "Studio Name"
-msgstr ""
+msgstr "Име на Студио"
 
 #: templates/educators/add_gallery_modal.html:20
 msgid "Studio Description"
-msgstr ""
+msgstr "Описание на Студио"
 
 #: templates/educators/add_gallery_modal.html:42
 #: templates/educators/register_student_modal.html:58
@@ -1549,7 +1652,7 @@ msgstr "Потребителското име може да се състои с
 #: templates/modal-registration.html:260
 #: templates/registration/password_reset_confirm.html:44
 msgid "Your password cannot be 'password'"
-msgstr ""
+msgstr "Не може да ползвате 'password' за парола."
 
 #: templates/educators/add_gallery_modal.html:49
 #: templates/modal-registration.html:261
@@ -1577,7 +1680,7 @@ msgstr "Паролата ви не може да съвпада с потреб�
 #: templates/educators/add_gallery_modal.html:53
 #: templates/modal-registration.html:265
 msgid "You must select a birth month and year"
-msgstr ""
+msgstr "Трябва да изберете месец и година на раждане"
 
 #: templates/educators/add_gallery_modal.html:54
 #: templates/modal-registration.html:266
@@ -1601,35 +1704,35 @@ msgstr "Трябва да укажете валиден имейл адрес"
 
 #: templates/educators/base.html:31 templates/mystuff/base.html:29
 msgid "Example tab"
-msgstr ""
+msgstr "Раздел Пример"
 
 #: templates/educators/classroom_detail.html:9
 #, python-format
 msgid "%(classroom_title)s on Scratch"
-msgstr ""
+msgstr "%(classroom_title)s в Scratch"
 
 #: templates/educators/classroom_detail.html:70
 msgid "Class page"
-msgstr ""
+msgstr "Страница на Класа"
 
 #: templates/educators/classroom_detail.html:70
 #: templates/profiles/profile_detail.html:80
 msgid "ended"
-msgstr ""
+msgstr "приключил"
 
 #: templates/educators/classroom_detail.html:71
 #, python-format
 msgid "Created %(tDate)s ago"
-msgstr ""
+msgstr "Създаден преди %(tDate)s"
 
 #: templates/educators/classroom_detail.html:79
 msgid "Join this class"
-msgstr ""
+msgstr "Присъединете се към този клас"
 
 #: templates/educators/classroom_detail.html:92
 #: templates/educators/includes/stuff/backbone-templates.html:203
 msgid "About this Class"
-msgstr ""
+msgstr "За този клас"
 
 #: templates/educators/classroom_detail.html:96
 #: templates/educators/includes/stuff/backbone-templates.html:206
@@ -1638,57 +1741,59 @@ msgid ""
 "Describe this class. This will be publicly visible, so please avoid using "
 "identifiable information, like names."
 msgstr ""
+"Опишете този клас. Това ще бъде публично достъпно, затова избягвайте да "
+"използвате идентифицираща информация, като имена."
 
 #: templates/educators/classroom_detail.html:97
 #: templates/educators/includes/stuff/backbone-templates.html:207
 #: templates/educators/includes/stuff/backbone-templates.html:215
 #: templates/profiles/profile_detail.html:124
 msgid "<span id=\"bio-chars-left\">200</span> characters left."
-msgstr ""
+msgstr "Остават <span id=\"bio-chars-left\">200</span> символа."
 
 #: templates/educators/classroom_detail.html:121
 msgid "What we're working on"
-msgstr ""
+msgstr "По какво работим"
 
 #: templates/educators/classroom_detail.html:125
 #: templates/educators/includes/stuff/backbone-templates.html:228
 #: templates/educators/includes/stuff/backbone-templates.html:236
 msgid "Describe what the class is doing."
-msgstr ""
+msgstr "Опишете какво прави класът."
 
 #: templates/educators/classroom_detail.html:126
 #: templates/educators/includes/stuff/backbone-templates.html:229
 #: templates/educators/includes/stuff/backbone-templates.html:237
 #: templates/profiles/profile_detail.html:151
 msgid "<span id=\"status-chars-left\">200</span> characters left."
-msgstr ""
+msgstr "Остават <span id=\"status-chars-left\">200</span> символа."
 
 #: templates/educators/classroom_detail.html:154
 #: templates/pathways/layout/base.html:66
 msgid "Featured"
-msgstr ""
+msgstr "Функционалности"
 
 #: templates/educators/classroom_detail.html:158
 #: templates/profiles/profile_detail.html:179
 msgid "Change featured project"
-msgstr ""
+msgstr "Промени споделените проекти"
 
 #: templates/educators/classroom_detail.html:165
 msgid "Latest Activity"
-msgstr ""
+msgstr "Последна активност"
 
 #: templates/educators/classroom_detail.html:176
 msgid "Report this class"
-msgstr ""
+msgstr "Съобщи този клас"
 
 #: templates/educators/classroom_detail.html:186
 #: templates/educators/classroom_gallery_list.html:5
 msgid "Class Studios"
-msgstr ""
+msgstr "Клас студиа"
 
 #: templates/educators/classroom_detail.html:203
 msgid "This class doesn't have any studios yet"
-msgstr ""
+msgstr "В този клас все още няма студиа"
 
 #: templates/educators/classroom_detail.html:205
 #, python-format
@@ -1705,7 +1810,7 @@ msgstr "Ученици"
 
 #: templates/educators/classroom_detail.html:233
 msgid "This class doesn't have students yet"
-msgstr ""
+msgstr "В този клас все още няма ученици"
 
 #: templates/educators/classroom_detail.html:235
 #, python-format
@@ -1779,20 +1884,20 @@ msgstr "Защо ни е нужна тази информация"
 #: templates/educators/educator-modal-registration.html:69
 #: templates/educators/educator-modal-registration.html:81
 msgid "Affiliation"
-msgstr ""
+msgstr "Присъединяване"
 
 #: templates/educators/educator-modal-registration.html:71
 #: templates/educators/educator-modal-registration.html:75
 msgid "Need explanatory text."
-msgstr ""
+msgstr "Нуждаете се от обяснителен текст."
 
 #: templates/educators/educator-modal-registration.html:73
 msgid "Biography"
-msgstr ""
+msgstr "Биография"
 
 #: templates/educators/educator-modal-registration.html:91
 msgid "Brief Biography"
-msgstr ""
+msgstr "Кратка биография"
 
 #: templates/educators/educator-modal-registration.html:106
 #: templates/modal-registration.html:146
@@ -1809,12 +1914,12 @@ msgstr "Email адрес"
 #: templates/educators/educator-modal-registration.html:112
 #: templates/modal-registration.html:153
 msgid "Parent's or guardian's email address"
-msgstr ""
+msgstr "Email адрес на родител или настойник"
 
 #: templates/educators/educator-modal-registration.html:120
 #: templates/modal-registration.html:161
 msgid "Confirm email address"
-msgstr ""
+msgstr "Потвърди email адреса"
 
 #: templates/educators/educator-modal-registration.html:132
 msgid "Congrats! educator.username"
@@ -1826,15 +1931,15 @@ msgstr ""
 
 #: templates/educators/educator-modal-registration.html:141
 msgid "Set up My Account"
-msgstr ""
+msgstr "Настройки за моя акаунт"
 
 #: templates/educators/educator-modal-registration.html:144
 msgid "Set up Classes"
-msgstr ""
+msgstr "Настройка на класове"
 
 #: templates/educators/educator-modal-registration.html:147
 msgid "View Community"
-msgstr ""
+msgstr "Разгледай общността"
 
 #: templates/educators/email_verification/verification_email.html:11
 #, python-format
@@ -1869,7 +1974,7 @@ msgstr ""
 
 #: templates/educators/email_verification/verification_email_subject.html:1
 msgid "Final Step: Confirm your Scratch Teacher Account"
-msgstr ""
+msgstr "Заключителна стъпка: Потвърдете профила си за учител в Scratch"
 
 #: templates/educators/includes/stuff/backbone-init-data.html:4
 msgid ""
@@ -1879,19 +1984,19 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-init-data.html:5
 msgid "Class deleted successfully"
-msgstr ""
+msgstr "Класът е изтрит успешно"
 
 #: templates/educators/includes/stuff/backbone-init-data.html:6
 msgid "Class restored successfully"
-msgstr ""
+msgstr "Класът е възстановен успешно"
 
 #: templates/educators/includes/stuff/backbone-init-data.html:7
 msgid "Class ended successfully"
-msgstr ""
+msgstr "Класът е приключи успешно"
 
 #: templates/educators/includes/stuff/backbone-init-data.html:8
 msgid "Class opened successfully"
-msgstr ""
+msgstr "Класът е започна успешно"
 
 #: templates/educators/includes/stuff/backbone-init-data.html:9
 msgid ""
@@ -1912,7 +2017,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-init-data.html:12
 msgid "Student deleted successfully"
-msgstr ""
+msgstr "Ученикът е изтрит успешно"
 
 #: templates/educators/includes/stuff/backbone-init-data.html:13
 msgid "Student settings successfully updated"
@@ -1928,7 +2033,7 @@ msgstr ""
 #: templates/projects/includes/backbone-init-data.html:82
 #: templates/projects/includes/backbone-init-data.html:84
 msgid "Changes saved"
-msgstr ""
+msgstr "Промените са запазени"
 
 #: templates/educators/includes/stuff/backbone-init-data.html:16
 msgid "Incorrect password, try again"
@@ -1936,12 +2041,12 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-init-data.html:17
 msgid "The password field is required"
-msgstr ""
+msgstr "Полето парола е задължително"
 
 #: templates/educators/includes/stuff/backbone-templates.html:15
 #: templates/educators/includes/stuff/backbone-templates.html:46
 msgid "New Class"
-msgstr ""
+msgstr "Нов клас"
 
 #: templates/educators/includes/stuff/backbone-templates.html:36
 #: templates/educators/includes/stuff/backbone-templates.html:116
@@ -1957,7 +2062,7 @@ msgstr "Зареди повече"
 #: templates/educators/includes/stuff/backbone-templates.html:42
 #, python-format
 msgid "Welcome, %(username)s"
-msgstr ""
+msgstr "Здравейте, %(username)s"
 
 #: templates/educators/includes/stuff/backbone-templates.html:43
 msgid ""
@@ -1969,7 +2074,7 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:193
 #, python-format
 msgid "Class created %(datetime_created)s"
-msgstr ""
+msgstr "Класът е създаден %(datetime_created)s"
 
 #: templates/educators/includes/stuff/backbone-templates.html:67
 #: templates/educators/includes/stuff/backbone-templates.html:196
@@ -1979,7 +2084,7 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:70
 #: templates/educators/includes/stuff/backbone-templates.html:141
 msgid "Settings"
-msgstr ""
+msgstr "Настройки"
 
 #: templates/educators/includes/stuff/backbone-templates.html:72
 #: templates/educators/includes/stuff/backbone-templates.html:147
@@ -1992,7 +2097,7 @@ msgstr "Студиа"
 #: templates/educators/includes/stuff/backbone-templates.html:150
 #: templates/galleries/base.html:123
 msgid "Activity"
-msgstr ""
+msgstr "Дейност"
 
 #: templates/educators/includes/stuff/backbone-templates.html:96
 msgid "Re-Open Class"
@@ -2002,7 +2107,7 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:185
 #: templates/galleries/base.html:55
 msgid "Change"
-msgstr ""
+msgstr "Промени"
 
 #: templates/educators/includes/stuff/backbone-templates.html:225
 msgid "What the Class is working on"
@@ -2029,7 +2134,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:318
 msgid "Last Modified"
-msgstr ""
+msgstr "Последни промени"
 
 #: templates/educators/includes/stuff/backbone-templates.html:346
 msgid "You can add students to this class"
@@ -2037,7 +2142,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:349
 msgid "Add one student"
-msgstr ""
+msgstr "Добави един ученик"
 
 #: templates/educators/includes/stuff/backbone-templates.html:353
 #: templates/educators/includes/stuff/backbone-templates.html:377
@@ -2063,43 +2168,43 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:366
 #: templates/educators/includes/stuff/backbone-templates.html:380
 msgid "CSV Upload"
-msgstr ""
+msgstr "CSV качване"
 
 #: templates/educators/includes/stuff/backbone-templates.html:451
 msgid "followed user"
-msgstr ""
+msgstr "последван потребител"
 
 #: templates/educators/includes/stuff/backbone-templates.html:456
 msgid "followed studio"
-msgstr ""
+msgstr "последвано студио"
 
 #: templates/educators/includes/stuff/backbone-templates.html:461
 msgid "loved the project "
-msgstr ""
+msgstr "харесан проект"
 
 #: templates/educators/includes/stuff/backbone-templates.html:466
 msgid "favorited the project "
-msgstr ""
+msgstr "любим проект"
 
 #: templates/educators/includes/stuff/backbone-templates.html:471
 msgid "added the project "
-msgstr ""
+msgstr "добавен проект"
 
 #: templates/educators/includes/stuff/backbone-templates.html:473
 msgid "to studio "
-msgstr ""
+msgstr "към студио"
 
 #: templates/educators/includes/stuff/backbone-templates.html:481
 msgid "shared the project "
-msgstr ""
+msgstr "споделен проект"
 
 #: templates/educators/includes/stuff/backbone-templates.html:483
 msgid "reshared the project "
-msgstr ""
+msgstr "повторно споделен проект"
 
 #: templates/educators/includes/stuff/backbone-templates.html:489
 msgid "remixed the project "
-msgstr ""
+msgstr "ремиксирай проект"
 
 #: templates/educators/includes/stuff/backbone-templates.html:494
 msgid "added the studio "
@@ -2115,7 +2220,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:509
 msgid "from studio "
-msgstr ""
+msgstr "от студио"
 
 #: templates/educators/includes/stuff/backbone-templates.html:516
 msgid "was promoted to manager by "
@@ -2123,7 +2228,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:518
 msgid "for studio"
-msgstr ""
+msgstr "за студио"
 
 #: templates/educators/includes/stuff/backbone-templates.html:525
 msgid "made a profile update. <em>"
@@ -2159,7 +2264,7 @@ msgstr "%(target_username)s беше отблокиран."
 #: templates/educators/includes/stuff/backbone-templates.html:604
 #, python-format
 msgid "%(target_username)s was excluded from homepage."
-msgstr ""
+msgstr "%(target_username)sбе изключен от началната страница. "
 
 #: templates/educators/includes/stuff/backbone-templates.html:606
 #, python-format
@@ -2171,12 +2276,12 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:608
 #, python-format
 msgid "%(target_username)s was banned automatically."
-msgstr ""
+msgstr "%(target_username)s бе забранен автоматично."
 
 #: templates/educators/includes/stuff/backbone-templates.html:610
 #, python-format
 msgid "%(project)s by %(target_username)s was removed automatically."
-msgstr ""
+msgstr "%(project)s от %(target_username)s бе премахнат автоматично."
 
 #: templates/educators/includes/stuff/backbone-templates.html:613
 #, python-format
@@ -2186,7 +2291,7 @@ msgstr "%(project)s от %(target_username)s беше цензуриран."
 #: templates/educators/includes/stuff/backbone-templates.html:615
 #, python-format
 msgid "%(project)s by %(target_username)s was uncensored."
-msgstr ""
+msgstr "За %(project)s от %(target_username)s бе отменена цензура."
 
 #: templates/educators/includes/stuff/backbone-templates.html:618
 #, python-format
@@ -2220,7 +2325,7 @@ msgstr "%(gallery)s беше изтрит от Scratch администрато�
 #: templates/educators/includes/stuff/backbone-templates.html:630
 #, python-format
 msgid "%(target_username)s deleted their own account."
-msgstr ""
+msgstr "%(target_username)s са изтрили собствения ви профил."
 
 #: templates/educators/includes/stuff/backbone-templates.html:632
 #, python-format
@@ -2239,29 +2344,29 @@ msgstr ""
 #: templates/educators/includes/stuff/backbone-templates.html:636
 #, python-format
 msgid "%(target_username)s had an admin action performed."
-msgstr ""
+msgstr "%(target_username)s бе извършено действие от администратор."
 
 #: templates/educators/includes/stuff/backbone-templates.html:652
 #, python-format
 msgid "Change Password for %(username)s"
-msgstr ""
+msgstr "Смяна на парола за %(username)s"
 
 #: templates/educators/includes/stuff/backbone-templates.html:656
 msgid "New password"
-msgstr ""
+msgstr "Нова парола"
 
 #: templates/educators/includes/stuff/backbone-templates.html:660
 msgid "New password confirmation"
-msgstr ""
+msgstr "Потвърждение на новата парола"
 
 #: templates/educators/includes/stuff/backbone-templates.html:676
 #, python-format
 msgid "%(username)s Account Options"
-msgstr ""
+msgstr "%(username)s Настройки на акаунта"
 
 #: templates/educators/includes/stuff/backbone-templates.html:683
 msgid "Remove Icon"
-msgstr ""
+msgstr "Премахни икона"
 
 #: templates/educators/includes/stuff/backbone-templates.html:686
 msgid "There are two ways to change your student's password."
@@ -2294,7 +2399,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:702
 msgid "Manually Change"
-msgstr ""
+msgstr "Ръчна промяна"
 
 #: templates/educators/includes/stuff/backbone-templates.html:710
 #: templates/educators/includes/stuff/backbone-templates.html:736
@@ -2306,7 +2411,7 @@ msgstr "Затвори"
 
 #: templates/educators/includes/stuff/backbone-templates.html:720
 msgid "Sign-up Link"
-msgstr ""
+msgstr "Връзка за записване"
 
 #: templates/educators/includes/stuff/backbone-templates.html:723
 msgid ""
@@ -2316,20 +2421,21 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:726
 msgid "Generate a sign-up link"
-msgstr ""
+msgstr "Създайте връзка за записване"
 
 #: templates/educators/includes/stuff/backbone-templates.html:728
 msgid "Generate"
-msgstr ""
+msgstr "Генерирай"
 
 #: templates/educators/includes/stuff/backbone-templates.html:731
 #: templates/educators/includes/stuff/backbone-templates.html:774
 msgid "Type CTRL+C on Windows or &#8984;+C on Mac to copy the link."
 msgstr ""
+"Въведете CTRL+C за Windows или &#8984;+C за Mac за да копирате връзката."
 
 #: templates/educators/includes/stuff/backbone-templates.html:745
 msgid "Upload CSV"
-msgstr ""
+msgstr "Зареди CSV"
 
 #: templates/educators/includes/stuff/backbone-templates.html:748
 msgid ""
@@ -2342,7 +2448,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:755
 msgid "Download example"
-msgstr ""
+msgstr "Изтеглете пример"
 
 #: templates/educators/includes/stuff/backbone-templates.html:758
 msgid "Learn more about CSV files"
@@ -2354,7 +2460,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:770
 msgid "Upload"
-msgstr ""
+msgstr "Качване"
 
 #: templates/educators/includes/stuff/backbone-templates.html:794
 msgid "Are you sure you want to end the following class:"
@@ -2372,11 +2478,11 @@ msgstr ""
 
 #: templates/educators/includes/stuff/sort-activities-dropdown.html:6
 msgid "Activity for"
-msgstr ""
+msgstr "Действия за"
 
 #: templates/educators/includes/stuff/sort-activities-dropdown.html:11
 msgid "All students"
-msgstr ""
+msgstr "Всички ученици"
 
 #: templates/educators/includes/stuff/sort-activities-dropdown.html:21
 #: templates/educators/includes/stuff/sort-alerts-dropdown.html:21
@@ -2385,13 +2491,13 @@ msgstr ""
 #: templates/mystuff/includes/sort-galleries-dropdown.html:19
 #: templates/mystuff/includes/sort-projects-dropdown.html:4
 msgid "Sort by"
-msgstr ""
+msgstr "Подреди по"
 
 #: templates/educators/includes/stuff/sort-activities-dropdown.html:26
 #: templates/educators/includes/stuff/sort-alerts-dropdown.html:26
 #: templates/educators/includes/stuff/sort-classrooms-dropdown.html:11
 msgid "Last created"
-msgstr ""
+msgstr "Последно създаден"
 
 #: templates/educators/includes/stuff/sort-alerts-dropdown.html:6
 msgid "Alerts for"
@@ -2399,7 +2505,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/sort-alerts-dropdown.html:11
 msgid "All classes"
-msgstr ""
+msgstr "Всички класове"
 
 #: templates/educators/register_student_modal.html:6
 msgid "Adding New Student"
@@ -2407,7 +2513,7 @@ msgstr ""
 
 #: templates/educators/register_student_modal.html:11
 msgid "Add to Class"
-msgstr ""
+msgstr "Добави в клас"
 
 #: templates/educators/register_student_modal.html:38
 msgid ""
@@ -2421,7 +2527,7 @@ msgstr ""
 #: templates/educators/registration/approval_email_message.txt:2
 #, python-format
 msgid "Your Scratch Teacher Account is ready, %(username)s!"
-msgstr ""
+msgstr "Вашият учителски акаунт в Scratch е готов.%(username)s!"
 
 #: templates/educators/registration/approval_email_message.html:9
 #: templates/educators/registration/approval_email_message.txt:4
@@ -2434,14 +2540,14 @@ msgstr ""
 #: templates/educators/registration/approval_email_message.html:11
 #: templates/educators/registration/approval_email_message.txt:6
 msgid "New to Scratch?"
-msgstr ""
+msgstr "Нов в Scratch?"
 
 #: templates/educators/registration/approval_email_message.html:13
 #: templates/educators/registration/approval_email_message.txt:7
 #: templates/registration/welcome_email_message.html:14
 #: templates/registration/welcome_email_message.txt:9
 msgid "Read our Community Guidelines"
-msgstr ""
+msgstr "Прочетете нашите Правила на общността"
 
 #: templates/educators/registration/approval_email_message.html:14
 #: templates/educators/registration/approval_email_message.txt:8
@@ -2453,12 +2559,12 @@ msgstr ""
 #: templates/educators/registration/approval_email_message.html:15
 #: templates/educators/registration/approval_email_message.txt:9
 msgid "Learn more about Scratch"
-msgstr ""
+msgstr "Научете повече за Scratch"
 
 #: templates/educators/registration/approval_email_message.html:18
 #: templates/educators/registration/approval_email_message.txt:11
 msgid "Next Steps"
-msgstr ""
+msgstr "Следващи стъпки"
 
 #: templates/educators/registration/approval_email_message.html:20
 #: templates/educators/registration/approval_email_message.txt:12
@@ -2489,12 +2595,12 @@ msgstr ""
 
 #: templates/educators/registration/approval_email_subject.txt:1
 msgid "Welcome to your Scratch Teacher Account!"
-msgstr ""
+msgstr "Добре дошли във вашия учителски профил в Scratch!"
 
 #: templates/educators/registration/password_reset_email.html:7
 #: templates/educators/registration/password_reset_email.txt:2
 msgid "Hello,"
-msgstr ""
+msgstr "Здравей,"
 
 #: templates/educators/registration/password_reset_email.html:9
 #: templates/educators/registration/password_reset_email.txt:4
@@ -2550,7 +2656,7 @@ msgstr ""
 #: templates/educators/registration/welcome_email_message.html:17
 #: templates/educators/registration/welcome_email_message.txt:10
 msgid "Scratch Newsletters"
-msgstr ""
+msgstr "Новинарския бюлетин на Scratch "
 
 #: templates/educators/registration/welcome_email_message.html:18
 #: templates/educators/registration/welcome_email_message.txt:11
@@ -2577,7 +2683,7 @@ msgstr "Лесно е (и безплатно!) да се регистрират�
 
 #: templates/educators/student-modal-registration.html:57
 msgid "Thanks for joining Scratch!"
-msgstr ""
+msgstr "Благодарим Ви, че се присъединихте към Scratch!"
 
 #: templates/educators/student-modal-registration.html:58
 msgid "You're now logged in."
@@ -2585,7 +2691,7 @@ msgstr ""
 
 #: templates/educators/student-modal-registration.html:61
 msgid "Would you like to:"
-msgstr ""
+msgstr "Би ли искал:"
 
 #: templates/educators/student-modal-registration.html:63
 #: templates/registration/welcome_email_message.html:15
@@ -2595,11 +2701,11 @@ msgstr "Научете се как да създадете проект"
 
 #: templates/educators/student-modal-registration.html:64
 msgid "Choose a starter project"
-msgstr ""
+msgstr "Избери начален проект"
 
 #: templates/educators/student-modal-registration.html:65
 msgid "Connect with a Scratcher"
-msgstr ""
+msgstr "Свързване със Scratcher"
 
 #: templates/educators/student-modal-registration.html:81
 #: templates/modal-registration.html:225
@@ -2618,6 +2724,8 @@ msgid ""
 "All Classes ( <span data-content=\"classroom-"
 "count\">%(classroom_count)s</span> )"
 msgstr ""
+"Всички Класове (<span data-content=\"classroom-"
+"count\">%(classroom_count)s</span>)"
 
 #: templates/educators/stuff.html:19
 #, python-format
@@ -2625,10 +2733,12 @@ msgid ""
 "Ended Classes ( <span data-content=\"closed-count\">%(closed_count)s</span> "
 ")"
 msgstr ""
+"Завършили класове (<span data-content=\"closed-"
+"count\">%(closed_count)s</span>)"
 
 #: templates/educators/stuff.html:21
 msgid "All Class Alerts "
-msgstr ""
+msgstr "Напомняния за всички класове"
 
 #: templates/explore/includes/related_projects.html:62
 msgid "Studio:"
@@ -2636,19 +2746,19 @@ msgstr "Студио:"
 
 #: templates/extensions/terms_of_use.html:13
 msgid "Extension Developer Terms of Use"
-msgstr ""
+msgstr "Условия за използване на разширения от разработчици"
 
 #: templates/extensions/terms_of_use.html:40 templates/form-standalone.html:20
 msgid "Submit"
-msgstr ""
+msgstr "Изпращам"
 
 #: templates/galleries/activity.html:19
 msgid "Older messages"
-msgstr ""
+msgstr "Стари съобщения"
 
 #: templates/galleries/activity.html:23
 msgid "Newer messages"
-msgstr ""
+msgstr "Нови съобщения"
 
 #: templates/galleries/base.html:9
 msgid "Scratch Studio"
@@ -2656,7 +2766,7 @@ msgstr "Scratch студио"
 
 #: templates/galleries/base.html:63
 msgid "Report this studio"
-msgstr ""
+msgstr "Съобщи за нередност свързана с това студио "
 
 #: templates/galleries/base.html:66
 #, python-format
@@ -2671,12 +2781,12 @@ msgstr "Опишете за какво е това студио."
 #, python-format
 msgid "<span data-count=\"followers\">%(follow_count)s</span> Follower"
 msgid_plural "<span data-count=\"followers\">%(follow_count)s</span> Followers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "<span data-count=\"followers\">%(follow_count)s</span> Последователи"
+msgstr[1] "<span data-count=\"followers\">%(follow_count)s</span> Последователи"
 
 #: templates/galleries/base.html:114
 msgid "Projects ( <span data-count=\"projects\">100+</span> )"
-msgstr ""
+msgstr "Проекти ( <span data-count=\"projects\">100+</span>)"
 
 #: templates/galleries/base.html:114
 #, python-format
@@ -2690,7 +2800,7 @@ msgstr "Коментари ( <span data-count=\"comments\">%(tCount)s</span> )"
 
 #: templates/galleries/base.html:120
 msgid "Curators"
-msgstr ""
+msgstr "Куратори"
 
 #: templates/galleries/comments.html:27
 #: templates/includes/backbone-templates.html:77
@@ -2699,15 +2809,17 @@ msgid ""
 "You have <span id=\"chars-left-<%%- comment_id %%>\">500</span> characters "
 "left."
 msgstr ""
+"Остават Ви още <span id=\"chars-left-<%%- comment_id %%>\">500</span> "
+"символа."
 
 #: templates/galleries/curators.html:15
 msgid "Congratulations! You are now a curator of this studio."
-msgstr ""
+msgstr "Честито! Сега сте куратор на това студио."
 
 #: templates/galleries/gallery_list.html:4
 #, python-format
 msgid "%(username)s Studio (%(tGCount)s)"
-msgstr ""
+msgstr "%(username)s Студио (%(tGCount)s)"
 
 #: templates/galleries/gallery_list.html:8 templates/list_all.html:28
 #: templates/mystuff/includes/galleries_action_bar.html:11
@@ -2751,7 +2863,7 @@ msgstr "Днес"
 
 #: templates/galleries/includes/activity_list.html:38
 msgid "On"
-msgstr ""
+msgstr "Включено"
 
 #: templates/galleries/includes/activity_list.html:46
 msgid "made edits to title or description of this studio"
@@ -2763,7 +2875,7 @@ msgstr ""
 
 #: templates/galleries/includes/activity_list.html:65
 msgid "left a"
-msgstr ""
+msgstr "наляво"
 
 #: templates/galleries/includes/activity_list.html:75
 msgid "accepted an invitation"
@@ -2771,7 +2883,7 @@ msgstr ""
 
 #: templates/galleries/includes/activity_list.html:79
 msgid "from"
-msgstr ""
+msgstr "от"
 
 #: templates/galleries/includes/activity_list.html:83
 msgid "to curate this studio"
@@ -2828,7 +2940,7 @@ msgstr "Мои споделени проекти"
 
 #: templates/galleries/includes/explore-bar.html:15
 msgid "My Favorites"
-msgstr ""
+msgstr "Моите любими"
 
 #: templates/galleries/includes/explore-bar.html:16
 msgid "My Recent Views"
@@ -2844,7 +2956,7 @@ msgstr "Добави проекти"
 
 #: templates/galleries/includes/project_action_bar.html:24
 msgid "Add by url"
-msgstr ""
+msgstr "Добави с url адрес"
 
 #: templates/galleries/includes/project_action_bar.html:28
 msgid "You can select projects from the bar below or add by url above."
@@ -2852,11 +2964,11 @@ msgstr ""
 
 #: templates/includes/follow-button.html:4
 msgid "Follow"
-msgstr ""
+msgstr "Следвай"
 
 #: templates/includes/follow-button.html:5
 msgid "Unfollow"
-msgstr ""
+msgstr "Спри да следваш"
 
 #: templates/includes/password_required_form.html:8
 msgid "Please verify your account"
@@ -2877,12 +2989,12 @@ msgstr ""
 #: templates/includes/sort-projects-dropdown.html:10
 #: templates/mystuff/includes/sort-projects-dropdown.html:10
 msgid "Views"
-msgstr ""
+msgstr "Преглеждания"
 
 #: templates/includes/sort-projects-dropdown.html:11
 #: templates/mystuff/includes/sort-projects-dropdown.html:11
 msgid "Loves"
-msgstr ""
+msgstr "Обичам"
 
 #: templates/includes/sort-projects-dropdown.html:12
 #: templates/mystuff/includes/sort-projects-dropdown.html:12
@@ -3113,7 +3225,7 @@ msgstr ""
 
 #: templates/info/codingforall.html:35
 msgid "What is being developed?"
-msgstr ""
+msgstr "Какво се разработва?"
 
 #: templates/info/codingforall.html:36
 msgid ""
@@ -3128,7 +3240,7 @@ msgstr ""
 
 #: templates/info/codingforall.html:45
 msgid "What are the project goals?"
-msgstr ""
+msgstr "Какви са целите на проекта?"
 
 #: templates/info/codingforall.html:46
 msgid ""
@@ -3177,6 +3289,8 @@ msgid ""
 "This material is based upon work supported by the National Science "
 "Foundation under grant number 1348876."
 msgstr ""
+"Този материал се основава на работата, подкрепена от Националната научна "
+"фондация под номер 1348876."
 
 #: templates/info/codingforall.html:75
 msgid ""
@@ -3187,7 +3301,7 @@ msgstr ""
 
 #: templates/info/codingforall.html:79
 msgid "Collaborating Organizations"
-msgstr ""
+msgstr "Сътрудничещи организации"
 
 #: templates/info/codingforall.html:95
 msgid "Resources"
@@ -3213,7 +3327,7 @@ msgstr ""
 
 #: templates/info/codingforall.html:110
 msgid "Related Posts"
-msgstr ""
+msgstr "Подобни публикации"
 
 #: templates/info/codingforall.html:113
 msgid "Coding for All: Dance and Scratch Workshops - Paulina Haudong"
@@ -3264,12 +3378,12 @@ msgstr "Екипът и сътрудниците на Scratch"
 
 #: templates/info/credits.html:101
 msgid "MIT Scratch Team"
-msgstr ""
+msgstr "Eкипа на Scratch към Масачузетския технологичен институт"
 
 #: templates/info/dance-prototype.html:4
 #: templates/info/dance-prototype.html:11
 msgid "Hip-Hop Dance on Scratch"
-msgstr ""
+msgstr "Хип-хоп танц в Scratch"
 
 #: templates/info/dance-prototype.html:23
 msgid "You can use Scratch to program your own dance moves and routines!"
@@ -3277,27 +3391,27 @@ msgstr ""
 
 #: templates/info/dance-prototype.html:36
 msgid "Featured Hip-Hop Projects"
-msgstr ""
+msgstr "Моите Хип-Хоп проекти"
 
 #: templates/info/dance-prototype.html:42
 msgid "Hip-Hop Dance Start-Up"
-msgstr ""
+msgstr "Хип-хоп танц - начало"
 
 #: templates/info/dance-prototype.html:46
 msgid "Top Rocking in LA"
-msgstr ""
+msgstr "То рок в LA"
 
 #: templates/info/dance-prototype.html:51
 msgid "Silhouette Dance"
-msgstr ""
+msgstr "Танц силует "
 
 #: templates/info/dance-prototype.html:55
 msgid "EpicDance"
-msgstr ""
+msgstr "Епичен танц"
 
 #: templates/info/dance-prototype.html:59
 msgid "Top Rock Giga"
-msgstr ""
+msgstr "Топ рок гига"
 
 #: templates/info/dance-prototype.html:69
 msgid "Explore Hip-Hop Studios"
@@ -3305,7 +3419,7 @@ msgstr ""
 
 #: templates/info/dance-prototype.html:86
 msgid "Hip-Hop Projects"
-msgstr ""
+msgstr "Хип-Хоп проекти"
 
 #: templates/info/dance-prototype.html:103 templates/info/hoc2015br.html:26
 msgid "Dance, Dance, Dance"
@@ -3317,7 +3431,7 @@ msgstr ""
 
 #: templates/info/educators.html:8
 msgid "Scratch - For Educators"
-msgstr ""
+msgstr "Scratch - за учители"
 
 #: templates/info/educators.html:17
 msgid ""
@@ -3381,11 +3495,11 @@ msgstr ""
 
 #: templates/info/educators.html:85
 msgid "Personal"
-msgstr ""
+msgstr "Личен"
 
 #: templates/info/educators.html:89
 msgid "Educator"
-msgstr ""
+msgstr "Преподавател"
 
 #: templates/info/ext_download.html:18 templates/info/ext_download.html:23
 msgid "Scratch Extensions Browser Plugin"
@@ -3400,7 +3514,7 @@ msgstr ""
 
 #: templates/info/ext_download.html:31
 msgid "1. Download the Plugin"
-msgstr ""
+msgstr "1. Изтегли Пръгина"
 
 #: templates/info/ext_download.html:33
 msgid ""
@@ -3411,7 +3525,7 @@ msgstr ""
 
 #: templates/info/ext_download.html:35
 msgid "Mac (Chrome)"
-msgstr ""
+msgstr "Mac (Chrome)"
 
 #: templates/info/ext_download.html:35 templates/info/ext_download.html:37
 msgid " and separate plugin helper: "
@@ -3423,19 +3537,19 @@ msgstr "тук"
 
 #: templates/info/ext_download.html:36
 msgid "Mac (other web browsers)"
-msgstr ""
+msgstr "Mac (друг браузър)"
 
 #: templates/info/ext_download.html:37
 msgid "Windows (Chrome)"
-msgstr ""
+msgstr "Windows (Chrome)"
 
 #: templates/info/ext_download.html:38
 msgid "Windows (other web browsers)"
-msgstr ""
+msgstr "Windows (друг браузър)"
 
 #: templates/info/ext_download.html:41
 msgid "2. Install the Plugin"
-msgstr ""
+msgstr "2. Инсталирай Пръгина"
 
 #: templates/info/ext_download.html:43
 msgid ""
@@ -3497,11 +3611,11 @@ msgstr ""
 
 #: templates/info/ext_download.html:109
 msgid "Additional Information"
-msgstr ""
+msgstr "Допълнителна информация"
 
 #: templates/info/ext_download.html:111
 msgid "Using Extensions"
-msgstr ""
+msgstr "Използвайки разширения"
 
 #: templates/info/ext_download.html:112
 msgid ""
@@ -3513,7 +3627,7 @@ msgstr ""
 
 #: templates/info/ext_download.html:113
 msgid "System Requirements"
-msgstr ""
+msgstr "Системни изисквания"
 
 #: templates/info/ext_download.html:114
 msgid ""
@@ -3549,7 +3663,7 @@ msgstr ""
 
 #: templates/info/hoc2015br.html:50
 msgid "//player.vimeo.com/video/65583694?title=0&amp;byline=0&amp"
-msgstr ""
+msgstr "//player.vimeo.com/video/65583694?title=0&amp;byline=0&amp"
 
 #: templates/info/hoc2015br.html:52
 msgid ""
@@ -3559,7 +3673,7 @@ msgstr ""
 
 #: templates/info/hoc2015br.html:59
 msgid "//embed.ted.com/talks/mitch_resnick_let_s_teach_kids_to_code.html"
-msgstr ""
+msgstr "//embed.ted.com/talks/mitch_resnick_let_s_teach_kids_to_code.html"
 
 #: templates/info/hoc2015br.html:61
 msgid ""
@@ -3577,11 +3691,11 @@ msgstr ""
 
 #: templates/info/layout/base.html:4 templates/info/layout/help_layout.html:7
 msgid "Scratch Help"
-msgstr ""
+msgstr "Помощна страница за Scratch"
 
 #: templates/info/parents.html:8
 msgid "Scratch - For Parents"
-msgstr ""
+msgstr "Scratch - За родителите"
 
 #: templates/info/parents.html:17
 msgid ""
@@ -3737,7 +3851,7 @@ msgstr ""
 
 #: templates/info/parents.html:87
 msgid "Questions?"
-msgstr ""
+msgstr "Въпроси?"
 
 #: templates/info/parents.html:90
 msgid ""
@@ -3760,11 +3874,11 @@ msgstr ""
 
 #: templates/info/quotes.html:4
 msgid "Quotes - Scratch"
-msgstr ""
+msgstr "Цитати - Scratch"
 
 #: templates/info/quotes.html:16
 msgid "What <b>Youth</b> are Saying about Scratch"
-msgstr ""
+msgstr "Какво казват <b>младите</b> за Scratch"
 
 #: templates/info/quotes.html:19
 msgid ""
@@ -3772,6 +3886,9 @@ msgid ""
 "\twe’re creating interesting games and projects that are fun to play, watch, and download. \n"
 "\tI don’t like to just talk to other people online, I like to talk about something creative and new.<span class=\"quotes\">&rdquo;</span> - 13-year-old </p>\n"
 msgstr ""
+"Харесвам Scratch по-добре от блогове или сайтове за социални мрежи като Facebook, защото\n"
+"\tсъздаваме интересни игри и проекти, които са забавни за гледане и изтегляне.\n"
+"\tНе обичам да говоря с други хора онлайн, обичам да говоря за нещо креативно и ново. <span class=\"quotes\">&rdquo;</span> - 13-годишен</p>\n"
 
 #: templates/info/quotes.html:26
 msgid ""
@@ -3779,6 +3896,9 @@ msgid ""
 "I enjoy designing and programming games and animations with other kids, because different people have different skills, \n"
 "and when you work together, you can build a much better project than you can alone.<span class=\"quotes\">&rdquo;</span> - 13-year-old"
 msgstr ""
+"<span class=\"quotes\">&ldquo;</span> Моят 8-годишен брат и аз сме били активни участници в онлайн общността на Scratch за повече от година.\n"
+"Обичам да проектирам и програмирам игри и анимации с други деца, защото различните хора имат различни умения,\n"
+"и когато работите заедно, можете да изградите много по-добър проект, отколкото можете сами. <span class=\"quotes\">&rdquo;</span> - 13-годишен"
 
 #: templates/info/quotes.html:30
 msgid ""
@@ -3807,6 +3927,9 @@ msgid ""
 "\tResearch on Scratch is being conducted by members of the MIT Scratch Team and researchers at other universities, including Yasmin Kafai at the University of Pennsylvania Graduate School of Education, Karen Brennan at the Harvard Graduate School of Education, \n"
 "Benjamin Mako Hill at the University of Washington, Andrés Monroy Hernandez at Microsoft Research, Mimi Ito and Crystle Martin at the University of California, Irvine, Quinn Burke at College of Charleston, Deborah Fields at Utah State University, and Kylie Peppler at Indiana University. "
 msgstr ""
+"\n"
+"\tИзследванията на Scratch се провеждат от членове на екипа на MIT Scratch и изследователи от други университети, включително Ясмин Кафай от университета в Пенсилвания, Карен Бреннан от Харвард,\n"
+"Бенджамин Мако Хил от университета във Вашингтон, Андрес Монрой Ернандес в Microsoft Research, Мими Ито и Кристл Мартин от Калифорнийския университет, Ървайн, Куин Бърк от Колежа на Чарлстън, Дебора Филдс в Юта, и Кайли Пеплър от университета в Индиана."
 
 #: templates/info/research.html:24
 msgid ""
@@ -3821,6 +3944,8 @@ msgid ""
 " (If you have any questions, please use the <a "
 "href=\"%(contact_us_url)s\">Contact Us</a> form.)"
 msgstr ""
+"(Ако имате някакви въпроси, моля, използвайте <a "
+"href=\"%(contact_us_url)s\">формата за връзка с нас</a>.)"
 
 #: templates/info/research.html:28
 msgid ""
@@ -3834,7 +3959,7 @@ msgstr ""
 
 #: templates/info/research.html:30
 msgid "Research Papers &amp; Presentations"
-msgstr ""
+msgstr "Научни изследвания &amp; презентации"
 
 #: templates/info/research.html:80
 msgid "National Science Foundation Grants"
@@ -3874,6 +3999,15 @@ msgid ""
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
+"\n"
+"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step1.png\" alt=\"Step 1\">\n"
+"\t\t\t\t<p>Ако все още не разполагате с него, изтеглете и инсталирайте най-новото<a href=\"http://get.adobe.com/air/\">Adobe AIR</a></p>\n"
+"\t\t\t\t Mac OS X - <a href=\"http://get.adobe.com/air/\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
+"\t\t\t\t<p>Mac OS 10.5 &amp; Older - <a href=\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.zip\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
+"\t\t\t\t Windows - <a href=\"http://get.adobe.com/air/\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a><br> \n"
+" \t\t\t\tLinux - <a href=\"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
+"\t\t\t\t</p>\n"
+"\t\t\t\t"
 
 #: templates/info/scratch2download.html:64
 #, python-format
@@ -3915,7 +4049,7 @@ msgstr ""
 
 #: templates/info/scratch_1.4.html:30
 msgid "Scratch 1.4 For Mac OS X"
-msgstr ""
+msgstr "Scratch 1.4 за Mac OS X"
 
 #: templates/info/scratch_1.4.html:31
 msgid "Compatible with Mac OSX 10.4 or later"
@@ -3923,7 +4057,7 @@ msgstr "Съвместим с Mac OS X 10.4 или по-нов"
 
 #: templates/info/scratch_1.4.html:40
 msgid "Scratch 1.4 for Windows"
-msgstr ""
+msgstr "Scratch 1.4 за Windows"
 
 #: templates/info/scratch_1.4.html:41
 msgid "Compatible with Windows 2000, XP, Vista, 7, and 8"
@@ -3937,7 +4071,7 @@ msgstr ""
 
 #: templates/info/scratch_1.4.html:52
 msgid "Scratch 1.4 for Debian / Ubuntu"
-msgstr ""
+msgstr "Scratch 1.4 за Debian / Ubuntu"
 
 #: templates/info/scratch_1.4.html:53
 msgid "Compatible with Ubuntu 12.04 or later"
@@ -3950,11 +4084,11 @@ msgstr "Инсталирай Scratch с Software Center"
 #: templates/info/scratch_1.4.html:60
 #, python-format
 msgid "or <a href=\"%(download_1_4)s\">download here</a>"
-msgstr ""
+msgstr "или <a href=\"%(download_1_4)s\">изтеглете от тук</a>"
 
 #: templates/info/scratch_1.4.html:69
 msgid "Frequently Asked Questions about Scratch 1.4"
-msgstr ""
+msgstr "Често задавани въпроси за Scratch 1.4"
 
 #: templates/info/scratch_1.4.html:71
 msgid "What resources are available to help me learn how to use Scratch 1.4?"
@@ -4002,10 +4136,14 @@ msgid ""
 "\t\t</br>3. Proxy server getting in the way.  Try an Internet connection that does not go through a proxy server, or configure Scratch to use your proxy server.\n"
 "\t\t</br>4. Wrong username and password. Try logging into Scratch website to make sure username and password are correct."
 msgstr ""
+"1. Файлът е твърде голям. Най-голямото ограничение на файла е 10 МБ. За да намалите размера на проекта за Scratch, щракнете върху менюто Редактиране> и изберете компресиране на звуци или компресиране на изображения. Ако сте компресирали звуци и проектът ви все още няма да се качи, опитайте да изтриете някои от звуците, за да го направите по-малък.\n"
+"\t\t</br>2. Интернет връзката е твърде бавна и прекъсва. Опитайте да направите файла по-малък. Ако това не помогне, опитайте да се свържете от друг компютър или връзка или уеб браузър.\n"
+"\t\t</br>3. Прокси сървърът се затруднява. Опитайте с интернет връзка, която не минава през прокси сървър, или конфигурирайте Scratch да използва прокси сървъра.\n"
+"\t\t</br>4. Грешно потребителско име и парола. Опитайте да влезете в сайта на Scratch, за да се уверите, че потребителското ви име и паролата са правилни."
 
 #: templates/info/starter_projects.html:4
 msgid "Scratch - Starter Projects"
-msgstr ""
+msgstr "Scratch - началните проекти"
 
 #: templates/info/starter_projects.html:17
 msgid ""
@@ -4026,7 +4164,7 @@ msgstr "Игри"
 #: templates/info/starter_projects.html:22
 #: templates/info/starter_projects.html:87
 msgid "Interactive Art"
-msgstr ""
+msgstr "Интерактивно изкуство"
 
 #: templates/info/starter_projects.html:23
 #: templates/info/starter_projects.html:114
@@ -4045,27 +4183,27 @@ msgstr "Видео Усет"
 
 #: templates/info/starter_projects.html:39
 msgid "Dance Party"
-msgstr ""
+msgstr "Танцово парти"
 
 #: templates/info/starter_projects.html:43
 msgid "Animate the Crab"
-msgstr ""
+msgstr "Анимирай Рак"
 
 #: templates/info/starter_projects.html:47
 msgid "The Pico Show: Intro"
-msgstr ""
+msgstr "Шоуто на Пико: Начало"
 
 #: templates/info/starter_projects.html:51
 msgid "Greeting Card"
-msgstr ""
+msgstr "Поздравителна картичка"
 
 #: templates/info/starter_projects.html:66
 msgid "Pong Starter"
-msgstr ""
+msgstr "Понг начало"
 
 #: templates/info/starter_projects.html:70
 msgid "Maze Starter"
-msgstr ""
+msgstr "Лабиринт начало"
 
 #: templates/info/starter_projects.html:74
 msgid "Hide and Seek"
@@ -4073,27 +4211,27 @@ msgstr "Криеница"
 
 #: templates/info/starter_projects.html:78
 msgid "Dress Up Tera"
-msgstr ""
+msgstr "Обличане Тера"
 
 #: templates/info/starter_projects.html:93
 msgid "Paint with Gobo"
-msgstr ""
+msgstr "Рисувай Гобо"
 
 #: templates/info/starter_projects.html:97
 msgid "Wizard Spells"
-msgstr ""
+msgstr "Заклинанията на магьосника"
 
 #: templates/info/starter_projects.html:101
 msgid "Soundflower"
-msgstr ""
+msgstr "Слънчогледи"
 
 #: templates/info/starter_projects.html:105
 msgid "Spiral Maker"
-msgstr ""
+msgstr "Спирала"
 
 #: templates/info/starter_projects.html:120
 msgid "Remix this dance"
-msgstr ""
+msgstr "Ремиксирай танца"
 
 #: templates/info/starter_projects.html:124
 msgid "Piano"
@@ -4101,15 +4239,15 @@ msgstr "Пиано"
 
 #: templates/info/starter_projects.html:128
 msgid "Starfish Choir"
-msgstr ""
+msgstr "Хора на морските звезди"
 
 #: templates/info/starter_projects.html:132
 msgid "DJ Scratch Cat"
-msgstr ""
+msgstr "Ди-джей котката на Scratch"
 
 #: templates/info/starter_projects.html:147
 msgid "5 Random Facts about Me"
-msgstr ""
+msgstr "5 различни факта за мен"
 
 #: templates/info/starter_projects.html:151
 msgid "Introducing Howler! Remix"
@@ -4121,11 +4259,11 @@ msgstr ""
 
 #: templates/info/starter_projects.html:159
 msgid "Virtual Tour"
-msgstr ""
+msgstr "Виртуален разходка"
 
 #: templates/info/starter_projects.html:174
 msgid "Musical Buttons"
-msgstr ""
+msgstr "Музикални бутони"
 
 #: templates/info/starter_projects.html:178
 msgid "Bubbles with Video Sensing"
@@ -4137,15 +4275,15 @@ msgstr ""
 
 #: templates/info/starter_projects.html:186
 msgid "Pizza Chef"
-msgstr ""
+msgstr "Пица шеф"
 
 #: templates/info/videos.html:4
 msgid "Scratch - Videos"
-msgstr ""
+msgstr "Scratch - видеа"
 
 #: templates/info/videos.html:19
 msgid "Video Tutorials"
-msgstr ""
+msgstr "Видео уроци"
 
 #: templates/info/videos.html:26
 msgid "Getting Started with Scratch"
@@ -4195,11 +4333,11 @@ msgstr ""
 
 #: templates/info/videos.html:91
 msgid "Make a simple game"
-msgstr ""
+msgstr "Направи игра"
 
 #: templates/info/videos.html:98
 msgid "Make a story"
-msgstr ""
+msgstr "Създай история"
 
 #: templates/info/videos.html:110
 msgid "Paint Editor Tips"
@@ -4231,23 +4369,23 @@ msgstr ""
 
 #: templates/info/videos.html:157
 msgid "Smoothing"
-msgstr ""
+msgstr "Заглаждане"
 
 #: templates/info/videos.html:162
 msgid "Grouping"
-msgstr ""
+msgstr "Групиране"
 
 #: templates/info/videos.html:167
 msgid "Layers"
-msgstr ""
+msgstr "Слоеве"
 
 #: templates/info/videos.html:176
 msgid "Backdrop into Sprite"
-msgstr ""
+msgstr "Декор и спрайт"
 
 #: templates/info/videos.html:181
 msgid "Center of Costume"
-msgstr ""
+msgstr "Центрирай костюма"
 
 #: templates/mail/base.html:41
 #, python-format
@@ -4275,7 +4413,7 @@ msgstr ""
 
 #: templates/mail/base.html:62
 msgid "Make a Donation"
-msgstr ""
+msgstr "Направете дарение"
 
 #: templates/mail/blacklist/blacklist_error.html:21
 #, python-format
@@ -4298,11 +4436,11 @@ msgstr ""
 
 #: templates/modal-login.html:40
 msgid "Or Join Scratch"
-msgstr ""
+msgstr "За присъединяване към Scratch"
 
 #: templates/modal-registration.html:13
 msgid "Uh oh"
-msgstr ""
+msgstr "A-a oх"
 
 #: templates/modal-registration.html:72 templates/modal-registration.html:86
 msgid "Birth Month and Year"
@@ -4415,7 +4553,7 @@ msgstr ""
 
 #: templates/modal-registration.html:185
 msgid "Welcome to Scratch,"
-msgstr ""
+msgstr "Добре дошли в Scratch,"
 
 #: templates/modal-registration.html:186
 msgid "You're now logged in! You can start exploring and creating projects."
@@ -4440,6 +4578,8 @@ msgid ""
 "Having problems? <a href=\"%(contact_url)s?confirmation=1\">Please give us "
 "feedback</a>"
 msgstr ""
+"Имате проблеми? <a href=\"%(contact_url)s?confirmation=1\">Моля опишете "
+"проблема</a>"
 
 #: templates/modal-registration.html:214
 #, python-format
@@ -4460,23 +4600,23 @@ msgstr ""
 
 #: templates/modal-registration.html:235
 msgid "Download project"
-msgstr ""
+msgstr "Изтеглете проекта"
 
 #: templates/modal-registration.html:270
 msgid "Whoops, emails do not match"
-msgstr ""
+msgstr "Упс, имейлите не съвпадат"
 
 #: templates/mystuff/includes/galleries_action_bar.html:8
 msgid "View:"
-msgstr ""
+msgstr "Преглед:"
 
 #: templates/mystuff/includes/galleries_action_bar.html:17
 msgid "Most Projects"
-msgstr ""
+msgstr "Най-много проекти"
 
 #: templates/mystuff/includes/galleries_action_bar.html:18
 msgid "Last updated"
-msgstr ""
+msgstr "Последно добавени"
 
 #: templates/mystuff/includes/galleries_list.html:26
 msgid "You do not own any galleries. <a href=>Create one!</a>"
@@ -4484,7 +4624,7 @@ msgstr ""
 
 #: templates/mystuff/includes/gallery_list.html:19
 msgid "Created"
-msgstr ""
+msgstr "Създадено"
 
 #: templates/mystuff/includes/gallery_list.html:37
 msgid "You do not have any galleries"
@@ -4502,17 +4642,17 @@ msgstr "Споделено"
 
 #: templates/mystuff/includes/project_action_bar.html:16
 msgid "Not shared"
-msgstr ""
+msgstr "Не споделен"
 
 #: templates/mystuff/includes/project_action_bar.html:37
 msgid "+ New Project"
-msgstr ""
+msgstr "+ Нов проект"
 
 #: templates/mystuff/includes/project_list.html:19
 #: templates/mystuff/mystuff.html:101 templates/mystuff/mystuff.html.py:145
 #: templates/mystuff/mystuff.html:172
 msgid "Last modified:"
-msgstr ""
+msgstr "Последно променен:"
 
 #: templates/mystuff/includes/project_list.html:20
 msgid "Created:"
@@ -4564,7 +4704,7 @@ msgstr ""
 
 #: templates/mystuff/mystuff.html:10
 msgid "Trash"
-msgstr ""
+msgstr "Кошче"
 
 #: templates/mystuff/mystuff.html:18
 msgid "New Project"
@@ -4639,18 +4779,18 @@ msgstr ""
 #: templates/notifications/includes/social-action-message.html:17
 #: templates/notifications/includes/user-feed.html:95
 msgid "loved"
-msgstr ""
+msgstr "харесвани"
 
 #: templates/notifications/includes/social-action-message.html:21
 #: templates/notifications/includes/social-action-message.html:25
 #: templates/notifications/includes/user-feed.html:34
 msgid "is now following"
-msgstr ""
+msgstr "сега е следван"
 
 #: templates/notifications/includes/social-action-message.html:29
 #: templates/notifications/includes/user-feed.html:133
 msgid "added"
-msgstr ""
+msgstr "добавен"
 
 #: templates/notifications/includes/social-action-message.html:30
 #: templates/notifications/includes/user-feed.html:134
@@ -4677,7 +4817,7 @@ msgstr ""
 
 #: templates/password_required_login.html:31
 msgid "Enter"
-msgstr ""
+msgstr "Вход"
 
 #: templates/pathways/fashion.html:5
 msgid "Do you like fashion?"
@@ -4719,92 +4859,92 @@ msgstr ""
 
 #: templates/pathways/includes/fashion-tips.html:9
 msgid "Click on blocks to see what they do"
-msgstr ""
+msgstr "Кликнете върху блоковете, за да видите какво правят"
 
 #: templates/pathways/includes/fashion-tips.html:12
 msgid "Try clicking this block"
-msgstr ""
+msgstr "Опитайте да кликнете върху този блок"
 
 #: templates/pathways/includes/fashion-tips.html:17
 msgid "Or this block"
-msgstr ""
+msgstr "Върху този блок"
 
 #: templates/pathways/includes/fashion-tips.html:24
 msgid "Try changing colors"
-msgstr ""
+msgstr "Опитайте да промените цветовете"
 
 #: templates/pathways/includes/fashion-tips.html:27
 msgid "First, select a clothing item"
-msgstr ""
+msgstr "Първо изберете облекло"
 
 #: templates/pathways/includes/fashion-tips.html:32
 #: templates/pathways/includes/fashion-tips.html:77
 msgid "Then, try this script"
-msgstr ""
+msgstr "След това, опитайте с този скрипт"
 
 #: templates/pathways/includes/fashion-tips.html:37
 msgid "Test it out!"
-msgstr ""
+msgstr "Изпробвайте!"
 
 #: templates/pathways/includes/fashion-tips.html:45
 msgid "Try changing costumes"
-msgstr ""
+msgstr "Опитайте да промените костюмите"
 
 #: templates/pathways/includes/fashion-tips.html:48
 msgid "Select a piece of clothing"
-msgstr ""
+msgstr "Изберете дреха"
 
 #: templates/pathways/includes/fashion-tips.html:53
 msgid "Then, switch costumes"
-msgstr ""
+msgstr "После сменете костюма"
 
 #: templates/pathways/includes/fashion-tips.html:58
 msgid "Now, click it!"
-msgstr ""
+msgstr "Сега кликнете върху него!"
 
 #: templates/pathways/includes/fashion-tips.html:66
 msgid "Say hello"
-msgstr ""
+msgstr "Кажи здравей"
 
 #: templates/pathways/includes/fashion-tips.html:69
 msgid "Select the person"
-msgstr ""
+msgstr "Изберете някой"
 
 #: templates/pathways/includes/fashion-tips.html:73
 msgid "Type in a phrase"
-msgstr ""
+msgstr "Въведете фраза"
 
 #: templates/pathways/includes/fashion-tips.html:88
 msgid "Move the sprites"
-msgstr ""
+msgstr "Преместете спрайтовете"
 
 #: templates/pathways/includes/fashion-tips.html:91
 msgid "Select an accessory"
-msgstr ""
+msgstr "Избери аксесоар"
 
 #: templates/pathways/includes/fashion-tips.html:96
 msgid "Tell it where to go"
-msgstr ""
+msgstr "Кажи къде да отиде"
 
 #: templates/pathways/includes/fashion-tips.html:105
 msgid "Other things to try"
-msgstr ""
+msgstr "Други неща, които трябва да опитате"
 
 #: templates/pathways/includes/fashion-tips.html:107
 msgid "Add a sound"
-msgstr ""
+msgstr "Добави звук"
 
 #: templates/pathways/includes/fashion-tips.html:111
 msgid " Explore other costumes"
-msgstr ""
+msgstr "Разгледай други костюми"
 
 #: templates/pathways/includes/fashion-tips.html:116
 msgid "Make longer scripts"
-msgstr ""
+msgstr "Направи по-дълги скриптове"
 
 #: templates/pathways/includes/hiphop-tips.html:7
 msgid "Start to Dance"
-msgstr ""
+msgstr "Започни да танцуваш"
 
 #: templates/pathways/includes/tips-layout.html:10
 msgid "Things to Try"
@@ -4816,61 +4956,61 @@ msgstr "в Scratch"
 
 #: templates/pathways/layout/base.html:88
 msgid "Projects in "
-msgstr ""
+msgstr "Проекти в"
 
 #: templates/pathways/layout/base.html:89
 msgid "Visit the Studio"
-msgstr ""
+msgstr "Посетете студиото"
 
 #: templates/pathways/layout/base.html:111
 msgid "Recent "
-msgstr ""
+msgstr "Скорошни"
 
 #: templates/pathways/layout/base.html:111
 msgid " Projects by Scratchers"
-msgstr ""
+msgstr "Проекти от Scratchers"
 
 #: templates/privacy_policy.html:29
 msgid "Scratch Privacy Policy"
-msgstr ""
+msgstr "Декларацията за поверителност на Scratch "
 
 #: templates/profiles/includes/favorite_projects_list.html:13
 #: templates/projects/project_list.html:35
 msgid "Favorites"
-msgstr ""
+msgstr "Любими"
 
 #: templates/profiles/includes/followers_list.html:13
 #: templates/profiles/profile_detail.html:385
 msgid "Followers"
-msgstr ""
+msgstr "Последователи"
 
 #: templates/profiles/includes/following_list.html:13
 #: templates/profiles/profile_detail.html:348
 msgid "Following"
-msgstr ""
+msgstr "Следвам"
 
 #: templates/profiles/includes/shared_projects_list.html:13
 #: templates/profiles/profile_detail.html:239
 msgid "Shared Projects"
-msgstr ""
+msgstr "Споделени проекти"
 
 #: templates/profiles/includes/studios_following_list.html:12
 msgid "Studios I Follow"
-msgstr ""
+msgstr "Студиа, които следвам"
 
 #: templates/profiles/includes/studios_list.html:13
 #: templates/profiles/profile_detail.html:331
 msgid "Studios I Curate"
-msgstr ""
+msgstr "Студиа, които управлявам"
 
 #: templates/profiles/profile_detail.html:79
 #, python-format
 msgid "Student of: %(classroom_name)s"
-msgstr ""
+msgstr "Ученици от:%(classroom_name)s"
 
 #: templates/profiles/profile_detail.html:85
 msgid "Scratch Team"
-msgstr ""
+msgstr "Екипа на Scratch"
 
 #: templates/profiles/profile_detail.html:86
 msgid "Teacher Account"
@@ -4878,24 +5018,24 @@ msgstr "Учителски акаунт"
 
 #: templates/profiles/profile_detail.html:87
 msgid "Scratch Partner"
-msgstr ""
+msgstr "Scratch партньор"
 
 #: templates/profiles/profile_detail.html:88
 msgid "Scratcher"
-msgstr ""
+msgstr "Scratcher"
 
 #: templates/profiles/profile_detail.html:89
 msgid "New Scratcher"
-msgstr ""
+msgstr "Нов Scratcher"
 
 #: templates/profiles/profile_detail.html:100
 #, python-format
 msgid "Joined <span title=\"%(tDateLabel)s\">%(tDate)s</span> ago"
-msgstr ""
+msgstr "Присъединих се преди <span title=\"%(tDateLabel)s\">%(tDate)s</span>"
 
 #: templates/profiles/profile_detail.html:119
 msgid "About me"
-msgstr ""
+msgstr "За мен"
 
 #: templates/profiles/profile_detail.html:123
 msgid "Add a bit about yourself"
@@ -4903,31 +5043,31 @@ msgstr ""
 
 #: templates/profiles/profile_detail.html:146
 msgid "What I'm working on"
-msgstr ""
+msgstr "По какво работя"
 
 #: templates/profiles/profile_detail.html:150
 msgid "Describe what you're working on"
-msgstr ""
+msgstr "Опишете по какво работите"
 
 #: templates/profiles/profile_detail.html:191
 msgid "What I've been doing"
-msgstr ""
+msgstr "Какво съм правил"
 
 #: templates/profiles/profile_detail.html:200
 msgid "Report this user"
-msgstr ""
+msgstr "Съобщи за нередност свързана с този потребител"
 
 #: templates/profiles/profile_detail.html:275
 msgid "Favorite Projects"
-msgstr ""
+msgstr "Любими проекти"
 
 #: templates/profiles/profile_detail.html:311
 msgid "Studios I'm Following"
-msgstr ""
+msgstr "Студиа, които следвам"
 
 #: templates/profiles/scratcher_promotion_modal.html:5
 msgid "Become a Scratcher..."
-msgstr ""
+msgstr "Станете Scratcher"
 
 #: templates/profiles/scratcher_promotion_modal.html:10
 msgid ""
@@ -4938,7 +5078,7 @@ msgstr ""
 
 #: templates/profiles/scratcher_promotion_modal.html:16
 msgid "Scratchers are respectful."
-msgstr ""
+msgstr "Скрачърите уважават другите."
 
 #: templates/profiles/scratcher_promotion_modal.html:17
 msgid ""
@@ -4948,7 +5088,7 @@ msgstr ""
 
 #: templates/profiles/scratcher_promotion_modal.html:23
 msgid "We’re constructive."
-msgstr ""
+msgstr "Ние сме конструктивни."
 
 #: templates/profiles/scratcher_promotion_modal.html:24
 msgid ""
@@ -5014,15 +5154,15 @@ msgstr "Назад"
 
 #: templates/profiles/scratcher_promotion_modal.html:66
 msgid "I agree!"
-msgstr ""
+msgstr "Съгласен съм!"
 
 #: templates/profiles/scratcher_promotion_modal.html:67
 msgid "OK!"
-msgstr ""
+msgstr "ОК!"
 
 #: templates/projects/base.html:83
 msgid "scripts"
-msgstr ""
+msgstr "скриптове"
 
 #: templates/projects/base.html:84
 msgid "sprites"
@@ -5048,12 +5188,12 @@ msgstr ""
 
 #: templates/projects/base.html:157
 msgid "not shared"
-msgstr ""
+msgstr "не споделен"
 
 #: templates/projects/base.html:159
 #, python-format
 msgid "Modified: %(tDate)s"
-msgstr ""
+msgstr "Променен: %(tDate)s"
 
 #: templates/projects/base.html:171 templates/projects/base.html.py:178
 msgid "Favorite this project"
@@ -5111,10 +5251,13 @@ msgid ""
 "inappropriate for all ages, or otherwise breaks the Scratch community "
 "guidelines."
 msgstr ""
+"Този проект бе премахнат от екипа на Scratch, тъй като бе неуважителен, "
+"неподходящ за всички възрасти или по друг начин нарушаваше правилата на "
+"общността на Scratch."
 
 #: templates/projects/censored.html:13
 msgid "It cannot be reshared at any time in the future."
-msgstr ""
+msgstr "Не може да бъде споделен отново в бъдеще."
 
 #: templates/projects/censored.html:15
 msgid ""
@@ -5174,7 +5317,7 @@ msgstr "Моля, въведете името на спрайт или фона 
 
 #: templates/projects/includes/backbone-init-data.html:83
 msgid "Added to studio"
-msgstr ""
+msgstr "Добавен към студио"
 
 #: templates/projects/includes/backbone-init-data.html:85
 msgid "Limit of 3 tags."
@@ -5213,7 +5356,7 @@ msgstr ""
 
 #: templates/projects/includes/backbone-templates.html:31
 msgid "Report as inappropriate"
-msgstr ""
+msgstr "Подайте сигнал за неподходящо съдържание"
 
 #: templates/projects/includes/backbone-templates.html:35
 #, python-format
@@ -5276,15 +5419,15 @@ msgstr ""
 
 #: templates/projects/includes/explore-bar.html:7
 msgid "More projects by"
-msgstr ""
+msgstr "Още проекти от"
 
 #: templates/projects/includes/explore-bar.html:16
 msgid "Creator"
-msgstr ""
+msgstr "Автор"
 
 #: templates/projects/includes/explore-bar.html:39
 msgid "More projects (temporarily disabled)"
-msgstr ""
+msgstr "Още проекти (временно изключени) "
 
 #: templates/projects/includes/owner/editable-instructions.html:3
 #: templates/projects/shared-other.html:26
@@ -5294,6 +5437,8 @@ msgstr "Инструкции"
 #: templates/projects/includes/owner/editable-instructions.html:5
 msgid "Tell people how to use your project</br>(such as which keys to press)."
 msgstr ""
+"Разкажете на хората как да използвате вашия проект </br> (като например кои "
+"клавиши да натиснат)."
 
 #: templates/projects/includes/owner/editable-notes.html:6
 #: templates/projects/shared-other.html:42
@@ -5303,46 +5448,48 @@ msgstr "Бележки и кредити"
 #: templates/projects/includes/owner/editable-notes.html:6
 #: templates/projects/shared-other.html:42
 msgid "added by"
-msgstr ""
+msgstr "добавено от"
 
 #: templates/projects/includes/owner/editable-notes.html:10
 msgid "How did you make the project?"
-msgstr ""
+msgstr "Вие ли създадохте този проект?"
 
 #: templates/projects/includes/owner/editable-notes.html:12
 msgid ""
 "Did you use ideas, scripts, or artwork from other people? Thank them here."
 msgstr ""
+"Използвали ли сте идеи, скриптове или произведения създадени от други хора? "
+"Благодарете им тук."
 
 #: templates/projects/includes/owner/editable-wip.html:4
 #: templates/projects/shared-other.html:17
 msgid "Draft"
-msgstr ""
+msgstr "Чернова"
 
 #: templates/projects/includes/project_list.html:10
 #, python-format
 msgid "%(tDate)s ago"
-msgstr ""
+msgstr "преди %(tDate)s"
 
 #: templates/projects/includes/shared/shared-project-actions.html:4
 msgid "Add project to studios"
-msgstr ""
+msgstr "Добави проект към студио"
 
 #: templates/projects/includes/shared/shared-project-actions.html:9
 msgid "Embed project on other websites"
-msgstr ""
+msgstr "Вграждане на проект на други сайтове"
 
 #: templates/projects/includes/shared/shared-project-actions.html:16
 msgid "Report and Unshare this project"
-msgstr ""
+msgstr "Докладвайте и деактивирайте този проект"
 
 #: templates/projects/includes/shared/shared-project-actions.html:19
 msgid "Report project as inappropriate"
-msgstr ""
+msgstr "Съобщи, че проектът е неподходящ"
 
 #: templates/projects/includes/shared/shared-project-actions.html:20
 msgid "Report this"
-msgstr ""
+msgstr "Съобщи това"
 
 #: templates/projects/includes/shared/shared-project-actions.html:27
 msgid "View Cloud Data activity for this project."
@@ -5350,7 +5497,7 @@ msgstr ""
 
 #: templates/projects/project_list.html:10
 msgid "Newest Projects"
-msgstr ""
+msgstr "Най-нови проекти"
 
 #: templates/projects/project_list.html:13
 msgid "Projects selected by"
@@ -5375,13 +5522,13 @@ msgstr ""
 
 #: templates/projects/remixtree.html:28
 msgid "Remix tree"
-msgstr ""
+msgstr "История на ремиксиране"
 
 #: templates/projects/shared-other.html:69
 #: templates/projects/shared-owner.html:42
 #, python-format
 msgid "Shared: %(tDate)s"
-msgstr ""
+msgstr "Споделен: %(tDate)s"
 
 #: templates/projects/shared-owner.html:10
 msgid "Your project is now shared."
@@ -5411,7 +5558,7 @@ msgstr ""
 
 #: templates/projects/unshared-owner.html:66
 msgid "Unshared"
-msgstr ""
+msgstr "Несподелен"
 
 #: templates/projects/user-flagged.html:9
 msgid ""
@@ -5426,12 +5573,12 @@ msgstr "Вписване"
 
 #: templates/registration/login.html:40
 msgid "Forgot username or password?"
-msgstr ""
+msgstr "Забравили сте паролата или потребителско ви име?"
 
 #: templates/registration/password_reset_complete.html:8
 #: templates/registration/password_reset_confirm.html:13
 msgid "Password reset confirmation"
-msgstr ""
+msgstr "Потвърждаване на паролата"
 
 #: templates/registration/password_reset_confirm.html:26
 msgid "New Password"
@@ -5439,15 +5586,15 @@ msgstr "Нова парола"
 
 #: templates/registration/password_reset_confirm.html:35
 msgid "Change my password"
-msgstr ""
+msgstr "Смяна на парола"
 
 #: templates/registration/password_reset_confirm.html:46
 msgid "Your must enter a password"
-msgstr ""
+msgstr "Трябва да въведете парола"
 
 #: templates/registration/password_reset_done.html:8
 msgid "Password reset email sent..."
-msgstr ""
+msgstr "Имейлът за възстановяване на паролата е изпратен ..."
 
 #: templates/registration/password_reset_done.html:18
 msgid ""
@@ -5475,12 +5622,12 @@ msgstr ""
 #: templates/registration/password_reset_email.txt:9
 #, python-format
 msgid "This email was requested with the IP address %(ip)s."
-msgstr ""
+msgstr "Този имейл  е заявен със следните IP адреси %(ip)s."
 
 #: templates/registration/password_reset_email.html:19
 #: templates/registration/password_reset_email.txt:11
 msgid "Please go to the following page and choose a new password:"
-msgstr ""
+msgstr "Моля посетете тази страница и въведете нова парола:"
 
 #: templates/registration/password_reset_email.html:26
 #: templates/registration/password_reset_email.txt:18
@@ -5489,6 +5636,9 @@ msgid ""
 " user account at Scratch. If you didn’t request a password change, you can "
 "just ignore this message."
 msgstr ""
+"Получавате този имейл, защото сте поискали смяна на паролата за "
+"потребителския вси профил в Scratch. Ако не сте поискали промяна на "
+"паролата, можете просто да игнорирате това съобщение."
 
 #: templates/registration/password_reset_email.html:29
 #: templates/registration/password_reset_email.txt:20
@@ -5498,19 +5648,19 @@ msgstr ""
 #: templates/registration/password_reset_email.html:35
 #: templates/registration/password_reset_email.txt:25
 msgid "Go here to change the password:"
-msgstr ""
+msgstr "Отидете тук, за да промените паролата:"
 
 #: templates/registration/password_reset_email_subject.html:2
 msgid "Reset your password - Scratch"
-msgstr ""
+msgstr "Промяна на паролата ви - Scratch"
 
 #: templates/registration/password_reset_form.html:8
 msgid "Reset Password"
-msgstr ""
+msgstr "Нова парола"
 
 #: templates/registration/password_reset_form.html:16
 msgid "Whoops, forget your password or username?"
-msgstr ""
+msgstr "Ами, забравили сте паролата или потребителското си име?"
 
 #: templates/registration/password_reset_form.html:19
 msgid ""
@@ -5520,7 +5670,7 @@ msgstr ""
 
 #: templates/registration/password_reset_form.html:25
 msgid "Enter Username"
-msgstr ""
+msgstr "Въведете потребителско име"
 
 #: templates/registration/password_reset_form.html:35
 msgid "Email address you registered with"
@@ -5528,12 +5678,12 @@ msgstr ""
 
 #: templates/registration/password_reset_form.html:39
 msgid "Send me a password reset link!"
-msgstr ""
+msgstr "Изпратете ми връзка за нова парола!"
 
 #: templates/registration/welcome_email_message.html:8
 #, python-format
 msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
-msgstr ""
+msgstr "Добре дошли в Scratch, <strong>%(username)s</strong>!"
 
 #: templates/registration/welcome_email_message.html:10
 #: templates/registration/welcome_email_message.txt:6
@@ -5546,7 +5696,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:12
 #: templates/registration/welcome_email_message.txt:8
 msgid "What's Next?"
-msgstr ""
+msgstr "Какво следва?"
 
 #: templates/registration/welcome_email_message.html:22
 #: templates/registration/welcome_email_message.txt:17
@@ -5580,7 +5730,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.txt:4
 #, python-format
 msgid "Welcome to Scratch, %(username)s!"
-msgstr ""
+msgstr "Добре дошли в Scratch %(username)s!"
 
 #: templates/registration/welcome_email_message.txt:19
 #, python-format
@@ -5611,7 +5761,7 @@ msgstr ""
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format
 msgid "Joined %(tDate)s ago / "
-msgstr ""
+msgstr "Присъедини се преди %(tDate)s"
 
 #: templates/stats/country.html:9
 msgid "Community statistics for Brazil at a glance"
@@ -5635,7 +5785,7 @@ msgstr ""
 #: templates/stats/index.html:127 templates/stats/index.html.py:146
 #: templates/stats/index.html:165
 msgid "Data generated on:"
-msgstr ""
+msgstr "Данни създадени на:"
 
 #: templates/stats/country.html:30
 msgid "Detailed trends for Brazil"
@@ -5698,7 +5848,7 @@ msgstr ""
 
 #: templates/stats/index.html:31
 msgid "Website traffic last month"
-msgstr ""
+msgstr "Трафик на сайта за изминалия месец"
 
 #: templates/stats/index.html:39
 #, python-format
@@ -5709,14 +5859,18 @@ msgid ""
 "                <li class=\"data\">%(visitors)s unique visitors</li>\n"
 "                "
 msgstr ""
+"\n"
+"<li class=\"data\">%(pageviews)s посещения на страниците</li>\n"
+"<li class=\"data\">%(visits)sпосещения</li>\n"
+"<li class=\"data\">%(visitors)s различни посетители</li>"
 
 #: templates/stats/index.html:49
 msgid "Data generated from Google Analytics on:"
-msgstr ""
+msgstr "Данни създадени от Google Analytics на:"
 
 #: templates/stats/index.html:116
 msgid "Scratchers Worldwide"
-msgstr ""
+msgstr "Scratcher-и по света"
 
 #: templates/temporarily-disabled.html:6
 msgid "We'll be Back Soon-  Scratch"
@@ -5724,43 +5878,43 @@ msgstr ""
 
 #: templates/temporarily-disabled.html:11
 msgid "Coming Back Soon..."
-msgstr ""
+msgstr "Очаквайте скоро..."
 
 #: templates/terms_of_use.html:27
 msgid "Scratch Terms of Use"
-msgstr ""
+msgstr "Условията за ползване на Scratch"
 
 #: userprofiles/models.py:116
 msgid "Featured Project"
-msgstr ""
+msgstr "Интересни проекти"
 
 #: userprofiles/models.py:117
 msgid "Featured Tutorial"
-msgstr ""
+msgstr "Интересни уроци"
 
 #: userprofiles/models.py:118
 msgid "Work In Progress"
-msgstr ""
+msgstr "В процес на работа"
 
 #: userprofiles/models.py:119
 msgid "Remix This!"
-msgstr ""
+msgstr "Ремиксирай това"
 
 #: userprofiles/models.py:120
 msgid "My Favorite Things"
-msgstr ""
+msgstr "Любимите ми неща"
 
 #: userprofiles/models.py:121
 msgid "Why I Scratch"
-msgstr ""
+msgstr "Защо програмирам в Scratch"
 
 #: userprofiles/models.py:139
 msgid "user profile"
-msgstr ""
+msgstr "профил на потребителя"
 
 #: userprofiles/models.py:140
 msgid "user profiles"
-msgstr ""
+msgstr "профили на потребителя"
 
 #: userprofiles/views.py:368
 msgid ""
@@ -5770,7 +5924,7 @@ msgstr ""
 
 #: userprofiles/views.py:390
 msgid "Oops! You are following too many Scratchers."
-msgstr ""
+msgstr "Упс! Следвате твърде много  Scratcher-и."
 
 #: userprofiles/views.py:431
 msgid "You must confirm your email address to love or favorite projects"
@@ -5796,4 +5950,4 @@ msgstr ""
 
 #: userprofiles/views.py:842
 msgid "Oops! You are following too many studios."
-msgstr ""
+msgstr "Упс! Следвате твърде много студиа."
