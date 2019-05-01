@@ -107,7 +107,7 @@ msgstr "Musisz podać e-mail lub nazwę użytkownika"
 #: templates/accounts/password_change_form.html:10
 #: templates/info/educators.html:63
 msgid "Email"
-msgstr "Email"
+msgstr "E-mail"
 
 #: authentication/forms.py:362
 msgid "Incorrect username or password."
@@ -131,15 +131,15 @@ msgstr "Klasa się skończyła. Konto nie jest dostępne."
 
 #: authentication/forms.py:402
 msgid "Occasional updates from the Scratch Team"
-msgstr "Sporadyczne aktualizacje od zespołu Scratch"
+msgstr "Sporadyczne informacje od Zespołu Scratcha"
 
 #: authentication/forms.py:403
 msgid "Activity ideas for using Scratch at home"
-msgstr "Pomysły na używanie Scratch w domu"
+msgstr "Pomysły na używanie Scratcha w domu"
 
 #: authentication/forms.py:404
 msgid "Product updates for using Scratch in educational settings"
-msgstr "Aktualizacje produktu do używania Scratch w edukacyjnych miejscach"
+msgstr "Wykorzystanie Scratcha w edukacji"
 
 #: authentication/tasks.py:30
 #, python-format
@@ -740,7 +740,7 @@ msgstr "Zmiana adresu e-mail"
 
 #: templates/accounts/email_change.html:102
 msgid "I’d like to receive email updates about: "
-msgstr "Chcę dostawać aktualizacje emailowe o:"
+msgstr "Chcę otrzymywać e-maile na temat:"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
@@ -2712,6 +2712,10 @@ msgid ""
 "there, find the correct Class and click on the Students link. You can then "
 "reset the password at the student level using the Settings menu."
 msgstr ""
+"Hasła uczniów można zresetować z poziomu konta Nauczyciela Scratcha. "
+"Najpierw przejdź do <a href=\"%(educator_stuff_url)s\">Moje Klasy</a>. "
+"Odszukaj właściwą klasę i kliknij link Uczniowie. Następnie możesz "
+"zresetować hasło na poziomie ucznia za pomocą menu Ustawienia."
 
 #: templates/educators/registration/password_reset_email.txt:7
 #, python-format
@@ -2721,6 +2725,10 @@ msgid ""
 " correct Class and click on the Students link. You can then reset the "
 "password at the student level using the Settings menu."
 msgstr ""
+"Hasła uczniów można zresetować z poziomu konta Nauczyciela Scratcha. "
+"Najpierw przejdź do Moje Klasy [%(educator_stuff_url)s]. Odszukaj właściwą "
+"klasę i kliknij link Uczniowie. Następnie możesz zresetować hasło na "
+"poziomie ucznia za pomocą menu Ustawienia. "
 
 #: templates/educators/registration/password_reset_email_subject.html:2
 msgid "Password reset request from your student on Scratch"
@@ -2749,6 +2757,8 @@ msgid ""
 "In the meantime, you can access your new Scratch account as a regular user "
 "(without the Teacher features) and start creating projects."
 msgstr ""
+"W międzyczasie możesz uzyskać dostęp do nowego konta Scratcha jako zwykłego "
+"użytkownika (bez funkcji Nauczyciela) i rozpocząć tworzenie projektów."
 
 #: templates/educators/registration/welcome_email_message.html:17
 #: templates/educators/registration/welcome_email_message.txt:10
@@ -2763,6 +2773,10 @@ msgid ""
 "and more. The Scratch Foundation is a non-profit that supports Scratch "
 "educational initiatives."
 msgstr ""
+"W przyszłości otrzymasz od czasu do czasu maila od Zespołu Scratcha i "
+"Fundacji Scratcha, zawierającego wskazówki dotyczące kodowania, inspirujące "
+"historie, pomysły na projekty i inne. Fundacja Scratcha to organizacja non-"
+"profit, która wspiera inicjatywy edukacyjne Scratcha."
 
 #: templates/educators/registration/welcome_email_message.html:19
 #: templates/educators/registration/welcome_email_message.txt:11
@@ -2831,6 +2845,8 @@ msgid ""
 "Ended Classes ( <span data-content=\"closed-count\">%(closed_count)s</span> "
 ")"
 msgstr ""
+"Zamknięte Klasy ( <span data-content=\"closed-"
+"count\">%(closed_count)s</span> )"
 
 #: templates/educators/stuff.html:21
 msgid "All Class Alerts "
@@ -3295,6 +3311,8 @@ msgid ""
 "The MIT Scratch Team and collaborators are researching how people use and learn with Scratch (for an introduction, see <a href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). Find out more about <a href=\"/info/research\">Scratch research</a> and <a href=\"/statistics\">statistics about Scratch</a>.\n"
 "        "
 msgstr ""
+"Zespół Scratcha MIT i współpracownicy badają, jak ludzie używają i jak uczą się za pomocą Scratcha (wprowadzenie, zobacz <a href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programowanie dla wszystkich</a>).  Dowiedz się więcej o <a href=\"/info/research\">badaniach na temat Scratcha</a> i <a href=\"/statistics\">statystykach dotyczących Scratcha</a>.\n"
+"        "
 
 #: templates/info/about.html:87
 msgid "Support and Funding"
@@ -3362,7 +3380,7 @@ msgstr ""
 
 #: templates/info/codingforall.html:54
 msgid "What activities have been offered so far?"
-msgstr ""
+msgstr "Jakie działania zostały zaoferowane do tej pory?"
 
 #: templates/info/codingforall.html:55
 msgid ""
@@ -3404,10 +3422,13 @@ msgid ""
 " material are those of the authors and do not necessarily reflect the views "
 "of the National Science Foundation."
 msgstr ""
+"Wszelkie opinie, konkluzje, wnioski lub zalecenia wyrażone w tym materiale "
+"są opiniami autorów i niekoniecznie odzwierciedlają poglądy National Science"
+" Foundation."
 
 #: templates/info/codingforall.html:79
 msgid "Collaborating Organizations"
-msgstr ""
+msgstr "Organizacje Współpracujące"
 
 #: templates/info/codingforall.html:95
 msgid "Resources"
@@ -3418,10 +3439,12 @@ msgid ""
 "You can access resources for creating dance, music, and other interest-based"
 " projects here:"
 msgstr ""
+"Tutaj możesz uzyskać dostęp do materiałów do tworzenia tańca, muzyki i "
+"innych projektów opartych na zainteresowaniach:"
 
 #: templates/info/codingforall.html:100
 msgid "Things to Try Page"
-msgstr ""
+msgstr "Materiały do wypróbowania"
 
 #: templates/info/codingforall.html:101
 msgid "Preview Scratch Microworld prototypes:"
@@ -3438,14 +3461,15 @@ msgstr "Podobne posty"
 #: templates/info/codingforall.html:113
 msgid "Coding for All: Dance and Scratch Workshops - Paulina Haudong"
 msgstr ""
+"Kodowanie dla wszystkich: Warsztaty tańca i Scratcha - Paulina Haudong"
 
 #: templates/info/codingforall.html:114
 msgid "Hip-Hop and Scratch - Progressive Arts Alliance"
-msgstr ""
+msgstr "Hip-Hop i Scratch - Progressive Arts Alliance"
 
 #: templates/info/codingforall.html:115
 msgid "Reflections on a Hip-Hop and Scratch Workshop"
-msgstr ""
+msgstr "Refleksje na temat warsztatów Hip-Hopu i Scratcha"
 
 #: templates/info/community_guidelines.html:14
 msgid "Scratch Community Guidelines"
@@ -3515,7 +3539,7 @@ msgstr ""
 
 #: templates/info/dance-prototype.html:55
 msgid "EpicDance"
-msgstr ""
+msgstr "Epicki Taniec"
 
 #: templates/info/dance-prototype.html:59
 msgid "Top Rock Giga"
@@ -3612,7 +3636,7 @@ msgstr ""
 
 #: templates/info/educators.html:62
 msgid "Quarterly Newsletter"
-msgstr ""
+msgstr "Kwartalny biuletyn"
 
 #: templates/info/educators.html:85
 msgid "Personal"
@@ -3687,6 +3711,8 @@ msgid ""
 "If the Scratch browser plugin was correctly installed, you should see a "
 "green or yellow status indicator in the \"More Blocks\" area."
 msgstr ""
+"Jeśli wtyczka przeglądarki Scratch została poprawnie zainstalowana, powinien"
+" pojawić się zielony lub żółty znaczek w obszarze „Więcej bloków”."
 
 #: templates/info/ext_download.html:54
 msgid ""
@@ -3702,12 +3728,17 @@ msgid ""
 "not have your permission to run the plugin. (You may need to change "
 "Preferences in your browser to allow it to run.)"
 msgstr ""
+"<strong>Żółty:</strong> urządzenie nie jest podłączone lub Twoja "
+"przeglądarka nie ma uprawnień do uruchomienia wtyczki. (Być może będziesz "
+"musiał zmienić Ustawienia w przeglądarce, aby umożliwić jej uruchomienie)."
 
 #: templates/info/ext_download.html:69
 msgid ""
 "<strong>Red:</strong> There's a problem. Move your cursor over the status "
 "indicator to find out what's wrong."
 msgstr ""
+"<strong>Czerwony:</strong> jest problem. Przesuń kursor na wskaźnik stanu, "
+"aby dowiedzieć się, co jest nie tak."
 
 #: templates/info/ext_download.html:79
 msgid ""
@@ -3718,6 +3749,12 @@ msgid ""
 "for the plugins dashboard in your browser (you can usually find it in the "
 "tools menu)."
 msgstr ""
+"<strong>Ważne:</strong> Przy pierwszym dodaniu rozszerzenia przeglądarka "
+"może zapytać, czy zezwolić na uruchomienie wtyczki. Upewnij się, że wybrałeś"
+" „Zezwalaj i pamiętaj” (lub podobną opcję) z listy rozwijanej, aby "
+"przeglądarka zapamiętała Twój wybór. Jeśli będziesz chciał zmienić "
+"Ustawienia później, poszukaj zakładek z wtyczkami w swojej przeglądarce "
+"(zazwyczaj możesz go znaleźć w menu narzędzi)."
 
 #: templates/info/ext_download.html:89
 msgid ""
@@ -3733,6 +3770,9 @@ msgid ""
 "Firefox (or similar option in other browsers) from the dropdown so that the "
 "browser will remember your preferences."
 msgstr ""
+"<strong>Przykład::</strong> pamiętaj, aby wybrać „Zezwalaj i pamiętaj” w "
+"Firefoksie (lub podobnej opcji w innych przeglądarkach) z menu rozwijanego, "
+"aby przeglądarka zapamiętała Twój wybór."
 
 #: templates/info/ext_download.html:109
 msgid "Additional Information"
@@ -3749,6 +3789,10 @@ msgid ""
 "select the \"Add an Extension\" button. You can then select \"LEGO WeDo\" or"
 " any other extension, and the blocks will be added to the project."
 msgstr ""
+"Po zainstalowaniu wtyczki tego urządzenia możesz użyć dowolnego bloku "
+"rozszerzenia Scratcha. W Scratchu kliknij kategorię „Więcej bloków” i "
+"wybierz przycisk „Dodaj rozszerzenie”. Następnie możesz wybrać „LEGO WeDo” "
+"lub dowolne inne rozszerzenie, a bloki zostaną dodane do projektu."
 
 #: templates/info/ext_download.html:113
 msgid "System Requirements"
@@ -3781,6 +3825,9 @@ msgid ""
 "          With <a href=\"http://scratch.mit.edu/about\">Scratch</a>, you can program your own stories, games, and animations  &mdash; and share them online.\n"
 "          "
 msgstr ""
+"\n"
+"          Dzięki <a href=\"http://scratch.mit.edu/about\">Scratchowi</a>, możesz programować własne historie, gry, animacje  &mdash; i publikować je online. \n"
+"          "
 
 #: templates/info/hoc2015br.html:49
 msgid "Scratch: Imagine, Program, Share"
@@ -3835,6 +3882,12 @@ msgid ""
 "Scratch is designed and maintained by the Lifelong Kindergarten group at the"
 " MIT Media Lab. "
 msgstr ""
+"Scratch to język programowania oraz społeczność internetowa, gdzie dzieci "
+"mogą programować i udostępniać interaktywne zasoby, jak: historie, gry i "
+"animacje ludziom z całego świata. Gdy dzieci programują w Scratchu, uczą się"
+" kreatywności, współpracy, a także systematyczności. Scratch jest "
+"zaprojektowany i utrzymywany przez grupę Lifelong Kindergarten z MIT Media "
+"Lab."
 
 #: templates/info/parents.html:28
 msgid "What is the age range for Scratch?"
@@ -3923,6 +3976,8 @@ msgid ""
 "We often receive emails from parents thanking us for Scratch. Here are some "
 "examples: "
 msgstr ""
+"Często otrzymujemy e-maile od rodziców, którzy dziękują nam za Scratcha. Oto"
+" kilka przykładów:"
 
 #: templates/info/parents.html:59
 msgid ""
@@ -3930,6 +3985,10 @@ msgid ""
 "for free.</b> My kids are doing amazing things that they see as fun yet I "
 "know is educational, valuable, and worthwhile. Thank you so much!!!\""
 msgstr ""
+"\"<b>Chcę podziękować wszystkim za zrobienie Scratcha i za udostępnienie go "
+"za darmo.</b> Moje dzieci robią niesamowite rzeczy, które uważają za zabawę,"
+" ale wiem, że to jest działanie edukacyjne, cenne i wartościowe. Dziękuję "
+"bardzo!!!”"
 
 #: templates/info/parents.html:60
 msgid ""
@@ -3958,18 +4017,26 @@ msgid ""
 "href=\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Learning"
 " with Scratch</a>."
 msgstr ""
+"Aby uzyskać jednostronicowy przegląd tego, czego młodzi ludzie uczą się za "
+"pomocą programu Scratch, zobacz <a href=\"http://llk.media.mit.edu/scratch"
+"/Learning-with-Scratch.pdf\">Nauka ze Scratchem</a>."
 
 #: templates/info/parents.html:73
 msgid ""
 "Read an article on the <a href=\"http://www.edutopia.org/kindergarten-"
 "creativity-collaboration-lifelong-learning\">creative learning approach</a>."
 msgstr ""
+"Przeczytaj artykuł na temat <a href=\"http://www.edutopia.org/kindergarten-"
+"creativity-collaboration-lifelong-learning\">kreatywnego podejścia do "
+"nauki</a>."
 
 #: templates/info/parents.html:81
 msgid ""
 "We ask all participants on the site to follow the <a "
 "href=\"/community_guidelines\">Community Guidelines</a>."
 msgstr ""
+"Wszystkich użytkowników witryny prosimy o przestrzeganie <a "
+"href=\"/community_guidelines\">Wytycznych dla społeczności</a>."
 
 #: templates/info/parents.html:82
 msgid ""
@@ -4003,11 +4070,11 @@ msgstr ""
 
 #: templates/info/quotes.html:4
 msgid "Quotes - Scratch"
-msgstr ""
+msgstr "Cytaty - Scratch"
 
 #: templates/info/quotes.html:16
 msgid "What <b>Youth</b> are Saying about Scratch"
-msgstr ""
+msgstr "Co <b>młodzi ludzie</b> mówią na temat Scratcha?"
 
 #: templates/info/quotes.html:19
 msgid ""
@@ -4155,7 +4222,7 @@ msgstr ""
 
 #: templates/info/scratch_1.4.html:30
 msgid "Scratch 1.4 For Mac OS X"
-msgstr ""
+msgstr "Scratch 1.4 dla Mac OS X"
 
 #: templates/info/scratch_1.4.html:31
 msgid "Compatible with Mac OSX 10.4 or later"
@@ -4163,7 +4230,7 @@ msgstr "Kompatybilne z Mac OSX 10.4 lub nowszym"
 
 #: templates/info/scratch_1.4.html:40
 msgid "Scratch 1.4 for Windows"
-msgstr ""
+msgstr "Scratch 1.4 dla Windowsa"
 
 #: templates/info/scratch_1.4.html:41
 msgid "Compatible with Windows 2000, XP, Vista, 7, and 8"
@@ -4177,7 +4244,7 @@ msgstr ""
 
 #: templates/info/scratch_1.4.html:52
 msgid "Scratch 1.4 for Debian / Ubuntu"
-msgstr ""
+msgstr "Scratch 1.4 dla Debiana / Ubuntu"
 
 #: templates/info/scratch_1.4.html:53
 msgid "Compatible with Ubuntu 12.04 or later"
@@ -4190,11 +4257,11 @@ msgstr "Zainstaluj Scratcha z Centrum Oprogramowania"
 #: templates/info/scratch_1.4.html:60
 #, python-format
 msgid "or <a href=\"%(download_1_4)s\">download here</a>"
-msgstr ""
+msgstr "lub <a href=\"%(download_1_4)s\">pobierz tutaj</a>"
 
 #: templates/info/scratch_1.4.html:69
 msgid "Frequently Asked Questions about Scratch 1.4"
-msgstr ""
+msgstr "Najczęściej Zadawane Pytania o Scratcha 1.4"
 
 #: templates/info/scratch_1.4.html:71
 msgid "What resources are available to help me learn how to use Scratch 1.4?"
@@ -5792,7 +5859,7 @@ msgstr ""
 #: templates/registration/password_reset_email.html:35
 #: templates/registration/password_reset_email.txt:25
 msgid "Go here to change the password:"
-msgstr ""
+msgstr "Przejdź tutaj, aby zmienić hasło:"
 
 #: templates/registration/password_reset_email_subject.html:2
 msgid "Reset your password - Scratch"
@@ -5804,7 +5871,7 @@ msgstr "Reset hasła"
 
 #: templates/registration/password_reset_form.html:16
 msgid "Whoops, forget your password or username?"
-msgstr ""
+msgstr "Upssss, zapomniałeś hasło lub nazwę użytkownika?"
 
 #: templates/registration/password_reset_form.html:19
 msgid ""
@@ -5827,7 +5894,7 @@ msgstr "Wyślij mi link resetujący hasło!"
 #: templates/registration/welcome_email_message.html:8
 #, python-format
 msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
-msgstr ""
+msgstr "Witamy w Scratchu, <strong>%(username)s</strong>!"
 
 #: templates/registration/welcome_email_message.html:10
 #: templates/registration/welcome_email_message.txt:6
@@ -6049,7 +6116,7 @@ msgstr "Moje Ulubione Rzeczy"
 
 #: userprofiles/models.py:121
 msgid "Why I Scratch"
-msgstr ""
+msgstr "Dlaczego I Scratch"
 
 #: userprofiles/models.py:139
 msgid "user profile"
@@ -6069,11 +6136,12 @@ msgstr ""
 
 #: userprofiles/views.py:390
 msgid "Oops! You are following too many Scratchers."
-msgstr ""
+msgstr "Upssss! Obserwujesz zbyt wielu Scracherów."
 
 #: userprofiles/views.py:431
 msgid "You must confirm your email address to love or favorite projects"
 msgstr ""
+"Musisz potwierdzić swój adres e-mail, aby pokochać lub polubić projekty"
 
 #: userprofiles/views.py:459
 msgid ""
