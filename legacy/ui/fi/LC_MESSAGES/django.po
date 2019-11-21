@@ -6,9 +6,9 @@
 # Translators:
 # Chris Garrity (ML) <chrisg@media.mit.edu>, 2017
 # Susanna Ånäs <susanna.anas@gmail.com>, 2018
-# Mikko Salmi <mrmsalmi@gmail.com>, 2018
+# Mikko Salmi, 2018
 # A Suomela <ope.antti@gmail.com>, 2018
-# Arttu Ylhävuori <arttu.ylhavuori@gmail.com>, 2018
+# Arttu Ylhävuori <arttu.ylhavuori@gmail.com>, 2019
 # Tarmo Ylhävuori <tarmo.ylhavuori@gmail.com>, 2019
 # 
 #, fuzzy
@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-18 16:05-0400\n"
+"POT-Creation-Date: 2019-11-21 08:33-0500\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
 "Last-Translator: Tarmo Ylhävuori <tarmo.ylhavuori@gmail.com>, 2019\n"
 "Language-Team: Finnish (https://www.transifex.com/llk/teams/60938/fi/)\n"
@@ -723,7 +723,7 @@ msgstr ""
 #: templates/accounts/email_verification/verification_email_plain.html:6
 #: templates/educators/email_verification/verification_email_plain.html:5
 msgid "Greetings from the Scratch Team at MIT!"
-msgstr ""
+msgstr "Terveisiä MIT:n Scratch-tiimiltä!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:11
 #, python-format
@@ -738,7 +738,7 @@ msgstr ""
 #: templates/accounts/email_verification/verification_email.html:26
 #: templates/educators/email_verification/verification_email.html:20
 msgid "Confirm my email address"
-msgstr ""
+msgstr "Vahvista sähköpostiosoitteeni"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:23
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:12
@@ -759,7 +759,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:45
 #: templates/registration/welcome_email_message.txt:36
 msgid "Scratch On!"
-msgstr ""
+msgstr "Scratchaa!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
@@ -778,7 +778,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:47
 #: templates/registration/welcome_email_message.txt:37
 msgid "The Scratch Team"
-msgstr ""
+msgstr "Scratch-tiimi"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:5
 #, python-format
@@ -795,7 +795,7 @@ msgstr ""
 #: templates/educators/registration/password_reset_email.html:15
 #: templates/educators/registration/password_reset_email.txt:9
 msgid "Scratch on!"
-msgstr ""
+msgstr "Scratchaa!"
 
 #: templates/accounts/email_verification/failed_verification.html:20
 msgid "Uh oh! Something went wrong with your email confirmation."
@@ -836,21 +836,26 @@ msgid ""
 "        <strong>%(email_address)s</strong>\n"
 "      "
 msgstr ""
+"\n"
+"        Tarkista vahvistusviesti, jonka lähetimme osoitteeseen:\n"
+"        <br/>\n"
+"        <strong>%(email_address)s</strong>\n"
+"      "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:27
 #: templates/accounts/email_verification/verify_email_standalone.html:108
 msgid "Can't find confirmation message?"
-msgstr ""
+msgstr "Etkö löydä vahvistusviestiä?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:30
 #: templates/accounts/email_verification/verify_email_standalone.html:110
 msgid "Wait for ten minutes. The message may take a while to arrive."
-msgstr ""
+msgstr "Odota kymmenen minuuttia. Viestin saapuminen voi viedä hetken."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:31
 #: templates/accounts/email_verification/verify_email_standalone.html:111
 msgid "Check your spam folder."
-msgstr ""
+msgstr "Tarkista roskapostikansiosi."
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:32
 #, python-format
@@ -864,12 +869,12 @@ msgstr ""
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Still can't find the message?"
-msgstr ""
+msgstr "Etkö edelleenkään löydä viestiä?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
 #: templates/accounts/email_verification/verify_email_standalone.html:117
 msgid "Resend Confirmation"
-msgstr ""
+msgstr "Lähetä vahvistus uudelleen"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:44
 msgid "OK, back to Scratch"
@@ -923,7 +928,7 @@ msgstr ""
 
 #: templates/accounts/email_verification/passed_verification.html:59
 msgid "OK, let's go!"
-msgstr ""
+msgstr "Menoksi!"
 
 #: templates/accounts/email_verification/verification_email.html:12
 #, python-format
@@ -945,7 +950,7 @@ msgstr ""
 
 #: templates/accounts/email_verification/verification_email.html:22
 msgid "Please confirm this email address by clicking the button below:"
-msgstr ""
+msgstr "Vahvista tämä sähköpostiosoite napsauttamalla alla olevaa painiketta:"
 
 #: templates/accounts/email_verification/verification_email.html:33
 #, python-format
@@ -960,6 +965,8 @@ msgid ""
 "\n"
 "    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 msgstr ""
+"\n"
+"    Scratch on ilmainen ohjelmointikieli ja verkkoyhteisö, jossa voit luoda omia interaktiivisia tarinoita, pelejä ja animaatioita. Sähköpostin vahvistaminen antaa sinulle täydet oikeudet jakaa ja kommentoida Scratch-verkkoyhteisössä. Lisätietoja osoitteessa <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
@@ -996,6 +1003,9 @@ msgid ""
 "    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
 "    "
 msgstr ""
+"\n"
+"    Scratch on ilmainen ohjelmointikieli ja verkkoyhteisö, jossa voit luoda omia interaktiivisia tarinoita, pelejä ja animaatioita. Sähköpostin vahvistaminen antaa sinulle täydet oikeudet jakaa ja kommentoida Scratch-verkkoyhteisössä. Lisätietoja osoitteessa %(about_url)s.\n"
+"    "
 
 #: templates/accounts/email_verification/verify_email_standalone.html:84
 msgid "Want to share on Scratch?"
@@ -1024,6 +1034,9 @@ msgid ""
 "                        Check for the confirmation message we sent to: <strong>%(email_address)s</strong>\n"
 "                    "
 msgstr ""
+"\n"
+"                        Tarkista vahvistusviesti, jonka lähetimme osoitteeseen: <strong>%(email_address)s</strong>\n"
+"                    "
 
 #: templates/accounts/email_verification/verify_email_standalone.html:112
 #, python-format
@@ -1883,7 +1896,7 @@ msgstr ""
 #: templates/educators/educator-modal-registration.html:120
 #: templates/modal-registration.html:161
 msgid "Confirm email address"
-msgstr ""
+msgstr "Vahvista sähköpostiosoite"
 
 #: templates/educators/educator-modal-registration.html:132
 msgid "Congrats! educator.username"
@@ -1891,7 +1904,7 @@ msgstr ""
 
 #: templates/educators/educator-modal-registration.html:138
 msgid "Welcome to the Scratch Community. What would you like to do next?"
-msgstr ""
+msgstr "Tervetuloa Scratch-yhteisöön. Mitä haluaisit tehdä seuraavaksi?"
 
 #: templates/educators/educator-modal-registration.html:141
 msgid "Set up My Account"
@@ -2006,6 +2019,7 @@ msgid ""
 "Are you sure you want to empty the trash? These Classes will be deleted "
 "permanently."
 msgstr ""
+"Haluatko varmasti tyhjentää roskakorin? Nämä luokat poistetaan pysyvästi."
 
 #: templates/educators/includes/stuff/backbone-init-data.html:15
 #: templates/projects/includes/backbone-init-data.html:82
@@ -2458,7 +2472,7 @@ msgstr ""
 
 #: templates/educators/includes/stuff/backbone-templates.html:799
 msgid "To confirm, please enter your password"
-msgstr ""
+msgstr "Vahvista antamalla salasanasi"
 
 #: templates/educators/includes/stuff/sort-activities-dropdown.html:6
 msgid "Activity for"
@@ -2535,14 +2549,14 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:14
 #: templates/registration/welcome_email_message.txt:9
 msgid "Read our Community Guidelines"
-msgstr ""
+msgstr "Lue yhteisömme suuntaviivat"
 
 #: templates/educators/registration/approval_email_message.html:14
 #: templates/educators/registration/approval_email_message.txt:8
 #: templates/registration/welcome_email_message.html:16
 #: templates/registration/welcome_email_message.txt:11
 msgid "Get inspired with a starter project"
-msgstr ""
+msgstr "Hanki inspiraatiota aloitusprojektilla"
 
 #: templates/educators/registration/approval_email_message.html:15
 #: templates/educators/registration/approval_email_message.txt:9
@@ -2583,7 +2597,7 @@ msgstr ""
 
 #: templates/educators/registration/approval_email_subject.txt:1
 msgid "Welcome to your Scratch Teacher Account!"
-msgstr ""
+msgstr "Tervetuloa Scratch-opettajatilillesi!"
 
 #: templates/educators/registration/password_reset_email.html:7
 #: templates/educators/registration/password_reset_email.txt:2
@@ -2685,7 +2699,7 @@ msgstr ""
 #: templates/registration/welcome_email_message.html:15
 #: templates/registration/welcome_email_message.txt:10
 msgid "Learn how to make a project"
-msgstr "Oppia kuinka tehdä projekti"
+msgstr "Opi tekemään projekti"
 
 #: templates/educators/student-modal-registration.html:64
 msgid "Choose a starter project"
@@ -4358,6 +4372,9 @@ msgid ""
 "            <a href=\"%(scratch_url)s\">Scratch</a> is a free project of the Lifelong Kindergarten Group at the MIT Media Lab. Using Scratch, children can create interactive stories, games, and animations.\n"
 "        "
 msgstr ""
+"\n"
+"            <a href=\"%(scratch_url)s\">Scratch</a> on MIT Media Labin Lifelong Kindergartenin ilmainen projekti. Scratchin avulla lapset voivat luoda vuorovaikutteisia tarinoita, pelejä ja animaatioita.\n"
+"        "
 
 #: templates/mail/base.html:46
 #, python-format
@@ -4366,6 +4383,9 @@ msgid ""
 "            If you have questions about Scratch or this email, please take a look at our <a href=\"%(faq_url)s\">FAQ</a>.\n"
 "        "
 msgstr ""
+"\n"
+"            Jos sinulla on kysyttävää Scratchista tai tästä sähköpostiviestistä, tutustu <a href=\"%(faq_url)s\">usein kysyttyihin kysymyksiin</a>.\n"
+"        "
 
 #: templates/mail/base.html:54
 #, python-format
@@ -4374,10 +4394,13 @@ msgid ""
 "            To stop receiving emails from Scratch, <a href=\"%(blacklist_url)s\">unsubscribe</a>.\n"
 "        "
 msgstr ""
+"\n"
+"            Lopeta sähköpostien vastaanottaminen Scratchilta <a href=\"%(blacklist_url)s\">peruuttamalla tilaukset</a>.\n"
+"        "
 
 #: templates/mail/base.html:62
 msgid "Make a Donation"
-msgstr ""
+msgstr "Tee lahjoitus"
 
 #: templates/mail/blacklist/blacklist_error.html:21
 #, python-format
@@ -4512,21 +4535,24 @@ msgstr ""
 
 #: templates/modal-registration.html:175
 msgid "Receive updates from the Scratch Team"
-msgstr ""
+msgstr "Vastaanota päivityksiä Scratch-tiimiltä"
 
 #: templates/modal-registration.html:200
 msgid "Welcome to Scratch,"
-msgstr ""
+msgstr "Tervetuloa Scratchiin,"
 
 #: templates/modal-registration.html:201
 msgid "You're now logged in! You can start exploring and creating projects."
-msgstr ""
+msgstr "Olet nyt kirjautunut sisään! Voit alkaa tutkia ja luoda projekteja."
 
 #: templates/modal-registration.html:203
 msgid ""
 "If you want to share and comment, simply click the link in the email we sent"
 " you at <strong><span class=\"email-welcome\"></span></strong>"
 msgstr ""
+"Jos haluat jakaa ja kommentoida, napsauta vain linkkiä sähköpostiviestissä, "
+"jonka lähetimme sinulle osoitteeseen <strong><span class=\"email-"
+"welcome\"></span></strong>"
 
 #: templates/modal-registration.html:207
 #, python-format
@@ -4534,6 +4560,8 @@ msgid ""
 "Wrong email? Change your email address in <a "
 "href=\"%(settings_url)s\">Account Settings</a>"
 msgstr ""
+"Väärä sähköposti? Vaihda sähköpostiosoitteesi <a "
+"href=\"%(settings_url)s\">tunnuksen asetuksissa</a>"
 
 #: templates/modal-registration.html:211
 #, python-format
@@ -4541,6 +4569,8 @@ msgid ""
 "Having problems? <a href=\"%(contact_url)s?confirmation=1\">Please give us "
 "feedback</a>"
 msgstr ""
+"Onko sinulla ongelmia? <a href=\"%(contact_url)s?confirmation=1\">Anna "
+"meille palautetta</a>"
 
 #: templates/modal-registration.html:229
 #, python-format
@@ -4549,6 +4579,9 @@ msgid ""
 "you just created. If you still have trouble, please <a "
 "href=\"%(contact_url)s?confirmation=1\">contact us</a>."
 msgstr ""
+"Hups, emme voineet kirjata sinua sisään. Ole hyvä ja kirjaudu sisään juuri "
+"luomallasi käyttäjänimellä ja salasanalla. Jos sinulla on edelleen ongelmia,"
+" ota <a href=\"%(contact_url)s?confirmation=1\">yhteyttä meihin</a>."
 
 #: templates/modal-registration.html:234
 #, python-format
@@ -4558,6 +4591,12 @@ msgid ""
 "downloading it to your computer using the button here. You may also ​<a "
 "href=\"%(contact_url)s?confirmation=1\">contact us​</a> for additional help."
 msgstr ""
+"Hups, emme voineet kirjata sinua sisään. Ole hyvä ja kirjaudu sisään juuri "
+"luomallasi käyttäjänimellä ja salasanalla. Jos sinulla on edelleen ongelmia,"
+" voit tallentaa projektisi lataamalla sen tietokoneellesi täällä olevan "
+"painikkeen avulla. Voit myös <a "
+"href=\"%(contact_url)s?confirmation=1\">ottaa meihin yhteyttä</a> saadaksesi"
+" lisätietoja."
 
 #: templates/modal-registration.html:250
 msgid "Download project"
@@ -4672,7 +4711,7 @@ msgstr ""
 
 #: templates/mystuff/mystuff.html:10
 msgid "Trash"
-msgstr ""
+msgstr "Roskakori"
 
 #: templates/mystuff/mystuff.html:18
 msgid "New Project"
@@ -5053,6 +5092,8 @@ msgid ""
 "Everyone should feel welcome on Scratch, so we’re careful to be respectful "
 "to everyone."
 msgstr ""
+"Kaikkien tulisi tuntea olevansa tervetulleita Scratchiin, joten olemme "
+"varovaisia ​​kunnioittaessamme kaikkia."
 
 #: templates/profiles/scratcher_promotion_modal.html:23
 msgid "We’re constructive."
@@ -5664,16 +5705,19 @@ msgid ""
 "can program your own interactive stories, games, and animations — and share "
 "your creations with others in the community."
 msgstr ""
+"Olemme innoissamme siitä, että olet liittynyt kasvavaan yhteisöömme! "
+"Scratchilla voit ohjelmoida omia interaktiivisia tarinoitasi, pelejäsi ja "
+"animaatioitasi — ja jakaa luomuksesi yhteisön muiden jäsenten kanssa."
 
 #: templates/registration/welcome_email_message.html:12
 #: templates/registration/welcome_email_message.txt:8
 msgid "What's Next?"
-msgstr ""
+msgstr "Mitä seuraavaksi?"
 
 #: templates/registration/welcome_email_message.html:22
 #: templates/registration/welcome_email_message.txt:17
 msgid "Want to learn more?"
-msgstr ""
+msgstr "Haluatko tietää enemmän?"
 
 #: templates/registration/welcome_email_message.html:24
 #, python-format
@@ -5729,6 +5773,11 @@ msgid ""
 "stories, project ideas, and more. You can unsubscribe from within the "
 "updates or by clicking below:"
 msgstr ""
+"Tutustu Tietoa Scratchista -sivuun, Usein kysyttyihin kysymyksiin ja "
+"Keskustelufoorumeihin, niin saat lisätietoja Scratchista. Jatkossa saat myös"
+" satunnaisia ​​päivityksiä Scratch-tiimiltä koodausvinkeistä, inspiroivista "
+"tarinoista, projekti-ideoista ja muusta. Voit peruuttaa tilauksen tulevista "
+"viesteistä tai napsauttamalla alta:"
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format
