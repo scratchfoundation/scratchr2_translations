@@ -4,21 +4,21 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Chris Garrity (ML) <chrisg@media.mit.edu>, 2017
+# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2017
 # Любомир Василев, 2018
 # Emiliq Rujinova <gugpuh@gmail.com>, 2019
-# Dimitar Tonchev <dimitar.tonchev@gmail.com>, 2019
 # Stanislav Petrov <stanio.petrov@gmail.com>, 2019
 # Filip Filipov <f.filipov@dbs-soft.com>, 2019
+# Dimitar Tonchev <dimitar.tonchev@gmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-18 16:05-0400\n"
+"POT-Creation-Date: 2020-01-29 20:41-0500\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
-"Last-Translator: Filip Filipov <f.filipov@dbs-soft.com>, 2019\n"
+"Last-Translator: Dimitar Tonchev <dimitar.tonchev@gmail.com>, 2020\n"
 "Language-Team: Bulgarian (https://www.transifex.com/llk/teams/60938/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -745,7 +745,6 @@ msgstr "Искам да получавам имейл актуализации �
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
-#: templates/accounts/email_verification/verification_email_plain.html:6
 #: templates/educators/email_verification/verification_email_plain.html:5
 msgid "Greetings from the Scratch Team at MIT!"
 msgstr "Поздрави от екипа на Scratch към Масачузетския технологичен институт!"
@@ -760,7 +759,6 @@ msgstr ""
 "Преди няколко минути поискахте да свържете този имейл адрес с акаунт за Scratch<strong>%(username)s</strong>. Моля, потвърдете имейл адреса си, като кликнете върху бутона по-долу:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:17
-#: templates/accounts/email_verification/verification_email.html:26
 #: templates/educators/email_verification/verification_email.html:20
 msgid "Confirm my email address"
 msgstr "Потвърди моя email"
@@ -775,7 +773,7 @@ msgstr ""
 " игнорирате това съобщение."
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
-#: templates/accounts/email_verification/verification_email.html:43
+#: templates/accounts/email_verification/verification_email.html:32
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
@@ -783,15 +781,15 @@ msgstr ""
 #: templates/educators/registration/approval_email_message.txt:16
 #: templates/educators/registration/welcome_email_message.html:32
 #: templates/educators/registration/welcome_email_message.txt:17
-#: templates/registration/welcome_email_message.html:45
-#: templates/registration/welcome_email_message.txt:36
+#: templates/registration/welcome_email_message.html:34
+#: templates/registration/welcome_email_message.txt:14
 msgid "Scratch On!"
 msgstr "Scratch On!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
-#: templates/accounts/email_verification/verification_email.html:45
-#: templates/accounts/email_verification/verification_email_plain.html:33
+#: templates/accounts/email_verification/verification_email.html:34
+#: templates/accounts/email_verification/verification_email_plain.html:18
 #: templates/accounts/password_changed_email/message.html:14
 #: templates/accounts/password_changed_email/message.txt:7
 #: templates/educators/email_verification/verification_email.html:34
@@ -802,8 +800,8 @@ msgstr "Scratch On!"
 #: templates/educators/registration/password_reset_email.txt:10
 #: templates/educators/registration/welcome_email_message.html:34
 #: templates/educators/registration/welcome_email_message.txt:18
-#: templates/registration/welcome_email_message.html:47
-#: templates/registration/welcome_email_message.txt:37
+#: templates/registration/welcome_email_message.html:36
+#: templates/registration/welcome_email_message.txt:15
 msgid "The Scratch Team"
 msgstr "Екипът на Scratch"
 
@@ -817,7 +815,7 @@ msgstr ""
 "Преди няколко минути поискахте да свържете този имейл адрес с акаунт за Scratch%(username)s. Моля, потвърдете имейл адреса си, като кликнете върху бутона по-долу:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:14
-#: templates/accounts/email_verification/verification_email_plain.html:31
+#: templates/accounts/email_verification/verification_email_plain.html:16
 #: templates/educators/email_verification/verification_email_plain.html:18
 #: templates/educators/registration/password_reset_email.html:15
 #: templates/educators/registration/password_reset_email.txt:9
@@ -938,8 +936,6 @@ msgid "Try out starter projects"
 msgstr "Опитайте началните проекти"
 
 #: templates/accounts/email_verification/passed_verification.html:39
-#: templates/registration/welcome_email_message.html:17
-#: templates/registration/welcome_email_message.txt:12
 msgid "Connect with other Scratchers"
 msgstr "Свързване със Scratcher"
 
@@ -966,76 +962,32 @@ msgid "OK, let's go!"
 msgstr "ОК, напред!"
 
 #: templates/accounts/email_verification/verification_email.html:12
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! A few minutes ago, your child signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+#: templates/accounts/email_verification/verification_email_plain.html:6
+msgid "Confirm your Scratch account"
 msgstr ""
-"\n"
-"Поздрави от екипа на Scratch в MIT! Преди няколко минути детето ви се регистрира за нов профил на <a href=\"%(scratch_url)s\">Scratch</a> с потребителското име:\n"
 
-#: templates/accounts/email_verification/verification_email.html:16
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! You just signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+#: templates/accounts/email_verification/verification_email.html:15
+msgid "You just signed up for a new Scratch account with the username:"
 msgstr ""
-"\n"
-"Поздрави от екипа на Scratch в MIT! Току-що се регистрирахте за нов профил на<a href=\"%(scratch_url)s\">Scratch</a> с потребителското име:\n"
 
-#: templates/accounts/email_verification/verification_email.html:22
-msgid "Please confirm this email address by clicking the button below:"
+#: templates/accounts/email_verification/verification_email.html:20
+msgid "To finish creating your account, click on the link below:"
 msgstr ""
-"Моля, потвърдете този имейл адрес, като кликнете върху бутона по-долу:"
 
-#: templates/accounts/email_verification/verification_email.html:33
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:24
+msgid "Confirm my account"
 msgstr ""
-"\n"
-"Scratch е свободен език за програмиране и онлайн общност, където децата могат да създават интерактивни истории, игри и анимации. Потвърждаването на този имейл ще даде на детето ви пълен достъп до споделяне и коментар в онлайн общността на Scratch. Научете повече на адрес<a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
-#: templates/accounts/email_verification/verification_email.html:37
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:27
+msgid "Having trouble? Copy this link into your browser instead:"
 msgstr ""
-"\n"
-"Scratch е свободен език за програмиране и онлайн общност, където можете да създавате свои интерактивни истории, игри и анимации. Потвърждаването на имейла ви ще ви даде пълен достъп да споделяте и коментирате в онлайн общността на Scratch. Научете повече на адрес<a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
 msgid ""
 "\n"
-"    A few minutes ago, your child signed up for a new account on Scratch (%(scratch_url)s. Please confirm this email address by clicking the button below:\n"
-"    "
-msgstr ""
-
-#: templates/accounts/email_verification/verification_email_plain.html:13
-#, python-format
-msgid ""
-"\n"
-"    You just signed up for a new account on Scratch (%(scratch_url)s). Please confirm your email address by clicking the button below:\n"
-"    "
-msgstr ""
-
-#: templates/accounts/email_verification/verification_email_plain.html:21
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
-msgstr ""
-
-#: templates/accounts/email_verification/verification_email_plain.html:25
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
+"You just signed up for a new account on Scratch (%(scratch_url)s).\n"
+"To finish creating your account, click on the link below:\n"
 msgstr ""
 
 #: templates/accounts/email_verification/verify_email_standalone.html:84
@@ -1172,11 +1124,11 @@ msgstr "Създай"
 msgid "Explore"
 msgstr "Прегледай"
 
-#: templates/base.html:185 templates/base.html.py:340
+#: templates/base.html:185 templates/base.html.py:347
 msgid "Ideas"
 msgstr "Идеи"
 
-#: templates/base.html:186 templates/base.html.py:317
+#: templates/base.html:186 templates/base.html.py:324
 msgid "About"
 msgstr "За нас"
 
@@ -1235,117 +1187,119 @@ msgid ""
 "sharing. <a href=\"%(faq_url)s#accounts\">Having trouble?</a>"
 msgstr ""
 
-#: templates/base.html:319 templates/info/about.html:13
-#: templates/mail/base.html:61
+#: templates/base.html:326 templates/info/about.html:13
+#: templates/mail/base.html:61 templates/mail/scratch3_style_base.html:49
 msgid "About Scratch"
 msgstr "Относно Scratch"
 
-#: templates/base.html:320 templates/info/parents.html:14
+#: templates/base.html:327 templates/info/parents.html:14
 msgid "For Parents"
 msgstr "За родителите"
 
-#: templates/base.html:321 templates/info/educators.html:14
+#: templates/base.html:328 templates/info/educators.html:14
 msgid "For Educators"
 msgstr "За учителите"
 
-#: templates/base.html:322
+#: templates/base.html:329
 msgid "For Developers"
 msgstr "За разработчиците"
 
-#: templates/base.html:323
+#: templates/base.html:330
 msgid "Credits"
 msgstr "Заслуги"
 
-#: templates/base.html:324
+#: templates/base.html:331
 msgid "Jobs"
 msgstr "Работа"
 
-#: templates/base.html:325
+#: templates/base.html:332
 msgid "Press"
 msgstr "Преса"
 
-#: templates/base.html:329 templates/info/parents.html:78
+#: templates/base.html:336 templates/info/parents.html:78
 msgid "Community"
 msgstr "Общност"
 
-#: templates/base.html:331
+#: templates/base.html:338
+#: templates/registration/welcome_email_message.html:26
 msgid "Community Guidelines"
 msgstr "Обществени правила"
 
-#: templates/base.html:332
+#: templates/base.html:339
 msgid "Discussion Forums"
 msgstr "Форуми за дискусии"
 
-#: templates/base.html:333
+#: templates/base.html:340
 msgid "Scratch Wiki"
 msgstr "Уики на Scratch"
 
-#: templates/base.html:334
+#: templates/base.html:341
 msgid "Statistics"
 msgstr "Статистики"
 
-#: templates/base.html:338 templates/info/codingforall.html:73
+#: templates/base.html:345 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "Поддръжка"
 
-#: templates/base.html:341
+#: templates/base.html:348
 msgid "FAQ"
 msgstr "ЧЗВ"
 
-#: templates/base.html:342
+#: templates/base.html:349
 msgid "Offline Editor"
 msgstr "Редактор за ползване извън линия"
 
-#: templates/base.html:343 templates/contact-us-success.html:12
+#: templates/base.html:350 templates/contact-us-success.html:12
 #: templates/contact-us.html:79
 msgid "Contact Us"
 msgstr "Връзка с нас"
 
-#: templates/base.html:344
+#: templates/base.html:351
 msgid "Scratch Store"
 msgstr "Магазинът на Scratch"
 
-#: templates/base.html:345
+#: templates/base.html:352
 msgid "Donate"
 msgstr "Дарение"
 
-#: templates/base.html:349
+#: templates/base.html:356
 msgid "Legal"
 msgstr "Правна информация"
 
-#: templates/base.html:351
+#: templates/base.html:358
 msgid "Terms of Use"
 msgstr "Условия за ползване"
 
-#: templates/base.html:352 templates/mail/base.html:60
+#: templates/base.html:359 templates/mail/base.html:60
+#: templates/mail/scratch3_style_base.html:48
 msgid "Privacy Policy"
 msgstr "Декларация за поверителност"
 
-#: templates/base.html:353 templates/info/DMCA.html:10
+#: templates/base.html:360 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:357
+#: templates/base.html:364
 msgid "Scratch Family"
 msgstr "Семейството на Scratch"
 
-#: templates/base.html:359
+#: templates/base.html:366
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:360
+#: templates/base.html:367
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
-#: templates/base.html:361
+#: templates/base.html:368
 msgid "Scratch Day"
 msgstr "Денят на Scratch"
 
-#: templates/base.html:362
+#: templates/base.html:369
 msgid "Scratch Conference"
 msgstr "Конференцията на Scratch"
 
-#: templates/base.html:363
+#: templates/base.html:370
 msgid "Scratch Foundation"
 msgstr "Фондацията Scratch"
 
@@ -2540,15 +2494,11 @@ msgstr "Нов в Scratch?"
 
 #: templates/educators/registration/approval_email_message.html:13
 #: templates/educators/registration/approval_email_message.txt:7
-#: templates/registration/welcome_email_message.html:14
-#: templates/registration/welcome_email_message.txt:9
 msgid "Read our Community Guidelines"
 msgstr "Прочетете нашите Правила на общността"
 
 #: templates/educators/registration/approval_email_message.html:14
 #: templates/educators/registration/approval_email_message.txt:8
-#: templates/registration/welcome_email_message.html:16
-#: templates/registration/welcome_email_message.txt:11
 msgid "Get inspired with a starter project"
 msgstr ""
 
@@ -2690,8 +2640,6 @@ msgid "Would you like to:"
 msgstr "Би ли искал:"
 
 #: templates/educators/student-modal-registration.html:63
-#: templates/registration/welcome_email_message.html:15
-#: templates/registration/welcome_email_message.txt:10
 msgid "Learn how to make a project"
 msgstr "Научете се как да създадете проект"
 
@@ -4407,7 +4355,7 @@ msgid ""
 "        "
 msgstr ""
 
-#: templates/mail/base.html:62
+#: templates/mail/base.html:62 templates/mail/scratch3_style_base.html:50
 msgid "Make a Donation"
 msgstr "Направете дарение"
 
@@ -4428,6 +4376,20 @@ msgstr ""
 #: templates/mail/blacklist/blacklist_success.html:20
 #, python-format
 msgid "You have unsubscribed the email address <strong>%(email)s</strong>."
+msgstr ""
+
+#: templates/mail/scratch3_style_base.html:40
+msgid ""
+"Using Scratch, children can create interactive stories, games, and "
+"animations."
+msgstr ""
+
+#: templates/mail/scratch3_style_base.html:42
+msgid ""
+"\n"
+"            Scratch is available for free, thanks to generous support from our donors. We are grateful to our Founding Partners:\n"
+"            Massachusetts Institute of Technology, the National Science Foundation, and the Siegel Family Endowment.\n"
+"        "
 msgstr ""
 
 #: templates/modal-login.html:40
@@ -5676,82 +5638,56 @@ msgstr ""
 msgid "Send me a password reset link!"
 msgstr "Изпратете ми връзка за нова парола!"
 
-#: templates/registration/welcome_email_message.html:8
+#: templates/registration/welcome_email_message.html:13
 #, python-format
 msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
 msgstr "Добре дошли в Scratch, <strong>%(username)s</strong>!"
 
-#: templates/registration/welcome_email_message.html:10
+#: templates/registration/welcome_email_message.html:16
 #: templates/registration/welcome_email_message.txt:6
 msgid ""
-"We're thrilled that you’ve joined our growing community! With Scratch, you "
-"can program your own interactive stories, games, and animations — and share "
-"your creations with others in the community."
+"With Scratch, you can program your own interactive stories, games, and "
+"animations—and share your creations with others in the community."
 msgstr ""
 
-#: templates/registration/welcome_email_message.html:12
-#: templates/registration/welcome_email_message.txt:8
-msgid "What's Next?"
-msgstr "Какво следва?"
+#: templates/registration/welcome_email_message.html:19
+#: templates/registration/welcome_email_message.txt:7
+msgid "New to Scratch? Click the link below:"
+msgstr ""
 
 #: templates/registration/welcome_email_message.html:22
-#: templates/registration/welcome_email_message.txt:17
-msgid "Want to learn more?"
+msgid "Get started on Scratch"
 msgstr ""
 
-#: templates/registration/welcome_email_message.html:24
-#, python-format
-msgid ""
-"Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a "
-"href=\"%(faq_url)s\">Frequently Asked Questions</a>, and <a "
-"href=\"%(discuss_url)s\">Discussion Forums</a>, to learn more about Scratch."
-msgstr ""
-
-#: templates/registration/welcome_email_message.html:27
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"Team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+#: templates/registration/welcome_email_message.html:25
+msgid "To learn more about the Scratch online community, go to our"
 msgstr ""
 
 #: templates/registration/welcome_email_message.html:29
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team with coding tips, inspirational stories, project ideas, and more. You "
-"can unsubscribe from within the updates or by clicking below:"
+msgid "To discover project ideas, check out our"
 msgstr ""
+
+#: templates/registration/welcome_email_message.html:30
+msgid "Ideas Page"
+msgstr "Страница с идеи"
 
 #: templates/registration/welcome_email_message.txt:4
 #, python-format
 msgid "Welcome to Scratch, %(username)s!"
 msgstr "Добре дошли в Scratch %(username)s!"
 
-#: templates/registration/welcome_email_message.txt:19
-#, python-format
-msgid ""
-"Check out our About Scratch page (%(about_url)s),Frequently Asked Questions "
-"(%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn more about "
-"Scratch."
+#: templates/registration/welcome_email_message.txt:8
+msgid "Get Started on Scratch"
 msgstr ""
 
-#: templates/registration/welcome_email_message.txt:22
+#: templates/registration/welcome_email_message.txt:9
 msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+"To learn more about the Scratch online community, go to our Community "
+"Guidelines"
 msgstr ""
 
-#: templates/registration/welcome_email_message.txt:24
-msgid ""
-"Check out our About Scratch page, Frequently Asked Questions, and Discussion"
-" Forums, to learn more about Scratch. Going forward, you will also receive "
-"occasional updates from the Scratch team with coding tips, inspirational "
-"stories, project ideas, and more. You can unsubscribe from within the "
-"updates or by clicking below:"
+#: templates/registration/welcome_email_message.txt:11
+msgid "To discover project ideas, check out our Ideas Page"
 msgstr ""
 
 #: templates/scratch_admin/admin_profile_view.html:46

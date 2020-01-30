@@ -4,20 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Chris Garrity (ML) <chrisg@media.mit.edu>, 2017
+# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2017
 # l g <53620583@qq.com>, 2017
 # Utowoo <wuqian7300@163.com>, 2017
 # 宇轩 程 <miracle041206@163.com>, 2018
-# Hongwei Zeng <hongwei.zeng@qq.com>, 2019
+# Hongwei Zeng <hongwei.zeng@qq.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-18 16:05-0400\n"
+"POT-Creation-Date: 2020-01-29 20:41-0500\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
-"Last-Translator: Hongwei Zeng <hongwei.zeng@qq.com>, 2019\n"
+"Last-Translator: Hongwei Zeng <hongwei.zeng@qq.com>, 2020\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/llk/teams/60938/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -673,7 +673,6 @@ msgstr "我想要收到的通知信件类型："
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
-#: templates/accounts/email_verification/verification_email_plain.html:6
 #: templates/educators/email_verification/verification_email_plain.html:5
 msgid "Greetings from the Scratch Team at MIT!"
 msgstr "MIT 的 Scratch 团队跟你问好！"
@@ -688,7 +687,6 @@ msgstr ""
 "你在几分钟前已将此信箱与账号 <strong>%(username)s</strong> 关联。请点击下方按钮以进行验证：\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:17
-#: templates/accounts/email_verification/verification_email.html:26
 #: templates/educators/email_verification/verification_email.html:20
 msgid "Confirm my email address"
 msgstr "验证我的信箱"
@@ -701,7 +699,7 @@ msgid ""
 msgstr "如果你从未提出变更密码的要求，请忽略此讯息，什么事都不会发生。"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
-#: templates/accounts/email_verification/verification_email.html:43
+#: templates/accounts/email_verification/verification_email.html:32
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
@@ -709,15 +707,15 @@ msgstr "如果你从未提出变更密码的要求，请忽略此讯息，什么
 #: templates/educators/registration/approval_email_message.txt:16
 #: templates/educators/registration/welcome_email_message.html:32
 #: templates/educators/registration/welcome_email_message.txt:17
-#: templates/registration/welcome_email_message.html:45
-#: templates/registration/welcome_email_message.txt:36
+#: templates/registration/welcome_email_message.html:34
+#: templates/registration/welcome_email_message.txt:14
 msgid "Scratch On!"
 msgstr "Scratch On!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
-#: templates/accounts/email_verification/verification_email.html:45
-#: templates/accounts/email_verification/verification_email_plain.html:33
+#: templates/accounts/email_verification/verification_email.html:34
+#: templates/accounts/email_verification/verification_email_plain.html:18
 #: templates/accounts/password_changed_email/message.html:14
 #: templates/accounts/password_changed_email/message.txt:7
 #: templates/educators/email_verification/verification_email.html:34
@@ -728,8 +726,8 @@ msgstr "Scratch On!"
 #: templates/educators/registration/password_reset_email.txt:10
 #: templates/educators/registration/welcome_email_message.html:34
 #: templates/educators/registration/welcome_email_message.txt:18
-#: templates/registration/welcome_email_message.html:47
-#: templates/registration/welcome_email_message.txt:37
+#: templates/registration/welcome_email_message.html:36
+#: templates/registration/welcome_email_message.txt:15
 msgid "The Scratch Team"
 msgstr "Scratch 团队"
 
@@ -743,7 +741,7 @@ msgstr ""
 "你在几分钟前已将此信箱与账号 %(username)s 关联。请点击下方按钮以进行验证：\n"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:14
-#: templates/accounts/email_verification/verification_email_plain.html:31
+#: templates/accounts/email_verification/verification_email_plain.html:16
 #: templates/educators/email_verification/verification_email_plain.html:18
 #: templates/educators/registration/password_reset_email.html:15
 #: templates/educators/registration/password_reset_email.txt:9
@@ -855,8 +853,6 @@ msgid "Try out starter projects"
 msgstr "试试入门项目范例"
 
 #: templates/accounts/email_verification/passed_verification.html:39
-#: templates/registration/welcome_email_message.html:17
-#: templates/registration/welcome_email_message.txt:12
 msgid "Connect with other Scratchers"
 msgstr "和其他的 Scratcher 联系"
 
@@ -881,86 +877,33 @@ msgid "OK, let's go!"
 msgstr "好的，出发吧！"
 
 #: templates/accounts/email_verification/verification_email.html:12
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! A few minutes ago, your child signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+#: templates/accounts/email_verification/verification_email_plain.html:6
+msgid "Confirm your Scratch account"
 msgstr ""
-"\n"
-"Scratch 团队向你问好！数分钟前，你的孩子在 <a href=\"%(scratch_url)s\">Scratch</a> 上注册了一个帐户，用户名称是：\n"
 
-#: templates/accounts/email_verification/verification_email.html:16
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! You just signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+#: templates/accounts/email_verification/verification_email.html:15
+msgid "You just signed up for a new Scratch account with the username:"
 msgstr ""
-"\n"
-"Scratch 团队向你问好！你刚才在 <a href=\"%(scratch_url)s\">Scratch</a> 上注册了一个帐户，用户名称是：\n"
 
-#: templates/accounts/email_verification/verification_email.html:22
-msgid "Please confirm this email address by clicking the button below:"
-msgstr "请点击下方按钮进行信箱验证："
-
-#: templates/accounts/email_verification/verification_email.html:33
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:20
+msgid "To finish creating your account, click on the link below:"
 msgstr ""
-"\n"
-"    Scratch 是一个开源的程序语言，也是一个免费的社群，孩子可以在里头创作互动媒体，像是故事、游戏及动画。这封认证信可以让你的孩子在在线社群获得完整权限，验证后你的孩子可以在上头使用完整的分享、评论功能。你可以在 <a href=\"%(about_url)s\">%(about_url)s</a> 进一步认识我们。\n"
 
-#: templates/accounts/email_verification/verification_email.html:37
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:24
+msgid "Confirm my account"
 msgstr ""
-"\n"
-"    Scratch 是一个开源的程序语言，也是一个免费的社群，你可以在里头创作互动媒体，像是故事、游戏及动画。这封认证信可以让你在在线社群获得完整权限，验证后可以在上头使用完整的分享、评论功能。你可以在 <a href=\"%(about_url)s\">%(about_url)s</a> 进一步认识我们。\n"
+
+#: templates/accounts/email_verification/verification_email.html:27
+msgid "Having trouble? Copy this link into your browser instead:"
+msgstr ""
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
 msgid ""
 "\n"
-"    A few minutes ago, your child signed up for a new account on Scratch (%(scratch_url)s. Please confirm this email address by clicking the button below:\n"
-"    "
+"You just signed up for a new account on Scratch (%(scratch_url)s).\n"
+"To finish creating your account, click on the link below:\n"
 msgstr ""
-"\n"
-"    几分钟前，您的孩子在 Scratch (%(scratch_url)s 注册了一个新的账号。请点击下方连结以确认：\n"
-"    "
-
-#: templates/accounts/email_verification/verification_email_plain.html:13
-#, python-format
-msgid ""
-"\n"
-"    You just signed up for a new account on Scratch (%(scratch_url)s). Please confirm your email address by clicking the button below:\n"
-"    "
-msgstr ""
-"\n"
-"    您在 Scratch (%(scratch_url)s 注册了一个新的账号。请点击下方连结以确认：\n"
-"    "
-
-#: templates/accounts/email_verification/verification_email_plain.html:21
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
-msgstr ""
-"\n"
-"    Scratch 是一个开源的程序语言，也是一个免费的社群，孩子可以在里头创作互动媒体，像是故事、游戏及动画。这封认证信可以让你的孩子在在线社群获得完整权限，验证后你的孩子可以在上头使用完整的分享、评论功能。你可以在 <a href=\"%(about_url)s\">%(about_url)s</a> 进一步认识我们。"
-
-#: templates/accounts/email_verification/verification_email_plain.html:25
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
-msgstr ""
-"\n"
-"    Scratch 是一个开源的程序语言，也是一个免费的社群，你可以在里头创作互动媒体，像是故事、游戏及动画。这封认证信可以让你在在线社群获得完整权限，验证后可以在上头使用完整的分享、评论功能。你可以在 <a href=\"%(about_url)s\">%(about_url)s</a> 进一步认识我们。"
 
 #: templates/accounts/email_verification/verify_email_standalone.html:84
 msgid "Want to share on Scratch?"
@@ -1106,11 +1049,11 @@ msgstr "创建"
 msgid "Explore"
 msgstr "探索"
 
-#: templates/base.html:185 templates/base.html.py:340
+#: templates/base.html:185 templates/base.html.py:347
 msgid "Ideas"
 msgstr "创意"
 
-#: templates/base.html:186 templates/base.html.py:317
+#: templates/base.html:186 templates/base.html.py:324
 msgid "About"
 msgstr "关于"
 
@@ -1171,117 +1114,119 @@ msgstr ""
 "<a id=\"confirm-email-popup\" href=\"#\">验证信箱</a> 以启用分享功能。 <a "
 "href=\"%(faq_url)s#accounts\">有问题吗？</a>"
 
-#: templates/base.html:319 templates/info/about.html:13
-#: templates/mail/base.html:61
+#: templates/base.html:326 templates/info/about.html:13
+#: templates/mail/base.html:61 templates/mail/scratch3_style_base.html:49
 msgid "About Scratch"
 msgstr "关于 Scratch"
 
-#: templates/base.html:320 templates/info/parents.html:14
+#: templates/base.html:327 templates/info/parents.html:14
 msgid "For Parents"
 msgstr "致家长"
 
-#: templates/base.html:321 templates/info/educators.html:14
+#: templates/base.html:328 templates/info/educators.html:14
 msgid "For Educators"
 msgstr "致教师"
 
-#: templates/base.html:322
+#: templates/base.html:329
 msgid "For Developers"
 msgstr "致开发者"
 
-#: templates/base.html:323
+#: templates/base.html:330
 msgid "Credits"
 msgstr "谢志"
 
-#: templates/base.html:324
+#: templates/base.html:331
 msgid "Jobs"
 msgstr "工作"
 
-#: templates/base.html:325
+#: templates/base.html:332
 msgid "Press"
 msgstr "新闻"
 
-#: templates/base.html:329 templates/info/parents.html:78
+#: templates/base.html:336 templates/info/parents.html:78
 msgid "Community"
 msgstr "社群"
 
-#: templates/base.html:331
+#: templates/base.html:338
+#: templates/registration/welcome_email_message.html:26
 msgid "Community Guidelines"
 msgstr "社群规范"
 
-#: templates/base.html:332
+#: templates/base.html:339
 msgid "Discussion Forums"
 msgstr "讨论区"
 
-#: templates/base.html:333
+#: templates/base.html:340
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
-#: templates/base.html:334
+#: templates/base.html:341
 msgid "Statistics"
 msgstr "统计"
 
-#: templates/base.html:338 templates/info/codingforall.html:73
+#: templates/base.html:345 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "支援"
 
-#: templates/base.html:341
+#: templates/base.html:348
 msgid "FAQ"
 msgstr "常见问答"
 
-#: templates/base.html:342
+#: templates/base.html:349
 msgid "Offline Editor"
 msgstr "离线编辑器"
 
-#: templates/base.html:343 templates/contact-us-success.html:12
+#: templates/base.html:350 templates/contact-us-success.html:12
 #: templates/contact-us.html:79
 msgid "Contact Us"
 msgstr "联络我们"
 
-#: templates/base.html:344
+#: templates/base.html:351
 msgid "Scratch Store"
 msgstr "Scratch商店"
 
-#: templates/base.html:345
+#: templates/base.html:352
 msgid "Donate"
 msgstr "赞助"
 
-#: templates/base.html:349
+#: templates/base.html:356
 msgid "Legal"
 msgstr "法律"
 
-#: templates/base.html:351
+#: templates/base.html:358
 msgid "Terms of Use"
 msgstr "使用条款"
 
-#: templates/base.html:352 templates/mail/base.html:60
+#: templates/base.html:359 templates/mail/base.html:60
+#: templates/mail/scratch3_style_base.html:48
 msgid "Privacy Policy"
 msgstr "隐私权政策"
 
-#: templates/base.html:353 templates/info/DMCA.html:10
+#: templates/base.html:360 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:357
+#: templates/base.html:364
 msgid "Scratch Family"
 msgstr "Scratch 家族"
 
-#: templates/base.html:359
+#: templates/base.html:366
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:360
+#: templates/base.html:367
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
-#: templates/base.html:361
+#: templates/base.html:368
 msgid "Scratch Day"
 msgstr "Scratch 日"
 
-#: templates/base.html:362
+#: templates/base.html:369
 msgid "Scratch Conference"
 msgstr "Scratch 会议"
 
-#: templates/base.html:363
+#: templates/base.html:370
 msgid "Scratch Foundation"
 msgstr "Scratch 基金会"
 
@@ -2477,15 +2422,11 @@ msgstr "你是 Scratch 新手？"
 
 #: templates/educators/registration/approval_email_message.html:13
 #: templates/educators/registration/approval_email_message.txt:7
-#: templates/registration/welcome_email_message.html:14
-#: templates/registration/welcome_email_message.txt:9
 msgid "Read our Community Guidelines"
 msgstr "阅读我们的社群规范"
 
 #: templates/educators/registration/approval_email_message.html:14
 #: templates/educators/registration/approval_email_message.txt:8
-#: templates/registration/welcome_email_message.html:16
-#: templates/registration/welcome_email_message.txt:11
 msgid "Get inspired with a starter project"
 msgstr "从入门项目中获得灵感"
 
@@ -2635,8 +2576,6 @@ msgid "Would you like to:"
 msgstr "你想要："
 
 #: templates/educators/student-modal-registration.html:63
-#: templates/registration/welcome_email_message.html:15
-#: templates/registration/welcome_email_message.txt:10
 msgid "Learn how to make a project"
 msgstr "学习如何制作项目"
 
@@ -4465,7 +4404,7 @@ msgstr ""
 "            若不想再收到来自 Scratch 的相关信件，可以<a href=\"%(blacklist_url)s\">取消订阅</a>。\n"
 "        "
 
-#: templates/mail/base.html:62
+#: templates/mail/base.html:62 templates/mail/scratch3_style_base.html:50
 msgid "Make a Donation"
 msgstr "赞助我们"
 
@@ -4489,6 +4428,20 @@ msgstr "噢哦！取消订阅的连结已过期失效，请使用最新收到的
 #, python-format
 msgid "You have unsubscribed the email address <strong>%(email)s</strong>."
 msgstr "你已经取消了订阅，信箱是 <strong>%(email)s</strong>。"
+
+#: templates/mail/scratch3_style_base.html:40
+msgid ""
+"Using Scratch, children can create interactive stories, games, and "
+"animations."
+msgstr ""
+
+#: templates/mail/scratch3_style_base.html:42
+msgid ""
+"\n"
+"            Scratch is available for free, thanks to generous support from our donors. We are grateful to our Founding Partners:\n"
+"            Massachusetts Institute of Technology, the National Science Foundation, and the Siegel Family Endowment.\n"
+"        "
+msgstr ""
 
 #: templates/modal-login.html:40
 msgid "Or Join Scratch"
@@ -5735,93 +5688,57 @@ msgstr "你注册时所用的信箱"
 msgid "Send me a password reset link!"
 msgstr "发送密码重设信件给我！"
 
-#: templates/registration/welcome_email_message.html:8
+#: templates/registration/welcome_email_message.html:13
 #, python-format
 msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
 msgstr "欢迎来到 Scratch，<strong>%(username)s</strong>！"
 
-#: templates/registration/welcome_email_message.html:10
+#: templates/registration/welcome_email_message.html:16
 #: templates/registration/welcome_email_message.txt:6
 msgid ""
-"We're thrilled that you’ve joined our growing community! With Scratch, you "
-"can program your own interactive stories, games, and animations — and share "
-"your creations with others in the community."
-msgstr "我们很荣幸有你的参与！透过 Scratch，你可以编写你自己的交互式媒体，像是故事、游戏、动画 — 并将你的作品分享到社群。"
+"With Scratch, you can program your own interactive stories, games, and "
+"animations—and share your creations with others in the community."
+msgstr ""
 
-#: templates/registration/welcome_email_message.html:12
-#: templates/registration/welcome_email_message.txt:8
-msgid "What's Next?"
-msgstr "接下来呢？"
+#: templates/registration/welcome_email_message.html:19
+#: templates/registration/welcome_email_message.txt:7
+msgid "New to Scratch? Click the link below:"
+msgstr ""
 
 #: templates/registration/welcome_email_message.html:22
-#: templates/registration/welcome_email_message.txt:17
-msgid "Want to learn more?"
-msgstr "想要学习更多？"
-
-#: templates/registration/welcome_email_message.html:24
-#, python-format
-msgid ""
-"Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a "
-"href=\"%(faq_url)s\">Frequently Asked Questions</a>, and <a "
-"href=\"%(discuss_url)s\">Discussion Forums</a>, to learn more about Scratch."
+msgid "Get started on Scratch"
 msgstr ""
-"若要学习更多，请参阅 <a href=\"%(about_url)s\">关于 Scratch</a>、<a "
-"href=\"%(faq_url)s\">常见问答</a>及<a href=\"%(discuss_url)s\">讨论区</a>。"
 
-#: templates/registration/welcome_email_message.html:27
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"Team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+#: templates/registration/welcome_email_message.html:25
+msgid "To learn more about the Scratch online community, go to our"
 msgstr ""
-"未来你将不定期收到 Scratch 团队和 Scratch 基金会的相关消息，像是编程技巧、启发故事、项目点子…等。Scratch "
-"基金会是非营利组织，目的在支持 Scratch 教育计划。若不想收到这类讯息，你可以点击下方的取消订阅按钮："
 
 #: templates/registration/welcome_email_message.html:29
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team with coding tips, inspirational stories, project ideas, and more. You "
-"can unsubscribe from within the updates or by clicking below:"
+msgid "To discover project ideas, check out our"
 msgstr ""
-"未来，你会不定期收到来自 Scratch 团队的相关讯息，像是编程技巧、启发故事、项目点子…等，若不想收到这类讯息，可以点击下方的取消订阅按钮："
+
+#: templates/registration/welcome_email_message.html:30
+msgid "Ideas Page"
+msgstr "创意页面"
 
 #: templates/registration/welcome_email_message.txt:4
 #, python-format
 msgid "Welcome to Scratch, %(username)s!"
 msgstr "欢迎来到 Scratch，%(username)s！"
 
-#: templates/registration/welcome_email_message.txt:19
-#, python-format
-msgid ""
-"Check out our About Scratch page (%(about_url)s),Frequently Asked Questions "
-"(%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn more about "
-"Scratch."
+#: templates/registration/welcome_email_message.txt:8
+msgid "Get Started on Scratch"
 msgstr ""
-"若要学习更多，请参阅关于 Scratch（%(about_url)s）、常见问答（%(faq_url)s）及讨论区（%(discuss_url)s）。"
 
-#: templates/registration/welcome_email_message.txt:22
+#: templates/registration/welcome_email_message.txt:9
 msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+"To learn more about the Scratch online community, go to our Community "
+"Guidelines"
 msgstr ""
-"未来你将不定期收到 Scratch 团队和 Scratch 基金会的相关消息，像是编程技巧、启发故事、项目点子…等。Scratch "
-"基金会是非营利组织，目的在支持 Scratch 教育计划。若不想收到这类讯息，你可以点击下方的取消订阅按钮："
 
-#: templates/registration/welcome_email_message.txt:24
-msgid ""
-"Check out our About Scratch page, Frequently Asked Questions, and Discussion"
-" Forums, to learn more about Scratch. Going forward, you will also receive "
-"occasional updates from the Scratch team with coding tips, inspirational "
-"stories, project ideas, and more. You can unsubscribe from within the "
-"updates or by clicking below:"
+#: templates/registration/welcome_email_message.txt:11
+msgid "To discover project ideas, check out our Ideas Page"
 msgstr ""
-"若要学习更多，请参阅「关于 Scratch」、「常见问答」及讨论区。未来，你会不定期收到来自 Scratch "
-"团队的相关讯息，像是编程技巧、启发故事、项目点子…等，若不想收到这类讯息，可以点击下方的取消订阅按钮："
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format

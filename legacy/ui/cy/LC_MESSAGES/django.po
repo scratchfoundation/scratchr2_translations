@@ -4,18 +4,18 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Chris Garrity (ML) <chrisg@media.mit.edu>, 2017
+# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2017
 # Delyth Prys <delythprys@gmail.com>, 2018
-# Rhoslyn Prys, 2018
+# Rhoslyn Prys, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-18 16:05-0400\n"
+"POT-Creation-Date: 2020-01-29 20:41-0500\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
-"Last-Translator: Rhoslyn Prys, 2018\n"
+"Last-Translator: Rhoslyn Prys, 2020\n"
 "Language-Team: Welsh (https://www.transifex.com/llk/teams/60938/cy/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -748,7 +748,6 @@ msgstr "Hoffwn dderbyn diweddariadau e-bost am:"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
-#: templates/accounts/email_verification/verification_email_plain.html:6
 #: templates/educators/email_verification/verification_email_plain.html:5
 msgid "Greetings from the Scratch Team at MIT!"
 msgstr "Cyfarchion oddi wrth Dîm Scratch yn MIT!"
@@ -763,7 +762,6 @@ msgstr ""
 "Ychydig o funudau yn ôl, fe wnaethoch chi ofyn i gysylltu'r cyfeiriad e-bost hwn i'r cyfrif Scratch <strong>%(username)s</strong>. Cadarnhewch eich cyfeiriad e-bost drwy glicio ar y botwm isod.\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:17
-#: templates/accounts/email_verification/verification_email.html:26
 #: templates/educators/email_verification/verification_email.html:20
 msgid "Confirm my email address"
 msgstr "Cadarnhau fy nghyfeiriad e-bost"
@@ -778,7 +776,7 @@ msgstr ""
 "anwybyddu'r neges hon."
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
-#: templates/accounts/email_verification/verification_email.html:43
+#: templates/accounts/email_verification/verification_email.html:32
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
@@ -786,15 +784,15 @@ msgstr ""
 #: templates/educators/registration/approval_email_message.txt:16
 #: templates/educators/registration/welcome_email_message.html:32
 #: templates/educators/registration/welcome_email_message.txt:17
-#: templates/registration/welcome_email_message.html:45
-#: templates/registration/welcome_email_message.txt:36
+#: templates/registration/welcome_email_message.html:34
+#: templates/registration/welcome_email_message.txt:14
 msgid "Scratch On!"
 msgstr "Ymlaen gyda Scratch!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
-#: templates/accounts/email_verification/verification_email.html:45
-#: templates/accounts/email_verification/verification_email_plain.html:33
+#: templates/accounts/email_verification/verification_email.html:34
+#: templates/accounts/email_verification/verification_email_plain.html:18
 #: templates/accounts/password_changed_email/message.html:14
 #: templates/accounts/password_changed_email/message.txt:7
 #: templates/educators/email_verification/verification_email.html:34
@@ -805,8 +803,8 @@ msgstr "Ymlaen gyda Scratch!"
 #: templates/educators/registration/password_reset_email.txt:10
 #: templates/educators/registration/welcome_email_message.html:34
 #: templates/educators/registration/welcome_email_message.txt:18
-#: templates/registration/welcome_email_message.html:47
-#: templates/registration/welcome_email_message.txt:37
+#: templates/registration/welcome_email_message.html:36
+#: templates/registration/welcome_email_message.txt:15
 msgid "The Scratch Team"
 msgstr "Tîm Scratch"
 
@@ -820,7 +818,7 @@ msgstr ""
 "Ychydig o funudau yn ôl, mi wnaethoch chi ofyn i gysylltu'r cyfeiriad e-bost hwn i'r cyfrif Scratch <strong>%(username)s</strong>. Cadarnhewch eich cyfeiriad e-bost drwy glicio ar y botwm isod.\n"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:14
-#: templates/accounts/email_verification/verification_email_plain.html:31
+#: templates/accounts/email_verification/verification_email_plain.html:16
 #: templates/educators/email_verification/verification_email_plain.html:18
 #: templates/educators/registration/password_reset_email.html:15
 #: templates/educators/registration/password_reset_email.txt:9
@@ -939,8 +937,6 @@ msgid "Try out starter projects"
 msgstr "Defnyddiwch ein pecynnau cychwynnol"
 
 #: templates/accounts/email_verification/passed_verification.html:39
-#: templates/registration/welcome_email_message.html:17
-#: templates/registration/welcome_email_message.txt:12
 msgid "Connect with other Scratchers"
 msgstr "Cysylltu â Scratchwyr eraill"
 
@@ -968,105 +964,33 @@ msgid "OK, let's go!"
 msgstr "Iawn, ffwrdd â ni!"
 
 #: templates/accounts/email_verification/verification_email.html:12
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! A few minutes ago, your child signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+#: templates/accounts/email_verification/verification_email_plain.html:6
+msgid "Confirm your Scratch account"
 msgstr ""
-"\n"
-"Cyfarchion gan Dîm Scratch yn MIT! Ychydig o funudau yn ôl, cofrestrodd eich plentyn ar gyfer cyfrif newydd ar <a href=\"%(scratch_url)s\">Scratch</a> gyda'r enw defnyddiwr:\n"
-"\n"
-"Greetings from the Scratch Team at MIT! A few minutes ago, your child sighed up for a neu account on Scratch with the username:\n"
 
-#: templates/accounts/email_verification/verification_email.html:16
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! You just signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+#: templates/accounts/email_verification/verification_email.html:15
+msgid "You just signed up for a new Scratch account with the username:"
 msgstr ""
-"\n"
-"Cyfarchion gan Dîm Scratch yn MIT! Rydych wedi cofrestru ar gyfer cyfrif newydd ar <a href=\"%(scratch_url)s\">Scratch</a> gyda'r enw defnyddiwr:\n"
 
-#: templates/accounts/email_verification/verification_email.html:22
-msgid "Please confirm this email address by clicking the button below:"
-msgstr "Cadarnhewch y cyfeiriad e-bost yma drwy glicio'r botwm isod:"
-
-#: templates/accounts/email_verification/verification_email.html:33
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:20
+msgid "To finish creating your account, click on the link below:"
 msgstr ""
-"\n"
-"    \n"
-"       Mae Scratch yn iaith raglennu a chymuned ar-lein rhad a rhydd, lle gall plant greu straeon rhyngweithiol, gemau ac animeiddiadau. Bydd cadarnhau'r e-bost hwn yn rhoi mynediad i'ch plentyn i rannu a gadael sylwadau yng nghymuned ar-lein Scratch.\n"
-"\n"
-"      Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. \n"
-"\n"
-"Mae rhagor i'w weld yn / Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
-#: templates/accounts/email_verification/verification_email.html:37
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:24
+msgid "Confirm my account"
 msgstr ""
-"\n"
-"    \n"
-"       Mae Scratch yn iaith raglennu a chymuned ar-lein rhad a rhydd, lle gallwch greu straeon rhyngweithiol, gemau ac animeiddiadau. Bydd cadarnhau'r e-bost hwn yn rhoi mynediad llawn i chi  rannu a gadael sylwadau yng nghymuned ar-lein Scratch.\n"
-"\n"
-"Mae rhagor i'w weld yn <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+
+#: templates/accounts/email_verification/verification_email.html:27
+msgid "Having trouble? Copy this link into your browser instead:"
+msgstr ""
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
 msgid ""
 "\n"
-"    A few minutes ago, your child signed up for a new account on Scratch (%(scratch_url)s. Please confirm this email address by clicking the button below:\n"
-"    "
+"You just signed up for a new account on Scratch (%(scratch_url)s).\n"
+"To finish creating your account, click on the link below:\n"
 msgstr ""
-"\n"
-"Ychydig funudau yn ôl, cofrestrodd eich plentyn am gyfrif newydd ar Scratch ( %(scratch_url)s Cadarnhewch yr e-bost yma drwy glicio'r botwm isod:\n"
-"    \n"
-"A few minutes ago, your child signed up for a new account on Scratch. Please confirm this email address by clicking the button below:\n"
-"    "
-
-#: templates/accounts/email_verification/verification_email_plain.html:13
-#, python-format
-msgid ""
-"\n"
-"    You just signed up for a new account on Scratch (%(scratch_url)s). Please confirm your email address by clicking the button below:\n"
-"    "
-msgstr ""
-"\n"
-"Rydych newydd gofrestru ar gyfer cyfrif newydd ar Scratch (%(scratch_url)s). Cadarnhewch eich cyfrif e-bost drwy glicio'r botwm isod:"
-
-#: templates/accounts/email_verification/verification_email_plain.html:21
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
-msgstr ""
-"\n"
-"Mae Scratch yn iaith rhaglennu a chymuned ar-lein rhad a rhydd lle gall eich plentyn greu straeon, gemau a c animeiddiadau rhyngweithiol. Bydd cadarnhau'r e-bost hwn yn rhoi mynediad llawn i'ch plentyn i rannu a gadael sylwadau o fewn cymuned ar-lein Scratch.\n"
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. \n"
-"\n"
-"Mae rhagor i'w weld yn / Learn more at %(about_url)s.\n"
-"\n"
-"    "
-
-#: templates/accounts/email_verification/verification_email_plain.html:25
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
-msgstr ""
-"\n"
-"Mae Scratch yn iaith raglennu a chymuned ar-lein rhad a rhydd, lle gallwch greu straeon rhyngweithiol, gemau ac animeiddiadau. Bydd cadarnhau'r e-bost hwn yn rhoi mynediad i chi rannu a gadael sylwadau yng nghymuned ar-lein Scratch.    Mae rhagor i'w weld yn %(about_url)s.\n"
-"\n"
-"    "
 
 #: templates/accounts/email_verification/verify_email_standalone.html:84
 msgid "Want to share on Scratch?"
@@ -1213,11 +1137,11 @@ msgstr "Creu"
 msgid "Explore"
 msgstr "Darganfod"
 
-#: templates/base.html:185 templates/base.html.py:340
+#: templates/base.html:185 templates/base.html.py:347
 msgid "Ideas"
 msgstr "Syniadau"
 
-#: templates/base.html:186 templates/base.html.py:317
+#: templates/base.html:186 templates/base.html.py:324
 msgid "About"
 msgstr "Ynglŷn â"
 
@@ -1278,117 +1202,119 @@ msgstr ""
 "<a id=\"confirm-email-popup\" href=\"#\">Cadarnhewch eich e-bost</a> er mwyn"
 " galluogi rhannu. <a href=\"%(faq_url)s#accounts\"> Yn cael anhawster?</a>"
 
-#: templates/base.html:319 templates/info/about.html:13
-#: templates/mail/base.html:61
+#: templates/base.html:326 templates/info/about.html:13
+#: templates/mail/base.html:61 templates/mail/scratch3_style_base.html:49
 msgid "About Scratch"
 msgstr "Ynghylch Scratch"
 
-#: templates/base.html:320 templates/info/parents.html:14
+#: templates/base.html:327 templates/info/parents.html:14
 msgid "For Parents"
 msgstr "Ar Gyfer Rhieni"
 
-#: templates/base.html:321 templates/info/educators.html:14
+#: templates/base.html:328 templates/info/educators.html:14
 msgid "For Educators"
 msgstr "Ar gyfer Addysgwyr"
 
-#: templates/base.html:322
+#: templates/base.html:329
 msgid "For Developers"
 msgstr "Ar gyfer Datblygwyr"
 
-#: templates/base.html:323
+#: templates/base.html:330
 msgid "Credits"
 msgstr "Diolchiadau"
 
-#: templates/base.html:324
+#: templates/base.html:331
 msgid "Jobs"
 msgstr "Swyddi"
 
-#: templates/base.html:325
+#: templates/base.html:332
 msgid "Press"
 msgstr "Y Wasg"
 
-#: templates/base.html:329 templates/info/parents.html:78
+#: templates/base.html:336 templates/info/parents.html:78
 msgid "Community"
 msgstr "Cymuned"
 
-#: templates/base.html:331
+#: templates/base.html:338
+#: templates/registration/welcome_email_message.html:26
 msgid "Community Guidelines"
 msgstr "Canllawiau Cymunedol"
 
-#: templates/base.html:332
+#: templates/base.html:339
 msgid "Discussion Forums"
 msgstr "Fforymau Trafod"
 
-#: templates/base.html:333
+#: templates/base.html:340
 msgid "Scratch Wiki"
 msgstr "Wici Scratch"
 
-#: templates/base.html:334
+#: templates/base.html:341
 msgid "Statistics"
 msgstr "Ystadegau"
 
-#: templates/base.html:338 templates/info/codingforall.html:73
+#: templates/base.html:345 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "Cefnogaeth"
 
-#: templates/base.html:341
+#: templates/base.html:348
 msgid "FAQ"
 msgstr "Cwestiynau  Cyffredin"
 
-#: templates/base.html:342
+#: templates/base.html:349
 msgid "Offline Editor"
 msgstr "Golygydd All-lein"
 
-#: templates/base.html:343 templates/contact-us-success.html:12
+#: templates/base.html:350 templates/contact-us-success.html:12
 #: templates/contact-us.html:79
 msgid "Contact Us"
 msgstr "Cysylltu â ni"
 
-#: templates/base.html:344
+#: templates/base.html:351
 msgid "Scratch Store"
 msgstr "Siop Scratch"
 
-#: templates/base.html:345
+#: templates/base.html:352
 msgid "Donate"
 msgstr "Rhoi"
 
-#: templates/base.html:349
+#: templates/base.html:356
 msgid "Legal"
 msgstr "Cyfreithiol"
 
-#: templates/base.html:351
+#: templates/base.html:358
 msgid "Terms of Use"
 msgstr "Amodau Defnydd"
 
-#: templates/base.html:352 templates/mail/base.html:60
+#: templates/base.html:359 templates/mail/base.html:60
+#: templates/mail/scratch3_style_base.html:48
 msgid "Privacy Policy"
 msgstr "Polisi Preifatrwydd"
 
-#: templates/base.html:353 templates/info/DMCA.html:10
+#: templates/base.html:360 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:357
+#: templates/base.html:364
 msgid "Scratch Family"
 msgstr "Teulu Scratch"
 
-#: templates/base.html:359
+#: templates/base.html:366
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:360
+#: templates/base.html:367
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
-#: templates/base.html:361
+#: templates/base.html:368
 msgid "Scratch Day"
 msgstr "Scratch Day"
 
-#: templates/base.html:362
+#: templates/base.html:369
 msgid "Scratch Conference"
 msgstr "Cynhadledd Scratch"
 
-#: templates/base.html:363
+#: templates/base.html:370
 msgid "Scratch Foundation"
 msgstr "Scratch Foundation"
 
@@ -2650,15 +2576,11 @@ msgstr "Yn newydd i Scratch?"
 
 #: templates/educators/registration/approval_email_message.html:13
 #: templates/educators/registration/approval_email_message.txt:7
-#: templates/registration/welcome_email_message.html:14
-#: templates/registration/welcome_email_message.txt:9
 msgid "Read our Community Guidelines"
 msgstr "Darllenwch Ganllawiau ein Cymuned"
 
 #: templates/educators/registration/approval_email_message.html:14
 #: templates/educators/registration/approval_email_message.txt:8
-#: templates/registration/welcome_email_message.html:16
-#: templates/registration/welcome_email_message.txt:11
 msgid "Get inspired with a starter project"
 msgstr "Cewch eich ysbrydoli gan broject cychwynnol"
 
@@ -2829,8 +2751,6 @@ msgid "Would you like to:"
 msgstr "Hoffech chi:"
 
 #: templates/educators/student-modal-registration.html:63
-#: templates/registration/welcome_email_message.html:15
-#: templates/registration/welcome_email_message.txt:10
 msgid "Learn how to make a project"
 msgstr "Dysgu sut i wneud prosiect"
 
@@ -4805,7 +4725,7 @@ msgstr ""
 "\n"
 "I beidio derbyn e-byst gan Scratch, <a href=\"%(blacklist_url)s\">dad-danysgrifiwch</a>"
 
-#: templates/mail/base.html:62
+#: templates/mail/base.html:62 templates/mail/scratch3_style_base.html:50
 msgid "Make a Donation"
 msgstr "Rhoi Rhodd"
 
@@ -4833,6 +4753,20 @@ msgstr ""
 msgid "You have unsubscribed the email address <strong>%(email)s</strong>."
 msgstr ""
 "Rydych wedi dad-danysgrifio o gyfeiriad e-bost <strong>%(email)s</strong>."
+
+#: templates/mail/scratch3_style_base.html:40
+msgid ""
+"Using Scratch, children can create interactive stories, games, and "
+"animations."
+msgstr ""
+
+#: templates/mail/scratch3_style_base.html:42
+msgid ""
+"\n"
+"            Scratch is available for free, thanks to generous support from our donors. We are grateful to our Founding Partners:\n"
+"            Massachusetts Institute of Technology, the National Science Foundation, and the Siegel Family Endowment.\n"
+"        "
+msgstr ""
 
 #: templates/modal-login.html:40
 msgid "Or Join Scratch"
@@ -6162,112 +6096,57 @@ msgstr "Cyfeiriad e-bost eich cofrestriad "
 msgid "Send me a password reset link!"
 msgstr "Anfonwch ddolen ailosod cyfrinair ata i!"
 
-#: templates/registration/welcome_email_message.html:8
+#: templates/registration/welcome_email_message.html:13
 #, python-format
 msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
 msgstr "Croeso i Scratch. <strong>%(username)s</strong>"
 
-#: templates/registration/welcome_email_message.html:10
+#: templates/registration/welcome_email_message.html:16
 #: templates/registration/welcome_email_message.txt:6
 msgid ""
-"We're thrilled that you’ve joined our growing community! With Scratch, you "
-"can program your own interactive stories, games, and animations — and share "
-"your creations with others in the community."
+"With Scratch, you can program your own interactive stories, games, and "
+"animations—and share your creations with others in the community."
 msgstr ""
-"Rydym wrth ein bodd eich bod wedi ymuno a'n cymuned lewyrchus! Gyda Scratch,"
-" byddwch yn gallu defnyddio  Scratch i godio eich straeon, animeiddiadau a "
-"gemau rhyngweithiol eich hun - a rhannu eich creadigaethau gydag eraill yn y"
-" gymuned."
 
-#: templates/registration/welcome_email_message.html:12
-#: templates/registration/welcome_email_message.txt:8
-msgid "What's Next?"
-msgstr "Beth Nesaf?"
+#: templates/registration/welcome_email_message.html:19
+#: templates/registration/welcome_email_message.txt:7
+msgid "New to Scratch? Click the link below:"
+msgstr ""
 
 #: templates/registration/welcome_email_message.html:22
-#: templates/registration/welcome_email_message.txt:17
-msgid "Want to learn more?"
-msgstr "Eisiau dysgu rhagor?"
-
-#: templates/registration/welcome_email_message.html:24
-#, python-format
-msgid ""
-"Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a "
-"href=\"%(faq_url)s\">Frequently Asked Questions</a>, and <a "
-"href=\"%(discuss_url)s\">Discussion Forums</a>, to learn more about Scratch."
+msgid "Get started on Scratch"
 msgstr ""
-"Darlenwch ein tudalen <a href=\"%(about_url)s\">Ynghylch Scratch</a>, <a "
-"href=\"%(faq_url)s\">Cwestiynau Cyffredin</a> a'r <a "
-"href=\"%(discuss_url)s\">Fforymau Trafod</a> i ddysgu rhagor am Scratch."
 
-#: templates/registration/welcome_email_message.html:27
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"Team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+#: templates/registration/welcome_email_message.html:25
+msgid "To learn more about the Scratch online community, go to our"
 msgstr ""
-"Yn y dyfodol, byddwch yn derbyn diweddariadau achlysurol gan Dîm Scratch a'r"
-" Scratch Foundation gyda chynghorion ar godio, hanesion i'ch ysbrydoli, "
-"syniadau am brojectau a mwy. Mae'r Scratch Foundation yn gorff ddim-er-elw "
-"sy'n cefnogi ymdrechion addysgol Scratch. Gallwch ddad-danysgrifio o fewn y "
-"diweddariadau neu drwy glicio isod:"
 
 #: templates/registration/welcome_email_message.html:29
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team with coding tips, inspirational stories, project ideas, and more. You "
-"can unsubscribe from within the updates or by clicking below:"
+msgid "To discover project ideas, check out our"
 msgstr ""
-"Yn y dyfodol, byddwch yyn derbyn diweddariadau achlysurol gan Dîm Scratch "
-"a'r Scratch Foundation gyda awgrymiadau ar godio, hanesion i'ch ysbrydoli, "
-"syniadau am brojectau a mwy. Gallwch ddad-danysgrifio o o fewn y "
-"diweddariadau neu drwy glicio isod:"
+
+#: templates/registration/welcome_email_message.html:30
+msgid "Ideas Page"
+msgstr "Tudalen Syniadau"
 
 #: templates/registration/welcome_email_message.txt:4
 #, python-format
 msgid "Welcome to Scratch, %(username)s!"
 msgstr "Croeso i Scratch, %(username)s"
 
-#: templates/registration/welcome_email_message.txt:19
-#, python-format
-msgid ""
-"Check out our About Scratch page (%(about_url)s),Frequently Asked Questions "
-"(%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn more about "
-"Scratch."
+#: templates/registration/welcome_email_message.txt:8
+msgid "Get Started on Scratch"
 msgstr ""
-"Darllenwch ein tudalen <a href=\"%(about_url)s\">Ynghylch Scratch</a>, <a "
-"href=\"%(faq_url)s\">Cwestiynau Cyffredin</a> a'r <a "
-"href=\"%(discuss_url)s\">Fforymau Trafod</a> i ddysgu rhagor am Scratch."
 
-#: templates/registration/welcome_email_message.txt:22
+#: templates/registration/welcome_email_message.txt:9
 msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+"To learn more about the Scratch online community, go to our Community "
+"Guidelines"
 msgstr ""
-"Yn y dyfodol, byddwch yn derbyn diweddariadau achlysurol gan Dîm Scratch a'r"
-" Scratch Foundation gyda chynghorion ar godio, hanesion i'ch ysbrydoli, "
-"syniadau am brojectau a mwy. Mae'r Scratch Foundation yn gorff ddim-er-elw "
-"sy'n cefnogi ymdrechion addysgol Scratch. Gallwch ddad-danysgrifio o fewn y "
-"diweddariadau neu drwy glicio isod:"
 
-#: templates/registration/welcome_email_message.txt:24
-msgid ""
-"Check out our About Scratch page, Frequently Asked Questions, and Discussion"
-" Forums, to learn more about Scratch. Going forward, you will also receive "
-"occasional updates from the Scratch team with coding tips, inspirational "
-"stories, project ideas, and more. You can unsubscribe from within the "
-"updates or by clicking below:"
+#: templates/registration/welcome_email_message.txt:11
+msgid "To discover project ideas, check out our Ideas Page"
 msgstr ""
-"Darllenwch ein tudalen Ynghylch Scratch, Cwestiynau Cyffredin a Fforymau "
-"Trafod er mwyn dysgu rhagor am Scratch. Yn y dyfodol, byddwch yn derbyn "
-"diweddariadau achlysurol gan Dîm Scratch a'r Scratch Foundation gyda "
-"awgrymiadau ar godio, hanesion i'ch ysbrydoli, syniadau am brojectau a mwy. "
-"Gallwch ddad-danysgrifio o fewn y diweddariadau neu drwy glicio isod:"
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format

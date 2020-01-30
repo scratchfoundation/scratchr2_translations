@@ -10,17 +10,17 @@
 # Rukiye Bektaş <rukiye.bektas@turkcell.com.tr>, 2018
 # Ayşe Ceyda Ölmez <ayseceydaolmez@gmail.com>, 2018
 # Oğuzhan KAYAR <oguzhank77@gmail.com>, 2018
-# Turgut Guneysu <t.g.alph@gmail.com>, 2019
-# Chris Garrity (ML) <chrisg@media.mit.edu>, 2019
+# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2019
+# Turgut Guneysu <t.g.alph@gmail.com>, 2020
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-18 16:05-0400\n"
+"POT-Creation-Date: 2020-01-29 20:41-0500\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
-"Last-Translator: Chris Garrity (ML) <chrisg@media.mit.edu>, 2019\n"
+"Last-Translator: Turgut Guneysu <t.g.alph@gmail.com>, 2020\n"
 "Language-Team: Turkish (https://www.transifex.com/llk/teams/60938/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -730,7 +730,6 @@ msgstr "Şu konularda e-posta almak istiyorum:"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
-#: templates/accounts/email_verification/verification_email_plain.html:6
 #: templates/educators/email_verification/verification_email_plain.html:5
 msgid "Greetings from the Scratch Team at MIT!"
 msgstr "MIT Scratch Ekibinden Selamlar!"
@@ -745,7 +744,6 @@ msgstr ""
 "    Az önce, bu e-posta adresinin <strong>%(username)s</strong> adlı Scratch hesabına bağlanmasını istedin. E-posta adresini doğrulamak için lütfen aşağıdaki düğmeye tıkla:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:17
-#: templates/accounts/email_verification/verification_email.html:26
 #: templates/educators/email_verification/verification_email.html:20
 msgid "Confirm my email address"
 msgstr "E-posta adresimi doğrula"
@@ -760,7 +758,7 @@ msgstr ""
 "önemsemeyin."
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
-#: templates/accounts/email_verification/verification_email.html:43
+#: templates/accounts/email_verification/verification_email.html:32
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
@@ -768,15 +766,15 @@ msgstr ""
 #: templates/educators/registration/approval_email_message.txt:16
 #: templates/educators/registration/welcome_email_message.html:32
 #: templates/educators/registration/welcome_email_message.txt:17
-#: templates/registration/welcome_email_message.html:45
-#: templates/registration/welcome_email_message.txt:36
+#: templates/registration/welcome_email_message.html:34
+#: templates/registration/welcome_email_message.txt:14
 msgid "Scratch On!"
 msgstr "Scratch'le Kal!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
-#: templates/accounts/email_verification/verification_email.html:45
-#: templates/accounts/email_verification/verification_email_plain.html:33
+#: templates/accounts/email_verification/verification_email.html:34
+#: templates/accounts/email_verification/verification_email_plain.html:18
 #: templates/accounts/password_changed_email/message.html:14
 #: templates/accounts/password_changed_email/message.txt:7
 #: templates/educators/email_verification/verification_email.html:34
@@ -787,8 +785,8 @@ msgstr "Scratch'le Kal!"
 #: templates/educators/registration/password_reset_email.txt:10
 #: templates/educators/registration/welcome_email_message.html:34
 #: templates/educators/registration/welcome_email_message.txt:18
-#: templates/registration/welcome_email_message.html:47
-#: templates/registration/welcome_email_message.txt:37
+#: templates/registration/welcome_email_message.html:36
+#: templates/registration/welcome_email_message.txt:15
 msgid "The Scratch Team"
 msgstr "Scratch Ekibi"
 
@@ -802,7 +800,7 @@ msgstr ""
 "Az önce, bu e-posta adresinin %(username)s adlı Scratch hesabına bağlanmasını istedin. E-posta adresini doğrulamak için lütfen aşağıdaki düğmeye tıkla:\n"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:14
-#: templates/accounts/email_verification/verification_email_plain.html:31
+#: templates/accounts/email_verification/verification_email_plain.html:16
 #: templates/educators/email_verification/verification_email_plain.html:18
 #: templates/educators/registration/password_reset_email.html:15
 #: templates/educators/registration/password_reset_email.txt:9
@@ -921,8 +919,6 @@ msgid "Try out starter projects"
 msgstr "Başlangıç projelerini dene"
 
 #: templates/accounts/email_verification/passed_verification.html:39
-#: templates/registration/welcome_email_message.html:17
-#: templates/registration/welcome_email_message.txt:12
 msgid "Connect with other Scratchers"
 msgstr "Diğer Scratch'çiler ile bağlantı kur"
 
@@ -948,88 +944,33 @@ msgid "OK, let's go!"
 msgstr "Tamam, haydi başlayalım!"
 
 #: templates/accounts/email_verification/verification_email.html:12
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! A few minutes ago, your child signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+#: templates/accounts/email_verification/verification_email_plain.html:6
+msgid "Confirm your Scratch account"
 msgstr ""
-"\n"
-"MIT Scratch Ekibi'nden selamlar! Az önce, çocuğunuz <a href=\"%(scratch_url)s\">Scratch</a> 'de yeni bir hesap açtı. Kullanıcı adı:\n"
 
-#: templates/accounts/email_verification/verification_email.html:16
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! You just signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+#: templates/accounts/email_verification/verification_email.html:15
+msgid "You just signed up for a new Scratch account with the username:"
 msgstr ""
-"\n"
-"MIT Scratch Ekibinden Selamlar! <a href=\"%(scratch_url)s\">Scratch</a>'da bir hesap açmak için başvurdun, kullanıcı adın:\n"
 
-#: templates/accounts/email_verification/verification_email.html:22
-msgid "Please confirm this email address by clicking the button below:"
-msgstr "Bu e-posta adresini aşağıdaki düğmeye tıklayarak lütfen doğrulayın:"
-
-#: templates/accounts/email_verification/verification_email.html:33
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:20
+msgid "To finish creating your account, click on the link below:"
 msgstr ""
-"\n"
-"    Scratch, çocukların etkileşimli hikayeler, oyunlar ve çizgi filmler yaratabilecekleri, ücretsiz programlama dili ve ağ-üzeri (online) bir topluluktur. Bu mesajı onaylamanız, çocuğunuzun çevrimiçi Scratch topluluğunda paylaşım ve yorum yapabilmesini sağlayacaktır. Detaylı bilgi için: <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
 
-#: templates/accounts/email_verification/verification_email.html:37
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:24
+msgid "Confirm my account"
 msgstr ""
-"\n"
-"    Scratch, etkileşimli hikayeler, oyunlar ve çizgi filmler yaratabileceğin, ücretsiz programlama dili ve ağ-üzeri (online) bir topluluktur. E-postanı doğruladığın takdirde ağ-üzeri Scratch topluluğunda paylaşım ve yorum yapabileceksin. Detaylı bilgi için: <a href=\"%(about_url)s\">%(about_url)s</a>\n"
+
+#: templates/accounts/email_verification/verification_email.html:27
+msgid "Having trouble? Copy this link into your browser instead:"
+msgstr ""
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
 msgid ""
 "\n"
-"    A few minutes ago, your child signed up for a new account on Scratch (%(scratch_url)s. Please confirm this email address by clicking the button below:\n"
-"    "
+"You just signed up for a new account on Scratch (%(scratch_url)s).\n"
+"To finish creating your account, click on the link below:\n"
 msgstr ""
-"\n"
-"    Az önce, çocuğunuz bir Scratch (%(scratch_url)s hesabı oluşturma talebinde bulundu. Aşağıdaki düğmeye tıklayarak bu e-posta adresini onaylayın:\n"
-"    "
-
-#: templates/accounts/email_verification/verification_email_plain.html:13
-#, python-format
-msgid ""
-"\n"
-"    You just signed up for a new account on Scratch (%(scratch_url)s). Please confirm your email address by clicking the button below:\n"
-"    "
-msgstr ""
-"\n"
-"    Az önce, yeni bir Scratch (%(scratch_url)s) hesabı oluşturma talebinde bulundun. Aşağıdaki düğmeye tıklayarak bu e-posta adresini onayla lütfen:\n"
-"    "
-
-#: templates/accounts/email_verification/verification_email_plain.html:21
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
-msgstr ""
-"\n"
-"    Scratch, çocukların etkileşimli hikayeler, oyunlar ve çizgi filmler yaratabilecekleri, ücretsiz programlama dili ve ağ-üzeri (online) bir topluluktur. Bu mesajı onaylamanız, çocuğunuzun ağ-üzeri Scratch topluluğunda paylaşım ve yorum yapabilmesini sağlayacaktır. Detaylı bilgi için: %(about_url)s.\n"
-"    "
-
-#: templates/accounts/email_verification/verification_email_plain.html:25
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
-msgstr ""
-"\n"
-"    Scratch, çocukların etkileşimli hikayeler, oyunlar ve çizgi filmler yaratabilecekleri, ücretsiz programlama dili ve ağ-üzeri (online) bir topluluktur. Bu mesajı onaylamanız, çocuğunuzun ağ-üzeri Scratch topluluğunda paylaşım ve yorum yapabilmesini sağlayacaktır. Detaylı bilgi için: %(about_url)s.\n"
-"    "
 
 #: templates/accounts/email_verification/verify_email_standalone.html:84
 msgid "Want to share on Scratch?"
@@ -1177,11 +1118,11 @@ msgstr "Oluştur"
 msgid "Explore"
 msgstr "Keşfet"
 
-#: templates/base.html:185 templates/base.html.py:340
+#: templates/base.html:185 templates/base.html.py:347
 msgid "Ideas"
 msgstr "Fikirler"
 
-#: templates/base.html:186 templates/base.html.py:317
+#: templates/base.html:186 templates/base.html.py:324
 msgid "About"
 msgstr "Hakkımızda"
 
@@ -1243,117 +1184,119 @@ msgstr ""
 " adresinizi onaylayın</a>. <a href=\"%(faq_url)s#accounts\">Sorun mu "
 "yaşıyorsunuz?</a>"
 
-#: templates/base.html:319 templates/info/about.html:13
-#: templates/mail/base.html:61
+#: templates/base.html:326 templates/info/about.html:13
+#: templates/mail/base.html:61 templates/mail/scratch3_style_base.html:49
 msgid "About Scratch"
 msgstr "Scratch Hakkında"
 
-#: templates/base.html:320 templates/info/parents.html:14
+#: templates/base.html:327 templates/info/parents.html:14
 msgid "For Parents"
 msgstr "Anne-Babalar için"
 
-#: templates/base.html:321 templates/info/educators.html:14
+#: templates/base.html:328 templates/info/educators.html:14
 msgid "For Educators"
 msgstr "Eğitimciler İçin"
 
-#: templates/base.html:322
+#: templates/base.html:329
 msgid "For Developers"
 msgstr "Geliştirmenler için"
 
-#: templates/base.html:323
+#: templates/base.html:330
 msgid "Credits"
 msgstr "Katkısı olanlar"
 
-#: templates/base.html:324
+#: templates/base.html:331
 msgid "Jobs"
 msgstr "Görevler"
 
-#: templates/base.html:325
+#: templates/base.html:332
 msgid "Press"
 msgstr "Basın"
 
-#: templates/base.html:329 templates/info/parents.html:78
+#: templates/base.html:336 templates/info/parents.html:78
 msgid "Community"
 msgstr "Topluluk"
 
-#: templates/base.html:331
+#: templates/base.html:338
+#: templates/registration/welcome_email_message.html:26
 msgid "Community Guidelines"
 msgstr "Topluluk Kuralları"
 
-#: templates/base.html:332
+#: templates/base.html:339
 msgid "Discussion Forums"
 msgstr "Tartışma Forumları"
 
-#: templates/base.html:333
+#: templates/base.html:340
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
-#: templates/base.html:334
+#: templates/base.html:341
 msgid "Statistics"
 msgstr "İstatistikler"
 
-#: templates/base.html:338 templates/info/codingforall.html:73
+#: templates/base.html:345 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "Destek"
 
-#: templates/base.html:341
+#: templates/base.html:348
 msgid "FAQ"
 msgstr "SSS"
 
-#: templates/base.html:342
+#: templates/base.html:349
 msgid "Offline Editor"
 msgstr "Ağ-dışı Editör"
 
-#: templates/base.html:343 templates/contact-us-success.html:12
+#: templates/base.html:350 templates/contact-us-success.html:12
 #: templates/contact-us.html:79
 msgid "Contact Us"
 msgstr "İletişim"
 
-#: templates/base.html:344
+#: templates/base.html:351
 msgid "Scratch Store"
 msgstr "Scratch Mağazası"
 
-#: templates/base.html:345
+#: templates/base.html:352
 msgid "Donate"
 msgstr "Bağış"
 
-#: templates/base.html:349
+#: templates/base.html:356
 msgid "Legal"
 msgstr "Hukuki"
 
-#: templates/base.html:351
+#: templates/base.html:358
 msgid "Terms of Use"
 msgstr "Kullanım Şartları"
 
-#: templates/base.html:352 templates/mail/base.html:60
+#: templates/base.html:359 templates/mail/base.html:60
+#: templates/mail/scratch3_style_base.html:48
 msgid "Privacy Policy"
 msgstr "Gizlilik Politikamız"
 
-#: templates/base.html:353 templates/info/DMCA.html:10
+#: templates/base.html:360 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "DMCA"
 
-#: templates/base.html:357
+#: templates/base.html:364
 msgid "Scratch Family"
 msgstr "Scratch Ailesi"
 
-#: templates/base.html:359
+#: templates/base.html:366
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:360
+#: templates/base.html:367
 msgid "ScratchJr"
 msgstr "Scratch'cikler"
 
-#: templates/base.html:361
+#: templates/base.html:368
 msgid "Scratch Day"
 msgstr "Scratch Günü"
 
-#: templates/base.html:362
+#: templates/base.html:369
 msgid "Scratch Conference"
 msgstr "Scratch Konferansı"
 
-#: templates/base.html:363
+#: templates/base.html:370
 msgid "Scratch Foundation"
 msgstr "Scratch Kuruluşu"
 
@@ -2620,15 +2563,11 @@ msgstr "Scratch'de Yeni misiniz?"
 
 #: templates/educators/registration/approval_email_message.html:13
 #: templates/educators/registration/approval_email_message.txt:7
-#: templates/registration/welcome_email_message.html:14
-#: templates/registration/welcome_email_message.txt:9
 msgid "Read our Community Guidelines"
 msgstr "Topluluk Kurallarımızı Oku"
 
 #: templates/educators/registration/approval_email_message.html:14
 #: templates/educators/registration/approval_email_message.txt:8
-#: templates/registration/welcome_email_message.html:16
-#: templates/registration/welcome_email_message.txt:11
 msgid "Get inspired with a starter project"
 msgstr "Başlangıç projelerinden ilham al"
 
@@ -2797,8 +2736,6 @@ msgid "Would you like to:"
 msgstr "Ne yapmak istersiniz:"
 
 #: templates/educators/student-modal-registration.html:63
-#: templates/registration/welcome_email_message.html:15
-#: templates/registration/welcome_email_message.txt:10
 msgid "Learn how to make a project"
 msgstr "Bir projenin nasıl yapılacağını öğren"
 
@@ -4646,7 +4583,7 @@ msgstr ""
 "            Scratch'den eposta almayı durdurmak için <a href=\"%(blacklist_url)s\">abonelikten ayrıl</a>.\n"
 "        "
 
-#: templates/mail/base.html:62
+#: templates/mail/base.html:62 templates/mail/scratch3_style_base.html:50
 msgid "Make a Donation"
 msgstr "Bağışta Bulunun"
 
@@ -4674,6 +4611,20 @@ msgstr ""
 #, python-format
 msgid "You have unsubscribed the email address <strong>%(email)s</strong>."
 msgstr "<strong>%(email)s</strong> eposta adresini abonelikten çıkardınız."
+
+#: templates/mail/scratch3_style_base.html:40
+msgid ""
+"Using Scratch, children can create interactive stories, games, and "
+"animations."
+msgstr ""
+
+#: templates/mail/scratch3_style_base.html:42
+msgid ""
+"\n"
+"            Scratch is available for free, thanks to generous support from our donors. We are grateful to our Founding Partners:\n"
+"            Massachusetts Institute of Technology, the National Science Foundation, and the Siegel Family Endowment.\n"
+"        "
+msgstr ""
 
 #: templates/modal-login.html:40
 msgid "Or Join Scratch"
@@ -5973,110 +5924,57 @@ msgstr "Bu isme kayıtlı eposta:"
 msgid "Send me a password reset link!"
 msgstr "Bana şifre sıfırlama linki gönder!"
 
-#: templates/registration/welcome_email_message.html:8
+#: templates/registration/welcome_email_message.html:13
 #, python-format
 msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
 msgstr "Scratch'e Hoşgeldin, <strong>%(username)s</strong>!"
 
-#: templates/registration/welcome_email_message.html:10
+#: templates/registration/welcome_email_message.html:16
 #: templates/registration/welcome_email_message.txt:6
 msgid ""
-"We're thrilled that you’ve joined our growing community! With Scratch, you "
-"can program your own interactive stories, games, and animations — and share "
-"your creations with others in the community."
+"With Scratch, you can program your own interactive stories, games, and "
+"animations—and share your creations with others in the community."
 msgstr ""
-"Gitgide büyüyen topluluğumuzun yeni üyesi olarak seni de aramızda görmekten "
-"çok mutluyuz! Scratch ile kendi resimli ve etkileşimli hikayelerini, "
-"oyunlarını ve çizgi filmlerini yapıp bunları dünya üzerindeki bütün diğer "
-"arkadaşlarınla paylaşabilirsin artık."
 
-#: templates/registration/welcome_email_message.html:12
-#: templates/registration/welcome_email_message.txt:8
-msgid "What's Next?"
-msgstr "Sırada Ne Var?"
+#: templates/registration/welcome_email_message.html:19
+#: templates/registration/welcome_email_message.txt:7
+msgid "New to Scratch? Click the link below:"
+msgstr ""
 
 #: templates/registration/welcome_email_message.html:22
-#: templates/registration/welcome_email_message.txt:17
-msgid "Want to learn more?"
-msgstr "Daha fazlasını öğrenmek ister misin?"
-
-#: templates/registration/welcome_email_message.html:24
-#, python-format
-msgid ""
-"Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a "
-"href=\"%(faq_url)s\">Frequently Asked Questions</a>, and <a "
-"href=\"%(discuss_url)s\">Discussion Forums</a>, to learn more about Scratch."
+msgid "Get started on Scratch"
 msgstr ""
-"Scratch hakkında daha fazlasını öğrenmek için <a "
-"href=\"%(about_url)s\">Scratch Hakkında</a> sayfamızı, <a "
-"href=\"%(faq_url)s\">Sık Sorulan Sorular</a>'ı ve <a "
-"href=\"%(discuss_url)s\">Tartışma Forumları</a>'nı gözden geçiriniz."
 
-#: templates/registration/welcome_email_message.html:27
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"Team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+#: templates/registration/welcome_email_message.html:25
+msgid "To learn more about the Scratch online community, go to our"
 msgstr ""
-"İleriye dönük olarak, Scratch Team ve Scratch Foundation'dan kodlama "
-"ipuçları, ilham verici öyküler, proje fikirleri ve daha pek çok şeyle zaman "
-"zaman güncellemeler alacaksınız. Scratch Vakfı, Scratch eğitim girişimlerini"
-" destekleyen bir kâr amacı gütmeyen kuruluştur. Güncelleştirmelerden veya "
-"aşağıdakileri tıklayarak aboneliğinizi iptal edebilirsiniz:"
 
 #: templates/registration/welcome_email_message.html:29
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team with coding tips, inspirational stories, project ideas, and more. You "
-"can unsubscribe from within the updates or by clicking below:"
+msgid "To discover project ideas, check out our"
 msgstr ""
-"İleriye dönük olarak, Scratch ekibinden kodlama ipuçları, ilham verici "
-"öyküler, proje fikirleri ve daha fazlası ile ilgili ara sıra güncellemeler "
-"alacaksın. Güncelleştirmelerden aboneliğini aşağıya tıklayarak iptal "
-"edebilirsin:"
+
+#: templates/registration/welcome_email_message.html:30
+msgid "Ideas Page"
+msgstr "Fikirler Sayfası"
 
 #: templates/registration/welcome_email_message.txt:4
 #, python-format
 msgid "Welcome to Scratch, %(username)s!"
 msgstr "Scratch'e Hoşgeldin, %(username)s!"
 
-#: templates/registration/welcome_email_message.txt:19
-#, python-format
-msgid ""
-"Check out our About Scratch page (%(about_url)s),Frequently Asked Questions "
-"(%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn more about "
-"Scratch."
+#: templates/registration/welcome_email_message.txt:8
+msgid "Get Started on Scratch"
 msgstr ""
 
-#: templates/registration/welcome_email_message.txt:22
+#: templates/registration/welcome_email_message.txt:9
 msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+"To learn more about the Scratch online community, go to our Community "
+"Guidelines"
 msgstr ""
-"İleriye dönük olarak, Scratch ekibinden ve Scratch Foundation' dan kodlama "
-"ipuçları, ilham verici öyküler, proje fikirleri ve daha fazlası ile ara sıra"
-" güncellemeler alacaksın. Scratch Vakfı, Scratch eğitim girişimlerini "
-"destekleyen bir kâr amacı gütmeyen kuruluştur. Güncelleştirmelerden "
-"aboneliğini aşağıya tıklayarak iptal edebilirsin:"
 
-#: templates/registration/welcome_email_message.txt:24
-msgid ""
-"Check out our About Scratch page, Frequently Asked Questions, and Discussion"
-" Forums, to learn more about Scratch. Going forward, you will also receive "
-"occasional updates from the Scratch team with coding tips, inspirational "
-"stories, project ideas, and more. You can unsubscribe from within the "
-"updates or by clicking below:"
+#: templates/registration/welcome_email_message.txt:11
+msgid "To discover project ideas, check out our Ideas Page"
 msgstr ""
-"Scratch hakkında daha çok şey öğrenmek için Scratch Hakkında sayfamıza, "
-"Sıklıkla Sorulan Sorulara ve Tartışma Forumlarına göz at. Hatta, Scratch "
-"ekibinden kodlama ipuçları, ilham verici öyküler, proje fikirleri ve daha "
-"fazlası ile ilgili ara sıra güncellemeler alacaksın. Güncelleştirmelerden "
-"aboneliğini aşağıya tıklayarak iptal edebilirsin:"
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format

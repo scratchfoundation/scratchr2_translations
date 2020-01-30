@@ -6,7 +6,7 @@
 # Translators:
 # Seunghyun yoo <yoobest0905@naver.com>, 2017
 # 고혁준, 2017
-# Chris Garrity (ML) <chrisg@media.mit.edu>, 2017
+# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2017
 # 2D운전게임 (사칭x 본계입니다!!!) <gyubini38@gmail.com>, 2018
 # whengreenflagclicked <whengreenflagclicked@gmail.com>, 2018
 # Bonnie Koo <bkoo22@student.kis.or.kr>, 2019
@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-18 16:05-0400\n"
+"POT-Creation-Date: 2020-01-29 20:41-0500\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
 "Last-Translator: 상록 김 <naverrok012@gmail.com>, 2019\n"
 "Language-Team: Korean (https://www.transifex.com/llk/teams/60938/ko/)\n"
@@ -690,7 +690,6 @@ msgstr ""
 
 #: templates/accounts/email_verification/change_email_verification_email.html:9
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:3
-#: templates/accounts/email_verification/verification_email_plain.html:6
 #: templates/educators/email_verification/verification_email_plain.html:5
 msgid "Greetings from the Scratch Team at MIT!"
 msgstr "MIT의 스크래치 팀으로부터의 인사!"
@@ -705,7 +704,6 @@ msgstr ""
 "몇 분 전, 당신이 이 이메일 주소와 스크래치 계정 <strong>%(username)s</strong> 을(를) 연결하도록 요구했습니다. 아래의 버튼을 눌러 당신의 이메일 주소를 확인시키십시오.\n"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:17
-#: templates/accounts/email_verification/verification_email.html:26
 #: templates/educators/email_verification/verification_email.html:20
 msgid "Confirm my email address"
 msgstr "이메일 주소 확인하기"
@@ -718,7 +716,7 @@ msgid ""
 msgstr "만약 당신이 이메일 주소 수정을 요구하지 않았다면, 걱정하지 마세요 - 그냥 이 메시지를 무시할 수 있습니다."
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
-#: templates/accounts/email_verification/verification_email.html:43
+#: templates/accounts/email_verification/verification_email.html:32
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
@@ -726,15 +724,15 @@ msgstr "만약 당신이 이메일 주소 수정을 요구하지 않았다면, �
 #: templates/educators/registration/approval_email_message.txt:16
 #: templates/educators/registration/welcome_email_message.html:32
 #: templates/educators/registration/welcome_email_message.txt:17
-#: templates/registration/welcome_email_message.html:45
-#: templates/registration/welcome_email_message.txt:36
+#: templates/registration/welcome_email_message.html:34
+#: templates/registration/welcome_email_message.txt:14
 msgid "Scratch On!"
 msgstr "계속 스크래치를 즐기세요!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
-#: templates/accounts/email_verification/verification_email.html:45
-#: templates/accounts/email_verification/verification_email_plain.html:33
+#: templates/accounts/email_verification/verification_email.html:34
+#: templates/accounts/email_verification/verification_email_plain.html:18
 #: templates/accounts/password_changed_email/message.html:14
 #: templates/accounts/password_changed_email/message.txt:7
 #: templates/educators/email_verification/verification_email.html:34
@@ -745,8 +743,8 @@ msgstr "계속 스크래치를 즐기세요!"
 #: templates/educators/registration/password_reset_email.txt:10
 #: templates/educators/registration/welcome_email_message.html:34
 #: templates/educators/registration/welcome_email_message.txt:18
-#: templates/registration/welcome_email_message.html:47
-#: templates/registration/welcome_email_message.txt:37
+#: templates/registration/welcome_email_message.html:36
+#: templates/registration/welcome_email_message.txt:15
 msgid "The Scratch Team"
 msgstr "스크래치 팀"
 
@@ -760,7 +758,7 @@ msgstr ""
 "몇 분 전, 당신이 이 이메일 주소와 스크래치 계정 %(username)s 을(를) 연결하도록 요구했습니다. 아래의 버튼을 눌러 당신의 이메일 주소를 확인시키십시오.\n"
 
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:14
-#: templates/accounts/email_verification/verification_email_plain.html:31
+#: templates/accounts/email_verification/verification_email_plain.html:16
 #: templates/educators/email_verification/verification_email_plain.html:18
 #: templates/educators/registration/password_reset_email.html:15
 #: templates/educators/registration/password_reset_email.txt:9
@@ -865,8 +863,6 @@ msgid "Try out starter projects"
 msgstr "초보자용 프로젝트 만들어 보기"
 
 #: templates/accounts/email_verification/passed_verification.html:39
-#: templates/registration/welcome_email_message.html:17
-#: templates/registration/welcome_email_message.txt:12
 msgid "Connect with other Scratchers"
 msgstr "다른 스크래쳐와 연결하기"
 
@@ -891,84 +887,33 @@ msgid "OK, let's go!"
 msgstr "자, 시작합시다!"
 
 #: templates/accounts/email_verification/verification_email.html:12
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! A few minutes ago, your child signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
-msgstr ""
-"\n"
-"MIT의 스크래치 팀으로부터의 인사입니다! 몇 분 전, 당신의 자녀가 <a href=\"%(scratch_url)s\">스크래치</a>에서 다음 아이디로 새로운 계정을 등록했습니다:\n"
-
-#: templates/accounts/email_verification/verification_email.html:16
-#, python-format
-msgid ""
-"\n"
-"Greetings from the Scratch Team at MIT! You just signed up for a new account on <a href=\"%(scratch_url)s\">Scratch</a> with the username:\n"
+#: templates/accounts/email_verification/verification_email_plain.html:6
+msgid "Confirm your Scratch account"
 msgstr ""
 
-#: templates/accounts/email_verification/verification_email.html:22
-msgid "Please confirm this email address by clicking the button below:"
-msgstr "아래의 버튼을 눌러 이메일 주소를 확인받으세요."
-
-#: templates/accounts/email_verification/verification_email.html:33
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:15
+msgid "You just signed up for a new Scratch account with the username:"
 msgstr ""
-"\n"
-"스크래치는 아이들이 대화형의 이야기, 게임, 애니메이션을 만들 수 있는 무료의 프로그래밍 언어와 온라인 커뮤니티입니다. 이 이메일을 확인시키는 것은 당신의 자녀가 스크래치 온라인 커뮤니티에서 공유하고 댓글을 달 수 있는 완전한 접근을 허용할 것입니다. <a href=\"%(about_url)s\">%(about_url)s</a>에서 더 알아보십시오.\n"
 
-#: templates/accounts/email_verification/verification_email.html:37
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at <a href=\"%(about_url)s\">%(about_url)s</a>.\n"
+#: templates/accounts/email_verification/verification_email.html:20
+msgid "To finish creating your account, click on the link below:"
 msgstr ""
-"\n"
-"스크래치는 자신만의 대화형 이야기, 게임, 애니메이션을 만들 수 있는 무료의 프로그래밍 언어와 온라인 커뮤니티입니다. 이메일을 확인시키는 것은 당신이 스크래치 온라인 커뮤니티에서 공유하고 댓글을 달 수 있는 완전한 접근을 허용할 것입니다. <a href=\"%(about_url)s\">%(about_url)s</a>에서 더 알아보십시오.\n"
+
+#: templates/accounts/email_verification/verification_email.html:24
+msgid "Confirm my account"
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email.html:27
+msgid "Having trouble? Copy this link into your browser instead:"
+msgstr ""
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
 msgid ""
 "\n"
-"    A few minutes ago, your child signed up for a new account on Scratch (%(scratch_url)s. Please confirm this email address by clicking the button below:\n"
-"    "
+"You just signed up for a new account on Scratch (%(scratch_url)s).\n"
+"To finish creating your account, click on the link below:\n"
 msgstr ""
-"\n"
-"    몇 분 전, 당신의 자녀가 새로운 스크래치 계정(%(scratch_url)s 을 등록했습니다. 아래 버튼을 클릭하여 이메일 주소를 확인받으세요:\n"
-"    "
-
-#: templates/accounts/email_verification/verification_email_plain.html:13
-#, python-format
-msgid ""
-"\n"
-"    You just signed up for a new account on Scratch (%(scratch_url)s). Please confirm your email address by clicking the button below:\n"
-"    "
-msgstr ""
-"\n"
-"    새로운 스크래치 계정(%(scratch_url)s)을 등록하였습니다. 아래 버튼을 클릭하여 이메일 주소를 확인받으세요:\n"
-"    "
-
-#: templates/accounts/email_verification/verification_email_plain.html:21
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where kids can create interactive stories, games, and animations. Confirming this email will give your child full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
-msgstr ""
-"\n"
-"스크래치는 아이들이 대화형의 이야기, 게임, 애니메이션을 만들 수 있는 무료의 프로그래밍 언어와 온라인 커뮤니티입니다. 이 이메일을 확인시키는 것은 당신의 자녀가 스크래치 온라인 커뮤니티에서 공유하고 댓글을 달 수 있는 완전한 접근을 허용할 것입니다.  %(about_url)s에서 더 알아보십시오."
-
-#: templates/accounts/email_verification/verification_email_plain.html:25
-#, python-format
-msgid ""
-"\n"
-"    Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Confirming your email will give you full access to share and comment in the Scratch online community. Learn more at %(about_url)s.\n"
-"    "
-msgstr ""
-"\n"
-"스크래치는 자신만의 대화형 이야기, 게임, 애니메이션을 만들 수 있는 무료의 프로그래밍 언어와 온라인 커뮤니티입니다. 이메일을 확인시키는 것은 당신이 스크래치 온라인 커뮤니티에서 공유하고 댓글을 달 수 있는 완전한 접근을 허용할 것입니다. %(about_url)s에서 더 알아보십시오."
 
 #: templates/accounts/email_verification/verify_email_standalone.html:84
 msgid "Want to share on Scratch?"
@@ -1103,11 +1048,11 @@ msgstr "만들기"
 msgid "Explore"
 msgstr "탐험하기"
 
-#: templates/base.html:185 templates/base.html.py:340
+#: templates/base.html:185 templates/base.html.py:347
 msgid "Ideas"
 msgstr "아이디어"
 
-#: templates/base.html:186 templates/base.html.py:317
+#: templates/base.html:186 templates/base.html.py:324
 msgid "About"
 msgstr "소개"
 
@@ -1168,117 +1113,119 @@ msgstr ""
 "공유를 하기 위해선 <a id=\"confirm-email-popup\" href=\"#\">이메일을 확인</a>하세요. <a "
 "href=\"%(faq_url)s#accounts\">어려움이 있나요?</a>"
 
-#: templates/base.html:319 templates/info/about.html:13
-#: templates/mail/base.html:61
+#: templates/base.html:326 templates/info/about.html:13
+#: templates/mail/base.html:61 templates/mail/scratch3_style_base.html:49
 msgid "About Scratch"
 msgstr "스크래치에 대해서"
 
-#: templates/base.html:320 templates/info/parents.html:14
+#: templates/base.html:327 templates/info/parents.html:14
 msgid "For Parents"
 msgstr "부모"
 
-#: templates/base.html:321 templates/info/educators.html:14
+#: templates/base.html:328 templates/info/educators.html:14
 msgid "For Educators"
 msgstr "교육자"
 
-#: templates/base.html:322
+#: templates/base.html:329
 msgid "For Developers"
 msgstr "개발자를 위해서"
 
-#: templates/base.html:323
+#: templates/base.html:330
 msgid "Credits"
 msgstr "공로자"
 
-#: templates/base.html:324
+#: templates/base.html:331
 msgid "Jobs"
 msgstr "채용"
 
-#: templates/base.html:325
+#: templates/base.html:332
 msgid "Press"
 msgstr "언론 보도"
 
-#: templates/base.html:329 templates/info/parents.html:78
+#: templates/base.html:336 templates/info/parents.html:78
 msgid "Community"
 msgstr "커뮤니티"
 
-#: templates/base.html:331
+#: templates/base.html:338
+#: templates/registration/welcome_email_message.html:26
 msgid "Community Guidelines"
 msgstr "커뮤니티 지침"
 
-#: templates/base.html:332
+#: templates/base.html:339
 msgid "Discussion Forums"
 msgstr "토론방"
 
-#: templates/base.html:333
+#: templates/base.html:340
 msgid "Scratch Wiki"
 msgstr "스크래치 위키"
 
-#: templates/base.html:334
+#: templates/base.html:341
 msgid "Statistics"
 msgstr "통계"
 
-#: templates/base.html:338 templates/info/codingforall.html:73
+#: templates/base.html:345 templates/info/codingforall.html:73
 msgid "Support"
 msgstr "지원"
 
-#: templates/base.html:341
+#: templates/base.html:348
 msgid "FAQ"
 msgstr "자주 묻는 질문(FAQ)"
 
-#: templates/base.html:342
+#: templates/base.html:349
 msgid "Offline Editor"
 msgstr "오프라인 에디터"
 
-#: templates/base.html:343 templates/contact-us-success.html:12
+#: templates/base.html:350 templates/contact-us-success.html:12
 #: templates/contact-us.html:79
 msgid "Contact Us"
 msgstr "문의하기"
 
-#: templates/base.html:344
+#: templates/base.html:351
 msgid "Scratch Store"
 msgstr "스크래치 상품 판매점"
 
-#: templates/base.html:345
+#: templates/base.html:352
 msgid "Donate"
 msgstr "기부"
 
-#: templates/base.html:349
+#: templates/base.html:356
 msgid "Legal"
 msgstr "법률"
 
-#: templates/base.html:351
+#: templates/base.html:358
 msgid "Terms of Use"
 msgstr "약관"
 
-#: templates/base.html:352 templates/mail/base.html:60
+#: templates/base.html:359 templates/mail/base.html:60
+#: templates/mail/scratch3_style_base.html:48
 msgid "Privacy Policy"
 msgstr "개인정보보호 정책"
 
-#: templates/base.html:353 templates/info/DMCA.html:10
+#: templates/base.html:360 templates/info/DMCA.html:10
 msgid "DMCA"
 msgstr "디지털 밀레니엄 저작권법"
 
-#: templates/base.html:357
+#: templates/base.html:364
 msgid "Scratch Family"
 msgstr "스크래치 패밀리"
 
-#: templates/base.html:359
+#: templates/base.html:366
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:360
+#: templates/base.html:367
 msgid "ScratchJr"
 msgstr "스크래치 주니어"
 
-#: templates/base.html:361
+#: templates/base.html:368
 msgid "Scratch Day"
 msgstr "스크래치 데이"
 
-#: templates/base.html:362
+#: templates/base.html:369
 msgid "Scratch Conference"
 msgstr "스크래치 컨퍼런스"
 
-#: templates/base.html:363
+#: templates/base.html:370
 msgid "Scratch Foundation"
 msgstr "스크래치 재단"
 
@@ -2470,15 +2417,11 @@ msgstr "스크래치가 처음인가요?"
 
 #: templates/educators/registration/approval_email_message.html:13
 #: templates/educators/registration/approval_email_message.txt:7
-#: templates/registration/welcome_email_message.html:14
-#: templates/registration/welcome_email_message.txt:9
 msgid "Read our Community Guidelines"
 msgstr "커뮤니티 지침을 읽으세요"
 
 #: templates/educators/registration/approval_email_message.html:14
 #: templates/educators/registration/approval_email_message.txt:8
-#: templates/registration/welcome_email_message.html:16
-#: templates/registration/welcome_email_message.txt:11
 msgid "Get inspired with a starter project"
 msgstr "초보자용 프로젝트로 영감을 받아보세요"
 
@@ -2620,8 +2563,6 @@ msgid "Would you like to:"
 msgstr ""
 
 #: templates/educators/student-modal-registration.html:63
-#: templates/registration/welcome_email_message.html:15
-#: templates/registration/welcome_email_message.txt:10
 msgid "Learn how to make a project"
 msgstr "프로젝트 만드는 방법을 배워봅시다."
 
@@ -4303,7 +4244,7 @@ msgstr ""
 "\n"
 "스크래치에서 이메일을 받는 것을 중단하려면, <a href=\"%(blacklist_url)s\">주소록에서 이메일을 삭제</a>하세요."
 
-#: templates/mail/base.html:62
+#: templates/mail/base.html:62 templates/mail/scratch3_style_base.html:50
 msgid "Make a Donation"
 msgstr "기부"
 
@@ -4324,6 +4265,20 @@ msgstr ""
 #: templates/mail/blacklist/blacklist_success.html:20
 #, python-format
 msgid "You have unsubscribed the email address <strong>%(email)s</strong>."
+msgstr ""
+
+#: templates/mail/scratch3_style_base.html:40
+msgid ""
+"Using Scratch, children can create interactive stories, games, and "
+"animations."
+msgstr ""
+
+#: templates/mail/scratch3_style_base.html:42
+msgid ""
+"\n"
+"            Scratch is available for free, thanks to generous support from our donors. We are grateful to our Founding Partners:\n"
+"            Massachusetts Institute of Technology, the National Science Foundation, and the Siegel Family Endowment.\n"
+"        "
 msgstr ""
 
 #: templates/modal-login.html:40
@@ -5556,51 +5511,37 @@ msgstr "가입할 때 사용한 이메일 주소"
 msgid "Send me a password reset link!"
 msgstr "비밀번호 재설정 링크 보내기!"
 
-#: templates/registration/welcome_email_message.html:8
+#: templates/registration/welcome_email_message.html:13
 #, python-format
 msgid "Welcome to Scratch, <strong>%(username)s</strong>!"
 msgstr "스크래치에 오신 것을 환영합니다, <strong>%(username)s</strong>님!"
 
-#: templates/registration/welcome_email_message.html:10
+#: templates/registration/welcome_email_message.html:16
 #: templates/registration/welcome_email_message.txt:6
 msgid ""
-"We're thrilled that you’ve joined our growing community! With Scratch, you "
-"can program your own interactive stories, games, and animations — and share "
-"your creations with others in the community."
+"With Scratch, you can program your own interactive stories, games, and "
+"animations—and share your creations with others in the community."
 msgstr ""
 
-#: templates/registration/welcome_email_message.html:12
-#: templates/registration/welcome_email_message.txt:8
-msgid "What's Next?"
+#: templates/registration/welcome_email_message.html:19
+#: templates/registration/welcome_email_message.txt:7
+msgid "New to Scratch? Click the link below:"
 msgstr ""
 
 #: templates/registration/welcome_email_message.html:22
-#: templates/registration/welcome_email_message.txt:17
-msgid "Want to learn more?"
+msgid "Get started on Scratch"
 msgstr ""
 
-#: templates/registration/welcome_email_message.html:24
-#, python-format
-msgid ""
-"Check out our <a href=\"%(about_url)s\">About Scratch</a> page, <a "
-"href=\"%(faq_url)s\">Frequently Asked Questions</a>, and <a "
-"href=\"%(discuss_url)s\">Discussion Forums</a>, to learn more about Scratch."
-msgstr ""
-
-#: templates/registration/welcome_email_message.html:27
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"Team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+#: templates/registration/welcome_email_message.html:25
+msgid "To learn more about the Scratch online community, go to our"
 msgstr ""
 
 #: templates/registration/welcome_email_message.html:29
-msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team with coding tips, inspirational stories, project ideas, and more. You "
-"can unsubscribe from within the updates or by clicking below:"
+msgid "To discover project ideas, check out our"
+msgstr ""
+
+#: templates/registration/welcome_email_message.html:30
+msgid "Ideas Page"
 msgstr ""
 
 #: templates/registration/welcome_email_message.txt:4
@@ -5608,30 +5549,18 @@ msgstr ""
 msgid "Welcome to Scratch, %(username)s!"
 msgstr "스크래치에 오신 것을 환영합니다,  %(username)s님!"
 
-#: templates/registration/welcome_email_message.txt:19
-#, python-format
-msgid ""
-"Check out our About Scratch page (%(about_url)s),Frequently Asked Questions "
-"(%(faq_url)s), and Discussion Forums (%(discuss_url)s), to learn more about "
-"Scratch."
+#: templates/registration/welcome_email_message.txt:8
+msgid "Get Started on Scratch"
 msgstr ""
 
-#: templates/registration/welcome_email_message.txt:22
+#: templates/registration/welcome_email_message.txt:9
 msgid ""
-"Going forward, you will also receive occasional updates from the Scratch "
-"team and Scratch Foundation with coding tips, inspirational stories, project"
-" ideas, and more. The Scratch Foundation is a non-profit that supports "
-"Scratch educational initiatives. You can unsubscribe from within the updates"
-" or by clicking below:"
+"To learn more about the Scratch online community, go to our Community "
+"Guidelines"
 msgstr ""
 
-#: templates/registration/welcome_email_message.txt:24
-msgid ""
-"Check out our About Scratch page, Frequently Asked Questions, and Discussion"
-" Forums, to learn more about Scratch. Going forward, you will also receive "
-"occasional updates from the Scratch team with coding tips, inspirational "
-"stories, project ideas, and more. You can unsubscribe from within the "
-"updates or by clicking below:"
+#: templates/registration/welcome_email_message.txt:11
+msgid "To discover project ideas, check out our Ideas Page"
 msgstr ""
 
 #: templates/scratch_admin/admin_profile_view.html:46
