@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-11 15:31-0400\n"
+"POT-Creation-Date: 2020-06-11 13:18+0000\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
 "Last-Translator: Torbjorn Skauli <torbjorn.skauli@ffi.no>, 2020\n"
 "Language-Team: Norwegian Bokmål (https://www.transifex.com/llk/teams/60938/nb/)\n"
@@ -212,24 +212,24 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "for %(number)d %(type)s siden"
 
-#: educators/forms.py:110
+#: educators/forms.py:106
 msgid "Already exists"
 msgstr "Finnes allerede"
 
-#: educators/forms.py:111
+#: educators/forms.py:107
 msgid "Contains invalid characters. Use letters and numbers only."
 msgstr "Inneholder tegn som ikke er tillatt. Bruk bare bokstaver og tall."
 
-#: educators/forms.py:112
+#: educators/forms.py:108
 msgid "Contains inappropriate words"
 msgstr "Inneholder upassende ord"
 
-#: educators/forms.py:113
+#: educators/forms.py:109
 #, python-format
 msgid "Shorter than minimum length of %d characters"
 msgstr "Kortere enn minstelengden som er %d tegn"
 
-#: educators/forms.py:114
+#: educators/forms.py:110
 #, python-format
 msgid "Longer than maximum length of %d characters"
 msgstr "For langt, kan ikke være lengre enn %d tegn"
@@ -242,29 +242,29 @@ msgstr "klasse"
 msgid "classes"
 msgstr "klasser"
 
-#: educators/views.py:519
+#: educators/views.py:525
 msgid ""
 "Please update the CSV file to address the issues above and reload the file."
 msgstr "Rett opp disse feilene i CSV-filen og last den opp på nytt."
 
-#: educators/views.py:533
+#: educators/views.py:539
 msgid ""
 "Errors occurred while creating accounts. All accounts other than those "
 "specified here were created."
 msgstr ""
 "Noen feil oppstod, men alle kontoene som ikke er angitt her ble opprettet."
 
-#: educators/views.py:607
+#: educators/views.py:613
 msgid ""
 "After changing this student's password, you will need to share the new "
 "password with your student directly so that they can log back into Scratch."
 msgstr "Når elevens passord er endret må du gi det nye passordet til eleven."
 
-#: galleries/models.py:264
+#: galleries/models.py:277
 msgid "studio"
 msgstr "galleri"
 
-#: galleries/models.py:265
+#: galleries/models.py:278
 msgid "studios"
 msgstr "gallerier"
 
@@ -296,11 +296,11 @@ msgstr "prosjekt"
 msgid "projects"
 msgstr "prosjekter"
 
-#: projects/models.py:278
+#: projects/models.py:279
 msgid "Permanently Censored Project cannot be reshared."
 msgstr "Et permanent sensurert prosjekt kan ikke legges ut igjen."
 
-#: projects/models.py:285
+#: projects/models.py:286
 msgid ""
 "This project has been censored and must be reviewed before it can be "
 "reshared."
@@ -312,15 +312,15 @@ msgstr ""
 msgid "This tag has too many projects to load"
 msgstr "Ikke plass til å lese inn alle prosjekter med dette nøkkelordet"
 
-#: scratchr2/views.py:346
+#: scratchr2/views.py:345
 msgid "You're not allowed to appeal this ban."
 msgstr ""
 
-#: scratchr2/views.py:355
+#: scratchr2/views.py:354
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr "Meldingen er sendt. Vi vil svare i løpet av 3 dager."
 
-#: scratchr2/views.py:361 scratchr2/views.py:405
+#: scratchr2/views.py:360
 msgid "Please correct the errors below."
 msgstr "Du må rette feilene nedenfor."
 
@@ -415,6 +415,7 @@ msgstr "Brukerkonto"
 #: templates/accounts/deletion/confirmation.html:7
 #: templates/accounts/deletion/nostalgia.html:6
 #: templates/accounts/email_change.html:9 templates/base.html:212
+#: templates/educators/register_student_modal.html:86
 #: templates/includes/backbone-templates.html:44 templates/modal-login.html:21
 msgid "Password"
 msgstr "Passord"
@@ -445,7 +446,7 @@ msgstr "Lagre endringene"
 msgid "I want to delete my account"
 msgstr "Jeg ønsker å slette brukerkontoen min"
 
-#: templates/accounts/banned-response.html:12 templates/contact-us.html:73
+#: templates/accounts/banned-response.html:12
 #: templates/info/ext_download.html:11 templates/info/scratch2download.html:27
 #: templates/info/scratch_1.4.html:11
 msgid "Account Blocked"
@@ -522,12 +523,12 @@ msgstr ""
 "\"Meld\" og si fra til oss."
 
 #: templates/accounts/banned-response.html:80
-#: templates/accounts/email_change.html:64 templates/contact-us.html:121
+#: templates/accounts/email_change.html:64
 msgid "Send"
 msgstr "Send"
 
 #: templates/accounts/base.html:24
-#: templates/educators/includes/stuff/backbone-templates.html:397
+#: templates/educators/includes/stuff/backbone-templates.html:399
 #: templates/registration/base.html:24
 msgid "Account Settings"
 msgstr "Brukerinnstillinger"
@@ -751,7 +752,7 @@ msgstr ""
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
-#: templates/educators/registration/approval_email_message.html:26
+#: templates/educators/registration/approval_email_message.html:28
 #: templates/educators/registration/approval_email_message.txt:16
 #: templates/educators/registration/welcome_email_message.html:32
 #: templates/educators/registration/welcome_email_message.txt:17
@@ -768,7 +769,7 @@ msgstr "Scratch videre!"
 #: templates/accounts/password_changed_email/message.txt:7
 #: templates/educators/email_verification/verification_email.html:34
 #: templates/educators/email_verification/verification_email_plain.html:20
-#: templates/educators/registration/approval_email_message.html:28
+#: templates/educators/registration/approval_email_message.html:30
 #: templates/educators/registration/approval_email_message.txt:17
 #: templates/educators/registration/password_reset_email.html:16
 #: templates/educators/registration/password_reset_email.txt:10
@@ -1032,7 +1033,7 @@ msgid "After changing your password, you will be prompted to log back in."
 msgstr "Etter at du har byttet passord må du logge inn igjen."
 
 #: templates/accounts/password_change_form.html:36
-#: templates/educators/includes/stuff/backbone-templates.html:666
+#: templates/educators/includes/stuff/backbone-templates.html:668
 msgid "Change Password"
 msgstr "Nytt passord"
 
@@ -1240,8 +1241,7 @@ msgstr "Spørsmål og svar"
 msgid "Offline Editor"
 msgstr "Scratch uten nettforbindelse"
 
-#: templates/base.html:350 templates/contact-us-success.html:12
-#: templates/contact-us.html:79
+#: templates/base.html:350
 msgid "Contact Us"
 msgstr "Kontakt oss"
 
@@ -1296,8 +1296,8 @@ msgstr "Scratch Foundation"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14
-#: templates/educators/classroom_detail.html:187
-#: templates/educators/classroom_detail.html:217
+#: templates/educators/classroom_detail.html:188
+#: templates/educators/classroom_detail.html:218
 #: templates/profiles/profile_detail.html:213
 #: templates/profiles/profile_detail.html:240
 #: templates/profiles/profile_detail.html:276
@@ -1393,8 +1393,9 @@ msgstr "Send"
 #: templates/comments/comment-module.html:41
 #: templates/educators/add_class_modal.html:35
 #: templates/educators/add_gallery_modal.html:33
-#: templates/educators/includes/stuff/backbone-templates.html:665
-#: templates/educators/includes/stuff/backbone-templates.html:808
+#: templates/educators/includes/stuff/backbone-templates.html:667
+#: templates/educators/includes/stuff/backbone-templates.html:852
+#: templates/educators/includes/stuff/backbone-templates.html:878
 #: templates/includes/backbone-templates.html:81
 msgid "Cancel"
 msgstr "Avbryt"
@@ -1411,6 +1412,10 @@ msgstr ""
 "Beklager, kommentarinnlegg er ikke tilgjengelig nå, men åpner igjen snart!"
 
 #: templates/comments/comment-module.html:57
+msgid "Load comments"
+msgstr ""
+
+#: templates/comments/comment-module.html:60
 msgid "Comments loading..."
 msgstr "Laster kommentarer..."
 
@@ -1448,73 +1453,6 @@ msgstr "Se alle de %(len)s svarene"
 #: templates/comments/list.html:24
 msgid "Load more"
 msgstr "Last flere"
-
-#: templates/contact-us.html:92
-msgid ""
-"The Scratch Team receives a large number of messages each day. "
-"Unfortunately, we do not have time to answer all of them. Luckily, you can "
-"find answers to most questions about Scratch on our  <a "
-"href=\"/info/faq/\">Frequently Asked Questions</a> page."
-msgstr ""
-"Administratorene på Scratch-nettstedet får mange meldinger hver dag. "
-"Dessverre har vi ikke tid til å svare på alle. Heldigvis kan du finne svaret"
-" på de fleste spørsmål om Scratch på siden for <a "
-"href=\"/info/faq/\">spørsmål og svar</a>."
-
-#: templates/contact-us.html:94
-msgid ""
-"You can also look at the Scratch <a href=\"/discuss\">Discussion forums</a>."
-msgstr "Du kan også se på <a href=\"/discuss\">Scratch-forumet</a>."
-
-#: templates/contact-us.html:95
-msgid ""
-"If you can't find an answer, post a new topic on the <a "
-"href=\"/discuss\">Discussion forums.</a> There are many experienced "
-"Scratchers who can help!"
-msgstr ""
-"Hvis du ikke finner svar kan du skrive et nytt innlegg i <a "
-"href=\"/discuss\">forumet</a>. Det er mange erfarne Scratchere som kan "
-"hjelpe deg!"
-
-#: templates/contact-us.html:98
-msgid "Questions About Scratch"
-msgstr "Spørsmål om Scratch"
-
-#: templates/contact-us.html:99
-msgid "Help with Scripts"
-msgstr "Hjelp med skript"
-
-#: templates/contact-us.html:100
-msgid "Bugs and Glitches"
-msgstr "Feil og mangler"
-
-#: templates/contact-us.html:103
-msgid ""
-"If you need to contact us, please choose from one of the options below. We "
-"get a lot of mail, so we may not be able to respond to your message."
-msgstr ""
-"Hvis du vil kontakte oss, velg en kategori nedenfor. Vi får mye epost så vi "
-"har kanskje ikke tid til å svare deg."
-
-#: templates/contact-us.html:108
-msgid "Select a topic"
-msgstr "Velg emne"
-
-#: templates/contact-us.html:109
-msgid "Report something inappropriate..."
-msgstr "Meld noe upassende..."
-
-#: templates/contact-us.html:110
-msgid "Report a problem with the website..."
-msgstr "Rapporter et problem med nettstedet..."
-
-#: templates/contact-us.html:111
-msgid "Problems with email confirmation..."
-msgstr "Det er problemer med bekreftelse av epostadressen..."
-
-#: templates/contact-us.html:112
-msgid "Other..."
-msgstr "Annet..."
 
 #: templates/educators/add_class_modal.html:6
 msgid "Add a New Class"
@@ -1557,37 +1495,37 @@ msgid "Studio Description"
 msgstr "Beskrivelse av galleriet"
 
 #: templates/educators/add_gallery_modal.html:42
-#: templates/educators/register_student_modal.html:66
+#: templates/educators/register_student_modal.html:115
 #: templates/modal-registration.html:269
 msgid "Your username must be between 3 and 20 characters"
 msgstr "Brukernavnet må være 3 til 20 tegn langt"
 
 #: templates/educators/add_gallery_modal.html:43
-#: templates/educators/register_student_modal.html:67
+#: templates/educators/register_student_modal.html:116
 #: templates/modal-registration.html:270
 msgid "Sorry, that username already exists"
 msgstr "Beklager, det brukernavnet finnes allerede"
 
 #: templates/educators/add_gallery_modal.html:44
-#: templates/educators/register_student_modal.html:68
+#: templates/educators/register_student_modal.html:117
 #: templates/modal-registration.html:271
 msgid "Invalid username"
 msgstr "Ugyldig brukernavn"
 
 #: templates/educators/add_gallery_modal.html:45
-#: templates/educators/register_student_modal.html:69
+#: templates/educators/register_student_modal.html:118
 #: templates/modal-registration.html:272
 msgid "Hmm, that looks inappropriate"
 msgstr "Hmm, det ser ut til å være upassende her"
 
 #: templates/educators/add_gallery_modal.html:46
-#: templates/educators/register_student_modal.html:70
+#: templates/educators/register_student_modal.html:119
 #: templates/modal-registration.html:273
 msgid "You must enter a username"
 msgstr "Du må skrive brukernavn"
 
 #: templates/educators/add_gallery_modal.html:47
-#: templates/educators/register_student_modal.html:71
+#: templates/educators/register_student_modal.html:120
 #: templates/modal-registration.html:274
 msgid "Your username may only contain letters, numbers, - and _"
 msgstr ""
@@ -1656,30 +1594,30 @@ msgstr "Eksempelfane"
 msgid "%(classroom_title)s on Scratch"
 msgstr "%(classroom_title)s på Scratch"
 
-#: templates/educators/classroom_detail.html:70
+#: templates/educators/classroom_detail.html:71
 msgid "Class page"
 msgstr "Klasseside"
 
-#: templates/educators/classroom_detail.html:70
+#: templates/educators/classroom_detail.html:71
 #: templates/profiles/profile_detail.html:80
 msgid "ended"
 msgstr ""
 
-#: templates/educators/classroom_detail.html:71
+#: templates/educators/classroom_detail.html:72
 #, python-format
 msgid "Created %(tDate)s ago"
 msgstr "Opprettet for %(tDate)s siden"
 
-#: templates/educators/classroom_detail.html:79
+#: templates/educators/classroom_detail.html:80
 msgid "Join this class"
 msgstr "Bli med i denne klassen"
 
-#: templates/educators/classroom_detail.html:92
+#: templates/educators/classroom_detail.html:93
 #: templates/educators/includes/stuff/backbone-templates.html:203
 msgid "About this Class"
 msgstr "Informasjon om denne klassen"
 
-#: templates/educators/classroom_detail.html:96
+#: templates/educators/classroom_detail.html:97
 #: templates/educators/includes/stuff/backbone-templates.html:206
 #: templates/educators/includes/stuff/backbone-templates.html:214
 msgid ""
@@ -1689,65 +1627,65 @@ msgstr ""
 "Skriv litt om klassen. Dette vil ligge åpent på nettet, så ikke bruk navn "
 "eller annen personlig informasjon."
 
-#: templates/educators/classroom_detail.html:97
+#: templates/educators/classroom_detail.html:98
 #: templates/educators/includes/stuff/backbone-templates.html:207
 #: templates/educators/includes/stuff/backbone-templates.html:215
 #: templates/profiles/profile_detail.html:124
 msgid "<span id=\"bio-chars-left\">200</span> characters left."
 msgstr ""
 
-#: templates/educators/classroom_detail.html:121
+#: templates/educators/classroom_detail.html:122
 msgid "What we're working on"
 msgstr "Det vi arbeider med"
 
-#: templates/educators/classroom_detail.html:125
+#: templates/educators/classroom_detail.html:126
 #: templates/educators/includes/stuff/backbone-templates.html:228
 #: templates/educators/includes/stuff/backbone-templates.html:236
 msgid "Describe what the class is doing."
 msgstr "Skriv litt om hva klassen gjør."
 
-#: templates/educators/classroom_detail.html:126
+#: templates/educators/classroom_detail.html:127
 #: templates/educators/includes/stuff/backbone-templates.html:229
 #: templates/educators/includes/stuff/backbone-templates.html:237
 #: templates/profiles/profile_detail.html:151
 msgid "<span id=\"status-chars-left\">200</span> characters left."
 msgstr ""
 
-#: templates/educators/classroom_detail.html:154
+#: templates/educators/classroom_detail.html:155
 #: templates/pathways/layout/base.html:66
 msgid "Featured"
 msgstr "Anbefalt"
 
-#: templates/educators/classroom_detail.html:158
+#: templates/educators/classroom_detail.html:159
 #: templates/profiles/profile_detail.html:179
 msgid "Change featured project"
 msgstr "Endre på det anbefalte prosjektet"
 
-#: templates/educators/classroom_detail.html:165
+#: templates/educators/classroom_detail.html:166
 msgid "Latest Activity"
 msgstr "Nylig aktivitet"
 
-#: templates/educators/classroom_detail.html:176
+#: templates/educators/classroom_detail.html:177
 msgid "Report this class"
 msgstr "Meld denne klassen"
 
-#: templates/educators/classroom_detail.html:186
+#: templates/educators/classroom_detail.html:187
 #: templates/educators/classroom_gallery_list.html:5
 msgid "Class Studios"
 msgstr "Klassegallerier"
 
-#: templates/educators/classroom_detail.html:203
+#: templates/educators/classroom_detail.html:204
 msgid "This class doesn't have any studios yet"
 msgstr "Denne klassen har ingen gallerier ennå"
 
-#: templates/educators/classroom_detail.html:205
+#: templates/educators/classroom_detail.html:206
 #, python-format
 msgid "You can add studios in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr ""
 "Du lan opprette gallerier i <a href=\"%(educator_stuff_url)s\">mine "
 "klasser</a>"
 
-#: templates/educators/classroom_detail.html:216
+#: templates/educators/classroom_detail.html:217
 #: templates/educators/includes/stuff/backbone-templates.html:71
 #: templates/educators/includes/stuff/backbone-templates.html:144
 #: templates/educators/includes/stuff/sort-classrooms-dropdown.html:12
@@ -1755,11 +1693,11 @@ msgstr ""
 msgid "Students"
 msgstr "Elever"
 
-#: templates/educators/classroom_detail.html:233
+#: templates/educators/classroom_detail.html:234
 msgid "This class doesn't have students yet"
 msgstr "Denne klassen har ingen elever ennå"
 
-#: templates/educators/classroom_detail.html:235
+#: templates/educators/classroom_detail.html:236
 #, python-format
 msgid "You can add students in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr ""
@@ -2022,7 +1960,7 @@ msgstr "Ny klasse"
 #: templates/educators/includes/stuff/backbone-templates.html:129
 #: templates/educators/includes/stuff/backbone-templates.html:265
 #: templates/educators/includes/stuff/backbone-templates.html:340
-#: templates/educators/includes/stuff/backbone-templates.html:412
+#: templates/educators/includes/stuff/backbone-templates.html:414
 #: templates/mystuff/mystuff.html:52 templates/mystuff/mystuff.html.py:74
 #: templates/mystuff/mystuff.html:87
 msgid "Load More"
@@ -2083,8 +2021,8 @@ msgid "What the Class is working on"
 msgstr "Det klassen arbeider med"
 
 #: templates/educators/includes/stuff/backbone-templates.html:250
-#: templates/educators/includes/stuff/backbone-templates.html:791
-#: templates/educators/includes/stuff/backbone-templates.html:807
+#: templates/educators/includes/stuff/backbone-templates.html:861
+#: templates/educators/includes/stuff/backbone-templates.html:877
 msgid "End Class"
 msgstr "Avslutt klassen"
 
@@ -2139,106 +2077,107 @@ msgstr "Innmeldingslink for elever"
 
 #: templates/educators/includes/stuff/backbone-templates.html:366
 #: templates/educators/includes/stuff/backbone-templates.html:380
+#: templates/educators/includes/stuff/backbone-templates.html:801
 msgid "CSV Upload"
 msgstr "CSV-opplasting"
 
-#: templates/educators/includes/stuff/backbone-templates.html:451
+#: templates/educators/includes/stuff/backbone-templates.html:453
 msgid "followed user"
 msgstr "følger nå"
 
-#: templates/educators/includes/stuff/backbone-templates.html:456
+#: templates/educators/includes/stuff/backbone-templates.html:458
 msgid "followed studio"
 msgstr "følger galleriet"
 
-#: templates/educators/includes/stuff/backbone-templates.html:461
+#: templates/educators/includes/stuff/backbone-templates.html:463
 msgid "loved the project "
 msgstr "liker prosjektet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:466
+#: templates/educators/includes/stuff/backbone-templates.html:468
 msgid "favorited the project "
 msgstr "favorittmerket prosjektet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:471
+#: templates/educators/includes/stuff/backbone-templates.html:473
 msgid "added the project "
 msgstr "la til prosjektet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:473
+#: templates/educators/includes/stuff/backbone-templates.html:475
 msgid "to studio "
 msgstr "til galleriet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:481
+#: templates/educators/includes/stuff/backbone-templates.html:483
 msgid "shared the project "
 msgstr "la ut prosjektet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:483
+#: templates/educators/includes/stuff/backbone-templates.html:485
 msgid "reshared the project "
 msgstr "la ut prosjektet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:489
+#: templates/educators/includes/stuff/backbone-templates.html:491
 msgid "remixed the project "
 msgstr "remikset prosjektet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:494
+#: templates/educators/includes/stuff/backbone-templates.html:496
 msgid "added the studio "
 msgstr "la til galleriet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:499
+#: templates/educators/includes/stuff/backbone-templates.html:501
 msgid "updated the studio "
 msgstr "oppdaterte galleriet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:507
+#: templates/educators/includes/stuff/backbone-templates.html:509
 msgid "removed the project "
 msgstr "fjernet prosjektet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:509
+#: templates/educators/includes/stuff/backbone-templates.html:511
 msgid "from studio "
 msgstr "fra galleriet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:516
+#: templates/educators/includes/stuff/backbone-templates.html:518
 msgid "was promoted to manager by "
 msgstr "ble forfremmet til administrator av "
 
-#: templates/educators/includes/stuff/backbone-templates.html:518
+#: templates/educators/includes/stuff/backbone-templates.html:520
 msgid "for studio"
 msgstr "for galleriet"
 
-#: templates/educators/includes/stuff/backbone-templates.html:525
+#: templates/educators/includes/stuff/backbone-templates.html:527
 msgid "made a profile update. <em>"
 msgstr "oppdaterte sin profil. <em>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:531
+#: templates/educators/includes/stuff/backbone-templates.html:533
 msgid "commented on the project "
 msgstr "kommenterte på prosjektet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:539
+#: templates/educators/includes/stuff/backbone-templates.html:541
 msgid "commented on user"
 msgstr "kommenterte på"
 
-#: templates/educators/includes/stuff/backbone-templates.html:547
+#: templates/educators/includes/stuff/backbone-templates.html:549
 msgid "commented on the studio "
 msgstr "kommenterte galleriet "
 
-#: templates/educators/includes/stuff/backbone-templates.html:557
+#: templates/educators/includes/stuff/backbone-templates.html:559
 msgid "performed an action. <em>"
 msgstr "utførte en handling. <em>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:598
+#: templates/educators/includes/stuff/backbone-templates.html:600
 #, python-format
 msgid "%(target_username)s was banned."
 msgstr "%(target_username)s ble utestengt."
 
-#: templates/educators/includes/stuff/backbone-templates.html:600
+#: templates/educators/includes/stuff/backbone-templates.html:602
 #, python-format
 msgid "%(target_username)s was unbanned."
 msgstr "%(target_username)s fikk utestengelsen opphevet."
 
-#: templates/educators/includes/stuff/backbone-templates.html:602
 #: templates/educators/includes/stuff/backbone-templates.html:604
+#: templates/educators/includes/stuff/backbone-templates.html:606
 #, python-format
 msgid "%(target_username)s was excluded from homepage."
 msgstr "%(target_username)s ble utestengt fra hjemmesiden."
 
-#: templates/educators/includes/stuff/backbone-templates.html:606
+#: templates/educators/includes/stuff/backbone-templates.html:608
 #, python-format
 msgid ""
 "%(target_username)s was notified by a Scratch Administrator. Notification "
@@ -2248,27 +2187,27 @@ msgstr ""
 "Varslingstype: <%%- admin_action.extra_data.notification_type || 'Ukjent' "
 "%%>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:608
+#: templates/educators/includes/stuff/backbone-templates.html:610
 #, python-format
 msgid "%(target_username)s was banned automatically."
 msgstr "%(target_username)s ble automatisk utestengt."
 
-#: templates/educators/includes/stuff/backbone-templates.html:610
+#: templates/educators/includes/stuff/backbone-templates.html:612
 #, python-format
 msgid "%(project)s by %(target_username)s was removed automatically."
 msgstr "%(project)s av %(target_username)s ble fjernet automatisk."
 
-#: templates/educators/includes/stuff/backbone-templates.html:613
+#: templates/educators/includes/stuff/backbone-templates.html:615
 #, python-format
 msgid "%(project)s by %(target_username)s was censored."
 msgstr "%(project)s av %(target_username)s ble sensurert."
 
-#: templates/educators/includes/stuff/backbone-templates.html:615
+#: templates/educators/includes/stuff/backbone-templates.html:617
 #, python-format
 msgid "%(project)s by %(target_username)s was uncensored."
 msgstr "%(project)s av %(target_username)s fikk sensureringen opphevet."
 
-#: templates/educators/includes/stuff/backbone-templates.html:618
+#: templates/educators/includes/stuff/backbone-templates.html:620
 #, python-format
 msgid ""
 "%(project)s by %(target_username)s was reviewed by a Scratch Administrator."
@@ -2276,34 +2215,34 @@ msgstr ""
 "%(project)s av %(target_username)s ble inspisert av en Scratch-"
 "administrator."
 
-#: templates/educators/includes/stuff/backbone-templates.html:620
+#: templates/educators/includes/stuff/backbone-templates.html:622
 #, python-format
 msgid ""
 "%(project)s by %(target_username)s was deleted by a Scratch Administrator."
 msgstr ""
 "%(project)s av %(target_username)s ble slettet av en Scratch-administrator."
 
-#: templates/educators/includes/stuff/backbone-templates.html:623
+#: templates/educators/includes/stuff/backbone-templates.html:625
 #, python-format
 msgid "%(target_username)s was deleted by a Scratch Administrator."
 msgstr "%(target_username)s ble slettet av en Scratch-administrator."
 
-#: templates/educators/includes/stuff/backbone-templates.html:626
+#: templates/educators/includes/stuff/backbone-templates.html:628
 #, python-format
 msgid "%(gallery)s was reviewed by a Scratch Administrator."
 msgstr "%(gallery)s ble inspisert av en Scratch-administrator."
 
-#: templates/educators/includes/stuff/backbone-templates.html:628
+#: templates/educators/includes/stuff/backbone-templates.html:630
 #, python-format
 msgid "%(gallery)s was deleted by a Scratch Administrator."
 msgstr "%(gallery)s ble slettet av en Scratch-administrator."
 
-#: templates/educators/includes/stuff/backbone-templates.html:630
+#: templates/educators/includes/stuff/backbone-templates.html:632
 #, python-format
 msgid "%(target_username)s deleted their own account."
 msgstr "%(target_username)s slettet sin egen brukerkonto."
 
-#: templates/educators/includes/stuff/backbone-templates.html:632
+#: templates/educators/includes/stuff/backbone-templates.html:634
 #, python-format
 msgid ""
 "The email address of %(target_username)s was confirmed by a Scratch "
@@ -2312,7 +2251,7 @@ msgstr ""
 "Epostadressen til %(target_username)s ble bekreftet av en Scratch-"
 "administrator"
 
-#: templates/educators/includes/stuff/backbone-templates.html:634
+#: templates/educators/includes/stuff/backbone-templates.html:636
 #, python-format
 msgid ""
 "The email address of %(target_username)s was set as not confirmed by a "
@@ -2321,42 +2260,42 @@ msgstr ""
 "En Scratch-administrator merket epostadressen til %(target_username)s som "
 "ubekreftet"
 
-#: templates/educators/includes/stuff/backbone-templates.html:636
+#: templates/educators/includes/stuff/backbone-templates.html:638
 #, python-format
 msgid "%(target_username)s had an admin action performed."
 msgstr "%(target_username)s sin konto ble behandlet av en administrator."
 
-#: templates/educators/includes/stuff/backbone-templates.html:652
+#: templates/educators/includes/stuff/backbone-templates.html:654
 #, python-format
 msgid "Change Password for %(username)s"
 msgstr "Bytt passord for %(username)s"
 
-#: templates/educators/includes/stuff/backbone-templates.html:656
+#: templates/educators/includes/stuff/backbone-templates.html:658
 msgid "New password"
 msgstr "Nytt passord"
 
-#: templates/educators/includes/stuff/backbone-templates.html:660
+#: templates/educators/includes/stuff/backbone-templates.html:662
 msgid "New password confirmation"
 msgstr "Bekreft nytt passord"
 
-#: templates/educators/includes/stuff/backbone-templates.html:676
+#: templates/educators/includes/stuff/backbone-templates.html:678
 #, python-format
 msgid "%(username)s Account Options"
 msgstr "%(username)s brukerinnstillinger"
 
-#: templates/educators/includes/stuff/backbone-templates.html:683
+#: templates/educators/includes/stuff/backbone-templates.html:685
 msgid "Remove Icon"
 msgstr "Fjern ikon"
 
-#: templates/educators/includes/stuff/backbone-templates.html:686
+#: templates/educators/includes/stuff/backbone-templates.html:688
 msgid "There are two ways to change your student's password."
 msgstr "Passordet til en elev kan endres på to måter."
 
-#: templates/educators/includes/stuff/backbone-templates.html:689
+#: templates/educators/includes/stuff/backbone-templates.html:691
 msgid "Prompt student to change password on next login"
 msgstr "Be eleven om å bytte til et annet passord ved neste innlogging"
 
-#: templates/educators/includes/stuff/backbone-templates.html:690
+#: templates/educators/includes/stuff/backbone-templates.html:692
 #, python-format
 msgid ""
 "This student's password will be reset to your username, %(username)s. After "
@@ -2365,91 +2304,121 @@ msgstr ""
 "Elevens passord vil bli satt til å være ditt brukernavn, %(username)s. Ved "
 "innlogging vil eleven bli bedt om å velge et nytt passord."
 
-#: templates/educators/includes/stuff/backbone-templates.html:693
+#: templates/educators/includes/stuff/backbone-templates.html:695
 msgid "Prompt Student"
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:698
+#: templates/educators/includes/stuff/backbone-templates.html:700
 msgid "Manually change the student's password"
 msgstr "Endre elevens passord manuelt"
 
-#: templates/educators/includes/stuff/backbone-templates.html:699
+#: templates/educators/includes/stuff/backbone-templates.html:701
 msgid ""
 "You will be redirected to a screen where you can choose the student's "
 "password."
 msgstr "Du vil få opp en side der du kan velge et passord for eleven."
 
-#: templates/educators/includes/stuff/backbone-templates.html:702
+#: templates/educators/includes/stuff/backbone-templates.html:704
 msgid "Manually Change"
 msgstr "Endre manuelt"
 
-#: templates/educators/includes/stuff/backbone-templates.html:710
-#: templates/educators/includes/stuff/backbone-templates.html:736
-#: templates/educators/includes/stuff/backbone-templates.html:782
+#: templates/educators/includes/stuff/backbone-templates.html:712
+#: templates/educators/includes/stuff/backbone-templates.html:767
 #: templates/educators/student-modal-registration.html:90
 #: templates/modal-registration.html:255
 msgid "Close"
 msgstr "Lukk"
 
-#: templates/educators/includes/stuff/backbone-templates.html:720
+#: templates/educators/includes/stuff/backbone-templates.html:722
 msgid "Sign-up Link"
 msgstr "Link for å melde seg inn"
 
-#: templates/educators/includes/stuff/backbone-templates.html:723
+#: templates/educators/includes/stuff/backbone-templates.html:725
 msgid ""
-"Students can use this link to register for your class. They will be directed"
-" to a class page where they can click 'Join this Class'."
+"Get a sign-up link that students can use to register for your class. They "
+"will be directed to a class page where they can \"Join this Class\". "
 msgstr ""
-"Elever kan bruke denne linken for å melde seg inn i din klasse. De vil komme"
-" til en side hvor de kan klikke 'Bli med i denne klassen'."
 
-#: templates/educators/includes/stuff/backbone-templates.html:726
-msgid "Generate a sign-up link"
-msgstr "Lag en link for innmelding"
+#: templates/educators/includes/stuff/backbone-templates.html:734
+msgid ""
+"\n"
+"                        Usernames must\n"
+"                        <span class=\"underline\">not</span>\n"
+"                        reveal the identity of students in any way.\n"
+"                        "
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:728
-msgid "Generate"
-msgstr "Lag link"
+#: templates/educators/includes/stuff/backbone-templates.html:754
+msgid ""
+"I agree to remind my students not to use their real names, school name, "
+"contact information or student ID numbers."
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:731
-#: templates/educators/includes/stuff/backbone-templates.html:774
+#: templates/educators/includes/stuff/backbone-templates.html:760
+msgid "Get Link"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:763
+#: templates/educators/includes/stuff/backbone-templates.html:808
 msgid "Type CTRL+C on Windows or &#8984;+C on Mac to copy the link."
 msgstr "Trykk CTRL+C på Windows eller &#8984;+C på Mac for å kopiere linken."
 
-#: templates/educators/includes/stuff/backbone-templates.html:745
+#: templates/educators/includes/stuff/backbone-templates.html:776
 msgid "Upload CSV"
 msgstr "Last opp CSV"
 
-#: templates/educators/includes/stuff/backbone-templates.html:748
+#: templates/educators/includes/stuff/backbone-templates.html:779
 msgid ""
-"Upload a .csv file containing up to 50 student usernames and passwords. "
-"These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools. Accounts with "
-"usernames containing personal identifiers will be permanently deleted for "
-"safety and privacy reasons. Please use the following format:"
+"You can quickly create up to 50 student accounts by uploading a CSV of "
+"usernames and passwords. See how to format a CSV below."
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:755
+#: templates/educators/includes/stuff/backbone-templates.html:780
+msgid "Provide Usernames and Passwords"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:781
+msgid ""
+"Usernames are visible to the public, so do not use any personal information."
+" Instead, use aspects from the subject you are teaching, favorite foods, or "
+"animals"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:788
 msgid "Download example"
 msgstr "Last ned et eksempel"
 
-#: templates/educators/includes/stuff/backbone-templates.html:758
-msgid "Learn more about CSV files"
-msgstr "Mer informasjon om CSV-filer"
+#: templates/educators/includes/stuff/backbone-templates.html:791
+msgid "Teacher Account Setup Guide"
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:766
-msgid "Student Upload"
-msgstr "Elev-opplasting"
+#: templates/educators/includes/stuff/backbone-templates.html:819
+msgid ""
+"\n"
+"                        Usernames must\n"
+"                        <span class=\"underline\">not</span>\n"
+"                        reveal the identity of students in any way.\n"
+"                    "
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:770
+#: templates/educators/includes/stuff/backbone-templates.html:839
+msgid ""
+"\n"
+"                        I understand that for safety and privacy, Scratch must\n"
+"                        <span class=\"attention\">delete</span>\n"
+"                        any accounts which include real names, school name, or contact information.\n"
+"                    "
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:851
 msgid "Upload"
 msgstr "Last opp"
 
-#: templates/educators/includes/stuff/backbone-templates.html:794
+#: templates/educators/includes/stuff/backbone-templates.html:864
 msgid "Are you sure you want to end the following class:"
 msgstr "Er du sikker på at du vil avslutte denne klassen:"
 
-#: templates/educators/includes/stuff/backbone-templates.html:796
+#: templates/educators/includes/stuff/backbone-templates.html:866
 msgid ""
 "When you end a class, students will no longer be able to log in (but their "
 "projects will still be visible on the site)."
@@ -2457,7 +2426,7 @@ msgstr ""
 "Når du avslutter en klasse kan elevene ikke lenger logge inn (men "
 "prosjektene vil fortsatt være synlige på nettstedet)."
 
-#: templates/educators/includes/stuff/backbone-templates.html:799
+#: templates/educators/includes/stuff/backbone-templates.html:869
 msgid "To confirm, please enter your password"
 msgstr "Skriv ditt passord for å bekrefte"
 
@@ -2493,23 +2462,45 @@ msgid "All classes"
 msgstr "Alle klasser"
 
 #: templates/educators/register_student_modal.html:6
-msgid "Adding New Student"
-msgstr "Legge til ny elev"
+msgid "Add New Student"
+msgstr ""
 
 #: templates/educators/register_student_modal.html:11
 msgid "Add to Class"
 msgstr "Melde inn i en klasse"
 
-#: templates/educators/register_student_modal.html:38
-msgid ""
-"These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools. Accounts with "
-"usernames containing personal identifiers will be permanently deleted for "
-"safety and privacy reasons."
+#: templates/educators/register_student_modal.html:31
+msgid "type student username here"
 msgstr ""
 
-#: templates/educators/register_student_modal.html:72
+#: templates/educators/register_student_modal.html:44
+msgid ""
+"\n"
+"                          Usernames must\n"
+"                          <span class=\"underline\">not</span>\n"
+"                          reveal the identity of students in any way.\n"
+"                      "
+msgstr ""
+
+#: templates/educators/register_student_modal.html:64
+msgid ""
+"\n"
+"                          I understand that for safety and privacy, Scratch must\n"
+"                          <span class=\"attention\">delete</span>\n"
+"                          any accounts which include real names, school name, or contact information.\n"
+"                      "
+msgstr ""
+
+#: templates/educators/register_student_modal.html:90
+msgid "Will be set to the teacher's username:"
+msgstr ""
+
+#: templates/educators/register_student_modal.html:121
 msgid "That class already has the maximum number of students allowed"
+msgstr ""
+
+#: templates/educators/register_student_modal.html:122
+msgid "Please confirm that you understand"
 msgstr ""
 
 #: templates/educators/registration/approval_email_message.html:7
@@ -2534,48 +2525,70 @@ msgstr ""
 msgid "New to Scratch?"
 msgstr "Ikke prøvd Scratch før?"
 
-#: templates/educators/registration/approval_email_message.html:13
-#: templates/educators/registration/approval_email_message.txt:7
-msgid "Read our Community Guidelines"
-msgstr "Les retningslinjer for bruk av nettstedet"
-
-#: templates/educators/registration/approval_email_message.html:14
-#: templates/educators/registration/approval_email_message.txt:8
-msgid "Get inspired with a starter project"
-msgstr "Start her: begynnerprosjekter"
-
 #: templates/educators/registration/approval_email_message.html:15
-#: templates/educators/registration/approval_email_message.txt:9
-msgid "Learn more about Scratch"
-msgstr "Finn ut mer om Scratch"
+#, python-format
+msgid "Read our <a href=\" %(comm_link)s\">Community Guidelines</a>."
+msgstr ""
 
-#: templates/educators/registration/approval_email_message.html:18
+#: templates/educators/registration/approval_email_message.html:16
+msgid ""
+"Review the <a "
+"href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">Getting"
+" Started Guide</a> for a deeper dive into the Scratch editor."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:17
+#, python-format
+msgid ""
+"Explore our <a href=\"%(ed_link)s\"> Scratch for Educators </a> site for "
+"resources and more educator guides."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:20
 #: templates/educators/registration/approval_email_message.txt:11
 msgid "Next Steps"
 msgstr "Prosessen videre"
 
-#: templates/educators/registration/approval_email_message.html:20
+#: templates/educators/registration/approval_email_message.html:23
+#, python-format
+msgid "Learn more about managing <a href=\"%(faq_link)s\">Teacher Accounts</a>."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:24
+#, python-format
+msgid ""
+"Take a deeper dive into curriculum resources, events, and news on our <a "
+"href=\"%(sip_url)s\">Scratch in Practice</a> page. "
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:25
+msgid ""
+"Connect with other educators through the <a "
+"href=\"https://www.facebook.com/groups/TeachingwithScratch/\">Teaching with "
+"Scratch Facebook page</a>, hosted by the Harvard Graduate School of "
+"Education <a href=\"http://scratched.gse.harvard.edu/\">ScratchEd</a> "
+"community."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.txt:7
+msgid "Read our Community Guidelines"
+msgstr "Les retningslinjer for bruk av nettstedet"
+
+#: templates/educators/registration/approval_email_message.txt:8
+msgid "Get inspired with a starter project"
+msgstr "Start her: begynnerprosjekter"
+
+#: templates/educators/registration/approval_email_message.txt:9
+msgid "Learn more about Scratch"
+msgstr "Finn ut mer om Scratch"
+
 #: templates/educators/registration/approval_email_message.txt:12
 msgid "Learn more about Teacher Accounts"
 msgstr "Mer informasjon om lærerkontoer"
 
-#: templates/educators/registration/approval_email_message.html:21
 #: templates/educators/registration/approval_email_message.txt:13
 msgid "Explore educator resources"
 msgstr "Bli kjent med ressurser for lærere"
-
-#: templates/educators/registration/approval_email_message.html:22
-#, python-format
-msgid ""
-"<a href=\"%(scratch_ed_url)s\">Connect with other educators</a> via the "
-"ScratchEd online community, developed and supported by the Harvard Graduate "
-"School of Education. <em>Please note that you’ll need to create a separate "
-"account to join the discussion on ScratchEd.</em>"
-msgstr ""
-"<a href=\"%(scratch_ed_url)s\">Få kontakt med andre lærere</a> i hele verden"
-" gjennom nettsamfunnet ScratchEd, som drives av Harvard Graduate School of "
-"Education. <em>Merk at du må opprette en egen konto på ScratchEd.</em> "
-"Lærere i Norge kan også ha interesse av å besøke nettsidene til Kodeklubben."
 
 #: templates/educators/registration/approval_email_message.txt:14
 msgid ""
@@ -2803,6 +2816,10 @@ msgstr "Prosjekter ( <span data-count=\"projects\">100+</span> )"
 #, python-format
 msgid "Projects ( <span data-count=\"projects\">%(tCount)s</span> )"
 msgstr "Prosjekter ( <span data-count=\"projects\">%(tCount)s</span> )"
+
+#: templates/galleries/base.html:117
+msgid "Comments ( <span data-count=\"comments\">100+</span> )"
+msgstr ""
 
 #: templates/galleries/base.html:117
 #, python-format

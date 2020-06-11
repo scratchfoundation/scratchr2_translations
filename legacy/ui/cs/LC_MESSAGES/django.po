@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-11 15:31-0400\n"
+"POT-Creation-Date: 2020-06-11 13:18+0000\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
 "Last-Translator: Karel Janda <karel1@tutanota.com>, 2020\n"
 "Language-Team: Czech (https://www.transifex.com/llk/teams/60938/cs/)\n"
@@ -226,24 +226,24 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s staré"
 
-#: educators/forms.py:110
+#: educators/forms.py:106
 msgid "Already exists"
 msgstr "Již existuje"
 
-#: educators/forms.py:111
+#: educators/forms.py:107
 msgid "Contains invalid characters. Use letters and numbers only."
 msgstr "Obsahuje neplatné znaky. Používej pouze písmena a číslice."
 
-#: educators/forms.py:112
+#: educators/forms.py:108
 msgid "Contains inappropriate words"
 msgstr "Obsahuje neslušná slova"
 
-#: educators/forms.py:113
+#: educators/forms.py:109
 #, python-format
 msgid "Shorter than minimum length of %d characters"
 msgstr "Kratší než minimální délka %d znaků"
 
-#: educators/forms.py:114
+#: educators/forms.py:110
 #, python-format
 msgid "Longer than maximum length of %d characters"
 msgstr "Delší než maximální délka %d znaků"
@@ -256,13 +256,13 @@ msgstr "třída"
 msgid "classes"
 msgstr "třídy"
 
-#: educators/views.py:519
+#: educators/views.py:525
 msgid ""
 "Please update the CSV file to address the issues above and reload the file."
 msgstr ""
 "Prosím oprav CSV soubor, aby zohlednil problémy výše a nahraj soubor znovu."
 
-#: educators/views.py:533
+#: educators/views.py:539
 msgid ""
 "Errors occurred while creating accounts. All accounts other than those "
 "specified here were created."
@@ -270,7 +270,7 @@ msgstr ""
 "Nastaly chyby během vytváření účtů. Všechny účty jiné, než ty zde uvedené, "
 "byly vytvořeny."
 
-#: educators/views.py:607
+#: educators/views.py:613
 msgid ""
 "After changing this student's password, you will need to share the new "
 "password with your student directly so that they can log back into Scratch."
@@ -278,11 +278,11 @@ msgstr ""
 "Po změně hesla tohoto studenta budeš potřebovat se s ním hned o heslo "
 "podělit, aby se mohl opět přihlásit do Scratch webu."
 
-#: galleries/models.py:264
+#: galleries/models.py:277
 msgid "studio"
 msgstr "studio"
 
-#: galleries/models.py:265
+#: galleries/models.py:278
 msgid "studios"
 msgstr "studia"
 
@@ -318,11 +318,11 @@ msgstr "projekty"
 msgid "projects"
 msgstr "projekty"
 
-#: projects/models.py:278
+#: projects/models.py:279
 msgid "Permanently Censored Project cannot be reshared."
 msgstr "Trvale cenzurovaný projekt nemůže být opět sdílen."
 
-#: projects/models.py:285
+#: projects/models.py:286
 msgid ""
 "This project has been censored and must be reviewed before it can be "
 "reshared."
@@ -334,15 +334,15 @@ msgstr ""
 msgid "This tag has too many projects to load"
 msgstr "Tento štítek má příliš mnoho projektů ke stažení"
 
-#: scratchr2/views.py:346
+#: scratchr2/views.py:345
 msgid "You're not allowed to appeal this ban."
 msgstr "Nemáš oprávnění k odvolání tohoto zákazu."
 
-#: scratchr2/views.py:355
+#: scratchr2/views.py:354
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr "Tvoje zpráva byla odeslána. Odpovíme na ní během tří dnů."
 
-#: scratchr2/views.py:361 scratchr2/views.py:405
+#: scratchr2/views.py:360
 msgid "Please correct the errors below."
 msgstr "Prosím, oprav níže uvedené chyby."
 
@@ -439,6 +439,7 @@ msgstr "Účet"
 #: templates/accounts/deletion/confirmation.html:7
 #: templates/accounts/deletion/nostalgia.html:6
 #: templates/accounts/email_change.html:9 templates/base.html:212
+#: templates/educators/register_student_modal.html:86
 #: templates/includes/backbone-templates.html:44 templates/modal-login.html:21
 msgid "Password"
 msgstr "Heslo"
@@ -469,7 +470,7 @@ msgstr "Uložit moje změny"
 msgid "I want to delete my account"
 msgstr "Chci zrušit svůj účet"
 
-#: templates/accounts/banned-response.html:12 templates/contact-us.html:73
+#: templates/accounts/banned-response.html:12
 #: templates/info/ext_download.html:11 templates/info/scratch2download.html:27
 #: templates/info/scratch_1.4.html:11
 msgid "Account Blocked"
@@ -547,12 +548,12 @@ msgstr ""
 "na “Report” abys nás o tom uvědomil/a/."
 
 #: templates/accounts/banned-response.html:80
-#: templates/accounts/email_change.html:64 templates/contact-us.html:121
+#: templates/accounts/email_change.html:64
 msgid "Send"
 msgstr "Odeslat"
 
 #: templates/accounts/base.html:24
-#: templates/educators/includes/stuff/backbone-templates.html:397
+#: templates/educators/includes/stuff/backbone-templates.html:399
 #: templates/registration/base.html:24
 msgid "Account Settings"
 msgstr "Nastavení účtu"
@@ -774,7 +775,7 @@ msgstr ""
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
-#: templates/educators/registration/approval_email_message.html:26
+#: templates/educators/registration/approval_email_message.html:28
 #: templates/educators/registration/approval_email_message.txt:16
 #: templates/educators/registration/welcome_email_message.html:32
 #: templates/educators/registration/welcome_email_message.txt:17
@@ -791,7 +792,7 @@ msgstr "Pojď Scratchovat!"
 #: templates/accounts/password_changed_email/message.txt:7
 #: templates/educators/email_verification/verification_email.html:34
 #: templates/educators/email_verification/verification_email_plain.html:20
-#: templates/educators/registration/approval_email_message.html:28
+#: templates/educators/registration/approval_email_message.html:30
 #: templates/educators/registration/approval_email_message.txt:17
 #: templates/educators/registration/password_reset_email.html:16
 #: templates/educators/registration/password_reset_email.txt:10
@@ -1059,7 +1060,7 @@ msgid "After changing your password, you will be prompted to log back in."
 msgstr "Po změně svého hesla budeš znovu vyzván/a/ k přihlášení."
 
 #: templates/accounts/password_change_form.html:36
-#: templates/educators/includes/stuff/backbone-templates.html:666
+#: templates/educators/includes/stuff/backbone-templates.html:668
 msgid "Change Password"
 msgstr "Změnit heslo"
 
@@ -1265,8 +1266,7 @@ msgstr "FAQ"
 msgid "Offline Editor"
 msgstr "Offline Editor"
 
-#: templates/base.html:350 templates/contact-us-success.html:12
-#: templates/contact-us.html:79
+#: templates/base.html:350
 msgid "Contact Us"
 msgstr "Kontaktujte nás"
 
@@ -1321,8 +1321,8 @@ msgstr "Nadace Scratch"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14
-#: templates/educators/classroom_detail.html:187
-#: templates/educators/classroom_detail.html:217
+#: templates/educators/classroom_detail.html:188
+#: templates/educators/classroom_detail.html:218
 #: templates/profiles/profile_detail.html:213
 #: templates/profiles/profile_detail.html:240
 #: templates/profiles/profile_detail.html:276
@@ -1418,8 +1418,9 @@ msgstr "Odeslat"
 #: templates/comments/comment-module.html:41
 #: templates/educators/add_class_modal.html:35
 #: templates/educators/add_gallery_modal.html:33
-#: templates/educators/includes/stuff/backbone-templates.html:665
-#: templates/educators/includes/stuff/backbone-templates.html:808
+#: templates/educators/includes/stuff/backbone-templates.html:667
+#: templates/educators/includes/stuff/backbone-templates.html:852
+#: templates/educators/includes/stuff/backbone-templates.html:878
 #: templates/includes/backbone-templates.html:81
 msgid "Cancel"
 msgstr "Zrušit"
@@ -1435,6 +1436,10 @@ msgid ""
 msgstr "Bohužel odesílání komentářů není teď možné. Bude brzy opět fungovat!"
 
 #: templates/comments/comment-module.html:57
+msgid "Load comments"
+msgstr ""
+
+#: templates/comments/comment-module.html:60
 msgid "Comments loading..."
 msgstr "Nahrávání komentářů..."
 
@@ -1472,72 +1477,6 @@ msgstr "Zobrazit všech %(len)s odpovědí"
 #: templates/comments/list.html:24
 msgid "Load more"
 msgstr "Nahrát další"
-
-#: templates/contact-us.html:92
-msgid ""
-"The Scratch Team receives a large number of messages each day. "
-"Unfortunately, we do not have time to answer all of them. Luckily, you can "
-"find answers to most questions about Scratch on our  <a "
-"href=\"/info/faq/\">Frequently Asked Questions</a> page."
-msgstr ""
-"Tým Scratch dostává denně velký počet zpráv. Bohužel, nemáme dost času na "
-"všechny odpovědět. Naštěstí na většinu otázek ohledně Scratche můžeš najít "
-"odpověď na naší stránce <a href=\"/info/faq/\">Často kladené otázky</a>."
-
-#: templates/contact-us.html:94
-msgid ""
-"You can also look at the Scratch <a href=\"/discuss\">Discussion forums</a>."
-msgstr "Můžeš také nahlédnout na <a href=\"/discuss\">Diskuzní fóra</a> Scratch."
-
-#: templates/contact-us.html:95
-msgid ""
-"If you can't find an answer, post a new topic on the <a "
-"href=\"/discuss\">Discussion forums.</a> There are many experienced "
-"Scratchers who can help!"
-msgstr ""
-"Pokud nemůžeš najít odpověď, pošli nový námět do <a "
-"href=\"/discuss\">Diskuzního fóra.</a> Je zde mnoho zkušených Scratcherů "
-"kteří mohou pomoci!"
-
-#: templates/contact-us.html:98
-msgid "Questions About Scratch"
-msgstr "Dotazy ke Scratch"
-
-#: templates/contact-us.html:99
-msgid "Help with Scripts"
-msgstr "Pomoc se scénáři"
-
-#: templates/contact-us.html:100
-msgid "Bugs and Glitches"
-msgstr "Chyby a závady"
-
-#: templates/contact-us.html:103
-msgid ""
-"If you need to contact us, please choose from one of the options below. We "
-"get a lot of mail, so we may not be able to respond to your message."
-msgstr ""
-"Pokud nás potřebuješ kontaktovat, prosím vyber jednu z možností dále. "
-"Dostáváme mnoho pošty, takže nemusíme být schopni odpovědi na tvou zprávu."
-
-#: templates/contact-us.html:108
-msgid "Select a topic"
-msgstr "Vyber téma"
-
-#: templates/contact-us.html:109
-msgid "Report something inappropriate..."
-msgstr "Nahlášení něčeho nevhodného..."
-
-#: templates/contact-us.html:110
-msgid "Report a problem with the website..."
-msgstr "Nahlášení problémů s webovým serverem..."
-
-#: templates/contact-us.html:111
-msgid "Problems with email confirmation..."
-msgstr "Problémy s potvrzením e-mailu..."
-
-#: templates/contact-us.html:112
-msgid "Other..."
-msgstr "Jiné..."
 
 #: templates/educators/add_class_modal.html:6
 msgid "Add a New Class"
@@ -1580,37 +1519,37 @@ msgid "Studio Description"
 msgstr "Popis studia"
 
 #: templates/educators/add_gallery_modal.html:42
-#: templates/educators/register_student_modal.html:66
+#: templates/educators/register_student_modal.html:115
 #: templates/modal-registration.html:269
 msgid "Your username must be between 3 and 20 characters"
 msgstr "Tvé uživatelské jméno musí mít 3 až 20 znaků"
 
 #: templates/educators/add_gallery_modal.html:43
-#: templates/educators/register_student_modal.html:67
+#: templates/educators/register_student_modal.html:116
 #: templates/modal-registration.html:270
 msgid "Sorry, that username already exists"
 msgstr "Lituji, toto uživatelské jméno už existuje"
 
 #: templates/educators/add_gallery_modal.html:44
-#: templates/educators/register_student_modal.html:68
+#: templates/educators/register_student_modal.html:117
 #: templates/modal-registration.html:271
 msgid "Invalid username"
 msgstr "Neplatné jméno uživatele"
 
 #: templates/educators/add_gallery_modal.html:45
-#: templates/educators/register_student_modal.html:69
+#: templates/educators/register_student_modal.html:118
 #: templates/modal-registration.html:272
 msgid "Hmm, that looks inappropriate"
 msgstr "Hmm, to vypadá nepatřičně"
 
 #: templates/educators/add_gallery_modal.html:46
-#: templates/educators/register_student_modal.html:70
+#: templates/educators/register_student_modal.html:119
 #: templates/modal-registration.html:273
 msgid "You must enter a username"
 msgstr "Musíš zadat uživatelské jméno"
 
 #: templates/educators/add_gallery_modal.html:47
-#: templates/educators/register_student_modal.html:71
+#: templates/educators/register_student_modal.html:120
 #: templates/modal-registration.html:274
 msgid "Your username may only contain letters, numbers, - and _"
 msgstr "Tvoje uživatelské jméno může obsahovat jen písmena, číslice, - a _"
@@ -1678,30 +1617,30 @@ msgstr "Karta s příkladem"
 msgid "%(classroom_title)s on Scratch"
 msgstr "%(classroom_title)s na Scratch"
 
-#: templates/educators/classroom_detail.html:70
+#: templates/educators/classroom_detail.html:71
 msgid "Class page"
 msgstr "Stránka třídy"
 
-#: templates/educators/classroom_detail.html:70
+#: templates/educators/classroom_detail.html:71
 #: templates/profiles/profile_detail.html:80
 msgid "ended"
 msgstr "ukončeno"
 
-#: templates/educators/classroom_detail.html:71
+#: templates/educators/classroom_detail.html:72
 #, python-format
 msgid "Created %(tDate)s ago"
 msgstr "Vytvořeno o %(tDate)s dříve"
 
-#: templates/educators/classroom_detail.html:79
+#: templates/educators/classroom_detail.html:80
 msgid "Join this class"
 msgstr "Připojit se k této třídě"
 
-#: templates/educators/classroom_detail.html:92
+#: templates/educators/classroom_detail.html:93
 #: templates/educators/includes/stuff/backbone-templates.html:203
 msgid "About this Class"
 msgstr "O této třídě"
 
-#: templates/educators/classroom_detail.html:96
+#: templates/educators/classroom_detail.html:97
 #: templates/educators/includes/stuff/backbone-templates.html:206
 #: templates/educators/includes/stuff/backbone-templates.html:214
 msgid ""
@@ -1711,64 +1650,64 @@ msgstr ""
 "Popiš tuto třídu. Tohle bude veřejně viditelné, takže prosím nepoužívej "
 "identifikační informace, jako jsou například jména."
 
-#: templates/educators/classroom_detail.html:97
+#: templates/educators/classroom_detail.html:98
 #: templates/educators/includes/stuff/backbone-templates.html:207
 #: templates/educators/includes/stuff/backbone-templates.html:215
 #: templates/profiles/profile_detail.html:124
 msgid "<span id=\"bio-chars-left\">200</span> characters left."
 msgstr "zbývá <span id=\"bio-chars-left\">200</span> znaků."
 
-#: templates/educators/classroom_detail.html:121
+#: templates/educators/classroom_detail.html:122
 msgid "What we're working on"
 msgstr "Na čem pracujeme"
 
-#: templates/educators/classroom_detail.html:125
+#: templates/educators/classroom_detail.html:126
 #: templates/educators/includes/stuff/backbone-templates.html:228
 #: templates/educators/includes/stuff/backbone-templates.html:236
 msgid "Describe what the class is doing."
 msgstr "Popiš, co tato třída teď dělá."
 
-#: templates/educators/classroom_detail.html:126
+#: templates/educators/classroom_detail.html:127
 #: templates/educators/includes/stuff/backbone-templates.html:229
 #: templates/educators/includes/stuff/backbone-templates.html:237
 #: templates/profiles/profile_detail.html:151
 msgid "<span id=\"status-chars-left\">200</span> characters left."
 msgstr "zbývá <span id=\"status-chars-left\">200</span> znaků."
 
-#: templates/educators/classroom_detail.html:154
+#: templates/educators/classroom_detail.html:155
 #: templates/pathways/layout/base.html:66
 msgid "Featured"
 msgstr "Představené"
 
-#: templates/educators/classroom_detail.html:158
+#: templates/educators/classroom_detail.html:159
 #: templates/profiles/profile_detail.html:179
 msgid "Change featured project"
 msgstr "Změnit vybraný projekt"
 
-#: templates/educators/classroom_detail.html:165
+#: templates/educators/classroom_detail.html:166
 msgid "Latest Activity"
 msgstr "Poslední aktivita"
 
-#: templates/educators/classroom_detail.html:176
+#: templates/educators/classroom_detail.html:177
 msgid "Report this class"
 msgstr "Nahlásit tuto třídu"
 
-#: templates/educators/classroom_detail.html:186
+#: templates/educators/classroom_detail.html:187
 #: templates/educators/classroom_gallery_list.html:5
 msgid "Class Studios"
 msgstr "Třídní studia"
 
-#: templates/educators/classroom_detail.html:203
+#: templates/educators/classroom_detail.html:204
 msgid "This class doesn't have any studios yet"
 msgstr "Tato třída zatím nemá žádné studio"
 
-#: templates/educators/classroom_detail.html:205
+#: templates/educators/classroom_detail.html:206
 #, python-format
 msgid "You can add studios in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr ""
 "Můžeš přidávat studia do <a href=\"%(educator_stuff_url)s\">Moje třídy</a>"
 
-#: templates/educators/classroom_detail.html:216
+#: templates/educators/classroom_detail.html:217
 #: templates/educators/includes/stuff/backbone-templates.html:71
 #: templates/educators/includes/stuff/backbone-templates.html:144
 #: templates/educators/includes/stuff/sort-classrooms-dropdown.html:12
@@ -1776,11 +1715,11 @@ msgstr ""
 msgid "Students"
 msgstr "Studenti"
 
-#: templates/educators/classroom_detail.html:233
+#: templates/educators/classroom_detail.html:234
 msgid "This class doesn't have students yet"
 msgstr "Tato třída zatím nemá žádné studenty"
 
-#: templates/educators/classroom_detail.html:235
+#: templates/educators/classroom_detail.html:236
 #, python-format
 msgid "You can add students in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr ""
@@ -2041,7 +1980,7 @@ msgstr "Nová třída"
 #: templates/educators/includes/stuff/backbone-templates.html:129
 #: templates/educators/includes/stuff/backbone-templates.html:265
 #: templates/educators/includes/stuff/backbone-templates.html:340
-#: templates/educators/includes/stuff/backbone-templates.html:412
+#: templates/educators/includes/stuff/backbone-templates.html:414
 #: templates/mystuff/mystuff.html:52 templates/mystuff/mystuff.html.py:74
 #: templates/mystuff/mystuff.html:87
 msgid "Load More"
@@ -2102,8 +2041,8 @@ msgid "What the Class is working on"
 msgstr "Na čem třída pracuje"
 
 #: templates/educators/includes/stuff/backbone-templates.html:250
-#: templates/educators/includes/stuff/backbone-templates.html:791
-#: templates/educators/includes/stuff/backbone-templates.html:807
+#: templates/educators/includes/stuff/backbone-templates.html:861
+#: templates/educators/includes/stuff/backbone-templates.html:877
 msgid "End Class"
 msgstr "Ukončení třídy"
 
@@ -2158,106 +2097,107 @@ msgstr "Přihlašovací odkaz studentů"
 
 #: templates/educators/includes/stuff/backbone-templates.html:366
 #: templates/educators/includes/stuff/backbone-templates.html:380
+#: templates/educators/includes/stuff/backbone-templates.html:801
 msgid "CSV Upload"
 msgstr "Nahrát CSV soubor"
 
-#: templates/educators/includes/stuff/backbone-templates.html:451
+#: templates/educators/includes/stuff/backbone-templates.html:453
 msgid "followed user"
 msgstr "následovaný uživatel"
 
-#: templates/educators/includes/stuff/backbone-templates.html:456
+#: templates/educators/includes/stuff/backbone-templates.html:458
 msgid "followed studio"
 msgstr "následované studio"
 
-#: templates/educators/includes/stuff/backbone-templates.html:461
+#: templates/educators/includes/stuff/backbone-templates.html:463
 msgid "loved the project "
 msgstr "milují tento projekt "
 
-#: templates/educators/includes/stuff/backbone-templates.html:466
+#: templates/educators/includes/stuff/backbone-templates.html:468
 msgid "favorited the project "
 msgstr "přidat do oblíbených projekt "
 
-#: templates/educators/includes/stuff/backbone-templates.html:471
+#: templates/educators/includes/stuff/backbone-templates.html:473
 msgid "added the project "
 msgstr "přidal projekt "
 
-#: templates/educators/includes/stuff/backbone-templates.html:473
+#: templates/educators/includes/stuff/backbone-templates.html:475
 msgid "to studio "
 msgstr "do studia"
 
-#: templates/educators/includes/stuff/backbone-templates.html:481
+#: templates/educators/includes/stuff/backbone-templates.html:483
 msgid "shared the project "
 msgstr "sdílel projekt "
 
-#: templates/educators/includes/stuff/backbone-templates.html:483
+#: templates/educators/includes/stuff/backbone-templates.html:485
 msgid "reshared the project "
 msgstr "sdílel projekt "
 
-#: templates/educators/includes/stuff/backbone-templates.html:489
+#: templates/educators/includes/stuff/backbone-templates.html:491
 msgid "remixed the project "
 msgstr "odstranil projekt "
 
-#: templates/educators/includes/stuff/backbone-templates.html:494
+#: templates/educators/includes/stuff/backbone-templates.html:496
 msgid "added the studio "
 msgstr "přidával studio"
 
-#: templates/educators/includes/stuff/backbone-templates.html:499
+#: templates/educators/includes/stuff/backbone-templates.html:501
 msgid "updated the studio "
 msgstr "aktualizoval studio"
 
-#: templates/educators/includes/stuff/backbone-templates.html:507
+#: templates/educators/includes/stuff/backbone-templates.html:509
 msgid "removed the project "
 msgstr "odstranil projekt "
 
-#: templates/educators/includes/stuff/backbone-templates.html:509
+#: templates/educators/includes/stuff/backbone-templates.html:511
 msgid "from studio "
 msgstr "ze studia"
 
-#: templates/educators/includes/stuff/backbone-templates.html:516
+#: templates/educators/includes/stuff/backbone-templates.html:518
 msgid "was promoted to manager by "
 msgstr "byl povýšen na vedoucího od "
 
-#: templates/educators/includes/stuff/backbone-templates.html:518
+#: templates/educators/includes/stuff/backbone-templates.html:520
 msgid "for studio"
 msgstr "pro studio"
 
-#: templates/educators/includes/stuff/backbone-templates.html:525
+#: templates/educators/includes/stuff/backbone-templates.html:527
 msgid "made a profile update. <em>"
 msgstr "udělána aktualizace profilu. <em>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:531
+#: templates/educators/includes/stuff/backbone-templates.html:533
 msgid "commented on the project "
 msgstr "okomentoval tvůj projekt "
 
-#: templates/educators/includes/stuff/backbone-templates.html:539
+#: templates/educators/includes/stuff/backbone-templates.html:541
 msgid "commented on user"
 msgstr "komentován uživatelem "
 
-#: templates/educators/includes/stuff/backbone-templates.html:547
+#: templates/educators/includes/stuff/backbone-templates.html:549
 msgid "commented on the studio "
 msgstr "komentující ve studiu"
 
-#: templates/educators/includes/stuff/backbone-templates.html:557
+#: templates/educators/includes/stuff/backbone-templates.html:559
 msgid "performed an action. <em>"
 msgstr "provedena akce. <em>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:598
+#: templates/educators/includes/stuff/backbone-templates.html:600
 #, python-format
 msgid "%(target_username)s was banned."
 msgstr "%(target_username)s byl zablokován."
 
-#: templates/educators/includes/stuff/backbone-templates.html:600
+#: templates/educators/includes/stuff/backbone-templates.html:602
 #, python-format
 msgid "%(target_username)s was unbanned."
 msgstr "%(target_username)s byl odblokován."
 
-#: templates/educators/includes/stuff/backbone-templates.html:602
 #: templates/educators/includes/stuff/backbone-templates.html:604
+#: templates/educators/includes/stuff/backbone-templates.html:606
 #, python-format
 msgid "%(target_username)s was excluded from homepage."
 msgstr "%(target_username)s byl vyřazen z domovské stránky."
 
-#: templates/educators/includes/stuff/backbone-templates.html:606
+#: templates/educators/includes/stuff/backbone-templates.html:608
 #, python-format
 msgid ""
 "%(target_username)s was notified by a Scratch Administrator. Notification "
@@ -2266,27 +2206,27 @@ msgstr ""
 "%(target_username)s byl upozorněn administrátorem webu Scratch. Typ "
 "upozornění: <%%- admin_action.extra_data.notification_type || 'Neznámý' %%>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:608
+#: templates/educators/includes/stuff/backbone-templates.html:610
 #, python-format
 msgid "%(target_username)s was banned automatically."
 msgstr "%(target_username)s byl automaticky zablokován."
 
-#: templates/educators/includes/stuff/backbone-templates.html:610
+#: templates/educators/includes/stuff/backbone-templates.html:612
 #, python-format
 msgid "%(project)s by %(target_username)s was removed automatically."
 msgstr "%(project)s od %(target_username)s byl automaticky odstraněn."
 
-#: templates/educators/includes/stuff/backbone-templates.html:613
+#: templates/educators/includes/stuff/backbone-templates.html:615
 #, python-format
 msgid "%(project)s by %(target_username)s was censored."
 msgstr "%(project)s od %(target_username)s byl cenzurován."
 
-#: templates/educators/includes/stuff/backbone-templates.html:615
+#: templates/educators/includes/stuff/backbone-templates.html:617
 #, python-format
 msgid "%(project)s by %(target_username)s was uncensored."
 msgstr "%(project)s od %(target_username)s byl uvolněn z cenzury."
 
-#: templates/educators/includes/stuff/backbone-templates.html:618
+#: templates/educators/includes/stuff/backbone-templates.html:620
 #, python-format
 msgid ""
 "%(project)s by %(target_username)s was reviewed by a Scratch Administrator."
@@ -2294,34 +2234,34 @@ msgstr ""
 "%(project)s od %(target_username)s byl prověřen administrátorem webu "
 "Scratch."
 
-#: templates/educators/includes/stuff/backbone-templates.html:620
+#: templates/educators/includes/stuff/backbone-templates.html:622
 #, python-format
 msgid ""
 "%(project)s by %(target_username)s was deleted by a Scratch Administrator."
 msgstr ""
 "%(project)s od %(target_username)s byl smazán administrátorem webu Scratch."
 
-#: templates/educators/includes/stuff/backbone-templates.html:623
+#: templates/educators/includes/stuff/backbone-templates.html:625
 #, python-format
 msgid "%(target_username)s was deleted by a Scratch Administrator."
 msgstr "%(target_username)s byl smazán administrátorem webu Scratch."
 
-#: templates/educators/includes/stuff/backbone-templates.html:626
+#: templates/educators/includes/stuff/backbone-templates.html:628
 #, python-format
 msgid "%(gallery)s was reviewed by a Scratch Administrator."
 msgstr "%(gallery)s byla prověřena administrátorem webu Scratch."
 
-#: templates/educators/includes/stuff/backbone-templates.html:628
+#: templates/educators/includes/stuff/backbone-templates.html:630
 #, python-format
 msgid "%(gallery)s was deleted by a Scratch Administrator."
 msgstr "%(gallery)s byla smazána administrátorem webu Scratch."
 
-#: templates/educators/includes/stuff/backbone-templates.html:630
+#: templates/educators/includes/stuff/backbone-templates.html:632
 #, python-format
 msgid "%(target_username)s deleted their own account."
 msgstr "%(target_username)s zrušil/a/ svůj vlastní účet."
 
-#: templates/educators/includes/stuff/backbone-templates.html:632
+#: templates/educators/includes/stuff/backbone-templates.html:634
 #, python-format
 msgid ""
 "The email address of %(target_username)s was confirmed by a Scratch "
@@ -2330,7 +2270,7 @@ msgstr ""
 "E-mailová adresa uživatele %(target_username)s byla ověřena administrátorem "
 "webu Scratch"
 
-#: templates/educators/includes/stuff/backbone-templates.html:634
+#: templates/educators/includes/stuff/backbone-templates.html:636
 #, python-format
 msgid ""
 "The email address of %(target_username)s was set as not confirmed by a "
@@ -2339,42 +2279,42 @@ msgstr ""
 "E-mailová adresa uživatele %(target_username)s byla nastavena jako neověřená"
 " administrátorem webu Scratch"
 
-#: templates/educators/includes/stuff/backbone-templates.html:636
+#: templates/educators/includes/stuff/backbone-templates.html:638
 #, python-format
 msgid "%(target_username)s had an admin action performed."
 msgstr "%(target_username)s má provedenou administrátorskou akci."
 
-#: templates/educators/includes/stuff/backbone-templates.html:652
+#: templates/educators/includes/stuff/backbone-templates.html:654
 #, python-format
 msgid "Change Password for %(username)s"
 msgstr "Změnit heslo pro %(username)s"
 
-#: templates/educators/includes/stuff/backbone-templates.html:656
+#: templates/educators/includes/stuff/backbone-templates.html:658
 msgid "New password"
 msgstr "Nové heslo"
 
-#: templates/educators/includes/stuff/backbone-templates.html:660
+#: templates/educators/includes/stuff/backbone-templates.html:662
 msgid "New password confirmation"
 msgstr "Ověření nového hesla"
 
-#: templates/educators/includes/stuff/backbone-templates.html:676
+#: templates/educators/includes/stuff/backbone-templates.html:678
 #, python-format
 msgid "%(username)s Account Options"
 msgstr "%(username)s - možnosti účtu"
 
-#: templates/educators/includes/stuff/backbone-templates.html:683
+#: templates/educators/includes/stuff/backbone-templates.html:685
 msgid "Remove Icon"
 msgstr "Odstranit ikonu"
 
-#: templates/educators/includes/stuff/backbone-templates.html:686
+#: templates/educators/includes/stuff/backbone-templates.html:688
 msgid "There are two ways to change your student's password."
 msgstr "Jsou dvě možnosti, jak změnit vašemu studentovi heslo."
 
-#: templates/educators/includes/stuff/backbone-templates.html:689
+#: templates/educators/includes/stuff/backbone-templates.html:691
 msgid "Prompt student to change password on next login"
 msgstr "Vyzvat studenta ke změně hesla při příštím přihlášení"
 
-#: templates/educators/includes/stuff/backbone-templates.html:690
+#: templates/educators/includes/stuff/backbone-templates.html:692
 #, python-format
 msgid ""
 "This student's password will be reset to your username, %(username)s. After "
@@ -2383,101 +2323,124 @@ msgstr ""
 "Tohle heslo studenta bude nastaveno na vaše jméno, %(username)s. Jakmile se "
 "student přihlásí, bude vyzván k výběru nového hesla."
 
-#: templates/educators/includes/stuff/backbone-templates.html:693
+#: templates/educators/includes/stuff/backbone-templates.html:695
 msgid "Prompt Student"
 msgstr "Vyzvat studenta"
 
-#: templates/educators/includes/stuff/backbone-templates.html:698
+#: templates/educators/includes/stuff/backbone-templates.html:700
 msgid "Manually change the student's password"
 msgstr "Ručně změnit studentovi heslo"
 
-#: templates/educators/includes/stuff/backbone-templates.html:699
+#: templates/educators/includes/stuff/backbone-templates.html:701
 msgid ""
 "You will be redirected to a screen where you can choose the student's "
 "password."
 msgstr ""
 "Budete přesměrován/a/ na obrazovku, kde můžete zvolit studentovo heslo."
 
-#: templates/educators/includes/stuff/backbone-templates.html:702
+#: templates/educators/includes/stuff/backbone-templates.html:704
 msgid "Manually Change"
 msgstr "Ručně změnit"
 
-#: templates/educators/includes/stuff/backbone-templates.html:710
-#: templates/educators/includes/stuff/backbone-templates.html:736
-#: templates/educators/includes/stuff/backbone-templates.html:782
+#: templates/educators/includes/stuff/backbone-templates.html:712
+#: templates/educators/includes/stuff/backbone-templates.html:767
 #: templates/educators/student-modal-registration.html:90
 #: templates/modal-registration.html:255
 msgid "Close"
 msgstr "Zavřít"
 
-#: templates/educators/includes/stuff/backbone-templates.html:720
+#: templates/educators/includes/stuff/backbone-templates.html:722
 msgid "Sign-up Link"
 msgstr "Přihlašovací odkaz"
 
-#: templates/educators/includes/stuff/backbone-templates.html:723
+#: templates/educators/includes/stuff/backbone-templates.html:725
 msgid ""
-"Students can use this link to register for your class. They will be directed"
-" to a class page where they can click 'Join this Class'."
+"Get a sign-up link that students can use to register for your class. They "
+"will be directed to a class page where they can \"Join this Class\". "
 msgstr ""
-"Studenti mohou použít tento odkaz k zaregistrování do vaší třídy. Budou "
-"přesměrováni na stránku třídy, kde mohou kliknout na 'Připojit se k této "
-"třídě'."
 
-#: templates/educators/includes/stuff/backbone-templates.html:726
-msgid "Generate a sign-up link"
-msgstr "Vygenerovat přihlašovací odkaz"
+#: templates/educators/includes/stuff/backbone-templates.html:734
+msgid ""
+"\n"
+"                        Usernames must\n"
+"                        <span class=\"underline\">not</span>\n"
+"                        reveal the identity of students in any way.\n"
+"                        "
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:728
-msgid "Generate"
-msgstr "Generovat"
+#: templates/educators/includes/stuff/backbone-templates.html:754
+msgid ""
+"I agree to remind my students not to use their real names, school name, "
+"contact information or student ID numbers."
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:731
-#: templates/educators/includes/stuff/backbone-templates.html:774
+#: templates/educators/includes/stuff/backbone-templates.html:760
+msgid "Get Link"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:763
+#: templates/educators/includes/stuff/backbone-templates.html:808
 msgid "Type CTRL+C on Windows or &#8984;+C on Mac to copy the link."
 msgstr ""
 "Stiskni CTRL+C na Windows nebo &#8984;+C na Mac pro kopírování tohoto "
 "odkazu."
 
-#: templates/educators/includes/stuff/backbone-templates.html:745
+#: templates/educators/includes/stuff/backbone-templates.html:776
 msgid "Upload CSV"
 msgstr "Nahrání CSV souboru"
 
-#: templates/educators/includes/stuff/backbone-templates.html:748
+#: templates/educators/includes/stuff/backbone-templates.html:779
 msgid ""
-"Upload a .csv file containing up to 50 student usernames and passwords. "
-"These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools. Accounts with "
-"usernames containing personal identifiers will be permanently deleted for "
-"safety and privacy reasons. Please use the following format:"
+"You can quickly create up to 50 student accounts by uploading a CSV of "
+"usernames and passwords. See how to format a CSV below."
 msgstr ""
-"Nahrajte soubor .csv obsahující až 50 uživatelských jmen studentů a hesel. "
-"Tyto účty budou viditelné veřejně. Prosím nevolte uživatelské jména "
-"obsahující osobní identifikátory, jako jsou skutečné jména nebo školy. Účty "
-"s uživatelskými jmény obsahujícími osobní identifikátory budou trvale "
-"smazány z důvodů bezpečnosti a ochrany soukromí. Prosím použijte následující"
-" formát: "
 
-#: templates/educators/includes/stuff/backbone-templates.html:755
+#: templates/educators/includes/stuff/backbone-templates.html:780
+msgid "Provide Usernames and Passwords"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:781
+msgid ""
+"Usernames are visible to the public, so do not use any personal information."
+" Instead, use aspects from the subject you are teaching, favorite foods, or "
+"animals"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:788
 msgid "Download example"
 msgstr "Stáhnout si vzor"
 
-#: templates/educators/includes/stuff/backbone-templates.html:758
-msgid "Learn more about CSV files"
-msgstr "Dozvědět se více o CSV souborech"
+#: templates/educators/includes/stuff/backbone-templates.html:791
+msgid "Teacher Account Setup Guide"
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:766
-msgid "Student Upload"
-msgstr "Nahrát studenta"
+#: templates/educators/includes/stuff/backbone-templates.html:819
+msgid ""
+"\n"
+"                        Usernames must\n"
+"                        <span class=\"underline\">not</span>\n"
+"                        reveal the identity of students in any way.\n"
+"                    "
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:770
+#: templates/educators/includes/stuff/backbone-templates.html:839
+msgid ""
+"\n"
+"                        I understand that for safety and privacy, Scratch must\n"
+"                        <span class=\"attention\">delete</span>\n"
+"                        any accounts which include real names, school name, or contact information.\n"
+"                    "
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:851
 msgid "Upload"
 msgstr "Nahrát"
 
-#: templates/educators/includes/stuff/backbone-templates.html:794
+#: templates/educators/includes/stuff/backbone-templates.html:864
 msgid "Are you sure you want to end the following class:"
 msgstr "Chcete určitě ukončit následující třídu:"
 
-#: templates/educators/includes/stuff/backbone-templates.html:796
+#: templates/educators/includes/stuff/backbone-templates.html:866
 msgid ""
 "When you end a class, students will no longer be able to log in (but their "
 "projects will still be visible on the site)."
@@ -2485,7 +2448,7 @@ msgstr ""
 "Jakmile ukončíte třídu, studenti už nebudou schopni se přihlásit (ale jejich"
 " projekty budou na stránkách stále viditelné)."
 
-#: templates/educators/includes/stuff/backbone-templates.html:799
+#: templates/educators/includes/stuff/backbone-templates.html:869
 msgid "To confirm, please enter your password"
 msgstr "Pro ověření zadejte prosím své heslo"
 
@@ -2521,27 +2484,45 @@ msgid "All classes"
 msgstr "Všechny třídy"
 
 #: templates/educators/register_student_modal.html:6
-msgid "Adding New Student"
-msgstr "Přidání nového studenta"
+msgid "Add New Student"
+msgstr ""
 
 #: templates/educators/register_student_modal.html:11
 msgid "Add to Class"
 msgstr "Přidat do třídy"
 
-#: templates/educators/register_student_modal.html:38
-msgid ""
-"These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools. Accounts with "
-"usernames containing personal identifiers will be permanently deleted for "
-"safety and privacy reasons."
+#: templates/educators/register_student_modal.html:31
+msgid "type student username here"
 msgstr ""
-"Tyto účty budou viditelné veřejně. Prosím nevolte uživatelská jména "
-"obsahující osobní identifikátory, jako jsou skutečná jména nebo školy. Účty "
-"s uživatelskými jmény obsahující osobní identifikátory budou trvale smazány "
-"z důvodů bezpečnosti a ochrany soukromí."
 
-#: templates/educators/register_student_modal.html:72
+#: templates/educators/register_student_modal.html:44
+msgid ""
+"\n"
+"                          Usernames must\n"
+"                          <span class=\"underline\">not</span>\n"
+"                          reveal the identity of students in any way.\n"
+"                      "
+msgstr ""
+
+#: templates/educators/register_student_modal.html:64
+msgid ""
+"\n"
+"                          I understand that for safety and privacy, Scratch must\n"
+"                          <span class=\"attention\">delete</span>\n"
+"                          any accounts which include real names, school name, or contact information.\n"
+"                      "
+msgstr ""
+
+#: templates/educators/register_student_modal.html:90
+msgid "Will be set to the teacher's username:"
+msgstr ""
+
+#: templates/educators/register_student_modal.html:121
 msgid "That class already has the maximum number of students allowed"
+msgstr ""
+
+#: templates/educators/register_student_modal.html:122
+msgid "Please confirm that you understand"
 msgstr ""
 
 #: templates/educators/registration/approval_email_message.html:7
@@ -2566,48 +2547,70 @@ msgstr ""
 msgid "New to Scratch?"
 msgstr "Jste v Scratch poprvé?"
 
-#: templates/educators/registration/approval_email_message.html:13
-#: templates/educators/registration/approval_email_message.txt:7
-msgid "Read our Community Guidelines"
-msgstr "Číst pravidla našeho společenství"
-
-#: templates/educators/registration/approval_email_message.html:14
-#: templates/educators/registration/approval_email_message.txt:8
-msgid "Get inspired with a starter project"
-msgstr "Inspirovat se úvodním projektem"
-
 #: templates/educators/registration/approval_email_message.html:15
-#: templates/educators/registration/approval_email_message.txt:9
-msgid "Learn more about Scratch"
-msgstr "Poučit se více o Scratch"
+#, python-format
+msgid "Read our <a href=\" %(comm_link)s\">Community Guidelines</a>."
+msgstr ""
 
-#: templates/educators/registration/approval_email_message.html:18
+#: templates/educators/registration/approval_email_message.html:16
+msgid ""
+"Review the <a "
+"href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">Getting"
+" Started Guide</a> for a deeper dive into the Scratch editor."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:17
+#, python-format
+msgid ""
+"Explore our <a href=\"%(ed_link)s\"> Scratch for Educators </a> site for "
+"resources and more educator guides."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:20
 #: templates/educators/registration/approval_email_message.txt:11
 msgid "Next Steps"
 msgstr "Další kroky"
 
-#: templates/educators/registration/approval_email_message.html:20
+#: templates/educators/registration/approval_email_message.html:23
+#, python-format
+msgid "Learn more about managing <a href=\"%(faq_link)s\">Teacher Accounts</a>."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:24
+#, python-format
+msgid ""
+"Take a deeper dive into curriculum resources, events, and news on our <a "
+"href=\"%(sip_url)s\">Scratch in Practice</a> page. "
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:25
+msgid ""
+"Connect with other educators through the <a "
+"href=\"https://www.facebook.com/groups/TeachingwithScratch/\">Teaching with "
+"Scratch Facebook page</a>, hosted by the Harvard Graduate School of "
+"Education <a href=\"http://scratched.gse.harvard.edu/\">ScratchEd</a> "
+"community."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.txt:7
+msgid "Read our Community Guidelines"
+msgstr "Číst pravidla našeho společenství"
+
+#: templates/educators/registration/approval_email_message.txt:8
+msgid "Get inspired with a starter project"
+msgstr "Inspirovat se úvodním projektem"
+
+#: templates/educators/registration/approval_email_message.txt:9
+msgid "Learn more about Scratch"
+msgstr "Poučit se více o Scratch"
+
 #: templates/educators/registration/approval_email_message.txt:12
 msgid "Learn more about Teacher Accounts"
 msgstr "Poučit se více o učitelských účtech"
 
-#: templates/educators/registration/approval_email_message.html:21
 #: templates/educators/registration/approval_email_message.txt:13
 msgid "Explore educator resources"
 msgstr "Prozkoumat zdroje pro lektory"
-
-#: templates/educators/registration/approval_email_message.html:22
-#, python-format
-msgid ""
-"<a href=\"%(scratch_ed_url)s\">Connect with other educators</a> via the "
-"ScratchEd online community, developed and supported by the Harvard Graduate "
-"School of Education. <em>Please note that you’ll need to create a separate "
-"account to join the discussion on ScratchEd.</em>"
-msgstr ""
-"<a href=\"%(scratch_ed_url)s\">Spojte se s dalšími lektory</a> přes online "
-"komunitu ScratchEd, vytvořenou a podporovanou Harvard Graduate School of "
-"Education. <em>Prosím povšimněte si, že nemusíte zakládat oddělený účet k "
-"připojení se k diskuzím na ScratchEd.</em>"
 
 #: templates/educators/registration/approval_email_message.txt:14
 msgid ""
@@ -2839,6 +2842,10 @@ msgstr "Projekty ( <span data-count=\"projects\">100+</span> )"
 #, python-format
 msgid "Projects ( <span data-count=\"projects\">%(tCount)s</span> )"
 msgstr "Projekty ( <span data-count=\"projects\">%(tCount)s</span> )"
+
+#: templates/galleries/base.html:117
+msgid "Comments ( <span data-count=\"comments\">100+</span> )"
+msgstr ""
 
 #: templates/galleries/base.html:117
 #, python-format

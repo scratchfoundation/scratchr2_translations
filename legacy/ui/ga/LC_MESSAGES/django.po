@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-11 15:31-0400\n"
+"POT-Creation-Date: 2020-06-11 13:18+0000\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>, 2020\n"
 "Language-Team: Irish (https://www.transifex.com/llk/teams/60938/ga/)\n"
@@ -227,25 +227,25 @@ msgstr "%s"
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s ó shin"
 
-#: educators/forms.py:110
+#: educators/forms.py:106
 msgid "Already exists"
 msgstr "Tá sé ann cheana"
 
-#: educators/forms.py:111
+#: educators/forms.py:107
 msgid "Contains invalid characters. Use letters and numbers only."
 msgstr ""
 "Carachtair neamhbhailí ann. Bain úsáid as litreacha agus uimhreacha amháin. "
 
-#: educators/forms.py:112
+#: educators/forms.py:108
 msgid "Contains inappropriate words"
 msgstr "Focail mhí-oiriúnacha ann"
 
-#: educators/forms.py:113
+#: educators/forms.py:109
 #, python-format
 msgid "Shorter than minimum length of %d characters"
 msgstr ""
 
-#: educators/forms.py:114
+#: educators/forms.py:110
 #, python-format
 msgid "Longer than maximum length of %d characters"
 msgstr ""
@@ -258,14 +258,14 @@ msgstr "aicme"
 msgid "classes"
 msgstr "ranganna"
 
-#: educators/views.py:519
+#: educators/views.py:525
 msgid ""
 "Please update the CSV file to address the issues above and reload the file."
 msgstr ""
 "Nuashonraigh an comhad CSV chun na fadhbanna thuas a réiteach agus "
 "athluchtaigh an comhaid."
 
-#: educators/views.py:533
+#: educators/views.py:539
 msgid ""
 "Errors occurred while creating accounts. All accounts other than those "
 "specified here were created."
@@ -273,7 +273,7 @@ msgstr ""
 "Tharla earráid le linn cruthú na gcuntas. Rinneadh gach cuntas ach amháin na"
 " cinn thíos a chruthú."
 
-#: educators/views.py:607
+#: educators/views.py:613
 msgid ""
 "After changing this student's password, you will need to share the new "
 "password with your student directly so that they can log back into Scratch."
@@ -282,11 +282,11 @@ msgstr ""
 " thabhairt don dalta sa chaoi go mbeidh sé/sí in ann logáil isteach in "
 "Scratch."
 
-#: galleries/models.py:264
+#: galleries/models.py:277
 msgid "studio"
 msgstr "stiúideo"
 
-#: galleries/models.py:265
+#: galleries/models.py:278
 msgid "studios"
 msgstr "stiúideonna"
 
@@ -324,11 +324,11 @@ msgstr "tionscadal"
 msgid "projects"
 msgstr "tionscadail"
 
-#: projects/models.py:278
+#: projects/models.py:279
 msgid "Permanently Censored Project cannot be reshared."
 msgstr ""
 
-#: projects/models.py:285
+#: projects/models.py:286
 msgid ""
 "This project has been censored and must be reviewed before it can be "
 "reshared."
@@ -338,16 +338,16 @@ msgstr ""
 msgid "This tag has too many projects to load"
 msgstr "An iomarca tionscadal leis an gclib seo"
 
-#: scratchr2/views.py:346
+#: scratchr2/views.py:345
 msgid "You're not allowed to appeal this ban."
 msgstr "Níl cead agat achomharc a dhéanamh ar an gcosc seo."
 
-#: scratchr2/views.py:355
+#: scratchr2/views.py:354
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr ""
 "Seoladh do theachtaireacht. Tabharfaimid freagra ort laistigh de 3 lá."
 
-#: scratchr2/views.py:361 scratchr2/views.py:405
+#: scratchr2/views.py:360
 msgid "Please correct the errors below."
 msgstr "Ceartaigh na hearráidí thíos."
 
@@ -439,6 +439,7 @@ msgstr "Cuntas"
 #: templates/accounts/deletion/confirmation.html:7
 #: templates/accounts/deletion/nostalgia.html:6
 #: templates/accounts/email_change.html:9 templates/base.html:212
+#: templates/educators/register_student_modal.html:86
 #: templates/includes/backbone-templates.html:44 templates/modal-login.html:21
 msgid "Password"
 msgstr "Focal Faire"
@@ -469,7 +470,7 @@ msgstr "Sábháil na hAthruithe"
 msgid "I want to delete my account"
 msgstr "Teastaíonn uaim deireadh a chur le mo chuntas"
 
-#: templates/accounts/banned-response.html:12 templates/contact-us.html:73
+#: templates/accounts/banned-response.html:12
 #: templates/info/ext_download.html:11 templates/info/scratch2download.html:27
 #: templates/info/scratch_1.4.html:11
 msgid "Account Blocked"
@@ -549,12 +550,12 @@ msgstr ""
 "chun é a chur in iúl dúinn."
 
 #: templates/accounts/banned-response.html:80
-#: templates/accounts/email_change.html:64 templates/contact-us.html:121
+#: templates/accounts/email_change.html:64
 msgid "Send"
 msgstr "Seol"
 
 #: templates/accounts/base.html:24
-#: templates/educators/includes/stuff/backbone-templates.html:397
+#: templates/educators/includes/stuff/backbone-templates.html:399
 #: templates/registration/base.html:24
 msgid "Account Settings"
 msgstr "Socruithe an Chuntais"
@@ -774,7 +775,7 @@ msgstr ""
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
-#: templates/educators/registration/approval_email_message.html:26
+#: templates/educators/registration/approval_email_message.html:28
 #: templates/educators/registration/approval_email_message.txt:16
 #: templates/educators/registration/welcome_email_message.html:32
 #: templates/educators/registration/welcome_email_message.txt:17
@@ -791,7 +792,7 @@ msgstr "Bígí ag Scratcháil!"
 #: templates/accounts/password_changed_email/message.txt:7
 #: templates/educators/email_verification/verification_email.html:34
 #: templates/educators/email_verification/verification_email_plain.html:20
-#: templates/educators/registration/approval_email_message.html:28
+#: templates/educators/registration/approval_email_message.html:30
 #: templates/educators/registration/approval_email_message.txt:17
 #: templates/educators/registration/password_reset_email.html:16
 #: templates/educators/registration/password_reset_email.txt:10
@@ -1058,7 +1059,7 @@ msgstr ""
 "Tar éis duit d'fhocal faire a athrú, caithfidh tú logáil isteach arís."
 
 #: templates/accounts/password_change_form.html:36
-#: templates/educators/includes/stuff/backbone-templates.html:666
+#: templates/educators/includes/stuff/backbone-templates.html:668
 msgid "Change Password"
 msgstr "Athraigh d'Fhocal Faire"
 
@@ -1262,8 +1263,7 @@ msgstr "Ceisteanna Coitianta"
 msgid "Offline Editor"
 msgstr "Eagarthóir As Líne"
 
-#: templates/base.html:350 templates/contact-us-success.html:12
-#: templates/contact-us.html:79
+#: templates/base.html:350
 msgid "Contact Us"
 msgstr "Teagmháil"
 
@@ -1318,8 +1318,8 @@ msgstr "Fondúireacht Scratch"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14
-#: templates/educators/classroom_detail.html:187
-#: templates/educators/classroom_detail.html:217
+#: templates/educators/classroom_detail.html:188
+#: templates/educators/classroom_detail.html:218
 #: templates/profiles/profile_detail.html:213
 #: templates/profiles/profile_detail.html:240
 #: templates/profiles/profile_detail.html:276
@@ -1415,8 +1415,9 @@ msgstr "Postáil"
 #: templates/comments/comment-module.html:41
 #: templates/educators/add_class_modal.html:35
 #: templates/educators/add_gallery_modal.html:33
-#: templates/educators/includes/stuff/backbone-templates.html:665
-#: templates/educators/includes/stuff/backbone-templates.html:808
+#: templates/educators/includes/stuff/backbone-templates.html:667
+#: templates/educators/includes/stuff/backbone-templates.html:852
+#: templates/educators/includes/stuff/backbone-templates.html:878
 #: templates/includes/backbone-templates.html:81
 msgid "Cancel"
 msgstr "Cealaigh"
@@ -1433,6 +1434,10 @@ msgstr ""
 "Tá brón orainn, ní féidir postáil faoi láthair. Beidh sé ar ais go luath!"
 
 #: templates/comments/comment-module.html:57
+msgid "Load comments"
+msgstr ""
+
+#: templates/comments/comment-module.html:60
 msgid "Comments loading..."
 msgstr "Nótaí tráchta á luchtú..."
 
@@ -1470,74 +1475,6 @@ msgstr "Taispeáin na %(len)s freagra"
 #: templates/comments/list.html:24
 msgid "Load more"
 msgstr "Luchtaigh tuilleadh"
-
-#: templates/contact-us.html:92
-msgid ""
-"The Scratch Team receives a large number of messages each day. "
-"Unfortunately, we do not have time to answer all of them. Luckily, you can "
-"find answers to most questions about Scratch on our  <a "
-"href=\"/info/faq/\">Frequently Asked Questions</a> page."
-msgstr ""
-"Faigheann Foireann Scratch an-chuid teachtaireachtaí gach lá. Faraor, níl an"
-" t-am againn freagra a chur ar ais ar gach ceann. Is féidir, áfach, teacht "
-"ar fhreagraí de na ceisteanna is coitianta faoi Scratch ar an leathanach   "
-"<a href=\"/info/faq/\">Ceisteanna Coitianta</a>."
-
-#: templates/contact-us.html:94
-msgid ""
-"You can also look at the Scratch <a href=\"/discuss\">Discussion forums</a>."
-msgstr ""
-
-#: templates/contact-us.html:95
-msgid ""
-"If you can't find an answer, post a new topic on the <a "
-"href=\"/discuss\">Discussion forums.</a> There are many experienced "
-"Scratchers who can help!"
-msgstr ""
-"Mura féidir leat freagra a aimsiú, postáil topaic nua ar an <a "
-"href=\"/discuss\">bhFóram Plé.</a>Tá go leor Scratchálaithe le taithí a "
-"bheidh in ann cabhrú leat!"
-
-#: templates/contact-us.html:98
-msgid "Questions About Scratch"
-msgstr "Ceisteanna Maidir le Scratch"
-
-#: templates/contact-us.html:99
-msgid "Help with Scripts"
-msgstr "Cabhair le Scripteanna"
-
-#: templates/contact-us.html:100
-msgid "Bugs and Glitches"
-msgstr "Fabhtanna agus Fadhbanna"
-
-#: templates/contact-us.html:103
-msgid ""
-"If you need to contact us, please choose from one of the options below. We "
-"get a lot of mail, so we may not be able to respond to your message."
-msgstr ""
-"Más mian leat teagmháil a dhéanamh linn, tá roghanna thíos duit. Faighimid "
-"an-chuid ríomhphost, mar sin, seans nach mbeimid in ann freagra a chur ar "
-"ais ar do theachtaireacht."
-
-#: templates/contact-us.html:108
-msgid "Select a topic"
-msgstr "Roghnaigh topaic"
-
-#: templates/contact-us.html:109
-msgid "Report something inappropriate..."
-msgstr "Déan tuairisc ar rud éigin mí-oiriúnach..."
-
-#: templates/contact-us.html:110
-msgid "Report a problem with the website..."
-msgstr "Déan tuairisc ar fhadhb leis an suíomh Gréasáin..."
-
-#: templates/contact-us.html:111
-msgid "Problems with email confirmation..."
-msgstr "Fadhbanna le deimhniú seoladh ríomhphoist..."
-
-#: templates/contact-us.html:112
-msgid "Other..."
-msgstr "Eile..."
 
 #: templates/educators/add_class_modal.html:6
 msgid "Add a New Class"
@@ -1580,37 +1517,37 @@ msgid "Studio Description"
 msgstr "Cur Síos ar an Stiúideo"
 
 #: templates/educators/add_gallery_modal.html:42
-#: templates/educators/register_student_modal.html:66
+#: templates/educators/register_student_modal.html:115
 #: templates/modal-registration.html:269
 msgid "Your username must be between 3 and 20 characters"
 msgstr "Ní mór idir 3 agus 20 carachtar a bheith i d'ainm úsáideora"
 
 #: templates/educators/add_gallery_modal.html:43
-#: templates/educators/register_student_modal.html:67
+#: templates/educators/register_student_modal.html:116
 #: templates/modal-registration.html:270
 msgid "Sorry, that username already exists"
 msgstr "Tá brón orainn, tá an t-ainm úsáideora sin in úsáid cheana"
 
 #: templates/educators/add_gallery_modal.html:44
-#: templates/educators/register_student_modal.html:68
+#: templates/educators/register_student_modal.html:117
 #: templates/modal-registration.html:271
 msgid "Invalid username"
 msgstr "Ainm úsáideora neamhbhailí"
 
 #: templates/educators/add_gallery_modal.html:45
-#: templates/educators/register_student_modal.html:69
+#: templates/educators/register_student_modal.html:118
 #: templates/modal-registration.html:272
 msgid "Hmm, that looks inappropriate"
 msgstr "Hmm, breathnaíonn sé sin mí-oiriúnach"
 
 #: templates/educators/add_gallery_modal.html:46
-#: templates/educators/register_student_modal.html:70
+#: templates/educators/register_student_modal.html:119
 #: templates/modal-registration.html:273
 msgid "You must enter a username"
 msgstr "Ní mór duit ainm úsáideora a chur isteach"
 
 #: templates/educators/add_gallery_modal.html:47
-#: templates/educators/register_student_modal.html:71
+#: templates/educators/register_student_modal.html:120
 #: templates/modal-registration.html:274
 msgid "Your username may only contain letters, numbers, - and _"
 msgstr "Ní cheadaítear ach litreacha, uimhreacha, - agus _ in ainm úsáideora"
@@ -1678,30 +1615,30 @@ msgstr "Cluaisín samplach"
 msgid "%(classroom_title)s on Scratch"
 msgstr "%(classroom_title)s ar Scratch"
 
-#: templates/educators/classroom_detail.html:70
+#: templates/educators/classroom_detail.html:71
 msgid "Class page"
 msgstr "Leathanach ranga"
 
-#: templates/educators/classroom_detail.html:70
+#: templates/educators/classroom_detail.html:71
 #: templates/profiles/profile_detail.html:80
 msgid "ended"
 msgstr "críochnaithe"
 
-#: templates/educators/classroom_detail.html:71
+#: templates/educators/classroom_detail.html:72
 #, python-format
 msgid "Created %(tDate)s ago"
 msgstr "Cruthaithe %(tDate)s ó shin"
 
-#: templates/educators/classroom_detail.html:79
+#: templates/educators/classroom_detail.html:80
 msgid "Join this class"
 msgstr "Cláraigh leis an rang seo"
 
-#: templates/educators/classroom_detail.html:92
+#: templates/educators/classroom_detail.html:93
 #: templates/educators/includes/stuff/backbone-templates.html:203
 msgid "About this Class"
 msgstr "Maidir leis an Rang seo"
 
-#: templates/educators/classroom_detail.html:96
+#: templates/educators/classroom_detail.html:97
 #: templates/educators/includes/stuff/backbone-templates.html:206
 #: templates/educators/includes/stuff/backbone-templates.html:214
 msgid ""
@@ -1711,65 +1648,65 @@ msgstr ""
 "Déan cur síos ar an aicme seo. Beidh gach duine in ann é seo a fheiceáil. Dá"
 " bharr sin, ná húsáid faisnéis phearsanta ar nós ainmneacha sa chur síos."
 
-#: templates/educators/classroom_detail.html:97
+#: templates/educators/classroom_detail.html:98
 #: templates/educators/includes/stuff/backbone-templates.html:207
 #: templates/educators/includes/stuff/backbone-templates.html:215
 #: templates/profiles/profile_detail.html:124
 msgid "<span id=\"bio-chars-left\">200</span> characters left."
 msgstr "<span id=\"bio-chars-left\">200</span> carachtar fágtha."
 
-#: templates/educators/classroom_detail.html:121
+#: templates/educators/classroom_detail.html:122
 msgid "What we're working on"
 msgstr "Cad atá ar siúl againn"
 
-#: templates/educators/classroom_detail.html:125
+#: templates/educators/classroom_detail.html:126
 #: templates/educators/includes/stuff/backbone-templates.html:228
 #: templates/educators/includes/stuff/backbone-templates.html:236
 msgid "Describe what the class is doing."
 msgstr "Déan cur síos ar an méid atá á dhéanamh ag an rang."
 
-#: templates/educators/classroom_detail.html:126
+#: templates/educators/classroom_detail.html:127
 #: templates/educators/includes/stuff/backbone-templates.html:229
 #: templates/educators/includes/stuff/backbone-templates.html:237
 #: templates/profiles/profile_detail.html:151
 msgid "<span id=\"status-chars-left\">200</span> characters left."
 msgstr "<span id=\"status-chars-left\">200</span> carachtar fágtha."
 
-#: templates/educators/classroom_detail.html:154
+#: templates/educators/classroom_detail.html:155
 #: templates/pathways/layout/base.html:66
 msgid "Featured"
 msgstr "Mór-Le-Rá"
 
-#: templates/educators/classroom_detail.html:158
+#: templates/educators/classroom_detail.html:159
 #: templates/profiles/profile_detail.html:179
 msgid "Change featured project"
 msgstr "Athraigh an tionscadal mór-le-rá"
 
-#: templates/educators/classroom_detail.html:165
+#: templates/educators/classroom_detail.html:166
 msgid "Latest Activity"
 msgstr "Gníomh is Déanaí"
 
-#: templates/educators/classroom_detail.html:176
+#: templates/educators/classroom_detail.html:177
 msgid "Report this class"
 msgstr "Déan tuairisc ar an rang seo"
 
-#: templates/educators/classroom_detail.html:186
+#: templates/educators/classroom_detail.html:187
 #: templates/educators/classroom_gallery_list.html:5
 msgid "Class Studios"
 msgstr "Stiúideonna Ranga"
 
-#: templates/educators/classroom_detail.html:203
+#: templates/educators/classroom_detail.html:204
 msgid "This class doesn't have any studios yet"
 msgstr "Níl aon stiúideonna ag an rang seo go fóill"
 
-#: templates/educators/classroom_detail.html:205
+#: templates/educators/classroom_detail.html:206
 #, python-format
 msgid "You can add studios in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr ""
 "Tig leat stiúideonna a chur leis i <a href=\"%(educator_stuff_url)s\">Mo "
 "Ranganna</a>"
 
-#: templates/educators/classroom_detail.html:216
+#: templates/educators/classroom_detail.html:217
 #: templates/educators/includes/stuff/backbone-templates.html:71
 #: templates/educators/includes/stuff/backbone-templates.html:144
 #: templates/educators/includes/stuff/sort-classrooms-dropdown.html:12
@@ -1777,11 +1714,11 @@ msgstr ""
 msgid "Students"
 msgstr "Mic Léinn"
 
-#: templates/educators/classroom_detail.html:233
+#: templates/educators/classroom_detail.html:234
 msgid "This class doesn't have students yet"
 msgstr "Níl aon mhac léinn ag an rang seo go fóill"
 
-#: templates/educators/classroom_detail.html:235
+#: templates/educators/classroom_detail.html:236
 #, python-format
 msgid "You can add students in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr ""
@@ -2037,7 +1974,7 @@ msgstr "Rang Nua"
 #: templates/educators/includes/stuff/backbone-templates.html:129
 #: templates/educators/includes/stuff/backbone-templates.html:265
 #: templates/educators/includes/stuff/backbone-templates.html:340
-#: templates/educators/includes/stuff/backbone-templates.html:412
+#: templates/educators/includes/stuff/backbone-templates.html:414
 #: templates/mystuff/mystuff.html:52 templates/mystuff/mystuff.html.py:74
 #: templates/mystuff/mystuff.html:87
 msgid "Load More"
@@ -2099,8 +2036,8 @@ msgid "What the Class is working on"
 msgstr "Cad atá ar siúl ag an Rang"
 
 #: templates/educators/includes/stuff/backbone-templates.html:250
-#: templates/educators/includes/stuff/backbone-templates.html:791
-#: templates/educators/includes/stuff/backbone-templates.html:807
+#: templates/educators/includes/stuff/backbone-templates.html:861
+#: templates/educators/includes/stuff/backbone-templates.html:877
 msgid "End Class"
 msgstr "Cuir Deireadh le Rang"
 
@@ -2155,165 +2092,166 @@ msgstr "Nasc Síntiúis do Mhic Léinn"
 
 #: templates/educators/includes/stuff/backbone-templates.html:366
 #: templates/educators/includes/stuff/backbone-templates.html:380
+#: templates/educators/includes/stuff/backbone-templates.html:801
 msgid "CSV Upload"
 msgstr "Uasluchtú CSV"
 
-#: templates/educators/includes/stuff/backbone-templates.html:451
+#: templates/educators/includes/stuff/backbone-templates.html:453
 msgid "followed user"
 msgstr "- úsáideoir leanta"
 
-#: templates/educators/includes/stuff/backbone-templates.html:456
+#: templates/educators/includes/stuff/backbone-templates.html:458
 msgid "followed studio"
 msgstr " - stiúideo leanta"
 
-#: templates/educators/includes/stuff/backbone-templates.html:461
+#: templates/educators/includes/stuff/backbone-templates.html:463
 msgid "loved the project "
 msgstr "- thug sé/sí grá don tionscadal"
 
-#: templates/educators/includes/stuff/backbone-templates.html:466
+#: templates/educators/includes/stuff/backbone-templates.html:468
 msgid "favorited the project "
 msgstr "- chuir sé/sí lena cheanáin é"
 
-#: templates/educators/includes/stuff/backbone-templates.html:471
+#: templates/educators/includes/stuff/backbone-templates.html:473
 msgid "added the project "
 msgstr "- chuir sé/sí an tionscadal leis "
 
-#: templates/educators/includes/stuff/backbone-templates.html:473
+#: templates/educators/includes/stuff/backbone-templates.html:475
 msgid "to studio "
 msgstr "chuig stiúideo "
 
-#: templates/educators/includes/stuff/backbone-templates.html:481
+#: templates/educators/includes/stuff/backbone-templates.html:483
 msgid "shared the project "
 msgstr "- chomhroinn sé/sí tionscadal:"
 
-#: templates/educators/includes/stuff/backbone-templates.html:483
+#: templates/educators/includes/stuff/backbone-templates.html:485
 msgid "reshared the project "
 msgstr "- chomhroinn sé/sí tionscadal "
 
-#: templates/educators/includes/stuff/backbone-templates.html:489
+#: templates/educators/includes/stuff/backbone-templates.html:491
 msgid "remixed the project "
 msgstr "- athmheasc sé/sí an tionscadal "
 
-#: templates/educators/includes/stuff/backbone-templates.html:494
+#: templates/educators/includes/stuff/backbone-templates.html:496
 msgid "added the studio "
 msgstr " - chuir an stiúideo leis "
 
-#: templates/educators/includes/stuff/backbone-templates.html:499
+#: templates/educators/includes/stuff/backbone-templates.html:501
 msgid "updated the studio "
 msgstr "- rinne sé sí nuashonrú ar an stiúideo "
 
-#: templates/educators/includes/stuff/backbone-templates.html:507
+#: templates/educators/includes/stuff/backbone-templates.html:509
 msgid "removed the project "
 msgstr "- bhain sé/sí an tionscadal "
 
-#: templates/educators/includes/stuff/backbone-templates.html:509
+#: templates/educators/includes/stuff/backbone-templates.html:511
 msgid "from studio "
 msgstr "ó stiúideo "
 
-#: templates/educators/includes/stuff/backbone-templates.html:516
+#: templates/educators/includes/stuff/backbone-templates.html:518
 msgid "was promoted to manager by "
 msgstr "- fuair sé/sí ardú céime go bainisteoir ó "
 
-#: templates/educators/includes/stuff/backbone-templates.html:518
+#: templates/educators/includes/stuff/backbone-templates.html:520
 msgid "for studio"
 msgstr "do stiúideo"
 
-#: templates/educators/includes/stuff/backbone-templates.html:525
+#: templates/educators/includes/stuff/backbone-templates.html:527
 msgid "made a profile update. <em>"
 msgstr "- rinne sé/sí nuashonrú ar phróifíl. <em>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:531
+#: templates/educators/includes/stuff/backbone-templates.html:533
 msgid "commented on the project "
 msgstr "- d'fhág sé sí nóta tráchta ar an tionscadal "
 
-#: templates/educators/includes/stuff/backbone-templates.html:539
+#: templates/educators/includes/stuff/backbone-templates.html:541
 msgid "commented on user"
 msgstr "- rinne sé/sí trácht ar an úsáideoir"
 
-#: templates/educators/includes/stuff/backbone-templates.html:547
+#: templates/educators/includes/stuff/backbone-templates.html:549
 msgid "commented on the studio "
 msgstr " - rinne sé/sí trácht ar an stiúideo "
 
-#: templates/educators/includes/stuff/backbone-templates.html:557
+#: templates/educators/includes/stuff/backbone-templates.html:559
 msgid "performed an action. <em>"
 msgstr " - rinné sé/sí gníomh. <em>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:598
+#: templates/educators/includes/stuff/backbone-templates.html:600
 #, python-format
 msgid "%(target_username)s was banned."
 msgstr "Cuireadh cosc ar %(target_username)s."
 
-#: templates/educators/includes/stuff/backbone-templates.html:600
+#: templates/educators/includes/stuff/backbone-templates.html:602
 #, python-format
 msgid "%(target_username)s was unbanned."
 msgstr "Baineadh an cosc de %(target_username)s."
 
-#: templates/educators/includes/stuff/backbone-templates.html:602
 #: templates/educators/includes/stuff/backbone-templates.html:604
+#: templates/educators/includes/stuff/backbone-templates.html:606
 #, python-format
 msgid "%(target_username)s was excluded from homepage."
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:606
+#: templates/educators/includes/stuff/backbone-templates.html:608
 #, python-format
 msgid ""
 "%(target_username)s was notified by a Scratch Administrator. Notification "
 "Type: <%%- admin_action.extra_data.notification_type || 'Unknown' %%>"
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:608
+#: templates/educators/includes/stuff/backbone-templates.html:610
 #, python-format
 msgid "%(target_username)s was banned automatically."
 msgstr "Cuireadh cosc ar %(target_username)s go huathoibríoch."
 
-#: templates/educators/includes/stuff/backbone-templates.html:610
+#: templates/educators/includes/stuff/backbone-templates.html:612
 #, python-format
 msgid "%(project)s by %(target_username)s was removed automatically."
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:613
+#: templates/educators/includes/stuff/backbone-templates.html:615
 #, python-format
 msgid "%(project)s by %(target_username)s was censored."
 msgstr "Rinneadh cinsireacht ar %(project)s le %(target_username)s."
 
-#: templates/educators/includes/stuff/backbone-templates.html:615
+#: templates/educators/includes/stuff/backbone-templates.html:617
 #, python-format
 msgid "%(project)s by %(target_username)s was uncensored."
 msgstr "Baineadh an chinsireacht de %(project)s le %(target_username)s."
 
-#: templates/educators/includes/stuff/backbone-templates.html:618
+#: templates/educators/includes/stuff/backbone-templates.html:620
 #, python-format
 msgid ""
 "%(project)s by %(target_username)s was reviewed by a Scratch Administrator."
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:620
+#: templates/educators/includes/stuff/backbone-templates.html:622
 #, python-format
 msgid ""
 "%(project)s by %(target_username)s was deleted by a Scratch Administrator."
 msgstr "Bhí %(project)s le %(target_username)s scriosta ag Riarthóir Scratch."
 
-#: templates/educators/includes/stuff/backbone-templates.html:623
+#: templates/educators/includes/stuff/backbone-templates.html:625
 #, python-format
 msgid "%(target_username)s was deleted by a Scratch Administrator."
 msgstr "Bhí %(target_username)s scriosta ag Riarthóir Scratch."
 
-#: templates/educators/includes/stuff/backbone-templates.html:626
+#: templates/educators/includes/stuff/backbone-templates.html:628
 #, python-format
 msgid "%(gallery)s was reviewed by a Scratch Administrator."
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:628
+#: templates/educators/includes/stuff/backbone-templates.html:630
 #, python-format
 msgid "%(gallery)s was deleted by a Scratch Administrator."
 msgstr "Bhí %(gallery)s scriosta ag Riarthóir Scratch."
 
-#: templates/educators/includes/stuff/backbone-templates.html:630
+#: templates/educators/includes/stuff/backbone-templates.html:632
 #, python-format
 msgid "%(target_username)s deleted their own account."
 msgstr "Scrios %(target_username)s a c(h)untas féin."
 
-#: templates/educators/includes/stuff/backbone-templates.html:632
+#: templates/educators/includes/stuff/backbone-templates.html:634
 #, python-format
 msgid ""
 "The email address of %(target_username)s was confirmed by a Scratch "
@@ -2321,51 +2259,51 @@ msgid ""
 msgstr ""
 "Bhí seoladh ríomhphoist %(target_username)s deimhnithe ag Riarthóir Scratch"
 
-#: templates/educators/includes/stuff/backbone-templates.html:634
+#: templates/educators/includes/stuff/backbone-templates.html:636
 #, python-format
 msgid ""
 "The email address of %(target_username)s was set as not confirmed by a "
 "Scratch Administrator"
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:636
+#: templates/educators/includes/stuff/backbone-templates.html:638
 #, python-format
 msgid "%(target_username)s had an admin action performed."
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:652
+#: templates/educators/includes/stuff/backbone-templates.html:654
 #, python-format
 msgid "Change Password for %(username)s"
 msgstr "Athraigh Pasfhocal do %(username)s"
 
-#: templates/educators/includes/stuff/backbone-templates.html:656
+#: templates/educators/includes/stuff/backbone-templates.html:658
 msgid "New password"
 msgstr "Focal faire nua"
 
-#: templates/educators/includes/stuff/backbone-templates.html:660
+#: templates/educators/includes/stuff/backbone-templates.html:662
 msgid "New password confirmation"
 msgstr "Dearbhú focal faire nua"
 
-#: templates/educators/includes/stuff/backbone-templates.html:676
+#: templates/educators/includes/stuff/backbone-templates.html:678
 #, python-format
 msgid "%(username)s Account Options"
 msgstr "Roghanna Cuntais %(username)s"
 
-#: templates/educators/includes/stuff/backbone-templates.html:683
+#: templates/educators/includes/stuff/backbone-templates.html:685
 msgid "Remove Icon"
 msgstr "Bain Deilbhín"
 
-#: templates/educators/includes/stuff/backbone-templates.html:686
+#: templates/educators/includes/stuff/backbone-templates.html:688
 msgid "There are two ways to change your student's password."
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:689
+#: templates/educators/includes/stuff/backbone-templates.html:691
 msgid "Prompt student to change password on next login"
 msgstr ""
 "Tabhair nod don mhac léinn focal faire a athrú ar an gcéad logáil isteach "
 "eile"
 
-#: templates/educators/includes/stuff/backbone-templates.html:690
+#: templates/educators/includes/stuff/backbone-templates.html:692
 #, python-format
 msgid ""
 "This student's password will be reset to your username, %(username)s. After "
@@ -2375,94 +2313,124 @@ msgstr ""
 "ndiaidh don mhac léinn logáil isteach, iarrfar orthu focal faire nua a "
 "roghnú."
 
-#: templates/educators/includes/stuff/backbone-templates.html:693
+#: templates/educators/includes/stuff/backbone-templates.html:695
 msgid "Prompt Student"
 msgstr "Tabhair nod don Mhac Léinn"
 
-#: templates/educators/includes/stuff/backbone-templates.html:698
+#: templates/educators/includes/stuff/backbone-templates.html:700
 msgid "Manually change the student's password"
 msgstr "Athraigh focal faire an dalta de láimh"
 
-#: templates/educators/includes/stuff/backbone-templates.html:699
+#: templates/educators/includes/stuff/backbone-templates.html:701
 msgid ""
 "You will be redirected to a screen where you can choose the student's "
 "password."
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:702
+#: templates/educators/includes/stuff/backbone-templates.html:704
 msgid "Manually Change"
 msgstr "Nuashonraigh de Láimh"
 
-#: templates/educators/includes/stuff/backbone-templates.html:710
-#: templates/educators/includes/stuff/backbone-templates.html:736
-#: templates/educators/includes/stuff/backbone-templates.html:782
+#: templates/educators/includes/stuff/backbone-templates.html:712
+#: templates/educators/includes/stuff/backbone-templates.html:767
 #: templates/educators/student-modal-registration.html:90
 #: templates/modal-registration.html:255
 msgid "Close"
 msgstr "Dún"
 
-#: templates/educators/includes/stuff/backbone-templates.html:720
+#: templates/educators/includes/stuff/backbone-templates.html:722
 msgid "Sign-up Link"
 msgstr "Nasc Síntiúis"
 
-#: templates/educators/includes/stuff/backbone-templates.html:723
+#: templates/educators/includes/stuff/backbone-templates.html:725
 msgid ""
-"Students can use this link to register for your class. They will be directed"
-" to a class page where they can click 'Join this Class'."
+"Get a sign-up link that students can use to register for your class. They "
+"will be directed to a class page where they can \"Join this Class\". "
 msgstr ""
-"Tig le mic léinn an nasc seo a úsáid chun clárú le do rang. Díreofar go "
-"leathanach ranga, áit gur féidir leo 'Cláraigh leis an Rang seo' a bhrú."
 
-#: templates/educators/includes/stuff/backbone-templates.html:726
-msgid "Generate a sign-up link"
-msgstr "Gin nasc síntiúis"
+#: templates/educators/includes/stuff/backbone-templates.html:734
+msgid ""
+"\n"
+"                        Usernames must\n"
+"                        <span class=\"underline\">not</span>\n"
+"                        reveal the identity of students in any way.\n"
+"                        "
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:728
-msgid "Generate"
-msgstr "Gin"
+#: templates/educators/includes/stuff/backbone-templates.html:754
+msgid ""
+"I agree to remind my students not to use their real names, school name, "
+"contact information or student ID numbers."
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:731
-#: templates/educators/includes/stuff/backbone-templates.html:774
+#: templates/educators/includes/stuff/backbone-templates.html:760
+msgid "Get Link"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:763
+#: templates/educators/includes/stuff/backbone-templates.html:808
 msgid "Type CTRL+C on Windows or &#8984;+C on Mac to copy the link."
 msgstr ""
 "Cuir isteach CTRL+C ar Windows nó &#8984;+C ar Mac chun an nasc a chóipeáil."
 
-#: templates/educators/includes/stuff/backbone-templates.html:745
+#: templates/educators/includes/stuff/backbone-templates.html:776
 msgid "Upload CSV"
 msgstr "Uasluchtaigh CSV"
 
-#: templates/educators/includes/stuff/backbone-templates.html:748
+#: templates/educators/includes/stuff/backbone-templates.html:779
 msgid ""
-"Upload a .csv file containing up to 50 student usernames and passwords. "
-"These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools. Accounts with "
-"usernames containing personal identifiers will be permanently deleted for "
-"safety and privacy reasons. Please use the following format:"
+"You can quickly create up to 50 student accounts by uploading a CSV of "
+"usernames and passwords. See how to format a CSV below."
 msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:755
+#: templates/educators/includes/stuff/backbone-templates.html:780
+msgid "Provide Usernames and Passwords"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:781
+msgid ""
+"Usernames are visible to the public, so do not use any personal information."
+" Instead, use aspects from the subject you are teaching, favorite foods, or "
+"animals"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:788
 msgid "Download example"
 msgstr "Íosluchtaigh sampla"
 
-#: templates/educators/includes/stuff/backbone-templates.html:758
-msgid "Learn more about CSV files"
-msgstr "Foghlaim tuilleadh faoi chomhaid CSV"
+#: templates/educators/includes/stuff/backbone-templates.html:791
+msgid "Teacher Account Setup Guide"
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:766
-msgid "Student Upload"
-msgstr "Uaslódáil Mic Léinn"
+#: templates/educators/includes/stuff/backbone-templates.html:819
+msgid ""
+"\n"
+"                        Usernames must\n"
+"                        <span class=\"underline\">not</span>\n"
+"                        reveal the identity of students in any way.\n"
+"                    "
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:770
+#: templates/educators/includes/stuff/backbone-templates.html:839
+msgid ""
+"\n"
+"                        I understand that for safety and privacy, Scratch must\n"
+"                        <span class=\"attention\">delete</span>\n"
+"                        any accounts which include real names, school name, or contact information.\n"
+"                    "
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:851
 msgid "Upload"
 msgstr "Uasluchtaigh"
 
-#: templates/educators/includes/stuff/backbone-templates.html:794
+#: templates/educators/includes/stuff/backbone-templates.html:864
 msgid "Are you sure you want to end the following class:"
 msgstr ""
 "An bhfuil tú cinnte gur mhaith leat deireadh a chur leis an rang seo a "
 "leanas:"
 
-#: templates/educators/includes/stuff/backbone-templates.html:796
+#: templates/educators/includes/stuff/backbone-templates.html:866
 msgid ""
 "When you end a class, students will no longer be able to log in (but their "
 "projects will still be visible on the site)."
@@ -2470,7 +2438,7 @@ msgstr ""
 "Nuair a chuireann tú deireadh le rang, ní bheidh mic léinn in ann logáil "
 "isteach (ach beidh a gcuid tionscadal le feiceáil ar an suíomh)."
 
-#: templates/educators/includes/stuff/backbone-templates.html:799
+#: templates/educators/includes/stuff/backbone-templates.html:869
 msgid "To confirm, please enter your password"
 msgstr "Cuir d'fhocal faire isteach chun é sin a dheimhniú"
 
@@ -2506,23 +2474,45 @@ msgid "All classes"
 msgstr "Gach rang"
 
 #: templates/educators/register_student_modal.html:6
-msgid "Adding New Student"
-msgstr "Ag Cur Mac Léinn Nua Leis"
+msgid "Add New Student"
+msgstr ""
 
 #: templates/educators/register_student_modal.html:11
 msgid "Add to Class"
 msgstr "Cuir le Rang"
 
-#: templates/educators/register_student_modal.html:38
-msgid ""
-"These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools. Accounts with "
-"usernames containing personal identifiers will be permanently deleted for "
-"safety and privacy reasons."
+#: templates/educators/register_student_modal.html:31
+msgid "type student username here"
 msgstr ""
 
-#: templates/educators/register_student_modal.html:72
+#: templates/educators/register_student_modal.html:44
+msgid ""
+"\n"
+"                          Usernames must\n"
+"                          <span class=\"underline\">not</span>\n"
+"                          reveal the identity of students in any way.\n"
+"                      "
+msgstr ""
+
+#: templates/educators/register_student_modal.html:64
+msgid ""
+"\n"
+"                          I understand that for safety and privacy, Scratch must\n"
+"                          <span class=\"attention\">delete</span>\n"
+"                          any accounts which include real names, school name, or contact information.\n"
+"                      "
+msgstr ""
+
+#: templates/educators/register_student_modal.html:90
+msgid "Will be set to the teacher's username:"
+msgstr ""
+
+#: templates/educators/register_student_modal.html:121
 msgid "That class already has the maximum number of students allowed"
+msgstr ""
+
+#: templates/educators/register_student_modal.html:122
+msgid "Please confirm that you understand"
 msgstr ""
 
 #: templates/educators/registration/approval_email_message.html:7
@@ -2547,44 +2537,70 @@ msgstr ""
 msgid "New to Scratch?"
 msgstr "Do chéad uair ar Scratch?"
 
-#: templates/educators/registration/approval_email_message.html:13
-#: templates/educators/registration/approval_email_message.txt:7
-msgid "Read our Community Guidelines"
-msgstr "Léigh ár dTreoirlínte don Chomhphobal"
-
-#: templates/educators/registration/approval_email_message.html:14
-#: templates/educators/registration/approval_email_message.txt:8
-msgid "Get inspired with a starter project"
-msgstr "Faigh spreagadh le tionscadal tosaigh"
-
 #: templates/educators/registration/approval_email_message.html:15
-#: templates/educators/registration/approval_email_message.txt:9
-msgid "Learn more about Scratch"
-msgstr "Tuilleadh eolais maidir le Scratch"
+#, python-format
+msgid "Read our <a href=\" %(comm_link)s\">Community Guidelines</a>."
+msgstr ""
 
-#: templates/educators/registration/approval_email_message.html:18
+#: templates/educators/registration/approval_email_message.html:16
+msgid ""
+"Review the <a "
+"href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">Getting"
+" Started Guide</a> for a deeper dive into the Scratch editor."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:17
+#, python-format
+msgid ""
+"Explore our <a href=\"%(ed_link)s\"> Scratch for Educators </a> site for "
+"resources and more educator guides."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:20
 #: templates/educators/registration/approval_email_message.txt:11
 msgid "Next Steps"
 msgstr "Na Chéad Céimeanna Eile"
 
-#: templates/educators/registration/approval_email_message.html:20
+#: templates/educators/registration/approval_email_message.html:23
+#, python-format
+msgid "Learn more about managing <a href=\"%(faq_link)s\">Teacher Accounts</a>."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:24
+#, python-format
+msgid ""
+"Take a deeper dive into curriculum resources, events, and news on our <a "
+"href=\"%(sip_url)s\">Scratch in Practice</a> page. "
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:25
+msgid ""
+"Connect with other educators through the <a "
+"href=\"https://www.facebook.com/groups/TeachingwithScratch/\">Teaching with "
+"Scratch Facebook page</a>, hosted by the Harvard Graduate School of "
+"Education <a href=\"http://scratched.gse.harvard.edu/\">ScratchEd</a> "
+"community."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.txt:7
+msgid "Read our Community Guidelines"
+msgstr "Léigh ár dTreoirlínte don Chomhphobal"
+
+#: templates/educators/registration/approval_email_message.txt:8
+msgid "Get inspired with a starter project"
+msgstr "Faigh spreagadh le tionscadal tosaigh"
+
+#: templates/educators/registration/approval_email_message.txt:9
+msgid "Learn more about Scratch"
+msgstr "Tuilleadh eolais maidir le Scratch"
+
 #: templates/educators/registration/approval_email_message.txt:12
 msgid "Learn more about Teacher Accounts"
 msgstr "Tuilleadh eolais maidir le Cuntais Mhúinteora"
 
-#: templates/educators/registration/approval_email_message.html:21
 #: templates/educators/registration/approval_email_message.txt:13
 msgid "Explore educator resources"
 msgstr "Taiscéal acmhainní do mhúinteoirí"
-
-#: templates/educators/registration/approval_email_message.html:22
-#, python-format
-msgid ""
-"<a href=\"%(scratch_ed_url)s\">Connect with other educators</a> via the "
-"ScratchEd online community, developed and supported by the Harvard Graduate "
-"School of Education. <em>Please note that you’ll need to create a separate "
-"account to join the discussion on ScratchEd.</em>"
-msgstr ""
 
 #: templates/educators/registration/approval_email_message.txt:14
 msgid ""
@@ -2793,6 +2809,10 @@ msgstr "Tionscadail ( <span data-count=\"projects\">100+</span> )"
 #, python-format
 msgid "Projects ( <span data-count=\"projects\">%(tCount)s</span> )"
 msgstr "Tionscadail ( <span data-count=\"projects\">%(tCount)s</span> )"
+
+#: templates/galleries/base.html:117
+msgid "Comments ( <span data-count=\"comments\">100+</span> )"
+msgstr ""
 
 #: templates/galleries/base.html:117
 #, python-format

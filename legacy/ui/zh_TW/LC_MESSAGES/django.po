@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 17:29-0400\n"
+"POT-Creation-Date: 2020-06-11 13:18+0000\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
 "Last-Translator: dnowba <d.now.ba@gmail.com>, 2020\n"
 "Language-Team: Chinese (Taiwan) (https://www.transifex.com/llk/teams/60938/zh_TW/)\n"
@@ -235,28 +235,28 @@ msgstr "班級"
 msgid "classes"
 msgstr "所有班級"
 
-#: educators/views.py:519
+#: educators/views.py:525
 msgid ""
 "Please update the CSV file to address the issues above and reload the file."
 msgstr "請更新 CSV 檔案到上列位址並重新載入。"
 
-#: educators/views.py:533
+#: educators/views.py:539
 msgid ""
 "Errors occurred while creating accounts. All accounts other than those "
 "specified here were created."
 msgstr "建立帳號時發生問題，除了列出的帳號，其他帳號都已建立完成。"
 
-#: educators/views.py:607
+#: educators/views.py:613
 msgid ""
 "After changing this student's password, you will need to share the new "
 "password with your student directly so that they can log back into Scratch."
 msgstr "在修改學生密碼之後，你需要直接將新密碼分享給學生，這樣他們以後才可以登入到 Scratch。"
 
-#: galleries/models.py:264
+#: galleries/models.py:277
 msgid "studio"
 msgstr "創作坊"
 
-#: galleries/models.py:265
+#: galleries/models.py:278
 msgid "studios"
 msgstr "創作坊"
 
@@ -288,11 +288,11 @@ msgstr "專案"
 msgid "projects"
 msgstr "專案"
 
-#: projects/models.py:278
+#: projects/models.py:279
 msgid "Permanently Censored Project cannot be reshared."
 msgstr "列管的專案無法再次被分享。"
 
-#: projects/models.py:285
+#: projects/models.py:286
 msgid ""
 "This project has been censored and must be reviewed before it can be "
 "reshared."
@@ -302,15 +302,15 @@ msgstr "此專案已被列管，必須經過重審後才可以再次分享。"
 msgid "This tag has too many projects to load"
 msgstr "太多使用此標籤的專案了"
 
-#: scratchr2/views.py:346
+#: scratchr2/views.py:345
 msgid "You're not allowed to appeal this ban."
 msgstr "您無法對此禁令提出申訴。"
 
-#: scratchr2/views.py:355
+#: scratchr2/views.py:354
 msgid "Your message has been sent. We will respond within 3 days."
 msgstr "您的訊息已送出，我們會在 3 日內回覆。"
 
-#: scratchr2/views.py:361 scratchr2/views.py:405
+#: scratchr2/views.py:360
 msgid "Please correct the errors below."
 msgstr "請更正下列錯誤。"
 
@@ -397,6 +397,7 @@ msgstr "帳戶"
 #: templates/accounts/deletion/confirmation.html:7
 #: templates/accounts/deletion/nostalgia.html:6
 #: templates/accounts/email_change.html:9 templates/base.html:212
+#: templates/educators/register_student_modal.html:86
 #: templates/includes/backbone-templates.html:44 templates/modal-login.html:21
 msgid "Password"
 msgstr "密碼"
@@ -427,7 +428,7 @@ msgstr "儲存所有變更"
 msgid "I want to delete my account"
 msgstr "我想刪除我的帳戶"
 
-#: templates/accounts/banned-response.html:12 templates/contact-us.html:73
+#: templates/accounts/banned-response.html:12
 #: templates/info/ext_download.html:11 templates/info/scratch2download.html:27
 #: templates/info/scratch_1.4.html:11
 msgid "Account Blocked"
@@ -492,7 +493,7 @@ msgid ""
 msgstr "<b>友善互助<b/>，如果您看到某個專案或評論內容不當，像是過於暴力、色情、血腥，請「檢舉」讓我們知道，我們一起努力讓網站變得更友善。"
 
 #: templates/accounts/banned-response.html:80
-#: templates/accounts/email_change.html:64 templates/contact-us.html:121
+#: templates/accounts/email_change.html:64
 msgid "Send"
 msgstr "送出"
 
@@ -701,7 +702,7 @@ msgstr "如果你從未提出變更密碼的要求，請忽略此訊息，什麼
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
-#: templates/educators/registration/approval_email_message.html:26
+#: templates/educators/registration/approval_email_message.html:28
 #: templates/educators/registration/approval_email_message.txt:16
 #: templates/educators/registration/welcome_email_message.html:32
 #: templates/educators/registration/welcome_email_message.txt:17
@@ -718,7 +719,7 @@ msgstr "Scratch On!"
 #: templates/accounts/password_changed_email/message.txt:7
 #: templates/educators/email_verification/verification_email.html:34
 #: templates/educators/email_verification/verification_email_plain.html:20
-#: templates/educators/registration/approval_email_message.html:28
+#: templates/educators/registration/approval_email_message.html:30
 #: templates/educators/registration/approval_email_message.txt:17
 #: templates/educators/registration/password_reset_email.html:16
 #: templates/educators/registration/password_reset_email.txt:10
@@ -1177,8 +1178,7 @@ msgstr "常見問答"
 msgid "Offline Editor"
 msgstr "離線編輯器"
 
-#: templates/base.html:350 templates/contact-us-success.html:12
-#: templates/contact-us.html:79
+#: templates/base.html:350
 msgid "Contact Us"
 msgstr "聯絡我們"
 
@@ -1233,8 +1233,8 @@ msgstr "Scratch 基金會"
 
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14
-#: templates/educators/classroom_detail.html:187
-#: templates/educators/classroom_detail.html:217
+#: templates/educators/classroom_detail.html:188
+#: templates/educators/classroom_detail.html:218
 #: templates/profiles/profile_detail.html:213
 #: templates/profiles/profile_detail.html:240
 #: templates/profiles/profile_detail.html:276
@@ -1331,7 +1331,8 @@ msgstr "送出"
 #: templates/educators/add_class_modal.html:35
 #: templates/educators/add_gallery_modal.html:33
 #: templates/educators/includes/stuff/backbone-templates.html:667
-#: templates/educators/includes/stuff/backbone-templates.html:810
+#: templates/educators/includes/stuff/backbone-templates.html:852
+#: templates/educators/includes/stuff/backbone-templates.html:878
 #: templates/includes/backbone-templates.html:81
 msgid "Cancel"
 msgstr "取消"
@@ -1347,6 +1348,10 @@ msgid ""
 msgstr "抱歉，目前無法評論。應該很快就會正常！"
 
 #: templates/comments/comment-module.html:57
+msgid "Load comments"
+msgstr ""
+
+#: templates/comments/comment-module.html:60
 msgid "Comments loading..."
 msgstr "加載評論內容中...."
 
@@ -1384,67 +1389,6 @@ msgstr "檢視所有回應（ %(len)s 則）"
 #: templates/comments/list.html:24
 msgid "Load more"
 msgstr "載入更多內容"
-
-#: templates/contact-us.html:92
-msgid ""
-"The Scratch Team receives a large number of messages each day. "
-"Unfortunately, we do not have time to answer all of them. Luckily, you can "
-"find answers to most questions about Scratch on our  <a "
-"href=\"/info/faq/\">Frequently Asked Questions</a> page."
-msgstr ""
-"Scratch 團隊每天收到的訊息非常非常地多。遺憾的是我們沒有太多時間一一的回覆，在發問前，也許你可以在<a "
-"href=\"/info/faq/\">常見問答</a>頁上找到你要的答案。"
-
-#: templates/contact-us.html:94
-msgid ""
-"You can also look at the Scratch <a href=\"/discuss\">Discussion forums</a>."
-msgstr "或者你也可以看看<a href=\"/discuss\">討論論壇</a>上是否相關問答。"
-
-#: templates/contact-us.html:95
-msgid ""
-"If you can't find an answer, post a new topic on the <a "
-"href=\"/discuss\">Discussion forums.</a> There are many experienced "
-"Scratchers who can help!"
-msgstr ""
-"如果您找不到答案，請在<a href=\"/discuss\">討論區</a>上張貼新主題，那裡有許多經驗豐富的 Scratchers 可以協助您！"
-
-#: templates/contact-us.html:98
-msgid "Questions About Scratch"
-msgstr "關於 Scratch 的問題"
-
-#: templates/contact-us.html:99
-msgid "Help with Scripts"
-msgstr "程式幫助"
-
-#: templates/contact-us.html:100
-msgid "Bugs and Glitches"
-msgstr "Bugs 和  Glitches"
-
-#: templates/contact-us.html:103
-msgid ""
-"If you need to contact us, please choose from one of the options below. We "
-"get a lot of mail, so we may not be able to respond to your message."
-msgstr "下列是我們的聯絡方式。我們的信件處理量非常大，因此可能無法回覆您的訊息。"
-
-#: templates/contact-us.html:108
-msgid "Select a topic"
-msgstr "選擇一個主題"
-
-#: templates/contact-us.html:109
-msgid "Report something inappropriate..."
-msgstr "檢舉為不當內容…"
-
-#: templates/contact-us.html:110
-msgid "Report a problem with the website..."
-msgstr "回報網站問題…"
-
-#: templates/contact-us.html:111
-msgid "Problems with email confirmation..."
-msgstr "信箱驗證問題…"
-
-#: templates/contact-us.html:112
-msgid "Other..."
-msgstr "其他…"
 
 #: templates/educators/add_class_modal.html:6
 msgid "Add a New Class"
@@ -1487,37 +1431,37 @@ msgid "Studio Description"
 msgstr "創作坊介紹"
 
 #: templates/educators/add_gallery_modal.html:42
-#: templates/educators/register_student_modal.html:66
+#: templates/educators/register_student_modal.html:115
 #: templates/modal-registration.html:269
 msgid "Your username must be between 3 and 20 characters"
 msgstr "用戶名稱長度應於 3 到 20 個字元之間"
 
 #: templates/educators/add_gallery_modal.html:43
-#: templates/educators/register_student_modal.html:67
+#: templates/educators/register_student_modal.html:116
 #: templates/modal-registration.html:270
 msgid "Sorry, that username already exists"
 msgstr "很抱歉，這個名稱已經被使用"
 
 #: templates/educators/add_gallery_modal.html:44
-#: templates/educators/register_student_modal.html:68
+#: templates/educators/register_student_modal.html:117
 #: templates/modal-registration.html:271
 msgid "Invalid username"
 msgstr "無效的用戶名稱"
 
 #: templates/educators/add_gallery_modal.html:45
-#: templates/educators/register_student_modal.html:69
+#: templates/educators/register_student_modal.html:118
 #: templates/modal-registration.html:272
 msgid "Hmm, that looks inappropriate"
 msgstr "嗯，那看起來不太恰當"
 
 #: templates/educators/add_gallery_modal.html:46
-#: templates/educators/register_student_modal.html:70
+#: templates/educators/register_student_modal.html:119
 #: templates/modal-registration.html:273
 msgid "You must enter a username"
 msgstr "請輸入用戶名稱"
 
 #: templates/educators/add_gallery_modal.html:47
-#: templates/educators/register_student_modal.html:71
+#: templates/educators/register_student_modal.html:120
 #: templates/modal-registration.html:274
 msgid "Your username may only contain letters, numbers, - and _"
 msgstr "用戶名稱只能包括英文字母、數字、符號 - 和 _。"
@@ -1585,30 +1529,30 @@ msgstr "範例頁籤"
 msgid "%(classroom_title)s on Scratch"
 msgstr "Scratch- %(classroom_title)s 班"
 
-#: templates/educators/classroom_detail.html:70
+#: templates/educators/classroom_detail.html:71
 msgid "Class page"
 msgstr "班級頁面"
 
-#: templates/educators/classroom_detail.html:70
+#: templates/educators/classroom_detail.html:71
 #: templates/profiles/profile_detail.html:80
 msgid "ended"
 msgstr "已關閉"
 
-#: templates/educators/classroom_detail.html:71
+#: templates/educators/classroom_detail.html:72
 #, python-format
 msgid "Created %(tDate)s ago"
 msgstr "%(tDate)s 前已建立"
 
-#: templates/educators/classroom_detail.html:79
+#: templates/educators/classroom_detail.html:80
 msgid "Join this class"
 msgstr "加入此班級"
 
-#: templates/educators/classroom_detail.html:92
+#: templates/educators/classroom_detail.html:93
 #: templates/educators/includes/stuff/backbone-templates.html:203
 msgid "About this Class"
 msgstr "關於這個班級"
 
-#: templates/educators/classroom_detail.html:96
+#: templates/educators/classroom_detail.html:97
 #: templates/educators/includes/stuff/backbone-templates.html:206
 #: templates/educators/includes/stuff/backbone-templates.html:214
 msgid ""
@@ -1616,63 +1560,63 @@ msgid ""
 "identifiable information, like names."
 msgstr "描述一下這個班級，這個內容將會公開，所以請避免使用易被人利用的資料，像是真實姓名。"
 
-#: templates/educators/classroom_detail.html:97
+#: templates/educators/classroom_detail.html:98
 #: templates/educators/includes/stuff/backbone-templates.html:207
 #: templates/educators/includes/stuff/backbone-templates.html:215
 #: templates/profiles/profile_detail.html:124
 msgid "<span id=\"bio-chars-left\">200</span> characters left."
 msgstr "剩餘 <span id=\"bio-chars-left\">200</span> 個字元。"
 
-#: templates/educators/classroom_detail.html:121
+#: templates/educators/classroom_detail.html:122
 msgid "What we're working on"
 msgstr "我們的工作"
 
-#: templates/educators/classroom_detail.html:125
+#: templates/educators/classroom_detail.html:126
 #: templates/educators/includes/stuff/backbone-templates.html:228
 #: templates/educators/includes/stuff/backbone-templates.html:236
 msgid "Describe what the class is doing."
 msgstr "描述這個班級做些什麼。"
 
-#: templates/educators/classroom_detail.html:126
+#: templates/educators/classroom_detail.html:127
 #: templates/educators/includes/stuff/backbone-templates.html:229
 #: templates/educators/includes/stuff/backbone-templates.html:237
 #: templates/profiles/profile_detail.html:151
 msgid "<span id=\"status-chars-left\">200</span> characters left."
 msgstr "剩餘 <span id=\"status-chars-left\">200</span> 個字元"
 
-#: templates/educators/classroom_detail.html:154
+#: templates/educators/classroom_detail.html:155
 #: templates/pathways/layout/base.html:66
 msgid "Featured"
 msgstr "特色"
 
-#: templates/educators/classroom_detail.html:158
+#: templates/educators/classroom_detail.html:159
 #: templates/profiles/profile_detail.html:179
 msgid "Change featured project"
 msgstr "變更特色專案"
 
-#: templates/educators/classroom_detail.html:165
+#: templates/educators/classroom_detail.html:166
 msgid "Latest Activity"
 msgstr "最新動態"
 
-#: templates/educators/classroom_detail.html:176
+#: templates/educators/classroom_detail.html:177
 msgid "Report this class"
 msgstr "檢舉此班級"
 
-#: templates/educators/classroom_detail.html:186
+#: templates/educators/classroom_detail.html:187
 #: templates/educators/classroom_gallery_list.html:5
 msgid "Class Studios"
 msgstr "班級創作坊"
 
-#: templates/educators/classroom_detail.html:203
+#: templates/educators/classroom_detail.html:204
 msgid "This class doesn't have any studios yet"
 msgstr "這個班級還沒有成立創作坊"
 
-#: templates/educators/classroom_detail.html:205
+#: templates/educators/classroom_detail.html:206
 #, python-format
 msgid "You can add studios in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr "你可以在<a href=\"%(educator_stuff_url)s\">我的所有班級</a>裡成立創作坊"
 
-#: templates/educators/classroom_detail.html:216
+#: templates/educators/classroom_detail.html:217
 #: templates/educators/includes/stuff/backbone-templates.html:71
 #: templates/educators/includes/stuff/backbone-templates.html:144
 #: templates/educators/includes/stuff/sort-classrooms-dropdown.html:12
@@ -1680,11 +1624,11 @@ msgstr "你可以在<a href=\"%(educator_stuff_url)s\">我的所有班級</a>裡
 msgid "Students"
 msgstr "所有學生"
 
-#: templates/educators/classroom_detail.html:233
+#: templates/educators/classroom_detail.html:234
 msgid "This class doesn't have students yet"
 msgstr "這個班級裡尚未有任何學生"
 
-#: templates/educators/classroom_detail.html:235
+#: templates/educators/classroom_detail.html:236
 #, python-format
 msgid "You can add students in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr "你可以在<a href=\"%(educator_stuff_url)s\">我的所有班級</a>裡新增學生"
@@ -1989,8 +1933,8 @@ msgid "What the Class is working on"
 msgstr "班級主要的工作是什麼"
 
 #: templates/educators/includes/stuff/backbone-templates.html:250
-#: templates/educators/includes/stuff/backbone-templates.html:793
-#: templates/educators/includes/stuff/backbone-templates.html:809
+#: templates/educators/includes/stuff/backbone-templates.html:861
+#: templates/educators/includes/stuff/backbone-templates.html:877
 msgid "End Class"
 msgstr "關閉班級"
 
@@ -2042,6 +1986,7 @@ msgstr "學生註冊連結"
 
 #: templates/educators/includes/stuff/backbone-templates.html:366
 #: templates/educators/includes/stuff/backbone-templates.html:380
+#: templates/educators/includes/stuff/backbone-templates.html:801
 msgid "CSV Upload"
 msgstr "CSV 檔案上傳"
 
@@ -2277,8 +2222,7 @@ msgid "Manually Change"
 msgstr "直接變更"
 
 #: templates/educators/includes/stuff/backbone-templates.html:712
-#: templates/educators/includes/stuff/backbone-templates.html:738
-#: templates/educators/includes/stuff/backbone-templates.html:784
+#: templates/educators/includes/stuff/backbone-templates.html:767
 #: templates/educators/student-modal-registration.html:90
 #: templates/modal-registration.html:255
 msgid "Close"
@@ -2290,65 +2234,96 @@ msgstr "註冊連結"
 
 #: templates/educators/includes/stuff/backbone-templates.html:725
 msgid ""
-"Students can use this link to register for your class. They will be directed"
-" to a class page where they can click 'Join this Class'."
-msgstr "學生可以透過此連結註冊到你的班級中，他們將會被重導至班級頁面，頁面上會有「加入此班級」的按鈕。"
+"Get a sign-up link that students can use to register for your class. They "
+"will be directed to a class page where they can \"Join this Class\". "
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:728
-msgid "Generate a sign-up link"
-msgstr "產生註冊的連結"
+#: templates/educators/includes/stuff/backbone-templates.html:734
+msgid ""
+"\n"
+"                        Usernames must\n"
+"                        <span class=\"underline\">not</span>\n"
+"                        reveal the identity of students in any way.\n"
+"                        "
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:730
-msgid "Generate"
-msgstr "產生"
+#: templates/educators/includes/stuff/backbone-templates.html:754
+msgid ""
+"I agree to remind my students not to use their real names, school name, "
+"contact information or student ID numbers."
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:733
-#: templates/educators/includes/stuff/backbone-templates.html:776
+#: templates/educators/includes/stuff/backbone-templates.html:760
+msgid "Get Link"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:763
+#: templates/educators/includes/stuff/backbone-templates.html:808
 msgid "Type CTRL+C on Windows or &#8984;+C on Mac to copy the link."
 msgstr "按下 CTRL+C（Windows）或是 &#8984;+C（Mac）以複製此連結。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:747
+#: templates/educators/includes/stuff/backbone-templates.html:776
 msgid "Upload CSV"
 msgstr "上傳 CSV 檔"
 
-#: templates/educators/includes/stuff/backbone-templates.html:750
+#: templates/educators/includes/stuff/backbone-templates.html:779
 msgid ""
-"Upload a .csv file containing up to 50 student usernames and passwords. "
-"These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools. Accounts with "
-"usernames containing personal identifiers will be permanently deleted for "
-"safety and privacy reasons. Please use the following format:"
+"You can quickly create up to 50 student accounts by uploading a CSV of "
+"usernames and passwords. See how to format a CSV below."
 msgstr ""
-"上傳學生清單，清單中最多 50 名學生，內容包含用戶名稱及密碼，格式為 "
-"CSV。用戶名稱會公開顯示，所以切記名稱中不要加上易被利用的資料，像是真實姓名、學校名稱…等。檔案範例如下："
 
-#: templates/educators/includes/stuff/backbone-templates.html:757
+#: templates/educators/includes/stuff/backbone-templates.html:780
+msgid "Provide Usernames and Passwords"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:781
+msgid ""
+"Usernames are visible to the public, so do not use any personal information."
+" Instead, use aspects from the subject you are teaching, favorite foods, or "
+"animals"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:788
 msgid "Download example"
 msgstr "下載範例"
 
-#: templates/educators/includes/stuff/backbone-templates.html:760
-msgid "Learn more about CSV files"
-msgstr "什麼是 CSV 格式"
+#: templates/educators/includes/stuff/backbone-templates.html:791
+msgid "Teacher Account Setup Guide"
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:768
-msgid "Student Upload"
-msgstr "學生上傳"
+#: templates/educators/includes/stuff/backbone-templates.html:819
+msgid ""
+"\n"
+"                        Usernames must\n"
+"                        <span class=\"underline\">not</span>\n"
+"                        reveal the identity of students in any way.\n"
+"                    "
+msgstr ""
 
-#: templates/educators/includes/stuff/backbone-templates.html:772
+#: templates/educators/includes/stuff/backbone-templates.html:839
+msgid ""
+"\n"
+"                        I understand that for safety and privacy, Scratch must\n"
+"                        <span class=\"attention\">delete</span>\n"
+"                        any accounts which include real names, school name, or contact information.\n"
+"                    "
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:851
 msgid "Upload"
 msgstr "上傳"
 
-#: templates/educators/includes/stuff/backbone-templates.html:796
+#: templates/educators/includes/stuff/backbone-templates.html:864
 msgid "Are you sure you want to end the following class:"
 msgstr "確定要關閉下列班級："
 
-#: templates/educators/includes/stuff/backbone-templates.html:798
+#: templates/educators/includes/stuff/backbone-templates.html:866
 msgid ""
 "When you end a class, students will no longer be able to log in (but their "
 "projects will still be visible on the site)."
 msgstr "關閉班級後，班級裡的學生將無法再登入（但他們製作的專案還是會留在站台上，其他人仍然看得見它們）。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:801
+#: templates/educators/includes/stuff/backbone-templates.html:869
 msgid "To confirm, please enter your password"
 msgstr "請輸入你的密碼以確認"
 
@@ -2384,25 +2359,46 @@ msgid "All classes"
 msgstr "所有班級"
 
 #: templates/educators/register_student_modal.html:6
-msgid "Adding New Student"
-msgstr "新增學生"
+msgid "Add New Student"
+msgstr ""
 
 #: templates/educators/register_student_modal.html:11
 msgid "Add to Class"
 msgstr "新增班級"
 
-#: templates/educators/register_student_modal.html:38
-msgid ""
-"These accounts will be publicly visible. Please do not choose usernames that"
-" contain personal identifiers, such as real names or schools. Accounts with "
-"usernames containing personal identifiers will be permanently deleted for "
-"safety and privacy reasons."
+#: templates/educators/register_student_modal.html:31
+msgid "type student username here"
 msgstr ""
-"這些資料會公開顯示，請不要使用包含容易被識別的方式當作用戶名稱，像是真實姓名或學校名稱。基於安全與隱私理由，一旦發現名稱帶有個人識別的帳戶名稱，將會永久刪除。"
 
-#: templates/educators/register_student_modal.html:72
+#: templates/educators/register_student_modal.html:44
+msgid ""
+"\n"
+"                          Usernames must\n"
+"                          <span class=\"underline\">not</span>\n"
+"                          reveal the identity of students in any way.\n"
+"                      "
+msgstr ""
+
+#: templates/educators/register_student_modal.html:64
+msgid ""
+"\n"
+"                          I understand that for safety and privacy, Scratch must\n"
+"                          <span class=\"attention\">delete</span>\n"
+"                          any accounts which include real names, school name, or contact information.\n"
+"                      "
+msgstr ""
+
+#: templates/educators/register_student_modal.html:90
+msgid "Will be set to the teacher's username:"
+msgstr ""
+
+#: templates/educators/register_student_modal.html:121
 msgid "That class already has the maximum number of students allowed"
 msgstr "該班級已超出所允許的學生人數上限"
+
+#: templates/educators/register_student_modal.html:122
+msgid "Please confirm that you understand"
+msgstr ""
 
 #: templates/educators/registration/approval_email_message.html:7
 #: templates/educators/registration/approval_email_message.txt:2
@@ -2425,46 +2421,70 @@ msgstr ""
 msgid "New to Scratch?"
 msgstr "你是 Scratch 新手？"
 
-#: templates/educators/registration/approval_email_message.html:13
-#: templates/educators/registration/approval_email_message.txt:7
-msgid "Read our Community Guidelines"
-msgstr "閱讀我們的社群規範"
-
-#: templates/educators/registration/approval_email_message.html:14
-#: templates/educators/registration/approval_email_message.txt:8
-msgid "Get inspired with a starter project"
-msgstr "從入門專案中獲得靈感"
-
 #: templates/educators/registration/approval_email_message.html:15
-#: templates/educators/registration/approval_email_message.txt:9
-msgid "Learn more about Scratch"
-msgstr "進一步瞭解 Scratch"
+#, python-format
+msgid "Read our <a href=\" %(comm_link)s\">Community Guidelines</a>."
+msgstr ""
 
-#: templates/educators/registration/approval_email_message.html:18
+#: templates/educators/registration/approval_email_message.html:16
+msgid ""
+"Review the <a "
+"href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">Getting"
+" Started Guide</a> for a deeper dive into the Scratch editor."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:17
+#, python-format
+msgid ""
+"Explore our <a href=\"%(ed_link)s\"> Scratch for Educators </a> site for "
+"resources and more educator guides."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:20
 #: templates/educators/registration/approval_email_message.txt:11
 msgid "Next Steps"
 msgstr "接下來"
 
-#: templates/educators/registration/approval_email_message.html:20
+#: templates/educators/registration/approval_email_message.html:23
+#, python-format
+msgid "Learn more about managing <a href=\"%(faq_link)s\">Teacher Accounts</a>."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:24
+#, python-format
+msgid ""
+"Take a deeper dive into curriculum resources, events, and news on our <a "
+"href=\"%(sip_url)s\">Scratch in Practice</a> page. "
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.html:25
+msgid ""
+"Connect with other educators through the <a "
+"href=\"https://www.facebook.com/groups/TeachingwithScratch/\">Teaching with "
+"Scratch Facebook page</a>, hosted by the Harvard Graduate School of "
+"Education <a href=\"http://scratched.gse.harvard.edu/\">ScratchEd</a> "
+"community."
+msgstr ""
+
+#: templates/educators/registration/approval_email_message.txt:7
+msgid "Read our Community Guidelines"
+msgstr "閱讀我們的社群規範"
+
+#: templates/educators/registration/approval_email_message.txt:8
+msgid "Get inspired with a starter project"
+msgstr "從入門專案中獲得靈感"
+
+#: templates/educators/registration/approval_email_message.txt:9
+msgid "Learn more about Scratch"
+msgstr "進一步瞭解 Scratch"
+
 #: templates/educators/registration/approval_email_message.txt:12
 msgid "Learn more about Teacher Accounts"
 msgstr "進一步瞭解教師帳戶"
 
-#: templates/educators/registration/approval_email_message.html:21
 #: templates/educators/registration/approval_email_message.txt:13
 msgid "Explore educator resources"
 msgstr "尋求教師資源"
-
-#: templates/educators/registration/approval_email_message.html:22
-#, python-format
-msgid ""
-"<a href=\"%(scratch_ed_url)s\">Connect with other educators</a> via the "
-"ScratchEd online community, developed and supported by the Harvard Graduate "
-"School of Education. <em>Please note that you’ll need to create a separate "
-"account to join the discussion on ScratchEd.</em>"
-msgstr ""
-"透過 ScratchEd  線上社群<a href=\"%(scratch_ed_url)s\">認識其他教師</a>。ScratchEd "
-"是由哈佛的教育研究院發展與維護，請注意你需要在該社群另外註冊後才可使用。"
 
 #: templates/educators/registration/approval_email_message.txt:14
 msgid ""
@@ -2672,6 +2692,10 @@ msgstr "專案 ( <span data-count=\"projects\">100+</span> )"
 #, python-format
 msgid "Projects ( <span data-count=\"projects\">%(tCount)s</span> )"
 msgstr "專案 ( <span data-count=\"projects\">%(tCount)s</span> )"
+
+#: templates/galleries/base.html:117
+msgid "Comments ( <span data-count=\"comments\">100+</span> )"
+msgstr ""
 
 #: templates/galleries/base.html:117
 #, python-format
