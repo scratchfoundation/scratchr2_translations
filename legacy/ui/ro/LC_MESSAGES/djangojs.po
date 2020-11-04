@@ -5,7 +5,7 @@
 # 
 # Translators:
 # Ursu-Vlagea Alexandru <alex.ursu@outlook.com>, 2017
-# Chris Garrity (ML) <chrisg@media.mit.edu>, 2017
+# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2017
 # Rodica Ardelean <rodxy@yahoo.com>, 2017
 # 
 #, fuzzy
@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-07 17:43+0000\n"
+"POT-Creation-Date: 2020-10-28 14:40+0000\n"
 "PO-Revision-Date: 2016-12-21 13:52+0000\n"
 "Last-Translator: Rodica Ardelean <rodxy@yahoo.com>, 2017\n"
 "Language-Team: Romanian (https://www.transifex.com/llk/teams/60938/ro/)\n"
@@ -24,12 +24,12 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: static/admin/js/SelectFilter2.js:45
-#, c-format
+#, javascript-format
 msgid "Available %s"
 msgstr "Disponibil %s"
 
 #: static/admin/js/SelectFilter2.js:46
-#, c-format
+#, javascript-format
 msgid ""
 "This is the list of available %s. You may choose some by selecting them in "
 "the box below and then clicking the \"Choose\" arrow between the two boxes."
@@ -39,7 +39,7 @@ msgstr ""
 "două casete."
 
 #: static/admin/js/SelectFilter2.js:53
-#, c-format
+#, javascript-format
 msgid "Type into this box to filter down the list of available %s."
 msgstr "Tastează în această casetă pentru a filtra lista disponibilelor %s."
 
@@ -52,7 +52,7 @@ msgid "Choose all"
 msgstr "Alege-le pe toate"
 
 #: static/admin/js/SelectFilter2.js:61
-#, c-format
+#, javascript-format
 msgid "Click to choose all %s at once."
 msgstr "Apasa pentru a alege toate %s  odata"
 
@@ -65,12 +65,12 @@ msgid "Remove"
 msgstr "Elimină"
 
 #: static/admin/js/SelectFilter2.js:75
-#, c-format
+#, javascript-format
 msgid "Chosen %s"
 msgstr "Alese %s"
 
 #: static/admin/js/SelectFilter2.js:76
-#, c-format
+#, javascript-format
 msgid ""
 "This is the list of chosen %s. You may remove some by selecting them in the "
 "box below and then clicking the \"Remove\" arrow between the two boxes."
@@ -84,7 +84,7 @@ msgid "Remove all"
 msgstr "Elimină-le pe toate"
 
 #: static/admin/js/SelectFilter2.js:80
-#, c-format
+#, javascript-format
 msgid "Click to remove all chosen %s at once."
 msgstr "Apasa pentru a sterge toate %s  odata"
 
@@ -120,27 +120,6 @@ msgid ""
 msgstr ""
 "Ai selectat o acțiune și  nu ai efectuat nici o modificare pe vreun câmp. Probabil a vrea să \n"
 "folosești mai degrabă butonul GO decât butonul Save."
-
-#: static/admin/js/calendar.js:26
-msgid ""
-"January February March April May June July August September October November"
-" December"
-msgstr ""
-"Ianuarie Februarie Martie Aprilie Mai Iunie Iulie \n"
-"August Septembrie Octombrie Noiembrie Decembrie"
-
-#: static/admin/js/calendar.js:27
-msgid "S M T W T F S"
-msgstr "D L M M J V S"
-
-#: static/admin/js/collapse.js:8 static/admin/js/collapse.js.c:19
-#: static/admin/js/collapse.min.js:1
-msgid "Show"
-msgstr "Arată"
-
-#: static/admin/js/collapse.js:15 static/admin/js/collapse.min.js:1
-msgid "Hide"
-msgstr "Ascunde"
 
 #: static/admin/js/admin/DateTimeShortcuts.js:49
 #: static/admin/js/admin/DateTimeShortcuts.js:85
@@ -189,20 +168,37 @@ msgstr "Ieri"
 msgid "Tomorrow"
 msgstr "Mâine"
 
-#: static/js/global.js:93
-msgid "Want to share on Scratch?"
-msgstr "Vrei să distribui în comunitatea Scratch?"
+#: static/admin/js/calendar.js:26
+msgid ""
+"January February March April May June July August September October November"
+" December"
+msgstr ""
+"Ianuarie Februarie Martie Aprilie Mai Iunie Iulie \n"
+"August Septembrie Octombrie Noiembrie Decembrie"
 
-#: static/js/apps/global.js:33
-msgid "Your Account Will Not Be Deleted"
-msgstr "Contul tău nu va fi şters"
+#: static/admin/js/calendar.js:27
+msgid "S M T W T F S"
+msgstr "D L M M J V S"
+
+#: static/admin/js/collapse.js:8 static/admin/js/collapse.js:19
+#: static/admin/js/collapse.min.js:1
+msgid "Show"
+msgstr "Arată"
+
+#: static/admin/js/collapse.js:15 static/admin/js/collapse.min.js:1
+msgid "Hide"
+msgstr "Ascunde"
 
 #: static/js/apps/accounts/deletion.js:14
 msgid "Delete my account"
 msgstr "Şterge contul meu."
 
+#: static/js/apps/global.js:33
+msgid "Your Account Will Not Be Deleted"
+msgstr "Contul tău nu va fi şters"
+
 #: static/js/apps/project/embed_editor.js:77
-#: static/js/apps/project/scratch_app.js:368
+#: static/js/apps/project/scratch_app.js:358
 msgid "on Scratch"
 msgstr "în Scratch"
 
@@ -210,7 +206,7 @@ msgstr "în Scratch"
 msgid "Would you like to leave the editor anyway?"
 msgstr "Vrei să părăsești editorul?"
 
-#: static/js/apps/project/scratch_app.js:159
+#: static/js/apps/project/scratch_app.js:155
 msgid ""
 "Your changes are NOT SAVED!\n"
 "To save, stay on this page, then log in."
@@ -218,7 +214,7 @@ msgstr ""
 "Modificările tale NU SUNT SALVATE!\n"
 "Pentru a salva, râmăi pe această pagină și apoi autentifică-te."
 
-#: static/js/apps/project/scratch_app.js:164
+#: static/js/apps/project/scratch_app.js:160
 msgid ""
 "Your changes are NOT SAVED!\n"
 "To save, stay on this page, then click “Remix”."
@@ -226,7 +222,7 @@ msgstr ""
 "Modificările tale NU SUNT SALVATE!\n"
 "Pentru a salva, rămâi în această pagină și apoi dă clic pe ”Remixează”."
 
-#: static/js/apps/project/scratch_app.js:166
+#: static/js/apps/project/scratch_app.js:162
 msgid ""
 "Your changes are NOT SAVED!\n"
 "To save, stay on this page, click “See inside”, then click “Remix”."
@@ -234,7 +230,7 @@ msgstr ""
 "Modificările tale NU SUNT SALVATE!\n"
 "Pentru a salva, rămâi în această pagină, dă clic pe ”Vezi în interior” și apoi pe ”Remixează”."
 
-#: static/js/apps/project/scratch_app.js:181
+#: static/js/apps/project/scratch_app.js:177
 msgid ""
 "Your changes are NOT SAVED!\n"
 "To save, stay on this page, then click “Save now.”"
@@ -242,7 +238,7 @@ msgstr ""
 "Modificările tale NU SUNT SALVATE!\n"
 "Pentru a salva, rămâi în această pagină și dă clic pe ”Salvează acum”."
 
-#: static/js/apps/project/views.js:537
+#: static/js/apps/project/views.js:565
 msgid ""
 "Are you sure this project is disrespectful or inappropriate, and breaks the "
 "community guidelines? If not, click cancel, and then click the community "
@@ -251,6 +247,14 @@ msgstr ""
 "Ești sigur că acest proiect este necuviincios sau nepotrivit, și încalcă "
 "normele comunității? Dacă nu, dă clic pe renunță și apoi pe linkul către "
 "normele comunității, din subsolul paginii, pentru a afla mai multe."
+
+#: static/js/global.js:93
+msgid "Want to share on Scratch?"
+msgstr "Vrei să distribui în comunitatea Scratch?"
+
+#: static/js/jquery-ui.min.js:8
+msgid "'"
+msgstr ""
 
 #: static/js/lib/jquery.timeago.settings.js:2
 msgid " "
@@ -281,7 +285,7 @@ msgid "about a minute"
 msgstr "cca un minut"
 
 #: static/js/lib/jquery.timeago.settings.js:9
-#, c-format
+#, javascript-format
 msgid "%d minutes"
 msgstr "%d minute"
 
@@ -290,7 +294,7 @@ msgid "about an hour"
 msgstr "aproximativ o oră"
 
 #: static/js/lib/jquery.timeago.settings.js:11
-#, c-format
+#, javascript-format
 msgid "about %d hours"
 msgstr "aproximativ %d ore"
 
@@ -299,7 +303,7 @@ msgid "a day"
 msgstr "o zi"
 
 #: static/js/lib/jquery.timeago.settings.js:13
-#, c-format
+#, javascript-format
 msgid "%d days"
 msgstr "%d zile"
 
@@ -308,7 +312,7 @@ msgid "about a month"
 msgstr "aproximativ o lună"
 
 #: static/js/lib/jquery.timeago.settings.js:15
-#, c-format
+#, javascript-format
 msgid "%d months"
 msgstr "%d luni"
 
@@ -317,6 +321,6 @@ msgid "about a year"
 msgstr "aproximativ un an"
 
 #: static/js/lib/jquery.timeago.settings.js:17
-#, c-format
+#, javascript-format
 msgid "%d years"
 msgstr "%d ani"
