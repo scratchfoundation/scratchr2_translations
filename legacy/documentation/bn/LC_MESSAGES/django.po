@@ -18,7 +18,7 @@
 # Sirajam Munira <sirajam.munira@bdosn.org>, 2021
 # Rahat Ahmed Talukder <rahat.ahmed@bdosn.org>, 2021
 # Niaj Masud Rahat <nrahat193140@bscse.uiu.ac.bd>, 2021
-# Nasir Khan <nasir8891@gmail.com>, 2021
+# Nasir Khan Saikat <nasir8891@gmail.com>, 2021
 # Salman Jahan Momo <sjmomo96@gmail.com>, 2021
 # Tasmeem Towfiq Pinon <tasmeem.pinon@bdosn.org>, 2021
 # Md Alhaz Mondal Hredhay <amhredhay102@gmail.com>, 2021
@@ -1344,6 +1344,8 @@ msgid ""
 "<img src=\"%(url_playsound_tildone)s\"/> waits until the sound is finished "
 "playing before continuing to the next block."
 msgstr ""
+"<img src=\"%(url_playsound_tildone)s\"/> পরবর্তী ব্লকে যাওয়ার আগে শব্দ "
+"বাজানো শেষ না হওয়া পর্যন্ত অপেক্ষা করে।"
 
 #: templates/help/studio/tips/blocks/playsound_untildone.html:11
 msgid "Plays a sound and waits until the sound is finished"
@@ -1376,7 +1378,7 @@ msgstr "পয়েন্টস স্প্রাইট মাউস-পয়
 
 #: templates/help/studio/tips/blocks/point-towards.html:16
 msgid "<b>point towards</b> changes the direction of the current sprite."
-msgstr ""
+msgstr "<b>এর দিকে নির্দেশ কর</b> বর্তমান স্প্রাইটের দিক পরিবর্তন করে।"
 
 #: templates/help/studio/tips/blocks/point-towards.html:19
 msgid "You can choose from the menu:"
@@ -1388,7 +1390,7 @@ msgstr "মেনুতে প্রজেক্টের অন্য কোন
 
 #: templates/help/studio/tips/blocks/repeat-until.html:7
 msgid "Repeat blocks that follow until condition is true"
-msgstr "শর্তটি সত্য না হওয়া পর্যন্ত অনুসরণকারী ব্লকগুলি পুনরাবৃত্তি কর"
+msgstr "শর্তটি সত্য না হওয়া পর্যন্ত অনুসরণকারী ব্লকগুলো পুনরাবৃত্তি কর"
 
 #: templates/help/studio/tips/blocks/repeat-until.html:11
 msgid ""
@@ -1424,7 +1426,7 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/reset-timer.html:7
 msgid "Sets the timer to zero"
-msgstr "সময় শূন্যে সেট কর"
+msgstr "সময় শূন্যে নির্ধারণ কর"
 
 #: templates/help/studio/tips/blocks/rest.html:8
 msgid "Rests (plays nothing) for specified number of beats"
@@ -1442,6 +1444,10 @@ msgid ""
 "<img src=\"%(url_round_5_1)s\" /> is 5, and <img src=\"%(url_round_5_6)s\" "
 "/> is 6."
 msgstr ""
+"<img src=\"%(url_round)s\" /> একটি সংখ্যার পূর্ণ মান দেয়। এর মানে এটি একটি "
+"দশমিক সংখ্যাকে নিকটতম পূর্ণ সংখ্যায় পরিণত করে। উদাহরণ স্বরূপ: <img "
+"src=\"%(url_round_5_1)s\" /> হয় 5, এবং <img src=\"%(url_round_5_6)s\" /> হয় "
+"6।"
 
 #: templates/help/studio/tips/blocks/say-for-seconds.html:8
 msgid "Say words in a speech bubble for a number of seconds"
@@ -1449,7 +1455,7 @@ msgstr "কয়েক সেকেন্ডের জন্য একটি �
 
 #: templates/help/studio/tips/blocks/say-for-seconds.html:16
 msgid "You can type in any words to say."
-msgstr "তুমি যে কোনো শব্দ লেখতে পারো বলতে । "
+msgstr " তুমি বলার জন্য যেকোন শব্দ টাইপ করতে পার।"
 
 #: templates/help/studio/tips/blocks/say-for-seconds.html:17
 msgid ""
@@ -1542,15 +1548,15 @@ msgstr "ভ্যারিয়েবলকে একটি নির্দিষ�
 
 #: templates/help/studio/tips/blocks/set-video-transparency.html:7
 msgid "Sets the video transparency"
-msgstr "ভিডিও স্বচ্ছতা নির্ধারণ করো "
+msgstr "ভিডিওর স্বচ্ছতা নির্ধারণ করে"
 
 #: templates/help/studio/tips/blocks/set-video-transparency.html:11
 msgid ""
 "Enter a number from 0-100. Higher numbers make the video more transparent "
 "(lighter), while lower numbers make it less transparent (darker)"
 msgstr ""
-"0-100 থেকে একটি সংখ্যা লেখ। বড় সংখ্যাগুলি ভিডিওটিকে আরও স্বচ্ছ (উজ্জ্বলময়) "
-"করে তোলে, যখন ছোট সংখ্যাগুলি এটিকে কম স্বচ্ছ (অন্ধকারছন্ন) করে তোলে"
+"0-100 থেকে একটি সংখ্যা লেখ। বড় সংখ্যাগুলো ভিডিওটিকে আরও স্বচ্ছ (উজ্জ্বলময়) "
+"করে তোলে, যখন ছোট সংখ্যাগুলো এটিকে কম স্বচ্ছ (অন্ধকারছন্ন) করে তোলে"
 
 #: templates/help/studio/tips/blocks/set-volume.html:9
 msgid "Sets sprite's sound volume to specified value"
@@ -1629,7 +1635,7 @@ msgstr "রঙ এর বাছাই ও কলমের ছায়া পর
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:7
 msgid "Sets pen's color to specified value"
-msgstr "কলমের রং নির্দিষ্ট মানে নির্ধারণ করো "
+msgstr "কলমের রঙ নির্দিষ্ট মানে নির্ধারণ করে"
 
 #: templates/help/studio/tips/blocks/setpencolorto.html:15
 #, python-format
@@ -1651,10 +1657,12 @@ msgid ""
 "Pen_color=0 at red end of rainbow, pen_color=100 at blue end of rainbow. "
 "Ranges from 0 to 200 to go around the color wheel."
 msgstr ""
+"রংধনুর লাল প্রান্তে Pen_color=0, রংধনুর নীল প্রান্তে pen_color=100। রঙের "
+"চাকার চারপাশে 0 থেকে 200 পর্যন্ত রেঞ্জ।"
 
 #: templates/help/studio/tips/blocks/setpensize.html:9
 msgid "Sets pen's thickness"
-msgstr "কলমের ঘনত্ব নির্ধারণ করো "
+msgstr "কলমের ঘনত্ব নির্ধারণ করে"
 
 #: templates/help/studio/tips/blocks/setrotation.html:8
 msgid "Sets the sprite's rotation style"
@@ -1673,14 +1681,15 @@ msgid ""
 "Select \"all around\" from the drop-down menu to make the sprite flip "
 "vertically."
 msgstr ""
+"স্প্রাইট ভার্টিক্যালি উল্টাতে ড্রপ-ডাউন মেনু থেকে \"চারপাশে\" নির্বাচন কর।"
 
 #: templates/help/studio/tips/blocks/setrotation.html:22
 msgid ""
 "Select \"don't rotate\" from the drop-down menu to make the sprite face only"
 " one direction."
 msgstr ""
-"স্প্রাইট কেবলমাত্র এক দিকে ব্যবহার করার জন্য ড্রপ-ডাউন মেনু থেকে \"don't "
-"rotate\" নির্বাচন কর।"
+"স্প্রাইট কেবলমাত্র এক দিকে ব্যবহার করার জন্য ড্রপ-ডাউন মেনু থেকে \"ঘুর না\" "
+"নির্বাচন কর।"
 
 #: templates/help/studio/tips/blocks/setshade.html:8
 msgid "Sets pen's shade to specified amount"
@@ -1717,7 +1726,7 @@ msgstr "মঞ্চে ভ্যারিয়েবল মনিটর দেখ
 
 #: templates/help/studio/tips/blocks/show.html:8
 msgid "Makes sprite appear on the Stage"
-msgstr "মঞ্চে স্প্রাইট দৃশ্যমান কর"
+msgstr "মঞ্চে স্প্রাইট দৃশ্যমান করে"
 
 #: templates/help/studio/tips/blocks/size.html:9
 #, python-format
@@ -1729,7 +1738,7 @@ msgstr "স্প্রাইটের আঁকার প্রকাশ কর
 msgid ""
 "<img src=\"%(url_size)s\" /> reports the %% of the original size of the "
 "object"
-msgstr ""
+msgstr "<img src=\"%(url_size)s\" /> বস্তুর আসল আকারের %% প্রকাশ করে"
 
 #: templates/help/studio/tips/blocks/size.html:21
 msgid ""
@@ -1754,6 +1763,8 @@ msgid ""
 "This block performs a mathematical function. Choose the math functions from "
 "the block's drop down menu."
 msgstr ""
+"এই ব্লকটি একটি গাণিতিক কাজ করে। ব্লকের ড্রপ ডাউন মেনু থেকে গাণিতিক ফাংশন "
+"নির্বাচন কর।"
 
 #: templates/help/studio/tips/blocks/stamp.html:8
 msgid "Stamps the sprite's image onto the Stage"
@@ -1771,11 +1782,11 @@ msgstr ""
 
 #: templates/help/studio/tips/blocks/stamp.html:17
 msgid "A stamp cannot move and cannot hold scripts."
-msgstr ""
+msgstr "একটি স্ট্যাম্প চলতে পারে না এবং স্ক্রিপ্টগুলো ধরে রাখতে পারে না।"
 
 #: templates/help/studio/tips/blocks/stop.html:7
 msgid "Stops all scripts in all sprites"
-msgstr "সকল স্প্রাইট হতে সবগুলো স্ক্রিপ্ট বন্ধ কর"
+msgstr "সব স্প্রাইটের সবগুলো স্ক্রিপ্ট বন্ধ করে"
 
 #: templates/help/studio/tips/blocks/stop.html:15
 msgid "Same as clicking the stop button at the top of the screen."
@@ -1783,15 +1794,15 @@ msgstr "পর্দার উপরে থাম বাটনে ক্লি�
 
 #: templates/help/studio/tips/blocks/stopsound.html:9
 msgid "Stops all sounds"
-msgstr "সব শব্দ বন্ধ"
+msgstr "সব শব্দ বন্ধ করে"
 
 #: templates/help/studio/tips/blocks/stopsound.html:18
 msgid "Stop other sounds before playing a new sound."
-msgstr "নতুন শব্দ চালু করার পূর্বে অন্য শব্দগুলো বন্ধ করো ।"
+msgstr "নতুন শব্দ চালু করার পূর্বে অন্য শব্দগুলো বন্ধ কর।"
 
 #: templates/help/studio/tips/blocks/subtract.html:7
 msgid "Subtracts second number from first number"
-msgstr "দ্বিতীয় সংখ্যা থেকে প্রথম সংখ্যা বিয়োগ করো "
+msgstr "দ্বিতীয় সংখ্যা থেকে প্রথম সংখ্যা বিয়োগ করে"
 
 #: templates/help/studio/tips/blocks/switch-backdrop-and-wait.html:7
 msgid "Switch to the specified backdrop and wait for its scripts to finish"
@@ -3841,7 +3852,7 @@ msgstr "যোগদাও"
 
 #: templates/help/studio/tips/home.html:372
 msgid "letter _ of "
-msgstr ""
+msgstr "_ এর বর্ণ"
 
 #: templates/help/studio/tips/home.html:374
 msgid "mod"
@@ -12340,6 +12351,8 @@ msgstr "তোমার পোষা প্রাণী নির্বাচন
 #: templates/help/studio/tips/howto/vptip7.html:21
 msgid "Here’s a script that glides to a trampoline and jumps:"
 msgstr ""
+"এখানে একটি স্ক্রিপ্ট রয়েছে যা একটি ট্রামপোলিনের দিকে এগিয়ে যায় এবং লাফ "
+"দেয়:"
 
 #: templates/help/studio/tips/howto/vptip7.html:28
 msgid "Next, add more activities"
