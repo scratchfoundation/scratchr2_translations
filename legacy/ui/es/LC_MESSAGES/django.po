@@ -6,11 +6,10 @@
 # Translators:
 # ILoveHilton Plays (ILoveHilton) <hamiltonross3@gmail.com>, 2018
 # Bastián Nuñez <bastiannunez.b@gmail.com>, 2018
-# Pablo Espeso <whiskito@gmail.com>, 2018
 # Oscar Ros <oscar.ros@lescorts.manyanet.org>, 2020
-# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2020
 # RedGuy12 <paul@reid-family.org>, 2021
-# inventionpro ., 2021
+# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2022
+# Pablo Espeso <whiskito@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
@@ -19,13 +18,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-09 04:13+0000\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
-"Last-Translator: inventionpro ., 2021\n"
+"Last-Translator: Pablo Espeso <whiskito@gmail.com>, 2022\n"
 "Language-Team: Spanish (https://www.transifex.com/llk/teams/60938/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: authentication/forms.py:74
 msgid "no gender provided"
@@ -182,6 +181,7 @@ msgid "day"
 msgid_plural "days"
 msgstr[0] "día"
 msgstr[1] "días"
+msgstr[2] "días"
 
 #: base_comments/templatetags/scratch_text_filters.py:183
 #, python-format
@@ -189,6 +189,7 @@ msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
 msgstr[0] "hace 1 minuto"
 msgstr[1] "hace %(minutes)d minutos"
+msgstr[2] "hace %(minutes)d minutos"
 
 #: base_comments/templatetags/scratch_text_filters.py:187
 msgid "just now"
@@ -200,6 +201,7 @@ msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
 msgstr[0] "hace 1 hora"
 msgstr[1] "hace %(hours)d horas"
+msgstr[2] "hace %(hours)d horas"
 
 #: base_comments/templatetags/scratch_text_filters.py:193
 #, python-format
@@ -719,7 +721,7 @@ msgstr ""
 #: templates/accounts/email_change.html:61
 msgid "Can't find the confirmation email? Check your spam folder"
 msgstr ""
-"¿No puedes encontrar el correo electrónico de confirmación? Verifica en la "
+"¿No puedes encontrar el correo electrónico de confirmación? Comprueba la "
 "carpeta de correo no deseado"
 
 #: templates/accounts/email_change.html:62
@@ -969,18 +971,21 @@ msgstr "Confirma tu cuenta de Scratch"
 #: templates/accounts/email_verification/verification_email.html:15
 msgid "You just signed up for a new Scratch account with the username:"
 msgstr ""
+"Te acabas de registrar con una nueva cuenta de Scratch con el nombre de "
+"usuario:"
 
 #: templates/accounts/email_verification/verification_email.html:20
 msgid "To finish creating your account, click on the link below:"
 msgstr ""
+"Para terminar de crear tu cuenta, haz clic en el enlace a continuación:"
 
 #: templates/accounts/email_verification/verification_email.html:24
 msgid "Confirm my account"
-msgstr "Confirmo mi cuenta"
+msgstr "Confirmar mi cuenta"
 
 #: templates/accounts/email_verification/verification_email.html:27
 msgid "Having trouble? Copy this link into your browser instead:"
-msgstr ""
+msgstr "¿Tienes problemas? Prueba a copiar este enlace en tu navegador:"
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
@@ -989,6 +994,9 @@ msgid ""
 "You just signed up for a new account on Scratch (%(scratch_url)s).\n"
 "To finish creating your account, click on the link below:\n"
 msgstr ""
+"\n"
+"Acabas de registrar una nueva cuenta en Scratch (%(scratch_url)s).\n"
+"Para terminar de crear tu cuenta, haz clic en el enlace a continuación:\n"
 
 #: templates/accounts/email_verification/verify_email_standalone.html:84
 msgid "Want to share on Scratch?"
@@ -2375,6 +2383,9 @@ msgid ""
 "Get a sign-up link that students can use to register for your class. They "
 "will be directed to a class page where they can \"Join this Class\". "
 msgstr ""
+"Obtén un enlace de registro para que tus estudiantes lo usen en tu clase. "
+"Serán dirigidos a una página de la clase donde podrán \"Unirse a esta "
+"clase\"."
 
 #: templates/educators/includes/stuff/backbone-templates.html:734
 msgid ""
@@ -2384,12 +2395,19 @@ msgid ""
 "                        reveal the identity of students in any way.\n"
 "                        "
 msgstr ""
+"\n"
+"                        Los nombres de usuario\n"
+"                        <span class=\"underline\">no</span>\n"
+"                        deben revelar la identidad de los estudiantes de ninguna forma.\n"
+"                        "
 
 #: templates/educators/includes/stuff/backbone-templates.html:754
 msgid ""
 "I agree to remind my students not to use their real names, school name, "
 "contact information or student ID numbers."
 msgstr ""
+"Acepto recordar a mis estudiantes que no usen nombres reales, el nombre del "
+"colegio, información de contacto o números de identificación."
 
 #: templates/educators/includes/stuff/backbone-templates.html:760
 msgid "Get Link"
@@ -2409,6 +2427,9 @@ msgid ""
 "You can quickly create up to 50 student accounts by uploading a CSV of "
 "usernames and passwords. See how to format a CSV below."
 msgstr ""
+"Puedes crear rápidamente hasta 50 cuentas de estudiantes al subir un CSV con"
+" nombres de usuarios y contraseñas. Aprende cómo formatear un CSV a "
+"continuación."
 
 #: templates/educators/includes/stuff/backbone-templates.html:780
 msgid "Provide Usernames and Passwords"
@@ -2420,6 +2441,9 @@ msgid ""
 " Instead, use aspects from the subject you are teaching, favorite foods, or "
 "animals"
 msgstr ""
+"Los nombres de usuario son visibles públicamente, con lo que no uses ninguna"
+" información personal. Al contrario, usa conceptos de la materia que vas a "
+"enseñar, comidas favoritas o animales"
 
 #: templates/educators/includes/stuff/backbone-templates.html:788
 msgid "Download example"
@@ -2427,7 +2451,7 @@ msgstr "Descargar ejemplo"
 
 #: templates/educators/includes/stuff/backbone-templates.html:791
 msgid "Teacher Account Setup Guide"
-msgstr "Cuenta de Profesor Guia de Preparacion"
+msgstr "Guía de configuración para la cuenta de profesor"
 
 #: templates/educators/includes/stuff/backbone-templates.html:819
 msgid ""
@@ -2437,6 +2461,11 @@ msgid ""
 "                        reveal the identity of students in any way.\n"
 "                    "
 msgstr ""
+"\n"
+"                        Los nombres de usuario\n"
+"                        <span class=\"underline\">no</span>\n"
+"                        deben revelar la identidad de los estudiantes de ninguna forma.\n"
+"                        "
 
 #: templates/educators/includes/stuff/backbone-templates.html:839
 msgid ""
@@ -2446,6 +2475,11 @@ msgid ""
 "                        any accounts which include real names, school name, or contact information.\n"
 "                    "
 msgstr ""
+"\n"
+"                        Entiendo que, por cuestiones de seguridad y privacidad, Scratch deba\n"
+"                        <span class=\"attention\">eliminar</span>\n"
+"                        cualquier cuenta que incluya nombres reales, nombres de escuelas, o información de contacto.\n"
+"                    "
 
 #: templates/educators/includes/stuff/backbone-templates.html:851
 msgid "Upload"
@@ -2500,7 +2534,7 @@ msgstr "Todas las clases"
 
 #: templates/educators/register_student_modal.html:6
 msgid "Add New Student"
-msgstr "Añadir un nuevo estudiante"
+msgstr "Añadir nuevo estudiante"
 
 #: templates/educators/register_student_modal.html:11
 msgid "Add to Class"
@@ -2508,7 +2542,7 @@ msgstr "Añadir a la clase"
 
 #: templates/educators/register_student_modal.html:31
 msgid "type student username here"
-msgstr ""
+msgstr "escribe el nombre de usuario del estudiante aquí"
 
 #: templates/educators/register_student_modal.html:44
 msgid ""
@@ -2518,6 +2552,11 @@ msgid ""
 "                          reveal the identity of students in any way.\n"
 "                      "
 msgstr ""
+"\n"
+"                        Los nombres de usuario\n"
+"                        <span class=\"underline\">no</span>\n"
+"                        deben revelar la identidad de los estudiantes de ninguna forma.\n"
+"                        "
 
 #: templates/educators/register_student_modal.html:64
 msgid ""
@@ -2527,18 +2566,23 @@ msgid ""
 "                          any accounts which include real names, school name, or contact information.\n"
 "                      "
 msgstr ""
+"\n"
+"                        Entiendo que, por cuestiones de seguridad y privacidad, Scratch deba\n"
+"                        <span class=\"attention\">eliminar</span>\n"
+"                        cualquier cuenta que incluya nombres reales, nombres de escuelas, o información de contacto.\n"
+"                    "
 
 #: templates/educators/register_student_modal.html:90
 msgid "Will be set to the teacher's username:"
-msgstr ""
+msgstr "Será asignado al nombre de usuario del profesor:"
 
 #: templates/educators/register_student_modal.html:121
 msgid "That class already has the maximum number of students allowed"
-msgstr ""
+msgstr "Esta clase ya tiene el número máximo de estudiantes permitido"
 
 #: templates/educators/register_student_modal.html:122
 msgid "Please confirm that you understand"
-msgstr ""
+msgstr "Por favor, confirma que comprendes"
 
 #: templates/educators/registration/approval_email_message.html:7
 #: templates/educators/registration/approval_email_message.txt:2
@@ -2573,6 +2617,10 @@ msgid ""
 "href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">Getting"
 " Started Guide</a> for a deeper dive into the Scratch editor."
 msgstr ""
+"Revisa la <a "
+"href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">Guía"
+" de cómo empezar</a> para una inmersión más profunda por el editor de "
+"Scratch."
 
 #: templates/educators/registration/approval_email_message.html:17
 #, python-format
@@ -2580,6 +2628,8 @@ msgid ""
 "Explore our <a href=\"%(ed_link)s\"> Scratch for Educators </a> site for "
 "resources and more educator guides."
 msgstr ""
+"Explora nuestro sitio de <a href=\"%(ed_link)s\"> Scratch para educadores "
+"</a>para encontrar recursos y más guías para educadores."
 
 #: templates/educators/registration/approval_email_message.html:20
 #: templates/educators/registration/approval_email_message.txt:11
@@ -2590,7 +2640,7 @@ msgstr "Siguientes pasos"
 #, python-format
 msgid "Learn more about managing <a href=\"%(faq_link)s\">Teacher Accounts</a>."
 msgstr ""
-"Aprender más sobre gerente las <a href=\"%(faq_link)s\">Cuentas de "
+"Saber más sobre gestionar las <a href=\"%(faq_link)s\">Cuentas de "
 "profesor</a>."
 
 #: templates/educators/registration/approval_email_message.html:24
@@ -2599,6 +2649,8 @@ msgid ""
 "Take a deeper dive into curriculum resources, events, and news on our <a "
 "href=\"%(sip_url)s\">Scratch in Practice</a> page. "
 msgstr ""
+"Recibe una mayor inmersión en recursos curriculares, eventos y noticias en "
+"nuestra página de <a href=\"%(sip_url)s\">Scratch in Practice</a>"
 
 #: templates/educators/registration/approval_email_message.html:25
 msgid ""
@@ -2608,6 +2660,11 @@ msgid ""
 "Education <a href=\"http://scratched.gse.harvard.edu/\">ScratchEd</a> "
 "community."
 msgstr ""
+"Conecta con otros educadores a través de la <a "
+"href=\"https://www.facebook.com/groups/TeachingwithScratch/\">página de "
+"Facebook Teaching with Scratch</a>, gestionada por la comunidad <a "
+"href=\"http://scratched.gse.harvard.edu/\">ScratchEd</a> de la Harvard "
+"Graduate School of Education"
 
 #: templates/educators/registration/approval_email_message.txt:7
 msgid "Read our Community Guidelines"
@@ -2854,6 +2911,7 @@ msgid "<span data-count=\"followers\">%(follow_count)s</span> Follower"
 msgid_plural "<span data-count=\"followers\">%(follow_count)s</span> Followers"
 msgstr[0] "<span data-count=\"followers\">%(follow_count)s</span> Seguidor"
 msgstr[1] "<span data-count=\"followers\">%(follow_count)s</span> Seguidores"
+msgstr[2] "<span data-count=\"followers\">%(follow_count)s</span> Seguidores"
 
 #: templates/galleries/base.html:114
 msgid "Projects ( <span data-count=\"projects\">100+</span> )"
@@ -2866,7 +2924,7 @@ msgstr "Proyectos ( <span data-count=\"projects\">%(tCount)s</span> )"
 
 #: templates/galleries/base.html:117
 msgid "Comments ( <span data-count=\"comments\">100+</span> )"
-msgstr "Comentarios ( <span data-count=\"comments\">100+</span> )"
+msgstr "Comentarios (<span data-count=\"comments\">100+</span>)"
 
 #: templates/galleries/base.html:117
 #, python-format
@@ -2982,11 +3040,15 @@ msgid ""
 "or otherwise breaks the <a href=\"/community_guidelines\" "
 "target=\"_blank\">Scratch Community Guidelines.</a>"
 msgstr ""
+"Por favor, explica por qué crees que este estudio es irrespetuoso o "
+"inapropiado, o cualquier razón por la que rompe con los <a "
+"href=\"/community_guidelines\" target=\"_blank\">principios de la comunidad "
+"de Scratch.</a>"
 
 #: templates/galleries/includes/backbone-templates.html:12
 #: templates/profiles/includes/backbone-templates.html:65
 msgid "Please select the inappropriate part of the page."
-msgstr ""
+msgstr "Por favor, selecciona la parte inapropiada de la página."
 
 #: templates/galleries/includes/backbone-templates.html:14
 msgid "Title"
@@ -3005,7 +3067,8 @@ msgid ""
 "Are there inappropriate comments in this studio? Please report them by "
 "clicking the \\"
 msgstr ""
-"¿Hay algún comentario inapropiado? Por favor reportarlos haciendo clic en \\"
+"¿Hay algún comentario inapropiado? Por favor, repórtarlos haciendo clic en "
+"\\"
 
 #: templates/galleries/includes/curator_action_bar.html:7
 msgid "Invite owners"
@@ -4819,8 +4882,8 @@ msgid ""
 "Using Scratch, children can create interactive stories, games, and "
 "animations."
 msgstr ""
-"Usando Scratch, niños puedes crean y comparten juegos, historias y "
-"animaciones interactuables."
+"Utilizando Scratch, niños y niñas puedes crean juegos, historias y "
+"animaciones interactivas."
 
 #: templates/mail/scratch3_style_base.html:42
 msgid ""
@@ -4829,6 +4892,10 @@ msgid ""
 "            Massachusetts Institute of Technology, the National Science Foundation, and the Siegel Family Endowment.\n"
 "        "
 msgstr ""
+"\n"
+"            Scratch está disponible gratis gracias a la generosa ayuda de nuestros donantes. Estamos agradecidos a nuestros Socios Fundadores:\n"
+"            Massachusetts Institute of Technology, el National Science Foundation, y el Siegel Family Endowment.\n"
+"        "
 
 #: templates/modal-login.html:40
 msgid "Or Join Scratch"
@@ -5404,9 +5471,10 @@ msgid ""
 "href=\"/community_guidelines\" target=\"_blank\">Scratch Community "
 "Guidelines.</a> "
 msgstr ""
-"Por favor elige la sección de este perfil del usuario que sientes que es "
-"irrespetuoso, inapropiado o ha roto los <a href=\"/community_guidelines\" "
-"target=\"_blank\">Normas de la comunidad de Scratch</a>"
+"Por favor, selecciona la sección de este perfil del usuario que creas que es"
+" irrespetuosa, inapropiada, o que haya incumplido las <a "
+"href=\"/community_guidelines\" target=\"_blank\">Normas de la comunidad de "
+"Scratch.</a>"
 
 #: templates/profiles/includes/backbone-templates.html:69
 msgid "Icon"
@@ -5414,11 +5482,11 @@ msgstr "Icono"
 
 #: templates/profiles/includes/backbone-templates.html:71
 msgid "About Me"
-msgstr "Acerca de Mí"
+msgstr "Acerca de mí"
 
 #: templates/profiles/includes/backbone-templates.html:73
 msgid "What I'm Working On"
-msgstr "En Qué Estoy Trabajando"
+msgstr "En qué estoy trabajando"
 
 #: templates/profiles/includes/backbone-templates.html:76
 msgid ""
@@ -5427,8 +5495,8 @@ msgid ""
 "projects, or studios."
 msgstr ""
 "¿Este usuario hizo comentarios, proyectos o estudios que infringieron las "
-"Normas de la comunidad? Haga clic en el botón \"reportar\" en los "
-"comentarios, proyectos o estudios individuales."
+"normas de la comunidad? Haz clic en el botón \"reportar\" en los comentarios"
+" individuales, proyectos o estudios."
 
 #: templates/profiles/includes/favorite_projects_list.html:13
 #: templates/projects/project_list.html:35
@@ -5511,7 +5579,7 @@ msgstr "Lo que he estado haciendo"
 
 #: templates/profiles/profile_detail.html:200
 msgid "Report this profile"
-msgstr "Denunciar a este perfil"
+msgstr "Reportar este perfil"
 
 #: templates/profiles/profile_detail.html:275
 msgid "Favorite Projects"
@@ -6226,26 +6294,26 @@ msgid ""
 "animations—and share your creations with others in the community."
 msgstr ""
 "Con Scratch puedes programar tus propias historias interactivas, juegos y "
-"animaciones—y compartir tus creaciones con otros en la comunidad."
+"animaciones —y compartir tus creaciones con otros en la comunidad."
 
 #: templates/registration/welcome_email_message.html:19
 #: templates/registration/welcome_email_message.txt:7
 msgid "New to Scratch? Click the link below:"
-msgstr "¿Nuevo en Scratch? Haga clic en el enlance de abajo:"
+msgstr "¿Nuevo en Scratch? Haz clic en el enlace a continuación:"
 
 #: templates/registration/welcome_email_message.html:22
 msgid "Get started on Scratch"
-msgstr "Empieza en Scratch"
+msgstr "Empezar en Scratch"
 
 #: templates/registration/welcome_email_message.html:25
 msgid "To learn more about the Scratch online community, go to our"
 msgstr ""
-"Para obtener más información sobre la comunidad en línea de Scratch, visite "
+"Para obtener más información sobre la comunidad en línea de Scratch, visita "
 "nuestro"
 
 #: templates/registration/welcome_email_message.html:29
 msgid "To discover project ideas, check out our"
-msgstr "Para descubrir ideas de proyectos, consulte nuestro"
+msgstr "Para descubrir ideas de proyectos, consulta nuestro"
 
 #: templates/registration/welcome_email_message.html:30
 msgid "Ideas Page"
@@ -6258,17 +6326,21 @@ msgstr "Bienvenido a Scratch, %(username)s!"
 
 #: templates/registration/welcome_email_message.txt:8
 msgid "Get Started on Scratch"
-msgstr "Empieza en Scratch"
+msgstr "Empezar en Scratch"
 
 #: templates/registration/welcome_email_message.txt:9
 msgid ""
 "To learn more about the Scratch online community, go to our Community "
 "Guidelines"
 msgstr ""
+"Para saber más sobre la comunidad online de Scratch, ve a los principios de "
+"la comunidad"
 
 #: templates/registration/welcome_email_message.txt:11
 msgid "To discover project ideas, check out our Ideas Page"
 msgstr ""
+"Para descubrir nuevas ideas de proyecto, échale un vistazo a nuestra página "
+"de ideas"
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format
