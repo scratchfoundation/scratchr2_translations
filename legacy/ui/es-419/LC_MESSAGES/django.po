@@ -7,6 +7,7 @@
 # Bastián Nuñez <bastiannunez.b@gmail.com>, 2017
 # Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2020
 # Nico TIC <ntconectar.rn@gmail.com>, 2020
+# IAN RODRÍGUEZ Lorenzo, 2022
 # 
 #, fuzzy
 msgid ""
@@ -15,13 +16,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-09 04:13+0000\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
-"Last-Translator: Nico TIC <ntconectar.rn@gmail.com>, 2020\n"
+"Last-Translator: IAN RODRÍGUEZ Lorenzo, 2022\n"
 "Language-Team: Spanish (Latin America) (https://www.transifex.com/llk/teams/60938/es_419/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es_419\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: authentication/forms.py:74
 msgid "no gender provided"
@@ -178,6 +179,7 @@ msgid "day"
 msgid_plural "days"
 msgstr[0] "día"
 msgstr[1] "días"
+msgstr[2] "días"
 
 #: base_comments/templatetags/scratch_text_filters.py:183
 #, python-format
@@ -185,6 +187,7 @@ msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
 msgstr[0] "hace 1 minuto"
 msgstr[1] "hace %(minutes)d minutos"
+msgstr[2] "hace %(minutes)d minutos"
 
 #: base_comments/templatetags/scratch_text_filters.py:187
 msgid "just now"
@@ -196,6 +199,7 @@ msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
 msgstr[0] "hace 1 hora"
 msgstr[1] "hace %(hours)d horas"
+msgstr[2] "hace %(hours)d horas"
 
 #: base_comments/templatetags/scratch_text_filters.py:193
 #, python-format
@@ -279,12 +283,16 @@ msgid ""
 "Woah, seems like you're updating projects really quickly. Please wait a bit "
 "longer between updating projects."
 msgstr ""
+"Guau, parece que estás actualizando tus proyectos muy rápido. Por favor "
+"espera un poco más entre que actualizas un proyecto y otro."
 
 #: galleries/views.py:699
 msgid ""
 "Woah, seems like you're creating studios really quickly. Please wait a bit "
 "longer between creating studios."
 msgstr ""
+"Guau, parece que estás actualizando tus proyectos muy rápido. Por favor "
+"espera un poco más entre que actualizas un proyecto y otro."
 
 #: lib/fields.py:100
 msgid "Tiny Integer"
@@ -292,7 +300,7 @@ msgstr "Entero con rango"
 
 #: mail/validators.py:12 mail/validators.py:19
 msgid "Scratch is not allowed to send email to this address."
-msgstr ""
+msgstr "Scratch no puede enviar correos electrónicos a esa dirección."
 
 #: projects/models.py:140
 msgid "project"
@@ -325,7 +333,7 @@ msgstr "No está permitido que recurras este bloqueo."
 
 #: scratchr2/views.py:354
 msgid "Your message has been sent."
-msgstr ""
+msgstr "Tu mensaje ha sido enviado."
 
 #: scratchr2/views.py:360
 msgid "Please correct the errors below."
@@ -377,13 +385,15 @@ msgstr ""
 
 #: templates/429-projects.html:17
 msgid "Whoops! You're creating too many projects in a short time."
-msgstr ""
+msgstr "¡Ups! Estás creando muchos proyectos en muy poco tiempo."
 
 #: templates/429-projects.html:19
 msgid ""
 "You are performing actions on the site that are creating too many projects "
 "in too short of a time period. Try again later."
 msgstr ""
+"Estás haciendo que se creen muchos proyectos en muy poco tiempo. Inténtalo "
+"de nuevo más tarde."
 
 #: templates/429.html:16
 msgid "Whoops! You're making too many requests."
@@ -954,23 +964,26 @@ msgstr "Ok, vamos!"
 #: templates/accounts/email_verification/verification_email.html:12
 #: templates/accounts/email_verification/verification_email_plain.html:6
 msgid "Confirm your Scratch account"
-msgstr ""
+msgstr "Confirma tu cuenta de Scratch"
 
 #: templates/accounts/email_verification/verification_email.html:15
 msgid "You just signed up for a new Scratch account with the username:"
 msgstr ""
+"Te acabas de registrar con una nueva cuenta de Scratch con el nombre de "
+"usuario:"
 
 #: templates/accounts/email_verification/verification_email.html:20
 msgid "To finish creating your account, click on the link below:"
 msgstr ""
+"Para terminar de crear tu cuenta, haz clic en el enlace a continuación:"
 
 #: templates/accounts/email_verification/verification_email.html:24
 msgid "Confirm my account"
-msgstr ""
+msgstr "Confirmar mi cuenta"
 
 #: templates/accounts/email_verification/verification_email.html:27
 msgid "Having trouble? Copy this link into your browser instead:"
-msgstr ""
+msgstr "¿Tienes problemas? Prueba a copiar este enlace en tu navegador:"
 
 #: templates/accounts/email_verification/verification_email_plain.html:9
 #, python-format
@@ -979,6 +992,9 @@ msgid ""
 "You just signed up for a new account on Scratch (%(scratch_url)s).\n"
 "To finish creating your account, click on the link below:\n"
 msgstr ""
+"\n"
+"Acabas de registrar una nueva cuenta en Scratch (%(scratch_url)s).\n"
+"Para terminar de crear tu cuenta, haz clic en el enlace a continuación:\n"
 
 #: templates/accounts/email_verification/verify_email_standalone.html:84
 msgid "Want to share on Scratch?"
@@ -1133,7 +1149,7 @@ msgstr "Explorar"
 
 #: templates/base.html:185 templates/base.html.py:347
 msgid "Ideas"
-msgstr ""
+msgstr "Ideas"
 
 #: templates/base.html:186 templates/base.html.py:324
 msgid "About"
@@ -2365,6 +2381,9 @@ msgid ""
 "Get a sign-up link that students can use to register for your class. They "
 "will be directed to a class page where they can \"Join this Class\". "
 msgstr ""
+"Obtén un enlace de registro para que tus estudiantes lo usen en tu clase. "
+"Serán dirigidos a una página de la clase donde podrán \"Unirse a esta "
+"clase\"."
 
 #: templates/educators/includes/stuff/backbone-templates.html:734
 msgid ""
@@ -2374,16 +2393,23 @@ msgid ""
 "                        reveal the identity of students in any way.\n"
 "                        "
 msgstr ""
+"\n"
+"                        Los nombres de usuario\n"
+"                        <span class=\"underline\">no</span>\n"
+"                        deben revelar la identidad de los estudiantes de ninguna forma.\n"
+"                        "
 
 #: templates/educators/includes/stuff/backbone-templates.html:754
 msgid ""
 "I agree to remind my students not to use their real names, school name, "
 "contact information or student ID numbers."
 msgstr ""
+"Acepto recordar a mis estudiantes que no usen nombres reales, el nombre del "
+"colegio, información de contacto o números de identificación."
 
 #: templates/educators/includes/stuff/backbone-templates.html:760
 msgid "Get Link"
-msgstr ""
+msgstr "Obtener Enlace"
 
 #: templates/educators/includes/stuff/backbone-templates.html:763
 #: templates/educators/includes/stuff/backbone-templates.html:808
@@ -2399,10 +2425,13 @@ msgid ""
 "You can quickly create up to 50 student accounts by uploading a CSV of "
 "usernames and passwords. See how to format a CSV below."
 msgstr ""
+"Puedes crear rápidamente hasta 50 cuentas de estudiantes al subir un CSV con"
+" nombres de usuarios y contraseñas. Aprende cómo formatear un CSV a "
+"continuación."
 
 #: templates/educators/includes/stuff/backbone-templates.html:780
 msgid "Provide Usernames and Passwords"
-msgstr ""
+msgstr "Proporcionar Usuarios y Contraseñas"
 
 #: templates/educators/includes/stuff/backbone-templates.html:781
 msgid ""
@@ -2410,6 +2439,9 @@ msgid ""
 " Instead, use aspects from the subject you are teaching, favorite foods, or "
 "animals"
 msgstr ""
+"Los nombres de usuario son visibles públicamente, con lo que no uses ninguna"
+" información personal. Al contrario, usa conceptos de la materia que vas a "
+"enseñar, comidas favoritas o animales"
 
 #: templates/educators/includes/stuff/backbone-templates.html:788
 msgid "Download example"
@@ -2417,7 +2449,7 @@ msgstr "Descargar ejemplo"
 
 #: templates/educators/includes/stuff/backbone-templates.html:791
 msgid "Teacher Account Setup Guide"
-msgstr ""
+msgstr "Guía para la gestión de la Cuenta de Profesor"
 
 #: templates/educators/includes/stuff/backbone-templates.html:819
 msgid ""
@@ -2427,6 +2459,11 @@ msgid ""
 "                        reveal the identity of students in any way.\n"
 "                    "
 msgstr ""
+"\n"
+"                        Los nombres de usuario\n"
+"                        <span class=\"underline\">no</span>\n"
+"                        deben revelar la identidad de los estudiantes de ninguna forma.\n"
+"                        "
 
 #: templates/educators/includes/stuff/backbone-templates.html:839
 msgid ""
@@ -2436,6 +2473,11 @@ msgid ""
 "                        any accounts which include real names, school name, or contact information.\n"
 "                    "
 msgstr ""
+"\n"
+"                        Entiendo que, por cuestiones de seguridad y privacidad, Scratch deba\n"
+"                        <span class=\"attention\">eliminar</span>\n"
+"                        cualquier cuenta que incluya nombres reales, nombres de escuelas, o información de contacto.\n"
+"                    "
 
 #: templates/educators/includes/stuff/backbone-templates.html:851
 msgid "Upload"
@@ -2490,7 +2532,7 @@ msgstr "Todas las clases"
 
 #: templates/educators/register_student_modal.html:6
 msgid "Add New Student"
-msgstr ""
+msgstr "Añadir nuevo estudiante"
 
 #: templates/educators/register_student_modal.html:11
 msgid "Add to Class"
@@ -2498,7 +2540,7 @@ msgstr "Añadir a la clase"
 
 #: templates/educators/register_student_modal.html:31
 msgid "type student username here"
-msgstr ""
+msgstr "escribe el nombre de usuario del estudiante aquí"
 
 #: templates/educators/register_student_modal.html:44
 msgid ""
@@ -2508,6 +2550,11 @@ msgid ""
 "                          reveal the identity of students in any way.\n"
 "                      "
 msgstr ""
+"\n"
+"                        Los nombres de usuario\n"
+"                        <span class=\"underline\">no</span>\n"
+"                        deben revelar la identidad de los estudiantes de ninguna forma.\n"
+"                        "
 
 #: templates/educators/register_student_modal.html:64
 msgid ""
@@ -2517,18 +2564,23 @@ msgid ""
 "                          any accounts which include real names, school name, or contact information.\n"
 "                      "
 msgstr ""
+"\n"
+"                        Entiendo que, por cuestiones de seguridad y privacidad, Scratch deba\n"
+"                        <span class=\"attention\">eliminar</span>\n"
+"                        cualquier cuenta que incluya nombres reales, nombres de escuelas, o información de contacto.\n"
+"                    "
 
 #: templates/educators/register_student_modal.html:90
 msgid "Will be set to the teacher's username:"
-msgstr ""
+msgstr "Será asignado al nombre de usuario del profesor:"
 
 #: templates/educators/register_student_modal.html:121
 msgid "That class already has the maximum number of students allowed"
-msgstr ""
+msgstr "Esta clase ya tiene el número máximo de estudiantes permitido"
 
 #: templates/educators/register_student_modal.html:122
 msgid "Please confirm that you understand"
-msgstr ""
+msgstr "Por favor, confirma que comprendes"
 
 #: templates/educators/registration/approval_email_message.html:7
 #: templates/educators/registration/approval_email_message.txt:2
@@ -2555,7 +2607,7 @@ msgstr "¿Nuevo en Scratch?"
 #: templates/educators/registration/approval_email_message.html:15
 #, python-format
 msgid "Read our <a href=\" %(comm_link)s\">Community Guidelines</a>."
-msgstr ""
+msgstr "Lee nuestras <a href=\" %(comm_link)s\">Normas de la Comunidad</a>."
 
 #: templates/educators/registration/approval_email_message.html:16
 msgid ""
@@ -2563,6 +2615,10 @@ msgid ""
 "href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">Getting"
 " Started Guide</a> for a deeper dive into the Scratch editor."
 msgstr ""
+"Revisa la <a "
+"href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">Guía"
+" de cómo empezar</a> para una inmersión más profunda por el editor de "
+"Scratch."
 
 #: templates/educators/registration/approval_email_message.html:17
 #, python-format
@@ -2570,6 +2626,8 @@ msgid ""
 "Explore our <a href=\"%(ed_link)s\"> Scratch for Educators </a> site for "
 "resources and more educator guides."
 msgstr ""
+"Explora nuestro sitio de <a href=\"%(ed_link)s\"> Scratch para educadores "
+"</a>para encontrar recursos y más guías para educadores."
 
 #: templates/educators/registration/approval_email_message.html:20
 #: templates/educators/registration/approval_email_message.txt:11
@@ -2580,6 +2638,8 @@ msgstr "Siguientes pasos"
 #, python-format
 msgid "Learn more about managing <a href=\"%(faq_link)s\">Teacher Accounts</a>."
 msgstr ""
+"Saber más sobre gestionar las <a href=\"%(faq_link)s\">Cuentas de "
+"profesor</a>."
 
 #: templates/educators/registration/approval_email_message.html:24
 #, python-format
@@ -2587,6 +2647,8 @@ msgid ""
 "Take a deeper dive into curriculum resources, events, and news on our <a "
 "href=\"%(sip_url)s\">Scratch in Practice</a> page. "
 msgstr ""
+"Recibe una mayor inmersión en recursos curriculares, eventos y noticias en "
+"nuestra página de <a href=\"%(sip_url)s\">Scratch in Practice</a>"
 
 #: templates/educators/registration/approval_email_message.html:25
 msgid ""
@@ -2596,6 +2658,11 @@ msgid ""
 "Education <a href=\"http://scratched.gse.harvard.edu/\">ScratchEd</a> "
 "community."
 msgstr ""
+"Conecta con otros educadores a través de la <a "
+"href=\"https://www.facebook.com/groups/TeachingwithScratch/\">página de "
+"Facebook Teaching with Scratch</a>, gestionada por la comunidad <a "
+"href=\"http://scratched.gse.harvard.edu/\">ScratchEd</a> de la Harvard "
+"Graduate School of Education"
 
 #: templates/educators/registration/approval_email_message.txt:7
 msgid "Read our Community Guidelines"
@@ -2842,6 +2909,7 @@ msgid "<span data-count=\"followers\">%(follow_count)s</span> Follower"
 msgid_plural "<span data-count=\"followers\">%(follow_count)s</span> Followers"
 msgstr[0] "<span data-count=\"followers\">%(follow_count)s</span> Seguidor"
 msgstr[1] "<span data-count=\"followers\">%(follow_count)s</span> Seguidores"
+msgstr[2] "<span data-count=\"followers\">%(follow_count)s</span> Seguidores"
 
 #: templates/galleries/base.html:114
 msgid "Projects ( <span data-count=\"projects\">100+</span> )"
@@ -2854,7 +2922,7 @@ msgstr "Proyectos ( <span data-count=\"projects\">%(tCount)s</span> )"
 
 #: templates/galleries/base.html:117
 msgid "Comments ( <span data-count=\"comments\">100+</span> )"
-msgstr ""
+msgstr "Comentarios (<span data-count=\"comments\">100+</span>)"
 
 #: templates/galleries/base.html:117
 #, python-format
@@ -2970,29 +3038,35 @@ msgid ""
 "or otherwise breaks the <a href=\"/community_guidelines\" "
 "target=\"_blank\">Scratch Community Guidelines.</a>"
 msgstr ""
+"Por favor, explica por qué crees que este estudio es irrespetuoso o "
+"inapropiado, o cualquier razón por la que rompe con los <a "
+"href=\"/community_guidelines\" target=\"_blank\">principios de la comunidad "
+"de Scratch.</a>"
 
 #: templates/galleries/includes/backbone-templates.html:12
 #: templates/profiles/includes/backbone-templates.html:65
 msgid "Please select the inappropriate part of the page."
-msgstr ""
+msgstr "Por favor, selecciona la parte inapropiada de la página."
 
 #: templates/galleries/includes/backbone-templates.html:14
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: templates/galleries/includes/backbone-templates.html:16
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: templates/galleries/includes/backbone-templates.html:18
 msgid "Thumbnail"
-msgstr ""
+msgstr "Miniatura"
 
 #: templates/galleries/includes/backbone-templates.html:21
 msgid ""
 "Are there inappropriate comments in this studio? Please report them by "
 "clicking the \\"
 msgstr ""
+"¿Hay algún comentario inapropiado? Por favor, repórtarlos haciendo clic en "
+"\\"
 
 #: templates/galleries/includes/curator_action_bar.html:7
 msgid "Invite owners"
@@ -3235,6 +3309,8 @@ msgid ""
 "Scratch is used in more than 150 different countries and available in more than 40 languages. To change languages, click the menu at the bottom of the page. Or, in the Project Editor, click the globe at the top of the page. To add or improve a translation,\n"
 "          see the <a href=\"https://en.scratch-wiki.info/wiki/How_to_Translate_Scratch\">translation</a> page."
 msgstr ""
+"Scratch se usa en más de 150 países diferentes y está disponible en más de 40 idiomas. Para cambiar de idioma, haz clic en el menú al final de la página. O, en el Editor de Proyecto, haz clic en el globo terráqueo al principio de la página. Para añadir o mejorar una traducción, \n"
+"échale un vistazo a la página de <a href=\"https://en.scratch-wiki.info/wiki/How_to_Translate_Scratch\">traducciones</a>."
 
 #: templates/info/about.html:48
 msgid "Quotes"
@@ -3695,6 +3771,8 @@ msgid ""
 "\n"
 "This Scratch Extensions Browser Plugin allows you to use <a href=\"https://en.scratch-wiki.info/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO WeDo 1.0</a>, the <a href=\"https://en.scratch-wiki.info/wiki/PicoBoard\">PicoBoard</a> and other serial or USB devices with the online version of Scratch. \n"
 msgstr ""
+"\n"
+"El Scratch Extensions Browser Plugin te permite utilizar <a href=\"https://en.scratch-wiki.info/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO WeDo 1.0</a>, la<a href=\"https://en.scratch-wiki.info/wiki/PicoBoard\">PicoBoard</a> y otros dispositivos en serie o USB con la versión online de Scratch. \n"
 
 #: templates/info/ext_download.html:31
 msgid "1. Download the Plugin"
@@ -3706,6 +3784,10 @@ msgid ""
 "Choose the plugin to download based on your computer and the web browser you"
 " use for Scratch.  Choose the plug-in installer from these options:"
 msgstr ""
+"Necesitarás instalar un plugin para usar Scratch con un dispositivo "
+"hardware. Elige el plugin a descargar según el ordenador y el navegador en "
+"el que uses Scratch. Elige el instalador para el plugin de las siguientes "
+"opciones:"
 
 #: templates/info/ext_download.html:35
 msgid "Mac (Chrome)"
@@ -3713,7 +3795,7 @@ msgstr "Mac (Chrome)"
 
 #: templates/info/ext_download.html:35 templates/info/ext_download.html:37
 msgid " and separate plugin helper: "
-msgstr ""
+msgstr "y un plugin auxiliar separado "
 
 #: templates/info/ext_download.html:35 templates/info/ext_download.html:37
 msgid "here"
@@ -3740,6 +3822,8 @@ msgid ""
 "After it downloads, open the plugin file and follow the instructions on your"
 " computer to complete the installation."
 msgstr ""
+"Después de que se descargue, abre el archivo del plugin y sigue las "
+"instrucciones para completar la instalación."
 
 #: templates/info/ext_download.html:46
 msgid "3. Make sure the plugin was installed"
@@ -3750,12 +3834,16 @@ msgid ""
 "If the Scratch browser plugin was correctly installed, you should see a "
 "green or yellow status indicator in the \"More Blocks\" area."
 msgstr ""
+"Si el plugin del navegador de Scratch ha sido instalado correctamente, "
+"deberás ver un indicador verde o amarillo en el área de \"Más bloques\"."
 
 #: templates/info/ext_download.html:54
 msgid ""
 "<strong>Green:</strong> You can start using your hardware device with "
 "Scratch."
 msgstr ""
+"<strong>Verde:</strong> Puedes empezar a utilizar tu dispositivo hardware "
+"con Scrath."
 
 #: templates/info/ext_download.html:62
 msgid ""
@@ -3763,12 +3851,17 @@ msgid ""
 "not have your permission to run the plugin. (You may need to change "
 "Preferences in your browser to allow it to run.)"
 msgstr ""
+"<strong>Amarillo:</strong> el dispositivo no está conectado o tu navegador "
+"no tiene los permisos para ejecutar el plugin (puedes necesitar cambiar las "
+"Preferencias de tu navegador para permitir su ejecución)."
 
 #: templates/info/ext_download.html:69
 msgid ""
 "<strong>Red:</strong> There's a problem. Move your cursor over the status "
 "indicator to find out what's wrong."
 msgstr ""
+"<strong>Rojo:</strong> Hay algún problema. Mueve tu cursor sobre el "
+"indicador de estado para averiguar qué ha ido mal."
 
 #: templates/info/ext_download.html:79
 msgid ""
@@ -3779,12 +3872,20 @@ msgid ""
 "for the plugins dashboard in your browser (you can usually find it in the "
 "tools menu)."
 msgstr ""
+"<strong>Importante:</strong> La primera vez que añadas una extensión tu "
+"navegador puede preguntarte si permites ejecutar el plugin. Asegúrate de "
+"elegir \"Permitir y recordar\" (o la opción equivalente) del menú "
+"desplegable para hacer que tu navegador recuerde tus preferencias. Si "
+"necesitas cambiar las preferencias más tarde, busca el menú del plugin en tu"
+" navegador (generalmente lo encontrarás en el menú de herramientas)."
 
 #: templates/info/ext_download.html:89
 msgid ""
 "<strong>Example:</strong> Firefox asking for permission to run Scratch "
 "Device Plugin"
 msgstr ""
+"<strong>Ejemplo:</strong> Firefox pregunta por permisos para ejecutar "
+"Scratch Device Plugin"
 
 #: templates/info/ext_download.html:103
 msgid ""
@@ -3792,6 +3893,9 @@ msgid ""
 "Firefox (or similar option in other browsers) from the dropdown so that the "
 "browser will remember your preferences."
 msgstr ""
+"<strong>Ejemplo:</strong> Asegúrate de elegir \"Permitir y recordar\" en "
+"Firefox (o una opción equivalente en otros navegadores) del menú desplegable"
+" para permitir que el navegador recuerde tus preferencias."
 
 #: templates/info/ext_download.html:109
 msgid "Additional Information"
@@ -3808,6 +3912,11 @@ msgid ""
 "select the \"Add an Extension\" button. You can then select \"LEGO WeDo\" or"
 " any other extension, and the blocks will be added to the project."
 msgstr ""
+"Una vez instales este plugin podrás usar cualquiera de los bloques de "
+"extensión de Scratch. En Scratch, haz clic en la categoría de \"Más "
+"bloques\" y luego en \"Añadir una extensión\". Podrás seleccionar \"LEGO "
+"WeDo\" o cualquier otra extensión, y los bloques serán añadidos a tu "
+"proyecto."
 
 #: templates/info/ext_download.html:113
 msgid "System Requirements"
@@ -3817,6 +3926,8 @@ msgstr "Requisitos del sistema"
 msgid ""
 "The Scratch extension plug-in currently works only on Mac OS X and Windows."
 msgstr ""
+"El complemento de extensión Scratch actualmente solo funciona en Mac OS X y "
+"Windows."
 
 #: templates/info/hoc2015br.html:4 templates/info/hoc2015br.html.py:10
 msgid "Get Creative with Coding"
@@ -3840,6 +3951,9 @@ msgid ""
 "          With <a href=\"http://scratch.mit.edu/about\">Scratch</a>, you can program your own stories, games, and animations  &mdash; and share them online.\n"
 "          "
 msgstr ""
+"\n"
+"          Con <a href=\"http://scratch.mit.edu/about\">Scratch</a> puedes programar tus propias historias, juegos y animaciones, &mdash; compartirlas en línea.\n"
+"          "
 
 #: templates/info/hoc2015br.html:49
 msgid "Scratch: Imagine, Program, Share"
@@ -3854,6 +3968,8 @@ msgid ""
 "\n"
 "    \tMillions of young people around the world create projects with Scratch, a free programming language and <a href=\"http://scratch.mit.edu\">online community</a> developed by the MIT Media Lab.\n"
 msgstr ""
+"\n"
+"    \tMillones de jóvenes en todo el mundo crean proyectos con Scratch, un lenguaje de programación gratuito y <a href=\"http://scratch.mit.edu\">una comunidad en línea</a> desarrollados por el MIT Media Lab.\n"
 
 #: templates/info/hoc2015br.html:59
 msgid "//embed.ted.com/talks/mitch_resnick_let_s_teach_kids_to_code.html"
@@ -3864,6 +3980,9 @@ msgid ""
 "When people learn to code in Scratch, they learn important strategies for "
 "solving problems, designing projects, and communicating ideas."
 msgstr ""
+"Cuando la gente aprende a programar en Scratch aprenden la importancia de "
+"las estrategias para resolver problemas, diseñar proyectos y comunicar "
+"ideas."
 
 #: templates/info/hoc2015br.html:65
 msgid ""
@@ -3872,6 +3991,10 @@ msgid ""
 "          In Brazil, the initiative is promoted by <a href=\"http://programae.org.br\">Programa&ecirc;</a>.\n"
 "          "
 msgstr ""
+"\n"
+"          La <strong>Hora del Código</strong>&#8482; es un movimiento internacional ideado por <a href=\"http://code.org\">Code.org</a> para introducir a millones de estudiantes con una hora de ciencias de la computación y programación de ordenadores.\n"
+"          En Brasil la iniciativa es promovida por <a href=\"http://programae.org.br\">Programa&ecirc;</a>.\n"
+"          "
 
 #: templates/info/layout/base.html:4 templates/info/layout/help_layout.html:7
 msgid "Scratch Help"
@@ -3925,6 +4048,14 @@ msgid ""
 "provide a fun way to learn more. For an overview of Scratch resources, see "
 "<a href=\"/help/\">Scratch Help</a>."
 msgstr ""
+"Si justo estás introduciéndote puedes encontrar una <a "
+"href=\"/projects/editor/?tip_bar=getStarted\">guía paso a paso</a> "
+"disponible dentro de Scratch, o puedes descargar <a "
+"href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-Scratch2.pdf\">Guía de"
+" Inicio (PDF)</a>. Las <a href=\"/info/cards/\">Tarjetas de Scratch</a> son "
+"una forma divertida de continuar aprendiendo. Para leer una descripción "
+"general de los recursos sobre Scratch, échale un vistazo a la <a "
+"href=\"/help/\">ayuda de Scratch</a>."
 
 #: templates/info/parents.html:38
 msgid "What is the Scratch online community?"
@@ -3951,6 +4082,8 @@ msgid ""
 "The MIT Scratch Team works with the community to maintain a friendly and respectful environment for people of all ages, races, ethnicities, religions, sexual orientations, and gender identities. You can help your child learn how to participate by reviewing the <a href=\"/community_guidelines\">community guidelines</a> together. Members are asked to comment constructively and to help keep the website friendly by reporting any content that does not follow the community guidelines. The Scratch Team works each day to manage activity on the site and respond to reports, with the help of tools such as the <a href=\"http://www.inversoft.com/features/profanity-filter/\">CleanSpeak</a> profanity filter. \n"
 "        "
 msgstr ""
+"El Scratch Team del MIT trabaja con la comunidad para mantener un ambiente acogedor y respetuoso para gente de todas las edades, raza, etnias, religiones, orientaciones sexuales o identidades de género. Puedes ayudar a tu hijo o hija a aprender a participar revisando <a href=\"/community_guidelines\">las directrices de la comunidad</a> juntos. A los miembros se les pide que comenten de manera constructiva y que ayuden a mantener el buen rollo en el sitio web informando sobre cualquier contenido que no siga las directrices de la comunidad. El Scratch Team trabaja cada día para gestionar la actividad en la web y para responder a los informes con la ayuda de herramientas como el filtro de lenguaje obsceno <a href=\"http://www.inversoft.com/features/profanity-filter/\">CleanSpeak</a>.\n"
+" "
 
 #: templates/info/parents.html:48
 msgid "What is your privacy policy?"
@@ -3964,6 +4097,12 @@ msgid ""
 "policy on our <a href=\"/info/faq/#privacy\">frequently asked questions "
 "page</a>."
 msgstr ""
+"Con el objetivo de proteger la privacidad en el mundo en línea de los niños,"
+" limitamos lo que recopilamos durante el proceso de registro y lo que "
+"hacemos público en el sitio web. No vendemos ni alquilamos información a "
+"nadie. Puedes encontrar más información sobre nuestra política de privacidad"
+" en nuestra <a href=\"/info/faq/#privacy\">página de preguntas "
+"frecuentes</a>."
 
 #: templates/info/parents.html:52
 msgid "Is there a way to use Scratch without participating online?"
@@ -3974,6 +4113,12 @@ msgid ""
 "Yes, the Scratch offline editor lets you create projects without joining or accessing the online community. Visit the <a href=\"/scratch2download\">Scratch 2.0 offline editor</a> download page for instructions on how to install it on your computer.  (If your computer does not support the latest version, try the <a href=\"/scratch_1.4/\">Scratch 1.4 offline editor</a>.)\n"
 "        "
 msgstr ""
+"Sí, el editor offline de Scratch te permite crear proyectos sin necesidad de"
+" acceder a la comunidad online. Visita la página de descarga del <a "
+"href=\"/scratch2download\">editor offline de Scratch 2.0</a> para obtener "
+"instrucciones de cómo instalarlo en tu ordenador (si tu ordenador no es "
+"compatible con la última versión, prueba el <a href=\"/scratch_1.4/\">editor"
+" offline de Scratch 1.4</a>)."
 
 #: templates/info/parents.html:57
 msgid "What are parents saying about Scratch?"
@@ -4003,6 +4148,8 @@ msgid ""
 "<b>\"My very shy but technical minded daughter has found this to be a fantastic, safe outlet for her creativity.</b> She spends her free time creating ever more difficult animations and sharing them with the scratch community. The forums provide her with a group of like-minded individuals with which she can hold on a conversation... She now feels that computers, graphic design and animation are something she would like to pursue in the future. Your program has opened a whole new world to her in so many ways, and I thank you wholeheartedly. \n"
 "        \""
 msgstr ""
+"<b>\"Mi muy tímida hija pero con mentalidad técnica se ha encontrado con que esto es una forma fantástica y segura para su creatividad</b>. Pasa mucho de su tiempo libre creando animaciones cada vez más difíciles, y compartiéndolas con la comunidad de Scratch. Los foros la proporcionan un grupo de gente con mentalidades parecidas con los que puede mantener una conversación... y ahora siente que los ordenadores, el diseño gráfico y la animación son algo que puede continuar en el futuro. Vuestro programa ha abierto un nuevo mundo para ella en muchas formas, y muchas gracias de corazón.\n"
+"\""
 
 #: templates/info/parents.html:62
 msgid ""
@@ -4059,6 +4206,9 @@ msgid ""
 "information, please see the <a href=\"/info/faq/#privacy\">Privacy "
 "Policy</a>."
 msgstr ""
+"No ponemos información de cuentas privadas a disposición de nadie. Para más "
+"información por favor visita la <a href=\"/info/faq/#privacy\">Política de "
+"privacidad</a>."
 
 #: templates/info/parents.html:87
 msgid "Questions?"
@@ -4069,6 +4219,8 @@ msgid ""
 "To find out more about Scratch, please see <a href=\"/info/faq/\">Frequently"
 " Asked Questions</a>."
 msgstr ""
+"Para obtener más información sobre Scratch, consulte las Preguntas más "
+"frecuentes."
 
 #: templates/info/parents.html:91
 msgid ""
@@ -4151,6 +4303,9 @@ msgid ""
 "\tResearch on Scratch is being conducted by members of the MIT Scratch Team and researchers at other universities, including Yasmin Kafai at the University of Pennsylvania Graduate School of Education, Karen Brennan at the Harvard Graduate School of Education, \n"
 "Benjamin Mako Hill at the University of Washington, Andrés Monroy Hernandez at Microsoft Research, Mimi Ito and Crystle Martin at the University of California, Irvine, Quinn Burke at College of Charleston, Deborah Fields at Utah State University, and Kylie Peppler at Indiana University. "
 msgstr ""
+"\n"
+"\tLa investigación sobre Scratch está siendo realizada por miembros del Scratch Teamdel MIT y por investigadores de otras universidades, incluyendo a Yasmin Kafai de la Graduate School of Education de la University of Pennsylvania, Karen Brennan de la Harvard Graduate School of Education, \n"
+"Benjamin Mako Hill de la University of Washington, Andrés Monroy Hernandez de Microsoft Research, Mimi Ito y Crystle Martin de la University of California, Irvine, Quinn Burke del College of Charleston, Deborah Fields de la Utah State University y Kylie Peppler de la Indiana University. "
 
 #: templates/info/research.html:24
 msgid ""
@@ -4158,6 +4313,9 @@ msgid ""
 "learn with Scratch. Any publicly shared projects, comments, or other material on the Scratch site may be included\n"
 "in the research analysis, presentations, papers, and reports. No personally identifiable information is shared. "
 msgstr ""
+"Mientras compartes proyectos y participas en la comunidad online de Scratch estás ayudándonos a entender mejor cómo la gente utiliza y \n"
+"aprende con Scratch. Cualquier proyecto que haya sido compartido públicamente, comentarios u otro material disponible en la web de Scratch puede ser incluido\n"
+"en análisis de investigación, presentaciones, artículos o reportes. No se compartirá información que pueda identificar personalmente."
 
 #: templates/info/research.html:27
 #, python-format
@@ -4203,6 +4361,10 @@ msgid ""
 "        <p class=\"lg-msg\"><b>Note for Mac Users:</b> the latest version of Scratch 2.0 Offline requires Adobe Air 20. To upgrade to Adobe Air 20 manually, go <a href=\"https://get.adobe.com/air/\">here</a>.</p>\n"
 "\t\t"
 msgstr ""
+"\n"
+"\t\t<p class=\"lg-msg\">Puedes instalar el editor de Scratch 2.0 para trabajar en proyectos sin estar conectado a Internet. Esta versión puede ejecutarse en Mac, Windows y en algunas versiones de Linux (32 bits).</p>\n"
+"        <p class=\"lg-msg\"><b>Nota para los usuarios de Mac:</b> la última versión de Scratch 2.0 Offline requiere Adobe Air 20. Para descargar Adobe Air 20 de forma manual, ve a <a href=\"https://get.adobe.com/air/\">este enlace</a>.</p>\n"
+"\t\t"
 
 #: templates/info/scratch2download.html:50
 msgid "Adobe AIR"
@@ -4221,6 +4383,15 @@ msgid ""
 "\t\t\t\t</p>\n"
 "\t\t\t\t"
 msgstr ""
+"\n"
+"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step1.png\" alt=\"Step 1\">\n"
+"\t\t\t\t<p>Si no lo tienes ya, descarga e instala la última versión de <a href=\"http://get.adobe.com/air/\">Adobe AIR</a></p>\n"
+"\t\t\t\tmacOS - <a href=\"http://get.adobe.com/air/\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
+"\t\t\t\t<p>Mac OS 10.5 y anteriores - <a href=\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.zip\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
+"\t\t\t\t   Windows - <a href=\"http://get.adobe.com/air/\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
+"\t\t\t\t   Linux - <a href=\"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
+"\t\t\t\t</p>\n"
+"\t\t\t\t"
 
 #: templates/info/scratch2download.html:64
 #, python-format
@@ -4235,6 +4406,15 @@ msgid ""
 "                </p>\n"
 "                "
 msgstr ""
+"\n"
+"                <img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step2.png\" alt=\"Step 2\">\n"
+"                <p>Lo siguiente descarga e instala el <br>Editor Scratch 2.0 Offline</p>\n"
+"                    <p>macOS - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.dmg\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
+"                    Mac OS 10.5 y anteriores - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.air\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
+"                    Windows - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.exe\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
+"                    Linux - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.air\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
+"                </p>\n"
+"                "
 
 #: templates/info/scratch2download.html:76
 msgid "Support Materials"
@@ -4252,6 +4432,14 @@ msgid ""
 "\t\t\t\t</p>\t\n"
 "\t\t\t\t"
 msgstr ""
+"\n"
+"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step3.png\" alt=\"Step \">\n"
+"\t\t\t\t<p>¿Necesitas algo de ayuda para empezar? <br>Aquí tienes algunos recursos útiles.</p>\n"
+"\t\t\t\t<p>Proyectos de iniciación - <a href=\"/scratchr2/static/sa/Scratch2StarterProjects.zip\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
+"\t\t\t\t   Guía de inicio - <a href=\"%(STATIC_URL)spdfs/help/Getting-Started-Guide-Scratch2.pdf\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" alt=\"PDF Download \"></a> <br>\n"
+"\t\t\t\t   Tarjetas de Scratch - <a href=\"%(STATIC_URL)spdfs/help/Scratch2Cards.pdf\">Descargar<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" alt=\"PDF Download \"></a>\n"
+"\t\t\t\t</p>\t\n"
+"\t\t\t\t"
 
 #: templates/info/scratch_1.4.html:21
 msgid ""
@@ -4302,7 +4490,7 @@ msgstr "Instalar Scratch con el Centro de Software"
 #: templates/info/scratch_1.4.html:60
 #, python-format
 msgid "or <a href=\"%(download_1_4)s\">download here</a>"
-msgstr ""
+msgstr "o <a href=\"%(download_1_4)s\">descarga aquí</a>"
 
 #: templates/info/scratch_1.4.html:69
 msgid "Frequently Asked Questions about Scratch 1.4"
@@ -4629,6 +4817,9 @@ msgid ""
 "            <a href=\"%(scratch_url)s\">Scratch</a> is a free project of the Lifelong Kindergarten Group at the MIT Media Lab. Using Scratch, children can create interactive stories, games, and animations.\n"
 "        "
 msgstr ""
+"\n"
+"            <a href=\"%(scratch_url)s\">Scratch</a> es un proyecto gratuito del Lifelong Kindergarten Group del MIT Media Lab. A través de Scratch, niños y niñas pueden crear historias interactivas, juegos y animaciones.\n"
+"        "
 
 #: templates/mail/base.html:46
 #, python-format
@@ -4648,10 +4839,13 @@ msgid ""
 "            To stop receiving emails from Scratch, <a href=\"%(blacklist_url)s\">unsubscribe</a>.\n"
 "        "
 msgstr ""
+"\n"
+"            Para dejar de recibir correos electrónicos de Scratch, <a href=\"%(blacklist_url)s\">eliminar tu suscripción</a>.\n"
+"        "
 
 #: templates/mail/base.html:62 templates/mail/scratch3_style_base.html:50
 msgid "Make a Donation"
-msgstr ""
+msgstr "Realiza una donación"
 
 #: templates/mail/blacklist/blacklist_error.html:21
 #, python-format
@@ -4660,23 +4854,34 @@ msgid ""
 " Please try again later.  If you continue to experience issues, please <a "
 "href=\"%(contact_us_url)s\">contact us</a>."
 msgstr ""
+"¡Uh oh! Algo ha ido mal cuando hemos intentado eliminar la suscripción de tu"
+" dirección de correo electrónico. Por favor, inténtalo de nuevo más tarde. "
+"Si continúas con problemas, por favor <a href=\"%(contact_us_url)s\">ponte "
+"en contacto con nosotros</a>."
 
 #: templates/mail/blacklist/blacklist_failed.html:20
 msgid ""
 "Uh oh! The link you clicked to unsubscribe your email address expired. Try "
 "unsubscribing from a more recent email."
 msgstr ""
+"¡Ups! El enlace al que has hecho clic para dar de baja la suscripción de tu "
+"dirección de correo electrónico ha caducado. Prueba a darte de baja a través"
+" de un correo electrónico más reciente."
 
 #: templates/mail/blacklist/blacklist_success.html:20
 #, python-format
 msgid "You have unsubscribed the email address <strong>%(email)s</strong>."
 msgstr ""
+"Te has dado de baja con la dirección de correo electrónico "
+"<strong>%(email)s</strong>."
 
 #: templates/mail/scratch3_style_base.html:40
 msgid ""
 "Using Scratch, children can create interactive stories, games, and "
 "animations."
 msgstr ""
+"Utilizando Scratch, niños y niñas puedes crean juegos, historias y "
+"animaciones interactivas."
 
 #: templates/mail/scratch3_style_base.html:42
 msgid ""
@@ -4685,6 +4890,10 @@ msgid ""
 "            Massachusetts Institute of Technology, the National Science Foundation, and the Siegel Family Endowment.\n"
 "        "
 msgstr ""
+"\n"
+"            Scratch está disponible gratis gracias a la generosa ayuda de nuestros donantes. Estamos agradecidos a nuestros Socios Fundadores:\n"
+"            Massachusetts Institute of Technology, el National Science Foundation, y el Siegel Family Endowment.\n"
+"        "
 
 #: templates/modal-login.html:40
 msgid "Or Join Scratch"
@@ -4847,6 +5056,10 @@ msgid ""
 "you just created. If you still have trouble, please <a "
 "href=\"%(contact_url)s?confirmation=1\">contact us</a>."
 msgstr ""
+"Ups, no te hemos podido autentificar. Por favor, autentifícate con el "
+"usuario y la contraseña que acabas de crear. Si aún tienes algún problema "
+"por favor <a href=\"%(contact_url)s?confirmation=1\">ponte en contacto con "
+"nosotros</a>."
 
 #: templates/modal-registration.html:234
 #, python-format
@@ -4856,6 +5069,12 @@ msgid ""
 "downloading it to your computer using the button here. You may also ​<a "
 "href=\"%(contact_url)s?confirmation=1\">contact us​</a> for additional help."
 msgstr ""
+"Ups, no te hemos podido autentificar. Por favor, autentifícate con el "
+"usuario y la contraseña que acabas de crear. Si aún tienes algún problema "
+"prueba a guardar tu proyecto descargándolo a tu ordenador utilizando el "
+"botón aquí. También puedes <a "
+"href=\"%(contact_url)s?confirmation=1\">contactar con nosotros</a> para "
+"recibir más ayuda."
 
 #: templates/modal-registration.html:250
 msgid "Download project"
@@ -4995,7 +5214,7 @@ msgstr "No compartir"
 
 #: templates/mystuff/mystuff.html:184
 msgid "Put back"
-msgstr ""
+msgstr "Devolver"
 
 #: templates/notifications/includes/friend-feed.html:34
 #: templates/notifications/includes/friend-feed.html:47
@@ -5087,82 +5306,85 @@ msgstr "Entrar"
 
 #: templates/pathways/fashion.html:5
 msgid "Do you like fashion?"
-msgstr ""
+msgstr "¿Te gusta la moda?"
 
 #: templates/pathways/fashion.html:7
 msgid "Watch this video about making fashion projects."
-msgstr ""
+msgstr "Ve este vídeo sobre crear proyectos de moda."
 
 #: templates/pathways/fashion.html:8
 msgid "Then see what you can do with the dress-up game below."
 msgstr ""
+"Después mira lo que puedes hacer con el juego de disfraces de más abajo."
 
 #: templates/pathways/fashion.html:9
 msgid "Explore other fashion projects and make your own!"
-msgstr ""
+msgstr "¡Explora otros proyectos de moda y crea el tuyo propio!"
 
 #: templates/pathways/hiphop.html:6
 msgid "Do you like hip-hop?"
-msgstr ""
+msgstr "¿Te gusta el hip-hop?"
 
 #: templates/pathways/hiphop.html:8
 msgid "Watch a video about making hip-hop projects."
-msgstr ""
+msgstr "Ve este vídeo sobre crear proyectos de hip-hop."
 
 #: templates/pathways/hiphop.html:9
 msgid "Then, create your own dance scene!"
-msgstr ""
+msgstr "Después, ¡crea tu propia escena de baile!"
 
 #: templates/pathways/hiphop.html:10
 msgid "Check out projects by others for inspiration."
-msgstr ""
+msgstr "Échale un vistazo a los proyectos de otros para inspirarte."
 
 #: templates/pathways/hiphop.html:32
 msgid ""
 "\n"
 "Want to make your own dance? <a href=\"http://scratch.mit.edu/dance\">Start creating in Scratch!</a> \n"
 msgstr ""
+"\n"
+"¿Quieres crear tu propio baile? <a href=\"http://scratch.mit.edu/dance\">¡Empieza creando en Scratch!</a> \n"
 
 #: templates/pathways/includes/fashion-tips.html:9
 msgid "Click on blocks to see what they do"
-msgstr ""
+msgstr "Haz clic en los bloques para ver lo que hacen"
 
 #: templates/pathways/includes/fashion-tips.html:12
 msgid "Try clicking this block"
-msgstr ""
+msgstr "Prueba haciendo clic en este bloque"
 
 #: templates/pathways/includes/fashion-tips.html:17
 msgid "Or this block"
-msgstr ""
+msgstr "O en este bloque"
 
 #: templates/pathways/includes/fashion-tips.html:24
 msgid "Try changing colors"
-msgstr ""
+msgstr "Prueba a cambiar los colores"
 
 #: templates/pathways/includes/fashion-tips.html:27
 msgid "First, select a clothing item"
-msgstr ""
+msgstr "Primero, elige una prenda de vestir"
 
 #: templates/pathways/includes/fashion-tips.html:32
 #: templates/pathways/includes/fashion-tips.html:77
 msgid "Then, try this script"
-msgstr ""
+msgstr "Luego, prueba este programa"
 
 #: templates/pathways/includes/fashion-tips.html:37
 msgid "Test it out!"
-msgstr ""
+msgstr "¡Pruébalo!"
 
 #: templates/pathways/includes/fashion-tips.html:45
 msgid "Try changing costumes"
-msgstr ""
+msgstr "Prueba a cambiar los disfraces"
 
 #: templates/pathways/includes/fashion-tips.html:48
 msgid "Select a piece of clothing"
-msgstr ""
+msgstr "Elige una pieza de vestir"
 
 #: templates/pathways/includes/fashion-tips.html:53
 msgid "Then, switch costumes"
-msgstr ""
+msgstr "Luego, cambia los disfraces"
 
 #: templates/pathways/includes/fashion-tips.html:58
 msgid "Now, click it!"
@@ -5202,11 +5424,11 @@ msgstr "Añade un sonido"
 
 #: templates/pathways/includes/fashion-tips.html:111
 msgid " Explore other costumes"
-msgstr ""
+msgstr "Explora otros disfraces"
 
 #: templates/pathways/includes/fashion-tips.html:116
 msgid "Make longer scripts"
-msgstr ""
+msgstr "Haz programas más largos"
 
 #: templates/pathways/includes/hiphop-tips.html:7
 msgid "Start to Dance"
@@ -5222,7 +5444,7 @@ msgstr "en Scratch"
 
 #: templates/pathways/layout/base.html:88
 msgid "Projects in "
-msgstr ""
+msgstr "Proyectos en"
 
 #: templates/pathways/layout/base.html:89
 msgid "Visit the Studio"
@@ -5234,7 +5456,7 @@ msgstr "Recientes"
 
 #: templates/pathways/layout/base.html:111
 msgid " Projects by Scratchers"
-msgstr ""
+msgstr "Proyectos por otros Scratchers"
 
 #: templates/privacy_policy.html:29
 msgid "Scratch Privacy Policy"
@@ -5247,18 +5469,22 @@ msgid ""
 "href=\"/community_guidelines\" target=\"_blank\">Scratch Community "
 "Guidelines.</a> "
 msgstr ""
+"Por favor, selecciona la sección de este perfil del usuario que creas que es"
+" irrespetuosa, inapropiada, o que haya incumplido las <a "
+"href=\"/community_guidelines\" target=\"_blank\">Normas de la comunidad de "
+"Scratch.</a>"
 
 #: templates/profiles/includes/backbone-templates.html:69
 msgid "Icon"
-msgstr ""
+msgstr "Icono"
 
 #: templates/profiles/includes/backbone-templates.html:71
 msgid "About Me"
-msgstr ""
+msgstr "Acerca de mí"
 
 #: templates/profiles/includes/backbone-templates.html:73
 msgid "What I'm Working On"
-msgstr ""
+msgstr "En qué estoy trabajando"
 
 #: templates/profiles/includes/backbone-templates.html:76
 msgid ""
@@ -5266,6 +5492,9 @@ msgid ""
 "Guidelines? Please click the “report” button on the individual comments, "
 "projects, or studios."
 msgstr ""
+"¿Este usuario hizo comentarios, proyectos o estudios que infringieron las "
+"normas de la comunidad? Haz clic en el botón \"reportar\" en los comentarios"
+" individuales, proyectos o estudios."
 
 #: templates/profiles/includes/favorite_projects_list.html:13
 #: templates/projects/project_list.html:35
@@ -5299,7 +5528,7 @@ msgstr "Estudios que curo"
 #: templates/profiles/profile_detail.html:79
 #, python-format
 msgid "Student of: %(classroom_name)s"
-msgstr ""
+msgstr "Estudiante de: %(classroom_name)s"
 
 #: templates/profiles/profile_detail.html:85
 msgid "Scratch Team"
@@ -5348,7 +5577,7 @@ msgstr "Lo que he estado haciendo"
 
 #: templates/profiles/profile_detail.html:200
 msgid "Report this profile"
-msgstr ""
+msgstr "Reportar este perfil"
 
 #: templates/profiles/profile_detail.html:275
 msgid "Favorite Projects"
@@ -5569,10 +5798,13 @@ msgid ""
 "inappropriate for all ages, or otherwise breaks the Scratch community "
 "guidelines."
 msgstr ""
+"Este proyecto ha sido eliminado por el Scratch Team porque no era "
+"respetuoso, por ser inapropiado para todas las edades, o bien porque no "
+"cumplía con las Reglas de la Comunidad de Scratch."
 
 #: templates/projects/censored.html:13
 msgid "It cannot be reshared at any time in the future."
-msgstr ""
+msgstr "No puede volver a compartirse en el futuro."
 
 #: templates/projects/censored.html:15
 msgid ""
@@ -5580,63 +5812,80 @@ msgid ""
 "      Please read the <a href=\"/community_guidelines/\">community guidelines</a> and be sure to edit the project to make sure it's respectful before resharing it.\n"
 "      "
 msgstr ""
+"\n"
+"      Por favor lee las <a href=\"/community_guidelines/\">Reglas de la Comunidad</a> y edita el proyecto para asegurarte de que sea respetuoso antes de volver a compartirlo.\n"
+"      "
 
 #: templates/projects/includes/backbone-init-data.html:40
 #: templates/projects/includes/backbone-templates.html:53
 msgid "Select a reason why above"
-msgstr ""
+msgstr "Escoge una razón arriba"
 
 #: templates/projects/includes/backbone-init-data.html:41
 msgid "Please provide a link to the original project"
-msgstr ""
+msgstr "Por favor, facilítanos un enlace al proyecto original"
 
 #: templates/projects/includes/backbone-init-data.html:42
 msgid "Please provide links to the uncredited content"
-msgstr ""
+msgstr "Por favor, facilítanos enlaces al contenido sin atribuir"
 
 #: templates/projects/includes/backbone-init-data.html:43
 msgid "Please say why the project is too violent or scary"
 msgstr ""
+"Por favor, dinos por qué el proyecto es demasiado violento o atemorizante"
 
 #: templates/projects/includes/backbone-init-data.html:44
 msgid ""
 "Please say where the inappropriate language occurs in the project (For "
 "example: Notes & Credits, sprite name, project text, etc.)"
 msgstr ""
+"Por favor, dinos en qué parte del proyecto hay lenguaje inapropiado (por "
+"ejemplo: en las Notas y Créditos, en el nombre de un objeto, en el texto del"
+" proyecto, etc.)"
 
 #: templates/projects/includes/backbone-init-data.html:45
 msgid "Please say the name of the audio file with the inappropriate music"
 msgstr ""
+"Por favor, especifica el nombre del archivo de sonido que contiene la música"
+" inapropiada"
 
 #: templates/projects/includes/backbone-init-data.html:46
 msgid ""
 "Please say where the personal contact information is shared (For example: "
 "Notes & Credits, sprite name, project text, etc.)"
 msgstr ""
+"Por favor, dinos en qué parte se comparte la información personal o de "
+"contacto (por ejemplo: en las Notas y Créditos, en el nombre de un objeto, "
+"en el texto del proyecto, etc.)"
 
 #: templates/projects/includes/backbone-init-data.html:47
 msgid ""
 "Please be specific about why this project does not follow our Community "
 "Guidelines"
 msgstr ""
+"Por favor, especifica por qué este proyecto no cumple con las Reglas de la "
+"Comunidad"
 
 #: templates/projects/includes/backbone-init-data.html:48
 msgid ""
 "Please say the name of the sprite or the backdrop with the inappropriate "
 "image"
 msgstr ""
+"Por favor, especifica el nombre del objeto o fondo con la imagen inapropiada"
 
 #: templates/projects/includes/backbone-init-data.html:83
 msgid "Added to studio"
-msgstr ""
+msgstr "Añadido al estudio."
 
 #: templates/projects/includes/backbone-init-data.html:85
 msgid "Limit of 3 tags."
-msgstr ""
+msgstr "Límite de 3 etiquetas."
 
 #: templates/projects/includes/backbone-init-data.html:86
 msgid "Server error when editing tag.  Please reload the page to see updates."
 msgstr ""
+"Error del servidor al editar etiqueta. Por favor recarga la página para ver "
+"actualizaciones."
 
 #: templates/projects/includes/backbone-init-data.html:87
 msgid ""
@@ -5644,15 +5893,18 @@ msgid ""
 "change it and remember to <a target=\\\"_blank\\\" "
 "href=\\\"/community_guidelines/\\\">be respectful</a>."
 msgstr ""
+"Hmm... el filtro de palabras cree que existe un problema con tu etiqueta. "
+"Por favor cámbiala y recuerda <a target=\\\"_blank\\\" "
+"href=\\\"/community_guidelines/\\\">mantener el respeto</a>."
 
 #: templates/projects/includes/backbone-init-data.html:88
 msgid "Please choose a reason for reporting this project from the dropdown."
-msgstr ""
+msgstr "Por favor escoge una razón para denunciar este proyecto en el menú."
 
 #: templates/projects/includes/backbone-templates.html:17
 #: templates/projects/includes/shared/shared-project-actions.html:17
 msgid "Report and Unshare"
-msgstr ""
+msgstr "Denunciar"
 
 #: templates/projects/includes/backbone-templates.html:19
 msgid ""
@@ -5660,14 +5912,20 @@ msgid ""
 "visible on the website, but it will still exist in the student's My Stuff. "
 "The Scratch Moderation Team will also be alerted."
 msgstr ""
+"Escribe una razón por la cual debería removerse este proyecto. El proyecto "
+"ya no estará visible en el sitio web, pero seguirá existiendo en la sección "
+"\"Mis Cosas\" para el estudiante. El Equipo de Moderación de Scratch será "
+"alertado."
 
 #: templates/projects/includes/backbone-templates.html:28
 msgid "The project has been unshared and reported to the Scratch Team."
 msgstr ""
+"Este proyecto ya no es visible en el sitio, y ha sido denunciado al Equipo "
+"de Scratch."
 
 #: templates/projects/includes/backbone-templates.html:31
 msgid "Report as inappropriate"
-msgstr ""
+msgstr "Denunciar como inapropiado"
 
 #: templates/projects/includes/backbone-templates.html:35
 #, python-format
@@ -5677,6 +5935,10 @@ msgid ""
 "href=\"%(community_guidelines_url)s\" target=\"_blank\">Scratch Community "
 "Guidelines.</a>"
 msgstr ""
+"En el siguiente menú, por favor selecciona la razón por la cual crees que el"
+" proyecto es inapropiado, o bien que rompe las <a "
+"href=\"%(community_guidelines_url)s\" target=\"_blank\">Reglas de la "
+"Comunidad de Scratch.</a>"
 
 #: templates/projects/includes/backbone-templates.html:38
 #, python-format
@@ -5685,38 +5947,41 @@ msgid ""
 "you can view the <a href=\"%(cloud_data_url)s\">list of all Cloud Data "
 "operations</a> for this project."
 msgstr ""
+"Si quieres denunciar un uso inapropiado de los datos de nube, puedes revisar"
+" la <a href=\"%(cloud_data_url)s\">lista de todas las operaciones de la "
+"nube</a> en este proyecto."
 
 #: templates/projects/includes/backbone-templates.html:43
 msgid "Select a reason"
-msgstr ""
+msgstr "Escoge una razón"
 
 #: templates/projects/includes/backbone-templates.html:44
 msgid "Exact Copy of Project"
-msgstr ""
+msgstr "Copia exacta de otro proyecto"
 
 #: templates/projects/includes/backbone-templates.html:45
 msgid "Uses Image/Music Without Credit"
-msgstr ""
+msgstr "Usa imágenes o música sin darles crédito"
 
 #: templates/projects/includes/backbone-templates.html:46
 msgid "Too Violent or Scary"
-msgstr ""
+msgstr "Demasiado violento o atemorizante"
 
 #: templates/projects/includes/backbone-templates.html:47
 msgid "Inappropriate Language"
-msgstr ""
+msgstr "Lenguaje inapropiado"
 
 #: templates/projects/includes/backbone-templates.html:48
 msgid "Inappropriate Music"
-msgstr ""
+msgstr "Música inapropiada"
 
 #: templates/projects/includes/backbone-templates.html:49
 msgid "Inappropriate Images"
-msgstr ""
+msgstr "Imágenes inapropiadas"
 
 #: templates/projects/includes/backbone-templates.html:50
 msgid "Sharing Personal Contact Information"
-msgstr ""
+msgstr "Comparte información personal o de contacto"
 
 #: templates/projects/includes/backbone-templates.html:51
 msgid "Other"
@@ -5727,6 +5992,8 @@ msgid ""
 "This has been permanently unshared because of the way it violated the "
 "Community Guidelines."
 msgstr ""
+"Este proyecto no puede ser compartido ya que no cumple las Reglas de la "
+"Comunidad."
 
 #: templates/projects/includes/explore-bar.html:7
 msgid "More projects by"
@@ -5763,12 +6030,14 @@ msgstr "añadido por"
 
 #: templates/projects/includes/owner/editable-notes.html:10
 msgid "How did you make the project?"
-msgstr ""
+msgstr "¿Cómo hiciste el proyecto?"
 
 #: templates/projects/includes/owner/editable-notes.html:12
 msgid ""
 "Did you use ideas, scripts, or artwork from other people? Thank them here."
 msgstr ""
+"¿Utilizaste ideas, programas o arte de otras personas? Dales las gracias "
+"aquí."
 
 #: templates/projects/includes/owner/editable-wip.html:4
 #: templates/projects/shared-other.html:17
@@ -5790,7 +6059,7 @@ msgstr "Incluye proyecto en otros sitios web"
 
 #: templates/projects/includes/shared/shared-project-actions.html:16
 msgid "Report and Unshare this project"
-msgstr ""
+msgstr "Denunciar este proyecto"
 
 #: templates/projects/includes/shared/shared-project-actions.html:19
 msgid "Report project as inappropriate"
@@ -5906,7 +6175,7 @@ msgstr "Cambiar contraseña"
 
 #: templates/registration/password_reset_confirm.html:46
 msgid "Your must enter a password"
-msgstr ""
+msgstr "Debes ingresar una contraseña"
 
 #: templates/registration/password_reset_done.html:8
 msgid "Password reset email sent..."
@@ -5918,6 +6187,9 @@ msgid ""
 "your teacher does not receive the email, be sure to ask them to check their "
 "spam folder."
 msgstr ""
+"Le hemos enviado las instrucciones para resetear la contraseña a tu profesor"
+" por correo electrónico. Si tu profesor no recibe el correo electrónico, "
+"pregúntale que compruebe en la carpeta de spam."
 
 #: templates/registration/password_reset_done.html:22
 msgid ""
@@ -5925,6 +6197,10 @@ msgid ""
 "address you provided, or the email associated with your account. If you "
 "don't receive it shortly, be sure to check your spam folder."
 msgstr ""
+"Te hemos enviado las instrucciones para resetear tu contraseña a la "
+"dirección de correo electrónico que nos has dado, o al correo electrónico "
+"asociado a tu cuenta. Si lo recibes pronto, asegúrate de comprobar la "
+"carpeta de spam."
 
 #: templates/registration/password_reset_email.html:14
 #: templates/registration/password_reset_email.txt:7
@@ -5933,12 +6209,15 @@ msgid ""
 "user account on Scratch. If you didn't request a password change, you can "
 "just ignore this message."
 msgstr ""
+"Estás recibiendo este correo electrónico porque has solicitado restablecer "
+"la contraseña de tu cuenta de usuario en Scratch. Si no solicitaste un "
+"cambio de contraseña, puedes ignorar este mensaje."
 
 #: templates/registration/password_reset_email.html:15
 #: templates/registration/password_reset_email.txt:9
 #, python-format
 msgid "This email was requested with the IP address %(ip)s."
-msgstr ""
+msgstr "Este correo fue solicitado con la dirección de IP: %(ip)s"
 
 #: templates/registration/password_reset_email.html:19
 #: templates/registration/password_reset_email.txt:11
@@ -5978,13 +6257,16 @@ msgstr "Restaurar Contraseña"
 
 #: templates/registration/password_reset_form.html:16
 msgid "Whoops, forget your password or username?"
-msgstr ""
+msgstr "Ups, ¿olvidaste tu contraseña o nombre de usuario?"
 
 #: templates/registration/password_reset_form.html:19
 msgid ""
 "No problem, just enter your username or your email and we will send you an "
 "email with instructions to reset your password."
 msgstr ""
+"No hay problema, tan solo introduce tu nombre de usuario o tu dirección de "
+"correo electrónico y te enviaremos un correo con las instrucciones para "
+"resetear tu contraseña."
 
 #: templates/registration/password_reset_form.html:25
 msgid "Enter Username"
@@ -6009,23 +6291,27 @@ msgid ""
 "With Scratch, you can program your own interactive stories, games, and "
 "animations—and share your creations with others in the community."
 msgstr ""
+"Con Scratch puedes programar tus propias historias interactivas, juegos y "
+"animaciones —y compartir tus creaciones con otros en la comunidad."
 
 #: templates/registration/welcome_email_message.html:19
 #: templates/registration/welcome_email_message.txt:7
 msgid "New to Scratch? Click the link below:"
-msgstr ""
+msgstr "¿Nuevo en Scratch? Haz clic en el enlace a continuación:"
 
 #: templates/registration/welcome_email_message.html:22
 msgid "Get started on Scratch"
-msgstr ""
+msgstr "Empezar en Scratch"
 
 #: templates/registration/welcome_email_message.html:25
 msgid "To learn more about the Scratch online community, go to our"
 msgstr ""
+"Para obtener más información sobre la comunidad en línea de Scratch, visita "
+"nuestro"
 
 #: templates/registration/welcome_email_message.html:29
 msgid "To discover project ideas, check out our"
-msgstr ""
+msgstr "Para descubrir ideas de proyectos, consulta nuestro"
 
 #: templates/registration/welcome_email_message.html:30
 msgid "Ideas Page"
@@ -6038,17 +6324,21 @@ msgstr "Bienvenido a Scratch, %(username)s!"
 
 #: templates/registration/welcome_email_message.txt:8
 msgid "Get Started on Scratch"
-msgstr ""
+msgstr "Empezar en Scratch"
 
 #: templates/registration/welcome_email_message.txt:9
 msgid ""
 "To learn more about the Scratch online community, go to our Community "
 "Guidelines"
 msgstr ""
+"Para saber más sobre la comunidad online de Scratch, ve a los principios de "
+"la comunidad"
 
 #: templates/registration/welcome_email_message.txt:11
 msgid "To discover project ideas, check out our Ideas Page"
 msgstr ""
+"Para descubrir nuevas ideas de proyecto, échale un vistazo a nuestra página "
+"de ideas"
 
 #: templates/scratch_admin/admin_profile_view.html:46
 #, python-format
@@ -6227,33 +6517,44 @@ msgid ""
 "Woah, seems like you're following people really quickly. Please wait a bit "
 "longer between following people."
 msgstr ""
+"Guau, parece que estás siguiendo a gente muy rápido. Por favor espera un "
+"poco entre cada persona que sigas."
 
 #: userprofiles/views.py:390
 msgid "Oops! You are following too many Scratchers."
-msgstr ""
+msgstr "¡Ups! Estás siguiendo a demasiados Scratchers."
 
 #: userprofiles/views.py:431
 msgid "You must confirm your email address to love or favorite projects"
 msgstr ""
+"Debes confirmar tu dirección de correo electrónico para amar o hacer "
+"favoritos los proyectos"
 
 #: userprofiles/views.py:459
 msgid ""
 "Woah, seems like you're favoriting projects really quickly. Please wait a "
 "bit longer between favoriting projects."
 msgstr ""
+"Guau, parece que estás marcando proyectos como favoritos muy rápido. Por "
+"favor, espera un poco más entre que marcas que un proyecto como favorito y "
+"otro."
 
 #: userprofiles/views.py:530
 msgid ""
 "Woah, seems like you're loving projects really quickly. Please wait a bit "
 "longer between loving projects."
 msgstr ""
+"Guau, parece que te están gustando otros proyectos muy rápido. Por favor, "
+"espera un poco más entre que marcas que te gusta un proyecto y otro."
 
 #: userprofiles/views.py:643
 msgid ""
 "Woah, seems like you're inviting curators really quickly. Please wait a bit "
 "longer between inviting curators."
 msgstr ""
+"Guau, parece que estás invitando a curadores muy rápido. Por favor, espera "
+"un poco más para invitar a nuevos curadores."
 
 #: userprofiles/views.py:842
 msgid "Oops! You are following too many studios."
-msgstr ""
+msgstr "¡Ups! Estás siguiendo demasiados Estudios."
