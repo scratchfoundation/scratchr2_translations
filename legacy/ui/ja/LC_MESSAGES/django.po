@@ -4,93 +4,106 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# fujix <fujiwara@ie.akita-u.ac.jp>, 2017
 # kalmare, 2017
-# kurank, 2017
 # panda, 2017
 # mochimochi king <mochimkchiking@gmail.com>, 2017
-# Teoyama <drdobbsbigbear@gmail.com>, 2019
-# Apple 502j, 2020
-# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2020
-# KAZUHIRO ABE <abee@squeakland.jp>, 2022
+# KAZUHIRO ABE <abee@squeakland.jp>, 2024
+# kurank, 2024
+# Teoyama <drdobbsbigbear@gmail.com>, 2024
+# Apple 502j, 2024
+# Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-09 04:13+0000\n"
+"POT-Creation-Date: 2024-11-01 10:28+0000\n"
 "PO-Revision-Date: 2016-12-21 13:51+0000\n"
-"Last-Translator: KAZUHIRO ABE <abee@squeakland.jp>, 2022\n"
-"Language-Team: Japanese (https://www.transifex.com/llk/teams/60938/ja/)\n"
+"Last-Translator: Chris Garrity (ML) <chrisg@scratch.mit.edu>, 2024\n"
+"Language-Team: Japanese (https://app.transifex.com/llk/teams/60938/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: authentication/forms.py:74
+#: authentication/forms.py:94
 msgid "no gender provided"
 msgstr "性別を入力してください"
 
-#: authentication/forms.py:76
+#: authentication/forms.py:96
 msgid "invalid password"
 msgstr "無効なパスワードです"
 
-#: authentication/forms.py:77 authentication/forms.py:148
-#: authentication/forms.py:398
+#: authentication/forms.py:97 authentication/forms.py:170
+#: authentication/forms.py:449
 msgid "Incorrect captcha, please try again."
 msgstr "Captchaが間違っています。やり直してください。"
 
-#: authentication/forms.py:120 authentication/forms.py:146
+#: authentication/forms.py:142 authentication/forms.py:168
 msgid "You must enter your password."
 msgstr "パスワードを入力する必要があります。"
 
-#: authentication/forms.py:121 authentication/forms.py:147
+#: authentication/forms.py:143 authentication/forms.py:169
 msgid "Wrong password, try again."
 msgstr "パスワードが間違っています。もう一度入力してください。"
 
-#: authentication/forms.py:124
+#: authentication/forms.py:146
 msgid "Enter your password to confirm"
 msgstr "確認のためパスワードを入力してください。"
 
-#: authentication/forms.py:159
+#: authentication/forms.py:181
 msgid "Keep my projects, but disable all comments"
 msgstr "プロジェクトを残してコメントを無効にします"
 
-#: authentication/forms.py:160
+#: authentication/forms.py:182
 msgid "Delete my projects"
 msgstr "プロジェクトを削除"
 
-#: authentication/forms.py:169
+#: authentication/forms.py:189
+msgid "Confirm password"
+msgstr "パスワードを確認"
+
+#: authentication/forms.py:193
 msgid "Looks like that isn't a valid email format"
 msgstr "正しいEメールアドレスではありません。"
 
-#: authentication/forms.py:175
+#: authentication/forms.py:194
+msgid "Your password was entered incorrectly. Please enter it again."
+msgstr "パスワードが間違っています。もう一度入力してください。"
+
+#: authentication/forms.py:217
 msgid "The two password fields didn't match."
 msgstr "二つのパスワードが一致しません。"
 
-#: authentication/forms.py:176 authentication/forms.py:197
+#: authentication/forms.py:218 authentication/forms.py:246
 msgid "Your password must be at least 6 characters long."
 msgstr "パスワードは６文字以上にしてください。"
 
-#: authentication/forms.py:177 authentication/forms.py:198
-msgid "Your password cannot be 'password'."
-msgstr "パスワードに'password'は使えません。"
+#: authentication/forms.py:219 authentication/forms.py:247
+msgid "New password is too easy to guess, please try a different password."
+msgstr ""
 
-#: authentication/forms.py:178 authentication/forms.py:199
+#: authentication/forms.py:220 authentication/forms.py:248
 msgid "Your password cannot be the same as your username."
 msgstr "パスワードはユーザー名と同じではいけません。"
 
-#: authentication/forms.py:243
+#: authentication/forms.py:221 authentication/forms.py:249
+msgid ""
+"Admin passwords must be 15 characters, at least one symbol, one digit, one "
+"capitalized."
+msgstr ""
+
+#: authentication/forms.py:299
 msgid "Sorry we don't have an account with that email address"
 msgstr "申し訳ありませんが、そのEメールアドレスのアカウントは見つかりません"
 
-#: authentication/forms.py:244
+#: authentication/forms.py:300
 msgid "Sorry we don't have an account with that username"
 msgstr "申し訳ありませんが、そのユーザー名のアカウントは見つかりません"
 
-#: authentication/forms.py:246
+#: authentication/forms.py:302
 msgid ""
 "Scratch is not allowed to send email to the address associated with this "
 "username. <a href='/contact-us/'>Contact us for support</a>."
@@ -98,44 +111,43 @@ msgstr ""
 "Scratchは、このユーザ名に関連付けられたアドレスに電子メールを送信することはできません。お問い合わせは<a href='/contact-"
 "us/'>こちら</a>。"
 
-#: authentication/forms.py:248
+#: authentication/forms.py:304
 msgid "You must provide an email or username"
 msgstr "Eメールアドレスかユーザー名を入力してください"
 
-#: authentication/forms.py:253 templates/accounts/account_settings.html:10
+#: authentication/forms.py:309 templates/accounts/account_settings.html:8
 #: templates/accounts/deletion/confirmation.html:8
 #: templates/accounts/deletion/nostalgia.html:7
 #: templates/accounts/email_change.html:10
 #: templates/accounts/password_change_form.html:10
-#: templates/info/educators.html:63
 msgid "Email"
 msgstr "Eメールアドレス"
 
-#: authentication/forms.py:367
+#: authentication/forms.py:418
 msgid "Incorrect username or password."
 msgstr "ユーザー名またはパスワードが間違っています"
 
-#: authentication/forms.py:368
+#: authentication/forms.py:419
 msgid "Please enable cookies on your browser."
 msgstr "ブラウザーのクッキーを有効にしてください。"
 
-#: authentication/forms.py:369
+#: authentication/forms.py:420
 msgid "This account is inactive."
 msgstr "このアカウントはアクティブではありません。"
 
-#: authentication/forms.py:370
+#: authentication/forms.py:421
 msgid "This account is deleted!"
 msgstr "このアカウントは削除されています！"
 
-#: authentication/forms.py:371
+#: authentication/forms.py:422
 msgid "Class has ended. Account not available."
 msgstr "クラスは終了しました。利用できないアカウントです。"
 
-#: authentication/forms.py:407
+#: authentication/forms.py:458
 msgid "Activity ideas for using Scratch at home"
 msgstr "家庭でScratchを使う活動のアイデア"
 
-#: authentication/forms.py:408
+#: authentication/forms.py:459
 msgid "Product updates for using Scratch in educational settings"
 msgstr "Scratchを教育現場向け設定にするためのプロダクトアップデート"
 
@@ -149,82 +161,82 @@ msgstr ""
 "あなたが入力したメールアドレスは別の人のもののようです。あなたのアカウントに紐付けるメールアドレスは、<a "
 "href='%(email_change_url)s'>あなた自身のものに変更してください</a>。"
 
-#: authentication/views.py:118
+#: authentication/views.py:110
 msgid "Already logged in"
 msgstr "既にサインインしています"
 
-#: authentication/views.py:734 authentication/views.py:763
+#: authentication/views.py:775 authentication/views.py:804
 msgid ""
 "Whoops! There was an error while updating your email settings. Please try "
 "again."
 msgstr "おっと!メールアドレスの設定中にエラーが発生しました。もう1度試してみてください。"
 
-#: authentication/views.py:806
+#: authentication/views.py:847
 msgid "Unsubscribe me from Scratch project and activity ideas"
 msgstr "Scratchプロジェクトと活動のアイデアの受信を停止する"
 
-#: authentication/views.py:807
+#: authentication/views.py:848
 msgid "Unsubscribe me from tips for educational settings"
 msgstr "教育環境に向けたScratchの活用ヒントの配信を止める"
 
-#: authentication/views.py:1109
+#: authentication/views.py:1192
 msgid "Please check your email for a confirmation message."
 msgstr "メールをチェックして、認証用メッセージを確認してください。"
 
-#: base_comments/templatetags/scratch_text_filters.py:177
+#: base_comments/templatetags/scratch_text_filters.py:181
 msgid "day"
 msgid_plural "days"
 msgstr[0] "日 日"
 
-#: base_comments/templatetags/scratch_text_filters.py:183
+#: base_comments/templatetags/scratch_text_filters.py:187
 #, python-format
 msgid "1 minute ago"
 msgid_plural "%(minutes)d minutes ago"
 msgstr[0] "1 分前%(minutes)d 分前"
 
-#: base_comments/templatetags/scratch_text_filters.py:187
+#: base_comments/templatetags/scratch_text_filters.py:191
 msgid "just now"
 msgstr "たった今"
 
-#: base_comments/templatetags/scratch_text_filters.py:189
+#: base_comments/templatetags/scratch_text_filters.py:193
 #, python-format
 msgid "1 hour ago"
 msgid_plural "%(hours)d hours ago"
 msgstr[0] "1時間前 %(hours)d 時間前"
 
-#: base_comments/templatetags/scratch_text_filters.py:193
+#: base_comments/templatetags/scratch_text_filters.py:197
 #, python-format
 msgid "yesterday at %s"
 msgstr "昨日の %s"
 
-#: base_comments/templatetags/scratch_text_filters.py:196
+#: base_comments/templatetags/scratch_text_filters.py:200
 #, python-format
 msgid "%s"
 msgstr "%s"
 
-#: base_comments/templatetags/scratch_text_filters.py:204
+#: base_comments/templatetags/scratch_text_filters.py:208
 #, python-format
 msgid "%(number)d %(type)s ago"
 msgstr "%(number)d %(type)s 前"
 
-#: educators/forms.py:106
+#: educators/forms.py:107
 msgid "Already exists"
 msgstr "すでに存在します"
 
-#: educators/forms.py:107
+#: educators/forms.py:108
 msgid "Contains invalid characters. Use letters and numbers only."
 msgstr "無効な文字列を含んでいます。アルファベットと数字のみを使って下さい。"
 
-#: educators/forms.py:108
+#: educators/forms.py:109
 msgid "Contains inappropriate words"
 msgstr "不適切な言葉を含んでいます"
 
-#: educators/forms.py:109
+#: educators/forms.py:110
 #, python-format
 msgid "Shorter than minimum length of %d characters"
 msgstr "%d 文字より長くしてください"
 
-#: educators/forms.py:110
+#: educators/forms.py:111
 #, python-format
 msgid "Longer than maximum length of %d characters"
 msgstr "%d 文字より短くしてください"
@@ -237,18 +249,18 @@ msgstr "クラス"
 msgid "classes"
 msgstr "クラス"
 
-#: educators/views.py:525
+#: educators/views.py:510
 msgid ""
 "Please update the CSV file to address the issues above and reload the file."
 msgstr "上記の問題を解決してファイルをリロードするには、CSVファイルを更新してください。"
 
-#: educators/views.py:539
+#: educators/views.py:524
 msgid ""
 "Errors occurred while creating accounts. All accounts other than those "
 "specified here were created."
 msgstr "アカウント作成中にエラーが発生しました。次の一覧に含まれていないアカウントは正常に作成されました。"
 
-#: educators/views.py:613
+#: educators/views.py:598
 msgid ""
 "After changing this student's password, you will need to share the new "
 "password with your student directly so that they can log back into Scratch."
@@ -262,13 +274,13 @@ msgstr "スタジオ"
 msgid "studios"
 msgstr "スタジオ"
 
-#: galleries/views.py:430 projects/views.py:424
+#: galleries/views.py:318
 msgid ""
 "Woah, seems like you're updating projects really quickly. Please wait a bit "
 "longer between updating projects."
 msgstr "申し訳ありません。プロジェクトを更新する間隔が少し早すぎるようです。1回更新したあと次の更新をするときは、もう少し時間を置いてください。"
 
-#: galleries/views.py:699
+#: galleries/views.py:618
 msgid ""
 "Woah, seems like you're creating studios really quickly. Please wait a bit "
 "longer between creating studios."
@@ -282,27 +294,23 @@ msgstr "小さな整数"
 msgid "Scratch is not allowed to send email to this address."
 msgstr "Scratchではこのアドレスにメールを送ることが許可されていません。"
 
-#: projects/models.py:140
+#: projects/models.py:146
 msgid "project"
 msgstr "作品"
 
-#: projects/models.py:141
+#: projects/models.py:147
 msgid "projects"
 msgstr "作品"
 
-#: projects/models.py:279
+#: projects/models.py:285
 msgid "Permanently Censored Project cannot be reshared."
 msgstr "一時的に検閲中のプロジェクトを再度共有することはできません。"
 
-#: projects/models.py:286
+#: projects/models.py:292
 msgid ""
 "This project has been censored and must be reviewed before it can be "
 "reshared."
 msgstr "このプロジェクトは不適切と判断されたため、再確認が終わるまで、共有することができません。"
-
-#: projects/views.py:560
-msgid "This tag has too many projects to load"
-msgstr "このタグは、ロードするにはあまりにも多くの作品で使われています"
 
 #: scratchr2/views.py:345
 msgid "You're not allowed to appeal this ban."
@@ -340,7 +348,7 @@ msgstr "お探しのページは見つかりませんでした。urlを確認し
 msgid "You can try searching for what you're looking for here:"
 msgstr "ここから探しているページを検索できます:"
 
-#: templates/404.html:21 templates/base.html:192
+#: templates/404.html:21 templates/base.html:141
 msgid "Search"
 msgstr "検索"
 
@@ -387,7 +395,7 @@ msgid ""
 "projects."
 msgstr "あなたは<a href=\"/scratch2download/\">Scratchをダウンロード</a>してプロジェクトを作ることができます。"
 
-#: templates/accounts/account_settings.html:8
+#: templates/accounts/account_settings.html:6
 #: templates/accounts/deletion/confirmation.html:6
 #: templates/accounts/deletion/nostalgia.html:5
 #: templates/accounts/email_change.html:8
@@ -395,45 +403,43 @@ msgstr "あなたは<a href=\"/scratch2download/\">Scratchをダウンロード<
 msgid "Account"
 msgstr "アカウント"
 
-#: templates/accounts/account_settings.html:9
+#: templates/accounts/account_settings.html:7
 #: templates/accounts/deletion/confirmation.html:7
 #: templates/accounts/deletion/nostalgia.html:6
-#: templates/accounts/email_change.html:9 templates/base.html:212
-#: templates/educators/register_student_modal.html:86
+#: templates/accounts/email_change.html:9 templates/base.html:161
+#: templates/educators/register_student_modal.html:87
 #: templates/includes/backbone-templates.html:44 templates/modal-login.html:21
 msgid "Password"
 msgstr "パスワード"
 
-#: templates/accounts/account_settings.html:18
+#: templates/accounts/account_settings.html:16
 msgid "You have updated your account settings."
 msgstr "アカウント設定を更新しました。"
 
-#: templates/accounts/account_settings.html:21
+#: templates/accounts/account_settings.html:19
 msgid "Edit your account settings"
 msgstr "アカウント設定を編集"
 
-#: templates/accounts/account_settings.html:26 templates/base.html:210
+#: templates/accounts/account_settings.html:24 templates/base.html:159
 #: templates/educators/register_student_modal.html:29
 #: templates/includes/backbone-templates.html:37 templates/modal-login.html:14
 #: templates/profiles/includes/backbone-templates.html:67
 msgid "Username"
 msgstr "ユーザー名"
 
-#: templates/accounts/account_settings.html:30
+#: templates/accounts/account_settings.html:28
 msgid "Location"
 msgstr "場所"
 
-#: templates/accounts/account_settings.html:42
+#: templates/accounts/account_settings.html:40
 msgid "Save my Changes"
 msgstr "変更を保存"
 
-#: templates/accounts/account_settings.html:45
+#: templates/accounts/account_settings.html:43
 msgid "I want to delete my account"
 msgstr "アカウントを削除したいです"
 
 #: templates/accounts/banned-response.html:12
-#: templates/info/ext_download.html:11 templates/info/scratch2download.html:27
-#: templates/info/scratch_1.4.html:11
 msgid "Account Blocked"
 msgstr "アカウントはブロックされました"
 
@@ -450,7 +456,6 @@ msgid "Your account will be automatically unblocked on"
 msgstr "あなたのアカウントブロックは、後ほど自動的に解除されます。"
 
 #: templates/accounts/banned-response.html:58
-#: templates/info/community_guidelines.html:21
 msgid ""
 "<b>Be respectful.</b> When sharing projects or posting comments, remember "
 "that people of many different ages and backgrounds will see what you’ve "
@@ -467,7 +472,6 @@ msgstr ""
 "<b>建設的であること。</b> 誰かの作品にコメントするとき、まずあなたがその作品が好きということを伝え、それから自分の意見を提示してください。"
 
 #: templates/accounts/banned-response.html:60
-#: templates/info/community_guidelines.html:23
 msgid ""
 "<b>Share.</b> You are free to remix projects, ideas, images, or anything "
 "else you find on Scratch – and anyone can use anything that you share. Be "
@@ -477,14 +481,12 @@ msgstr ""
 "あなたはScratchで見つけた作品、アイデア、画像など全てのものを自由にリミックスできます。それはだれでも、あなたが共有したものを使うことができるということです。リミックスするとき必ずクレジットを残してください。"
 
 #: templates/accounts/banned-response.html:61
-#: templates/info/community_guidelines.html:24
 msgid ""
 "<b>Keep personal info private.</b> For safety reasons, don't use real names "
 "or post contact info like phone numbers or addresses."
 msgstr "<b>個人情報を公開しないこと。</b> 安全上の理由から、絶対に、本名、電話番号や住所など連絡先の情報を投稿しないようにしましょう。"
 
 #: templates/accounts/banned-response.html:62
-#: templates/info/community_guidelines.html:25
 msgid ""
 "<b>Be honest.</b> Don’t try to impersonate other Scratchers, spread rumors, "
 "or otherwise try to trick the community."
@@ -492,7 +494,6 @@ msgstr ""
 "<b>誠実であること。</b> 他のスクラッチャーになりすましたり、噂を拡散したりなど、コミュニティーをだますようなことをしないでください。"
 
 #: templates/accounts/banned-response.html:63
-#: templates/info/community_guidelines.html:26
 msgid ""
 "<b>Help keep the site friendly.</b> If you think a project or comment is "
 "mean, insulting, too violent, or otherwise inappropriate, click “Report” to "
@@ -502,7 +503,7 @@ msgstr ""
 "もし、作品やコメントが、卑劣であったり、侮辱的、暴力的、もしくは不適当であると感じたら、「報告」をクリックして私たちに知らせてください。"
 
 #: templates/accounts/banned-response.html:80
-#: templates/accounts/email_change.html:64
+#: templates/accounts/email_change.html:81
 msgid "Send"
 msgstr "送信"
 
@@ -511,33 +512,6 @@ msgstr "送信"
 #: templates/registration/base.html:24
 msgid "Account Settings"
 msgstr "アカウント設定"
-
-#: templates/accounts/beta_optin.html:8
-msgid "Change password"
-msgstr "パスワードを変更"
-
-#: templates/accounts/beta_optin.html:9
-msgid "Change email"
-msgstr "メールアドレスを変更"
-
-#: templates/accounts/beta_optin.html:10
-msgid "Change country"
-msgstr "国籍を変更"
-
-#: templates/accounts/beta_optin.html:11
-msgid "Beta testing"
-msgstr "ベータテスト"
-
-#: templates/accounts/beta_optin.html:24
-msgid ""
-"The new project player will appear automatically on the project page. If you"
-" see a bug, click 'Beta Bug?' on the project page to report it."
-msgstr ""
-"新しいプロジェクトプレイヤーはプロジェクトページで自動的に使われます。もしプレイヤーのバグを発見したら、プロジェクトページの「ベータバグ?」をクリックして報告してください。"
-
-#: templates/accounts/beta_optin.html:33
-msgid "Update"
-msgstr "更新"
 
 #: templates/accounts/deletion/confirmation.html:12
 #: templates/accounts/deletion/nostalgia.html:11
@@ -601,55 +575,69 @@ msgstr "あなたのフォロワー"
 msgid "Yes, next step"
 msgstr "はい、続けてください"
 
-#: templates/accounts/email_change.html:18
-#: templates/accounts/email_change.html:30
+#: templates/accounts/email_change.html:19
+msgid "Your account is not confirmed yet"
+msgstr ""
+
+#: templates/accounts/email_change.html:20
+msgid ""
+"If you want to share and comment, please ask your parent to confirm your "
+"account by clicking the link in the email sent at:"
+msgstr ""
+
+#: templates/accounts/email_change.html:22
+#: templates/accounts/email_change.html:35
 msgid "Your email address is unconfirmed"
 msgstr "あなたのメールアドレスは認証されていません"
 
-#: templates/accounts/email_change.html:19
+#: templates/accounts/email_change.html:23
 msgid ""
 "If you want to share and comment, simply click the link in the email sent to"
 " you at:"
 msgstr "もし共有したりコメントしたいなら、あなたに届いたメールのリンクをクリックして下さい:"
 
-#: templates/accounts/email_change.html:23
-#: templates/accounts/email_change.html:34
+#: templates/accounts/email_change.html:28
+#: templates/accounts/email_change.html:39
 msgid "Your new email address is unconfirmed"
 msgstr "あなたの新しいメールアドレスは認証されていません"
 
-#: templates/accounts/email_change.html:25
+#: templates/accounts/email_change.html:30
 msgid ""
 "If you would like to change the email address - have your parent (or "
 "guardian) simply click the link in the message sent to their address."
 msgstr ""
 "メールアドレスを変更したい場合は、おうちの方や先生の確認が必要です。このメッセージのリンクをクリックし、おうちの方や先生のアドレス宛にメールを送信してもらってください。"
 
-#: templates/accounts/email_change.html:27
+#: templates/accounts/email_change.html:32
 msgid ""
 "If you would like to change your email address - simply click the link in "
 "the message sent to your new address."
 msgstr "メールアドレスを変更したい場合は、このメッセージのリンクをクリックして、新しいアドレスにメールを送信してください。"
 
-#: templates/accounts/email_change.html:31
+#: templates/accounts/email_change.html:36
 msgid ""
 "To confirm your current email address, click \"Send\"  below and follow the "
 "instructions in the email sent to you at:"
 msgstr "あなたの現在のメールアドレスを認証するために、下の\"送信\"をクリックし、このメールアドレスに届くメール中の指示にしたがってください:"
 
-#: templates/accounts/email_change.html:35
+#: templates/accounts/email_change.html:40
 msgid ""
 "To change your email, simply click the link in the email sent to you at:"
 msgstr "メールアドレスを変更するには、送られてきたメールのリンクをクリックしてください。"
 
-#: templates/accounts/email_change.html:40
+#: templates/accounts/email_change.html:45
 msgid "New Email Address"
 msgstr "新しいメールアドレス"
 
-#: templates/accounts/email_change.html:46
+#: templates/accounts/email_change.html:52
+msgid "Current Parent Email Address"
+msgstr ""
+
+#: templates/accounts/email_change.html:54
 msgid "Current Email Address"
 msgstr "今のメールアドレス"
 
-#: templates/accounts/email_change.html:52
+#: templates/accounts/email_change.html:61
 #, python-format
 msgid ""
 "The owner of this address has requested their address be removed from our "
@@ -659,27 +647,45 @@ msgstr ""
 "このアドレスの持ち主から、アドレスを削除してほしいという要望がありました。メールアドレスを新しいものに変更してください。もし何か疑問があれば<a "
 "href=\"%(contact_us_url)s\">こちらまで</a>。"
 
-#: templates/accounts/email_change.html:61
-msgid "Can't find the confirmation email? Check your spam folder"
-msgstr "認証用のメールが見つからないときは、 迷惑メールフォルダを確認してください。"
+#: templates/accounts/email_change.html:65
+msgid ""
+"Can't find the confirmation email? Check your spam folder, or resend below:"
+msgstr "認証用のメールが見つからないときは、 迷惑メールフォルダを確認してください。以下から再送することもできます。"
 
-#: templates/accounts/email_change.html:62
+#: templates/accounts/email_change.html:79
 msgid "Resend"
 msgstr "再送"
 
-#: templates/accounts/email_change.html:78
+#: templates/accounts/email_change.html:93
+msgid "Change your email address"
+msgstr "メールアドレスを変更する"
+
+#: templates/accounts/email_change.html:96
 msgid "Current Email"
 msgstr "今のメールアドレス"
 
-#: templates/accounts/email_change.html:82
+#: templates/accounts/email_change.html:100
 msgid "Email Confirmed"
 msgstr "メールによる認証が完了しました"
 
-#: templates/accounts/email_change.html:96
+#: templates/accounts/email_change.html:106
+msgid ""
+"Your account is currently linked to your parent's email address. You will be"
+" able to change it on the month after you turn 16."
+msgstr ""
+
+#: templates/accounts/email_change.html:109
+msgid ""
+"Your account is currently linked to your parent's email address. Now that "
+"you are over 16 years old, you can set your personal email using the form "
+"below."
+msgstr ""
+
+#: templates/accounts/email_change.html:120
 msgid "Change Email"
 msgstr "メールアドレスを変更"
 
-#: templates/accounts/email_change.html:102
+#: templates/accounts/email_change.html:126
 msgid "I’d like to receive email updates about: "
 msgstr "次の内容について、メールによる更新情報を受信する："
 
@@ -711,7 +717,7 @@ msgid ""
 msgstr "メールアドレスを変更しない場合は、このメッセージは無視してください。"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:26
-#: templates/accounts/email_verification/verification_email.html:32
+#: templates/accounts/email_verification/verification_email.html:39
 #: templates/accounts/password_changed_email/message.html:13
 #: templates/accounts/password_changed_email/message.txt:6
 #: templates/educators/email_verification/verification_email.html:32
@@ -726,7 +732,7 @@ msgstr "Scratch On!"
 
 #: templates/accounts/email_verification/change_email_verification_email.html:27
 #: templates/accounts/email_verification/change_email_verification_email_plain.html:16
-#: templates/accounts/email_verification/verification_email.html:34
+#: templates/accounts/email_verification/verification_email.html:41
 #: templates/accounts/email_verification/verification_email_plain.html:18
 #: templates/accounts/password_changed_email/message.html:14
 #: templates/accounts/password_changed_email/message.txt:7
@@ -807,17 +813,17 @@ msgstr ""
 "      "
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:27
-#: templates/accounts/email_verification/verify_email_standalone.html:108
+#: templates/accounts/email_verification/verify_email_standalone.html:109
 msgid "Can't find confirmation message?"
 msgstr "認証用メッセージが見当たらない場合"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:30
-#: templates/accounts/email_verification/verify_email_standalone.html:110
+#: templates/accounts/email_verification/verify_email_standalone.html:111
 msgid "Wait for ten minutes. The message may take a while to arrive."
 msgstr "10分待って下さい。メッセージの到着には時間がかかります。"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:31
-#: templates/accounts/email_verification/verify_email_standalone.html:111
+#: templates/accounts/email_verification/verify_email_standalone.html:112
 msgid "Check your spam folder."
 msgstr "迷惑メールフォルダーを確認して下さい。"
 
@@ -830,18 +836,176 @@ msgstr ""
 "自分のメールアドレスが正しいか確かめてください (<a href=\"%(settings_url)s\">アカウント設定</a>を見てください)。"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
-#: templates/accounts/email_verification/verify_email_standalone.html:117
+#: templates/accounts/email_verification/verify_email_standalone.html:118
 msgid "Still can't find the message?"
 msgstr "まだメッセージが見つかりませんか?"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:37
-#: templates/accounts/email_verification/verify_email_standalone.html:117
+#: templates/accounts/email_verification/verify_email_standalone.html:118
 msgid "Resend Confirmation"
 msgstr "認証用メッセージをもう一度送る"
 
 #: templates/accounts/email_verification/includes/verify_email_popup.html:44
+#: templates/mystuff/includes/new_scratcher_gallery_modal.html:22
 msgid "OK, back to Scratch"
 msgstr "OK、Scratchに戻ります"
+
+#: templates/accounts/email_verification/parent_verification_email.html:15
+#: templates/accounts/email_verification/parent_verification_email_plain.html:8
+msgid "Your Child Has Signed Up for Scratch"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:18
+msgid ""
+"Scratch is a coding platform designed for children ages 8-16 with a simple "
+"visual interface that allows young people to create digital stories, games, "
+"and animations. Scratch is also the world’s largest online coding community "
+"for children. Scratch is designed, developed, and moderated by the <a "
+"href=\"https://www.scratchfoundation.org/\">Scratch Foundation</a>, an "
+"independent nonprofit organization."
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:20
+#: templates/accounts/email_verification/parent_verification_email_plain.html:12
+msgid ""
+"When your child registered to use Scratch, they provided us with your email "
+"address so that we could send you this message outlining our privacy "
+"practices."
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:22
+#: templates/accounts/email_verification/parent_verification_email_plain.html:14
+msgid ""
+"By clicking on the link below, you are providing your consent for your child"
+" to have a Scratch account that will enable them to share their projects "
+"with others online and use Scratch’s social features, such as commenting on "
+"projects. If you do not provide your consent, then your child will not be "
+"permitted to use those features but they will be able to create and save "
+"private/non-public Scratch projects."
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:22
+#, python-format
+msgid ""
+"If you do not consent to your child using Scratch at all, <a "
+"href=\"%(delete_account_url)s\">click here</a> for steps to delete their "
+"account."
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:25
+msgid "Confirm my child's account"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:28
+#: templates/accounts/email_verification/parent_verification_email_plain.html:21
+msgid "Personal information we collect from children under 16 years of age"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:31
+#: templates/accounts/email_verification/parent_verification_email_plain.html:23
+msgid ""
+"We process the following information from children under 16 when they use "
+"our services:"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:34
+#: templates/accounts/email_verification/parent_verification_email_plain.html:25
+msgid ""
+"Registration information, including username and password, your child’s "
+"country, gender, and email address"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:35
+#: templates/accounts/email_verification/parent_verification_email_plain.html:26
+msgid ""
+"User-generated content, such as the projects the child creates and the "
+"comments they add"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:36
+#: templates/accounts/email_verification/parent_verification_email_plain.html:27
+msgid ""
+"Messages that the child sends to our team, such as when asking for customer "
+"support"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:37
+#: templates/accounts/email_verification/parent_verification_email_plain.html:28
+msgid ""
+"Information about your child’s use of Scratch, like the browser they use to "
+"access the platform, the pages and other content they view, referrer "
+"information (the website they visited before coming to Scratch), and the "
+"dates and times of their visits"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:38
+#: templates/accounts/email_verification/parent_verification_email_plain.html:29
+msgid ""
+"Persistent identifiers, such as IP address, mobile device identifiers, or "
+"identifiers associated with cookies"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:43
+#: templates/accounts/email_verification/parent_verification_email_plain.html:31
+msgid ""
+"We disclose the information that we collect from children under 16 in the "
+"following circumstances:"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:46
+#: templates/accounts/email_verification/parent_verification_email_plain.html:33
+msgid ""
+"We share information with third-party service providers (e.g., data storage "
+"and processing facilities) that assist us in providing our services."
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:47
+#: templates/accounts/email_verification/parent_verification_email_plain.html:34
+msgid ""
+"We may share information with an acquirer, successor, or assignee as part of"
+" any merger, acquisition, debt financing, sale of company assets, or similar"
+" transaction, as well as in the event of an insolvency, bankruptcy, or "
+"receivership in which personal information is transferred to one or more "
+"third parties as one of our business assets."
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:48
+#: templates/accounts/email_verification/parent_verification_email_plain.html:35
+msgid ""
+"We may share information if we believe that doing so is legally required, or"
+" is in our interest to protect our property or other legal rights "
+"(including, but not limited to, enforcement of our agreements), or the "
+"rights or property of others, or otherwise to help protect the safety or "
+"security of the platform and other users of the platform."
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email.html:52
+#: templates/accounts/email_verification/parent_verification_email_plain.html:37
+msgid ""
+"For more information about Scratch’s information privacy practices, please "
+"review our privacy policy located at"
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email_plain.html:10
+msgid ""
+"Scratch is a coding platform designed for children ages 8-16 with a simple "
+"visual interface that allows young people to create digital stories, games, "
+"and animations. Scratch is also the world’s largest online coding community "
+"for children. Scratch is designed, developed, and moderated by the Scratch "
+"Foundation (https://www.scratchfoundation.org/), an independent nonprofit "
+"organization."
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email_plain.html:14
+#, python-format
+msgid ""
+"If you do not consent to your child using Scratch at all, see "
+"(%(delete_account_url)s) for steps to delete their account."
+msgstr ""
+
+#: templates/accounts/email_verification/parent_verification_email_plain.html:16
+msgid "To confirm your child's account, please use the link below:"
+msgstr ""
 
 #: templates/accounts/email_verification/passed_verification.html:21
 #: templates/registration/welcome_email_subject.html:1
@@ -864,7 +1028,7 @@ msgstr "Scratchでプロジェクトを作るには"
 
 #: templates/accounts/email_verification/passed_verification.html:33
 msgid "Try out starter projects"
-msgstr "初心者向けプロジェクトを試す"
+msgstr ""
 
 #: templates/accounts/email_verification/passed_verification.html:39
 msgid "Connect with other Scratchers"
@@ -899,15 +1063,27 @@ msgstr "Scratchアカウントを認証する"
 msgid "You just signed up for a new Scratch account with the username:"
 msgstr "以下のユーザー名で新しいScratchアカウントが登録されました:"
 
-#: templates/accounts/email_verification/verification_email.html:20
-msgid "To finish creating your account, click on the link below:"
-msgstr "アカウントの作成手続きを完了するには、下のリンクをクリックしてください:"
+#: templates/accounts/email_verification/verification_email.html:19
+msgid "and date of birth:"
+msgstr ""
 
-#: templates/accounts/email_verification/verification_email.html:24
+#: templates/accounts/email_verification/verification_email.html:23
+msgid ""
+"If you are under 16, we require parent permission and this email address "
+"must belong to an adult."
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email.html:27
+msgid ""
+"Please review your information and confirm your email address by clicking "
+"the button below."
+msgstr ""
+
+#: templates/accounts/email_verification/verification_email.html:31
 msgid "Confirm my account"
 msgstr "アカウントを認証する"
 
-#: templates/accounts/email_verification/verification_email.html:27
+#: templates/accounts/email_verification/verification_email.html:34
 msgid "Having trouble? Copy this link into your browser instead:"
 msgstr "問題がありますか? ブラウザーにリンクをコピーしてみてください:"
 
@@ -922,11 +1098,11 @@ msgstr ""
 "新しいScratchアカウント (%(scratch_url)s) が登録されました。\n"
 "アカウントの作成手続きを完了するには、下のリンクをクリックしてください。\n"
 
-#: templates/accounts/email_verification/verify_email_standalone.html:84
+#: templates/accounts/email_verification/verify_email_standalone.html:85
 msgid "Want to share on Scratch?"
 msgstr "Scratchで作品を共有したいですか?"
 
-#: templates/accounts/email_verification/verify_email_standalone.html:91
+#: templates/accounts/email_verification/verify_email_standalone.html:92
 #, python-format
 msgid ""
 "\n"
@@ -936,7 +1112,7 @@ msgstr ""
 "\n"
 "認証用のメールを<strong> %(email_address)s</strong>に送信しました。"
 
-#: templates/accounts/email_verification/verify_email_standalone.html:96
+#: templates/accounts/email_verification/verify_email_standalone.html:97
 #, python-format
 msgid ""
 "\n"
@@ -947,7 +1123,7 @@ msgstr ""
 "                        このアドレスの持ち主がアドレスを削除するようにリクエストしました。<a onClick=\"redirectParent('%(settings_url)s');\" href=\"#\">新しいアドレスに変更</a>してください。もし疑問があれば<a onClick=\"redirectParent('%(contact_us_url)s');\" href=\"#\">Scratchチームに連絡</a>してください。\n"
 "                    "
 
-#: templates/accounts/email_verification/verify_email_standalone.html:102
+#: templates/accounts/email_verification/verify_email_standalone.html:103
 #, python-format
 msgid ""
 "\n"
@@ -958,7 +1134,7 @@ msgstr ""
 "                        次のアドレスに送信した認証用メッセージをご覧ください。<strong>%(email_address)s</strong>\n"
 "                    "
 
-#: templates/accounts/email_verification/verify_email_standalone.html:112
+#: templates/accounts/email_verification/verify_email_standalone.html:113
 #, python-format
 msgid ""
 "Make sure your email address is correct (see <a "
@@ -969,7 +1145,7 @@ msgstr ""
 "onClick=\"redirectParent('%(settings_url)s');\" "
 "href=\"#\">アカウント設定</a>をご覧ください）。"
 
-#: templates/accounts/email_verification/verify_email_standalone.html:123
+#: templates/accounts/email_verification/verify_email_standalone.html:124
 msgid "Ok, back to Scratch"
 msgstr "OK、Scratchに戻ります"
 
@@ -991,7 +1167,7 @@ msgid "After changing your password, you will be prompted to log back in."
 msgstr "パスワードを変更し、再度ログインしてください。"
 
 #: templates/accounts/password_change_form.html:36
-#: templates/educators/includes/stuff/backbone-templates.html:668
+#: templates/educators/includes/stuff/backbone-templates.html:678
 msgid "Change Password"
 msgstr "パスワードの変更"
 
@@ -1051,215 +1227,226 @@ msgstr ""
 msgid "Take me back to Scratch!"
 msgstr "Scratchに戻る"
 
-#: templates/base.html:19
+#: templates/base.html:28
 msgid "Scratch"
 msgstr "Scratch"
 
-#: templates/base.html:19
+#: templates/base.html:28
 msgid "Imagine, Program, Share"
 msgstr "想像、プログラム、共有"
 
-#: templates/base.html:183
+#: templates/base.html:132
 msgid "Create"
 msgstr "作る"
 
-#: templates/base.html:184
+#: templates/base.html:133
 msgid "Explore"
 msgstr "見る"
 
-#: templates/base.html:185 templates/base.html.py:347
+#: templates/base.html:134 templates/base.html.py:303
 msgid "Ideas"
 msgstr "アイデア"
 
-#: templates/base.html:186 templates/base.html.py:324
+#: templates/base.html:135 templates/base.html.py:279
 msgid "About"
 msgstr "Scratchについて"
 
-#: templates/base.html:201 templates/info/educators.html:76
-#: templates/modal-registration.html:8
+#: templates/base.html:150 templates/modal-registration.html:8
 msgid "Join Scratch"
 msgstr "Scratchに参加しよう"
 
-#: templates/base.html:204 templates/base.html.py:215 templates/base.html:225
+#: templates/base.html:153 templates/base.html.py:164 templates/base.html:174
 #: templates/modal-login.html:9 templates/modal-login.html.py:38
 #: templates/modal-registration.html:249
 msgid "Sign in"
 msgstr "サインイン"
 
-#: templates/base.html:216
+#: templates/base.html:165
 msgid "Need help?"
 msgstr "ヘルプが必要ですか?"
 
-#: templates/base.html:232
+#: templates/base.html:181
 msgid "messages - updates and notices"
 msgstr "メッセージ - 更新情報とお知らせ"
 
-#: templates/base.html:233
+#: templates/base.html:182
 msgid "my stuff - manage projects and studios"
 msgstr "私の作品 - 作品の管理と制作の場所"
 
-#: templates/base.html:240
+#: templates/base.html:189
 msgid "Profile"
 msgstr "プロフィール"
 
-#: templates/base.html:241 templates/mystuff/base.html:21
+#: templates/base.html:190 templates/mystuff/base.html:21
 msgid "My Stuff"
 msgstr "私の作品"
 
-#: templates/base.html:243 templates/educators/base.html:23
+#: templates/base.html:192 templates/educators/base.html:23
 #: templates/educators/includes/stuff/backbone-templates.html:11
 msgid "My Classes"
 msgstr "私のクラス"
 
-#: templates/base.html:246
+#: templates/base.html:195
 msgid "My Class"
 msgstr "自分のクラス"
 
-#: templates/base.html:248
+#: templates/base.html:197
 msgid "Account settings"
 msgstr "アカウント設定"
 
-#: templates/base.html:252
+#: templates/base.html:201
 msgid "Sign out"
 msgstr "サインアウト"
 
-#: templates/base.html:271
+#: templates/base.html:219
+#, python-format
+msgid ""
+"The Scratch privacy policy has been updated, effective May 25, 2023. You can"
+" see the new policy <a href=\"%(privacy_url)s\">here</a>."
+msgstr ""
+
+#: templates/base.html:226
 #, python-format
 msgid ""
 "<a id=\"confirm-email-popup\" href=\"#\">Confirm your email</a> to enable "
 "sharing. <a href=\"%(faq_url)s#accounts\">Having trouble?</a>"
 msgstr ""
-"共有機能を使うには、<a id=\"confirm-email-popup\" "
-"href=\"#\">あなたのメールアドレスを認証してください</a>。<a "
-"href=\"%(faq_url)s#accounts\">なにかお困りですか？</a>"
 
-#: templates/base.html:326 templates/info/about.html:13
-#: templates/mail/base.html:61 templates/mail/scratch3_style_base.html:49
+#: templates/base.html:281 templates/mail/base.html:61
+#: templates/mail/scratch3_style_base.html:49
 msgid "About Scratch"
 msgstr "Scratchについて"
 
-#: templates/base.html:327 templates/info/parents.html:14
+#: templates/base.html:282
 msgid "For Parents"
 msgstr "保護者の方へ"
 
-#: templates/base.html:328 templates/info/educators.html:14
+#: templates/base.html:283
 msgid "For Educators"
 msgstr "教育関係者の方へ"
 
-#: templates/base.html:329
+#: templates/base.html:284
 msgid "For Developers"
 msgstr "開発者向け"
 
-#: templates/base.html:330
-msgid "Credits"
-msgstr "クレジット"
+#: templates/base.html:285
+msgid "Our Team"
+msgstr "私たちのチーム"
 
-#: templates/base.html:331
+#: templates/base.html:286
+msgid "Donors"
+msgstr "寄付者"
+
+#: templates/base.html:287
 msgid "Jobs"
 msgstr "求人"
 
-#: templates/base.html:332
-msgid "Press"
-msgstr "プレス情報"
+#: templates/base.html:288
+msgid "Donate"
+msgstr "寄付"
 
-#: templates/base.html:336 templates/info/parents.html:78
+#: templates/base.html:292
 msgid "Community"
 msgstr "コミュニティ"
 
-#: templates/base.html:338
+#: templates/base.html:294
 #: templates/registration/welcome_email_message.html:26
 msgid "Community Guidelines"
 msgstr "コミュニティーガイドライン"
 
-#: templates/base.html:339
+#: templates/base.html:295
 msgid "Discussion Forums"
 msgstr "ディスカッションフォーラム"
 
-#: templates/base.html:340
+#: templates/base.html:296
 msgid "Scratch Wiki"
 msgstr "Scratch Wiki"
 
-#: templates/base.html:341
+#: templates/base.html:297
 msgid "Statistics"
 msgstr "統計情報"
 
-#: templates/base.html:345 templates/info/codingforall.html:73
-msgid "Support"
-msgstr "サポート"
+#: templates/base.html:301
+msgid "Resources"
+msgstr "リソース"
 
-#: templates/base.html:348
+#: templates/base.html:304
 msgid "FAQ"
-msgstr "よくある質問"
+msgstr ""
 
-#: templates/base.html:349
-msgid "Offline Editor"
-msgstr "オフラインエディター"
+#: templates/base.html:305
+msgid "Download"
+msgstr "ダウンロード"
 
-#: templates/base.html:350
+#: templates/base.html:306
 msgid "Contact Us"
 msgstr "連絡先"
 
-#: templates/base.html:351
-msgid "Scratch Store"
-msgstr "Scratchストア"
-
-#: templates/base.html:352
-msgid "Donate"
-msgstr "寄付"
-
-#: templates/base.html:356
+#: templates/base.html:310
 msgid "Legal"
 msgstr "法的表示"
 
-#: templates/base.html:358
+#: templates/base.html:312
 msgid "Terms of Use"
-msgstr "利用規約"
+msgstr ""
 
-#: templates/base.html:359 templates/mail/base.html:60
+#: templates/base.html:313 templates/mail/base.html:60
 #: templates/mail/scratch3_style_base.html:48
 msgid "Privacy Policy"
-msgstr "プライバシー・ポリシー"
+msgstr ""
 
-#: templates/base.html:360 templates/info/DMCA.html:10
+#: templates/base.html:314
+msgid "Cookies"
+msgstr ""
+
+#: templates/base.html:315
 msgid "DMCA"
 msgstr "デジタルミレニアム著作権法（DMCA）"
 
-#: templates/base.html:364
+#: templates/base.html:316
+msgid "DSA Requirements"
+msgstr ""
+
+#: templates/base.html:320
 msgid "Scratch Family"
 msgstr "関連サイト"
 
-#: templates/base.html:366
+#: templates/base.html:322
 msgid "ScratchEd"
 msgstr "ScratchEd"
 
-#: templates/base.html:367
+#: templates/base.html:323
 msgid "ScratchJr"
 msgstr "ScratchJr"
 
-#: templates/base.html:368
+#: templates/base.html:324
 msgid "Scratch Day"
 msgstr "Scratch Day"
 
-#: templates/base.html:369
+#: templates/base.html:325
 msgid "Scratch Conference"
 msgstr "Scratchカンファレンス"
 
-#: templates/base.html:370
+#: templates/base.html:326
 msgid "Scratch Foundation"
 msgstr "Scratch財団"
 
+#: templates/base.html:327
+msgid "Scratch Store"
+msgstr "Scratchストア"
+
 #: templates/carousel/carousel.html:10 templates/carousel/carousel.html:12
 #: templates/carousel/carousel.html:14
-#: templates/educators/classroom_detail.html:188
-#: templates/educators/classroom_detail.html:218
+#: templates/educators/classroom_detail.html:189
+#: templates/educators/classroom_detail.html:219
 #: templates/profiles/profile_detail.html:213
 #: templates/profiles/profile_detail.html:240
 #: templates/profiles/profile_detail.html:276
 #: templates/profiles/profile_detail.html:312
 #: templates/profiles/profile_detail.html:332
 #: templates/profiles/profile_detail.html:352
-#: templates/profiles/profile_detail.html:389 templates/projects/base.html:321
-#: templates/projects/base.html.py:348
+#: templates/profiles/profile_detail.html:389 templates/projects/base.html:322
+#: templates/projects/base.html.py:349
 #: templates/scratch_admin/admin_profile_view.html:102
 #: templates/scratch_admin/admin_profile_view.html:118
 #: templates/scratch_admin/admin_profile_view.html:134
@@ -1283,10 +1470,7 @@ msgstr "ｉｎ"
 #: templates/explore/includes/related_projects.html:46
 #: templates/explore/includes/related_projects.html:75
 #: templates/explore/includes/related_projects2.html:8
-#: templates/galleries/includes/activity_list.html:94
-#: templates/galleries/includes/project-thumb.html:22
-#: templates/galleries/includes/project-thumb.html:24
-#: templates/projects/base.html:71 templates/projects/base.html.py:332
+#: templates/projects/base.html:71 templates/projects/base.html.py:333
 #: templates/projects/includes/project_list.html:11
 msgid "by"
 msgstr "書いた人"
@@ -1319,15 +1503,15 @@ msgstr "データの値"
 msgid "Time"
 msgstr "時間"
 
-#: templates/comments/comment-module.html:15
+#: templates/comments/comment-module.html:16
 msgid "Turn off commenting"
 msgstr "コメントをオフにする"
 
-#: templates/comments/comment-module.html:26
+#: templates/comments/comment-module.html:28
 msgid "Leave a comment"
 msgstr "コメントを書く"
 
-#: templates/comments/comment-module.html:31
+#: templates/comments/comment-module.html:33
 msgid ""
 "Remember that this project may have been made by someone new to programming.\n"
 "                            Make sure your comments are friendly and respectful."
@@ -1335,52 +1519,52 @@ msgstr ""
 "プログラミングをはじめたばかりの人が作ったプロジェクトかもしれません。\n"
 "                            親切でていねいなコメントを心がけてください。"
 
-#: templates/comments/comment-module.html:37
+#: templates/comments/comment-module.html:39
 msgid "You have <span id=\"chars-left\">500</span> characters left."
 msgstr "残り<span id=\"chars-left\">500</span>文字。"
 
-#: templates/comments/comment-module.html:40
+#: templates/comments/comment-module.html:42
 #: templates/includes/backbone-templates.html:80
 msgid "Post"
 msgstr "投稿"
 
-#: templates/comments/comment-module.html:41
+#: templates/comments/comment-module.html:43
 #: templates/educators/add_class_modal.html:35
-#: templates/educators/add_gallery_modal.html:33
-#: templates/educators/includes/stuff/backbone-templates.html:667
-#: templates/educators/includes/stuff/backbone-templates.html:852
-#: templates/educators/includes/stuff/backbone-templates.html:878
+#: templates/educators/add_gallery_modal.html:40
+#: templates/educators/includes/stuff/backbone-templates.html:677
+#: templates/educators/includes/stuff/backbone-templates.html:862
+#: templates/educators/includes/stuff/backbone-templates.html:888
 #: templates/includes/backbone-templates.html:81
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: templates/comments/comment-module.html:47
+#: templates/comments/comment-module.html:49
 #, python-format
 msgid "Sorry, comment posting has been turned off for this %(tType)s"
 msgstr "申し訳ありませんが、 %(tType)s へのコメント投稿はオフに設定されています"
 
-#: templates/comments/comment-module.html:51
+#: templates/comments/comment-module.html:53
 msgid ""
 "Sorry comment posting is not available right now. It should be back soon!"
 msgstr "ごめんなさい、コメントの投稿は現在利用できません。すぐに元通りになります!"
 
-#: templates/comments/comment-module.html:57
+#: templates/comments/comment-module.html:59
 msgid "Comments loading..."
 msgstr "コメントを読み込み中..."
 
-#: templates/comments/comment.html:24 templates/comments/comment.html.py:27
+#: templates/comments/comment.html:25 templates/comments/comment.html.py:28
 #: templates/educators/includes/stuff/backbone-templates.html:321
 #: templates/includes/backbone-templates.html:19
-#: templates/mystuff/mystuff.html:157
+#: templates/mystuff/mystuff.html:153
 msgid "Delete"
 msgstr "削除"
 
-#: templates/comments/comment.html:36 templates/comments/comment.html.py:38
+#: templates/comments/comment.html:37 templates/comments/comment.html.py:39
 #: templates/includes/backbone-templates.html:21
 msgid "Report"
 msgstr "報告"
 
-#: templates/comments/comment.html:62
+#: templates/comments/comment.html:64
 #: templates/comments/includes/comment.html:12
 msgid "Reply"
 msgstr "返信"
@@ -1436,99 +1620,103 @@ msgid "Add a New Class Studio "
 msgstr "新しいクラススタジオを追加"
 
 #: templates/educators/add_gallery_modal.html:10
+msgid "For Class"
+msgstr ""
+
+#: templates/educators/add_gallery_modal.html:14
 msgid "Studio Name"
 msgstr "スタジオ名"
 
-#: templates/educators/add_gallery_modal.html:20
+#: templates/educators/add_gallery_modal.html:24
 msgid "Studio Description"
 msgstr "スタジオの説明"
 
-#: templates/educators/add_gallery_modal.html:42
-#: templates/educators/register_student_modal.html:115
+#: templates/educators/add_gallery_modal.html:49
+#: templates/educators/register_student_modal.html:117
 #: templates/modal-registration.html:269
 msgid "Your username must be between 3 and 20 characters"
 msgstr "ユーザー名は3文字から20文字にしてください"
 
-#: templates/educators/add_gallery_modal.html:43
-#: templates/educators/register_student_modal.html:116
+#: templates/educators/add_gallery_modal.html:50
+#: templates/educators/register_student_modal.html:118
 #: templates/modal-registration.html:270
 msgid "Sorry, that username already exists"
 msgstr "申し訳ありませんが、そのユーザー名は既に使われています。"
 
-#: templates/educators/add_gallery_modal.html:44
-#: templates/educators/register_student_modal.html:117
+#: templates/educators/add_gallery_modal.html:51
+#: templates/educators/register_student_modal.html:119
 #: templates/modal-registration.html:271
 msgid "Invalid username"
 msgstr "無効なユーザー名"
 
-#: templates/educators/add_gallery_modal.html:45
-#: templates/educators/register_student_modal.html:118
+#: templates/educators/add_gallery_modal.html:52
+#: templates/educators/register_student_modal.html:120
 #: templates/modal-registration.html:272
 msgid "Hmm, that looks inappropriate"
 msgstr "よくない言葉が使われているようです"
 
-#: templates/educators/add_gallery_modal.html:46
-#: templates/educators/register_student_modal.html:119
+#: templates/educators/add_gallery_modal.html:53
+#: templates/educators/register_student_modal.html:121
 #: templates/modal-registration.html:273
 msgid "You must enter a username"
 msgstr "必ずユーザー名を入力してください"
 
-#: templates/educators/add_gallery_modal.html:47
-#: templates/educators/register_student_modal.html:120
+#: templates/educators/add_gallery_modal.html:54
+#: templates/educators/register_student_modal.html:122
 #: templates/modal-registration.html:274
 msgid "Your username may only contain letters, numbers, - and _"
 msgstr "ユーザー名に半角英数字やアンダーバー(_)以外が含まれています。"
 
-#: templates/educators/add_gallery_modal.html:48
+#: templates/educators/add_gallery_modal.html:55
 #: templates/modal-registration.html:275
 #: templates/registration/password_reset_confirm.html:44
 msgid "Your password cannot be 'password'"
 msgstr "パスワードに'password'は使えません"
 
-#: templates/educators/add_gallery_modal.html:49
+#: templates/educators/add_gallery_modal.html:56
 #: templates/modal-registration.html:276
 #: templates/registration/password_reset_confirm.html:45
 msgid "Your password must be at least 6 characters"
 msgstr "パスワードは6文字以上でなければなりません"
 
-#: templates/educators/add_gallery_modal.html:50
+#: templates/educators/add_gallery_modal.html:57
 #: templates/modal-registration.html:277
 msgid "You must enter a password"
 msgstr "必ずパスワードを入力してください"
 
-#: templates/educators/add_gallery_modal.html:51
+#: templates/educators/add_gallery_modal.html:58
 #: templates/modal-registration.html:278
 #: templates/registration/password_reset_confirm.html:47
 msgid "Your passwords do not match"
 msgstr "パスワードが一致していません"
 
-#: templates/educators/add_gallery_modal.html:52
+#: templates/educators/add_gallery_modal.html:59
 #: templates/modal-registration.html:279
 #: templates/registration/password_reset_confirm.html:48
 msgid "Your password cannot match your username"
 msgstr "ユーザー名とまったく同じパスワードは使用できません。"
 
-#: templates/educators/add_gallery_modal.html:53
+#: templates/educators/add_gallery_modal.html:60
 #: templates/modal-registration.html:280
 msgid "You must select a birth month and year"
 msgstr "生まれた年と月を選んでください"
 
-#: templates/educators/add_gallery_modal.html:54
+#: templates/educators/add_gallery_modal.html:61
 #: templates/modal-registration.html:281
 msgid "You must specify a gender"
 msgstr "必ず性別を設定してください"
 
-#: templates/educators/add_gallery_modal.html:55
+#: templates/educators/add_gallery_modal.html:62
 #: templates/modal-registration.html:282
 msgid "You must select a country"
 msgstr "必ず国を選んでください"
 
-#: templates/educators/add_gallery_modal.html:56
+#: templates/educators/add_gallery_modal.html:63
 #: templates/modal-registration.html:283
 msgid "You must provide an email address"
 msgstr "電子メールアドレスを入力してください。"
 
-#: templates/educators/add_gallery_modal.html:57
+#: templates/educators/add_gallery_modal.html:64
 #: templates/modal-registration.html:284
 msgid "You must provide valid email address"
 msgstr "正しい電子メールアドレスを入力してください"
@@ -1611,25 +1799,21 @@ msgstr "注目のプロジェクトを変更する"
 msgid "Latest Activity"
 msgstr "最近の活動"
 
-#: templates/educators/classroom_detail.html:177
-msgid "Report this class"
-msgstr "このクラスを報告する"
-
-#: templates/educators/classroom_detail.html:187
+#: templates/educators/classroom_detail.html:188
 #: templates/educators/classroom_gallery_list.html:5
 msgid "Class Studios"
 msgstr "クラススタジオ"
 
-#: templates/educators/classroom_detail.html:204
+#: templates/educators/classroom_detail.html:205
 msgid "This class doesn't have any studios yet"
 msgstr "このクラスにはスタジオがありません"
 
-#: templates/educators/classroom_detail.html:206
+#: templates/educators/classroom_detail.html:207
 #, python-format
 msgid "You can add studios in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr "スタジオは<a href=\" %(educator_stuff_url)s\">私のクラス</a>で追加できます"
 
-#: templates/educators/classroom_detail.html:217
+#: templates/educators/classroom_detail.html:218
 #: templates/educators/includes/stuff/backbone-templates.html:71
 #: templates/educators/includes/stuff/backbone-templates.html:144
 #: templates/educators/includes/stuff/sort-classrooms-dropdown.html:12
@@ -1637,11 +1821,11 @@ msgstr "スタジオは<a href=\" %(educator_stuff_url)s\">私のクラス</a>�
 msgid "Students"
 msgstr "生徒"
 
-#: templates/educators/classroom_detail.html:234
+#: templates/educators/classroom_detail.html:235
 msgid "This class doesn't have students yet"
 msgstr "このクラスには、まだ生徒が参加していません"
 
-#: templates/educators/classroom_detail.html:236
+#: templates/educators/classroom_detail.html:237
 #, python-format
 msgid "You can add students in <a href=\"%(educator_stuff_url)s\">My Classes</a>"
 msgstr "生徒は<a href=\"%(educator_stuff_url)s\">私のクラス</a>から参加させることができます"
@@ -1922,14 +2106,13 @@ msgstr "設定"
 
 #: templates/educators/includes/stuff/backbone-templates.html:72
 #: templates/educators/includes/stuff/backbone-templates.html:147
-#: templates/projects/base.html:347
+#: templates/projects/base.html:348
 #: templates/projects/includes/shared/shared-project-actions.html:5
 msgid "Studios"
 msgstr "スタジオ"
 
 #: templates/educators/includes/stuff/backbone-templates.html:73
 #: templates/educators/includes/stuff/backbone-templates.html:150
-#: templates/galleries/base.html:123
 msgid "Activity"
 msgstr "活動内容"
 
@@ -1939,7 +2122,6 @@ msgstr "クラスをもう一度開く"
 
 #: templates/educators/includes/stuff/backbone-templates.html:174
 #: templates/educators/includes/stuff/backbone-templates.html:185
-#: templates/galleries/base.html:55
 msgid "Change"
 msgstr "変更"
 
@@ -1948,8 +2130,8 @@ msgid "What the Class is working on"
 msgstr "このクラスが現在、取り組んでいる内容"
 
 #: templates/educators/includes/stuff/backbone-templates.html:250
-#: templates/educators/includes/stuff/backbone-templates.html:861
-#: templates/educators/includes/stuff/backbone-templates.html:877
+#: templates/educators/includes/stuff/backbone-templates.html:871
+#: templates/educators/includes/stuff/backbone-templates.html:887
 msgid "End Class"
 msgstr "クラスを終了する"
 
@@ -2002,7 +2184,7 @@ msgstr "生徒用のアカウント作成リンク"
 
 #: templates/educators/includes/stuff/backbone-templates.html:366
 #: templates/educators/includes/stuff/backbone-templates.html:380
-#: templates/educators/includes/stuff/backbone-templates.html:801
+#: templates/educators/includes/stuff/backbone-templates.html:811
 msgid "CSV Upload"
 msgstr "CSV アップロード"
 
@@ -2086,23 +2268,23 @@ msgstr "がスタジオにコメントしました"
 msgid "performed an action. <em>"
 msgstr "がアクションを実行しました。<em>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:600
+#: templates/educators/includes/stuff/backbone-templates.html:604
 #, python-format
 msgid "%(target_username)s was banned."
 msgstr "%(target_username)s はブロックされました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:602
+#: templates/educators/includes/stuff/backbone-templates.html:606
 #, python-format
 msgid "%(target_username)s was unbanned."
 msgstr "%(target_username)s のブロックが解除されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:604
-#: templates/educators/includes/stuff/backbone-templates.html:606
+#: templates/educators/includes/stuff/backbone-templates.html:608
+#: templates/educators/includes/stuff/backbone-templates.html:610
 #, python-format
 msgid "%(target_username)s was excluded from homepage."
 msgstr "%(target_username)s はホームページから除外されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:608
+#: templates/educators/includes/stuff/backbone-templates.html:612
 #, python-format
 msgid ""
 "%(target_username)s was notified by a Scratch Administrator. Notification "
@@ -2111,108 +2293,120 @@ msgstr ""
 "%(target_username)s はScratchの管理者から通告されました。通告のタイプ:<%%- "
 "admin_action.extra_data.notification_type || 'Unknown' %%>"
 
-#: templates/educators/includes/stuff/backbone-templates.html:610
+#: templates/educators/includes/stuff/backbone-templates.html:614
 #, python-format
 msgid "%(target_username)s was banned automatically."
 msgstr "%(target_username)s　は自動的にブロックされました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:612
+#: templates/educators/includes/stuff/backbone-templates.html:616
 #, python-format
 msgid "%(project)s by %(target_username)s was removed automatically."
 msgstr "%(target_username)s の  %(project)s は自動的に削除されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:615
+#: templates/educators/includes/stuff/backbone-templates.html:619
 #, python-format
 msgid "%(project)s by %(target_username)s was censored."
 msgstr "%(target_username)s の  %(project)s は検閲されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:617
+#: templates/educators/includes/stuff/backbone-templates.html:621
 #, python-format
 msgid "%(project)s by %(target_username)s was uncensored."
 msgstr "%(target_username)s の  %(project)s は検閲されましたが、修正されていません。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:620
+#: templates/educators/includes/stuff/backbone-templates.html:624
 #, python-format
 msgid ""
 "%(project)s by %(target_username)s was reviewed by a Scratch Administrator."
 msgstr "%(project)s （作成者：%(target_username)s）がScratch管理者によって調査されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:622
+#: templates/educators/includes/stuff/backbone-templates.html:626
 #, python-format
 msgid ""
 "%(project)s by %(target_username)s was deleted by a Scratch Administrator."
 msgstr "%(target_username)s の  %(project)s はScratch管理者により削除されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:625
+#: templates/educators/includes/stuff/backbone-templates.html:629
 #, python-format
 msgid "%(target_username)s was deleted by a Scratch Administrator."
 msgstr "%(target_username)s はScratch管理者により削除されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:628
+#: templates/educators/includes/stuff/backbone-templates.html:632
 #, python-format
 msgid "%(gallery)s was reviewed by a Scratch Administrator."
 msgstr "%(gallery)s がScratch管理者によって調査されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:630
+#: templates/educators/includes/stuff/backbone-templates.html:634
 #, python-format
 msgid "%(gallery)s was deleted by a Scratch Administrator."
 msgstr "%(gallery)s はScratch管理者によって削除されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:632
+#: templates/educators/includes/stuff/backbone-templates.html:636
 #, python-format
 msgid "%(target_username)s deleted their own account."
 msgstr "%(target_username)s はあなたが削除しました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:634
+#: templates/educators/includes/stuff/backbone-templates.html:638
 #, python-format
 msgid ""
 "The email address of %(target_username)s was confirmed by a Scratch "
 "Administrator"
 msgstr "%(target_username)s のメールアドレスに対するScratch管理者の認証が終了しました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:636
+#: templates/educators/includes/stuff/backbone-templates.html:640
 #, python-format
 msgid ""
 "The email address of %(target_username)s was set as not confirmed by a "
 "Scratch Administrator"
 msgstr "%(target_username)s のメールアドレスが、Scratch管理者によって未承認状態に設定されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:638
+#: templates/educators/includes/stuff/backbone-templates.html:643
+#, python-format
+msgid "%(target_username)s was automatically muted by our comment filters."
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:645
+#, python-format
+msgid ""
+"%(target_username)s was automatically muted by our comment filters. The "
+"comment they tried to post was: %(muted_comment)s"
+msgstr ""
+
+#: templates/educators/includes/stuff/backbone-templates.html:648
 #, python-format
 msgid "%(target_username)s had an admin action performed."
 msgstr "%(target_username)s に管理者アクションが実施されました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:654
+#: templates/educators/includes/stuff/backbone-templates.html:664
 #, python-format
 msgid "Change Password for %(username)s"
 msgstr "%(username)s のパスワードを変更する"
 
-#: templates/educators/includes/stuff/backbone-templates.html:658
+#: templates/educators/includes/stuff/backbone-templates.html:668
 msgid "New password"
 msgstr "新しいパスワード"
 
-#: templates/educators/includes/stuff/backbone-templates.html:662
+#: templates/educators/includes/stuff/backbone-templates.html:672
 msgid "New password confirmation"
 msgstr "新しいパスワード（確認用）"
 
-#: templates/educators/includes/stuff/backbone-templates.html:678
+#: templates/educators/includes/stuff/backbone-templates.html:688
 #, python-format
 msgid "%(username)s Account Options"
 msgstr "%(username)s アカウント設定"
 
-#: templates/educators/includes/stuff/backbone-templates.html:685
+#: templates/educators/includes/stuff/backbone-templates.html:695
 msgid "Remove Icon"
 msgstr "アイコンの削除"
 
-#: templates/educators/includes/stuff/backbone-templates.html:688
+#: templates/educators/includes/stuff/backbone-templates.html:698
 msgid "There are two ways to change your student's password."
 msgstr "生徒のパスワードを変更する方法は2種類あります。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:691
+#: templates/educators/includes/stuff/backbone-templates.html:701
 msgid "Prompt student to change password on next login"
 msgstr "次回ログイン時に、生徒にパスワードの変更を促す"
 
-#: templates/educators/includes/stuff/backbone-templates.html:692
+#: templates/educators/includes/stuff/backbone-templates.html:702
 #, python-format
 msgid ""
 "This student's password will be reset to your username, %(username)s. After "
@@ -2220,42 +2414,42 @@ msgid ""
 msgstr ""
 "この生徒のパスワードはリセットされてあなたのユーザー名「%(username)s」になります。次回この生徒がログインしたときに、新しいパスワードを選ぶよう画面に表示されます。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:695
+#: templates/educators/includes/stuff/backbone-templates.html:705
 msgid "Prompt Student"
 msgstr "生徒に通知する"
 
-#: templates/educators/includes/stuff/backbone-templates.html:700
+#: templates/educators/includes/stuff/backbone-templates.html:710
 msgid "Manually change the student's password"
 msgstr "手動で生徒のパスワードを変更する"
 
-#: templates/educators/includes/stuff/backbone-templates.html:701
+#: templates/educators/includes/stuff/backbone-templates.html:711
 msgid ""
 "You will be redirected to a screen where you can choose the student's "
 "password."
 msgstr "生徒のパスワード選択画面にリダイレクトします。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:704
+#: templates/educators/includes/stuff/backbone-templates.html:714
 msgid "Manually Change"
 msgstr "手動で変更"
 
-#: templates/educators/includes/stuff/backbone-templates.html:712
-#: templates/educators/includes/stuff/backbone-templates.html:767
+#: templates/educators/includes/stuff/backbone-templates.html:722
+#: templates/educators/includes/stuff/backbone-templates.html:777
 #: templates/educators/student-modal-registration.html:90
 #: templates/modal-registration.html:255
 msgid "Close"
 msgstr "閉じる"
 
-#: templates/educators/includes/stuff/backbone-templates.html:722
+#: templates/educators/includes/stuff/backbone-templates.html:732
 msgid "Sign-up Link"
 msgstr "アカウント作成リンク"
 
-#: templates/educators/includes/stuff/backbone-templates.html:725
+#: templates/educators/includes/stuff/backbone-templates.html:735
 msgid ""
 "Get a sign-up link that students can use to register for your class. They "
 "will be directed to a class page where they can \"Join this Class\". "
 msgstr "生徒がクラスに登録することができるリンクを取得します。生徒は、「クラスに参加する」ことができるクラスページに案内されます。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:734
+#: templates/educators/includes/stuff/backbone-templates.html:744
 msgid ""
 "\n"
 "                        Usernames must\n"
@@ -2266,52 +2460,52 @@ msgstr ""
 "\n"
 "ユーザー名には生徒を識別できる情報を<span class=\"underline\">含めない</span>でください。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:754
+#: templates/educators/includes/stuff/backbone-templates.html:764
 msgid ""
 "I agree to remind my students not to use their real names, school name, "
 "contact information or student ID numbers."
 msgstr "私は、生徒に本名、学校名、連絡先や生徒IDを使わせないよう知らせることに同意します。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:760
+#: templates/educators/includes/stuff/backbone-templates.html:770
 msgid "Get Link"
 msgstr "リンクを取得する"
 
-#: templates/educators/includes/stuff/backbone-templates.html:763
-#: templates/educators/includes/stuff/backbone-templates.html:808
+#: templates/educators/includes/stuff/backbone-templates.html:773
+#: templates/educators/includes/stuff/backbone-templates.html:818
 msgid "Type CTRL+C on Windows or &#8984;+C on Mac to copy the link."
 msgstr "Ctrl+C(Windowsの場合) または &#8984;+C(Macの場合)でリンクがコピーできます。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:776
+#: templates/educators/includes/stuff/backbone-templates.html:786
 msgid "Upload CSV"
 msgstr "CSVをアップロード"
 
-#: templates/educators/includes/stuff/backbone-templates.html:779
+#: templates/educators/includes/stuff/backbone-templates.html:789
 msgid ""
 "You can quickly create up to 50 student accounts by uploading a CSV of "
 "usernames and passwords. See how to format a CSV below."
 msgstr ""
 "ユーザー名とパスワードを含むCSVファイルをアップロードして、50個まで生徒用アカウントをすばやく作成できます。CSVの書式については以下をご覧ください。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:780
+#: templates/educators/includes/stuff/backbone-templates.html:790
 msgid "Provide Usernames and Passwords"
 msgstr "ユーザー名とパスワードを提供する"
 
-#: templates/educators/includes/stuff/backbone-templates.html:781
+#: templates/educators/includes/stuff/backbone-templates.html:791
 msgid ""
 "Usernames are visible to the public, so do not use any personal information."
 " Instead, use aspects from the subject you are teaching, favorite foods, or "
 "animals"
 msgstr "ユーザー名は公開されるため、個人情報は使わないでください。その代わり、教えている教科や、好きな食べ物や動物などを使いましょう。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:788
+#: templates/educators/includes/stuff/backbone-templates.html:798
 msgid "Download example"
 msgstr "例をダウンロードする"
 
-#: templates/educators/includes/stuff/backbone-templates.html:791
+#: templates/educators/includes/stuff/backbone-templates.html:801
 msgid "Teacher Account Setup Guide"
 msgstr "教師用アカウント セットアップガイド"
 
-#: templates/educators/includes/stuff/backbone-templates.html:819
+#: templates/educators/includes/stuff/backbone-templates.html:829
 msgid ""
 "\n"
 "                        Usernames must\n"
@@ -2322,7 +2516,7 @@ msgstr ""
 "\n"
 "ユーザー名には生徒を識別できる情報を<span class=\"underline\">含めない</span>でください。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:839
+#: templates/educators/includes/stuff/backbone-templates.html:849
 msgid ""
 "\n"
 "                        I understand that for safety and privacy, Scratch must\n"
@@ -2333,22 +2527,22 @@ msgstr ""
 "\n"
 "安全とプライバシーの確保のため、Scratchは本名、学校名、連絡先情報を含むすべてのアカウントを<span class=\"attention\">削除</span>しなければならないことを理解しました。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:851
+#: templates/educators/includes/stuff/backbone-templates.html:861
 msgid "Upload"
 msgstr "アップロード"
 
-#: templates/educators/includes/stuff/backbone-templates.html:864
+#: templates/educators/includes/stuff/backbone-templates.html:874
 msgid "Are you sure you want to end the following class:"
 msgstr "本当に、次のクラスを終了してもよいですか："
 
-#: templates/educators/includes/stuff/backbone-templates.html:866
+#: templates/educators/includes/stuff/backbone-templates.html:876
 msgid ""
 "When you end a class, students will no longer be able to log in (but their "
 "projects will still be visible on the site)."
 msgstr ""
 "クラスを終了すると、生徒アカウントからのログインができなくなります（ただし、生徒が作成したプロジェクトは本サイト上に目に見える形で残されます）。"
 
-#: templates/educators/includes/stuff/backbone-templates.html:869
+#: templates/educators/includes/stuff/backbone-templates.html:879
 msgid "To confirm, please enter your password"
 msgstr "確認のため、パスワードを入力してください。"
 
@@ -2417,15 +2611,15 @@ msgstr ""
 "\n"
 "安全とプライバシーの確保のため、Scratchは本名、学校名、連絡先情報を含むすべてのアカウントを<span class=\"attention\">削除</span>しなければならないことを理解しました。"
 
-#: templates/educators/register_student_modal.html:90
+#: templates/educators/register_student_modal.html:91
 msgid "Will be set to the teacher's username:"
 msgstr "教師のユーザー名にセットされます:"
 
-#: templates/educators/register_student_modal.html:121
+#: templates/educators/register_student_modal.html:123
 msgid "That class already has the maximum number of students allowed"
 msgstr "クラスに生徒はこれ以上追加できません"
 
-#: templates/educators/register_student_modal.html:122
+#: templates/educators/register_student_modal.html:124
 msgid "Please confirm that you understand"
 msgstr "理解したことを確認してください"
 
@@ -2452,16 +2646,15 @@ msgstr "Scratchをはじめたばかりですか?"
 #: templates/educators/registration/approval_email_message.html:15
 #, python-format
 msgid "Read our <a href=\" %(comm_link)s\">Community Guidelines</a>."
-msgstr "<a href=\" %(comm_link)s\">コミュニティーガイドライン</a>を読む。"
+msgstr ""
 
 #: templates/educators/registration/approval_email_message.html:16
 msgid ""
 "Review the <a "
-"href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">Getting"
-" Started Guide</a> for a deeper dive into the Scratch editor."
+"href=\"https://resources.scratch.mit.edu/www/guides/en/scratch-getting-"
+"started-guide.pdf\">Getting Started Guide</a> for a deeper dive into the "
+"Scratch editor."
 msgstr ""
-"Scratchエディターをより深く理解するために、<a "
-"href=\"https://docs.google.com/presentation/d/1-LU3rTvqwfgwa3eqrMrSzM_46FqOIHML0qYioxHLnrE/view\">始め方ガイド</a>を確認してください。"
 
 #: templates/educators/registration/approval_email_message.html:17
 #, python-format
@@ -2478,7 +2671,7 @@ msgstr "次のステップ"
 #: templates/educators/registration/approval_email_message.html:23
 #, python-format
 msgid "Learn more about managing <a href=\"%(faq_link)s\">Teacher Accounts</a>."
-msgstr "<a href=\"%(faq_link)s\">教師用アカウント</a>の管理についてもっと知る。"
+msgstr ""
 
 #: templates/educators/registration/approval_email_message.html:24
 #, python-format
@@ -2504,19 +2697,19 @@ msgstr ""
 
 #: templates/educators/registration/approval_email_message.txt:7
 msgid "Read our Community Guidelines"
-msgstr "コミュニティ・ガイドラインを読む"
+msgstr ""
 
 #: templates/educators/registration/approval_email_message.txt:8
 msgid "Get inspired with a starter project"
-msgstr "初心者向けプロジェクトを見てみる"
+msgstr ""
 
 #: templates/educators/registration/approval_email_message.txt:9
 msgid "Learn more about Scratch"
-msgstr "Scratchについてもっと学ぶ"
+msgstr ""
 
 #: templates/educators/registration/approval_email_message.txt:12
 msgid "Learn more about Teacher Accounts"
-msgstr "教師用アカウントについてもっと学ぶ"
+msgstr ""
 
 #: templates/educators/registration/approval_email_message.txt:13
 msgid "Explore educator resources"
@@ -2643,7 +2836,7 @@ msgstr "プロジェクトの作り方を学ぶ"
 
 #: templates/educators/student-modal-registration.html:64
 msgid "Choose a starter project"
-msgstr "初心者向けのプロジェクトを選ぶ"
+msgstr ""
 
 #: templates/educators/student-modal-registration.html:65
 msgid "Connect with a Scratcher"
@@ -2651,7 +2844,6 @@ msgstr "Scratcherとつながる"
 
 #: templates/educators/student-modal-registration.html:81
 #: templates/modal-registration.html:240
-#: templates/profiles/scratcher_promotion_modal.html:65
 msgid "Next"
 msgstr "次へ"
 
@@ -2684,78 +2876,9 @@ msgstr "すべてのクラスアラート"
 msgid "Studio:"
 msgstr "スタジオ:"
 
-#: templates/extensions/terms_of_use.html:13
-msgid "Extension Developer Terms of Use"
-msgstr "拡張機能開発者利用規約"
-
-#: templates/extensions/terms_of_use.html:40 templates/form-standalone.html:20
+#: templates/form-standalone.html:20
 msgid "Submit"
 msgstr "送信"
-
-#: templates/galleries/activity.html:19
-msgid "Older messages"
-msgstr "古いメッセージ"
-
-#: templates/galleries/activity.html:23
-msgid "Newer messages"
-msgstr "新しいメッセージ"
-
-#: templates/galleries/base.html:9
-msgid "Scratch Studio"
-msgstr "Scratchスタジオ"
-
-#: templates/galleries/base.html:63
-msgid "Report this studio"
-msgstr "このスタジオを報告する"
-
-#: templates/galleries/base.html:66
-#, python-format
-msgid "Updated %(tDate)s"
-msgstr "更新日 %(tDate)s"
-
-#: templates/galleries/base.html:70
-msgid "Describe what this studio is about."
-msgstr "このスタジオの説明を入力してください。"
-
-#: templates/galleries/base.html:103
-#, python-format
-msgid "<span data-count=\"followers\">%(follow_count)s</span> Follower"
-msgid_plural "<span data-count=\"followers\">%(follow_count)s</span> Followers"
-msgstr[0] "<span data-count=\"followers\">%(follow_count)s</span> フォロワー"
-
-#: templates/galleries/base.html:114
-msgid "Projects ( <span data-count=\"projects\">100+</span> )"
-msgstr "作品 ( <span data-count=\"projects\">100個以上</span> )"
-
-#: templates/galleries/base.html:114
-#, python-format
-msgid "Projects ( <span data-count=\"projects\">%(tCount)s</span> )"
-msgstr "プロジェクト ( <span data-count=\"プロジェクト\">%(tCount)s</span> )"
-
-#: templates/galleries/base.html:117
-msgid "Comments ( <span data-count=\"comments\">100+</span> )"
-msgstr "コメント (<span data-count=\"comments\">100+</span>)"
-
-#: templates/galleries/base.html:117
-#, python-format
-msgid "Comments ( <span data-count=\"comments\">%(tCount)s</span> )"
-msgstr "コメント ( <span data-count=\"コメント\">%(tCount)s</span> )"
-
-#: templates/galleries/base.html:120
-msgid "Curators"
-msgstr "キュレーター"
-
-#: templates/galleries/comments.html:27
-#: templates/includes/backbone-templates.html:77
-#, python-format
-msgid ""
-"You have <span id=\"chars-left-<%%- comment_id %%>\">500</span> characters "
-"left."
-msgstr "残り<span id=\"chars-left-<%%- comment_id %%>\">500</span>文字。"
-
-#: templates/galleries/curators.html:15
-msgid "Congratulations! You are now a curator of this studio."
-msgstr "おめでとう! あなたはこのスタジオのキュレーターになりました。"
 
 #: templates/galleries/gallery_list.html:4
 #, python-format
@@ -2798,142 +2921,12 @@ msgstr "最もお気に入りになった作品"
 msgid "Most remixed"
 msgstr "最もリミックスされた作品"
 
-#: templates/galleries/includes/activity_list.html:36
-msgid "Today"
-msgstr "今日"
-
-#: templates/galleries/includes/activity_list.html:38
-msgid "On"
-msgstr "On"
-
-#: templates/galleries/includes/activity_list.html:46
-msgid "made edits to title or description of this studio"
-msgstr "が、スタジオのタイトルか説明を編集しました。"
-
-#: templates/galleries/includes/activity_list.html:55
-msgid "added the project"
-msgstr "が、プロジェクトを追加しました。"
-
-#: templates/galleries/includes/activity_list.html:65
-msgid "left a"
-msgstr "がコメントしました。"
-
-#: templates/galleries/includes/activity_list.html:75
-msgid "accepted an invitation"
-msgstr "招待を承認しました"
-
-#: templates/galleries/includes/activity_list.html:79
-msgid "from"
-msgstr "　"
-
-#: templates/galleries/includes/activity_list.html:83
-msgid "to curate this studio"
-msgstr "から、このスタジオのキュレーターへ"
-
-#: templates/galleries/includes/activity_list.html:92
-msgid "was promoted to manager"
-msgstr "がマネージャーになりました。"
-
-#: templates/galleries/includes/activity_list.html:105
-msgid "removed the project"
-msgstr "が、作品を削除しました。"
-
-#: templates/galleries/includes/activity_list.html:115
-msgid "removed the curator"
-msgstr "が、キュレーターを削除しました。"
-
-#: templates/galleries/includes/backbone-templates.html:9
+#: templates/includes/backbone-templates.html:77
+#, python-format
 msgid ""
-"Please explain why you feel this studio is disrespectful or inappropriate, "
-"or otherwise breaks the <a href=\"/community_guidelines\" "
-"target=\"_blank\">Scratch Community Guidelines.</a>"
-msgstr ""
-"このスタジオが、失礼や不適切だったり、あるいは、<a href=\"/community_guidelines\" "
-"target=\"_blank\">Scratchコミュニティガイドライン</a>に反していると思ったのかを説明してください。"
-
-#: templates/galleries/includes/backbone-templates.html:12
-#: templates/profiles/includes/backbone-templates.html:65
-msgid "Please select the inappropriate part of the page."
-msgstr "不適切な部分を選んでください。"
-
-#: templates/galleries/includes/backbone-templates.html:14
-msgid "Title"
-msgstr "タイトル"
-
-#: templates/galleries/includes/backbone-templates.html:16
-msgid "Description"
-msgstr "説明"
-
-#: templates/galleries/includes/backbone-templates.html:18
-msgid "Thumbnail"
-msgstr "サムネイル"
-
-#: templates/galleries/includes/backbone-templates.html:21
-msgid ""
-"Are there inappropriate comments in this studio? Please report them by "
-"clicking the \\"
-msgstr "このスタジオに不適切なコメントがありますか? \\ をクリックして報告してください。"
-
-#: templates/galleries/includes/curator_action_bar.html:7
-msgid "Invite owners"
-msgstr "オーナーを招待する"
-
-#: templates/galleries/includes/curator_action_bar.html:7
-msgid "Invite curators"
-msgstr "キュレーターを招待する"
-
-#: templates/galleries/includes/curator_action_bar.html:13
-msgid "Add"
-msgstr "追加"
-
-#: templates/galleries/includes/curator_action_bar.html:18
-msgid "Invite owners by username or select from the explore bar below!"
-msgstr "ユーザー名か下の一覧からドラッグして、オーナーを追加"
-
-#: templates/galleries/includes/curator_action_bar.html:20
-msgid "Invite curators by username or select from the explore bar below!"
-msgstr "ユーザー名か下の一覧からドラッグして、キュレーターを追加"
-
-#: templates/galleries/includes/explore-bar-users.html:4
-msgid "Add Owners"
-msgstr "キュレーターを追加"
-
-#: templates/galleries/includes/explore-bar-users.html:4
-msgid "Scratchers Following Me"
-msgstr "私をフォローしているスクラッチャー"
-
-#: templates/galleries/includes/explore-bar.html:5
-#: templates/galleries/includes/explore-bar.html:9
-msgid "Add Projects"
-msgstr "プロジェクトを追加"
-
-#: templates/galleries/includes/explore-bar.html:14
-msgid "My Shared Projects"
-msgstr "共有したプロジェクト"
-
-#: templates/galleries/includes/explore-bar.html:15
-msgid "My Favorites"
-msgstr "お気に入り"
-
-#: templates/galleries/includes/explore-bar.html:16
-msgid "My Recent Views"
-msgstr "最近見たもの"
-
-#: templates/galleries/includes/explore-bar.html:17
-msgid "My Students' Projects"
-msgstr "生徒のプロジェクト"
-
-#: templates/galleries/includes/project_action_bar.html:8
-msgid "Add projects"
-msgstr "プロジェクトを追加"
-
-#: templates/galleries/includes/project_action_bar.html:24
-msgid "Add by url"
-msgstr "URLによる追加"
-
-#: templates/galleries/includes/project_action_bar.html:28
-msgid "You can select projects from the bar below or add by url above."
-msgstr "プロジェクトを選択するときは、下のバーから選ぶか、上にURLを入力します。"
+"You have <span id=\"chars-left-<%%- comment_id %%>\">500</span> characters "
+"left."
+msgstr "残り<span id=\"chars-left-<%%- comment_id %%>\">500</span>文字。"
 
 #: templates/includes/follow-button.html:4
 msgid "Follow"
@@ -2971,1527 +2964,11 @@ msgstr "好き"
 
 #: templates/includes/sort-projects-dropdown.html:12
 #: templates/mystuff/includes/sort-projects-dropdown.html:12
-#: templates/projects/base.html:320
+#: templates/projects/base.html:321
 #: templates/projects/includes/explore-bar.html:17
 #: templates/projects/remixes.html:3 templates/projects/remixes.html.py:4
 msgid "Remixes"
 msgstr "リミックス"
-
-#: templates/info/DMCA.html:14
-msgid ""
-"The Lifelong Kindergarten research group respects the intellectual property "
-"of others, as well as our users. If you believe that your work has been "
-"copied in a way that constitutes copyright infringement, please email "
-"copyright@scratch.mit.edu, or mail your complaint to the following:"
-msgstr ""
-"Lifelong Kindergarten research "
-"groupでは、Scratchコミュニティ外部の知的財産権、財産だけでなく、ユーザーのみなさん自身の権利も尊重します。もし、あなたの作品が著作権を侵害する方法でコピーされていると思われる場合は、copyright@scratch.mit.edu"
-" までメールで知らせるか、以下からご連絡ください。"
-
-#: templates/info/DMCA.html:22
-msgid ""
-"The Lifelong Kindergarten Group will promptly process and investigate "
-"notices of alleged infringement and will take appropriate actions under the "
-"Digital Millennium Copyright Act (“DMCA”) and other applicable intellectual "
-"property laws. Upon receipt of notices complying or substantially complying "
-"with the DMCA, the Lifelong Kindergarten Group may act expeditiously to "
-"remove or disable access to any material claimed to be infringing. Repeat "
-"infringers of third-party copyrights are subject to termination in "
-"appropriate circumstances."
-msgstr ""
-"Lifelong Kindergarten "
-"Groupは、権利侵害の疑いに対する申し立てを迅速に処理・調査し、DMCA（デジタル・ミレニアム著作権法）とその他の適用対象となる知的所有権法にもとづき適切な措置をとります。Lifelong"
-" Kindergarten "
-"Groupは、DMCAに定められた著作権侵害（これには明白な侵害のみならず実質的な侵害も含む）の報告を受け取った場合、早急に対象の侵害の申告があった資料へのアクセスを停止・抑制することができます。第三者の著作権侵害を繰り返すユーザーは、そうすべき状況であると判断される場合、追放の対象となります。"
-
-#: templates/info/DMCA.html:23
-msgid ""
-"In assessing whether or not a Scratch user has violated your copyrights, "
-"please keep in mind that Scratch is an educational and not-for-profit "
-"initiative, seeking to aid children’s learning by providing the tools for "
-"them to learn and express themselves using digital technology. Please also "
-"keep in mind the “Fair Use” doctrine incorporated into the Copyright Act of "
-"1976, 17 U.S.C. § 107."
-msgstr ""
-"Scratchのユーザーに著作権を侵害されたかどうかを判断するときは、Scratchが、子どもたちにデジタル技術による表現ツールを提供して、子どもたちの学習を支援をするための、教育目的で非営利の先進的取り組みであることをご考慮ください。さらに、「米国1976年著作権法107条（Copyright"
-" Act of 1976, 17 U.S.C. § 107）」で定められた「フェアユース規定」も念頭においてください。"
-
-#: templates/info/DMCA.html:24
-msgid ""
-"We hope you also see Scratch not only as a good way of popularizing your "
-"creations/website but also as an opportunity to do something good for "
-"children’s education."
-msgstr ""
-"私たちはScratchを、ただ単に自分の作品やウェブサイトを公開する場所ではなく、子供たちの教育に貢献する場所であると考えてほしいと思っています。"
-
-#: templates/info/DMCA.html:25
-msgid ""
-"If you choose to make a copyright infringement complaint, please note that "
-"we may post your notification, with personally identifiable information "
-"redacted, to a clearinghouse such as chillingeffects.org. Please also note "
-"that you may be liable for damages (including costs and attorneys’ fees) if "
-"you materially misrepresent that an activity is infringing your copyright."
-msgstr ""
-"あなたが、著作権の侵害を主張する場合、私たちは、あなたの申告から個人情報を取り除き、「chillingeffects.org」のような情報センターに投稿する可能性があることに注意してください。また、誰かの言動があなたの著作権を侵害しているという報告に大きく事実と異なる部分がある場合、弁護士費用やその他の経費などに対する損害賠償責任を負う可能性があることにも注意してください。"
-
-#: templates/info/about.html:17
-msgid ""
-"With Scratch, you can program your own interactive stories, games, and "
-"animations &mdash; and share your creations with others in the online "
-"community."
-msgstr ""
-"Scratchによって、インタラクティブな物語やゲーム、アニメーションを自分でプログラムできます。そして、あなたの作品をオンラインコミュニティの他の人たちと共有できます。"
-
-#: templates/info/about.html:20
-msgid ""
-"Scratch helps young people learn to think creatively, reason systematically,"
-" and work collaboratively &mdash; essential skills for life in the 21st "
-"century."
-msgstr "Scratchは、子供たちが創造的に考え、体系的に議論し、協力して作業することを助けます。これらは21世紀の生活に不可欠なスキルです。"
-
-#: templates/info/about.html:23
-msgid ""
-"Scratch is a project of the Lifelong Kindergarten Group at the MIT Media "
-"Lab. It is provided free of charge."
-msgstr "ScratchはMITメディアラボのライフロングキンダーガーテングループのプロジェクトで、無償で提供されています。"
-
-#: templates/info/about.html:26
-msgid ""
-"<a href=\"/parents\">INFO FOR PARENTS</a> | <a href=\"/educators\">INFO FOR "
-"EDUCATORS</a>"
-msgstr "<a href=\"/parents\">保護者の方へ</a> | <a href=\"/educators\">教育関係者の方へ</a>"
-
-#: templates/info/about.html:37
-msgid "Who Uses Scratch?"
-msgstr "どんな人がScratchを使っているの?"
-
-#: templates/info/about.html:40
-msgid ""
-"Scratch is designed especially for ages 8 to 16, but is used by people of "
-"all ages. Millions of people are creating Scratch projects in a wide variety"
-" of settings, including homes, schools, museums, libraries, and community "
-"centers."
-msgstr ""
-"Scratchは、特に8歳から16歳向けにデザインされていますが、すべての年代の人々に使われています。何百万人もの人が、自宅や学校、博物館、美術館、図書館、公民館、コミュニティセンターなど、とても幅広い場所でScratchプロジェクトを作っています。"
-
-#: templates/info/about.html:42
-msgid "Around the World"
-msgstr "世界中で"
-
-#: templates/info/about.html:45
-msgid ""
-"Scratch is used in more than 150 different countries and available in more than 40 languages. To change languages, click the menu at the bottom of the page. Or, in the Project Editor, click the globe at the top of the page. To add or improve a translation,\n"
-"          see the <a href=\"https://en.scratch-wiki.info/wiki/How_to_Translate_Scratch\">translation</a> page."
-msgstr ""
-"Scratchは150以上の国と地域で使用され、40以上の言語で使用できます。言語を変更するには、ページの一番下にあるメニューをクリックして下さい。プロジェクトエディターでは、最上部の地球儀マークをクリックして下さい。翻訳の追加や改善に協力したい方は、<a"
-" href=\"https://en.scratch-"
-"wiki.info/wiki/How_to_Translate_Scratch\">翻訳</a>ページをご覧下さい。"
-
-#: templates/info/about.html:48
-msgid "Quotes"
-msgstr "引用"
-
-#: templates/info/about.html:50
-msgid ""
-"The Scratch Team has received many emails from youth, parents, and educators"
-" expressing thanks for Scratch. Want to see what people are saying? You can "
-"read a collection of the <a href=\"/info/quotes\">quotes</a> we've received."
-" "
-msgstr ""
-"Scratchチームには、子どもたちや保護者、教育関係者からScratchへの感謝を記したメールが多数届いています。その内容の一部を、<a "
-"href=\"/info/quotes\">みなさんの声</a>でご覧いただけます。"
-
-#: templates/info/about.html:52
-msgid "Learn More About Scratch"
-msgstr "Scratchについてもっと知る"
-
-#: templates/info/about.html:55
-msgid ""
-"\n"
-"            <li><a href=\"../help/\">Scratch Help Page</a></li>\n"
-"            <li><a href=\"../info/faq/\">Frequently Asked Questions</a></li>\n"
-"            <li><a href=\"../parents/\">Information for Parents</a></li>\n"
-"            <li><a href=\"/info/credits/\">Scratch Credits</a></li>\n"
-"            "
-msgstr ""
-"\n"
-"<li><a href=\"../help/\">ヘルプページ</a></li>\n"
-"<li><a href=\"../info/faq/\">よくある質問</a></li>\n"
-"<li><a href=\"../parents/\">保護者の方へ</a></li>\n"
-"<li><a href=\"/info/credits/\">クレジット</a></li>"
-
-#: templates/info/about.html:67 templates/info/hoc2015br.html:58
-msgid "Learn to Code, Code to Learn"
-msgstr "コーディングを学ぶ、コーディングで学ぶ"
-
-#: templates/info/about.html:70
-msgid ""
-"\n"
-"          The ability to code computer programs is an important part of literacy in today’s society. When people learn to code in Scratch, they learn important strategies for solving problems, designing projects, and communicating ideas.\n"
-"        "
-msgstr ""
-"\n"
-"          コンピュータープログラムを作成する力は、今日の社会において、重要な基本能力の1つとなっています。Scratchでプログラムの作成方法を学ぶことで、問題を解決する力、プロジェクトを設計する力、他人に考えを伝える力などを身につけることができます。"
-
-#: templates/info/about.html:74
-msgid "Scratch in Schools"
-msgstr "学校でのScratch"
-
-#: templates/info/about.html:77
-msgid ""
-"\n"
-"          Students are learning with Scratch at all levels (from elementary school to college) and across disciplines (such as math, computer science, language arts, social studies). Educators share stories, exchange resources, ask questions, and find people on the <a href=\"http://scratched.gse.harvard.edu/\">ScratchEd website</a>.\n"
-"        "
-msgstr ""
-"\n"
-"          Scratchは、小学生から大学生までの幅広い年齢の生徒によって、さまざまな教科・専門（数学、情報処理、文学、社会学など）の学習に利用されています。 <a href=\"http://scratched.gse.harvard.edu/\">ScratchEdウェブサイト</a>では、指導者による体験談の投稿、教材の交換、質問、人探しなどが行われています。        "
-
-#: templates/info/about.html:81
-msgid "Research"
-msgstr "研究"
-
-#: templates/info/about.html:84
-msgid ""
-"The MIT Scratch Team and collaborators are researching how people use and learn with Scratch (for an introduction, see <a href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-final.pdf\">Scratch: Programming for All</a>). Find out more about <a href=\"/info/research\">Scratch research</a> and <a href=\"/statistics\">statistics about Scratch</a>.\n"
-"        "
-msgstr ""
-"MIT Scratchチームと共同研究メンバーでは、人々がScratchをどのように使用してどのように学習しているかを調査しています（<a "
-"href=\"http://web.media.mit.edu/~mres/papers/Scratch-CACM-"
-"final.pdf\">Scratch：みんなのプログラミング</a>に大まかな説明があります）。よりくわしい内容を知りたいときは、Scratchに関する"
-" <a href=\"/info/research\">研究</a>や<a href=\"/statistics\">統計情報</a>をご覧ください。"
-
-#: templates/info/about.html:87
-msgid "Support and Funding"
-msgstr "援助と寄付"
-
-#: templates/info/about.html:89
-msgid ""
-"\n"
-"        The Scratch project, initiated in 2003, has received generous support from the National Science Foundation (grants 0325828, 1002713, 1027848, 1019396), Intel Foundation, Microsoft, MacArthur Foundation, LEGO Foundation, Scratch Foundation, Google, Dell, Fastly, Inversoft, and MIT Media Lab research consortia. If you'd like to support Scratch, please see our \n"
-"        <a href=\"https://secure.donationpay.org/codetolearn/\">donate page</a>, or contact us at donate@scratch.mit.edu.\n"
-"        "
-msgstr ""
-"\n"
-"        2003年に始まったScratchプロジェクトは、これまで以下の組織から多大なる援助をいただいてまりました：アメリカ国立科学財団（NSF）（グラント番号0325828, 1002713, 1027848, 1019396）、Intel財団、MacArthur財団、LEGO財団、Scratch財団、Google、Dell、Fastly、Inversoft、MITメディアラボコンソーシアム。Scratchへの資金援助をご希望される場合は、こちらの\n"
-"        <a href=\"https://secure.donationpay.org/codetolearn/\">寄付について</a>をご覧いただくか、donate@scratch.mit.eduまでご連絡ください。\n"
-"        "
-
-#: templates/info/characterscamp.html:9 templates/info/characterscamp.html:198
-msgid "Creative Characters Camp"
-msgstr "クリエイティブキャラクターキャンプ"
-
-#: templates/info/codingforall.html:8
-msgid "Coding for All Project"
-msgstr "Coding for All プロジェクト"
-
-#: templates/info/codingforall.html:13
-msgid "Coding for All:"
-msgstr "Coding for All:"
-
-#: templates/info/codingforall.html:17
-msgid ""
-"\n"
-"\t\t    The <strong>Coding for All</strong> project brings together an interdisciplinary research team from the <a href=\"http://llk.media.mit.edu\">MIT Media Lab</a>, the <a href=\"http://dmlhub.net/\" target=\"blank\">Digital Media and\n"
-"Learning Hub</a> at University of California Irvine, and the <a href=\"https://cyber.law.harvard.edu/\">Berkman Klein Center for Internet and Society</a> at Harvard University to\n"
-"develop new online tools and activities to engage more young people in developing computational fluency, particularly\n"
-"youth from groups currently underrepresented in computing. "
-msgstr ""
-"\n"
-"\t\t    <strong>みんなのためのコーディング</strong> プロジェクトは、 <a href=\"http://llk.media.mit.edu\">MITメディアラボ</a>、カリフォルニア大学アーバイン校<a href=\"http://dmlhub.net/\" target=\"blank\">デジタルメディア＆ラーニングハブ</a> 、ハーバード大学<a href=\"https://cyber.law.harvard.edu/\">バークマンセンター</a> が参加する学際的な研究チームによって行われており、\n"
-"より多くの若者、子どもたち、特に現在、コンピューターに親しみの薄い層の人たちに、コンピューターリテラシーを取得してもらうことを目的に、オンラインツールの開発や活動を行っています。"
-
-#: templates/info/codingforall.html:35
-msgid "What is being developed?"
-msgstr "現在、開発中の内容"
-
-#: templates/info/codingforall.html:36
-msgid ""
-"\n"
-"\t\tThis initiative extends the Scratch programming language,\n"
-"\t\twhich enables young people to code their own interactive stories, games and animations. \n"
-"\t\tTo ease the transition into coding, the MIT Scratch team is developing a series of interest-based \n"
-"\t\t\"microworlds\" — specialized coding environments designed to connect with young people’s interests. \n"
-"\t\tThe first interest-based microworlds being developed are in the interest areas of hip-hop dance, fashion, and sports. \n"
-"\t\t"
-msgstr ""
-"\n"
-"\t\tこの活動では、Scratchプログラミング言語をアレンジして、\n"
-"\t\t子どもたちが自分でインタラクティブストーリーや、ゲーム、アニメーションをコーディングできるようにすることを目標としています。 \n"
-"\t\tより気軽にコーディングの世界に入れるよう、現在、MIT Scratchチームが行っているのは、 子どもたちの興味にあわせた「マイクロワールド」シリーズの作成です。\n"
-"\t\tこれは、コーディング環境を子どもたちの興味にあわせて特化させるというもので、\n"
-"\t\tまず最初の「マイクロワールド」として、ヒップホップダンス、ファッション、スポーツの各分野にターゲットを絞った開発が進められています。 \n"
-"\t\t"
-
-#: templates/info/codingforall.html:45
-msgid "What are the project goals?"
-msgstr "プロジェクトの目的"
-
-#: templates/info/codingforall.html:46
-msgid ""
-"\n"
-"\t\t <p><strong>Design goal</strong>: Identify design principles and develop technological infrastructure for supporting interestdriven\n"
-"trajectories into computational fluency.</p>\n"
-"<p><strong>Deployment goal</strong>: Provide more pathways from interest to computational fluency for populations of youth\n"
-"underrepresented in the computing world.</p>\n"
-"<p><strong>Research goal</strong>: Contribute to a deeper understanding of trajectories that youth follow from their interests into\n"
-"computational fluency</p>\n"
-"\t"
-msgstr ""
-"\n"
-"\t\t <p><strong>設計目標</strong>：興味・関心がコンピュータ・リテラシーに結びつくことをサポートする技術基盤の基本設計を確立し、開発すること</p>\n"
-"<p><strong>展開目標</strong>：現在、コンピュータ業界の中心から遠くにいる若者たちに対して、興味・関心事をコンピュータ・リテラシーに昇華できるようにするための糸口をより多く提供すること</p>\n"
-"<p><strong>調査目標</strong>：若者たちが自身の興味・関心事をコンピュータリテラシーに昇華させる過程の根源的理解に貢献すること\n"
-"computational fluency</p>\n"
-"\t"
-
-#: templates/info/codingforall.html:54
-msgid "What activities have been offered so far?"
-msgstr "これまでの活動"
-
-#: templates/info/codingforall.html:55
-msgid ""
-"\n"
-"\t\tThe project partners are collaborating with Progressive Arts Alliance (PAA)\n"
-"\t\tto develop resources and workshops on the interest area of hip-hop dance.\n"
-"\t\t We have offered workshops for youth in Cleveland and Los Angeles, and for librarians, educators, and youth program leaders nationally and internationally. \n"
-"\t\t In addition, the hip-hop dance and coding resources are featured as part of the Hour-of-Code. \n"
-"\t\t"
-msgstr ""
-"\n"
-"\t\tこのプロジェクトでは、PAA（Progressive Arts Alliance）と共同して\n"
-"\t\tヒップホップダンス分野に特化したリソース、ワークショップを開発しています。\n"
-"\t\t クリーブランドとロサンジェルスでは、子ども向けワークショップを行いました。図書館関係者、教育関係者、指導者向けワークショップもアメリカ国内、国外を問わず開催しています。\n"
-"\t\t 加えて、ヒップホップダンスとコーディングに関するリソースは、コードの時間（Hour-of-Code）でも一部取り上げられています。\n"
-"\t\t"
-
-#: templates/info/codingforall.html:63
-msgid "Who is working on the project?"
-msgstr "現在、誰がこのプロジェクトに参加していますか？"
-
-#: templates/info/codingforall.html:64
-msgid ""
-"\n"
-"\t\t The lead researchers and staff on the project include:\n"
-"\t\t <p><strong>MIT Media Lab</strong>: Mitchel Resnick (Principal Investigator), Natalie Rusk (Co-PI), Moran Tsur, Eric Schilling, Sarah Otts</p>\n"
-"\t\t <p><strong>University of California - Irvine</strong>: Mimi Ito (Principal Investigator), Crystle Martin</p>\n"
-"\t\t <p><strong>Berkman Klein Center at Harvard University</strong>: Urs Gasser (Principal Investigator), Andres Lombana-Bermudez, Sandra Cortesi, Paulina Haudong</p>\n"
-"\t\tOther collaborators include:\n"
-"\t\t<p><strong>Progressive Arts Alliance</strong>\n"
-"\t"
-msgstr ""
-"\n"
-"\t\t 本プロジェクトの主任研究員とスタッフは次のとおりです：\n"
-"\t\t <p><strong>MITメディア・ラボ</strong>: Mitchel Resnick （主任研究員）Natalie Rusk（準主任研究員）、Moran Tsur、Eric Schilling、Sarah Otts</p>\n"
-"\t\t <p><strong>カリフォルニア大学アーバイン校</strong>: 伊藤 瑞子（主任研究員）、Crystle Martin</p>\n"
-"\t\t <p><strong>ハーバード大学バークマンセンター</strong>: Urs Gasser （主任研究員）、Andres Lombana-Bermudez、Sandra Cortesi、Paulina Haudong</p>\n"
-"\t\tそのほかの協力者：\n"
-"\t\t<p><strong>PAA（Progressive Arts Alliance）</strong>: Santina Protopapa\n"
-"\t"
-
-#: templates/info/codingforall.html:74
-msgid ""
-"This material is based upon work supported by the National Science "
-"Foundation under grant number 1348876."
-msgstr "本資料は、アメリカ国立科学財団（グラント1348876）の支援による研究内容に基づいています。"
-
-#: templates/info/codingforall.html:75
-msgid ""
-"Any opinions, findings, and conclusions or recommendations expressed in this"
-" material are those of the authors and do not necessarily reflect the views "
-"of the National Science Foundation."
-msgstr ""
-"本資料に含まれる意見、発見事項、結論、推奨事項は執筆者によるものであり、かならずしもアメリカ国立科学財団の見解を示しているわけではありません。"
-
-#: templates/info/codingforall.html:79
-msgid "Collaborating Organizations"
-msgstr "コラボレーション組織"
-
-#: templates/info/codingforall.html:95
-msgid "Resources"
-msgstr "資料"
-
-#: templates/info/codingforall.html:99
-msgid ""
-"You can access resources for creating dance, music, and other interest-based"
-" projects here:"
-msgstr "ダンス、音楽、その他の特定分野に特化した「興味・関心に基づくプロジェクト」には、ここからアクセスできます："
-
-#: templates/info/codingforall.html:100
-msgid "Things to Try Page"
-msgstr "やってみることのページ"
-
-#: templates/info/codingforall.html:101
-msgid "Preview Scratch Microworld prototypes:"
-msgstr "Scratchマイクロワールドのプロトタイプを見る："
-
-#: templates/info/codingforall.html:102
-msgid "Interest-Based Microworlds Prototypes"
-msgstr "興味・関心ベースの「マイクロワールド」プロトタイプ"
-
-#: templates/info/codingforall.html:110
-msgid "Related Posts"
-msgstr "関連する投稿"
-
-#: templates/info/codingforall.html:113
-msgid "Coding for All: Dance and Scratch Workshops - Paulina Haudong"
-msgstr "みんなのためのコード（Codeing for All）：ダンスとScratchワークショップ-Paulina Haudong"
-
-#: templates/info/codingforall.html:114
-msgid "Hip-Hop and Scratch - Progressive Arts Alliance"
-msgstr "ヒップホップとScratch - PAA（Progressive Arts Alliance）"
-
-#: templates/info/codingforall.html:115
-msgid "Reflections on a Hip-Hop and Scratch Workshop"
-msgstr "ヒップホップとScratchワークショップの反響"
-
-#: templates/info/community_guidelines.html:14
-msgid "Scratch Community Guidelines"
-msgstr "Scratchコミュニティーのガイドライン"
-
-#: templates/info/community_guidelines.html:18
-msgid ""
-"We need everyone’s help to keep Scratch a friendly and creative community "
-"where people with different backgrounds and interests feel welcome."
-msgstr ""
-"Scratchを、いろいろな背景や興味を持ったメンバーを受け入れるような、友好的で創造的なコミュニティとして続けていくためには、みんなの助けが必要です。"
-
-#: templates/info/community_guidelines.html:22
-msgid ""
-"<b>Be constructive.</b> When commenting on others' projects, say something "
-"you like about it and offer suggestions."
-msgstr "<b>建設的であること。</b> 他の人のプロジェクトについてコメントするときは、まずその作品の良いところを言ってから、提案をしましょう。"
-
-#: templates/info/community_guidelines.html:29
-msgid ""
-"Scratch welcomes people of all ages, races, ethnicities, religions, sexual "
-"orientations, and gender identities."
-msgstr ""
-"Scratchは、何歳であっても、どんな人種、民族であっても、どんな宗教を信じていても、どんな性的指向、性同一性を持っていても、すべての人々を歓迎します。"
-
-#: templates/info/credits.html:94
-msgid "Scratch Credits"
-msgstr "Scratchのクレジット"
-
-#: templates/info/credits.html:98
-msgid "Scratch Credits and Contributors"
-msgstr "Scratchの製作者と製作に貢献した人"
-
-#: templates/info/credits.html:101
-msgid "MIT Scratch Team"
-msgstr "MIT スクラッチチーム"
-
-#: templates/info/dance-prototype.html:4
-#: templates/info/dance-prototype.html:11
-msgid "Hip-Hop Dance on Scratch"
-msgstr "Scratchでのヒップホップダンス"
-
-#: templates/info/dance-prototype.html:23
-msgid "You can use Scratch to program your own dance moves and routines!"
-msgstr "Scratchを使えば、自分で考えたオリジナルダンスの振り付け（ムーブやルーティン）をプログラムすることもできます。"
-
-#: templates/info/dance-prototype.html:36
-msgid "Featured Hip-Hop Projects"
-msgstr "注目のヒップホップ作品"
-
-#: templates/info/dance-prototype.html:42
-msgid "Hip-Hop Dance Start-Up"
-msgstr "ヒップホップダンスを始める"
-
-#: templates/info/dance-prototype.html:46
-msgid "Top Rocking in LA"
-msgstr "トップロックダンスin LA"
-
-#: templates/info/dance-prototype.html:51
-msgid "Silhouette Dance"
-msgstr "シルエットダンス"
-
-#: templates/info/dance-prototype.html:55
-msgid "EpicDance"
-msgstr "エピックトランス系ダンス"
-
-#: templates/info/dance-prototype.html:59
-msgid "Top Rock Giga"
-msgstr "Gigaのトップロックダンス"
-
-#: templates/info/dance-prototype.html:69
-msgid "Explore Hip-Hop Studios"
-msgstr "ヒップホップスタジオを探す"
-
-#: templates/info/dance-prototype.html:86
-msgid "Hip-Hop Projects"
-msgstr "ヒップホップの作品"
-
-#: templates/info/dance-prototype.html:103 templates/info/hoc2015br.html:26
-msgid "Dance, Dance, Dance"
-msgstr "ダンス、ダンス、ダンス"
-
-#: templates/info/dance-prototype.html:120
-msgid "PAA Workshop Hip-Hop Gallery"
-msgstr "PAAワークショップ ヒップホップギャラリー"
-
-#: templates/info/educators.html:8
-msgid "Scratch - For Educators"
-msgstr "教育関係者のためのScratch"
-
-#: templates/info/educators.html:17
-msgid ""
-"Scratch is designed with learning and education in mind. A wide variety of educators have been supporting Scratch creators since 2007, in both formal and informal learning environments &ndash; K-12 classroom teachers, educational and computer science researchers, librarians, museum educators, and parents.<br/><br/>\n"
-"\t\tWant to learn more about learning with Scratch?<br/>Check out the <a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd online community</a>.\n"
-"\t\t    "
-msgstr ""
-"Scratchは学習・教育を主眼として開発されました。2007年以来、さまざまな組織に在籍する教育関係者が、Scratch制作陣をサポートしてくれています（小学校〜高校までの生徒を担当する教師、教育、IT系研究者、図書館司書、美術・博物館学芸員、子どもたちの保護者など、公的教育機関から私的機関、各家庭まで、さまざまな場面で教育に携わる方々の協力を得てきました<br/><br/>\n"
-"）\t\tScratchを用いた学習についてよりくわしい情報を知りたい場合は、<br/><a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEdオンラインコミュニティ</a>を参照してください。\n"
-"\t\t "
-
-#: templates/info/educators.html:30
-msgid ""
-"\n"
-"\t\t<h3>What is ScratchEd?</h3>\n"
-"\t\t<p>Launched in July 2009, <a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd</a> is an online community where Scratch educators share stories, exchange resources, ask questions, and find people.</p>\n"
-"\t\t<p>Since its launch, more than 7500 educators from all around the world have joined the community, sharing hundreds of resources and engaging in thousands of discussions.</p>\n"
-"\t\t<p>Join the ScratchEd community for free at <a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">scratched.gse.harvard.edu</a>.<p>\n"
-"\t\t"
-msgstr ""
-"\n"
-"\t\t<h3>ScratchEdについて</h3>\n"
-"\t\t<p>2009年7月に発足した<a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd</a>は、Scratchの指導者が事例をシェアし、資料や情報を交換し、質問を交わし、仲間を見つけるための、オンラインコミュニティです。 </p>\n"
-"\t\t<p>発足からこれまでに、7500人を超える世界中の指導者が参加し、数百の資料が公開され、数千にのぼる質疑応答が行われてきました。</p>\n"
-"\t\t<p>ScratchEdコミュニティへの参加は無料です。詳しくは<a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">こちら（scratched.gse.harvard.edu）</a>をご覧ください。<p>\n"
-"\t\t"
-
-#: templates/info/educators.html:36
-msgid ""
-"\n"
-"\t\t<h3>How can I learn more about what educators are doing with Scratch &ndash; and how I might use it?</h3>\n"
-"\t\t<p>Not sure what might be possible with Scratch?</p>\n"
-"\t\t<p><a href=\"http://scratched.gse.harvard.edu/stories\" target=\"_blank\">Read a story</a> about how educators have been including Scratch activities in a wide range of learning environments.</a></p>\n"
-"\t\t<p>Or <a href=\"http://scratched.gse.harvard.edu/resources/all\" target=\"_blank\">explore resources</a> across ages, disciplines, and settings. <a href=\"http://scratched.gse.harvard.edu/resources/new-scratch\" target=\"_blank\">Watch webinars</a> and review documents like the <a href=\"http://scratched.gse.harvard.edu/resources/scratch-curriculum-guide-draft\" target=\"_blank\">Scratch curriculum guide</a>.</p>\n"
-"\t\t<p>In addition to exploring the <a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd</a> online community and its resources, you can engage with the ScratchEd Team and other Scratch educators via <a href=\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>, <a href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>, <a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>\">Edmodo</a>, <a href=\"http://scratched.gse.harvard.edu/discussions/scratched-weekly-roundup\" target=\"_blank>\">weekly roundups</a>, and our <a href=\"http://scratched.gse.harvard.edu/events\" target=\"_blank>\">quarterly newsletter</a>.<p>\n"
-"\t  "
-msgstr ""
-"\n"
-"\t\t<h3>教育関係者がScratchを使ってどんなことをしているのか、Scratchを使ってどんなことができるのか、もっとくわしく知るにはどうすればよいですか？</h3>\n"
-"\t\t<p>Scratchで何ができるのか、わかりにくいとお感じですか？</p>\n"
-"\t\t<p>教育関係者たちが幅広い学習環境でScratchを活用した事例をまとめた<a href=\"http://scratched.gse.harvard.edu/stories\" target=\"_blank\">事例集をがあります/a>。 </a></p>\n"
-"\t\t<p>幅広い年齢層、学科、状況に対応した<a href=\"http://scratched.gse.harvard.edu/resources/all\" target=\"_blank\">教材も用意されています</a>。<a href=\"http://scratched.gse.harvard.edu/resources/new-scratch\" target=\"_blank\">Webセミナー</a>、<a href=\"http://scratched.gse.harvard.edu/resources/scratch-curriculum-guide-draft\" target=\"_blank\">Scratchカリキュラムガイド</a>などのドキュメントもご参照ください。</p>\n"
-"\t\t<p>さらに<a href=\"http://scratched.gse.harvard.edu\" target=\"_blank\">ScratchEd</a> オンラインコミュニティとここに記載された資料もご覧いただけます。ScratchEdチームとその他のScratch教育関係者には次の方法で交流できます：<a href=\"http://twitter.com/scratchedteam\" target=\"_blank>\">Twitter</a>、<a href=\"http://www.facebook.com/ScratchEdTeam\" target=\"_blank>\">Facebook</a>、<a href=\"http://www.edmodo.com/publisher/scratcheducation\" target=\"_blank>\">Edmodo</a>、<a href=\"http://scratched.gse.harvard.edu/discussions/scratched-weekly-roundup\" target=\"_blank>\">今週のまとめ</a>、<a href=\"http://scratched.gse.harvard.edu/events\" target=\"_blank>\">Scratchニュースレター（定期刊行）</a>。<p>\n"
-"\t  "
-
-#: templates/info/educators.html:45
-msgid "Create Educator Account"
-msgstr "教師用アカウントの作成"
-
-#: templates/info/educators.html:54
-msgid "Connect with ScratchEd"
-msgstr "ScratchEdに参加"
-
-#: templates/info/educators.html:57
-msgid "Online Community"
-msgstr "オンラインコミュニティ"
-
-#: templates/info/educators.html:58
-msgid "Twitter"
-msgstr "Twitter"
-
-#: templates/info/educators.html:59
-msgid "Facebook"
-msgstr "Facebook"
-
-#: templates/info/educators.html:60
-msgid "Edmodo"
-msgstr "Edmode"
-
-#: templates/info/educators.html:61
-msgid "Weekly Roundups"
-msgstr "今週のまとめ"
-
-#: templates/info/educators.html:62
-msgid "Quarterly Newsletter"
-msgstr "季刊ニュースレター"
-
-#: templates/info/educators.html:85
-msgid "Personal"
-msgstr "個人"
-
-#: templates/info/educators.html:89
-msgid "Educator"
-msgstr "教育関係者"
-
-#: templates/info/ext_download.html:18 templates/info/ext_download.html:23
-msgid "Scratch Extensions Browser Plugin"
-msgstr "ブラウザーのScratch拡張機能プラグイン"
-
-#: templates/info/ext_download.html:27
-#, python-format
-msgid ""
-"\n"
-"This Scratch Extensions Browser Plugin allows you to use <a href=\"https://en.scratch-wiki.info/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO WeDo 1.0</a>, the <a href=\"https://en.scratch-wiki.info/wiki/PicoBoard\">PicoBoard</a> and other serial or USB devices with the online version of Scratch. \n"
-msgstr ""
-"\n"
-"Scratch 拡張機能 ブラウザープラグインは、<a href=\"https://en.scratch-wiki.info/wiki/LEGO%%C2%%AE_WeDo%%E2%%84%%A2_Construction_Set\">LEGO WeDo 1.0</a>、<a href=\"https://en.scratch-wiki.info/wiki/PicoBoard\">PicoBoard</a>などのシリアル/USBデバイスをScratchのオンラインエディターで使用するためのものです。\n"
-
-#: templates/info/ext_download.html:31
-msgid "1. Download the Plugin"
-msgstr "1.プラグインをダウンロードする"
-
-#: templates/info/ext_download.html:33
-msgid ""
-"You'll need to install a plugin to use Scratch with a hardware device. "
-"Choose the plugin to download based on your computer and the web browser you"
-" use for Scratch.  Choose the plug-in installer from these options:"
-msgstr ""
-"ハードウェアデバイスを操作するには、Scratchにプラグインのインストールが必要です。ご使用のコンピューターとWebブラウザに応じたプラグインをダウンロードしてください。プラグインインストーラーには次の種類があります："
-
-#: templates/info/ext_download.html:35
-msgid "Mac (Chrome)"
-msgstr "Mac (Chrome)"
-
-#: templates/info/ext_download.html:35 templates/info/ext_download.html:37
-msgid " and separate plugin helper: "
-msgstr "プラグインヘルパーはこちらから："
-
-#: templates/info/ext_download.html:35 templates/info/ext_download.html:37
-msgid "here"
-msgstr "ここ"
-
-#: templates/info/ext_download.html:36
-msgid "Mac (other web browsers)"
-msgstr "Mac (その他のブラウザー)"
-
-#: templates/info/ext_download.html:37
-msgid "Windows (Chrome)"
-msgstr "Windows (Chrome)"
-
-#: templates/info/ext_download.html:38
-msgid "Windows (other web browsers)"
-msgstr "Windows (その他のブラウザー)"
-
-#: templates/info/ext_download.html:41
-msgid "2. Install the Plugin"
-msgstr "2.プラグインをインストールする"
-
-#: templates/info/ext_download.html:43
-msgid ""
-"After it downloads, open the plugin file and follow the instructions on your"
-" computer to complete the installation."
-msgstr "ダウンロード後は、プラグインファイルを開いて、コンピュータに表示された指示にしたがってインストールを完了してください。"
-
-#: templates/info/ext_download.html:46
-msgid "3. Make sure the plugin was installed"
-msgstr "3. プラグインが正しくインストールできたことを確認します。"
-
-#: templates/info/ext_download.html:48
-msgid ""
-"If the Scratch browser plugin was correctly installed, you should see a "
-"green or yellow status indicator in the \"More Blocks\" area."
-msgstr ""
-"Scratchブラウザプラグインが正しくインストールできた場合、「その他のブロック」エリアに現在の状態を表す緑または黄色のマークが表示されます。"
-
-#: templates/info/ext_download.html:54
-msgid ""
-"<strong>Green:</strong> You can start using your hardware device with "
-"Scratch."
-msgstr "<strong>緑:</strong> Scratchでハードウェアを使える状態です。"
-
-#: templates/info/ext_download.html:62
-msgid ""
-"<strong>Yellow:</strong> The device is not plugged in or your browser does "
-"not have your permission to run the plugin. (You may need to change "
-"Preferences in your browser to allow it to run.)"
-msgstr "<strong>黄:</strong>ブラウザーのプラグインに問題があります。(設定で、プラグインの実行を許可してください)"
-
-#: templates/info/ext_download.html:69
-msgid ""
-"<strong>Red:</strong> There's a problem. Move your cursor over the status "
-"indicator to find out what's wrong."
-msgstr "<strong>赤:</strong>問題が発生しました。問題は、ステータスにマウスのポインターを乗せると表示されます。"
-
-#: templates/info/ext_download.html:79
-msgid ""
-"<strong>Important:</strong> The first time you add an extension, your "
-"browser may ask whether to allow the plugin to run. Make sure you choose "
-"\"Allow and Remember\" (or similar option) from the dropdown so your browser"
-" remembers your preferences. If you need to change Preferences later, look "
-"for the plugins dashboard in your browser (you can usually find it in the "
-"tools menu)."
-msgstr ""
-"<strong>重要：</strong> "
-"プラグインを追加後、初めて使用するとき、ブラウザからプラグインを実行してもよいか尋ねられることがあります。この場合は、ドロップダウンリストから「実行を常に許可する」のような選択肢を選んでください（これによって、ブラウザがこの設定を記憶します）。設定を後から変更したい場合は、ブラウザのダッシュボードメニューからプラグイン一覧を探してください（通常は、ツールメニューに存在します）。"
-
-#: templates/info/ext_download.html:89
-msgid ""
-"<strong>Example:</strong> Firefox asking for permission to run Scratch "
-"Device Plugin"
-msgstr ""
-"<strong>例：</strong> たとえばFirefoxでは、このような形でScratchデバイスプラグインの実行許可を求められます。"
-
-#: templates/info/ext_download.html:103
-msgid ""
-"<strong>Example:</strong> Be sure to choose \"Allow and Remember\" in "
-"Firefox (or similar option in other browsers) from the dropdown so that the "
-"browser will remember your preferences."
-msgstr ""
-"<strong>例：</strong> "
-"Firefoxでは、ドロップダウンリストから「常に有効化する」を選択しておきます（その他のブラウザでも同等の設定を選択してください）。これによって、ブラウザがこの設定を記憶してくれます。"
-
-#: templates/info/ext_download.html:109
-msgid "Additional Information"
-msgstr "追加の情報"
-
-#: templates/info/ext_download.html:111
-msgid "Using Extensions"
-msgstr "拡張機能を使う"
-
-#: templates/info/ext_download.html:112
-msgid ""
-"Once you install this device plug-in, you can use any of the Scratch "
-"extension blocks. In Scratch, click on the \"More Blocks\" category and "
-"select the \"Add an Extension\" button. You can then select \"LEGO WeDo\" or"
-" any other extension, and the blocks will be added to the project."
-msgstr ""
-"このデバイスプラグインをインストールすると、すべてのScratch拡張ブロックが使用できるようになります。 "
-"Scratch上で「その他のブロック」カテゴリーを開き、「拡張機能を追加」ボタンをクリックしてください。「LEGO "
-"WeDo」やその他の拡張を選択すると、選択に応じたブロックがプロジェクトに表示されます。"
-
-#: templates/info/ext_download.html:113
-msgid "System Requirements"
-msgstr "システム要件"
-
-#: templates/info/ext_download.html:114
-msgid ""
-"The Scratch extension plug-in currently works only on Mac OS X and Windows."
-msgstr "Scratch拡張プラグインは、現在、Mac OS XとWindowsでのみ使用できます。"
-
-#: templates/info/hoc2015br.html:4 templates/info/hoc2015br.html.py:10
-msgid "Get Creative with Coding"
-msgstr "プログラムでいろいろ作ってみよう"
-
-#: templates/info/hoc2015br.html:19
-msgid "Animate Your Name"
-msgstr "名前を動かそう"
-
-#: templates/info/hoc2015br.html:32
-msgid "Race to the Finish"
-msgstr "ゴールまで競争しよう"
-
-#: templates/info/hoc2015br.html:36
-msgid "Create one of these projects with Scratch!"
-msgstr "これらのプロジェクトから1つを選択して、Scratchで作ってみましょう！"
-
-#: templates/info/hoc2015br.html:39
-msgid ""
-"\n"
-"          With <a href=\"http://scratch.mit.edu/about\">Scratch</a>, you can program your own stories, games, and animations  &mdash; and share them online.\n"
-"          "
-msgstr ""
-"\n"
-"           <a href=\"http://scratch.mit.edu/about\">Scratch</a>を使えば、自分だけのお話やゲーム、アニメが作れちゃうだけじゃなく、作った作品をオンラインで共有できるんです。\n"
-"          "
-
-#: templates/info/hoc2015br.html:49
-msgid "Scratch: Imagine, Program, Share"
-msgstr "Scratch: 想像、 プログラム、 共有"
-
-#: templates/info/hoc2015br.html:50
-msgid "//player.vimeo.com/video/65583694?title=0&amp;byline=0&amp"
-msgstr "//player.vimeo.com/video/65583694?title=0&amp;byline=0&amp"
-
-#: templates/info/hoc2015br.html:52
-msgid ""
-"\n"
-"    \tMillions of young people around the world create projects with Scratch, a free programming language and <a href=\"http://scratch.mit.edu\">online community</a> developed by the MIT Media Lab.\n"
-msgstr ""
-"\n"
-"    \tScratchは、MITメディアラボが開発した、無料のプログラミング言語＆<a href=\"http://scratch.mit.edu\">オンラインコミュニティ</a>です。何百万人の世界中の子どもたちがScratchで作品を作っています。\n"
-
-#: templates/info/hoc2015br.html:59
-msgid "//embed.ted.com/talks/mitch_resnick_let_s_teach_kids_to_code.html"
-msgstr "//embed.ted.com/talks/mitch_resnick_let_s_teach_kids_to_code.html"
-
-#: templates/info/hoc2015br.html:61
-msgid ""
-"When people learn to code in Scratch, they learn important strategies for "
-"solving problems, designing projects, and communicating ideas."
-msgstr "Scratchでプログラムの作り方を学ぶということは、問題を解決したり、プロジェクトを計画したり、アイデアを交換する方法を学ぶというです。"
-
-#: templates/info/hoc2015br.html:65
-msgid ""
-"\n"
-"          The <strong>Hour of Code</strong>&#8482; is an international movement by <a href=\"http://code.org\">Code.org</a> to introduce millions of students to one hour of computer science and computer programming. \n"
-"          In Brazil, the initiative is promoted by <a href=\"http://programae.org.br\">Programa&ecirc;</a>.\n"
-"          "
-msgstr ""
-"\n"
-"          <strong>コードの時間（Hour of Code）</strong>&#8482; は、世界中の数百万人の生徒たちに1時間コンピューター技術とコンピュータープログラミングの入門講座を開くという <a href=\"http://code.org\">Code.org</a> が主導する世界的な活動です。\n"
-"          ブラジルでは <a href=\"http://programae.org.br\">Programa&ecirc;</a>が活動の中心を担っています。\n"
-"          "
-
-#: templates/info/layout/base.html:4 templates/info/layout/help_layout.html:7
-msgid "Scratch Help"
-msgstr "Scratchニュース"
-
-#: templates/info/parents.html:8
-msgid "Scratch - For Parents"
-msgstr "Scratch - 保護者の皆さまへ"
-
-#: templates/info/parents.html:17
-msgid ""
-"Scratch is a programming language and an online community where children can"
-" program and share interactive media such as stories, games, and animation "
-"with people from all over the world. As children create with Scratch, they "
-"learn to think creatively, work collaboratively, and reason systematically. "
-"Scratch is designed and maintained by the Lifelong Kindergarten group at the"
-" MIT Media Lab. "
-msgstr ""
-"Scratchは、プログラミング言語であり、かつ、子供達が物語やゲーム、アニメーションなどのインタラクティブ作品をプログラムし、世界中の人々と共有できるコミュニティーなのです。子供達は、Scratchで創作するなかで、創造的に考えることや協調して作業すること、システマティックに推論することを学びます。ScratchはMITメディアラボ"
-" ライフロングキンダーガーテングループによりデザイン、維持されています。"
-
-#: templates/info/parents.html:28
-msgid "What is the age range for Scratch?"
-msgstr "Scratchの対象年齢は？"
-
-#: templates/info/parents.html:30
-msgid ""
-"While Scratch is primarily designed for 8 to 16 year olds, it is also used "
-"by people of all ages, including younger children with their parents."
-msgstr ""
-"Scratchはもともと8歳から16歳の子供向けにデザインされていましたが、それより小さい子供や、その保護者など、全ての年齢の方に使われています。"
-
-#: templates/info/parents.html:33
-msgid "What resources are available for learning Scratch?"
-msgstr "Scratchを学ぶにはどのような教材がありますか？"
-
-#: templates/info/parents.html:35
-#, python-format
-msgid ""
-"If you’re just getting started, there’s a <a "
-"href=\"/projects/editor/?tip_bar=getStarted\">step-by-step guide</a> "
-"available inside Scratch, or you can download the <a "
-"href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-Scratch2.pdf\">Getting"
-" Started guide (PDF)</a>. The <a href=\"/info/cards/\">Scratch Cards</a> "
-"provide a fun way to learn more. For an overview of Scratch resources, see "
-"<a href=\"/help/\">Scratch Help</a>."
-msgstr ""
-"Scratch初心者のみなさんには、Scratchから参照できる <a "
-"href=\"/projects/editor/?tip_bar=getStarted\">「Scratchをはじめよう」手順付きガイド</a> "
-"、ダウンロードして利用する<a href=\"%(STATIC_URL)s/pdfs/help/Getting-Started-Guide-"
-"Scratch2.pdf\">Scratch入門ガイド（PDF）</a>、学ぶのが楽しくなる<a "
-"href=\"/info/cards/\">Scratchコーディングカード</a>なども用意しています。Scratchについての資料、説明などの概要については、"
-" <a href=\"/help/\">Scratchヘルプ</a>を参照してください。"
-
-#: templates/info/parents.html:38
-msgid "What is the Scratch online community?"
-msgstr "Scratchオンライン・コミュニティとは何ですか？"
-
-#: templates/info/parents.html:40
-msgid ""
-"When participating in the Scratch online community, members can explore and "
-"experiment in an open learning community with other Scratch members from all"
-" backgrounds, ages, and interests. Members can share their work, get "
-"feedback, and learn from each other."
-msgstr ""
-"Scratchオンライン・コミュニティに参加すると、その人の背景や年齢，関心などから、他のユーザーやその作品を探す事ができる、オープンな学習コミュニティを体験できます。メンバーは自分の作品を共有して、フィードバックを得ながらお互いに学習ができます。"
-
-#: templates/info/parents.html:42
-msgid "What are the guidelines for the Scratch online community?"
-msgstr "Scratchオンライン・コミュニティのガイドラインとは何ですか？"
-
-#: templates/info/parents.html:44
-msgid ""
-"The MIT Scratch Team works with the community to maintain a friendly and respectful environment for people of all ages, races, ethnicities, religions, sexual orientations, and gender identities. You can help your child learn how to participate by reviewing the <a href=\"/community_guidelines\">community guidelines</a> together. Members are asked to comment constructively and to help keep the website friendly by reporting any content that does not follow the community guidelines. The Scratch Team works each day to manage activity on the site and respond to reports, with the help of tools such as the <a href=\"http://www.inversoft.com/features/profanity-filter/\">CleanSpeak</a> profanity filter. \n"
-"        "
-msgstr ""
-"MIT Scratchチームでは、本コミュニティがすべての年齢、人種、民族、宗教、性的嗜好、性自認の人にとって友好的で敬意にあふれた場所となるよう、努力しています。保護者のみなさまには、子どもたちと一緒に <a href=\"/community_guidelines\">コミュニティガイドライン</a> を確認し、子どもたちがどのようにコミュニティに参加すればよいのかを学ぶ手助けをお願いします。本コミュニティの参加者には、建設的なコメントを行い、コミュニティ内を平和的な空間とすることが求められています。 コミュニティガイドラインに反した内容を発見した場合は、ご報告ください。Scratchチームでは、<a href=\"http://www.inversoft.com/features/profanity-filter/\">CleanSpeak</a> （侮蔑語フィルター）などのツールも使用しながら、日々サイト内での活動を管理して、ご報告に対応するうよう努めています。\n"
-"        "
-
-#: templates/info/parents.html:48
-msgid "What is your privacy policy?"
-msgstr "どのようなプライバシーポリシーで運営されていますか？"
-
-#: templates/info/parents.html:49
-msgid ""
-"To protect children's online privacy, we limit what we collect during the "
-"signup process, and what we make public on the website. We don't sell or "
-"rent account information to anyone. You can find out more about our privacy "
-"policy on our <a href=\"/info/faq/#privacy\">frequently asked questions "
-"page</a>."
-msgstr ""
-"子どもたちのオンラインでのプライバシーを守るため、我々は、アカウント登録で収集する情報は最低限にとどめ、本サイト内で公開される情報についても制限を課しています。本サイトのプライバシーポリシーについては、<a"
-" href=\"/info/faq/#privacy\">「よくある質問と回答」</a>ページもご覧ください。"
-
-#: templates/info/parents.html:52
-msgid "Is there a way to use Scratch without participating online?"
-msgstr "オンラインコミュニティに参加することなくScratchを使用する方法はありますか？"
-
-#: templates/info/parents.html:53
-msgid ""
-"Yes, the Scratch offline editor lets you create projects without joining or accessing the online community. Visit the <a href=\"/scratch2download\">Scratch 2.0 offline editor</a> download page for instructions on how to install it on your computer.  (If your computer does not support the latest version, try the <a href=\"/scratch_1.4/\">Scratch 1.4 offline editor</a>.)\n"
-"        "
-msgstr ""
-"Scratchオフラインエディターを使えば、オンラインコミュニティに登録したりアクセスすることなく、プロジェクトを作成できます。 <a href=\"/scratch2download\">Scratch 2.0オフラインエディター</a> ダウンロードページを確認して、お使いのコンピューターへのインストール方法をご覧ください（お使いのコンピューターが最新版のオフラインエディターに対応していない場合は、<a href=\"/scratch_1.4/\">Scratch 1.4 オフラインエディター</a>をお試しください）。\n"
-"        "
-
-#: templates/info/parents.html:57
-msgid "What are parents saying about Scratch?"
-msgstr "Scratchについて保護者の声は？"
-
-#: templates/info/parents.html:58
-msgid ""
-"We often receive emails from parents thanking us for Scratch. Here are some "
-"examples: "
-msgstr "我々のもとには、保護者のみなさんからのScratchへの感謝の声が多数届いています。次にその一部を紹介します。"
-
-#: templates/info/parents.html:59
-msgid ""
-"\"<b>I just want to thank you all for making Scratch, and for providing it "
-"for free.</b> My kids are doing amazing things that they see as fun yet I "
-"know is educational, valuable, and worthwhile. Thank you so much!!!\""
-msgstr ""
-"\"<b>Scratchを作ってくれて、そして、無料で公開してくれて、とにかく感謝しております。</b> "
-"子どもたちは、Scratchによって、ただ楽しいだけじゃなく、教育的で有意義な、すばらしい体験をしています。本当にありがとうございます。\""
-
-#: templates/info/parents.html:60
-msgid ""
-"<b>\"My very shy but technical minded daughter has found this to be a fantastic, safe outlet for her creativity.</b> She spends her free time creating ever more difficult animations and sharing them with the scratch community. The forums provide her with a group of like-minded individuals with which she can hold on a conversation... She now feels that computers, graphic design and animation are something she would like to pursue in the future. Your program has opened a whole new world to her in so many ways, and I thank you wholeheartedly. \n"
-"        \""
-msgstr ""
-"<b>\"うちのちょっと内気な娘は、科学的なことが大好きで、Scratchは彼女の創造性を発揮するのに、安全ですばらしい手段になっています。</b> 娘は、ひまな時間があれば、Scratchでどんどん複雑なアニメーションをつくり、それをコミュニティでシェアしています。フォーラムでは、気の合う仲間たちとずっとおしゃべりがつきないようです。将来的には、コンピューター、グラフィックデザイン、アニメーション などについて学んでいきたいようです。Scratchは、娘にとってまったく新しい世界につながる数多くの扉を開いたようです。みなさんには心の底から感謝しています。\n"
-"        \""
-
-#: templates/info/parents.html:62
-msgid ""
-"\"<b>My son is learning more than I can imagine from your tool.</b> He is "
-"not a natural logical thinker but loves LEGO. Your LEGO-like building block "
-"structure has moved him forward by light-years in his logical thinking "
-"skills...He can snap things together and begin to see the logic reinforced "
-"by immediate feedback. Of course we work on some things together--instant "
-"father and son time. This is just incredible. Just a big thanks to you and "
-"MIT.\""
-msgstr ""
-"\"<b>うちの息子は私が期待していたより多くのことをScratchから学んでいるようです。</b> "
-"息子は元々論理的な思考が苦手だったですが、LEGOは大好きでした。ScratchのLEGOのようなブロック構造によって、息子の論理思考能力は格段に進化したようです。パーツをカチッと組み合わせればすぐにフィードバックが得られるため、論理に対する理解が深まったものと思われます。もちろん、一緒に作品をつくって父と息子の時間を楽しむこともあります。とてもすばらしい経験です。みなさんとMITには、本当に感謝しています。\""
-
-#: templates/info/parents.html:69
-msgid "Learning"
-msgstr "学ぶ"
-
-#: templates/info/parents.html:72
-msgid ""
-"For a one-page overview of what young people learn with Scratch, see <a "
-"href=\"http://llk.media.mit.edu/scratch/Learning-with-Scratch.pdf\">Learning"
-" with Scratch</a>."
-msgstr ""
-"子どもたちがScratchからどのようなことを学ぶことができるかについては、こちらをご覧ください：<a "
-"href=\"http://llk.media.mit.edu/scratch/Learning-with-"
-"Scratch.pdf\">Scratchで学ぶ</a>"
-
-#: templates/info/parents.html:73
-msgid ""
-"Read an article on the <a href=\"http://www.edutopia.org/kindergarten-"
-"creativity-collaboration-lifelong-learning\">creative learning approach</a>."
-msgstr ""
-"<a href=\"http://www.edutopia.org/kindergarten-creativity-collaboration-"
-"lifelong-learning\">創造的学習アプローチ</a>の記事を読む"
-
-#: templates/info/parents.html:81
-msgid ""
-"We ask all participants on the site to follow the <a "
-"href=\"/community_guidelines\">Community Guidelines</a>."
-msgstr ""
-"本サイトでは、参加者のみなさまに、<a "
-"href=\"/community_guidelines\">コミュニティガイドライン</a>にしたがうようお願いしています。"
-
-#: templates/info/parents.html:82
-msgid ""
-"We do not make private account information available to anyone. For more "
-"information, please see the <a href=\"/info/faq/#privacy\">Privacy "
-"Policy</a>."
-msgstr ""
-"本運営チームでは、非公開のアカウント情報を他人に開示することはありません。くわしくは<a "
-"href=\"/info/faq/#privacy\">プライバシーポリシー</a>をご覧ください。"
-
-#: templates/info/parents.html:87
-msgid "Questions?"
-msgstr "質問はこちら"
-
-#: templates/info/parents.html:90
-msgid ""
-"To find out more about Scratch, please see <a href=\"/info/faq/\">Frequently"
-" Asked Questions</a>."
-msgstr ""
-"Scratchについて、もっとくわしい情報が知りたい場合は、<a href=\"/info/faq/\">よくある質問と回答</a>をご覧ください。"
-
-#: templates/info/parents.html:91
-msgid ""
-"You can also ask questions in the <a href=\"/discuss/\">discussion "
-"forums</a>."
-msgstr "<a href=\"/discuss/\">掲示板</a>で質問することもできます。"
-
-#: templates/info/parents.html:93
-#, python-format
-msgid ""
-"If you need to contact our staff team directly, click <a "
-"href=\"%(contact_us_url)s\">Contact Us</a> at the bottom of any page."
-msgstr ""
-"本運営チームのスタッフに直接連絡を取りたい場合は、各ページの末尾のメニューにある <a "
-"href=\"%(contact_us_url)s\">連絡先</a> をクリックしてください。"
-
-#: templates/info/quotes.html:4
-msgid "Quotes - Scratch"
-msgstr "みなさまの声 - Scratch"
-
-#: templates/info/quotes.html:16
-msgid "What <b>Youth</b> are Saying about Scratch"
-msgstr "Scratchに対する<b>子どもたち</b> の感想"
-
-#: templates/info/quotes.html:19
-msgid ""
-"I like Scratch better than blogs or social networking sites like Facebook because \n"
-"\twe’re creating interesting games and projects that are fun to play, watch, and download. \n"
-"\tI don’t like to just talk to other people online, I like to talk about something creative and new.<span class=\"quotes\">&rdquo;</span> - 13-year-old </p>\n"
-msgstr ""
-"私は、FacebookみたいなSNSやブログよりも、Scratchのほうが好きです。だって、Scratchではおもしろいゲームやプロジェクトを作って、遊んだり、人の作品を見たり、ダウンロードしたりできるから。オンラインでなんとなく話すだけってのは好きじゃないんです。どうせ話すなら、新しいものやクリエイティブなことについて話したいんです。<span"
-" class=\"quotes\">&rdquo;</span> - 13歳 </p>\n"
-
-#: templates/info/quotes.html:26
-msgid ""
-"<span class=\"quotes\">&ldquo;</span>My 8-year-old brother and I have been active participants of the Scratch Online Community for over a year. \n"
-"I enjoy designing and programming games and animations with other kids, because different people have different skills, \n"
-"and when you work together, you can build a much better project than you can alone.<span class=\"quotes\">&rdquo;</span> - 13-year-old"
-msgstr ""
-"<span class=\"quotes\">&ldquo;</span>８歳の弟と一緒にScratchオンラインコミュニティで1年以上活動しています。\n"
-"他の子たちと協力してゲームやアニメーションを設計したり、プログラムしたりしするのは楽しいです。人が違えば、持っているスキルもそれぞれ違うから。それに、みんなで一緒に作れば、１人で作るよりもいいものが作れるし。<span class=\"quotes\">&rdquo;</span> - 13歳"
-
-#: templates/info/quotes.html:30
-msgid ""
-"<span class=\"quotes\">&ldquo;</span>Making games is something I've always thought would be fun,\n"
-" but I didn't want a really complex programming language. In the beginning, even Scratch seemed complex, but after sticking with it for a while, I've been able to make some amazing games. And the fact that you can share projects so easily makes it even better. Scratch is awesome!<span class=\"quotes\">&rdquo;</span>\n"
-"  - 17-year-old "
-msgstr ""
-"<span class=\"quotes\">&ldquo;</span>ゲームが作れたらきっと楽しいだろうな、ってずっと思っていたんです。\n"
-"だけど、難しいプログラミング言語を勉強するのはやだなって。最初は、Scratchだってややこしく見えたけど、しばらく夢中になってやっているうちに、いくつか自分でもびっくりするようなゲームができたんです。作ったプロジェクトを簡単にシェアできるのも、いいですよね。Scratch最高！<span class=\"quotes\">&rdquo;</span>\n"
-"  - 17歳"
-
-#: templates/info/quotes.html:36
-msgid ""
-"<span class=\"quotes\">&ldquo;</span>Using a set of about 100 commands that "
-"can be snapped together visually, you can create just about anything and "
-"learn the fundamentals of more advanced languages. In addition, there's a "
-"whole community of people online who will give you feedback on our projects,"
-" and gladly help you with your questions.<span "
-"class=\"quotes\">&rdquo;</span> - 14-year-old"
-msgstr ""
-"<span "
-"class=\"quotes\">&ldquo;</span>およそ100個の命令をブロックのように組み立てて、たいていなんでも作れちゃうし、もっと高度な言語を学ぶ基礎になるんです。それに、オンラインコミュニティがしっかりあって、プロジェクトにフィードバックをくれたり、よろこんで質問に答えてくれたりするんです。<span"
-" class=\"quotes\">&rdquo;</span> - 14歳"
-
-#: templates/info/research.html:4 templates/info/research.html.py:15
-msgid "Research on Scratch"
-msgstr "Scratchに関する研究"
-
-#: templates/info/research.html:21
-msgid ""
-"\n"
-"\tResearch on Scratch is being conducted by members of the MIT Scratch Team and researchers at other universities, including Yasmin Kafai at the University of Pennsylvania Graduate School of Education, Karen Brennan at the Harvard Graduate School of Education, \n"
-"Benjamin Mako Hill at the University of Washington, Andrés Monroy Hernandez at Microsoft Research, Mimi Ito and Crystle Martin at the University of California, Irvine, Quinn Burke at College of Charleston, Deborah Fields at Utah State University, and Kylie Peppler at Indiana University. "
-msgstr ""
-"\n"
-"Scratchに関する研究 は、MITのScratchチームのメンバーに加え、次の研究者によって行われています（敬称略）：ペンシルバニア大学教育大学院大学 Yasmin Kafai、ハーバード大学教育大学院 Karen Brennan、ワシントン大学Benjamin Mako Hill、マイクロソフトリサーチ Andrés Monroy Hernández、カリフォルニア大学アーバイン校 伊藤瑞子、Crystle Martin、チャールストン大学 Quinn Burke、ユタ州立大学 Deborah Fields、インディアナ大学 Kylie Peppler"
-
-#: templates/info/research.html:24
-msgid ""
-"By sharing projects and participating in the Scratch online community, you are helping us better understand how people can use and \n"
-"learn with Scratch. Any publicly shared projects, comments, or other material on the Scratch site may be included\n"
-"in the research analysis, presentations, papers, and reports. No personally identifiable information is shared. "
-msgstr ""
-"みなさんのScratchプロジェクトの共有状況、オンラインコミュニティへの参加状況を調べることで、我々は人々がScratchをどのように使い、学ぶのかという研究を行っています。\n"
-"Scratchサイト上で公開されたプロジェクト、コメント、その他の内容は、すべてこの研究に関する分析、プレゼンテーション、報告書で取り上げられる可能性があります。個人を特定可能な情報は公開しないようにしてください。"
-
-#: templates/info/research.html:27
-#, python-format
-msgid ""
-" (If you have any questions, please use the <a "
-"href=\"%(contact_us_url)s\">Contact Us</a> form.)"
-msgstr "（質問などは、 <a href=\"%(contact_us_url)s\">連絡先</a> フォームからお願いします）"
-
-#: templates/info/research.html:28
-msgid ""
-"Below are selected research papers, presentations, and theses on Scratch and"
-" the Scratch online community, followed by a list of National Science "
-"Foundation grants awarded to support Scratch."
-msgstr ""
-"次に、ScratchとScratchオンラインコミュニティに関する報告書、プレゼンテーション資料、論文をいくつか記載します。また、アメリカ国立科学財団（NSF）によるScratch支援グラント対象のリストも記載しています。"
-
-#: templates/info/research.html:30
-msgid "Research Papers &amp; Presentations"
-msgstr "論文・報告書・プレゼンテーション資料"
-
-#: templates/info/research.html:80
-msgid "National Science Foundation Grants"
-msgstr "アメリカ国立科学財団（NSF）グラント"
-
-#: templates/info/scratch2download.html:34
-#: templates/info/scratch2download.html:62
-msgid "Scratch Offline Editor"
-msgstr "Scratch オフラインエディター"
-
-#: templates/info/scratch2download.html:40
-msgid "Scratch 2 Offline Editor"
-msgstr "Scratch 2 オフラインエディター"
-
-#: templates/info/scratch2download.html:42
-msgid ""
-"\n"
-"\t\t<p class=\"lg-msg\">You can install the Scratch 2.0 editor to work on projects without an internet connection. This version will work on Mac, Windows, and some versions of Linux (32 bit).</p>\n"
-"        <p class=\"lg-msg\"><b>Note for Mac Users:</b> the latest version of Scratch 2.0 Offline requires Adobe Air 20. To upgrade to Adobe Air 20 manually, go <a href=\"https://get.adobe.com/air/\">here</a>.</p>\n"
-"\t\t"
-msgstr ""
-"\n"
-"\t\t<p class=\"lg-msg\">インターネット接続がなくてもプロジェクトの作業ができるScratch 2.0エディターをインストールできます。このバージョンはMac、Windows、そしていくつかのバージョンのLinux (32 bit)で動作します。</p>\n"
-"<p class=\"lg-msg\"><b>Macユーザーへの注意:</b> 最新版のScratch 2.0オフラインエディターには、Adobe Air 20が必要です。<a href=\"https://get.adobe.com/air/\">ここ</a>からAdobe Air 20に手動でアップグレードしてください。</p>\n"
-"\t\t"
-
-#: templates/info/scratch2download.html:50
-msgid "Adobe AIR"
-msgstr "Adobe AIR"
-
-#: templates/info/scratch2download.html:51
-#, python-format
-msgid ""
-"\n"
-"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step1.png\" alt=\"Step 1\">\n"
-"\t\t\t\t<p>If you don't already have it, download and install the latest <a href=\"http://get.adobe.com/air/\">Adobe AIR</a></p>\n"
-"\t\t\t\tMac OS X - <a href=\"http://get.adobe.com/air/\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
-"\t\t\t\t<p>Mac OS 10.5 &amp; Older - <a href=\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.zip\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
-"\t\t\t\t   Windows - <a href=\"http://get.adobe.com/air/\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
-"\t\t\t\t   Linux - <a href=\"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
-"\t\t\t\t</p>\n"
-"\t\t\t\t"
-msgstr ""
-"\n"
-"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step1.png\" alt=\"Step 1\">\n"
-"\t\t\t\t<p>もし、まだお持ちでなければ、最新の <a href=\"http://get.adobe.com/air/\">Adobe AIR</a> をダウンロード、インストールしてください。</p>\n"
-"\t\t\t\tMac OS X - <a href=\"http://get.adobe.com/air/\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
-"\t\t\t\t<p>Mac OS 10.5 と、それ以前 - <a href=\"http://airdownload.adobe.com/air/mac/download/2.6/AdobeAIR.zip\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"ダウンロード \"></a> <br>\n"
-"\t\t\t\t Windows - <a href=\"http://get.adobe.com/air/\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"ダウンロード \"></a> <br>\n"
-"\t\t\t\t Linux - <a href=\"http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"ダウンロード \"></a>\n"
-"\t\t\t\t</p>\n"
-"\t\t\t\t"
-
-#: templates/info/scratch2download.html:64
-#, python-format
-msgid ""
-"\n"
-"                <img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step2.png\" alt=\"Step 2\">\n"
-"                <p>Next download and install the <br>Scratch 2.0 Offline Editor</p>\n"
-"                    <p>Mac OS X - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.dmg\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
-"                    Mac OS 10.5 &amp; Older - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
-"                    Windows - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.exe\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
-"                    Linux - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.air\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a>\n"
-"                </p>\n"
-"                "
-msgstr ""
-"\n"
-"<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step2.png\" alt=\"Step 2\">\n"
-"<p>次にスクラッチ 2.0 オフライン・エディター <br>Scratch 2.0 Offline Editor をダウンロードしてインストールします。</p>\n"
-"<p>Mac OS X - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.dmg\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"ダウンロード \"></a> <br>\n"
-"Mac OS 10.5 と、それ以前 - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.air\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"ダウンロード \"></a> <br>\n"
-"Windows - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.exe\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"ダウンロード \"></a> <br>\n"
-"Linux - <a class=\"editor-link\" href=\"/scratchr2/static/sa/Scratch-EDITOR_VERSION.air\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"ダウンロード \"></a>\n"
-"</p>\n"
-"                  "
-
-#: templates/info/scratch2download.html:76
-msgid "Support Materials"
-msgstr "サポート素材"
-
-#: templates/info/scratch2download.html:77
-#, python-format
-msgid ""
-"\n"
-"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step3.png\" alt=\"Step \">\n"
-"\t\t\t\t<p>Need some help getting started? <br>Here are some helpful resources.</p>\n"
-"\t\t\t\t<p>Starter Projects - <a href=\"/scratchr2/static/sa/Scratch2StarterProjects.zip\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"Download \"></a> <br>\n"
-"\t\t\t\t   Getting Started Guide - <a href=\"%(STATIC_URL)spdfs/help/Getting-Started-Guide-Scratch2.pdf\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" alt=\"PDF Download \"></a> <br>\n"
-"\t\t\t\t   Scratch Cards - <a href=\"%(STATIC_URL)spdfs/help/Scratch2Cards.pdf\">Download<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" alt=\"PDF Download \"></a>\n"
-"\t\t\t\t</p>\t\n"
-"\t\t\t\t"
-msgstr ""
-"\n"
-"\t\t\t\t<img class=\"lg-num\" src=\"%(STATIC_URL)simages/help/offline-editor/step3.png\" alt=\"Step \">\n"
-"\t\t\t\t<p>始めるための助けが必要ですか?<br>ここに役に立つリソースがあります。</p>\n"
-"\t\t\t\t<p>スタータープロジェクト - <a href=\"/scratchr2/static/sa/Scratch2StarterProjects.zip\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/download.png\" alt=\"ダウンロード \"></a> <br>\n"
-"\t\t\t\t スタートガイド - <a href=\"%(STATIC_URL)spdfs/help/Getting-Started-Guide-Scratch2.pdf\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" alt=\"PDF ダウンロード \"></a> <br>\n"
-"\t\t\t\t スクラッチカード - <a href=\"%(STATIC_URL)spdfs/help/Scratch2Cards.pdf\">ダウンロード<img src=\"%(STATIC_URL)simages/help/offline-editor/pdf.png\" alt=\"PDF ダウンロード \"></a>\n"
-"\t\t\t\t</p>\t\n"
-"\t\t\t\t"
-
-#: templates/info/scratch_1.4.html:21
-msgid ""
-"The previous version of Scratch, version 1.4, is still available for "
-"download. You can still share projects from 1.4 to the Scratch website. "
-"(However, projects created in Scratch 2.0 cannot be opened in 1.4.)"
-msgstr ""
-"以前のバージョンのScratch "
-"1.4をダウンロードできます。1.4からScratchのWebサイトにプロジェクトを共有できます(しかし、Scratch "
-"2.0で作られたプロジェクトは1.4では開けません)。"
-
-#: templates/info/scratch_1.4.html:30
-msgid "Scratch 1.4 For Mac OS X"
-msgstr "Scratch 1.4 Mac OS X用"
-
-#: templates/info/scratch_1.4.html:31
-msgid "Compatible with Mac OSX 10.4 or later"
-msgstr "Mac OSX 10.4以降に対応"
-
-#: templates/info/scratch_1.4.html:40
-msgid "Scratch 1.4 for Windows"
-msgstr "Scratch 1.4 Windows用"
-
-#: templates/info/scratch_1.4.html:41
-msgid "Compatible with Windows 2000, XP, Vista, 7, and 8"
-msgstr "Windows 2000, XP, Vista, 7, 8に対応"
-
-#: templates/info/scratch_1.4.html:43
-msgid ""
-"For network deployments, use the <a "
-"href=\"http://download.scratch.mit.edu/Scratch1.4.msi.installer.zip\">Scratch1.4.msi.installer.zip</a>"
-msgstr ""
-"ネットワーク経由でインストールする場合は <a "
-"href=\"http://download.scratch.mit.edu/Scratch1.4.msi.installer.zip\">Scratch1.4.msi.installer.zip</a>"
-" を使ってください。<br>日本語翻訳ファイルを更新済みのファイル一式は <a "
-"href=\"http://ec.nikkeibp.co.jp/nsp/2013seminar2/WinMacScratch1.4.zip\">WinMacScratch1.4.zip</a>"
-" です(Windows / Mac共通)。"
-
-#: templates/info/scratch_1.4.html:52
-msgid "Scratch 1.4 for Debian / Ubuntu"
-msgstr "Scratch 1.4 Debian / Ubuntu用"
-
-#: templates/info/scratch_1.4.html:53
-msgid "Compatible with Ubuntu 12.04 or later"
-msgstr "Ubuntu 12.04以降に対応"
-
-#: templates/info/scratch_1.4.html:56
-msgid "Install Scratch with Software Center"
-msgstr "ソフトウェアセンターからScratchをインストール"
-
-#: templates/info/scratch_1.4.html:60
-#, python-format
-msgid "or <a href=\"%(download_1_4)s\">download here</a>"
-msgstr "もしくは<a href=\" %(download_1_4)s\">ここからダウンロード</a>"
-
-#: templates/info/scratch_1.4.html:69
-msgid "Frequently Asked Questions about Scratch 1.4"
-msgstr "Scratch 1.4についてよくある質問"
-
-#: templates/info/scratch_1.4.html:71
-msgid "What resources are available to help me learn how to use Scratch 1.4?"
-msgstr "Scratchを学ぶにはどのような教材がありますか？"
-
-#: templates/info/scratch_1.4.html:72
-msgid ""
-"<p>For a step-by-step introduction, download the <a href "
-"=\"http://download.scratch.mit.edu/ScratchGettingStartedv14.pdf\">Scratch "
-"1.4 Getting Started Guide</a>. The <a href "
-"=\"http://download.scratch.mit.edu/ScratchReferenceGuide14.pdf\">Scratch 1.4"
-" Reference Guide</a> has a thorough explanation of the Scratch interface and"
-" programming language. <a href "
-"=\"http://download.scratch.mit.edu/ScratchCardsAll-v1.4-PDF.zip\">Scratch "
-"Cards</a> provide brief explanations that show how to make animations and "
-"interactive projects with Scratch.</p>"
-msgstr ""
-"<p>ステップバイステップの説明は、<a href "
-"=\"http://download.scratch.mit.edu/ScratchGettingStartedv14.pdf\">Scratch "
-"1.4入門ガイド</a>をダウンロードしてください。<a href "
-"=\"http://download.scratch.mit.edu/ScratchReferenceGuide14.pdf\">Scratch "
-"1.4リファレンスガイド</a>には、Scratchのユーザーインターフェースとプログラミング言語の詳しい説明があります。<a href "
-"=\"http://download.scratch.mit.edu/ScratchCardsAll-v1.4-PDF.zip\">Scratch "
-"カード</a>では、Scratchでアニメーションやインタラクティブなプロジェクトを作成する方法を簡単に説明しています。</p>"
-
-#: templates/info/scratch_1.4.html:74
-msgid "What are the system requirements for Scratch 1.4?"
-msgstr "Scratch 1.4の動作推奨環境は何ですか?"
-
-#: templates/info/scratch_1.4.html:75
-msgid ""
-"<p>Display: 800 x 480 or larger, thousands or millions of colors (16-bit color or greater)\n"
-"\t\t</br>Operating System:  Windows 2000 or later, Mac OS X 10.4 or later, Ubuntu Linux 9.04 or later (For other versions of Linux, see the Linux Installer page)\n"
-"\t\t</br>Disk: at least 120 megabytes of free space to install Scratch.\n"
-"\t\t</br>CPU and memory: Most computers have enough memory to run Scratch 1.4, but very old computers may run Scratch slowly.\n"
-"\t\t</br>Sound / Video: Sound playback requires speakers (or headphones), and recording requires a microphone. Many laptops have speakers and microphones built in. Scratch 1.4 can use a USB or built-in camera (optional).</br></p>"
-msgstr ""
-"<p>ディスプレイ:800x480またはそれ以上、数百万以上の色(16ビットカラー以上)\n"
-"  </br>OS:Windows 2000以降,Mac OSX 10.4以降,Ubuntu Linux 9.04以降(ほかのバージョンのLinuxについては、Linuxインストーラーのページを参照してください)\n"
-"  </br>ディスク:120MB以上の空き容量が、インストールに必要です。\n"
-"  </br>CPUとメモリ:ほとんどのコンピューターでは動作するのに十分なメモリはありますが、一部のとても古いコンピューターでは少し動作が遅くなるでしょう。\n"
-"  </br>サウンドとビデオ:サウンドを再生するにはスピーカー(もしくはヘッドホン)が、録音するにはマイクが必要です。多くのノートパソコンにはこれらが内蔵されています。Scratch 1.4では、USBもしくは内蔵のカメラが使えます(これは任意です。)</br></p>"
-
-#: templates/info/scratch_1.4.html:81
-msgid ""
-"What if I get an error when I try to upload or share my project to the "
-"Scratch website?"
-msgstr "自作のプロジェクトをScratchWebサイトにアップロード・共有しようとすると、エラーが出ます。どうしたらよいですか？"
-
-#: templates/info/scratch_1.4.html:82
-msgid ""
-"1. File too big. The largest file limit is 10 MB. To shrink the size of your Scratch project, click the Edit menu > and select compress sounds, or compress images. If you have compressed sounds and your project still won't upload, try deleting some of the sounds to make it smaller.\n"
-"\t\t</br>2. Internet connection too slow and times out. Try making the file smaller. If that doesn't work, try connecting from a different computer or connection or web browser.\n"
-"\t\t</br>3. Proxy server getting in the way.  Try an Internet connection that does not go through a proxy server, or configure Scratch to use your proxy server.\n"
-"\t\t</br>4. Wrong username and password. Try logging into Scratch website to make sure username and password are correct."
-msgstr ""
-"1. ファイルサイズが大きすぎる。ファイルの大きさは最大10 MBまでです。Scratchプロジェクトのファイルサイズを小さくするには、［編集］ ー ［音声を圧縮］または［画像を圧縮］を選択します。音声の圧縮を行ってもまだアップロードができない場合は、よりサイズを小さくするために音声の一部を削除してください。\n"
-"\t\t</br>2. インターネット接続速度が遅く、タイムアウトが発生する。上記1の手順で、ファイルサイズを小さくしてください。それでもうまくいかない場合は、違うコンピューターを使用する、違う接続を使用する、Webブラウザー版に切り替える、などの対処を行ってください。\n"
-"\t\t</br>3. プロキシサーバーが問題を起こしている。プロキシサーバー を経由しないインターネット接続を試すか、Scratchがプロキシサーバーを使用できるよう設定を変更します。\n"
-"\t\t</br>4. ユーザー名またはパスワードが間違っている。Scratchサイトにログインするときは、ユーザー名とパスワードが正しいことを確認してください。"
-
-#: templates/info/starter_projects.html:4
-msgid "Scratch - Starter Projects"
-msgstr "Scratch - 初心者向けプロジェクト"
-
-#: templates/info/starter_projects.html:17
-msgid ""
-"Try out these starter projects from the Scratch Team. Look inside to make "
-"changes and add your ideas."
-msgstr ""
-"Scratchチームが用意した初心者向けプロジェクトを試してみましょう。プロジェクトを自分のアイデアでアレンジするには、「中を見る」ボタンをクリックしてください。"
-
-#: templates/info/starter_projects.html:20
-#: templates/info/starter_projects.html:33
-msgid "Animation"
-msgstr "アニメーション"
-
-#: templates/info/starter_projects.html:21
-#: templates/info/starter_projects.html:60
-msgid "Games"
-msgstr "ゲーム"
-
-#: templates/info/starter_projects.html:22
-#: templates/info/starter_projects.html:87
-msgid "Interactive Art"
-msgstr "インタラクティブアート"
-
-#: templates/info/starter_projects.html:23
-#: templates/info/starter_projects.html:114
-msgid "Music and Dance"
-msgstr "音楽とダンス"
-
-#: templates/info/starter_projects.html:24
-#: templates/info/starter_projects.html:141
-msgid "Stories"
-msgstr "物語"
-
-#: templates/info/starter_projects.html:25
-#: templates/info/starter_projects.html:168
-msgid "Video Sensing"
-msgstr "ビデオモーションセンサー"
-
-#: templates/info/starter_projects.html:39
-msgid "Dance Party"
-msgstr "ダンスパーティー"
-
-#: templates/info/starter_projects.html:43
-msgid "Animate the Crab"
-msgstr "動くカニ"
-
-#: templates/info/starter_projects.html:47
-msgid "The Pico Show: Intro"
-msgstr "ザ・ピコショー（オープニング）"
-
-#: templates/info/starter_projects.html:51
-msgid "Greeting Card"
-msgstr "絵はがき"
-
-#: templates/info/starter_projects.html:66
-msgid "Pong Starter"
-msgstr "ピンポンゲーム"
-
-#: templates/info/starter_projects.html:70
-msgid "Maze Starter"
-msgstr "迷路ゲーム"
-
-#: templates/info/starter_projects.html:74
-msgid "Hide and Seek"
-msgstr "かくれんぼ"
-
-#: templates/info/starter_projects.html:78
-msgid "Dress Up Tera"
-msgstr "おしゃれ大好きテラ"
-
-#: templates/info/starter_projects.html:93
-msgid "Paint with Gobo"
-msgstr "ゴボとお絵かき"
-
-#: templates/info/starter_projects.html:97
-msgid "Wizard Spells"
-msgstr "呪文をかけよう"
-
-#: templates/info/starter_projects.html:101
-msgid "Soundflower"
-msgstr "サウンドフラワー"
-
-#: templates/info/starter_projects.html:105
-msgid "Spiral Maker"
-msgstr "ぐるぐるメーカー"
-
-#: templates/info/starter_projects.html:120
-msgid "Remix this dance"
-msgstr "ダンスをリミックスする"
-
-#: templates/info/starter_projects.html:124
-msgid "Piano"
-msgstr "ピアノ"
-
-#: templates/info/starter_projects.html:128
-msgid "Starfish Choir"
-msgstr "ヒトデのコーラス隊"
-
-#: templates/info/starter_projects.html:132
-msgid "DJ Scratch Cat"
-msgstr "DJ Scratchキャット"
-
-#: templates/info/starter_projects.html:147
-msgid "5 Random Facts about Me"
-msgstr "私についての5つのホント"
-
-#: templates/info/starter_projects.html:151
-msgid "Introducing Howler! Remix"
-msgstr "Howler！の自己紹介（リミックス）"
-
-#: templates/info/starter_projects.html:155
-msgid "Teens at the Castle"
-msgstr "なぞのお城"
-
-#: templates/info/starter_projects.html:159
-msgid "Virtual Tour"
-msgstr "バーチャルツアー"
-
-#: templates/info/starter_projects.html:174
-msgid "Musical Buttons"
-msgstr "ボタンにふれて音を出そう"
-
-#: templates/info/starter_projects.html:178
-msgid "Bubbles with Video Sensing"
-msgstr "ビデオモーションセンサーで泡まみれ"
-
-#: templates/info/starter_projects.html:182
-msgid "Save the Mini-Figs!"
-msgstr "ミニフィグを守れ！"
-
-#: templates/info/starter_projects.html:186
-msgid "Pizza Chef"
-msgstr "ピザ職人"
-
-#: templates/info/videos.html:4
-msgid "Scratch - Videos"
-msgstr "Scratch - ビデオ"
-
-#: templates/info/videos.html:19
-msgid "Video Tutorials"
-msgstr "ビデオチュートリアル"
-
-#: templates/info/videos.html:26
-msgid "Getting Started with Scratch"
-msgstr "Scratchをはじめよう"
-
-#: templates/info/videos.html:29
-msgid ""
-"After <strong>Getting Started</strong>, choose from <a href=\"#Introductory Tutorials\">Introductory Tutorials</a> or <a href=\"#Paint Editor Tips\">Paint Editor Tips</a>.\n"
-"        "
-msgstr ""
-" <strong>スタートガイド</strong>で学んだあとは、<a href=\"#Introductory Tutorials\">入門編チュートリアル</a> か <a href=\"#Paint Editor Tips\">ペイントエディターのヒント</a>をご覧ください。\n"
-"  "
-
-#: templates/info/videos.html:39
-msgid "Introductory Tutorials"
-msgstr "入門編チュートリアル"
-
-#: templates/info/videos.html:47
-msgid "Make your sprite move forward"
-msgstr "スプライトを前に動かす"
-
-#: templates/info/videos.html:52
-msgid "Make your sprite spin"
-msgstr "スプライトを回転する"
-
-#: templates/info/videos.html:57
-msgid "Make your sprite change color"
-msgstr "スプライトの色を変える"
-
-#: templates/info/videos.html:64
-msgid "Make your sprite dance"
-msgstr "スプライトをダンスさせる"
-
-#: templates/info/videos.html:69
-msgid "Make your sprite follow the mouse"
-msgstr "スプライトにネズミを追いかけさせる"
-
-#: templates/info/videos.html:74
-msgid "Make your sprite glide"
-msgstr "スプライトをなめらかに滑らせる"
-
-#: templates/info/videos.html:81
-msgid "Make your sprite jump when you clap"
-msgstr "手をたたくとジャンプするスプライト"
-
-#: templates/info/videos.html:86
-msgid "Make your sprite spin when you say something"
-msgstr "話しかけると回転するスプライト"
-
-#: templates/info/videos.html:91
-msgid "Make a simple game"
-msgstr "シンプルなゲームを作る"
-
-#: templates/info/videos.html:98
-msgid "Make a story"
-msgstr "物語を作ろう"
-
-#: templates/info/videos.html:110
-msgid "Paint Editor Tips"
-msgstr "ペイントエディタのヒント"
-
-#: templates/info/videos.html:119
-msgid "Change the cat or other characters"
-msgstr "Scratchキャットやそのほかのキャラをアレンジする"
-
-#: templates/info/videos.html:124
-msgid "Differences between vector and bitmap"
-msgstr "ベクター画像とビットマップ画像の違い"
-
-#: templates/info/videos.html:129
-msgid "Switching between vector and bitmap"
-msgstr "ベクター画像とビットマップ画像を切り替える"
-
-#: templates/info/videos.html:138
-msgid "Fill a vector shape"
-msgstr "ベクターの図形を塗りつぶす"
-
-#: templates/info/videos.html:143
-msgid "Erasing in vector mode"
-msgstr "ベクターモードで消す"
-
-#: templates/info/videos.html:148
-msgid "Drawing with reshape"
-msgstr "「形を変える」ツールで描く"
-
-#: templates/info/videos.html:157
-msgid "Smoothing"
-msgstr "なめらかにする"
-
-#: templates/info/videos.html:162
-msgid "Grouping"
-msgstr "グループ／グループ解除"
-
-#: templates/info/videos.html:167
-msgid "Layers"
-msgstr "レイヤー"
-
-#: templates/info/videos.html:176
-msgid "Backdrop into Sprite"
-msgstr "背景をスプライトとして利用する"
-
-#: templates/info/videos.html:181
-msgid "Center of Costume"
-msgstr "コスチュームの中心"
 
 #: templates/mail/base.html:41
 #, python-format
@@ -4511,9 +2988,6 @@ msgid ""
 "            If you have questions about Scratch or this email, please take a look at our <a href=\"%(faq_url)s\">FAQ</a>.\n"
 "        "
 msgstr ""
-"\n"
-"           Scratchやこのメールについて不明点がある場合、まずは <a href=\"%(faq_url)s\">よくある質問と回答</a>をご参照ください。\n"
-"        "
 
 #: templates/mail/base.html:54
 #, python-format
@@ -4768,6 +3242,26 @@ msgstr "作成"
 msgid "You do not have any galleries"
 msgstr "ギャラリーを持っていません"
 
+#: templates/mystuff/includes/new_scratcher_gallery_modal.html:5
+msgid "Want to create a studio on Scratch?"
+msgstr ""
+
+#: templates/mystuff/includes/new_scratcher_gallery_modal.html:9
+msgid ""
+"Look for the link at the top of your profile page to become a Scratcher."
+msgstr ""
+
+#: templates/mystuff/includes/new_scratcher_gallery_modal.html:12
+msgid ""
+"If you don't see it yet, keep making and sharing projects, commenting "
+"helpfully on other Scratcher's projects, and be patient! After a few weeks, "
+"you’ll see the link on your profile page."
+msgstr ""
+
+#: templates/mystuff/includes/new_scratcher_gallery_modal.html:16
+msgid "Learn more about becoming a Scratcher."
+msgstr ""
+
 #: templates/mystuff/includes/project_action_bar.html:14
 #: templates/mystuff/includes/sort-galleries-dropdown.html:6
 msgid "All"
@@ -4787,8 +3281,8 @@ msgid "+ New Project"
 msgstr "+ 新しいプロジェクト"
 
 #: templates/mystuff/includes/project_list.html:19
-#: templates/mystuff/mystuff.html:101 templates/mystuff/mystuff.html.py:145
-#: templates/mystuff/mystuff.html:172
+#: templates/mystuff/mystuff.html:101 templates/mystuff/mystuff.html.py:141
+#: templates/mystuff/mystuff.html:168
 msgid "Last modified:"
 msgstr "最終更新:"
 
@@ -4797,8 +3291,8 @@ msgid "Created:"
 msgstr "作成:"
 
 #: templates/mystuff/includes/sort-galleries-dropdown.html:12
-msgid "Owned by me"
-msgstr "私が所有している"
+msgid "Hosted by me"
+msgstr ""
 
 #: templates/mystuff/includes/sort-galleries-dropdown.html:13
 msgid "Curated by me"
@@ -4808,11 +3302,6 @@ msgstr "私が管理している"
 #: templates/pathways/layout/base.html:66
 msgid "Projects"
 msgstr "作品"
-
-#: templates/mystuff/includes/sort-galleries-dropdown.html:26
-#: templates/profiles/profile_detail.html:406 templates/projects/base.html:302
-msgid "Comments"
-msgstr "コメント"
 
 #: templates/mystuff/mystuff.html:6
 #, python-format
@@ -4852,22 +3341,26 @@ msgstr "新しいプロジェクト"
 msgid "New Studio"
 msgstr "新しいスタジオ"
 
-#: templates/mystuff/mystuff.html:109 templates/mystuff/mystuff.html.py:153
-#: templates/mystuff/mystuff.html:180 templates/projects/base.html:88
+#: templates/mystuff/mystuff.html:109 templates/mystuff/mystuff.html.py:149
+#: templates/mystuff/mystuff.html:176 templates/projects/base.html:88
 msgid "See inside"
 msgstr "中を見る"
 
-#: templates/mystuff/mystuff.html:120
-msgid "Add to"
-msgstr "追加する"
-
-#: templates/mystuff/mystuff.html:130
+#: templates/mystuff/mystuff.html:126
 msgid "Unshare"
 msgstr "共有しない"
 
-#: templates/mystuff/mystuff.html:184
+#: templates/mystuff/mystuff.html:180
 msgid "Put back"
 msgstr "元に戻す"
+
+#: templates/mystuff/mystuff.html:198
+msgid "Host"
+msgstr ""
+
+#: templates/mystuff/mystuff.html:200
+msgid "Curator"
+msgstr ""
 
 #: templates/notifications/includes/friend-feed.html:34
 #: templates/notifications/includes/friend-feed.html:47
@@ -4952,10 +3445,6 @@ msgstr "はこのスタジオをフォローしています"
 #: templates/notifications/includes/user-feed.html:146
 msgid "joined Scratch"
 msgstr "Scratchに登録"
-
-#: templates/password_required_login.html:31
-msgid "Enter"
-msgstr "入口"
 
 #: templates/pathways/fashion.html:5
 msgid "Do you like fashion?"
@@ -5112,7 +3601,7 @@ msgstr "Scratcherたちのプロジェクト"
 
 #: templates/privacy_policy.html:29
 msgid "Scratch Privacy Policy"
-msgstr "Scratch プライバシーポリシー"
+msgstr ""
 
 #: templates/profiles/includes/backbone-templates.html:63
 msgid ""
@@ -5123,6 +3612,10 @@ msgid ""
 msgstr ""
 "このユーザーのプロフィール内で、失礼や不適切だったり、あるいは、<a href=\"/community_guidelines\" "
 "target=\"_blank\">Scratchのコミュニティーガイドライン</a>に反していると思うところを選んでください。"
+
+#: templates/profiles/includes/backbone-templates.html:65
+msgid "Please select the inappropriate part of the page."
+msgstr "不適切な部分を選んでください。"
 
 #: templates/profiles/includes/backbone-templates.html:69
 msgid "Icon"
@@ -5235,107 +3728,9 @@ msgstr "お気に入りのプロジェクト"
 msgid "Studios I'm Following"
 msgstr "私がフォローしているスタジオ"
 
-#: templates/profiles/scratcher_promotion_modal.html:5
-msgid "Become a Scratcher..."
-msgstr "Scratcherに招待されています..."
-
-#: templates/profiles/scratcher_promotion_modal.html:10
-msgid ""
-"Now that you’ve gotten to know Scratch and the Scratch community, you are "
-"ready to become a Scratcher. The next few pages describe what that means. On"
-" the last page, you can choose to officially become a Scratcher."
-msgstr ""
-"あなたはすでにScratchとScratchオンラインコミュニティについて十分に理解しているため、Scratcherになることができます。次のページ以降では、Scratcherになるとはどのようなことなのかを説明します。最後のページで「Scratcherになる」を選択すると、あなたは晴れてScratcherとして認められます。"
-
-#: templates/profiles/scratcher_promotion_modal.html:16
-msgid "Scratchers are respectful."
-msgstr "Scratcherはほかの人を大切にします。"
-
-#: templates/profiles/scratcher_promotion_modal.html:17
-msgid ""
-"Everyone should feel welcome on Scratch, so we’re careful to be respectful "
-"to everyone."
-msgstr "Scratchではだれもが歓迎されるべきです。したがって、すべての人に敬意を表するよう気をつけています。"
-
-#: templates/profiles/scratcher_promotion_modal.html:23
-msgid "We’re constructive."
-msgstr "Scratcherは前向きに活動をします。"
-
-#: templates/profiles/scratcher_promotion_modal.html:24
-msgid ""
-"Many projects are made by kids who are new to Scratch. When we comment on "
-"other’s projects, we say something we like about it, and suggest ways to "
-"make it better."
-msgstr ""
-"多くのプロジェクトは、Scratchを初めてさわる子どもたちが作ったものです。他の人のプロジェクトにコメントする場合は、まず、そのプロジェクトのいいところを書いて、その後でこうしたらもっとよくなるよ、というアドバイスなどを書いてください。"
-
-#: templates/profiles/scratcher_promotion_modal.html:30
-msgid "We give credit."
-msgstr "Scratcherはクレジットをつけます。"
-
-#: templates/profiles/scratcher_promotion_modal.html:31
-msgid ""
-"Anything shared on Scratch can be remixed by everyone. When we remix, we "
-"give credit to the original creator."
-msgstr ""
-"Scratchで共有されている作品は、誰でもリミックスできます。ただしリミックスするときは、元の作者のクレジット(誰のどの作品や素材か)を書きましょう。"
-
-#: templates/profiles/scratcher_promotion_modal.html:37
-msgid "We help keep the site friendly."
-msgstr "Scratcherはサイトの平和を守るため努力します。"
-
-#: templates/profiles/scratcher_promotion_modal.html:38
-msgid ""
-"Scratch is a fun and friendly place because Scratchers make it that way. If "
-"you see a project or comment that’s mean, click Report. "
-msgstr ""
-"Scratchが楽しくてやさしい場所なのは、Scratcherたちがそうなるよう努力しているからです。もしもいじわるなコメントやプロジェクトを見つけたら、「報告」ボタンを押してください。"
-
-#: templates/profiles/scratcher_promotion_modal.html:45
-msgid "We invite you to become a Scratcher."
-msgstr "Scratchチームは、あなたをScratcherとして迎えたいと思っています。"
-
-#: templates/profiles/scratcher_promotion_modal.html:46
-msgid "You get to decide if you want to become a Scratcher."
-msgstr "Scratcherになりたいと思いませんか？"
-
-#: templates/profiles/scratcher_promotion_modal.html:48
-msgid ""
-"If you agree to <strong>be respectful</strong>, "
-"<strong>constructive</strong>, <strong>give credit</strong>, and "
-"<strong>help keep the site friendly</strong>, click \"I agree!\""
-msgstr ""
-"もしあなたが互いに<strong>敬意</strong>を持ち、<strong>建設的</strong>な議論ができて、<strong>クレジット</strong>をつけ、このサイトを<strong>親しみやすく</strong>してくれるなら、「賛成！」をクリックしてください。"
-
-#: templates/profiles/scratcher_promotion_modal.html:50
-msgid ""
-"If you don’t wish to become a Scratcher, just close this page. (If you "
-"change your mind later, you can always come back)."
-msgstr "Scratcherになるのをやめる場合は、このページを閉じてください。（あとで気が変わったら、いつでも戻ってきてくださいね）"
-
-#: templates/profiles/scratcher_promotion_modal.html:55
-msgid "Congratulations on becoming a Scratcher!"
-msgstr "おめでとうございます、Scratcherに招待されました!"
-
-#: templates/profiles/scratcher_promotion_modal.html:57
-msgid ""
-"Congratulations! You’ll notice that the word \"Scratcher\" now appears on "
-"your profile page, and under your user icon on forum posts. "
-msgstr ""
-"おめでとうございます！今からあなたのプロフィールページには \"Scratcher\" "
-"と書かれ、フォーラムへの投稿についているユーザーアイコンの下にもそう表示されます。 "
-
-#: templates/profiles/scratcher_promotion_modal.html:61
-msgid "Back"
-msgstr "戻る"
-
-#: templates/profiles/scratcher_promotion_modal.html:66
-msgid "I agree!"
-msgstr "賛成！"
-
-#: templates/profiles/scratcher_promotion_modal.html:67
-msgid "OK!"
-msgstr "OK！"
+#: templates/profiles/profile_detail.html:406 templates/projects/base.html:302
+msgid "Comments"
+msgstr "コメント"
 
 #: templates/projects/base.html:83
 msgid "scripts"
@@ -5414,11 +3809,11 @@ msgstr "上記の埋め込みコードをコピーして貼り付けて下さい
 msgid "Share"
 msgstr "共有"
 
-#: templates/projects/base.html:394
+#: templates/projects/base.html:395
 msgid "OK, Got it."
 msgstr "わかりました。"
 
-#: templates/projects/base.html:413
+#: templates/projects/base.html:414
 msgid "All Tips"
 msgstr "すべてのTips"
 
@@ -5545,9 +3940,6 @@ msgid ""
 "href=\"%(community_guidelines_url)s\" target=\"_blank\">Scratch Community "
 "Guidelines.</a>"
 msgstr ""
-"次のドロップダウンリストから、このプロジェクトが「他人を傷つける」「不適切な表現を含んでいる」などの <a "
-"href=\"%(community_guidelines_url)s\" "
-"target=\"_blank\">Scratchコミュニティガイドライン</a>に反するものであると判断した理由を選んでください。"
 
 #: templates/projects/includes/backbone-templates.html:38
 #, python-format
@@ -5905,13 +4297,13 @@ msgstr "Scratchへようこそ、%(username)sさん!"
 
 #: templates/registration/welcome_email_message.txt:8
 msgid "Get Started on Scratch"
-msgstr "Scratchをはじめよう"
+msgstr ""
 
 #: templates/registration/welcome_email_message.txt:9
 msgid ""
 "To learn more about the Scratch online community, go to our Community "
 "Guidelines"
-msgstr "Scratchのオンラインコミュニティについてもっと知るには、コミュニティーガイドラインを見てください。"
+msgstr ""
 
 #: templates/registration/welcome_email_message.txt:11
 msgid "To discover project ideas, check out our Ideas Page"
@@ -5921,6 +4313,16 @@ msgstr "プロジェクトのアイデアを発見するには、アイデアペ
 #, python-format
 msgid "Joined %(tDate)s ago / "
 msgstr "%(tDate)s 日前に参加 / "
+
+#: templates/scratch_admin/vpn_required.html:12
+msgid "VPN Required"
+msgstr ""
+
+#: templates/scratch_admin/vpn_required.html:32
+msgid ""
+"As of April 2023, all staff accounts for The Scratch Team are required to "
+"use the VPN to access Scratch Website:"
+msgstr ""
 
 #: templates/stats/country.html:9
 msgid "Community statistics for Brazil at a glance"
@@ -6055,76 +4457,76 @@ msgstr "今しばらくお待ちください"
 
 #: templates/terms_of_use.html:27
 msgid "Scratch Terms of Use"
-msgstr "Scratchの利用規約"
+msgstr ""
 
-#: userprofiles/models.py:116
+#: userprofiles/models.py:118
 msgid "Featured Project"
 msgstr "注目のプロジェクト"
 
-#: userprofiles/models.py:117
+#: userprofiles/models.py:119
 msgid "Featured Tutorial"
 msgstr "注目のチュートリアル"
 
-#: userprofiles/models.py:118
+#: userprofiles/models.py:120
 msgid "Work In Progress"
 msgstr "作成中"
 
-#: userprofiles/models.py:119
+#: userprofiles/models.py:121
 msgid "Remix This!"
 msgstr "これをリミックスして！"
 
-#: userprofiles/models.py:120
+#: userprofiles/models.py:122
 msgid "My Favorite Things"
 msgstr "私のお気に入り"
 
-#: userprofiles/models.py:121
+#: userprofiles/models.py:123
 msgid "Why I Scratch"
 msgstr "Scratchをやる理由"
 
-#: userprofiles/models.py:139
+#: userprofiles/models.py:141
 msgid "user profile"
 msgstr "ユーザープロフィール"
 
-#: userprofiles/models.py:140
+#: userprofiles/models.py:142
 msgid "user profiles"
 msgstr "ユーザープロフィール"
 
-#: userprofiles/views.py:368
+#: userprofiles/views.py:59
+msgid "Please confirm your email address to perform this action."
+msgstr ""
+
+#: userprofiles/views.py:391
 msgid ""
 "Woah, seems like you're following people really quickly. Please wait a bit "
 "longer between following people."
 msgstr ""
 "申し訳ありません。ユーザーをフォローする間隔が少し早すぎるようです。1人をフォローしたあと次の人をフォローするときは、もう少し時間を置いてください。"
 
-#: userprofiles/views.py:390
+#: userprofiles/views.py:418
 msgid "Oops! You are following too many Scratchers."
 msgstr "フォローしているScratcherの数が多すぎるようです。"
 
-#: userprofiles/views.py:431
-msgid "You must confirm your email address to love or favorite projects"
-msgstr "プロジェクトに好きやお気に入りをつけるには、メールアドレスを認証する必要があります。"
-
-#: userprofiles/views.py:459
+#: userprofiles/views.py:467
 msgid ""
 "Woah, seems like you're favoriting projects really quickly. Please wait a "
 "bit longer between favoriting projects."
 msgstr ""
 "申し訳ありません。プロジェクトをお気に入りにする間隔が少し早すぎるようです。1回お気に入りにした後他のプロジェクトをお気に入りにするときは、もう少し時間を置いてください。"
 
-#: userprofiles/views.py:530
+#: userprofiles/views.py:538
 msgid ""
 "Woah, seems like you're loving projects really quickly. Please wait a bit "
 "longer between loving projects."
 msgstr ""
 "申し訳ありません。プロジェクトを好きにする間隔が少し早すぎるようです。1回好きにした後他のプロジェクトを好きにするときは、もう少し時間を置いてください。"
 
-#: userprofiles/views.py:643
+#: userprofiles/views.py:627
 msgid ""
 "Woah, seems like you're inviting curators really quickly. Please wait a bit "
 "longer between inviting curators."
 msgstr ""
 "申し訳ありません。スタジオに人を招待するする間隔が少し早すぎるようです。1回招待したあと次に招待するときは、もう少し時間を置いてください。 "
 
-#: userprofiles/views.py:842
+#: userprofiles/views.py:873
 msgid "Oops! You are following too many studios."
 msgstr "フォローしている生徒の数が多すぎるようです。"
